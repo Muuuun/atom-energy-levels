@@ -6,32 +6,22 @@
   "symbol": "Cd",
   "A": null,
   "Z": 48,
-  "I": null,
+  "I": "1/2",
   "kind": "nist",
   "limit_cm": 72540.05,
   "scale": "auto",
   "spectrum": "Cd I",
   "auto": true,
+  "has_lit": true,
+  "freq_isotope": "114",
   "limit_text": "Cd$^+$ ionisation limit   72540.05 cm$^{-1}$  =  8.99382 eV  (137.855 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Conventions. (1) Isotope-shift keys 'a-b' mean nu(a) - nu(b); all Cd shifts are relative to 114Cd as printed. Fermion shifts are hyperfine centres of gravity. (2) Hyperfine entries carry the measured interval (interval_MHz) and a derived A_MHz; I = 1/2 so B = 0. (3) Fields beyond SCHEMA.md: natural_linewidth_*, interval_MHz, photoionization, magic_wavelength_nm, bbr_shift_Hz, type 'M2', top-level 'rydberg' (ionization limit) and 'conflicts'. (4) rme_J_ea0 values are derived here from measured lifetimes with the schema convention (branching to the ground state taken as 1); they are not printed in the sources. (5) The clock (332 nm) and 314 nm isotope shifts are King-plot derived values of Ohayon et al., not direct measurements."
  },
  "columns": [
   {
    "key": "1S",
    "header": "^1S",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "1P*",
-   "header": "^1P^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "1D",
-   "header": "^1D",
    "group": null,
    "width": 1.0
   },
@@ -50,6 +40,18 @@
   {
    "key": "3D",
    "header": "^3D",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1P*",
+   "header": "^1P^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1D",
+   "header": "^1D",
    "group": null,
    "width": 1.0
   }
@@ -83,7 +85,7 @@
    "plain": "5s5p 3P°0",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 2
   },
   {
    "id": 2,
@@ -96,9 +98,19 @@
    "g": null,
    "name": "5s5p\\ ^3P^{o}_{1}",
    "plain": "5s5p 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 2390.0,
+   "tau_unc": 40.0,
+   "tau_tier": "exp",
+   "tau_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425",
+   "hfs": {
+    "A": -4123.8133,
+    "A_unc": 0.0133,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)"
+   },
+   "col": 2
   },
   {
    "id": 3,
@@ -111,9 +123,19 @@
    "g": null,
    "name": "5s5p\\ ^3P^{o}_{2}",
    "plain": "5s5p 3P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 42000000000.0,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Robert, Manzoor, Chiarotti, Poli, 'Multipole transition amplitudes and radiative decay rates in neutral cadmium', arXiv:2510.04715 (2025)",
+   "hfs": {
+    "A": -3292.9364,
+    "A_unc": 0.0008,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)"
+   },
+   "col": 2
   },
   {
    "id": 4,
@@ -126,9 +148,19 @@
    "g": null,
    "name": "5s5p\\ ^1P^{o}_{1}",
    "plain": "5s5p 1P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 1
+   "tau_ns": 1.6,
+   "tau_unc": 0.05,
+   "tau_tier": "exp",
+   "tau_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425",
+   "hfs": {
+    "A": 188.5,
+    "A_unc": 2.2,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425"
+   },
+   "col": 4
   },
   {
    "id": 5,
@@ -143,7 +175,15 @@
    "plain": "5s6s 3S1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "hfs": {
+    "A": -7750.8,
+    "A_unc": 0.8667,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)"
+   },
+   "col": 1
   },
   {
    "id": 6,
@@ -158,7 +198,7 @@
    "plain": "5s5d 1D2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 5
   },
   {
    "id": 7,
@@ -173,7 +213,7 @@
    "plain": "5s5d 3D1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 3
   },
   {
    "id": 8,
@@ -188,7 +228,7 @@
    "plain": "5s5d 3D2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 3
   },
   {
    "id": 9,
@@ -203,7 +243,15 @@
    "plain": "5s5d 3D3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "hfs": {
+    "A": -2386.2971,
+    "A_unc": 0.0257,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)"
+   },
+   "col": 3
   },
   {
    "id": 10,
@@ -218,7 +266,7 @@
    "plain": "5s6d 1D2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 5
   },
   {
    "id": 11,
@@ -233,7 +281,7 @@
    "plain": "5s6d 3D1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 3
   },
   {
    "id": 12,
@@ -248,7 +296,7 @@
    "plain": "5s6d 3D2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 3
   },
   {
    "id": 13,
@@ -263,7 +311,7 @@
    "plain": "5s6d 3D3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 3
   },
   {
    "id": 14,
@@ -278,27 +326,77 @@
    "plain": "5s7d 1D2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 5
   }
  ],
  "transitions": [
   {
    "kind": "E1",
-   "freq": 1309.86472,
-   "freq_tier": "nist",
-   "freq_src": "NIST ASD level energies",
+   "freq": 1309.864341,
+   "freq_unc": 2e-05,
+   "freq_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425",
+   "freq_tier": "exp",
    "lower": 0,
    "upper": 4,
-   "wn": 43692.384,
-   "lam": 228.8728,
+   "wn": 43692.3714,
+   "lam": 228.87291,
    "air": 228.8023,
+   "use": "228.9 nm resonance line: first-stage MOT / slowing / imaging",
+   "isotope_shifts": {
+    "106-114": {
+     "value": 1818.1,
+     "unc": 3.5,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "108-114": {
+     "value": 1336.5,
+     "unc": 3.4,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "110-114": {
+     "value": 865.0,
+     "unc": 3.3,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "112-114": {
+     "value": 407.5,
+     "unc": 3.3,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "116-114": {
+     "value": -316.1,
+     "unc": 3.3,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "111-114": {
+     "value": 805.0,
+     "unc": 0.3,
+     "src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425",
+     "url": "https://arxiv.org/abs/2210.11425"
+    },
+    "113-114": {
+     "value": 344.9,
+     "unc": 0.5,
+     "src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425",
+     "url": "https://arxiv.org/abs/2210.11425"
+    }
+   },
+   "gamma_MHz": 99.47,
    "type": "E1",
-   "A": 530000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C)",
-   "d": 3.067,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C) (from A)",
+   "A": 625000000.0,
+   "A_tier": "exp",
+   "A_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425",
+   "A_unc": 19500000.0,
+   "d": 3.331,
+   "d_tier": "exp",
+   "d_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425 (from A)",
+   "br": 1.0,
+   "br_tier": "exp",
    "lam_obs": 228.87282
   },
   {
@@ -397,23 +495,165 @@
    "lam_obs": 298.22325
   },
   {
-   "kind": "E1",
-   "freq": 919.04637,
+   "kind": "forbidden",
+   "freq": 954.14802,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
+   "upper": 3,
+   "wn": 31826.952,
+   "lam": 314.1991,
+   "air": 314.1081,
+   "use": "314 nm ultra-narrow (M2) line",
+   "type": "M2",
+   "isotope_shifts": {
+    "106-114": {
+     "value": 1915.5,
+     "unc": 3.9,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "108-114": {
+     "value": 1403.9,
+     "unc": 3.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "110-114": {
+     "value": 913.7,
+     "unc": 2.1,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "112-114": {
+     "value": 429.7,
+     "unc": 1.6,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "116-114": {
+     "value": -320.2,
+     "unc": 1.7,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    }
+   },
+   "gamma_MHz": 3.789e-09
+  },
+  {
+   "kind": "E1",
+   "freq": 919.046234,
+   "freq_unc": 2.1e-05,
+   "freq_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425",
+   "freq_tier": "exp",
+   "lower": 0,
    "upper": 2,
-   "wn": 30656.087,
-   "lam": 326.1995,
+   "wn": 30656.0825,
+   "lam": 326.19954,
    "air": 326.1055,
+   "use": "326.1 nm intercombination line: narrow-line MOT (Doppler limit 1.58 uK)",
+   "isotope_shifts": {
+    "106-114": {
+     "value": 1913.0,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "108-114": {
+     "value": 1402.4,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "110-114": {
+     "value": 914.7,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "112-114": {
+     "value": 429.9,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "116-114": {
+     "value": -321.5,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "111-114": {
+     "value": 861.6,
+     "unc": 1.0,
+     "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)",
+     "url": "https://arxiv.org/abs/2408.08424"
+    },
+    "113-114": {
+     "value": 370.8,
+     "unc": 1.0,
+     "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)",
+     "url": "https://arxiv.org/abs/2408.08424"
+    }
+   },
+   "gamma_MHz": 0.06659,
    "type": "E1 (intercombination)",
-   "A": 406000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C)",
-   "d": 0.1444,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C) (from A)",
+   "A": 418400.0,
+   "A_tier": "exp",
+   "A_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425",
+   "A_unc": 7000.0,
+   "d": 0.1466,
+   "d_tier": "exp",
+   "d_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425 (from A)",
+   "br": 1.0,
+   "br_tier": "exp",
    "lam_obs": 326.19951
+  },
+  {
+   "kind": "forbidden",
+   "freq": 902.794618,
+   "freq_unc": 6e-05,
+   "freq_src": "Schelfhout & McFerran, Phys. Rev. A 105, 022805 (2022), arXiv:2112.05987",
+   "freq_tier": "exp",
+   "lower": 0,
+   "upper": 1,
+   "wn": 30113.987,
+   "lam": 332.07161,
+   "air": 331.9761,
+   "use": "332 nm optical lattice clock transition (111Cd, 113Cd; magic wavelength 419.88(14) nm)",
+   "type": "clock",
+   "isotope_shifts": {
+    "106-114": {
+     "value": 1911.4,
+     "unc": 4.7,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "108-114": {
+     "value": 1404.5,
+     "unc": 3.7,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "110-114": {
+     "value": 914.1,
+     "unc": 2.1,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "112-114": {
+     "value": 428.9,
+     "unc": 1.7,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "116-114": {
+     "value": -320.6,
+     "unc": 1.7,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    }
+   }
   },
   {
    "kind": "E1",
@@ -474,14 +714,60 @@
   },
   {
    "kind": "E1",
-   "freq": 830.09648,
-   "freq_tier": "nist",
-   "freq_src": "NIST ASD level energies",
+   "freq": 830.096573,
+   "freq_unc": 1.5e-05,
+   "freq_src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)",
+   "freq_tier": "exp",
    "lower": 3,
    "upper": 9,
-   "wn": 27689.038,
-   "lam": 361.1538,
-   "air": 361.0508,
+   "wn": 27689.0412,
+   "lam": 361.15371,
+   "air": 361.0507,
+   "use": "361.2 nm metastable MOT (cycling transition)",
+   "isotope_shifts": {
+    "106-114": {
+     "value": -607.6,
+     "unc": 3.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "108-114": {
+     "value": -447.4,
+     "unc": 3.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "110-114": {
+     "value": -293.9,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "112-114": {
+     "value": -142.2,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "116-114": {
+     "value": 122.0,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "111-114": {
+     "value": -227.4,
+     "unc": 1.0,
+     "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)",
+     "url": "https://arxiv.org/abs/2408.08424"
+    },
+    "113-114": {
+     "value": -75.3,
+     "unc": 1.0,
+     "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)",
+     "url": "https://arxiv.org/abs/2408.08424"
+    }
+   },
    "type": "E1",
    "A": 130000000.0,
    "A_tier": "nist",
@@ -509,6 +795,25 @@
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
    "lam_obs": 361.39033
+  },
+  {
+   "kind": "E1",
+   "freq": 829.19044,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 7,
+   "wn": 27658.816,
+   "lam": 361.5484,
+   "air": 361.4453,
+   "use": "361.5 nm; weak 3D1 branch, no A value in NIST ASD",
+   "type": "E1",
+   "A": 4510000.0,
+   "A_tier": "theory",
+   "A_src": "Robert, Manzoor, Chiarotti, Poli, 'Multipole transition amplitudes and radiative decay rates in neutral cadmium', arXiv:2510.04715 (2025)",
+   "d": 0.5618,
+   "d_tier": "theory",
+   "d_src": "Robert, Manzoor, Chiarotti, Poli, 'Multipole transition amplitudes and radiative decay rates in neutral cadmium', arXiv:2510.04715 (2025) (from A)"
   },
   {
    "kind": "E1",
@@ -577,6 +882,51 @@
    "wn": 20827.893,
    "lam": 480.1254,
    "air": 479.9912,
+   "use": "480.0 nm optical pumping / repumping",
+   "isotope_shifts": {
+    "106-114": {
+     "value": -798.5,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "108-114": {
+     "value": -586.7,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "110-114": {
+     "value": -383.4,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "112-114": {
+     "value": -183.1,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "116-114": {
+     "value": 152.7,
+     "unc": 1.0,
+     "src": "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II",
+     "url": "https://arxiv.org/abs/2208.13599"
+    },
+    "111-114": {
+     "value": -334.2,
+     "unc": 1.1,
+     "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)",
+     "url": "https://arxiv.org/abs/2408.08424"
+    },
+    "113-114": {
+     "value": -135.0,
+     "unc": 1.1,
+     "src": "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)",
+     "url": "https://arxiv.org/abs/2408.08424"
+    }
+   },
    "type": "E1",
    "A": 41000000.0,
    "A_tier": "nist",
@@ -628,7 +978,7 @@
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -644,146 +994,69 @@
    "rows": [
     [
      "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^1P^{o}_{1}$",
-     "228.8728",
+     "228.8729",
      "228.8023",
-     "1309.8647",
-     "3.067",
-     "5.300e+08",
-     "–",
-     "–",
-     ""
+     "1309.864341(20)",
+     "3.331",
+     "6.250e+08",
+     "99.47",
+     "100",
+     "228.9 nm resonance line: first-stage MOT / slowing / imag…"
     ],
     [
-     "$5s5p\\ ^3P^{o}_{0}$ – $5s6d\\ ^3D_{1}$",
-     "283.7734",
-     "283.6900",
-     "1056.4501",
-     "0.973",
-     "2.800e+07",
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{2}$",
+     "314.1991",
+     "314.1081",
+     "954.1480",
      "–",
      "–",
-     ""
+     "3.789e-09",
+     "–",
+     "314 nm ultra-narrow"
     ],
     [
-     "$5s5p\\ ^3P^{o}_{1}$ – $5s6d\\ ^3D_{2}$",
-     "288.1612",
-     "288.0767",
-     "1040.3636",
-     "1.575",
-     "4.200e+07",
-     "–",
-     "–",
-     ""
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{1}$",
+     "326.1995",
+     "326.1055",
+     "919.046234(21)",
+     "0.147",
+     "4.184e+05",
+     "0.06659",
+     "100",
+     "326.1 nm intercombination line: narrow-line MOT"
     ],
     [
-     "$5s5p\\ ^3P^{o}_{1}$ – $5s6d\\ ^3D_{1}$",
-     "288.2070",
-     "288.1225",
-     "1040.1984",
-     "0.922",
-     "2.400e+07",
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{0}$",
+     "332.0716",
+     "331.9761",
+     "902.79462(6)",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^3P^{o}_{2}$ – $5s6d\\ ^3D_{3}$",
-     "298.1490",
-     "298.0620",
-     "1005.5122",
-     "2.324",
-     "5.900e+07",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^3P^{o}_{2}$ – $5s6d\\ ^3D_{2}$",
-     "298.2232",
-     "298.1362",
-     "1005.2619",
-     "0.991",
-     "1.500e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^3P^{o}_{0}$ – $5s5d\\ ^3D_{1}$",
-     "340.4629",
-     "340.3652",
-     "880.5438",
-     "2.121",
-     "7.700e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^3P^{o}_{1}$ – $5s5d\\ ^3D_{2}$",
-     "346.7192",
-     "346.6200",
-     "864.6548",
-     "3.513",
-     "1.200e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^3P^{o}_{1}$ – $5s5d\\ ^3D_{1}$",
-     "346.8647",
-     "346.7654",
-     "864.2921",
-     "2.035",
-     "6.700e+07",
-     "–",
-     "–",
-     ""
+     "332 nm optical lattice clock transition"
     ],
     [
      "$5s5p\\ ^3P^{o}_{2}$ – $5s5d\\ ^3D_{3}$",
-     "361.1538",
-     "361.0508",
-     "830.0965",
+     "361.1537",
+     "361.0507",
+     "830.096573(15)",
      "4.600",
      "1.300e+08",
      "–",
      "–",
-     ""
+     "361.2 nm metastable MOT"
     ],
     [
-     "$5s5p\\ ^3P^{o}_{2}$ – $5s5d\\ ^3D_{2}$",
-     "361.3903",
-     "361.2872",
-     "829.5532",
-     "2.019",
-     "3.500e+07",
+     "$5s5p\\ ^3P^{o}_{2}$ – $5s5d\\ ^3D_{1}$",
+     "361.5484",
+     "361.4453",
+     "829.1904",
+     "0.562*",
+     "4.510e+06",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^1P^{o}_{1}$ – $5s6d\\ ^1D_{2}$",
-     "466.3657",
-     "466.2352",
-     "642.8270",
-     "1.173",
-     "5.500e+06",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^3P^{o}_{0}$ – $5s6s\\ ^3S_{1}$",
-     "467.9459",
-     "467.8150",
-     "640.6562",
-     "1.404",
-     "1.300e+07",
-     "–",
-     "–",
-     ""
+     "361.5 nm"
     ],
     [
      "$5s5p\\ ^3P^{o}_{1}$ – $5s6s\\ ^3S_{1}$",
@@ -794,38 +1067,215 @@
      "4.100e+07",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^3P^{o}_{2}$ – $5s6s\\ ^3S_{1}$",
-     "508.7239",
-     "508.5821",
-     "589.3029",
-     "3.304",
-     "5.600e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s5p\\ ^1P^{o}_{1}$ – $5s5d\\ ^1D_{2}$",
-     "644.0249",
-     "643.8469",
-     "465.4982",
-     "6.236",
-     "5.900e+07",
-     "–",
-     "–",
-     ""
+     "480.0 nm optical pumping / repumping"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{111}$Cd hyperfine structure  ($I$ = 1/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$5s5p\\ ^3P^{o}_{1}$",
+     "-4123.813(13)",
+     "–",
+     "F=1/2: +4123.81   F=3/2: -2061.91"
+    ],
+    [
+     "$5s5p\\ ^3P^{o}_{2}$",
+     "-3292.9364(8)",
+     "–",
+     "F=3/2: +4939.40   F=5/2: -3292.94"
+    ],
+    [
+     "$5s5p\\ ^1P^{o}_{1}$",
+     "188.5(22)",
+     "–",
+     "F=1/2: -188.50   F=3/2: +94.25"
+    ],
+    [
+     "$5s6s\\ ^3S_{1}$",
+     "-7750.8(9)",
+     "–",
+     "F=1/2: +7750.80   F=3/2: -3875.40"
+    ],
+    [
+     "$5s5d\\ ^3D_{3}$",
+     "-2386.297(26)",
+     "–",
+     "F=5/2: +4772.59   F=7/2: -3579.45"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^1P^{o}_{1}$",
+     "228.873",
+     "106-114",
+     "1818(4)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^1P^{o}_{1}$",
+     "228.873",
+     "108-114",
+     "1336(3)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^1P^{o}_{1}$",
+     "228.873",
+     "110-114",
+     "865(3)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^1P^{o}_{1}$",
+     "228.873",
+     "112-114",
+     "408(3)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^1P^{o}_{1}$",
+     "228.873",
+     "116-114",
+     "-316(3)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^1P^{o}_{1}$",
+     "228.873",
+     "111-114",
+     "805.0(3)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^1P^{o}_{1}$",
+     "228.873",
+     "113-114",
+     "344.9(5)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{2}$",
+     "314.199",
+     "106-114",
+     "1916(4)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{2}$",
+     "314.199",
+     "108-114",
+     "1404(3)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{2}$",
+     "314.199",
+     "110-114",
+     "913.7(21)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{2}$",
+     "314.199",
+     "112-114",
+     "429.7(16)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{2}$",
+     "314.199",
+     "116-114",
+     "-320.2(17)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{1}$",
+     "326.200",
+     "106-114",
+     "1913.0(10)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{1}$",
+     "326.200",
+     "108-114",
+     "1402.4(10)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{1}$",
+     "326.200",
+     "110-114",
+     "914.7(10)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{1}$",
+     "326.200",
+     "112-114",
+     "429.9(10)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{1}$",
+     "326.200",
+     "116-114",
+     "-321.5(10)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{1}$",
+     "326.200",
+     "111-114",
+     "861.6(10)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{1}$",
+     "326.200",
+     "113-114",
+     "370.8(10)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{0}$",
+     "332.072",
+     "106-114",
+     "1911(5)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{0}$",
+     "332.072",
+     "108-114",
+     "1404(4)"
+    ],
+    [
+     "$5s^{2}\\ ^1S_{0}$ – $5s5p\\ ^3P^{o}_{0}$",
+     "332.072",
+     "110-114",
+     "914.1(21)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 15   lines < 2000 nm: 18   with matrix element: 18",
-  "transition-rate provenance: nist: 18",
-  "levels with a measured lifetime: 0"
+  "levels: 15   lines < 2000 nm: 21   with matrix element: 19",
+  "transition-rate provenance: exp: 2, nist: 16, theory: 1, wavelength only: 2",
+  "levels with a measured lifetime: 3"
  ],
- "sources": {}
+ "sources": {
+  "NIST Atomic Weights and Isotopic Compositions (Cd); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data (https://physics.nist.gov/PhysRefData/Handbook/Tables/cadmiumtable1.htm)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cd&ascii=ascii2&isotype=some",
+  "Schelfhout & McFerran, Phys. Rev. A 105, 022805 (2022), Table XXIV (their Ref. [74])": "https://arxiv.org/abs/2112.05987",
+  "Robert, Manzoor, Chiarotti, Poli, 'Multipole transition amplitudes and radiative decay rates in neutral cadmium', arXiv:2510.04715 (2025)": "https://arxiv.org/abs/2510.04715",
+  "Yamaguchi, Safronova, Gibble, Katori, 'Narrow-line Cooling and Determination of the Magic Wavelength of Cd', Phys. Rev. Lett. 123, 113201 (2019), arXiv:1909.07931": "https://arxiv.org/abs/1909.07931",
+  "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425": "https://arxiv.org/abs/2210.11425",
+  "Gibble, 'Laser-cooling Cadmium Bosons and Fermions with Near Ultraviolet Triplet Excitations', arXiv:2408.08424 (2024)": "https://arxiv.org/abs/2408.08424",
+  "Padilla-Castillo, Hofsaess, Palanki, Cai, Rich, Thomas, Kray, Meijer, Wright, Truppe, 'A large magneto-optical trap of cadmium atoms loaded from a cryogenic buffer gas beam', arXiv:2506.01180 (2025)": "https://arxiv.org/abs/2506.01180",
+  "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II": "https://arxiv.org/abs/2208.13599",
+  "Schelfhout & McFerran, Phys. Rev. A 105, 022805 (2022), arXiv:2112.05987": "https://arxiv.org/abs/2112.05987",
+  "NIST ASD levels file (Cd II 5s 2S1/2 limit)": "/Users/muqiao/Documents/rb_energy_levels/data/nist/Cd_I_levels.tsv"
+ }
 }

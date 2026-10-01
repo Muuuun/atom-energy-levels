@@ -1,0 +1,807 @@
+{
+  "element": "O",
+  "isotopes": {
+    "16": {
+      "I": "0",
+      "abundance_percent": 99.757,
+      "abundance_unc": 0.016,
+      "source": "abundance: NIST Atomic Weights and Isotopic Compositions (O); nuclear spin: IAEA LiveChart of Nuclides ground-state table (J-pi column)",
+      "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=O&ascii=ascii2&isotype=some",
+      "url_spin": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+    },
+    "17": {
+      "I": "5/2",
+      "abundance_percent": 0.038,
+      "abundance_unc": 0.001,
+      "source": "abundance: NIST Atomic Weights and Isotopic Compositions (O); nuclear spin: IAEA LiveChart of Nuclides ground-state table (J-pi column); I(17O)=5/2 also stated in Aourir et al., arXiv:1804.03952",
+      "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=O&ascii=ascii2&isotype=some",
+      "url_spin": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+    },
+    "18": {
+      "I": "0",
+      "abundance_percent": 0.205,
+      "abundance_unc": 0.014,
+      "source": "abundance: NIST Atomic Weights and Isotopic Compositions (O); nuclear spin: IAEA LiveChart of Nuclides ground-state table (J-pi column)",
+      "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=O&ascii=ascii2&isotype=some",
+      "url_spin": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+    }
+  },
+  "ionization_energy": {
+    "value_cm": 109837.02,
+    "unc_cm": 0.06,
+    "value_eV": 13.618055,
+    "unc_eV": 7e-06,
+    "limit": "O II 2p3 4S°3/2",
+    "method": "compilation",
+    "source": "NIST ASD Ionization Energies form (O I; NIST references L74, L3760)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=N+I%3B+O+I%3B+F+I&units=0&format=3&order=0&at_num_out=on&sp_name_out=on&level_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+  },
+  "levels": [
+    {
+      "nist_energy_cm": 0.0,
+      "label": "2p4 3P2",
+      "J": "2",
+      "g_J": {
+        "value": 1.500921,
+        "unc": 2e-06,
+        "isotope": "16",
+        "method": "experiment",
+        "source": "Radford, Hughes, Phys. Rev. 114, 1274 (1959), abstract (paramagnetic resonance absorption, 16O)",
+        "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.114.1274",
+        "note": "from the measured ratio -g_J/g_p = 493.4022(2) (protons in mineral oil) combined with g_J(H)/g_p"
+      },
+      "hyperfine": {
+        "17": {
+          "A_MHz": -218.569,
+          "A_unc": 0.004,
+          "B_MHz": -10.438,
+          "B_unc": 0.03,
+          "method": "experiment",
+          "source": "Harvey, Proc. R. Soc. Lond. A 285, 581 (1965), abstract (paramagnetic resonance)",
+          "url": "https://api.crossref.org/works/10.1098/rspa.1965.0126",
+          "note": "abstract also gives the off-diagonal constants a(2,1) = -126.6(2.0) MHz and a(1,0) = -91.7(7.2) MHz"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 158.265,
+      "label": "2p4 3P1",
+      "J": "1",
+      "g_J": {
+        "value": 1.500986,
+        "unc": 2e-06,
+        "isotope": "16",
+        "method": "experiment",
+        "source": "Radford, Hughes, Phys. Rev. 114, 1274 (1959), abstract (paramagnetic resonance absorption, 16O)",
+        "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.114.1274",
+        "note": "from the measured ratio -g_J/g_p = 493.4236(2)"
+      },
+      "hyperfine": {
+        "17": {
+          "A_MHz": 4.738,
+          "A_unc": 0.036,
+          "B_MHz": 5.199,
+          "B_unc": 0.09,
+          "method": "experiment",
+          "source": "Harvey, Proc. R. Soc. Lond. A 285, 581 (1965), abstract (paramagnetic resonance)",
+          "url": "https://api.crossref.org/works/10.1098/rspa.1965.0126"
+        }
+      },
+      "lifetime": {
+        "value": 11220.0,
+        "unit": "s",
+        "method": "compilation",
+        "source": "NIST ASD O I lines table with forbidden lines (63.2 um M1, accuracy A)",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data",
+        "note": "derived: 1/sum(A) of the NIST ASD forbidden-line A values (calculated, NIST references T4539/T5081). No direct laboratory lifetime measurement was opened."
+      }
+    },
+    {
+      "nist_energy_cm": 226.977,
+      "label": "2p4 3P0",
+      "J": "0",
+      "lifetime": {
+        "value": 57140.0,
+        "unit": "s",
+        "method": "compilation",
+        "source": "NIST ASD O I lines table with forbidden lines (145.5 um M1, accuracy A)",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data",
+        "note": "derived: 1/sum(A) of the NIST ASD forbidden-line A values (calculated, NIST references T4539/T5081). No direct laboratory lifetime measurement was opened."
+      }
+    },
+    {
+      "nist_energy_cm": 15867.862,
+      "label": "2p4 1D2",
+      "J": "2",
+      "lifetime": {
+        "value": 133.8,
+        "unit": "s",
+        "method": "compilation",
+        "source": "NIST ASD O I lines table with forbidden lines (630.0/636.4/639.2 nm, accuracy B+)",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data",
+        "note": "derived: 1/sum(A) of the NIST ASD forbidden-line A values (calculated, NIST references T4539/T5081). No direct laboratory lifetime measurement was opened. Upper level of the red auroral / airglow lines."
+      }
+    },
+    {
+      "nist_energy_cm": 33792.583,
+      "label": "2p4 1S0",
+      "J": "0",
+      "lifetime": {
+        "value": 0.7487,
+        "unit": "s",
+        "method": "compilation",
+        "source": "NIST ASD O I lines table with forbidden lines (557.7, 297.2, 295.8 nm, accuracy B+)",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data",
+        "note": "derived: 1/sum(A) of the NIST ASD forbidden-line A values (calculated, NIST references T4539/T5081). No direct laboratory lifetime measurement was opened. Upper level of the green auroral line."
+      }
+    },
+    {
+      "nist_energy_cm": 73768.2,
+      "label": "2p3(4S°)3s 5S°2",
+      "J": "2",
+      "hyperfine": {
+        "17": {
+          "A_MHz": -97.93,
+          "A_unc": 0.1,
+          "method": "compilation",
+          "source": "Jennerich & Tate, Phys. Rev. A 62, 042506 (2000) (Doppler-free saturated absorption near 778 nm), as tabulated in Tables VII/VIII of Aourir, Nemouchi, Godefroid, Joensson, Phys. Rev. A 97, 032506 (2018), arXiv:1804.03952",
+          "url": "https://arxiv.org/pdf/1804.03952",
+          "alternatives": [
+            {
+              "A_MHz": -98.59,
+              "A_unc": 0.43,
+              "method": "compilation",
+              "source": "Marin, Fort, Prevedelli, Inguscio, Tino, Bauche, Z. Phys. D 25, 191 (1993), as tabulated in Table VII of Aourir, Nemouchi, Godefroid, Joensson, Phys. Rev. A 97, 032506 (2018), arXiv:1804.03952",
+              "url": "https://arxiv.org/pdf/1804.03952"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 86625.757,
+      "label": "2p3(4S°)3p 5P1",
+      "J": "1",
+      "hyperfine": {
+        "17": {
+          "A_MHz": -25.83,
+          "A_unc": 0.1,
+          "B_MHz": 0.0,
+          "B_unc": 0.2,
+          "method": "compilation",
+          "source": "Jennerich & Tate, Phys. Rev. A 62, 042506 (2000) (Doppler-free saturated absorption near 778 nm), as tabulated in Tables VII/VIII of Aourir, Nemouchi, Godefroid, Joensson, Phys. Rev. A 97, 032506 (2018), arXiv:1804.03952",
+          "url": "https://arxiv.org/pdf/1804.03952",
+          "alternatives": [
+            {
+              "A_MHz": -26.39,
+              "method": "compilation",
+              "source": "Marin et al., Z. Phys. D 25, 191 (1993), single value listed in the A1 column of Table VIII of Aourir, Nemouchi, Godefroid, Joensson, Phys. Rev. A 97, 032506 (2018), arXiv:1804.03952 (column attribution read from the table layout)",
+              "url": "https://arxiv.org/pdf/1804.03952"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 86627.778,
+      "label": "2p3(4S°)3p 5P2",
+      "J": "2",
+      "hyperfine": {
+        "17": {
+          "A_MHz": -24.47,
+          "A_unc": 0.11,
+          "B_MHz": 0.9,
+          "B_unc": 0.8,
+          "method": "compilation",
+          "source": "Jennerich & Tate, Phys. Rev. A 62, 042506 (2000) (Doppler-free saturated absorption near 778 nm), as tabulated in Tables VII/VIII of Aourir, Nemouchi, Godefroid, Joensson, Phys. Rev. A 97, 032506 (2018), arXiv:1804.03952",
+          "url": "https://arxiv.org/pdf/1804.03952"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 86631.454,
+      "label": "2p3(4S°)3p 5P3",
+      "J": "3",
+      "hyperfine": {
+        "17": {
+          "A_MHz": -18.7,
+          "A_unc": 0.05,
+          "B_MHz": -0.2,
+          "B_unc": 0.5,
+          "method": "compilation",
+          "source": "Jennerich & Tate, Phys. Rev. A 62, 042506 (2000) (Doppler-free saturated absorption near 778 nm), as tabulated in Tables VII/VIII of Aourir, Nemouchi, Godefroid, Joensson, Phys. Rev. A 97, 032506 (2018), arXiv:1804.03952",
+          "url": "https://arxiv.org/pdf/1804.03952"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 88630.587,
+      "label": "2p3(4S°)3p 3P1",
+      "J": "1",
+      "lifetime": {
+        "value": 3.6e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 4e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level; upper level of the 2x225.65 nm O TALIF scheme (fluorescence 844.6 nm)",
+        "alternatives": [
+          {
+            "value": 3.47e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "natural lifetime used for TALIF calibration, from Niemi, Schulz-von der Gathen, Doebele, J. Phys. D 34, 2330 (2001) / Plasma Sources Sci. Technol. 14, 375 (2005), as quoted in Schroeter et al., arXiv:2004.01558 (2020), Table 1 and text",
+            "url": "https://arxiv.org/pdf/2004.01558",
+            "note": "quenching-free (natural) value; uncertainty not quoted in the citing paper"
+          },
+          {
+            "value": 3.91e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "earlier measurement listed under \"Others\" in Kroell et al. 1985, Table I (reference letter illegible in the scan; refs. 14-17)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 1.4e-09
+          },
+          {
+            "value": 4e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "earlier measurement listed under \"Others\" in Kroell et al. 1985, Table I (reference letter illegible in the scan; refs. 14-17)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 3e-09
+          },
+          {
+            "value": 3e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "theory value listed in Kroell et al. 1985, Table I",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 88631.146,
+      "label": "2p3(4S°)3p 3P2",
+      "J": "2",
+      "lifetime": {
+        "value": 3.6e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 4e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level; upper level of the 2x225.65 nm O TALIF scheme (fluorescence 844.6 nm)",
+        "alternatives": [
+          {
+            "value": 3.47e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "natural lifetime used for TALIF calibration, from Niemi, Schulz-von der Gathen, Doebele, J. Phys. D 34, 2330 (2001) / Plasma Sources Sci. Technol. 14, 375 (2005), as quoted in Schroeter et al., arXiv:2004.01558 (2020), Table 1 and text",
+            "url": "https://arxiv.org/pdf/2004.01558",
+            "note": "quenching-free (natural) value; uncertainty not quoted in the citing paper"
+          },
+          {
+            "value": 3.91e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "earlier measurement listed under \"Others\" in Kroell et al. 1985, Table I (reference letter illegible in the scan; refs. 14-17)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 1.4e-09
+          },
+          {
+            "value": 4e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "earlier measurement listed under \"Others\" in Kroell et al. 1985, Table I (reference letter illegible in the scan; refs. 14-17)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 3e-09
+          },
+          {
+            "value": 3e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "theory value listed in Kroell et al. 1985, Table I",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 88631.303,
+      "label": "2p3(4S°)3p 3P0",
+      "J": "0",
+      "lifetime": {
+        "value": 3.6e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 4e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level; upper level of the 2x225.65 nm O TALIF scheme (fluorescence 844.6 nm)",
+        "alternatives": [
+          {
+            "value": 3.47e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "natural lifetime used for TALIF calibration, from Niemi, Schulz-von der Gathen, Doebele, J. Phys. D 34, 2330 (2001) / Plasma Sources Sci. Technol. 14, 375 (2005), as quoted in Schroeter et al., arXiv:2004.01558 (2020), Table 1 and text",
+            "url": "https://arxiv.org/pdf/2004.01558",
+            "note": "quenching-free (natural) value; uncertainty not quoted in the citing paper"
+          },
+          {
+            "value": 3.91e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "earlier measurement listed under \"Others\" in Kroell et al. 1985, Table I (reference letter illegible in the scan; refs. 14-17)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 1.4e-09
+          },
+          {
+            "value": 4e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "earlier measurement listed under \"Others\" in Kroell et al. 1985, Table I (reference letter illegible in the scan; refs. 14-17)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 3e-09
+          },
+          {
+            "value": 3e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "theory value listed in Kroell et al. 1985, Table I",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 102411.995,
+      "label": "2p3(4S°)5s 3S°1",
+      "J": "1",
+      "lifetime": {
+        "value": 1.7e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 3e-09,
+        "alternatives": [
+          {
+            "value": 1.2e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "theory value listed in Kroell et al. 1985, Table I",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 102908.374,
+      "label": "2p3(4S°)4d 3D°3",
+      "J": "3",
+      "lifetime": {
+        "value": 2.3e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 3e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level",
+        "alternatives": [
+          {
+            "value": 8e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "electron-beam excitation measurement listed under \"Others\" in Kroell et al. 1985, Table I; stated there to deviate",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 1e-08
+          },
+          {
+            "value": 1.5e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "theory value listed in Kroell et al. 1985, Table I",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 102908.443,
+      "label": "2p3(4S°)4d 3D°2",
+      "J": "2",
+      "lifetime": {
+        "value": 2.3e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 3e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level",
+        "alternatives": [
+          {
+            "value": 8e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "electron-beam excitation measurement listed under \"Others\" in Kroell et al. 1985, Table I; stated there to deviate",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 1e-08
+          },
+          {
+            "value": 1.5e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "theory value listed in Kroell et al. 1985, Table I",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 102908.489,
+      "label": "2p3(4S°)4d 3D°1",
+      "J": "1",
+      "lifetime": {
+        "value": 2.3e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 3e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level",
+        "alternatives": [
+          {
+            "value": 8e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "electron-beam excitation measurement listed under \"Others\" in Kroell et al. 1985, Table I; stated there to deviate",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+            "unc": 1e-08
+          },
+          {
+            "value": 1.5e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "theory value listed in Kroell et al. 1985, Table I",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 105165.232,
+      "label": "2p3(4S°)6s 3S°1",
+      "J": "1",
+      "lifetime": {
+        "value": 2.4e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 3e-09,
+        "note": "Stern-Vollmer intercept 24.3 ns (Fig. 3)",
+        "alternatives": [
+          {
+            "value": 2.5e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "theory value listed in Kroell et al. 1985, Table I",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 105409.008,
+      "label": "2p3(4S°)5d 3D°1",
+      "J": "1",
+      "lifetime": {
+        "value": 3.6e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 4e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level",
+        "alternatives": [
+          {
+            "value": 3e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "value listed under \"Others\" in Kroell et al. 1985, Table I (electron-beam phase-shift measurement)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 105409.008,
+      "label": "2p3(4S°)5d 3D°2",
+      "J": "2",
+      "lifetime": {
+        "value": 3.6e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 4e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level",
+        "alternatives": [
+          {
+            "value": 3e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "value listed under \"Others\" in Kroell et al. 1985, Table I (electron-beam phase-shift measurement)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 105409.008,
+      "label": "2p3(4S°)5d 3D°3",
+      "J": "3",
+      "lifetime": {
+        "value": 3.6e-08,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kroell, Lundberg, Persson, Svanberg, Phys. Rev. Lett. 55, 284 (1985), Table I (two-photon 226 nm + one-photon stepwise excitation after NO2 photodissociation, Stern-Vollmer extrapolation)",
+        "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf",
+        "unc": 4e-09,
+        "note": "measured for the unresolved term, assigned here to each fine-structure level",
+        "alternatives": [
+          {
+            "value": 3e-08,
+            "unit": "s",
+            "method": "compilation",
+            "source": "value listed under \"Others\" in Kroell et al. 1985, Table I (electron-beam phase-shift measurement)",
+            "url": "https://lup.lub.lu.se/search/files/5848564/2370327.pdf"
+          }
+        ]
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 15867.862,
+      "lower_J": "2",
+      "upper_J": "2",
+      "label": "2p4 3P2 - 2p4 1D2 (630.20 nm vac / 630.03 nm air)",
+      "type": "M1",
+      "A_s": {
+        "value": 0.00563,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class B+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      },
+      "use": "red auroral / airglow line [O I] 630.0 nm"
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 15867.862,
+      "lower_J": "2",
+      "upper_J": "2",
+      "label": "2p4 3P2 - 2p4 1D2 (630.20 nm vac), E2 part",
+      "type": "E2",
+      "A_s": {
+        "value": 2.11e-05,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class C+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      }
+    },
+    {
+      "lower_cm": 158.265,
+      "upper_cm": 15867.862,
+      "lower_J": "1",
+      "upper_J": "2",
+      "label": "2p4 3P1 - 2p4 1D2 (636.55 nm vac / 636.38 nm air)",
+      "type": "M1",
+      "A_s": {
+        "value": 0.00182,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class B+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      },
+      "use": "red auroral / airglow line [O I] 636.4 nm"
+    },
+    {
+      "lower_cm": 158.265,
+      "upper_cm": 15867.862,
+      "lower_J": "1",
+      "upper_J": "2",
+      "label": "2p4 3P1 - 2p4 1D2 (636.55 nm vac), E2 part",
+      "type": "E2",
+      "A_s": {
+        "value": 3.39e-06,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class C+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      }
+    },
+    {
+      "lower_cm": 226.977,
+      "upper_cm": 15867.862,
+      "lower_J": "0",
+      "upper_J": "2",
+      "label": "2p4 3P0 - 2p4 1D2 (639.35 nm vac)",
+      "type": "E2",
+      "A_s": {
+        "value": 8.6e-07,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class B+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      },
+      "use": "[O I] 639.2 nm (very weak)"
+    },
+    {
+      "lower_cm": 15867.862,
+      "upper_cm": 33792.583,
+      "lower_J": "2",
+      "upper_J": "0",
+      "label": "2p4 1D2 - 2p4 1S0 (557.89 nm vac / 557.73 nm air)",
+      "type": "E2",
+      "A_s": {
+        "value": 1.26,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class B+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      },
+      "use": "green auroral / airglow line [O I] 557.7 nm"
+    },
+    {
+      "lower_cm": 158.265,
+      "upper_cm": 33792.583,
+      "lower_J": "1",
+      "upper_J": "0",
+      "label": "2p4 3P1 - 2p4 1S0 (297.32 nm vac)",
+      "type": "M1",
+      "A_s": {
+        "value": 0.0754,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class B+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      },
+      "use": "ultraviolet auroral line [O I] 297.2 nm"
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 33792.583,
+      "lower_J": "2",
+      "upper_J": "0",
+      "label": "2p4 3P2 - 2p4 1S0 (295.92 nm vac)",
+      "type": "E2",
+      "A_s": {
+        "value": 0.000242,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class C+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 158.265,
+      "lower_J": "2",
+      "upper_J": "1",
+      "label": "2p4 3P2 - 2p4 3P1 (63.185 um)",
+      "type": "M1",
+      "A_s": {
+        "value": 8.91e-05,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class A); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      },
+      "use": "far-infrared fine-structure cooling line [O I] 63 um (astrophysics; tunable-FIR spectroscopy of 16O, 17O, 18O: De Natale et al., PRA 48, 3757 (1993); Zink et al., ApJ 371, L85 (1991))"
+    },
+    {
+      "lower_cm": 158.265,
+      "upper_cm": 226.977,
+      "lower_J": "1",
+      "upper_J": "0",
+      "label": "2p4 3P1 - 2p4 3P0 (145.535 um)",
+      "type": "M1",
+      "A_s": {
+        "value": 1.75e-05,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class A); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      },
+      "use": "far-infrared fine-structure line [O I] 145 um"
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 226.977,
+      "lower_J": "2",
+      "upper_J": "0",
+      "label": "2p4 3P2 - 2p4 3P0 (44.06 um)",
+      "type": "E2",
+      "A_s": {
+        "value": 1.34e-10,
+        "method": "compilation",
+        "source": "NIST ASD lines table with forbidden lines enabled (accuracy class C+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=O+I&limits_type=0&unit=1&de=0&format=3&line_out=1&en_unit=0&output=0&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&show_av=3&max_upp_enrg=40000&A_out=0&allowed_out=1&forbid_out=1&conf_out=on&term_out=on&enrg_out=on&J_out=on&submit=Retrieve+Data"
+      }
+    },
+    {
+      "lower_cm": 73768.2,
+      "upper_cm": 86631.454,
+      "lower_J": "2",
+      "upper_J": "3",
+      "label": "2p3(4S°)3s 5S°2 - 2p3(4S°)3p 5P3",
+      "type": "E1",
+      "use": "777.19 nm (air): O I 777 nm triplet 3s 5S°2 - 3p 5P; quasi-closed quintet transition from the metastable 3s 5S°2 level; Doppler-free saturated-absorption hyperfine / isotope-shift spectroscopy of 16O, 17O, 18O (Marin et al. 1993; Jennerich & Tate 2000); standard plasma / stellar-abundance diagnostic line",
+      "note": "no value added beyond NIST (A = 3.69e7 s^-1, accuracy A, in the cached NIST table); 18O-16O and 18O-17O isotope shifts were measured by Jennerich & Tate (2000) but could not be read (paywalled)"
+    },
+    {
+      "lower_cm": 73768.2,
+      "upper_cm": 86627.778,
+      "lower_J": "2",
+      "upper_J": "2",
+      "label": "2p3(4S°)3s 5S°2 - 2p3(4S°)3p 5P2",
+      "type": "E1",
+      "use": "777.42 nm (air): O I 777 nm triplet 3s 5S°2 - 3p 5P; quasi-closed quintet transition from the metastable 3s 5S°2 level; Doppler-free saturated-absorption hyperfine / isotope-shift spectroscopy of 16O, 17O, 18O (Marin et al. 1993; Jennerich & Tate 2000); standard plasma / stellar-abundance diagnostic line",
+      "note": "no value added beyond NIST (A = 3.69e7 s^-1, accuracy A, in the cached NIST table); 18O-16O and 18O-17O isotope shifts were measured by Jennerich & Tate (2000) but could not be read (paywalled)"
+    },
+    {
+      "lower_cm": 73768.2,
+      "upper_cm": 86625.757,
+      "lower_J": "2",
+      "upper_J": "1",
+      "label": "2p3(4S°)3s 5S°2 - 2p3(4S°)3p 5P1",
+      "type": "E1",
+      "use": "777.54 nm (air): O I 777 nm triplet 3s 5S°2 - 3p 5P; quasi-closed quintet transition from the metastable 3s 5S°2 level; Doppler-free saturated-absorption hyperfine / isotope-shift spectroscopy of 16O, 17O, 18O (Marin et al. 1993; Jennerich & Tate 2000); standard plasma / stellar-abundance diagnostic line",
+      "note": "no value added beyond NIST (A = 3.69e7 s^-1, accuracy A, in the cached NIST table); 18O-16O and 18O-17O isotope shifts were measured by Jennerich & Tate (2000) but could not be read (paywalled)"
+    },
+    {
+      "lower_cm": 76794.978,
+      "upper_cm": 88630.587,
+      "lower_J": "1",
+      "upper_J": "1",
+      "label": "2p3(4S°)3s 3S°1 - 2p3(4S°)3p 3P1",
+      "type": "E1",
+      "use": "844.6 nm fluorescence line of the O TALIF scheme: two-photon excitation 2p4 3P_J -> 3p 3P_J at 2x225.65 nm (strongest, from 3P2), calibrated against Xe 2x224.31 nm (Niemi et al. 2001, 2005); optical branching ratio 1",
+      "note": "TALIF constants quoted in arXiv:2004.01558 Table 1: excitation 225.65 nm, natural lifetime 34.7 ns, branching ratio 1"
+    },
+    {
+      "lower_cm": 76794.978,
+      "upper_cm": 88631.146,
+      "lower_J": "1",
+      "upper_J": "2",
+      "label": "2p3(4S°)3s 3S°1 - 2p3(4S°)3p 3P2",
+      "type": "E1",
+      "use": "844.6 nm fluorescence line of the O TALIF scheme: two-photon excitation 2p4 3P_J -> 3p 3P_J at 2x225.65 nm (strongest, from 3P2), calibrated against Xe 2x224.31 nm (Niemi et al. 2001, 2005); optical branching ratio 1",
+      "note": "TALIF constants quoted in arXiv:2004.01558 Table 1: excitation 225.65 nm, natural lifetime 34.7 ns, branching ratio 1"
+    },
+    {
+      "lower_cm": 76794.978,
+      "upper_cm": 88631.303,
+      "lower_J": "1",
+      "upper_J": "0",
+      "label": "2p3(4S°)3s 3S°1 - 2p3(4S°)3p 3P0",
+      "type": "E1",
+      "use": "844.6 nm fluorescence line of the O TALIF scheme: two-photon excitation 2p4 3P_J -> 3p 3P_J at 2x225.65 nm (strongest, from 3P2), calibrated against Xe 2x224.31 nm (Niemi et al. 2001, 2005); optical branching ratio 1",
+      "note": "TALIF constants quoted in arXiv:2004.01558 Table 1: excitation 225.65 nm, natural lifetime 34.7 ns, branching ratio 1"
+    }
+  ],
+  "conflicts": [
+    "3p 3P lifetime: 36(4) ns (Kroell et al. 1985) versus 34.7 ns (Niemi et al., TALIF standard value, second-hand) versus 39.1(1.4) and 40(3) ns (older measurements listed by Kroell); all consistent within about 2 sigma.",
+    "4d 3D° lifetime: 23(3) ns (Kroell et al. 1985, laser) versus 80(10) ns (older electron-beam measurement).",
+    "17O 3s 5S°2 hyperfine A: -97.93(10) MHz (Jennerich & Tate 2000) versus -98.59(43) MHz (Marin et al. 1993).",
+    "Natural abundance: NIST Compositions 99.757(16) / 0.038(1) / 0.205(14) %; IAEA LiveChart 99.757(11) / 0.03835(96) / 0.2045(102) %."
+  ],
+  "not_found": [
+    "Isotope shifts of the 777 nm triplet (18O-16O, 18O-17O: Jennerich & Tate, PRA 62, 042506, 2000; Marin et al., Z. Phys. D 25, 191, 1993) and of the 844.6 nm / 3s-3p triplet lines: abstracts confirm the measurements exist, numbers are behind paywalls and no open copy was found.",
+    "Far-infrared ground-state fine-structure frequencies and 17O hyperfine / 18O isotope shifts (Zink et al., ApJ 371, L85, 1991; De Natale et al., PRA 48, 3757, 1993): abstract opened, no numbers in it.",
+    "Niemi, Schulz-von der Gathen, Doebele (J. Phys. D 34, 2330, 2001; PSST 14, 375, 2005) and Doebele et al. (PSST 14, S31, 2005): publisher pages blocked by a bot wall; the natural lifetime 34.7 ns is second-hand (arXiv:2004.01558) and its uncertainty and the O2/He/Ar quenching coefficients of the originals could not be read.",
+    "Direct lifetime measurements of the metastable 1D2 and 1S0 levels and measured forbidden-line A values / the measured 630.0/636.4 nm intensity ratio (Sharpee & Slanger, J. Phys. Chem. A 110, 6707, 2006: page returned 403): not opened; entries are derived from NIST (calculated) A values.",
+    "Lifetime of the metastable 3s 5S°2 level (about 180 us follows from the NIST 135.6/135.9 nm A values already in the cached NIST table) and of 3s 3S°1, 3p 5P, 4s 3S°, 3d 3D°, 4p 5P, (2D°)3s 3D°/1D°, 7s, 8s, 6d-8d: no measurement could be opened.",
+    "Measured A values for the 777 nm and 844.6 nm lines newer than NIST: none located.",
+    "Measured g factors of 1D2 and excited levels; hyperfine constants of 17O other than 2p4 3P2,1, 3s 5S°2, 3p 5P: none located (Marin et al. 1993 also measured triplet 3s-3p lines; not readable).",
+    "Precise absolute optical frequencies (frequency-comb or wavemeter-referenced) of O I lines: none located.",
+    "Laser cooling of O: no proposal or experiment located."
+  ],
+  "notes": "Level energies are NIST ASD values. Hyperfine constants refer to 17O (I = 5/2); 16O and 18O have I = 0. Kroell et al. label their states only by term (e.g. \"2p3 5s 3S\", \"2p3 3p 3P\"); they are triplet states built on the 4S° core. NIST lists the three 5d 3D° levels at one energy (105409.008 cm^-1): the J values distinguish them. TALIF: O(2p4 3P2) + 2 x 225.65 nm -> 3p 3P, fluorescence 844.6 nm to 3s 3S°1; quenching measured by ps-TALIF in arXiv:2004.01558: k(H2O) = 1.1e-9 cm^3 s^-1 and k(He) = 0.032e-10 cm^3 s^-1 for O(3p 3P), effective lifetime 9.6 ns in atmospheric-pressure He. Forbidden-line A values are NIST critically evaluated calculations (not in the cached data/nist line file); M1 and E2 entries at the same wavelength are the two multipole parts of one line. Sources were located through arXiv/DataCite, CORE, HAL, Crossref and publisher abstract pages; the web-search quota of the session was exhausted, so coverage is limited to what those indexes exposed."
+}
