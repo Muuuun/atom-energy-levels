@@ -62,3 +62,23 @@ value. `type` is `"E1"`, `"M1"`, `"E2"`, `"intercombination"` (spin-forbidden E1
 `A_s` is the Einstein A coefficient of that one decay channel in s^-1 (not the total decay rate of the
 upper level; that goes in the level `lifetime`). Isotope shifts are `nu(first) - nu(second)`.
 The file must be valid JSON (check it with `python3 -m json.tool`).
+
+## Conventions added after the first round (follow these too)
+
+- **Identify fine-structure components.** Give every level a `"J"` (string, e.g. `"3/2"`) and every transition
+  `"lower_J"` / `"upper_J"`: NIST sometimes lists two components at the same energy and the energy alone cannot tell them apart.
+- **Matrix elements** go in `"rme_J_ea0": {"value", "unc", "method", "source", "url"}` on the transition: reduced dipole
+  matrix element |<J||er||J'>| in e·a0, in the convention A = ω³|d|²/(3πε₀ħc³(2J'+1)) with J' the upper level. If a source
+  uses another convention, convert and say so in a `"note"`.
+- **Frequencies per isotope**: `"frequency_THz"` carries `"isotope": "<A>"`; further isotopes go in `"frequency_THz_<A>"`
+  (same structure). State whether a frequency is a hyperfine centre of gravity; if you could not verify that, write
+  "not verified" in the `source` string and the pipeline will ignore it.
+- **Bounds and derived numbers**: a value that is an upper/lower limit, or that you computed rather than read, carries a
+  `"note"` saying so (use the words "bound" or "derived").
+- **Conflicts** between sources: keep the best value as the entry, put the others under `"alternatives"`, and summarise in
+  a top-level `"conflicts"` list.
+- **Second-hand values** (read in a review or a citing paper, original not opened): `method: "compilation"`, name the
+  original in `source`, and give the URL of the page you actually read.
+- **Privacy**: never put the user's e-mail address or any personal identifier into request headers or query parameters.
+- What the site currently draws for an element is in `data/<symbol lowercase>/levels.csv` and `transitions.csv`
+  (NIST-only pages) — cover those levels first, then add the lines NIST lacks that laser-cooling / spectroscopy work uses.

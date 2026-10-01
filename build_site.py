@@ -115,7 +115,9 @@ def atom_page(key, pages):
         lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): the {len(bound)} strongest classified "
                 f"lines below 2 µm from the NIST Atomic Spectra Database and the {len(L)} levels they connect, each line with its vacuum "
                 f"wavelength, frequency and, for {n_d} of them, the reduced dipole matrix element derived from the NIST transition rate. "
-                f"Lifetimes, hyperfine constants and isotope shifts from the literature have not been compiled for this element yet.")
+                + ("Measured lifetimes, transition rates, hyperfine constants and isotope shifts from the literature are included, "
+                   "each with its citation." if meta.get("has_lit") else
+                   "Lifetimes, hyperfine constants and isotope shifts from the literature have not been compiled for this element yet."))
     else:
         lead = (f"Energy levels and transitions of neutral {iso} ({meta['symbol']} I, nuclear spin <i>I</i> = {meta['I']}): {len(L)} levels and "
                 f"{len(bound)} lines below 2 µm, each with its vacuum wavelength, frequency and, for {n_d} of them, the reduced dipole matrix "
@@ -270,7 +272,7 @@ def landing(pages):
             cells.append(f'<div class="el none {e["category"]}" {style} title="{e["name"]}: no classified lines in NIST ASD">{inner}</div>')
             continue
         main = next((p for p in ps if p["A"] == PRIMARY.get(e["symbol"])), ps[0])
-        curated = bool(main["A"])
+        curated = bool(main["A"]) or main.get("has_lit")
         info = f'{main["lines"]} lines' + (" · measured data" if curated else "")
         cells.append(f'<a class="el {e["category"]}{" curated" if curated else ""}" {style} href="{main["slug"]}/" '
                      f'data-name="{e["name"].lower()} {e["symbol"].lower()}" title="{e["name"]}: {main["levels"]} levels, {info}">'
@@ -354,7 +356,8 @@ def main():
         with open(p) as f:
             atom = json.load(f)
         pages.append(dict(key=key, slug=cfg["slug"], element=cfg["element"], symbol=cfg["symbol"], A=cfg["A"], Z=cfg["Z"],
-                          levels=len(atom["levels"]), lines=sum(1 for t in atom["transitions"] if t["kind"] != "rydberg")))
+                          levels=len(atom["levels"]), lines=sum(1 for t in atom["transitions"] if t["kind"] != "rydberg"),
+                          has_lit=atom["meta"].get("has_lit")))
     pages.sort(key=lambda p: (p["Z"], p["A"] or 0))
     for p in pages:
         atom_page(p["key"], pages)

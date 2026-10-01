@@ -429,6 +429,17 @@ def fmt_d(t):
 def build_nist(key, cfg):
     sym = cfg["symbol"]
     lit = Literature(sym, cfg["A"])
+    hfs_iso = None
+    if cfg.get("auto") and lit.raw.get("isotopes"):
+        # element page with a literature file: frequencies of the most abundant isotope,
+        # hyperfine constants of the most abundant isotope that has a nuclear spin
+        iso = lit.raw["isotopes"]
+        ab = lambda k: iso[k].get("abundance_percent") or 0 if isinstance(iso[k], dict) else 0
+        lit.iso = max(iso, key=ab)
+        with_hfs = {k for l in lit.raw.get("levels", []) for k in (l.get("hyperfine") or {})}
+        if with_hfs:
+            hfs_iso = max(with_hfs, key=lambda k: ab(k) if k in iso else -1)
+            cfg = dict(cfg, I=str((iso.get(hfs_iso) or {}).get("I", "0")) if isinstance(iso.get(hfs_iso), dict) else "0")
     nist, limit = al.nist_levels(sym)
     lines = al.nist_lines(sym, 1 if cfg.get("auto") else 200)
     E = np.array([l["E"] for l in nist])
@@ -500,7 +511,12 @@ def build_nist(key, cfg):
             L.update(tau_ns=sig(tau[0], 6), tau_unc=tau[1], tau_tier=tau[2], tau_src=tau[3])
         else:
             L.update(tau_ns=None, tau_tier="none")
-        h = lit.hyperfine(lv["E"], lv["J"])
+        if hfs_iso:
+            main_iso, lit.iso = lit.iso, hfs_iso
+            h = lit.hyperfine(lv["E"], lv["J"])
+            lit.iso = main_iso
+        else:
+            h = lit.hyperfine(lv["E"], lv["J"])
         if h:
             L["hfs"] = h
         g = lit.val(lit.level(lv["E"], lv["J"]).get("g_J"))
@@ -610,10 +626,10 @@ def build_nist(key, cfg):
         shifts = "   ".join(f"F={f}: {e:+.2f}" for f, e in hfs_shifts(I, L["J"], h["A"], h.get("B") or 0))
         rows.append([f"${L['name']}$", fmt_unc(h["A"], h.get("A_unc"), 3), fmt_unc(h["B"], h.get("B_unc"), 3) if h.get("B") else "–", shifts])
     if rows:
-        tables.append(dict(title=rf"$^{{{cfg['A']}}}${sym} hyperfine structure  ($I$ = {cfg['I']})",
+        tables.append(dict(title=rf"$^{{{cfg['A'] or hfs_iso}}}${sym} hyperfine structure  ($I$ = {cfg['I']})",
                            header=["Level", "A (MHz)", "B (MHz)", "Shift of each F level from the centre of gravity (MHz)"],
                            aligns="lrrl", rows=rows, note="Measured A, B constants; sources in the data file."))
-    if cfg.get("auto"):
+    if cfg.get("auto") and not any(t.get("use") for t in transitions):
         tables[0]["title"] = "Strongest transitions"
         tables[0]["rows"] = tables[0]["rows"][:18]
     rows = []
@@ -638,6 +654,7 @@ def build_nist(key, cfg):
                               f"{t['lam_obs']} vs {t['lam']}")
     meta = dict(key=key, slug=cfg["slug"], element=cfg["element"], symbol=sym, A=cfg["A"], Z=cfg["Z"], I=cfg["I"], kind="nist",
                 limit_cm=limit, scale="auto", spectrum=f"{sym} I", auto=bool(cfg.get("auto")),
+                has_lit=bool(lit.raw.get("levels") or lit.raw.get("transitions")), freq_isotope=lit.iso if cfg.get("auto") else None,
                 limit_text=(rf"{sym}$^+$ ionisation limit   {limit:.2f} cm$^{{-1}}$  =  {limit / al.EV_TO_CM:.5f} eV  ({1e7 / limit:.3f} nm)"
                             if limit else "ionisation limit not listed by NIST"),
                 guide_tau="Level caption:  NIST energy and measured lifetime (where one exists).",
