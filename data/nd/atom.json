@@ -6,17 +6,17 @@
   "symbol": "Nd",
   "A": null,
   "Z": 60,
-  "I": null,
+  "I": "7/2",
   "kind": "nist",
   "limit_cm": 44560.11,
   "scale": "auto",
   "spectrum": "Nd I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "142",
   "limit_text": "Nd$^+$ ionisation limit   44560.11 cm$^{-1}$  =  5.52475 eV  (224.416 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Thin file: the key Nd I measurements (lifetimes, branching fractions, ground-term hyperfine structure) are in paywalled journals that could not be opened in this session. Hyperfine A constants are for the even-parity metastable levels 7L5, 7L11, 7K4 (second-hand) and the ground level 5I4 of 143Nd (abstract of the original paper). Nuclear spins 7/2 for 143Nd and 145Nd from the IAEA/ENSDF ground-state table (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=143nd)."
  },
  "columns": [
   {
@@ -88,6 +88,14 @@
    "plain": "4f46s2 5I4",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": -195.649,
+    "A_unc": 0.009,
+    "B": 122.25,
+    "B_unc": 0.28,
+    "tier": "exp",
+    "src": "Spalding, Proc. Phys. Soc. (London) 81, 156 (1963), abstract"
+   },
    "col": 0
   },
   {
@@ -547,6 +555,25 @@
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{143}$Nd hyperfine structure  ($I$ = 7/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$^5I_{4}$",
+     "-195.649(9)",
+     "122.25(28)",
+     "F=1/2: +3483.89   F=3/2: +3174.98   F=5/2: +2663.25   F=7/2: +1953.37   F=9/2: +1051.90   F=11/2: -32.75   F=13/2: -1290.27   F=15/2: -2708.52"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
@@ -554,5 +581,10 @@
   "transition-rate provenance: nist: 9",
   "levels with a measured lifetime: 0"
  ],
- "sources": {}
+ "sources": {
+  "NIST Atomic Weights and Isotopic Compositions (Nd); nuclear spin from IAEA Nuclear Data Services ground-state table (ENSDF)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Nd",
+  "NIST ASD Nd I levels table (local copy data/nist/Nd_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Spalding, Proc. Phys. Soc. (London) 81, 156 (1963), abstract": "https://www.osti.gov/biblio/4694730",
+  "Childs, Phys. Rev. A 44, 760 (1991) (laser-rf double resonance), as tabulated in Persson, 'Hyperfine anomalies in Gd and Nd', arXiv:0904.0516v2 (published Atoms 6, 63 (2018)), Table 1": "https://arxiv.org/abs/0904.0516"
+ }
 }

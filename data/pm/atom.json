@@ -6,17 +6,17 @@
   "symbol": "Pm",
   "A": null,
   "Z": 61,
-  "I": null,
+  "I": "7/2",
   "kind": "nist",
   "limit_cm": 45020.8,
   "scale": "auto",
   "spectrum": "Pm I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "143",
   "limit_text": "Pm$^+$ ionisation limit   45020.80 cm$^{-1}$  =  5.58187 eV  (222.120 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "All hyperfine constants and isotope shifts are from one experiment (in-source resonance-ionisation spectroscopy, PI-LIST, Mainz), linewidth 100-250 MHz. Errors include the authors' extra 1 MHz (A) and 10 MHz (B). B of the 21348.22 and 22080.08 levels for 143-146Pm are dependent fit parameters. Isotope-shift keys follow the schema: nu(first) - nu(second), i.e. nu(147) - nu(A'). Upper-level J values (5/2 for 22080.08, 7/2 for 21348.22) were read from the paper's Fig. 3 and agree with NIST. Level energies of the ionisation schemes were read from an equation image in the article. Neither the 452 nm nor the 468 nm line is among the transitions the site currently draws (those are the strongest NIST lines 473-515 nm), for which no measured data beyond NIST exist."
  },
  "columns": [
   {
@@ -112,6 +112,14 @@
    "plain": "4f56s2 6H°5/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 620.3,
+    "A_unc": 1.4,
+    "B": -407,
+    "B_unc": 18,
+    "tier": "exp",
+    "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2"
+   },
    "col": 0
   },
   {
@@ -127,6 +135,14 @@
    "plain": "4f56s2 6H°7/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 447.1,
+    "A_unc": 9.3,
+    "B": 267.5,
+    "B_unc": 70.8,
+    "tier": "exp",
+    "src": "Budick, Marrus, Phys. Rev. 132, 723 (1963), abstract"
+   },
    "col": 1
   },
   {
@@ -281,6 +297,29 @@
   },
   {
    "id": 12,
+   "E": 21348.22,
+   "unc": null,
+   "J": 3.5,
+   "conf": "",
+   "term": "",
+   "parity": "even",
+   "g": 0.815,
+   "name": "(21348)_{7/2}",
+   "plain": "7/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 438.2,
+    "A_unc": 1.5,
+    "B": -48,
+    "B_unc": 13,
+    "tier": "exp",
+    "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2"
+   },
+   "col": 8
+  },
+  {
+   "id": 13,
    "E": 21371.05,
    "unc": null,
    "J": 3.5,
@@ -295,7 +334,7 @@
    "col": 8
   },
   {
-   "id": 13,
+   "id": 14,
    "E": 21625.45,
    "unc": null,
    "J": 4.5,
@@ -310,7 +349,7 @@
    "col": 9
   },
   {
-   "id": 14,
+   "id": 15,
    "E": 21920.49,
    "unc": null,
    "J": 4.5,
@@ -325,7 +364,32 @@
    "col": 9
   },
   {
-   "id": 15,
+   "id": 16,
+   "E": 22080.08,
+   "unc": null,
+   "J": 2.5,
+   "conf": "",
+   "term": "",
+   "parity": "even",
+   "g": 0.571,
+   "name": "(22080)_{5/2}",
+   "plain": "5/2",
+   "tau_ns": 19.0,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Sect. 2.4 / Fig. 4",
+   "hfs": {
+    "A": 500.0,
+    "A_unc": 1.4,
+    "B": -119,
+    "B_unc": 15,
+    "tier": "exp",
+    "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2"
+   },
+   "col": 7
+  },
+  {
+   "id": 17,
    "E": 22294.96,
    "unc": null,
    "J": 4.5,
@@ -340,7 +404,7 @@
    "col": 9
   },
   {
-   "id": 16,
+   "id": 18,
    "E": 22414.17,
    "unc": null,
    "J": 5.5,
@@ -355,7 +419,7 @@
    "col": 10
   },
   {
-   "id": 17,
+   "id": 19,
    "E": 23345.07,
    "unc": null,
    "J": 5.5,
@@ -370,7 +434,7 @@
    "col": 10
   },
   {
-   "id": 18,
+   "id": 20,
    "E": 23629.06,
    "unc": null,
    "J": 6.5,
@@ -385,7 +449,7 @@
    "col": 11
   },
   {
-   "id": 19,
+   "id": 21,
    "E": 23740.42,
    "unc": null,
    "J": 6.5,
@@ -400,7 +464,7 @@
    "col": 11
   },
   {
-   "id": 20,
+   "id": 22,
    "E": 26080.99,
    "unc": null,
    "J": 8.5,
@@ -415,7 +479,7 @@
    "col": 12
   },
   {
-   "id": 21,
+   "id": 23,
    "E": 26096.75,
    "unc": null,
    "J": 8.5,
@@ -430,7 +494,7 @@
    "col": 12
   },
   {
-   "id": 22,
+   "id": 24,
    "E": 28274.21,
    "unc": null,
    "J": 4.5,
@@ -448,11 +512,90 @@
  "transitions": [
   {
    "kind": "E1",
+   "freq": 661.94415,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 16,
+   "wn": 22080.08,
+   "lam": 452.8969,
+   "air": 452.7699,
+   "use": "first step of the Mainz three-step resonance-ionisation scheme A (452 nm, then 887 nm to 33352.2 cm^-1, then 849 nm to an autoionising state at 45135.8 cm^-1); line used for high-resolution hyperfine / isotope-shift spectroscopy of 143-147Pm",
+   "isotope_shifts": {
+    "147-146": {
+     "value": 226,
+     "unc": 12,
+     "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+    },
+    "147-145": {
+     "value": 344,
+     "unc": 10,
+     "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+    },
+    "147-144": {
+     "value": 594,
+     "unc": 10,
+     "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+    },
+    "147-143": {
+     "value": 737,
+     "unc": 11,
+     "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+    }
+   },
+   "gamma_MHz": 8.377,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 640.00353,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 12,
+   "wn": 21348.22,
+   "lam": 468.4231,
+   "air": 468.2921,
+   "use": "first step of the Mainz three-step resonance-ionisation scheme B (468 nm, then 882 nm to 32683.7 cm^-1, then 804 nm to an autoionising state at 45128.4 cm^-1); line used for high-resolution hyperfine / isotope-shift spectroscopy of 143-147Pm",
+   "isotope_shifts": {
+    "147-146": {
+     "value": -164,
+     "unc": 16,
+     "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+    },
+    "147-145": {
+     "value": -216,
+     "unc": 11,
+     "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+    },
+    "147-144": {
+     "value": -384,
+     "unc": 13,
+     "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+    },
+    "147-143": {
+     "value": -495,
+     "unc": 14,
+     "src": "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 633.06184,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 14,
+   "upper": 15,
    "wn": 21116.67,
    "lam": 473.5595,
    "air": 473.4271,
@@ -465,7 +608,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 21,
+   "upper": 23,
    "wn": 21006.96,
    "lam": 476.0327,
    "air": 475.8996,
@@ -478,7 +621,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 20,
+   "upper": 22,
    "wn": 20991.2,
    "lam": 476.3901,
    "air": 476.2569,
@@ -491,7 +634,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 19,
+   "upper": 21,
    "wn": 20943.32,
    "lam": 477.4792,
    "air": 477.3457,
@@ -504,7 +647,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 18,
+   "upper": 20,
    "wn": 20831.96,
    "lam": 480.0316,
    "air": 479.8975,
@@ -517,7 +660,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 13,
+   "upper": 14,
    "wn": 20821.63,
    "lam": 480.2698,
    "air": 480.1356,
@@ -530,7 +673,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 6,
-   "upper": 22,
+   "upper": 24,
    "wn": 20776.22,
    "lam": 481.3195,
    "air": 481.185,
@@ -543,7 +686,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 16,
+   "upper": 18,
    "wn": 20665.39,
    "lam": 483.9009,
    "air": 483.7657,
@@ -556,7 +699,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 12,
+   "upper": 13,
    "wn": 20567.23,
    "lam": 486.2103,
    "air": 486.0746,
@@ -634,7 +777,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 15,
+   "upper": 17,
    "wn": 19497.86,
    "lam": 512.8768,
    "air": 512.7339,
@@ -647,7 +790,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 17,
+   "upper": 19,
    "wn": 19426.04,
    "lam": 514.773,
    "air": 514.6296,
@@ -658,7 +801,7 @@
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -671,14 +814,143 @@
     "Use"
    ],
    "aligns": "lrrrrrrrl",
-   "rows": [],
+   "rows": [
+    [
+     "$^6H^{o}_{5/2}$ – $(22080)_{5/2}$",
+     "452.8969",
+     "452.7699",
+     "661.9442",
+     "–",
+     "–",
+     "8.377",
+     "–",
+     "first step of the Mainz three-step resonance-ionisation s…"
+    ],
+    [
+     "$^6H^{o}_{5/2}$ – $(21348)_{7/2}$",
+     "468.4231",
+     "468.2921",
+     "640.0035",
+     "–",
+     "–",
+     "–",
+     "–",
+     "first step of the Mainz three-step resonance-ionisation s…"
+    ]
+   ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{147}$Pm hyperfine structure  ($I$ = 7/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$^6H^{o}_{5/2}$",
+     "620.3(14)",
+     "-407(18)",
+     "F=1: -7196.41   F=2: -5839.52   F=3: -3847.80   F=4: -1273.58   F=5: +1813.39   F=6: +5325.88"
+    ],
+    [
+     "$^6H^{o}_{7/2}$",
+     "447(9)",
+     "268(71)",
+     "F=0: -6898.52   F=1: -6478.72   F=2: -5633.65   F=3: -4352.40   F=4: -2618.59   F=5: -410.39   F=6: +2299.51   F=7: +5543.85"
+    ],
+    [
+     "$(21348)_{7/2}$",
+     "438.2(15)",
+     "-48(13)",
+     "F=0: -6927.36   F=1: -6484.27   F=2: -5599.05   F=3: -4273.67   F=4: -2511.08   F=5: -315.18   F=6: +2309.12   F=7: +5355.95"
+    ],
+    [
+     "$(22080)_{5/2}$",
+     "500.0(14)",
+     "-119(15)",
+     "F=1: -5688.75   F=2: -4654.75   F=3: -3116.50   F=4: -1089.30   F=5: +1406.45   F=6: +4345.25"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$^6H^{o}_{5/2}$ – $(22080)_{5/2}$",
+     "452.897",
+     "147-146",
+     "226(12)"
+    ],
+    [
+     "$^6H^{o}_{5/2}$ – $(22080)_{5/2}$",
+     "452.897",
+     "147-145",
+     "344(10)"
+    ],
+    [
+     "$^6H^{o}_{5/2}$ – $(22080)_{5/2}$",
+     "452.897",
+     "147-144",
+     "594(10)"
+    ],
+    [
+     "$^6H^{o}_{5/2}$ – $(22080)_{5/2}$",
+     "452.897",
+     "147-143",
+     "737(11)"
+    ],
+    [
+     "$^6H^{o}_{5/2}$ – $(21348)_{7/2}$",
+     "468.423",
+     "147-146",
+     "-164(16)"
+    ],
+    [
+     "$^6H^{o}_{5/2}$ – $(21348)_{7/2}$",
+     "468.423",
+     "147-145",
+     "-216(11)"
+    ],
+    [
+     "$^6H^{o}_{5/2}$ – $(21348)_{7/2}$",
+     "468.423",
+     "147-144",
+     "-384(13)"
+    ],
+    [
+     "$^6H^{o}_{5/2}$ – $(21348)_{7/2}$",
+     "468.423",
+     "147-143",
+     "-495(14)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 23   lines < 2000 nm: 16   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 16",
-  "levels with a measured lifetime: 0"
+  "levels: 25   lines < 2000 nm: 18   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 18",
+  "levels with a measured lifetime: 1"
  ],
- "sources": {}
+ "sources": {
+  "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Tables 1 and 3": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/",
+  "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 3": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/",
+  "NIST ASD Pm I levels table (local copy data/nist/Pm_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Table 2": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/",
+  "Budick, Marrus, Phys. Rev. 132, 723 (1963), abstract (atomic-beam magnetic resonance)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.132.723",
+  "Budick, Marrus, Phys. Rev. 132, 723 (1963), abstract": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.132.723",
+  "Studer, Ulrich, Braccini, Carzaniga, Dressler, Eberhardt, Heinke, Koester, Raeder, Wendt, 'High-resolution laser resonance ionization spectroscopy of 143-147Pm', Eur. Phys. J. A 56, 69 (2020), Sect. 2.4 / Fig. 4": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7357814/"
+ }
 }
