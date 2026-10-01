@@ -33,7 +33,7 @@ Totals over the 12 curated elements (one isotope each):
 - transition rates / matrix elements: nist 580 (70%), exp 79 (9%), theory 151 (18%), model 0 (0%), none 24 (3%)
 - lifetimes of excited levels: exp 169 (46%), theory 90 (25%), model 25 (7%), none 82 (22%)
 
-NIST-only element pages (78 elements, no literature compiled yet): 3662 lines drawn, 3039 with a NIST transition rate, 488 wavelength only; no lifetimes.
+NIST-only element pages (78 elements, no literature compiled yet): 3663 lines drawn, 2912 with a NIST transition rate, 489 wavelength only; no lifetimes.
 
 nist = NIST ASD compilation; exp = measurement from data/literature; theory = high-accuracy calculation quoted from the
 literature; model = ARC model potential; none = no value (wavelength only / no lifetime).
