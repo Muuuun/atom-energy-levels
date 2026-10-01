@@ -1,0 +1,821 @@
+{
+ "element": "He",
+ "isotopes": {
+  "3": {
+   "I": "1/2",
+   "abundance_percent": 0.000134,
+   "abundance_unc": 3e-06,
+   "relative_atomic_mass_u": "3.0160293201(25)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (He); nuclear spin from van der Werf et al., arXiv:2306.02333 ('I = 1/2 and J = 1 for metastable 3He')",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=He&ascii=ascii2&isotype=some",
+   "method": "compilation"
+  },
+  "4": {
+   "I": "0",
+   "abundance_percent": 99.999866,
+   "abundance_unc": 3e-06,
+   "relative_atomic_mass_u": "4.00260325413(6)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (He); nuclear spin from Vassen et al., Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361] (only 3He has hyperfine structure)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=He&ascii=ascii2&isotype=some",
+   "method": "compilation"
+  }
+ },
+ "ionization_energy": {
+  "ground_state_limit": {
+   "value": 198310.66637,
+   "unc": 0.0002,
+   "unit": "cm^-1",
+   "method": "compilation",
+   "source": "NIST Atomic Spectra Database, levels of He I: limit He II (1s 2S1/2) (cached data/nist/He_I_levels.tsv)",
+   "url": "https://physics.nist.gov/asd"
+  },
+  "2_3S1": {
+   "value": 1152842742.7082,
+   "unc": 0.006,
+   "method": "experiment",
+   "source": "Clausen, Gamlin, Agner, Schmutz, Merkt, 'Metrology in a two-electron atom: The ionization energy of metastable triplet helium (2 3S1)', arXiv:2501.02983 (2025)",
+   "url": "https://arxiv.org/abs/2501.02983",
+   "unit": "MHz",
+   "value_str": "1 152 842 742.7082(55)stat(25)sys",
+   "note": "Ionization frequency E_I(2 3S1)/h of 4He from Rydberg-series (np) extrapolation; 'unc' is the quadrature sum (derived) of the printed 0.0055 (stat) and 0.0025 (sys) MHz. Lies 9 sigma above the best theory value 1 152 842 742.231(52) MHz (Patkos et al.) quoted in the same paper.",
+   "alternatives": [
+    {
+     "value": 1152842742.64,
+     "unc": 0.032,
+     "method": "experiment",
+     "source": "Clausen et al., Phys. Rev. Lett. 127, 093001 (2021) (abstract)",
+     "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.093001",
+     "unit": "MHz",
+     "note": "E_I(2 1S0) + Rengelink 2 3S1-2 1S0 interval"
+    },
+    {
+     "value": 1152842742.231,
+     "unc": 0.052,
+     "method": "theory",
+     "source": "Patkos, Yerokhin, Pachucki, Phys. Rev. A 103, 042809 (2021) [as quoted in Clausen, Gamlin, Agner, Schmutz, Merkt, 'Metrology in a two-electron atom: The ionization energy of metastable triplet helium (2 3S1)', arXiv:2501.02983 (2025)]",
+     "url": "https://arxiv.org/abs/2501.02983",
+     "unit": "MHz"
+    }
+   ]
+  },
+  "2_1S0": {
+   "value": 960332040.491,
+   "unc": 0.032,
+   "method": "experiment",
+   "source": "Clausen et al., Phys. Rev. Lett. 127, 093001 (2021) (abstract)",
+   "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.093001",
+   "unit": "MHz"
+  },
+  "2_3P_centroid": {
+   "value": 876106247.025,
+   "unc": 0.039,
+   "method": "experiment",
+   "source": "Clausen et al., Phys. Rev. Lett. 127, 093001 (2021) (abstract)",
+   "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.093001",
+   "unit": "MHz",
+   "note": "derived by the authors from E_I(2 1S0), the Rengelink 2 3S1-2 1S0 interval and the 2 3S-2 3P centroid of Zheng 2017 / Cancio Pastor 2004"
+  },
+  "2_1P1": {
+   "value": 814709148.6,
+   "unc": 0.5,
+   "method": "experiment",
+   "source": "Notermans & Vassen, Phys. Rev. Lett. 112, 253002 (2014) [arXiv:1404.1759]",
+   "url": "https://arxiv.org/abs/1404.1759",
+   "unit": "MHz"
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 159855.971776,
+   "label": "1s2s 3S1 (2 3S1, metastable)",
+   "J": "1",
+   "lifetime": {
+    "value": 7870,
+    "unc": 510,
+    "method": "experiment",
+    "source": "Hodgman, Dall, Byron, Baldwin, Buckman, Truscott, Phys. Rev. Lett. 103, 053002 (2009)",
+    "url": "https://openresearch-repository.anu.edu.au/bitstreams/9ee7875a-0bb4-45cf-af79-2abc9757483a/download",
+    "unit": "s",
+    "note": "M1 decay to 1 1S0 at 62.6 nm; with the theoretical 2 3P1 decay time (5.63 ms) instead of the measured one the same data give 7850(370) s. QED theory 7860 s (Lach & Pachucki, quoted in the paper)."
+   },
+   "g_J_ratio_to_H": {
+    "value": 0.9999767,
+    "unc": 8e-07,
+    "method": "experiment",
+    "source": "Drake, Hughes, Lurio, White, Phys. Rev. 112, 1627 (1958) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.112.1627",
+    "note": "printed as g_J(He, 3S1)/g_J(H, 2S1/2) = 1 - (23.3 +- 0.8)e-6 (atomic-beam magnetic resonance). An absolute g_J was not derived here because no g_J(H) value was opened."
+   },
+   "hyperfine": {
+    "3": {
+     "A_MHz": -4493.134118,
+     "A_unc": 1.1e-05,
+     "method": "experiment",
+     "source": "Rosner & Pipkin, Phys. Rev. A 1, 571 (1970) (abstract)",
+     "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.1.571",
+     "hyperfine_splitting_MHz": 6739.701177,
+     "hyperfine_splitting_unc": 1.6e-05,
+     "note": "A is derived: A = -(2/3) x splitting for J=1, I=1/2 (F=3/2 to F=1/2 interval = 3A/2). Measured zero-field splitting 6 739 701 177(16) Hz; sign negative because the structure is inverted (Weinreich & Hughes, Phys. Rev. 95, 1451 (1954) abstract: '(inverted) hfs splitting'), i.e. F=3/2 lies lowest. B = 0 (I = 1/2).",
+     "alternatives": [
+      {
+       "hyperfine_splitting_MHz": 6739.7015,
+       "unc": 0.003,
+       "method": "experiment",
+       "note": "from optical 2 3S-2 3P component differences; second value 6 739 701.3(3.1) kHz",
+       "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+       "url": "https://arxiv.org/abs/1201.1362"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 166277.437635,
+   "label": "1s2s 1S0 (2 1S0, metastable)",
+   "J": "0",
+   "lifetime": {
+    "value": 0.0197,
+    "unc": 0.001,
+    "method": "experiment",
+    "source": "Van Dyck, Johnson, Shugart, Phys. Rev. A 4, 1327 (1971) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.4.1327",
+    "unit": "s",
+    "note": "two-photon decay to 1 1S0; time-of-flight on an atomic beam, same value for 3He and 4He; theory 19.5 ms and an older measurement 38(8) ms (Pearl) are quoted in the abstract. Natural linewidth of 2 3S1-2 1S0 is 8 Hz (van Rooij 2011)."
+   }
+  },
+  {
+   "nist_energy_cm": 169086.76391031,
+   "label": "1s2p 3P2 (2 3P2)",
+   "J": "2",
+   "lifetime": {
+    "value": 9.789e-08,
+    "method": "compilation",
+    "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
+    "url": "https://arxiv.org/abs/1110.1361",
+    "unit": "s",
+    "note": "upper-state lifetime of the 1083 nm cooling line as tabulated in the review (origin not stated there; equals 1/A of NIST ASD). Kato et al. (arXiv:1807.07923) quote 'the 98-ns 2 3P lifetime'. No modern direct measurement located."
+   }
+  },
+  {
+   "nist_energy_cm": 169086.84033581,
+   "label": "1s2p 3P1 (2 3P1)",
+   "J": "1",
+   "lifetime": {
+    "value": 9.789e-08,
+    "method": "compilation",
+    "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
+    "url": "https://arxiv.org/abs/1110.1361",
+    "unit": "s",
+    "note": "tabulated for the 2 3P term (see 2 3P2). The XUV decay to 1 1S0 has a partial lifetime of 5.66(25) ms (Dall 2008), a 1.7e-5 branch."
+   }
+  },
+  {
+   "nist_energy_cm": 169087.82825101,
+   "label": "1s2p 3P0 (2 3P0)",
+   "J": "0",
+   "lifetime": {
+    "value": 9.789e-08,
+    "method": "compilation",
+    "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
+    "url": "https://arxiv.org/abs/1110.1361",
+    "unit": "s",
+    "note": "tabulated for the 2 3P term (see 2 3P2)"
+   }
+  },
+  {
+   "nist_energy_cm": 171134.894441,
+   "label": "1s2p 1P1 (2 1P1)",
+   "J": "1",
+   "lifetime": {
+    "value": 5.51e-10,
+    "unc": 4e-12,
+    "method": "experiment",
+    "source": "Notermans & Vassen, Phys. Rev. Lett. 112, 253002 (2014) [arXiv:1404.1759]",
+    "url": "https://arxiv.org/abs/1404.1759",
+    "unit": "s",
+    "unc_sys_plus": 1.3e-11,
+    "unc_sys_minus": 0.0,
+    "note": "from the natural linewidth 289(2)stat(+0/-7)syst MHz of the forbidden 2 3S1-2 1P1 line in an optical-dipole-trapped quantum-degenerate gas; printed 0.551(0.004)stat(+0.013/-0.000)syst ns; theory 0.5555 ns."
+   }
+  },
+  {
+   "nist_energy_cm": 183236.789095,
+   "label": "1s3s 3S1 (3 3S1)",
+   "J": "1",
+   "lifetime": {
+    "value": 5e-08,
+    "unc": 2e-08,
+    "method": "experiment",
+    "source": "Thomas, Ross, Henson, Shin, Baldwin, Hodgman, Truscott, Phys. Rev. Lett. 125, 013002 (2020) [arXiv:2002.04811]",
+    "url": "https://arxiv.org/abs/2002.04811",
+    "unit": "s",
+    "note": "from the Lorentzian width of the directly detected forbidden 2 3S1-3 3S1 line; a second (heating) method gives 40(30) ns; theory 35.9(2) ns quoted in the same table."
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 159855.971776,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "1s2 1S0 - 1s2s 3S1",
+   "use": "62.6 nm M1 decay of the metastable 2 3S1 state",
+   "type": "M1",
+   "A_s": {
+    "value": 0.000127065,
+    "unc": 8.234e-06,
+    "method": "experiment",
+    "source": "Hodgman, Dall, Byron, Baldwin, Buckman, Truscott, Phys. Rev. Lett. 103, 053002 (2009)",
+    "url": "https://openresearch-repository.anu.edu.au/bitstreams/9ee7875a-0bb4-45cf-af79-2abc9757483a/download",
+    "note": "derived: 1/tau with tau = 7870(510) s (single-photon M1 decay is stated to be the dominant channel)"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 166277.437635,
+   "lower_J": "0",
+   "upper_J": "0",
+   "label": "1s2 1S0 - 1s2s 1S0",
+   "use": "two-photon (2E1) decay of the metastable 2 1S0 state",
+   "type": "two-photon",
+   "A_s": {
+    "value": 50.76,
+    "unc": 2.58,
+    "method": "experiment",
+    "source": "Van Dyck, Johnson, Shugart, Phys. Rev. A 4, 1327 (1971) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.4.1327",
+    "note": "derived: 1/tau with tau = 19.7(1.0) ms (total two-photon decay rate)"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 169086.84033581,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "1s2 1S0 - 1s2p 3P1",
+   "use": "59.1 nm intercombination decay of 2 3P1",
+   "type": "intercombination",
+   "A_s": {
+    "value": 177,
+    "unc": 8,
+    "method": "experiment",
+    "source": "Dall, Baldwin, Byron, Truscott, Phys. Rev. Lett. 100, 023001 (2008) (abstract)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.100.023001",
+    "note": "first measurement; equivalent partial lifetime 5.66(25) ms (as quoted by Hodgman 2009 and the Vassen review); theory 5.63 ms"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 169086.76391031,
+   "lower_J": "0",
+   "upper_J": "2",
+   "label": "1s2 1S0 - 1s2p 3P2",
+   "use": "M2 decay of 2 3P2 to the ground state",
+   "type": "M2",
+   "A_s": {
+    "value": 0.324,
+    "unc": 0.016,
+    "method": "experiment",
+    "source": "Hodgman, Dall, Baldwin, Truscott, Phys. Rev. A 80, 044501 (2009) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.80.044501",
+    "note": "equivalent partial lifetime 3.09(15) s (Vassen review Table II); theory 3.06 s"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 169087.82825101,
+   "lower_J": "0",
+   "upper_J": "0",
+   "label": "1s2 1S0 - 1s2p 3P0",
+   "use": "strictly forbidden decay of 2 3P0",
+   "type": "forbidden",
+   "A_s": {
+    "value": 0.01,
+    "method": "experiment",
+    "source": "Hodgman, Dall, Baldwin, Truscott, Phys. Rev. A 80, 044501 (2009) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.80.044501",
+    "note": "upper bound (~0.01 s^-1) from the channeltron background rate"
+   }
+  },
+  {
+   "lower_cm": 159855.971776,
+   "upper_cm": 169086.76391031,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "1s2s 3S1 - 1s2p 3P2",
+   "use": "1083 nm laser-cooling / MOT / imaging line (D2, closed)",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 276.73218652674,
+    "unc": 1.6112e-09,
+    "method": "experiment",
+    "source": "Zheng, Sun, Chen, Wen, Hu, Phys. Rev. A 99, 032506 (2019) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.032506",
+    "isotope": "4",
+    "value_kHz_str": "276 732 186 526.7(1.6)",
+    "note": "derived: nu(2 3S1-2 3P1) = 276 734 477 704.3(1.6) kHz (Zheng 2019, printed) minus the 2 3P1-2 3P2 interval 2 291 177.56(19) kHz (Zheng 2017, PRL 118, 063001). I = 0, no hyperfine structure."
+   },
+   "natural_linewidth_MHz": {
+    "value": 1.6259,
+    "method": "compilation",
+    "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
+    "url": "https://arxiv.org/abs/1110.1361",
+    "note": "derived: 1/(2 pi tau) with tau = 97.89 ns from the review table; Rengelink et al. (arXiv:1804.06693) quote 'the 1.6 MHz natural linewidth'."
+   },
+   "multiplet_centroid_frequency_kHz": {
+    "value": 276736495600.0,
+    "unc": 1.4,
+    "method": "experiment",
+    "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 119, 263002 (2017) (abstract)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.263002",
+    "isotope": "4",
+    "value_str": "276 736 495 600.0(1.4)",
+    "note": "2 3S-2 3P centroid of 4He (average over 2 3P_J with weights 2J+1). Zheng 2019 adds a light-force correction of +0.50(80) kHz to the underlying 2 3S1-2 3P1 frequency.",
+    "alternatives": [
+     {
+      "value": 276736495649.5,
+      "unc": 2.1,
+      "method": "experiment",
+      "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+      "url": "https://arxiv.org/abs/1201.1362",
+      "isotope": "4",
+      "note": "Florence value after the 2006 erratum, as listed in Table II of the 3He paper; 49.5 kHz (about 20 sigma) above Zheng 2017"
+     },
+     {
+      "value": 276736495624.6,
+      "unc": 2.4,
+      "method": "experiment",
+      "source": "Cancio Pastor, Giusfredi, De Natale, Hagel, de Mauro, Inguscio, Phys. Rev. Lett. 92, 023001 (2004) (abstract)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.92.023001",
+      "isotope": "4",
+      "note": "original 2004 abstract value, superseded by the erratum Phys. Rev. Lett. 97, 139903 (2006)"
+     },
+     {
+      "value": 276736495580,
+      "unc": 70,
+      "method": "compilation",
+      "source": "Shiner et al. [as quoted in Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]]",
+      "url": "https://arxiv.org/abs/1201.1362",
+      "isotope": "4",
+      "note": "independent determination listed in Table II"
+     }
+    ]
+   },
+   "multiplet_centroid_frequency_kHz_3": {
+    "value": 276702827204.8,
+    "unc": 2.4,
+    "method": "experiment",
+    "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+    "url": "https://arxiv.org/abs/1201.1362",
+    "isotope": "3",
+    "value_str": "276 702 827 204.8(2.4)",
+    "note": "3He 2 3S-2 3P centroid averaged over all fine and hyperfine sublevels (Eq. 1 of the paper)"
+   },
+   "isotope_shift_MHz": {
+    "4-3": {
+     "value": 33668.4447,
+     "unc": 0.0032,
+     "method": "experiment",
+     "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+     "url": "https://arxiv.org/abs/1201.1362",
+     "note": "derived: difference of the 4He and 3He 2 3S-2 3P centroid frequencies, both from the Florence group (276 736 495 649.5(2.1) and 276 702 827 204.8(2.4) kHz); fine and hyperfine structure averaged out. Point-nucleus theory in the same paper."
+    }
+   },
+   "hyperfine_component_frequencies_kHz_3He": [
+    {
+     "value": 276698164610.4,
+     "unc": 2.0,
+     "method": "experiment",
+     "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+     "url": "https://arxiv.org/abs/1201.1362",
+     "component": "2 3S1 F=1/2 -> 2 3P1 F=1/2",
+     "value_str": "276 698 164 610.4"
+    },
+    {
+     "value": 276698611209.1,
+     "unc": 3.2,
+     "method": "experiment",
+     "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+     "url": "https://arxiv.org/abs/1201.1362",
+     "component": "2 3S1 F=3/2 -> 2 3P2 F=5/2",
+     "value_str": "276 698 611 209.1"
+    },
+    {
+     "value": 276698832617.9,
+     "unc": 2.5,
+     "method": "experiment",
+     "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+     "url": "https://arxiv.org/abs/1201.1362",
+     "component": "2 3S1 F=1/2 -> 2 3P2 F=3/2",
+     "value_str": "276 698 832 617.9"
+    },
+    {
+     "value": 276700392099.8,
+     "unc": 1.3,
+     "method": "experiment",
+     "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+     "url": "https://arxiv.org/abs/1201.1362",
+     "component": "2 3S1 F=3/2 -> 2 3P1 F=3/2",
+     "value_str": "276 700 392 099.8"
+    },
+    {
+     "value": 276704904311.7,
+     "unc": 2.4,
+     "method": "experiment",
+     "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+     "url": "https://arxiv.org/abs/1201.1362",
+     "component": "2 3S1 F=3/2 -> 2 3P1 F=1/2",
+     "value_str": "276 704 904 311.7"
+    },
+    {
+     "value": 276726257468.9,
+     "unc": 1.7,
+     "method": "experiment",
+     "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+     "url": "https://arxiv.org/abs/1201.1362",
+     "component": "2 3S1 F=1/2 -> 2 3P0 F=1/2",
+     "value_str": "276 726 257 468.9"
+    },
+    {
+     "value": 276732997170.4,
+     "unc": 2.5,
+     "method": "experiment",
+     "source": "Cancio Pastor, Consolino, Giusfredi, De Natale, Inguscio, Yerokhin, Pachucki, Phys. Rev. Lett. 108, 143001 (2012) [arXiv:1201.1362]",
+     "url": "https://arxiv.org/abs/1201.1362",
+     "component": "2 3S1 F=3/2 -> 2 3P0 F=1/2",
+     "value_str": "276 732 997 170.4"
+    }
+   ]
+  },
+  {
+   "lower_cm": 159855.971776,
+   "upper_cm": 169086.84033581,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "1s2s 3S1 - 1s2p 3P1",
+   "use": "1083 nm D1 line (optical pumping, 2 3P1 excitation)",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 276.7344777043,
+    "unc": 1.6e-09,
+    "method": "experiment",
+    "source": "Zheng, Sun, Chen, Wen, Hu, Phys. Rev. A 99, 032506 (2019) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.032506",
+    "isotope": "4",
+    "value_kHz_str": "276 734 477 704.3(1.6)",
+    "note": "re-evaluated value of Phys. Rev. Lett. 119, 263002 (2017) after a +0.50(80) kHz light-force correction; comb-referenced atomic-beam spectroscopy"
+   }
+  },
+  {
+   "lower_cm": 159855.971776,
+   "upper_cm": 169087.82825101,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "1s2s 3S1 - 1s2p 3P0",
+   "use": "1083 nm D0 line",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 276.76409465772,
+    "unc": 1.6165e-09,
+    "method": "experiment",
+    "source": "Zheng, Sun, Chen, Wen, Hu, Phys. Rev. A 99, 032506 (2019) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.032506",
+    "isotope": "4",
+    "value_kHz_str": "276 764 094 657.7(1.6)",
+    "note": "derived: nu(2 3S1-2 3P1) (Zheng 2019) - 2 291 177.56(19) kHz + 31 908 130.98(13) kHz (2 3P intervals of Zheng 2017, PRL 118, 063001)"
+   },
+   "isotope_shift_MHz": {
+    "3-4": {
+     "value": 33668.074,
+     "unc": 0.005,
+     "method": "experiment",
+     "source": "Shiner, Dixson, Vedantham, Phys. Rev. Lett. 74, 3553 (1995) (abstract)",
+     "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.3553",
+     "note": "printed as 'the isotope shift of the 2 3S1-2 3P0 transition ... 33 668.074(5) MHz'; which 3He hyperfine components / sign convention it refers to was not verified (abstract only). 4He lies at the higher frequency."
+    }
+   }
+  },
+  {
+   "lower_cm": 169086.76391031,
+   "upper_cm": 169086.84033581,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "1s2p 3P2 - 1s2p 3P1",
+   "use": "2 3P fine-structure interval J=2-1 (2.29 GHz, fine-structure-constant test)",
+   "type": "M1",
+   "frequency_THz": {
+    "value": 0.00229117659,
+    "unc": 2.5e-11,
+    "method": "experiment",
+    "source": "Kato, Skinner, Hessels, Phys. Rev. Lett. 121, 143002 (2018) [arXiv:1807.07923]",
+    "url": "https://arxiv.org/abs/1807.07923",
+    "isotope": "4",
+    "value_Hz_str": "2 291 176 590(25)",
+    "alternatives": [
+     {
+      "value": 0.00229117756,
+      "unc": 1.9e-10,
+      "method": "experiment",
+      "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001",
+      "isotope": "4",
+      "note": "laser spectroscopy at 1083 nm; 0.97 kHz above Kato 2018"
+     }
+    ]
+   }
+  },
+  {
+   "lower_cm": 169086.84033581,
+   "upper_cm": 169087.82825101,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "1s2p 3P1 - 1s2p 3P0",
+   "use": "2 3P fine-structure interval J=1-0 (29.6 GHz)",
+   "type": "M1",
+   "frequency_THz": {
+    "value": 0.029616955018,
+    "unc": 6e-11,
+    "method": "experiment",
+    "source": "Heydarizadmotlagh, Skinner, Kato, George, Hessels, 'Precision measurement of the n=2 triplet P J=1-to-J=0 fine structure of atomic helium using frequency-offset separated oscillatory fields', arXiv:2310.17040 (2023)",
+    "url": "https://arxiv.org/abs/2310.17040",
+    "isotope": "4",
+    "value_Hz_str": "29 616 955 018(60)",
+    "alternatives": [
+     {
+      "value": 0.02961695342,
+      "unc": 2.3e-10,
+      "method": "experiment",
+      "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001",
+      "isotope": "4",
+      "note": "derived: difference of the two printed intervals 31 908 130.98(13) and 2 291 177.56(19) kHz"
+     }
+    ]
+   }
+  },
+  {
+   "lower_cm": 169086.76391031,
+   "upper_cm": 169087.82825101,
+   "lower_J": "2",
+   "upper_J": "0",
+   "label": "1s2p 3P2 - 1s2p 3P0",
+   "use": "2 3P fine-structure interval J=2-0 (31.9 GHz)",
+   "type": "fine-structure interval",
+   "frequency_THz": {
+    "value": 0.031908131608,
+    "unc": 6.5e-11,
+    "method": "experiment",
+    "source": "Heydarizadmotlagh, Skinner, Kato, George, Hessels, 'Precision measurement of the n=2 triplet P J=1-to-J=0 fine structure of atomic helium using frequency-offset separated oscillatory fields', arXiv:2310.17040 (2023)",
+    "url": "https://arxiv.org/abs/2310.17040",
+    "isotope": "4",
+    "value_Hz_str": "31 908 131 608(65)",
+    "note": "obtained by the authors by combining their J=1-0 and J=2-1 (Kato 2018) microwave measurements",
+    "alternatives": [
+     {
+      "value": 0.03190813098,
+      "unc": 1.3e-10,
+      "method": "experiment",
+      "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001",
+      "isotope": "4"
+     },
+     {
+      "value": 0.03190813125,
+      "unc": 3e-10,
+      "method": "experiment",
+      "source": "Smiciklas & Shiner, Phys. Rev. Lett. 105, 123001 (2010) (abstract)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.123001",
+      "isotope": "4"
+     }
+    ]
+   }
+  },
+  {
+   "lower_cm": 159855.971776,
+   "upper_cm": 166277.437635,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "1s2s 3S1 - 1s2s 1S0",
+   "use": "1557 nm doubly-forbidden ortho-para line (QED / nuclear charge radius test)",
+   "type": "M1",
+   "frequency_THz": {
+    "value": 192.510702148649,
+    "unc": 4.8e-11,
+    "method": "experiment",
+    "source": "Steinebach, Koelemeij, Bethlem, Eikema, 'Spectroscopy of 4He at 0.25 ppt Uncertainty and Improved Alpha-Helion Charge-Radius Difference Determination', arXiv:2601.19444 (2026)",
+    "url": "https://arxiv.org/abs/2601.19444",
+    "isotope": "4",
+    "value_Hz_str": "192 510 702 148 649(48)",
+    "note": "4He BEC in a magic-wavelength (319.8 nm) dipole trap",
+    "alternatives": [
+     {
+      "value": 192.51070214872,
+      "unc": 2e-10,
+      "method": "experiment",
+      "source": "Rengelink, van der Werf, Notermans, Jannin, Eikema, Hoogerland, Vassen, Nature Physics 14, 1132 (2018) [arXiv:1804.06693]",
+      "url": "https://arxiv.org/abs/1804.06693",
+      "isotope": "4",
+      "value_kHz_str": "192 510 702 148.72(20)"
+     },
+     {
+      "value": 192.5107021456,
+      "unc": 1.8e-09,
+      "method": "experiment",
+      "source": "van Rooij et al., Science 333, 196 (2011) [arXiv:1105.4974]",
+      "url": "https://arxiv.org/abs/1105.4974",
+      "isotope": "4",
+      "value_kHz_str": "192 510 702 145.6(1.8)"
+     }
+    ]
+   },
+   "frequency_THz_3": {
+    "value": 192.50491441896,
+    "unc": 1.7e-10,
+    "method": "experiment",
+    "source": "van der Werf, Steinebach, Jannin, Bethlem, Eikema, 'The alpha and helion particle charge radius difference from spectroscopy of quantum-degenerate helium', arXiv:2306.02333 (2023)",
+    "url": "https://arxiv.org/abs/2306.02333",
+    "isotope": "3",
+    "value_kHz_str": "192 504 914 418.96(17)",
+    "hyperfine_component": "2 3S1 F=3/2 -> 2 1S0 F=1/2",
+    "note": "NOT a hyperfine centre of gravity: single component F=3/2 -> F=1/2 in a 3He Fermi gas",
+    "alternatives": [
+     {
+      "value": 192.5049144264,
+      "unc": 1.5e-09,
+      "method": "experiment",
+      "source": "van Rooij et al., Science 333, 196 (2011) [arXiv:1105.4974]",
+      "url": "https://arxiv.org/abs/1105.4974",
+      "isotope": "3",
+      "value_kHz_str": "192 504 914 426.4(1.5)",
+      "note": "same component; 7.4 kHz (about 5 sigma) above the 2023 value"
+     }
+    ]
+   },
+   "natural_linewidth_Hz": {
+    "value": 8,
+    "method": "compilation",
+    "source": "van Rooij et al., Science 333, 196 (2011) [arXiv:1105.4974]",
+    "url": "https://arxiv.org/abs/1105.4974",
+    "note": "set by the 20 ms lifetime of 2 1S0 (two-photon decay)"
+   },
+   "A_s": {
+    "value": 9.1e-08,
+    "method": "theory",
+    "source": "van Rooij et al., Science 333, 196 (2011) [arXiv:1105.4974]",
+    "url": "https://arxiv.org/abs/1105.4974",
+    "note": "Einstein A of the M1 line as given in the Fig. 1 caption (no measurement exists)"
+   },
+   "isotope_shift_MHz": {
+    "4-3": {
+     "value": 8034.3672,
+     "unc": 0.0023,
+     "method": "experiment",
+     "source": "van Rooij et al., Science 333, 196 (2011) [arXiv:1105.4974]",
+     "url": "https://arxiv.org/abs/1105.4974",
+     "note": "printed as f4 - f3 + f_hfs = 8 034 367.2(2.3) kHz, i.e. the 3He hyperfine shift is removed; point-nucleus theory 8 034 148.6(7) kHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 159855.971776,
+   "upper_cm": 171134.894441,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "1s2s 3S1 - 1s2p 1P1",
+   "use": "887 nm spin-forbidden line",
+   "type": "intercombination",
+   "frequency_THz": {
+    "value": 338.1335944,
+    "unc": 5e-07,
+    "method": "experiment",
+    "source": "Notermans & Vassen, Phys. Rev. Lett. 112, 253002 (2014) [arXiv:1404.1759]",
+    "url": "https://arxiv.org/abs/1404.1759",
+    "isotope": "4"
+   },
+   "A_s": {
+    "value": 1.4423,
+    "method": "theory",
+    "source": "Notermans & Vassen, Phys. Rev. Lett. 112, 253002 (2014) [arXiv:1404.1759]",
+    "url": "https://arxiv.org/abs/1404.1759",
+    "note": "theoretical Einstein A quoted in the paper"
+   }
+  },
+  {
+   "lower_cm": 159855.971776,
+   "upper_cm": 185564.8520073,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "1s2s 3S1 - 1s3p 3P0",
+   "use": "389 nm line (2 3S1-3 3P; 389 nm MOT uses the 3 3P2 component)",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 770.732839058,
+    "unc": 1.9e-07,
+    "method": "experiment",
+    "source": "Pavone, Marin, De Natale, Inguscio, Biraben, Phys. Rev. Lett. 73, 42 (1994) (abstract)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.73.42",
+    "isotope": "4",
+    "value_kHz_str": "770 732 839 058(190)"
+   }
+  },
+  {
+   "lower_cm": 159855.971776,
+   "upper_cm": 186101.59029341,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "1s2s 3S1 - 1s3d 3D1",
+   "use": "762 nm two-photon line (basis of the 2 3S1 ionization energy)",
+   "type": "two-photon",
+   "frequency_THz": {
+    "value": 786.823850002,
+    "unc": 5.6e-08,
+    "method": "experiment",
+    "source": "Dorrer, Nez, de Beauvoir, Julien, Biraben, Phys. Rev. Lett. 78, 3658 (1997) (abstract)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.78.3658",
+    "isotope": "4",
+    "value_MHz_str": "786 823 850.002(56)"
+   }
+  },
+  {
+   "lower_cm": 169087.82825101,
+   "upper_cm": 186101.59029341,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "1s2p 3P0 - 1s3d 3D1",
+   "use": "587.6 nm (D3) line, 2 3P0 component",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 510.059755352,
+    "unc": 2.8e-08,
+    "method": "experiment",
+    "source": "Luo et al., 'Precision frequency measurements of 3,4He 2 3P -> 3 3D transitions at 588 nm', Phys. Rev. A 94, 062507 (2016) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.062507",
+    "isotope": "4",
+    "value_MHz_str": "510 059 755.352(28)"
+   }
+  },
+  {
+   "lower_cm": 159855.971776,
+   "upper_cm": 183236.789095,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "1s2s 3S1 - 1s3s 3S1",
+   "use": "427.7 nm forbidden (M1) line",
+   "type": "M1",
+   "frequency_THz": {
+    "value": 700.939271,
+    "unc": 5e-06,
+    "method": "experiment",
+    "source": "Thomas, Ross, Henson, Shin, Baldwin, Hodgman, Truscott, Phys. Rev. Lett. 125, 013002 (2020) [arXiv:2002.04811]",
+    "url": "https://arxiv.org/abs/2002.04811",
+    "isotope": "4",
+    "note": "theory 700 939 269(8) MHz"
+   },
+   "A_s": {
+    "value": 7e-09,
+    "unc": 4e-09,
+    "method": "experiment",
+    "source": "Thomas, Ross, Henson, Shin, Baldwin, Hodgman, Truscott, Phys. Rev. Lett. 125, 013002 (2020) [arXiv:2002.04811]",
+    "url": "https://arxiv.org/abs/2002.04811",
+    "note": "weakest transition directly measured in a neutral atom; theory 6.48e-9 and 11.7e-9 s^-1"
+   }
+  },
+  {
+   "lower_cm": 169086.84033581,
+   "upper_cm": 183236.789095,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "1s2p 3P1 - 1s3s 3S1",
+   "use": "706.7 nm line (2 3P-3 3S)",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 424.202774,
+    "unc": 5e-06,
+    "method": "experiment",
+    "source": "Thomas, Ross, Henson, Shin, Baldwin, Hodgman, Truscott, Phys. Rev. Lett. 125, 013002 (2020) [arXiv:2002.04811]",
+    "url": "https://arxiv.org/abs/2002.04811",
+    "isotope": "4",
+    "note": "derived by the authors from their 2 3S1-3 3S1 frequency and the accurately known 2 3S1-2 3P1 frequency"
+   }
+  }
+ ],
+ "not_found": [
+  "Individual directly measured 2 3S1-2 3P0 and 2 3S1-2 3P2 absolute frequencies (Cancio Pastor 2004 table): the PRL table is paywalled and the erratum abstract carries no numbers; the two values given here are derived from Zheng 2019 (2 3S1-2 3P1) plus Zheng 2017 intervals.",
+  "Measured lifetime / linewidth of 2 3P (1.626 MHz) and of 3 3P (389 nm): no modern direct lifetime measurement located; 97.89 ns is the value tabulated in the Vassen review (equals NIST 1/A). NIST ASD A values (accuracy AAA, theory of Drake) remain the reference for A and matrix elements of 1083, 389, 587.6 and 706.7 nm.",
+  "2 3S1-3 3P1 and 2 3S1-3 3P2 (389 nm cooling component) absolute frequencies and the 3He-4He isotope shift at 389 nm (Marin et al. 1995): only the 3 3P0 component (Pavone 1994 abstract) could be opened.",
+  "3He hyperfine structure of 2 3P: not describable by simple A, B constants (hyperfine and fine structure are comparable); the seven measured 3He 2 3S-2 3P hyperfine component frequencies are stored on the 1083 nm transition instead. Measured 2 3P hyperfine intervals themselves were not located.",
+  "Absolute g_J of 2 3S1: only the measured ratio to g_J(H) is recorded (Drake et al. 1958); g_J values of 2 3P_J not found.",
+  "3He 2 3P-3 3D and 3 3D hyperfine separations (Luo et al. 2016): numbers are in the paywalled article body, not in the abstract.",
+  "Reduced dipole matrix elements from experiment: none found for helium (theory/NIST only)."
+ ],
+ "conflicts": [
+  "4He 2 3S-2 3P centroid: Zheng et al. 2017 276 736 495 600.0(1.4) kHz vs Cancio Pastor et al. (2004 + 2006 erratum) 276 736 495 649.5(2.1) kHz, a 49.5 kHz (about 20 sigma) discrepancy; the original 2004 abstract printed 276 736 495 624.6(2.4) kHz. Zheng (as corrected in PRA 99, 032506) is used for the entries; the 4-3 centroid isotope shift uses the two Florence values so that common systematics cancel.",
+  "2 3P1-2 3P2 interval: Kato et al. 2018 2 291 176 590(25) Hz (microwave FOSOF) vs Zheng et al. 2017 2 291 177.56(19) kHz (laser), 0.97 kHz apart (about 5 sigma).",
+  "2 3P0-2 3P2 interval: Heydarizadmotlagh et al. 2023 31 908 131 608(65) Hz vs Zheng et al. 2017 31 908 130.98(13) kHz and Smiciklas & Shiner 2010 31 908 131.25(30) kHz; the 2023 paper notes 'large disagreements with previous measurements'.",
+  "3He 2 3S1(F=3/2)-2 1S0(F=1/2): van der Werf et al. 2023 192 504 914 418.96(17) kHz vs van Rooij et al. 2011 192 504 914 426.4(1.5) kHz (7.4 kHz, about 5 sigma).",
+  "2 3S1 ionization energy: experiment 1 152 842 742.7082(55)(25) MHz (Clausen 2025) vs alpha^7 m theory 1 152 842 742.231(52) MHz (Patkos et al.), 9 sigma.",
+  "2 3S1 lifetime: Hodgman's abstract and text give 7870(510) s; some indexing snippets show 7920(510) s, which is not what the article prints."
+ ],
+ "notes": "Frequencies are 4He unless a key ends in _3 or 'isotope' says 3. 4He has I = 0 (no hyperfine structure); 3He frequencies are single hyperfine components or centroids as stated in each note, never silently centre-of-gravity. Isotope-shift keys 'A-B' mean nu(A) - nu(B). The three 2 3P fine-structure intervals are stored as transitions between the 2 3P_J levels (frequency in THz; use value_Hz_str for full precision). NIST energies copied from data/he/levels.csv (NIST ASD); the 2 3P order is inverted (J=2 lowest). Entries marked '(abstract)' were read on the publisher's abstract page only. Ionization energies are given as E_I/h in MHz for the excited states and in cm^-1 for the ground-state limit."
+}

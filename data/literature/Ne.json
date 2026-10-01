@@ -1,0 +1,269 @@
+{
+ "element": "Ne",
+ "isotopes": {
+  "20": {
+   "I": "0",
+   "abundance_percent": 90.48,
+   "abundance_unc": 0.03,
+   "relative_atomic_mass_u": "19.9924401762(17)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Ne); nuclear spin from Feldker et al., arXiv:1105.2193 ('The bosonic isotopes have no nuclear spin')",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ne&ascii=ascii2&isotype=some",
+   "method": "compilation"
+  },
+  "21": {
+   "I": "3/2",
+   "abundance_percent": 0.27,
+   "abundance_unc": 0.01,
+   "relative_atomic_mass_u": "20.993846685(41)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Ne); nuclear spin from Feldker et al., arXiv:1105.2193",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ne&ascii=ascii2&isotype=some",
+   "method": "compilation"
+  },
+  "22": {
+   "I": "0",
+   "abundance_percent": 9.25,
+   "abundance_unc": 0.03,
+   "relative_atomic_mass_u": "21.991385114(18)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Ne); nuclear spin from Feldker et al., arXiv:1105.2193",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ne&ascii=ascii2&isotype=some",
+   "method": "compilation"
+  }
+ },
+ "ionization_energy": {
+  "value": 173929.75,
+  "unc": 0.06,
+  "unit": "cm^-1",
+  "method": "compilation",
+  "source": "NIST Atomic Spectra Database, levels of Ne I: limit Ne II (2p5 2P3/2) (cached data/nist/Ne_I_levels.tsv)",
+  "url": "https://physics.nist.gov/asd"
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 134041.84,
+   "label": "2p5 3s 2[3/2]2 (3P2, 1s5, metastable)",
+   "J": "2",
+   "lifetime": {
+    "value": 14.73,
+    "unc": 0.14,
+    "method": "experiment",
+    "source": "Zinner, Spoden, Kraemer, Birkl, Ertmer, Phys. Rev. A 67, 010501(R) (2003) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.67.010501",
+    "unit": "s",
+    "isotope": "20",
+    "note": "decay rate 0.06790(64) s^-1; fluorescence decay of 20Ne in a MOT extrapolated to zero 3D3 excitation",
+    "alternatives": [
+     {
+      "value": 14.7,
+      "unc": 0.13,
+      "method": "experiment",
+      "source": "Zinner, Spoden, Kraemer, Birkl, Ertmer, arXiv:physics/0208088v1 (preprint of Phys. Rev. A 67, 010501(R) (2003))",
+      "url": "https://arxiv.org/abs/physics/0208088",
+      "unit": "s",
+      "note": "arXiv v1 of the same work (decay rate 0.06801(62) s^-1), superseded by the published value"
+     },
+     {
+      "value": 22,
+      "method": "theory",
+      "source": "Indelicato et al. (1994) [as quoted in Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I]",
+      "url": "https://arxiv.org/abs/1110.1361",
+      "unit": "s",
+      "note": "other theory values in the same table: 17.1 s (Tachiev & Froese Fischer 2002), 24 s (Small-Warren & Chiu 1975)"
+     }
+    ]
+   },
+   "g_J": {
+    "value": 1.500888,
+    "unc": 5e-06,
+    "method": "experiment",
+    "source": "Lurio, Weinreich, Drake, Hughes, Rabi, Phys. Rev. 120, 153 (1960) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.120.153",
+    "note": "atomic-beam magnetic resonance; theory 1.50088"
+   },
+   "hyperfine": {
+    "21": {
+     "A_MHz": -267.68,
+     "A_unc": 0.03,
+     "B_MHz": -111.55,
+     "B_unc": 0.1,
+     "method": "compilation",
+     "source": "Grosof, Buck, Lichten, Rabi, Phys. Rev. Lett. 1, 214 (1958) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
+     "url": "https://arxiv.org/abs/1105.2193"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 149657.0392,
+   "label": "2p5 3p 2[5/2]3 (3D3, 2p9)",
+   "J": "3",
+   "lifetime": {
+    "value": 1.95e-08,
+    "method": "compilation",
+    "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
+    "url": "https://arxiv.org/abs/1110.1361",
+    "unit": "s",
+    "note": "upper-state lifetime of the 640.2 nm cooling line as tabulated in the review (origin not stated there)"
+   },
+   "hyperfine": {
+    "21": {
+     "A_MHz": -142.4,
+     "A_unc": 0.2,
+     "B_MHz": -107.7,
+     "B_unc": 1.1,
+     "method": "experiment",
+     "source": "Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]",
+     "url": "https://arxiv.org/abs/1105.2193",
+     "note": "from the F'=9/2, 7/2, 5/2 splittings measured by absorption imaging of a 21Ne MOT",
+     "alternatives": [
+      {
+       "A_MHz": -142.5,
+       "A_unc": 1.5,
+       "B_MHz": -113,
+       "B_unc": 8,
+       "method": "compilation",
+       "source": "Julien, Pinard, Laloe, J. Phys. Lett. 41, L479 (1980) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
+       "url": "https://arxiv.org/abs/1105.2193"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 134041.84,
+   "lower_J": "0",
+   "upper_J": "2",
+   "label": "2p6 1S0 - 2p5 3s 2[3/2]2",
+   "use": "74.6 nm M2 decay of the metastable 3P2 state",
+   "type": "M2",
+   "A_s": {
+    "value": 0.0679,
+    "unc": 0.00064,
+    "method": "experiment",
+    "source": "Zinner, Spoden, Kraemer, Birkl, Ertmer, Phys. Rev. A 67, 010501(R) (2003) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.67.010501",
+    "note": "total radiative decay rate of 3P2 in 20Ne (printed)"
+   }
+  },
+  {
+   "lower_cm": 134041.84,
+   "upper_cm": 149657.0392,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "2p5 3s 2[3/2]2 - 2p5 3p 2[5/2]3",
+   "use": "640.2 nm laser-cooling / MOT line (3P2-3D3, closed)",
+   "type": "E1",
+   "natural_linewidth_MHz": {
+    "value": 8.18,
+    "method": "compilation",
+    "source": "Zinner, Spoden, Kraemer, Birkl, Ertmer, arXiv:physics/0208088v1 (preprint of Phys. Rev. A 67, 010501(R) (2003))",
+    "url": "https://arxiv.org/abs/physics/0208088",
+    "note": "Gamma/2pi used by the authors for the saturation intensity (I0 = 4.08 mW/cm^2); Feldker et al. quote 8.2 MHz. Corresponds to tau = 19.5 ns."
+   },
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1625.9,
+     "unc": 0.15,
+     "method": "experiment",
+     "source": "Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]",
+     "url": "https://arxiv.org/abs/1105.2193",
+     "note": "absorption imaging of MOTs; fluorescence method gives 1626.0(0.22). 22Ne lies at higher frequency (Fig. 2: nu - nu20).",
+     "alternatives": [
+      {
+       "value": 1630,
+       "unc": 3,
+       "method": "compilation",
+       "source": "Julien, Pinard, Laloe (1980) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
+       "url": "https://arxiv.org/abs/1105.2193"
+      },
+      {
+       "value": 1631.2,
+       "unc": 5.0,
+       "method": "compilation",
+       "source": "Guthoehrlein & Windholz (1994) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
+       "url": "https://arxiv.org/abs/1105.2193"
+      },
+      {
+       "value": 1629.5,
+       "unc": 1.0,
+       "method": "compilation",
+       "source": "Basar et al., Z. Phys. D 39, 283 (1997) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
+       "url": "https://arxiv.org/abs/1105.2193"
+      },
+      {
+       "value": 1628,
+       "unc": 3,
+       "method": "compilation",
+       "source": "Odintsov (1965) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
+       "url": "https://arxiv.org/abs/1105.2193"
+      },
+      {
+       "value": 1632,
+       "unc": 3,
+       "method": "compilation",
+       "source": "Konz, Kraft, Rubahn (1992) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
+       "url": "https://arxiv.org/abs/1105.2193"
+      }
+     ]
+    },
+    "21-20": {
+     "value": 855.7,
+     "unc": 1.0,
+     "method": "experiment",
+     "source": "Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]",
+     "url": "https://arxiv.org/abs/1105.2193",
+     "note": "21Ne hyperfine centre of gravity (obtained by the authors from the F=7/2-F'=9/2 component and the hyperfine constants)",
+     "alternatives": [
+      {
+       "value": 856,
+       "unc": 7,
+       "method": "compilation",
+       "source": "Julien, Pinard, Laloe (1980) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
+       "url": "https://arxiv.org/abs/1105.2193"
+      }
+     ]
+    },
+    "22-21": {
+     "value": 770.3,
+     "unc": 1.0,
+     "method": "experiment",
+     "source": "Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]",
+     "url": "https://arxiv.org/abs/1105.2193",
+     "note": "21Ne hyperfine centre of gravity"
+    }
+   },
+   "isotope_shift_cooling_component_MHz": {
+    "21(F=7/2-F'=9/2)-20": {
+     "value": 1018.9,
+     "unc": 0.45,
+     "method": "experiment",
+     "source": "Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]",
+     "url": "https://arxiv.org/abs/1105.2193",
+     "note": "21Ne cooling component, absorption; fluorescence 1018.8(0.25)"
+    },
+    "22-21(F=7/2-F'=9/2)": {
+     "value": 607.2,
+     "unc": 0.25,
+     "method": "experiment",
+     "source": "Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]",
+     "url": "https://arxiv.org/abs/1105.2193",
+     "note": "fluorescence; 607.0(0.47) calculated from the two absorption values"
+    }
+   }
+  }
+ ],
+ "not_found": [
+  "Absolute frequency of the 640.2 nm line better than NIST: no frequency-comb measurement located.",
+  "Directly measured lifetime of 2p5 3p 2[5/2]3 (3D3): primary lifetime papers (e.g. Hartmetz & Schmoranzer) could not be opened; 19.5 ns is the Vassen-review table value. Zinner et al. only give an experimental lower limit tau >= 59 s for decay of 3D3 by channels other than 640.2 nm.",
+  "Measured lifetimes of the other 3s levels (3P0 metastable) and repumper lines: not located.",
+  "Lande g factors of the 2p5 3p levels (Giacobino, J. Physique 38, 1377 (1977), HAL jpa-00208708): the abstract confirms six measured g factors at 1e-3 precision but the PDF is behind a bot wall, so no values were copied.",
+  "Julien, Pinard, Laloe (1980) primary values for the 640.2 / 626.6 nm lines: HAL abstract found, numbers elided there; taken second-hand from Feldker et al.",
+  "Experimental reduced matrix elements / A values newer than NIST: none located."
+ ],
+ "conflicts": [
+  "3P2 lifetime: published Phys. Rev. A abstract 14.73(14) s [0.06790(64) s^-1] vs arXiv v1 of the same paper 14.70(13) s [0.06801(62) s^-1]; the published value is used. All theory values (17.1-24 s) are longer.",
+  "22-20 isotope shift of 640.2 nm: Feldker 1625.9(0.15) MHz is 2-4 MHz below every earlier measurement (1628-1632 MHz); Feldker et al. state they could not identify the reason."
+ ],
+ "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier neon isotopes lie at higher frequency on 640.2 nm. 21Ne values are hyperfine centre of gravity only where the note says so. Level energies are NIST ASD values from data/ne/levels.csv; Paschen names (1s5, 2p9) are given in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only."
+}

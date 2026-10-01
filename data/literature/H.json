@@ -1,0 +1,1317 @@
+{
+  "element": "H",
+  "isotopes": {
+    "1": {
+      "I": "1/2",
+      "abundance_percent": 99.9885,
+      "abundance_unc": 0.007,
+      "source": "abundance: NIST Atomic Weights and Isotopic Compositions (H); nuclear spin: A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Sec. 3",
+      "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=H",
+      "url_spin": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+    },
+    "2": {
+      "I": "1",
+      "abundance_percent": 0.0115,
+      "abundance_unc": 0.007,
+      "source": "abundance: NIST Atomic Weights and Isotopic Compositions (H); nuclear spin: A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Sec. 3",
+      "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=H",
+      "url_spin": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+    }
+  },
+  "ionization_energy": {
+    "natural": [
+      {
+        "value_cm": 109678.77174307,
+        "unc_cm": 1e-07,
+        "isotope": "1",
+        "method": "compilation",
+        "note": "theoretical (QED) value, in parentheses in NIST ASD",
+        "source": "NIST ASD, H I levels table, 'Limit' row (file data/nist/H_I_levels.tsv)",
+        "url": "https://physics.nist.gov/cgi-bin/ASD/energy1.pl?de=0&spectrum=H+I&units=0&format=3",
+        "alternatives": [
+          {
+            "value_MHz": 3288981521.1,
+            "unc_MHz": 2.3,
+            "method": "experiment",
+            "note": "ionization energy fitted to measured H transition frequencies by Kramida 2010 (Sec. 5); QED value quoted there 3 288 981 522.062(3) MHz (Jentschura et al.)",
+            "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "nist_energy_cm": 0.0,
+      "label": "1s 2S1/2",
+      "J": "1/2",
+      "g_J": {
+        "value": 2.0022838525,
+        "method": "theory",
+        "note": "derived: |g_e| x [g_e(H)/g_e] with g_e = -2.002 319 304 360 92(36) and the theoretical bound-state ratio g_e(H)/g_e = 1 - 17.7054e-6, both printed in CODATA 2022 (Tables XXIV and recommended values). The measured quantity behind it is mu_e(H)/mu_p(H) = -658.210 7058(66) (MIT 1972, CODATA item D41).",
+        "source": "CODATA 2022, arXiv:2409.03787, Table XXIV",
+        "url": "https://arxiv.org/pdf/2409.03787"
+      },
+      "hyperfine": {
+        "1": {
+          "A_MHz": 1420.405751768,
+          "A_unc": 1e-09,
+          "method": "compilation",
+          "note": "F=1 - F=0 interval (the 21 cm line) = A for I = J = 1/2. 1 420 405.751 768(1) kHz, conservative average of hydrogen-maser measurements",
+          "source": "Hellwig et al. (1970), Essen et al. (1971) and other maser measurements, averaged in S. G. Karshenboim, Can. J. Phys. 78, 639 (2000); value as printed in Table 4 of S. G. Karshenboim, Phys. Rep. 422, 1 (2005), arXiv:hep-ph/0509010 (same value in Kramida 2010, Table 1)",
+          "url": "https://arxiv.org/pdf/hep-ph/0509010"
+        },
+        "2": {
+          "A_MHz": 218.2562350148,
+          "A_unc": 1.1e-09,
+          "interval_MHz": 327.3843525222,
+          "interval_unc": 1.7e-09,
+          "method": "compilation",
+          "note": "derived: measured F=3/2 - F=1/2 interval 327 384 352.5222(17) Hz divided by 3/2 (I = 1, J = 1/2)",
+          "source": "D. J. Wineland and N. F. Ramsey, Phys. Rev. A 5, 821 (1972) (deuterium maser); value as printed in Table 2 of A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 82258.9191133,
+      "label": "2p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 59.1695,
+          "A_unc": 0.0006,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 59169500(600) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.5962e-09,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 82258.9543992821,
+      "label": "2s 2S1/2",
+      "J": "1/2",
+      "lifetime": {
+        "value": 0.121521,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/W with the two-photon (2E1) decay rate W = 8.2290619 s^-1 (Z = 1, finite nucleus + Uehling potential). The M1 one-photon rate (2.495e-6 s^-1 in NIST ASD) is negligible. No direct measurement of the free-atom 2S lifetime was located.",
+        "source": "Sommerfeldt, Mueller, Volotka, Fritzsche, Surzhykov, Phys. Rev. A 102, 042811 (2020), arXiv:2008.03950, Tables II-III",
+        "url": "https://arxiv.org/pdf/2008.03950",
+        "alternatives": [
+          {
+            "value": 0.125,
+            "unit": "s",
+            "method": "compilation",
+            "note": "'natural lifetime of 1/8 s' quoted in Kramida 2010 (Sec. 3.1.1) from Santos, Parente, Indelicato, Eur. Phys. J. D 3, 43 (1998)",
+            "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+          }
+        ]
+      },
+      "hyperfine": {
+        "1": {
+          "A_MHz": 177.5568343,
+          "A_unc": 6.7e-06,
+          "method": "experiment",
+          "note": "F=1 - F=0 interval of 2S, 177 556 834.3(6.7) Hz, from optical 1S-2S two-photon spectroscopy of both hyperfine components",
+          "source": "Kolachevsky, Matveev, Alnis, Parthey, Karshenboim, Haensch, Phys. Rev. Lett. 102, 213002 (2009), arXiv:0812.3509 (abstract)",
+          "url": "https://arxiv.org/pdf/0812.3509",
+          "alternatives": [
+            {
+              "A_MHz": 177.55686,
+              "A_unc": 1.6e-05,
+              "note": "Kolachevsky, Fischer, Karshenboim, Haensch, Phys. Rev. Lett. 92, 033003 (2004) (optical), Table 4 of Karshenboim 2005",
+              "url": "https://arxiv.org/pdf/hep-ph/0509010"
+            },
+            {
+              "A_MHz": 177.556785,
+              "A_unc": 2.9e-05,
+              "note": "Rothery and Hessels, Phys. Rev. A 61, 044501 (2000) (rf), Table 4 of Karshenboim 2005",
+              "url": "https://arxiv.org/pdf/hep-ph/0509010"
+            },
+            {
+              "A_MHz": 177.55686,
+              "A_unc": 5e-05,
+              "note": "Heberle, Reich, Kusch, Phys. Rev. 101, 612 (1956), Table 4 of Karshenboim 2005",
+              "url": "https://arxiv.org/pdf/hep-ph/0509010"
+            },
+            {
+              "A_MHz": 177.5568382,
+              "A_unc": 3e-07,
+              "method": "theory",
+              "note": "semi-empirical value (scaled from the measured 1S splitting) of Jentschura and Yerokhin, Phys. Rev. A 73, 062503 (2006), Kramida 2010 Table 1",
+              "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+            }
+          ]
+        },
+        "2": {
+          "A_MHz": 27.282969,
+          "A_unc": 5e-06,
+          "interval_MHz": 40.924454,
+          "interval_unc": 7e-06,
+          "method": "compilation",
+          "note": "derived: measured F=3/2 - F=1/2 interval 40 924 454(7) Hz divided by 3/2",
+          "source": "Kolachevsky, Fendel, Karshenboim, Haensch, Phys. Rev. A 70, 062503 (2004); value as printed in Table 4 of Karshenboim, Phys. Rep. 422, 1 (2005) and Table 2 of Kramida 2010",
+          "url": "https://arxiv.org/pdf/hep-ph/0509010",
+          "alternatives": [
+            {
+              "interval_MHz": 40.924439,
+              "interval_unc": 2e-05,
+              "note": "Reich, Heberle, Kusch, Phys. Rev. 104, 1585 (1956), Table 4 of Karshenboim 2005",
+              "url": "https://arxiv.org/pdf/hep-ph/0509010"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 82259.2850014,
+      "label": "2p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 11.8258,
+          "A_unc": 0.00012,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 23651600(240) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.5962e-09,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 97492.2112,
+      "label": "3p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 17.5318,
+          "A_unc": 0.00018,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 17531800(180) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 5.2715e-09,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s, 2s); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 97492.221701,
+      "label": "3s 2S1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 52.6094732,
+          "A_unc": 3e-07,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 52609473.2(0.3) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Semi-empirical (scaled from the measured 1S and 2S splittings).",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.5837e-07,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 97492.319433,
+      "label": "3d 2D3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 2.1025,
+          "A_unc": 0.002,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 4205000(4000) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.5468e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 97492.319611,
+      "label": "3p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 3.50396,
+          "A_unc": 3.5e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 7007920(70) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 5.2715e-09,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s, 2s); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 97492.355566,
+      "label": "3d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.9003,
+          "A_unc": 0.0009,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 2700900(2700) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.5468e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 102823.8485825,
+      "label": "4p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 7.39623,
+          "A_unc": 7e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 7396230(70) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.2305e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s, 2s, 3s, 3d); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 102823.89425,
+      "label": "4d 2D3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.887,
+          "A_unc": 0.0009,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 1774000(1800) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 3.615e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p, 3p); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 102823.8943175,
+      "label": "4p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 1.478235,
+          "A_unc": 1.5e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 2956470(30) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.2305e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s, 2s, 3s, 3d); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 102823.9094871,
+      "label": "4d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.3798,
+          "A_unc": 0.000366667,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 1139400(1100) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 3.615e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p, 3p); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 105291.62867,
+      "label": "5p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 3.78586,
+          "A_unc": 4e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 3785860(40) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 2.3789e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s, 2s, 3s, 3d, 4s, 4d); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 105291.651993,
+      "label": "5d 2D3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.45415,
+          "A_unc": 0.00045,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 908300(900) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 6.967e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p, 3p, 4p, 4f); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 105291.65209,
+      "label": "5p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.7568575,
+          "A_unc": 7.5e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 1513715(15) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 2.3789e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s, 2s, 3s, 3d, 4s, 4d); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 105291.659796,
+      "label": "5d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.194466667,
+          "A_unc": 0.0002,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 583400(600) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 6.967e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p, 3p, 4p, 4f); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 106632.1485242,
+      "label": "6p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 2.19147,
+          "A_unc": 2.2e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 2191470(22) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 4.0819e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s, 2s, 3s, 3d, 4s, 4d, 5s, 5d); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 106632.1620536,
+      "label": "6d 2D3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.2628,
+          "A_unc": 0.00025,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 525600(500) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.1912e-07,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p, 3p, 4p, 4f, 5p, 5f); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 106632.1620756,
+      "label": "6p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.437996,
+          "A_unc": 4.5e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 875992(9) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 4.0819e-08,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (1s, 2s, 3s, 3d, 4s, 4d, 5s, 5d); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 106632.1665697,
+      "label": "6d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.112533333,
+          "A_unc": 0.0001,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 337600(300) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      },
+      "lifetime": {
+        "value": 1.1912e-07,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (2p, 3p, 4p, 4f, 5p, 5f); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 106632.16882188,
+      "label": "6g 2G7/2",
+      "J": "7/2",
+      "lifetime": {
+        "value": 4.0347e-07,
+        "unit": "s",
+        "method": "theory",
+        "note": "derived: 1/sum of the multiplet A_ki over all lower terms (4f, 5f); exactly calculable hydrogenic value, the same for both fine-structure components at this precision",
+        "source": "W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 38, 565 (2009), Table 6 (exact hydrogenic A values, accuracy AAA)",
+        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd382009565p.pdf"
+      }
+    },
+    {
+      "nist_energy_cm": 107440.4385,
+      "label": "7p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 1.38005,
+          "A_unc": 1.4e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 1380050(14) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 107440.447022,
+      "label": "7d 2D3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.1655,
+          "A_unc": 0.00015,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 331000(300) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 107440.44703,
+      "label": "7p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.2758225,
+          "A_unc": 3e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 551645(6) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 107440.449866,
+      "label": "7d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.07087,
+          "A_unc": 7e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 212610(210) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 107965.0491583,
+      "label": "8p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.924525,
+          "A_unc": 9e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 924525(9) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 107965.054866,
+      "label": "8d 2D3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.110875,
+          "A_unc": 0.00011,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 221750(220) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 107965.0548753,
+      "label": "8p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.1847795,
+          "A_unc": 2e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 369559(4) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 107965.05677174,
+      "label": "8d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.047476667,
+          "A_unc": 4.6667e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 142430(140) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108324.72016,
+      "label": "9p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.649323,
+          "A_unc": 6e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 649323(6) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108324.724162,
+      "label": "9d 2D3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.07787,
+          "A_unc": 8e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 155740(160) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108324.72418,
+      "label": "9p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.1297765,
+          "A_unc": 1.5e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 259553(3) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108324.725501,
+      "label": "9d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.033343333,
+          "A_unc": 3.3333e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 100030(100) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108581.99051,
+      "label": "10p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.473356,
+          "A_unc": 5e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 473356(5) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108581.99344,
+      "label": "10p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.094607,
+          "A_unc": 1e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 189214(2) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108581.9944009,
+      "label": "10d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.024306667,
+          "A_unc": 2.3333e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 72920(70) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108772.34135,
+      "label": "11p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.355639,
+          "A_unc": 4e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 355639(4) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108772.34355,
+      "label": "11p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.07107965,
+          "A_unc": 7e-07,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 142159.3(1.4) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108772.34427,
+      "label": "11d 2D5/2",
+      "J": "5/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.018263333,
+          "A_unc": 1.6667e-05,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 54790(50) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 3. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108917.1187,
+      "label": "12p 2P°1/2",
+      "J": "1/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.273933,
+          "A_unc": 3e-06,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 273933(3) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 1. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 108917.12039,
+      "label": "12p 2P°3/2",
+      "J": "3/2",
+      "hyperfine": {
+        "1": {
+          "A_MHz": 0.05474945,
+          "A_unc": 5.5e-07,
+          "method": "theory",
+          "note": "derived: calculated hfs splitting 109498.9(1.1) Hz between F = J+1/2 and F = J-1/2, divided by (J+1/2) = 2. Purely theoretical (Brodsky-Parsons formulas incl. off-diagonal hfs); no measurement of comparable accuracy exists.",
+          "source": "A. E. Kramida, At. Data Nucl. Data Tables 96, 586 (2010), Table 1 (hfs splittings in hydrogen)",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+        }
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 82258.9543992821,
+      "lower_J": "1/2",
+      "upper_J": "1/2",
+      "label": "1s 2S1/2 - 2s 2S1/2",
+      "type": "two-photon",
+      "use": "1S-2S two-photon transition (2 x 243.1 nm), natural width 1.3 Hz: Rydberg constant / proton radius, tests of QED and of CPT with trapped antihydrogen (ALPHA)",
+      "frequency_THz": {
+        "value": 2466.061413187035,
+        "unc": 1e-11,
+        "value_text": "2 466 061 413 187 035(10) Hz",
+        "isotope": "1",
+        "method": "experiment",
+        "note": "hyperfine centroid",
+        "source": "Parthey, Matveev, Alnis, et al., Phys. Rev. Lett. 107, 203001 (2011), arXiv:1107.3101",
+        "url": "https://arxiv.org/pdf/1107.3101",
+        "alternatives": [
+          {
+            "value": 2466.061413187018,
+            "unc": 1.1e-11,
+            "value_text": "2 466 061 413 187.018(11) kHz",
+            "note": "Matveev et al., Phys. Rev. Lett. 110, 230801 (2013), item A7 of CODATA 2022 Table XI",
+            "url": "https://arxiv.org/pdf/2409.03787"
+          }
+        ]
+      },
+      "frequency_THz_2": {
+        "value": 2466.732407521641,
+        "unc": 1.8e-11,
+        "value_text": "2 466 732 407 521.641(18) kHz",
+        "isotope": "2",
+        "method": "experiment",
+        "note": "derived: nu(H, Parthey 2011) + measured isotope shift (Parthey 2010); uncertainties added in quadrature; hyperfine centroid",
+        "source": "Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025)), items A5 and A6",
+        "url": "https://arxiv.org/pdf/2409.03787"
+      },
+      "isotope_shift_MHz": {
+        "2-1": {
+          "value": 670994.334606,
+          "unc": 1.5e-05,
+          "value_text": "670 994 334.606(15) kHz",
+          "method": "experiment",
+          "source": "Parthey, Matveev, Alnis, Pohl, Udem, Jentschura, Kolachevsky, Haensch, Phys. Rev. Lett. 104, 233001 (2010); item A5 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+          "url": "https://arxiv.org/pdf/2409.03787"
+        }
+      },
+      "A_s": {
+        "value": 8.2290619,
+        "method": "theory",
+        "note": "two-photon (2E1) spontaneous decay rate of 2S",
+        "source": "Sommerfeldt et al., Phys. Rev. A 102, 042811 (2020), arXiv:2008.03950, Table II",
+        "url": "https://arxiv.org/pdf/2008.03950"
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 97492.221701,
+      "lower_J": "1/2",
+      "upper_J": "1/2",
+      "label": "1s 2S1/2 - 3s 2S1/2",
+      "type": "two-photon",
+      "use": "1S-3S two-photon transition (2 x 205 nm): Rydberg constant / proton radius",
+      "frequency_THz": {
+        "value": 2922.74327866579,
+        "unc": 7.2e-10,
+        "value_text": "2 922 743 278 665.79(72) kHz",
+        "isotope": "1",
+        "method": "experiment",
+        "note": "hyperfine centroid",
+        "source": "Grinin, Matveev, Yost, Maisenbacher, Wirthl, Pohl, Haensch, Udem, Science 370, 1061 (2020); item A9 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+        "url": "https://arxiv.org/pdf/2409.03787",
+        "alternatives": [
+          {
+            "value": 2922.7432786715,
+            "unc": 2.6e-09,
+            "value_text": "2 922 743 278 671.5(2.6) kHz",
+            "note": "Fleurbaey, Galtier, Thomas, Bonnaud, Julien, Biraben, Nez, Abgrall, Guena, Phys. Rev. Lett. 120, 183001 (2018), arXiv:1801.08816; differs from the MPQ value by 2.1 combined sigma (CODATA 2022)",
+            "url": "https://arxiv.org/pdf/1801.08816"
+          }
+        ]
+      }
+    },
+    {
+      "lower_cm": 82258.9543992821,
+      "upper_cm": 107965.054866,
+      "lower_J": "1/2",
+      "upper_J": "3/2",
+      "label": "2s 2S1/2 - 8d 2D3/2",
+      "type": "two-photon",
+      "use": "2S-8D two-photon transition (2 x 778 nm): Rydberg constant / proton radius",
+      "frequency_THz": {
+        "value": 770.64950445,
+        "unc": 8.3e-09,
+        "value_text": "770 649 504 450.0(8.3) kHz",
+        "isotope": "1",
+        "method": "experiment",
+        "note": "hyperfine centroid",
+        "source": "de Beauvoir, Nez, Julien, Cagnac, Biraben, Touahri, Hilico, Acef, Clairon, Zondy, Phys. Rev. Lett. 78, 440 (1997); item A11 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+        "url": "https://arxiv.org/pdf/2409.03787"
+      },
+      "frequency_THz_2": {
+        "value": 770.8591957018001,
+        "unc": 6.3e-09,
+        "isotope": "2",
+        "method": "experiment",
+        "note": "hyperfine centroid",
+        "source": "de Beauvoir et al., Phys. Rev. Lett. 78, 440 (1997); item A14/A15 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+        "url": "https://arxiv.org/pdf/2409.03787"
+      },
+      "isotope_shift_MHz": {
+        "2-1": {
+          "value": 209691.2518,
+          "unc": 0.0104,
+          "method": "experiment",
+          "note": "derived: difference of the D and H frequencies of de Beauvoir et al. 1997 (uncertainties added in quadrature, correlations ignored)",
+          "source": "Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+          "url": "https://arxiv.org/pdf/2409.03787"
+        }
+      }
+    },
+    {
+      "lower_cm": 82258.9543992821,
+      "upper_cm": 107965.05677174,
+      "lower_J": "1/2",
+      "upper_J": "5/2",
+      "label": "2s 2S1/2 - 8d 2D5/2",
+      "type": "two-photon",
+      "use": "2S-8D two-photon transition (2 x 778 nm): Rydberg constant / proton radius",
+      "frequency_THz": {
+        "value": 770.6495615709001,
+        "unc": 2e-09,
+        "value_text": "770 649 561 570.9(2.0) kHz",
+        "isotope": "1",
+        "method": "experiment",
+        "note": "hyperfine centroid",
+        "source": "Brandt, Cooper, Rasor, Burkley, Matveev, Yost, Phys. Rev. Lett. 128, 023001 (2022), arXiv:2111.08554",
+        "url": "https://arxiv.org/pdf/2111.08554",
+        "alternatives": [
+          {
+            "value": 770.6495615842,
+            "unc": 6.4e-09,
+            "value_text": "770 649 561 584.2(6.4) kHz",
+            "note": "de Beauvoir et al., Phys. Rev. Lett. 78, 440 (1997), item A12 of CODATA 2022 Table XI; differs from Brandt 2022 by 13.3(6.7) kHz",
+            "url": "https://arxiv.org/pdf/2409.03787"
+          }
+        ]
+      },
+      "frequency_THz_2": {
+        "value": 770.8592528495001,
+        "unc": 5.900000000000001e-09,
+        "isotope": "2",
+        "method": "experiment",
+        "note": "hyperfine centroid",
+        "source": "de Beauvoir et al., Phys. Rev. Lett. 78, 440 (1997); item A14/A15 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+        "url": "https://arxiv.org/pdf/2409.03787"
+      },
+      "isotope_shift_MHz": {
+        "2-1": {
+          "value": 209691.2653,
+          "unc": 0.0087,
+          "method": "experiment",
+          "note": "derived: difference of the D and H frequencies of de Beauvoir et al. 1997 (uncertainties added in quadrature, correlations ignored)",
+          "source": "Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+          "url": "https://arxiv.org/pdf/2409.03787"
+        }
+      }
+    },
+    {
+      "lower_cm": 82258.9191133,
+      "upper_cm": 82258.9543992821,
+      "lower_J": "1/2",
+      "upper_J": "1/2",
+      "label": "2p 2P1/2 - 2s 2S1/2 (Lamb shift)",
+      "type": "E1",
+      "use": "n = 2 Lamb shift (rf, 1058 MHz): QED test, proton radius",
+      "frequency_THz": {
+        "value": 0.0010578298,
+        "unc": 3.2e-09,
+        "value_text": "1 057 829.8(3.2) kHz",
+        "isotope": "1",
+        "method": "experiment",
+        "note": "fine-structure interval between hyperfine centroids (hfs removed)",
+        "source": "Bezginov, Valdez, Horbatsch, Marsman, Vutha, Hessels, Science 365, 1007 (2019); item A29 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+        "url": "https://arxiv.org/pdf/2409.03787",
+        "alternatives": [
+          {
+            "value": 0.001057845,
+            "unc": 9e-09,
+            "value_text": "1 057 845.0(9.0) kHz",
+            "note": "Lundeen and Pipkin, Phys. Rev. Lett. 46, 232 (1981), item A27",
+            "url": "https://arxiv.org/pdf/2409.03787"
+          },
+          {
+            "value": 0.001057862,
+            "unc": 2e-08,
+            "value_text": "1 057 862(20) kHz",
+            "note": "Newton, Andrews, Unsworth (1979), item A26",
+            "url": "https://arxiv.org/pdf/2409.03787"
+          }
+        ]
+      }
+    },
+    {
+      "lower_cm": 82258.9543992821,
+      "upper_cm": 82259.2850014,
+      "lower_J": "1/2",
+      "upper_J": "3/2",
+      "label": "2s 2S1/2 - 2p 2P3/2",
+      "type": "E1",
+      "use": "n = 2 fine-structure interval (rf, 9.9 GHz)",
+      "frequency_THz": {
+        "value": 0.0099112,
+        "unc": 1.2e-08,
+        "value_text": "9 911 200(12) kHz",
+        "isotope": "1",
+        "method": "experiment",
+        "note": "interval between hyperfine centroids",
+        "source": "Hagley and Pipkin, Phys. Rev. Lett. 72, 1172 (1994); item A28 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+        "url": "https://arxiv.org/pdf/2409.03787"
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 82258.9191133,
+      "lower_J": "1/2",
+      "upper_J": "1/2",
+      "label": "1s 2S1/2 - 2p 2P1/2",
+      "type": "E1",
+      "use": "Lyman-alpha, 121.6 nm: Doppler laser cooling of magnetically trapped (anti)hydrogen with pulsed narrow-linewidth light (ALPHA 2021: velocity change 3.3 m/s per scattered photon; 1S-2S line narrowed from 57.6(12) kHz to 14.4(4.0) kHz after cooling); earlier cooling of trapped hydrogen from 80 mK to 11 mK (Setija et al., Phys. Rev. Lett. 70, 2257 (1993), as cited there)",
+      "use_source": "Baker et al. (ALPHA Collaboration), Nature 592, 35 (2021)",
+      "use_url": "https://www.nature.com/articles/s41586-021-03289-6"
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 82259.2850014,
+      "lower_J": "1/2",
+      "upper_J": "3/2",
+      "label": "1s 2S1/2 - 2p 2P3/2",
+      "type": "E1",
+      "use": "Lyman-alpha, 121.6 nm: Doppler laser cooling of magnetically trapped (anti)hydrogen with pulsed narrow-linewidth light (ALPHA 2021: velocity change 3.3 m/s per scattered photon; 1S-2S line narrowed from 57.6(12) kHz to 14.4(4.0) kHz after cooling); earlier cooling of trapped hydrogen from 80 mK to 11 mK (Setija et al., Phys. Rev. Lett. 70, 2257 (1993), as cited there)",
+      "use_source": "Baker et al. (ALPHA Collaboration), Nature 592, 35 (2021)",
+      "use_url": "https://www.nature.com/articles/s41586-021-03289-6"
+    }
+  ],
+  "additional_frequency_data": [
+    {
+      "quantity": "nu(2S1/2 - 4P), fine-structure centroid of 4P1/2 and 4P3/2",
+      "isotope": "1",
+      "value_kHz": 616520931626.8,
+      "unc_kHz": 2.3,
+      "method": "experiment",
+      "source": "Beyer, Maisenbacher, Matveev, Pohl, Khabarova, Grinin, Lamour, Yost, Haensch, Kolachevsky, Udem, Science 358, 79 (2017); item A8 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787",
+      "note": "486 nm one-photon 2S-4P; the individual 2S-4P1/2 and 2S-4P3/2 frequencies are in the Science paper, which could not be opened"
+    },
+    {
+      "quantity": "nu(2S1/2 - 8S1/2)",
+      "isotope": "1",
+      "value_kHz": 770649350012.0,
+      "unc_kHz": 8.6,
+      "method": "experiment",
+      "source": "de Beauvoir et al. 1997; item A10 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 8S1/2)",
+      "isotope": "2",
+      "value_kHz": 770859041245.7,
+      "unc_kHz": 6.9,
+      "method": "experiment",
+      "source": "de Beauvoir et al. 1997; item A13 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 12D3/2)",
+      "isotope": "1",
+      "value_kHz": 799191710472.7,
+      "unc_kHz": 9.4,
+      "method": "experiment",
+      "source": "Schwob et al., Phys. Rev. Lett. 82, 4960 (1999); item A16 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 12D5/2)",
+      "isotope": "1",
+      "value_kHz": 799191727403.7,
+      "unc_kHz": 7.0,
+      "method": "experiment",
+      "source": "Schwob et al. 1999; item A17 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 12D3/2)",
+      "isotope": "2",
+      "value_kHz": 799409168038.0,
+      "unc_kHz": 8.6,
+      "method": "experiment",
+      "source": "Schwob et al. 1999; item A18 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 12D5/2)",
+      "isotope": "2",
+      "value_kHz": 799409184966.8,
+      "unc_kHz": 6.8,
+      "method": "experiment",
+      "source": "Schwob et al. 1999; item A19 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 4S1/2) - nu(1S1/2 - 2S1/2)/4",
+      "isotope": "1",
+      "value_kHz": 4797338,
+      "unc_kHz": 10,
+      "method": "experiment",
+      "source": "Weitz et al. (1995); item A1 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 4D5/2) - nu(1S1/2 - 2S1/2)/4",
+      "isotope": "1",
+      "value_kHz": 6490144,
+      "unc_kHz": 24,
+      "method": "experiment",
+      "source": "Weitz et al. (1995); item A2 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 4S1/2) - nu(1S1/2 - 2S1/2)/4",
+      "isotope": "2",
+      "value_kHz": 4801693,
+      "unc_kHz": 20,
+      "method": "experiment",
+      "source": "Weitz et al. (1995); item A3 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 4D5/2) - nu(1S1/2 - 2S1/2)/4",
+      "isotope": "2",
+      "value_kHz": 6494841,
+      "unc_kHz": 41,
+      "method": "experiment",
+      "source": "Weitz et al. (1995); item A4 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 6S1/2) - nu(1S1/2 - 3S1/2)/4",
+      "isotope": "1",
+      "value_kHz": 4197604,
+      "unc_kHz": 21,
+      "method": "experiment",
+      "source": "Bourzeix et al. (1996); item A20 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 6D5/2) - nu(1S1/2 - 3S1/2)/4",
+      "isotope": "1",
+      "value_kHz": 4699099,
+      "unc_kHz": 10,
+      "method": "experiment",
+      "source": "Bourzeix et al. (1996); item A21 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 4P1/2) - nu(1S1/2 - 2S1/2)/4",
+      "isotope": "1",
+      "value_kHz": 4664269,
+      "unc_kHz": 15,
+      "method": "experiment",
+      "source": "Berkeland, Hinds, Boshier (1995); item A24 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "nu(2S1/2 - 4P3/2) - nu(1S1/2 - 2S1/2)/4",
+      "isotope": "1",
+      "value_kHz": 6035373,
+      "unc_kHz": 10,
+      "method": "experiment",
+      "source": "Berkeland, Hinds, Boshier (1995); item A25 of Table XI of Mohr, Newell, Taylor, Tiesinga, CODATA Recommended Values of the Fundamental Physical Constants: 2022, arXiv:2409.03787 (Rev. Mod. Phys. 97, 025002 (2025))",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "quantity": "ground-state hyperfine transition F=1 - F=0 (21 cm line)",
+      "isotope": "1",
+      "value_kHz": 1420405.751768,
+      "unc_kHz": 1e-06,
+      "method": "compilation",
+      "source": "Table 4 of Karshenboim, Phys. Rep. 422, 1 (2005), arXiv:hep-ph/0509010",
+      "url": "https://arxiv.org/pdf/hep-ph/0509010"
+    }
+  ],
+  "not_found": [
+    "measured radiative lifetimes of 2P, 3S, 3P, 3D, ... (beam-foil / Lyman-alpha decay): no accessible paper with a measured value was opened; the lifetimes given are exact hydrogenic theory (Wiese & Fuhr 2009) and are marked theory",
+    "theory lifetimes of the n = 7-12 levels drawn by the site (7p ... 12p, 7d ... 11d): the fine-structure table of Wiese & Fuhr 2009 (Table 6) only resolves nl - n'l' up to n = 6, and the cached NIST line list has only the decays to n = 1, 2 for these levels, so a complete sum over decay channels could not be formed; left out rather than given incomplete",
+    "direct measurement of the 2S lifetime (0.122 s): none located; only the calculated two-photon rate is given",
+    "individual 2S-4P1/2 and 2S-4P3/2 frequencies of Beyer et al., Science 358, 79 (2017): paper not accessible (no arXiv version); only the 4P centroid from the CODATA table is recorded, under additional_frequency_data",
+    "measured hfs of 2P1/2, 2P3/2 and higher non-S levels: per Kramida 2010 the accurate values are calculated (Brodsky-Parsons); they are entered as theory",
+    "hyperfine structure of deuterium non-S levels (A and B): Kramida 2010 Table 2 gives two F intervals per level and its 2018 erratum corrects some D parameters; not converted to A, B here",
+    "measured g_J of excited H levels: none located",
+    "hfs A of 6g 2G7/2: not in Kramida 2010 Table 1 (table stops at F levels)",
+    "antihydrogen 1S-2S frequency (Ahmadi et al., Nature 557, 71 (2018)): not opened, not recorded"
+  ],
+  "conflicts": [
+    "1S-3S: MPQ (Grinin 2020) 2 922 743 278 665.79(72) kHz vs LKB (Fleurbaey 2018) 2 922 743 278 671.5(2.6) kHz, 2.1 combined sigma apart; MPQ value kept (smaller uncertainty)",
+    "2S-8D5/2: CSU (Brandt 2022) 770 649 561 570.9(2.0) kHz vs LKB (de Beauvoir 1997) 770 649 561 584.2(6.4) kHz, difference 13.3(6.7) kHz; Brandt kept",
+    "Lamb shift 2S1/2-2P1/2: Bezginov 2019 1 057 829.8(3.2) kHz vs Lundeen-Pipkin 1981 1 057 845.0(9.0) kHz and Newton 1979 1 057 862(20) kHz; Bezginov kept",
+    "1S-2S: Parthey 2011 ...187.035(10) kHz vs Matveev 2013 ...187.018(11) kHz (consistent, 1.1 sigma); Parthey kept as requested",
+    "2S hfs of H: 177 556 834.3(6.7) Hz (Kolachevsky 2009) vs 177 556 860(16) Hz (Kolachevsky 2004) vs 177 556 785(29) Hz (Rothery & Hessels 2000); 2009 value kept",
+    "site data: data/h/transitions.csv lists A = 4.699e8 s^-1 for 1s - 2p 2P3/2, but the fine-structure-resolved NIST row (and Wiese & Fuhr 2009) gives 6.2647e8 s^-1; 4.6986e8 is the A of the unresolved n = 1-2 row"
+  ],
+  "notes": "All optical frequencies are hyperfine centroids (centre of gravity), as stated in the sources; 'value_text' repeats the number exactly as printed because 16-digit frequencies exceed double precision. frequency_THz refers to 1H, frequency_THz_2 to deuterium; isotope shifts are nu(2H) - nu(1H). Non-schema additions: transition type 'two-photon' (1S-2S, 1S-3S, 2S-8D: E1E1 two-photon lines, no single-photon E1 amplitude), 'value_text', 'use_source'/'use_url', 'interval_MHz' in hyperfine blocks, top-level 'ionization_energy', 'conflicts' and 'additional_frequency_data' (measured frequencies that do not map onto a pair of levels drawn by the site: combinations, the 2S-4P centroid, levels 4S/6S/8S/12D, the 21 cm line). Hyperfine A for 1H (I = 1/2): the F = J+1/2 to F = J-1/2 splitting equals A (J + 1/2). For 2H (I = 1) and J = 1/2 the splitting is 3A/2. Lifetimes of n = 2-6 levels are exact hydrogenic theory (not measurements), obtained as 1/sum(A) from Wiese & Fuhr 2009; the 2S lifetime is the calculated two-photon value. Lamb-shift and 2S-2P3/2 entries are rf intervals given in THz for schema uniformity."
+}

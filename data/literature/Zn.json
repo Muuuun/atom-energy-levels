@@ -1,0 +1,441 @@
+{
+ "element": "Zn",
+ "isotopes": {
+  "64": {
+   "I": "0",
+   "abundance_percent": 49.17,
+   "abundance_unc": 0.75,
+   "relative_atomic_mass_u": "63.92914201(71)",
+   "method": "compilation",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Zn); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data (https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable1.htm)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Zn&ascii=ascii2&isotype=some",
+   "note": "Waldherr et al. 2026 (Table I, their Ref. [10]) use slightly different abundances: 64Zn 48.63(60) %, 66Zn 27.90(27) %, 67Zn 4.10(13) %."
+  },
+  "66": {
+   "I": "0",
+   "abundance_percent": 27.73,
+   "abundance_unc": 0.98,
+   "relative_atomic_mass_u": "65.92603381(94)",
+   "method": "compilation",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Zn); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data (https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable1.htm)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Zn&ascii=ascii2&isotype=some"
+  },
+  "67": {
+   "I": "5/2",
+   "abundance_percent": 4.04,
+   "abundance_unc": 0.16,
+   "relative_atomic_mass_u": "66.92712775(96)",
+   "method": "compilation",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Zn); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data (https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable1.htm)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Zn&ascii=ascii2&isotype=some",
+   "nuclear_magnetic_moment_muN": {
+    "value": 0.87515,
+    "method": "compilation",
+    "source": "NIST Handbook of Basic Atomic Spectroscopic Data (Zn)",
+    "url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable1.htm"
+   }
+  },
+  "68": {
+   "I": "0",
+   "abundance_percent": 18.45,
+   "abundance_unc": 0.63,
+   "relative_atomic_mass_u": "67.92484455(98)",
+   "method": "compilation",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Zn); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data (https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable1.htm)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Zn&ascii=ascii2&isotype=some"
+  },
+  "70": {
+   "I": "0",
+   "abundance_percent": 0.61,
+   "abundance_unc": 0.1,
+   "relative_atomic_mass_u": "69.9253192(21)",
+   "method": "compilation",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Zn); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data (https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable1.htm)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Zn&ascii=ascii2&isotype=some"
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "label": "4s2 1S0",
+   "J": "0"
+  },
+  {
+   "nist_energy_cm": 32311.3176,
+   "label": "4s4p 3P0",
+   "J": "0",
+   "natural_linewidth_mHz": {
+    "source": "Moeller & Stellmer, 'Magneto-optical trapping of zinc', arXiv:2510.21376 (2025)",
+    "url": "https://arxiv.org/abs/2510.21376",
+    "value": 2.5,
+    "method": "compilation",
+    "note": "printed '~2.5 mHz' for the 309.5 nm clock line in the level scheme (Fig. 1) of Moeller & Stellmer; presumably the hyperfine-quenched 67Zn value from theory, no source or measurement given. Corresponds to tau ~ 64 s (derived)."
+   }
+  },
+  {
+   "nist_energy_cm": 32501.399,
+   "label": "4s4p 3P1",
+   "J": "1",
+   "lifetime": {
+    "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+    "url": "https://arxiv.org/abs/2605.29574",
+    "value": 2.6e-05,
+    "unit": "s",
+    "method": "compilation",
+    "note": "printed as 'excited-state lifetime of tau ~ 26 us' without a citation; equivalent to the '2 pi x 6 kHz' linewidth that Bueki et al. 2021 take from theory (Froese Fischer & Zatsarinny). No modern measurement located; treat as approximate.",
+    "alternatives": [
+     {
+      "source": "Bandarupally, Tinsley, Chiarotti, Poli, 'Design and simulation of a source of cold cadmium for atom interferometry', arXiv:2306.00782 (2023)",
+      "url": "https://arxiv.org/abs/2306.00782",
+      "value": 3.98e-05,
+      "unit": "s",
+      "method": "compilation",
+      "note": "derived from 'Gamma = 2 pi x 4 kHz' as quoted by Bandarupally et al. 2023 for the 308 nm line (source not given there)"
+     }
+    ]
+   },
+   "hyperfine": {
+    "67": {
+     "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+     "url": "https://arxiv.org/abs/2605.29574",
+     "A_MHz": 608.922,
+     "A_unc": 0.003,
+     "B_MHz": -18.995,
+     "B_unc": 0.01,
+     "method": "experiment",
+     "note": "laser-induced fluorescence on a thermal beam; intervals nu(5/2-3/2) = 1550.795(16) MHz, nu(7/2-5/2) = 2111.283(15) MHz",
+     "alternatives": [
+      {
+       "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+       "url": "https://arxiv.org/abs/2605.29574",
+       "A_MHz": 609.086,
+       "A_unc": 0.001,
+       "B_MHz": -18.782,
+       "B_unc": 0.008,
+       "method": "compilation",
+       "note": "optical double resonance, Byron, McDermott, Novick, Perry, Saloman, Phys. Rev. 134, A47 (1964), as quoted in Waldherr et al. Table II; intervals 1551.565(4) and 2111.300(3) MHz. The 5/2-3/2 interval differs by 0.77 MHz from the new measurement (unexplained)."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 32890.3267,
+   "label": "4s4p 3P2",
+   "J": "2"
+  },
+  {
+   "nist_energy_cm": 46745.4032,
+   "label": "4s4p 1P1",
+   "J": "1",
+   "lifetime": {
+    "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+    "url": "https://arxiv.org/abs/2309.03669",
+    "value": 1.44e-09,
+    "unc": 1.8e-11,
+    "unit": "s",
+    "method": "experiment",
+    "note": "tau = 1/Gamma from the fitted Lorentzian linewidth Gamma/2pi = 110.5(1.4) MHz (cryogenic buffer-gas beam)",
+    "alternatives": [
+     {
+      "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+      "url": "https://arxiv.org/abs/2309.03669",
+      "value": 1.4e-09,
+      "unc": 3e-11,
+      "unit": "s",
+      "method": "compilation",
+      "note": "weighted average of 5 measurements collated by Doidge, Spectrochim. Acta B (their Ref. [33]), as quoted in Roeser et al. Table I"
+     }
+    ]
+   },
+   "hyperfine": {
+    "67": {
+     "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+     "url": "https://arxiv.org/abs/2309.03669",
+     "A_MHz": 20,
+     "A_unc": 2,
+     "B_MHz": 10,
+     "B_unc": 5,
+     "method": "experiment",
+     "note": "from the fluorescence line shape with quantum interference; fitting with B = 0 returns A = 21 MHz. Moeller & Stellmer sketch the F' = 3/2, 5/2, 7/2 levels at about -60, -30, +50 MHz.",
+     "alternatives": [
+      {
+       "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+       "url": "https://arxiv.org/abs/2309.03669",
+       "A_MHz": 17.7,
+       "A_unc": 0.5,
+       "method": "compilation",
+       "note": "level-crossing spectroscopy of enriched 67Zn, Kowalski & Traeger, Z. Phys. A (their Ref. [29]); B not determined"
+      }
+     ]
+    }
+   },
+   "photoionization": {
+    "source": "Moeller & Stellmer, 'Magneto-optical trapping of zinc', arXiv:2510.21376 (2025)",
+    "url": "https://arxiv.org/abs/2510.21376",
+    "cross_section_m2": 2e-22,
+    "unc_m2": 5e-23,
+    "method": "experiment",
+    "note": "photoionization cross section of 4s4p 1P1 by the 213.9 nm MOT light, from the MOT loading time (losses dominated by photoionization)"
+   }
+  },
+  {
+   "nist_energy_cm": 53672.2398,
+   "label": "4s5s 3S1",
+   "J": "1"
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 46745.4032,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "4s2 1S0 - 4s4p 1P1",
+   "use": "213.9 nm resonance line: MOT / slowing / imaging",
+   "type": "E1",
+   "frequency_THz": {
+    "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+    "url": "https://arxiv.org/abs/2309.03669",
+    "value": 1401.39166,
+    "unc": 6e-05,
+    "isotope": "64",
+    "method": "experiment",
+    "note": "printed 1,401,391.66(6) GHz (46745.394(2) cm^-1), wavemeter-limited; bosonic isotope. Isotope-averaged line centre 46745.407(2) cm^-1 (hollow-cathode value of Gullberg & Litzen: 46745.404(2))."
+   },
+   "A_s": {
+    "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+    "url": "https://arxiv.org/abs/2309.03669",
+    "value": 694400000.0,
+    "unc": 8700000.0,
+    "method": "experiment",
+    "note": "derived: 1/tau with tau = 1.440(18) ns; NIST ASD lists 7.14e8 s^-1 (accuracy A)"
+   },
+   "natural_linewidth_MHz": {
+    "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+    "url": "https://arxiv.org/abs/2309.03669",
+    "value": 110.5,
+    "unc": 1.4,
+    "method": "experiment",
+    "note": "Lorentzian FWHM Gamma/2pi. Moeller & Stellmer 2025 quote 114 MHz (NIST A value); Bandarupally et al. 2023 quote 71 MHz (not supported by the measurements)."
+   },
+   "rme_J_ea0": {
+    "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+    "url": "https://arxiv.org/abs/2309.03669",
+    "value": 3.173,
+    "unc": 0.02,
+    "method": "experiment",
+    "note": "derived from tau = 1.440(18) ns and the NIST wavenumber, A = w^3 |d|^2/(3 pi eps0 hbar c^3 (2J'+1)); branching to the ground state taken as 1"
+   },
+   "isotope_shift_MHz": {
+    "66-64": {
+     "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+     "url": "https://arxiv.org/abs/2309.03669",
+     "value": 525.0,
+     "unc": 3.0,
+     "method": "experiment",
+     "alternatives": [
+      {
+       "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+       "url": "https://arxiv.org/abs/2309.03669",
+       "value": 480,
+       "unc": 60,
+       "method": "compilation",
+       "note": "Crawford, Schawlow, Gray, Kelly (their Ref. [30])"
+      },
+      {
+       "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+       "url": "https://arxiv.org/abs/2309.03669",
+       "value": 540,
+       "unc": 60,
+       "method": "compilation",
+       "note": "Hately & Littlefield, JOSA 48, 851 (1958)"
+      }
+     ]
+    },
+    "67-64": {
+     "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+     "url": "https://arxiv.org/abs/2309.03669",
+     "value": 835,
+     "unc": 4,
+     "method": "experiment",
+     "note": "hyperfine centre of gravity"
+    },
+    "68-64": {
+     "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+     "url": "https://arxiv.org/abs/2309.03669",
+     "value": 1039.8,
+     "unc": 1.7,
+     "method": "experiment",
+     "alternatives": [
+      {
+       "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+       "url": "https://arxiv.org/abs/2309.03669",
+       "value": 989,
+       "unc": 60,
+       "method": "compilation",
+       "note": "Crawford et al."
+      },
+      {
+       "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+       "url": "https://arxiv.org/abs/2309.03669",
+       "value": 960,
+       "unc": 85,
+       "method": "compilation",
+       "note": "Hately & Littlefield 1958"
+      }
+     ]
+    },
+    "70-64": {
+     "source": "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I",
+     "url": "https://arxiv.org/abs/2309.03669",
+     "value": 1495,
+     "unc": 4,
+     "method": "experiment"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 32501.399,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "4s2 1S0 - 4s4p 3P1",
+   "use": "307.6 nm intercombination line: narrow-line cooling (recoil-limited ~3 uK)",
+   "type": "intercombination",
+   "frequency_THz": {
+    "source": "Bueki, Roeser, Stellmer, 'A frequency quintupled laser at 308 nm for spectroscopy of intercombination lines in zinc', arXiv:2103.11295 (2021) [isotope and centre of gravity not verified]",
+    "url": "https://arxiv.org/abs/2103.11295",
+    "value": 974.367479,
+    "unc": 0.000165,
+    "isotope": "natural",
+    "method": "experiment",
+    "note": "centre of a Doppler-broadened absorption profile of natural zinc in a heated cell, f = 974 367 479(165) MHz (wavemeter); not isotope-resolved, so 'not verified' is written in the source string"
+   },
+   "natural_linewidth_kHz": {
+    "source": "Bueki, Roeser, Stellmer, 'A frequency quintupled laser at 308 nm for spectroscopy of intercombination lines in zinc', arXiv:2103.11295 (2021)",
+    "url": "https://arxiv.org/abs/2103.11295",
+    "value": 6,
+    "method": "theory",
+    "note": "'2 pi x 6 kHz', taken by Bueki et al. from Froese Fischer & Zatsarinny (theory); Moeller & Stellmer 2025 also quote 6 kHz, Bandarupally et al. 2023 quote 4 kHz. NIST ASD carries no A value for this line."
+   },
+   "A_s": {
+    "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+    "url": "https://arxiv.org/abs/2605.29574",
+    "value": 38500.0,
+    "method": "compilation",
+    "note": "derived: 1/tau with the quoted tau ~ 26 us (approximate, see level lifetime)"
+   },
+   "rme_J_ea0": {
+    "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+    "url": "https://arxiv.org/abs/2605.29574",
+    "value": 0.0407,
+    "method": "compilation",
+    "note": "derived from the quoted tau ~ 26 us and the NIST wavenumber (schema convention); approximate, no uncertainty"
+   },
+   "isotope_shift_MHz": {
+    "66-64": {
+     "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+     "url": "https://arxiv.org/abs/2605.29574",
+     "value": 689.411,
+     "unc": 0.003,
+     "method": "experiment",
+     "alternatives": [
+      {
+       "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+       "url": "https://arxiv.org/abs/2605.29574",
+       "value": 688.6,
+       "unc": 1.0,
+       "method": "compilation",
+       "note": "atomic-beam measurement of Campbell, Billowes, Grant (their Ref. [13])"
+      }
+     ]
+    },
+    "67-64": {
+     "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+     "url": "https://arxiv.org/abs/2605.29574",
+     "value": 1085.933,
+     "unc": 0.007,
+     "method": "experiment",
+     "note": "hyperfine centre of gravity; 67-66 = 396.522(7) MHz",
+     "alternatives": [
+      {
+       "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+       "url": "https://arxiv.org/abs/2605.29574",
+       "value": 1085.7,
+       "unc": 2.2,
+       "method": "compilation",
+       "note": "Campbell et al. (printed 1085.7(2.0) in Table II and 1085.7(2.2) in Table III)"
+      }
+     ]
+    },
+    "68-64": {
+     "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+     "url": "https://arxiv.org/abs/2605.29574",
+     "value": 1362.39,
+     "unc": 0.003,
+     "method": "experiment",
+     "alternatives": [
+      {
+       "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+       "url": "https://arxiv.org/abs/2605.29574",
+       "value": 1365.2,
+       "unc": 1.4,
+       "method": "compilation",
+       "note": "Campbell et al."
+      }
+     ]
+    },
+    "70-64": {
+     "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+     "url": "https://arxiv.org/abs/2605.29574",
+     "value": 1958.358,
+     "unc": 0.007,
+     "method": "experiment",
+     "alternatives": [
+      {
+       "source": "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)",
+       "url": "https://arxiv.org/abs/2605.29574",
+       "value": 1962.2,
+       "unc": 1.7,
+       "method": "compilation",
+       "note": "Campbell et al."
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "rydberg": {
+  "ionization_limit": [
+   {
+    "source": "NIST ASD levels file (Zn II 4s 2S1/2 limit)",
+    "url": "/Users/muqiao/Documents/rb_energy_levels/data/nist/Zn_I_levels.tsv",
+    "value": 75769.31,
+    "unc": 0.05,
+    "unit": "cm-1",
+    "method": "compilation",
+    "note": "NIST ASD; the NIST Handbook of Basic Atomic Spectroscopic Data gives 75769.33 cm-1 (9.394199 eV)"
+   }
+  ],
+  "photoionization_note": "Two 213.9 nm photons exceed the ionization energy; the Zn MOT lifetime is limited by photoionization out of 4s4p 1P1 (cross section under levels[4s4p 1P1].photoionization)."
+ },
+ "not_found": [
+  "Absolute frequency of the 309.5 nm 1S0-3P0 clock line: no laser measurement located (only NIST Ritz level energies); no measured 3P0 lifetime (only '~2.5 mHz' in a level scheme).",
+  "Measured lifetime of 4s4p 3P1 with uncertainty and original citation: only 'tau ~ 26 us' (Waldherr et al. 2026) and theory-based 6 kHz / 4 kHz linewidth statements; the measurement of Byron et al. 1964 could not be opened.",
+  "Isotope-resolved absolute frequency of the 307.6 nm line: only the Doppler-broadened natural-mixture centre of Bueki et al. 2021.",
+  "1S0-3P2 (304 nm, M2) line: no measurement located.",
+  "Lifetimes of 4s4p 3P2, 4s5s 3S1 and 4s4d 3D1,2,3; A values for the 468.0 / 472.2 / 481.1 nm (3P-3S1) and 328.2 / 330.3 / 334.5 nm (3P-3D) lines beyond NIST ASD: no accessible source opened.",
+  "67Zn hyperfine constants of 4s4p 3P2 (Lurio 1962), 4s5s 3S1 and 4s4d 3D: not printed in any source opened.",
+  "Isotope shifts of the 481 nm 3P2-3S1 line (Campbell, Billowes, Grant): only mass-scaled values inside a global fit are printed in Sahoo & Ohayon, Phys. Rev. Research 5, 043142 (2023); raw MHz values not located.",
+  "Measured Lande g factors: none beyond the values already in the NIST ASD levels file."
+ ],
+ "conflicts": [
+  "67Zn 4s4p 3P1 hyperfine constants: A = 608.922(3), B = -18.995(10) MHz (Waldherr et al. 2026, laser fluorescence) vs A = 609.086(1), B = -18.782(8) MHz (Byron et al. 1964, double resonance); the F=5/2-3/2 interval differs by 0.77 MHz, reason unknown.",
+  "307.6 nm isotope shifts: new kHz-level values vs Campbell et al.: 68-64 1362.390(3) vs 1365.2(1.4) MHz and 70-64 1958.358(7) vs 1962.2(1.7) MHz (2 sigma).",
+  "67Zn 1P1 magnetic hyperfine constant: 20(2) MHz (Roeser 2024) vs 17.7(5) MHz (Kowalski & Traeger).",
+  "213.9 nm natural linewidth: 110.5(1.4) MHz measured (tau = 1.440(18) ns) vs 114 MHz from the NIST A value (7.14e8 s^-1, tau = 1.40 ns) vs 71 MHz quoted by Bandarupally et al. 2023.",
+  "307.6 nm linewidth: 6 kHz (theory, quoted by Bueki 2021 and Moeller 2025; tau ~ 26 us) vs 4 kHz (Bandarupally 2023); the task brief assumed ~4 kHz."
+ ],
+ "notes": "Conventions. (1) Isotope-shift keys 'a-b' mean nu(a) - nu(b), all relative to 64Zn as printed; 67Zn values are hyperfine centres of gravity. (2) Fields beyond SCHEMA.md: natural_linewidth_*, photoionization, top-level 'rydberg' (ionization limit) and 'conflicts'. (3) rme_J_ea0 values are derived here from lifetimes (schema convention, branching to the ground state taken as 1); the 307.6 nm one rests on an approximate, uncited lifetime. (4) The 307.6 nm frequency_THz is a natural-mixture Doppler centre and is flagged 'not verified' in its source string so that the pipeline ignores it. (5) Zinc has far less modern laser-spectroscopy data than Cd or Hg: only the two ground-state lines have been measured with lasers."
+}

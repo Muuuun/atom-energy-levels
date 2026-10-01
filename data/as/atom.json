@@ -6,44 +6,22 @@
   "symbol": "As",
   "A": null,
   "Z": 33,
-  "I": null,
+  "I": "3/2",
   "kind": "nist",
   "limit_cm": 78950.0,
   "scale": "auto",
   "spectrum": "As I",
   "auto": true,
+  "has_lit": true,
+  "freq_isotope": "75",
   "limit_text": "As$^+$ ionisation limit   78950.00 cm$^{-1}$  =  9.78855 eV  (126.662 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Level energies are the NIST ASD values (data/nist/As_I_levels.tsv). 75As has I = 3/2 and is the only stable isotope. The two resonance-line A values are derived from the absorption oscillator strengths printed by Bengtsson et al. (their laser lifetimes combined with the branching ratios of Lotrian et al. 1980); NIST ASD already lists the same numbers. Hyperfine A constants of the 4p3 2D, 2P levels are second-hand (Bouazza et al. 1987 as quoted by Liu et al. 2023); note the large uncertainty of 2P°3/2. Lifetimes of the 4p3 metastable levels and all forbidden-line rates are THEORY. In the forbidden-line entries A_s is the sum of the calculated M1 and E2 rates and the note gives both parts."
  },
  "columns": [
   {
    "key": "4S*",
    "header": "^4S^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "4D*",
-   "header": "^4D^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "4P",
-   "header": "^4P",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "4P*",
-   "header": "^4P^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "2D*",
-   "header": "^2D^{o}",
    "group": null,
    "width": 1.0
   },
@@ -60,8 +38,32 @@
    "width": 1.0
   },
   {
+   "key": "2D*",
+   "header": "^2D^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
    "key": "2D",
    "header": "^2D",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "4P",
+   "header": "^4P",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "4P*",
+   "header": "^4P^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "4D*",
+   "header": "^4D^{o}",
    "group": null,
    "width": 1.0
   },
@@ -87,11 +89,19 @@
    "conf": "4s2.4p3",
    "term": "4S*",
    "parity": "odd",
-   "g": null,
+   "g": 1.9965,
    "name": "4s^{2}4p^{3}\\ ^4S^{o}_{3/2}",
    "plain": "4s24p3 4S°3/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": -66.204,
+    "A_unc": 0.001,
+    "B": -0.535,
+    "B_unc": 0.003,
+    "tier": "exp",
+    "src": "Pendlebury and Smith, Proc. Phys. Soc. 84, 849 (1964) (atomic-beam magnetic resonance; values read in the abstract)"
+   },
    "col": 0
   },
   {
@@ -105,9 +115,19 @@
    "g": null,
    "name": "4s^{2}4p^{3}\\ ^2D^{o}_{3/2}",
    "plain": "4s24p3 2D°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 21000000000.0,
+   "tau_unc": 3000000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885, Table IX (relativistic MRCI; M1 + E2 decays)",
+   "hfs": {
+    "A": 480,
+    "A_unc": 9,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885"
+   },
+   "col": 3
   },
   {
    "id": 2,
@@ -120,9 +140,19 @@
    "g": null,
    "name": "4s^{2}4p^{3}\\ ^2D^{o}_{5/2}",
    "plain": "4s24p3 2D°5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 248000000000.0,
+   "tau_unc": 4000000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885, Table IX (relativistic MRCI; M1 + E2 decays)",
+   "hfs": {
+    "A": 725,
+    "A_unc": 26,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885"
+   },
+   "col": 3
   },
   {
    "id": 3,
@@ -135,9 +165,19 @@
    "g": null,
    "name": "4s^{2}4p^{3}\\ ^2P^{o}_{1/2}",
    "plain": "4s24p3 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 1080000000.0,
+   "tau_unc": 20000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885, Table IX (relativistic MRCI; M1 + E2 decays)",
+   "hfs": {
+    "A": 1909,
+    "A_unc": 14,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885"
+   },
+   "col": 2
   },
   {
    "id": 4,
@@ -150,9 +190,19 @@
    "g": null,
    "name": "4s^{2}4p^{3}\\ ^2P^{o}_{3/2}",
    "plain": "4s24p3 2P°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 470000000.0,
+   "tau_unc": 10000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885, Table IX (relativistic MRCI; M1 + E2 decays)",
+   "hfs": {
+    "A": 359,
+    "A_unc": 59,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885"
+   },
+   "col": 2
   },
   {
    "id": 5,
@@ -165,9 +215,11 @@
    "g": null,
    "name": "4s^{2}4p^{2}5s\\ ^4P_{1/2}",
    "plain": "4s24p25s 4P1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 2
+   "tau_ns": 4.5,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 1 (time-resolved VUV laser-induced fluorescence in a differentially heated cell)",
+   "col": 5
   },
   {
    "id": 6,
@@ -180,9 +232,11 @@
    "g": null,
    "name": "4s^{2}4p^{2}5s\\ ^4P_{3/2}",
    "plain": "4s24p25s 4P3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 2
+   "tau_ns": 4.3,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 1 (time-resolved VUV laser-induced fluorescence in a differentially heated cell)",
+   "col": 5
   },
   {
    "id": 7,
@@ -197,7 +251,7 @@
    "plain": "4s24p25s 4P5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 5
   },
   {
    "id": 8,
@@ -212,7 +266,7 @@
    "plain": "4s24p25s 2P1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 1
   },
   {
    "id": 9,
@@ -227,7 +281,7 @@
    "plain": "4s24p25s 2P3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 1
   },
   {
    "id": 10,
@@ -242,7 +296,7 @@
    "plain": "4s4p4 4P5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 5
   },
   {
    "id": 11,
@@ -257,7 +311,7 @@
    "plain": "4s4p4 4P3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 5
   },
   {
    "id": 12,
@@ -287,7 +341,7 @@
    "plain": "4s24p25p 4D°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 7
   },
   {
    "id": 14,
@@ -302,7 +356,7 @@
    "plain": "4s24p25s 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 4
   },
   {
    "id": 15,
@@ -317,7 +371,7 @@
    "plain": "4s24p25s 2D3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 4
   },
   {
    "id": 16,
@@ -332,7 +386,7 @@
    "plain": "4s24p25p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 7
   },
   {
    "id": 17,
@@ -347,7 +401,7 @@
    "plain": "4s24p25p 4P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 6
   },
   {
    "id": 18,
@@ -362,7 +416,7 @@
    "plain": "4s24p25p 4P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 6
   },
   {
    "id": 19,
@@ -377,7 +431,7 @@
    "plain": "4s24p25p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 3
   },
   {
    "id": 20,
@@ -392,7 +446,7 @@
    "plain": "4s24p24d 4P5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 5
   },
   {
    "id": 21,
@@ -407,7 +461,7 @@
    "plain": "4s24p25p 4D°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 7
   },
   {
    "id": 22,
@@ -422,7 +476,7 @@
    "plain": "4s24p25p 4P°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 6
   },
   {
    "id": 23,
@@ -452,7 +506,7 @@
    "plain": "4s24p25p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 2
   },
   {
    "id": 25,
@@ -467,7 +521,7 @@
    "plain": "4s4p4 2P3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 1
   },
   {
    "id": 26,
@@ -482,7 +536,7 @@
    "plain": "4s4p4 2P1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 1
   },
   {
    "id": 27,
@@ -497,7 +551,7 @@
    "plain": "4s4p4 2D3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 4
   },
   {
    "id": 28,
@@ -512,7 +566,7 @@
    "plain": "4s4p4 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 4
   },
   {
    "id": 29,
@@ -527,7 +581,7 @@
    "plain": "4s24p26p 4P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 6
   },
   {
    "id": 30,
@@ -542,7 +596,7 @@
    "plain": "4s24p26p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 7
   },
   {
    "id": 31,
@@ -557,7 +611,7 @@
    "plain": "4s24p26p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 3
   },
   {
    "id": 32,
@@ -602,7 +656,7 @@
    "plain": "4s24p26p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 3
   }
  ],
  "transitions": [
@@ -674,13 +728,18 @@
    "wn": 51610.2,
    "lam": 193.7601,
    "air": null,
+   "use": "resonance line (VUV); abundance work, atomic absorption",
+   "gamma_MHz": 37.01,
    "type": "E1",
    "A": 219000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
+   "A_tier": "exp",
+   "A_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2",
+   "A_unc": 30000000.0,
    "d": 1.773,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2 (from A)",
+   "br": 0.9417,
+   "br_tier": "exp",
    "lam_obs": 193.759
   },
   {
@@ -693,13 +752,18 @@
    "wn": 50693.8,
    "lam": 197.2628,
    "air": null,
+   "use": "resonance line (VUV); abundance work, atomic absorption",
+   "gamma_MHz": 35.37,
    "type": "E1",
    "A": 202000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
+   "A_tier": "exp",
+   "A_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2",
+   "A_unc": 27000000.0,
    "d": 1.237,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2 (from A)",
+   "br": 0.909,
+   "br_tier": "exp",
    "lam_obs": 197.262
   },
   {
@@ -937,6 +1001,7 @@
    "wn": 40695.6,
    "lam": 245.7268,
    "air": 245.6525,
+   "gamma_MHz": 37.01,
    "type": "E1 (intercombination)",
    "A": 7200000.0,
    "A_tier": "nist",
@@ -944,6 +1009,8 @@
    "d": 0.4592,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.031,
+   "br_tier": "nist",
    "lam_obs": 245.727
   },
   {
@@ -956,6 +1023,7 @@
    "wn": 40101.3,
    "lam": 249.3685,
    "air": 249.2933,
+   "gamma_MHz": 35.37,
    "type": "E1 (intercombination)",
    "A": 12000000.0,
    "A_tier": "nist",
@@ -963,6 +1031,8 @@
    "d": 0.4286,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.054,
+   "br_tier": "nist",
    "lam_obs": 249.366
   },
   {
@@ -1094,6 +1164,25 @@
    "lam_obs": 514.306
   },
   {
+   "kind": "forbidden",
+   "freq": 559.03799,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 4,
+   "wn": 18647.5,
+   "lam": 536.2649,
+   "air": 536.1158,
+   "use": "forbidden line within the ground configuration; decay channel of a metastable level",
+   "type": "M1",
+   "gamma_MHz": 3.386e-07,
+   "A": 1.6,
+   "A_tier": "theory",
+   "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
+   "br": 0.752,
+   "br_tier": "theory"
+  },
+  {
    "kind": "E1",
    "freq": 554.19034,
    "freq_tier": "nist",
@@ -1118,6 +1207,25 @@
    "air": 545.1315,
    "type": "E1",
    "lam_obs": 545.284
+  },
+  {
+   "kind": "forbidden",
+   "freq": 545.20556,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 18186.1,
+   "lam": 549.8705,
+   "air": 549.7178,
+   "use": "forbidden line within the ground configuration; decay channel of a metastable level",
+   "type": "M1",
+   "gamma_MHz": 1.474e-07,
+   "A": 0.691,
+   "A_tier": "theory",
+   "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
+   "br": 0.7463,
+   "br_tier": "theory"
   },
   {
    "kind": "E1",
@@ -1146,6 +1254,25 @@
    "lam_obs": 882.415
   },
   {
+   "kind": "forbidden",
+   "freq": 327.21148,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 2,
+   "wn": 10914.6,
+   "lam": 916.204,
+   "air": 915.9526,
+   "use": "forbidden line within the ground configuration; decay channel of a metastable level",
+   "type": "E2",
+   "gamma_MHz": 6.418e-10,
+   "A": 0.0053,
+   "A_tier": "theory",
+   "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
+   "br": 1.0,
+   "br_tier": "theory"
+  },
+  {
    "kind": "E1",
    "freq": 323.41011,
    "freq_tier": "nist",
@@ -1170,6 +1297,25 @@
    "air": 930.0552,
    "type": "E1",
    "lam_obs": 930.316
+  },
+  {
+   "kind": "forbidden",
+   "freq": 317.55516,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 10592.5,
+   "lam": 944.0642,
+   "air": 943.8053,
+   "use": "forbidden line within the ground configuration; decay channel of a metastable level",
+   "type": "M1",
+   "gamma_MHz": 7.579e-09,
+   "A": 0.0749,
+   "A_tier": "theory",
+   "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
+   "br": 1.0,
+   "br_tier": "theory"
   },
   {
    "kind": "E1",
@@ -1274,12 +1420,88 @@
    "air": 1061.4156,
    "type": "E1",
    "lam_obs": 1061.698
+  },
+  {
+   "kind": "forbidden",
+   "freq": 241.48282,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 4,
+   "wn": 8055.0,
+   "lam": 1241.4649,
+   "air": 1241.1253,
+   "use": "forbidden line within the ground configuration; decay channel of a metastable level",
+   "type": "M1",
+   "gamma_MHz": 3.386e-07,
+   "A": 0.672,
+   "A_tier": "theory",
+   "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
+   "br": 0.3158,
+   "br_tier": "theory"
+  },
+  {
+   "kind": "forbidden",
+   "freq": 231.82651,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 4,
+   "wn": 7732.9,
+   "lam": 1293.1759,
+   "air": 1292.8223,
+   "use": "forbidden line within the ground configuration; decay channel of a metastable level",
+   "type": "M1",
+   "gamma_MHz": 3.386e-07,
+   "A": 0.44,
+   "A_tier": "theory",
+   "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
+   "br": 0.2068,
+   "br_tier": "theory"
+  },
+  {
+   "kind": "forbidden",
+   "freq": 227.6504,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 3,
+   "wn": 7593.6,
+   "lam": 1316.8984,
+   "air": 1316.5384,
+   "use": "forbidden line within the ground configuration; decay channel of a metastable level",
+   "type": "M1",
+   "gamma_MHz": 1.474e-07,
+   "A": 0.42,
+   "A_tier": "theory",
+   "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
+   "br": 0.4536,
+   "br_tier": "theory"
+  },
+  {
+   "kind": "forbidden",
+   "freq": 217.99409,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 3,
+   "wn": 7271.5,
+   "lam": 1375.2321,
+   "air": 1374.8561,
+   "use": "forbidden line within the ground configuration; decay channel of a metastable level",
+   "type": "E2",
+   "gamma_MHz": 1.474e-07,
+   "A": 0.059,
+   "A_tier": "theory",
+   "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
+   "br": 0.0637,
+   "br_tier": "theory"
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -1294,26 +1516,15 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$4s^{2}4p^{3}\\ ^4S^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^4P_{5/2}$",
-     "189.0434",
-     "–",
-     "1585.8392",
-     "2.307",
-     "2.660e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
      "$4s^{2}4p^{3}\\ ^4S^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^4P_{3/2}$",
      "193.7601",
      "–",
      "1547.2349",
      "1.773",
      "2.190e+08",
-     "–",
-     "–",
-     ""
+     "37.01",
+     "94.2",
+     "resonance line"
     ],
     [
      "$4s^{2}4p^{3}\\ ^4S^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^4P_{1/2}$",
@@ -1322,139 +1533,158 @@
      "1519.7619",
      "1.237",
      "2.020e+08",
-     "–",
-     "–",
-     ""
+     "35.37",
+     "90.9",
+     "resonance line"
     ],
     [
-     "$4s^{2}4p^{3}\\ ^2D^{o}_{5/2}$ – $4s^{2}4p^{2}5s\\ ^2P_{3/2}$",
-     "228.8817",
-     "228.8111",
-     "1309.8142",
-     "2.574",
-     "2.800e+08",
+     "$4s^{2}4p^{3}\\ ^4S^{o}_{3/2}$ – $4s^{2}4p^{3}\\ ^2P^{o}_{3/2}$",
+     "536.2649",
+     "536.1158",
+     "559.0380",
      "–",
-     "–",
-     ""
+     "1.600e+00",
+     "3.386e-07",
+     "75.2",
+     "forbidden line within the ground configuration"
     ],
     [
-     "$4s^{2}4p^{3}\\ ^2P^{o}_{1/2}$ – $4s^{2}4p^{2}5s\\ ^2D_{3/2}$",
-     "234.4737",
-     "234.4019",
-     "1278.5759",
-     "0.944",
-     "3.500e+07",
+     "$4s^{2}4p^{3}\\ ^4S^{o}_{3/2}$ – $4s^{2}4p^{3}\\ ^2P^{o}_{1/2}$",
+     "549.8705",
+     "549.7178",
+     "545.2056",
      "–",
-     "–",
-     ""
+     "6.910e-01",
+     "1.474e-07",
+     "74.6",
+     "forbidden line within the ground configuration"
     ],
     [
-     "$4s^{2}4p^{3}\\ ^2D^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^2P_{1/2}$",
-     "235.0557",
-     "234.9838",
-     "1275.4100",
-     "1.994",
-     "3.100e+08",
+     "$4s^{2}4p^{3}\\ ^4S^{o}_{3/2}$ – $4s^{2}4p^{3}\\ ^2D^{o}_{5/2}$",
+     "916.2040",
+     "915.9526",
+     "327.2115",
      "–",
-     "–",
-     ""
+     "5.300e-03",
+     "6.418e-10",
+     "100",
+     "forbidden line within the ground configuration"
     ],
     [
-     "$4s^{2}4p^{3}\\ ^2P^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^2D_{3/2}$",
-     "237.0382",
-     "236.9658",
-     "1264.7434",
-     "1.256",
-     "6.000e+07",
+     "$4s^{2}4p^{3}\\ ^4S^{o}_{3/2}$ – $4s^{2}4p^{3}\\ ^2D^{o}_{3/2}$",
+     "944.0642",
+     "943.8053",
+     "317.5552",
      "–",
-     "–",
-     ""
+     "7.490e-02",
+     "7.579e-09",
+     "100",
+     "forbidden line within the ground configuration"
     ],
     [
-     "$4s^{2}4p^{3}\\ ^2P^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^2D_{5/2}$",
-     "237.1495",
-     "237.0771",
-     "1264.1499",
-     "1.288",
-     "4.200e+07",
+     "$4s^{2}4p^{3}\\ ^2D^{o}_{3/2}$ – $4s^{2}4p^{3}\\ ^2P^{o}_{3/2}$",
+     "1241.4649",
+     "1241.1253",
+     "241.4828",
      "–",
-     "–",
-     ""
+     "6.720e-01",
+     "3.386e-07",
+     "31.6",
+     "forbidden line within the ground configuration"
     ],
     [
-     "$4s^{2}4p^{3}\\ ^2D^{o}_{5/2}$ – $4s^{2}4p^{2}5s\\ ^4P_{3/2}$",
-     "245.7268",
-     "245.6525",
-     "1220.0234",
-     "0.459",
-     "7.200e+06",
+     "$4s^{2}4p^{3}\\ ^2D^{o}_{5/2}$ – $4s^{2}4p^{3}\\ ^2P^{o}_{3/2}$",
+     "1293.1759",
+     "1292.8223",
+     "231.8265",
      "–",
-     "–",
-     ""
+     "4.400e-01",
+     "3.386e-07",
+     "20.7",
+     "forbidden line within the ground configuration"
     ],
     [
-     "$4s^{2}4p^{3}\\ ^2D^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^4P_{1/2}$",
-     "249.3685",
-     "249.2933",
-     "1202.2067",
-     "0.429",
-     "1.200e+07",
+     "$4s^{2}4p^{3}\\ ^2D^{o}_{3/2}$ – $4s^{2}4p^{3}\\ ^2P^{o}_{1/2}$",
+     "1316.8984",
+     "1316.5384",
+     "227.6504",
      "–",
-     "–",
-     ""
+     "4.200e-01",
+     "1.474e-07",
+     "45.4",
+     "forbidden line within the ground configuration"
     ],
     [
-     "$4s^{2}4p^{3}\\ ^2P^{o}_{1/2}$ – $4s^{2}4p^{2}5s\\ ^2P_{3/2}$",
-     "274.5804",
-     "274.4992",
-     "1091.8202",
-     "1.031",
-     "2.600e+07",
+     "$4s^{2}4p^{3}\\ ^2D^{o}_{5/2}$ – $4s^{2}4p^{3}\\ ^2P^{o}_{1/2}$",
+     "1375.2321",
+     "1374.8561",
+     "217.9941",
      "–",
-     "–",
-     ""
-    ],
-    [
-     "$4s^{2}4p^{3}\\ ^2P^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^2P_{3/2}$",
-     "278.1038",
-     "278.0217",
-     "1077.9877",
-     "1.820",
-     "7.800e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$4s^{2}4p^{3}\\ ^2P^{o}_{1/2}$ – $4s^{2}4p^{2}5s\\ ^2P_{1/2}$",
-     "286.1271",
-     "286.0431",
-     "1047.7596",
-     "1.128",
-     "5.500e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$4s^{2}4p^{3}\\ ^2P^{o}_{3/2}$ – $4s^{2}4p^{2}5s\\ ^2P_{1/2}$",
-     "289.9551",
-     "289.8701",
-     "1033.9272",
-     "0.488",
-     "9.900e+06",
-     "–",
-     "–",
-     ""
+     "5.900e-02",
+     "1.474e-07",
+     "6.37",
+     "forbidden line within the ground configuration"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{75}$As hyperfine structure  ($I$ = 3/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$4s^{2}4p^{3}\\ ^4S^{o}_{3/2}$",
+     "-66.2040(10)",
+     "-0.535(3)",
+     "F=0: +247.60   F=1: +181.93   F=2: +50.05   F=3: -149.09"
+    ],
+    [
+     "$4s^{2}4p^{3}\\ ^2D^{o}_{3/2}$",
+     "480(9)",
+     "–",
+     "F=0: -1800.00   F=1: -1320.00   F=2: -360.00   F=3: +1080.00"
+    ],
+    [
+     "$4s^{2}4p^{3}\\ ^2D^{o}_{5/2}$",
+     "725(26)",
+     "–",
+     "F=1: -3806.25   F=2: -2356.25   F=3: -181.25   F=4: +2718.75"
+    ],
+    [
+     "$4s^{2}4p^{3}\\ ^2P^{o}_{1/2}$",
+     "1909(14)",
+     "–",
+     "F=1: -2386.25   F=2: +1431.75"
+    ],
+    [
+     "$4s^{2}4p^{3}\\ ^2P^{o}_{3/2}$",
+     "359(59)",
+     "–",
+     "F=0: -1346.25   F=1: -987.25   F=2: -269.25   F=3: +807.75"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
-  "levels: 35   lines < 2000 nm: 45   with matrix element: 14",
-  "transition-rate provenance: nist: 14, wavelength only: 31",
-  "levels with a measured lifetime: 0"
+  "levels: 35   lines < 2000 nm: 53   with matrix element: 14",
+  "transition-rate provenance: exp: 2, nist: 12, theory: 8, wavelength only: 31",
+  "levels with a measured lifetime: 6"
  ],
- "sources": {}
+ "sources": {
+  "abundance: NIST Atomic Weights and Isotopic Compositions (As); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, arsenic isotope table": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=As",
+  "NIST Atomic Spectra Database, ionization energies (NIST reference code L1351 = Bhatia and Jones, Can. J. Phys. 49, 1773 (1971), absorption series)": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Ge+I%3B+As+I%3B+Se+I&units=0&format=0&order=0&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data",
+  "Pendlebury and Smith, Proc. Phys. Soc. 84, 849 (1964) (atomic-beam magnetic resonance; values read in the abstract)": "https://api.openalex.org/works/doi:10.1088/0370-1328/84/6/303",
+  "Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885, Table IX (relativistic MRCI; M1 + E2 decays)": "https://arxiv.org/pdf/2306.15885",
+  "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885": "https://arxiv.org/pdf/2306.15885",
+  "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 1 (time-resolved VUV laser-induced fluorescence in a differentially heated cell)": "https://articles.adsabs.harvard.edu/pdf/1992A%26A...263..440B",
+  "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2": "https://articles.adsabs.harvard.edu/pdf/1992A%26A...263..440B",
+  "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)": "https://nvlpubs.nist.gov/nistpubs/jres/68A/jresv68An1p61_A1b.pdf"
+ }
 }

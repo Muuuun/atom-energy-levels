@@ -1,0 +1,1062 @@
+{
+ "element": "Fe",
+ "isotopes": {
+  "54": {
+   "I": "0",
+   "abundance_percent": 5.845,
+   "abundance_unc": 0.035,
+   "source": "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Fe",
+   "spin_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/irontable1.htm"
+  },
+  "56": {
+   "I": "0",
+   "abundance_percent": 91.754,
+   "abundance_unc": 0.036,
+   "source": "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Fe",
+   "spin_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/irontable1.htm"
+  },
+  "57": {
+   "I": "1/2",
+   "abundance_percent": 2.119,
+   "abundance_unc": 0.01,
+   "source": "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Fe",
+   "spin_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/irontable1.htm"
+  },
+  "58": {
+   "I": "0",
+   "abundance_percent": 0.282,
+   "abundance_unc": 0.004,
+   "source": "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Fe",
+   "spin_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/irontable1.htm"
+  }
+ },
+ "ionization_limit": {
+  "nist_cm": {
+   "value": 63737.704,
+   "unc": 0.01,
+   "note": "Fe II 3d6 4s 6D9/2 limit as in the NIST levels file",
+   "method": "compilation",
+   "source": "NIST ASD Fe I levels table (local copy data/nist/Fe_I_levels.tsv)",
+   "url": "https://physics.nist.gov/asd"
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "label": "3d64s2 a 5D4",
+   "J": "4",
+   "hyperfine": {
+    "57": {
+     "A_MHz": 38.0795,
+     "A_unc": 0.001,
+     "method": "compilation",
+     "note": "I=1/2, no B. Atomic-beam magnetic resonance value of Childs & Goodman, Phys. Rev. 148, 74 (1966) as tabulated in Krins et al. 2009 Table II (original not opened)",
+     "source": "Childs & Goodman, Phys. Rev. 148, 74 (1966), quoted in Krins, Oppel, Huet, von Zanthier, Bastin, Phys. Rev. A 80, 062508 (2009)",
+     "url": "https://arxiv.org/abs/0910.0479",
+     "alternatives": [
+      {
+       "A_MHz": 38.33,
+       "A_unc": 0.4,
+       "method": "experiment",
+       "source": "Krins, Oppel, Huet, von Zanthier, Bastin, Phys. Rev. A 80, 062508 (2009) (saturated absorption, own fit)",
+       "url": "https://arxiv.org/abs/0910.0479"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 415.933,
+   "label": "3d64s2 a 5D3",
+   "J": "3"
+  },
+  {
+   "nist_energy_cm": 704.007,
+   "label": "3d64s2 a 5D2",
+   "J": "2"
+  },
+  {
+   "nist_energy_cm": 888.132,
+   "label": "3d64s2 a 5D1",
+   "J": "1"
+  },
+  {
+   "nist_energy_cm": 978.074,
+   "label": "3d64s2 a 5D0",
+   "J": "0"
+  },
+  {
+   "nist_energy_cm": 6928.268,
+   "label": "3d74s a 5F5",
+   "J": "5",
+   "hyperfine": {
+    "57": {
+     "A_MHz": 87.246,
+     "A_unc": 0.003,
+     "method": "compilation",
+     "note": "I=1/2, no B. Laser-rf double resonance value of Dembczynski, Ertmer, Johann, Stinner, Z. Phys. A 294, 313 (1980) as quoted in Huet et al. 2015 (original not opened)",
+     "source": "Dembczynski et al., Z. Phys. A 294, 313 (1980), quoted in Huet, Pettens, Bastin, 'Isotope shifts and hyperfine structure of the laser-cooling Fe I 358-nm line', Phys. Rev. A 92, 052507 (2015)",
+     "url": "https://arxiv.org/abs/1507.01498"
+    }
+   },
+   "note": "metastable; Huet et al. 2015 state 'a lifetime of the order of several hundred seconds' (citing Grevesse, Nussbaumer, Swings, MNRAS 151, 239 (1971)) without giving a number"
+  },
+  {
+   "nist_energy_cm": 26874.55,
+   "label": "3d64s4p z 5F°5",
+   "J": "5",
+   "lifetime": {
+    "value": 6.05e-08,
+    "unc": 3e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values below their own: 62.4(4.2) ns and 61.0(1.0) ns",
+    "alternatives": [
+     {
+      "value": 6.145e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "derived from the natural linewidth 2.59(2) MHz that Krins et al. 2009 quote from Klose, Astron. Astrophys. 165, 637 (1971): tau = 1/(2 pi * linewidth)",
+      "source": "Klose 1971, quoted in Krins, Oppel, Huet, von Zanthier, Bastin, Phys. Rev. A 80, 062508 (2009)",
+      "url": "https://arxiv.org/abs/0910.0479"
+     }
+    ]
+   },
+   "hyperfine": {
+    "57": {
+     "A_MHz": 81.69,
+     "A_unc": 0.86,
+     "method": "experiment",
+     "note": "I=1/2, no B; Doppler-free saturated absorption in a hollow-cathode discharge",
+     "source": "Krins, Oppel, Huet, von Zanthier, Bastin, Phys. Rev. A 80, 062508 (2009), Table II",
+     "url": "https://arxiv.org/abs/0910.0479"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 27166.82,
+   "label": "3d64s4p z 5F°4",
+   "J": "4",
+   "lifetime": {
+    "value": 6.34e-08,
+    "unc": 3.2e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'",
+    "alternatives": [
+     {
+      "value": 6.36e-08,
+      "unc": 3.2e-09,
+      "unit": "s",
+      "method": "experiment",
+      "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+      "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+      "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values: 63.7(4.0) ns"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 29056.324,
+   "label": "3d64s4p z 5P°3",
+   "J": "3",
+   "lifetime": {
+    "value": 4.37e-08,
+    "unc": 2.2e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 33095.941,
+   "label": "3d74p y 5D°4",
+   "J": "4",
+   "lifetime": {
+    "value": 5.9e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 33507.123,
+   "label": "3d74p y 5D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 5.7e-09,
+    "unc": 2.9e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values below their own: 6.1(5) ns"
+   }
+  },
+  {
+   "nist_energy_cm": 33695.397,
+   "label": "3d74p y 5F°5",
+   "J": "5",
+   "lifetime": {
+    "value": 7.9e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values below their own: 8.16(30) ns"
+   }
+  },
+  {
+   "nist_energy_cm": 33801.572,
+   "label": "3d74p y 5D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 6.5e-09,
+    "unc": 3.3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 34017.103,
+   "label": "3d74p y 5D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 5.8e-09,
+    "unc": 2.9e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values below their own: 6.1(2) ns"
+   }
+  },
+  {
+   "nist_energy_cm": 34039.516,
+   "label": "3d74p y 5F°4",
+   "J": "4",
+   "lifetime": {
+    "value": 7.7e-09,
+    "unc": 3.9e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values below their own: 8.29(30) ns"
+   }
+  },
+  {
+   "nist_energy_cm": 34121.603,
+   "label": "3d74p y 5D°0",
+   "J": "0",
+   "lifetime": {
+    "value": 5.8e-09,
+    "unc": 2.9e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values below their own: 5.9(2) ns"
+   }
+  },
+  {
+   "nist_energy_cm": 34328.752,
+   "label": "3d74p y 5F°3",
+   "J": "3",
+   "lifetime": {
+    "value": 7.7e-09,
+    "unc": 3.9e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values below their own: 7.92(25) ns"
+   }
+  },
+  {
+   "nist_energy_cm": 34547.211,
+   "label": "3d74p y 5F°2",
+   "J": "2",
+   "lifetime": {
+    "value": 7.7e-09,
+    "unc": 3.9e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'; O'Brian also lists other laser-fluorescence values below their own: 8.00(30) ns"
+   }
+  },
+  {
+   "nist_energy_cm": 34843.957,
+   "label": "3d74p z 5G°6",
+   "J": "6",
+   "lifetime": {
+    "value": 9.2e-09,
+    "unc": 4.6e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'",
+    "alternatives": [
+     {
+      "value": 9.6e-09,
+      "unc": 6e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Marek et al. (1979), delayed coincidence after laser excitation, as listed in Belmonte et al. 2017 Table 2",
+      "source": "Marek et al. 1979, quoted in Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017)",
+      "url": "https://arxiv.org/abs/1710.07571"
+     },
+     {
+      "value": 9.824e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "derived from the natural linewidth 16.20(45) MHz that Huet et al. 2015 quote from Blackwell, Petford, Shallis, MNRAS 186, 657 (1979) (oscillator-strength based): tau = 1/(2 pi * linewidth), assuming the 358 nm line is the only decay branch",
+      "source": "Blackwell et al. 1979, quoted in Huet, Pettens, Bastin, 'Isotope shifts and hyperfine structure of the laser-cooling Fe I 358-nm line', Phys. Rev. A 92, 052507 (2015)",
+      "url": "https://arxiv.org/abs/1507.01498"
+     }
+    ]
+   },
+   "hyperfine": {
+    "57": {
+     "A_MHz": 31.241,
+     "A_unc": 0.048,
+     "method": "experiment",
+     "note": "I=1/2, no B; laser-induced fluorescence on an Fe atomic beam, frequency scale from simultaneous I2 saturation spectroscopy at 716 nm",
+     "source": "Huet, Pettens, Bastin, 'Isotope shifts and hyperfine structure of the laser-cooling Fe I 358-nm line', Phys. Rev. A 92, 052507 (2015), Table I",
+     "url": "https://arxiv.org/abs/1507.01498"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 36766.966,
+   "label": "3d64s4p y 5P°3",
+   "J": "3",
+   "lifetime": {
+    "value": 5.7e-09,
+    "unc": 2.9e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 37157.566,
+   "label": "3d64s4p y 5P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 6e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 37409.555,
+   "label": "3d64s4p y 5P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 6.2e-09,
+    "unc": 3.1e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 39625.804,
+   "label": "3d64s4p x 5D°4",
+   "J": "4",
+   "lifetime": {
+    "value": 2.6e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 39969.853,
+   "label": "3d64s4p x 5D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 2.7e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'",
+    "alternatives": [
+     {
+      "value": 2.6e-09,
+      "unc": 2e-10,
+      "unit": "s",
+      "method": "experiment",
+      "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+      "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+      "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 40231.336,
+   "label": "3d64s4p x 5D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 2.6e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 40257.314,
+   "label": "3d64s4p x 5F°5",
+   "J": "5",
+   "lifetime": {
+    "value": 2e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 40404.518,
+   "label": "3d64s4p x 5D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2.8e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'",
+    "alternatives": [
+     {
+      "value": 2.6e-09,
+      "unc": 2e-10,
+      "unit": "s",
+      "method": "experiment",
+      "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+      "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+      "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 40491.284,
+   "label": "3d64s4p x 5D°0",
+   "J": "0",
+   "lifetime": {
+    "value": 2.6e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 40594.432,
+   "label": "3d64s4p x 5F°4",
+   "J": "4",
+   "lifetime": {
+    "value": 2e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 40842.154,
+   "label": "3d64s4p x 5F°3",
+   "J": "3",
+   "lifetime": {
+    "value": 2e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 41018.051,
+   "label": "3d64s4p x 5F°2",
+   "J": "2",
+   "lifetime": {
+    "value": 2e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 41130.599,
+   "label": "3d64s4p x 5F°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 42784.352,
+   "label": "3d64s4p y 5G°6",
+   "J": "6",
+   "lifetime": {
+    "value": 1.69e-08,
+    "unc": 8.4e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 42911.917,
+   "label": "3d64s4p y 5G°5",
+   "J": "5",
+   "lifetime": {
+    "value": 2.31e-08,
+    "unc": 1.2e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 43499.505,
+   "label": "3d64s4p w 5D°4",
+   "J": "4",
+   "lifetime": {
+    "value": 7.4e-09,
+    "unc": 3.7e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 43922.668,
+   "label": "3d64s4p w 5D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 8.5e-09,
+    "unc": 4.3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 44243.685,
+   "label": "3d64s4p w 5F°5",
+   "J": "5",
+   "lifetime": {
+    "value": 3.9e-08,
+    "unc": 2e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 45608.361,
+   "label": "3d64s4p x 5G°6",
+   "J": "6",
+   "lifetime": {
+    "value": 3.14e-08,
+    "unc": 1.6e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 45726.13,
+   "label": "3d64s4p x 5G°5",
+   "J": "5",
+   "lifetime": {
+    "value": 2.81e-08,
+    "unc": 1.4e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 46137.097,
+   "label": "3d74p w 5P°3",
+   "J": "3",
+   "lifetime": {
+    "value": 3.2e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 46313.537,
+   "label": "3d74p w 5P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 3.2e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 46410.381,
+   "label": "3d74p w 5P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 3.5e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 47420.228,
+   "label": "3d64s4p w 5G°5",
+   "J": "5",
+   "lifetime": {
+    "value": 2.02e-08,
+    "unc": 1e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "O'Brian, Wickliffe, Lawler, Whaling, Brault, J. Opt. Soc. Am. B 8, 1185 (1991), Table 1 (time-resolved laser-induced fluorescence)",
+    "url": "https://authors.library.caltech.edu/records/anmnv-9as63/files/OBRjosab91.pdf",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 47606.114,
+   "label": "3d64s4p v 5F°5",
+   "J": "5",
+   "lifetime": {
+    "value": 2.78e-08,
+    "unc": 1.4e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 2",
+    "url": "https://arxiv.org/abs/1710.07571",
+    "note": "uncertainty derived from the paper's statement 'larger of ±5% or ±0.2 ns'"
+   }
+  },
+  {
+   "nist_energy_cm": 51619.076,
+   "label": "3d64s 5p u 5F°3",
+   "J": "3"
+  },
+  {
+   "nist_energy_cm": 51692.01,
+   "label": "3d64s 5p u 5P°3",
+   "J": "3"
+  },
+  {
+   "nist_energy_cm": 51944.784,
+   "label": "3d64s 5p u 5P°2",
+   "J": "2"
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 39969.853,
+   "label": "3d64s2 a 5D4 - 3d64s4p x 5D°3",
+   "lower_J": "4",
+   "upper_J": "3",
+   "type": "E1",
+   "A_s": {
+    "value": 69000000.0,
+    "unc": 4800000.0,
+    "method": "experiment",
+    "note": "branching fraction (Fourier-transform spectrometry) x measured lifetime; uncertainty printed as 7 %",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "branching": {
+    "value": 0.1794,
+    "unc": 0.0093,
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "rme_J_ea0": {
+    "value": 1.932,
+    "unc": 0.068,
+    "method": "experiment",
+    "note": "derived from the measured A with the schema convention (upper-level J in the 2J'+1 factor)",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   }
+  },
+  {
+   "lower_cm": 704.007,
+   "upper_cm": 40404.518,
+   "label": "3d64s2 a 5D2 - 3d64s4p x 5D°1",
+   "lower_J": "2",
+   "upper_J": "1",
+   "type": "E1",
+   "A_s": {
+    "value": 184540000.0,
+    "unc": 11000000.0,
+    "method": "experiment",
+    "note": "branching fraction (Fourier-transform spectrometry) x measured lifetime; uncertainty printed as 6 %",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "branching": {
+    "value": 0.5167,
+    "unc": 0.015,
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "rme_J_ea0": {
+    "value": 2.09,
+    "unc": 0.063,
+    "method": "experiment",
+    "note": "derived from the measured A with the schema convention (upper-level J in the 2J'+1 factor)",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   }
+  },
+  {
+   "lower_cm": 415.933,
+   "upper_cm": 39969.853,
+   "label": "3d64s2 a 5D3 - 3d64s4p x 5D°3",
+   "lower_J": "3",
+   "upper_J": "3",
+   "type": "E1",
+   "A_s": {
+    "value": 183630000.0,
+    "unc": 11000000.0,
+    "method": "experiment",
+    "note": "branching fraction (Fourier-transform spectrometry) x measured lifetime; uncertainty printed as 6 %",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "branching": {
+    "value": 0.4774,
+    "unc": 0.015,
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "rme_J_ea0": {
+    "value": 3.202,
+    "unc": 0.096,
+    "method": "experiment",
+    "note": "derived from the measured A with the schema convention (upper-level J in the 2J'+1 factor)",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   }
+  },
+  {
+   "lower_cm": 888.132,
+   "upper_cm": 40404.518,
+   "label": "3d64s2 a 5D1 - 3d64s4p x 5D°1",
+   "lower_J": "1",
+   "upper_J": "1",
+   "type": "E1",
+   "A_s": {
+    "value": 31480000.0,
+    "unc": 2800000.0,
+    "method": "experiment",
+    "note": "branching fraction (Fourier-transform spectrometry) x measured lifetime; uncertainty printed as 9 %",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "branching": {
+    "value": 0.0881,
+    "unc": 0.0061,
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "rme_J_ea0": {
+    "value": 0.8691,
+    "unc": 0.039,
+    "method": "experiment",
+    "note": "derived from the measured A with the schema convention (upper-level J in the 2J'+1 factor)",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   }
+  },
+  {
+   "lower_cm": 978.074,
+   "upper_cm": 40404.518,
+   "label": "3d64s2 a 5D0 - 3d64s4p x 5D°1",
+   "lower_J": "0",
+   "upper_J": "1",
+   "type": "E1",
+   "A_s": {
+    "value": 95630000.0,
+    "unc": 6700000.0,
+    "method": "experiment",
+    "note": "branching fraction (Fourier-transform spectrometry) x measured lifetime; uncertainty printed as 7 %",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "branching": {
+    "value": 0.2678,
+    "unc": 0.013,
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "rme_J_ea0": {
+    "value": 1.52,
+    "unc": 0.053,
+    "method": "experiment",
+    "note": "derived from the measured A with the schema convention (upper-level J in the 2J'+1 factor)",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   }
+  },
+  {
+   "lower_cm": 704.007,
+   "upper_cm": 39969.853,
+   "label": "3d64s2 a 5D2 - 3d64s4p x 5D°3",
+   "lower_J": "2",
+   "upper_J": "3",
+   "type": "E1",
+   "A_s": {
+    "value": 71440000.0,
+    "unc": 5000000.0,
+    "method": "experiment",
+    "note": "branching fraction (Fourier-transform spectrometry) x measured lifetime; uncertainty printed as 7 %",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "branching": {
+    "value": 0.1858,
+    "unc": 0.0095,
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "rme_J_ea0": {
+    "value": 2.019,
+    "unc": 0.071,
+    "method": "experiment",
+    "note": "derived from the measured A with the schema convention (upper-level J in the 2J'+1 factor)",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   }
+  },
+  {
+   "lower_cm": 6928.268,
+   "upper_cm": 34843.957,
+   "label": "3d74s a 5F5 - 3d74p z 5G°6",
+   "lower_J": "5",
+   "upper_J": "6",
+   "type": "E1",
+   "A_s": {
+    "value": 108700000.0,
+    "unc": 5400000.0,
+    "method": "experiment",
+    "note": "branching fraction (Fourier-transform spectrometry) x measured lifetime; uncertainty printed as 5 %",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "branching": {
+    "value": 1.0,
+    "unc": 0.0,
+    "method": "experiment",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "rme_J_ea0": {
+    "value": 5.662,
+    "unc": 0.14,
+    "method": "experiment",
+    "note": "derived from the measured A with the schema convention (upper-level J in the 2J'+1 factor)",
+    "source": "Belmonte, Pickering, Ruffoni, Den Hartog, Lawler, Guzman, Heiter, Astrophys. J. 848, 125 (2017), Table 4",
+    "url": "https://arxiv.org/abs/1710.07571"
+   },
+   "use": "358 nm laser-cooling line of iron (closed J=5 -> J'=6 transition from metastable a5F5, populated by pumping on 372 nm with decay via 501 nm); natural linewidth 16.20(45) MHz as quoted by Huet et al. 2015",
+   "isotope_shift_MHz": {
+    "56-54": {
+     "value": 592.28,
+     "unc": 0.61,
+     "method": "experiment",
+     "source": "Huet, Pettens, Bastin, 'Isotope shifts and hyperfine structure of the laser-cooling Fe I 358-nm line', Phys. Rev. A 92, 052507 (2015), Table I",
+     "url": "https://arxiv.org/abs/1507.01498"
+    },
+    "57-56": {
+     "value": 299.72,
+     "unc": 0.57,
+     "method": "experiment",
+     "note": "hyperfine-free (centre-of-gravity) shift, extracted together with A(z5G6) using the known A(a5F5)",
+     "source": "Huet, Pettens, Bastin, 'Isotope shifts and hyperfine structure of the laser-cooling Fe I 358-nm line', Phys. Rev. A 92, 052507 (2015), Table I",
+     "url": "https://arxiv.org/abs/1507.01498"
+    },
+    "58-56": {
+     "value": 566.02,
+     "unc": 0.47,
+     "method": "experiment",
+     "source": "Huet, Pettens, Bastin, 'Isotope shifts and hyperfine structure of the laser-cooling Fe I 358-nm line', Phys. Rev. A 92, 052507 (2015), Table I",
+     "url": "https://arxiv.org/abs/1507.01498"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 26874.55,
+   "label": "3d64s2 a 5D4 - 3d64s4p z 5F°5",
+   "lower_J": "4",
+   "upper_J": "5",
+   "type": "E1",
+   "use": "372 nm resonance line: laser collimation / cooling of an Fe atomic beam on a leaky transition (Smeets et al. 2005) and optical pumping of ground-state atoms into metastable a5F5 for the 358 nm cooling scheme (Huet et al. 2015); natural linewidth 2.59(2) MHz and saturation intensity 6.57(4) mW/cm2 as quoted by Krins et al. 2009",
+   "isotope_shift_MHz": {
+    "56-54": {
+     "value": 726.5,
+     "unc": 7.7,
+     "method": "experiment",
+     "source": "Krins, Oppel, Huet, von Zanthier, Bastin, Phys. Rev. A 80, 062508 (2009), Table I",
+     "url": "https://arxiv.org/abs/0910.0479",
+     "alternatives": [
+      {
+       "value": 725,
+       "unc": 10,
+       "method": "compilation",
+       "note": "Smeets et al., Appl. Phys. B 76, 815 (2003) as quoted in Krins et al. 2009 Table I",
+       "source": "Smeets et al. 2003, quoted in Krins, Oppel, Huet, von Zanthier, Bastin, Phys. Rev. A 80, 062508 (2009)",
+       "url": "https://arxiv.org/abs/0910.0479"
+      }
+     ]
+    },
+    "57-56": {
+     "value": 365.1,
+     "unc": 5.7,
+     "method": "experiment",
+     "note": "57Fe value refers to the hyperfine-free (centre-of-gravity) position obtained from the fit of the three hyperfine components",
+     "source": "Krins, Oppel, Huet, von Zanthier, Bastin, Phys. Rev. A 80, 062508 (2009), Table I",
+     "url": "https://arxiv.org/abs/0910.0479"
+    },
+    "58-56": {
+     "value": 689.9,
+     "unc": 7.3,
+     "method": "experiment",
+     "source": "Krins, Oppel, Huet, von Zanthier, Bastin, Phys. Rev. A 80, 062508 (2009), Table I",
+     "url": "https://arxiv.org/abs/0910.0479"
+    }
+   },
+   "branching": {
+    "value": 0.9958,
+    "method": "experiment",
+    "note": "derived: 1 - leak rate, with total leak rate measured as 1/(240 +/- 40) per scattered photon ('literature value 1/244'); i.e. bound on the cycling fraction",
+    "source": "Smeets, Bosch, van der Straten, te Sligte, Scholten, Beijerinck, van Leeuwen, Appl. Phys. B 80, 833 (2005) (abstract)",
+    "url": "https://research.tue.nl/en/publications/d8ebc2b3-45f5-41d6-b7c7-473eddfd14e7"
+   }
+  },
+  {
+   "lower_cm": 6928.268,
+   "upper_cm": 26874.55,
+   "label": "3d74s a 5F5 - 3d64s4p z 5F°5 (501 nm)",
+   "lower_J": "5",
+   "upper_J": "5",
+   "type": "E1",
+   "use": "decay channel that completes optical pumping from the ground state into metastable a5F5 (via 372 nm excitation) in the Liege iron laser-cooling scheme; no measured rate opened",
+   "note": "described in Huet et al., Phys. Rev. A 92, 052507 (2015), https://arxiv.org/abs/1507.01498"
+  }
+ ],
+ "not_found": [
+  "lifetimes of 3d64s5p u 5F°3 (51619.076), u 5P°3 (51692.010), u 5P°2 (51944.784): not in O'Brian 1991 Table 1 nor Belmonte 2017 Table 2; no measurement located",
+  "lifetimes of the a 5D J=3..0 ground-term levels and of metastable a 5F5: no measurement located (Huet 2015 only says 'several hundred seconds' for a 5F5)",
+  "Engelke, Bard, Kock (Z. Phys. D 27, 325 (1993), doi 10.1007/BF01437464) Fe I lifetimes: paywalled, not opened",
+  "Den Hartog et al., ApJS 215, 23 (2014): opened (VizieR J/ApJS/215/23 and arXiv:1409.8142) but its 31 lifetimes are for high-lying EVEN-parity levels (45061-56843 cm-1) that the site does not draw; not copied here",
+  "57Fe hyperfine constants of the other metastable levels (Dembczynski et al., Z. Phys. A 294, 313 (1980)) and of excited levels other than z5F5, z5G6: originals not accessible",
+  "isotope shifts of other Fe I lines (Benton, Cochrane, Griffith, J. Phys. B 30, 5359 (1997), five lines 300-306 nm): paywalled, not opened",
+  "Fe I Ritz wavelength standards / precise frequencies (Nave et al. 1994 and later): the level energies already in data/nist/Fe_I_levels.tsv derive from that work; no absolute optical frequency measurement (frequency comb) of an Fe I line was located",
+  "measured Lande g factors beyond those already in the NIST levels file: none located",
+  "Fe magneto-optical trap on 372 nm / the cooling-scheme / trapping papers themselves: no accessible source opened; only the Krins 2009 / Huet 2015 spectroscopy papers and the Smeets 2005 abstract were read",
+  "A value / branching of the 501 nm a5F5 - z5F5 line and of the weak leaks from z5F5: not copied (O'Brian 1991 Table 2 may contain them; OCR of that table was not verified line by line)"
+ ],
+ "conflicts": [
+  "z5G6 (34843.957) lifetime: 9.2(5) ns time-resolved LIF (Belmonte 2017) vs 9.6(6) ns (Marek 1979, quoted there) vs 9.82 ns implied by the 16.20(45) MHz natural linewidth quoted by Huet 2015 from Blackwell 1979; Belmonte kept. Belmonte's A(358 nm)=1.087e8 s-1 corresponds to 17.3 MHz.",
+  "z5F5 (26874.55) lifetime: 60.5(3.0) ns (O'Brian 1991) vs 61.4 ns implied by the 2.59(2) MHz linewidth (Klose 1971 via Krins 2009) and 62.4(4.2), 61.0(1.0) ns listed by O'Brian; all consistent within errors.",
+  "x5D3, x5D1, z5F4 lifetimes: Belmonte 2017 (2.7, 2.8, 63.4 ns) vs O'Brian 1991 (2.6, 2.6, 63.6 ns); agree within the stated +-0.2 ns / 5 %; Belmonte kept, O'Brian under alternatives.",
+  "372 nm 56-54 isotope shift: 726.5(7.7) MHz (Krins 2009) vs 725(10) MHz (Smeets 2003); consistent.",
+  "The task brief cites Smeets et al. as Appl. Phys. B 80, 833 (2005); Krins 2009 cites the isotope-shift value to Smeets et al., Appl. Phys. B 76, 815 (2003). Both exist; only the 2005 abstract was opened."
+ ],
+ "notes": "Isotope shifts are nu(first)-nu(second) as in the source (delta nu_{56,54} = nu56 - nu54). 57Fe has I=1/2 so only A constants exist. O'Brian 1991 Table 1 was read from the scanned PDF (text layer checked against the page image). Lifetime uncertainties for O'Brian/Belmonte are the papers' blanket 'larger of 5 % or 0.2 ns'. rme_J_ea0 values are derived from measured A (S = A g_upper lambda_vac^3 / 2.0261e18, lambda in Angstrom). WebSearch was unavailable in this session (budget exhausted); sources were located through DOI/bibliographic lookups (Crossref, OpenAlex), VizieR, ADS and arXiv."
+}
