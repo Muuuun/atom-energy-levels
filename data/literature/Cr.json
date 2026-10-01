@@ -1,0 +1,2903 @@
+{
+ "element": "Cr",
+ "isotopes": {
+  "50": {
+   "I": "0",
+   "abundance_percent": 4.345,
+   "abundance_unc": 0.013,
+   "source": "NIST Atomic Weights and Isotopic Compositions (Cr); nuclear spins as tabulated in Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\", Table 3.1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cr"
+  },
+  "52": {
+   "I": "0",
+   "abundance_percent": 83.789,
+   "abundance_unc": 0.018,
+   "source": "NIST Atomic Weights and Isotopic Compositions (Cr); nuclear spins as tabulated in Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\", Table 3.1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cr"
+  },
+  "53": {
+   "I": "3/2",
+   "abundance_percent": 9.501,
+   "abundance_unc": 0.017,
+   "source": "NIST Atomic Weights and Isotopic Compositions (Cr); nuclear spins as tabulated in Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\", Table 3.1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cr"
+  },
+  "54": {
+   "I": "0",
+   "abundance_percent": 2.365,
+   "abundance_unc": 0.007,
+   "source": "NIST Atomic Weights and Isotopic Compositions (Cr); nuclear spins as tabulated in Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\", Table 3.1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cr"
+  }
+ },
+ "ionization_limit": {
+  "nist_cm": {
+   "value": 54575.6,
+   "unc": 0.3,
+   "method": "compilation",
+   "note": "Cr II 3d5 6S5/2 limit as in the NIST levels file (Huber et al.)",
+   "source": "NIST ASD Cr I levels table (local copy data/nist/Cr_I_levels.tsv)",
+   "url": "https://physics.nist.gov/asd"
+  },
+  "recent_measurement_cm": {
+   "value": 54575.49,
+   "unc": 0.03,
+   "method": "experiment",
+   "note": "printed as 54575.49(2)stat(2)sys cm-1 (unc here = quadrature sum); Rydberg-Ritz fit of the 3d5(6S)ns 7S3 series, n = 20-45, two-step resonance ionization at TRIUMF",
+   "source": "Schulz, Li, Wessolek, Mostamand, Kunz, Lassen, \"Two-step laser resonant ionization spectroscopy of chromium\", arXiv:2504.16067 (2025)",
+   "url": "https://arxiv.org/abs/2504.16067"
+  }
+ },
+ "laser_cooling_scheme": {
+  "summary": "Zeeman slowing and MOT on 7S3 - 7P4 (425.5 nm); excited atoms leak to metastable 5D4 (127 s^-1) and 5D3 (42 s^-1), which are magnetically trapped in the MOT quadrupole (continuous loading, CLIP trap); repumping to the ground state via 7P3 with 663.2 nm (5D4) and 654.0 nm (5D3), or via 7P4 with 658.3 / 649.2 nm; Paris-Nord scheme adds a 427.6 nm depumper (7S3 - 7P3) to accumulate atoms in 5S2 and 5D2, repumped at 633.2 and 646.9 nm; optical pumping to m_J = -3 on 427.6 nm; 53Cr needs blue hyperfine repumpers R1-R3 and separate red repumpers",
+  "rates_from_7P3_s": {
+   "value": "to 7S3 3.07e7; to 5S2 2.9e4; to 5D4 6e3; to 5D3 and 5D2 unknown",
+   "method": "compilation",
+   "note": "NIST ASD values as collected in Table 1 of Bismut et al.",
+   "source": "Bismut, Pasquiou, Ciampini, Laburthe-Tolra, Marechal, Vernac, Gorceix, Appl. Phys. B 102, 1 (2011) \"Optimized loading of an optical dipole trap for the production of Chromium BECs\"",
+   "url": "https://arxiv.org/abs/1004.3642"
+  },
+  "rates_from_7P4_s": {
+   "value": "to 7S3 3.15e7; to 5D4 127; to 5D3 42; to 5S2 and 5D2 forbidden",
+   "method": "compilation",
+   "source": "Bismut, Pasquiou, Ciampini, Laburthe-Tolra, Marechal, Vernac, Gorceix, Appl. Phys. B 102, 1 (2011) \"Optimized loading of an optical dipole trap for the production of Chromium BECs\"",
+   "url": "https://arxiv.org/abs/1004.3642"
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "J": "3",
+   "label": "3d5.(6S).4s a 7S3 (ground)",
+   "hyperfine": {
+    "53": {
+     "A_MHz": -83.599,
+     "A_unc": 0.002,
+     "B_MHz": 0,
+     "method": "compilation",
+     "note": "Table 1.4 of the thesis (no reference attached to the table; the group paper cites Ertmer et al., Z. Phys. A 309, 1 (1982) and Reinhardt et al., Z. Phys. D 34, 87 (1995); Naylor cites Childs, Goodman, von Ehrenstein, Phys. Rev. 132, 2128 (1963) for 7S3). Inverted structure: F=9/2 lowest. Fig. 2 of Neri et al. 2020 shows ground-state levels F=5/2 at +292 MHz and F=9/2 at -376 MHz relative to F=7/2.",
+     "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+     "url": "https://theses.hal.science/tel-00288354/document"
+    }
+   },
+   "magnetic_moment_muB": {
+    "value": 6,
+    "method": "compilation",
+    "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+    "url": "https://theses.hal.science/tel-00288354/document"
+   }
+  },
+  {
+   "nist_energy_cm": 7593.1484,
+   "J": "2",
+   "label": "3d5.(6S).4s a 5S2 (metastable; populated via 7P3 with the 427.6 nm depumper, repumped at 633 nm)",
+   "hyperfine": {
+    "53": {
+     "A_MHz": -173.82,
+     "B_MHz": 0,
+     "method": "compilation",
+     "note": "derived: the three zero-field intervals F=7/2-5/2 608.375 MHz, 5/2-3/2 434.547 MHz, 3/2-1/2 260.727 MHz tabulated by Naylor (Table 2.3, from Jarosz et al., J. Phys. B 40, 2785 (2007), not opened) obey the interval rule with |A| = 173.82 MHz and B ~ 0; the negative sign is assigned from the inverted order shown in Naylor Fig. 2.7 (F=7/2 lowest, barycentre 521.5 MHz above it) and is not printed as a number",
+     "source": "Naylor, PhD thesis, Universite Paris 13 (2016), tel-01462831",
+     "url": "https://theses.hal.science/tel-01462831/document"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 7750.7465,
+   "J": "0",
+   "label": "3d4.4s2 a 5D0"
+  },
+  {
+   "nist_energy_cm": 7810.7795,
+   "J": "1",
+   "label": "3d4.4s2 a 5D1"
+  },
+  {
+   "nist_energy_cm": 7927.441,
+   "J": "2",
+   "label": "3d4.4s2 a 5D2 (metastable; populated via 7P3, repumped at 646.9 nm)"
+  },
+  {
+   "nist_energy_cm": 8095.1842,
+   "J": "3",
+   "label": "3d4.4s2 a 5D3 (metastable; MOT leak state, 4.5 mu_B)",
+   "hyperfine": {
+    "53": {
+     "A_MHz": -35.683,
+     "A_unc": 0.005,
+     "B_MHz": 15.565,
+     "B_unc": 0.005,
+     "method": "compilation",
+     "note": "Table 1.4 of the thesis; original: Ertmer, Johann, Mosmann, Z. Phys. A 309, 1 (1982) (not opened). Intervals (Naylor Table 2.3): F=9/2-7/2 148.900 MHz, 7/2-5/2 130.339 MHz, 5/2-3/2 100.881 MHz.",
+     "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+     "url": "https://theses.hal.science/tel-00288354/document"
+    }
+   },
+   "lifetime": {
+    "value": 50,
+    "unit": "s",
+    "method": "experiment",
+    "note": "LOWER BOUND (tau_D > 50 s) deduced from magnetic-trap decay times",
+    "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+    "url": "https://arxiv.org/abs/quant-ph/0011113"
+   }
+  },
+  {
+   "nist_energy_cm": 8307.5753,
+   "J": "4",
+   "label": "3d4.4s2 a 5D4 (metastable; main MOT leak state, magnetically trappable, 6 mu_B)",
+   "hyperfine": {
+    "53": {
+     "A_MHz": -48.755,
+     "A_unc": 0.005,
+     "B_MHz": 63.021,
+     "B_unc": 0.01,
+     "method": "compilation",
+     "note": "Table 1.4 of the thesis; original: Ertmer, Johann, Mosmann, Z. Phys. A 309, 1 (1982) laser-rf double resonance (not opened). Zero-field intervals from the same original as tabulated by Naylor (Table 2.3): F=11/2-9/2 224.827 MHz, 9/2-7/2 234.593 MHz, 7/2-5/2 213.970 MHz.",
+     "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+     "url": "https://theses.hal.science/tel-00288354/document"
+    }
+   },
+   "lifetime": {
+    "value": 50,
+    "unit": "s",
+    "method": "experiment",
+    "note": "LOWER BOUND (tau_D > 50 s) deduced from magnetic-trap decay times; the Stuhler thesis states > 60 s",
+    "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+    "url": "https://arxiv.org/abs/quant-ph/0011113"
+   }
+  },
+  {
+   "nist_energy_cm": 23305.0026,
+   "J": "2",
+   "label": "3d5.(6S).4p z 7P°2 (429.1 nm line upper level; gray-molasses transition 7S3 - 7P2)",
+   "lifetime": {
+    "value": 3.22e-08,
+    "unc": 1.6e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 23305.01 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   },
+   "lifetime_other": [
+    {
+     "value": 3.142e-08,
+     "unc": 2.5e-10,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Measures et al. 1977, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    },
+    {
+     "value": 3.12e-08,
+     "unc": 1e-09,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Kwong & Measures 1980, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 23386.3419,
+   "J": "3",
+   "label": "3d5.(6S).4p z 7P°3 (427.6 nm optical-pumping / depumping and red-repumper upper level)",
+   "lifetime": {
+    "value": 3.15e-08,
+    "unc": 1.6e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 23386.35 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   },
+   "lifetime_other": [
+    {
+     "value": 3.222e-08,
+     "unc": 1.7e-10,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Measures et al. 1977, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    }
+   ],
+   "hyperfine": {
+    "53": {
+     "A_MHz": -1.5,
+     "A_unc": 2.0,
+     "B_MHz": -2.0,
+     "method": "compilation",
+     "note": "Table 1.4 of the Chicireanu thesis (B printed without uncertainty); Naylor thesis quotes A = -1.5(2) MHz, B = -2(51) MHz from Becker, Teppner, Wuesthof, J. Phys. B 11, 2435 (1978) (not opened)",
+     "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+     "url": "https://theses.hal.science/tel-00288354/document"
+    }
+   },
+   "g_J": {
+    "value": 1.92,
+    "method": "compilation",
+    "note": "thesis Table 1.3 (NIST levels file: 1.9176)",
+    "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+    "url": "https://theses.hal.science/tel-00288354/document"
+   }
+  },
+  {
+   "nist_energy_cm": 23498.8156,
+   "J": "4",
+   "label": "3d5.(6S).4p z 7P°4 (425.5 nm cooling-line upper level)",
+   "lifetime": {
+    "value": 3.03e-08,
+    "unc": 1.5e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 23498.84 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   },
+   "lifetime_other": [
+    {
+     "value": 3.115e-08,
+     "unc": 8e-11,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Measures et al. 1977, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    },
+    {
+     "value": 3.18e-08,
+     "unc": 2.5e-09,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Marek 1975, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    },
+    {
+     "value": 3.16e-08,
+     "unc": 5e-10,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Hannaford & Lowe 1981, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    },
+    {
+     "value": 3.17e-08,
+     "unit": "s",
+     "method": "compilation",
+     "note": "derived: 1/Gamma with Gamma = 31.5e6 s^-1 (= 2 pi x 5.02 MHz) used by the Pfau group (Stuhler 2001, taken from NIST); Griesmaier thesis Table A.2 prints \"excited state lifetime 32 ns\"",
+     "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+     "url": "https://arxiv.org/abs/quant-ph/0011113"
+    }
+   ],
+   "hyperfine": {
+    "53": {
+     "A_MHz": -11.8,
+     "A_unc": 0.4,
+     "B_MHz": -0.6,
+     "B_unc": 0.6,
+     "method": "compilation",
+     "note": "Table 1.4 of the thesis; original most likely Becker, Teppner, Wuesthof, J. Phys. B 11, 2435 (1978) (not opened)",
+     "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+     "url": "https://theses.hal.science/tel-00288354/document"
+    }
+   },
+   "g_J": {
+    "value": 1.75,
+    "method": "compilation",
+    "note": "as listed in thesis tables (NIST levels file: 1.751)",
+    "source": "Griesmaier, PhD thesis, Universitaet Stuttgart (2006), Appendix A",
+    "url": "https://www.pi5.uni-stuttgart.de/documents/abgeschlossene-arbeiten/2006-Griesmaier-Axel-Dipole-dipole-interaction-in-a-degenerate-quantum-gas-Bose-Einstein-condensation-of-chromium-atoms-PhD.pdf"
+   },
+   "decay_to_metastable": {
+    "rate_to_5D4_s": {
+     "value": 127,
+     "unc": 14,
+     "method": "experiment",
+     "note": "from MOT lifetime measurements",
+     "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+     "url": "https://arxiv.org/abs/quant-ph/0011113"
+    },
+    "rate_to_5D3_s": {
+     "value": 42,
+     "unc": 6,
+     "method": "experiment",
+     "note": "from MOT lifetime measurements",
+     "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+     "url": "https://arxiv.org/abs/quant-ph/0011113"
+    },
+    "branching_ratio_Gamma_eg_over_Gamma_ed": {
+     "value": 250000,
+     "method": "experiment",
+     "note": "Gamma(7P4->7S3)/Gamma(7P4->5D4) with the 5D3 channel repumped; Bismut et al. quote the inverse as 4.1e-6",
+     "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+     "url": "https://arxiv.org/abs/quant-ph/0011113"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 26787.464,
+   "J": "3",
+   "label": "3d5.(6S).4p z 5P°3",
+   "lifetime": {
+    "value": 1.62e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 26787.50 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   },
+   "lifetime_other": [
+    {
+     "value": 1.75e-08,
+     "unc": 9e-10,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Kwiatkowski et al. 1981, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 26796.2691,
+   "J": "2",
+   "label": "3d5.(6S).4p z 5P°2",
+   "lifetime": {
+    "value": 1.62e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 26796.28 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   },
+   "lifetime_other": [
+    {
+     "value": 1.67e-08,
+     "unc": 8e-10,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Kwiatkowski et al. 1981, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 26801.9009,
+   "J": "1",
+   "label": "3d5.(6S).4p z 5P°1",
+   "lifetime": {
+    "value": 1.6e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 26801.93 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   },
+   "lifetime_other": [
+    {
+     "value": 1.73e-08,
+     "unc": 9e-10,
+     "unit": "s",
+     "method": "compilation",
+     "note": "other LIF measurement as printed in Sobeck et al. 2007 Table 1 (original not opened)",
+     "source": "Kwiatkowski et al. 1981, quoted in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+     "url": "https://arxiv.org/abs/0707.4603"
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 27728.811,
+   "J": "2",
+   "label": "3d4.(5D).4s.4p.(3P*) y 7P°2",
+   "lifetime": {
+    "value": 6.6e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 27728.87 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 27820.1975,
+   "J": "3",
+   "label": "3d4.(5D).4s.4p.(3P*) y 7P°3",
+   "lifetime": {
+    "value": 6.6e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 27820.23 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 27935.2412,
+   "J": "4",
+   "label": "3d4.(5D).4s.4p.(3P*) y 7P°4",
+   "lifetime": {
+    "value": 6.6e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 27935.26 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 29420.8645,
+   "J": "1",
+   "label": "3d4.(5D).4s.4p.(3P*) y 5P°1",
+   "lifetime": {
+    "value": 7.66e-08,
+    "unc": 3.8e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 29420.90 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 29584.5708,
+   "J": "2",
+   "label": "3d4.(5D).4s.4p.(3P*) y 5P°2",
+   "lifetime": {
+    "value": 7.29e-08,
+    "unc": 3.6e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 29584.62 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 29824.6909,
+   "J": "3",
+   "label": "3d4.(5D).4s.4p.(3P*) y 5P°3",
+   "lifetime": {
+    "value": 6.91e-08,
+    "unc": 3.5e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 29824.75 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 30787.2817,
+   "J": "1",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5F°1",
+   "lifetime": {
+    "value": 1.01e-07,
+    "unc": 5e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 30787.30 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 30858.7516,
+   "J": "2",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5F°2",
+   "lifetime": {
+    "value": 9.91e-08,
+    "unc": 5e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 30858.82 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 30965.3799,
+   "J": "3",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5F°3",
+   "lifetime": {
+    "value": 9.99e-08,
+    "unc": 5e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 30965.46 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 31106.317,
+   "J": "4",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5F°4",
+   "lifetime": {
+    "value": 9.45e-08,
+    "unc": 4.7e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 31106.37 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 31280.3147,
+   "J": "5",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5F°5",
+   "lifetime": {
+    "value": 9.13e-08,
+    "unc": 4.6e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 31280.35 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 33338.2563,
+   "J": "0",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5D°0",
+   "lifetime": {
+    "value": 1.22e-07,
+    "unc": 6e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 33338.20 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 33423.7845,
+   "J": "1",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5D°1",
+   "lifetime": {
+    "value": 1.02e-07,
+    "unc": 5e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 33423.79 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 33542.0985,
+   "J": "2",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5D°2",
+   "lifetime": {
+    "value": 8.87e-08,
+    "unc": 4.4e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 33542.11 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 33671.5273,
+   "J": "3",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5D°3",
+   "lifetime": {
+    "value": 8.39e-08,
+    "unc": 4.2e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 33671.55 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 33816.0334,
+   "J": "4",
+   "label": "3d4.(5D).4s.4p.(3P*) z 5D°4",
+   "lifetime": {
+    "value": 8.37e-08,
+    "unc": 4.2e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 33816.06 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 40906.418,
+   "J": "1",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5F°1",
+   "lifetime": {
+    "value": 3.4e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 40906.46 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 40930.2744,
+   "J": "1",
+   "label": "3d4.(5D).4s.4p.(1P*) x 5P°1",
+   "lifetime": {
+    "value": 5.6e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 40930.31 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 40971.2599,
+   "J": "2",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5F°2",
+   "lifetime": {
+    "value": 4.5e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 40971.29 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41043.3464,
+   "J": "3",
+   "label": "3d4.(5D).4s.4p.(1P*) x 5P°3",
+   "lifetime": {
+    "value": 6.1e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41043.35 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41086.218,
+   "J": "3",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5F°3",
+   "lifetime": {
+    "value": 3.4e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41086.26 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41224.7429,
+   "J": "4",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5F°4",
+   "lifetime": {
+    "value": 3.4e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41224.78 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41224.751,
+   "J": "0",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5D°0",
+   "lifetime": {
+    "value": 5e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41224.80 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41289.1133,
+   "J": "1",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5D°1",
+   "lifetime": {
+    "value": 4.8e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41289.17 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41393.446,
+   "J": "5",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5F°5",
+   "lifetime": {
+    "value": 3.5e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41393.47 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41408.984,
+   "J": "2",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5D°2",
+   "lifetime": {
+    "value": 4.7e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41409.03 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41575.099,
+   "J": "3",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5D°3",
+   "lifetime": {
+    "value": 4.6e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41575.10 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 41782.1313,
+   "J": "4",
+   "label": "3d4.(5D).4s.4p.(1P*) y 5D°4",
+   "lifetime": {
+    "value": 4.5e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 41782.19 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42218.321,
+   "J": "0",
+   "label": "3d4.(3P1).4s.4p.(3P*) x 5D°0",
+   "lifetime": {
+    "value": 1.34e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42218.37 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42292.8417,
+   "J": "1",
+   "label": "3d4.(3P1).4s.4p.(3P*) x 5D°1",
+   "lifetime": {
+    "value": 1.37e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42292.96 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42438.751,
+   "J": "2",
+   "label": "3d4.(3P1).4s.4p.(3P*) x 5D°2",
+   "lifetime": {
+    "value": 1.45e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42438.82 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42515.3342,
+   "J": "2",
+   "label": "3d5.(4G).4p z 5G°2",
+   "lifetime": {
+    "value": 4.87e-08,
+    "unc": 2.4e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42515.35 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42538.7424,
+   "J": "3",
+   "label": "3d5.(4G).4p z 5G°3",
+   "lifetime": {
+    "value": 4.9e-08,
+    "unc": 2.5e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42538.81 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42564.7783,
+   "J": "4",
+   "label": "3d5.(4G).4p z 5G°4",
+   "lifetime": {
+    "value": 4.88e-08,
+    "unc": 2.4e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42564.85 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42589.1721,
+   "J": "5",
+   "label": "3d5.(4G).4p z 5G°5",
+   "lifetime": {
+    "value": 4.87e-08,
+    "unc": 2.4e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42589.25 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42605.708,
+   "J": "6",
+   "label": "3d5.(4G).4p z 5G°6",
+   "lifetime": {
+    "value": 5e-08,
+    "unc": 2.5e-09,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42605.81 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42648.2577,
+   "J": "3",
+   "label": "3d4.(3P1).4s.4p.(3P*) x 5D°3",
+   "lifetime": {
+    "value": 1.6e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42648.26 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 42908.3681,
+   "J": "4",
+   "label": "3d4.(3P1).4s.4p.(3P*) x 5D°4",
+   "lifetime": {
+    "value": 1.76e-08,
+    "unc": 9e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 42908.57 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 44125.7144,
+   "J": "1",
+   "label": "3d5.(6S).5p w 5P°1",
+   "lifetime": {
+    "value": 5.5e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 44125.90 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 44186.7624,
+   "J": "2",
+   "label": "3d5.(6S).5p w 5P°2",
+   "lifetime": {
+    "value": 5.4e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 44186.92 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 44259.182,
+   "J": "3",
+   "label": "3d5.(6S).5p w 5P°3",
+   "lifetime": {
+    "value": 5.2e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 44259.36 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 45348.6792,
+   "J": "6",
+   "label": "3d5.(4G).4p z 3H°6",
+   "lifetime": {
+    "value": 1.56e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 45348.73 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 45354.15,
+   "J": "5",
+   "label": "3d5.(4G).4p z 3H°5",
+   "lifetime": {
+    "value": 1.56e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 45354.18 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 45358.5837,
+   "J": "4",
+   "label": "3d5.(4G).4p z 3H°4",
+   "lifetime": {
+    "value": 1.55e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 45358.63 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 45566.0035,
+   "J": "3",
+   "label": "3d5.(4G).4p y 5H°3",
+   "lifetime": {
+    "value": 8.8e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 45566.02 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 45614.8444,
+   "J": "4",
+   "label": "3d5.(4G).4p y 5H°4",
+   "lifetime": {
+    "value": 8.9e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 45614.88 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 45663.2579,
+   "J": "5",
+   "label": "3d5.(4G).4p y 5H°5",
+   "lifetime": {
+    "value": 8.9e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 45663.28 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 45707.3259,
+   "J": "6",
+   "label": "3d5.(4G).4p y 5H°6",
+   "lifetime": {
+    "value": 8.8e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 45707.36 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 45741.4701,
+   "J": "7",
+   "label": "3d5.(4G).4p y 5H°7",
+   "lifetime": {
+    "value": 8.5e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 45741.49 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 46448.6289,
+   "J": "1",
+   "label": "3d4.4s.5s f 7D1",
+   "lifetime": {
+    "value": 8.7e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 46448.60 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 46524.9187,
+   "J": "2",
+   "label": "3d4.4s.5s f 7D2",
+   "lifetime": {
+    "value": 8.7e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 46524.84 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 46637.2307,
+   "J": "3",
+   "label": "3d4.4s.5s f 7D3",
+   "lifetime": {
+    "value": 8.6e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 46637.21 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 46783.0528,
+   "J": "4",
+   "label": "3d4.4s.5s f 7D4",
+   "lifetime": {
+    "value": 8.7e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 46783.06 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 46959.0255,
+   "J": "5",
+   "label": "3d4.4s.5s f 7D5",
+   "lifetime": {
+    "value": 8.7e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 46958.98 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 47047.4845,
+   "J": "2",
+   "label": "3d4.(3H).4s.4p.(3P*) x 5G°2",
+   "lifetime": {
+    "value": 1.63e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 47047.47 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 47125.6412,
+   "J": "3",
+   "label": "3d4.(3H).4s.4p.(3P*) x 5G°3",
+   "lifetime": {
+    "value": 1.69e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 47125.70 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 47189.911,
+   "J": "4",
+   "label": "3d4.(3H).4s.4p.(3P*) x 5G°4",
+   "lifetime": {
+    "value": 1.6e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 47189.87 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 47222.2081,
+   "J": "6",
+   "label": "3d4.(3H).4s.4p.(3P*) x 5G°6",
+   "lifetime": {
+    "value": 1.32e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 47222.27 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  },
+  {
+   "nist_energy_cm": 47228.7599,
+   "J": "5",
+   "label": "3d4.(3H).4s.4p.(3P*) x 5G°5",
+   "lifetime": {
+    "value": 1.49e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "time-resolved LIF on a slow atomic beam (+-5%); original paper not opened, value read from the Sobeck et al. table (level printed there as 47228.80 cm-1)",
+    "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+    "url": "https://arxiv.org/abs/0707.4603"
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23305.0026,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d5.(6S).4s a 7S3 - 3d5.(6S).4p z 7P°2, 429.092 nm (vac)",
+   "type": "E1",
+   "use": "429.1 nm line (7S3 - 7P2); gray-molasses cooling of optically trapped Cr (Gabardos et al., Phys. Rev. A 99, 023607 (2019), arXiv:1812.09177)",
+   "A_s": {
+    "value": 31000000.0,
+    "unc": 1500000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 4289.72 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.458,
+    "unc": 0.059,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23386.3419,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d5.(6S).4s a 7S3 - 3d5.(6S).4p z 7P°3, 427.600 nm (vac)",
+   "type": "E1",
+   "use": "optical pumping to m_J = -3 and \"depumper\" towards 5S2 / 5D via 7P3 (427.6 nm)",
+   "isotope_shift_MHz": {
+    "53-52": {
+     "value": 18,
+     "unc": 23,
+     "method": "experiment",
+     "note": "deduced from the measured 382(5) MHz difference between the 52Cr line and the 53Cr F=9/2 -> F'=9/2 component and literature hyperfine constants; sign convention not stated explicitly",
+     "source": "Naylor, PhD thesis, Universite Paris 13 (2016), tel-01462831",
+     "url": "https://theses.hal.science/tel-01462831/document"
+    }
+   },
+   "A_s": {
+    "value": 31700000.0,
+    "unc": 1600000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 4274.80 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.926,
+    "unc": 0.074,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23498.8156,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d5.(6S).4s a 7S3 - 3d5.(6S).4p z 7P°4, 425.553 nm (vac)",
+   "type": "E1",
+   "use": "main cooling line: Zeeman slower, MOT, imaging (425.5 nm); 53Cr on F=9/2 -> F'=11/2 with blue hyperfine repumpers",
+   "wavelength_vac_nm": {
+    "value": 425.554,
+    "method": "compilation",
+    "note": "thesis Table 3.2 (Chicireanu thesis: 425.553 nm; NIST Ritz 425.553363 nm)",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   },
+   "linewidth_MHz": {
+    "value": 5.02,
+    "method": "compilation",
+    "note": "Gamma = 31.5e6 s^-1 = 2 pi x 5.02 MHz, taken by the Pfau group from the NIST A value (3.15e7 s^-1, accuracy B)",
+    "alternatives": [
+     {
+      "value": 5.06,
+      "note": "Gamma_Cr/2pi as stated by Neri et al. 2020",
+      "source": "Neri, Ciamei, Simonelli, Goti, Inguscio, Trenkwalder, Zaccanti, Phys. Rev. A 101, 063602 (2020)",
+      "url": "https://arxiv.org/abs/2001.11616"
+     },
+     {
+      "value": 5.06,
+      "note": "derived from Gamma = 31.8e6 s^-1 printed in the Chicireanu thesis Table 1.2 (the associated paper states 5.02 MHz)",
+      "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+      "url": "https://theses.hal.science/tel-00288354/document"
+     },
+     {
+      "value": 5.25,
+      "note": "derived: 1/(2 pi tau) with the LIF lifetime 30.3(1.5) ns of Cooper et al. 1997",
+      "source": "Cooper, Gibson, Lawler, J. Quant. Spectrosc. Radiat. Transfer 58, 85 (1997), as tabulated in Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007), Table 1",
+      "url": "https://arxiv.org/abs/0707.4603"
+     },
+     {
+      "value": 5.11,
+      "note": "derived: 1/(2 pi tau) with the LIF lifetime 31.15(8) ns of Measures et al. 1977 as printed in Sobeck et al.",
+      "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+      "url": "https://arxiv.org/abs/0707.4603"
+     }
+    ],
+    "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+    "url": "https://arxiv.org/abs/quant-ph/0011113"
+   },
+   "saturation_intensity_mW_cm2": {
+    "value": 8.52,
+    "method": "compilation",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   },
+   "doppler_limit_uK": {
+    "value": 124,
+    "method": "compilation",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   },
+   "branching": {
+    "value": 0.9999946,
+    "method": "experiment",
+    "note": "derived: 1 - (127 + 42)/31.5e6 using the measured intercombination decay rates of Stuhler et al.",
+    "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+    "url": "https://arxiv.org/abs/quant-ph/0011113"
+   },
+   "isotope_shift_MHz": {
+    "53-52": {
+     "value": 10.7,
+     "unc": 1.7,
+     "method": "experiment",
+     "note": "\"mass shift, on top of the hyperfine shift\" of the 53Cr cooling transition (F=9/2 -> F'=11/2) referenced to 52Cr, i.e. centre-of-gravity shift; sign as printed (+)",
+     "alternatives": [
+      {
+       "value": 6,
+       "unc": 1,
+       "note": "caption of Fig. 1: \"isotopic shift between the 52Cr 7S3->7P4 transition and the 53Cr F=7/2 -> F'=9/2 transition\" (a hyperfine component, not a centre of gravity; sign convention not stated)",
+       "source": "Chicireanu, Pouderous, Barbe, Laburthe-Tolra, Marechal, Vernac, Keller, Gorceix, Phys. Rev. A 73, 053406 (2006)",
+       "url": "https://arxiv.org/abs/quant-ph/0603028"
+      },
+      {
+       "value": 316.5,
+       "unc": 1,
+       "note": "frequency difference between the 52Cr (J=3 -> J=4) and the 53Cr (F=9/2 -> F=11/2) MOT transitions (includes hyperfine shifts; sign not stated numerically, the 53Cr line lies below the 52Cr line in the thesis frequency diagram)",
+       "source": "Chicireanu, PhD thesis, Universite Paris-Nord (2007), tel-00288354",
+       "url": "https://theses.hal.science/tel-00288354/document"
+      }
+     ],
+     "source": "Neri, Ciamei, Simonelli, Goti, Inguscio, Trenkwalder, Zaccanti, Phys. Rev. A 101, 063602 (2020)",
+     "url": "https://arxiv.org/abs/2001.11616"
+    }
+   },
+   "A_s": {
+    "value": 33000000.0,
+    "unc": 1700000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 4254.33 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 3.361,
+    "unc": 0.087,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 26787.464,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d5.(6S).4s a 7S3 - 3d5.(6S).4p z 5P°3, 373.309 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 184000.0,
+    "unc": 24000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3732.02 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.1819,
+    "unc": 0.012,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 26796.2691,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d5.(6S).4s a 7S3 - 3d5.(6S).4p z 5P°2, 373.186 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 177000.0,
+    "unc": 16000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3730.80 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.1507,
+    "unc": 0.0068,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 27728.811,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d5.(6S).4s a 7S3 - 3d4.(5D).4s.4p.(3P*) y 7P°2, 360.636 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 151000000.0,
+    "unc": 8000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3605.32 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 4.181,
+    "unc": 0.11,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "use": "strong UV resonance line a7S3 - y7P2 (360.64 nm vac); dominant contribution to the ground-state polarizability / optical-trap light shift"
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 27820.1975,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d5.(6S).4s a 7S3 - 3d4.(5D).4s.4p.(3P*) y 7P°3, 359.451 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 151000000.0,
+    "unc": 8000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3593.48 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 4.922,
+    "unc": 0.13,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "use": "strong UV resonance line a7S3 - y7P3 (359.45 nm vac); dominant contribution to the ground-state polarizability / optical-trap light shift"
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 27935.2412,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d5.(6S).4s a 7S3 - 3d4.(5D).4s.4p.(3P*) y 7P°4, 357.971 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 152000000.0,
+    "unc": 8000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3578.68 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 5.565,
+    "unc": 0.15,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "use": "strong UV resonance line a7S3 - y7P4 (357.97 nm vac); dominant contribution to the ground-state polarizability / optical-trap light shift"
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 23386.3419,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d5.(6S).4s a 5S2 - 3d5.(6S).4p z 7P°3, 633.184 nm (vac)",
+   "type": "intercombination",
+   "use": "633.2 nm repumper 5S2 -> 7P3 (\"dark spot\" repumper; 5S2 is the best state for loading the optical dipole trap)",
+   "wavelength_vac_nm": {
+    "value": 633.183,
+    "method": "compilation",
+    "note": "as stated in the thesis (NIST Ritz 633.18416 nm)",
+    "source": "Naylor, PhD thesis, Universite Paris 13 (2016), tel-01462831",
+    "url": "https://theses.hal.science/tel-01462831/document"
+   },
+   "A_s": {
+    "value": 29000.0,
+    "method": "compilation",
+    "note": "NIST ASD accuracy D, as used in Table 1 of Bismut et al.",
+    "source": "NIST ASD Cr I lines table (local copy data/nist/Cr_I_lines_from1nm.tsv)",
+    "url": "https://physics.nist.gov/asd"
+   },
+   "isotope_shift_MHz": {
+    "53-52": {
+     "value": -155,
+     "unc": 53,
+     "method": "experiment",
+     "note": "deduced from the measured -685(35) MHz offset of the 53Cr 5S2 F=7/2 -> 7P3 F=9/2 component and the 5S2 hyperfine structure",
+     "source": "Naylor, PhD thesis, Universite Paris 13 (2016), tel-01462831",
+     "url": "https://theses.hal.science/tel-01462831/document"
+    }
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 26787.464,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d5.(6S).4s a 5S2 - 3d5.(6S).4p z 5P°3, 520.988 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 52100000.0,
+    "unc": 2600000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5208.42 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 5.045,
+    "unc": 0.13,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 26796.2691,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d5.(6S).4s a 5S2 - 3d5.(6S).4p z 5P°2, 520.749 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 51900000.0,
+    "unc": 2600000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5206.04 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 4.253,
+    "unc": 0.11,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 26801.9009,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d5.(6S).4s a 5S2 - 3d5.(6S).4p z 5P°1, 520.596 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 52400000.0,
+    "unc": 2600000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5204.51 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 3.309,
+    "unc": 0.082,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 40930.2744,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d5.(6S).4s a 5S2 - 3d4.(5D).4s.4p.(1P*) x 5P°1, 299.966 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 39300000.0,
+    "unc": 2300000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2998.78 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.253,
+    "unc": 0.037,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 40971.2599,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d5.(6S).4s a 5S2 - 3d4.(5D).4s.4p.(1P*) y 5F°2, 299.598 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 30600000.0,
+    "unc": 2100000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2995.10 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.425,
+    "unc": 0.049,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 41043.3464,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d5.(6S).4s a 5S2 - 3d4.(5D).4s.4p.(1P*) x 5P°3, 298.952 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 35900000.0,
+    "unc": 2000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2988.65 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.82,
+    "unc": 0.051,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 44125.7144,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d5.(6S).4s a 5S2 - 3d5.(6S).5p w 5P°1, 273.728 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 43000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2736.46 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.143,
+    "unc": 0.053,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 44186.7624,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d5.(6S).4s a 5S2 - 3d5.(6S).5p w 5P°2, 273.272 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 52000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2731.90 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.618,
+    "unc": 0.047,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7593.1484,
+   "upper_cm": 44259.182,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d5.(6S).4s a 5S2 - 3d5.(6S).5p w 5P°3, 272.732 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 58000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2726.50 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.016,
+    "unc": 0.052,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7750.7465,
+   "upper_cm": 26801.9009,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D0 - 3d5.(6S).4p z 5P°1, 524.903 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 2070000.0,
+    "unc": 110000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5247.57 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.6658,
+    "unc": 0.018,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7750.7465,
+   "upper_cm": 40906.418,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D0 - 3d4.(5D).4s.4p.(1P*) y 5F°1, 301.608 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 155000000.0,
+    "unc": 9000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3015.20 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.509,
+    "unc": 0.073,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7750.7465,
+   "upper_cm": 41289.1133,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D0 - 3d4.(5D).4s.4p.(1P*) y 5D°1, 298.166 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 55000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2980.79 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.469,
+    "unc": 0.04,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7750.7465,
+   "upper_cm": 42292.8417,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D0 - 3d4.(3P1).4s.4p.(3P*) x 5D°1, 289.502 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 19600000.0,
+    "unc": 1400000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2894.16 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.8391,
+    "unc": 0.03,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7810.7795,
+   "upper_cm": 26796.2691,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D1 - 3d5.(6S).4p z 5P°2, 526.718 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 950000.0,
+    "unc": 50000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5265.72 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.5853,
+    "unc": 0.015,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7810.7795,
+   "upper_cm": 26801.9009,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D1 - 3d5.(6S).4p z 5P°1, 526.562 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 4530000.0,
+    "unc": 230000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5264.16 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.9896,
+    "unc": 0.025,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7810.7795,
+   "upper_cm": 40906.418,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D1 - 3d4.(5D).4s.4p.(1P*) y 5F°1, 302.155 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 110000000.0,
+    "unc": 7000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3020.67 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.12,
+    "unc": 0.067,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7810.7795,
+   "upper_cm": 41224.751,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "3d4.4s2 a 5D1 - 3d4.(5D).4s.4p.(1P*) y 5D°0, 299.276 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 192000000.0,
+    "unc": 10000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2991.89 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.594,
+    "unc": 0.042,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7810.7795,
+   "upper_cm": 41408.984,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D1 - 3d4.(5D).4s.4p.(1P*) y 5D°2, 297.635 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 53800000.0,
+    "unc": 2900000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2975.48 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.871,
+    "unc": 0.05,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7810.7795,
+   "upper_cm": 42218.321,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "3d4.4s2 a 5D1 - 3d4.(3P1).4s.4p.(3P*) x 5D°0, 290.634 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 72000000.0,
+    "unc": 5000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2905.49 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.934,
+    "unc": 0.032,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7810.7795,
+   "upper_cm": 42438.751,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D1 - 3d4.(3P1).4s.4p.(3P*) x 5D°2, 288.784 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 18000000.0,
+    "unc": 1300000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2886.99 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.034,
+    "unc": 0.037,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7810.7795,
+   "upper_cm": 44125.7144,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D1 - 3d5.(6S).5p w 5P°1, 275.369 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 57000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2752.86 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.328,
+    "unc": 0.047,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 23386.3419,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D2 - 3d5.(6S).4p z 7P°3, 646.877 nm (vac)",
+   "type": "intercombination",
+   "use": "646.9 nm repumper 5D2 -> 7P3 (fourth red repumper of the Paris-Nord experiment)",
+   "wavelength_vac_nm": {
+    "value": 646.877,
+    "method": "compilation",
+    "note": "as labelled in the thesis level scheme (NIST Ritz 646.87652 nm); transition rate unknown (Bismut et al. Table 1)",
+    "source": "Beaufils, PhD thesis, Universite Paris 13 (2009), tel-01163706",
+    "url": "https://theses.hal.science/tel-01163706/document"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 26787.464,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D2 - 3d5.(6S).4p z 5P°3, 530.222 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 342000.0,
+    "unc": 24000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5300.74 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.4197,
+    "unc": 0.015,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 26796.2691,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D2 - 3d5.(6S).4p z 5P°2, 529.975 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 3450000.0,
+    "unc": 180000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5298.28 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.126,
+    "unc": 0.029,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 26801.9009,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D2 - 3d5.(6S).4p z 5P°1, 529.816 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 3480000.0,
+    "unc": 180000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5296.69 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.8754,
+    "unc": 0.023,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 40906.418,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D2 - 3d4.(5D).4s.4p.(1P*) y 5F°1, 303.223 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 22000000.0,
+    "unc": 1500000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3031.35 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.953,
+    "unc": 0.032,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 40930.2744,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D2 - 3d4.(5D).4s.4p.(1P*) x 5P°1, 303.004 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 25000000.0,
+    "unc": 1400000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3029.16 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.015,
+    "unc": 0.028,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 41289.1133,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D2 - 3d4.(5D).4s.4p.(1P*) y 5D°1, 299.745 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 130000000.0,
+    "unc": 7000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2996.58 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.277,
+    "unc": 0.061,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 41575.099,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D2 - 3d4.(5D).4s.4p.(1P*) y 5D°3, 297.198 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 45900000.0,
+    "unc": 2400000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2971.11 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.04,
+    "unc": 0.053,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 42292.8417,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D2 - 3d4.(3P1).4s.4p.(3P*) x 5D°1, 290.990 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 41800000.0,
+    "unc": 2400000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2909.04 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.235,
+    "unc": 0.035,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 42438.751,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D2 - 3d4.(3P1).4s.4p.(3P*) x 5D°2, 289.760 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 22200000.0,
+    "unc": 1300000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2896.75 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.154,
+    "unc": 0.034,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 42648.2577,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D2 - 3d4.(3P1).4s.4p.(3P*) x 5D°3, 288.012 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 12600000.0,
+    "unc": 700000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2879.27 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.02,
+    "unc": 0.028,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 44125.7144,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d4.4s2 a 5D2 - 3d5.(6S).5p w 5P°1, 276.256 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 43000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2761.73 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.159,
+    "unc": 0.054,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 7927.441,
+   "upper_cm": 44186.7624,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D2 - 3d5.(6S).5p w 5P°2, 275.791 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 44000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2757.09 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.509,
+    "unc": 0.051,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 23386.3419,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D3 - 3d5.(6S).4p z 7P°3, 653.973 nm (vac)",
+   "type": "intercombination",
+   "use": "654.0 nm repumper 5D3 -> 7P3",
+   "wavelength_vac_nm": {
+    "value": 653.9727,
+    "unc": 0.0002,
+    "isotope": "52",
+    "method": "experiment",
+    "note": "wavemeter, thesis Table 6.1",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   },
+   "wavelength_vac_nm_50": {
+    "value": 653.9764,
+    "unc": 0.0002,
+    "isotope": "50",
+    "method": "experiment",
+    "note": "thesis Table 6.1",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   },
+   "isotope_shift_MHz": {
+    "53-52": {
+     "value": 670,
+     "unc": 28,
+     "method": "experiment",
+     "note": "Table 2.5 (5D3 F=9/2 -> 7P3 F=9/2 measured 1088(10) MHz from the boson line); the running text of the same thesis gives 1095(28) MHz and a measured offset of 1244(10) MHz - internal inconsistency, treat as approximate",
+     "alternatives": [
+      {
+       "value": 1095,
+       "unc": 28,
+       "note": "value in the running text of the same thesis (p. 40)",
+       "source": "Naylor, PhD thesis, Universite Paris 13 (2016), tel-01462831",
+       "url": "https://theses.hal.science/tel-01462831/document"
+      }
+     ],
+     "source": "Naylor, PhD thesis, Universite Paris 13 (2016), tel-01462831",
+     "url": "https://theses.hal.science/tel-01462831/document"
+    }
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 23498.8156,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d4.4s2 a 5D3 - 3d5.(6S).4p z 7P°4, 649.198 nm (vac)",
+   "type": "intercombination",
+   "use": "intercombination leak of the cooling line into metastable 5D3; 649.2 nm repumper",
+   "A_s": {
+    "value": 42,
+    "unc": 6,
+    "method": "experiment",
+    "note": "from MOT lifetime measurements (NIST lists no A for this line)",
+    "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+    "url": "https://arxiv.org/abs/quant-ph/0011113"
+   },
+   "rme_J_ea0": {
+    "value": 0.00714,
+    "unc": 0.00051,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies",
+    "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+    "url": "https://arxiv.org/abs/quant-ph/0011113"
+   },
+   "wavelength_vac_nm": {
+    "value": 649.1978,
+    "unc": 0.0002,
+    "isotope": "52",
+    "method": "experiment",
+    "note": "repumper wavelength at maximum MOT fluorescence, wavemeter vs stabilised He-Ne (+-0.2 pm ~ +-150 MHz), thesis Table 6.1",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 26787.464,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D3 - 3d5.(6S).4p z 5P°3, 534.980 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 2050000.0,
+    "unc": 110000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5348.31 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.041,
+    "unc": 0.028,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 26796.2691,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D3 - 3d5.(6S).4p z 5P°2, 534.728 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 5230000.0,
+    "unc": 270000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5345.80 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.405,
+    "unc": 0.036,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 31106.317,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d4.4s2 a 5D3 - 3d4.(5D).4s.4p.(3P*) z 5F°4, 434.572 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 8700000.0,
+    "unc": 400000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 4344.50 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.781,
+    "unc": 0.041,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 40971.2599,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D3 - 3d4.(5D).4s.4p.(1P*) y 5F°2, 304.173 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 56000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3040.84 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.972,
+    "unc": 0.053,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 41043.3464,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D3 - 3d4.(5D).4s.4p.(1P*) x 5P°3, 303.507 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 22700000.0,
+    "unc": 1300000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3034.19 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.481,
+    "unc": 0.042,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 41086.218,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D3 - 3d4.(5D).4s.4p.(1P*) y 5F°3, 303.113 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 91000000.0,
+    "unc": 6000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3030.24 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.959,
+    "unc": 0.098,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 41408.984,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D3 - 3d4.(5D).4s.4p.(1P*) y 5D°2, 300.176 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 105000000.0,
+    "unc": 5000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 3000.88 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 2.647,
+    "unc": 0.063,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 41782.1313,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d4.4s2 a 5D3 - 3d4.(5D).4s.4p.(1P*) y 5D°4, 296.851 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 31800000.0,
+    "unc": 1800000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2967.64 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.922,
+    "unc": 0.054,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 42438.751,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D3 - 3d4.(3P1).4s.4p.(3P*) x 5D°2, 291.175 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 27500000.0,
+    "unc": 1600000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2910.90 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.294,
+    "unc": 0.038,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 42648.2577,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D3 - 3d4.(3P1).4s.4p.(3P*) x 5D°3, 289.410 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 33600000.0,
+    "unc": 1800000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2893.25 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.677,
+    "unc": 0.045,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 42908.3681,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d4.4s2 a 5D3 - 3d4.(3P1).4s.4p.(3P*) x 5D°4, 287.247 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 6200000.0,
+    "unc": 400000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2871.62 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 0.8079,
+    "unc": 0.026,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 44186.7624,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d4.4s2 a 5D3 - 3d5.(6S).5p w 5P°2, 277.073 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 68000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2769.90 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.889,
+    "unc": 0.056,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8095.1842,
+   "upper_cm": 44259.182,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D3 - 3d5.(6S).5p w 5P°3, 276.518 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 25900000.0,
+    "unc": 2100000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 2764.35 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.375,
+    "unc": 0.056,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  },
+  {
+   "lower_cm": 8307.5753,
+   "upper_cm": 23386.3419,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D4 - 3d5.(6S).4p z 7P°3, 663.184 nm (vac)",
+   "type": "intercombination",
+   "use": "663.2 nm repumper 5D4 -> 7P3 (standard repumper of the Cr MOT / magnetic trap)",
+   "wavelength_vac_nm": {
+    "value": 663.1846,
+    "unc": 0.0002,
+    "isotope": "52",
+    "method": "experiment",
+    "note": "wavemeter, thesis Table 6.1",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   },
+   "A_s": {
+    "value": 6000.0,
+    "method": "compilation",
+    "note": "NIST ASD accuracy D, as used in Table 1 of Bismut et al.",
+    "source": "NIST ASD Cr I lines table (local copy data/nist/Cr_I_lines_from1nm.tsv)",
+    "url": "https://physics.nist.gov/asd"
+   },
+   "isotope_shift_MHz": {
+    "53-52": {
+     "value": 819,
+     "unc": 28,
+     "method": "experiment",
+     "note": "centre-of-gravity shift from Table 2.5 (5D4 F=11/2 -> 7P3 F=9/2 measured 1242(10) MHz from the boson line); the running text of the same thesis gives 833(28) MHz and a measured offset of 1102(10) MHz - internal inconsistency, treat as approximate",
+     "alternatives": [
+      {
+       "value": 833,
+       "unc": 28,
+       "note": "value in the running text of the same thesis (p. 40)",
+       "source": "Naylor, PhD thesis, Universite Paris 13 (2016), tel-01462831",
+       "url": "https://theses.hal.science/tel-01462831/document"
+      }
+     ],
+     "source": "Naylor, PhD thesis, Universite Paris 13 (2016), tel-01462831",
+     "url": "https://theses.hal.science/tel-01462831/document"
+    }
+   }
+  },
+  {
+   "lower_cm": 8307.5753,
+   "upper_cm": 23498.8156,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "3d4.4s2 a 5D4 - 3d5.(6S).4p z 7P°4, 658.274 nm (vac)",
+   "type": "intercombination",
+   "use": "intercombination leak of the cooling line into metastable 5D4 (continuous loading of the magnetic trap); 658.3 nm repumper",
+   "A_s": {
+    "value": 127,
+    "unc": 14,
+    "method": "experiment",
+    "note": "from MOT lifetime measurements (NIST lists no A for this line)",
+    "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+    "url": "https://arxiv.org/abs/quant-ph/0011113"
+   },
+   "rme_J_ea0": {
+    "value": 0.0127,
+    "unc": 0.0007,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies",
+    "source": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001)",
+    "url": "https://arxiv.org/abs/quant-ph/0011113"
+   },
+   "wavelength_vac_nm": {
+    "value": 658.274,
+    "unc": 0.0002,
+    "isotope": "52",
+    "method": "experiment",
+    "note": "repumper wavelength at maximum MOT fluorescence, wavemeter vs stabilised He-Ne (+-0.2 pm ~ +-150 MHz), thesis Table 6.1",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   },
+   "wavelength_vac_nm_50": {
+    "value": 658.2733,
+    "unc": 0.0002,
+    "isotope": "50",
+    "method": "experiment",
+    "note": "thesis Table 6.1",
+    "source": "Stuhler, PhD thesis, Universitaet Konstanz (2001), \"Kontinuierliches Laden einer Magnetfalle mit lasergekuehlten Chromatomen\"",
+    "url": "https://kops.uni-konstanz.de/bitstream/handle/123456789/9107/stuhler.pdf?sequence=1&isAllowed=y"
+   }
+  },
+  {
+   "lower_cm": 8307.5753,
+   "upper_cm": 26787.464,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d4.4s2 a 5D4 - 3d5.(6S).4p z 5P°3, 541.129 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 7000000.0,
+    "unc": 400000.0,
+    "method": "experiment",
+    "note": "Table 3 (FTS branching fraction / Cooper et al. LIF lifetime); air wavelength 5409.77 A",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   },
+   "rme_J_ea0": {
+    "value": 1.958,
+    "unc": 0.056,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Sobeck, Lawler, Sneden, Astrophys. J. 667, 1267 (2007)",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/667/1267/table3.dat"
+   }
+  }
+ ],
+ "not_found": [
+  "isotope shifts of the 425.5 nm cooling line for 50Cr and 54Cr: measured by Furmann, Jarosz, Stefanska, Dembczynski, Stachowska, Spectrochim. Acta B 60, 33 (2005) (Elsevier, not accessible); the Stuhler thesis shows the 50/52/53/54 saturation spectrum only as a figure",
+  "Bell, Stuhler, Locher, Hensler, Mlynek, Pfau, Europhys. Lett. 45, 156 (1999) could not be opened (IOP bot-block, no archive copy); its intercombination wavelengths are covered by the Stuhler thesis Table 6.1",
+  "P. O. Schmidt thesis (Stuttgart 2003) and J. Werner thesis (2006): only available through the Stuttgart OPUS server, which returned a bot-check page",
+  "original hyperfine papers for 53Cr (Childs et al. 1963; Becker et al. 1978; Ertmer et al. 1982; Jarosz et al. 2007) not opened - constants are second-hand from the Paris-Nord theses",
+  "hyperfine constants of 7P2 and of the y7P levels of 53Cr",
+  "measured radiative lifetimes of the metastable a5S2 and a5D_J levels (only the bound > 50 s for 5D4/5D3 from trap decay)",
+  "transition rates 7P3 -> 5D3 and 7P3 -> 5D2 (654.0 and 646.9 nm repumper lines): \"unknown\" in Bismut et al. Table 1",
+  "lifetime of x5P2 (40982.79 cm-1) and of the levels above 47300 cm-1 drawn on the site: not in the 65-level table of Sobeck et al.; the full Cooper et al. 1997 table (131 levels, JQSRT) was not accessible",
+  "absolute optical frequency of the 425.5 nm line (only wavemeter-level wavelengths)"
+ ],
+ "conflicts": [
+  "7P4 lifetime / 425.5 nm linewidth: Cooper et al. LIF 30.3(1.5) ns (5.25 MHz) vs Measures et al. 31.15(8) ns (5.11 MHz), Hannaford & Lowe 31.6(5) ns, Marek 31.8(2.5) ns, NIST A = 3.15e7 s^-1 (5.01 MHz, used by the cold-atom groups as 5.02 MHz); Neri et al. quote 5.06 MHz and the Chicireanu thesis prints Gamma = 31.8e6 s^-1. The entry keeps 5.02 MHz (the number used on all cold-Cr experiments) with alternatives.",
+  "53Cr-52Cr shift of the cooling line: +10.7(1.7) MHz centre-of-gravity (Neri 2020) vs \"6 +- 1 MHz\" (Chicireanu 2006, caption refers to the F=7/2 -> 9/2 component); Neri et al. call the two \"in excellent agreement\", so the 2006 number is probably also a centre-of-gravity shift. The 316.5(1) MHz of the Chicireanu thesis is the raw offset of the F=9/2 -> 11/2 component.",
+  "Naylor thesis is internally inconsistent for the 53Cr red-repumper shifts: text 1095(28) / 833(28) MHz (offsets 1244 / 1102 MHz) vs Table 2.5 670(28) / 819(28) MHz (offsets 1088 / 1242 MHz) for 5D3 / 5D4 -> 7P3.",
+  "Level energies: Sobeck et al. print older energies (e.g. 44259.36 cm-1) that differ from the current NIST values (44259.182 cm-1) by up to 0.2 cm-1; levels were matched by J and nearest energy within 0.35 cm-1.",
+  "Isotopic abundances: theses quote 4.35 / 83.79 / 9.50 / 2.36 %, NIST 4.345(13) / 83.789(18) / 9.501(17) / 2.365(7) %.",
+  "Wavelength of the optical-pumping line: Griesmaier thesis prints 427.2 nm in one table and 427.6 nm elsewhere; NIST Ritz 427.600 nm (427.2 is a misprint)."
+ ],
+ "notes": "Lifetimes are the Cooper, Gibson, Lawler (1997) LIF values as reprinted in Table 1 of Sobeck et al. 2007 (arXiv version read; 65 of the 131 levels) - method \"compilation\" because the original was not opened. Transition probabilities are from the machine-readable Table 3 of Sobeck et al. at CDS, restricted to lines the site draws plus all lines from z7P, y7P and z5P; NIST ASD already contains A values of comparable origin for most of them. rme_J_ea0 is derived from A with the SCHEMA convention. 53Cr has negative A in 7S3, 7P4, 5D4, 5D3 (inverted hyperfine structure; F = 9/2 is the lowest ground-state level). Isotope-shift keys are written 53-52 with the sign as printed in the source; where the source did not state its sign convention this is said in the note. Extra fields beyond SCHEMA.md: top-level ionization_limit, laser_cooling_scheme, conflicts; level fields lifetime_other, decay_to_metastable, magnetic_moment_muB; transition fields wavelength_vac_nm (measured, with isotope), linewidth_MHz, saturation_intensity_mW_cm2, doppler_limit_uK. Lifetime entries whose note says LOWER BOUND are bounds. The a5D4 level (8307.5753 cm-1) is not in data/cr/levels.csv but is the main leak / repump state and is included."
+}
