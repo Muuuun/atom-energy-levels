@@ -46,9 +46,11 @@ requests, mark derived / second-hand values, list conflicts.
 - Not yet searched (31 elements, 7 groups): Sb Te Pb Bi | La Ce Pr | Nd Pm Sm | Gd Tb Lu | Hf Ta W | Re Os Ir Pt | Po At Rn Ac Th.
   Pr, Re, Os have NIST levels but no classified lines: ask the subagent for classified lines too (as done for Zr, Nb, Se).
 - Thin files worth re-running: As Se Au Cu Ga C Cl Br I Ne Ar Kr Xe Zn Mo Er.
-- Why the campaign stopped: the WebSearch tool refused calls after 200 searches in the session, a cap shared by the main
-  session and all subagents. A fresh session should have a fresh budget; spend it deliberately (few subagents at a time,
-  tell them the budget is shared). Whether and how the cap can be raised was being checked and is not confirmed.
+- Why the campaign stopped: a session can make at most 200 WebSearch calls, counted across the main conversation and
+  every subagent (Claude Code docs, tools reference, "session search limit"). Resuming a session does not reset the count;
+  a new session or `/clear` does. The owner can raise (not remove) the cap by setting the environment variable
+  `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION` before launching Claude Code. Do not change the owner's settings yourself.
+  Spend the budget deliberately: few research subagents at a time, and tell each one the budget is shared.
 
 ## Decisions still owed by the owner
 
