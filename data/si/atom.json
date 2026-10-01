@@ -6,17 +6,17 @@
   "symbol": "Si",
   "A": null,
   "Z": 14,
-  "I": null,
+  "I": "1/2",
   "kind": "nist",
   "limit_cm": 65747.76,
   "scale": "auto",
   "spectrum": "Si I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "28",
   "limit_text": "Si$^+$ ionisation limit   65747.76 cm$^{-1}$  =  8.15168 eV  (152.096 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Level energies are the NIST ASD values (data/nist/Si_I_levels.tsv). Lifetimes of O'Brian & Lawler are quoted at second hand (method 'compilation'). Den Hartog et al. 2023 A-values = their measured branching fractions / O'Brian & Lawler lifetimes, so they are not independent of the lifetimes; the 'branching' field is the measured branching fraction of that decay channel. rme_J_ea0 values are derived from A as described in each note. Isotope shifts are nu(heavier) - nu(28Si) as printed (positive = heavier isotope at higher frequency for the 221.7 nm line). 29Si has I = 1/2 (no quadrupole constant); the 29Si frequency of the 3P1-3P2 interval is the hyperfine-free fine-structure interval. The g_J values of 3P1 and 3P2 are fitted from laser magnetic resonance and carry systematic errors larger than the printed 1-sigma. Lifetimes of 3P1, 3P2, 1D2, 1S0 are derived from calculated A-values (theory), not measured. Additional measured data not transcribed here: Pehlivan Rhodin et al. 2024 Table B.3 (CDS tableb3.dat) gives 17 semi-experimental log(gf) for near-infrared 4s-4p and 3s3p3 3D°-4p lines (measured branching fractions x calculated lifetimes); Smith et al. 1987 give branching fractions / f-values for 108 lines (already the basis of NIST ASD)."
  },
  "columns": [
   {
@@ -44,20 +44,14 @@
    "width": 1.0
   },
   {
-   "key": "1D*",
-   "header": "^1D^{o}",
+   "key": "1P*",
+   "header": "^1P^{o}",
    "group": null,
    "width": 1.0
   },
   {
    "key": "1S",
    "header": "^1S",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "1P*",
-   "header": "^1P^{o}",
    "group": null,
    "width": 1.0
   },
@@ -70,6 +64,12 @@
   {
    "key": "1F*",
    "header": "^1F^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1D*",
+   "header": "^1D^{o}",
    "group": null,
    "width": 1.0
   },
@@ -104,11 +104,21 @@
    "conf": "3s2.3p2",
    "term": "3P",
    "parity": "even",
-   "g": null,
+   "g": 1.500794,
    "name": "3s^{2}3p^{2}\\ ^3P_{1}",
    "plain": "3s23p2 3P1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 120700000000000.0,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, text after Table 4. Note: derived: 1/A of the 3P1 -> 3P0 magnetic-dipole decay, A = 8.283e-6 s^-1 as calculated in the source (not a measurement)",
+   "hfs": {
+    "A": 1.84,
+    "A_unc": null,
+    "B": null,
+    "B_unc": null,
+    "tier": "theory",
+    "src": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (footnote e: value estimated from semiempirical values and held fixed in the fit)"
+   },
    "col": 0
   },
   {
@@ -119,11 +129,21 @@
    "conf": "3s2.3p2",
    "term": "3P",
    "parity": "even",
-   "g": null,
+   "g": 1.500642,
    "name": "3s^{2}3p^{2}\\ ^3P_{2}",
    "plain": "3s23p2 3P2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 23690000000000.0,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, text after Table 4. Note: derived: 1/A of the 3P2 -> 3P1 magnetic-dipole decay, A = 4.221e-5 s^-1 as calculated in the source; the E2 branch to 3P0 is neglected, so this is an upper bound on the lifetime (not a measurement)",
+   "hfs": {
+    "A": -160.1,
+    "A_unc": 1.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam, abstract and Table 2 (1 sigma)"
+   },
    "col": 0
   },
   {
@@ -137,9 +157,11 @@
    "g": null,
    "name": "3s^{2}3p^{2}\\ ^1D_{2}",
    "plain": "3s23p2 1D2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 7
+   "tau_ns": 366600000000.0,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "NIST ASD Si I lines table, forbidden lines 1587.6, 1607.3, 1645.9 nm (tp_ref c22,T4209), local cache data/nist/Si_I_lines_from1nm.tsv. Note: derived: 1/sum of the five calculated M1 and E2 A-values (to 3P0,1,2) listed in NIST ASD (accuracy D, D+); no measurement of this lifetime was located",
+   "col": 6
   },
   {
    "id": 4,
@@ -152,8 +174,10 @@
    "g": null,
    "name": "3s^{2}3p^{2}\\ ^1S_{0}",
    "plain": "3s23p2 1S0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 972600000.0,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "NIST ASD Si I lines table (tp_ref c22,T4209), local cache data/nist/Si_I_lines_from1nm.tsv. Note: derived: 1/sum of the calculated A-values of 1S0 -> 3P1 (M1, 652.9 nm), 3P2 (E2, 659.1 nm) and 1D2 (E2, 1099.4 nm) listed in NIST ASD (accuracy C, D); no measurement of this lifetime was located",
    "col": 5
   },
   {
@@ -167,8 +191,10 @@
    "g": null,
    "name": "3s^{2}3p4s\\ ^3P^{o}_{0}",
    "plain": "3s23p4s 3P°0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.5,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -182,8 +208,10 @@
    "g": null,
    "name": "3s^{2}3p4s\\ ^3P^{o}_{1}",
    "plain": "3s23p4s 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.5,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -197,8 +225,10 @@
    "g": null,
    "name": "3s^{2}3p4s\\ ^3P^{o}_{2}",
    "plain": "3s23p4s 3P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.5,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -212,9 +242,11 @@
    "g": null,
    "name": "3s^{2}3p4s\\ ^1P^{o}_{1}",
    "plain": "3s23p4s 1P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 4.3,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 4
   },
   {
    "id": 9,
@@ -227,8 +259,10 @@
    "g": null,
    "name": "3s3p^{3}\\ ^3D^{o}_{1}",
    "plain": "3s3p3 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 22.0,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -242,8 +276,10 @@
    "g": null,
    "name": "3s3p^{3}\\ ^3D^{o}_{2}",
    "plain": "3s3p3 3D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 22.0,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -257,8 +293,18 @@
    "g": null,
    "name": "3s3p^{3}\\ ^3D^{o}_{3}",
    "plain": "3s3p3 3D°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 22.0,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "hfs": {
+    "A": -532.9,
+    "A_unc": 0.6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam; value of the published abstract (also the arXiv abstract)"
+   },
    "col": 1
   },
   {
@@ -272,9 +318,11 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^1D^{o}_{2}",
    "plain": "3s23p3d 1D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 22.5,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 8
   },
   {
    "id": 13,
@@ -287,8 +335,10 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^3P^{o}_{2}",
    "plain": "3s23p3d 3P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11.4,
+   "tau_unc": 0.6,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -302,8 +352,10 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^3P^{o}_{1}",
    "plain": "3s23p3d 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11.7,
+   "tau_unc": 0.6,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -317,8 +369,10 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^3P^{o}_{0}",
    "plain": "3s23p3d 3P°0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11.5,
+   "tau_unc": 0.6,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -332,9 +386,11 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^1F^{o}_{3}",
    "plain": "3s23p3d 1F°3",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 8
+   "tau_ns": 3.3,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 7
   },
   {
    "id": 17,
@@ -347,9 +403,11 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^1P^{o}_{1}",
    "plain": "3s23p3d 1P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 8.5,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 4
   },
   {
    "id": 18,
@@ -362,8 +420,10 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^3D^{o}_{1}",
    "plain": "3s23p3d 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.2,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -377,8 +437,10 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^3D^{o}_{2}",
    "plain": "3s23p3d 3D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.0,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -392,8 +454,10 @@
    "g": null,
    "name": "3s^{2}3p5s\\ ^3P^{o}_{0}",
    "plain": "3s23p5s 3P°0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 13.8,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -407,8 +471,10 @@
    "g": null,
    "name": "3s^{2}3p3d\\ ^3D^{o}_{3}",
    "plain": "3s23p3d 3D°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.1,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -422,8 +488,10 @@
    "g": null,
    "name": "3s^{2}3p5s\\ ^3P^{o}_{1}",
    "plain": "3s23p5s 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 12.6,
+   "tau_unc": 0.6,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -437,8 +505,10 @@
    "g": null,
    "name": "3s^{2}3p5s\\ ^3P^{o}_{2}",
    "plain": "3s23p5s 3P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 13.4,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 2
   },
   {
@@ -452,9 +522,11 @@
    "g": null,
    "name": "3s^{2}3p5s\\ ^1P^{o}_{1}",
    "plain": "3s23p5s 1P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 8.8,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 4
   },
   {
    "id": 25,
@@ -467,9 +539,11 @@
    "g": null,
    "name": "3s^{2}3p4d\\ ^1D^{o}_{2}",
    "plain": "3s23p4d 1D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 44.5,
+   "tau_unc": 2.1999999999999997,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 8
   },
   {
    "id": 26,
@@ -482,9 +556,11 @@
    "g": null,
    "name": "3s^{2}3p4d\\ ^1P^{o}_{1}",
    "plain": "3s23p4d 1P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 10.8,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 4
   },
   {
    "id": 27,
@@ -497,9 +573,11 @@
    "g": null,
    "name": "3s^{2}3p4d\\ ^1F^{o}_{3}",
    "plain": "3s23p4d 1F°3",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 8
+   "tau_ns": 6.3,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 7
   },
   {
    "id": 28,
@@ -512,8 +590,10 @@
    "g": null,
    "name": "3s^{2}3p4d\\ ^3D^{o}_{2}",
    "plain": "3s23p4d 3D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.8,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -527,8 +607,10 @@
    "g": null,
    "name": "3s^{2}3p4d\\ ^3D^{o}_{1}",
    "plain": "3s23p4d 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 5.7,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -542,8 +624,10 @@
    "g": null,
    "name": "3s^{2}3p4d\\ ^3D^{o}_{3}",
    "plain": "3s23p4d 3D°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.8,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -557,8 +641,10 @@
    "g": null,
    "name": "3s^{2}3p6s\\ (3/2,1/2)^{o}_{1}",
    "plain": "3s23p6s (3/2,1/2)°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 20.0,
+   "tau_unc": 1.0,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 9
   },
   {
@@ -572,8 +658,10 @@
    "g": null,
    "name": "3s^{2}3pnd\\ \\mathrm{a}\\,^3P^{o}_{2}",
    "plain": "3s23pnd a 3P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11.6,
+   "tau_unc": 0.6,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 3
   },
   {
@@ -587,8 +675,10 @@
    "g": null,
    "name": "3s^{2}3pnd\\ \\mathrm{a}\\,^3P^{o}_{1}",
    "plain": "3s23pnd a 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11.2,
+   "tau_unc": 0.6,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 3
   },
   {
@@ -602,8 +692,10 @@
    "g": null,
    "name": "3s^{2}3pnd\\ \\mathrm{a}\\,^3P^{o}_{0}",
    "plain": "3s23pnd a 3P°0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11.4,
+   "tau_unc": 0.6,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 3
   },
   {
@@ -617,9 +709,11 @@
    "g": null,
    "name": "3s^{2}3p5d\\ ^1D^{o}_{2}",
    "plain": "3s23p5d 1D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 59.49,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), MCDHF/RCI, Table B.2 (CDS J/A+A/682/A184); no measured lifetime is listed for this level",
+   "col": 8
   },
   {
    "id": 36,
@@ -632,9 +726,11 @@
    "g": null,
    "name": "3s^{2}3p5d\\ ^1F^{o}_{3}",
    "plain": "3s23p5d 1F°3",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 8
+   "tau_ns": 10.2,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+   "col": 7
   },
   {
    "id": 37,
@@ -647,8 +743,10 @@
    "g": null,
    "name": "3s^{2}3p5d\\ ^3D^{o}_{2}",
    "plain": "3s23p5d 3D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 8.1,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -662,8 +760,10 @@
    "g": null,
    "name": "3s^{2}3p5d\\ ^3D^{o}_{1}",
    "plain": "3s23p5d 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 16.1,
+   "tau_unc": 0.8,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -677,8 +777,10 @@
    "g": null,
    "name": "3s^{2}3p5d\\ ^3D^{o}_{3}",
    "plain": "3s23p5d 3D°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 8.5,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
    "col": 1
   },
   {
@@ -709,7 +811,7 @@
    "plain": "3s23p6d 1F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 7
   },
   {
    "id": 42,
@@ -843,6 +945,7 @@
    "wn": 61511.77,
    "lam": 162.5705,
    "air": null,
+   "gamma_MHz": 9.885,
    "type": "E1",
    "A": 71600000.0,
    "A_tier": "nist",
@@ -850,6 +953,8 @@
    "d": 0.6749,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy E) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 162.571
   },
   {
@@ -862,13 +967,16 @@
    "wn": 61434.655,
    "lam": 162.7746,
    "air": null,
+   "gamma_MHz": 9.885,
    "type": "E1",
    "A": 53400000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy E)",
    "d": 0.584,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy E) (from A)"
+   "d_src": "NIST ASD (accuracy E) (from A)",
+   "br": 0.8597,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -880,6 +988,7 @@
    "wn": 61370.745,
    "lam": 162.9441,
    "air": null,
+   "gamma_MHz": 19.65,
    "type": "E1",
    "A": 87300000.0,
    "A_tier": "nist",
@@ -887,6 +996,8 @@
    "d": 0.9654,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.7071,
+   "br_tier": "nist",
    "lam_obs": 162.943
   },
   {
@@ -899,13 +1010,16 @@
    "wn": 61351.657,
    "lam": 162.9948,
    "air": null,
+   "gamma_MHz": 18.72,
    "type": "E1",
    "A": 211000000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C)",
    "d": 1.777,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C) (from A)"
+   "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 1.0,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -917,13 +1031,16 @@
    "wn": 61224.703,
    "lam": 163.3328,
    "air": null,
+   "gamma_MHz": 19.65,
    "type": "E1",
    "A": 11200000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy D)",
    "d": 0.347,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy D) (from A)"
+   "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0907,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -935,13 +1052,16 @@
    "wn": 60223.745,
    "lam": 166.0475,
    "air": null,
+   "gamma_MHz": 2.675,
    "type": "E1 (intercombination)",
    "A": 7670000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy D)",
    "d": 0.2944,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy D) (from A)"
+   "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.4563,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -953,6 +1073,7 @@
    "wn": 60010.458,
    "lam": 166.6376,
    "air": null,
+   "gamma_MHz": 14.21,
    "type": "E1",
    "A": 17500000.0,
    "A_tier": "nist",
@@ -960,6 +1081,8 @@
    "d": 0.3463,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.196,
+   "br_tier": "nist",
    "lam_obs": 166.637
   },
   {
@@ -972,6 +1095,7 @@
    "wn": 59965.385,
    "lam": 166.7629,
    "air": null,
+   "gamma_MHz": 13.96,
    "type": "E1",
    "A": 82700000.0,
    "A_tier": "nist",
@@ -979,6 +1103,8 @@
    "d": 0.4351,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy E) (from A)",
+   "br": 0.9428,
+   "br_tier": "nist",
    "lam_obs": 166.762
   },
   {
@@ -991,6 +1117,7 @@
    "wn": 59933.343,
    "lam": 166.852,
    "air": null,
+   "gamma_MHz": 14.21,
    "type": "E1",
    "A": 25800000.0,
    "A_tier": "nist",
@@ -998,6 +1125,8 @@
    "d": 0.4212,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.289,
+   "br_tier": "nist",
    "lam_obs": 166.852
   },
   {
@@ -1010,13 +1139,16 @@
    "wn": 59840.221,
    "lam": 167.1117,
    "air": null,
+   "gamma_MHz": 13.72,
    "type": "E1",
    "A": 8300000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy D)",
    "d": 0.3092,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy D) (from A)"
+   "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0963,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1028,6 +1160,7 @@
    "wn": 59787.301,
    "lam": 167.2596,
    "air": null,
+   "gamma_MHz": 14.21,
    "type": "E1",
    "A": 30900000.0,
    "A_tier": "nist",
@@ -1035,6 +1168,8 @@
    "d": 0.4627,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.3461,
+   "br_tier": "nist",
    "lam_obs": 167.259
   },
   {
@@ -1047,6 +1182,7 @@
    "wn": 59694.179,
    "lam": 167.5205,
    "air": null,
+   "gamma_MHz": 13.72,
    "type": "E1",
    "A": 64100000.0,
    "A_tier": "nist",
@@ -1054,6 +1190,8 @@
    "d": 0.8623,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.7436,
+   "br_tier": "nist",
    "lam_obs": 167.52
   },
   {
@@ -1066,6 +1204,7 @@
    "wn": 59056.508,
    "lam": 169.3293,
    "air": null,
+   "gamma_MHz": 27.92,
    "type": "E1",
    "A": 67500000.0,
    "A_tier": "nist",
@@ -1073,6 +1212,8 @@
    "d": 0.6966,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.3848,
+   "br_tier": "nist",
    "lam_obs": 169.329
   },
   {
@@ -1085,6 +1226,7 @@
    "wn": 58979.393,
    "lam": 169.5507,
    "air": null,
+   "gamma_MHz": 27.92,
    "type": "E1",
    "A": 39700000.0,
    "A_tier": "nist",
@@ -1092,6 +1234,8 @@
    "d": 0.5353,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.2263,
+   "br_tier": "nist",
    "lam_obs": 169.551
   },
   {
@@ -1104,6 +1248,7 @@
    "wn": 58955.075,
    "lam": 169.6207,
    "air": null,
+   "gamma_MHz": 33.16,
    "type": "E1",
    "A": 122000000.0,
    "A_tier": "nist",
@@ -1111,6 +1256,8 @@
    "d": 1.212,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.5856,
+   "br_tier": "nist",
    "lam_obs": 169.62
   },
   {
@@ -1123,6 +1270,7 @@
    "wn": 58894.873,
    "lam": 169.7941,
    "air": null,
+   "gamma_MHz": 33.16,
    "type": "E1",
    "A": 138000000.0,
    "A_tier": "nist",
@@ -1130,6 +1278,8 @@
    "d": 1.528,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.6624,
+   "br_tier": "nist",
    "lam_obs": 169.794
   },
   {
@@ -1142,6 +1292,7 @@
    "wn": 58809.033,
    "lam": 170.0419,
    "air": null,
+   "gamma_MHz": 33.16,
    "type": "E1",
    "A": 31200000.0,
    "A_tier": "nist",
@@ -1149,6 +1300,8 @@
    "d": 0.6153,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.1498,
+   "br_tier": "nist",
    "lam_obs": 170.042
   },
   {
@@ -1161,6 +1314,7 @@
    "wn": 58801.529,
    "lam": 170.0636,
    "air": null,
+   "gamma_MHz": 14.74,
    "type": "E1 (intercombination)",
    "A": 30600000.0,
    "A_tier": "nist",
@@ -1168,6 +1322,8 @@
    "d": 0.4721,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.3305,
+   "br_tier": "nist",
    "lam_obs": 170.063
   },
   {
@@ -1180,6 +1336,7 @@
    "wn": 58724.414,
    "lam": 170.2869,
    "air": null,
+   "gamma_MHz": 14.74,
    "type": "E1 (intercombination)",
    "A": 18800000.0,
    "A_tier": "nist",
@@ -1187,6 +1344,8 @@
    "d": 0.3707,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.203,
+   "br_tier": "nist",
    "lam_obs": 170.286
   },
   {
@@ -1199,6 +1358,7 @@
    "wn": 58670.243,
    "lam": 170.4442,
    "air": null,
+   "gamma_MHz": 25.26,
    "type": "E1 (intercombination)",
    "A": 26100000.0,
    "A_tier": "nist",
@@ -1206,6 +1366,8 @@
    "d": 0.6682,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.1644,
+   "br_tier": "nist",
    "lam_obs": 170.443
   },
   {
@@ -1236,6 +1398,7 @@
    "wn": 56280.189,
    "lam": 177.6824,
    "air": null,
+   "gamma_MHz": 3.577,
    "type": "E1 (intercombination)",
    "A": 5830000.0,
    "A_tier": "nist",
@@ -1243,6 +1406,8 @@
    "d": 0.2841,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.2594,
+   "br_tier": "nist",
    "lam_obs": 177.683
   },
   {
@@ -1255,6 +1420,7 @@
    "wn": 55275.964,
    "lam": 180.9105,
    "air": null,
+   "gamma_MHz": 18.72,
    "type": "E1 (intercombination)",
    "A": 68300000.0,
    "A_tier": "nist",
@@ -1262,6 +1428,8 @@
    "d": 1.182,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.5806,
+   "br_tier": "nist",
    "lam_obs": 180.909
   },
   {
@@ -1274,6 +1442,7 @@
    "wn": 55124.38,
    "lam": 181.4079,
    "air": null,
+   "gamma_MHz": 15.6,
    "type": "E1",
    "A": 115000000.0,
    "A_tier": "nist",
@@ -1281,6 +1450,8 @@
    "d": 1.54,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 181.407
   },
   {
@@ -1293,6 +1464,7 @@
    "wn": 54451.105,
    "lam": 183.651,
    "air": null,
+   "gamma_MHz": 11.88,
    "type": "E1",
    "A": 13100000.0,
    "A_tier": "nist",
@@ -1300,6 +1472,8 @@
    "d": 0.4475,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.1755,
+   "br_tier": "nist",
    "lam_obs": 183.651
   },
   {
@@ -1312,6 +1486,7 @@
    "wn": 54313.818,
    "lam": 184.1152,
    "air": null,
+   "gamma_MHz": 12.63,
    "type": "E1",
    "A": 15000000.0,
    "A_tier": "nist",
@@ -1319,6 +1494,8 @@
    "d": 0.3723,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.189,
+   "br_tier": "nist",
    "lam_obs": 184.115
   },
   {
@@ -1331,6 +1508,7 @@
    "wn": 54305.063,
    "lam": 184.1449,
    "air": null,
+   "gamma_MHz": 11.88,
    "type": "E1",
    "A": 36700000.0,
    "A_tier": "nist",
@@ -1338,6 +1516,8 @@
    "d": 0.752,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.4918,
+   "br_tier": "nist",
    "lam_obs": 184.144
   },
   {
@@ -1350,6 +1530,7 @@
    "wn": 54236.703,
    "lam": 184.377,
    "air": null,
+   "gamma_MHz": 12.63,
    "type": "E1",
    "A": 33500000.0,
    "A_tier": "nist",
@@ -1357,6 +1538,8 @@
    "d": 0.5576,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.4221,
+   "br_tier": "nist",
    "lam_obs": 184.377
   },
   {
@@ -1369,6 +1552,7 @@
    "wn": 54185.264,
    "lam": 184.552,
    "air": null,
+   "gamma_MHz": 37.89,
    "type": "E1",
    "A": 168000000.0,
    "A_tier": "nist",
@@ -1376,6 +1560,8 @@
    "d": 1.25,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.7056,
+   "br_tier": "nist",
    "lam_obs": 184.551
   },
   {
@@ -1388,6 +1574,7 @@
    "wn": 54167.905,
    "lam": 184.6112,
    "air": null,
+   "gamma_MHz": 11.53,
    "type": "E1",
    "A": 56800000.0,
    "A_tier": "nist",
@@ -1395,6 +1582,8 @@
    "d": 0.42,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy E) (from A)",
+   "br": 0.7838,
+   "br_tier": "nist",
    "lam_obs": 184.61
   },
   {
@@ -1407,6 +1596,7 @@
    "wn": 54127.975,
    "lam": 184.7474,
    "air": null,
+   "gamma_MHz": 39.79,
    "type": "E1",
    "A": 233000000.0,
    "A_tier": "nist",
@@ -1414,6 +1604,8 @@
    "d": 1.904,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.932,
+   "br_tier": "nist",
    "lam_obs": 184.747
   },
   {
@@ -1426,6 +1618,7 @@
    "wn": 54108.149,
    "lam": 184.815,
    "air": null,
+   "gamma_MHz": 37.89,
    "type": "E1",
    "A": 123000000.0,
    "A_tier": "nist",
@@ -1433,6 +1626,8 @@
    "d": 1.072,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.5166,
+   "br_tier": "nist",
    "lam_obs": 184.814
   },
   {
@@ -1445,6 +1640,7 @@
    "wn": 54090.661,
    "lam": 184.8748,
    "air": null,
+   "gamma_MHz": 12.63,
    "type": "E1",
    "A": 39200000.0,
    "A_tier": "nist",
@@ -1452,6 +1648,8 @@
    "d": 0.6056,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.4939,
+   "br_tier": "nist",
    "lam_obs": 184.874
   },
   {
@@ -1464,6 +1662,7 @@
    "wn": 54034.425,
    "lam": 185.0672,
    "air": null,
+   "gamma_MHz": 38.82,
    "type": "E1",
    "A": 305000000.0,
    "A_tier": "nist",
@@ -1471,6 +1670,8 @@
    "d": 2.584,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 185.067
   },
   {
@@ -1483,6 +1684,7 @@
    "wn": 53981.933,
    "lam": 185.2472,
    "air": null,
+   "gamma_MHz": 39.79,
    "type": "E1",
    "A": 74000000.0,
    "A_tier": "nist",
@@ -1490,6 +1692,8 @@
    "d": 1.077,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.296,
+   "br_tier": "nist",
    "lam_obs": 185.246
   },
   {
@@ -1502,6 +1706,7 @@
    "wn": 53962.107,
    "lam": 185.3152,
    "air": null,
+   "gamma_MHz": 37.89,
    "type": "E1",
    "A": 7920000.0,
    "A_tier": "nist",
@@ -1509,6 +1714,8 @@
    "d": 0.2732,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.0333,
+   "br_tier": "nist",
    "lam_obs": 185.315
   },
   {
@@ -1521,6 +1728,7 @@
    "wn": 53337.817,
    "lam": 187.4842,
    "air": null,
+   "gamma_MHz": 7.958,
    "type": "E1",
    "A": 107000000.0,
    "A_tier": "nist",
@@ -1528,6 +1736,8 @@
    "d": 1.022,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 187.484
   },
   {
@@ -1540,6 +1750,7 @@
    "wn": 53139.083,
    "lam": 188.1854,
    "air": null,
+   "gamma_MHz": 48.23,
    "type": "E1 (intercombination)",
    "A": 5000000.0,
    "A_tier": "nist",
@@ -1547,6 +1758,8 @@
    "d": 0.3393,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.0165,
+   "br_tier": "nist",
    "lam_obs": 188.185
   },
   {
@@ -1559,6 +1772,7 @@
    "wn": 52594.55,
    "lam": 190.1338,
    "air": null,
+   "gamma_MHz": 25.26,
    "type": "E1",
    "A": 100000000.0,
    "A_tier": "nist",
@@ -1566,6 +1780,8 @@
    "d": 1.541,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.63,
+   "br_tier": "nist",
    "lam_obs": 190.133
   },
   {
@@ -1578,13 +1794,16 @@
    "wn": 50566.397,
    "lam": 197.7598,
    "air": null,
+   "gamma_MHz": 13.6,
    "type": "E1",
    "A": 27900000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
    "d": 0.5652,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)"
+   "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.3264,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1596,13 +1815,16 @@
    "wn": 50525.325,
    "lam": 197.9205,
    "air": null,
+   "gamma_MHz": 13.84,
    "type": "E1",
    "A": 86900000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
    "d": 0.5767,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)"
+   "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.9994,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1614,13 +1836,16 @@
    "wn": 50489.282,
    "lam": 198.0618,
    "air": null,
+   "gamma_MHz": 13.6,
    "type": "E1",
    "A": 20700000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
    "d": 0.488,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)"
+   "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.2422,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1632,13 +1857,16 @@
    "wn": 50422.723,
    "lam": 198.3233,
    "air": null,
+   "gamma_MHz": 13.96,
    "type": "E1",
    "A": 21800000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
    "d": 0.6478,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)"
+   "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.2485,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1650,13 +1878,16 @@
    "wn": 50343.24,
    "lam": 198.6364,
    "air": null,
+   "gamma_MHz": 13.6,
    "type": "E1",
    "A": 36500000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
    "d": 0.6508,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)"
+   "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.4271,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1668,13 +1899,16 @@
    "wn": 50276.681,
    "lam": 198.8994,
    "air": null,
+   "gamma_MHz": 13.96,
    "type": "E1",
    "A": 65800000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
    "d": 1.13,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)"
+   "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.7501,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1686,13 +1920,16 @@
    "wn": 48572.181,
    "lam": 205.8792,
    "air": 205.8133,
+   "gamma_MHz": 18.09,
    "type": "E1",
    "A": 70800000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C)",
    "d": 0.9565,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C) (from A)"
+   "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.623,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1704,13 +1941,16 @@
    "wn": 47088.484,
    "lam": 212.3661,
    "air": 212.299,
+   "gamma_MHz": 18.72,
    "type": "E1",
    "A": 35700000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
    "d": 0.7115,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)"
+   "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.3034,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -1722,6 +1962,7 @@
    "wn": 47063.39,
    "lam": 212.4794,
    "air": 212.4123,
+   "gamma_MHz": 48.23,
    "type": "E1",
    "A": 297000000.0,
    "A_tier": "nist",
@@ -1729,6 +1970,8 @@
    "d": 3.137,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.9801,
+   "br_tier": "nist",
    "lam_obs": 212.479
   },
   {
@@ -1741,13 +1984,19 @@
    "wn": 45276.188,
    "lam": 220.8667,
    "air": 220.7978,
+   "use": "line of the 220.8-221.8 nm (air) multiplet 3p2 3P - 3s3p3 3D°; flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "br": 0.566,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 7.234,
    "type": "E1",
-   "A": 26200000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 0.6465,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 25700000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 1300000.0,
+   "d": 0.6403,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 220.867
   },
   {
@@ -1760,13 +2009,19 @@
    "wn": 45216.514,
    "lam": 221.1581,
    "air": 221.0892,
+   "use": "line of the 220.8-221.8 nm (air) multiplet 3p2 3P - 3s3p3 3D°; flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "br": 0.763,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 7.234,
    "type": "E1",
-   "A": 34600000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 0.961,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 34700000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 1700000.0,
+   "d": 0.9624,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 221.158
   },
   {
@@ -1779,13 +2034,19 @@
    "wn": 45199.073,
    "lam": 221.2435,
    "air": 221.1745,
+   "use": "line of the 220.8-221.8 nm (air) multiplet 3p2 3P - 3s3p3 3D°; flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "br": 0.409,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 7.234,
    "type": "E1",
-   "A": 18100000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 0.5387,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 18600000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 930000.0,
+   "d": 0.5461,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 221.243
   },
   {
@@ -1798,6 +2059,22 @@
    "wn": 45098.691,
    "lam": 221.7359,
    "air": 221.6669,
+   "use": "221.74 nm (vacuum; 221.667 nm air) J=2 -> J=3 cycling transition proposed for laser cooling and magneto-optical trapping of Si (lower level 3P2 is 223 cm^-1 above the ground level and thermally populated); intended as a deterministic single-ion source of 31Si (-> 31P qubits in the Kane quantum-computer scheme). Also flagged persistent in the NIST Handbook (2216.669 A).",
+   "isotope_shifts": {
+    "29-28": {
+     "value": 1753.3,
+     "unc": 1.1,
+     "src": "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam, abstract and Table 2 (1 sigma)",
+     "url": "https://arxiv.org/pdf/1009.4961"
+    },
+    "30-28": {
+     "value": 3359.9,
+     "unc": 0.6,
+     "src": "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam, abstract and Tables 1-2",
+     "url": "https://arxiv.org/pdf/1009.4961"
+    }
+   },
+   "gamma_MHz": 7.234,
    "type": "E1",
    "A": 45400000.0,
    "A_tier": "nist",
@@ -1805,6 +2082,8 @@
    "d": 1.308,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.9988,
+   "br_tier": "nist",
    "lam_obs": 221.736
   },
   {
@@ -1817,14 +2096,43 @@
    "wn": 45070.472,
    "lam": 221.8748,
    "air": 221.8057,
+   "use": "line of the 220.8-221.8 nm (air) multiplet 3p2 3P - 3s3p3 3D°; flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "br": 0.236,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 7.234,
    "type": "E1",
-   "A": 10900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 0.542,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 10700000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 540000.0,
+   "d": 0.537,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 221.875
+  },
+  {
+   "kind": "E1",
+   "freq": 1350.65589,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 9,
+   "wn": 45053.031,
+   "lam": 221.9606,
+   "air": 221.8916,
+   "br": 0.025,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 7.234,
+   "type": "E1",
+   "A": 1130000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 68000.0,
+   "d": 0.1353,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
   },
   {
    "kind": "E1",
@@ -1836,6 +2144,7 @@
    "wn": 43407.159,
    "lam": 230.3767,
    "air": 230.3058,
+   "gamma_MHz": 14.74,
    "type": "E1",
    "A": 348000000.0,
    "A_tier": "nist",
@@ -1843,6 +2152,8 @@
    "d": 2.51,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 230.377
   },
   {
@@ -1855,6 +2166,7 @@
    "wn": 41052.704,
    "lam": 243.5893,
    "air": 243.5154,
+   "gamma_MHz": 7.074,
    "type": "E1",
    "A": 44300000.0,
    "A_tier": "nist",
@@ -1862,7 +2174,78 @@
    "d": 1.257,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.9968,
+   "br_tier": "nist",
    "lam_obs": 243.589
+  },
+  {
+   "kind": "E1",
+   "freq": 1228.90577,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 8,
+   "wn": 40991.884,
+   "lam": 243.9507,
+   "air": 243.8768,
+   "br": 0.003,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 37.01,
+   "type": "E1 (intercombination)",
+   "A": 706000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 64000.0,
+   "d": 0.1232,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 1226.59392,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 8,
+   "wn": 40914.769,
+   "lam": 244.4105,
+   "air": 244.3365,
+   "br": 0.0024,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 37.01,
+   "type": "E1 (intercombination)",
+   "A": 552000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 50000.0,
+   "d": 0.1092,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 1222.21569,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 8,
+   "wn": 40768.727,
+   "lam": 245.286,
+   "air": 245.2118,
+   "br": 0.0022,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 37.01,
+   "type": "E1 (intercombination)",
+   "A": 501000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 45000.0,
+   "d": 0.1046,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
   },
   {
    "kind": "E1",
@@ -1874,13 +2257,19 @@
    "wn": 39877.938,
    "lam": 250.7652,
    "air": 250.6897,
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "br": 0.243,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 35.37,
    "type": "E1",
-   "A": 54700000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.459,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 53900000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 2700000.0,
+   "d": 1.448,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 250.766
   },
   {
@@ -1893,13 +2282,19 @@
    "wn": 39760.285,
    "lam": 251.5073,
    "air": 251.4316,
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "br": 0.337,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 35.37,
    "type": "E1",
-   "A": 73900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.319,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 74800000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 3700000.0,
+   "d": 1.327,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 251.508
   },
   {
@@ -1912,13 +2307,27 @@
    "wn": 39731.896,
    "lam": 251.687,
    "air": 251.6112,
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged 'P' (persistent line) in the NIST Handbook strong-line table; strongest member (251.611 nm air)",
+   "br": 0.757,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "isotope_shifts": {
+    "30-28": {
+     "value": 330,
+     "unc": 30,
+     "src": "Holmes & Hoover, J. Opt. Soc. Am. 52, 247 (1962), hollow cathode + Fabry-Perot, abstract",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-52-3-247"
+    }
+   },
+   "gamma_MHz": 35.37,
    "type": "E1",
    "A": 168000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 8400000.0,
    "d": 2.571,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 251.687
   },
   {
@@ -1931,13 +2340,19 @@
    "wn": 39683.17,
    "lam": 251.996,
    "air": 251.9202,
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "br": 0.244,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 35.37,
    "type": "E1",
-   "A": 54900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.141,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 54200000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 2700000.0,
+   "d": 1.133,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 251.996
   },
   {
@@ -1950,6 +2365,7 @@
    "wn": 39606.048,
    "lam": 252.4867,
    "air": 252.4108,
+   "gamma_MHz": 35.37,
    "type": "E1",
    "A": 222000000.0,
    "A_tier": "nist",
@@ -1957,6 +2373,8 @@
    "d": 1.328,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.999,
+   "br_tier": "nist",
    "lam_obs": 252.4867
   },
   {
@@ -1969,13 +2387,19 @@
    "wn": 39537.128,
    "lam": 252.9268,
    "air": 252.8508,
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "br": 0.409,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 35.37,
    "type": "E1",
-   "A": 90400000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.472,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 90800000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 4500000.0,
+   "d": 1.475,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 252.9269
   },
   {
@@ -1988,6 +2412,7 @@
    "wn": 39476.661,
    "lam": 253.3142,
    "air": 253.2381,
+   "gamma_MHz": 18.09,
    "type": "E1",
    "A": 24500000.0,
    "A_tier": "nist",
@@ -1995,7 +2420,55 @@
    "d": 0.7679,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.2156,
+   "br_tier": "nist",
    "lam_obs": 253.3142
+  },
+  {
+   "kind": "E1",
+   "freq": 1169.03406,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 10,
+   "wn": 38994.779,
+   "lam": 256.4446,
+   "air": 256.3677,
+   "br": 0.00053,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 7.234,
+   "type": "E1 (intercombination)",
+   "A": 24300.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 4900.0,
+   "d": 0.0318,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 1168.5112,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 9,
+   "wn": 38977.338,
+   "lam": 256.5593,
+   "air": 256.4825,
+   "br": 0.00044,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 7.234,
+   "type": "E1 (intercombination)",
+   "A": 20000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 5200.0,
+   "d": 0.02236,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
   },
   {
    "kind": "E1",
@@ -2007,6 +2480,7 @@
    "wn": 37992.964,
    "lam": 263.2066,
    "air": 263.1282,
+   "gamma_MHz": 18.72,
    "type": "E1",
    "A": 106000000.0,
    "A_tier": "nist",
@@ -2014,6 +2488,8 @@
    "d": 1.692,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.901,
+   "br_tier": "nist",
    "lam_obs": 263.2067
   },
   {
@@ -2026,14 +2502,66 @@
    "wn": 34693.034,
    "lam": 288.2423,
    "air": 288.1578,
+   "use": "288.158 nm (air): strongest Si I line of the NIST Handbook strong-line table (intensity 1000, flagged 'P', persistent line)",
+   "br": 0.94,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 37.01,
    "type": "E1",
-   "A": 217000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 2.774,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 219000000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 11000000.0,
+   "d": 2.787,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 288.2424
+  },
+  {
+   "kind": "E1",
+   "freq": 1008.98758,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 7,
+   "wn": 33656.203,
+   "lam": 297.122,
+   "air": 297.0353,
+   "br": 0.0002,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 35.37,
+   "type": "E1 (intercombination)",
+   "A": 44400.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 4900.0,
+   "d": 0.05361,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 1003.14858,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 6,
+   "wn": 33461.435,
+   "lam": 298.8515,
+   "air": 298.7643,
+   "br": 0.0103,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 35.37,
+   "type": "E1 (intercombination)",
+   "A": 2300000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 180000.0,
+   "d": 0.3015,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
   },
   {
    "kind": "E1",
@@ -2045,20 +2573,50 @@
    "wn": 25597.514,
    "lam": 390.6629,
    "air": 390.5523,
+   "use": "390.552 nm (air): optical Si I line used for silicon abundances in metal-poor stars; Den Hartog et al. 2023 derive abundances from it but exclude it from their mean because it gives discrepant values",
+   "br": 0.052,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 37.01,
    "type": "E1",
-   "A": 13300000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.084,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 12200000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 1200000.0,
+   "d": 1.038,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)",
    "lam_obs": 390.6629
+  },
+  {
+   "kind": "E1",
+   "freq": 730.47175,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 6,
+   "wn": 24365.915,
+   "lam": 410.4094,
+   "air": 410.2936,
+   "use": "410.294 nm (air): weak spin-forbidden optical line used by Den Hartog et al. 2023, together with 390.55 nm, for Si abundances in metal-poor stars",
+   "br": 0.00056,
+   "br_tier": "exp",
+   "br_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+   "gamma_MHz": 35.37,
+   "type": "E1 (intercombination)",
+   "A": 124000.0,
+   "A_tier": "exp",
+   "A_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+   "A_unc": 22000.0,
+   "d": 0.1127,
+   "d_tier": "exp",
+   "d_src": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level) (from A)"
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -2073,136 +2631,81 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s^{2}3p5d\\ ^3D^{o}_{3}$",
-     "162.9948",
-     "–",
-     "1839.2764",
-     "1.777",
-     "2.110e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{0}$ – $3s3p^{3}\\ ^3D^{o}_{1}$",
+     "220.8667",
+     "220.7978",
+     "1357.3460",
+     "0.640",
+     "2.570e+07",
+     "7.234",
+     "56.6",
+     "line of the 220.8-221.8 nm"
     ],
     [
-     "$3s^{2}3p^{2}\\ ^3P_{1}$ – $3s^{2}3p4d\\ ^3D^{o}_{2}$",
-     "169.6207",
-     "–",
-     "1767.4287",
-     "1.212",
-     "1.220e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{1}$ – $3s3p^{3}\\ ^3D^{o}_{2}$",
+     "221.1581",
+     "221.0892",
+     "1355.5570",
+     "0.962",
+     "3.470e+07",
+     "7.234",
+     "76.3",
+     "line of the 220.8-221.8 nm"
     ],
     [
-     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s^{2}3p4d\\ ^3D^{o}_{3}$",
-     "169.7941",
-     "–",
-     "1765.6239",
-     "1.528",
-     "1.380e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{1}$ – $3s3p^{3}\\ ^3D^{o}_{1}$",
+     "221.2435",
+     "221.1745",
+     "1355.0341",
+     "0.546",
+     "1.860e+07",
+     "7.234",
+     "40.9",
+     "line of the 220.8-221.8 nm"
     ],
     [
-     "$3s^{2}3p^{2}\\ ^1D_{2}$ – $3s^{2}3p5d\\ ^1F^{o}_{3}$",
-     "181.4079",
-     "–",
-     "1652.5873",
-     "1.540",
-     "1.150e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s3p^{3}\\ ^3D^{o}_{3}$",
+     "221.7359",
+     "221.6669",
+     "1352.0247",
+     "1.308",
+     "4.540e+07",
+     "7.234",
+     "99.9",
+     "221.74 nm"
     ],
     [
-     "$3s^{2}3p^{2}\\ ^3P_{0}$ – $3s^{2}3p3d\\ ^3D^{o}_{1}$",
-     "184.5520",
-     "–",
-     "1624.4334",
-     "1.250",
-     "1.680e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s3p^{3}\\ ^3D^{o}_{2}$",
+     "221.8748",
+     "221.8057",
+     "1351.1788",
+     "0.537",
+     "1.070e+07",
+     "7.234",
+     "23.6",
+     "line of the 220.8-221.8 nm"
     ],
     [
-     "$3s^{2}3p^{2}\\ ^3P_{1}$ – $3s^{2}3p3d\\ ^3D^{o}_{2}$",
-     "184.7474",
-     "–",
-     "1622.7159",
-     "1.904",
-     "2.330e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{1}$ – $3s^{2}3p4s\\ ^3P^{o}_{2}$",
+     "250.7652",
+     "250.6897",
+     "1195.5105",
+     "1.448",
+     "5.390e+07",
+     "35.37",
+     "24.3",
+     "one of the six lines of the 250.7-252.9 nm"
     ],
     [
-     "$3s^{2}3p^{2}\\ ^3P_{1}$ – $3s^{2}3p3d\\ ^3D^{o}_{1}$",
-     "184.8150",
-     "–",
-     "1622.1215",
-     "1.072",
-     "1.230e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s^{2}3p3d\\ ^3D^{o}_{3}$",
-     "185.0672",
-     "–",
-     "1619.9113",
-     "2.584",
-     "3.050e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3s^{2}3p^{2}\\ ^1D_{2}$ – $3s^{2}3p6s\\ (3/2,1/2)^{o}_{1}$",
-     "187.4842",
-     "–",
-     "1599.0275",
-     "1.022",
-     "1.070e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3s^{2}3p^{2}\\ ^1D_{2}$ – $3s^{2}3p4d\\ ^1F^{o}_{3}$",
-     "190.1338",
-     "–",
-     "1576.7449",
-     "1.541",
-     "1.000e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3s^{2}3p^{2}\\ ^1D_{2}$ – $3s^{2}3p3d\\ ^1F^{o}_{3}$",
-     "212.4794",
-     "212.4123",
-     "1410.9249",
-     "3.137",
-     "2.970e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3s^{2}3p^{2}\\ ^1S_{0}$ – $3s^{2}3p4d\\ ^1P^{o}_{1}$",
-     "230.3767",
-     "230.3058",
-     "1301.3139",
-     "2.510",
-     "3.480e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{0}$ – $3s^{2}3p4s\\ ^3P^{o}_{1}$",
+     "251.5073",
+     "251.4316",
+     "1191.9834",
+     "1.327",
+     "7.480e+07",
+     "35.37",
+     "33.7",
+     "one of the six lines of the 250.7-252.9 nm"
     ],
     [
      "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s^{2}3p4s\\ ^3P^{o}_{2}$",
@@ -2211,51 +2714,159 @@
      "1191.1323",
      "2.571",
      "1.680e+08",
-     "–",
-     "–",
-     ""
+     "35.37",
+     "75.7",
+     "one of the six lines of the 250.7-252.9 nm"
     ],
     [
-     "$3s^{2}3p^{2}\\ ^3P_{1}$ – $3s^{2}3p4s\\ ^3P^{o}_{0}$",
-     "252.4867",
-     "252.4108",
-     "1187.3594",
-     "1.328",
-     "2.220e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{1}$ – $3s^{2}3p4s\\ ^3P^{o}_{1}$",
+     "251.9960",
+     "251.9202",
+     "1189.6715",
+     "1.133",
+     "5.420e+07",
+     "35.37",
+     "24.4",
+     "one of the six lines of the 250.7-252.9 nm"
     ],
     [
-     "$3s^{2}3p^{2}\\ ^1S_{0}$ – $3s^{2}3p3d\\ ^1P^{o}_{1}$",
-     "263.2066",
-     "263.1282",
-     "1139.0004",
-     "1.692",
-     "1.060e+08",
-     "–",
-     "–",
-     ""
+     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s^{2}3p4s\\ ^3P^{o}_{1}$",
+     "252.9268",
+     "252.8508",
+     "1185.2933",
+     "1.475",
+     "9.080e+07",
+     "35.37",
+     "40.9",
+     "one of the six lines of the 250.7-252.9 nm"
     ],
     [
      "$3s^{2}3p^{2}\\ ^1D_{2}$ – $3s^{2}3p4s\\ ^1P^{o}_{1}$",
      "288.2423",
      "288.1578",
      "1040.0710",
-     "2.774",
-     "2.170e+08",
-     "–",
-     "–",
-     ""
+     "2.787",
+     "2.190e+08",
+     "37.01",
+     "94",
+     "288.158 nm"
+    ],
+    [
+     "$3s^{2}3p^{2}\\ ^1S_{0}$ – $3s^{2}3p4s\\ ^1P^{o}_{1}$",
+     "390.6629",
+     "390.5523",
+     "767.3942",
+     "1.038",
+     "1.220e+07",
+     "37.01",
+     "5.2",
+     "390.552 nm"
+    ],
+    [
+     "$3s^{2}3p^{2}\\ ^1S_{0}$ – $3s^{2}3p4s\\ ^3P^{o}_{1}$",
+     "410.4094",
+     "410.2936",
+     "730.4718",
+     "0.113",
+     "1.240e+05",
+     "35.37",
+     "0.056",
+     "410.294 nm"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{29}$Si hyperfine structure  ($I$ = 1/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$3s^{2}3p^{2}\\ ^3P_{1}$",
+     "1.840",
+     "–",
+     "F=1/2: -1.84   F=3/2: +0.92"
+    ],
+    [
+     "$3s^{2}3p^{2}\\ ^3P_{2}$",
+     "-160.1(13)",
+     "–",
+     "F=3/2: +240.15   F=5/2: -160.10"
+    ],
+    [
+     "$3s3p^{3}\\ ^3D^{o}_{3}$",
+     "-532.9(6)",
+     "–",
+     "F=5/2: +1065.80   F=7/2: -799.35"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s3p^{3}\\ ^3D^{o}_{3}$",
+     "221.736",
+     "29-28",
+     "1753.3(11)"
+    ],
+    [
+     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s3p^{3}\\ ^3D^{o}_{3}$",
+     "221.736",
+     "30-28",
+     "3359.9(6)"
+    ],
+    [
+     "$3s^{2}3p^{2}\\ ^3P_{2}$ – $3s^{2}3p4s\\ ^3P^{o}_{2}$",
+     "251.687",
+     "30-28",
+     "330(30)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 44   lines < 2000 nm: 70   with matrix element: 70",
-  "transition-rate provenance: nist: 70",
-  "levels with a measured lifetime: 0"
+  "levels: 44   lines < 2000 nm: 79   with matrix element: 79",
+  "transition-rate provenance: exp: 20, nist: 59",
+  "levels with a measured lifetime: 39"
  ],
- "sources": {}
+ "sources": {
+  "abundance: NIST Atomic Weights and Isotopic Compositions (Si); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, silicon Table 1": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Si",
+  "abundance: NIST Atomic Weights and Isotopic Compositions (Si); nuclear spin and magnetic moment: NIST Handbook of Basic Atomic Spectroscopic Data, silicon Table 1": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Si",
+  "NIST ASD ionization-energy table, Si I (reference code L5815); 8.15168 eV in the NIST Handbook": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Si+I%2C+P+I%2C+S+I&units=0&format=0&order=0&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data",
+  "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, text after Table 4": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+  "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+  "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (footnote e: value estimated from semiempirical values and held fixed in the fit)": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+  "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam, abstract and Table 2 (1 sigma)": "https://arxiv.org/pdf/1009.4961",
+  "NIST ASD Si I lines table, forbidden lines 1587.6, 1607.3, 1645.9 nm (tp_ref c22,T4209), local cache data/nist/Si_I_lines_from1nm.tsv": "https://physics.nist.gov/PhysRefData/ASD/lines_form.html",
+  "NIST ASD Si I lines table (tp_ref c22,T4209), local cache data/nist/Si_I_lines_from1nm.tsv": "https://physics.nist.gov/PhysRefData/ASD/lines_form.html",
+  "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+  "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam; value of the published abstract (also the arXiv abstract)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.82.042515",
+  "Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), MCDHF/RCI, Table B.2 (CDS J/A+A/682/A184); no measured lifetime is listed for this level": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+  "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (Delta E10 = 2311.75574(12) GHz, zero-field; combined fit with the data of Inguscio et al. 1984)": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+  "calculated Einstein A quoted in Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+  "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (Delta E21 = 4378.32796(16) GHz, zero-field)": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+  "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (Delta E21 = 4378.33060(60) GHz; fine-structure interval with the hyperfine structure removed, i.e. hyperfine centre of gravity; hyperfine components F=5/2-3/2 4378.1691(10), F=3/2-1/2 4378.5734(13), F=3/2-3/2 4378.5706(13) GHz in Table 4)": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+  "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3, text": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+  "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)": "https://arxiv.org/pdf/2301.11391",
+  "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)": "https://arxiv.org/pdf/2301.11391",
+  "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3": "https://arxiv.org/pdf/2301.11391",
+  "Holmes & Hoover, J. Opt. Soc. Am. 52, 247 (1962), hollow cathode + Fabry-Perot, abstract": "https://opg.optica.org/josa/abstract.cfm?uri=josa-52-3-247",
+  "natural linewidth quoted without reference in Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam": "https://arxiv.org/pdf/1009.4961",
+  "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam, abstract and Tables 1-2": "https://arxiv.org/pdf/1009.4961"
+ }
 }

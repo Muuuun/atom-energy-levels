@@ -464,7 +464,7 @@ def build_nist(key, cfg):
             continue
         if ln["A"] is None and not cfg["keep_unrated"] and not lit.transition(lo["E"], up["E"]):
             continue
-        chosen[(lo["E"], up["E"])] = ln
+        merge_line(chosen, (lo["E"], up["E"]), ln)
     def lit_rank(lt):  # annotated lines first, then the strongest
         v = Literature.val(lt.get("A_s"))
         return (0 if lt.get("use") else 1, -(v[0] if v else 0))
@@ -674,6 +674,16 @@ def build_nist(key, cfg):
                 sources=lit.source_urls())
 
 
+def merge_line(chosen, key, ln):
+    """NIST lists M1 and E2 components of one forbidden line as separate rows: keep one line, add the rates."""
+    old = chosen.get(key)
+    if old and old.get("type") and ln.get("type") and old["type"] != ln["type"]:
+        ln = dict(ln, A=(old.get("A") or 0) + (ln.get("A") or 0) or None, type="+".join(sorted({old["type"], ln["type"]})))
+    elif old and (old.get("A") or 0) > (ln.get("A") or 0):
+        return
+    chosen[key] = ln
+
+
 def auto_select(nist, lines, find, max_lines=70):
     """NIST-only species: the strongest classified lines, favouring those that start on the lowest levels."""
     cand = []
@@ -689,7 +699,10 @@ def auto_select(nist, lines, find, max_lines=70):
     if len(first) < 45:
         taken = {id(c[2]) for c in first}
         first += sorted([c for c in pool if id(c[2]) not in taken], key=strength, reverse=True)[:45 - len(first)]
-    return {(lo["E"], up["E"]): ln for lo, up, ln in first}
+    out = {}
+    for lo, up, ln in first:
+        merge_line(out, (lo["E"], up["E"]), ln)
+    return out
 
 
 def url_of(atom, src):
