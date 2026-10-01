@@ -466,6 +466,8 @@ def build_nist(key, cfg):
     for lt in lit.raw.get("transitions", []):
         lo, up = find(lt.get("lower_cm", -1e9)), find(lt.get("upper_cm", -1e9))
         if lo and up and up["E"] > lo["E"] and 1e7 / (up["E"] - lo["E"]) < LAMBDA_MAX_NM and up["E"] <= max(cfg["E_cut"], 0):
+            if cfg.get("auto") and len(chosen) >= 45 and not lt.get("use") and (lo["E"], up["E"]) not in chosen:
+                continue  # a big literature table must not flood an automatic page: only its annotated lines are added
             chosen.setdefault((lo["E"], up["E"]), {})
     used = sorted({e for pair in chosen for e in pair})
     if not used and cfg.get("auto") and len(nist) >= 5:

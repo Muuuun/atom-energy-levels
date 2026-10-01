@@ -6,15 +6,17 @@
   "symbol": "Sc",
   "A": null,
   "Z": 21,
-  "I": null,
+  "I": "7/2",
   "kind": "nist",
   "limit_cm": 52922.0,
   "scale": "auto",
   "spectrum": "Sc I",
   "auto": true,
+  "has_lit": true,
+  "freq_isotope": "45",
   "limit_text": "Sc$^+$ ionisation limit   52922.00 cm$^{-1}$  =  6.56149 eV  (188.957 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Hyperfine A, B are for 45Sc (I = 7/2), sign convention of the sources (W_F = A K/2 + B[...]). All Hala & Nave values are printed in mK; MHz values here are unit conversions (flagged \"derived\" in the note) and the original mK numbers are kept in A_mK/B_mK. For the ground term and a4F the precise ABMR / laser-rf values (Childs 1971; Ertmer & Hofer 1976; Zeiske et al. 1976) are second-hand, read in Hala & Nave 2022 Table 2. Hala & Nave mark their recommended value in bold, which is lost in the text extraction; the rule used here is: Childs / Ertmer & Hofer / Zeiske et al. rf values where listed, otherwise the Hala & Nave measurement, with the other number kept under hyperfine_other. Van Deelen (2017) uncertainties quoted there are fit uncertainties only and are known to be underestimates. Level energies in Lawler et al. 2019 and Hala & Nave 2022 are older values (e.g. 11519.99 vs NIST 11519.9611); levels were matched to the NIST file by energy (<0.25 cm^-1) and J. Transition probabilities A_s are Lawler et al. 2019 (uncertainties 1 sigma as printed); they rest on the Marsden et al. 1988 LIF lifetimes (about +-5%). The two unresolved y2P° lines at 4054.54 and 4082.39 A (blend of the 24656.712 and 24656.866 cm^-1 levels) are omitted. rme_J_ea0 values are derived from A_s, not printed in any source. \"drawn_on_site\" marks levels/transitions present in data/sc/levels.csv / transitions.csv."
  },
  "columns": [
   {
@@ -80,6 +82,14 @@
    "plain": "3d4s2 2D3/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 269.55809,
+    "A_unc": 0.000899,
+    "B": 26.360751,
+    "B_unc": 0.00899,
+    "tier": "exp",
+    "src": "Childs (1971), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")"
+   },
    "col": 0
   },
   {
@@ -95,6 +105,14 @@
    "plain": "3d4s2 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 109.03302,
+    "A_unc": 0.000899,
+    "B": -37.372128,
+    "B_unc": 0.015,
+    "tier": "exp",
+    "src": "Childs (1971), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")"
+   },
    "col": 0
   },
   {
@@ -110,6 +128,14 @@
    "plain": "3d24s 4F3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -158.51226,
+    "A_unc": 0.003,
+    "B": -5.1894074,
+    "B_unc": 0.021,
+    "tier": "exp",
+    "src": "Ertmer & Hofer (1976), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")"
+   },
    "col": 6
   },
   {
@@ -125,6 +151,14 @@
    "plain": "3d24s 4F5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 154.03516,
+    "A_unc": 0.0021,
+    "B": -6.4455378,
+    "B_unc": 0.03,
+    "tier": "exp",
+    "src": "Zeiske et al. (1976), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")"
+   },
    "col": 6
   },
   {
@@ -140,6 +174,14 @@
    "plain": "3d24s 4F7/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 250.01192,
+    "A_unc": 0.0021,
+    "B": -9.0837115,
+    "B_unc": 0.03,
+    "tier": "exp",
+    "src": "Zeiske et al. (1976), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")"
+   },
    "col": 6
   },
   {
@@ -155,6 +197,14 @@
    "plain": "3d24s 4F9/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 285.96603,
+    "A_unc": 0.00899,
+    "B": -15.469291,
+    "B_unc": 0.69,
+    "tier": "exp",
+    "src": "Ertmer & Hofer (1976), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")"
+   },
    "col": 6
   },
   {
@@ -170,6 +220,14 @@
    "plain": "3d4s4p 2P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 441.89408,
+    "A_unc": 4.8,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(2) lines)"
+   },
    "col": 2
   },
   {
@@ -185,6 +243,14 @@
    "plain": "3d4s4p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 12.591283,
+    "A_unc": 0.899,
+    "B": -190.668,
+    "B_unc": 12.6,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(2) lines)"
+   },
    "col": 2
   },
   {
@@ -200,6 +266,14 @@
    "plain": "3d4s4p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 277.90761,
+    "A_unc": 5.4,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(7) lines)"
+   },
    "col": 1
   },
   {
@@ -215,6 +289,14 @@
    "plain": "3d4s4p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 30.878623,
+    "A_unc": 3.6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(2) lines)"
+   },
    "col": 1
   },
   {
@@ -230,6 +312,14 @@
    "plain": "3d4s4p 2F°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 171.48129,
+    "A_unc": 1.5,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(7) lines)"
+   },
    "col": 3
   },
   {
@@ -243,8 +333,18 @@
    "g": 1.138,
    "name": "3d4s4p\\ ^2F^{o}_{7/2}",
    "plain": "3d4s4p 2F°7/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 5.65,
+   "tau_unc": 0.29,
+   "tau_tier": "exp",
+   "tau_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "hfs": {
+    "A": 124.71366,
+    "A_unc": 3.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(5) lines)"
+   },
    "col": 3
   },
   {
@@ -260,6 +360,14 @@
    "plain": "3d24p 4G°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 279.10678,
+    "A_unc": 1.2,
+    "B": -29.379661,
+    "B_unc": 7.2,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(11) lines)"
+   },
    "col": 5
   },
   {
@@ -275,6 +383,14 @@
    "plain": "3d24p 4G°7/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 147.1981,
+    "A_unc": 0.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(5) lines)"
+   },
    "col": 5
   },
   {
@@ -290,6 +406,14 @@
    "plain": "3d24p 4G°9/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 83.342303,
+    "A_unc": 0.6,
+    "B": -24.882774,
+    "B_unc": 4.5,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(23) lines)"
+   },
    "col": 5
   },
   {
@@ -303,8 +427,18 @@
    "g": null,
    "name": "3d^{2}4p\\ ^4G^{o}_{11/2}",
    "plain": "3d24p 4G°11/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 18.48,
+   "tau_unc": 0.92,
+   "tau_tier": "exp",
+   "tau_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "hfs": {
+    "A": 44.669076,
+    "A_unc": 0.3,
+    "B": -39.272812,
+    "B_unc": 7.49,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(7) lines)"
+   },
    "col": 5
   },
   {
@@ -318,8 +452,18 @@
    "g": 0.68,
    "name": "3d4s4p\\ ^2P^{o}_{1/2}",
    "plain": "3d4s4p 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 3.195,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "hfs": {
+    "A": 239.83397,
+    "A_unc": 18.6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(2) lines)"
+   },
    "col": 2
   },
   {
@@ -335,6 +479,14 @@
    "plain": "3d4s4p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 327.37336,
+    "A_unc": 3.6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(3) lines)"
+   },
    "col": 2
   },
   {
@@ -350,6 +502,14 @@
    "plain": "3d24p 4F°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 280.30595,
+    "A_unc": 0.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(12) lines)"
+   },
    "col": 7
   },
   {
@@ -365,6 +525,14 @@
    "plain": "3d24p 4F°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 121.11615,
+    "A_unc": 0.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(16) lines)"
+   },
    "col": 7
   },
   {
@@ -380,6 +548,14 @@
    "plain": "3d24p 4F°7/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 67.453303,
+    "A_unc": 0.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(20) lines)"
+   },
    "col": 7
   },
   {
@@ -395,6 +571,14 @@
    "plain": "3d24p 4F°9/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 44.369284,
+    "A_unc": 0.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(20) lines)"
+   },
    "col": 7
   },
   {
@@ -408,8 +592,18 @@
    "g": 0.03,
    "name": "3d^{2}4p\\ ^4D^{o}_{1/2}",
    "plain": "3d24p 4D°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 9.091,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "hfs": {
+    "A": 432.90031,
+    "A_unc": 0.899,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(10) lines)"
+   },
    "col": 4
   },
   {
@@ -425,6 +619,14 @@
    "plain": "3d24p 4D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 126.21262,
+    "A_unc": 1.5,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(18) lines)"
+   },
    "col": 4
   },
   {
@@ -440,6 +642,14 @@
    "plain": "3d24p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 70.451228,
+    "A_unc": 0.899,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(7) lines)"
+   },
    "col": 4
   },
   {
@@ -455,6 +665,14 @@
    "plain": "3d24p 4D°7/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 41.970944,
+    "A_unc": 0.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(18) lines)"
+   },
    "col": 4
   },
   {
@@ -470,6 +688,14 @@
    "plain": "3d24p 2F°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 226.94289,
+    "A_unc": 1.8,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(4) lines)"
+   },
    "col": 3
   },
   {
@@ -485,6 +711,14 @@
    "plain": "3d24p 2F°7/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 39.872397,
+    "A_unc": 0.6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(9) lines)"
+   },
    "col": 3
   },
   {
@@ -500,6 +734,14 @@
    "plain": "3d24p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 235.63687,
+    "A_unc": 3.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(15) lines)"
+   },
    "col": 1
   },
   {
@@ -515,6 +757,14 @@
    "plain": "3d24p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 41.671152,
+    "A_unc": 1.5,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(13) lines)"
+   },
    "col": 1
   },
   {
@@ -530,6 +780,14 @@
    "plain": "3d24p 4D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 55.761397,
+    "A_unc": 4.5,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(3) lines)"
+   },
    "col": 4
   },
   {
@@ -545,6 +803,14 @@
    "plain": "3d24p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 162.18772,
+    "A_unc": 1.5,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(16) lines)"
+   },
    "col": 1
   },
   {
@@ -560,6 +826,14 @@
    "plain": "3d24p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 133.10785,
+    "A_unc": 0.899,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(13) lines)"
+   },
    "col": 1
   },
   {
@@ -575,6 +849,14 @@
    "plain": "3d24p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 215.55078,
+    "A_unc": 0.899,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(18) lines)"
+   },
    "col": 2
   },
   {
@@ -590,6 +872,14 @@
    "plain": "3d24p 2P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 110.32362,
+    "A_unc": 1.5,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(8) lines)"
+   },
    "col": 2
   },
   {
@@ -605,6 +895,14 @@
    "plain": "3d4s5p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 136.10578,
+    "A_unc": 3.6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(3) lines)"
+   },
    "col": 2
   },
   {
@@ -620,6 +918,14 @@
    "plain": "3d24p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -195.16489,
+    "A_unc": 4.2,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(7) lines)"
+   },
    "col": 1
   },
   {
@@ -635,6 +941,14 @@
    "plain": "3d24p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 469.1752,
+    "A_unc": 1.8,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(8) lines)"
+   },
    "col": 1
   },
   {
@@ -650,6 +964,14 @@
    "plain": "3d4s5p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 758.17513,
+    "A_unc": 8.69,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(4) lines)"
+   },
    "col": 2
   },
   {
@@ -695,6 +1017,14 @@
    "plain": "3d4s5p 2F°7/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 67.153511,
+    "A_unc": 27.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Van Deelen (2017), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")"
+   },
    "col": 3
   },
   {
@@ -710,6 +1040,14 @@
    "plain": "3d4s5p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 342.36299,
+    "A_unc": 3.6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(1) lines)"
+   },
    "col": 1
   },
   {
@@ -725,6 +1063,14 @@
    "plain": "3d4s5p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 219.44808,
+    "A_unc": 11.1,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(2) lines)"
+   },
    "col": 1
   },
   {
@@ -740,6 +1086,14 @@
    "plain": "3d24p 2F°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 11.392113,
+    "A_unc": 5.1,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(3) lines)"
+   },
    "col": 3
   },
   {
@@ -755,6 +1109,14 @@
    "plain": "3d24p 2P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 462.57976,
+    "A_unc": 27.9,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(5) lines)"
+   },
    "col": 2
   },
   {
@@ -1214,12 +1576,13 @@
    "lam": 269.3572,
    "air": 269.2773,
    "type": "E1",
-   "A": 16100000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 0.5573,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 15500000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2900000.0,
+   "d": 0.5468,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 269.35728
   },
   {
@@ -1233,12 +1596,13 @@
    "lam": 269.9816,
    "air": 269.9015,
    "type": "E1",
-   "A": 2400000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 0.374,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 2100000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 500000.0,
+   "d": 0.3498,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 269.9817
   },
   {
@@ -1252,12 +1616,13 @@
    "lam": 270.754,
    "air": 270.6737,
    "type": "E1",
-   "A": 31000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.102,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 33200000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2600000.0,
+   "d": 1.141,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 270.75391
   },
   {
@@ -1271,12 +1636,13 @@
    "lam": 270.8729,
    "air": 270.7926,
    "type": "E1",
-   "A": 14900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 0.7646,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 17700000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2800000.0,
+   "d": 0.8334,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 270.87284
   },
   {
@@ -1290,12 +1656,13 @@
    "lam": 271.2142,
    "air": 271.1338,
    "type": "E1",
-   "A": 32000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.375,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 35000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 4000000.0,
+   "d": 1.438,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 271.2142
   },
   {
@@ -1328,12 +1695,13 @@
    "lam": 296.674,
    "air": 296.5874,
    "type": "E1",
-   "A": 7500000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 0.7615,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 8900000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 1600000.0,
+   "d": 0.8296,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 296.67406
   },
   {
@@ -1347,12 +1715,13 @@
    "lam": 297.4874,
    "air": 297.4006,
    "type": "E1",
-   "A": 55000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 1.691,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 54000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 5000000.0,
+   "d": 1.675,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 297.48737
   },
   {
@@ -1366,12 +1735,13 @@
    "lam": 298.163,
    "air": 298.0761,
    "type": "E1",
-   "A": 54000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 2.059,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 56000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 6000000.0,
+   "d": 2.097,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 298.16293
   },
   {
@@ -1385,12 +1755,13 @@
    "lam": 298.9847,
    "air": 298.8975,
    "type": "E1",
-   "A": 6900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 0.6034,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 6500000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 600000.0,
+   "d": 0.5856,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 298.9846
   },
   {
@@ -1404,12 +1775,13 @@
    "lam": 301.6247,
    "air": 301.5369,
    "type": "E1",
-   "A": 78000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.518,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 85000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 7000000.0,
+   "d": 2.628,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 301.6248
   },
   {
@@ -1423,12 +1795,13 @@
    "lam": 302.0233,
    "air": 301.9353,
    "type": "E1",
-   "A": 87000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 3.076,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 92000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 7000000.0,
+   "d": 3.163,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 302.0237
   },
   {
@@ -1442,12 +1815,13 @@
    "lam": 303.164,
    "air": 303.0758,
    "type": "E1",
-   "A": 10000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 0.9084,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 10600000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2100000.0,
+   "d": 0.9352,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 303.16398
   },
   {
@@ -1461,12 +1835,13 @@
    "lam": 325.6619,
    "air": 325.568,
    "type": "E1",
-   "A": 32000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 1.477,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 31500000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2200000.0,
+   "d": 1.466,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 325.6615
   },
   {
@@ -1479,13 +1854,17 @@
    "wn": 30573.163,
    "lam": 327.0842,
    "air": 326.99,
+   "gamma_MHz": 49.81,
    "type": "E1",
    "A": 313000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 20000000.0,
    "d": 3.288,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
+   "br": 1.0,
+   "br_tier": "exp",
    "lam_obs": 327.084
   },
   {
@@ -1500,11 +1879,12 @@
    "air": 327.3627,
    "type": "E1",
    "A": 281000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 18000000.0,
    "d": 4.413,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 327.4572
   },
   {
@@ -1518,12 +1898,13 @@
    "lam": 390.8597,
    "air": 390.749,
    "type": "E1",
-   "A": 166000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 5.418,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 165000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 8000000.0,
+   "d": 5.402,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 390.8591
   },
   {
@@ -1536,13 +1917,17 @@
    "wn": 25556.3209,
    "lam": 391.2926,
    "air": 391.1818,
+   "gamma_MHz": 28.17,
    "type": "E1",
-   "A": 179000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 6.507,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 177000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 9000000.0,
+   "d": 6.471,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
+   "br": 1.0,
+   "br_tier": "exp",
    "lam_obs": 391.292
   },
   {
@@ -1556,12 +1941,13 @@
    "lam": 393.4485,
    "air": 393.3371,
    "type": "E1",
-   "A": 16200000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 1.709,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 15800000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 800000.0,
+   "d": 1.688,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 393.4489
   },
   {
@@ -1576,11 +1962,12 @@
    "air": 399.6601,
    "type": "E1",
    "A": 16500000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 800000.0,
    "d": 1.767,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 399.7731
   },
   {
@@ -1595,11 +1982,12 @@
    "air": 402.0391,
    "type": "E1",
    "A": 163000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 8000000.0,
    "d": 4.575,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 402.1523
   },
   {
@@ -1614,11 +2002,12 @@
    "air": 402.3679,
    "type": "E1",
    "A": 165000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 8000000.0,
    "d": 5.644,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 402.4815
   },
   {
@@ -1632,12 +2021,13 @@
    "lam": 404.8938,
    "air": 404.7794,
    "type": "E1",
-   "A": 15400000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 1.421,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 15300000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 800000.0,
+   "d": 1.416,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 404.894
   },
   {
@@ -1689,12 +2079,13 @@
    "lam": 473.0092,
    "air": 472.8769,
    "type": "E1",
-   "A": 11600000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.202,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 11800000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 600000.0,
+   "d": 2.221,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 473.0089
   },
   {
@@ -1708,12 +2099,13 @@
    "lam": 473.052,
    "air": 472.9197,
    "type": "E1",
-   "A": 22000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.144,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 22900000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 1200000.0,
+   "d": 2.188,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 473.0532
   },
   {
@@ -1727,12 +2119,13 @@
    "lam": 473.0559,
    "air": 472.9236,
    "type": "E1",
-   "A": 19300000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.46,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 19900000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 1000000.0,
+   "d": 2.498,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 473.0532
   },
   {
@@ -1745,13 +2138,17 @@
    "wn": 21117.4479,
    "lam": 473.5421,
    "air": 473.4096,
+   "gamma_MHz": 17.51,
    "type": "E1",
    "A": 110000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 6000000.0,
    "d": 3.396,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
+   "br": 1.0,
+   "br_tier": "exp",
    "lam_obs": 473.5433
   },
   {
@@ -1765,12 +2162,13 @@
    "lam": 473.8971,
    "air": 473.7645,
    "type": "E1",
-   "A": 88000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 4.3,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 87000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 4000000.0,
+   "d": 4.275,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 473.8972
   },
   {
@@ -1784,12 +2182,13 @@
    "lam": 474.2354,
    "air": 474.1028,
    "type": "E1",
-   "A": 91000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 5.361,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 90000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 4000000.0,
+   "d": 5.332,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 474.235
   },
   {
@@ -1803,12 +2202,13 @@
    "lam": 474.5147,
    "air": 474.382,
    "type": "E1",
-   "A": 98000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 6.43,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 97000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 5000000.0,
+   "d": 6.397,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 474.5148
   },
   {
@@ -1823,11 +2223,12 @@
    "air": 506.4302,
    "type": "E1",
    "A": 7300000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 400000.0,
    "d": 2.164,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 506.5718
   },
   {
@@ -1842,11 +2243,12 @@
    "air": 507.0161,
    "type": "E1",
    "A": 11600000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 600000.0,
    "d": 2.444,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 507.158
   },
   {
@@ -1861,11 +2263,12 @@
    "air": 507.5805,
    "type": "E1",
    "A": 11500000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 600000.0,
    "d": 2.111,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 507.7235
   },
   {
@@ -1880,11 +2283,12 @@
    "air": 508.1569,
    "type": "E1",
    "A": 76000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 4000000.0,
    "d": 7.019,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 508.2977
   },
   {
@@ -1899,11 +2303,12 @@
    "air": 508.3717,
    "type": "E1",
    "A": 62000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 3000000.0,
    "d": 5.674,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 508.5138
   },
   {
@@ -1917,12 +2322,13 @@
    "lam": 508.6955,
    "air": 508.5538,
    "type": "E1",
-   "A": 57000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 4.714,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 56400000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2800000.0,
+   "d": 4.689,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 508.6967
   },
   {
@@ -1937,11 +2343,12 @@
    "air": 508.6952,
    "type": "E1",
    "A": 66000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 3000000.0,
    "d": 4.143,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 508.83
   },
   {
@@ -1955,12 +2362,13 @@
    "lam": 509.8148,
    "air": 509.6728,
    "type": "E1",
-   "A": 16900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.103,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 17100000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 900000.0,
+   "d": 2.115,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 509.8141
   },
   {
@@ -1974,12 +2382,13 @@
    "lam": 510.0598,
    "air": 509.9177,
    "type": "E1",
-   "A": 15000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.428,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 15400000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 800000.0,
+   "d": 2.46,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 510.0607
   },
   {
@@ -1993,12 +2402,13 @@
    "lam": 510.2539,
    "air": 510.1117,
    "type": "E1",
-   "A": 8800000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.148,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 9000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 500000.0,
+   "d": 2.173,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 510.2541
   },
   {
@@ -2011,13 +2421,18 @@
    "wn": 17626.1729,
    "lam": 567.3381,
    "air": 567.1807,
+   "use": "laser-cooling (cycling) transition proposed by Eustice et al. 2020: a4F9/2 (metastable, J -> J+1 stretched) - z4G°11/2; the paper says the scheme \"proceeds without any mitigating factors\"",
+   "gamma_MHz": 8.612,
    "type": "E1",
-   "A": 54000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 7.642,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 54100000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2700000.0,
+   "d": 7.649,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
+   "br": 0.9998,
+   "br_tier": "exp",
    "lam_obs": 567.3402
   },
   {
@@ -2031,12 +2446,13 @@
    "lam": 568.841,
    "air": 568.6832,
    "type": "E1",
-   "A": 48600000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 6.645,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 49000000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2500000.0,
+   "d": 6.672,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 568.84099
   },
   {
@@ -2050,12 +2466,13 @@
    "lam": 570.1735,
    "air": 570.0153,
    "type": "E1",
-   "A": 47200000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 5.878,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 45600000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2300000.0,
+   "d": 5.777,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 570.17323
   },
   {
@@ -2069,12 +2486,13 @@
    "lam": 571.0197,
    "air": 570.8613,
    "type": "E1",
-   "A": 5160000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.178,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 4730000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 240000.0,
+   "d": 2.085,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 571.01976
   },
   {
@@ -2088,12 +2506,13 @@
    "lam": 571.3338,
    "air": 571.1753,
    "type": "E1",
-   "A": 46600000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 5.073,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 44700000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 2200000.0,
+   "d": 4.969,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 571.33371
   },
   {
@@ -2107,12 +2526,13 @@
    "lam": 571.888,
    "air": 571.7293,
    "type": "E1",
-   "A": 6030000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 2.11,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 7600000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 400000.0,
+   "d": 2.369,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 571.88773
   },
   {
@@ -2126,19 +2546,20 @@
    "lam": 572.5669,
    "air": 572.4081,
    "type": "E1",
-   "A": 5710000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 1.782,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 7500000.0,
+   "A_tier": "exp",
+   "A_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3",
+   "A_unc": 400000.0,
+   "d": 2.042,
+   "d_tier": "exp",
+   "d_src": "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3 (from A)",
    "lam_obs": 572.56678
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -2153,189 +2574,380 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$3d4s^{2}\\ ^2D_{3/2}$ – $3d^{2}4p\\ ^2F^{o}_{5/2}$",
-     "301.6247",
-     "301.5369",
-     "993.9253",
-     "2.518",
-     "7.800e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d4s^{2}\\ ^2D_{5/2}$ – $3d^{2}4p\\ ^2F^{o}_{7/2}$",
-     "302.0233",
-     "301.9353",
-     "992.6138",
-     "3.076",
-     "8.700e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d4s^{2}\\ ^2D_{3/2}$ – $3d4s4p\\ ^2P^{o}_{1/2}$",
-     "327.0842",
-     "326.9900",
-     "916.5604",
-     "3.288",
-     "3.130e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d4s^{2}\\ ^2D_{5/2}$ – $3d4s4p\\ ^2P^{o}_{3/2}$",
-     "327.4570",
-     "327.3627",
-     "915.5170",
-     "4.413",
-     "2.810e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d4s^{2}\\ ^2D_{3/2}$ – $3d4s4p\\ ^2F^{o}_{5/2}$",
-     "390.8597",
-     "390.7490",
-     "767.0078",
-     "5.418",
-     "1.660e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d4s^{2}\\ ^2D_{5/2}$ – $3d4s4p\\ ^2F^{o}_{7/2}$",
-     "391.2926",
-     "391.1818",
-     "766.1592",
-     "6.507",
-     "1.790e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d4s^{2}\\ ^2D_{3/2}$ – $3d4s4p\\ ^2D^{o}_{3/2}$",
-     "402.1528",
-     "402.0391",
-     "745.4691",
-     "4.575",
-     "1.630e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d4s^{2}\\ ^2D_{5/2}$ – $3d4s4p\\ ^2D^{o}_{5/2}$",
-     "402.4817",
-     "402.3679",
-     "744.8599",
-     "5.644",
-     "1.650e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d^{2}4s\\ ^4F_{3/2}$ – $3d^{2}4p\\ ^4D^{o}_{1/2}$",
-     "473.5421",
-     "473.4096",
-     "633.0852",
-     "3.396",
-     "1.100e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d^{2}4s\\ ^4F_{5/2}$ – $3d^{2}4p\\ ^4D^{o}_{3/2}$",
-     "473.8971",
-     "473.7645",
-     "632.6109",
-     "4.300",
-     "8.800e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d^{2}4s\\ ^4F_{7/2}$ – $3d^{2}4p\\ ^4D^{o}_{5/2}$",
-     "474.2354",
-     "474.1028",
-     "632.1595",
-     "5.361",
-     "9.100e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d^{2}4s\\ ^4F_{9/2}$ – $3d^{2}4p\\ ^4D^{o}_{7/2}$",
-     "474.5147",
-     "474.3820",
-     "631.7875",
-     "6.430",
-     "9.800e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d^{2}4s\\ ^4F_{9/2}$ – $3d^{2}4p\\ ^4F^{o}_{9/2}$",
-     "508.2986",
-     "508.1569",
-     "589.7960",
-     "7.019",
-     "7.600e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d^{2}4s\\ ^4F_{7/2}$ – $3d^{2}4p\\ ^4F^{o}_{7/2}$",
-     "508.5134",
-     "508.3717",
-     "589.5468",
-     "5.674",
-     "6.200e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d^{2}4s\\ ^4F_{5/2}$ – $3d^{2}4p\\ ^4F^{o}_{5/2}$",
-     "508.6955",
-     "508.5538",
-     "589.3357",
-     "4.714",
-     "5.700e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3d^{2}4s\\ ^4F_{3/2}$ – $3d^{2}4p\\ ^4F^{o}_{3/2}$",
-     "508.8370",
-     "508.6952",
-     "589.1719",
-     "4.143",
-     "6.600e+07",
-     "–",
-     "–",
-     ""
+     "$3d^{2}4s\\ ^4F_{9/2}$ – $3d^{2}4p\\ ^4G^{o}_{11/2}$",
+     "567.3381",
+     "567.1807",
+     "528.4194",
+     "7.649",
+     "5.410e+07",
+     "8.612",
+     "100",
+     "laser-cooling"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{45}$Sc hyperfine structure  ($I$ = 7/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$3d4s^{2}\\ ^2D_{3/2}$",
+     "269.5581(9)",
+     "26.361(9)",
+     "F=2: -1805.39   F=3: -1015.55   F=4: +55.15   F=5: +1421.77"
+    ],
+    [
+     "$3d4s^{2}\\ ^2D_{5/2}$",
+     "109.0330(9)",
+     "-37.372(15)",
+     "F=1: -1246.64   F=2: -1017.90   F=3: -678.79   F=4: -234.11   F=5: +309.72   F=6: +944.70"
+    ],
+    [
+     "$3d^{2}4s\\ ^4F_{3/2}$",
+     "-158.512(3)",
+     "-5.189(21)",
+     "F=2: +1067.18   F=3: +595.35   F=4: -37.22   F=5: -833.49"
+    ],
+    [
+     "$3d^{2}4s\\ ^4F_{5/2}$",
+     "154.0352(21)",
+     "-6.45(3)",
+     "F=1: -1736.35   F=2: -1426.44   F=3: -962.26   F=4: -344.64   F=5: +425.30   F=6: +1346.20"
+    ],
+    [
+     "$3d^{2}4s\\ ^4F_{7/2}$",
+     "250.0119(21)",
+     "-9.08(3)",
+     "F=0: -3942.55   F=1: -3691.61   F=2: -3189.92   F=3: -2437.85   F=4: -1435.95   F=5: -184.96   F=6: +1314.18   F=7: +3060.38"
+    ],
+    [
+     "$3d^{2}4s\\ ^4F_{9/2}$",
+     "285.966(9)",
+     "-15.5(7)",
+     "F=1: -5511.94   F=2: -4937.79   F=3: -4077.04   F=4: -2930.23   F=5: -1498.10   F=6: +218.43   F=7: +2218.26   F=8: +4500.10"
+    ],
+    [
+     "$3d4s4p\\ ^2P^{o}_{1/2}$",
+     "442(5)",
+     "–",
+     "F=3: -994.26   F=4: +773.32"
+    ],
+    [
+     "$3d4s4p\\ ^2P^{o}_{3/2}$",
+     "12.6(9)",
+     "-191(13)",
+     "F=2: -187.13   F=3: -13.17   F=4: +91.67   F=5: +18.44"
+    ],
+    [
+     "$3d4s4p\\ ^2D^{o}_{3/2}$",
+     "278(5)",
+     "–",
+     "F=2: -1875.88   F=3: -1042.15   F=4: +69.48   F=5: +1459.02"
+    ],
+    [
+     "$3d4s4p\\ ^2D^{o}_{5/2}$",
+     "31(4)",
+     "–",
+     "F=1: -347.38   F=2: -285.63   F=3: -192.99   F=4: -69.48   F=5: +84.92   F=6: +270.19"
+    ],
+    [
+     "$3d4s4p\\ ^2F^{o}_{5/2}$",
+     "171.5(15)",
+     "–",
+     "F=1: -1929.16   F=2: -1586.20   F=3: -1071.76   F=4: -385.83   F=5: +471.57   F=6: +1500.46"
+    ],
+    [
+     "$3d4s4p\\ ^2F^{o}_{7/2}$",
+     "125(3)",
+     "–",
+     "F=0: -1964.24   F=1: -1839.53   F=2: -1590.10   F=3: -1215.96   F=4: -717.10   F=5: -93.53   F=6: +654.75   F=7: +1527.74"
+    ],
+    [
+     "$3d^{2}4p\\ ^4G^{o}_{5/2}$",
+     "279.1(12)",
+     "-29(7)",
+     "F=1: -3155.69   F=2: -2589.08   F=3: -1742.32   F=4: -619.18   F=5: +775.31   F=6: +2434.84"
+    ],
+    [
+     "$3d^{2}4p\\ ^4G^{o}_{7/2}$",
+     "147.2(3)",
+     "–",
+     "F=0: -2318.37   F=1: -2171.17   F=2: -1876.78   F=3: -1435.18   F=4: -846.39   F=5: -110.40   F=6: +772.79   F=7: +1803.18"
+    ],
+    [
+     "$3d^{2}4p\\ ^4G^{o}_{9/2}$",
+     "83.3(6)",
+     "-25(4)",
+     "F=1: -1615.74   F=2: -1445.51   F=3: -1190.89   F=4: -852.78   F=5: -432.36   F=6: +68.88   F=7: +649.16   F=8: +1306.42"
+    ],
+    [
+     "$3d^{2}4p\\ ^4G^{o}_{11/2}$",
+     "44.7(3)",
+     "-39(7)",
+     "F=2: -1032.47   F=3: -892.03   F=4: -706.22   F=5: -476.24   F=6: -203.63   F=7: +109.76   F=8: +461.81   F=9: +850.06"
+    ],
+    [
+     "$3d4s4p\\ ^2P^{o}_{1/2}$",
+     "240(19)",
+     "–",
+     "F=3: -539.63   F=4: +419.71"
+    ],
+    [
+     "$3d4s4p\\ ^2P^{o}_{3/2}$",
+     "327(4)",
+     "–",
+     "F=2: -2209.77   F=3: -1227.65   F=4: +81.84   F=5: +1718.71"
+    ],
+    [
+     "$3d^{2}4p\\ ^4F^{o}_{3/2}$",
+     "280.3(3)",
+     "–",
+     "F=2: -1892.07   F=3: -1051.15   F=4: +70.08   F=5: +1471.61"
+    ],
+    [
+     "$3d^{2}4p\\ ^4F^{o}_{5/2}$",
+     "121.1(3)",
+     "–",
+     "F=1: -1362.56   F=2: -1120.32   F=3: -756.98   F=4: -272.51   F=5: +333.07   F=6: +1059.77"
+    ],
+    [
+     "$3d^{2}4p\\ ^4F^{o}_{7/2}$",
+     "67.5(3)",
+     "–",
+     "F=0: -1062.39   F=1: -994.94   F=2: -860.03   F=3: -657.67   F=4: -387.86   F=5: -50.59   F=6: +354.13   F=7: +826.30"
+    ],
+    [
+     "$3d^{2}4p\\ ^4F^{o}_{9/2}$",
+     "44.4(3)",
+     "–",
+     "F=1: -854.11   F=2: -765.37   F=3: -632.26   F=4: -454.79   F=5: -232.94   F=6: +33.28   F=7: +343.86   F=8: +698.82"
+    ],
+    [
+     "$3d^{2}4p\\ ^4D^{o}_{1/2}$",
+     "432.9(9)",
+     "–",
+     "F=3: -974.03   F=4: +757.58"
+    ],
+    [
+     "$3d^{2}4p\\ ^4D^{o}_{3/2}$",
+     "126.2(15)",
+     "–",
+     "F=2: -851.93   F=3: -473.30   F=4: +31.55   F=5: +662.62"
+    ],
+    [
+     "$3d^{2}4p\\ ^4D^{o}_{5/2}$",
+     "70.5(9)",
+     "–",
+     "F=1: -792.58   F=2: -651.67   F=3: -440.32   F=4: -158.51   F=5: +193.74   F=6: +616.45"
+    ],
+    [
+     "$3d^{2}4p\\ ^4D^{o}_{7/2}$",
+     "42.0(3)",
+     "–",
+     "F=0: -661.04   F=1: -619.07   F=2: -535.13   F=3: -409.22   F=4: -241.33   F=5: -31.48   F=6: +220.35   F=7: +514.14"
+    ],
+    [
+     "$3d^{2}4p\\ ^2F^{o}_{5/2}$",
+     "226.9(18)",
+     "–",
+     "F=1: -2553.11   F=2: -2099.22   F=3: -1418.39   F=4: -510.62   F=5: +624.09   F=6: +1985.75"
+    ],
+    [
+     "$3d^{2}4p\\ ^2F^{o}_{7/2}$",
+     "39.9(6)",
+     "–",
+     "F=0: -627.99   F=1: -588.12   F=2: -508.37   F=3: -388.76   F=4: -229.27   F=5: -29.90   F=6: +209.33   F=7: +488.44"
+    ],
+    [
+     "$3d^{2}4p\\ ^2D^{o}_{3/2}$",
+     "236(3)",
+     "–",
+     "F=2: -1590.55   F=3: -883.64   F=4: +58.91   F=5: +1237.09"
+    ],
+    [
+     "$3d^{2}4p\\ ^2D^{o}_{5/2}$",
+     "41.7(15)",
+     "–",
+     "F=1: -468.80   F=2: -385.46   F=3: -260.44   F=4: -93.76   F=5: +114.60   F=6: +364.62"
+    ],
+    [
+     "$3d^{2}4p\\ ^4D^{o}_{3/2}$",
+     "56(4)",
+     "–",
+     "F=2: -376.39   F=3: -209.10   F=4: +13.94   F=5: +292.75"
+    ],
+    [
+     "$3d^{2}4p\\ ^2D^{o}_{3/2}$",
+     "162.2(15)",
+     "–",
+     "F=2: -1094.77   F=3: -608.20   F=4: +40.55   F=5: +851.49"
+    ],
+    [
+     "$3d^{2}4p\\ ^2D^{o}_{5/2}$",
+     "133.1(9)",
+     "–",
+     "F=1: -1497.46   F=2: -1231.25   F=3: -831.92   F=4: -299.49   F=5: +366.05   F=6: +1164.69"
+    ],
+    [
+     "$3d^{2}4p\\ ^2P^{o}_{3/2}$",
+     "215.6(9)",
+     "–",
+     "F=2: -1454.97   F=3: -808.32   F=4: +53.89   F=5: +1131.64"
+    ],
+    [
+     "$3d^{2}4p\\ ^2P^{o}_{1/2}$",
+     "110.3(15)",
+     "–",
+     "F=3: -248.23   F=4: +193.07"
+    ],
+    [
+     "$3d4s5p\\ ^2P^{o}_{3/2}$",
+     "136(4)",
+     "–",
+     "F=2: -918.71   F=3: -510.40   F=4: +34.03   F=5: +714.55"
+    ],
+    [
+     "$3d^{2}4p\\ ^2D^{o}_{3/2}$",
+     "-195(4)",
+     "–",
+     "F=2: +1317.36   F=3: +731.87   F=4: -48.79   F=5: -1024.62"
+    ],
+    [
+     "$3d^{2}4p\\ ^2D^{o}_{5/2}$",
+     "469.2(18)",
+     "–",
+     "F=1: -5278.22   F=2: -4339.87   F=3: -2932.34   F=4: -1055.64   F=5: +1290.23   F=6: +4105.28"
+    ],
+    [
+     "$3d4s5p\\ ^2P^{o}_{3/2}$",
+     "758(9)",
+     "–",
+     "F=2: -5117.68   F=3: -2843.16   F=4: +189.54   F=5: +3980.42"
+    ],
+    [
+     "$3d4s5p\\ ^2F^{o}_{7/2}$",
+     "67(27)",
+     "–",
+     "F=0: -1057.67   F=1: -990.51   F=2: -856.21   F=3: -654.75   F=4: -386.13   F=5: -50.37   F=6: +352.56   F=7: +822.63"
+    ],
+    [
+     "$3d4s5p\\ ^2D^{o}_{3/2}$",
+     "342(4)",
+     "–",
+     "F=2: -2310.95   F=3: -1283.86   F=4: +85.59   F=5: +1797.41"
+    ],
+    [
+     "$3d4s5p\\ ^2D^{o}_{5/2}$",
+     "219(11)",
+     "–",
+     "F=1: -2468.79   F=2: -2029.89   F=3: -1371.55   F=4: -493.76   F=5: +603.48   F=6: +1920.17"
+    ],
+    [
+     "$3d^{2}4p\\ ^2F^{o}_{5/2}$",
+     "11(5)",
+     "–",
+     "F=1: -128.16   F=2: -105.38   F=3: -71.20   F=4: -25.63   F=5: +31.33   F=6: +99.68"
+    ],
+    [
+     "$3d^{2}4p\\ ^2P^{o}_{1/2}$",
+     "463(28)",
+     "–",
+     "F=3: -1040.80   F=4: +809.51"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
   "levels: 49   lines < 2000 nm: 70   with matrix element: 70",
-  "transition-rate provenance: nist: 70",
-  "levels with a measured lifetime: 0"
+  "transition-rate provenance: exp: 46, nist: 24",
+  "levels with a measured lifetime: 4"
  ],
- "sources": {}
+ "sources": {
+  "abundance: NIST Atomic Weights and Isotopic Compositions (Sc); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, scandium table": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Sc",
+  "NIST ASD Sc I levels table (local copy data/nist/Sc_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Childs (1971), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Ertmer & Hofer (1976), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Zeiske et al. (1976), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(3) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Van Deelen (2017), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(2) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(19) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Aboussaïd et al. (1996), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 5(17) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(4) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(23) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(8) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(24) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Kopfermann & Rasmussen (1934), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(26) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 5(22) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(5) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(14) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 6(29) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 8(29) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Krzykowski & Stefańska (2008), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(6) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Başar et al. (2004), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(9) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 5(20) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(8) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(22) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Basar et al.(2004), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(7) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(10) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(7) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Lawler, Hala, Sneden, Nave, Wood, Cowan, ApJS 241, 21 (2019), Table 3": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=927269",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(5) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(6) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(11) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Singh et al. (1991), as tabulated by Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (\"previous experimental results\")": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(23) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(2) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(12) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(16) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(20) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(18) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(9) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(3) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(4) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(9) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(15) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(13) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 1(1) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(17) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 5(33) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(11) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(13) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(21) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(16) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(6) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(13) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(6) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 5(13) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(20) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(10) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(17) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(10) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(21) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(15) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(7) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(5) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(11) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 5(8) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 3(4) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(7) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 4(8) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(8) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 2(1) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Hala & Nave, ApJS 259, 0000 (2022) \"Hyperfine Structure Constants of Sc I and Sc II with Fourier Transform Spectroscopy\", Tables 2-3 (this work, FTS line-profile fits; 5(6) lines)": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929570",
+  "Eustice, Cassella, Stamper-Kurn, Phys. Rev. A 102, 053327 (2020) (arXiv:2008.06147)": "https://arxiv.org/abs/2008.06147"
+ }
 }
