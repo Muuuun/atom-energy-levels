@@ -1,0 +1,75 @@
+{
+ "element": "Ir",
+ "isotopes": {
+  "191": {
+   "I": "3/2",
+   "abundance_percent": 37.3,
+   "abundance_unc": 0.2,
+   "source": "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from IAEA Nuclear Data Services LiveChart ground-state data (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=191ir)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ir"
+  },
+  "193": {
+   "I": "3/2",
+   "abundance_percent": 62.7,
+   "abundance_unc": 0.2,
+   "source": "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from IAEA Nuclear Data Services LiveChart ground-state data (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=193ir)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ir"
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "J": "9/2",
+   "label": "5d7.6s2 a 4F9/2"
+  },
+  {
+   "nist_energy_cm": 28452.32,
+   "J": "11/2",
+   "label": "5d7.6s.(5F).6p z 6F°11/2"
+  },
+  {
+   "nist_energy_cm": 40389.83,
+   "J": "9/2",
+   "label": "40389.83 cm-1 level, J=9/2 (odd)"
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 28452.32,
+   "lower_J": "9/2",
+   "upper_J": "11/2",
+   "label": "5d7.6s2 a 4F9/2 - 5d7.6s.(5F).6p z 6F°11/2, 351.365 nm (air)",
+   "type": "E1",
+   "use": "351 nm line (to the lowest odd J=11/2 level) used for laser-spectroscopy isotope shifts of the Ir chain A = 182-193 at ISOLDE (Verney et al., Eur. Phys. J. A 30 (2006), as described in Schiffmann & Godefroid, arXiv:2008.07602; the measured shifts themselves were not read)"
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 40389.83,
+   "lower_J": "9/2",
+   "upper_J": "9/2",
+   "label": "5d7.6s2 a 4F9/2 - 40389.83 cm-1 level, J=9/2 (odd), 247.587 nm (vacuum)",
+   "type": "E1",
+   "use": "first-step line of the in-gas-cell laser resonance ionization spectroscopy of 196,197,198Ir at KISS (Mukai et al., Phys. Rev. C 102, 054307 (2020)), used for charge radii and deformations (per Schiffmann & Godefroid, arXiv:2008.07602)",
+   "isotope_shift_MHz": {
+    "193-191": {
+     "value": -8100.0,
+     "method": "theory",
+     "note": "theory, field shift only (mass shift stated to be much smaller): -8.1 GHz from the calculated electronic factor with Breit and QED corrections and a model radius formula; -7.1 GHz without those corrections; -7.7 / -6.7 GHz from the 'variational' two-isotope calculation. Negative = lower frequency for the heavier isotope. A measured value exists (Mukai et al. 2020) but could not be opened.",
+     "source": "Schiffmann & Godefroid, 'Electronic isotope shift factors for the Ir 5d7 6s2 4F9/2 -> (odd, J = 9/2) line at 247.587 nm', arXiv:2008.07602v2 (2020), section 4.4",
+     "url": "https://arxiv.org/pdf/2008.07602"
+    }
+   }
+  }
+ ],
+ "conflicts": [],
+ "not_found": [
+  "hyperfine A/B constants of 191Ir and 193Ir: Büttgenbach, Herschel, Meisel, Schrödl, Witte, Childs, Z. Phys. 263, 341 (1973) (4F9/2 ground state, atomic-beam magnetic resonance) and Büttgenbach, Dicke, Gebauer, Kühnen, Träber, Z. Phys. A 286, 333 (1978) (six low-lying levels) exist, but link.springer.com refused both curl and WebFetch; the OSTI abstracts that could be read (records 5018839, 6566733) contain no A/B values. Values seen only in a search-engine snippet were NOT entered",
+  "radiative lifetimes of Ir I levels: Xu, Svanberg, Quinet, Palmeri, Biémont, JQSRT 104, 52 (2007) (nine odd levels) and Gough, Hannaford, Lowe, J. Phys. B 16, 785 (1983): no open copy (ORBi copies are access-restricted, publisher pages blocked); Ivarsson et al., A&A 409, 1141 (2003): aanda.org refused automated access. No lifetimes entered",
+  "transition probabilities beyond NIST: the Kurucz line list gf7700.all carries 21 Gough-Hannaford-Lowe 1983 lines; all 21 already have A values in the NIST lines table, so nothing was added",
+  "measured isotope shifts 191-193 of the 247.587 nm and 351 nm lines (Mukai et al. 2020; Verney et al. 2006; Sawatzky & Winkler, Z. Phys. D 14, 9 (1989)): papers not openable; only the theoretical field shift is entered",
+  "DESIRE database Ir I table: link returned 404 on 2026-10-01",
+  "precise optical transition frequencies and laser-cooling lines: none found for neutral Ir"
+ ],
+ "notes": "Very thin file: the measured Ir I data (hyperfine constants, lifetimes, isotope shifts) sit in Springer / Elsevier / A&A pages that could not be opened by automated tools in this session, so only isotope data, two 'use' annotations and one theoretical isotope shift are entered. The upper level 40389.83 cm-1 (J=9/2) of the 247.587 nm line is drawn by the site as '4038°9/2'. Isotope abundances in percent; abundance_unc in percent."
+}

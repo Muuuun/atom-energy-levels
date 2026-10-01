@@ -6,17 +6,17 @@
   "symbol": "Pt",
   "A": null,
   "Z": 78,
-  "I": null,
+  "I": "1/2",
   "kind": "nist",
   "limit_cm": 72257.8,
   "scale": "auto",
   "spectrum": "Pt I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "195",
   "limit_text": "Pt$^+$ ionisation limit   72257.80 cm$^{-1}$  =  8.95883 eV  (138.393 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "NIST ASD already carries A values for 166 Pt I lines; of the 58 measured lines (Gough-Hannaford-Lowe 1982, Lotrian-Guern 1982) in the Kurucz list gf7800.all only 3 are missing from NIST and those are added here (derived from log gf with A = 0.66702 sigma^2 gf / (2J'+1)). Isotope shifts are nu(first) - nu(second); for the 248.792 nm line the heavier isotope lies at higher frequency. The 199Pt-198Pt shift on the same line is 0.98(48) GHz (199Pt is radioactive, not listed under isotopes). 195Pt has I = 1/2: hyperfine entries have A only. Isotope abundances in percent; abundance_unc in percent."
  },
  "columns": [
   {
@@ -88,6 +88,14 @@
    "plain": "5d96s 3D3",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 5702.64,
+    "A_unc": 0.23,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Büttgenbach, Glaeser, Roski, Träber, Z. Phys. A 317, 237 (1984), as quoted in Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674"
+   },
    "col": 2
   },
   {
@@ -167,6 +175,21 @@
   },
   {
    "id": 6,
+   "E": 21967.101,
+   "unc": 0.003,
+   "J": 4.0,
+   "conf": "5d8.6s2",
+   "term": "1G",
+   "parity": "even",
+   "g": null,
+   "name": "^1G_{4}",
+   "plain": "5d86s2 1G4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 7,
    "E": 32620.0047,
    "unc": 0.0016,
    "J": 2.0,
@@ -181,7 +204,7 @@
    "col": 5
   },
   {
-   "id": 7,
+   "id": 8,
    "E": 33680.39,
    "unc": 0.005,
    "J": 5.0,
@@ -196,7 +219,7 @@
    "col": 8
   },
   {
-   "id": 8,
+   "id": 9,
    "E": 34122.1452,
    "unc": 0.0033,
    "J": 3.0,
@@ -211,7 +234,7 @@
    "col": 6
   },
   {
-   "id": 9,
+   "id": 10,
    "E": 35321.637,
    "unc": 0.0013,
    "J": 3.0,
@@ -226,7 +249,7 @@
    "col": 6
   },
   {
-   "id": 10,
+   "id": 11,
    "E": 36844.695,
    "unc": 0.003,
    "J": 1.0,
@@ -241,7 +264,7 @@
    "col": 4
   },
   {
-   "id": 11,
+   "id": 12,
    "E": 37342.089,
    "unc": 0.003,
    "J": 2.0,
@@ -256,7 +279,7 @@
    "col": 5
   },
   {
-   "id": 12,
+   "id": 13,
    "E": 37590.5647,
    "unc": 0.0015,
    "J": 4.0,
@@ -271,7 +294,7 @@
    "col": 7
   },
   {
-   "id": 13,
+   "id": 14,
    "E": 37769.0673,
    "unc": 0.0031,
    "J": 3.0,
@@ -283,10 +306,18 @@
    "plain": "5d96p 3D°3",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 1917.2,
+    "A_unc": 0.9,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989)"
+   },
    "col": 6
   },
   {
-   "id": 14,
+   "id": 15,
    "E": 38536.1439,
    "unc": 0.0017,
    "J": 5.0,
@@ -301,7 +332,7 @@
    "col": 8
   },
   {
-   "id": 15,
+   "id": 16,
    "E": 38815.894,
    "unc": 0.0015,
    "J": 2.0,
@@ -316,7 +347,7 @@
    "col": 5
   },
   {
-   "id": 16,
+   "id": 17,
    "E": 40194.2203,
    "unc": 0.0017,
    "J": 4.0,
@@ -328,10 +359,18 @@
    "plain": "5d86s6p 5F°4",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 1150.0,
+    "A_unc": 110.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674"
+   },
    "col": 7
   },
   {
-   "id": 17,
+   "id": 18,
    "E": 40516.229,
    "unc": 0.003,
    "J": 2.0,
@@ -346,7 +385,7 @@
    "col": 5
   },
   {
-   "id": 18,
+   "id": 19,
    "E": 40787.8417,
    "unc": 0.0024,
    "J": 2.0,
@@ -361,7 +400,7 @@
    "col": 5
   },
   {
-   "id": 19,
+   "id": 20,
    "E": 41802.733,
    "unc": 0.004,
    "J": 1.0,
@@ -376,7 +415,7 @@
    "col": 4
   },
   {
-   "id": 20,
+   "id": 21,
    "E": 42660.048,
    "unc": 0.003,
    "J": 3.0,
@@ -391,7 +430,7 @@
    "col": 6
   },
   {
-   "id": 21,
+   "id": 22,
    "E": 43187.829,
    "unc": 0.006,
    "J": 1.0,
@@ -406,7 +445,7 @@
    "col": 4
   },
   {
-   "id": 22,
+   "id": 23,
    "E": 43945.534,
    "unc": 0.004,
    "J": 3.0,
@@ -421,7 +460,7 @@
    "col": 6
   },
   {
-   "id": 23,
+   "id": 24,
    "E": 44432.651,
    "unc": 0.003,
    "J": 4.0,
@@ -436,7 +475,7 @@
    "col": 7
   },
   {
-   "id": 24,
+   "id": 25,
    "E": 44444.346,
    "unc": 0.006,
    "J": 2.0,
@@ -451,7 +490,7 @@
    "col": 5
   },
   {
-   "id": 25,
+   "id": 26,
    "E": 44730.3062,
    "unc": 0.0029,
    "J": 3.0,
@@ -466,7 +505,7 @@
    "col": 6
   },
   {
-   "id": 26,
+   "id": 27,
    "E": 46170.3757,
    "unc": 0.001,
    "J": 2.0,
@@ -481,7 +520,7 @@
    "col": 5
   },
   {
-   "id": 27,
+   "id": 28,
    "E": 46419.952,
    "unc": 0.005,
    "J": 2.0,
@@ -496,7 +535,7 @@
    "col": 5
   },
   {
-   "id": 28,
+   "id": 29,
    "E": 46622.49,
    "unc": 0.0043,
    "J": 3.0,
@@ -511,7 +550,7 @@
    "col": 6
   },
   {
-   "id": 29,
+   "id": 30,
    "E": 46792.9402,
    "unc": 0.0013,
    "J": 5.0,
@@ -526,7 +565,7 @@
    "col": 8
   },
   {
-   "id": 30,
+   "id": 31,
    "E": 46963.6658,
    "unc": 0.0009,
    "J": 4.0,
@@ -541,7 +580,7 @@
    "col": 7
   },
   {
-   "id": 31,
+   "id": 32,
    "E": 47740.568,
    "unc": 0.0022,
    "J": 1.0,
@@ -556,7 +595,7 @@
    "col": 4
   },
   {
-   "id": 32,
+   "id": 33,
    "E": 48351.9153,
    "unc": 0.0015,
    "J": 4.0,
@@ -571,7 +610,7 @@
    "col": 7
   },
   {
-   "id": 33,
+   "id": 34,
    "E": 48779.325,
    "unc": 0.0008,
    "J": 3.0,
@@ -586,7 +625,7 @@
    "col": 6
   },
   {
-   "id": 34,
+   "id": 35,
    "E": 51545.5216,
    "unc": 0.0014,
    "J": 3.0,
@@ -601,7 +640,7 @@
    "col": 6
   },
   {
-   "id": 35,
+   "id": 36,
    "E": 52438.5877,
    "unc": 0.0013,
    "J": 5.0,
@@ -616,7 +655,7 @@
    "col": 8
   },
   {
-   "id": 36,
+   "id": 37,
    "E": 54178.509,
    "unc": 0.0012,
    "J": 4.0,
@@ -631,7 +670,7 @@
    "col": 7
   },
   {
-   "id": 37,
+   "id": 38,
    "E": 57506.2281,
    "unc": 0.0017,
    "J": 3.0,
@@ -646,7 +685,7 @@
    "col": 6
   },
   {
-   "id": 38,
+   "id": 39,
    "E": 57987.379,
    "unc": 0.009,
    "J": 2.0,
@@ -661,7 +700,7 @@
    "col": 5
   },
   {
-   "id": 39,
+   "id": 40,
    "E": 58101.165,
    "unc": 0.003,
    "J": 3.0,
@@ -676,7 +715,7 @@
    "col": 6
   },
   {
-   "id": 40,
+   "id": 41,
    "E": 58326.72,
    "unc": 0.03,
    "J": 2.0,
@@ -698,7 +737,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 40,
+   "upper": 41,
    "wn": 57550.8439,
    "lam": 173.7594,
    "air": null,
@@ -717,7 +756,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 37,
+   "upper": 38,
    "wn": 57506.2281,
    "lam": 173.8942,
    "air": null,
@@ -736,7 +775,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 39,
+   "upper": 40,
    "wn": 57277.5042,
    "lam": 174.5886,
    "air": null,
@@ -755,7 +794,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 36,
+   "upper": 37,
    "wn": 54178.509,
    "lam": 184.575,
    "air": null,
@@ -774,7 +813,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 35,
+   "upper": 36,
    "wn": 51614.9269,
    "lam": 193.7424,
    "air": null,
@@ -793,7 +832,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 34,
+   "upper": 35,
    "wn": 51545.5216,
    "lam": 194.0033,
    "air": null,
@@ -812,7 +851,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 39,
+   "upper": 40,
    "wn": 51533.7133,
    "lam": 194.0477,
    "air": null,
@@ -831,7 +870,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 38,
+   "upper": 39,
    "wn": 51419.9273,
    "lam": 194.4771,
    "air": null,
@@ -850,7 +889,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 33,
+   "upper": 34,
    "wn": 48779.325,
    "lam": 205.0049,
    "air": 204.9392,
@@ -869,7 +908,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 32,
+   "upper": 33,
    "wn": 48351.9153,
    "lam": 206.817,
    "air": 206.751,
@@ -888,7 +927,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 33,
+   "upper": 34,
    "wn": 47955.6642,
    "lam": 208.5259,
    "air": 208.4596,
@@ -907,7 +946,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 32,
+   "upper": 33,
    "wn": 47528.2545,
    "lam": 210.4012,
    "air": 210.3345,
@@ -926,7 +965,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 31,
+   "upper": 32,
    "wn": 46964.6919,
    "lam": 212.9259,
    "air": 212.8587,
@@ -945,7 +984,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 30,
+   "upper": 31,
    "wn": 46963.6658,
    "lam": 212.9306,
    "air": 212.8634,
@@ -964,7 +1003,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 28,
+   "upper": 29,
    "wn": 46622.49,
    "lam": 214.4888,
    "air": 214.4212,
@@ -983,7 +1022,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 27,
+   "upper": 28,
    "wn": 46419.952,
    "lam": 215.4246,
    "air": 215.3569,
@@ -1002,7 +1041,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 26,
+   "upper": 27,
    "wn": 46170.3757,
    "lam": 216.5891,
    "air": 216.5211,
@@ -1021,7 +1060,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 30,
+   "upper": 31,
    "wn": 46140.005,
    "lam": 216.7317,
    "air": 216.6637,
@@ -1040,7 +1079,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 29,
+   "upper": 30,
    "wn": 45969.2794,
    "lam": 217.5366,
    "air": 217.4684,
@@ -1059,7 +1098,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 27,
+   "upper": 28,
    "wn": 45644.0759,
    "lam": 219.0865,
    "air": 219.018,
@@ -1078,7 +1117,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 26,
+   "upper": 27,
    "wn": 45394.4996,
    "lam": 220.291,
    "air": 220.2223,
@@ -1097,7 +1136,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 25,
+   "upper": 26,
    "wn": 44730.3062,
    "lam": 223.5621,
    "air": 223.4926,
@@ -1116,7 +1155,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 24,
+   "upper": 25,
    "wn": 44444.346,
    "lam": 225.0005,
    "air": 224.9308,
@@ -1135,7 +1174,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 23,
+   "upper": 24,
    "wn": 44432.651,
    "lam": 225.0597,
    "air": 224.99,
@@ -1154,7 +1193,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 25,
+   "upper": 26,
    "wn": 43954.4301,
    "lam": 227.5084,
    "air": 227.4381,
@@ -1173,7 +1212,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 22,
+   "upper": 23,
    "wn": 43945.534,
    "lam": 227.5544,
    "air": 227.4841,
@@ -1192,7 +1231,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 24,
+   "upper": 25,
    "wn": 43668.4699,
    "lam": 228.9982,
    "air": 228.9276,
@@ -1211,7 +1250,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 23,
+   "upper": 24,
    "wn": 43608.9902,
    "lam": 229.3105,
    "air": 229.2398,
@@ -1230,7 +1269,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 22,
+   "upper": 23,
    "wn": 43121.8732,
    "lam": 231.9009,
    "air": 231.8296,
@@ -1249,7 +1288,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 21,
+   "upper": 22,
    "wn": 42411.9529,
    "lam": 235.7826,
    "air": 235.7105,
@@ -1268,7 +1307,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 33,
+   "upper": 34,
    "wn": 42211.8733,
    "lam": 236.9002,
    "air": 236.8278,
@@ -1287,7 +1326,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 20,
+   "upper": 21,
    "wn": 41836.3872,
    "lam": 239.0264,
    "air": 238.9535,
@@ -1306,7 +1345,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 31,
+   "upper": 32,
    "wn": 41600.398,
    "lam": 240.3823,
    "air": 240.3092,
@@ -1325,7 +1364,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 19,
+   "upper": 20,
    "wn": 41026.8569,
    "lam": 243.7428,
    "air": 243.6689,
@@ -1344,7 +1383,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 17,
+   "upper": 18,
    "wn": 40516.229,
    "lam": 246.8147,
    "air": 246.7401,
@@ -1359,11 +1398,44 @@
   },
   {
    "kind": "E1",
+   "freq": 1204.99241,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 17,
+   "wn": 40194.2203,
+   "lam": 248.792,
+   "air": 248.7169,
+   "use": "first-step line of the in-gas-cell laser resonance ionization spectroscopy of Pt isotopes at KISS (hyperfine structure, isotope shifts, magnetic moment of 199Pt)",
+   "isotope_shifts": {
+    "198-194": {
+     "value": 2430.0,
+     "unc": 230.0,
+     "src": "Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674, Table II",
+     "url": "https://arxiv.org/pdf/1605.03674"
+    },
+    "196-194": {
+     "value": 1390.0,
+     "unc": 270.0,
+     "src": "Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674, Table II",
+     "url": "https://arxiv.org/pdf/1605.03674"
+    },
+    "192-194": {
+     "value": -1430.0,
+     "unc": 270.0,
+     "src": "Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674, Table II",
+     "url": "https://arxiv.org/pdf/1605.03674"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
    "freq": 1200.81984,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 28,
+   "upper": 29,
    "wn": 40055.0383,
    "lam": 249.6565,
    "air": 249.5812,
@@ -1382,7 +1454,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 18,
+   "upper": 19,
    "wn": 40011.9656,
    "lam": 249.9252,
    "air": 249.8499,
@@ -1401,7 +1473,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 27,
+   "upper": 28,
    "wn": 39852.5003,
    "lam": 250.9253,
    "air": 250.8497,
@@ -1420,7 +1492,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 17,
+   "upper": 18,
    "wn": 39740.3529,
    "lam": 251.6334,
    "air": 251.5577,
@@ -1439,7 +1511,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 26,
+   "upper": 27,
    "wn": 39602.924,
    "lam": 252.5066,
    "air": 252.4307,
@@ -1458,7 +1530,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 16,
+   "upper": 17,
    "wn": 39370.5595,
    "lam": 253.9969,
    "air": 253.9206,
@@ -1477,7 +1549,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 25,
+   "upper": 26,
    "wn": 38162.8545,
    "lam": 262.0349,
    "air": 261.9567,
@@ -1496,7 +1568,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 15,
+   "upper": 16,
    "wn": 38040.0179,
    "lam": 262.8811,
    "air": 262.8027,
@@ -1515,7 +1587,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 24,
+   "upper": 25,
    "wn": 37876.8943,
    "lam": 264.0132,
    "air": 263.9345,
@@ -1534,7 +1606,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 13,
+   "upper": 14,
    "wn": 37769.0673,
    "lam": 264.7669,
    "air": 264.6881,
@@ -1553,7 +1625,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 14,
+   "upper": 15,
    "wn": 37712.4831,
    "lam": 265.1642,
    "air": 265.0853,
@@ -1572,7 +1644,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 12,
+   "upper": 13,
    "wn": 37590.5647,
    "lam": 266.0242,
    "air": 265.9451,
@@ -1591,7 +1663,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 22,
+   "upper": 23,
    "wn": 37378.0823,
    "lam": 267.5365,
    "air": 267.457,
@@ -1610,7 +1682,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 11,
+   "upper": 12,
    "wn": 37342.089,
    "lam": 267.7943,
    "air": 267.7148,
@@ -1629,7 +1701,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 21,
+   "upper": 22,
    "wn": 37047.659,
    "lam": 269.9226,
    "air": 269.8425,
@@ -1648,10 +1720,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 13,
+   "upper": 14,
    "wn": 36993.1912,
    "lam": 270.32,
    "air": 270.2399,
+   "use": "saturation spectroscopy in a hollow-cathode discharge: isotope shifts and 195Pt hyperfine splittings (LaBelle et al., J. Opt. Soc. Am. B 6, 137 (1989); assignment of the 270.24 nm line to this level pair derived here from the NIST line list)",
    "type": "E1 (intercombination)",
    "A": 60400000.0,
    "A_tier": "nist",
@@ -1667,10 +1740,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 13,
+   "upper": 14,
    "wn": 36945.4065,
    "lam": 270.6696,
    "air": 270.5894,
+   "use": "saturation spectroscopy in a hollow-cathode discharge: isotope shifts and 195Pt hyperfine splittings (LaBelle et al., J. Opt. Soc. Am. B 6, 137 (1989); assignment of the 270.59 nm line to this level pair derived here from the NIST line list)",
    "type": "E1",
    "A": 41800000.0,
    "A_tier": "nist",
@@ -1686,7 +1760,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 12,
+   "upper": 13,
    "wn": 36766.9039,
    "lam": 271.9837,
    "air": 271.9032,
@@ -1705,7 +1779,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 21,
+   "upper": 22,
    "wn": 36620.3773,
    "lam": 273.072,
    "air": 272.9912,
@@ -1724,7 +1798,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 11,
+   "upper": 12,
    "wn": 36566.2129,
    "lam": 273.4765,
    "air": 273.3956,
@@ -1743,7 +1817,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 10,
+   "upper": 11,
    "wn": 36068.8189,
    "lam": 277.2478,
    "air": 277.1659,
@@ -1762,7 +1836,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 19,
+   "upper": 20,
    "wn": 35662.563,
    "lam": 280.4061,
    "air": 280.3235,
@@ -1781,7 +1855,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 9,
+   "upper": 10,
    "wn": 35321.637,
    "lam": 283.1126,
    "air": 283.0293,
@@ -1800,7 +1874,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 9,
+   "upper": 10,
    "wn": 34545.7609,
    "lam": 289.4711,
    "air": 289.3863,
@@ -1819,7 +1893,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 9,
+   "upper": 10,
    "wn": 34497.9762,
    "lam": 289.8721,
    "air": 289.7871,
@@ -1838,7 +1912,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 24,
+   "upper": 25,
    "wn": 34327.6302,
    "lam": 291.3105,
    "air": 291.2252,
@@ -1857,7 +1931,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 8,
+   "upper": 9,
    "wn": 34122.1452,
    "lam": 293.0648,
    "air": 292.9791,
@@ -1876,7 +1950,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 8,
+   "upper": 9,
    "wn": 33346.2691,
    "lam": 299.8836,
    "air": 299.7962,
@@ -1895,7 +1969,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 7,
+   "upper": 8,
    "wn": 32856.7292,
    "lam": 304.3517,
    "air": 304.2631,
@@ -1914,7 +1988,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 6,
+   "upper": 7,
    "wn": 32620.0047,
    "lam": 306.5603,
    "air": 306.4713,
@@ -1933,7 +2007,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 15,
+   "upper": 16,
    "wn": 32248.4423,
    "lam": 310.0925,
    "air": 310.0025,
@@ -1952,7 +2026,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 6,
+   "upper": 7,
    "wn": 31844.1286,
    "lam": 314.0296,
    "air": 313.9387,
@@ -1971,7 +2045,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 13,
+   "upper": 14,
    "wn": 31201.6156,
    "lam": 320.4962,
    "air": 320.4036,
@@ -1990,7 +2064,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 10,
+   "upper": 11,
    "wn": 30704.525,
    "lam": 325.6849,
    "air": 325.591,
@@ -2009,7 +2083,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 10,
+   "upper": 11,
    "wn": 30277.2433,
    "lam": 330.2811,
    "air": 330.186,
@@ -2021,12 +2095,66 @@
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
    "lam_obs": 330.28103
+  },
+  {
+   "kind": "E1",
+   "freq": 823.64527,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 5,
+   "upper": 13,
+   "wn": 27473.8489,
+   "lam": 363.9825,
+   "air": 363.8788,
+   "type": "E1",
+   "A": 2560000.0,
+   "A_tier": "exp",
+   "A_src": "Gough, Hannaford, Lowe, J. Phys. B 15, L431 (1982), as listed in R. L. Kurucz, gf7800.all (2011)",
+   "d": 0.7405,
+   "d_tier": "exp",
+   "d_src": "Gough, Hannaford, Lowe, J. Phys. B 15, L431 (1982), as listed in R. L. Kurucz, gf7800.all (2011) (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 473.73103,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 6,
+   "upper": 14,
+   "wn": 15801.9663,
+   "lam": 632.8326,
+   "air": 632.6577,
+   "type": "E1 (intercombination)",
+   "A": 475000.0,
+   "A_tier": "exp",
+   "A_src": "Gough, Hannaford, Lowe, J. Phys. B 15, L431 (1982), as listed in R. L. Kurucz, gf7800.all (2011)",
+   "d": 0.6449,
+   "d_tier": "exp",
+   "d_src": "Gough, Hannaford, Lowe, J. Phys. B 15, L431 (1982), as listed in R. L. Kurucz, gf7800.all (2011) (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 364.39906,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 6,
+   "upper": 9,
+   "wn": 12155.0442,
+   "lam": 822.7037,
+   "air": 822.4776,
+   "type": "E1 (intercombination)",
+   "A": 397000.0,
+   "A_tier": "exp",
+   "A_src": "Gough, Hannaford, Lowe, J. Phys. B 15, L431 (1982), as listed in R. L. Kurucz, gf7800.all (2011)",
+   "d": 0.8739,
+   "d_tier": "exp",
+   "d_src": "Gough, Hannaford, Lowe, J. Phys. B 15, L431 (1982), as listed in R. L. Kurucz, gf7800.all (2011) (from A)"
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -2041,147 +2169,15 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$^3D_{3}$ – $\\mathrm{b}\\,^5D^{o}_{4}$",
-     "184.5750",
-     "–",
-     "1624.2308",
-     "2.422",
-     "2.100e+08",
+     "$^3D_{3}$ – $^5F^{o}_{4}$",
+     "248.7920",
+     "248.7169",
+     "1204.9924",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$^3F_{4}$ – $^3G^{o}_{5}$",
-     "193.7424",
-     "–",
-     "1547.3766",
-     "4.867",
-     "6.000e+08",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$^3D_{3}$ – $\\mathrm{b}\\,^3D^{o}_{3}$",
-     "194.0033",
-     "–",
-     "1545.2959",
-     "2.658",
-     "2.800e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^3D_{3}$ – $\\mathrm{a}\\,^3D^{o}_{3}$",
-     "205.0049",
-     "204.9392",
-     "1462.3674",
-     "2.634",
-     "2.330e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^3F_{4}$ – $\\mathrm{a}\\,^3D^{o}_{3}$",
-     "208.5259",
-     "208.4596",
-     "1437.6746",
-     "1.726",
-     "9.510e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^3F_{4}$ – $^3F^{o}_{4}$",
-     "210.4012",
-     "210.3345",
-     "1424.8612",
-     "2.219",
-     "1.190e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^1D_{2}$ – $^1P^{o}_{1}$",
-     "212.9259",
-     "212.8587",
-     "1407.9660",
-     "1.554",
-     "1.690e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^3D_{3}$ – $\\mathrm{a}\\,^5D^{o}_{4}$",
-     "212.9306",
-     "212.8634",
-     "1407.9353",
-     "1.945",
-     "8.820e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^3D_{3}$ – $\\mathrm{b}\\,^3D^{o}_{3}$",
-     "214.4888",
-     "214.4212",
-     "1397.7071",
-     "1.874",
-     "1.030e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^3F_{4}$ – $^3G^{o}_{5}$",
-     "217.5366",
-     "217.4684",
-     "1378.1243",
-     "3.276",
-     "1.920e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^1D_{2}$ – $^5D^{o}_{1}$",
-     "235.7826",
-     "235.7105",
-     "1271.4784",
-     "1.182",
-     "7.200e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^1D_{2}$ – $\\mathrm{a}\\,^3F^{o}_{2}$",
-     "262.8811",
-     "262.8027",
-     "1140.4110",
-     "1.632",
-     "5.940e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^3D_{3}$ – $^3F^{o}_{4}$",
-     "266.0242",
-     "265.9451",
-     "1126.9368",
-     "2.877",
-     "9.900e+07",
-     "–",
-     "–",
-     ""
+     "first-step line of the in-gas-cell laser resonance ioniza…"
     ],
     [
      "$\\mathrm{a}\\,^1D_{2}$ – $^3D^{o}_{3}$",
@@ -2192,38 +2188,101 @@
      "6.040e+07",
      "–",
      "–",
-     ""
+     "saturation spectroscopy in a hollow-cathode discharge: is…"
     ],
     [
-     "$\\mathrm{a}\\,^1D_{2}$ – $\\mathrm{b}\\,^3P^{o}_{2}$",
-     "273.4765",
-     "273.3956",
-     "1096.2275",
-     "1.897",
-     "7.130e+07",
+     "$^3F_{4}$ – $^3D^{o}_{3}$",
+     "270.6696",
+     "270.5894",
+     "1107.5954",
+     "1.692",
+     "4.180e+07",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$^3D_{3}$ – $\\mathrm{a}\\,^3P^{o}_{2}$",
-     "306.5603",
-     "306.4713",
-     "977.9231",
-     "2.165",
-     "6.590e+07",
-     "–",
-     "–",
-     ""
+     "saturation spectroscopy in a hollow-cathode discharge: is…"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{195}$Pt hyperfine structure  ($I$ = 1/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$^3D_{3}$",
+     "5702.64(23)",
+     "–",
+     "F=5/2: -11405.28   F=7/2: +8553.96"
+    ],
+    [
+     "$^3D^{o}_{3}$",
+     "1917.2(9)",
+     "–",
+     "F=5/2: -3834.40   F=7/2: +2875.80"
+    ],
+    [
+     "$^5F^{o}_{4}$",
+     "1150(110)",
+     "–",
+     "F=7/2: -2875.00   F=9/2: +2300.00"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$^3D_{3}$ – $^5F^{o}_{4}$",
+     "248.792",
+     "198-194",
+     "2430(230)"
+    ],
+    [
+     "$^3D_{3}$ – $^5F^{o}_{4}$",
+     "248.792",
+     "196-194",
+     "1390(270)"
+    ],
+    [
+     "$^3D_{3}$ – $^5F^{o}_{4}$",
+     "248.792",
+     "192-194",
+     "-1430(270)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 41   lines < 2000 nm: 70   with matrix element: 70",
-  "transition-rate provenance: nist: 70",
+  "levels: 42   lines < 2000 nm: 74   with matrix element: 73",
+  "transition-rate provenance: exp: 3, nist: 70, wavelength only: 1",
   "levels with a measured lifetime: 0"
  ],
- "sources": {}
+ "sources": {
+  "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from IAEA Nuclear Data Services LiveChart ground-state data (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=190pt); radioactive, half-life 4.97e11 y per the same IAEA record": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Pt",
+  "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from IAEA Nuclear Data Services LiveChart ground-state data (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=192pt)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Pt",
+  "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from IAEA Nuclear Data Services LiveChart ground-state data (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=194pt)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Pt",
+  "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from IAEA Nuclear Data Services LiveChart ground-state data (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=195pt)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Pt",
+  "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from IAEA Nuclear Data Services LiveChart ground-state data (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=196pt)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Pt",
+  "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from IAEA Nuclear Data Services LiveChart ground-state data (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=198pt)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Pt",
+  "Büttgenbach, Glaeser, Roski, Träber, Z. Phys. A 317, 237 (1984), as quoted in Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674": "https://arxiv.org/pdf/1605.03674",
+  "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989)": "https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137",
+  "Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674": "https://arxiv.org/pdf/1605.03674",
+  "Gough, Hannaford, Lowe, J. Phys. B 15, L431 (1982), as listed in R. L. Kurucz, gf7800.all (2011)": "http://kurucz.harvard.edu/linelists/gfall/gf7800.all",
+  "Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674, Table II": "https://arxiv.org/pdf/1605.03674"
+ }
 }
