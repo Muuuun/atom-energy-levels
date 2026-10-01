@@ -6,17 +6,17 @@
   "symbol": "Bi",
   "A": null,
   "Z": 83,
-  "I": null,
+  "I": "9/2",
   "kind": "nist",
   "limit_cm": 58761.65,
   "scale": "auto",
   "spectrum": "Bi I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "209",
   "limit_text": "Bi$^+$ ionisation limit   58761.65 cm$^{-1}$  =  7.28552 eV  (170.179 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "NIST labels the even levels in J1K notation; the LS names used in the literature are given in brackets. The 1972 beam-foil lifetimes were read from the publisher's abstract page by an automated reader: verify before relying on them, and prefer Luo et al. 1995 once accessible. Hyperfine constants of the 6p3 2D and 2P levels are second-hand and printed without uncertainties. The 'use' strings of the two M1 lines carry the parity-violation results because the schema has no field for them."
  },
  "columns": [
   {
@@ -70,6 +70,14 @@
    "plain": "6p3 4S°3/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": -446.942,
+    "A_unc": 0.001,
+    "B": -304.654,
+    "B_unc": 0.002,
+    "tier": "exp",
+    "src": "Hull, Brink, Phys. Rev. A 1, 685 (1970) (atomic-beam magnetic resonance); Pearson et al., J. Phys. G 26, 1829 (2000); Kilgallon et al., Phys. Lett. B 405, 31 (1997) - literature row [34,37,38] of Table 1 in Schmidt et al., Phys. Lett. B 779, 324 (2018)"
+   },
    "col": 1
   },
   {
@@ -83,8 +91,18 @@
    "g": 1.225,
    "name": "^2D^{o}_{3/2}",
    "plain": "6p3 2D°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 36000000.0,
+   "tau_unc": 1000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Liu, Yu, Suo, Liu, Sahoo, \"Investigating properties of heavy and superheavy atomic systems with p3 configurations\", arXiv:2306.15885 (2023), Table IX (relativistic MRCI; M1/E2 decay). No measurement located.",
+   "hfs": {
+    "A": -1231.02,
+    "A_unc": null,
+    "B": -652.5,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "values labelled 'Exp. 2021' with reference Wilman, Elantkowska, Ruczkowski, J. Quant. Spectrosc. Radiat. Transfer 275, 107892 (2021) (a semi-empirical analysis that collects measured constants; the original experiments are not named), as quoted in Tables XI and XII of Liu et al., arXiv:2306.15885 (2023)"
+   },
    "col": 1
   },
   {
@@ -98,8 +116,18 @@
    "g": 1.2,
    "name": "^2D^{o}_{5/2}",
    "plain": "6p3 2D°5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 151000000.0,
+   "tau_unc": 1000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Liu, Yu, Suo, Liu, Sahoo, \"Investigating properties of heavy and superheavy atomic systems with p3 configurations\", arXiv:2306.15885 (2023), Table IX (relativistic MRCI; M1/E2 decay). No measurement located.",
+   "hfs": {
+    "A": 2502.86,
+    "A_unc": null,
+    "B": 23,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "values labelled 'Exp. 2021' with reference Wilman, Elantkowska, Ruczkowski, J. Quant. Spectrosc. Radiat. Transfer 275, 107892 (2021) (a semi-empirical analysis that collects measured constants; the original experiments are not named), as quoted in Tables XI and XII of Liu et al., arXiv:2306.15885 (2023)"
+   },
    "col": 2
   },
   {
@@ -113,8 +141,18 @@
    "g": 0.667,
    "name": "^2P^{o}_{1/2}",
    "plain": "6p3 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11300000.0,
+   "tau_unc": 1000000.0,
+   "tau_tier": "exp",
+   "tau_src": "Krogulec, Wojtkowiak, Heldt, Acta Phys. Pol. A 60, 591 (1981) (time-of-flight on an electron-impact-excited atomic beam; values read in the abstract as reproduced by OSTI/ETDEWEB)",
+   "hfs": {
+    "A": 11260.2,
+    "A_unc": null,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "values labelled 'Exp. 2021' with reference Wilman, Elantkowska, Ruczkowski, J. Quant. Spectrosc. Radiat. Transfer 275, 107892 (2021) (a semi-empirical analysis that collects measured constants; the original experiments are not named), as quoted in Tables XI and XII of Liu et al., arXiv:2306.15885 (2023)"
+   },
    "col": 0
   },
   {
@@ -128,8 +166,18 @@
    "g": 2.088,
    "name": "2[0]_{1/2}",
    "plain": "6p27s 2[0]1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.7,
+   "tau_unc": 1.0,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Madsen, Sørensen, \"Radiative Lifetimes in Sn I and Bi I\", J. Opt. Soc. Am. 62, 1118 (1972) (beam-foil; table read on the publisher's abstract page through an automated page reader, not verified against the printed page)",
+   "hfs": {
+    "A": 4920.8,
+    "A_unc": 0.6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Hull, Brink, Phys. Rev. A 1, 685 (1970) (atomic-beam magnetic resonance); Pearson et al., J. Phys. G 26, 1829 (2000); Kilgallon et al., Phys. Lett. B 405, 31 (1997) - literature row [34,37,38] of Table 1 in Schmidt et al., Phys. Lett. B 779, 324 (2018)"
+   },
    "col": 3
   },
   {
@@ -143,8 +191,18 @@
    "g": null,
    "name": "^2P^{o}_{3/2}",
    "plain": "6p3 2P°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 270000.0,
+   "tau_unc": 20000.0,
+   "tau_tier": "exp",
+   "tau_src": "Krogulec, Wojtkowiak, Heldt, Acta Phys. Pol. A 60, 591 (1981) (time-of-flight on an electron-impact-excited atomic beam; values read in the abstract as reproduced by OSTI/ETDEWEB)",
+   "hfs": {
+    "A": 491.028,
+    "A_unc": null,
+    "B": 978.64,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "values labelled 'Exp. 2021' with reference Wilman, Elantkowska, Ruczkowski, J. Quant. Spectrosc. Radiat. Transfer 275, 107892 (2021) (a semi-empirical analysis that collects measured constants; the original experiments are not named), as quoted in Tables XI and XII of Liu et al., arXiv:2306.15885 (2023)"
+   },
    "col": 1
   },
   {
@@ -158,8 +216,10 @@
    "g": 0.79,
    "name": "2[2]_{3/2}",
    "plain": "6p26d 2[2]3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 27.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Madsen, Sørensen, \"Radiative Lifetimes in Sn I and Bi I\", J. Opt. Soc. Am. 62, 1118 (1972) (beam-foil; table read on the publisher's abstract page through an automated page reader, not verified against the printed page)",
    "col": 4
   },
   {
@@ -173,8 +233,10 @@
    "g": 1.2,
    "name": "2[2]_{5/2}",
    "plain": "6p26d 2[2]5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 3.8,
+   "tau_unc": 1.0,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Madsen, Sørensen, \"Radiative Lifetimes in Sn I and Bi I\", J. Opt. Soc. Am. 62, 1118 (1972) (beam-foil; table read on the publisher's abstract page through an automated page reader, not verified against the printed page)",
    "col": 5
   },
   {
@@ -188,8 +250,10 @@
    "g": 1.676,
    "name": "2[1]_{3/2}",
    "plain": "6p27s 2[1]3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.3,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Madsen, Sørensen, \"Radiative Lifetimes in Sn I and Bi I\", J. Opt. Soc. Am. 62, 1118 (1972) (beam-foil; table read on the publisher's abstract page through an automated page reader, not verified against the printed page)",
    "col": 4
   },
   {
@@ -233,8 +297,10 @@
    "g": 1.41,
    "name": "2[2]_{5/2}",
    "plain": "6p27s 2[2]5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 5.5,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Madsen, Sørensen, \"Radiative Lifetimes in Sn I and Bi I\", J. Opt. Soc. Am. 62, 1118 (1972) (beam-foil; table read on the publisher's abstract page through an automated page reader, not verified against the printed page)",
    "col": 5
   },
   {
@@ -396,6 +462,7 @@
    "wn": 48489.869,
    "lam": 206.2286,
    "air": 206.1628,
+   "gamma_MHz": 28.94,
    "type": "E1",
    "A": 96200000.0,
    "A_tier": "nist",
@@ -403,6 +470,8 @@
    "d": 1.581,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.5291,
+   "br_tier": "nist",
    "lam_obs": 206.22928
   },
   {
@@ -453,6 +522,7 @@
    "wn": 44865.076,
    "lam": 222.8905,
    "air": 222.8212,
+   "gamma_MHz": 37.01,
    "type": "E1",
    "A": 88000000.0,
    "A_tier": "nist",
@@ -460,6 +530,8 @@
    "d": 1.387,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.3784,
+   "br_tier": "nist",
    "lam_obs": 222.8902
   },
   {
@@ -472,6 +544,7 @@
    "wn": 44816.841,
    "lam": 223.1304,
    "air": 223.0611,
+   "gamma_MHz": 41.88,
    "type": "E1",
    "A": 234000000.0,
    "A_tier": "nist",
@@ -479,6 +552,8 @@
    "d": 2.775,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.8892,
+   "br_tier": "nist",
    "lam_obs": 223.13021
   },
   {
@@ -491,6 +566,7 @@
    "wn": 43912.374,
    "lam": 227.7262,
    "air": 227.6559,
+   "gamma_MHz": 5.895,
    "type": "E1",
    "A": 23600000.0,
    "A_tier": "nist",
@@ -498,6 +574,8 @@
    "d": 0.7418,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.6372,
+   "br_tier": "nist",
    "lam_obs": 227.72611
   },
   {
@@ -586,6 +664,7 @@
    "wn": 37070.83,
    "lam": 269.7539,
    "air": 269.6738,
+   "gamma_MHz": 28.94,
    "type": "E1",
    "A": 6200000.0,
    "A_tier": "nist",
@@ -593,6 +672,8 @@
    "d": 0.6003,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.0341,
+   "br_tier": "nist",
    "lam_obs": 269.7548
   },
   {
@@ -738,6 +819,7 @@
    "wn": 33446.037,
    "lam": 298.9891,
    "air": 298.9019,
+   "gamma_MHz": 37.01,
    "type": "E1",
    "A": 54000000.0,
    "A_tier": "nist",
@@ -745,6 +827,8 @@
    "d": 1.688,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.2322,
+   "br_tier": "nist",
    "lam_obs": 298.9876
   },
   {
@@ -757,6 +841,7 @@
    "wn": 33397.802,
    "lam": 299.4209,
    "air": 299.3336,
+   "gamma_MHz": 41.88,
    "type": "E1",
    "A": 14500000.0,
    "A_tier": "nist",
@@ -764,6 +849,8 @@
    "d": 1.074,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.0551,
+   "br_tier": "nist",
    "lam_obs": 299.42
   },
   {
@@ -776,6 +863,7 @@
    "wn": 33052.368,
    "lam": 302.5502,
    "air": 302.4621,
+   "gamma_MHz": 28.94,
    "type": "E1",
    "A": 86200000.0,
    "A_tier": "nist",
@@ -783,6 +871,8 @@
    "d": 2.659,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.4741,
+   "br_tier": "nist",
    "lam_obs": 302.5499
   },
   {
@@ -795,6 +885,8 @@
    "wn": 32588.221,
    "lam": 306.8593,
    "air": 306.7702,
+   "use": "resonance line for collinear and in-source laser spectroscopy of Bi isotopes (hyperfine structure, nuclear moments, charge radii; COLLAPS/ISOLDE with a frequency-doubled dye laser at 307 nm, IRIS Gatchina)",
+   "gamma_MHz": 33.86,
    "type": "E1",
    "A": 167000000.0,
    "A_tier": "nist",
@@ -802,6 +894,8 @@
    "d": 2.182,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.7849,
+   "br_tier": "nist",
    "lam_obs": 306.85906
   },
   {
@@ -814,6 +908,7 @@
    "wn": 32493.335,
    "lam": 307.7554,
    "air": 307.666,
+   "gamma_MHz": 5.895,
    "type": "E1",
    "A": 3310000.0,
    "A_tier": "nist",
@@ -821,6 +916,8 @@
    "d": 0.4364,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.0894,
+   "br_tier": "nist",
    "lam_obs": 307.7548
   },
   {
@@ -833,6 +930,7 @@
    "wn": 29427.575,
    "lam": 339.8173,
    "air": 339.7198,
+   "gamma_MHz": 37.01,
    "type": "E1",
    "A": 17900000.0,
    "A_tier": "nist",
@@ -840,6 +938,8 @@
    "d": 1.178,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.077,
+   "br_tier": "nist",
    "lam_obs": 339.8173
   },
   {
@@ -852,6 +952,7 @@
    "wn": 29379.34,
    "lam": 340.3752,
    "air": 340.2776,
+   "gamma_MHz": 41.88,
    "type": "E1",
    "A": 1500000.0,
    "A_tier": "nist",
@@ -859,6 +960,8 @@
    "d": 0.4185,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.0057,
+   "br_tier": "nist",
    "lam_obs": 340.378
   },
   {
@@ -890,6 +993,7 @@
    "wn": 28474.873,
    "lam": 351.1868,
    "air": 351.0864,
+   "gamma_MHz": 5.895,
    "type": "E1",
    "A": 6500000.0,
    "A_tier": "nist",
@@ -897,6 +1001,8 @@
    "d": 0.7455,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.1755,
+   "br_tier": "nist",
    "lam_obs": 351.1868
   },
   {
@@ -966,6 +1072,7 @@
    "wn": 23204.162,
    "lam": 430.9572,
    "air": 430.836,
+   "gamma_MHz": 37.01,
    "type": "E1",
    "A": 1600000.0,
    "A_tier": "nist",
@@ -973,6 +1080,8 @@
    "d": 0.5028,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0069,
+   "br_tier": "nist",
    "lam_obs": 430.9572
   },
   {
@@ -985,6 +1094,7 @@
    "wn": 22251.46,
    "lam": 449.4087,
    "air": 449.2827,
+   "gamma_MHz": 5.895,
    "type": "E1",
    "A": 1430000.0,
    "A_tier": "nist",
@@ -992,6 +1102,8 @@
    "d": 0.5062,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.0386,
+   "br_tier": "nist",
    "lam_obs": 449.427
   },
   {
@@ -1004,6 +1116,7 @@
    "wn": 21169.182,
    "lam": 472.3848,
    "air": 472.2527,
+   "gamma_MHz": 33.86,
    "type": "E1",
    "A": 9400000.0,
    "A_tier": "nist",
@@ -1011,6 +1124,8 @@
    "d": 0.989,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.0442,
+   "br_tier": "nist",
    "lam_obs": 472.3849
   },
   {
@@ -1034,6 +1149,20 @@
   },
   {
    "kind": "forbidden",
+   "freq": 462.80464,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 2,
+   "wn": 15437.501,
+   "lam": 647.7732,
+   "air": 647.5943,
+   "use": "magnetic-dipole line used for parity-nonconservation optical-rotation measurements in Bi vapour: R = Im(E1/M1) = -7.8(1.8)e-8 on the F=6 -> F'=7 component (Birich et al., Zh. Eksp. Teor. Fiz. 87, 776 (1984) [Sov. Phys. JETP 60, 442], http://jetp.ras.ru/cgi-bin/dn/e_060_03_0442.pdf)",
+   "type": "M1",
+   "gamma_MHz": 1.054e-06
+  },
+  {
+   "kind": "forbidden",
    "freq": 342.33418,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -1042,17 +1171,21 @@
    "wn": 11419.039,
    "lam": 875.7304,
    "air": 875.49,
+   "use": "magnetic-dipole line of the Oxford parity-nonconservation optical-rotation experiment: R = Im(E1_PNC/M1) = -10.12(20)e-8 (Macpherson, Zetie, Warrington, Stacey, Hoare, Phys. Rev. Lett. 67, 2784 (1991), https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.67.2784)",
    "type": "M1",
+   "gamma_MHz": 4.421e-06,
    "A": 22.5,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B+)",
+   "br": 0.81,
+   "br_tier": "nist",
    "lam_obs": 875.731
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -1067,189 +1200,107 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$^4S^{o}_{3/2}$ – $2[2]_{5/2}$",
-     "195.4710",
-     "–",
-     "1533.6931",
-     "1.138",
-     "5.860e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^4S^{o}_{3/2}$ – $2[2]_{5/2}$",
-     "206.2286",
-     "206.1628",
-     "1453.6897",
-     "1.581",
-     "9.620e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^4S^{o}_{3/2}$ – $2[0]_{1/2}$",
-     "211.0886",
-     "211.0217",
-     "1420.2211",
-     "0.916",
-     "9.040e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^4S^{o}_{3/2}$ – $2[1]_{3/2}$",
-     "222.8905",
-     "222.8212",
-     "1345.0211",
-     "1.387",
-     "8.800e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^4S^{o}_{3/2}$ – $2[2]_{5/2}$",
-     "223.1304",
-     "223.0611",
-     "1343.5751",
-     "2.775",
-     "2.340e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^4S^{o}_{3/2}$ – $2[2]_{3/2}$",
-     "227.7262",
-     "227.6559",
-     "1316.4598",
-     "0.742",
-     "2.360e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2D^{o}_{5/2}$ – $5707_{5/2}$",
-     "240.1612",
-     "240.0881",
-     "1248.2968",
-     "1.542",
-     "5.800e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2D^{o}_{3/2}$ – $2[2]_{3/2}$",
-     "262.8682",
-     "262.7899",
-     "1140.4666",
-     "1.279",
-     "4.560e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2P^{o}_{1/2}$ – $5827_{3/2}$",
-     "273.1302",
-     "273.0494",
-     "1097.6172",
-     "0.901",
-     "2.020e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2D^{o}_{3/2}$ – $2[0]_{1/2}$",
-     "278.1298",
-     "278.0477",
-     "1077.8869",
-     "0.810",
-     "3.090e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2D^{o}_{3/2}$ – $2[1]_{1/2}$",
-     "289.8816",
-     "289.7967",
-     "1034.1894",
-     "1.918",
-     "1.530e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2D^{o}_{5/2}$ – $2[2]_{3/2}$",
-     "293.9153",
-     "293.8294",
-     "1019.9961",
-     "2.453",
-     "1.200e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2D^{o}_{3/2}$ – $2[1]_{3/2}$",
-     "298.9891",
-     "298.9019",
-     "1002.6870",
-     "1.688",
-     "5.400e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2D^{o}_{5/2}$ – $2[2]_{5/2}$",
-     "302.5502",
-     "302.4621",
-     "990.8851",
-     "2.659",
-     "8.620e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
      "$^4S^{o}_{3/2}$ – $2[0]_{1/2}$",
      "306.8593",
      "306.7702",
      "976.9703",
      "2.182",
      "1.670e+08",
-     "–",
-     "–",
-     ""
+     "33.86",
+     "78.5",
+     "resonance line for collinear and in-source laser spectros…"
     ],
     [
-     "$^2P^{o}_{1/2}$ – $2[2]_{3/2}$",
-     "359.7123",
-     "359.6097",
-     "833.4229",
-     "1.332",
-     "1.930e+07",
+     "$^4S^{o}_{3/2}$ – $^2D^{o}_{5/2}$",
+     "647.7732",
+     "647.5943",
+     "462.8046",
      "–",
      "–",
-     ""
+     "1.054e-06",
+     "–",
+     "magnetic-dipole line used for parity-nonconservation opti…"
+    ],
+    [
+     "$^4S^{o}_{3/2}$ – $^2D^{o}_{3/2}$",
+     "875.7304",
+     "875.4900",
+     "342.3342",
+     "–",
+     "2.250e+01",
+     "4.421e-06",
+     "81",
+     "magnetic-dipole line of the Oxford parity-nonconservation…"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{209}$Bi hyperfine structure  ($I$ = 9/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$^4S^{o}_{3/2}$",
+     "-446.9420(10)",
+     "-304.6540(20)",
+     "F=3: +3547.64   F=4: +1962.97   F=5: -208.27   F=6: -3093.02"
+    ],
+    [
+     "$^2D^{o}_{3/2}$",
+     "-1231.020",
+     "-652.500",
+     "F=3: +9856.85   F=4: +5367.77   F=5: -651.39   F=6: -8472.51"
+    ],
+    [
+     "$^2D^{o}_{5/2}$",
+     "2502.860",
+     "23.000",
+     "F=2: -34403.78   F=3: -26902.10   F=4: -16897.18   F=5: -4386.71   F=6: +10632.17   F=7: +28162.92"
+    ],
+    [
+     "$^2P^{o}_{1/2}$",
+     "11260.200",
+     "–",
+     "F=4: -30965.55   F=5: +25335.45"
+    ],
+    [
+     "$2[0]_{1/2}$",
+     "4920.8(6)",
+     "–",
+     "F=4: -13532.20   F=5: +11071.80"
+    ],
+    [
+     "$^2P^{o}_{3/2}$",
+     "491.028",
+     "978.640",
+     "F=3: -3602.44   F=4: -2290.75   F=5: -39.50   F=6: +3559.10"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
-  "levels: 18   lines < 2000 nm: 38   with matrix element: 37",
-  "transition-rate provenance: nist: 38",
-  "levels with a measured lifetime: 0"
+  "levels: 18   lines < 2000 nm: 39   with matrix element: 37",
+  "transition-rate provenance: nist: 38, wavelength only: 1",
+  "levels with a measured lifetime: 9"
  ],
- "sources": {}
+ "sources": {
+  "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data, \"Atomic Data for Bi\" (https://physics.nist.gov/PhysRefData/Handbook/Tables/bismuthtable1.htm)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Bi",
+  "Hull, Brink, Phys. Rev. A 1, 685 (1970) (atomic-beam magnetic resonance); Pearson et al., J. Phys. G 26, 1829 (2000); Kilgallon et al., Phys. Lett. B 405, 31 (1997) - literature row [34,37,38] of Table 1 in Schmidt et al., Phys. Lett. B 779, 324 (2018)": "https://inspirehep.net/files/123f484503fc6ea71764b159654b3b98",
+  "Schmidt et al., Phys. Lett. B 779, 324 (2018), Table 1 (collinear laser spectroscopy at COLLAPS/ISOLDE on the 306.77 nm line)": "https://inspirehep.net/files/123f484503fc6ea71764b159654b3b98",
+  "Hull, Brink, Phys. Rev. A 1, 685 (1970), as quoted in Table I of Skripnikov et al., arXiv:2106.04308 (2021)": "https://arxiv.org/abs/2106.04308",
+  "Liu, Yu, Suo, Liu, Sahoo, \"Investigating properties of heavy and superheavy atomic systems with p3 configurations\", arXiv:2306.15885 (2023), Table IX (relativistic MRCI; M1/E2 decay). No measurement located.": "https://arxiv.org/abs/2306.15885",
+  "values labelled 'Exp. 2021' with reference Wilman, Elantkowska, Ruczkowski, J. Quant. Spectrosc. Radiat. Transfer 275, 107892 (2021) (a semi-empirical analysis that collects measured constants; the original experiments are not named), as quoted in Tables XI and XII of Liu et al., arXiv:2306.15885 (2023)": "https://arxiv.org/abs/2306.15885",
+  "George, Munsee, Vergès, J. Opt. Soc. Am. B 2, 1258 (1985) (Fourier-transform spectroscopy), as quoted in Tables XI/XII of Liu et al., arXiv:2306.15885 (2023)": "https://arxiv.org/abs/2306.15885",
+  "Wasowicz, Phys. Scr. 76, 294 (2007), as quoted in Tables XI/XII of Liu et al., arXiv:2306.15885 (2023)": "https://arxiv.org/abs/2306.15885",
+  "Krogulec, Wojtkowiak, Heldt, Acta Phys. Pol. A 60, 591 (1981) (time-of-flight on an electron-impact-excited atomic beam; values read in the abstract as reproduced by OSTI/ETDEWEB)": "https://www.osti.gov/etdeweb/biblio/5545226",
+  "Liu, Yu, Suo, Liu, Sahoo, \"Investigating properties of heavy and superheavy atomic systems with p3 configurations\", arXiv:2306.15885 (2023), Table IX (relativistic MRCI)": "https://arxiv.org/abs/2306.15885",
+  "Andersen, Madsen, Sørensen, \"Radiative Lifetimes in Sn I and Bi I\", J. Opt. Soc. Am. 62, 1118 (1972) (beam-foil; table read on the publisher's abstract page through an automated page reader, not verified against the printed page)": "https://opg.optica.org/josa/abstract.cfm?uri=josa-62-9-1118"
+ }
 }
