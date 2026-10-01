@@ -1,0 +1,394 @@
+{
+ "element": "Cu",
+ "isotopes": {
+  "63": {
+   "I": "3/2",
+   "abundance_percent": 69.15,
+   "abundance_unc": 0.15,
+   "source": "NIST Atomic Weights and Isotopic Compositions (isotopic composition); nuclear spin from Vingerhoets et al., Phys. Rev. C 82, 064311 (2010), Table II and Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table III",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cu&ascii=ascii"
+  },
+  "65": {
+   "I": "3/2",
+   "abundance_percent": 30.85,
+   "abundance_unc": 0.15,
+   "source": "NIST Atomic Weights and Isotopic Compositions (isotopic composition); nuclear spin from Vingerhoets et al., Phys. Rev. C 82, 064311 (2010), Table II and Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table III",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cu&ascii=ascii"
+  }
+ },
+ "ionization_energy": {
+  "natural": [
+   {
+    "value_cm": 62317.46,
+    "unc_cm": 0.03,
+    "reference_level": "3d10 4s 2S1/2 ground level; limit Cu II 3d10 1S0",
+    "method": "compilation",
+    "source": "NIST Atomic Spectra Database, levels of Cu I, series limit (cached data/nist/Cu_I_levels.tsv, NIST reference code L14897)",
+    "url": "https://physics.nist.gov/PhysRefData/ASD/levels_form.html"
+   }
+  ]
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "label": "3d10 4s 2S1/2",
+   "J": "1/2",
+   "hyperfine": {
+    "63": {
+     "A_MHz": 5866.915,
+     "A_unc": 0.005,
+     "method": "experiment",
+     "source": "Ting, Lew, Phys. Rev. 105, 581 (1957), abstract (hyperfine splitting 11733.83(1) Mc/s; the same number is quoted by Hofsäss et al., Phys. Rev. Research 5, 013043 (2023))",
+     "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.105.581",
+     "note": "derived: A = Delta nu / 2 for I = 3/2, J = 1/2",
+     "alternatives": [
+      {
+       "A_MHz": 5867.1,
+       "A_unc": 0.5,
+       "method": "experiment",
+       "source": "Vingerhoets et al., Phys. Rev. C 82, 064311 (2010), Table II (collinear laser spectroscopy on the 324.8 nm line)",
+       "url": "https://arxiv.org/pdf/1011.5420"
+      }
+     ]
+    },
+    "65": {
+     "A_MHz": 6284.405,
+     "A_unc": 0.005,
+     "method": "experiment",
+     "source": "Ting, Lew, Phys. Rev. 105, 581 (1957), abstract (hyperfine splitting 12568.81(1) Mc/s); A = +6284.405(5) MHz is also the literature reference value quoted by Vingerhoets et al., Phys. Rev. C 82, 064311 (2010) (their Refs. 26, 27)",
+     "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.105.581",
+     "note": "derived: A = Delta nu / 2",
+     "alternatives": [
+      {
+       "A_MHz": 6284.0,
+       "A_unc": 0.7,
+       "method": "experiment",
+       "source": "Vingerhoets et al., Phys. Rev. C 82, 064311 (2010), Table II",
+       "url": "https://arxiv.org/pdf/1011.5420"
+      }
+     ]
+    }
+   },
+   "g_J_ratio_to_Cs133": {
+    "value": 1.0,
+    "unc": 0.0005,
+    "method": "experiment",
+    "source": "Ting, Lew, Phys. Rev. 105, 581 (1957), abstract (g_J(63Cu) = g_J(65Cu) = (1.0000 +- 0.0005) g_J(133Cs))",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.105.581",
+    "note": "ratio only"
+   },
+   "hyperfine_anomaly_percent": {
+    "value": 0.015,
+    "unc": 0.002,
+    "method": "experiment",
+    "source": "Ting, Lew, Phys. Rev. 105, 581 (1957), abstract (63Cu-65Cu ground-state hyperfine anomaly)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.105.581"
+   }
+  },
+  {
+   "nist_energy_cm": 11202.618,
+   "label": "3d9 4s2 2D5/2",
+   "J": "5/2",
+   "lifetime": {
+    "value": 44.9,
+    "unit": "s",
+    "method": "theory",
+    "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT; E2 decay). No measurement located",
+    "url": "https://arxiv.org/pdf/2006.14735"
+   },
+   "hyperfine": {
+    "63": {
+     "A_MHz": 749.1,
+     "B_MHz": 186.0,
+     "method": "compilation",
+     "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table IV (values 'used in the calculation', no uncertainties); original: Tenenbaum, Smilanski, Gabay, Levin, Erez, Lavi, Opt. Commun. 32, 473 (1980) and Ankush, Deo, J. Quant. Spectrosc. Radiat. Transfer 134, 21 (2014)",
+     "url": "https://arxiv.org/pdf/2006.14735",
+     "note": "Dzuba et al. warn that the experimental B values of Cu are uncertain ('can change several times depending on which set of data is used')"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 13245.443,
+   "label": "3d9 4s2 2D3/2",
+   "J": "3/2",
+   "lifetime": {
+    "value": 7.3,
+    "unit": "s",
+    "method": "theory",
+    "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT; M1 decay to 2D5/2). No measurement located",
+    "url": "https://arxiv.org/pdf/2006.14735"
+   },
+   "hyperfine": {
+    "63": {
+     "A_MHz": 1851.0,
+     "B_MHz": 137.4,
+     "method": "compilation",
+     "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table IV (values 'used in the calculation', no uncertainties); original: Tenenbaum, Smilanski, Gabay, Levin, Erez, Lavi, Opt. Commun. 32, 473 (1980) and Ankush, Deo, J. Quant. Spectrosc. Radiat. Transfer 134, 21 (2014)",
+     "url": "https://arxiv.org/pdf/2006.14735",
+     "note": "B uncertain, see 2D5/2"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 30535.324,
+   "label": "3d10 4p 2P1/2",
+   "J": "1/2",
+   "lifetime": {
+    "value": 7.27e-09,
+    "unc": 6e-11,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract (delayed-coincidence photon counting, picosecond dye laser, sputtered atoms)",
+    "url": "https://www.osti.gov/etdeweb/biblio/6457447"
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 7.1e-09,
+     "unit": "s",
+     "method": "theory",
+     "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT)",
+     "url": "https://arxiv.org/pdf/2006.14735"
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 30783.697,
+   "label": "3d10 4p 2P3/2",
+   "J": "3/2",
+   "lifetime": {
+    "value": 7.17e-09,
+    "unc": 6e-11,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract",
+    "url": "https://www.osti.gov/etdeweb/biblio/6457447"
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 6.9e-09,
+     "unit": "s",
+     "method": "theory",
+     "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT)",
+     "url": "https://arxiv.org/pdf/2006.14735"
+    }
+   ],
+   "hyperfine": {
+    "63": {
+     "A_MHz": 194.5,
+     "A_unc": 1.1,
+     "B_MHz": -28.0,
+     "B_unc": 0.6,
+     "method": "experiment",
+     "source": "Vingerhoets et al., Phys. Rev. C 82, 064311 (2010), Table II (collinear laser spectroscopy at ISOLDE)",
+     "url": "https://arxiv.org/pdf/1011.5420"
+    },
+    "65": {
+     "A_MHz": 208.4,
+     "A_unc": 0.2,
+     "B_MHz": -25.9,
+     "B_unc": 0.4,
+     "method": "experiment",
+     "source": "Vingerhoets et al., Phys. Rev. C 82, 064311 (2010), Table II (row 65Cu; the text uses B = -25.9(4) MHz as the literature reference value, so this row may reproduce literature numbers of Ting & Lew 1957 / Ney, Z. Phys. 196, 53 (1966))",
+     "url": "https://arxiv.org/pdf/1011.5420"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 40114.01,
+   "label": "3d9 4s4p 4P3/2",
+   "J": "3/2",
+   "lifetime": {
+    "value": 3.44e-07,
+    "unc": 2e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "de Groote et al., Nature Physics 16, 620 (2020), Methods ('the 344(20) ns lifetime of the excited state' at 40,114.01 cm^-1; no reference given there)",
+    "url": "https://www.osti.gov/servlets/purl/1615730",
+    "note": "second-hand; origin (measurement or NIST A values) not stated in the source"
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 11202.618,
+   "lower_J": "1/2",
+   "upper_J": "5/2",
+   "label": "3d10 4s 2S1/2 - 3d9 4s2 2D5/2",
+   "type": "clock",
+   "use": "E2 clock transition proposed for a Cu lattice clock (892.6 nm)",
+   "A_s": {
+    "value": 0.0223,
+    "method": "theory",
+    "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (E2, CIPT)",
+    "url": "https://arxiv.org/pdf/2006.14735"
+   },
+   "E2_amplitude_au": {
+    "value": 2.603,
+    "method": "theory",
+    "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II",
+    "url": "https://arxiv.org/pdf/2006.14735"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 13245.443,
+   "lower_J": "1/2",
+   "upper_J": "3/2",
+   "label": "3d10 4s 2S1/2 - 3d9 4s2 2D3/2",
+   "type": "M1",
+   "use": "second proposed clock transition (755.0 nm)",
+   "A_s": {
+    "value": 6.27e-07,
+    "method": "theory",
+    "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1 only, amplitude 0.0002 mu_B)",
+    "url": "https://arxiv.org/pdf/2006.14735"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 30535.324,
+   "lower_J": "1/2",
+   "upper_J": "1/2",
+   "label": "3d10 4s 2S1/2 - 3d10 4p 2P1/2",
+   "type": "E1",
+   "use": "D1 resonance line 327.4 nm",
+   "A_s": {
+    "value": 135900000.0,
+    "unc": 1100000.0,
+    "method": "experiment",
+    "source": "Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract (lifetime) combined with NIST ASD A values of the 2P-2D branches",
+    "url": "https://www.osti.gov/etdeweb/biblio/6457447",
+    "note": "derived: A = 1/tau - sum of NIST A values of the other decay channels; the branch 4p 2P1/2 -> 3d9 4s2 2D3/2 (578.2 nm, NIST A = 1.65e6 s^-1) was subtracted. NIST's own A for this line equals 1/tau without that subtraction"
+   },
+   "rme_J_ea0": {
+    "value": 2.171,
+    "unc": 0.009,
+    "method": "experiment",
+    "source": "Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract (lifetime) combined with NIST ASD A values of the 2P-2D branches",
+    "url": "https://www.osti.gov/etdeweb/biblio/6457447",
+    "note": "derived from A above with A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), lambda from NIST level energies",
+    "alternatives": [
+     {
+      "value": 2.217,
+      "method": "theory",
+      "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (CIPT, |A| in a.u.)",
+      "url": "https://arxiv.org/pdf/2006.14735"
+     }
+    ]
+   },
+   "branching": {
+    "value": 0.988,
+    "method": "experiment",
+    "source": "Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract with NIST ASD A values",
+    "url": "https://www.osti.gov/etdeweb/biblio/6457447",
+    "note": "derived: 1 - tau * sum of NIST A values of the 2P-2D branches"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 30783.697,
+   "lower_J": "1/2",
+   "upper_J": "3/2",
+   "label": "3d10 4s 2S1/2 - 3d10 4p 2P3/2",
+   "type": "E1",
+   "use": "D2 resonance line 324.8 nm; candidate laser-cooling transition",
+   "A_s": {
+    "value": 137230000.0,
+    "unc": 1200000.0,
+    "method": "experiment",
+    "source": "Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract (lifetime) combined with NIST ASD A values of the 2P-2D branches",
+    "url": "https://www.osti.gov/etdeweb/biblio/6457447",
+    "note": "derived: A = 1/tau - sum of NIST A values of the other decay channels; the branches 4p 2P3/2 -> 2D5/2 (510.6 nm, NIST A = 2.0e6 s^-1) and -> 2D3/2 (570.0 nm, NIST A = 2.4e5 s^-1) were subtracted. NIST's own A for this line equals 1/tau without that subtraction"
+   },
+   "rme_J_ea0": {
+    "value": 3.047,
+    "unc": 0.013,
+    "method": "experiment",
+    "source": "Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract (lifetime) combined with NIST ASD A values of the 2P-2D branches",
+    "url": "https://www.osti.gov/etdeweb/biblio/6457447",
+    "note": "derived from A above with A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), lambda from NIST level energies",
+    "alternatives": [
+     {
+      "value": 3.14,
+      "method": "theory",
+      "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (CIPT, |A| in a.u.)",
+      "url": "https://arxiv.org/pdf/2006.14735"
+     }
+    ]
+   },
+   "branching": {
+    "value": 0.9839,
+    "method": "experiment",
+    "source": "Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract with NIST ASD A values",
+    "url": "https://www.osti.gov/etdeweb/biblio/6457447",
+    "note": "derived: 1 - tau * sum of NIST A values of the 2P-2D branches"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 40114.01,
+   "lower_J": "1/2",
+   "upper_J": "3/2",
+   "label": "3d10 4s 2S1/2 - 3d9 4s4p 4P3/2",
+   "type": "intercombination",
+   "use": "249.2 nm line used for resonance-ionisation spectroscopy of Cu isotopes",
+   "isotope_shift_MHz": {
+    "63-65": {
+     "value": 1055.4,
+     "unc": 2.6,
+     "method": "experiment",
+     "source": "de Groote et al., Nature Physics 16, 620 (2020), Table 1 (collinear resonance ionisation spectroscopy, centroid shift nu(63) - nu(65); statistical uncertainty)",
+     "url": "https://www.osti.gov/servlets/purl/1615730"
+    }
+   }
+  },
+  {
+   "lower_cm": 11202.618,
+   "upper_cm": 13245.443,
+   "lower_J": "5/2",
+   "upper_J": "3/2",
+   "label": "3d9 4s2 2D5/2 - 3d9 4s2 2D3/2",
+   "type": "M1",
+   "use": "decay of 2D3/2 (4.9 micrometre)",
+   "A_s": {
+    "value": 0.138,
+    "method": "theory",
+    "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1, amplitude 1.549 mu_B)",
+    "url": "https://arxiv.org/pdf/2006.14735"
+   }
+  },
+  {
+   "lower_cm": 30535.324,
+   "upper_cm": 30783.697,
+   "lower_J": "1/2",
+   "upper_J": "3/2",
+   "label": "3d10 4p 2P1/2 - 3d10 4p 2P3/2",
+   "type": "M1",
+   "A_s": {
+    "value": 0.000138,
+    "method": "theory",
+    "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1, amplitude 1.154 mu_B)",
+    "url": "https://arxiv.org/pdf/2006.14735"
+   }
+  }
+ ],
+ "not_found": [
+  "isotope shift 63Cu-65Cu of the resonance lines 324.8 nm and 327.4 nm: measured (Bissell et al., Phys. Rev. C 93, 064318 (2016) and older work) but no page with the number could be opened; only the 249.2 nm line shift was sourced",
+  "precise (laser / frequency-comb) absolute frequencies of the 324.8 and 327.4 nm lines: Hofsäss et al. 2023 state the Cu D-line hyperfine intervals are 'known with a precision of 10 kHz' but print no absolute frequencies; none located",
+  "hyperfine A of 3d10 4p 2P1/2 (63Cu, 65Cu): not found in any opened source (a 2024 Fourier-transform study, Li et al., Results in Physics 57, 107321, is open access but the Elsevier server refused access)",
+  "hyperfine constants of the 2D5/2, 2D3/2 metastable levels for 65Cu, and uncertainties for 63Cu: only the 63Cu values used by Dzuba et al. were found",
+  "measured lifetimes of the metastable 3d9 4s2 2D5/2, 2D3/2 levels: none located; theory 44.9 s and 7.3 s",
+  "measured lifetimes of the higher levels drawn on the site (3d9 4s4p 4P, 4F, 4D, 2F, 2P, 2D; 5p 2P; 4d, 5d 2D; 6s 2S): Cederquist, Mannervik, Kisielinski, Phys. Scr. T8, 104 (1984) measured nd 2D (n = 4-6) by beam-foil, and Hannaford & Lowe / Kono & Hattori measured others, but no page with the numbers could be opened (abstracts carry no values)",
+  "Hannaford & Lowe lifetimes and Bengtsson et al. data named in the request for Cu: originals not accessible",
+  "absolute measured g_J values: only the ratio g_J(Cu)/g_J(Cs) = 1.0000(5) (Ting & Lew 1957); NIST table values are already on the site",
+  "measured A values for the 510.6 nm and 578.2 nm copper-vapour-laser lines beyond NIST ASD (2.0e6 and 1.65e6 s^-1, already used by the site): none sourced"
+ ],
+ "conflicts": [
+  "63Cu ground-state A: 5866.915(5) MHz (from the Ting & Lew splitting 11733.83(1) MHz) vs 5867.1(5) MHz (Vingerhoets 2010, laser); consistent. 65Cu: 6284.405(5) vs 6284.0(7) MHz; consistent",
+  "A values of the resonance lines: NIST ASD gives 1.376e8 (327.4 nm) and 1.395e8 s^-1 (324.8 nm), i.e. exactly 1/tau of Carlsson et al. 1989; subtracting the NIST 2P-2D branches gives 1.359e8 and 1.372e8 s^-1 (1.2 % and 1.6 % lower)",
+  "2P-2D lines (510.6, 578.2, 570.0 nm): CIPT theory A = 1.13e6, 8.48e5, 8.23e4 s^-1 vs NIST 2.0e6, 1.65e6, 2.4e5 s^-1; NIST preferred",
+  "65Cu 4p 2P3/2 hyperfine constants A = 208.4(2), B = -25.9(4) MHz appear in Vingerhoets' Table II as results and in the text as literature reference values; treat as literature-anchored"
+ ],
+ "notes": "Both stable isotopes have I = 3/2. Ground-state A is derived from the directly measured hyperfine splitting (Delta nu = 2A). The 3d9 4s4p 4P3/2 level (40114.01 cm^-1) is included because the 249.2 nm line carries the only isotope shift that could be sourced. A_s / rme_J_ea0 for the two resonance lines are derived from the Carlsson et al. 1989 lifetimes after subtracting the weak 2P-2D branches with NIST A values (notes say 'derived'); all other A_s entries are CIPT theory from Dzuba et al. 2021 for the E2/M1 lines NIST does not list; no theory is entered for the 2P-2D E1 lines because NIST has measured A values. rme convention: A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' the upper level. The two copper-vapour-laser lines are 3d10 4p 2P3/2 -> 3d9 4s2 2D5/2 (510.6 nm) and 2P1/2 -> 2D3/2 (578.2 nm); the E2 clock lines are 2S1/2-2D5/2 at 892.6 nm and 2S1/2-2D3/2 at 755.0 nm. Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, hyperfine_anomaly_percent, E2_amplitude_au, lifetime_alternatives."
+}
