@@ -1,39 +1,40 @@
-# Rb I energy levels and E1 transitions below 2 µm
+# Atomic energy level diagrams
 
-**Interactive version: https://muuuun.github.io/rb-energy-levels/** — hover a line or a level to isolate it, click to pin, scroll to zoom.
+**Interactive site: https://muuuun.github.io/atom-energy-levels/**
 
-![Rb energy levels](figures/rb_energy_levels.png)
+Large-format Grotrian diagrams of the neutral atoms used in cold-atom, tweezer, clock and ion-trap labs
+(Li, Be, Na, Mg, K, Ca, Rb, Sr, Cs, Ba, Yb, Dy; several isotopes each). Every transition below 2 µm is drawn and
+labelled with its vacuum wavelength and reduced dipole matrix element |⟨J‖er‖J′⟩| (e·a0). On the site, hover a line
+or a level to isolate it, click to pin, filter by transition type (E1, intercombination, M1, E2, M2, Rydberg).
 
-`figures/rb_energy_levels.pdf` (vector, 38 × 32 in) and `.png` — Grotrian diagram of the 36 fine-structure
-levels up to 10S / 10P / 8D / 7F, all 92 electric-dipole lines with vacuum wavelength < 2 µm, and the
-excitation paths into the Rydberg series. Each arrow carries its vacuum wavelength and reduced dipole
-matrix element |⟨J‖er‖J′⟩| in e·a0.
+![Rubidium-87](docs/rubidium-87/preview.png)
 
-    python3 compute_rb_levels.py   # NIST + ARC + pairinteraction -> data/*.csv, data/validation.txt
-    python3 plot_rb_levels.py      # data/*.csv -> figures/ and docs/ (SVG + data.json for the web page)
+## Pipeline
 
-## Which source supplies what
+    python3 compute.py all     # NIST ASD + data/literature/*.json (+ ARC, pairinteraction for alkalis) -> data/<key>/atom.json, *.csv
+    python3 plot.py all        # -> docs/<slug>/diagram.svg|pdf, preview.png, data.json
+    python3 build_site.py      # -> docs/**/index.html, sitemap.xml
+    python3 stats.py           # -> data/provenance.md  (which source supplied how many numbers)
+
+`species.py` lists the species. Adding one is a dictionary entry: `kind="nist"` needs only the element symbol, an energy
+cut and the isotope; `kind="alkali"` additionally uses ARC so that every E1-allowed pair gets a matrix element.
+
+## Where the numbers come from
+
+Priority for every number: measurement (`data/literature/<El>.json`, each value with citation and URL) > NIST ASD >
+high-accuracy theory quoted in the literature > ARC model potential (alkalis only). Each value carries its tier in the
+CSV files and on the site (`measured`, `NIST`, `theory`, `model calc.`); on the diagrams `*` marks theory and `≈` a model value.
 
 | Quantity | Source |
 |---|---|
-| Level energies, wavelengths, frequencies (n ≤ 10) | NIST ASD level energies (Ritz wavelengths) |
-| Rydberg term energies (n ≥ 11) | pairinteraction 2.3.1 |
-| Dipole matrix elements, lifetimes, branching ratios | ARC 3.9.0 (literature values where it has them, model potential otherwise) |
-| Einstein A, where NIST lists one (D lines, 5S–nP, 5P–6D) | NIST ASD; the matrix element is then derived from it |
-| 87Rb hyperfine constants | ARC |
+| Level energies, wavelengths, frequencies | NIST ASD level energies; measured isotope-specific frequencies where available |
+| Transition rates, matrix elements | measured > NIST ASD > all-order theory (UDel portal, Safronova et al.) > ARC |
+| Lifetimes | measured > theory > ARC sum of rates (alkalis) |
+| Hyperfine constants, isotope shifts | measurements (Allegrini et al. 2022 survey, Steck, original papers) |
+| Rydberg term energies | pairinteraction (Rb); ARC quantum defects hung from the NIST ionisation limit (other alkalis) |
 
-## Data files
+Current counts are in [`data/provenance.md`](data/provenance.md); per-species cross-checks in `data/<key>/validation.txt`.
 
-- `data/transitions.csv` — per line: vacuum / air wavelength, frequency, wavenumber, ARC and pairinteraction
-  wavelength, NIST observed wavelength and A, matrix element (`rme_J_best_ea0` is the one on the figure), branching ratio.
-- `data/levels.csv` — energy from all three sources, binding energy, effective quantum number, lifetime at 0 K and 300 K.
-- `data/rydberg_series.csv`, `data/rydberg_levels.csv` — wavelengths to n = 20…100 and Rydberg term energies.
-- `data/hyperfine_87Rb.csv`, `data/validation.txt`, cached NIST tables `nist_rb1_*.tsv`.
-
-## What the cross-check found (`data/validation.txt`)
-
-- pairinteraction reproduces NIST level energies to 0.001 cm⁻¹ for n ≤ 12.
-- ARC is off by up to 0.55 cm⁻¹ (16 GHz) for 8S, 8P, 8D, and by about −0.15 cm⁻¹ on Rydberg levels;
-  ARC wavelengths are therefore kept only as a comparison column.
-- ARC's model-potential rates for 5S → 9P, 10P are about 3× the NIST values; the figure uses NIST there.
-- For 5S → nP Rydberg excitation (297 nm) ARC and pairinteraction matrix elements differ by about 2×.
+Known caveats: NIST level energies refer to the natural isotope mixture, so wavelengths of minority isotopes are off by the
+isotope shift (listed where measured); conflicts between sources are recorded in the `notes` / `conflicts` fields of the
+literature files; some old lifetime measurements (Cs n ≥ 8) are probably less accurate than modern theory but are kept as primary.

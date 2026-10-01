@@ -1,0 +1,2078 @@
+{
+ "element": "Sr",
+ "isotopes": {
+  "84": {
+   "I": "0",
+   "abundance_percent": 0.56,
+   "abundance_unc": 0.01,
+   "relative_atomic_mass_u": "83.9134191(13)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Sr); nuclear spin from Stellmer & Schreck et al., 'Degenerate quantum gases of strontium', arXiv:1307.0601 (2013), Table I",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Sr&ascii=ascii2&isotype=some",
+   "method": "compilation"
+  },
+  "86": {
+   "I": "0",
+   "abundance_percent": 9.86,
+   "abundance_unc": 0.01,
+   "relative_atomic_mass_u": "85.9092606(12)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Sr); nuclear spin from Stellmer & Schreck et al., 'Degenerate quantum gases of strontium', arXiv:1307.0601 (2013), Table I",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Sr&ascii=ascii2&isotype=some",
+   "method": "compilation"
+  },
+  "87": {
+   "I": "9/2",
+   "abundance_percent": 7.0,
+   "abundance_unc": 0.01,
+   "relative_atomic_mass_u": "86.9088775(12)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Sr); nuclear spin from Stellmer & Schreck et al., 'Degenerate quantum gases of strontium', arXiv:1307.0601 (2013), Table I",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Sr&ascii=ascii2&isotype=some",
+   "method": "compilation",
+   "nuclear_magnetic_moment_muN": {
+    "value": -1.0924,
+    "unc": 0.0007,
+    "method": "compilation",
+    "source": "Olschewski, Z. Phys. 249, 205 (1972) [as quoted in Boyd et al., Phys. Rev. A 76, 022510 (2007)]",
+    "url": "https://arxiv.org/abs/0704.0912",
+    "note": "Boyd 2007 also quotes the diamagnetic correction sigma_d = 0.00345 (Kopfermann 1963). Beloy et al. (arXiv:0709.2655) used mu = -1.0936 muN and Q = 0.305(2) b in their 3P2 calculation."
+   }
+  },
+  "88": {
+   "I": "0",
+   "abundance_percent": 82.58,
+   "abundance_unc": 0.01,
+   "relative_atomic_mass_u": "87.9056125(12)",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Sr); nuclear spin from Stellmer & Schreck et al., 'Degenerate quantum gases of strontium', arXiv:1307.0601 (2013), Table I",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Sr&ascii=ascii2&isotype=some",
+   "method": "compilation",
+   "atomic_mass_u_AME2020": {
+    "value_str": "87.905 612 254(6)",
+    "method": "compilation",
+    "source": "AME2020, Wang et al., Chin. Phys. C 45, 030003 (2021) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487"
+   }
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "label": "5s2 1S0",
+   "g_factor_87Sr": {
+    "note": "J=0: the 87Sr ground-state g-factor is purely nuclear, g_I, from mu_I = -1.0924(7) mu_N (see isotopes['87']).",
+    "method": "compilation",
+    "source": "Boyd et al., Phys. Rev. A 76, 022510 (2007)",
+    "url": "https://arxiv.org/abs/0704.0912"
+   }
+  },
+  {
+   "nist_energy_cm": 14317.507,
+   "label": "5s5p 3P0",
+   "lifetime": {
+    "value": 118,
+    "unc": 3,
+    "unit": "s",
+    "isotope": "87",
+    "method": "experiment",
+    "source": "Muniz, Young, Cline, Thompson, 'Cavity-QED determination of the natural linewidth of the 87Sr millihertz clock transition with 30 uHz resolution', arXiv:2007.07855 (2020)",
+    "url": "https://arxiv.org/abs/2007.07855",
+    "note": "87Sr only (hyperfine-induced decay); natural linewidth gamma0/2pi = 1.35(3) mHz. In bosonic 88Sr the level is E1-forbidden (no single-photon decay at B=0). Muniz et al. quote an earlier determination tau = 330(140) s and ab-initio 110-130 s."
+   },
+   "differential_g_factor_87Sr": {
+    "value": -108.4,
+    "unc": 0.4,
+    "unit": "Hz/G per m_F",
+    "quantity": "delta_g * mu_0 = (g(3P0) - g(1S0)) mu_B/h, clock transition linear Zeeman sensitivity Delta_B/(m_F B)",
+    "method": "experiment",
+    "source": "Boyd et al., Phys. Rev. A 76, 022510 (2007)",
+    "url": "https://arxiv.org/abs/0704.0912"
+   }
+  },
+  {
+   "nist_energy_cm": 14504.334,
+   "label": "5s5p 3P1",
+   "lifetime": {
+    "value": 2.128e-05,
+    "unc": 3e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Nicholson et al., Nat. Commun. 6, 6896 (2015)",
+    "url": "https://arxiv.org/abs/1412.8261",
+    "other_values": [
+     {
+      "value": 2.128e-05,
+      "unc": 4e-08,
+      "note": "weighted mean of 5 measurements, Birge ratio 1.4",
+      "method": "compilation",
+      "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+      "url": "https://arxiv.org/abs/2507.10487"
+     }
+    ]
+   },
+   "hyperfine": {
+    "87": {
+     "A_MHz": -260.084,
+     "A_unc": 0.002,
+     "B_MHz": -35.658,
+     "B_unc": 0.006,
+     "method": "compilation",
+     "source": "zu Putlitz, Z. Phys. 175, 543 (1963), as summarized in Boyd PhD thesis (2007) [as quoted in Heinz et al., Phys. Rev. Lett. 124, 203201 (2020)]",
+     "url": "https://arxiv.org/abs/1912.10350",
+     "other_values": [
+      {
+       "abs_A_MHz": 260.085,
+       "A_unc": 0.002,
+       "abs_B_MHz": 35.667,
+       "B_unc": 0.021,
+       "note": "magnitudes only, printed as |A| = 260085 +- 2 kHz, |B| = 35667 +- 21 kHz",
+       "method": "experiment",
+       "source": "Miyake, Pisenti, Elgee, Sitaram, Campbell, Phys. Rev. Research 1, 033113 (2019)",
+       "url": "https://arxiv.org/abs/1907.06746"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 14898.545,
+   "label": "5s5p 3P2",
+   "lifetime": {
+    "value": 500,
+    "unc_plus": 280,
+    "unc_minus": 130,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Yasuda & Katori, Phys. Rev. Lett. 92, 153004 (2004)",
+    "url": "https://arxiv.org/abs/physics/0310074",
+    "note": "88Sr, extrapolated to T = 0 (zero blackbody radiation); printed as 500 (+280/-130) s. At 300 K BBR-induced decay dominates (gamma_B = 8.03e-3 s^-1 at 299.5 K). Pucher et al. quote it symmetrised as 520(310) s."
+   },
+   "hyperfine": {
+    "87": {
+     "A_MHz": -212.765,
+     "A_unc": 0.001,
+     "B_MHz": 67.215,
+     "B_unc": 0.015,
+     "method": "compilation",
+     "source": "Heider & Brink, Phys. Rev. A 16, 1371 (1977) [as quoted in Beloy, Derevianko, Johnson, 'Hyperfine structure of the metastable 3P2 state of alkaline earth atoms...', arXiv:0709.2655 (Phys. Rev. A 77, 012512 (2008))]",
+     "url": "https://arxiv.org/abs/0709.2655"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 18159.04,
+   "label": "5s4d 3D1",
+   "lifetime": {
+    "value": 2.18e-06,
+    "unc": 1e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Nicholson et al., Nat. Commun. 6, 6896 (2015)",
+    "url": "https://arxiv.org/abs/1412.8261",
+    "other_values": [
+     {
+      "value": 2.171e-06,
+      "unc": 2.4e-08,
+      "method": "theory",
+      "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+      "url": "https://arxiv.org/abs/1210.7272"
+     }
+    ]
+   },
+   "hyperfine": {
+    "87": {
+     "A_MHz": 139.9,
+     "A_unc": 0.2,
+     "B_MHz": 15,
+     "B_unc": 2,
+     "method": "compilation",
+     "source": "Bushaw et al., Z. Phys. D 28, 275 (1993) [as quoted in Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)]",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 18218.784,
+   "label": "5s4d 3D2",
+   "lifetime": {
+    "value": 2.403e-06,
+    "unc": 2.7e-08,
+    "unit": "s",
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272",
+    "note": "No state-resolved measurement found. Term-averaged 5s4d 3D lifetime measured: 2500(200) ns (Redondo et al.) and 2900(200) ns (Miller, Yu, Cooper, Gallagher), both as quoted in Safronova 2013 Table VII; theory term average 2522(28) ns."
+   },
+   "hyperfine": {
+    "87": {
+     "A_MHz": -78.08,
+     "A_unc": 0.05,
+     "B_MHz": 18,
+     "B_unc": 1,
+     "method": "compilation",
+     "source": "Bushaw et al., Z. Phys. D 28, 275 (1993) [as quoted in Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)]",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 18319.261,
+   "label": "5s4d 3D3",
+   "lifetime": {
+    "value": 2.816e-06,
+    "unc": 3.1e-08,
+    "unit": "s",
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272",
+    "note": "No state-resolved measurement found (see 3D2 note)."
+   },
+   "hyperfine": {
+    "87": {
+     "A_MHz": -115.3,
+     "A_unc": 0.2,
+     "B_MHz": 51,
+     "B_unc": 9,
+     "method": "compilation",
+     "source": "Bushaw et al., Z. Phys. D 28, 275 (1993) [as quoted in Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)]",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 20149.685,
+   "label": "5s4d 1D2",
+   "lifetime": {
+    "value": 0.0004219,
+    "unc": 1.8e-06,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "Okamoto et al. print the total decay rate gamma(1D2) = 2.37(1)e3 s^-1; Pucher et al. print the corresponding 421.9(18) us.",
+    "other_values": [
+     {
+      "decay_rate_s": 2430.0,
+      "unc": 60.0,
+      "method": "experiment",
+      "source": "Husain & Roberts, Chem. Phys. 127, 203 (1988) [as quoted in Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026)]",
+      "url": "https://arxiv.org/abs/2510.22184"
+     },
+     {
+      "value": 0.0004216,
+      "unc": 1.8e-06,
+      "note": "weighted mean of Okamoto 2026 and Husain & Roberts 1988",
+      "method": "compilation",
+      "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+      "url": "https://arxiv.org/abs/2507.10487"
+     }
+    ]
+   },
+   "hyperfine": {
+    "87": {
+     "A_MHz": -5.5734,
+     "A_unc": 0.0004,
+     "B_MHz": 55.421,
+     "B_unc": 0.006,
+     "method": "experiment",
+     "source": "Grundevik, Gustavsson, Lindgren, Olsson, Rosen, Z. Phys. A 311 (3) (1983)",
+     "url": "https://www.osti.gov/etdeweb/biblio/6267242",
+     "note": "laser-rf double resonance; values read from the OSTI abstract record"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 21698.452,
+   "label": "5s5p 1P1",
+   "lifetime": {
+    "value": 5.216e-09,
+    "unc": 1.4e-11,
+    "unc_stat": 6e-12,
+    "unc_sys": 1.3e-11,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Puljic, Cipris, Aumiler, Ban, Santic, Phys. Rev. A 111, 032809 (2025)",
+    "url": "https://arxiv.org/abs/2501.07395",
+    "note": "Direct time-correlated single-photon counting. Printed as (5.216 +- 0.006stat +- 0.013sys) ns; 'unc' is the quadrature sum of the two printed components.",
+    "other_values": [
+     {
+      "value": 5.263e-09,
+      "unc": 4e-12,
+      "note": "photoassociation spectroscopy, from C3 = 18.360(13) a.u.",
+      "method": "experiment",
+      "source": "Yasuda, Kishimoto, Takamoto, Katori, Phys. Rev. A 73, 011403(R) (2006)",
+      "url": "https://arxiv.org/abs/physics/0501053"
+     },
+     {
+      "value": 5.234e-09,
+      "unc": 8e-12,
+      "note": "extracted from the measured 1S0 tune-out frequency combined with atomic-structure theory and the 3P1 lifetime (not a direct lifetime measurement)",
+      "method": "experiment",
+      "source": "Heinz et al., Phys. Rev. Lett. 124, 203201 (2020)",
+      "url": "https://arxiv.org/abs/1912.10350"
+     },
+     {
+      "value": 5.253e-09,
+      "unc": 1.2e-11,
+      "note": "weighted mean of six measurements, uncertainty inflated by Birge ratio 3.4",
+      "method": "compilation",
+      "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+      "url": "https://arxiv.org/abs/2507.10487"
+     }
+    ]
+   },
+   "hyperfine": {
+    "87": {
+     "A_MHz": -3.4,
+     "A_unc": 0.4,
+     "B_MHz": 39,
+     "B_unc": 4,
+     "method": "compilation",
+     "source": "Kluge & Sauter, Z. Phys. 270, 295 (1974) [as quoted in Heinz et al., Phys. Rev. Lett. 124, 203201 (2020)]",
+     "url": "https://arxiv.org/abs/1912.10350"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 29038.773,
+   "label": "5s6s 3S1",
+   "lifetime": {
+    "value": 1.392e-08,
+    "unc": 1.1e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Heinz et al., Phys. Rev. Lett. 124, 203201 (2020)",
+    "url": "https://arxiv.org/abs/1912.10350",
+    "note": "From tune-out wavelength + theory analysis (Heinz 2020).",
+    "other_values": [
+     {
+      "value": 1.389e-08,
+      "unc": 2.1e-10,
+      "note": "weighted mean of four inconsistent measurements, Birge ratio 1.9",
+      "method": "compilation",
+      "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+      "url": "https://arxiv.org/abs/2507.10487"
+     },
+     {
+      "value": 1.392e-08,
+      "unc": 7e-11,
+      "method": "theory",
+      "source": "UDel Portal for High-Precision Atomic Data (Barakhshan et al.) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+      "url": "https://arxiv.org/abs/2507.10487"
+     }
+    ]
+   },
+   "hyperfine": {
+    "87": {
+     "A_MHz": -542.0,
+     "A_unc": 0.1,
+     "B_MHz": -0.1,
+     "B_unc": 0.5,
+     "method": "experiment",
+     "source": "Courtillot et al., Eur. Phys. J. D 33, 161 (2005)",
+     "url": "https://arxiv.org/abs/physics/0410108"
+    }
+   },
+   "isotope_shift_level_MHz": {
+    "88-87": {
+     "value": 54.9,
+     "unc": 0.3,
+     "note": "shift of the 3S1 level referenced to the ground state, Delta_87,88 = nu(88) - nu(87) convention of Courtillot Table V (same table: 3P0 62.9(1.3) MHz, 3P1 62.150(70) MHz)",
+     "method": "experiment",
+     "source": "Courtillot et al., Eur. Phys. J. D 33, 161 (2005)",
+     "url": "https://arxiv.org/abs/physics/0410108"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 35006.908,
+   "label": "5s5d 3D1",
+   "hyperfine": {
+    "87": {
+     "A_MHz": 227.3,
+     "A_unc": 0.7,
+     "B_MHz": 0,
+     "B_unc": 10,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 35021.989,
+   "label": "5s5d 3D2",
+   "hyperfine": {
+    "87": {
+     "A_MHz": -71.5,
+     "A_unc": 0.5,
+     "B_MHz": 0,
+     "B_unc": 30,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 35045.019,
+   "label": "5s5d 3D3",
+   "hyperfine": {
+    "87": {
+     "A_MHz": -156.9,
+     "A_unc": 0.3,
+     "B_MHz": 0,
+     "B_unc": 30,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409",
+     "note": "based on a speculative assignment of the transitions (authors' footnote a)"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 39685.83,
+   "label": "5s6d 3D1",
+   "hyperfine": {
+    "87": {
+     "A_MHz": 239.599,
+     "A_unc": 0.011,
+     "B_MHz": 9.382,
+     "B_unc": 0.034,
+     "method": "experiment",
+     "source": "Zhang, Tiwari, Ganesh, Singh, Phys. Rev. Research 6, 043106 (2024)",
+     "url": "https://arxiv.org/abs/2306.11082",
+     "note": "second-order perturbation analysis; first-order analysis gives A = 238.984(11), B = 15.500(34) MHz",
+     "other_values": [
+      {
+       "A_MHz": 239.7,
+       "A_unc": 0.5,
+       "B_MHz": 5,
+       "B_unc": 20,
+       "method": "experiment",
+       "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+       "url": "https://arxiv.org/abs/1406.0409"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 39690.802,
+   "label": "5s6d 3D2",
+   "hyperfine": {
+    "87": {
+     "A_MHz": -163.2,
+     "A_unc": 0.9,
+     "B_MHz": 30,
+     "B_unc": 20,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 39703.109,
+   "label": "5s6d 3D3",
+   "hyperfine": {
+    "87": {
+     "A_MHz": -161.8,
+     "A_unc": 0.5,
+     "B_MHz": 20,
+     "B_unc": 20,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 21698.452,
+   "label": "5s2 1S0 - 5s5p 1P1",
+   "use": "461 nm blue MOT / Zeeman slower / imaging",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 650.503815,
+    "unc": 6e-06,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "isotope": "88",
+    "note": "Weighted mean (Birge ratio 1.2) of Lee et al., Metrologia (2026) and the historical value in Sansonetti & Nave 2010.",
+    "other_values": [
+     {
+      "value": 650.503775,
+      "unc": 1e-05,
+      "method": "experiment",
+      "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+      "url": "https://arxiv.org/abs/1406.0409",
+      "isotope": "88",
+      "note": "wavemeter 'spin-off' value 650 503 775(10) MHz; 40 MHz below the Pucher mean"
+     }
+    ]
+   },
+   "branching": {
+    "value": 0.9999705,
+    "unc": 2.6e-06,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "1 minus measured leaks to 5s4d 1D2, 3D1, 3D2 (Okamoto et al. 2025, 2026)"
+   },
+   "natural_linewidth_MHz": {
+    "value": 30.3,
+    "unc": 0.07,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "FWHM Gamma/2pi from the mean lifetime 5.253(12) ns; total decay rate 190.4(4)e6 s^-1"
+   },
+   "reduced_matrix_element_ea0": {
+    "value": 5.252,
+    "unc": 0.006,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "from mean lifetime 5.253(12) ns; convention <J||er||J'> = sqrt(2J'+1)|d| (Pucher Eq. 46)",
+    "other_values": [
+     {
+      "value": 5.248,
+      "unc": 0.002,
+      "method": "compilation",
+      "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+      "url": "https://arxiv.org/abs/1210.7272",
+      "note": "recommended value derived from the Yasuda 2006 lifetime 5.263(4) ns"
+     }
+    ]
+   },
+   "isotope_shift_MHz": {
+    "84-88": {
+     "value": -275,
+     "unc": 3,
+     "method": "compilation",
+     "source": "Bushaw & Noertershaeuser, Spectrochim. Acta B 55, 1679 (2000); Zhang, Terabayashi, Hasegawa, Spectrochim. Acta B 225, 107118 (2025) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487",
+     "note": "weighted mean, Birge ratio 12.5 (sources disagree)"
+    },
+    "86-88": {
+     "value": -126,
+     "unc": 2,
+     "method": "compilation",
+     "source": "Bushaw & Noertershaeuser 2000; Zhang et al. 2025 [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487",
+     "note": "weighted mean, Birge ratio 10.7"
+    },
+    "87-88": {
+     "value": -47,
+     "unc": 2,
+     "method": "compilation",
+     "source": "Bushaw & Noertershaeuser 2000; Zhang et al. 2025 [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487",
+     "note": "87Sr centre of gravity; weighted mean, Birge ratio 7.2"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 14504.334,
+   "label": "5s2 1S0 - 5s5p 3P1",
+   "use": "689 nm red MOT (narrow-line cooling)",
+   "type": "intercombination",
+   "frequency_THz": {
+    "value": 434.829121311,
+    "unc": 1e-08,
+    "method": "experiment",
+    "source": "Ferrari et al., Phys. Rev. Lett. 91, 243002 (2003)",
+    "url": "https://arxiv.org/abs/physics/0309014",
+    "isotope": "88",
+    "value_kHz_str": "434 829 121 311 (10)",
+    "other_values": [
+     {
+      "value": 434.8291213,
+      "unc": 2e-08,
+      "method": "experiment",
+      "source": "Courtillot et al., Eur. Phys. J. D 33, 161 (2005)",
+      "url": "https://arxiv.org/abs/physics/0410108",
+      "isotope": "88"
+     },
+     {
+      "value": 434.829121309,
+      "unc": 9e-09,
+      "method": "compilation",
+      "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+      "url": "https://arxiv.org/abs/2507.10487",
+      "isotope": "88",
+      "note": "weighted mean of Ferrari 2003 and Courtillot 2005"
+     },
+     {
+      "value": 434.828957494,
+      "unc": 1e-08,
+      "method": "experiment",
+      "source": "Ferrari et al., Phys. Rev. Lett. 91, 243002 (2003)",
+      "url": "https://arxiv.org/abs/physics/0309014",
+      "isotope": "86"
+     }
+    ]
+   },
+   "A_s": {
+    "value": 47000.0,
+    "unc": 90.0,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "printed as Gamma = 47.00(9)e3 s^-1 from the mean lifetime 21.28(4) us; only decay channel. NIST ASD: 4.69e4 (A+)."
+   },
+   "natural_linewidth_kHz": {
+    "value": 7.481,
+    "unc": 0.015,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487"
+   },
+   "reduced_matrix_element_ea0": {
+    "value": 0.15102,
+    "unc": 0.00015,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487"
+   },
+   "isotope_shift_MHz": {
+    "84-88": {
+     "value": -351.496,
+     "unc": 0.005,
+     "method": "experiment",
+     "source": "Miyake, Pisenti, Elgee, Sitaram, Campbell, Phys. Rev. Research 1, 033113 (2019) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487"
+    },
+    "86-88": {
+     "value": -163.8174,
+     "unc": 0.0002,
+     "method": "experiment",
+     "source": "Ferrari et al. PRL 91, 243002 (2003) [163 817.4(0.2) kHz] and Miyake et al. 2019 [163818.7 +-0.3 +-3.8 kHz] [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487"
+    },
+    "87-88": {
+     "value": -62.186,
+     "unc": 0.012,
+     "method": "experiment",
+     "source": "Miyake et al. 2019 [62186.5 +-0.6 +-11.7 kHz]; Courtillot et al. 2005 [62 150(70) kHz] [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487",
+     "note": "87Sr hyperfine centre of gravity"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 14317.507,
+   "label": "5s2 1S0 - 5s5p 3P0",
+   "use": "698 nm optical clock / optical qubit",
+   "type": "clock",
+   "frequency_THz": {
+    "value": 429.22800422987297,
+    "value_Hz_str": "429 228 004 229 872.99",
+    "rel_unc": 1.9e-16,
+    "isotope": "87",
+    "method": "compilation",
+    "source": "Margolis et al., 'The CIPM list Recommended values of standard frequencies: 2021 update', arXiv:2401.14537 (Metrologia 2024)",
+    "url": "https://arxiv.org/abs/2401.14537",
+    "note": "CIPM 2021 recommended value (secondary representation of the second). Uncertainty printed as fractional 1.9e-16. The float is truncated by double precision; use value_Hz_str."
+   },
+   "frequency_THz_other_isotopes": {
+    "88": {
+     "value": 429.228066418007,
+     "value_Hz_str": "429 228 066 418 007.01",
+     "rel_unc": 2e-16,
+     "method": "compilation",
+     "source": "Margolis et al., 'The CIPM list Recommended values of standard frequencies: 2021 update', arXiv:2401.14537 (Metrologia 2024)",
+     "url": "https://arxiv.org/abs/2401.14537",
+     "note": "CIPM 2021. Pucher et al. quote the 2025 BIPM value 429 228 066 418 007.008(82) Hz."
+    }
+   },
+   "natural_linewidth_mHz": {
+    "value": 1.35,
+    "unc": 0.03,
+    "method": "experiment",
+    "source": "Muniz, Young, Cline, Thompson, 'Cavity-QED determination of the natural linewidth of the 87Sr millihertz clock transition with 30 uHz resolution', arXiv:2007.07855 (2020)",
+    "url": "https://arxiv.org/abs/2007.07855",
+    "isotope": "87",
+    "note": "gamma0/2pi; tau = 118(3) s. 87Sr only (hyperfine quenching)."
+   },
+   "isotope_shift_MHz": {
+    "84-88": {
+     "value": -349.656,
+     "unc": 0.01,
+     "method": "experiment",
+     "source": "Miyake, Pisenti, Elgee, Sitaram, Campbell, Phys. Rev. Research 1, 033113 (2019) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487"
+    },
+    "86-88": {
+     "value": -162.939,
+     "unc": 0.011,
+     "method": "experiment",
+     "source": "Miyake, Pisenti, Elgee, Sitaram, Campbell, Phys. Rev. Research 1, 033113 (2019) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487"
+    },
+    "87-88": {
+     "value": -62.188134004,
+     "unc": 1e-08,
+     "method": "compilation",
+     "source": "Takano, Mizushima, Katori, Appl. Phys. Express 10, 072801 (2017) and others [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487",
+     "note": "Consistent with the CIPM ratio nu(88Sr)/nu(87Sr) = 1.000 000 144 883 682 777(23) (Margolis et al.)."
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 14898.545,
+   "label": "5s2 1S0 - 5s5p 3P2",
+   "use": "671 nm magnetic-quadrupole line (fine-structure qubit, local addressing)",
+   "type": "M2",
+   "frequency_THz": {
+    "value": 446.647242704,
+    "unc": 2e-09,
+    "method": "experiment",
+    "source": "Trautmann et al., Phys. Rev. Research 5, 013219 (2023)",
+    "url": "https://arxiv.org/abs/2211.02470",
+    "isotope": "88",
+    "note": "446 647 242 704 +- 0.04stat +- 2sys kHz"
+   },
+   "A_s": {
+    "value": 0.000152,
+    "unc": 4.3e-05,
+    "method": "experiment",
+    "source": "Kluesener et al., Phys. Rev. Lett. 132, 253201 (2024)",
+    "url": "https://arxiv.org/abs/2401.03934",
+    "note": "M2 decay rate to the ground state only (linewidth 24(7) uHz); theory in same paper: 112(4)e-6 s^-1"
+   },
+   "M2_matrix_element_muB": {
+    "value": 22.6,
+    "unc": 0.4,
+    "method": "theory",
+    "source": "Kluesener et al., Phys. Rev. Lett. 132, 253201 (2024)",
+    "url": "https://arxiv.org/abs/2401.03934",
+    "note": "CI+all-order |<1S0||M2||3P2>|"
+   },
+   "isotope_shift_MHz": {
+    "87-88": {
+     "value": -62.91,
+     "unc": 0.04,
+     "method": "experiment",
+     "source": "Trautmann et al., Phys. Rev. Research 5, 013219 (2023)",
+     "url": "https://arxiv.org/abs/2211.02470",
+     "note": "printed as nu(88Sr) - nu(87Sr) = +62.91(4) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 14317.507,
+   "upper_cm": 29038.773,
+   "label": "5s5p 3P0 - 5s6s 3S1",
+   "use": "679 nm repumper",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 441.3327513,
+    "unc": 7e-07,
+    "method": "experiment",
+    "source": "Courtillot et al., Eur. Phys. J. D 33, 161 (2005)",
+    "url": "https://arxiv.org/abs/physics/0410108",
+    "isotope": "88"
+   },
+   "A_s": {
+    "value": 8360000.0,
+    "unc": 140000.0,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "mean measured 3S1 lifetime 13.89(21) ns times THEORETICAL branching fraction (UDel portal). NIST ASD: 8.9e6 (B+)."
+   },
+   "branching": {
+    "value": 0.1161,
+    "unc": 0.001,
+    "method": "theory",
+    "source": "UDel Portal for High-Precision Atomic Data (Barakhshan et al.) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487"
+   },
+   "reduced_matrix_element_ea0": {
+    "value": 1.97,
+    "unc": 0.017,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "from measured lifetime + theoretical branching",
+    "other_values": [
+     {
+      "value": 1.962,
+      "unc": 0.01,
+      "method": "theory",
+      "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+      "url": "https://arxiv.org/abs/1210.7272"
+     }
+    ]
+   },
+   "isotope_shift_MHz": {
+    "87-88": {
+     "value": 7.29,
+     "unc": 0.3,
+     "method": "compilation",
+     "source": "Courtillot et al. 2005 level shifts combined with Miyake 2019 / Takano 2017 [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487",
+     "note": "87Sr centre of gravity"
+    }
+   }
+  },
+  {
+   "lower_cm": 14504.334,
+   "upper_cm": 29038.773,
+   "label": "5s5p 3P1 - 5s6s 3S1",
+   "use": "688 nm (3P1-3S1)",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 435.7316972,
+    "unc": 5e-07,
+    "method": "experiment",
+    "source": "Courtillot et al., Eur. Phys. J. D 33, 161 (2005)",
+    "url": "https://arxiv.org/abs/physics/0410108",
+    "isotope": "88"
+   },
+   "A_s": {
+    "value": 24500000.0,
+    "unc": 400000.0,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "mean measured 3S1 lifetime 13.89(21) ns times THEORETICAL branching fraction (UDel portal). NIST ASD: 2.7e7 (B+)."
+   },
+   "branching": {
+    "value": 0.3405,
+    "unc": 0.0024,
+    "method": "theory",
+    "source": "UDel Portal for High-Precision Atomic Data (Barakhshan et al.) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487"
+   },
+   "reduced_matrix_element_ea0": {
+    "value": 3.439,
+    "unc": 0.029,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "from measured lifetime + theoretical branching"
+   },
+   "isotope_shift_MHz": {
+    "87-88": {
+     "value": 7.29,
+     "unc": 0.3,
+     "method": "compilation",
+     "source": "Courtillot et al. 2005 level shifts combined with Miyake 2019 / Takano 2017 [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487",
+     "note": "87Sr centre of gravity"
+    }
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 29038.773,
+   "label": "5s5p 3P2 - 5s6s 3S1",
+   "use": "707 nm repumper",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 423.914969,
+    "unc": 3e-05,
+    "method": "experiment",
+    "source": "Onishchenko et al., 'The frequency of the ultranarrow 1S0-3P2 transition in 87Sr', arXiv:1812.02115 (Phys. Rev. A 99, 052503 (2019))",
+    "url": "https://arxiv.org/abs/1812.02115",
+    "isotope": "87",
+    "hyperfine_component": "3P2 F=7/2 - 3S1 F'=7/2",
+    "note": "NOT a centre-of-gravity or 88Sr value: only this 87Sr hyperfine component is published (423 914 969(30) MHz, derived by the authors from their 1S0-3P2 measurement and literature intervals). No direct 88Sr measurement was found; use the NIST Ritz value for the diagram.",
+    "other_values": [
+     {
+      "value": 423.91634,
+      "unc": 3e-05,
+      "method": "compilation",
+      "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+      "url": "https://arxiv.org/abs/2507.10487",
+      "isotope": "88",
+      "note": "SUSPECT. Pucher Eq. 35 converts the 87Sr value with hyperfine shifts 1597.138(8) MHz (3P2 F=7/2) and 2981.0(6) MHz (3S1 F=7/2). Their result is ~2.8 GHz (0.09 cm^-1) above both the NIST Ritz value and the closure 3S1 - 3P2 built from the 679/698/671 nm absolute frequencies in this file; the gap equals twice the difference of the two hyperfine shifts, i.e. it looks like a sign error in that conversion."
+     }
+    ]
+   },
+   "A_s": {
+    "value": 39100000.0,
+    "unc": 600000.0,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "mean measured 3S1 lifetime times THEORETICAL branching fraction. NIST ASD: 4.2e7 (B)."
+   },
+   "branching": {
+    "value": 0.5432,
+    "unc": 0.0025,
+    "method": "theory",
+    "source": "UDel Portal for High-Precision Atomic Data (Barakhshan et al.) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "3S1 -> 1P1 leak: 1.31(22)e-4 (theory, same source)"
+   },
+   "reduced_matrix_element_ea0": {
+    "value": 4.526,
+    "unc": 0.036,
+    "method": "compilation",
+    "source": "Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)",
+    "url": "https://arxiv.org/abs/2507.10487"
+   },
+   "isotope_shift_MHz": {
+    "87-88": {
+     "value": 8.0,
+     "unc": 0.3,
+     "method": "compilation",
+     "source": "Courtillot 2005; Trautmann 2023 [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+     "url": "https://arxiv.org/abs/2507.10487"
+    }
+   }
+  },
+  {
+   "lower_cm": 20149.685,
+   "upper_cm": 21698.452,
+   "label": "5s4d 1D2 - 5s5p 1P1",
+   "use": "6.5 um leak out of the 461 nm cycle",
+   "type": "E1",
+   "A_s": {
+    "value": 5300.0,
+    "unc": 500.0,
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026)",
+    "url": "https://arxiv.org/abs/2510.22184",
+    "note": "first direct measurement",
+    "other_values": [
+     {
+      "value": 3900.0,
+      "unc": 1500.0,
+      "method": "experiment",
+      "source": "Hunter, Walker, Weiss, Phys. Rev. Lett. 56, 823 (1986) [as quoted in Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026)]",
+      "url": "https://arxiv.org/abs/2510.22184",
+      "note": "indirect, relies on a calculated 1D2-1S0 E2 rate; origin of the 'textbook' 1:50 000"
+     },
+     {
+      "value": 9250.0,
+      "unc": 400.0,
+      "method": "theory",
+      "source": "Cooper et al., Phys. Rev. X 8, 041055 (2018)",
+      "url": "https://arxiv.org/abs/1810.06537",
+      "note": "CI+all-order; 1:20.5(9)e3. Tweezer loss measurements in the same paper bound 1/chi between 17(3)e3 and 24(4)e3."
+     }
+    ]
+   },
+   "branching": {
+    "value": 2.8e-05,
+    "unc": 3e-06,
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "= 1 : 3.6(3)e4 (Okamoto Table I)"
+   },
+   "reduced_matrix_element_ea0": {
+    "value": 1.92,
+    "unc": 0.04,
+    "method": "theory",
+    "source": "Cooper et al., Phys. Rev. X 8, 041055 (2018)",
+    "url": "https://arxiv.org/abs/1810.06537"
+   }
+  },
+  {
+   "lower_cm": 18159.04,
+   "upper_cm": 21698.452,
+   "label": "5s4d 3D1 - 5s5p 1P1",
+   "use": "weak leak out of the 461 nm cycle",
+   "type": "intercombination",
+   "A_s": {
+    "value": 66,
+    "unc": 6,
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 112, 043118 (2025) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "branching 1 : 2.9(3)e6"
+   }
+  },
+  {
+   "lower_cm": 18218.784,
+   "upper_cm": 21698.452,
+   "label": "5s4d 3D2 - 5s5p 1P1",
+   "use": "weak leak out of the 461 nm cycle",
+   "type": "intercombination",
+   "A_s": {
+    "value": 240.0,
+    "unc": 20.0,
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 112, 043118 (2025) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "branching 1 : 7.9(7)e5"
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 20149.685,
+   "label": "5s5p 3P2 - 5s4d 1D2",
+   "use": "1D2 decay to the metastable reservoir state",
+   "type": "intercombination",
+   "A_s": {
+    "value": 418,
+    "unc": 9,
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026)",
+    "url": "https://arxiv.org/abs/2510.22184"
+   },
+   "branching": {
+    "value": 0.177,
+    "unc": 0.004,
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026)",
+    "url": "https://arxiv.org/abs/2510.22184",
+    "note": "widely used theory value was 0.322 (Bauschlicher et al. 1985)"
+   }
+  },
+  {
+   "lower_cm": 14504.334,
+   "upper_cm": 20149.685,
+   "label": "5s5p 3P1 - 5s4d 1D2",
+   "use": "1D2 decay returning atoms to the ground state via 3P1",
+   "type": "intercombination",
+   "A_s": {
+    "value": 1950.0,
+    "unc": 100.0,
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026)",
+    "url": "https://arxiv.org/abs/2510.22184",
+    "note": "derived by the authors as (1-B)gamma(1D2) - A(1D2->1S0), with A(1D2->1S0) ~ 100 s^-1 from theory"
+   },
+   "branching": {
+    "value": 0.82,
+    "unc": 0.04,
+    "method": "experiment",
+    "source": "Okamoto, Aoki, Torii, Phys. Rev. A 113, L060803 (2026)",
+    "url": "https://arxiv.org/abs/2510.22184"
+   }
+  },
+  {
+   "lower_cm": 14317.507,
+   "upper_cm": 18159.04,
+   "label": "5s5p 3P0 - 5s4d 3D1",
+   "use": "2.6 um (clock BBR shift; 3D1 lifetime measurement)",
+   "type": "E1",
+   "A_s": {
+    "value": 274000.0,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272",
+    "note": "recommended CI+all-order value; measured 3D1 lifetime 2.18(1) us is in the level entry"
+   },
+   "branching": {
+    "value": 0.5953,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "reduced_matrix_element_ea0": {
+    "value": 2.675,
+    "unc": 0.013,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272",
+    "note": "recommended; line strength S = 7.156 a.u."
+   }
+  },
+  {
+   "lower_cm": 14504.334,
+   "upper_cm": 18159.04,
+   "label": "5s5p 3P1 - 5s4d 3D1",
+   "use": "2.7 um",
+   "type": "E1",
+   "A_s": {
+    "value": 177700.0,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "branching": {
+    "value": 0.3862,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "line_strength_au": {
+    "value": 5.391,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 18159.04,
+   "label": "5s5p 3P2 - 5s4d 3D1",
+   "use": "3.07 um",
+   "type": "E1",
+   "A_s": {
+    "value": 8510.0,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "branching": {
+    "value": 0.0185,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "line_strength_au": {
+    "value": 0.364,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   }
+  },
+  {
+   "lower_cm": 14504.334,
+   "upper_cm": 18218.784,
+   "label": "5s5p 3P1 - 5s4d 3D2",
+   "use": "2.7 um",
+   "type": "E1",
+   "A_s": {
+    "value": 335400.0,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "branching": {
+    "value": 0.8058,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "line_strength_au": {
+    "value": 16.149,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 18218.784,
+   "label": "5s5p 3P2 - 5s4d 3D2",
+   "use": "3.01 um single-laser repumper",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 99.53787,
+    "unc": 7.5e-05,
+    "method": "experiment",
+    "source": "Mickelson et al., J. Phys. B 42, 235001 (2009) [as quoted in Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)]",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "isotope": "88",
+    "note": "Mickelson et al. print the wavenumber 3320.226 +- 0.0025 cm^-1"
+   },
+   "A_s": {
+    "value": 80800.0,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "branching": {
+    "value": 0.1942,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "line_strength_au": {
+    "value": 5.449,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "isotope_shift_MHz": {
+    "87-88": {
+     "value": -110,
+     "unc": 30,
+     "method": "experiment",
+     "source": "Mickelson et al., J. Phys. B 42, 235001 (2009)",
+     "url": "https://arxiv.org/abs/0907.2270"
+    },
+    "86-88": {
+     "value": -270,
+     "unc": 40,
+     "method": "experiment",
+     "source": "Mickelson et al., J. Phys. B 42, 235001 (2009)",
+     "url": "https://arxiv.org/abs/0907.2270"
+    },
+    "84-88": {
+     "value": -600,
+     "unc": 50,
+     "method": "experiment",
+     "source": "Mickelson et al., J. Phys. B 42, 235001 (2009)",
+     "url": "https://arxiv.org/abs/0907.2270"
+    }
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 18319.261,
+   "label": "5s5p 3P2 - 5s4d 3D3",
+   "use": "2.92 um cycling line (metastable MOT)",
+   "type": "E1",
+   "A_s": {
+    "value": 355200.0,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272",
+    "note": "Hobson et al. (arXiv:2001.05210) quote the corresponding linewidth 2pi x 57 kHz from this reference"
+   },
+   "line_strength_au": {
+    "value": 30.655,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   }
+  },
+  {
+   "lower_cm": 14317.507,
+   "upper_cm": 35006.908,
+   "label": "5s5p 3P0 - 5s5d 3D1",
+   "use": "483 nm repumper",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 620.25305,
+    "unc": 3e-05,
+    "method": "experiment",
+    "source": "Patel et al., 'Spectroscopy of the 5s5p 3P0 -> 5s5d 3D1 transition of strontium using laser cooled atoms', arXiv:2312.10327 (2023)",
+    "url": "https://arxiv.org/abs/2312.10327",
+    "isotope": "88",
+    "note": "wavemeter-limited (30 MHz). 86Sr 620.25301(3), 84Sr 620.25296(3) THz; 87Sr F'=7/2, 9/2, 11/2: 620.25173(3), 620.25280(3), 620.25414(3) THz."
+   },
+   "reduced_matrix_element_ea0": {
+    "value": 2.45,
+    "unc": 0.024,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272"
+   },
+   "isotope_shift_MHz": {
+    "88-84": {
+     "value": 90,
+     "method": "experiment",
+     "source": "Patel et al., 'Spectroscopy of the 5s5p 3P0 -> 5s5d 3D1 transition of strontium using laser cooled atoms', arXiv:2312.10327 (2023)",
+     "url": "https://arxiv.org/abs/2312.10327"
+    },
+    "88-86": {
+     "value": 40,
+     "method": "experiment",
+     "source": "Patel et al., 'Spectroscopy of the 5s5p 3P0 -> 5s5d 3D1 transition of strontium using laser cooled atoms', arXiv:2312.10327 (2023)",
+     "url": "https://arxiv.org/abs/2312.10327"
+    },
+    "88-87": {
+     "value": 32,
+     "method": "experiment",
+     "source": "Patel et al., 'Spectroscopy of the 5s5p 3P0 -> 5s5d 3D1 transition of strontium using laser cooled atoms', arXiv:2312.10327 (2023)",
+     "url": "https://arxiv.org/abs/2312.10327"
+    }
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 35006.908,
+   "label": "5s5p 3P2 - 5s5d 3D1",
+   "use": "497.30 nm",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 602.8339249,
+    "unc": 2e-06,
+    "method": "experiment",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "isotope": "88"
+   },
+   "isotope_shift_MHz": {
+    "88-84": {
+     "value": 94.0,
+     "unc": 0.2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-86": {
+     "value": 48.8,
+     "unc": 0.2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-87": {
+     "value": 38,
+     "unc": 2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   },
+   "cascade_branching_to_3P": {
+    "3P0": 0.5624,
+    "3P1": 0.4111,
+    "3P2": 0.02644,
+    "method": "theory",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "note": "calculated probability that the upper level ends in 5s5p 3P0/3P1/3P2 after ALL decay paths (not the single-channel branching), using Werij et al. 1992 transition probabilities"
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 35021.989,
+   "label": "5s5p 3P2 - 5s5d 3D2",
+   "use": "496.93 nm repumper ('green')",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 603.2858588,
+    "unc": 2e-06,
+    "method": "experiment",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "isotope": "88"
+   },
+   "isotope_shift_MHz": {
+    "88-84": {
+     "value": 92.8,
+     "unc": 0.2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-86": {
+     "value": 47.5,
+     "unc": 0.2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-87": {
+     "value": 17,
+     "unc": 2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   },
+   "cascade_branching_to_3P": {
+    "3P0": 0.00035,
+    "3P1": 0.76,
+    "3P2": 0.2396,
+    "method": "theory",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "note": "calculated probability that the upper level ends in 5s5p 3P0/3P1/3P2 after ALL decay paths (not the single-channel branching), using Werij et al. 1992 transition probabilities"
+   },
+   "repump_efficiency": {
+    "value": 0.969,
+    "unc": 0.005,
+    "method": "experiment",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "note": "measured via red-MOT lifetime; calculated 0.9995"
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 35045.019,
+   "label": "5s5p 3P2 - 5s5d 3D3",
+   "use": "496.36 nm",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 603.9765066,
+    "unc": 2e-06,
+    "method": "experiment",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "isotope": "88"
+   },
+   "isotope_shift_MHz": {
+    "88-84": {
+     "value": 91.6,
+     "unc": 0.2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-86": {
+     "value": 46.6,
+     "unc": 0.2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-87": {
+     "value": 27,
+     "unc": 2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409",
+     "note": "87Sr value based on a speculative line assignment"
+    }
+   },
+   "cascade_branching_to_3P": {
+    "3P0": 0.00012,
+    "3P1": 0.00057,
+    "3P2": 0.9993,
+    "method": "theory",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "note": "calculated probability that the upper level ends in 5s5p 3P0/3P1/3P2 after ALL decay paths (not the single-channel branching), using Werij et al. 1992 transition probabilities"
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 39685.83,
+   "label": "5s5p 3P2 - 5s6d 3D1",
+   "use": "403.43 nm",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 743.105177,
+    "unc": 5e-06,
+    "method": "experiment",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "isotope": "88"
+   },
+   "isotope_shift_MHz": {
+    "88-84": {
+     "value": 77,
+     "unc": 10,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-86": {
+     "value": 30,
+     "unc": 10,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-87": {
+     "value": 18,
+     "unc": 2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   },
+   "cascade_branching_to_3P": {
+    "3P0": 0.532,
+    "3P1": 0.4175,
+    "3P2": 0.05071,
+    "method": "theory",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "note": "calculated probability that the upper level ends in 5s5p 3P0/3P1/3P2 after ALL decay paths (not the single-channel branching), using Werij et al. 1992 transition probabilities"
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 39690.802,
+   "label": "5s5p 3P2 - 5s6d 3D2",
+   "use": "403.35 nm repumper ('blue')",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 743.25296,
+    "unc": 2e-06,
+    "method": "experiment",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "isotope": "88"
+   },
+   "isotope_shift_MHz": {
+    "88-84": {
+     "value": 81,
+     "unc": 2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-86": {
+     "value": 49,
+     "unc": 2,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-87": {
+     "value": 20,
+     "unc": 5,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   },
+   "cascade_branching_to_3P": {
+    "3P0": 0.01363,
+    "3P1": 0.728,
+    "3P2": 0.2583,
+    "method": "theory",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "note": "calculated probability that the upper level ends in 5s5p 3P0/3P1/3P2 after ALL decay paths (not the single-channel branching), using Werij et al. 1992 transition probabilities"
+   },
+   "repump_efficiency": {
+    "value": 0.957,
+    "unc": 0.009,
+    "method": "experiment",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "note": "measured via red-MOT lifetime; calculated 0.9816"
+   }
+  },
+  {
+   "lower_cm": 14898.545,
+   "upper_cm": 39703.109,
+   "label": "5s5p 3P2 - 5s6d 3D3",
+   "use": "403.15 nm",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 743.621808,
+    "unc": 5e-06,
+    "method": "experiment",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "isotope": "88"
+   },
+   "isotope_shift_MHz": {
+    "88-84": {
+     "value": 85,
+     "unc": 10,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-86": {
+     "value": 41,
+     "unc": 10,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    },
+    "88-87": {
+     "value": 53,
+     "unc": 5,
+     "method": "experiment",
+     "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+     "url": "https://arxiv.org/abs/1406.0409"
+    }
+   },
+   "cascade_branching_to_3P": {
+    "3P0": 0.00467,
+    "3P1": 0.02276,
+    "3P2": 0.9725,
+    "method": "theory",
+    "source": "Stellmer & Schreck, Phys. Rev. A 90, 022512 (2014)",
+    "url": "https://arxiv.org/abs/1406.0409",
+    "note": "calculated probability that the upper level ends in 5s5p 3P0/3P1/3P2 after ALL decay paths (not the single-channel branching), using Werij et al. 1992 transition probabilities"
+   }
+  },
+  {
+   "lower_cm": 14317.507,
+   "upper_cm": 39685.83,
+   "label": "5s5p 3P0 - 5s6d 3D1",
+   "use": "394 nm",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 760.524409251,
+    "unc": 2.5e-08,
+    "method": "experiment",
+    "source": "Zhang, Tiwari, Ganesh, Singh, Phys. Rev. Research 6, 043106 (2024)",
+    "url": "https://arxiv.org/abs/2306.11082",
+    "isotope": "88",
+    "note": "84Sr 760524318.199(28), 86Sr 760524354.651(26) MHz; 87Sr centre of gravity 760524357.610(19) MHz (2nd-order analysis)"
+   },
+   "isotope_shift_MHz": {
+    "88-84": {
+     "value": 91.052,
+     "unc": 0.035,
+     "method": "experiment",
+     "source": "Zhang, Tiwari, Ganesh, Singh, Phys. Rev. Research 6, 043106 (2024)",
+     "url": "https://arxiv.org/abs/2306.11082"
+    },
+    "88-86": {
+     "value": 54.6,
+     "unc": 0.033,
+     "method": "experiment",
+     "source": "Zhang, Tiwari, Ganesh, Singh, Phys. Rev. Research 6, 043106 (2024)",
+     "url": "https://arxiv.org/abs/2306.11082"
+    },
+    "88-87": {
+     "value": 51.641,
+     "unc": 0.028,
+     "method": "experiment",
+     "source": "Zhang, Tiwari, Ganesh, Singh, Phys. Rev. Research 6, 043106 (2024)",
+     "url": "https://arxiv.org/abs/2306.11082",
+     "note": "2nd-order perturbation result"
+    }
+   }
+  },
+  {
+   "lower_cm": 14317.507,
+   "upper_cm": 35400.105,
+   "label": "5s5p 3P0 - 5p2 3P1",
+   "use": "474 nm",
+   "type": "E1",
+   "reduced_matrix_element_ea0": {
+    "value": 2.605,
+    "unc": 0.026,
+    "method": "theory",
+    "source": "Safronova, Porsev, Safronova, Kozlov, Clark, Phys. Rev. A 87, 012509 (2013)",
+    "url": "https://arxiv.org/abs/1210.7272",
+    "note": "NIST ASD has Aki = 3.9e7 (B+) for this line"
+   }
+  }
+ ],
+ "rydberg": {
+  "note": "Extension to the schema. Excitation routes used in tweezer work: 5s5p 3P0 or 3P1 -> 5sns 3S1 (317-319 nm) and 5s2 1S0 -> 5s5p 1P1 -> 5sns 1S0 / 5snd 1D2 (461 + 413 nm). Quantum defect formula: delta(n) = d0 + d2/(n-d0)^2 + d4/(n-d0)^4, E_n = I_s - R/(n-delta)^2.",
+  "ionization_limit": [
+   {
+    "value": 45932.2036,
+    "unc": 0.001,
+    "unit": "cm-1",
+    "isotope": "88",
+    "method": "compilation",
+    "source": "NIST ASD levels file (Sr II 5s 2S1/2 limit; Sansonetti & Nave, JPCRD 39, 033103 (2010))",
+    "url": "/Users/muqiao/Documents/rb_energy_levels/data/nist/Sr_I_levels.tsv"
+   },
+   {
+    "value": 1377012721,
+    "unc": 10,
+    "unit": "MHz",
+    "isotope": "88",
+    "method": "experiment",
+    "source": "Couturier et al., 'Measurement of the strontium triplet Rydberg series by depletion spectroscopy of ultracold atoms', arXiv:1810.07611 (Phys. Rev. A 99, 022503 (2019))",
+    "url": "https://arxiv.org/abs/1810.07611",
+    "note": "weighted mean of fits to 3S1, 3D1, 3D2 series; stated to be 62 MHz above the earlier literature value"
+   },
+   {
+    "value": 45932.1943,
+    "unit": "cm-1",
+    "isotope": "87",
+    "method": "compilation",
+    "source": "Ding et al., Phys. Rev. A 98, 042505 (2018)",
+    "url": "https://arxiv.org/abs/1808.05987",
+    "note": "hyperfine-corrected 87Sr threshold E_ion^(0) used by Ding et al. (from earlier measurement of the F=4 threshold); their data favour 45 932.1956 cm^-1 (~40 MHz higher), determined only to ~ +-20 MHz"
+   },
+   {
+    "value": 45932.09,
+    "unc": 0.15,
+    "unit": "cm-1",
+    "method": "compilation",
+    "source": "Rubbmark & Borgstrom, Phys. Scr. 18, 196 (1978) [as quoted in Pucher, Kristensen, Kroeze, '88Sr Reference Data', arXiv:2507.10487v3 (2026)]",
+    "url": "https://arxiv.org/abs/2507.10487",
+    "note": "older value still tabulated in Pucher et al. Table 2"
+   }
+  ],
+  "rydberg_constant_cm": [
+   {
+    "value": 109736.631,
+    "isotope": "88",
+    "method": "experiment",
+    "source": "Couturier et al., 'Measurement of the strontium triplet Rydberg series by depletion spectroscopy of ultracold atoms', arXiv:1810.07611 (Phys. Rev. A 99, 022503 (2019))",
+    "url": "https://arxiv.org/abs/1810.07611",
+    "note": "mass-corrected, used with the Couturier quantum defects"
+   },
+   {
+    "value": 109736.627,
+    "method": "experiment",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "used with the Vaillant quantum defects"
+   }
+  ],
+  "quantum_defects": [
+   {
+    "series": "5sns 3S1",
+    "delta0": "3.370778(4)",
+    "delta2": "0.418(1)",
+    "delta4": "-0.3(1)",
+    "fitted_range": "15<=n<=50",
+    "method": "experiment",
+    "source": "Couturier et al., 'Measurement of the strontium triplet Rydberg series by depletion spectroscopy of ultracold atoms', arXiv:1810.07611 (Phys. Rev. A 99, 022503 (2019))",
+    "url": "https://arxiv.org/abs/1810.07611"
+   },
+   {
+    "series": "5snd 3D1",
+    "delta0": "2.67517(20)",
+    "delta2": "-13.15(26)",
+    "delta4": "-4.444(91)e3",
+    "fitted_range": "28<=n<=50",
+    "method": "experiment",
+    "source": "Couturier et al., 'Measurement of the strontium triplet Rydberg series by depletion spectroscopy of ultracold atoms', arXiv:1810.07611 (Phys. Rev. A 99, 022503 (2019))",
+    "url": "https://arxiv.org/abs/1810.07611"
+   },
+   {
+    "series": "5snd 3D2",
+    "delta0": "2.66142(30)",
+    "delta2": "-16.77(38)",
+    "delta4": "-6.656(134)e3",
+    "fitted_range": "28<=n<=50",
+    "method": "experiment",
+    "source": "Couturier et al., 'Measurement of the strontium triplet Rydberg series by depletion spectroscopy of ultracold atoms', arXiv:1810.07611 (Phys. Rev. A 99, 022503 (2019))",
+    "url": "https://arxiv.org/abs/1810.07611"
+   },
+   {
+    "series": "5sns 3S1",
+    "delta0": "3.37065",
+    "delta2": "0.443",
+    "delta4": "-0.553",
+    "fitted_range": "87Sr high-n data + earlier 88Sr data",
+    "method": "experiment",
+    "source": "Ding et al., Phys. Rev. A 98, 042505 (2018)",
+    "url": "https://arxiv.org/abs/1808.05987",
+    "note": "updated Rydberg-Ritz parameters (no uncertainties printed)"
+   },
+   {
+    "series": "5snd 3D1",
+    "delta0": "2.673",
+    "delta2": "-5.4",
+    "delta4": "-8166",
+    "fitted_range": "see source",
+    "method": "experiment",
+    "source": "Ding et al., Phys. Rev. A 98, 042505 (2018)",
+    "url": "https://arxiv.org/abs/1808.05987"
+   },
+   {
+    "series": "5snd 3D2",
+    "delta0": "2.662",
+    "delta2": "-15.4",
+    "delta4": "-9804",
+    "fitted_range": "see source",
+    "method": "experiment",
+    "source": "Ding et al., Phys. Rev. A 98, 042505 (2018)",
+    "url": "https://arxiv.org/abs/1808.05987"
+   },
+   {
+    "series": "5snd 3D3",
+    "delta0": "2.612",
+    "delta2": "-41.4",
+    "delta4": "-15363",
+    "fitted_range": "see source",
+    "method": "experiment",
+    "source": "Ding et al., Phys. Rev. A 98, 042505 (2018)",
+    "url": "https://arxiv.org/abs/1808.05987"
+   },
+   {
+    "series": "5sns 1S0",
+    "delta0": "3.26896(2)",
+    "delta2": "-0.138(7)",
+    "delta4": "0.9(6)",
+    "fitted_range": "14<=n<=34",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snp 1P1",
+    "delta0": "2.7295(7)",
+    "delta2": "-4.67(4)",
+    "delta4": "-157(2)",
+    "fitted_range": "10<=n<=29",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snd 1D2",
+    "delta0": "2.3807(2)",
+    "delta2": "-39.41(6)",
+    "delta4": "-109(2)e1",
+    "fitted_range": "20<=n<=50",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snf 1F3",
+    "delta0": "0.089(1)",
+    "delta2": "-2.0(2)",
+    "delta4": "3(2)e1",
+    "fitted_range": "10<=n<=25",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5sns 3S1",
+    "delta0": "3.371(2)",
+    "delta2": "0.5(2)",
+    "delta4": "-1(2)e1",
+    "fitted_range": "13<=n<=45",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snp 3P2",
+    "delta0": "2.8719(2)",
+    "delta2": "0.446(5)",
+    "delta4": "-1.9(1)",
+    "fitted_range": "8<=n<=18",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snp 3P1",
+    "delta0": "2.8824(2)",
+    "delta2": "0.407(5)",
+    "delta4": "-1.3(1)",
+    "fitted_range": "8<=n<=22",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snp 3P0",
+    "delta0": "2.8866(1)",
+    "delta2": "0.44(1)",
+    "delta4": "-1.9(1)",
+    "fitted_range": "8<=n<=15",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snd 3D3",
+    "delta0": "2.63(1)",
+    "delta2": "-42.3(3)",
+    "delta4": "-18(1)e3",
+    "fitted_range": "20<=n<=45",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snd 3D2",
+    "delta0": "2.636(5)",
+    "delta2": "-1(2)",
+    "delta4": "-9.8(9)e3",
+    "fitted_range": "22<=n<=37",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snd 3D1",
+    "delta0": "2.658(6)",
+    "delta2": "3(2)",
+    "delta4": "-8.8(7)e3",
+    "fitted_range": "20<=n<=32",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snf 3F4",
+    "delta0": "0.120(1)",
+    "delta2": "-2.4(2)",
+    "delta4": "12(2)e1",
+    "fitted_range": "10<=n<=24",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snf 3F3",
+    "delta0": "0.120(1)",
+    "delta2": "-2.2(2)",
+    "delta4": "12(2)e1",
+    "fitted_range": "10<=n<=24",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   },
+   {
+    "series": "5snf 3F2",
+    "delta0": "0.120(1)",
+    "delta2": "-2.2(2)",
+    "delta4": "12(2)e1",
+    "fitted_range": "10<=n<=24",
+    "method": "compilation",
+    "source": "Vaillant, Jones, Potvliege, 'Long-range Rydberg-Rydberg interactions in calcium, strontium and ytterbium', arXiv:1203.3736 (J. Phys. B 45, 135004 (2012))",
+    "url": "https://arxiv.org/abs/1203.3736",
+    "note": "fit by Vaillant et al. to earlier laser-spectroscopy energies (Beigang et al. 1982; Rubbmark & Borgstrom 1978; Armstrong et al. 1979; Esherick 1977)"
+   }
+  ],
+  "measured_term_energies_MHz": {
+   "note": "88Sr term energies above 5s2 1S0, uncertainty 10 MHz each (Couturier et al. Tables II and III), keyed by principal quantum number n",
+   "method": "experiment",
+   "source": "Couturier et al., 'Measurement of the strontium triplet Rydberg series by depletion spectroscopy of ultracold atoms', arXiv:1810.07611 (Phys. Rev. A 99, 022503 (2019))",
+   "url": "https://arxiv.org/abs/1810.07611",
+   "5sns 3S1": {
+    "13": 1341500517,
+    "32": 1372998803,
+    "14": 1347874127,
+    "33": 1373265188,
+    "15": 1352673833,
+    "34": 1373505903,
+    "16": 1356377995,
+    "35": 1373724155,
+    "17": 1359296416,
+    "36": 1373922642,
+    "18": 1361636650,
+    "37": 1374103691,
+    "19": 1363541952,
+    "38": 1374269280,
+    "20": 1365113813,
+    "39": 1374421124,
+    "21": 1366425741,
+    "40": 1374560698,
+    "22": 1367532054,
+    "41": 1374689300,
+    "23": 1368473584,
+    "42": 1374808037,
+    "24": 1369281502,
+    "43": 1374917901,
+    "25": 1369979949,
+    "44": 1375019753,
+    "26": 1370587852,
+    "45": 1375114353,
+    "27": 1371120204,
+    "46": 1375202375,
+    "28": 1371589028,
+    "47": 1375284413,
+    "29": 1372004044,
+    "48": 1375360997,
+    "30": 1372373187,
+    "49": 1375432602,
+    "31": 1372702970,
+    "50": 1375499653
+   },
+   "5snd 3D1": {
+    "12": 1344688300,
+    "31": 1372918946,
+    "13": 1349925421,
+    "32": 1373192657,
+    "33": 1373439862,
+    "14": 1353850897,
+    "34": 1373663874,
+    "15": 1356887051,
+    "35": 1373867493,
+    "16": 1359296415,
+    "36": 1374053114,
+    "37": 1374222798,
+    "17": 1361493566,
+    "38": 1374378312,
+    "18": 1363313169,
+    "39": 1374521191,
+    "19": 1364863538,
+    "40": 1374652762,
+    "20": 1366181658,
+    "41": 1374774191,
+    "21": 1367305009,
+    "42": 1374886489,
+    "22": 1368266930,
+    "43": 1374990551,
+    "23": 1369095323,
+    "44": 1375087158,
+    "24": 1369812958,
+    "45": 1375177012,
+    "25": 1370438257,
+    "46": 1375260722,
+    "26": 1370986135,
+    "47": 1375338834,
+    "27": 1371468700,
+    "48": 1375411845,
+    "28": 1371895834,
+    "49": 1375480182,
+    "29": 1372275642,
+    "50": 1375544238,
+    "30": 1372614826
+   },
+   "5snd 3D2": {
+    "12": 1344870880,
+    "31": 1372925192,
+    "13": 1350174107,
+    "32": 1373198097,
+    "33": 1373444629,
+    "14": 1354207372,
+    "34": 1373668084,
+    "15": 1357360134,
+    "35": 1373871228,
+    "16": 1359574504,
+    "36": 1374056446,
+    "37": 1374225784,
+    "17": 1361682770,
+    "38": 1374381002,
+    "18": 1363452486,
+    "39": 1374523622,
+    "19": 1364960612,
+    "40": 1374654968,
+    "20": 1366249880,
+    "41": 1374776201,
+    "21": 1367354291,
+    "42": 1374888324,
+    "22": 1368303621,
+    "43": 1374992230,
+    "23": 1369123407,
+    "44": 1375088706,
+    "24": 1369834979,
+    "45": 1375178436,
+    "25": 1370455884,
+    "46": 1375262039,
+    "26": 1371000499,
+    "47": 1375340055,
+    "27": 1371480583,
+    "48": 1375412978,
+    "28": 1371905792,
+    "49": 1375481234,
+    "29": 1372284085,
+    "50": 1375545219,
+    "30": 1372622055
+   },
+   "5snd 1D2": {
+    "14": 1353661576,
+    "15": 1356969526,
+    "16": 1359922783
+   }
+  },
+  "tweezer_example": {
+   "state": "5s61s 3S1 mJ=0 (88Sr)",
+   "from": "5s5p 3P0",
+   "wavelength_nm": 316.6,
+   "lifetime_us_estimated": 80,
+   "quadratic_diamagnetic_shift_kHz_per_G2": 3.4,
+   "method": "experiment",
+   "source": "Madjarov et al., 'High-fidelity entanglement and detection of alkaline-earth Rydberg atoms', arXiv:2001.04455 (2020)",
+   "url": "https://arxiv.org/abs/2001.04455",
+   "note": "Rabi frequency 2pi x 6-7 MHz with 1/e^2 radius 18(1) um; lifetime ~80 us is an estimate from Vaillant et al., not a measurement; beta ~ 3.4 kHz/G^2 measured (2.9 predicted). No reduced matrix element is reported."
+  }
+ },
+ "not_found": [
+  "Measured reduced dipole matrix elements for Rydberg excitation (5s5p 3P0/3P1 -> 5sns 3S1 at 317-319 nm; 5s5p 1P1 -> 5sns 1S0 / 5snd 1D2 at 413 nm): searched Madjarov 2020, Couturier 2019, Ding 2018, DeSalvo 2016 and a web search; only Rabi frequencies for specific beam geometries are reported, no matrix element.",
+  "Measured 413 nm singlet Rydberg term energies: only the Rydberg-Ritz quantum defects compiled by Vaillant et al. 2012 were sourced.",
+  "Experimental branching fractions of 5s6s 3S1 to 3P0/3P1/3P2: only theoretical values (UDel portal, via Pucher et al.) located.",
+  "Measured A or matrix element of the 2.6 um 3P0-3D1 line and precise (better than NIST Ritz) frequency of that line: only the 3D1 lifetime (Nicholson 2015) and CI+all-order theory (Safronova 2013).",
+  "State-resolved measured lifetimes of 5s4d 3D2 and 3D3 (only term-averaged 2500(200) / 2900(200) ns and theory).",
+  "Measured A / lifetimes for 5s5d 3D and 5s6d 3D (497 / 483 / 487 / 403 / 394 nm lines) beyond the NIST ASD Aki values; no A values at all for the 403 nm 5s5p 3P2 - 5s6d 3D lines.",
+  "New measurements of the 481 / 487 nm lines (5s5p 3P - 5p2 3P, 3P1 - 5s5d 3D2): nothing beyond NIST ASD Aki located.",
+  "86-88 (and 84-88) isotope shifts of the 679, 688, 707 and 671 nm lines.",
+  "Hyperfine-resolved 87Sr shifts of the 461 nm line and hyperfine constants of 5s5d 1D2, 5s6s 1S0-adjacent and 5s6p states.",
+  "Measured Lande g_J factors of excited states (Pucher Table 4 values are calculated Lande values and were not copied).",
+  "Stellmer PhD thesis (2013) and Boyd PhD thesis (2007) were not opened; the Stellmer & Schreck review arXiv:1307.0601 and Boyd et al. PRA 76, 022510 were used instead. zu Putlitz (1963), Heider & Brink (1977), Kluge & Sauter (1974), Bushaw et al. (1993), Hunter et al. (1986), Husain & Roberts (1988), Takano et al. (2017), Okamoto et al. PRA 112, 043118 (2025) and Onishchenko's 88Sr-converted value are quoted second-hand from the papers named in each 'source'.",
+  "Sansonetti & Nave JPCRD 39, 033103 (2010) was opened but contributes no numbers beyond what the NIST ASD tables already contain."
+ ],
+ "notes": "Conventions. (1) Isotope-shift keys 'a-b' mean nu(a) - nu(b), copied in the sign convention each source prints: '87-88' etc. from Pucher / Mickelson / Trautmann, '88-84' etc. from Stellmer & Schreck, Zhang, Patel. 87Sr shifts refer to the hyperfine centre of gravity. (2) Hyperfine B_MHz is the electric-quadrupole constant (called Q in the Boyd / Stellmer papers). (3) Fields beyond SCHEMA.md: other_values (competing measurements), reduced_matrix_element_ea0 (convention of the cited source; Pucher uses <J||er||J'> = sqrt(2J'+1)|d| with J' the upper level, Safronova uses the standard symmetric reduced element; the two agree numerically for these lines), line_strength_au, natural_linewidth_*, cascade_branching_to_3P, repump_efficiency, frequency_THz_other_isotopes, value_Hz_str / rel_unc for clock frequencies beyond double precision, unc_plus / unc_minus, type 'M2', and the top-level 'rydberg' block. (4) A_s for 679 / 688 / 707 nm are experimental 3S1 lifetime times THEORETICAL branching; the 5s4d 3D infrared A values and branchings are pure theory (Safronova 2013). (5) Conflicts are kept side by side in other_values: 707 nm 88Sr frequency of Pucher et al. (423.91634 THz) is about 2.8 GHz off the NIST Ritz value and looks like a sign error; 1P1 lifetime 5.216(14) vs 5.234(8) vs 5.263(4) ns; 1P1->1D2 rate 5.3(5)e3 (direct) vs 3.9(1.5)e3 (Hunter) vs 9.25(40)e3 s^-1 (theory); 461 nm frequency 650 503 815(6) vs 650 503 775(10) MHz; 87Sr 3P2-3D2 isotope shift, where Trautmann et al. point out that the literature 3P1-3D2 (+30.2(6) MHz) and 3P2-3D2 (+17(2) MHz) shifts imply a 3P2 shift of +75(2) MHz against their directly measured +62.91(4) MHz. (6) Patel's 483 nm frequency 620.25305(3) THz can be cross-checked against Stellmer's 3P2-5s5d 3D1 frequency plus the 3P0-3P2 interval from the 698 / 671 nm absolute frequencies, which gives about 620.253101 THz (my arithmetic, not a sourced number): 51 MHz lower."
+}

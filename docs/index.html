@@ -3,235 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rb energy levels and transitions</title>
+<title>Atomic energy level diagrams – interactive Grotrian diagrams with wavelengths and dipole matrix elements</title>
+<meta name="description" content="Interactive energy level diagrams of the neutral atoms used in cold-atom, optical-tweezer, optical-clock and ion-trap labs: Barium, Beryllium, Caesium, Calcium, Dysprosium, Lithium, Magnesium, Potassium, Rubidium, Sodium, Strontium, Ytterbium. Every transition below 2 µm with wavelength, frequency, dipole matrix element, lifetime and hyperfine data from NIST and measurements.">
+<link rel="canonical" href="https://muuuun.github.io/atom-energy-levels/">
 <link rel="icon" href="data:,">
-<meta name="description" content="Interactive Grotrian diagram of rubidium: 36 levels, every E1 line below 2 µm, wavelengths and dipole matrix elements cross-checked between NIST, ARC and pairinteraction.">
-<style>
-  :root { --ink: #1a1a1a; --muted: #5b5b5b; --line: #dcd8cf; --panel: #ffffff; --bg: #f6f4ef; --accent: #8a1c1c; }
-  * { box-sizing: border-box; }
-  html, body { height: 100%; margin: 0; }
-  body { display: flex; flex-direction: column; background: var(--bg); color: var(--ink);
-         font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; padding: 10px 16px;
-           border-bottom: 1px solid var(--line); background: var(--panel); }
-  h1 { font-size: 18px; margin: 0; }
-  header .hint { color: var(--muted); font-size: 13.5px; flex: 1 1 320px; }
-  header nav { display: flex; gap: 14px; font-size: 13.5px; }
-  a { color: var(--accent); }
-  #stage { position: relative; flex: 1 1 auto; min-height: 0; overflow: hidden; background: #fff; cursor: grab; touch-action: none; }
-  #stage.dragging { cursor: grabbing; }
-  #stage svg { width: 100%; height: 100%; display: block; user-select: none; -webkit-user-select: none; }
-  #stage .loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); }
-
-  /* hover emphasis: everything that is a transition fades unless it carries .hl */
-  svg [id^="tr-"], svg [id^="trl-"] { transition: opacity .12s; }
-  svg.dim [id^="tr-"], svg.dim [id^="trl-"] { opacity: .07; }
-  svg.dim [id^="tr-"].hl, svg.dim [id^="trl-"].hl { opacity: 1; }
-  svg [id^="hit-"], svg [id^="trl-"], svg [id^="lv"] { cursor: pointer; }
-  svg [id^="hit-"] path { pointer-events: stroke; }
-
-  #zoom { position: absolute; left: 12px; top: 12px; display: flex; gap: 6px; }
-  #zoom button { width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel);
-                 color: var(--ink); font-size: 18px; line-height: 1; cursor: pointer; }
-  #zoom button:hover { border-color: var(--muted); }
-  #zoom button.wide { width: auto; padding: 0 12px; font-size: 13.5px; }
-
-  #info { position: absolute; right: 12px; top: 12px; width: min(330px, calc(100% - 24px)); max-height: calc(100% - 24px);
-          overflow: auto; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px;
-          background: rgba(255, 255, 255, .96); box-shadow: 0 4px 18px rgba(0, 0, 0, .08); font-size: 14px; }
-  #info h2 { font-size: 17px; margin: 0 0 6px; }
-  #info .tag { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
-  #info table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
-  #info td, #info th { padding: 3px 0; text-align: left; vertical-align: baseline; }
-  #info td:last-child, #info th:last-child { text-align: right; }
-  #info td:first-child { color: var(--muted); padding-right: 10px; }
-  #info table.lines td:first-child { color: var(--ink); }
-  #info table.lines th { font-size: 12px; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line); }
-  #info table.lines tr.row { cursor: pointer; }
-  #info table.lines tr.row:hover td { background: #f4f2ee; }
-  #info .note { margin-top: 8px; font-size: 12.5px; color: var(--muted); }
-  #info .swatch { display: inline-block; width: 26px; height: 5px; border-radius: 3px; vertical-align: middle; margin-right: 8px; }
-  @media (max-width: 640px) { #info { top: auto; bottom: 12px; max-height: 45%; } header .hint { display: none; } }
-</style>
+<link rel="stylesheet" href="assets/style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atomic energy level diagrams – interactive Grotrian diagrams with wavelengths and dipole matrix elements">
+<meta property="og:description" content="Interactive energy level diagrams of the neutral atoms used in cold-atom, optical-tweezer, optical-clock and ion-trap labs: Barium, Beryllium, Caesium, Calcium, Dysprosium, Lithium, Magnesium, Potassium, Rubidium, Sodium, Strontium, Ytterbium. Every transition below 2 µm with wavelength, frequency, dipole matrix element, lifetime and hyperfine data from NIST and measurements.">
+<meta property="og:url" content="https://muuuun.github.io/atom-energy-levels/">
+<meta property="og:image" content="https://muuuun.github.io/atom-energy-levels/lithium-6/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Atomic energy level diagrams", "url": "https://muuuun.github.io/atom-energy-levels/", "description": "Interactive energy level diagrams of the neutral atoms used in cold-atom, optical-tweezer, optical-clock and ion-trap labs: Barium, Beryllium, Caesium, Calcium, Dysprosium, Lithium, Magnesium, Potassium, Rubidium, Sodium, Strontium, Ytterbium. Every transition below 2 µm with wavelength, frequency, dipole matrix element, lifetime and hyperfine data from NIST and measurements.", "hasPart": [{"@type": "Dataset", "name": "Lithium-6 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/lithium-6/"}, {"@type": "Dataset", "name": "Lithium-7 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/lithium-7/"}, {"@type": "Dataset", "name": "Beryllium-9 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/beryllium-9/"}, {"@type": "Dataset", "name": "Sodium-23 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/sodium-23/"}, {"@type": "Dataset", "name": "Magnesium-24 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/magnesium-24/"}, {"@type": "Dataset", "name": "Magnesium-25 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/magnesium-25/"}, {"@type": "Dataset", "name": "Potassium-39 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/potassium-39/"}, {"@type": "Dataset", "name": "Potassium-40 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/potassium-40/"}, {"@type": "Dataset", "name": "Potassium-41 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/potassium-41/"}, {"@type": "Dataset", "name": "Calcium-40 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/calcium-40/"}, {"@type": "Dataset", "name": "Calcium-43 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/calcium-43/"}, {"@type": "Dataset", "name": "Rubidium-85 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/rubidium-85/"}, {"@type": "Dataset", "name": "Rubidium-87 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/rubidium-87/"}, {"@type": "Dataset", "name": "Strontium-87 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/strontium-87/"}, {"@type": "Dataset", "name": "Strontium-88 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/strontium-88/"}, {"@type": "Dataset", "name": "Caesium-133 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/caesium-133/"}, {"@type": "Dataset", "name": "Barium-137 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/barium-137/"}, {"@type": "Dataset", "name": "Barium-138 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/barium-138/"}, {"@type": "Dataset", "name": "Dysprosium-163 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/dysprosium-163/"}, {"@type": "Dataset", "name": "Dysprosium-164 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/dysprosium-164/"}, {"@type": "Dataset", "name": "Ytterbium-171 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/ytterbium-171/"}, {"@type": "Dataset", "name": "Ytterbium-174 energy levels and transitions", "url": "https://muuuun.github.io/atom-energy-levels/ytterbium-174/"}]}</script>
 </head>
 <body>
-<header>
-  <h1>Rubidium (Rb I) energy levels and transitions</h1>
-  <span class="hint">Hover a line or a level to isolate it. Click to keep it selected. Scroll to zoom, drag to move.</span>
-  <nav>
-    <a href="rb_energy_levels.pdf">PDF</a>
-    <a href="https://github.com/Muuuun/rb-energy-levels/blob/main/data/transitions.csv">Data</a>
-    <a href="https://github.com/Muuuun/rb-energy-levels">Source</a>
-  </nav>
-</header>
-<div id="stage">
-  <div class="loading">Loading diagram…</div>
-  <div id="zoom">
-    <button id="zin" title="Zoom in" aria-label="Zoom in">+</button>
-    <button id="zout" title="Zoom out" aria-label="Zoom out">−</button>
-    <button id="zfit" class="wide" title="Show the whole diagram">Fit</button>
-  </div>
-  <div id="info"></div>
-</div>
-<script>
-(async function () {
-  const stage = document.getElementById('stage');
-  const info = document.getElementById('info');
-  const [svgText, data] = await Promise.all([
-    fetch('rb_energy_levels.svg').then(r => r.text()),
-    fetch('data.json').then(r => r.json()),
-  ]);
-  stage.querySelector('.loading').remove();
-  stage.insertAdjacentHTML('afterbegin', svgText.slice(svgText.indexOf('<svg')));
-  const svg = stage.querySelector('svg');
-  svg.removeAttribute('width');
-  svg.removeAttribute('height');
-  const T = data.transitions, L = data.levels;
-  const levelIndex = Object.fromEntries(L.map((l, k) => [l.name, k]));
-  const linesOf = L.map(() => []);
-  T.forEach((t, i) => { for (const s of [t.lower, t.upper]) if (s in levelIndex) linesOf[levelIndex[s]].push(i); });
-
-  // ---------- formatting
-  const st = s => s.replace(/^(\d+[A-Z])(.+)$/, '$1<sub>$2</sub>');
-  const fd = d => d >= 10 ? d.toFixed(2) : d >= 0.1 ? d.toFixed(3) : d.toFixed(4);
-  const fA = a => { const e = Math.floor(Math.log10(a)); return (a / 10 ** e).toFixed(2) + ' × 10<sup>' + e + '</sup>'; };
-  const ftau = ns => ns == null ? 'stable' : ns < 1000 ? ns.toFixed(1) + ' ns' : (ns / 1000).toFixed(2) + ' µs';
-  const colorOf = i => { const p = svg.querySelector('#tr-' + i + ' path'); return p ? p.style.stroke || p.style.fill : '#888'; };
-  const row = (k, v) => '<tr><td>' + k + '</td><td>' + v + '</td></tr>';
-
-  function transitionCard(i) {
-    const t = T[i];
-    let h = '<h2><span class="swatch" style="background:' + colorOf(i) + '"></span>' + st(t.lower) + ' → ' + st(t.upper) + '</h2>';
-    if (t.rydberg) {
-      h += '<div class="tag">Rydberg excitation, shown for n = 70</div><table>' +
-        row('Wavelength (vacuum)', t.lam.toFixed(3) + ' nm') +
-        row('Frequency', t.freq.toFixed(3) + ' THz') +
-        row('Series limit (n → ∞)', t.limit.toFixed(3) + ' nm') +
-        row('|⟨J‖er‖J′⟩| pairinteraction', fd(t.d) + ' ea₀') +
-        row('|⟨J‖er‖J′⟩| ARC', fd(t.d_arc) + ' ea₀') + '</table>' +
-        (t.lower === '5S1/2' ? '<div class="note">The two codes differ by about 2× on this line: order of magnitude only.</div>' : '');
-    } else {
-      h += '<table>' +
-        row('Wavelength (vacuum)', t.lam.toFixed(4) + ' nm') +
-        row('Wavelength (air)', t.air.toFixed(4) + ' nm') +
-        row('Frequency', t.freq.toFixed(4) + ' THz') +
-        row('Wavenumber', t.wn.toFixed(3) + ' cm⁻¹') +
-        row('|⟨J‖er‖J′⟩|', fd(t.d) + ' ea₀') +
-        row('Einstein A (' + t.A_src + ')', fA(t.A) + ' s⁻¹') +
-        row('Branching from ' + st(t.upper), (t.br * 100).toFixed(1) + ' %') +
-        row('Upper-level linewidth Γ/2π', t.gamma.toFixed(3) + ' MHz') + '</table>';
-    }
-    return h;
-  }
-
-  function levelCard(k) {
-    const l = L[k];
-    const rows = linesOf[k].slice().sort((a, b) => T[a].lam - T[b].lam).map(i => {
-      const t = T[i], other = t.lower === l.name ? '→ ' + st(t.upper) : '← ' + st(t.lower);
-      return '<tr class="row" data-i="' + i + '"><td><span class="swatch" style="background:' + colorOf(i) + '"></span>' + other +
-             '</td><td>' + t.lam.toFixed(3) + '</td><td>' + fd(t.d) + '</td></tr>';
-    }).join('');
-    return '<h2>' + st(l.name) + '</h2><table>' + row('Energy', l.E.toFixed(3) + ' cm⁻¹') + row('Lifetime (0 K)', ftau(l.tau)) + '</table>' +
-      '<table class="lines" style="margin-top:8px"><tr><th>' + linesOf[k].length + ' lines</th><th>λ vac (nm)</th><th>d (ea₀)</th></tr>' + rows + '</table>';
-  }
-
-  const helpCard = '<h2>How to read this</h2><div class="note" style="margin-top:0;font-size:13.5px;color:inherit">' +
-    'Each arrow is an electric-dipole line, labelled with its vacuum wavelength and reduced dipole matrix element.<br><br>' +
-    'Point at an arrow, its label, or a level to fade everything else. Click to pin the selection; click empty space to release it.</div>';
-
-  // ---------- emphasis
-  let pinned = null, shown = null;
-  function apply(sel) {
-    if (JSON.stringify(sel) === JSON.stringify(shown)) return;
-    shown = sel;
-    svg.querySelectorAll('.hl').forEach(e => e.classList.remove('hl'));
-    if (!sel) { svg.classList.remove('dim'); info.innerHTML = helpCard; return; }
-    const ids = sel.type === 'tr' ? [sel.i] : linesOf[sel.i];
-    for (const i of ids) for (const p of ['tr-', 'trl-']) {
-      const e = svg.getElementById(p + i);
-      if (e) { e.classList.add('hl'); if (p === 'trl-') e.parentNode.appendChild(e); }  // label on top of its neighbours
-    }
-    svg.classList.add('dim');
-    info.innerHTML = sel.type === 'tr' ? transitionCard(sel.i) : levelCard(sel.i);
-  }
-  function target(e) {
-    for (let n = e.target; n && n !== svg; n = n.parentNode) {
-      const m = n.id && n.id.match(/^(hit|tr|trl|lv|lvn|lvd)-(\d+)$/);
-      if (m) return { type: m[1].startsWith('lv') ? 'lv' : 'tr', i: +m[2] };
-    }
-    return null;
-  }
-  svg.addEventListener('mouseover', e => { if (!drag) apply(target(e) || pinned); });
-  svg.addEventListener('mouseleave', () => apply(pinned));
-  info.addEventListener('mouseover', e => { const r = e.target.closest('tr.row'); if (r) apply({ type: 'tr', i: +r.dataset.i }); });
-  info.addEventListener('click', e => { const r = e.target.closest('tr.row'); if (r) { pinned = { type: 'tr', i: +r.dataset.i }; apply(pinned); } });
-  info.addEventListener('mouseleave', () => apply(pinned));
-  apply(null);
-  info.innerHTML = helpCard;
-
-  // ---------- pan and zoom on the viewBox
-  const full = svg.viewBox.baseVal;
-  const home = { x: full.x, y: full.y, w: full.width, h: full.height };
-  let vb = { ...home };
-  const setVB = () => svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
-  function toSvg(cx, cy) { const p = new DOMPoint(cx, cy).matrixTransform(svg.getScreenCTM().inverse()); return p; }
-  function zoomAt(cx, cy, f) {
-    const w = Math.min(home.w * 1.2, Math.max(home.w / 40, vb.w * f));
-    f = w / vb.w;
-    const p = toSvg(cx, cy);
-    vb = { x: p.x - (p.x - vb.x) * f, y: p.y - (p.y - vb.y) * f, w, h: vb.h * f };
-    setVB();
-  }
-  const centre = () => { const r = stage.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; };
-  stage.addEventListener('wheel', e => {
-    if (e.target.closest('#info')) return;
-    e.preventDefault();
-    zoomAt(e.clientX, e.clientY, Math.exp(Math.max(-60, Math.min(60, e.deltaY)) * (e.ctrlKey ? 0.012 : 0.004)));
-  }, { passive: false });
-  document.getElementById('zin').onclick = () => zoomAt(...centre(), 1 / 1.5);
-  document.getElementById('zout').onclick = () => zoomAt(...centre(), 1.5);
-  document.getElementById('zfit').onclick = () => { vb = { ...home }; setVB(); };
-
-  let drag = null, moved = 0;
-  const pointers = new Map();
-  svg.addEventListener('pointerdown', e => {
-    pointers.set(e.pointerId, e);
-    if (pointers.size === 1) { drag = { x: e.clientX, y: e.clientY }; moved = 0; }
-  });
-  window.addEventListener('pointermove', e => {
-    if (!pointers.has(e.pointerId)) return;
-    if (pointers.size === 2) {  // pinch
-      const [a, b] = [...pointers.values()];
-      const d0 = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
-      pointers.set(e.pointerId, e);
-      const [c, d] = [...pointers.values()];
-      const d1 = Math.hypot(c.clientX - d.clientX, c.clientY - d.clientY);
-      if (d0 > 0 && d1 > 0) zoomAt((c.clientX + d.clientX) / 2, (c.clientY + d.clientY) / 2, d0 / d1);
-      moved = 99;
-      return;
-    }
-    pointers.set(e.pointerId, e);
-    if (!drag) return;
-    moved += Math.abs(e.clientX - drag.x) + Math.abs(e.clientY - drag.y);
-    if (moved > 4) stage.classList.add('dragging');
-    const p0 = toSvg(drag.x, drag.y), p1 = toSvg(e.clientX, e.clientY);
-    vb.x -= p1.x - p0.x;
-    vb.y -= p1.y - p0.y;
-    drag = { x: e.clientX, y: e.clientY };
-    setVB();
-  });
-  window.addEventListener('pointerup', e => {
-    if (!pointers.delete(e.pointerId)) return;
-    stage.classList.remove('dragging');
-    if (moved <= 4) {  // a click, not a drag: pin or release
-      const t = target(e);
-      pinned = t && JSON.stringify(t) === JSON.stringify(pinned) ? null : t;
-      apply(pinned);
-    }
-    drag = null;
-  });
-  window.addEventListener('pointercancel', e => { pointers.delete(e.pointerId); drag = null; });
-})();
-</script>
-</body>
-</html>
+<header class="top"><a class="brand" href="./">Atomic energy level diagrams</a></header>
+<main class="wrap">
+<h1>Energy level diagrams of atoms</h1>
+<p class="lead">Interactive Grotrian diagrams for the neutral atoms that cold-atom, optical-tweezer, optical-clock and ion-trap
+experiments work with. Each diagram shows every transition below 2 µm with its vacuum wavelength and reduced dipole matrix element;
+point at a line to isolate it and read its frequency, Einstein coefficient, branching ratio and the source of each number.</p>
+<p class="lead">Level energies come from the NIST Atomic Spectra Database. Transition rates, lifetimes and hyperfine constants are
+measured values or NIST compilations wherever they exist; anything calculated is tagged as such.</p>
+<ul class="grid"><li><a class="card" href="lithium-6/"><img src="lithium-6/preview.png" loading="lazy" width="1800" height="1350" alt="Lithium-6 energy level diagram"><div><strong>Lithium-6 (<sup>6</sup>Li)</strong><span>32 levels, 85 transitions below 2 µm</span></div></a></li><li><a class="card" href="lithium-7/"><img src="lithium-7/preview.png" loading="lazy" width="1800" height="1350" alt="Lithium-7 energy level diagram"><div><strong>Lithium-7 (<sup>7</sup>Li)</strong><span>32 levels, 85 transitions below 2 µm</span></div></a></li><li><a class="card" href="beryllium-9/"><img src="beryllium-9/preview.png" loading="lazy" width="1800" height="1350" alt="Beryllium-9 energy level diagram"><div><strong>Beryllium-9 (<sup>9</sup>Be)</strong><span>15 levels, 24 transitions below 2 µm</span></div></a></li><li><a class="card" href="sodium-23/"><img src="sodium-23/preview.png" loading="lazy" width="1800" height="1350" alt="Sodium-23 energy level diagram"><div><strong>Sodium-23 (<sup>23</sup>Na)</strong><span>36 levels, 106 transitions below 2 µm</span></div></a></li><li><a class="card" href="magnesium-24/"><img src="magnesium-24/preview.png" loading="lazy" width="1800" height="1350" alt="Magnesium-24 energy level diagram"><div><strong>Magnesium-24 (<sup>24</sup>Mg)</strong><span>18 levels, 61 transitions below 2 µm</span></div></a></li><li><a class="card" href="magnesium-25/"><img src="magnesium-25/preview.png" loading="lazy" width="1800" height="1350" alt="Magnesium-25 energy level diagram"><div><strong>Magnesium-25 (<sup>25</sup>Mg)</strong><span>18 levels, 61 transitions below 2 µm</span></div></a></li><li><a class="card" href="potassium-39/"><img src="potassium-39/preview.png" loading="lazy" width="1800" height="1350" alt="Potassium-39 energy level diagram"><div><strong>Potassium-39 (<sup>39</sup>K)</strong><span>34 levels, 84 transitions below 2 µm</span></div></a></li><li><a class="card" href="potassium-40/"><img src="potassium-40/preview.png" loading="lazy" width="1800" height="1350" alt="Potassium-40 energy level diagram"><div><strong>Potassium-40 (<sup>40</sup>K)</strong><span>34 levels, 84 transitions below 2 µm</span></div></a></li><li><a class="card" href="potassium-41/"><img src="potassium-41/preview.png" loading="lazy" width="1800" height="1350" alt="Potassium-41 energy level diagram"><div><strong>Potassium-41 (<sup>41</sup>K)</strong><span>34 levels, 84 transitions below 2 µm</span></div></a></li><li><a class="card" href="calcium-40/"><img src="calcium-40/preview.png" loading="lazy" width="1800" height="1350" alt="Calcium-40 energy level diagram"><div><strong>Calcium-40 (<sup>40</sup>Ca)</strong><span>34 levels, 55 transitions below 2 µm</span></div></a></li><li><a class="card" href="calcium-43/"><img src="calcium-43/preview.png" loading="lazy" width="1800" height="1350" alt="Calcium-43 energy level diagram"><div><strong>Calcium-43 (<sup>43</sup>Ca)</strong><span>34 levels, 55 transitions below 2 µm</span></div></a></li><li><a class="card" href="rubidium-85/"><img src="rubidium-85/preview.png" loading="lazy" width="1800" height="1350" alt="Rubidium-85 energy level diagram"><div><strong>Rubidium-85 (<sup>85</sup>Rb)</strong><span>36 levels, 94 transitions below 2 µm</span></div></a></li><li><a class="card" href="rubidium-87/"><img src="rubidium-87/preview.png" loading="lazy" width="1800" height="1350" alt="Rubidium-87 energy level diagram"><div><strong>Rubidium-87 (<sup>87</sup>Rb)</strong><span>36 levels, 94 transitions below 2 µm</span></div></a></li><li><a class="card" href="strontium-87/"><img src="strontium-87/preview.png" loading="lazy" width="1800" height="1350" alt="Strontium-87 energy level diagram"><div><strong>Strontium-87 (<sup>87</sup>Sr)</strong><span>40 levels, 70 transitions below 2 µm</span></div></a></li><li><a class="card" href="strontium-88/"><img src="strontium-88/preview.png" loading="lazy" width="1800" height="1350" alt="Strontium-88 energy level diagram"><div><strong>Strontium-88 (<sup>88</sup>Sr)</strong><span>40 levels, 70 transitions below 2 µm</span></div></a></li><li><a class="card" href="caesium-133/"><img src="caesium-133/preview.png" loading="lazy" width="1800" height="1350" alt="Caesium-133 energy level diagram"><div><strong>Caesium-133 (<sup>133</sup>Cs)</strong><span>31 levels, 79 transitions below 2 µm</span></div></a></li><li><a class="card" href="barium-137/"><img src="barium-137/preview.png" loading="lazy" width="1800" height="1350" alt="Barium-137 energy level diagram"><div><strong>Barium-137 (<sup>137</sup>Ba)</strong><span>44 levels, 89 transitions below 2 µm</span></div></a></li><li><a class="card" href="barium-138/"><img src="barium-138/preview.png" loading="lazy" width="1800" height="1350" alt="Barium-138 energy level diagram"><div><strong>Barium-138 (<sup>138</sup>Ba)</strong><span>44 levels, 89 transitions below 2 µm</span></div></a></li><li><a class="card" href="dysprosium-163/"><img src="dysprosium-163/preview.png" loading="lazy" width="1800" height="1350" alt="Dysprosium-163 energy level diagram"><div><strong>Dysprosium-163 (<sup>163</sup>Dy)</strong><span>39 levels, 55 transitions below 2 µm</span></div></a></li><li><a class="card" href="dysprosium-164/"><img src="dysprosium-164/preview.png" loading="lazy" width="1800" height="1350" alt="Dysprosium-164 energy level diagram"><div><strong>Dysprosium-164 (<sup>164</sup>Dy)</strong><span>39 levels, 55 transitions below 2 µm</span></div></a></li><li><a class="card" href="ytterbium-171/"><img src="ytterbium-171/preview.png" loading="lazy" width="1800" height="1350" alt="Ytterbium-171 energy level diagram"><div><strong>Ytterbium-171 (<sup>171</sup>Yb)</strong><span>18 levels, 26 transitions below 2 µm</span></div></a></li><li><a class="card" href="ytterbium-174/"><img src="ytterbium-174/preview.png" loading="lazy" width="1800" height="1350" alt="Ytterbium-174 energy level diagram"><div><strong>Ytterbium-174 (<sup>174</sup>Yb)</strong><span>18 levels, 26 transitions below 2 µm</span></div></a></li></ul>
+<h2>What each page contains</h2>
+<p>A zoomable diagram (also as PDF and SVG), a table of the key laser-cooling and spectroscopy transitions, the full transition list
+with wavelengths in vacuum and air, frequencies, dipole matrix elements and Einstein A coefficients, level energies with lifetimes and
+Landé factors, hyperfine constants of the isotope, isotope shifts, and for the alkalis the wavelengths for Rydberg excitation.
+All tables are downloadable as CSV from the <a href="https://github.com/Muuuun/atom-energy-levels">GitHub repository</a>.</p>
+<footer>Data: NIST Atomic Spectra Database and the measurements cited on each page. Built 2026-10-01.</footer>
+</main>
+</body></html>
