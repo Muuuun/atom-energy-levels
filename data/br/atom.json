@@ -6,17 +6,17 @@
   "symbol": "Br",
   "A": null,
   "Z": 35,
-  "I": null,
+  "I": "3/2",
   "kind": "nist",
   "limit_cm": 95284.8,
   "scale": "auto",
   "spectrum": "Br I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "79",
   "limit_text": "Br$^+$ ionisation limit   95284.80 cm$^{-1}$  =  11.81381 eV  (104.949 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Literature search was limited: the session's web-search quota was exhausted, so sources were located through Crossref, HAL, OSTI, arXiv and NASA ADS queries and only open copies could be read. Ground-term hyperfine constants are second-hand from Chichinin's JPCRD review (method 'compilation'); the King & Jaccarino 1954 numbers were read on the APS abstract page. B < 0 for both isotopes as printed. The M1 A value is the calculated one adopted by NIST. Two-photon entries: wavelength_vac_nm is the laser wavelength."
  },
  "columns": [
   {
@@ -76,6 +76,14 @@
    "plain": "4s24p5 2P°3/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 884.809774,
+    "A_unc": 6.2e-05,
+    "B": -384.882835,
+    "B_unc": 0.0002,
+    "tier": "exp",
+    "src": "atomic-beam magnetic resonance: Brown & King, Phys. Rev. 142, 53 (1966); King & Jaccarino, Phys. Rev. 94, 1610 (1954); as tabulated in Table 2 of A. I. Chichinin, J. Phys. Chem. Ref. Data 35, 869 (2006)"
+   },
    "col": 1
   },
   {
@@ -89,8 +97,18 @@
    "g": 0.6655,
    "name": "^2P^{o}_{1/2}",
    "plain": "4s24p5 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 960000000.0,
+   "tau_unc": 90000000.0,
+   "tau_tier": "exp",
+   "tau_src": "He, Seth, Tokue, Macdonald, J. Chem. Phys. 110, 7821 (1999) (colour-centre-laser absorption); experimental column of Table 1 of A. I. Chichinin, J. Phys. Chem. Ref. Data 35, 869 (2006)",
+   "hfs": {
+    "A": 5332.55,
+    "A_unc": 0.04,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Davies, Thrush, Stone, Wayne, Chem. Phys. Lett. 17, 19 (1972) (EPR) and Bessis, Picart, Desclaux, Phys. Rev. 187, 88 (1969); Table 2 of A. I. Chichinin, J. Phys. Chem. Ref. Data 35, 869 (2006)"
+   },
    "col": 0
   },
   {
@@ -578,6 +596,32 @@
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy E) (from A)",
    "lam_obs": 117.8895
+  },
+  {
+   "kind": "forbidden",
+   "freq": 2373.70662,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 19,
+   "wn": 79178.33,
+   "lam": 126.2972,
+   "air": null,
+   "use": "TALIF detection of ground-state Br: 2 x 252.594 nm, fluorescence at 635.25 nm to (5s) 4P5/2 (63436.45 cm^-1)",
+   "type": "two-photon"
+  },
+  {
+   "kind": "forbidden",
+   "freq": 2300.69966,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 14,
+   "wn": 76743.08,
+   "lam": 130.3049,
+   "air": null,
+   "use": "two-photon LIF scheme near 260.6 nm with fluorescence 5p 4D°3/2 -> 5s 2[2]3/2 (4P3/2) at 844.9 nm",
+   "type": "two-photon"
   },
   {
    "kind": "E1",
@@ -1419,7 +1463,7 @@
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -1434,189 +1478,70 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$^2P^{o}_{3/2}$ – $2[2]_{3/2}$",
-     "131.7375",
+     "$^2P^{o}_{3/2}$ – $2[1]^{o}_{3/2}$",
+     "126.2972",
      "–",
-     "2275.6805",
-     "0.355",
-     "2.800e+07",
+     "2373.7066",
      "–",
      "–",
-     ""
+     "–",
+     "–",
+     "TALIF detection of ground-state Br: 2 x 252.594 nm, fluor…"
     ],
     [
-     "$^2P^{o}_{3/2}$ – $2[2]_{5/2}$",
-     "131.7691",
+     "$^2P^{o}_{3/2}$ – $2[1]^{o}_{3/2}$",
+     "130.3049",
      "–",
-     "2275.1349",
-     "2.603",
-     "1.000e+09",
+     "2300.6997",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$^2P^{o}_{1/2}$ – $2[2]_{3/2}$",
-     "138.4595",
-     "–",
-     "2165.1998",
-     "1.619",
-     "5.000e+08",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$^2P^{o}_{3/2}$ – $2[0]_{1/2}$",
-     "144.9901",
-     "–",
-     "2067.6749",
-     "1.646",
-     "9.000e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2P^{o}_{3/2}$ – $2[1]_{3/2}$",
-     "148.8459",
-     "–",
-     "2014.1131",
-     "1.141",
-     "2.000e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2P^{o}_{1/2}$ – $2[0]_{1/2}$",
-     "153.1746",
-     "–",
-     "1957.1942",
-     "1.459",
-     "6.000e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2P^{o}_{3/2}$ – $2[2]_{3/2}$",
-     "154.0661",
-     "–",
-     "1945.8686",
-     "1.260",
-     "2.200e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^2P^{o}_{1/2}$ – $2[1]_{1/2}$",
-     "158.2313",
-     "–",
-     "1894.6473",
-     "0.442",
-     "5.000e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[2]_{5/2}$ – $2[3]^{o}_{7/2}$",
-     "827.4686",
-     "827.2413",
-     "362.3007",
-     "8.849",
-     "3.500e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[1]_{1/2}$ – $2[1]^{o}_{1/2}$",
-     "834.5957",
-     "834.3663",
-     "359.2068",
-     "4.285",
-     "3.200e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[2]_{3/2}$ – $2[1]^{o}_{3/2}$",
-     "844.8879",
-     "844.6558",
-     "354.8311",
-     "5.774",
-     "2.800e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[2]_{5/2}$ – $2[3]^{o}_{7/2}$",
-     "882.2364",
-     "881.9942",
-     "339.8096",
-     "9.019",
-     "3.000e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[1]_{3/2}$ – $2[2]^{o}_{5/2}$",
-     "882.7668",
-     "882.5245",
-     "339.6055",
-     "7.818",
-     "3.000e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[2]_{5/2}$ – $2[2]^{o}_{5/2}$",
-     "890.0067",
-     "889.7624",
-     "336.8429",
-     "7.914",
-     "3.000e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[2]_{3/2}$ – $2[1]^{o}_{1/2}$",
-     "916.8584",
-     "916.6068",
-     "326.9779",
-     "4.856",
-     "3.100e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[1]_{3/2}$ – $2[0]^{o}_{1/2}$",
-     "918.0696",
-     "917.8177",
-     "326.5465",
-     "4.625",
-     "2.800e+07",
-     "–",
-     "–",
-     ""
+     "two-photon LIF scheme near 260.6 nm with fluorescence 5p…"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{79}$Br hyperfine structure  ($I$ = 3/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$^2P^{o}_{3/2}$",
+     "884.80977(6)",
+     "-384.88284(20)",
+     "F=0: -3799.14   F=1: -2529.45   F=2: -374.94   F=3: +1894.60"
+    ],
+    [
+     "$^2P^{o}_{1/2}$",
+     "5332.55(4)",
+     "–",
+     "F=1: -6665.69   F=2: +3999.41"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
-  "levels: 33   lines < 2000 nm: 45   with matrix element: 45",
-  "transition-rate provenance: nist: 45",
-  "levels with a measured lifetime: 0"
+  "levels: 33   lines < 2000 nm: 47   with matrix element: 45",
+  "transition-rate provenance: nist: 45, wavelength only: 2",
+  "levels with a measured lifetime: 1"
  ],
- "sources": {}
+ "sources": {
+  "abundance: NIST Atomic Weights and Isotopic Compositions (Br); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, isotope table for bromine": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Br",
+  "NIST ASD ionization-energy table for Br I (reference code L351,L67)": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Br+I&units=0&format=3&order=0&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data",
+  "atomic-beam magnetic resonance: Brown & King, Phys. Rev. 142, 53 (1966); King & Jaccarino, Phys. Rev. 94, 1610 (1954); as tabulated in Table 2 of A. I. Chichinin, J. Phys. Chem. Ref. Data 35, 869 (2006)": "https://srd.nist.gov/JPCRD/jpcrd710.pdf",
+  "He, Seth, Tokue, Macdonald, J. Chem. Phys. 110, 7821 (1999) (colour-centre-laser absorption); experimental column of Table 1 of A. I. Chichinin, J. Phys. Chem. Ref. Data 35, 869 (2006)": "https://srd.nist.gov/JPCRD/jpcrd710.pdf",
+  "Davies, Thrush, Stone, Wayne, Chem. Phys. Lett. 17, 19 (1972) (EPR) and Bessis, Picart, Desclaux, Phys. Rev. 187, 88 (1969); Table 2 of A. I. Chichinin, J. Phys. Chem. Ref. Data 35, 869 (2006)": "https://srd.nist.gov/JPCRD/jpcrd710.pdf",
+  "NIST ASD lines table, Br I 2713.53 nm M1, accuracy B (tp_ref T1416)": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=Br+I&limits_type=0&low_w=1300&upp_w=20000&unit=1&format=3&allowed_out=1&forbid_out=1&show_av=3&A_out=0",
+  "strongest hyperfine component (J=3/2,F=3)-(J=1/2,F=2): Campbell & Kasper, Chem. Phys. Lett. 10, 436 (1971); last column of Table 2 of A. I. Chichinin, J. Phys. Chem. Ref. Data 35, 869 (2006)": "https://srd.nist.gov/JPCRD/jpcrd710.pdf",
+  "Sirse, Foucher, Chabert, Booth, Plasma Sources Sci. Technol. 23, 062003 (2014), abstract (HAL record hal-01549574)": "https://hal.science/hal-01549574v1",
+  "NIST ASD level energy 76743.08 cm^-1; the 844.89 nm line 5s 2[2]3/2 - 5p 2[1]°3/2 is listed (from NIST) in Table I of Filin, Savukov, Colgan, J. Phys. B 53, 145003 (2020) (accepted manuscript on OSTI)": "https://www.osti.gov/servlets/purl/1688760"
+ }
 }
