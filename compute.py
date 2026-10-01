@@ -435,10 +435,13 @@ def build_nist(key, cfg):
         # hyperfine constants of the most abundant isotope that has a nuclear spin
         iso = lit.raw["isotopes"]
         ab = lambda k: iso[k].get("abundance_percent") or 0 if isinstance(iso[k], dict) else 0
-        lit.iso = max(iso, key=ab)
+        n_freq = lambda k: sum(1 for t in lit.raw.get("transitions", []) if isinstance(t.get("frequency_THz"), dict)
+                               and str(t["frequency_THz"].get("isotope")) == k) + sum(1 for t in lit.raw.get("transitions", []) if f"frequency_THz_{k}" in t)
+        lit.iso = max(iso, key=lambda k: (ab(k), n_freq(k)))  # radioactive elements: the isotope with most measured frequencies
         with_hfs = {k for l in lit.raw.get("levels", []) for k in (l.get("hyperfine") or {})}
         if with_hfs:
-            hfs_iso = max(with_hfs, key=lambda k: ab(k) if k in iso else -1)
+            n_hfs = lambda k: sum(1 for l in lit.raw.get("levels", []) if k in (l.get("hyperfine") or {}))
+            hfs_iso = max(with_hfs, key=lambda k: (ab(k) if k in iso else -1, n_hfs(k)))
             cfg = dict(cfg, I=str((iso.get(hfs_iso) or {}).get("I", "0")) if isinstance(iso.get(hfs_iso), dict) else "0")
     nist, limit = al.nist_levels(sym)
     lines = al.nist_lines(sym, 1 if cfg.get("auto") else 200)
