@@ -73,6 +73,8 @@ def nist_levels(symbol):
         levels.append(dict(conf=r["Configuration"], term=r["Term"], J=j, E=e,
                            unc=_num(r.get("Uncertainty (cm-1)")), g=_num(r.get("Lande"))))
     levels.sort(key=lambda l: l["E"])
+    for i, l in enumerate(levels):
+        l["i"] = i
     return levels, limit
 
 
@@ -87,7 +89,8 @@ def nist_lines(symbol, low_nm=200):
         if ei is None or ek is None or ek <= ei:
             continue
         out.append(dict(Ei=ei, Ek=ek, obs=_num(r.get("obs_wl_vac(nm)")), A=_num(r.get("Aki(s^-1)")),
-                        acc=r.get("Acc", ""), type=r.get("Type", ""), intens=_num(r.get("intens"))))
+                        acc=r.get("Acc", ""), type=r.get("Type", ""), intens=_num(r.get("intens")),
+                        Ji=_j(r.get("J_i") or ""), Jk=_j(r.get("J_k") or "")))
     return out
 
 

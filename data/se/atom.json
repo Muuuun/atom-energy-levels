@@ -15,7 +15,7 @@
   "has_lit": true,
   "freq_isotope": "80",
   "limit_text": "Se$^+$ ionisation limit   78658.15 cm$^{-1}$  =  9.75237 eV  (127.132 nm)",
-  "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
+  "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "NIST ASD has Se I level energies but no classified lines; the E1 transitions here are the classified persistent lines of the NIST Handbook of Basic Atomic Spectroscopic Data, re-expressed with the NIST ASD level energies of data/nist/Se_I_levels.tsv (identification by configuration, term and J). The 'wavelength_nm' field gives the observed wavelength as listed (vacuum below 200 nm, air above) with its 'medium'; the wavelength in each label is the vacuum Ritz value from the NIST ASD energies. A values of the six 5s-4p4 lines are those of Morton 2000 as listed by NIST (compilation: Bengtsson et al. laser lifetimes x Ubelis and Berzinsh branching); rme_J_ea0 is derived from them (convention of SCHEMA.md). Branching fractions of the 3S°1 level are derived from the four Ubelis and Berzinsh A values; those of 5S°2 from the two Morton A values. Lifetimes of the 4p4 metastable levels and all forbidden-line rates are 1964 THEORY (Garstang); A_s of a forbidden line is the sum of the calculated M1 and E2 parts given in its note. Natural selenium is 92 % even isotopes (I = 0) and 7.6 % 77Se (I = 1/2)."
  },
  "columns": [
@@ -92,7 +92,7 @@
    "tau_ns": 5880000000.0,
    "tau_unc": null,
    "tau_tier": "theory",
-   "tau_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 25",
+   "tau_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 25. Note: derived: 1/sum of A(3P1-3P2: M1 0.17, E2 3.9e-5) s^-1",
    "col": 0
   },
   {
@@ -109,7 +109,7 @@
    "tau_ns": 115000000000.0,
    "tau_unc": null,
    "tau_tier": "theory",
-   "tau_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 25",
+   "tau_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 25. Note: derived: 1/sum of A(3P0-3P1 M1 0.0085) and A(3P0-3P2 E2 1.8e-4) s^-1",
    "col": 0
   },
   {
@@ -126,7 +126,7 @@
    "tau_ns": 1360000000.0,
    "tau_unc": null,
    "tau_tier": "theory",
-   "tau_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 25",
+   "tau_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 25. Note: derived: 1/sum of M1+E2 rates to 3P2 (0.62 + 0.0074), 3P1 (0.11 + 3.5e-4) and 3P0 (9.2e-5) s^-1",
    "col": 2
   },
   {
@@ -143,7 +143,7 @@
    "tau_ns": 98200000.0,
    "tau_unc": null,
    "tau_tier": "theory",
-   "tau_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 25",
+   "tau_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 25. Note: derived: 1/sum of A(1S0-1D2 E2 2.3), A(1S0-3P2 E2 0.18), A(1S0-3P1 M1 7.7) s^-1",
    "col": 3
   },
   {

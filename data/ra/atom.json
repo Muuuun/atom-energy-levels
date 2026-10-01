@@ -6,7 +6,7 @@
   "symbol": "Ra",
   "A": null,
   "Z": 88,
-  "I": "3/2",
+  "I": "5/2",
   "kind": "nist",
   "limit_cm": 42573.36,
   "scale": "auto",
@@ -15,7 +15,7 @@
   "has_lit": true,
   "freq_isotope": "226",
   "limit_text": "Ra$^+$ ionisation limit   42573.36 cm$^{-1}$  =  5.27842 eV  (234.889 nm)",
-  "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
+  "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Level energies are the NIST ASD values (226Ra; NIST adopts Santra et al. for 1P1 and Guest/Scielzo et al. for 3P1). rme_J_ea0 is |<J||D||J'>| in e a0 in the symmetric convention of the Safronova papers / UDel portal, A = 2.02613e18 |d|^2 / ((2J'+1) lambda^3[Angstrom]), J' = upper level; Dzuba & Flambaum (their Eq. 12) and Dzuba & Ginges use the same convention, so no conversion was needed. The UDel portal does carry neutral Ra (element key \"Ra1\": 48 matrix elements, 24 rates, lifetimes; data service https://atom.ece.udel.edu/graphql behind https://www1.udel.edu/atom/); all its Ra I numbers are theory except the 3P1 lifetime, which it attributes to Scielzo et al. It also carries Ra+ (key \"Ra2\"), not used here. Isotope shifts are nu(first) - nu(second); the ISOLDE tables are referenced to 214Ra, and for odd isotopes refer to hyperfine centres of gravity. Hyperfine A, B signs as printed in the compilation. frequency_THz entries are for 226Ra (I = 0, no hyperfine structure); frequency_THz_225 entries are centres of gravity derived here from the measured hyperfine component and A, and the measured components themselves are under hyperfine_component_frequency_THz. Extra fields beyond the schema: ionization_energy, linewidth_MHz and measured_energy_cm on levels, oscillator_strength, hyperfine_component_frequency_THz, wavenumber_cm inside frequency entries, half_life / mu / Q in isotopes (abundance_percent is null: no stable isotope). Radium has no stable isotope; 226Ra (1600 y) and 225Ra (14.9 d, I=1/2) are the laser-cooled ones, 223Ra (11.43 d, I=3/2) is the third of interest."
  },
  "columns": [
@@ -121,7 +121,7 @@
    "tau_ns": 510000.0,
    "tau_unc": 60000.0,
    "tau_tier": "exp",
-   "tau_src": "Guest, Scielzo, Ahmad, Bailey, Greene, Holt, Lu, O'Connor, Potterveld, Phys. Rev. Lett. 98, 093001 (2007) [arXiv:physics/0701263]; from the room-temperature blackbody repumping rate 3P0 -> 3D1 measured in the MOT (T = 296(3) K); also in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table IV",
+   "tau_src": "Guest, Scielzo, Ahmad, Bailey, Greene, Holt, Lu, O'Connor, Potterveld, Phys. Rev. Lett. 98, 093001 (2007) [arXiv:physics/0701263]; from the room-temperature blackbody repumping rate 3P0 -> 3D1 measured in the MOT (T = 296(3) K); also in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table IV. Note: the authors interpret this number as a lower bound on the lifetime, because other loss channels from 3P0 could contribute to the measured rate",
    "col": 5
   },
   {
@@ -157,10 +157,10 @@
    "tau_tier": "exp",
    "tau_src": "Scielzo, Guest, Schulte, Ahmad, Bailey, Bowers, Holt, Lu, O'Connor, Potterveld, Phys. Rev. A 73, 010501(R) (2006) (abstract: fluorescence decay after pulsed excitation of a thermal atomic beam); same number in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table IV and on the UDel portal",
    "hfs": {
-    "A": 1202.1,
-    "A_unc": 0.6,
-    "B": -470.2,
-    "B_unc": 1.2,
+    "A": -475.8,
+    "A_unc": 1.4,
+    "B": -747.6,
+    "B_unc": 2.6,
     "tier": "exp",
     "src": "Wendt, Ahmad, Klempt, Neugart, Otten, Stroke, Z. Phys. D 4, 227 (1987) (collinear laser spectroscopy at ISOLDE), as tabulated in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table VI"
    },
@@ -199,10 +199,10 @@
    "tau_tier": "theory",
    "tau_src": "UDel Portal for High-Precision Atomic Data and Computation (Safronova group), Ra I tables, read 2026-10-01 via its data service; theory value, no reference attached by the portal",
    "hfs": {
-    "A": 699.6,
-    "A_unc": 3.3,
-    "B": 688.5,
-    "B_unc": 4.0,
+    "A": 278.6,
+    "A_unc": 0.9,
+    "B": 1103.8,
+    "B_unc": 3.9,
     "tier": "exp",
     "src": "Wendt, Ahmad, Klempt, Neugart, Otten, Stroke, Z. Phys. D 4, 227 (1987) (collinear laser spectroscopy at ISOLDE), as tabulated in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table VII"
    },
@@ -241,10 +241,10 @@
    "tau_tier": "theory",
    "tau_src": "UDel Portal for High-Precision Atomic Data and Computation (Safronova group), Ra I tables, read 2026-10-01 via its data service; theory value, no reference attached by the portal",
    "hfs": {
-    "A": -344.5,
-    "A_unc": 0.9,
-    "B": 421.5,
-    "B_unc": 1.6,
+    "A": 136.3,
+    "A_unc": 0.8,
+    "B": 669.6,
+    "B_unc": 3.0,
     "tier": "exp",
     "src": "Wendt, Ahmad, Klempt, Neugart, Otten, Stroke, Z. Phys. D 4, 227 (1987) (collinear laser spectroscopy at ISOLDE), as tabulated in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table V"
    },
@@ -351,10 +351,10 @@
    "tau_tier": "theory",
    "tau_src": "Dzuba & Flambaum, J. Phys. B 40, 227 (2007) [arXiv:physics/0610119]; Table 3 (CI + MBPT)",
    "hfs": {
-    "A": 535.6,
-    "A_unc": 4.6,
-    "B": 73.9,
-    "B_unc": 3.0,
+    "A": 213.3,
+    "A_unc": 0.6,
+    "B": 117.8,
+    "B_unc": 4.4,
     "tier": "exp",
     "src": "Wendt, Ahmad, Klempt, Neugart, Otten, Stroke, Z. Phys. D 4, 227 (1987) (collinear laser spectroscopy at ISOLDE), as tabulated in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table VII"
    },
@@ -1355,7 +1355,7 @@
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
   },
   {
-   "title": "$^{223}$Ra hyperfine structure  ($I$ = 3/2)",
+   "title": "$^{221}$Ra hyperfine structure  ($I$ = 5/2)",
    "header": [
     "Level",
     "A (MHz)",
@@ -1366,27 +1366,27 @@
    "rows": [
     [
      "$7s7p\\ ^3P^{o}_{1}$",
-     "1202.1(6)",
-     "-470.2(12)",
-     "F=1/2: -3593.00   F=3/2: -731.90   F=5/2: +1685.60"
+     "-475.8(14)",
+     "-747.6(26)",
+     "F=3/2: +1141.98   F=5/2: +1073.88   F=7/2: -1376.40"
     ],
     [
      "$7s7p\\ ^3P^{o}_{2}$",
-     "700(3)",
-     "688(4)",
-     "F=1/2: -2545.76   F=3/2: -2098.80   F=5/2: -780.11   F=7/2: +2270.93"
+     "278.6(9)",
+     "1104(4)",
+     "F=1/2: -1177.54   F=3/2: -1256.35   F=5/2: -1111.75   F=7/2: -329.81   F=9/2: +1668.95"
     ],
     [
      "$7s7p\\ ^1P^{o}_{1}$",
-     "-344.5(9)",
-     "421.5(16)",
-     "F=1/2: +1388.12   F=3/2: -77.00   F=5/2: -411.38"
+     "136.3(8)",
+     "670(3)",
+     "F=3/2: -8.33   F=5/2: -671.98   F=7/2: +508.15"
     ],
     [
      "$7s7d\\ ^3D_{3}$",
-     "536(5)",
-     "74(3)",
-     "F=3/2: -3169.26   F=5/2: -1885.68   F=7/2: -36.95   F=9/2: +2428.68"
+     "213.3(6)",
+     "118(4)",
+     "F=1/2: -2062.32   F=3/2: -1774.18   F=5/2: -1282.16   F=7/2: -568.59   F=9/2: +391.26   F=11/2: +1629.20"
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."

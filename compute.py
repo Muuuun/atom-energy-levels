@@ -8,6 +8,7 @@ high-accuracy theory quoted in the literature file > ARC (alkalis only; literatu
 Each value carries a tier: "exp", "nist", "theory", "model".
 """
 import csv
+import datetime
 import json
 import os
 import re
@@ -24,6 +25,9 @@ warnings.filterwarnings("ignore")
 LAMBDA_MAX_NM = 2000.0
 RYDBERG_N = [30, 40, 50, 70, 100]
 TIER_OF = {"experiment": "exp", "compilation": "exp", "theory": "theory"}
+ENERGY_MAX_AGE_YR = 20  # measured level energies older than this do not replace the NIST value
+ENERGY_MIN_YEAR = datetime.date.today().year - ENERGY_MAX_AGE_YR
+ISOTOPE_SHIFT_MAX_CM = 2.0
 
 
 # ----------------------------------------------------------------------------- literature lookup
@@ -101,6 +105,32 @@ class Literature:
         src = v[3] + (f". Note: {note}" if re.search(r"derived|bound|limit", note, re.I) else "")
         return v[0] * k, (v[1] * k if isinstance(v[1], (int, float)) else None), v[2], src
 
+    def energy(self, e, j=None, nist_unc=None):
+        """Measured level energy that replaces the NIST one: (value, unc, source) or None.
+        Owner's rule: a direct measurement published within ENERGY_MAX_AGE_YR years wins, older ones leave NIST in place.
+        A value measured in another isotope is used only where NIST is off by more than any isotope shift;
+        the nearest isotope is taken."""
+        l = self.level(e, j)
+        cands = []
+        for raw in (l.get("measured_energy_cm"), l.get("level_energy_measured")):
+            if isinstance(raw, dict) and "value" not in raw:
+                raw = [dict(v, isotope=k) for k, v in raw.items() if isinstance(v, dict)]
+            for x in raw if isinstance(raw, list) else [raw]:
+                year = re.search(r"\(((?:19|20)\d\d)\)", x.get("source", "")) if isinstance(x, dict) else None
+                if (not year or x.get("method") != "experiment" or not isinstance(x.get("value"), (int, float))
+                        or int(x.get("year", year.group(1))) < ENERGY_MIN_YEAR):
+                    continue
+                iso = str(x.get("isotope", self.iso))
+                d, u = abs(x["value"] - l["nist_energy_cm"]), x.get("unc") or 0
+                if iso != self.iso and d < ISOTOPE_SHIFT_MAX_CM:
+                    continue
+                if d <= u + (nist_unc or 0) and (not u or u >= (nist_unc or 1e9)):
+                    continue  # agrees with NIST and is no more precise: nothing to gain
+                src = x.get("source", "") + (f" (measured in isotope {iso})" if iso != self.iso else "")
+                far = abs(int(iso) - int(self.iso)) if iso.isdigit() and self.iso.isdigit() else 0
+                cands.append((far, x.get("unc") or 1e9, x["value"], x.get("unc"), src))
+        return min(cands)[2:] if cands else None
+
     def hyperfine(self, e, j=None):
         h = self.level(e, j).get("hyperfine", {}).get(self.iso)
         if not h or not isinstance(h.get("A_MHz"), (int, float)):
@@ -145,11 +175,14 @@ def fmt_unc(v, u, digits=None, max_digits=6):
 def finish_transition(t, lo, up, lit, tau_ns):
     """Fill wavelength-derived fields and the literature overrides shared by both kinds of atom."""
     wn = up["E"] - lo["E"]
-    lt = lit.transition(lo["E"], up["E"], lo["J"], up["J"])
+    lt = lit.transition(lo.get("E_nist", lo["E"]), up.get("E_nist", up["E"]), lo["J"], up["J"])
     f = lit.frequency_THz(lt) if lt else None
     if f:
         t.update(freq=f[0], freq_unc=f[1], freq_src=f[2], freq_tier="exp")
         wn = f[0] * 1e12 / al.C / 100
+    elif lo.get("E_tier") == "exp" or up.get("E_tier") == "exp":
+        t.update(freq=round(wn * 100 * al.C / 1e12, 5), freq_tier="exp",
+                 freq_src="; ".join(l["E_src"] for l in (lo, up) if l.get("E_tier") == "exp") + " (measured level energy)")
     else:
         t.update(freq=round(wn * 100 * al.C / 1e12, 5), freq_tier="nist", freq_src="NIST ASD level energies")
     lam = 1e7 / wn
@@ -449,46 +482,50 @@ def build_nist(key, cfg):
     lines = al.nist_lines(sym, 1 if cfg.get("auto") else 200)
     E = np.array([l["E"] for l in nist])
 
-    def find(e, tol=1.0):
-        i = int(np.argmin(np.abs(E - e)))
-        return nist[i] if abs(E[i] - e) < tol else None
+    def find(e, tol=1.0, j=None):
+        """Nearest NIST level; J decides between fine-structure components NIST lists at one energy."""
+        near = [i for i in np.flatnonzero(np.abs(E - e) < tol)]
+        same_j = [i for i in near if j is not None and nist[i]["J"] == j]
+        return nist[min(same_j or near, key=lambda i: abs(E[i] - e))] if near else None
+
+    jof = lambda x: float(Fraction(str(x))) if re.fullmatch(r"\d+(/2)?", str(x)) else None
 
     # ---- which lines are drawn
     chosen = {}
     if cfg.get("auto"):
-        chosen = auto_select(nist, lines, lambda e: find(e, 0.05))
+        chosen = auto_select(nist, lines, lambda e, j: find(e, 0.05, j))
         lines = []
     for ln in lines:
-        lo, up = find(ln["Ei"]), find(ln["Ek"])
+        lo, up = find(ln["Ei"], j=ln["Ji"]), find(ln["Ek"], j=ln["Jk"])
         if not lo or not up or up["E"] > cfg["E_cut"] or 1e7 / (up["E"] - lo["E"]) >= LAMBDA_MAX_NM or ln["type"] == "2P":
             continue
-        if ln["A"] is None and not cfg["keep_unrated"] and not lit.transition(lo["E"], up["E"]):
+        if ln["A"] is None and not cfg["keep_unrated"] and not lit.transition(lo["E"], up["E"], lo["J"], up["J"]):
             continue
-        merge_line(chosen, (lo["E"], up["E"]), ln)
+        merge_line(chosen, (lo["i"], up["i"]), ln)
     def lit_rank(lt):  # annotated lines first, then the strongest
         v = Literature.val(lt.get("A_s"))
         return (0 if lt.get("use") else 1, -(v[0] if v else 0))
 
     for lt in sorted(lit.raw.get("transitions", []), key=lit_rank):
-        lo, up = find(lt.get("lower_cm", -1e9)), find(lt.get("upper_cm", -1e9))
+        lo, up = find(lt.get("lower_cm", -1e9), j=jof(lt.get("lower_J"))), find(lt.get("upper_cm", -1e9), j=jof(lt.get("upper_J")))
         if lo and up and up["E"] > lo["E"] and 1e7 / (up["E"] - lo["E"]) < LAMBDA_MAX_NM and up["E"] <= max(cfg["E_cut"], 0):
-            if cfg.get("auto") and len(chosen) >= 90 and not lt.get("use") and (lo["E"], up["E"]) not in chosen:
+            if cfg.get("auto") and len(chosen) >= 90 and not lt.get("use") and (lo["i"], up["i"]) not in chosen:
                 continue  # a big literature table must not flood an automatic page: only its annotated lines are added
-            chosen.setdefault((lo["E"], up["E"]), {})
-    used = sorted({e for pair in chosen for e in pair})
+            chosen.setdefault((lo["i"], up["i"]), {})
+    used = sorted({i for pair in chosen for i in pair})  # indices into the energy-ordered NIST level list
     if not used and cfg.get("auto") and len(nist) >= 5:
-        used = [l["E"] for l in nist[:40]]  # NIST has levels but no classified lines: draw the lowest levels only
+        used = [l["i"] for l in nist[:40]]  # NIST has levels but no classified lines: draw the lowest levels only
     if not used:
         return None
     if cfg.get("auto"):
-        used = sorted(set(used) | {nist[0]["E"]})  # the ground state is always drawn
+        used = sorted(set(used) | {0})  # the ground state is always drawn
     if cfg.get("auto"):
         # column scheme: LS terms when nearly every level has one and they fit, otherwise parity and J
-        terms = [find(e)["term"] or "" for e in used]
+        terms = [nist[i]["term"] or "" for i in used]
         n_ls = sum(1 for t in terms if re.fullmatch(al.LS_TERM, t))
         cfg = dict(cfg, columns="LS" if n_ls >= 0.8 * len(used) and len(set(terms)) <= 15 else "J")
         # closed-shell prefix shared by every drawn configuration
-        confs = [find(e)["conf"].split(".") for e in used]
+        confs = [nist[i]["conf"].split(".") for i in used]
         k = 0
         while all(len(c) > k + 1 for c in confs) and len({c[k] for c in confs}) == 1:
             k += 1
@@ -496,8 +533,8 @@ def build_nist(key, cfg):
 
     # ---- levels and columns
     levels = []
-    for e in used:
-        lv = find(e)
+    for i in used:
+        lv = nist[i]
         sc = al.short_conf(lv["conf"], cfg["core"])
         par = al.parity_of(lv["conf"], lv["term"])
         ls = re.fullmatch(al.LS_TERM, lv["term"] or "")
@@ -514,7 +551,10 @@ def build_nist(key, cfg):
         else:
             name = (al.conf_tex(sc) + r"\ " if cfg["columns"] == "LS" else "") + al.term_tex(lv["term"], lv["J"])
         L = dict(id=len(levels), E=lv["E"], unc=lv["unc"], J=lv["J"], conf=lv["conf"], term=lv["term"], parity=par, g=lv["g"],
-                 name=name, plain=f"{sc.replace('.', '')} {lv['term'].replace('*', '°').replace('?', '')}{al.jstr(lv['J'])}".strip(), _group=group, _gtex=gtex)
+                 name=name, plain=f"{sc.replace('.', '')} {lv['term'].replace('*', '°').replace('?', '')}{al.jstr(lv['J'])}".strip(), _group=group, _gtex=gtex, _i=i)
+        em = lit.energy(lv["E"], lv["J"], lv["unc"]) if lv["E"] else None
+        if em:
+            L.update(E=em[0], unc=em[1], E_nist=lv["E"], E_tier="exp", E_src=em[2])
         tau = lit.lifetime_ns(lv["E"], lv["J"])
         if lv["E"] == 0:
             L.update(tau_ns=None, tau_tier="stable")
@@ -543,7 +583,7 @@ def build_nist(key, cfg):
         ground_parity = levels[0]["parity"]
         order = sorted(groups, key=lambda g: (g[0] != ground_parity, g[1]))
     # shorten the arrows: reorder the columns (ground-state column stays first) to minimise total horizontal span
-    gof = {l["E"]: g for g, ls in groups.items() for l in ls}
+    gof = {l["_i"]: g for g, ls in groups.items() for l in ls}
     pairs = [(gof[a], gof[b]) for a, b in chosen]
 
     def span(o):
@@ -570,9 +610,9 @@ def build_nist(key, cfg):
             columns.append(dict(key=g, header=first["_gtex"], group=None, width=1.0))
         else:
             columns.append(dict(key=f"{g[0]} J={al.jstr(g[1])}", header=rf"J = {al.jstr(g[1])}", group=first["_gtex"], width=1.0))
+    by_E = {l["_i"]: l for l in levels}
     for L in levels:
-        del L["_group"], L["_gtex"]
-    by_E = {l["E"]: l for l in levels}
+        del L["_group"], L["_gtex"], L["_i"]
 
     # ---- transitions
     transitions = []
@@ -668,7 +708,7 @@ def build_nist(key, cfg):
                 has_lit=bool(lit.raw.get("levels") or lit.raw.get("transitions")), freq_isotope=lit.iso if cfg.get("auto") else None,
                 limit_text=(rf"{sym}$^+$ ionisation limit   {limit:.2f} cm$^{{-1}}$  =  {limit / al.EV_TO_CM:.5f} eV  ({1e7 / limit:.3f} nm)"
                             if limit else "ionisation limit not listed by NIST"),
-                guide_tau="Level caption:  NIST energy and measured lifetime (where one exists).",
+                guide_tau="Level caption:  energy (NIST, or a measurement of the last %d years where one exists) and measured lifetime (where one exists)." % ENERGY_MAX_AGE_YR,
                 notes=lit.raw.get("notes", ""))
     return dict(meta=meta, columns=columns, levels=levels, transitions=transitions, rydberg_levels=[], tables=tables, validation=validation,
                 sources=lit.source_urls())
@@ -688,7 +728,7 @@ def auto_select(nist, lines, find, max_lines=70):
     """NIST-only species: the strongest classified lines, favouring those that start on the lowest levels."""
     cand = []
     for ln in lines:
-        lo, up = find(ln["Ei"]), find(ln["Ek"])
+        lo, up = find(ln["Ei"], ln["Ji"]), find(ln["Ek"], ln["Jk"])
         if lo and up and up["E"] > lo["E"] and ln["type"] != "2P" and 1e7 / (up["E"] - lo["E"]) < LAMBDA_MAX_NM:
             cand.append((lo, up, ln))
     rated = [c for c in cand if c[2]["A"]]
@@ -701,7 +741,7 @@ def auto_select(nist, lines, find, max_lines=70):
         first += sorted([c for c in pool if id(c[2]) not in taken], key=strength, reverse=True)[:45 - len(first)]
     out = {}
     for lo, up, ln in first:
-        merge_line(out, (lo["E"], up["E"]), ln)
+        merge_line(out, (lo["i"], up["i"]), ln)
     return out
 
 
@@ -724,12 +764,13 @@ def write_outputs(key, atom):
     with open(os.path.join(out, "levels.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["level", "J", "parity", "energy_cm", "lifetime_ns", "lifetime_unc_ns", "lifetime_tier", "lifetime_source",
-                    "g_J", "hfs_A_MHz", "hfs_B_MHz", "hfs_source", "lifetime_source_url", "hfs_source_url"])
+                    "g_J", "hfs_A_MHz", "hfs_B_MHz", "hfs_source", "lifetime_source_url", "hfs_source_url", "energy_tier", "energy_source", "nist_energy_cm"])
         for l in L:
             h = l.get("hfs") or {}
             w.writerow([l["plain"], al.jstr(l["J"]), l["parity"], l["E"], l.get("tau_ns") or "", l.get("tau_unc") or "", l["tau_tier"],
                         l.get("tau_src", ""), l.get("g") or "", h.get("A", ""), h.get("B") or "", h.get("src", ""),
-                        url_of(atom, l.get("tau_src")), url_of(atom, h.get("src"))])
+                        url_of(atom, l.get("tau_src")), url_of(atom, h.get("src")),
+                        l.get("E_tier", "nist" if atom["meta"]["kind"] == "nist" else ""), l.get("E_src", ""), l.get("E_nist", "")])
     with open(os.path.join(out, "transitions.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["lower", "upper", "kind", "wavelength_vac_nm", "wavelength_air_nm", "frequency_THz", "frequency_source", "wavenumber_cm",

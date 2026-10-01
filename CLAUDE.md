@@ -10,6 +10,12 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
   measurement (`data/literature/<El>.json`) > NIST ASD > high-accuracy theory from the literature > ARC model potential.
 - Every literature value carries its citation and URL; every value carries a tier (`exp`, `nist`, `theory`, `model`).
   On diagrams `*` marks theory and `≈` a model value. Never present a calculated or derived number as measured.
+- Level energies (owner's decision, 2026-10-01): a direct measurement published within the last 20 years replaces the NIST
+  energy (`Literature.energy` in `compute.py`, fields `measured_energy_cm` / `level_energy_measured`, `method: "experiment"`);
+  older measurements leave NIST in place. A value from another isotope is used only where NIST is off by more than 2 cm^-1.
+  The level keeps `E_nist`, and the page shows both. Apply the same age test before preferring any old measurement over NIST.
+- Data read from publisher pages by an automated reader is kept, but must be verified against an independent printing
+  (owner's decision, 2026-10-01); see `data/literature/verification_lifetimes_2026-10-01.md`.
 - Each drawn transition is labelled with vacuum wavelength and reduced dipole matrix element |<J||er||J'>| (e·a0),
   convention A = ω³|d|²/(3πε₀ħc³(2J'+1)).
 
@@ -54,12 +60,14 @@ requests, mark derived / second-hand values, list conflicts.
 
 ## Decisions still owed by the owner
 
-1. Keep, withdraw, or re-verify the lifetime tables that were read from "subscriber-only" tables embedded in public
-   abstract pages (Tm, Ho, Dy; possibly Co, Ni).
-2. Override NIST level energies with measured ones where they disagree (Fr 8S, 9P, 10P, 7D)?
-3. Boron 249.75 nm isotope-shift sign (paper text contradicts its own absolute frequencies; stored as +5031.3 MHz).
+1. (Decided 2026-10-01: keep and verify. Decided: recent measured energies override NIST; Fr 8S, 8P3/2, 9P, 10P now measured,
+   Fr 7D (measured 2000) stays NIST.)
+2. Boron 249.75 nm isotope-shift sign (paper text contradicts its own absolute frequencies; stored as +5031.3 MHz).
 
 ## Known limitations
+
+- NIST lists some unresolved fine-structure doublets at one energy (B, O, Zn, Al, Be): levels are identified by their index in
+  the NIST list and lines are matched with J, never by energy alone; the diagram draws one bar with a caption naming both J.
 
 - Literature values were checked for format, level matching and unit convention, not value-by-value against the papers;
   subagent-reported doubts are in each file's `conflicts` / `notes`.

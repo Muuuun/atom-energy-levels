@@ -340,6 +340,12 @@ def draw(key):
             ax.text(x - 0.065, yc + 3 * upp, f"{energy}    {tau}", ha="left", va="bottom", zorder=8, gid=f"lvd-{k}", **sub)
             placer.block(to_pt(x + 0.03, y) + np.array([0, 17]), 0.0, 190, 22)
         else:
+            # fine-structure components NIST lists at one energy share a bar: one caption naming every J
+            twins = [M for M in levels if M["col"] == L["col"] and M["E"] == L["E"]]
+            if twins[0] is not L:
+                continue
+            if len(twins) > 1 and re.search(r"_\{[^{}]*\}$", L["name"]):
+                name = "$" + re.sub(r"_\{[^{}]*\}$", "_{" + ",\\,".join(al.jstr(M["J"]) for M in twins) + "}", L["name"]) + "$"
             # one line above the bar; where arrows leave the bar it is drawn under them
             z = 3.5 if k in has_out else 8
             detail = f"{energy}   {tau}".rstrip()
@@ -438,7 +444,7 @@ def draw(key):
     fig.savefig(os.path.join(out, "diagram.pdf"))
     fig.savefig(os.path.join(out, "preview.png"), dpi=1800 / fig_w)
     plt.close(fig)
-    keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "tau_ns", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term")
+    keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "tau_ns", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term", "E_nist", "E_tier", "E_src")
     with open(os.path.join(out, "data.json"), "w") as f:
         json.dump(dict(meta={k: meta.get(k) for k in ("slug", "element", "symbol", "A", "I", "limit_cm", "spectrum", "auto")},
                        sources=atom.get("sources", {}),

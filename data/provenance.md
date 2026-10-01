@@ -14,7 +14,7 @@ where the literature file has one; column *ν meas.*).
 | Strontium-87 | 70 | 57 | 8 | 0 | 0 | 5 | 39 | 7 | 2 | 0 | 30 | 2 | 14 |
 | Barium-137 | 89 | 80 | 8 | 1 | 0 | 0 | 43 | 7 | 19 | 0 | 17 | 0 | 7 |
 | Barium-138 | 89 | 80 | 8 | 1 | 0 | 0 | 43 | 7 | 19 | 0 | 17 | 2 | 0 |
-| Dysprosium-164 | 55 | 26 | 23 | 5 | 0 | 1 | 38 | 30 | 2 | 0 | 6 | 1 | 0 |
+| Dysprosium-164 | 55 | 26 | 23 | 5 | 0 | 1 | 38 | 30 | 2 | 0 | 6 | 2 | 0 |
 | Dysprosium-163 | 55 | 26 | 23 | 5 | 0 | 1 | 38 | 30 | 2 | 0 | 6 | 0 | 10 |
 | Lithium-6 | 85 | 83 | 2 | 0 | 0 | 0 | 31 | 6 | 16 | 9 | 0 | 2 | 7 |
 | Lithium-7 | 85 | 83 | 2 | 0 | 0 | 0 | 31 | 6 | 16 | 9 | 0 | 1 | 10 |
@@ -22,7 +22,7 @@ where the literature file has one; column *ν meas.*).
 | Potassium-39 | 84 | 77 | 5 | 0 | 0 | 2 | 33 | 16 | 13 | 4 | 0 | 2 | 20 |
 | Potassium-40 | 84 | 77 | 5 | 0 | 0 | 2 | 33 | 16 | 13 | 4 | 0 | 2 | 7 |
 | Potassium-41 | 84 | 77 | 5 | 0 | 0 | 2 | 33 | 16 | 13 | 4 | 0 | 2 | 12 |
-| Beryllium-9 | 24 | 24 | 0 | 0 | 0 | 0 | 14 | 7 | 4 | 0 | 3 | 2 | 8 |
+| Beryllium-9 | 26 | 26 | 0 | 0 | 0 | 0 | 16 | 8 | 4 | 0 | 4 | 3 | 8 |
 | Magnesium-24 | 61 | 60 | 1 | 0 | 0 | 0 | 17 | 13 | 1 | 0 | 3 | 4 | 0 |
 | Magnesium-25 | 61 | 60 | 1 | 0 | 0 | 0 | 17 | 13 | 1 | 0 | 3 | 0 | 3 |
 | Calcium-40 | 61 | 53 | 5 | 0 | 0 | 3 | 34 | 15 | 1 | 0 | 18 | 2 | 0 |
@@ -30,10 +30,10 @@ where the literature file has one; column *ν meas.*).
 
 Totals over the 12 curated elements (one isotope each):
 
-- transition rates / matrix elements: nist 580 (70%), exp 79 (9%), theory 151 (18%), model 0 (0%), none 24 (3%)
-- lifetimes of excited levels: exp 169 (46%), theory 90 (25%), model 25 (7%), none 82 (22%)
+- transition rates / matrix elements: nist 582 (70%), exp 79 (9%), theory 151 (18%), model 0 (0%), none 24 (3%)
+- lifetimes of excited levels: exp 170 (46%), theory 90 (24%), model 25 (7%), none 83 (23%)
 
-NIST-only element pages (78 elements, no literature compiled yet): 4090 lines drawn, 2460 with a NIST transition rate, 454 wavelength only; no lifetimes.
+NIST-only element pages (78 elements, no literature compiled yet): 4159 lines drawn, 2478 with a NIST transition rate, 454 wavelength only; no lifetimes.
 
 nist = NIST ASD compilation; exp = measurement from data/literature; theory = high-accuracy calculation quoted from the
 literature; model = ARC model potential; none = no value (wavelength only / no lifetime).

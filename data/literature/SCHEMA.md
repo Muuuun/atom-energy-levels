@@ -79,6 +79,9 @@ The file must be valid JSON (check it with `python3 -m json.tool`).
   a top-level `"conflicts"` list.
 - **Second-hand values** (read in a review or a citing paper, original not opened): `method: "compilation"`, name the
   original in `source`, and give the URL of the page you actually read.
+- **Measured level energies**: `"measured_energy_cm"` on a level, either one entry or `{"<A>": entry}` per isotope. Use
+  `method: "experiment"` only for a measurement whose paper you opened, and write the publication year in parentheses in
+  `source`: the pipeline replaces the NIST energy only with measurements of the last 20 years.
 - **Privacy**: never put the user's e-mail address or any personal identifier into request headers or query parameters.
 - What the site currently draws for an element is in `data/<symbol lowercase>/levels.csv` and `transitions.csv`
   (NIST-only pages) — cover those levels first, then add the lines NIST lacks that laser-cooling / spectroscopy work uses.

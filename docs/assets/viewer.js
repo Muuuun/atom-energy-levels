@@ -71,14 +71,15 @@
       return '<tr class="row" data-i="' + i + '"><td><span class="swatch" style="background:' + colorOf(i) + '"></span>' + other +
              '</td><td>' + t.lam.toFixed(3) + '</td><td>' + (t.d != null ? fd(t.d) : '–') + '</td></tr>';
     }).join('');
-    let h = '<h3>' + l.html + '</h3><table>' + row('Energy', l.E.toFixed(3) + ' cm⁻¹');
+    let h = '<h3>' + l.html + '</h3><table>' + row('Energy' + (l.E_tier ? badge(l.E_tier) : ''), l.E.toFixed(3) + ' cm⁻¹');
+    if (l.E_nist != null) h += row('NIST energy', l.E_nist.toFixed(3) + ' cm⁻¹');
     if (l.tau_tier === 'stable') h += row('Lifetime', 'stable');
     else if (l.tau_ns != null) h += row('Lifetime' + badge(l.tau_tier), ftau(l.tau_ns) + (l.tau_unc ? ' ± ' + ftau(l.tau_unc) : ''));
     if (l.g != null) h += row('Landé g<sub>J</sub>', l.g);
     if (l.hfs) h += row('Hyperfine A', l.hfs.A + ' MHz') + (l.hfs.B ? row('Hyperfine B', l.hfs.B + ' MHz') : '');
     h += '</table><table class="lines" style="margin-top:8px"><tr><th>' + linesOf[k].length +
          ' lines</th><th>λ vac (nm)</th><th>d (ea₀)</th></tr>' + rows + '</table>';
-    return h + src('Lifetime', l.tau_src) + src('Hyperfine', l.hfs && l.hfs.src);
+    return h + src('Energy', l.E_src) + src('Lifetime', l.tau_src) + src('Hyperfine', l.hfs && l.hfs.src);
   }
 
   const helpCard = '<h3>How to read this</h3><div class="note" style="margin-top:0;font-size:13.5px;color:inherit">' +

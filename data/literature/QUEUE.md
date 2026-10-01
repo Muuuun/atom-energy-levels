@@ -8,4 +8,4 @@ Round 4 (NOT launched: session web-search cap of 200 was exhausted during round 
 No NIST data to attach literature to: Pa U Np Pu Am Cm Bk Cf Es and beyond.
 
 Thin files worth re-running once search works again: As Se Au Cu Ga C Cl Br I Ne Ar Kr Xe Zn Mo Er.
-Open questions for the user: keep data read from "subscriber-only" tables embedded in public abstract pages (Tm, Ho, Dy, Co, Ni lifetimes)? override NIST energies with measured ones (Fr 8S/9P/10P/7D)?
+Decided by the user 2026-10-01: keep the page-reader lifetime tables (Tm, Ho, Dy, Co, Ni) but verify them; measured energies of the last 20 years override NIST, older ones do not. Still open: boron 249.75 nm isotope-shift sign.

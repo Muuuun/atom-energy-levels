@@ -15,7 +15,7 @@
   "has_lit": true,
   "freq_isotope": "165",
   "limit_text": "Ho$^+$ ionisation limit   48567.00 cm$^{-1}$  =  6.02154 eV  (205.901 nm)",
-  "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
+  "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "165Ho has I=7/2; hyperfine convention E = A K/2 + B [3K(K+1)/4 - I(I+1)J(J+1)] / [2I(2I-1)J(2J-1)], K = F(F+1)-I(I+1)-J(J+1) (ground state F=4..11, cooling on F=11 -> F'=12). The Den Hartog et al. 1999 lifetime table and the Nave 2003 transition-rate table were read from the publisher abstract pages, whose HTML embeds the tables, through an automated page reader (direct download is captcha-blocked), not from the PDFs; the even-parity lifetime table was read twice with identical results, every row was matched to a NIST level by energy and J, and the Nave A values reproduce 1/tau for the single-branch levels (e.g. 204e6 s^-1 <-> 4.9 ns, 0.92e6 <-> 1090 ns). Lifetime uncertainties are the blanket +-5% (+-10%/+-15% where footnoted). Nave wavelengths quoted in notes are air wavelengths. Extra fields beyond SCHEMA.md: top-level ionization_limit; level fields lifetime_other, level_energy_measured, C_kHz/D_kHz inside the ground-state hyperfine entry; transition fields linewidth_MHz / linewidth_kHz, wavenumber_cm, leak_to_metastable, alternatives. rme_J_ea0 values are derived from the Nave A coefficient of the same entry (schema convention, J' = upper level). g_J without a literature source is copied from the NIST levels file (few exist for Ho I)."
  },
  "columns": [
@@ -416,8 +416,8 @@
   },
   {
    "id": 21,
-   "E": 24360.81,
-   "unc": null,
+   "E": 24360.79,
+   "unc": 0.001,
    "J": 8.5,
    "conf": "4f11.(4I*<15/2>).6s.6p.(1P*<1>)",
    "term": "(15/2,1)",
@@ -425,6 +425,9 @@
    "g": null,
    "name": "(15/2,1)_{17/2}",
    "plain": "4f116s6p (15/2,1)17/2",
+   "E_nist": 24360.81,
+   "E_tier": "exp",
+   "E_src": "Hostetter, Pritchard, Lawler, Saffman, Phys. Rev. A 91, 012507 (2015)",
    "tau_ns": 4.9,
    "tau_unc": 0.24499999999999997,
    "tau_tier": "exp",
