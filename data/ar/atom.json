@@ -16,7 +16,7 @@
   "freq_isotope": "40",
   "limit_text": "Ar$^+$ ionisation limit   127109.84 cm$^{-1}$  =  15.75961 eV  (78.672 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier argon isotopes lie at higher frequency on 811.5 nm (Table III of Williams et al. is given relative to 38Ar: Delta nu(38,A') = nu(A') - nu(38)), while the 800.8 and 922.7 nm shifts of Chu et al. are printed relative to 40Ar. 39Ar and 37Ar are radioactive (ATTA tracers). Level energies are NIST ASD values from data/ar/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only."
+  "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier argon isotopes lie at higher frequency on 811.5 nm (Table III of Williams et al. is given relative to 38Ar: Delta nu(38,A') = nu(A') - nu(38)), while the 800.8 and 922.7 nm shifts of Chu et al. are printed relative to 40Ar. 39Ar and 37Ar are radioactive (ATTA tracers). Level energies are NIST ASD values from data/ar/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only. Added 2026-10-01 (second pass): the 105 nm measurements of Velchev et al. are from 1999 (older than 20 years), so the NIST energy stays in use; isotope shifts of that line are printed as nu(40) - nu(A). Paschen-labelled lifetimes (Klose) were assigned to NIST levels by energy order."
  },
  "columns": [
   {
@@ -137,8 +137,10 @@
    "g": null,
    "name": "2[1/2]^{o}_{0}",
    "plain": "3p54s 2[1/2]°0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 44900000000.0,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Small-Warren & Chiu, Phys. Rev. A 11, 1777 (1975) (abstract)",
    "col": 4
   },
   {
@@ -283,8 +285,10 @@
    "g": 0.819,
    "name": "2[3/2]_{1}",
    "plain": "3p54p 2[3/2]1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 31.0,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
    "col": 1
   },
   {
@@ -298,8 +302,10 @@
    "g": 1.26,
    "name": "2[3/2]_{2}",
    "plain": "3p54p 2[3/2]2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 26.0,
+   "tau_unc": 1.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
    "col": 2
   },
   {
@@ -313,8 +319,10 @@
    "g": 1.38,
    "name": "2[1/2]_{1}",
    "plain": "3p54p 2[1/2]1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 25.0,
+   "tau_unc": 1.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
    "col": 1
   },
   {
@@ -328,8 +336,10 @@
    "g": null,
    "name": "2[1/2]_{0}",
    "plain": "3p54p 2[1/2]0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 21.0,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
    "col": 0
   },
   {
@@ -952,14 +962,30 @@
   },
   {
    "kind": "E1",
-   "freq": 2860.01488,
-   "freq_tier": "nist",
-   "freq_src": "NIST ASD level energies",
+   "freq": 2860.015,
+   "freq_unc": 0.0001,
+   "freq_src": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999)",
+   "freq_tier": "exp",
    "lower": 0,
    "upper": 4,
-   "wn": 95399.8276,
-   "lam": 104.822,
+   "wn": 95399.8316,
+   "lam": 104.82199,
    "air": null,
+   "use": "104.8 nm resonance line (1s2); precision VUV laser calibration line that ties the excited levels and the ionization energy of Ar to the ground state",
+   "isotope_shifts": {
+    "40-38": {
+     "value": 550,
+     "unc": 10,
+     "src": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999)",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf"
+    },
+    "40-36": {
+     "value": 1036,
+     "unc": 7,
+     "src": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999)",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf"
+    }
+   },
    "type": "E1",
    "A": 532000000.0,
    "A_tier": "nist",
@@ -1601,6 +1627,7 @@
    "wn": 14352.6566,
    "lam": 696.7351,
    "air": 696.543,
+   "gamma_MHz": 6.366,
    "type": "E1",
    "A": 6400000.0,
    "A_tier": "nist",
@@ -1608,6 +1635,8 @@
    "d": 1.79,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.16,
+   "br_tier": "nist",
    "lam_obs": 696.7352
   },
   {
@@ -1620,6 +1649,7 @@
    "wn": 14145.9401,
    "lam": 706.9166,
    "air": 706.7217,
+   "gamma_MHz": 6.121,
    "type": "E1",
    "A": 3800000.0,
    "A_tier": "nist",
@@ -1627,6 +1657,8 @@
    "d": 1.82,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.0988,
+   "br_tier": "nist",
    "lam_obs": 706.9167
   },
   {
@@ -1639,6 +1671,7 @@
    "wn": 13987.9486,
    "lam": 714.9011,
    "air": 714.7041,
+   "gamma_MHz": 5.134,
    "type": "E1",
    "A": 630000.0,
    "A_tier": "nist",
@@ -1646,6 +1679,8 @@
    "d": 0.5838,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.0195,
+   "br_tier": "nist",
    "lam_obs": 714.9012
   },
   {
@@ -1658,6 +1693,7 @@
    "wn": 13745.8188,
    "lam": 727.4939,
    "air": 727.2935,
+   "gamma_MHz": 6.366,
    "type": "E1",
    "A": 1830000.0,
    "A_tier": "nist",
@@ -1665,6 +1701,8 @@
    "d": 1.021,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.0458,
+   "br_tier": "nist",
    "lam_obs": 727.494
   },
   {
@@ -1677,6 +1715,7 @@
    "wn": 13539.1023,
    "lam": 738.6014,
    "air": 738.398,
+   "gamma_MHz": 6.121,
    "type": "E1",
    "A": 8500000.0,
    "A_tier": "nist",
@@ -1684,6 +1723,8 @@
    "d": 2.907,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.221,
+   "br_tier": "nist",
    "lam_obs": 738.6014
   },
   {
@@ -1696,6 +1737,7 @@
    "wn": 13322.7918,
    "lam": 750.5934,
    "air": 750.3868,
+   "gamma_MHz": 7.579,
    "type": "E1",
    "A": 45000000.0,
    "A_tier": "nist",
@@ -1703,6 +1745,8 @@
    "d": 3.065,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.945,
+   "br_tier": "nist",
    "lam_obs": 750.5935
   },
   {
@@ -1772,6 +1816,7 @@
    "wn": 12942.7514,
    "lam": 772.6332,
    "air": 772.4207,
+   "gamma_MHz": 6.366,
    "type": "E1",
    "A": 11700000.0,
    "A_tier": "nist",
@@ -1779,6 +1824,8 @@
    "d": 2.827,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.2925,
+   "br_tier": "nist",
    "lam_obs": 772.6333
   },
   {
@@ -1791,6 +1838,7 @@
    "wn": 12578.0434,
    "lam": 795.0362,
    "air": 794.8176,
+   "gamma_MHz": 5.134,
    "type": "E1",
    "A": 18600000.0,
    "A_tier": "nist",
@@ -1798,6 +1846,8 @@
    "d": 3.72,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.5766,
+   "br_tier": "nist",
    "lam_obs": 795.0362
   },
   {
@@ -1949,6 +1999,7 @@
    "wn": 12096.589,
    "lam": 826.6793,
    "air": 826.4521,
+   "gamma_MHz": 6.366,
    "type": "E1",
    "A": 15300000.0,
    "A_tier": "nist",
@@ -1956,6 +2007,8 @@
    "d": 3.577,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.3825,
+   "br_tier": "nist",
    "lam_obs": 826.6794
   },
   {
@@ -1968,6 +2021,7 @@
    "wn": 11889.8725,
    "lam": 841.0519,
    "air": 840.8208,
+   "gamma_MHz": 6.121,
    "type": "E1",
    "A": 22300000.0,
    "A_tier": "nist",
@@ -1975,6 +2029,8 @@
    "d": 5.722,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.5798,
+   "br_tier": "nist",
    "lam_obs": 841.0521
   },
   {
@@ -2006,6 +2062,7 @@
    "wn": 11731.881,
    "lam": 852.3782,
    "air": 852.1441,
+   "gamma_MHz": 5.134,
    "type": "E1",
    "A": 13900000.0,
    "A_tier": "nist",
@@ -2013,6 +2070,8 @@
    "d": 3.57,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.4309,
+   "br_tier": "nist",
    "lam_obs": 852.3783
   },
   {
@@ -2321,6 +2380,17 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.8220",
+     "–",
+     "2860.01500(10)",
+     "0.953",
+     "5.320e+08",
+     "–",
+     "–",
+     "104.8 nm resonance line"
+    ],
+    [
      "$^1S_{0}$ – $2[3/2]^{o}_{2}$",
      "107.3609",
      "–",
@@ -2421,6 +2491,18 @@
    "aligns": "lrlr",
    "rows": [
     [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.822",
+     "40-38",
+     "550(10)"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.822",
+     "40-36",
+     "1036(7)"
+    ],
+    [
      "$2[3/2]^{o}_{1}$ – $2[3/2]_{2}$",
      "800.836",
      "36-40",
@@ -2499,20 +2581,26 @@
  "validation": [
   "levels: 51   lines < 2000 nm: 71   with matrix element: 70",
   "transition-rate provenance: exp: 1, nist: 70",
-  "levels with a measured lifetime: 2"
+  "levels with a measured lifetime: 7"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Ar); nuclear spin from Williams et al., arXiv:1012.4509 (even isotopes show no hyperfine structure)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ar&ascii=ascii2&isotype=some",
   "NIST Atomic Weights and Isotopic Compositions (Ar); nuclear spin from Williams et al., arXiv:1012.4509": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ar&ascii=ascii2&isotype=some",
   "Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]": "https://arxiv.org/abs/1012.4509",
   "NIST Atomic Spectra Database, levels of Ar I: limit Ar II (3p5 2P3/2) (cached data/nist/Ar_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999)": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf",
   "Katori & Shimizu, Phys. Rev. Lett. 70, 3545 (1993) (abstract)": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.70.3545",
+  "Small-Warren & Chiu, Phys. Rev. A 11, 1777 (1975) (abstract)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.11.1777",
   "Lurio, Weinreich, Drake, Hughes, Rabi, Phys. Rev. 120, 153 (1960) (abstract)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.120.153",
   "Welte et al., Rev. Sci. Instrum. 80, 113109 (2009) [as quoted in Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]]": "https://arxiv.org/abs/1012.4509",
   "Klein et al., Nucl. Phys. A 607, 1 (1996) [as quoted in Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]]": "https://arxiv.org/abs/1012.4509",
   "Traub, Roesler, Robertson, Cohen, J. Opt. Soc. Am. 57, 1452 (1967) [as quoted in Chu et al. (Ritterbusch, Lu), 'Optically enhanced discharge excitation and trapping of 39Ar', arXiv:2206.11089 (2022)]": "https://arxiv.org/abs/2206.11089",
+  "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999) [(1999)]": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf",
   "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I": "https://arxiv.org/abs/1110.1361",
   "Klein et al., Nucl. Phys. A 607, 1 (1996) [as quoted in Chu et al. (Ritterbusch, Lu), 'Optically enhanced discharge excitation and trapping of 39Ar', arXiv:2206.11089 (2022)]": "https://arxiv.org/abs/2206.11089",
+  "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
+  "Keto & Kuo, J. Chem. Phys. 74 (11) (1981) (abstract, OSTI record 6405953)": "https://www.osti.gov/biblio/6405953",
+  "Feng, Ebser, Ringena, Ritterbusch, Oberthaler, arXiv:1707.01658 (2017)": "https://arxiv.org/abs/1707.01658",
   "D'Amico, Pesce, Sasso, J. Opt. Soc. Am. B 16, 1033 (1999) [as quoted in Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]]": "https://arxiv.org/abs/1012.4509",
   "Chu et al. (Ritterbusch, Lu), 'Optically enhanced discharge excitation and trapping of 39Ar', arXiv:2206.11089 (2022)": "https://arxiv.org/abs/2206.11089"
  }

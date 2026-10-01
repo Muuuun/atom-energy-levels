@@ -16,7 +16,7 @@
   "freq_isotope": "132",
   "limit_text": "Xe$^+$ ionisation limit   97833.79 cm$^{-1}$  =  12.12984 eV  (102.214 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Hyperfine entries taken from the comparison table of Bounds et al. are second-hand (method 'compilation', original named in the source); Bounds' own results are listed as alternatives. Isotope-shift keys are kept exactly as printed (pair label 'A-B' with a negative value); see each note on the unverified sign convention. Values converted from mK carry the printed mK numbers alongside. Level energies are NIST ASD values from data/xe/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page or HAL record only."
+  "notes": "Hyperfine entries taken from the comparison table of Bounds et al. are second-hand (method 'compilation', original named in the source); Bounds' own results are listed as alternatives. Isotope-shift keys are kept exactly as printed (pair label 'A-B' with a negative value); see each note on the unverified sign convention. Values converted from mK carry the printed mK numbers alongside. Level energies are NIST ASD values from data/xe/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page or HAL record only. Added 2026-10-01 (second pass): VUV isotope shifts of Brandi et al. are printed as nu(136) - nu(A) (positive = lighter isotope at lower frequency); Dreissen et al. print nu(A) - nu(132). 'use_source' / 'use_url' name the paper a use annotation was taken from."
  },
  "columns": [
   {
@@ -137,8 +137,10 @@
    "g": null,
    "name": "2[1/2]^{o}_{0}",
    "plain": "5p56s 2[1/2]°0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 128000000.0,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Walhout, Sterr, Witte, Rolston, Opt. Lett. 20, 1192 (1995) (abstract, PubMed 19859469). Note: derived: 1 / 7.8(38) s^-1, the measured spontaneous-emission rate (1 sigma); the range 4.0-11.6 s^-1 corresponds to 0.086-0.25 s. In a room-temperature environment the total decay rate is 75(3) s^-1 (13.3 ms), dominated by a blackbody-driven transition.",
    "col": 4
   },
   {
@@ -568,8 +570,8 @@
   },
   {
    "id": 29,
-   "E": 90932.432,
-   "unc": null,
+   "E": 90932.441418,
+   "unc": 2.1e-05,
    "J": 1.0,
    "conf": "5p5.(2P*<3/2>).8s",
    "term": "2[3/2]*",
@@ -577,6 +579,9 @@
    "g": 1.182,
    "name": "2[3/2]^{o}_{1}",
    "plain": "5p58s 2[3/2]°1",
+   "E_nist": 90932.432,
+   "E_tier": "exp",
+   "E_src": "Dreissen, Roth, Gruendeman, Krauth, Favier, Eikema, arXiv:2101.07601 (2021) [(2021)]",
    "tau_ns": null,
    "tau_tier": "none",
    "col": 5
@@ -714,6 +719,14 @@
    "plain": "5p55d 2[3/2]°1",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 1657,
+    "A_unc": 12,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table I"
+   },
    "col": 5
   },
   {
@@ -759,6 +772,14 @@
    "plain": "5p58d 2[1/2]°1",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -579,
+    "A_unc": 6,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table I"
+   },
    "col": 5
   },
   {
@@ -774,6 +795,14 @@
    "plain": "5p58d 2[3/2]°1",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 913,
+    "A_unc": 23,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table I"
+   },
    "col": 5
   },
   {
@@ -864,6 +893,14 @@
    "plain": "5p57s 2[1/2]°1",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -4548,
+    "A_unc": 15,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table I"
+   },
    "col": 5
   },
   {
@@ -900,6 +937,41 @@
  "transitions": [
   {
    "kind": "E1",
+   "freq": 2726086.012471,
+   "freq_unc": 6.3e-07,
+   "freq_src": "Dreissen, Roth, Gruendeman, Krauth, Favier, Eikema, arXiv:2101.07601 (2021)",
+   "freq_tier": "exp",
+   "lower": 0,
+   "upper": 29,
+   "wn": 90932441.4182,
+   "lam": 0.10997,
+   "air": null,
+   "use": "110 nm line measured by Ramsey-comb (frequency-comb) spectroscopy with high-harmonic generation: VUV frequency-metrology demonstration",
+   "isotope_shifts": {
+    "134-132": {
+     "value": -164.91,
+     "unc": 0.42,
+     "src": "Dreissen, Roth, Gruendeman, Krauth, Favier, Eikema, arXiv:2101.07601 (2021)",
+     "url": "https://arxiv.org/abs/2101.07601"
+    },
+    "136-132": {
+     "value": -509.75,
+     "unc": 0.425,
+     "src": "Dreissen, Roth, Gruendeman, Krauth, Favier, Eikema, arXiv:2101.07601 (2021)",
+     "url": "https://arxiv.org/abs/2101.07601"
+    }
+   },
+   "type": "E1",
+   "A": 40800000.0,
+   "A_tier": "nist",
+   "A_src": "NIST ASD (accuracy C+)",
+   "d": 8.964e-06,
+   "d_tier": "nist",
+   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "lam_obs": 109.9716
+  },
+  {
+   "kind": "E1",
    "freq": 2879.37975,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -919,14 +991,66 @@
   },
   {
    "kind": "E1",
-   "freq": 2872.02926,
-   "freq_tier": "nist",
-   "freq_src": "NIST ASD level energies",
+   "freq": 2872.0293,
+   "freq_unc": 0.0001,
+   "freq_src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table IV",
+   "freq_tier": "exp",
    "lower": 0,
    "upper": 48,
-   "wn": 95800.584,
+   "wn": 95800.5855,
    "lam": 104.3835,
    "air": null,
+   "use": "104.4 nm VUV line: absolute calibration, hyperfine structure and isotope shifts",
+   "isotope_shifts": {
+    "136-134": {
+     "value": 213,
+     "unc": 12,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-132": {
+     "value": 365,
+     "unc": 18,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-131": {
+     "value": 492,
+     "unc": 20,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-130": {
+     "value": 523,
+     "unc": 24,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-129": {
+     "value": 678,
+     "unc": 24,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-128": {
+     "value": 692,
+     "unc": 22,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-126": {
+     "value": 869,
+     "unc": 25,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-124": {
+     "value": 1069,
+     "unc": 22,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    }
+   },
    "type": "E1",
    "A": 59000000.0,
    "A_tier": "nist",
@@ -1003,6 +1127,57 @@
    "wn": 94685.467,
    "lam": 105.6128,
    "air": null,
+   "use": "105.6 nm VUV line: absolute calibration, hyperfine structure and isotope shifts",
+   "isotope_shifts": {
+    "136-134": {
+     "value": 219,
+     "unc": 15,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-132": {
+     "value": 354,
+     "unc": 20,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-131": {
+     "value": 545,
+     "unc": 17,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-130": {
+     "value": 529,
+     "unc": 30,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-129": {
+     "value": 684,
+     "unc": 27,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-128": {
+     "value": 726,
+     "unc": 20,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-126": {
+     "value": 912,
+     "unc": 20,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-124": {
+     "value": 1116,
+     "unc": 20,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    }
+   },
    "type": "E1",
    "A": 193000000.0,
    "A_tier": "nist",
@@ -1022,6 +1197,45 @@
    "wn": 94228.004,
    "lam": 106.1256,
    "air": null,
+   "use": "106.1 nm VUV line: absolute calibration used for the ionization energy of 136Xe",
+   "isotope_shifts": {
+    "136-134": {
+     "value": 207,
+     "unc": 12,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-132": {
+     "value": 384,
+     "unc": 18,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-131": {
+     "value": 531,
+     "unc": 23,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-130": {
+     "value": 557,
+     "unc": 11,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-129": {
+     "value": 675,
+     "unc": 14,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-128": {
+     "value": 747,
+     "unc": 19,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    }
+   },
    "type": "E1",
    "A": 17400000.0,
    "A_tier": "nist",
@@ -1041,6 +1255,57 @@
    "wn": 93618.24,
    "lam": 106.8168,
    "air": null,
+   "use": "106.8 nm VUV line (ground state - 5d'[3/2]1): hyperfine structure and isotope shifts by VUV laser spectroscopy",
+   "isotope_shifts": {
+    "136-134": {
+     "value": 203,
+     "unc": 10,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-132": {
+     "value": 351,
+     "unc": 18,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-131": {
+     "value": 470,
+     "unc": 11,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-130": {
+     "value": 509,
+     "unc": 13,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-129": {
+     "value": 591,
+     "unc": 19,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-128": {
+     "value": 667,
+     "unc": 12,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-126": {
+     "value": 821,
+     "unc": 14,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    },
+    "136-124": {
+     "value": 1008,
+     "unc": 20,
+     "src": "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf"
+    }
+   },
    "type": "E1",
    "A": 372000000.0,
    "A_tier": "nist",
@@ -1106,25 +1371,6 @@
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
    "lam_obs": 108.5441
-  },
-  {
-   "kind": "E1",
-   "freq": 2726.08573,
-   "freq_tier": "nist",
-   "freq_src": "NIST ASD level energies",
-   "lower": 0,
-   "upper": 29,
-   "wn": 90932.432,
-   "lam": 109.9718,
-   "air": null,
-   "type": "E1",
-   "A": 40800000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 0.2835,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
-   "lam_obs": 109.9716
   },
   {
    "kind": "E1",
@@ -1250,6 +1496,7 @@
    "wn": 68045.156,
    "lam": 146.9612,
    "air": null,
+   "use": "147 nm resonance line: VUV-lamp first step of the optical production of metastable Xe (followed by 916 nm or 895.5 nm)",
    "type": "E1",
    "A": 273000000.0,
    "A_tier": "nist",
@@ -1737,14 +1984,14 @@
   },
   {
    "kind": "E1",
-   "freq": 409.61504,
-   "freq_tier": "nist",
-   "freq_src": "NIST ASD level energies",
+   "freq": 409.61532,
+   "freq_tier": "exp",
+   "freq_src": "Dreissen, Roth, Gruendeman, Krauth, Favier, Eikema, arXiv:2101.07601 (2021) [(2021)] (measured level energy)",
    "lower": 5,
    "upper": 29,
-   "wn": 13663.287,
-   "lam": 731.8883,
-   "air": 731.6867,
+   "wn": 13663.2964,
+   "lam": 731.8878,
+   "air": 731.6862,
    "type": "E1",
    "A": 250000.0,
    "A_tier": "nist",
@@ -2151,6 +2398,7 @@
    "wn": 11167.309,
    "lam": 895.4709,
    "air": 895.2251,
+   "use": "895.5 nm second step (after 147 nm) of the all-optical production of metastable Xe beams (Stollenwerk et al. 2024)",
    "type": "E1",
    "A": 8100000.0,
    "A_tier": "nist",
@@ -2208,6 +2456,7 @@
    "wn": 10910.875,
    "lam": 916.5168,
    "air": 916.2653,
+   "use": "916 nm optical pumping into 6p[3/2]1, which decays to the metastable 6s[3/2]2 at 841 nm with a probability of about 80 % (Lamsal et al. 2020, quoting NIST)",
    "type": "E1",
    "A": 24000000.0,
    "A_tier": "nist",
@@ -2294,6 +2543,20 @@
    "lam_obs": 1084.131
   },
   {
+   "kind": "forbidden",
+   "freq": 273.68713,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 3,
+   "wn": 9129.22,
+   "lam": 1095.3838,
+   "air": 1095.0839,
+   "use": "proposed optical frequency standard: two-photon clock transition between the two metastable states (Walhout et al. 1995)",
+   "type": "clock",
+   "gamma_MHz": 1.243e-06
+  },
+  {
    "kind": "E1",
    "freq": 244.95658,
    "freq_tier": "nist",
@@ -2350,6 +2613,72 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "0.1100",
+     "–",
+     "2726086.012471",
+     "0.000",
+     "4.080e+07",
+     "–",
+     "–",
+     "110 nm line measured by Ramsey-comb"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.3835",
+     "–",
+     "2872.02930(10)",
+     "0.315",
+     "5.900e+07",
+     "–",
+     "–",
+     "104.4 nm VUV line: absolute calibration, hyperfine struct…"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.6128",
+     "–",
+     "2838.5989",
+     "0.580",
+     "1.930e+08",
+     "–",
+     "–",
+     "105.6 nm VUV line: absolute calibration, hyperfine struct…"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "106.1256",
+     "–",
+     "2824.8845",
+     "0.175",
+     "1.740e+07",
+     "–",
+     "–",
+     "106.1 nm VUV line: absolute calibration used for the ioni…"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "106.8168",
+     "–",
+     "2806.6042",
+     "0.819",
+     "3.720e+08",
+     "–",
+     "–",
+     "106.8 nm VUV line"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "146.9612",
+     "–",
+     "2039.9425",
+     "1.133",
+     "2.730e+08",
+     "–",
+     "–",
+     "147 nm resonance line: VUV-lamp first step of the optical…"
+    ],
+    [
      "$^1S_{0}$ – $2[3/2]^{o}_{2}$",
      "149.1034",
      "–",
@@ -2403,6 +2732,39 @@
      "4.818",
      "99.1",
      "881.9 nm"
+    ],
+    [
+     "$2[3/2]^{o}_{1}$ – $2[3/2]_{2}$",
+     "895.4709",
+     "895.2251",
+     "334.7875",
+     "3.789",
+     "8.100e+06",
+     "–",
+     "–",
+     "895.5 nm second step"
+    ],
+    [
+     "$2[3/2]^{o}_{1}$ – $2[3/2]_{1}$",
+     "916.5168",
+     "916.2653",
+     "327.0998",
+     "5.231",
+     "2.400e+07",
+     "–",
+     "–",
+     "916 nm optical pumping into 6p[3/2]1, which decays to the…"
+    ],
+    [
+     "$2[3/2]^{o}_{2}$ – $2[1/2]^{o}_{0}$",
+     "1095.3838",
+     "1095.0839",
+     "273.6871",
+     "–",
+     "–",
+     "1.243e-06",
+     "–",
+     "proposed optical frequency standard: two-photon clock tra…"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
@@ -2464,6 +2826,30 @@
      "1977.0(10)",
      "–",
      "F=1/2: -1977.00   F=3/2: +988.50"
+    ],
+    [
+     "$2[3/2]^{o}_{1}$",
+     "1657(12)",
+     "–",
+     "F=1/2: -1657.00   F=3/2: +828.50"
+    ],
+    [
+     "$2[1/2]^{o}_{1}$",
+     "-579(6)",
+     "–",
+     "F=1/2: +579.00   F=3/2: -289.50"
+    ],
+    [
+     "$2[3/2]^{o}_{1}$",
+     "913(23)",
+     "–",
+     "F=1/2: -913.00   F=3/2: +456.50"
+    ],
+    [
+     "$2[1/2]^{o}_{1}$",
+     "-4548(15)",
+     "–",
+     "F=1/2: +4548.00   F=3/2: -2274.00"
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."
@@ -2479,97 +2865,166 @@
    "aligns": "lrlr",
    "rows": [
     [
-     "$2[1/2]^{o}_{0}$ – $2[3/2]_{1}$",
-     "820.859",
-     "136-134",
-     "-80.9(20)"
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "0.110",
+     "134-132",
+     "-164.9(4)"
     ],
     [
-     "$2[1/2]^{o}_{0}$ – $2[3/2]_{1}$",
-     "820.859",
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "0.110",
      "136-132",
-     "-132.4(21)"
+     "-509.8(4)"
     ],
     [
-     "$2[1/2]^{o}_{0}$ – $2[3/2]_{1}$",
-     "820.859",
-     "136-131",
-     "-203(4)"
-    ],
-    [
-     "$2[1/2]^{o}_{0}$ – $2[3/2]_{1}$",
-     "820.859",
-     "136-130",
-     "-182(5)"
-    ],
-    [
-     "$2[1/2]^{o}_{0}$ – $2[3/2]_{1}$",
-     "820.859",
-     "136-129",
-     "-240(3)"
-    ],
-    [
-     "$2[1/2]^{o}_{0}$ – $2[3/2]_{1}$",
-     "820.859",
-     "136-128",
-     "-242.4(24)"
-    ],
-    [
-     "$2[3/2]^{o}_{2}$ – $2[3/2]_{1}$",
-     "841.150",
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.383",
      "136-134",
-     "-95(4)"
+     "213(12)"
     ],
     [
-     "$2[3/2]^{o}_{2}$ – $2[3/2]_{1}$",
-     "841.150",
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.383",
      "136-132",
-     "-147(4)"
+     "365(18)"
     ],
     [
-     "$2[3/2]^{o}_{2}$ – $2[3/2]_{1}$",
-     "841.150",
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.383",
      "136-131",
-     "-222(7)"
+     "492(20)"
     ],
     [
-     "$2[3/2]^{o}_{2}$ – $2[3/2]_{1}$",
-     "841.150",
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.383",
      "136-130",
-     "-200(4)"
+     "523(24)"
     ],
     [
-     "$2[3/2]^{o}_{2}$ – $2[3/2]_{1}$",
-     "841.150",
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.383",
      "136-129",
-     "-275(5)"
+     "678(24)"
     ],
     [
-     "$2[3/2]^{o}_{2}$ – $2[3/2]_{1}$",
-     "841.150",
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.383",
      "136-128",
-     "-261(5)"
+     "692(22)"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.383",
+     "136-126",
+     "869(25)"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "104.383",
+     "136-124",
+     "1069(22)"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.613",
+     "136-134",
+     "219(15)"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.613",
+     "136-132",
+     "354(20)"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.613",
+     "136-131",
+     "545(17)"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.613",
+     "136-130",
+     "529(30)"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.613",
+     "136-129",
+     "684(27)"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.613",
+     "136-128",
+     "726(20)"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.613",
+     "136-126",
+     "912(20)"
+    ],
+    [
+     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
+     "105.613",
+     "136-124",
+     "1116(20)"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "106.126",
+     "136-134",
+     "207(12)"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "106.126",
+     "136-132",
+     "384(18)"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "106.126",
+     "136-131",
+     "531(23)"
+    ],
+    [
+     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
+     "106.126",
+     "136-130",
+     "557(11)"
     ]
    ],
    "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 51   lines < 2000 nm: 71   with matrix element: 70",
-  "transition-rate provenance: exp: 1, nist: 70",
-  "levels with a measured lifetime: 2"
+  "levels: 51   lines < 2000 nm: 72   with matrix element: 70",
+  "transition-rate provenance: exp: 1, nist: 70, wavelength only: 1",
+  "levels with a measured lifetime: 3",
+  "  observed vs Ritz wavelength differ on 5p6 1S0 - 5p58s 2[3/2]°1: 109.9716 vs 0.10997"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Xe)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Xe&ascii=ascii2&isotype=some",
   "NIST Atomic Weights and Isotopic Compositions (Xe); nuclear spin from Bounds et al., Spectrochim. Acta B 202, 106635 (2023)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Xe&ascii=ascii2&isotype=some",
   "NIST Atomic Spectra Database, levels of Xe I: limit Xe II (5p5 2P3/2) (cached data/nist/Xe_I_levels.tsv)": "https://physics.nist.gov/asd",
   "Walhout, Witte, Rolston, Phys. Rev. Lett. 72, 2843 (1994) (abstract)": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.72.2843",
+  "Small-Warren & Chiu, Phys. Rev. A 11, 1777 (1975) (abstract)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.11.1777",
   "D'Amico, Pesce, Sasso, Phys. Rev. A 60, 4409 (1999) and Hyperfine Interact. 127, 121 (2000) [as quoted in Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)]": "https://www.osti.gov/servlets/purl/1959223",
   "Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)": "https://www.osti.gov/servlets/purl/1959223",
   "Faust & McDermott, Phys. Rev. 123, 198 (1961) (abstract)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.123.198",
   "Husson et al., 'Mesure de constantes de structure hyperfine de niveaux 6p du xenon et 5p du krypton', J. Physique 45, 863 (1984) (abstract, HAL jpa-00209818)": "https://hal.science/jpa-00209818v1",
   "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I": "https://arxiv.org/abs/1110.1361",
   "Suzuki, Katoh, Nishimiya, Spectrochim. Acta A 58, 2519 (2002) [as quoted in Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)]": "https://www.osti.gov/servlets/purl/1959223",
-  "D'Amico, Pesce, Sasso, Phys. Rev. A 60, 4409 (1999) [as quoted in Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)]": "https://www.osti.gov/servlets/purl/1959223"
+  "Walhout, Sterr, Witte, Rolston, Opt. Lett. 20, 1192 (1995) (abstract, PubMed 19859469)": "https://pubmed.ncbi.nlm.nih.gov/19859469/",
+  "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001) [(2001)]": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf",
+  "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table I": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf",
+  "Dreissen, Roth, Gruendeman, Krauth, Favier, Eikema, arXiv:2101.07601 (2021) [(2021)]": "https://arxiv.org/abs/2101.07601",
+  "D'Amico, Pesce, Sasso, Phys. Rev. A 60, 4409 (1999) [as quoted in Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)]": "https://www.osti.gov/servlets/purl/1959223",
+  "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table II": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf",
+  "Brandi, Velchev, Hogervorst, Ubachs, Phys. Rev. A 64, 032505 (2001), Table IV": "https://www.nat.vu.nl/~wimu/Publications/Brandi-Xe.pdf",
+  "Dreissen, Roth, Gruendeman, Krauth, Favier, Eikema, arXiv:2101.07601 (2021)": "https://arxiv.org/abs/2101.07601"
  }
 }
