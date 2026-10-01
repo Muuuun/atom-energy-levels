@@ -6,17 +6,17 @@
   "symbol": "Al",
   "A": null,
   "Z": 13,
-  "I": null,
+  "I": "5/2",
   "kind": "nist",
   "limit_cm": 48278.48,
   "scale": "auto",
   "spectrum": "Al I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "27",
   "limit_text": "Al$^+$ ionisation limit   48278.48 cm$^{-1}$  =  5.98577 eV  (207.132 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "27Al (I = 5/2) is the only stable isotope; the isotope shifts listed on the 396 nm line are for radioactive 26m,28-32Al measured at ISOLDE/IGISOL, with delta-nu(27,A) = nu(A) - nu(27). Measured lifetimes and transition rates are quoted from the comparison tables of Papoulia, Ekman, Jonsson (2019), which name the original experiments; their accuracy grades (A <= 3%, B <= 10%, C+ <= 15%, C <= 25%, D <= 50%) are copied into the source string instead of a numeric unc. When a line has two observed values, the more recent laser measurement (Davidson 1990 / Vujnovic 2002) is the main entry. Lifetime alternatives marked theory are RCI length-form values of the same paper. rme_J_ea0 for the 3p-4s lines is sqrt(S) from a relativistic coupled-cluster calculation (same convention as the schema). Extra fields beyond SCHEMA.md: isotope_shift_factors, use_source, ionization_energy, mu_N, unc_sys."
  },
  "columns": [
   {
@@ -64,6 +64,14 @@
    "plain": "3p 2P°1/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 502.0346,
+    "A_unc": 0.0005,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3, row \"Expt\" (reference [36] there; atomic-beam magnetic resonance)"
+   },
    "col": 0
   },
   {
@@ -79,6 +87,14 @@
    "plain": "3p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 94.27723,
+    "A_unc": 0.0001,
+    "B": 18.915,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3 row \"Expt\" (A) and Sec. 4 text (B = 18.915 MHz, refs. [37,38] there: Martin, Sandars, Woodgate, Proc. R. Soc. A 305, 139 (1968) and a Can. J. Phys. paper by Lew and co-workers)"
+   },
    "col": 0
   },
   {
@@ -92,8 +108,18 @@
    "g": null,
    "name": "4s\\ ^2S_{1/2}",
    "plain": "4s 2S1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 6.85,
+   "tau_unc": 0.06,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)",
+   "hfs": {
+    "A": 431.11,
+    "A_unc": 0.09,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Sec. III (\"A(S1/2) = 431.11(9) MHz value of 27Al deduced in this work\")"
+   },
    "col": 2
   },
   {
@@ -107,8 +133,10 @@
    "g": null,
    "name": "3d\\ ^2D_{3/2}",
    "plain": "3d 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 14.0,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)",
    "col": 1
   },
   {
@@ -122,8 +150,10 @@
    "g": null,
    "name": "3d\\ ^2D_{5/2}",
    "plain": "3d 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 14.0,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)",
    "col": 1
   },
   {
@@ -137,8 +167,18 @@
    "g": null,
    "name": "4p\\ ^2P^{o}_{1/2}",
    "plain": "4p 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 60.5,
+   "tau_unc": 0.9,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Astron. Astrophys. 227, 289 (1990)",
+   "hfs": {
+    "A": 58.28,
+    "A_unc": null,
+    "B": null,
+    "B_unc": null,
+    "tier": "theory",
+    "src": "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3, UCCSD (relativistic unitary coupled-cluster)"
+   },
    "col": 0
   },
   {
@@ -152,8 +192,18 @@
    "g": null,
    "name": "4p\\ ^2P^{o}_{3/2}",
    "plain": "4p 2P°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 65.0,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Astron. Astrophys. 227, 289 (1990)",
+   "hfs": {
+    "A": 23.12,
+    "A_unc": null,
+    "B": 2.86,
+    "B_unc": null,
+    "tier": "theory",
+    "src": "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3 (A, UCCSD) and Sec. 4 text (B, UCCSD)"
+   },
    "col": 0
   },
   {
@@ -167,8 +217,10 @@
    "g": null,
    "name": "5s\\ ^2S_{1/2}",
    "plain": "5s 2S1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 19.8,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)",
    "col": 2
   },
   {
@@ -182,8 +234,10 @@
    "g": null,
    "name": "nd\\ \\mathrm{y}\\,^2D_{3/2}",
    "plain": "nd y 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 29.5,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)",
    "col": 3
   },
   {
@@ -197,8 +251,10 @@
    "g": null,
    "name": "nd\\ \\mathrm{y}\\,^2D_{5/2}",
    "plain": "nd y 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 29.5,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)",
    "col": 3
   },
   {
@@ -212,8 +268,10 @@
    "g": null,
    "name": "5p\\ ^2P^{o}_{1/2}",
    "plain": "5p 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 275.0,
+   "tau_unc": 8.0,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)",
    "col": 0
   },
   {
@@ -227,8 +285,10 @@
    "g": null,
    "name": "5p\\ ^2P^{o}_{3/2}",
    "plain": "5p 2P°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 275.0,
+   "tau_unc": 8.0,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)",
    "col": 0
   },
   {
@@ -242,8 +302,10 @@
    "g": null,
    "name": "4f\\ ^2F^{o}_{5/2}",
    "plain": "4f 2F°5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 60.41,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, RCI length form (multiconfiguration Dirac-Hartree-Fock + relativistic CI)",
    "col": 4
   },
   {
@@ -257,8 +319,10 @@
    "g": null,
    "name": "4f\\ ^2F^{o}_{7/2}",
    "plain": "4f 2F°7/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 60.41,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, RCI length form (multiconfiguration Dirac-Hartree-Fock + relativistic CI)",
    "col": 4
   },
   {
@@ -272,8 +336,10 @@
    "g": null,
    "name": "6s\\ ^2S_{1/2}",
    "plain": "6s 2S1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 48.12,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, RCI length form (multiconfiguration Dirac-Hartree-Fock + relativistic CI)",
    "col": 2
   },
   {
@@ -287,8 +353,10 @@
    "g": null,
    "name": "4d\\ ^2D_{3/2}",
    "plain": "4d 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 13.2,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
    "col": 1
   },
   {
@@ -302,8 +370,10 @@
    "g": null,
    "name": "4d\\ ^2D_{5/2}",
    "plain": "4d 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 13.2,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
    "col": 1
   },
   {
@@ -317,8 +387,10 @@
    "g": null,
    "name": "6p\\ ^2P^{o}_{1/2}",
    "plain": "6p 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 488.6,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, RCI length form (multiconfiguration Dirac-Hartree-Fock + relativistic CI)",
    "col": 0
   },
   {
@@ -332,8 +404,10 @@
    "g": null,
    "name": "6p\\ ^2P^{o}_{3/2}",
    "plain": "6p 2P°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 484.5,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, RCI length form (multiconfiguration Dirac-Hartree-Fock + relativistic CI)",
    "col": 0
   },
   {
@@ -347,8 +421,10 @@
    "g": null,
    "name": "5d\\ ^2D_{3/2}",
    "plain": "5d 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 14.0,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
    "col": 1
   },
   {
@@ -362,8 +438,10 @@
    "g": null,
    "name": "5d\\ ^2D_{5/2}",
    "plain": "5d 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 14.0,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
    "col": 1
   },
   {
@@ -563,12 +641,13 @@
    "lam": 212.403,
    "air": 212.3359,
    "type": "E1",
-   "A": 2000000.0,
+   "A": 12200000.0,
    "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy D)",
-   "d": 0.1945,
+   "A_src": "NIST ASD (accuracy C)",
+   "d": 0.4804,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy D) (from A)"
+   "d_src": "NIST ASD (accuracy C) (from A)",
+   "lam_obs": 212.4033
   },
   {
    "kind": "E1",
@@ -861,13 +940,16 @@
    "wn": 44166.398,
    "lam": 226.4165,
    "air": 226.3464,
+   "gamma_MHz": 11.37,
    "type": "E1",
-   "A": 68300000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.251,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 57600000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
+   "d": 1.149,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990) (from A)",
+   "br": 0.8064,
+   "br_tier": "exp",
    "lam_obs": 226.4162
   },
   {
@@ -899,13 +981,16 @@
    "wn": 44056.786,
    "lam": 226.9798,
    "air": 226.9096,
+   "gamma_MHz": 11.37,
    "type": "E1",
-   "A": 75800000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.62,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 69100000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
+   "d": 1.547,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990) (from A)",
+   "br": 0.9674,
+   "br_tier": "exp",
    "lam_obs": 226.9798
   },
   {
@@ -918,13 +1003,16 @@
    "wn": 44054.337,
    "lam": 226.9924,
    "air": 226.9222,
+   "gamma_MHz": 11.37,
    "type": "E1",
-   "A": 12600000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 0.5394,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 11500000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
+   "d": 0.5153,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990) (from A)",
+   "br": 0.161,
+   "br_tier": "exp",
    "lam_obs": 226.9922
   },
   {
@@ -937,13 +1025,16 @@
    "wn": 42233.742,
    "lam": 236.7775,
    "air": 236.7052,
+   "gamma_MHz": 12.06,
    "type": "E1",
-   "A": 76100000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 1.412,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 52600000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
+   "d": 1.174,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990) (from A)",
+   "br": 0.6943,
+   "br_tier": "exp",
    "lam_obs": 236.7775
   },
   {
@@ -956,6 +1047,7 @@
    "wn": 42144.411,
    "lam": 237.2794,
    "air": 237.207,
+   "gamma_MHz": 3.307,
    "type": "E1",
    "A": 5760000.0,
    "A_tier": "nist",
@@ -963,6 +1055,8 @@
    "d": 0.2756,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.2772,
+   "br_tier": "nist",
    "lam_obs": 237.2794
   },
   {
@@ -975,13 +1069,16 @@
    "wn": 42125.722,
    "lam": 237.3847,
    "air": 237.3122,
+   "gamma_MHz": 12.06,
    "type": "E1",
-   "A": 90700000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.896,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 63100000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
+   "d": 1.581,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990) (from A)",
+   "br": 0.8329,
+   "br_tier": "exp",
    "lam_obs": 237.3849
   },
   {
@@ -994,13 +1091,16 @@
    "wn": 42121.681,
    "lam": 237.4074,
    "air": 237.335,
+   "gamma_MHz": 12.06,
    "type": "E1",
-   "A": 15100000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 0.6316,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 10500000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990), accuracy grade A",
+   "d": 0.5267,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990), accuracy grade A (from A)",
+   "br": 0.1386,
+   "br_tier": "exp",
    "lam_obs": 237.4074
   },
   {
@@ -1013,6 +1113,7 @@
    "wn": 42032.35,
    "lam": 237.912,
    "air": 237.8394,
+   "gamma_MHz": 3.307,
    "type": "E1",
    "A": 11400000.0,
    "A_tier": "nist",
@@ -1020,6 +1121,8 @@
    "d": 0.3893,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.5486,
+   "br_tier": "nist",
    "lam_obs": 237.9094
   },
   {
@@ -1032,13 +1135,16 @@
    "wn": 38929.413,
    "lam": 256.8752,
    "air": 256.7982,
+   "gamma_MHz": 5.395,
    "type": "E1",
    "A": 19200000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990), accuracy grade C+",
    "d": 0.8015,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990), accuracy grade C+ (from A)",
+   "br": 0.5664,
+   "br_tier": "exp",
    "lam_obs": 256.8754
   },
   {
@@ -1051,13 +1157,16 @@
    "wn": 38821.907,
    "lam": 257.5865,
    "air": 257.5094,
+   "gamma_MHz": 5.395,
    "type": "E1",
-   "A": 36000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 1.35,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 23000000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)",
+   "d": 1.079,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990) (from A)",
+   "br": 0.6785,
+   "br_tier": "exp",
    "lam_obs": 257.5865
   },
   {
@@ -1070,13 +1179,16 @@
    "wn": 38817.352,
    "lam": 257.6167,
    "air": 257.5396,
+   "gamma_MHz": 5.395,
    "type": "E1",
-   "A": 5990000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy C+)",
-   "d": 0.4496,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "A": 3800000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990), accuracy grade C+",
+   "d": 0.3581,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990), accuracy grade C+ (from A)",
+   "br": 0.1121,
+   "br_tier": "exp",
    "lam_obs": 257.6164
   },
   {
@@ -1089,13 +1201,16 @@
    "wn": 37689.407,
    "lam": 265.3265,
    "air": 265.2476,
+   "gamma_MHz": 8.038,
    "type": "E1",
    "A": 14200000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade C+",
    "d": 0.5117,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade C+ (from A)",
+   "br": 0.2812,
+   "br_tier": "exp",
    "lam_obs": 265.3274
   },
   {
@@ -1108,13 +1223,16 @@
    "wn": 37577.346,
    "lam": 266.1178,
    "air": 266.0386,
+   "gamma_MHz": 8.038,
    "type": "E1",
    "A": 28400000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade C+",
    "d": 0.7269,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade C+ (from A)",
+   "br": 0.5623,
+   "br_tier": "exp",
    "lam_obs": 266.1184
   },
   {
@@ -1127,13 +1245,16 @@
    "wn": 32435.453,
    "lam": 308.3046,
    "air": 308.2151,
+   "gamma_MHz": 11.37,
    "type": "E1",
-   "A": 58700000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 1.843,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 59000000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade C+",
+   "d": 1.848,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade C+ (from A)",
+   "br": 0.826,
+   "br_tier": "exp",
    "lam_obs": 308.30481
   },
   {
@@ -1146,13 +1267,17 @@
    "wn": 32324.735,
    "lam": 309.3606,
    "air": 309.2708,
+   "use": "309.4 nm laser-cooling transition 3p 2P3/2(F=4) - 3d 2D5/2(F'=5), closed UV transition used for light-force cooling / nanolithography (McGowan, Giltner, Lee 1995)",
+   "gamma_MHz": 11.37,
    "type": "E1",
-   "A": 72900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.528,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 71000000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade A",
+   "d": 2.495,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade A (from A)",
+   "br": 0.994,
+   "br_tier": "exp",
    "lam_obs": 309.36077
   },
   {
@@ -1165,13 +1290,16 @@
    "wn": 32323.392,
    "lam": 309.3735,
    "air": 309.2837,
+   "gamma_MHz": 11.37,
    "type": "E1",
-   "A": 11600000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 0.8235,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 12000000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes) (printed in parentheses: \"(1.20)E+07\")",
+   "d": 0.8376,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes) (printed in parentheses: \"(1.20)E+07\") (from A)",
+   "br": 0.168,
+   "br_tier": "exp",
    "lam_obs": 309.37364
   },
   {
@@ -1184,13 +1312,17 @@
    "wn": 25347.756,
    "lam": 394.5122,
    "air": 394.4006,
+   "use": "394.4 nm resonance line",
+   "gamma_MHz": 23.23,
    "type": "E1",
-   "A": 49900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 1.739,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 47000000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade B",
+   "d": 1.688,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade B (from A)",
+   "br": 0.322,
+   "br_tier": "exp",
    "lam_obs": 394.51222
   },
   {
@@ -1203,13 +1335,55 @@
    "wn": 25235.695,
    "lam": 396.2641,
    "air": 396.152,
+   "use": "396.2 nm line (optical pumping; collinear laser spectroscopy of Al isotopes)",
+   "isotope_shifts": {
+    "26m-27": {
+     "value": 377.5,
+     "unc": 3.4,
+     "src": "Plattner et al., Phys. Rev. Lett. 131, 222502 (2023), Table I and text: delta-nu(27,26m) = 377.5(3.4) MHz",
+     "url": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.131.222502"
+    },
+    "28-27": {
+     "value": -321.9,
+     "unc": 0.8,
+     "src": "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table II: delta-nu(27,A) = nu(A) - nu(27); statistical (0.8) and beam-energy systematic [3.3] MHz",
+     "url": "https://arxiv.org/pdf/2010.06918"
+    },
+    "29-27": {
+     "value": -610.7,
+     "unc": 0.6,
+     "src": "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table II",
+     "url": "https://arxiv.org/pdf/2010.06918"
+    },
+    "30-27": {
+     "value": -889.5,
+     "unc": 1.2,
+     "src": "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table II",
+     "url": "https://arxiv.org/pdf/2010.06918"
+    },
+    "31-27": {
+     "value": -1141.0,
+     "unc": 1.2,
+     "src": "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table II",
+     "url": "https://arxiv.org/pdf/2010.06918"
+    },
+    "32-27": {
+     "value": -1401,
+     "unc": 7,
+     "src": "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table II",
+     "url": "https://arxiv.org/pdf/2010.06918"
+    }
+   },
+   "gamma_MHz": 23.23,
    "type": "E1",
-   "A": 98500000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
-   "d": 2.46,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "A": 99000000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade B",
+   "d": 2.466,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade B (from A)",
+   "br": 0.6782,
+   "br_tier": "exp",
    "lam_obs": 396.26409
   },
   {
@@ -1222,6 +1396,7 @@
    "wn": 17990.133,
    "lam": 555.8603,
    "air": 555.7059,
+   "gamma_MHz": 0.3285,
    "type": "E1",
    "A": 230000.0,
    "A_tier": "nist",
@@ -1229,6 +1404,8 @@
    "d": 0.2793,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.1114,
+   "br_tier": "nist",
    "lam_obs": 555.8606
   },
   {
@@ -1241,6 +1418,7 @@
    "wn": 17987.268,
    "lam": 555.9488,
    "air": 555.7944,
+   "gamma_MHz": 0.3257,
    "type": "E1",
    "A": 229000.0,
    "A_tier": "nist",
@@ -1248,6 +1426,8 @@
    "d": 0.1971,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.1119,
+   "br_tier": "nist",
    "lam_obs": 555.9491
   },
   {
@@ -1260,6 +1440,7 @@
    "wn": 14930.127,
    "lam": 669.7867,
    "air": 669.6018,
+   "gamma_MHz": 0.5787,
    "type": "E1",
    "A": 1000000.0,
    "A_tier": "nist",
@@ -1267,6 +1448,8 @@
    "d": 0.7702,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.275,
+   "br_tier": "nist",
    "lam_obs": 669.7864
   },
   {
@@ -1279,6 +1462,7 @@
    "wn": 14924.222,
    "lam": 670.0517,
    "air": 669.8667,
+   "gamma_MHz": 0.5787,
    "type": "E1",
    "A": 1000000.0,
    "A_tier": "nist",
@@ -1286,6 +1470,8 @@
    "d": 0.5449,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.275,
+   "br_tier": "nist",
    "lam_obs": 670.0522
   },
   {
@@ -1298,6 +1484,7 @@
    "wn": 8883.937,
    "lam": 1125.6271,
    "air": 1125.3189,
+   "gamma_MHz": 2.635,
    "type": "E1",
    "A": 13000000.0,
    "A_tier": "nist",
@@ -1305,6 +1492,8 @@
    "d": 7.41,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.7853,
+   "br_tier": "nist",
    "lam_obs": 1125.627
   },
   {
@@ -1317,6 +1506,7 @@
    "wn": 8882.602,
    "lam": 1125.7962,
    "air": 1125.488,
+   "gamma_MHz": 2.635,
    "type": "E1",
    "A": 13900000.0,
    "A_tier": "nist",
@@ -1324,6 +1514,8 @@
    "d": 8.849,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.8397,
+   "br_tier": "nist",
    "lam_obs": 1125.8008
   },
   {
@@ -1336,13 +1528,16 @@
    "wn": 7617.883,
    "lam": 1312.7007,
    "air": 1312.3417,
+   "gamma_MHz": 2.449,
    "type": "E1",
-   "A": 16000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy A)",
-   "d": 8.453,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy A) (from A)",
+   "A": 15000000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade B",
+   "d": 8.184,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade B (from A)",
+   "br": 0.975,
+   "br_tier": "exp",
    "lam_obs": 1312.7005
   },
   {
@@ -1355,20 +1550,23 @@
    "wn": 7602.051,
    "lam": 1315.4345,
    "air": 1315.0748,
+   "gamma_MHz": 2.631,
    "type": "E1",
-   "A": 15900000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy A)",
-   "d": 5.977,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy A) (from A)",
+   "A": 16000000.0,
+   "A_tier": "exp",
+   "A_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade A",
+   "d": 5.996,
+   "d_tier": "exp",
+   "d_src": "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade A (from A)",
+   "br": 0.968,
+   "br_tier": "exp",
    "lam_obs": 1315.435
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -1383,189 +1581,174 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$3p\\ ^2P^{o}_{1/2}$ – $8d\\ ^2D_{3/2}$",
-     "214.6230",
-     "214.5555",
-     "1396.8326",
-     "0.634",
-     "2.060e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{3/2}$ – $8d\\ ^2D_{5/2}$",
-     "215.1376",
-     "215.0699",
-     "1393.4920",
-     "0.852",
-     "2.460e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{1/2}$ – $7d\\ ^2D_{3/2}$",
-     "216.9507",
-     "216.8827",
-     "1381.8461",
-     "0.772",
-     "2.960e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{3/2}$ – $7d\\ ^2D_{5/2}$",
-     "217.4752",
-     "217.4071",
-     "1378.5132",
-     "1.037",
-     "3.530e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{1/2}$ – $6d\\ ^2D_{3/2}$",
-     "220.5355",
-     "220.4668",
-     "1359.3839",
-     "0.962",
-     "4.370e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{3/2}$ – $6d\\ ^2D_{5/2}$",
-     "221.0749",
-     "221.0060",
-     "1356.0672",
-     "1.290",
-     "5.200e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{1/2}$ – $5d\\ ^2D_{3/2}$",
-     "226.4165",
-     "226.3464",
-     "1324.0753",
-     "1.251",
-     "6.830e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{3/2}$ – $5d\\ ^2D_{5/2}$",
-     "226.9798",
-     "226.9096",
-     "1320.7892",
-     "1.620",
-     "7.580e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{1/2}$ – $4d\\ ^2D_{3/2}$",
-     "236.7775",
-     "236.7052",
-     "1266.1357",
-     "1.412",
-     "7.610e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{3/2}$ – $4d\\ ^2D_{5/2}$",
-     "237.3847",
-     "237.3122",
-     "1262.8974",
-     "1.896",
-     "9.070e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{3/2}$ – $nd\\ \\mathrm{y}\\,^2D_{5/2}$",
-     "257.5865",
-     "257.5094",
-     "1163.8515",
-     "1.350",
-     "3.600e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{3/2}$ – $5s\\ ^2S_{1/2}$",
-     "266.1178",
-     "266.0386",
-     "1126.5405",
-     "0.727",
-     "2.840e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$3p\\ ^2P^{o}_{1/2}$ – $3d\\ ^2D_{3/2}$",
-     "308.3046",
-     "308.2151",
-     "972.3904",
-     "1.843",
-     "5.870e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
      "$3p\\ ^2P^{o}_{3/2}$ – $3d\\ ^2D_{5/2}$",
      "309.3606",
      "309.2708",
      "969.0712",
-     "2.528",
-     "7.290e+07",
-     "–",
-     "–",
-     ""
+     "2.495",
+     "7.100e+07",
+     "11.37",
+     "99.4",
+     "309.4 nm laser-cooling transition 3p 2P3/2"
     ],
     [
      "$3p\\ ^2P^{o}_{1/2}$ – $4s\\ ^2S_{1/2}$",
      "394.5122",
      "394.4006",
      "759.9066",
-     "1.739",
-     "4.990e+07",
-     "–",
-     "–",
-     ""
+     "1.688",
+     "4.700e+07",
+     "23.23",
+     "32.2",
+     "394.4 nm resonance line"
     ],
     [
      "$3p\\ ^2P^{o}_{3/2}$ – $4s\\ ^2S_{1/2}$",
      "396.2641",
      "396.1520",
      "756.5471",
-     "2.460",
-     "9.850e+07",
-     "–",
-     "–",
-     ""
+     "2.466",
+     "9.900e+07",
+     "23.23",
+     "67.8",
+     "396.2 nm line"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{27}$Al hyperfine structure  ($I$ = 5/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$3p\\ ^2P^{o}_{1/2}$",
+     "502.0346(5)",
+     "–",
+     "F=2: -878.56   F=3: +627.54"
+    ],
+    [
+     "$3p\\ ^2P^{o}_{3/2}$",
+     "94.27723(10)",
+     "18.915",
+     "F=1: -481.71   F=2: -308.29   F=3: -33.97   F=4: +358.27"
+    ],
+    [
+     "$4s\\ ^2S_{1/2}$",
+     "431.11(9)",
+     "–",
+     "F=2: -754.44   F=3: +538.89"
+    ],
+    [
+     "$4p\\ ^2P^{o}_{1/2}$",
+     "58.280",
+     "–",
+     "F=2: -101.99   F=3: +72.85"
+    ],
+    [
+     "$4p\\ ^2P^{o}_{3/2}$",
+     "23.120",
+     "2.860",
+     "F=1: -119.38   F=2: -75.43   F=3: -7.35   F=4: +87.42"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$3p\\ ^2P^{o}_{3/2}$ – $4s\\ ^2S_{1/2}$",
+     "396.264",
+     "26m-27",
+     "378(3)"
+    ],
+    [
+     "$3p\\ ^2P^{o}_{3/2}$ – $4s\\ ^2S_{1/2}$",
+     "396.264",
+     "28-27",
+     "-321.9(8)"
+    ],
+    [
+     "$3p\\ ^2P^{o}_{3/2}$ – $4s\\ ^2S_{1/2}$",
+     "396.264",
+     "29-27",
+     "-610.7(6)"
+    ],
+    [
+     "$3p\\ ^2P^{o}_{3/2}$ – $4s\\ ^2S_{1/2}$",
+     "396.264",
+     "30-27",
+     "-889.5(12)"
+    ],
+    [
+     "$3p\\ ^2P^{o}_{3/2}$ – $4s\\ ^2S_{1/2}$",
+     "396.264",
+     "31-27",
+     "-1141.0(12)"
+    ],
+    [
+     "$3p\\ ^2P^{o}_{3/2}$ – $4s\\ ^2S_{1/2}$",
+     "396.264",
+     "32-27",
+     "-1401(7)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
   "levels: 32   lines < 2000 nm: 44   with matrix element: 44",
-  "transition-rate provenance: nist: 44",
-  "levels with a measured lifetime: 0"
+  "transition-rate provenance: exp: 18, nist: 26",
+  "levels with a measured lifetime: 19"
  ],
- "sources": {}
+ "sources": {
+  "abundance: NIST Atomic Weights and Isotopic Compositions (Al); nuclear spin and magnetic moment: UDel Portal for High-Precision Atomic Data and Computation, nuclear-data table of the Al+ entry, read 2026-10-01": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Al",
+  "NIST Atomic Spectra Database, levels table (cached data/nist file), series limit": "https://physics.nist.gov/asd",
+  "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3, row \"Expt\" (reference [36] there; atomic-beam magnetic resonance)": "https://arxiv.org/pdf/physics/0504087",
+  "Lew, Wessel, Phys. Rev. 90, 1 (1953) (abstract): hyperfine interval 1506.14(5) MHz": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.90.1",
+  "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3 row \"Expt\" (A) and Sec. 4 text (B = 18.915 MHz, refs. [37,38] there: Martin, Sandars, Woodgate, Proc. R. Soc. A 305, 139 (1968) and a Can. J. Phys. paper by Lew and co-workers)": "https://arxiv.org/pdf/physics/0504087",
+  "Lew, Phys. Rev. 76, 1086 (1949) (abstract; atomic-beam magnetic resonance)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.76.1086",
+  "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table I (collinear laser spectroscopy, 396 nm)": "https://arxiv.org/pdf/2010.06918",
+  "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table I footnote: average of literature values (Lew 1949; Weber et al. 1987; Levins et al. 1997)": "https://arxiv.org/pdf/2010.06918",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986)": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, RCI length form (multiconfiguration Dirac-Hartree-Fock + relativistic CI)": "https://arxiv.org/pdf/1808.09478",
+  "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Sec. III (\"A(S1/2) = 431.11(9) MHz value of 27Al deduced in this work\")": "https://arxiv.org/pdf/2010.06918",
+  "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3, UCCSD": "https://arxiv.org/pdf/physics/0504087",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Buurman, Donszelmann, Astron. Astrophys. 227, 289 (1990)": "https://arxiv.org/pdf/1808.09478",
+  "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3, UCCSD (relativistic unitary coupled-cluster)": "https://arxiv.org/pdf/physics/0504087",
+  "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 3 (A, UCCSD) and Sec. 4 text (B, UCCSD)": "https://arxiv.org/pdf/physics/0504087",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 6, column tau(obs); original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)": "https://arxiv.org/pdf/1808.09478",
+  "Brown, Evenson, Phys. Rev. A 60, 956 (1999) (abstract): fine-structure interval 3359.6228(17) GHz = 112.06495(6) cm^-1 (hyperfine-free interval)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.60.956",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade B": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Wiese, Martin, Transition Probabilities Part II, NSRDS-NBS 68 (1980) (critical compilation), accuracy grade C": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, A(RCI), length form": "https://arxiv.org/pdf/1808.09478",
+  "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 4, UCCSD line strength S = 3.275 a.u. (relativistic unitary coupled-cluster)": "https://arxiv.org/pdf/physics/0504087",
+  "Sur, Chaudhuri, Das, Mukherjee, arXiv:physics/0504087v2 (2005), \"Case studies of atomic properties using coupled-cluster and unitary coupled-cluster methods\", Table 4, UCCSD line strength S = 6.600 a.u.": "https://arxiv.org/pdf/physics/0504087",
+  "Plattner et al., Phys. Rev. Lett. 131, 222502 (2023), Table I and text: delta-nu(27,26m) = 377.5(3.4) MHz": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.131.222502",
+  "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table II: delta-nu(27,A) = nu(A) - nu(27); statistical (0.8) and beam-energy systematic [3.3] MHz": "https://arxiv.org/pdf/2010.06918",
+  "Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918), Table II": "https://arxiv.org/pdf/2010.06918",
+  "Plattner et al., Phys. Rev. Lett. 131, 222502 (2023) / Heylen et al., Phys. Rev. C 103, 014318 (2021) (arXiv:2010.06918) (adopted MCDHF factors of Filippin et al., Phys. Rev. A 94, 062508 (2016))": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.131.222502",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade C+": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes) (printed in parentheses: \"(1.20)E+07\")": "https://arxiv.org/pdf/1808.09478",
+  "McGowan, Giltner, Lee, Opt. Lett. 20, 2535 (1995) (abstract)": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-24-2535",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade A": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Buurman, Donszelmann, Hansen, Snoek, Astron. Astrophys. 164, 224 (1986), accuracy grade C+": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Vujnovic, Blagoev, Furbock, Neger, Jager, Astron. Astrophys. (2002), listed by Papoulia et al. as A&A 338, 704 (hollow-cathode relative intensities normalised to lifetimes), accuracy grade D": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990), accuracy grade C+": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990)": "https://arxiv.org/pdf/1808.09478",
+  "Papoulia, Ekman, Jonsson, Astron. Astrophys. 621, A16 (2019) (arXiv:1808.09478), Table 5, observed; original: Davidson, Volten, Donszelmann, Astron. Astrophys. 238, 452 (1990), accuracy grade A": "https://arxiv.org/pdf/1808.09478"
+ }
 }
