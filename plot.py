@@ -439,6 +439,7 @@ def draw(key):
     keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "tau_ns", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term")
     with open(os.path.join(out, "data.json"), "w") as f:
         json.dump(dict(meta={k: meta[k] for k in ("slug", "element", "symbol", "A", "I", "limit_cm", "spectrum")},
+                       sources=atom.get("sources", {}),
                        levels=[dict({k: l[k] for k in keep_l if k in l}, html=al.tex_to_html(l["name"])) for l in levels],
                        transitions=[dict(t, upper_html=al.tex_to_html(t["upper_name"])) if "upper_name" in t else t for t in bound + ryd]),
                   f, ensure_ascii=False)

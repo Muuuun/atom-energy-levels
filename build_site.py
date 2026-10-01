@@ -43,6 +43,19 @@ def fmt_d(d):
     return f"{d:.2f}" if d >= 10 else f"{d:.3f}" if d >= 0.1 else f"{d:.3g}"
 
 
+def cite(atom, s):
+    """Citation text linked to its URL (NIST or the literature entry it starts with)."""
+    if not s:
+        return "–"
+    s = re.sub(r"\s*\((from A|via ARC)\)", "", s).strip()
+    url = "https://physics.nist.gov/asd" if s.startswith("NIST ASD") else ""
+    best = max((k for k in atom.get("sources", {}) if s.startswith(k)), key=len, default=None)
+    if best:
+        url = atom["sources"][best]
+    short = html.escape(s if len(s) <= 90 else s[:89] + "…")
+    return f'<a href="{html.escape(url)}" rel="noopener">{short}</a>' if url else short
+
+
 def table(header, rows, left=(0,), wrap=()):
     th = "".join(f'<th class="{"l" if k in left else ""}" scope="col">{h}</th>' for k, h in enumerate(header))
     body = []
@@ -169,10 +182,10 @@ matrix element. Level energies come from the NIST Atomic Spectra Database; trans
             f"{t['freq']:.4f}", t.get("type", "E1"),
             (fmt_d(t["d"]) + badge(t.get("d_tier"))) if t.get("d") is not None else "–",
             (f"{t['A']:.3e}" + badge(t.get("A_tier"))) if t.get("A") else "–",
-            f"{t['br'] * 100:.3g}" if t.get("br") is not None else "–"]))
+            f"{t['br'] * 100:.3g}" if t.get("br") is not None else "–", cite(atom, t.get("d_src") or t.get("A_src"))]))
     parts.append(f"<h2>All {iso} transitions below 2 µm</h2>")
-    parts.append(table(["Lower level", "Upper level", "λ vacuum (nm)", "λ air (nm)", "ν (THz)", "Type", "|⟨J‖er‖J′⟩| (ea₀)", "A (s⁻¹)", "Branching (%)"],
-                       rows, left=(0, 1, 5)))
+    parts.append(table(["Lower level", "Upper level", "λ vacuum (nm)", "λ air (nm)", "ν (THz)", "Type", "|⟨J‖er‖J′⟩| (ea₀)", "A (s⁻¹)", "Branching (%)",
+                        "Source of matrix element / A"], rows, left=(0, 1, 5, 9), wrap=(9,)))
     parts.append('<p class="note">Reduced dipole matrix elements follow the convention A = ω³|d|²/(3πε₀ħc³(2J′+1)), with J′ the upper level.\n'
                  "Tags show where a number comes from: measured, NIST compilation, high-accuracy theory, or a model calculation.</p>")
 
@@ -188,9 +201,11 @@ matrix element. Level energies come from the NIST Atomic Spectra Database; trans
         h = l.get("hfs") or {}
         rows.append(dict(id=f"level-{l['id']}", cells=[al.tex_to_html(l["name"]), f"{l['E']:.3f}", al.jstr(l["J"]), l["parity"], tau,
                                                        f"{l['g']:.5g}" if l.get("g") else "–",
-                                                       f"{h['A']:g}" if h else "–", f"{h['B']:g}" if h.get("B") else "–"]))
+                                                       f"{h['A']:g}" if h else "–", f"{h['B']:g}" if h.get("B") else "–",
+                                                       cite(atom, l.get("tau_src")), cite(atom, h.get("src"))]))
     parts.append(f"<h2>{iso} energy levels</h2>")
-    parts.append(table(["Level", "Energy (cm⁻¹)", "J", "Parity", "Lifetime", "g<sub>J</sub>", "Hyperfine A (MHz)", "Hyperfine B (MHz)"], rows))
+    parts.append(table(["Level", "Energy (cm⁻¹)", "J", "Parity", "Lifetime", "g<sub>J</sub>", "Hyperfine A (MHz)", "Hyperfine B (MHz)",
+                        "Lifetime source", "Hyperfine source"], rows, left=(0, 8, 9), wrap=(8, 9)))
     parts.append(f'<p class="note">{html.escape(meta["limit_text"].replace("$", "").replace("^{-1}", "⁻¹").replace("^+", "⁺"))}</p>')
 
     # ---- sources
@@ -203,7 +218,7 @@ matrix element. Level energies come from the NIST Atomic Spectra Database; trans
         for s in (l.get("tau_src"), (l.get("hfs") or {}).get("src")):
             if s:
                 srcs[s.strip()] = 1
-    parts.append("<h2>Sources</h2><ul class=\"sources\">" + "".join(f"<li>{html.escape(s)}</li>" for s in sorted(srcs) if len(s) > 3) + "</ul>")
+    parts.append("<h2>Sources</h2><ul class=\"sources\">" + "".join(f"<li>{cite(atom, s)}</li>" for s in sorted(srcs) if len(s) > 3) + "</ul>")
     if meta.get("notes"):
         parts.append(f'<p class="note">{html.escape(str(meta["notes"])[:1500])}</p>')
 

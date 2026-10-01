@@ -32,6 +32,23 @@ class Literature:
         self.raw = al.load_literature(symbol)
         self.iso = str(isotope)
 
+    def source_urls(self):
+        """{citation: url} for every sourced entry of the literature file."""
+        out = {}
+
+        def walk(x):
+            if isinstance(x, dict):
+                if isinstance(x.get("source"), str) and isinstance(x.get("url"), str):
+                    out.setdefault(x["source"], x["url"])
+                for v in x.values():
+                    walk(v)
+            elif isinstance(x, list):
+                for v in x:
+                    walk(v)
+
+        walk(self.raw)
+        return out
+
     def level(self, e):
         best = None
         for l in self.raw.get("levels", []):
@@ -134,7 +151,7 @@ def finish_transition(t, lo, up, lit, tau_ns):
         t.update(br=br[0], br_tier=br[2], br_src=br[3])
     shifts = lt.get("isotope_shift_MHz") if lt else None
     if isinstance(shifts, dict):
-        t["isotope_shifts"] = {k: dict(value=v["value"], unc=v.get("unc"), src=v.get("source", ""))
+        t["isotope_shifts"] = {k: dict(value=v["value"], unc=v.get("unc"), src=v.get("source", ""), url=v.get("url", ""))
                                for k, v in shifts.items() if isinstance(v, dict) and isinstance(v.get("value"), (int, float))}
     if tau_ns:
         t["gamma_MHz"] = sig(1e3 / (2 * np.pi * tau_ns), 4)
@@ -377,7 +394,7 @@ def build_alkali(key, cfg):
                 rydberg_note=f"Rydberg series drawn to $n$ = 60 ({src})",
                 guide_tau="Level caption:  NIST energy and lifetime (measured where a value exists, otherwise ARC, marked ≈).")
     return dict(meta=meta, columns=columns, levels=levels, transitions=transitions + ryd_tr, rydberg_levels=ryd_levels,
-                tables=tables, validation=validation)
+                tables=tables, validation=validation, sources=lit.source_urls())
 
 
 def short_use(u, n=58):
@@ -590,7 +607,18 @@ def build_nist(key, cfg):
                 limit_text=rf"{sym}$^+$ ionisation limit   {limit:.2f} cm$^{{-1}}$  =  {limit / al.EV_TO_CM:.5f} eV  ({1e7 / limit:.3f} nm)",
                 guide_tau="Level caption:  NIST energy and measured lifetime (where one exists).",
                 notes=lit.raw.get("notes", ""))
-    return dict(meta=meta, columns=columns, levels=levels, transitions=transitions, rydberg_levels=[], tables=tables, validation=validation)
+    return dict(meta=meta, columns=columns, levels=levels, transitions=transitions, rydberg_levels=[], tables=tables, validation=validation,
+                sources=lit.source_urls())
+
+
+def url_of(atom, src):
+    """URL of the citation a (possibly suffixed) source string starts with."""
+    if not src:
+        return ""
+    if src.startswith("NIST ASD"):
+        return "https://physics.nist.gov/asd"
+    best = max((s for s in atom.get("sources", {}) if src.startswith(s)), key=len, default=None)
+    return atom["sources"][best] if best else ""
 
 
 def write_outputs(key, atom):
@@ -602,20 +630,22 @@ def write_outputs(key, atom):
     with open(os.path.join(out, "levels.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["level", "J", "parity", "energy_cm", "lifetime_ns", "lifetime_unc_ns", "lifetime_tier", "lifetime_source",
-                    "g_J", "hfs_A_MHz", "hfs_B_MHz", "hfs_source"])
+                    "g_J", "hfs_A_MHz", "hfs_B_MHz", "hfs_source", "lifetime_source_url", "hfs_source_url"])
         for l in L:
             h = l.get("hfs") or {}
             w.writerow([l["plain"], al.jstr(l["J"]), l["parity"], l["E"], l.get("tau_ns") or "", l.get("tau_unc") or "", l["tau_tier"],
-                        l.get("tau_src", ""), l.get("g") or "", h.get("A", ""), h.get("B") or "", h.get("src", "")])
+                        l.get("tau_src", ""), l.get("g") or "", h.get("A", ""), h.get("B") or "", h.get("src", ""),
+                        url_of(atom, l.get("tau_src")), url_of(atom, h.get("src"))])
     with open(os.path.join(out, "transitions.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["lower", "upper", "kind", "wavelength_vac_nm", "wavelength_air_nm", "frequency_THz", "frequency_source", "wavenumber_cm",
-                    "rme_J_ea0", "rme_tier", "rme_source", "A_s", "A_tier", "branching", "upper_linewidth_MHz", "nist_observed_vac_nm", "use", "type"])
+                    "rme_J_ea0", "rme_tier", "rme_source", "A_s", "A_tier", "branching", "upper_linewidth_MHz", "nist_observed_vac_nm", "use", "type", "rme_source_url"])
         for t in atom["transitions"]:
             up = L[t["upper"]]["plain"] if "upper" in t else t["upper_plain"]
             w.writerow([L[t["lower"]]["plain"], up, t["kind"], t["lam"], t.get("air", ""), t["freq"], t.get("freq_src", ""), t.get("wn", ""),
                         t.get("d", ""), t.get("d_tier", ""), t.get("d_src", ""), t.get("A", ""), t.get("A_tier", ""), t.get("br", ""),
-                        t.get("gamma_MHz", ""), t.get("lam_obs", ""), t.get("use", ""), t.get("type", "Rydberg E1")])
+                        t.get("gamma_MHz", ""), t.get("lam_obs", ""), t.get("use", ""), t.get("type", "Rydberg E1"),
+                        url_of(atom, t.get("d_src") or t.get("A_src"))])
     with open(os.path.join(out, "validation.txt"), "w") as f:
         f.write("\n".join(atom["validation"]) + "\n")
     print(f"== {key}\n" + "\n".join(atom["validation"]))

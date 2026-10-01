@@ -28,7 +28,14 @@
     : ns < 1e9 ? +(ns / 1e6).toPrecision(4) + ' ms' : +(ns / 1e9).toPrecision(4) + ' s';
   const colorOf = i => { const p = svg.querySelector('#tr-' + i + ' path'); return p ? p.style.stroke || p.style.fill : '#888'; };
   const row = (k, v) => '<tr><td>' + k + '</td><td>' + v + '</td></tr>';
-  const src = s => s ? '<div class="note">' + esc(s) + '</div>' : '';
+  const SRC = data.sources || {};
+  function cite(s) {  // citation text, linked to the page the number was read on
+    if (!s) return '';
+    let url = s.startsWith('NIST ASD') ? 'https://physics.nist.gov/asd' : '', best = '';
+    for (const k in SRC) if (s.startsWith(k) && k.length > best.length) { best = k; url = SRC[k]; }
+    return url ? '<a href="' + url + '" target="_blank" rel="noopener">' + esc(s) + '</a>' : esc(s);
+  }
+  const src = (label, s) => s ? '<div class="note"><b>' + label + ':</b> ' + cite(s) + '</div>' : '';
 
   function transitionCard(i) {
     const t = T[i];
@@ -50,7 +57,11 @@
       h += row('Isotope shift ' + pair, s.value + (s.unc ? ' ± ' + s.unc : '') + ' MHz');
     h += '</table>';
     if (t.uncertain) h += '<div class="note">' + (t.kind === 'rydberg' ? 'Two calculations differ by about 2× on this line: order of magnitude only.' : 'This value is a bound or an estimate, not a direct measurement.') + '</div>';
-    return h + src(t.d_src || t.A_src);
+    h += src(t.d != null ? 'Matrix element / A' : 'A', t.d_src || t.A_src);
+    if (t.freq_tier === 'exp') h += src('Frequency', t.freq_src);
+    if (t.br_src) h += src('Branching', t.br_src);
+    for (const [pair, s] of Object.entries(t.isotope_shifts || {})) h += src('Isotope shift ' + pair, s.src);
+    return h;
   }
 
   function levelCard(k) {
@@ -67,7 +78,7 @@
     if (l.hfs) h += row('Hyperfine A', l.hfs.A + ' MHz') + (l.hfs.B ? row('Hyperfine B', l.hfs.B + ' MHz') : '');
     h += '</table><table class="lines" style="margin-top:8px"><tr><th>' + linesOf[k].length +
          ' lines</th><th>λ vac (nm)</th><th>d (ea₀)</th></tr>' + rows + '</table>';
-    return h + src(l.tau_src);
+    return h + src('Lifetime', l.tau_src) + src('Hyperfine', l.hfs && l.hfs.src);
   }
 
   const helpCard = '<h3>How to read this</h3><div class="note" style="margin-top:0;font-size:13.5px;color:inherit">' +
