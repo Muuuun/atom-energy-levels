@@ -24,3 +24,12 @@ The same pages were read again, asking only for named rows, copied verbatim. Eve
   not reprint them. Rows not covered by check 2 rest on check 1 only; levels without NIST rates (Tm 58, Ho 17, Dy 2) rest on the
   original single or double read.
 - Tm 50563.91 cm^-1 J=15/2 (2.2 ns) matches no NIST level and is not used by the site.
+
+## Ta and W (Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987)), added after round 4
+Same route (publisher HTML tables). Second independent read: W lifetimes 31323.48: 158(8), 34354.08: 305(15), 29393.49: 71.4(3.6) ns;
+Ta lifetimes 26585.93: 261(13), 23363.09: 390(20), 28689.31: 138(7), 26363.69: 128(6), 28133.88: 157(8), 30664.66: 57.9(2.9) ns:
+all equal the stored values. The gA column of the second read (W: 0.097, 0.020, 0.020; 0.113, 0.049; 0.26, 0.21, 0.180 x 10^8 s^-1)
+equals (2J+1) x stored branching ratio / stored lifetime for all 8 stored lines of those three levels. The branching-ratio column
+of the second read came out shifted and was not used. The two identical rows of level 34354.08 (0.081(6), 0.0185(16)) are printed
+twice in both reads and are below the 0.10 cut, so they are not in W.json. All other Ta / W rows rest on the single read plus the
+internal gA check.
