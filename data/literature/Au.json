@@ -135,6 +135,14 @@
      "method": "theory",
      "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT; the authors state their lifetimes are less accurate than their energies)",
      "url": "https://arxiv.org/pdf/2006.14735"
+    },
+    {
+     "value": 6.2e-09,
+     "unc": 2e-10,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)",
+     "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209"
     }
    ]
   },
@@ -157,6 +165,23 @@
      "method": "theory",
      "source": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT)",
      "url": "https://arxiv.org/pdf/2006.14735"
+    },
+    {
+     "value": 4.7e-09,
+     "unc": 2e-10,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)",
+     "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209"
+    },
+    {
+     "value": 4.6e-09,
+     "unc": 2.7e-10,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Goldmann, Hahn, Ney, Z. Phys. 225, 1 (1969), abstract (level crossing / resonance scattering)",
+     "url": "https://web.archive.org/web/20180615091500/https://link.springer.com/article/10.1007%2FBF01392550",
+     "note": "derived: tau = 1/(2 pi x 34.6 MHz) from the printed radiation width gamma/2pi = 34.6(2.0) MHz; uncertainty propagated"
     }
    ],
    "hyperfine": {
@@ -167,8 +192,76 @@
      "B_unc": 1.6,
      "method": "experiment",
      "source": "Einfeld, Ney, Wilken, Z. Naturforsch. A 26, 668 (1971), abstract (Crossref record) (level crossing in parallel electric and magnetic fields; signs determined positive; the abstract prints 'A = + 14.0 (5) Mc/sec; 5=+327.6 (1.6) Mc/sec', the '5' being a scanning error for B)",
-     "url": "https://api.crossref.org/works/10.1515/zna-1971-0407"
+     "url": "https://api.crossref.org/works/10.1515/zna-1971-0407",
+     "alternatives": [
+      {
+       "A_MHz": 14.0,
+       "A_unc": 0.5,
+       "B_MHz": 327.6,
+       "B_unc": 1.6,
+       "method": "experiment",
+       "source": "Goldmann, Hahn, Ney, Z. Phys. 225, 1 (1969), abstract (level crossing / resonance scattering); the abstract prints |A| = 14.0(5) MHz, |B| = 327.6(1.6) MHz, B/A = +23.4(8) (magnitudes; relative sign positive)",
+       "url": "https://web.archive.org/web/20180615091500/https://link.springer.com/article/10.1007%2FBF01392550",
+       "note": "same magnitudes as the 1971 Einfeld-Ney-Wilken entry, which fixed both signs as positive"
+      }
+     ]
     }
+   }
+  },
+  {
+   "nist_energy_cm": 60032.85,
+   "label": "5d10 7p 2P1/2",
+   "J": "1/2",
+   "lifetime": {
+    "value": 6.4e-09,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209",
+    "note": "the abstract identifies the level only as \"7p 2P1/2\"; matched to the NIST level labelled 5d10 7p 2P1/2 (the perturbing 5d9 6s6p 2P states are listed separately in the abstract by energy)"
+   }
+  },
+  {
+   "nist_energy_cm": 60728.49,
+   "label": "5d10 7p 2P3/2",
+   "J": "3/2",
+   "lifetime": {
+    "value": 5.3e-09,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209",
+    "note": "the abstract identifies the level only as \"7p 2P3/2\"; matched to the NIST level labelled 5d10 7p 2P3/2"
+   }
+  },
+  {
+   "nist_energy_cm": 63005.1,
+   "label": "5d9 6s6p 2P3/2 (perturber of the np 2P series)",
+   "J": "3/2",
+   "lifetime": {
+    "value": 2.7e-09,
+    "unc": 1.5e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209",
+    "note": "abstract gives the level as 2P3/2 at 63 005.62 cm^-1; NIST lists it at 63005.1 cm^-1. Level not drawn on the site"
+   }
+  },
+  {
+   "nist_energy_cm": 58845.414,
+   "label": "5d9 6s6p 2P3/2 (perturber of the np 2P series)",
+   "J": "3/2",
+   "lifetime_unassigned": {
+    "value": 2.1e-09,
+    "unc": 1.5e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence) -- not verified: level identification uncertain",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209",
+    "note": "abstract gives the level as 2P3/2 at 58 826.30 cm^-1; the nearest NIST 2P3/2 level is 58845.414 cm^-1 (19 cm^-1 away), so the match is doubtful. Level not drawn on the site"
    }
   }
  ],
@@ -244,15 +337,18 @@
   "isotope shifts: Au has a single stable isotope (197Au); none applicable",
   "precise (laser) frequencies of the 267.6 nm and 242.8 nm resonance lines: none located; NIST level values remain the best available",
   "Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981) original (lifetimes AND branching ratios of the 6p levels): IOP page behind a bot wall; lifetimes taken second-hand from Dzuba et al. 2021, branching ratios not obtained (NIST A values for 6p -> 2D lines derive from them)",
-  "measured lifetimes of 7s 2S1/2, 6d 2D, 7p 2P, 7d 2D and the 5d9 6s6p levels (4F7/2, 4P3/2, 2D5/2) drawn on the site: papers exist (e.g. Fivet et al., J. Phys. B 39, 3587 (2006); Zhang et al. 2018) but none could be opened; nothing entered",
   "measured lifetimes of the metastable 5d9 6s2 2D5/2 and 2D3/2 levels: none located; theory only (43.7 s and 33 ms)",
   "hyperfine constants of 7s, 6d, 7p and the 5d9 6s6p levels: not located in an opened source (Blachman et al. 1967 give 5d9 6s6p 4F9/2: A = 432.276(1), B = -540.026(17) MHz, a level the site does not draw)",
-  "Goldmann, Hahn, Ney, Z. Phys. 225, 1 (1969) (first 6p 2P3/2 level-crossing measurement, |A|, |B| and lifetime): Springer page not accessible"
+  "measured lifetimes of 7s 2S1/2, 6d 2D3/2,5/2, 7d 2D3/2,5/2 and of the 5d9 6s6p levels 4F7/2 (45537.195), 4P3/2 (47007.433), 2D5/2 (51653.9) drawn on the site: Fivet, Quinet, Biemont, Xu, J. Phys. B 39, 3587 (2006) measured three odd Au I levels by laser-induced fluorescence, but the abstract (read on OSTI ETDEWEB) gives no numbers and neither IOP, ORBi nor the Wayback Machine served the paper. The 7p 2P levels are now filled from Gaarde et al. 1994",
+  "lifetimes of 8p 2P1/2 = 63(3) ns, 8p 2P3/2 = 24(2) ns, 9p 2P1/2 = 28(2) ns, 9p 2P3/2 = 75(4) ns and of the perturbers 2P1/2 at 60983.05 cm^-1 = 17.5(10) ns and 62540.65 cm^-1 = 6.7(7) ns are printed in the Gaarde et al. 1994 abstract, but these levels are not in the cached NIST levels file under those energies, so no level entry was made",
+  "second search round (Crossref, OSTI ETDEWEB, arXiv API, Wayback Machine, Kurucz atoms/7900 (empty)): no open source for the 197Au 6p 2P1/2 hyperfine constant, for absolute laser frequencies of the 267.6 / 242.8 nm lines, or for measured E1 branching ratios beyond NIST"
  ],
  "conflicts": [
   "ground-state hyperfine constant: 3049.66 MHz (Dahmen & Penselin 1967, splitting 6.10 GHz) vs 3053.55(50) MHz derived from the splitting 6107.1(1.0) Mc/s of Wessel & Lew 1953; the later, far more precise atomic-beam value is adopted",
   "6p 2P lifetimes: measured 6.0(1) and 4.6(2) ns (Hannaford 1981) vs CIPT theory 4.1 and 3.3 ns; the theory A values and matrix elements of Dzuba et al. for the resonance lines are correspondingly about 50 % too large and must not replace the NIST values",
-  "g_J of 2D5/2: measured 1.20000(2) (Childs & Goodman) vs NIST table value 1.192 used on the site; g_J of 2D3/2: measured 0.799(1) (Blachman 1967) vs NIST 0.804"
+  "g_J of 2D5/2: measured 1.20000(2) (Childs & Goodman) vs NIST table value 1.192 used on the site; g_J of 2D3/2: measured 0.799(1) (Blachman 1967) vs NIST 0.804",
+  "6p 2P lifetimes: Hannaford et al. 1981 (6.0(1), 4.6(2) ns, kept as entries, second-hand) vs Gaarde et al. 1994 (6.2(2), 4.7(2) ns, read directly in the abstract) vs Goldmann et al. 1969 width 34.6(2.0) MHz for 2P3/2 (4.6(3) ns, derived); all consistent",
+  "Gaarde et al. 1994 give the lower 5d9 6s6p 2P3/2 perturber at 58826.30 cm^-1, NIST has a 2P3/2 level at 58845.414 cm^-1; the lifetime 2.1(15) ns is stored under the NIST energy but marked \"not verified\" in its source string"
  ],
- "notes": "197Au is the only stable isotope (I = 3/2). Hyperfine B constants of the 5d9 6s2 2D levels are large and negative; C is the magnetic-octupole constant from the same atomic-beam papers (extra key C_MHz). All A_s and rme_J_ea0 entries are CIPT theory from Dzuba et al. 2021 (method 'theory', accuracy poor for E1: compare the 6p lifetimes) and are given only for the E2/M1 lines NIST does not list (2S1/2-2D5/2 clock, 2S1/2-2D3/2, 2D5/2-2D3/2, 2P1/2-2P3/2). No E1 entries are given: the NIST A values already rest on the Hannaford lifetimes and branching ratios, and the CIPT E1 rates of Dzuba et al. (2.45e8, 3.02e8 s^-1 for the resonance lines) are about 50 % too large. rme convention: A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' upper level (the convention of Dzuba's Eq. 3). Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, E2_amplitude_au, C_MHz, lifetime_alternatives."
+ "notes": "197Au is the only stable isotope (I = 3/2). Hyperfine B constants of the 5d9 6s2 2D levels are large and negative; C is the magnetic-octupole constant from the same atomic-beam papers (extra key C_MHz). All A_s and rme_J_ea0 entries are CIPT theory from Dzuba et al. 2021 (method 'theory', accuracy poor for E1: compare the 6p lifetimes) and are given only for the E2/M1 lines NIST does not list (2S1/2-2D5/2 clock, 2S1/2-2D3/2, 2D5/2-2D3/2, 2P1/2-2P3/2). No E1 entries are given: the NIST A values already rest on the Hannaford lifetimes and branching ratios, and the CIPT E1 rates of Dzuba et al. (2.45e8, 3.02e8 s^-1 for the resonance lines) are about 50 % too large. rme convention: A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' upper level (the convention of Dzuba's Eq. 3). Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, E2_amplitude_au, C_MHz, lifetime_alternatives. Second pass: 7p 2P lifetimes and 6p alternatives come from the abstract of Gaarde et al., Phys. Rev. A 50, 209 (1994); the 6p 2P3/2 width of Goldmann et al. 1969 was read in a Wayback Machine copy of the Springer abstract page."
 }

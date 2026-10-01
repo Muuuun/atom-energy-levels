@@ -16,7 +16,7 @@
   "freq_isotope": "197",
   "limit_text": "Au$^+$ ionisation limit   74409.11 cm$^{-1}$  =  9.22555 eV  (134.392 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "197Au is the only stable isotope (I = 3/2). Hyperfine B constants of the 5d9 6s2 2D levels are large and negative; C is the magnetic-octupole constant from the same atomic-beam papers (extra key C_MHz). All A_s and rme_J_ea0 entries are CIPT theory from Dzuba et al. 2021 (method 'theory', accuracy poor for E1: compare the 6p lifetimes) and are given only for the E2/M1 lines NIST does not list (2S1/2-2D5/2 clock, 2S1/2-2D3/2, 2D5/2-2D3/2, 2P1/2-2P3/2). No E1 entries are given: the NIST A values already rest on the Hannaford lifetimes and branching ratios, and the CIPT E1 rates of Dzuba et al. (2.45e8, 3.02e8 s^-1 for the resonance lines) are about 50 % too large. rme convention: A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' upper level (the convention of Dzuba's Eq. 3). Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, E2_amplitude_au, C_MHz, lifetime_alternatives."
+  "notes": "197Au is the only stable isotope (I = 3/2). Hyperfine B constants of the 5d9 6s2 2D levels are large and negative; C is the magnetic-octupole constant from the same atomic-beam papers (extra key C_MHz). All A_s and rme_J_ea0 entries are CIPT theory from Dzuba et al. 2021 (method 'theory', accuracy poor for E1: compare the 6p lifetimes) and are given only for the E2/M1 lines NIST does not list (2S1/2-2D5/2 clock, 2S1/2-2D3/2, 2D5/2-2D3/2, 2P1/2-2P3/2). No E1 entries are given: the NIST A values already rest on the Hannaford lifetimes and branching ratios, and the CIPT E1 rates of Dzuba et al. (2.45e8, 3.02e8 s^-1 for the resonance lines) are about 50 % too large. rme convention: A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' upper level (the convention of Dzuba's Eq. 3). Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, E2_amplitude_au, C_MHz, lifetime_alternatives. Second pass: 7p 2P lifetimes and 6p alternatives come from the abstract of Gaarde et al., Phys. Rev. A 50, 209 (1994); the 6p 2P3/2 width of Goldmann et al. 1969 was read in a Wayback Machine copy of the Springer abstract page."
  },
  "columns": [
   {
@@ -243,8 +243,10 @@
    "g": null,
    "name": "5d^{10}7p\\ ^2P^{o}_{1/2}",
    "plain": "5d107p 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 6.4,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)",
    "col": 1
   },
   {
@@ -258,8 +260,10 @@
    "g": 1.33,
    "name": "5d^{10}7p\\ ^2P^{o}_{3/2}",
    "plain": "5d107p 2P°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 5.3,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)",
    "col": 1
   },
   {
@@ -334,6 +338,7 @@
    "wn": 60728.49,
    "lam": 164.6674,
    "air": null,
+   "gamma_MHz": 30.03,
    "type": "E1",
    "A": 10000000.0,
    "A_tier": "nist",
@@ -341,6 +346,8 @@
    "d": 0.2969,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.053,
+   "br_tier": "nist",
    "lam_obs": 164.667
   },
   {
@@ -353,6 +360,7 @@
    "wn": 60032.85,
    "lam": 166.5755,
    "air": null,
+   "gamma_MHz": 24.87,
    "type": "E1",
    "A": 240000.0,
    "A_tier": "nist",
@@ -360,6 +368,8 @@
    "d": 0.03309,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy E) (from A)",
+   "br": 0.0015,
+   "br_tier": "nist",
    "lam_obs": 166.576
   },
   {
@@ -859,7 +869,7 @@
  "validation": [
   "levels: 15   lines < 2000 nm: 23   with matrix element: 20",
   "transition-rate provenance: nist: 20, theory: 3",
-  "levels with a measured lifetime: 4"
+  "levels with a measured lifetime: 6"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (isotopic composition); nuclear spin from Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table III": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Au&ascii=ascii",
@@ -875,8 +885,12 @@
   "Blachman, Landman, Lurio, Phys. Rev. 161, 60 (1967), abstract; same numbers in Itano, Phys. Rev. A 73, 022510 (2006), Table XIII": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.161.60",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I footnote a; original: Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981)": "https://arxiv.org/pdf/2006.14735",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT; the authors state their lifetimes are less accurate than their energies)": "https://arxiv.org/pdf/2006.14735",
+  "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT)": "https://arxiv.org/pdf/2006.14735",
+  "Goldmann, Hahn, Ney, Z. Phys. 225, 1 (1969), abstract (level crossing / resonance scattering)": "https://web.archive.org/web/20180615091500/https://link.springer.com/article/10.1007%2FBF01392550",
   "Einfeld, Ney, Wilken, Z. Naturforsch. A 26, 668 (1971), abstract (Crossref record) (level crossing in parallel electric and magnetic fields; signs determined positive; the abstract prints 'A = + 14.0 (5) Mc/sec; 5=+327.6 (1.6) Mc/sec', the '5' being a scanning error for B)": "https://api.crossref.org/works/10.1515/zna-1971-0407",
+  "Goldmann, Hahn, Ney, Z. Phys. 225, 1 (1969), abstract (level crossing / resonance scattering); the abstract prints |A| = 14.0(5) MHz, |B| = 327.6(1.6) MHz, B/A = +23.4(8) (magnitudes; relative sign positive)": "https://web.archive.org/web/20180615091500/https://link.springer.com/article/10.1007%2FBF01392550",
+  "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence) -- not verified: level identification uncertain": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (E2, CIPT)": "https://arxiv.org/pdf/2006.14735",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II": "https://arxiv.org/pdf/2006.14735",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1 only, amplitude 0.0008 mu_B)": "https://arxiv.org/pdf/2006.14735",

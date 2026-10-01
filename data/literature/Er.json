@@ -117,6 +117,14 @@
     "method": "compilation",
     "source": "NIST ASD Er I levels table (local copy data/nist/Er_I_levels.tsv)",
     "url": "https://physics.nist.gov/asd"
+   },
+   "lifetime": {
+    "value": 21240.0,
+    "unit": "s",
+    "method": "theory",
+    "source": "Kozlov, Dzuba, Flambaum, \"On the prospects of building optical atomic clocks using Er I or Er III\", arXiv:1307.0577 (2013), Table I (configuration-interaction calculation)",
+    "url": "https://arxiv.org/abs/1307.0577",
+    "note": "printed as tau = 5.9 hours (E2 decay to the ground level); converted to seconds here (derived). No measurement located"
    }
   },
   {
@@ -519,7 +527,7 @@
    "lower_J": "6",
    "upper_J": "7",
    "label": "4f12 6s2 3H6 - 4f11(4I15/2)5d3/2 6s2 (15/2,3/2)o7, 1299.21 nm (vac)",
-   "use": "ultranarrow inner-shell (4f -> 5d) clock-like transition, telecom O-band",
+   "use": "ultranarrow inner-shell (4f -> 5d) clock-like transition, telecom O-band; used for all-optical spin-state preparation and spin-selective light shifts in a 166Er quantum gas (Claude et al., arXiv:2405.01499)",
    "type": "E1",
    "frequency_THz": {
     "value": 230.7489,
@@ -606,7 +614,7 @@
    "lower_J": "6",
    "upper_J": "7",
    "label": "4f12 6s2 3H6 - 4f11(4I15/2)5d5/2 6s2 (15/2,5/2)o7, 841.22 nm (vac)",
-   "use": "8 kHz narrow-line cooling / narrow-line MOT (Berglund 2008), tweezer imaging",
+   "use": "8 kHz narrow-line cooling / narrow-line MOT (Berglund 2008), tweezer imaging; candidate for resolved-sideband / Sisyphus cooling in tweezers (Gruen et al., arXiv:2406.16146)",
    "type": "E1",
    "linewidth_kHz": {
     "value": 8.0,
@@ -683,7 +691,7 @@
    "lower_J": "6",
    "upper_J": "7",
    "label": "4f12 6s2 3H6 - 4f12(3H6)6s6p(3P1) (6,1)o7, 582.84 nm (vac)",
-   "use": "narrow-line MOT (yellow)",
+   "use": "narrow-line MOT (yellow); five-beam MOT, direct loading, light-assisted collisions and non-destructive imaging of single Er atoms in optical tweezers (Gruen et al., arXiv:2406.16146)",
    "type": "E1",
    "linewidth_kHz": {
     "value": 186,
@@ -754,7 +762,7 @@
    "lower_J": "6",
    "upper_J": "7",
    "label": "4f12 6s2 3H6 - 4f12(3H6)6s6p(1P1) (6,1)o7, 400.91 nm (vac)",
-   "use": "broad cooling line: Zeeman slower, transverse cooling, imaging, blue MOT",
+   "use": "broad cooling line: Zeeman slower, transverse cooling, imaging, blue MOT; ultrafast fluorescence imaging of tweezer-trapped atoms (Gruen et al., arXiv:2406.16146)",
    "type": "E1",
    "linewidth_MHz": {
     "value": 29.7,
@@ -934,6 +942,22 @@
     "source": "Berglund, Lee, McClelland, Phys. Rev. A 76, 053418 (2007) (value cited there to its ref. [10])",
     "url": "https://arxiv.org/abs/0802.0836"
    }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 5035.193,
+   "lower_J": "6",
+   "upper_J": "4",
+   "label": "4f12 6s2 3H6 - 4f12 6s2 3F4, 1986 nm",
+   "type": "clock",
+   "use": "proposed E2 optical clock transition within the 4f12 6s2 configuration (Kozlov, Dzuba, Flambaum 2013); not yet observed with lasers",
+   "A_s": {
+    "value": 4.7e-05,
+    "method": "theory",
+    "source": "Kozlov, Dzuba, Flambaum, \"On the prospects of building optical atomic clocks using Er I or Er III\", arXiv:1307.0577 (2013), Table I (configuration-interaction calculation)",
+    "url": "https://arxiv.org/abs/1307.0577",
+    "note": "derived: 1/tau with tau = 5.9 hours; the table prints the width as \"47 microHz\", which equals 1/tau in s^-1 (not divided by 2 pi)"
+   }
   }
  ],
  "not_found": [
@@ -945,7 +969,10 @@
   "167Er isotope shift / hyperfine constants on the 1299 nm line from the optical measurement: Patscheider et al. observed three 167Er resonances but give no A, B (the constants entered are from Childs et al. 1986 rf data, second-hand)",
   "Any line in the \"1530 nm region\" from the ground state: NIST lists no odd J=5,6,7 level near 6535 cm^-1; the lowest odd levels are 7176.503 (J=6, 1393 nm) and 7696.956 (J=7, 1299 nm); no spectroscopy of a 1.5 um Er I line was located",
   "Lande g factors measured for the 401, 583, 631 nm upper levels beyond the NIST values: none located",
-  "Ground-state g_J original (Conway & Wybourne 1963) not opened; value read in the Frisch thesis"
+  "Ground-state g_J original (Conway & Wybourne 1963) not opened; value read in the Frisch thesis",
+  "Second pass (Crossref, OSTI ETDEWEB, arXiv API, CORE, Wayback Machine, Innsbruck thesis archive, Kurucz atoms/6800 (empty)): still no open copy of Den Hartog, Chisholm, Lawler 2010 or Lawler, Wyart, Den Hartog 2010; the Innsbruck theses opened (El Arrach, Baier, Rietzler, Schindler, Simon) quote from them only the 401 nm and 583 nm values already entered. Marek & Stahnke, Z. Phys. A 298, 81 (1980) measured lifetimes of Er I levels between 16000 and 27000 cm^-1; its abstract (OSTI, Springer via Wayback) prints no numbers",
+  "Isotope shifts of the 583 nm line for 162,164,166,167,168,170Er were measured to about 4 MHz by laser-atomic-beam spectroscopy (Phys. Rev. C 35, 1574 (1987), abstract read on the APS site), but the abstract prints no values; Jin et al., Int. J. Spectrosc. 2011, 578374 (UV lines, open access) returned 403 and its Wayback copy is script-only",
+  "Measured lifetimes of the metastable 4f12 6s2 levels 3F4 (5035.193) and 3H5 (6958.329): none located; theory 5.9 hours for 3F4 (Kozlov et al. 2013), nothing for 3H5"
  ],
  "conflicts": [
   "401 nm natural linewidth: 29.7(6) MHz (Frisch thesis / Frisch 2013, cold atoms; adopted), 29.5(1.5) MHz (Den Hartog/Lawler 2010 lifetime), 35.6(1.2) MHz (McClelland 2006, LIF), 27.5(4) MHz (Frisch 2012, retracted as mis-calibrated), 28 MHz (old NIST handbook, A=1.73e8 s^-1, still in the NIST lines file)",
@@ -957,5 +984,5 @@
   "Ionization limit: 49260.750(1) cm^-1 (Trautmann 2021 abstract) vs 49260.7442(23) (same paper, text) vs 49262(8) NIST",
   "Isotopic abundances: NIST composition values are used; theses quote rounded 33.6/23.0/26.8/15.0 %"
  ],
- "notes": "Isotope shifts are nu(first)-nu(second), keys as printed in the sources (reference isotope 166 for 401/583 nm, 168 for 1299 nm). Hyperfine A, B convention: E = A K/2 + B [3K(K+1)/4 - I(I+1)J(J+1)] / [2I(2I-1)J(2J-1)], K = F(F+1)-I(I+1)-J(J+1); 167Er (I=7/2) has negative A (inverted structure). Extra fields beyond SCHEMA.md: top-level ionization_limit; level fields lifetime_other, hyperfine_other, level_energy_measured; transition fields linewidth_MHz / linewidth_kHz / linewidth_Hz, wavenumber_cm, leak_to_metastable, isotope_shift_other, g_factor_difference, alternatives (each alternative names its quantity). rme_J_ea0 values are all derived from the A coefficient in the same entry (schema convention, J' = upper level) and inherit its method. A_s for the narrow lines is 1/tau of the upper level (no E1 leak channel exists below them, Ban et al. 2005). g_J without a literature source is copied from the NIST levels file. The 401 nm lifetime entry is the linewidth-derived value; the direct lifetime measurement (Den Hartog 2010) could only be read second-hand."
+ "notes": "Isotope shifts are nu(first)-nu(second), keys as printed in the sources (reference isotope 166 for 401/583 nm, 168 for 1299 nm). Hyperfine A, B convention: E = A K/2 + B [3K(K+1)/4 - I(I+1)J(J+1)] / [2I(2I-1)J(2J-1)], K = F(F+1)-I(I+1)-J(J+1); 167Er (I=7/2) has negative A (inverted structure). Extra fields beyond SCHEMA.md: top-level ionization_limit; level fields lifetime_other, hyperfine_other, level_energy_measured; transition fields linewidth_MHz / linewidth_kHz / linewidth_Hz, wavenumber_cm, leak_to_metastable, isotope_shift_other, g_factor_difference, alternatives (each alternative names its quantity). rme_J_ea0 values are all derived from the A coefficient in the same entry (schema convention, J' = upper level) and inherit its method. A_s for the narrow lines is 1/tau of the upper level (no E1 leak channel exists below them, Ban et al. 2005). g_J without a literature source is copied from the NIST levels file. The 401 nm lifetime entry is the linewidth-derived value; the direct lifetime measurement (Den Hartog 2010) could only be read second-hand. Second pass: added the proposed 3H6 - 3F4 E2 clock transition (theory only) and use annotations from arXiv:2406.16146 and arXiv:2405.01499; no new measured numbers could be sourced."
 }
