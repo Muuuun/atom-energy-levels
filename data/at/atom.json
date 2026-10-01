@@ -1,0 +1,134 @@
+{
+ "meta": {
+  "key": "at",
+  "slug": "astatine",
+  "element": "Astatine",
+  "symbol": "At",
+  "A": null,
+  "Z": 85,
+  "I": null,
+  "kind": "nist",
+  "limit_cm": 75150.8,
+  "scale": "auto",
+  "spectrum": "At I",
+  "auto": true,
+  "limit_text": "At$^+$ ionisation limit   75150.80 cm$^{-1}$  =  9.31751 eV  (133.066 nm)",
+  "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
+  "notes": ""
+ },
+ "columns": [
+  {
+   "key": "2P*",
+   "header": "^2P^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "4P",
+   "header": "^4P",
+   "group": null,
+   "width": 1.0
+  }
+ ],
+ "levels": [
+  {
+   "id": 0,
+   "E": 0.0,
+   "unc": 0.0,
+   "J": 1.5,
+   "conf": "6p5",
+   "term": "2P*",
+   "parity": "odd",
+   "g": null,
+   "name": "6p^{5}\\ ^2P^{o}_{3/2}",
+   "plain": "6p5 2P°3/2",
+   "tau_ns": null,
+   "tau_tier": "stable",
+   "col": 0
+  },
+  {
+   "id": 1,
+   "E": 44549.3,
+   "unc": 0.4,
+   "J": 2.5,
+   "conf": "6p4.(3P).7s",
+   "term": "4P",
+   "parity": "even",
+   "g": null,
+   "name": "6p^{4}7s\\ ^4P_{5/2}",
+   "plain": "6p47s 4P5/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 2,
+   "E": 46233.6,
+   "unc": 0.4,
+   "J": 1.5,
+   "conf": "6p4.(3P).7s",
+   "term": "4P",
+   "parity": "even",
+   "g": null,
+   "name": "6p^{4}7s\\ ^4P_{3/2}",
+   "plain": "6p47s 4P3/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  }
+ ],
+ "transitions": [
+  {
+   "kind": "E1",
+   "freq": 1386.04846,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 2,
+   "wn": 46233.6,
+   "lam": 216.2929,
+   "air": 216.225,
+   "type": "E1 (intercombination)",
+   "lam_obs": 216.293
+  },
+  {
+   "kind": "E1",
+   "freq": 1335.55441,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 44549.3,
+   "lam": 224.4704,
+   "air": 224.4008,
+   "type": "E1 (intercombination)",
+   "lam_obs": 224.471
+  }
+ ],
+ "rydberg_levels": [],
+ "tables": [
+  {
+   "title": "Strongest transitions",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "λ air (nm)",
+    "ν (THz)",
+    "|⟨J‖er‖J′⟩| (ea₀)",
+    "A (s⁻¹)",
+    "Γ/2π up. (MHz)",
+    "branch (%)",
+    "Use"
+   ],
+   "aligns": "lrrrrrrrl",
+   "rows": [],
+   "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  }
+ ],
+ "validation": [
+  "levels: 3   lines < 2000 nm: 2   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 2",
+  "levels with a measured lifetime: 0"
+ ],
+ "sources": {}
+}

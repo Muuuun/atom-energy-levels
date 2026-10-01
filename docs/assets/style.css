@@ -81,3 +81,32 @@ footer { margin: 50px 0 30px; color: var(--muted); font-size: 14px; }
                   padding: 5px 11px; font-size: 13.5px; cursor: pointer; }
 #filters button small { color: var(--muted); }
 #filters button[aria-pressed="false"] { background: transparent; color: var(--muted); text-decoration: line-through; }
+
+/* ---------- periodic table on the landing page */
+.ptools { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; margin: 18px 0 14px; font-size: 14.5px; }
+.ptools input { font: inherit; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; margin-left: 6px; width: 190px; background: var(--panel); color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; list-style: none; margin: 0; padding: 0; color: var(--muted); font-size: 13.5px; }
+.legend li { display: flex; align-items: center; gap: 6px; }
+.legend span { width: 13px; height: 13px; border-radius: 3px; background: var(--c); display: inline-block; }
+.legend .cur span { background: none; box-shadow: inset 0 0 0 2px var(--ink); }
+.pscroll { overflow-x: auto; padding: 4px 20px 18px; }
+.ptable { display: grid; grid-template-columns: repeat(18, minmax(58px, 1fr)); grid-template-rows: repeat(7, auto) 14px auto auto;
+          gap: 5px; max-width: 1380px; min-width: 1120px; margin: 0 auto; }
+.el { --c: #b9b4aa; position: relative; display: flex; flex-direction: column; aspect-ratio: 1 / 1.22; padding: 5px 6px 5px;
+      border-radius: 8px; text-decoration: none; color: var(--ink); background: color-mix(in srgb, var(--c) 26%, #fff);
+      border: 1px solid color-mix(in srgb, var(--c) 55%, #fff); transition: transform .12s, box-shadow .12s, opacity .12s; overflow: hidden; }
+.el .z { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.el .sym { font-size: clamp(18px, 1.75vw, 25px); font-weight: 700; line-height: 1.15; margin-top: auto; }
+.el .nm { font-size: 10.5px; line-height: 1.35; flex: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.el .ct { font-size: 10px; line-height: 1.3; color: var(--muted); flex: none; }
+a.el:hover, a.el:focus-visible { transform: translateY(-3px) scale(1.07); z-index: 2; box-shadow: 0 8px 20px rgba(0, 0, 0, .16);
+                                 background: color-mix(in srgb, var(--c) 45%, #fff); outline: none; }
+.el.curated { box-shadow: inset 0 0 0 2px var(--ink); }
+.el.curated::after { content: ""; position: absolute; top: 6px; right: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--ink); }
+.el.none { opacity: .38; background: transparent; border-style: dashed; }
+.el.gap { background: transparent; border: none; color: var(--muted); font-size: 12px; align-items: center; justify-content: center; }
+.el.dimmed { opacity: .18; }
+.alkali { --c: #e0672e; } .alkaline-earth { --c: #d9a300; } .transition { --c: #4f86c6; } .post-transition { --c: #4aa88a; }
+.metalloid { --c: #8a9a3c; } .nonmetal { --c: #b05cb8; } .noble-gas { --c: #7a6fd0; } .lanthanide { --c: #c4577a; } .actinide { --c: #a8744a; }
+.superheavy { --c: #b9b4aa; }
+@media (prefers-reduced-motion: reduce) { .el { transition: none; } a.el:hover { transform: none; } }

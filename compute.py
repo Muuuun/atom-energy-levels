@@ -49,19 +49,29 @@ class Literature:
         walk(self.raw)
         return out
 
-    def level(self, e):
+    @staticmethod
+    def _j_ok(entry_j, j):
+        """True unless the entry states a J that differs (some doublets share one NIST energy)."""
+        if entry_j is None or j is None:
+            return True
+        try:
+            return abs(float(Fraction(str(entry_j))) - j) < 0.01
+        except (ValueError, ZeroDivisionError):
+            return True
+
+    def level(self, e, j=None):
         best = None
         for l in self.raw.get("levels", []):
             d = abs(l.get("nist_energy_cm", -1e9) - e)
-            if d < 0.6 and (best is None or d < best[0]):
+            if d < 0.6 and self._j_ok(l.get("J"), j) and (best is None or d < best[0]):
                 best = (d, l)
         return best[1] if best else {}
 
-    def transition(self, elo, eup):
+    def transition(self, elo, eup, jlo=None, jup=None):
         best = None  # closest pair wins: F5/2 and F7/2 lie 0.02 cm^-1 apart
         for t in self.raw.get("transitions", []):
             d = abs(t.get("lower_cm", -1e9) - elo) + abs(t.get("upper_cm", -1e9) - eup)
-            if d < 0.6 and (best is None or d < best[0]):
+            if d < 0.6 and self._j_ok(t.get("lower_J"), jlo) and self._j_ok(t.get("upper_J"), jup) and (best is None or d < best[0]):
                 best = (d, t)
         return best[1] if best else {}
 
@@ -81,25 +91,26 @@ class Literature:
                 return abs(v[0]), v[1], v[2], v[3]
         return None
 
-    def lifetime_ns(self, e):
-        v = self.val(self.level(e).get("lifetime"))
+    def lifetime_ns(self, e, j=None):
+        v = self.val(self.level(e, j).get("lifetime"))
         if not v:
             return None
-        unit = self.level(e)["lifetime"].get("unit", "s")
+        unit = self.level(e, j)["lifetime"].get("unit", "s")
         k = {"s": 1e9, "ms": 1e6, "us": 1e3, "µs": 1e3, "ns": 1.0}.get(unit, 1e9)
         return v[0] * k, (v[1] * k if isinstance(v[1], (int, float)) else None), v[2], v[3]
 
-    def hyperfine(self, e):
-        h = self.level(e).get("hyperfine", {}).get(self.iso)
+    def hyperfine(self, e, j=None):
+        h = self.level(e, j).get("hyperfine", {}).get(self.iso)
         if not h or not isinstance(h.get("A_MHz"), (int, float)):
             return None
         return dict(A=h["A_MHz"], A_unc=h.get("A_unc"), B=h.get("B_MHz"), B_unc=h.get("B_unc"),
                     tier=TIER_OF.get(h.get("method"), "exp"), src=h.get("source", ""))
 
     def frequency_THz(self, t):
-        f = t.get("frequency_THz")
-        if isinstance(f, dict) and isinstance(f.get("value"), (int, float)) and str(f.get("isotope", self.iso)) == self.iso:
-            return f["value"], f.get("unc"), f.get("source", "")
+        for f in (t.get(f"frequency_THz_{self.iso}"), t.get("frequency_THz")):
+            if (isinstance(f, dict) and isinstance(f.get("value"), (int, float)) and str(f.get("isotope", self.iso)) == self.iso
+                    and "not verified" not in f.get("source", "")):
+                return f["value"], f.get("unc"), f.get("source", "")
         return None
 
 
@@ -132,7 +143,7 @@ def fmt_unc(v, u, digits=None, max_digits=6):
 def finish_transition(t, lo, up, lit, tau_ns):
     """Fill wavelength-derived fields and the literature overrides shared by both kinds of atom."""
     wn = up["E"] - lo["E"]
-    lt = lit.transition(lo["E"], up["E"])
+    lt = lit.transition(lo["E"], up["E"], lo["J"], up["J"])
     f = lit.frequency_THz(lt) if lt else None
     if f:
         t.update(freq=f[0], freq_unc=f[1], freq_src=f[2], freq_tier="exp")
@@ -141,7 +152,7 @@ def finish_transition(t, lo, up, lit, tau_ns):
         t.update(freq=round(wn * 100 * al.C / 1e12, 5), freq_tier="nist", freq_src="NIST ASD level energies")
     lam = 1e7 / wn
     t.update(lower=lo["id"], upper=up["id"], wn=round(wn, 4), lam=round(lam, 5 if f else 4),
-             air=round(al.air_wavelength_nm(lam), 4))
+             air=round(al.air_wavelength_nm(lam), 4) if lam >= 200 else None)
     if lt.get("use"):
         t["use"] = lt["use"]
     if lt.get("type") in ("M1", "E2", "M2", "clock"):
@@ -201,7 +212,7 @@ def build_alkali(key, cfg):
         ground = lv["E"] == 0
         L = dict(id=len(levels), col=col_keys.index((l, j)), E=lv["E"], unc=lv["unc"], J=j, n=n, l=l,
                  name=rf"{n}{al.L_LETTERS[l]}_{{{al.jstr(j)}}}", plain=name(n, l, j), parity="odd" if l % 2 else "even")
-        tau = lit.lifetime_ns(lv["E"])
+        tau = lit.lifetime_ns(lv["E"], lv["J"])
         if ground:
             L.update(tau_ns=None, tau_tier="stable")
         elif tau:
@@ -210,7 +221,7 @@ def build_alkali(key, cfg):
             L.update(tau_ns=sig(atom.getStateLifetime(n, l, j) * 1e9, 4), tau_tier="model", tau_src="ARC (sum of calculated rates, 0 K)")
         if not ground:
             L["tau_arc_ns"] = sig(atom.getStateLifetime(n, l, j) * 1e9, 4)
-        h = lit.hyperfine(lv["E"])
+        h = lit.hyperfine(lv["E"], lv["J"])
         if not h:
             try:
                 A, B = atom.getHFSCoefficients(n, l, j)
@@ -419,7 +430,7 @@ def build_nist(key, cfg):
     sym = cfg["symbol"]
     lit = Literature(sym, cfg["A"])
     nist, limit = al.nist_levels(sym)
-    lines = al.nist_lines(sym)
+    lines = al.nist_lines(sym, 1 if cfg.get("auto") else 200)
     E = np.array([l["E"] for l in nist])
 
     def find(e):
@@ -428,6 +439,9 @@ def build_nist(key, cfg):
 
     # ---- which lines are drawn
     chosen = {}
+    if cfg.get("auto"):
+        chosen = auto_select(nist, lines, find)
+        lines = []
     for ln in lines:
         lo, up = find(ln["Ei"]), find(ln["Ek"])
         if not lo or not up or up["E"] > cfg["E_cut"] or 1e7 / (up["E"] - lo["E"]) >= LAMBDA_MAX_NM or ln["type"] == "2P":
@@ -440,6 +454,23 @@ def build_nist(key, cfg):
         if lo and up and up["E"] > lo["E"] and 1e7 / (up["E"] - lo["E"]) < LAMBDA_MAX_NM and up["E"] <= max(cfg["E_cut"], 0):
             chosen.setdefault((lo["E"], up["E"]), {})
     used = sorted({e for pair in chosen for e in pair})
+    if not used and cfg.get("auto") and len(nist) >= 5:
+        used = [l["E"] for l in nist[:40]]  # NIST has levels but no classified lines: draw the lowest levels only
+    if not used:
+        return None
+    if cfg.get("auto"):
+        used = sorted(set(used) | {nist[0]["E"]})  # the ground state is always drawn
+    if cfg.get("auto"):
+        # column scheme: LS terms when nearly every level has one and they fit, otherwise parity and J
+        terms = [find(e)["term"] or "" for e in used]
+        n_ls = sum(1 for t in terms if re.fullmatch(al.LS_TERM, t))
+        cfg = dict(cfg, columns="LS" if n_ls >= 0.8 * len(used) and len(set(terms)) <= 15 else "J")
+        # closed-shell prefix shared by every drawn configuration
+        confs = [find(e)["conf"].split(".") for e in used]
+        k = 0
+        while all(len(c) > k + 1 for c in confs) and len({c[k] for c in confs}) == 1:
+            k += 1
+        cfg["core"] = [".".join(confs[0][:k]) + "."] if k else []
 
     # ---- levels and columns
     levels = []
@@ -447,10 +478,10 @@ def build_nist(key, cfg):
         lv = find(e)
         sc = al.short_conf(lv["conf"], cfg["core"])
         par = al.parity_of(lv["conf"], lv["term"])
-        ls = re.fullmatch(r"(\d)([A-Z])(\*?)\??", lv["term"] or "")
+        ls = re.fullmatch(al.LS_TERM, lv["term"] or "")
         if cfg["columns"] == "LS" and ls:
             group = lv["term"].replace("?", "")
-            gtex = rf"^{ls.group(1)}{ls.group(2)}" + ("^{o}" if ls.group(3) else "")
+            gtex = (rf"\mathrm{{{ls.group(1)}}}\," if ls.group(1) else "") + rf"^{ls.group(2)}{ls.group(3)}" + ("^{o}" if ls.group(4) else "")
         elif cfg["columns"] == "LS":
             group, gtex = f"other {par}", (r"\mathrm{other\ (odd)}" if par == "odd" else r"\mathrm{other\ (even)}")
         else:
@@ -462,17 +493,17 @@ def build_nist(key, cfg):
             name = (al.conf_tex(sc) + r"\ " if cfg["columns"] == "LS" else "") + al.term_tex(lv["term"], lv["J"])
         L = dict(id=len(levels), E=lv["E"], unc=lv["unc"], J=lv["J"], conf=lv["conf"], term=lv["term"], parity=par, g=lv["g"],
                  name=name, plain=f"{sc.replace('.', '')} {lv['term'].replace('*', '°').replace('?', '')}{al.jstr(lv['J'])}".strip(), _group=group, _gtex=gtex)
-        tau = lit.lifetime_ns(lv["E"])
+        tau = lit.lifetime_ns(lv["E"], lv["J"])
         if lv["E"] == 0:
             L.update(tau_ns=None, tau_tier="stable")
         elif tau:
             L.update(tau_ns=sig(tau[0], 6), tau_unc=tau[1], tau_tier=tau[2], tau_src=tau[3])
         else:
             L.update(tau_ns=None, tau_tier="none")
-        h = lit.hyperfine(lv["E"])
+        h = lit.hyperfine(lv["E"], lv["J"])
         if h:
             L["hfs"] = h
-        g = lit.val(lit.level(lv["E"]).get("g_J"))
+        g = lit.val(lit.level(lv["E"], lv["J"]).get("g_J"))
         if g and L["g"] is None:
             L["g"] = g[0]
         levels.append(L)
@@ -527,8 +558,8 @@ def build_nist(key, cfg):
         elif lo["parity"] == up["parity"] and t["kind"] == "E1":
             t.update(kind="forbidden", type=lt.get("type") if lt.get("type") not in (None, "E1", "intercombination") else "E2 / M1")
         if "type" not in t:
-            mult = [re.match(r"(\d)[A-Z]", l["term"] or "") for l in (lo, up)]
-            spin_flip = all(mult) and mult[0].group(1) != mult[1].group(1)
+            mult = [re.fullmatch(al.LS_TERM, l["term"] or "") for l in (lo, up)]
+            spin_flip = all(mult) and mult[0].group(2) != mult[1].group(2)
             t["type"] = "E1 (intercombination)" if spin_flip or lt.get("type") == "intercombination" else "E1"
         cands = []
         v = Literature.val(lt.get("A_s")) if lt else None
@@ -560,10 +591,10 @@ def build_nist(key, cfg):
     transitions.sort(key=lambda t: t["lam"])
 
     # ---- tables
-    I = float(Fraction(cfg["I"]))
+    I = float(Fraction(cfg["I"] or 0))
     label = lambda t: rf"${levels[t['lower']]['name']}$ – ${levels[t['upper']]['name']}$"
     keyed = [t for t in transitions if t.get("use") and not re.match(r"decay branch|calculated|leak channel", t["use"])][:24] or sorted([t for t in transitions if t.get("A")], key=lambda t: -t["A"])[:16]
-    rows = [[label(t), f"{t['lam']:.4f}", f"{t['air']:.4f}", fmt_unc(t["freq"], t.get("freq_unc"), 4), fmt_d(t),
+    rows = [[label(t), f"{t['lam']:.4f}", f"{t['air']:.4f}" if t.get("air") else "–", fmt_unc(t["freq"], t.get("freq_unc"), 4), fmt_d(t),
              f"{t['A']:.3e}" if t.get("A") else "–", f"{t['gamma_MHz']:.4g}" if t.get("gamma_MHz") else "–",
              f"{t['br'] * 100:.3g}" if t.get("br") is not None else "–", short_use(t.get("use", ""))] for t in sorted(keyed, key=lambda t: t["lam"])]
     tables = [dict(title="Key transitions",
@@ -582,6 +613,9 @@ def build_nist(key, cfg):
         tables.append(dict(title=rf"$^{{{cfg['A']}}}${sym} hyperfine structure  ($I$ = {cfg['I']})",
                            header=["Level", "A (MHz)", "B (MHz)", "Shift of each F level from the centre of gravity (MHz)"],
                            aligns="lrrl", rows=rows, note="Measured A, B constants; sources in the data file."))
+    if cfg.get("auto"):
+        tables[0]["title"] = "Strongest transitions"
+        tables[0]["rows"] = tables[0]["rows"][:18]
     rows = []
     for t in transitions:
         for pair, s in (t.get("isotope_shifts") or {}).items():
@@ -603,12 +637,31 @@ def build_nist(key, cfg):
             validation.append(f"  observed vs Ritz wavelength differ on {levels[t['lower']]['plain']} - {levels[t['upper']]['plain']}: "
                               f"{t['lam_obs']} vs {t['lam']}")
     meta = dict(key=key, slug=cfg["slug"], element=cfg["element"], symbol=sym, A=cfg["A"], Z=cfg["Z"], I=cfg["I"], kind="nist",
-                limit_cm=limit, scale="auto", spectrum=f"{sym} I",
-                limit_text=rf"{sym}$^+$ ionisation limit   {limit:.2f} cm$^{{-1}}$  =  {limit / al.EV_TO_CM:.5f} eV  ({1e7 / limit:.3f} nm)",
+                limit_cm=limit, scale="auto", spectrum=f"{sym} I", auto=bool(cfg.get("auto")),
+                limit_text=(rf"{sym}$^+$ ionisation limit   {limit:.2f} cm$^{{-1}}$  =  {limit / al.EV_TO_CM:.5f} eV  ({1e7 / limit:.3f} nm)"
+                            if limit else "ionisation limit not listed by NIST"),
                 guide_tau="Level caption:  NIST energy and measured lifetime (where one exists).",
                 notes=lit.raw.get("notes", ""))
     return dict(meta=meta, columns=columns, levels=levels, transitions=transitions, rydberg_levels=[], tables=tables, validation=validation,
                 sources=lit.source_urls())
+
+
+def auto_select(nist, lines, find, max_lines=70):
+    """NIST-only species: the strongest classified lines, favouring those that start on the lowest levels."""
+    cand = []
+    for ln in lines:
+        lo, up = find(ln["Ei"]), find(ln["Ek"])
+        if lo and up and up["E"] > lo["E"] and ln["type"] != "2P" and 1e7 / (up["E"] - lo["E"]) < LAMBDA_MAX_NM:
+            cand.append((lo, up, ln))
+    rated = [c for c in cand if c[2]["A"]]
+    pool = rated if len(rated) >= 15 else cand
+    strength = lambda c: c[2]["A"] * (2 * c[1]["J"] + 1) if c[2]["A"] else (c[2]["intens"] or 0) * 1e-3
+    low_cut = sorted({l["E"] for l in nist})[:6][-1]
+    first = sorted([c for c in pool if c[0]["E"] <= low_cut], key=strength, reverse=True)[:max_lines]
+    if len(first) < 45:
+        taken = {id(c[2]) for c in first}
+        first += sorted([c for c in pool if id(c[2]) not in taken], key=strength, reverse=True)[:45 - len(first)]
+    return {(lo["E"], up["E"]): ln for lo, up, ln in first}
 
 
 def url_of(atom, src):
@@ -652,7 +705,19 @@ def write_outputs(key, atom):
 
 
 if __name__ == "__main__":
-    keys = list(SPECIES) if sys.argv[1:] in ([], ["all"]) else sys.argv[1:]
+    groups = {"all": list(SPECIES), "auto": [k for k, c in SPECIES.items() if c.get("auto")],
+              "curated": [k for k, c in SPECIES.items() if not c.get("auto")]}
+    keys = [k for arg in (sys.argv[1:] or ["all"]) for k in groups.get(arg, [arg])]
     for k in keys:
         cfg = SPECIES[k]
-        write_outputs(k, build_alkali(k, cfg) if cfg["kind"] == "alkali" else build_nist(k, cfg))
+        try:
+            atom = build_alkali(k, cfg) if cfg["kind"] == "alkali" else build_nist(k, cfg)
+        except Exception as ex:  # an element NIST has no usable tables for
+            if not cfg.get("auto"):
+                raise
+            atom = None
+            print(f"== {k}: skipped ({ex!r})"[:160])
+        if atom:
+            write_outputs(k, atom)
+        elif cfg.get("auto"):
+            print(f"== {k}: no classified lines below 2 um in NIST")

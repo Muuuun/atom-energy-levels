@@ -402,11 +402,13 @@ def draw(key):
                 ha="center", va="center", zorder=7, fontweight="bold", gid=f"trl-{i}", bbox=dict(fc="white", ec="none", pad=0.5, alpha=0.9))
 
     # ---- header strip: title, reading guide, colour key
-    iso = rf"$^{{{meta['A']}}}${meta['symbol']}"
-    hax.text(0, 0.05, f"{meta['element']}-{meta['A']}", fontsize=58, fontweight="bold", color=INK, va="top", ha="left")
+    iso = rf"$^{{{meta['A']}}}${meta['symbol']}" if meta["A"] else meta["symbol"]
+    spin = f",  nuclear spin $I$ = {meta['I']}" if meta["A"] else ""
+    hax.text(0, 0.05, f"{meta['element']}-{meta['A']}" if meta["A"] else meta["element"], fontsize=58, fontweight="bold", color=INK, va="top", ha="left")
     n_d = sum(1 for t in bound if t.get("d") is not None)
-    hax.text(0, 1.25, f"{iso}  ({meta['spectrum']}),  nuclear spin $I$ = {meta['I']}.   Energy levels and transitions below 2 µm:  "
-             f"{len(levels)} levels, {len(bound)} lines.", fontsize=21, color=INK, va="top", ha="left")
+    hax.text(0, 1.25, f"{iso}  ({meta['spectrum']}){spin}.   "
+             + ("Strongest classified transitions below 2 µm (NIST):  " if meta.get("auto") else "Energy levels and transitions below 2 µm:  ")
+             + f"{len(levels)} levels, {len(bound)} lines.", fontsize=21, color=INK, va="top", ha="left")
     if not has_ryd:
         hax.text(0, 1.78, meta["limit_text"], fontsize=15, color=MUTED, va="top", ha="left")
     guide = ("Arrow label:  vacuum wavelength  |  reduced dipole matrix element  " r"$|\langle J\,\Vert\,e r\,\Vert\,J'\rangle|$  in $e a_0$" "\n"
@@ -438,7 +440,7 @@ def draw(key):
     plt.close(fig)
     keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "tau_ns", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term")
     with open(os.path.join(out, "data.json"), "w") as f:
-        json.dump(dict(meta={k: meta[k] for k in ("slug", "element", "symbol", "A", "I", "limit_cm", "spectrum")},
+        json.dump(dict(meta={k: meta.get(k) for k in ("slug", "element", "symbol", "A", "I", "limit_cm", "spectrum", "auto")},
                        sources=atom.get("sources", {}),
                        levels=[dict({k: l[k] for k in keep_l if k in l}, html=al.tex_to_html(l["name"])) for l in levels],
                        transitions=[dict(t, upper_html=al.tex_to_html(t["upper_name"])) if "upper_name" in t else t for t in bound + ryd]),
@@ -447,7 +449,9 @@ def draw(key):
 
 
 if __name__ == "__main__":
-    keys = list(SPECIES) if sys.argv[1:] in ([], ["all"]) else sys.argv[1:]
+    groups = {"all": list(SPECIES), "auto": [k for k, c in SPECIES.items() if c.get("auto")],
+              "curated": [k for k, c in SPECIES.items() if not c.get("auto")]}
+    keys = [k for arg in (sys.argv[1:] or ["all"]) for k in groups.get(arg, [arg])]
     for k in keys:
         if os.path.exists(os.path.join(al.DATA, k, "atom.json")):
             draw(k)

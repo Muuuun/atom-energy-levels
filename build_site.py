@@ -13,6 +13,7 @@ import os
 import re
 
 import atomlib as al
+from elements import ELEMENTS
 from species import SPECIES
 
 BASE = "https://muuuun.github.io/atom-energy-levels"
@@ -21,6 +22,14 @@ DOCS = os.path.join(al.HERE, "docs")
 SITE = "Atomic energy level diagrams"
 TIER = {"exp": "measured", "nist": "NIST", "theory": "theory", "model": "model calc."}
 ION_USE = {"Be", "Mg", "Ca", "Sr", "Ba", "Yb"}
+PRIMARY = {"Li": 7, "Be": 9, "Na": 23, "Mg": 24, "K": 39, "Ca": 40, "Rb": 87, "Sr": 88, "Cs": 133, "Ba": 138, "Yb": 174, "Dy": 164}
+CATEGORY = {"alkali": "Alkali metal", "alkaline-earth": "Alkaline earth", "transition": "Transition metal",
+            "post-transition": "Post-transition metal", "metalloid": "Metalloid", "nonmetal": "Nonmetal", "noble-gas": "Noble gas",
+            "lanthanide": "Lanthanide", "actinide": "Actinide"}
+
+
+def pname(p):
+    return f"{p['element']}-{p['A']}" if p["A"] else p["element"]
 
 
 def cell(s):
@@ -70,8 +79,9 @@ def table(header, rows, left=(0,), wrap=()):
 def nav(pages, current=None):
     cur = ' aria-current="page"'
     links = "".join(f'<a href="../{p["slug"]}/"{cur if p["slug"] == current else ""}>'
-                    f'<sup>{p["A"]}</sup>{p["symbol"]}</a>' for p in pages)
-    return f'<header class="top"><a class="brand" href="../">{SITE}</a><nav aria-label="Atoms">{links}</nav></header>'
+                    f'<sup>{p["A"]}</sup>{p["symbol"]}</a>' for p in pages if p["A"])
+    return (f'<header class="top"><a class="brand" href="../">{SITE}</a><nav aria-label="Atoms">'
+            f'<a href="../">Periodic table</a>{links}</nav></header>')
 
 
 def atom_page(key, pages):
@@ -81,8 +91,9 @@ def atom_page(key, pages):
         atom = json.load(f)
     meta, L, T = atom["meta"], atom["levels"], atom["transitions"]
     bound = [t for t in T if t["kind"] != "rydberg"]
-    name = f"{meta['element']}-{meta['A']}"
-    iso = f"<sup>{meta['A']}</sup>{meta['symbol']}"
+    auto = not meta["A"]
+    name = f"{meta['element']}-{meta['A']}" if meta["A"] else meta["element"]
+    iso = f"<sup>{meta['A']}</sup>{meta['symbol']}" if meta["A"] else meta["symbol"]
     n_d = sum(1 for t in bound if t.get("d") is not None)
     url = f"{BASE}/{slug}/"
 
@@ -100,6 +111,15 @@ def atom_page(key, pages):
         counts[t.get("A_tier", "none")] = counts.get(t.get("A_tier", "none"), 0) + 1
     prov = ", ".join(f"{v} {TIER[k]}" for k, v in sorted(counts.items(), key=lambda kv: -kv[1]) if k in TIER)
 
+    if auto:
+        lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): the {len(bound)} strongest classified "
+                f"lines below 2 µm from the NIST Atomic Spectra Database and the {len(L)} levels they connect, each line with its vacuum "
+                f"wavelength, frequency and, for {n_d} of them, the reduced dipole matrix element derived from the NIST transition rate. "
+                f"Lifetimes, hyperfine constants and isotope shifts from the literature have not been compiled for this element yet.")
+    else:
+        lead = (f"Energy levels and transitions of neutral {iso} ({meta['symbol']} I, nuclear spin <i>I</i> = {meta['I']}): {len(L)} levels and "
+                f"{len(bound)} lines below 2 µm, each with its vacuum wavelength, frequency and, for {n_d} of them, the reduced dipole matrix "
+                f"element. Level energies come from the NIST Atomic Spectra Database; transition rates are {prov}.{ion}")
     parts = [f"""<!doctype html>
 <html lang="en">
 <head>
@@ -141,9 +161,7 @@ def atom_page(key, pages):
 <main>
 <div class="wrap">
 <h1>{name} energy level diagram</h1>
-<p class="lead">Energy levels and transitions of neutral {iso} ({meta['symbol']} I, nuclear spin <i>I</i> = {meta['I']}):
-{len(L)} levels and {len(bound)} lines below 2 µm, each with its vacuum wavelength, frequency and, for {n_d} of them, the reduced dipole
-matrix element. Level energies come from the NIST Atomic Spectra Database; transition rates are {prov}.{ion}</p>
+<p class="lead">{lead}</p>
 <p class="hint">Hover a line or a level to isolate it, click to keep it selected. Scroll to zoom, drag to move.</p>
 </div>
 <div id="stage">
@@ -167,7 +185,8 @@ matrix element. Level energies come from the NIST Atomic Spectra Database; trans
         if not tb["rows"]:
             continue
         left = [k for k, a in enumerate(tb["aligns"]) if a == "l"]
-        parts.append(f"<h2>{cell(tb['title'])} of {iso}</h2>" if tb["title"].startswith("Key") else f"<h2>{cell(tb['title'])}</h2>")
+        parts.append(f"<h2>{cell(tb['title'])} of {iso if not auto else meta['element'].lower()}</h2>"
+                     if tb["title"].startswith(("Key", "Strongest")) else f"<h2>{cell(tb['title'])}</h2>")
         parts.append(table([cell(h) for h in tb["header"]], [[cell(c) for c in r] for r in tb["rows"]], left=left, wrap=[len(tb["header"]) - 1]))
         if tb.get("note"):
             parts.append(f'<p class="note">{html.escape(tb["note"])}</p>')
@@ -183,7 +202,7 @@ matrix element. Level energies come from the NIST Atomic Spectra Database; trans
             (fmt_d(t["d"]) + badge(t.get("d_tier"))) if t.get("d") is not None else "–",
             (f"{t['A']:.3e}" + badge(t.get("A_tier"))) if t.get("A") else "–",
             f"{t['br'] * 100:.3g}" if t.get("br") is not None else "–", cite(atom, t.get("d_src") or t.get("A_src"))]))
-    parts.append(f"<h2>All {iso} transitions below 2 µm</h2>")
+    parts.append(f"<h2>{'Listed' if auto else 'All'} {iso} transitions below 2 µm</h2>")
     parts.append(table(["Lower level", "Upper level", "λ vacuum (nm)", "λ air (nm)", "ν (THz)", "Type", "|⟨J‖er‖J′⟩| (ea₀)", "A (s⁻¹)", "Branching (%)",
                         "Source of matrix element / A"], rows, left=(0, 1, 5, 9), wrap=(9,)))
     parts.append('<p class="note">Reduced dipole matrix elements follow the convention A = ω³|d|²/(3πε₀ħc³(2J′+1)), with J′ the upper level.\n'
@@ -222,9 +241,10 @@ matrix element. Level energies come from the NIST Atomic Spectra Database; trans
     if meta.get("notes"):
         parts.append(f'<p class="note">{html.escape(str(meta["notes"])[:1500])}</p>')
 
-    others = "".join(f'<li><a class="card" href="../{p["slug"]}/"><div><strong>{p["element"]}-{p["A"]}</strong>'
-                     f'<span>{p["levels"]} levels, {p["lines"]} lines</span></div></a></li>' for p in pages if p["slug"] != slug)
-    parts.append(f'<h2>Other atoms</h2><ul class="grid">{others}</ul>')
+    others = "".join(f'<li><a class="card" href="../{p["slug"]}/"><div><strong>{pname(p)}</strong>'
+                     f'<span>{p["levels"]} levels, {p["lines"]} lines</span></div></a></li>' for p in pages if p["slug"] != slug and p["A"])
+    parts.append(f'<h2>Atoms with measured data</h2><ul class="grid">{others}</ul>'
+                 '<p><a href="../">All elements: periodic table</a></p>')
     parts.append(f'<footer>Data: NIST Atomic Spectra Database and the cited measurements. Built {datetime.date.today().isoformat()}. '
                  f'<a href="{REPO}">Code and data on GitHub</a>.</footer></div></main>\n<script src="../assets/viewer.js"></script>\n</body></html>\n')
     with open(os.path.join(DOCS, slug, "index.html"), "w") as f:
@@ -232,16 +252,38 @@ matrix element. Level energies come from the NIST Atomic Spectra Database; trans
 
 
 def landing(pages):
-    title = "Atomic energy level diagrams – interactive Grotrian diagrams with wavelengths and dipole matrix elements"
-    desc = ("Interactive energy level diagrams of the neutral atoms used in cold-atom, optical-tweezer, optical-clock and ion-trap labs: "
-            + ", ".join(sorted({p["element"] for p in pages})) + ". Every transition below 2 µm with wavelength, frequency, dipole matrix "
-            "element, lifetime and hyperfine data from NIST and measurements.")
+    title = "Atomic energy level diagrams – interactive periodic table of Grotrian diagrams"
+    n_el = len({p["symbol"] for p in pages})
+    desc = (f"Interactive energy level diagrams for {n_el} elements of the periodic table: transitions below 2 µm with wavelengths, "
+            "frequencies and dipole matrix elements from the NIST Atomic Spectra Database, plus measured lifetimes, hyperfine constants and "
+            "isotope shifts for the atoms used in cold-atom, optical-clock and ion-trap experiments.")
+    by_sym = {}
+    for p in pages:
+        by_sym.setdefault(p["symbol"], []).append(p)
+    cells = []
+    for e in ELEMENTS:
+        ps = by_sym.get(e["symbol"], [])
+        row = e["row"] + (1 if e["row"] >= 9 else 0)  # blank grid row between the main table and the f-block
+        style = f'style="grid-row:{row};grid-column:{e["col"]}"'
+        inner = f'<span class="z">{e["Z"]}</span><span class="sym">{e["symbol"]}</span><span class="nm">{e["name"]}</span>'
+        if not ps:
+            cells.append(f'<div class="el none {e["category"]}" {style} title="{e["name"]}: no classified lines in NIST ASD">{inner}</div>')
+            continue
+        main = next((p for p in ps if p["A"] == PRIMARY.get(e["symbol"])), ps[0])
+        curated = bool(main["A"])
+        info = f'{main["lines"]} lines' + (" · measured data" if curated else "")
+        cells.append(f'<a class="el {e["category"]}{" curated" if curated else ""}" {style} href="{main["slug"]}/" '
+                     f'data-name="{e["name"].lower()} {e["symbol"].lower()}" title="{e["name"]}: {main["levels"]} levels, {info}">'
+                     f'{inner}<span class="ct">{main["lines"]} lines</span></a>')
+    for r, lab in ((6, "57–71"), (7, "89–103")):
+        cells.append(f'<div class="el gap" style="grid-row:{r};grid-column:3">{lab}</div>')
+    legend = "".join(f'<li class="{k}"><span></span>{v}</li>' for k, v in CATEGORY.items())
     cards = "".join(
         f'<li><a class="card" href="{p["slug"]}/"><img src="{p["slug"]}/preview.png" loading="lazy" width="1800" height="1350" '
-        f'alt="{p["element"]}-{p["A"]} energy level diagram"><div><strong>{p["element"]}-{p["A"]} (<sup>{p["A"]}</sup>{p["symbol"]})</strong>'
-        f'<span>{p["levels"]} levels, {p["lines"]} transitions below 2 µm</span></div></a></li>' for p in pages)
+        f'alt="{pname(p)} energy level diagram"><div><strong>{pname(p)} (<sup>{p["A"]}</sup>{p["symbol"]})</strong>'
+        f'<span>{p["levels"]} levels, {p["lines"]} transitions below 2 µm</span></div></a></li>' for p in pages if p["A"])
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": SITE, "url": BASE + "/", "description": desc,
-          "hasPart": [{"@type": "Dataset", "name": f"{p['element']}-{p['A']} energy levels and transitions",
+          "hasPart": [{"@type": "Dataset", "name": f"{pname(p)} energy levels and transitions",
                        "url": f"{BASE}/{p['slug']}/"} for p in pages]}
     page = f"""<!doctype html>
 <html lang="en">
@@ -257,27 +299,46 @@ def landing(pages):
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{BASE}/">
-<meta property="og:image" content="{BASE}/{pages[0]['slug']}/preview.png">
+<meta property="og:image" content="{BASE}/rubidium-87/preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
 <header class="top"><a class="brand" href="./">{SITE}</a></header>
-<main class="wrap">
-<h1>Energy level diagrams of atoms</h1>
-<p class="lead">Interactive Grotrian diagrams for the neutral atoms that cold-atom, optical-tweezer, optical-clock and ion-trap
-experiments work with. Each diagram shows every transition below 2 µm with its vacuum wavelength and reduced dipole matrix element;
-point at a line to isolate it and read its frequency, Einstein coefficient, branching ratio and the source of each number.</p>
-<p class="lead">Level energies come from the NIST Atomic Spectra Database. Transition rates, lifetimes and hyperfine constants are
-measured values or NIST compilations wherever they exist; anything calculated is tagged as such.</p>
+<main>
+<div class="wrap">
+<h1>Energy level diagrams of the elements</h1>
+<p class="lead">Pick an element to open its interactive Grotrian diagram: every drawn transition carries its vacuum wavelength and
+reduced dipole matrix element, and pointing at a line isolates it and shows frequency, Einstein coefficient and source.</p>
+<div class="ptools">
+  <label>Find an element <input id="q" type="search" placeholder="name or symbol" autocomplete="off"></label>
+  <ul class="legend">{legend}<li class="cur"><span></span>Measured lifetimes, hyperfine data and isotope shifts included</li></ul>
+</div>
+</div>
+<div class="pscroll"><div class="ptable" id="ptable">{"".join(cells)}</div></div>
+<div class="wrap">
+<h2>Atoms with measured data</h2>
+<p>For the atoms that cold-atom, optical-tweezer, optical-clock and ion-trap experiments work with, each isotope has its own page.
+Beyond the NIST level energies these include measured lifetimes, transition rates, hyperfine constants and isotope shifts, each
+with its citation; calculated values are tagged as such.</p>
 <ul class="grid">{cards}</ul>
 <h2>What each page contains</h2>
-<p>A zoomable diagram (also as PDF and SVG), a table of the key laser-cooling and spectroscopy transitions, the full transition list
-with wavelengths in vacuum and air, frequencies, dipole matrix elements and Einstein A coefficients, level energies with lifetimes and
-Landé factors, hyperfine constants of the isotope, isotope shifts, and for the alkalis the wavelengths for Rydberg excitation.
-All tables are downloadable as CSV from the <a href="{REPO}">GitHub repository</a>.</p>
+<p>A zoomable diagram (also as PDF and SVG), a table of the key or strongest transitions, the transition list with wavelengths in
+vacuum and air, frequencies, dipole matrix elements and Einstein A coefficients, and the level energies. Level energies and most
+transition rates come from the <a href="https://physics.nist.gov/asd">NIST Atomic Spectra Database</a>. All tables are downloadable
+as CSV from the <a href="{REPO}">GitHub repository</a>.</p>
 <footer>Data: NIST Atomic Spectra Database and the measurements cited on each page. Built {datetime.date.today().isoformat()}.</footer>
+</div>
 </main>
+<script>
+document.getElementById('q').addEventListener('input', e => {{
+  const q = e.target.value.trim().toLowerCase();
+  document.querySelectorAll('#ptable a.el').forEach(a => {{
+    const hit = !q || a.dataset.name.split(' ').some(w => w.startsWith(q));
+    a.classList.toggle('dimmed', !hit);
+  }});
+}});
+</script>
 </body></html>
 """
     with open(os.path.join(DOCS, "index.html"), "w") as f:
@@ -294,7 +355,7 @@ def main():
             atom = json.load(f)
         pages.append(dict(key=key, slug=cfg["slug"], element=cfg["element"], symbol=cfg["symbol"], A=cfg["A"], Z=cfg["Z"],
                           levels=len(atom["levels"]), lines=sum(1 for t in atom["transitions"] if t["kind"] != "rydberg")))
-    pages.sort(key=lambda p: (p["Z"], p["A"]))
+    pages.sort(key=lambda p: (p["Z"], p["A"] or 0))
     for p in pages:
         atom_page(p["key"], pages)
     landing(pages)

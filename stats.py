@@ -22,6 +22,7 @@ def count(items, key):
 
 def main():
     rows, total_A, total_tau = [], dict.fromkeys(COLS, 0), dict.fromkeys(COLS, 0)
+    auto_n, auto_A = 0, dict.fromkeys(COLS, 0)
     for key, cfg in SPECIES.items():
         p = os.path.join(al.DATA, key, "atom.json")
         if not os.path.exists(p):
@@ -31,6 +32,11 @@ def main():
         lines = [t for t in atom["transitions"] if t["kind"] != "rydberg"]
         levels = [l for l in atom["levels"] if l["tau_tier"] != "stable"]
         a, tau = count(lines, "A_tier"), count(levels, "tau_tier")
+        if cfg.get("auto"):  # NIST-only element pages: summarised in one line below
+            auto_n += 1
+            for c in COLS:
+                auto_A[c] += a[c]
+            continue
         n_freq = sum(1 for t in lines if t.get("freq_tier") == "exp")
         n_hfs = sum(1 for l in atom["levels"] if l.get("hfs"))
         rows.append((f"{cfg['element']}-{cfg['A']}", len(lines), a, len(levels), tau, n_freq, n_hfs, key))
@@ -53,9 +59,11 @@ def main():
         out.append(f"| {name} | {n} | {a['nist']} | {a['exp']} | {a['theory']} | {a['model']} | {a['none']} | {nl} | "
                    f"{tau['exp']} | {tau['theory']} | {tau['model']} | {tau['none']} | {n_freq} | {n_hfs} |")
     sa, st = sum(total_A.values()), sum(total_tau.values())
-    out += ["", f"Totals over {len(seen)} elements (one isotope each):", "",
+    out += ["", f"Totals over the {len(seen)} curated elements (one isotope each):", "",
             "- transition rates / matrix elements: " + ", ".join(f"{k} {v} ({100 * v / sa:.0f}%)" for k, v in total_A.items()),
             "- lifetimes of excited levels: " + ", ".join(f"{k} {v} ({100 * v / st:.0f}%)" for k, v in total_tau.items() if k != "nist"),
+            "", f"NIST-only element pages ({auto_n} elements, no literature compiled yet): {sum(auto_A.values())} lines drawn, "
+            f"{auto_A['nist']} with a NIST transition rate, {auto_A['none']} wavelength only; no lifetimes.",
             "", "nist = NIST ASD compilation; exp = measurement from data/literature; theory = high-accuracy calculation quoted from the",
             "literature; model = ARC model potential; none = no value (wavelength only / no lifetime)."]
     with open(os.path.join(al.DATA, "provenance.md"), "w") as f:

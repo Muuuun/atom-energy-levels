@@ -23,7 +23,7 @@ _LEVELS_URL = (
     "&lande_out=on&perc_out=on&biblio=on&temp=&submit=Retrieve+Data"
 )
 _LINES_URL = (
-    "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra={sp}+I&output_type=0&low_w=200&upp_w=2000&unit=1"
+    "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra={sp}+I&output_type=0&low_w={low}&upp_w=2000&unit=1"
     "&de=0&plot_out=0&I_scale_type=1&format=3&line_out=0&remove_js=on&en_unit=0&output=0&bibrefs=1"
     "&page_size=15&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&max_low_enrg=&show_av=3"
     "&max_upp_enrg=&tsb_value=0&min_str=&A_out=0&intens_out=on&max_str=&allowed_out=1&forbid_out=1"
@@ -76,9 +76,11 @@ def nist_levels(symbol):
     return levels, limit
 
 
-def nist_lines(symbol):
-    """Classified lines 200-2000 nm: list of dicts (Ei, Ek, obs, A, acc, type)."""
-    rows = _fetch(_LINES_URL.format(sp=symbol), os.path.join(NIST_DIR, f"{symbol}_I_lines.tsv"))
+def nist_lines(symbol, low_nm=200):
+    """Classified lines from low_nm to 2000 nm: list of dicts (Ei, Ek, obs, A, acc, type).
+    low_nm=200 is the range used for the curated species; the automatic ones pass 1 to include the vacuum UV."""
+    name = f"{symbol}_I_lines.tsv" if low_nm == 200 else f"{symbol}_I_lines_from{low_nm}nm.tsv"
+    rows = _fetch(_LINES_URL.format(sp=symbol, low=low_nm), os.path.join(NIST_DIR, name))
     out = []
     for r in rows:
         ei, ek = _num(r.get("Ei(cm-1)")), _num(r.get("Ek(cm-1)"))
@@ -91,6 +93,8 @@ def nist_lines(symbol):
 
 def air_wavelength_nm(lam_vac_nm):
     """Vacuum -> standard air (Ciddor 1996, as used by NIST ASD). Valid above 200 nm."""
+    if lam_vac_nm < 200:
+        return None  # vacuum ultraviolet: no air wavelength
     s2 = (1e3 / lam_vac_nm) ** 2
     n = 1 + 0.05792105 / (238.0185 - s2) + 0.00167917 / (57.362 - s2)
     return lam_vac_nm / n
@@ -146,13 +150,17 @@ def conf_tex(c):
     return "".join(parts)
 
 
+LS_TERM = r"(?:([a-z]) ?)?(\d)([A-Z])(\*?)\??"  # optional NIST prefix letter, multiplicity, L, parity
+
+
 def term_tex(term, j):
     """LS term '3P*' + J -> '^3P^o_1'; anything else is passed through with J appended."""
-    m = re.fullmatch(r"(\d)([A-Z])(\*?)\??", term or "")
+    m = re.fullmatch(LS_TERM, term or "")
     js = jstr(j)
     if m:
-        odd = "^{o}" if m.group(3) else ""
-        return rf"^{m.group(1)}{m.group(2)}{odd}_{{{js}}}"
+        odd = "^{o}" if m.group(4) else ""
+        pre = rf"\mathrm{{{m.group(1)}}}\," if m.group(1) else ""
+        return rf"{pre}^{m.group(2)}{m.group(3)}{odd}_{{{js}}}"
     t = (term or "").replace("*", "^{o}").replace("?", "")
     return rf"{t}_{{{js}}}" if t else rf"J{{=}}{js}"
 

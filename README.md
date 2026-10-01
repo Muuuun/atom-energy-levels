@@ -2,21 +2,24 @@
 
 **Interactive site: https://muuuun.github.io/atom-energy-levels/**
 
-Large-format Grotrian diagrams of the neutral atoms used in cold-atom, tweezer, clock and ion-trap labs
-(Li, Be, Na, Mg, K, Ca, Rb, Sr, Cs, Ba, Yb, Dy; several isotopes each). Every transition below 2 µm is drawn and
-labelled with its vacuum wavelength and reduced dipole matrix element |⟨J‖er‖J′⟩| (e·a0). On the site, hover a line
-or a level to isolate it, click to pin, filter by transition type (E1, intercombination, M1, E2, M2, Rydberg).
+Interactive Grotrian diagrams for the periodic table. The landing page is a clickable periodic table: 90 elements have a
+page built from the NIST Atomic Spectra Database (strongest classified lines below 2 µm, with wavelengths and dipole matrix
+elements derived from NIST transition rates). Twelve elements used in cold-atom, tweezer, clock and ion-trap labs
+(Li, Be, Na, Mg, K, Ca, Rb, Sr, Cs, Ba, Yb, Dy; 22 isotopes) additionally carry measured lifetimes, transition rates,
+hyperfine constants and isotope shifts with citations. On every page: hover a line or a level to isolate it, click to pin,
+filter by transition type (E1, intercombination, M1, E2, M2, Rydberg).
 
 ![Rubidium-87](docs/rubidium-87/preview.png)
 
 ## Pipeline
 
-    python3 compute.py all     # NIST ASD + data/literature/*.json (+ ARC, pairinteraction for alkalis) -> data/<key>/atom.json, *.csv
+    python3 fetch_all.py       # download / cache the NIST ASD tables of every neutral atom
+    python3 compute.py all     # (or: curated | auto | <key> ...)  NIST ASD + data/literature/*.json (+ ARC, pairinteraction for alkalis) -> data/<key>/atom.json, *.csv
     python3 plot.py all        # -> docs/<slug>/diagram.svg|pdf, preview.png, data.json
     python3 build_site.py      # -> docs/**/index.html, sitemap.xml
     python3 stats.py           # -> data/provenance.md  (which source supplied how many numbers)
 
-`species.py` lists the species. Adding one is a dictionary entry: `kind="nist"` needs only the element symbol, an energy
+`species.py` lists the curated species; every other element gets an automatic NIST-only entry. Adding a curated one is a dictionary entry: `kind="nist"` needs only the element symbol, an energy
 cut and the isotope; `kind="alkali"` additionally uses ARC so that every E1-allowed pair gets a matrix element.
 
 ## Where the numbers come from

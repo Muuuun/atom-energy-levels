@@ -1,5 +1,9 @@
 """Species definitions for the level diagrams.
 
+Curated species (an isotope, with measured data in data/literature) are listed by hand. Every other element of the
+periodic table gets an automatic NIST-only entry (auto=True): no isotope, lines chosen by strength.
+
+
 kind = "alkali": one valence electron. Levels and wavelengths from NIST, every E1-allowed pair is drawn,
         matrix elements from measurements / NIST where they exist and from ARC otherwise.
 kind = "nist":   everything else. Only lines that NIST classifies or that the literature file lists are drawn.
@@ -82,3 +86,11 @@ SPECIES = {
     "ca43": dict(kind="nist", symbol="Ca", element="Calcium", Z=20, A=43, I="7/2", slug="calcium-43",
                  core=["3p6."], E_cut=42000.0, columns="LS", keep_unrated=False),
 }
+
+from elements import ELEMENTS, N_NIST  # noqa: E402
+
+CURATED = {cfg["symbol"] for cfg in SPECIES.values()}
+for _e in ELEMENTS[:N_NIST]:
+    if _e["symbol"] not in CURATED:
+        SPECIES[_e["symbol"].lower()] = dict(kind="nist", auto=True, symbol=_e["symbol"], element=_e["name"], Z=_e["Z"], A=None, I=None,
+                                             slug=_e["name"].lower(), core=[], E_cut=1e9, columns="auto", keep_unrated=False)
