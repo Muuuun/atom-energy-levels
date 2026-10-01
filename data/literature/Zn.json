@@ -91,6 +91,15 @@
       "unit": "s",
       "method": "compilation",
       "note": "derived from 'Gamma = 2 pi x 4 kHz' as quoted by Bandarupally et al. 2023 for the 308 nm line (source not given there)"
+     },
+     {
+      "value": 2e-05,
+      "unc": 2e-06,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Byron, McDermott, Novick, Perry, Saloman, Phys. Rev. 134, A47 (1964) (abstract: 'tau(3P1) = 20(2) usec', optical double resonance, wall-collision effects included)",
+      "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.134.A47",
+      "note": "only direct measurement located; 1964 value, shorter than the NIST A value (3.8e4 s^-1, i.e. 26 us) and than the compiled A = 3.29e4 s^-1 (30 us) recommended by Roederer & Lawler 2012; kept as an alternative"
      }
     ]
    },
@@ -122,7 +131,29 @@
   {
    "nist_energy_cm": 32890.3267,
    "label": "4s4p 3P2",
-   "J": "2"
+   "J": "2",
+   "hyperfine": {
+    "67": {
+     "A_MHz": 531.987,
+     "A_unc": 0.005,
+     "B_MHz": 35.806,
+     "B_unc": 0.005,
+     "method": "experiment",
+     "source": "Lurio, Phys. Rev. 126, 1768 (1962) (abstract; atomic-beam magnetic resonance on the metastable 3P2 state)",
+     "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.126.1768",
+     "alternatives": [
+      {
+       "A_MHz": 531.2,
+       "A_unc": 1.1,
+       "B_MHz": 41,
+       "B_unc": 7,
+       "method": "experiment",
+       "source": "Wraith et al., Phys. Lett. B 771, 385 (2017), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE, on the 481.2 nm line)",
+       "url": "https://www.diva-portal.org/smash/get/diva2:1399060/FULLTEXT01.pdf"
+      }
+     ]
+    }
+   }
   },
   {
    "nist_energy_cm": 46745.4032,
@@ -182,7 +213,350 @@
   {
    "nist_energy_cm": 53672.2398,
    "label": "4s5s 3S1",
-   "J": "1"
+   "J": "1",
+   "lifetime": {
+    "value": 8e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 8.1e-09,
+      "unc": 4e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Hanle effect, Cremer and Laniepce (1972), as quoted in Table 1 of Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154"
+     },
+     {
+      "value": 7.6e-09,
+      "unc": 8e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "beam-foil, Andersen and Sorensen (1973), as quoted in Table 1 of Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154"
+     },
+     {
+      "value": 9.2e-09,
+      "unc": 1.1e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "pulsed electron excitation, Osherovich et al. (1979), as quoted in Table 1 of Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154"
+     }
+    ]
+   },
+   "hyperfine": {
+    "67": {
+     "A_MHz": 1266.5,
+     "A_unc": 1.8,
+     "method": "experiment",
+     "source": "Wraith et al., Phys. Lett. B 771, 385 (2017), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE, on the 481.2 nm line)",
+     "url": "https://www.diva-portal.org/smash/get/diva2:1399060/FULLTEXT01.pdf",
+     "note": "the paper states B(3S1) ~ 0 (fixed); A(3P2) and B(3P2) fitted simultaneously"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 62768.7462,
+   "J": "1",
+   "label": "4s4d 3D1",
+   "lifetime": {
+    "value": 6.2e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 6.1e-09,
+      "unc": 4e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 62772.0144,
+   "J": "2",
+   "label": "4s4d 3D2",
+   "lifetime": {
+    "value": 6.3e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 6.1e-09,
+      "unc": 4e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 62776.9809,
+   "J": "3",
+   "label": "4s4d 3D3",
+   "lifetime": {
+    "value": 6.4e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 6.1e-09,
+      "unc": 4e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 65432.2887,
+   "J": "1",
+   "label": "4s6s 3S1",
+   "lifetime": {
+    "value": 2.21e-08,
+    "unc": 1.1e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 2.23e-08,
+      "unc": 7e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 68579.1399,
+   "J": "1",
+   "label": "4s5d 3D1",
+   "lifetime": {
+    "value": 1.43e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 1.5e-08,
+      "unc": 6e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 68580.7053,
+   "J": "2",
+   "label": "4s5d 3D2",
+   "lifetime": {
+    "value": 1.33e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 1.5e-08,
+      "unc": 6e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 68583.0827,
+   "J": "3",
+   "label": "4s5d 3D3",
+   "lifetime": {
+    "value": 1.42e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 1.5e-08,
+      "unc": 6e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 69745.959,
+   "J": "1",
+   "label": "4s7s 3S1",
+   "lifetime": {
+    "value": 4.69e-08,
+    "unc": 2.3e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 5e-08,
+      "unc": 5e-09,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 71212.9743,
+   "J": "2",
+   "label": "4s6d 3D2",
+   "lifetime": {
+    "value": 2.84e-08,
+    "unc": 2e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+    "alternatives": [
+     {
+      "value": 3e-08,
+      "unc": 1.2e-09,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+      "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+      "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 71214.243,
+   "J": "3",
+   "label": "4s6d 3D3",
+   "lifetime": {
+    "value": 2.88e-08,
+    "unc": 1.5e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154"
+   }
+  },
+  {
+   "nist_energy_cm": 71212.138,
+   "J": "1",
+   "label": "4s6d 3D1",
+   "lifetime": {
+    "value": 2.97e-08,
+    "unc": 1e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+    "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+    "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+   }
+  },
+  {
+   "nist_energy_cm": 71823.3,
+   "J": "1",
+   "label": "4s8s 3S1",
+   "lifetime": {
+    "value": 7.4e-08,
+    "unc": 7e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+    "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+    "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened"
+   }
+  },
+  {
+   "nist_energy_cm": 72626.0,
+   "J": "1",
+   "label": "4s7d 3D1",
+   "lifetime": {
+    "value": 5e-08,
+    "unc": 3e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+    "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+    "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened; the Kurucz list gives the same value for every J of the 7d 3D term"
+   }
+  },
+  {
+   "nist_energy_cm": 72626.0,
+   "J": "2",
+   "label": "4s7d 3D2",
+   "lifetime": {
+    "value": 5e-08,
+    "unc": 3e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+    "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+    "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened; the Kurucz list gives the same value for every J of the 7d 3D term"
+   }
+  },
+  {
+   "nist_energy_cm": 72627.05,
+   "J": "3",
+   "label": "4s7d 3D3",
+   "lifetime": {
+    "value": 5e-08,
+    "unc": 3e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
+    "url": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
+    "note": "second-hand: read in the Kurucz laboratory-lifetime list, original paper not opened; the Kurucz list gives the same value for every J of the 7d 3D term"
+   }
   }
  ],
  "transitions": [
@@ -404,6 +778,185 @@
      ]
     }
    }
+  },
+  {
+   "lower_cm": 32890.3267,
+   "upper_cm": 53672.2398,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "4s4p 3P2 - 4s5s 3S1 (481.2 nm)",
+   "type": "E1",
+   "use": "481.2 nm line from the metastable 4s4p 3P2 level: collinear laser spectroscopy of Zn isotopes (nuclear moments and charge radii, COLLAPS at ISOLDE)",
+   "isotope_shift_MHz": {
+    "64-68": {
+     "value": -141.2,
+     "unc": 1.2,
+     "method": "experiment",
+     "source": "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)",
+     "url": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760",
+     "note": "nu(64) - nu(68) as printed; statistical error 1.2 MHz, systematic (beam energy) 6.6 MHz; 67Zn value is the hyperfine centre of gravity"
+    },
+    "66-68": {
+     "value": -63.6,
+     "unc": 1.5,
+     "method": "experiment",
+     "source": "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)",
+     "url": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760",
+     "note": "nu(66) - nu(68) as printed; statistical error 1.5 MHz, systematic (beam energy) 3.8 MHz; 67Zn value is the hyperfine centre of gravity"
+    },
+    "67-68": {
+     "value": -41.4,
+     "unc": 2.1,
+     "method": "experiment",
+     "source": "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)",
+     "url": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760",
+     "note": "nu(67) - nu(68) as printed; statistical error 2.1 MHz, systematic (beam energy) 1.6 MHz; 67Zn value is the hyperfine centre of gravity"
+    },
+    "70-68": {
+     "value": 69.5,
+     "unc": 0.9,
+     "method": "experiment",
+     "source": "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)",
+     "url": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760",
+     "note": "nu(70) - nu(68) as printed; statistical error 0.9 MHz, systematic (beam energy) 2.9 MHz; 67Zn value is the hyperfine centre of gravity"
+    }
+   },
+   "A_s": {
+    "value": 67000000.0,
+    "unc": 3000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet)"
+   }
+  },
+  {
+   "lower_cm": 32501.399,
+   "upper_cm": 53672.2398,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "4s4p 3P1 - 4s5s 3S1 (472.3 nm)",
+   "type": "E1",
+   "A_s": {
+    "value": 43000000.0,
+    "unc": 2000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet)"
+   }
+  },
+  {
+   "lower_cm": 32311.3176,
+   "upper_cm": 53672.2398,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "4s4p 3P0 - 4s5s 3S1 (468.1 nm)",
+   "type": "E1",
+   "A_s": {
+    "value": 15000000.0,
+    "unc": 800000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet)"
+   }
+  },
+  {
+   "lower_cm": 32890.3267,
+   "upper_cm": 62776.9809,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "4s4p 3P2 - 4s4d 3D3 (334.6 nm)",
+   "type": "E1",
+   "A_s": {
+    "value": 156000000.0,
+    "unc": 8000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet)"
+   }
+  },
+  {
+   "lower_cm": 32890.3267,
+   "upper_cm": 62772.0144,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "4s4p 3P2 - 4s4d 3D2 (334.7 nm)",
+   "type": "E1",
+   "A_s": {
+    "value": 38000000.0,
+    "unc": 2000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet)"
+   }
+  },
+  {
+   "lower_cm": 32890.3267,
+   "upper_cm": 62768.7462,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "4s4p 3P2 - 4s4d 3D1 (334.7 nm)",
+   "type": "E1",
+   "A_s": {
+    "value": 4000000.0,
+    "unc": 200000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet); printed '4+-0.2' (truncated in Kerkhoff et al.; Roederer & Lawler raise log gf by 0.04 dex, i.e. A ~ 4.4e6)"
+   }
+  },
+  {
+   "lower_cm": 32501.399,
+   "upper_cm": 62772.0144,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "4s4p 3P1 - 4s4d 3D2 (330.4 nm)",
+   "type": "E1",
+   "A_s": {
+    "value": 118000000.0,
+    "unc": 6000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet)"
+   }
+  },
+  {
+   "lower_cm": 32501.399,
+   "upper_cm": 62768.7462,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "4s4p 3P1 - 4s4d 3D1 (330.4 nm)",
+   "type": "E1",
+   "A_s": {
+    "value": 66000000.0,
+    "unc": 3000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet)"
+   }
+  },
+  {
+   "lower_cm": 32311.3176,
+   "upper_cm": 62768.7462,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "4s4p 3P0 - 4s4d 3D1 (328.3 nm)",
+   "type": "E1",
+   "A_s": {
+    "value": 90000000.0,
+    "unc": 5000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+    "url": "https://arxiv.org/pdf/1204.3901",
+    "note": "derived by Roederer & Lawler from the laser lifetime of Kerkhoff et al. 1980 with LS-coupling branching (nearly pure LS multiplet)"
+   }
   }
  ],
  "rydberg": {
@@ -422,12 +975,14 @@
  },
  "not_found": [
   "Absolute frequency of the 309.5 nm 1S0-3P0 clock line: no laser measurement located (only NIST Ritz level energies); no measured 3P0 lifetime (only '~2.5 mHz' in a level scheme).",
-  "Measured lifetime of 4s4p 3P1 with uncertainty and original citation: only 'tau ~ 26 us' (Waldherr et al. 2026) and theory-based 6 kHz / 4 kHz linewidth statements; the measurement of Byron et al. 1964 could not be opened.",
+  "Modern measurement of the 4s4p 3P1 lifetime: only Byron et al. 1964, 20(2) us (abstract), which disagrees with NIST / theory (26-30 us); stored as an alternative.",
   "Isotope-resolved absolute frequency of the 307.6 nm line: only the Doppler-broadened natural-mixture centre of Bueki et al. 2021.",
   "1S0-3P2 (304 nm, M2) line: no measurement located.",
-  "Lifetimes of 4s4p 3P2, 4s5s 3S1 and 4s4d 3D1,2,3; A values for the 468.0 / 472.2 / 481.1 nm (3P-3S1) and 328.2 / 330.3 / 334.5 nm (3P-3D) lines beyond NIST ASD: no accessible source opened.",
-  "67Zn hyperfine constants of 4s4p 3P2 (Lurio 1962), 4s5s 3S1 and 4s4d 3D: not printed in any source opened.",
-  "Isotope shifts of the 481 nm 3P2-3S1 line (Campbell, Billowes, Grant): only mass-scaled values inside a global fit are printed in Sahoo & Ohayon, Phys. Rev. Research 5, 043142 (2023); raw MHz values not located.",
+  "Lifetimes of the singlet levels 4s5s 1S0, 4s6s 1S0, 4s7s 1S0, 4s8s 1S0, 4s4d 1D2, 4s5d 1D2, 4s6d 1D2 and of 4s5p / 4s6p / 4snp 3P, 4snf 3F, 4s9s 3S1, 4s8d 3D: no measurement opened (Hanle work of Laniepce, Chantepie, Landais, David, Opt. Commun. 23, 83 (1977) on (4s nd) 1D2 exists but is paywalled). Kurucz's semi-empirical calculation (kurucz.harvard.edu/atoms/3000/life3000.lab) lists e.g. 29.8 ns (5s 1S0), 14.4 ns (4d 1D2), 52 ns (5p 3P), not entered because it misses the measured 4s4p 1P1 lifetime by 20 %.",
+  "Blagoev et al. 2004 (Phys. Scr. 69, 433) full text: restricted on ORBi and IOP; its lifetimes are entered second-hand from the Kurucz list. Kerkhoff et al. 1980: only the first two pages (Springer preview, with Table 1) were read; the 4s6d 3D1 row is cut off there.",
+  "A values for lines other than the two 3P-3S1 / 3P-3D multiplets and the ground-state lines (4s5s 3S1 - 4snp 3P, 4s4p 1P1 - 4sns 1S0 / 4snd 1D2, 3P - 4sns 3S1 / 4snd 3D with n >= 5): no measured branching ratios located (LS coupling would give them from the measured lifetimes, not entered because that is a model).",
+  "67Zn hyperfine constants of 4s4d 3D and higher levels: not located. 65Zn (radioactive) constants of Byron et al. 1964 not entered.",
+  "Raw isotope shifts of the 481 nm line by Campbell, Billowes, Grant (J. Phys. B 30, 2351 (1997)) and Yang et al.: not opened; the COLLAPS values of Xie et al. 2019 are entered instead.",
   "Measured Lande g factors: none beyond the values already in the NIST ASD levels file."
  ],
  "conflicts": [
@@ -435,7 +990,11 @@
   "307.6 nm isotope shifts: new kHz-level values vs Campbell et al.: 68-64 1362.390(3) vs 1365.2(1.4) MHz and 70-64 1958.358(7) vs 1962.2(1.7) MHz (2 sigma).",
   "67Zn 1P1 magnetic hyperfine constant: 20(2) MHz (Roeser 2024) vs 17.7(5) MHz (Kowalski & Traeger).",
   "213.9 nm natural linewidth: 110.5(1.4) MHz measured (tau = 1.440(18) ns) vs 114 MHz from the NIST A value (7.14e8 s^-1, tau = 1.40 ns) vs 71 MHz quoted by Bandarupally et al. 2023.",
-  "307.6 nm linewidth: 6 kHz (theory, quoted by Bueki 2021 and Moeller 2025; tau ~ 26 us) vs 4 kHz (Bandarupally 2023); the task brief assumed ~4 kHz."
+  "307.6 nm linewidth: 6 kHz (theory, quoted by Bueki 2021 and Moeller 2025; tau ~ 26 us) vs 4 kHz (Bandarupally 2023); the task brief assumed ~4 kHz.",
+  "4s4p 3P1 lifetime: the only direct measurement, 20(2) us (Byron et al. 1964, double resonance with wall-collision correction), is shorter than 26 us (NIST A = 3.8e4 s^-1, accuracy B) and 30 us (A = 3.29e4 s^-1 recommended by Roederer & Lawler 2012 from Reader et al. 1980); theory log gf ranges from -3.72 to -3.89 (Roederer & Lawler). The existing ~26 us entry was kept as primary because the measurement is 60 years old.",
+  "67Zn 4s4p 3P2 hyperfine constants: atomic-beam 531.987(5) / 35.806(5) MHz (Lurio 1962) vs collinear-laser 531.2(11) / 41(7) MHz (Wraith et al. 2017); consistent, atomic-beam values kept.",
+  "Triplet lifetimes: Kerkhoff et al. 1980 vs Blagoev et al. 2004 (second-hand): 4d 3D 6.2-6.4(3) vs 6.1(4) ns, 6s 3S1 22.1(1.1) vs 22.3(7), 5d 3D 13.3-14.3(7) vs 15.0(6), 7s 3S1 46.9(2.3) vs 50(5), 6d 3D2 28.4(2.0) vs 30.0(12) ns; all consistent. Older non-selective results quoted by Kerkhoff differ strongly (e.g. 6s 3S1: 13(2) ns beam-foil, 30(4) ns electron excitation). The Kurucz list prints Kerkhoff's 4d uncertainties as 0.2 ns, the paper prints 0.3 ns.",
+  "The Kurucz hyperfine input file prints B(67Zn, 3P1) = -19.782 MHz for Byron et al. 1964; the Physical Review abstract prints -18.782(8) MHz (and A = 609.086(2), not (1))."
  ],
- "notes": "Conventions. (1) Isotope-shift keys 'a-b' mean nu(a) - nu(b), all relative to 64Zn as printed; 67Zn values are hyperfine centres of gravity. (2) Fields beyond SCHEMA.md: natural_linewidth_*, photoionization, top-level 'rydberg' (ionization limit) and 'conflicts'. (3) rme_J_ea0 values are derived here from lifetimes (schema convention, branching to the ground state taken as 1); the 307.6 nm one rests on an approximate, uncited lifetime. (4) The 307.6 nm frequency_THz is a natural-mixture Doppler centre and is flagged 'not verified' in its source string so that the pipeline ignores it. (5) Zinc has far less modern laser-spectroscopy data than Cd or Hg: only the two ground-state lines have been measured with lasers."
+ "notes": "Conventions. (1) Isotope-shift keys 'a-b' mean nu(a) - nu(b), all relative to 64Zn as printed; 67Zn values are hyperfine centres of gravity. (2) Fields beyond SCHEMA.md: natural_linewidth_*, photoionization, top-level 'rydberg' (ionization limit) and 'conflicts'. (3) rme_J_ea0 values are derived here from lifetimes (schema convention, branching to the ground state taken as 1); the 307.6 nm one rests on an approximate, uncited lifetime. (4) The 307.6 nm frequency_THz is a natural-mixture Doppler centre and is flagged 'not verified' in its source string so that the pipeline ignores it. (5) Zinc has far less modern laser-spectroscopy data than Cd or Hg: only the two ground-state lines have been measured with lasers. (6) Added 2026-10-01 (second pass): lifetimes of the 4sns 3S1 (n = 5-8) and 4snd 3D (n = 4-7) levels (Kerkhoff et al. 1980 read directly in the Springer two-page preview; Blagoev et al. 2004 second-hand from Kurucz's life3000.lab), 67Zn hyperfine constants of 4s4p 3P2 and 4s5s 3S1, isotope shifts of the 481.2 nm line relative to 68Zn (keys 'A-68' = nu(A) - nu(68), unc = statistical error only), and lifetime-normalised A values of the 3P-3S1 and 3P-3D multiplets (LS-coupling branching, see the notes). NIST lists 4s7d 3D1 and 3D2 at the same energy 72626.0 cm^-1: the entries are told apart by J only."
 }

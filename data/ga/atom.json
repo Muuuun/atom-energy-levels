@@ -16,7 +16,7 @@
   "freq_isotope": "69",
   "limit_text": "Ga$^+$ ionisation limit   48387.63 cm$^{-1}$  =  5.99930 eV  (206.664 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Both stable isotopes have I = 3/2. Ground-doublet hyperfine constants come from atomic-beam magnetic resonance (Lurio & Prodell 1956; Daly & Holloway 1954 as reproduced in Fig. 1 of Marago et al. 2003); values labelled derived were computed here from the printed intervals. Rehse et al. 2001 quote 3-sigma errors. Isotope shifts follow nu(first)-nu(second); where the source does not state the sign this is said in the note. Extra fields beyond SCHEMA.md: isotope_shift_factors, hyperfine_A_ratio_5s_over_4p32, ionization_energy, mu_N. The UDel portal has no neutral Ga entry (only Ga+)."
+  "notes": "Both stable isotopes have I = 3/2. Ground-doublet hyperfine constants come from atomic-beam magnetic resonance (Lurio & Prodell 1956; Daly & Holloway 1954 as reproduced in Fig. 1 of Marago et al. 2003); values labelled derived were computed here from the printed intervals. Rehse et al. 2001 quote 3-sigma errors. Isotope shifts follow nu(first)-nu(second); where the source does not state the sign this is said in the note. Extra fields beyond SCHEMA.md: isotope_shift_factors, hyperfine_A_ratio_5s_over_4p32, ionization_energy, mu_N. The UDel portal has no neutral Ga entry (only Ga+). Added 2026-10-01 (second pass): 6p and 7p 2P lifetimes and hyperfine constants. Jonsson et al., Z. Phys. A 322, 351 (1985) (read in the archived Lund University copy) also give, for levels absent from NIST ASD: lifetimes 8p 660(40) ns, 9p 920(60) ns, 10p 1450(100) ns, 11p 2000(200) ns (2P doublets, room temperature; fit tau = 6.0 (n*)^2.67 ns) and 2P3/2 hyperfine constants A / B in MHz for 69Ga: 8p 6.35(2) / 0.85(1), 9p 3.96(1) / 0.51(2), 10p 2.64(1) / 0.34(1), 11p 1.84(1) / 0.22(2); for 71Ga: 9p A = 5.03(1), 10p A = 3.35(1), 11p 2.33(1) / 0.13(2) (other 71Ga entries illegible in the scan). The same paper's Table 4 quotes the atomic-beam ground-doublet constants of 69Ga as A(2P1/2) = 1338.994, A(2P3/2) = 190.794, B(2P3/2) = 62.522 MHz, in agreement with the entries here."
  },
  "columns": [
   {
@@ -26,14 +26,14 @@
    "width": 1.0
   },
   {
-   "key": "2D",
-   "header": "^2D",
+   "key": "2S",
+   "header": "^2S",
    "group": null,
    "width": 1.0
   },
   {
-   "key": "2S",
-   "header": "^2S",
+   "key": "2D",
+   "header": "^2D",
    "group": null,
    "width": 1.0
   }
@@ -108,7 +108,7 @@
     "tier": "exp",
     "src": "Farooq-Smith et al., Phys. Rev. C 96, 044324 (2017), Table I; original: Cheal et al., Phys. Rev. Lett. 104, 252502 (2010) and related ISOLDE papers (columns \"Cheal et al.\")"
    },
-   "col": 2
+   "col": 1
   },
   {
    "id": 3,
@@ -131,7 +131,7 @@
     "tier": "exp",
     "src": "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract) (laser-induced fluorescence in an atomic beam; 3-sigma errors)"
    },
-   "col": 1
+   "col": 2
   },
   {
    "id": 4,
@@ -154,7 +154,7 @@
     "tier": "exp",
     "src": "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract) (3-sigma errors)"
    },
-   "col": 1
+   "col": 2
   },
   {
    "id": 5,
@@ -169,10 +169,60 @@
    "plain": "4s26s 2S1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 1
   },
   {
    "id": 6,
+   "E": 40376.45,
+   "unc": null,
+   "J": 0.5,
+   "conf": "4s2.6p",
+   "term": "2P*",
+   "parity": "odd",
+   "g": null,
+   "name": "4s^{2}6p\\ ^2P^{o}_{1/2}",
+   "plain": "4s26p 2P°1/2",
+   "tau_ns": 172.0,
+   "tau_unc": 9.0,
+   "tau_tier": "exp",
+   "tau_src": "Jonsson, Levinson, Svanberg, Wahlstrom, Phys. Lett. A 93, 121 (1983) (abstract on OSTI; time-resolved laser spectroscopy, stepwise excitation via 5s 2S1/2)",
+   "hfs": {
+    "A": 53.3,
+    "A_unc": 0.7,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Jonsson, Levinson, Lindgren, Persson, Wahlstrom, Z. Phys. A 322, 351 (1985), Table 4, row 'Experimental [4]'; original: Jonsson, Levinson, Svanberg, Wahlstrom, Phys. Lett. A 93, 121 (1983)"
+   },
+   "col": 0
+  },
+  {
+   "id": 7,
+   "E": 40417.62,
+   "unc": null,
+   "J": 1.5,
+   "conf": "4s2.6p",
+   "term": "2P*",
+   "parity": "odd",
+   "g": null,
+   "name": "4s^{2}6p\\ ^2P^{o}_{3/2}",
+   "plain": "4s26p 2P°3/2",
+   "tau_ns": 167.0,
+   "tau_unc": 4.0,
+   "tau_tier": "exp",
+   "tau_src": "Jonsson, Levinson, Svanberg, Wahlstrom, Phys. Lett. A 93, 121 (1983) (abstract on OSTI; time-resolved laser spectroscopy, stepwise excitation via 5s 2S1/2)",
+   "hfs": {
+    "A": 22.4,
+    "A_unc": 0.2,
+    "B": 3.2,
+    "B_unc": 0.3,
+    "tier": "exp",
+    "src": "Jonsson, Levinson, Lindgren, Persson, Wahlstrom, Z. Phys. A 322, 351 (1985), Table 4, row 'Experimental [4]'; original: Jonsson, Levinson, Svanberg, Wahlstrom, Phys. Lett. A 93, 121 (1983)"
+   },
+   "col": 0
+  },
+  {
+   "id": 8,
    "E": 40802.86,
    "unc": null,
    "J": 1.5,
@@ -184,10 +234,10 @@
    "plain": "4s25d 2D3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 2
   },
   {
-   "id": 7,
+   "id": 9,
    "E": 40811.41,
    "unc": null,
    "J": 2.5,
@@ -199,10 +249,10 @@
    "plain": "4s25d 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 2
   },
   {
-   "id": 8,
+   "id": 10,
    "E": 42158.77,
    "unc": null,
    "J": 0.5,
@@ -214,10 +264,10 @@
    "plain": "4s27s 2S1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 1
   },
   {
-   "id": 9,
+   "id": 11,
    "E": 43575.11,
    "unc": null,
    "J": 1.5,
@@ -229,10 +279,10 @@
    "plain": "4s26d 2D3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 2
   },
   {
-   "id": 10,
+   "id": 12,
    "E": 43580.44,
    "unc": null,
    "J": 2.5,
@@ -244,10 +294,10 @@
    "plain": "4s26d 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 2
   },
   {
-   "id": 11,
+   "id": 13,
    "E": 44332.27,
    "unc": null,
    "J": 0.5,
@@ -259,10 +309,10 @@
    "plain": "4s28s 2S1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 1
   },
   {
-   "id": 12,
+   "id": 14,
    "E": 45075.73,
    "unc": null,
    "J": 2.5,
@@ -274,10 +324,10 @@
    "plain": "4s27d 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 2
   },
   {
-   "id": 13,
+   "id": 15,
    "E": 45536.67,
    "unc": null,
    "J": 0.5,
@@ -289,10 +339,10 @@
    "plain": "4s29s 2S1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 1
   },
   {
-   "id": 14,
+   "id": 16,
    "E": 45969.2,
    "unc": null,
    "J": 1.5,
@@ -304,10 +354,10 @@
    "plain": "4s28d 2D3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 2
   },
   {
-   "id": 15,
+   "id": 17,
    "E": 45972.0,
    "unc": null,
    "J": 2.5,
@@ -319,10 +369,10 @@
    "plain": "4s28d 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 2
   },
   {
-   "id": 16,
+   "id": 18,
    "E": 46274.4,
    "unc": null,
    "J": 0.5,
@@ -334,7 +384,7 @@
    "plain": "4s210s 2S1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 1
   }
  ],
  "transitions": [
@@ -344,7 +394,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 13,
+   "upper": 15,
    "wn": 45536.67,
    "lam": 219.6032,
    "air": 219.5346,
@@ -362,7 +412,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 16,
+   "upper": 18,
    "wn": 45448.21,
    "lam": 220.0307,
    "air": 219.962,
@@ -381,7 +431,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 15,
+   "upper": 17,
    "wn": 45145.81,
    "lam": 221.5045,
    "air": 221.4355,
@@ -400,7 +450,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 14,
+   "upper": 16,
    "wn": 45143.01,
    "lam": 221.5182,
    "air": 221.4492,
@@ -418,7 +468,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 13,
+   "upper": 15,
    "wn": 44710.48,
    "lam": 223.6612,
    "air": 223.5918,
@@ -436,7 +486,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 11,
+   "upper": 13,
    "wn": 44332.27,
    "lam": 225.5693,
    "air": 225.4995,
@@ -455,7 +505,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 12,
+   "upper": 14,
    "wn": 44249.54,
    "lam": 225.991,
    "air": 225.9211,
@@ -474,7 +524,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 9,
+   "upper": 11,
    "wn": 43575.11,
    "lam": 229.4888,
    "air": 229.4181,
@@ -493,7 +543,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 11,
+   "upper": 13,
    "wn": 43506.08,
    "lam": 229.8529,
    "air": 229.7821,
@@ -512,7 +562,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 10,
+   "upper": 12,
    "wn": 42754.25,
    "lam": 233.8949,
    "air": 233.8232,
@@ -531,7 +581,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 9,
+   "upper": 11,
    "wn": 42748.92,
    "lam": 233.924,
    "air": 233.8524,
@@ -550,7 +600,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 8,
+   "upper": 10,
    "wn": 42158.77,
    "lam": 237.1986,
    "air": 237.1262,
@@ -569,7 +619,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 8,
+   "upper": 10,
    "wn": 41332.58,
    "lam": 241.9399,
    "air": 241.8664,
@@ -588,7 +638,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 6,
+   "upper": 8,
    "wn": 40802.86,
    "lam": 245.0809,
    "air": 245.0066,
@@ -607,7 +657,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 7,
+   "upper": 9,
    "wn": 39985.22,
    "lam": 250.0924,
    "air": 250.017,
@@ -626,7 +676,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 6,
+   "upper": 8,
    "wn": 39976.67,
    "lam": 250.1459,
    "air": 250.0705,
@@ -812,6 +862,34 @@
    "br": 0.6426,
    "br_tier": "nist",
    "lam_obs": 417.3218
+  },
+  {
+   "kind": "E1",
+   "freq": 468.54833,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 7,
+   "wn": 15629.09,
+   "lam": 639.8325,
+   "air": 639.6557,
+   "use": "639.7 nm (air) second step of the two-step excitation 4p 2P3/2 - 5s 2S1/2 - 6p 2P used for lifetime, hyperfine-structure and isotope-shift measurements (Jonsson et al., Phys. Lett. A 93, 121 (1983))",
+   "gamma_MHz": 0.953,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 467.31409,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 6,
+   "wn": 15587.92,
+   "lam": 641.5224,
+   "air": 641.3451,
+   "use": "641.3 nm (air) second step of the two-step excitation 4p 2P3/2 - 5s 2S1/2 - 6p 2P used for lifetime, hyperfine-structure and isotope-shift measurements (Jonsson et al., Phys. Lett. A 93, 121 (1983))",
+   "gamma_MHz": 0.9253,
+   "type": "E1"
   }
  ],
  "rydberg_levels": [],
@@ -863,6 +941,28 @@
      "23.41",
      "64.3",
      "417.2 nm line"
+    ],
+    [
+     "$4s^{2}5s\\ ^2S_{1/2}$ – $4s^{2}6p\\ ^2P^{o}_{3/2}$",
+     "639.8325",
+     "639.6557",
+     "468.5483",
+     "–",
+     "–",
+     "0.953",
+     "–",
+     "639.7 nm"
+    ],
+    [
+     "$4s^{2}5s\\ ^2S_{1/2}$ – $4s^{2}6p\\ ^2P^{o}_{1/2}$",
+     "641.5224",
+     "641.3451",
+     "467.3141",
+     "–",
+     "–",
+     "0.9253",
+     "–",
+     "641.3 nm"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
@@ -906,6 +1006,18 @@
      "77.3(9)",
      "5(4)",
      "F=1: -402.12   F=2: -251.75   F=3: -22.24   F=4: +291.20"
+    ],
+    [
+     "$4s^{2}6p\\ ^2P^{o}_{1/2}$",
+     "53.3(7)",
+     "–",
+     "F=1: -66.62   F=2: +39.98"
+    ],
+    [
+     "$4s^{2}6p\\ ^2P^{o}_{3/2}$",
+     "22.40(20)",
+     "3.2(3)",
+     "F=0: -80.00   F=1: -60.80   F=2: -19.20   F=3: +51.20"
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."
@@ -949,9 +1061,9 @@
   }
  ],
  "validation": [
-  "levels: 17   lines < 2000 nm: 23   with matrix element: 23",
-  "transition-rate provenance: nist: 23",
-  "levels with a measured lifetime: 1"
+  "levels: 19   lines < 2000 nm: 25   with matrix element: 23",
+  "transition-rate provenance: nist: 23, wavelength only: 2",
+  "levels with a measured lifetime: 3"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (Ga); nuclear spin and magnetic moment: UDel Portal for High-Precision Atomic Data and Computation, nuclear-data table of the Ga+ entry, read 2026-10-01": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ga",
@@ -976,6 +1088,10 @@
   "Farooq-Smith et al., Phys. Rev. C 96, 044324 (2017), Table I footnote c: A(5s 2S1/2)/A(4p 2P3/2), weighted mean over Ga isotopes from Cheal et al. 2010": "https://journals.aps.org/prc/pdf/10.1103/PhysRevC.96.044324",
   "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract) (laser-induced fluorescence in an atomic beam; 3-sigma errors)": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855",
   "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract) (3-sigma errors)": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855",
+  "Jonsson, Levinson, Svanberg, Wahlstrom, Phys. Lett. A 93, 121 (1983) (abstract on OSTI; time-resolved laser spectroscopy, stepwise excitation via 5s 2S1/2)": "https://www.osti.gov/etdeweb/biblio/5983320",
+  "Jonsson, Levinson, Lindgren, Persson, Wahlstrom, Z. Phys. A 322, 351 (1985), Table 4, row 'Experimental [4]'; original: Jonsson, Levinson, Svanberg, Wahlstrom, Phys. Lett. A 93, 121 (1983)": "https://lup.lub.lu.se/search/files/4618766/2297324.pdf",
+  "Jonsson, Levinson, Lindgren, Persson, Wahlstrom, Z. Phys. A 322, 351 (1985), Table 1 (time-resolved laser spectroscopy, two-step excitation in an atomic beam)": "https://lup.lub.lu.se/search/files/4618766/2297324.pdf",
+  "Jonsson, Levinson, Lindgren, Persson, Wahlstrom, Z. Phys. A 322, 351 (1985), Table 2 (hyperfine quantum beats)": "https://lup.lub.lu.se/search/files/4618766/2297324.pdf",
   "Marago', Fazio, Gucciardi, Arimondo, Appl. Phys. B 77, 809 (2003) (arXiv:physics/0407085), Sec. 2: \"isotope shifts are Delta_IS,1 = 32.8(3.5) MHz\"; original: Neijzen, Donszelmann, Physica 98C, 235 (1980)": "https://arxiv.org/pdf/physics/0407085",
   "Farooq-Smith et al., Phys. Rev. C 96, 044324 (2017), Table III, column \"Procter et al.\": delta-nu(71,69) = +40(4) MHz; original: Procter et al., Phys. Rev. C 86, 034329 (2012)": "https://journals.aps.org/prc/pdf/10.1103/PhysRevC.96.044324",
   "Marago', Fazio, Gucciardi, Arimondo, Appl. Phys. B 77, 809 (2003) (arXiv:physics/0407085), Sec. 2 (Delta_IS,2); original: Neijzen, Donszelmann, Physica 98C, 235 (1980); sign not stated": "https://arxiv.org/pdf/physics/0407085",

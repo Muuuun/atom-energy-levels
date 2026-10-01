@@ -16,7 +16,7 @@
   "freq_isotope": "64",
   "limit_text": "Zn$^+$ ionisation limit   75769.31 cm$^{-1}$  =  9.39420 eV  (131.980 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Conventions. (1) Isotope-shift keys 'a-b' mean nu(a) - nu(b), all relative to 64Zn as printed; 67Zn values are hyperfine centres of gravity. (2) Fields beyond SCHEMA.md: natural_linewidth_*, photoionization, top-level 'rydberg' (ionization limit) and 'conflicts'. (3) rme_J_ea0 values are derived here from lifetimes (schema convention, branching to the ground state taken as 1); the 307.6 nm one rests on an approximate, uncited lifetime. (4) The 307.6 nm frequency_THz is a natural-mixture Doppler centre and is flagged 'not verified' in its source string so that the pipeline ignores it. (5) Zinc has far less modern laser-spectroscopy data than Cd or Hg: only the two ground-state lines have been measured with lasers."
+  "notes": "Conventions. (1) Isotope-shift keys 'a-b' mean nu(a) - nu(b), all relative to 64Zn as printed; 67Zn values are hyperfine centres of gravity. (2) Fields beyond SCHEMA.md: natural_linewidth_*, photoionization, top-level 'rydberg' (ionization limit) and 'conflicts'. (3) rme_J_ea0 values are derived here from lifetimes (schema convention, branching to the ground state taken as 1); the 307.6 nm one rests on an approximate, uncited lifetime. (4) The 307.6 nm frequency_THz is a natural-mixture Doppler centre and is flagged 'not verified' in its source string so that the pipeline ignores it. (5) Zinc has far less modern laser-spectroscopy data than Cd or Hg: only the two ground-state lines have been measured with lasers. (6) Added 2026-10-01 (second pass): lifetimes of the 4sns 3S1 (n = 5-8) and 4snd 3D (n = 4-7) levels (Kerkhoff et al. 1980 read directly in the Springer two-page preview; Blagoev et al. 2004 second-hand from Kurucz's life3000.lab), 67Zn hyperfine constants of 4s4p 3P2 and 4s5s 3S1, isotope shifts of the 481.2 nm line relative to 68Zn (keys 'A-68' = nu(A) - nu(68), unc = statistical error only), and lifetime-normalised A values of the 3P-3S1 and 3P-3D multiplets (LS-coupling branching, see the notes). NIST lists 4s7d 3D1 and 3D2 at the same energy 72626.0 cm^-1: the entries are told apart by J only."
  },
  "columns": [
   {
@@ -131,6 +131,14 @@
    "plain": "4s4p 3P°2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 531.987,
+    "A_unc": 0.005,
+    "B": 35.806,
+    "B_unc": 0.005,
+    "tier": "exp",
+    "src": "Lurio, Phys. Rev. 126, 1768 (1962) (abstract; atomic-beam magnetic resonance on the metastable 3P2 state)"
+   },
    "col": 4
   },
   {
@@ -169,8 +177,18 @@
    "g": 2.001,
    "name": "4s5s\\ ^3S_{1}",
    "plain": "4s5s 3S1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 8.0,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
+   "hfs": {
+    "A": 1266.5,
+    "A_unc": 1.8,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Wraith et al., Phys. Lett. B 771, 385 (2017), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE, on the 481.2 nm line)"
+   },
    "col": 3
   },
   {
@@ -244,8 +262,10 @@
    "g": null,
    "name": "4s4d\\ ^3D_{1}",
    "plain": "4s4d 3D1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 6.2,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 5
   },
   {
@@ -259,8 +279,10 @@
    "g": null,
    "name": "4s4d\\ ^3D_{2}",
    "plain": "4s4d 3D2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 6.3,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 5
   },
   {
@@ -274,8 +296,10 @@
    "g": null,
    "name": "4s4d\\ ^3D_{3}",
    "plain": "4s4d 3D3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 6.4,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 5
   },
   {
@@ -289,8 +313,10 @@
    "g": null,
    "name": "4s6s\\ ^3S_{1}",
    "plain": "4s6s 3S1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 22.1,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 3
   },
   {
@@ -349,8 +375,10 @@
    "g": null,
    "name": "4s5d\\ ^3D_{1}",
    "plain": "4s5d 3D1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 14.3,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 5
   },
   {
@@ -364,8 +392,10 @@
    "g": null,
    "name": "4s5d\\ ^3D_{2}",
    "plain": "4s5d 3D2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 13.3,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 5
   },
   {
@@ -379,8 +409,10 @@
    "g": null,
    "name": "4s5d\\ ^3D_{3}",
    "plain": "4s5d 3D3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 14.2,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 5
   },
   {
@@ -439,8 +471,10 @@
    "g": null,
    "name": "4s7s\\ ^3S_{1}",
    "plain": "4s7s 3S1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 46.9,
+   "tau_unc": 2.3,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 3
   },
   {
@@ -529,8 +563,10 @@
    "g": null,
    "name": "4s6d\\ ^3D_{1}",
    "plain": "4s6d 3D1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 29.7,
+   "tau_unc": 1.0,
+   "tau_tier": "exp",
+   "tau_src": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
    "col": 5
   },
   {
@@ -544,8 +580,10 @@
    "g": null,
    "name": "4s6d\\ ^3D_{2}",
    "plain": "4s6d 3D2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 28.4,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 5
   },
   {
@@ -559,8 +597,10 @@
    "g": null,
    "name": "4s6d\\ ^3D_{3}",
    "plain": "4s6d 3D3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 28.8,
+   "tau_unc": 1.5,
+   "tau_tier": "exp",
+   "tau_src": "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)",
    "col": 5
   },
   {
@@ -619,8 +659,10 @@
    "g": null,
    "name": "4s8s\\ ^3S_{1}",
    "plain": "4s8s 3S1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 74.0,
+   "tau_unc": 7.0,
+   "tau_tier": "exp",
+   "tau_src": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
    "col": 3
   },
   {
@@ -694,8 +736,10 @@
    "g": null,
    "name": "4s7d\\ ^3D_{1}",
    "plain": "4s7d 3D1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 50.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
    "col": 5
   },
   {
@@ -709,8 +753,10 @@
    "g": null,
    "name": "4s7d\\ ^3D_{2}",
    "plain": "4s7d 3D2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 50.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
    "col": 5
   },
   {
@@ -724,8 +770,10 @@
    "g": null,
    "name": "4s7d\\ ^3D_{3}",
    "plain": "4s7d 3D3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 50.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab",
    "col": 5
   },
   {
@@ -877,6 +925,7 @@
    "wn": 40314.6824,
    "lam": 248.0486,
    "air": 247.9737,
+   "gamma_MHz": 3.183,
    "type": "E1",
    "lam_obs": 248.049
   },
@@ -890,6 +939,7 @@
    "wn": 40124.601,
    "lam": 249.2237,
    "air": 249.1485,
+   "gamma_MHz": 3.183,
    "type": "E1",
    "lam_obs": 249.223
   },
@@ -916,6 +966,7 @@
    "wn": 39736.7233,
    "lam": 251.6564,
    "air": 251.5806,
+   "gamma_MHz": 3.183,
    "type": "E1",
    "lam_obs": 251.6564
   },
@@ -929,6 +980,7 @@
    "wn": 39321.901,
    "lam": 254.3112,
    "air": 254.2349,
+   "gamma_MHz": 2.151,
    "type": "E1",
    "lam_obs": 254.308
   },
@@ -942,6 +994,7 @@
    "wn": 38932.9733,
    "lam": 256.8517,
    "air": 256.7747,
+   "gamma_MHz": 2.151,
    "type": "E1",
    "lam_obs": 256.857
   },
@@ -955,6 +1008,7 @@
    "wn": 38900.8204,
    "lam": 257.064,
    "air": 256.987,
+   "gamma_MHz": 5.359,
    "type": "E1",
    "lam_obs": 257.063983
   },
@@ -994,6 +1048,7 @@
    "wn": 38711.5753,
    "lam": 258.3207,
    "air": 258.2434,
+   "gamma_MHz": 5.604,
    "type": "E1",
    "lam_obs": 258.320677
   },
@@ -1007,6 +1062,7 @@
    "wn": 38710.739,
    "lam": 258.3262,
    "air": 258.2489,
+   "gamma_MHz": 5.359,
    "type": "E1",
    "lam_obs": 258.326249
   },
@@ -1059,6 +1115,7 @@
    "wn": 38323.9163,
    "lam": 260.9337,
    "air": 260.8557,
+   "gamma_MHz": 5.526,
    "type": "E1",
    "lam_obs": 260.933669
   },
@@ -1072,6 +1129,7 @@
    "wn": 38322.6476,
    "lam": 260.9423,
    "air": 260.8644,
+   "gamma_MHz": 5.604,
    "type": "E1",
    "lam_obs": 260.942303
   },
@@ -1085,6 +1143,7 @@
    "wn": 37434.6414,
    "lam": 267.1323,
    "air": 267.0529,
+   "gamma_MHz": 3.393,
    "type": "E1",
    "lam_obs": 267.13224
   },
@@ -1098,6 +1157,7 @@
    "wn": 37244.56,
    "lam": 268.4956,
    "air": 268.4159,
+   "gamma_MHz": 3.393,
    "type": "E1",
    "lam_obs": 268.495587
   },
@@ -1111,6 +1171,7 @@
    "wn": 36855.6323,
    "lam": 271.3289,
    "air": 271.2485,
+   "gamma_MHz": 3.393,
    "type": "E1",
    "lam_obs": 271.328952
   },
@@ -1202,6 +1263,7 @@
    "wn": 36267.8223,
    "lam": 275.7265,
    "air": 275.645,
+   "gamma_MHz": 11.13,
    "type": "E1",
    "lam_obs": 275.726511
   },
@@ -1215,6 +1277,7 @@
    "wn": 36079.3063,
    "lam": 277.1672,
    "air": 277.0854,
+   "gamma_MHz": 11.97,
    "type": "E1",
    "lam_obs": 277.167194
   },
@@ -1228,6 +1291,7 @@
    "wn": 36077.7409,
    "lam": 277.1792,
    "air": 277.0974,
+   "gamma_MHz": 11.13,
    "type": "E1",
    "lam_obs": 277.179217
   },
@@ -1280,6 +1344,7 @@
    "wn": 35692.756,
    "lam": 280.1689,
    "air": 280.0863,
+   "gamma_MHz": 11.21,
    "type": "E1",
    "lam_obs": 280.168895
   },
@@ -1293,6 +1358,7 @@
    "wn": 35690.3786,
    "lam": 280.1876,
    "air": 280.105,
+   "gamma_MHz": 11.97,
    "type": "E1",
    "lam_obs": 280.187554
   },
@@ -1306,6 +1372,7 @@
    "wn": 35688.8132,
    "lam": 280.1998,
    "air": 280.1173,
+   "gamma_MHz": 11.13,
    "type": "E1",
    "lam_obs": 280.19985
   },
@@ -1319,6 +1386,7 @@
    "wn": 33120.9711,
    "lam": 301.9235,
    "air": 301.8356,
+   "gamma_MHz": 7.202,
    "type": "E1",
    "lam_obs": 301.92351
   },
@@ -1332,6 +1400,7 @@
    "wn": 32930.8897,
    "lam": 303.6663,
    "air": 303.5779,
+   "gamma_MHz": 7.202,
    "type": "E1",
    "lam_obs": 303.66624
   },
@@ -1345,6 +1414,7 @@
    "wn": 32541.962,
    "lam": 307.2955,
    "air": 307.2063,
+   "gamma_MHz": 7.202,
    "type": "E1",
    "lam_obs": 307.29553
   },
@@ -1407,13 +1477,17 @@
    "wn": 30457.4286,
    "lam": 328.3271,
    "air": 328.2326,
+   "gamma_MHz": 25.67,
    "type": "E1",
    "A": 90000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 5000000.0,
    "d": 2.172,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.558,
+   "br_tier": "exp",
    "lam_obs": 328.327131
   },
   {
@@ -1426,13 +1500,17 @@
    "wn": 30270.6154,
    "lam": 330.3534,
    "air": 330.2583,
+   "gamma_MHz": 25.26,
    "type": "E1",
-   "A": 120000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 3.267,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 118000000.0,
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 6000000.0,
+   "d": 3.24,
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.7434,
+   "br_tier": "exp",
    "lam_obs": 330.353376
   },
   {
@@ -1445,13 +1523,17 @@
    "wn": 30267.3472,
    "lam": 330.389,
    "air": 330.2939,
+   "gamma_MHz": 25.67,
    "type": "E1",
-   "A": 67000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.891,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 66000000.0,
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 3000000.0,
+   "d": 1.877,
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.4092,
+   "br_tier": "exp",
    "lam_obs": 330.389045
   },
   {
@@ -1464,13 +1546,17 @@
    "wn": 29886.6542,
    "lam": 334.5975,
    "air": 334.5013,
+   "gamma_MHz": 24.87,
    "type": "E1",
-   "A": 170000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 4.691,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 156000000.0,
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 8000000.0,
+   "d": 4.493,
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.9984,
+   "br_tier": "exp",
    "lam_obs": 334.597507
   },
   {
@@ -1483,13 +1569,17 @@
    "wn": 29881.6877,
    "lam": 334.6531,
    "air": 334.5569,
+   "gamma_MHz": 25.26,
    "type": "E1",
-   "A": 40000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 1.923,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 38000000.0,
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 2000000.0,
+   "d": 1.875,
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.2394,
+   "br_tier": "exp",
    "lam_obs": 334.653121
   },
   {
@@ -1502,13 +1592,17 @@
    "wn": 29878.4195,
    "lam": 334.6897,
    "air": 334.5935,
+   "gamma_MHz": 25.67,
    "type": "E1",
-   "A": 4500000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B)",
-   "d": 0.4998,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B) (from A)",
+   "A": 4000000.0,
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 200000.0,
+   "d": 0.4712,
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.0248,
+   "br_tier": "exp",
    "lam_obs": 334.68972
   },
   {
@@ -1586,7 +1680,17 @@
    "wn": 21360.9222,
    "lam": 468.1446,
    "air": 468.0136,
+   "gamma_MHz": 19.89,
    "type": "E1",
+   "A": 15000000.0,
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 800000.0,
+   "d": 1.51,
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.12,
+   "br_tier": "exp",
    "lam_obs": 468.144583
   },
   {
@@ -1599,7 +1703,17 @@
    "wn": 21170.8408,
    "lam": 472.3478,
    "air": 472.2157,
+   "gamma_MHz": 19.89,
    "type": "E1",
+   "A": 43000000.0,
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 2000000.0,
+   "d": 2.59,
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.344,
+   "br_tier": "exp",
    "lam_obs": 472.347796
   },
   {
@@ -1612,7 +1726,44 @@
    "wn": 20781.9131,
    "lam": 481.1877,
    "air": 481.0532,
+   "use": "481.2 nm line from the metastable 4s4p 3P2 level: collinear laser spectroscopy of Zn isotopes (nuclear moments and charge radii, COLLAPS at ISOLDE)",
+   "isotope_shifts": {
+    "64-68": {
+     "value": -141.2,
+     "unc": 1.2,
+     "src": "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)",
+     "url": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760"
+    },
+    "66-68": {
+     "value": -63.6,
+     "unc": 1.5,
+     "src": "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)",
+     "url": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760"
+    },
+    "67-68": {
+     "value": -41.4,
+     "unc": 2.1,
+     "src": "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)",
+     "url": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760"
+    },
+    "70-68": {
+     "value": 69.5,
+     "unc": 0.9,
+     "src": "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)",
+     "url": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760"
+    }
+   },
+   "gamma_MHz": 19.89,
    "type": "E1",
+   "A": 67000000.0,
+   "A_tier": "exp",
+   "A_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)",
+   "A_unc": 3000000.0,
+   "d": 3.325,
+   "d_tier": "exp",
+   "d_src": "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980) (from A)",
+   "br": 0.536,
+   "br_tier": "exp",
    "lam_obs": 481.187658
   },
   {
@@ -1729,6 +1880,7 @@
    "wn": 16026.6112,
    "lam": 623.9622,
    "air": 623.7897,
+   "gamma_MHz": 25.26,
    "type": "E1 (intercombination)",
    "lam_obs": 623.9622
   },
@@ -1742,6 +1894,7 @@
    "wn": 16023.343,
    "lam": 624.0895,
    "air": 623.9169,
+   "gamma_MHz": 25.67,
    "type": "E1 (intercombination)",
    "lam_obs": 624.0895
   },
@@ -1861,6 +2014,17 @@
      "0.006121",
      "100",
      "307.6 nm intercombination line: narrow-line cooling"
+    ],
+    [
+     "$4s4p\\ ^3P^{o}_{2}$ – $4s5s\\ ^3S_{1}$",
+     "481.1877",
+     "481.0532",
+     "623.0261",
+     "3.325",
+     "6.700e+07",
+     "19.89",
+     "53.6",
+     "481.2 nm line from the metastable 4s4p 3P2 level: colline…"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
@@ -1882,10 +2046,22 @@
      "F=3/2: -2144.52   F=5/2: -593.73   F=7/2: +1517.56"
     ],
     [
+     "$4s4p\\ ^3P^{o}_{2}$",
+     "531.987(5)",
+     "35.806(5)",
+     "F=1/2: -3698.84   F=3/2: -2916.98   F=5/2: -1604.91   F=7/2: +250.78   F=9/2: +2668.89"
+    ],
+    [
      "$4s4p\\ ^1P^{o}_{1}$",
      "20.0(20)",
      "10(5)",
      "F=3/2: -63.00   F=5/2: -28.00   F=7/2: +52.50"
+    ],
+    [
+     "$4s5s\\ ^3S_{1}$",
+     "1266.5(18)",
+     "–",
+     "F=3/2: -4432.75   F=5/2: -1266.50   F=7/2: +3166.25"
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."
@@ -1947,15 +2123,39 @@
      "307.679",
      "70-64",
      "1958.358(7)"
+    ],
+    [
+     "$4s4p\\ ^3P^{o}_{2}$ – $4s5s\\ ^3S_{1}$",
+     "481.188",
+     "64-68",
+     "-141.2(12)"
+    ],
+    [
+     "$4s4p\\ ^3P^{o}_{2}$ – $4s5s\\ ^3S_{1}$",
+     "481.188",
+     "66-68",
+     "-63.6(15)"
+    ],
+    [
+     "$4s4p\\ ^3P^{o}_{2}$ – $4s5s\\ ^3S_{1}$",
+     "481.188",
+     "67-68",
+     "-41.4(21)"
+    ],
+    [
+     "$4s4p\\ ^3P^{o}_{2}$ – $4s5s\\ ^3S_{1}$",
+     "481.188",
+     "70-68",
+     "69.5(9)"
     ]
    ],
    "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 47   lines < 2000 nm: 70   with matrix element: 10",
-  "transition-rate provenance: exp: 2, nist: 8, wavelength only: 60",
-  "levels with a measured lifetime: 2"
+  "levels: 47   lines < 2000 nm: 70   with matrix element: 13",
+  "transition-rate provenance: exp: 11, nist: 2, wavelength only: 57",
+  "levels with a measured lifetime: 18"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Zn); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data (https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable1.htm)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Zn&ascii=ascii2&isotype=some",
@@ -1963,9 +2163,16 @@
   "Moeller & Stellmer, 'Magneto-optical trapping of zinc', arXiv:2510.21376 (2025)": "https://arxiv.org/abs/2510.21376",
   "Waldherr, Moeller, Stellmer, 'Isotope shifts and hyperfine splitting of the 1S0 -> 3P1 transition in zinc', arXiv:2605.29574v2 (2026)": "https://arxiv.org/abs/2605.29574",
   "Bandarupally, Tinsley, Chiarotti, Poli, 'Design and simulation of a source of cold cadmium for atom interferometry', arXiv:2306.00782 (2023)": "https://arxiv.org/abs/2306.00782",
+  "Byron, McDermott, Novick, Perry, Saloman, Phys. Rev. 134, A47 (1964) (abstract: 'tau(3P1) = 20(2) usec', optical double resonance, wall-collision effects included)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.134.A47",
+  "Lurio, Phys. Rev. 126, 1768 (1962) (abstract; atomic-beam magnetic resonance on the metastable 3P2 state)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.126.1768",
+  "Wraith et al., Phys. Lett. B 771, 385 (2017), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE, on the 481.2 nm line)": "https://www.diva-portal.org/smash/get/diva2:1399060/FULLTEXT01.pdf",
   "Roeser, Padilla-Castillo, Ohayon, Thomas, Truppe, Meijer, Stellmer, Wright, 'Hyperfine structure and isotope shifts of the 1P1 <- 1S0 transition in atomic zinc', Phys. Rev. A 109, 012806 (2024), arXiv:2309.03669, Table I": "https://arxiv.org/abs/2309.03669",
+  "Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980), Table 1 (selective pulsed-laser excitation from metastable 4s4p 3P in an atomic beam, delayed coincidence)": "https://page-one.springer.com/pdf/preview/10.1007/BF01425154",
+  "Blagoev, Malcheva, Penchev, Biemont, Xu, Persson, Svanberg, Phys. Scr. 69, 433 (2004) (time-resolved laser-induced fluorescence), as tabulated (code BMPB) in R. L. Kurucz, atoms/3000/life3000.lab": "http://kurucz.harvard.edu/atoms/3000/life3000.lab",
   "Bueki, Roeser, Stellmer, 'A frequency quintupled laser at 308 nm for spectroscopy of intercombination lines in zinc', arXiv:2103.11295 (2021) [isotope and centre of gravity not verified]": "https://arxiv.org/abs/2103.11295",
   "Bueki, Roeser, Stellmer, 'A frequency quintupled laser at 308 nm for spectroscopy of intercombination lines in zinc', arXiv:2103.11295 (2021)": "https://arxiv.org/abs/2103.11295",
+  "Xie et al., Phys. Lett. B 797, 134805 (2019), Table 1 (collinear laser spectroscopy at COLLAPS, ISOLDE)": "https://inspirehep.net/files/b926297b199df0bb01dee1b40ad10760",
+  "Roederer, Lawler, Astrophys. J. 750, 76 (2012), arXiv:1204.3901, Table 2; original: Kerkhoff, Schmidt, Zimmermann, Z. Phys. A 298, 249 (1980)": "https://arxiv.org/pdf/1204.3901",
   "NIST ASD levels file (Zn II 4s 2S1/2 limit)": "/Users/muqiao/Documents/rb_energy_levels/data/nist/Zn_I_levels.tsv"
  }
 }

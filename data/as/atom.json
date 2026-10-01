@@ -16,12 +16,36 @@
   "freq_isotope": "75",
   "limit_text": "As$^+$ ionisation limit   78950.00 cm$^{-1}$  =  9.78855 eV  (126.662 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Level energies are the NIST ASD values (data/nist/As_I_levels.tsv). 75As has I = 3/2 and is the only stable isotope. The two resonance-line A values are derived from the absorption oscillator strengths printed by Bengtsson et al. (their laser lifetimes combined with the branching ratios of Lotrian et al. 1980); NIST ASD already lists the same numbers. Hyperfine A constants of the 4p3 2D, 2P levels are second-hand (Bouazza et al. 1987 as quoted by Liu et al. 2023); note the large uncertainty of 2P°3/2. Lifetimes of the 4p3 metastable levels and all forbidden-line rates are THEORY. In the forbidden-line entries A_s is the sum of the calculated M1 and E2 rates and the note gives both parts."
+  "notes": "Level energies are the NIST ASD values (data/nist/As_I_levels.tsv). 75As has I = 3/2 and is the only stable isotope. The two resonance-line A values are derived from the absorption oscillator strengths printed by Bengtsson et al. (their laser lifetimes combined with the branching ratios of Lotrian et al. 1980); NIST ASD already lists the same numbers. Hyperfine A constants of the 4p3 2D, 2P levels are second-hand (Bouazza et al. 1987 as quoted by Liu et al. 2023); note the large uncertainty of 2P°3/2. Lifetimes of the 4p3 metastable levels and all forbidden-line rates are THEORY. In the forbidden-line entries A_s is the sum of the calculated M1 and E2 rates and the note gives both parts. Added 2026-10-01 (second pass): magnetic hyperfine constants A of the seven 4p2 5s levels (Bouazza et al. 1987, printed in mK and converted here, 1 mK = 29.979 MHz); 29 measured branching fractions of the 4p2 5s - 4p3 lines (Berzins et al. 2021, open-access copy on the University of Latvia server) and A values for the seven weak branches of the two laser-measured levels; second-hand beam-foil lifetimes for 4P5/2, 2P1/2, 2P3/2, 2D5/2 and a second-hand theory lifetime for 2D3/2. Berzins et al. print A as 'mantissa (power of ten)', e.g. '127 (5)' = 1.27e7 s^-1. Caveat on Bouazza Table 2: the row labels were read from a damaged OCR layer of the scan (rows in printed order: 4P1/2, 2P1/2, 4P3/2, 2P3/2, 2D3/2, 4P5/2, 2D5/2); the 4P3/2 and 2P3/2 labels are the least certain. Transitions between the quartet and doublet systems are typed 'intercombination'."
  },
  "columns": [
   {
    "key": "4S*",
    "header": "^4S^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "4D*",
+   "header": "^4D^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "4P*",
+   "header": "^4P^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "4P",
+   "header": "^4P",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "2D*",
+   "header": "^2D^{o}",
    "group": null,
    "width": 1.0
   },
@@ -38,32 +62,8 @@
    "width": 1.0
   },
   {
-   "key": "2D*",
-   "header": "^2D^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
    "key": "2D",
    "header": "^2D",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "4P",
-   "header": "^4P",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "4P*",
-   "header": "^4P^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "4D*",
-   "header": "^4D^{o}",
    "group": null,
    "width": 1.0
   },
@@ -127,7 +127,7 @@
     "tier": "exp",
     "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885"
    },
-   "col": 3
+   "col": 4
   },
   {
    "id": 2,
@@ -152,7 +152,7 @@
     "tier": "exp",
     "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885"
    },
-   "col": 3
+   "col": 4
   },
   {
    "id": 3,
@@ -177,7 +177,7 @@
     "tier": "exp",
     "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885"
    },
-   "col": 2
+   "col": 6
   },
   {
    "id": 4,
@@ -202,7 +202,7 @@
     "tier": "exp",
     "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885"
    },
-   "col": 2
+   "col": 6
   },
   {
    "id": 5,
@@ -219,7 +219,15 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 1 (time-resolved VUV laser-induced fluorescence in a differentially heated cell)",
-   "col": 5
+   "hfs": {
+    "A": 608.6,
+    "A_unc": 15.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), Table 2 'This work' (Fabry-Perot interferometry in the far UV, hollow-cathode lamp)"
+   },
+   "col": 3
   },
   {
    "id": 6,
@@ -236,7 +244,15 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 1 (time-resolved VUV laser-induced fluorescence in a differentially heated cell)",
-   "col": 5
+   "hfs": {
+    "A": 302.8,
+    "A_unc": 18.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), Table 2 'This work' (Fabry-Perot interferometry in the far UV, hollow-cathode lamp)"
+   },
+   "col": 3
   },
   {
    "id": 7,
@@ -249,9 +265,19 @@
    "g": null,
    "name": "4s^{2}4p^{2}5s\\ ^4P_{5/2}",
    "plain": "4s24p25s 4P5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 5
+   "tau_ns": 3.7,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Jorgensen, Sorensen, J. Opt. Soc. Am. 64, 891 (1974) (beam-foil), as quoted in Table 2 of Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021)",
+   "hfs": {
+    "A": 734.5,
+    "A_unc": 12.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), Table 2 'This work' (Fabry-Perot interferometry in the far UV, hollow-cathode lamp)"
+   },
+   "col": 3
   },
   {
    "id": 8,
@@ -264,9 +290,19 @@
    "g": null,
    "name": "4s^{2}4p^{2}5s\\ ^2P_{1/2}",
    "plain": "4s24p25s 2P1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 1
+   "tau_ns": 3.5,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Jorgensen, Sorensen, J. Opt. Soc. Am. 64, 891 (1974) (beam-foil), as quoted in Table 2 of Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021)",
+   "hfs": {
+    "A": 101.9,
+    "A_unc": 27.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), Table 2 'This work' (Fabry-Perot interferometry in the far UV, hollow-cathode lamp)"
+   },
+   "col": 5
   },
   {
    "id": 9,
@@ -279,9 +315,19 @@
    "g": null,
    "name": "4s^{2}4p^{2}5s\\ ^2P_{3/2}",
    "plain": "4s24p25s 2P3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 1
+   "tau_ns": 3.3,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Jorgensen, Sorensen, J. Opt. Soc. Am. 64, 891 (1974) (beam-foil), as quoted in Table 2 of Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021)",
+   "hfs": {
+    "A": 596.6,
+    "A_unc": 15.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), Table 2 'This work' (Fabry-Perot interferometry in the far UV, hollow-cathode lamp)"
+   },
+   "col": 5
   },
   {
    "id": 10,
@@ -296,7 +342,7 @@
    "plain": "4s4p4 4P5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 3
   },
   {
    "id": 11,
@@ -311,7 +357,7 @@
    "plain": "4s4p4 4P3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 3
   },
   {
    "id": 12,
@@ -341,7 +387,7 @@
    "plain": "4s24p25p 4D°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 1
   },
   {
    "id": 14,
@@ -354,9 +400,19 @@
    "g": null,
    "name": "4s^{2}4p^{2}5s\\ ^2D_{5/2}",
    "plain": "4s24p25s 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 2.8,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Andersen, Jorgensen, Sorensen, J. Opt. Soc. Am. 64, 891 (1974) (beam-foil), as quoted in Table 2 of Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021)",
+   "hfs": {
+    "A": 833.4,
+    "A_unc": 18.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), Table 2 'This work' (Fabry-Perot interferometry in the far UV, hollow-cathode lamp)"
+   },
+   "col": 7
   },
   {
    "id": 15,
@@ -369,9 +425,19 @@
    "g": null,
    "name": "4s^{2}4p^{2}5s\\ ^2D_{3/2}",
    "plain": "4s24p25s 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 3.2,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Holmgren, Phys. Scr. 11, 15 (1975) (relativistic optimised Hartree-Fock-Slater, dipole-length), as quoted in Table 2 (row '[9] DL') of Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021)",
+   "hfs": {
+    "A": 719.5,
+    "A_unc": 89.9,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), Table 2 'This work' (Fabry-Perot interferometry in the far UV, hollow-cathode lamp)"
+   },
+   "col": 7
   },
   {
    "id": 16,
@@ -386,7 +452,7 @@
    "plain": "4s24p25p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 1
   },
   {
    "id": 17,
@@ -401,7 +467,7 @@
    "plain": "4s24p25p 4P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 2
   },
   {
    "id": 18,
@@ -416,7 +482,7 @@
    "plain": "4s24p25p 4P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 2
   },
   {
    "id": 19,
@@ -431,7 +497,7 @@
    "plain": "4s24p25p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   },
   {
    "id": 20,
@@ -446,7 +512,7 @@
    "plain": "4s24p24d 4P5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 3
   },
   {
    "id": 21,
@@ -461,7 +527,7 @@
    "plain": "4s24p25p 4D°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 1
   },
   {
    "id": 22,
@@ -476,7 +542,7 @@
    "plain": "4s24p25p 4P°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 2
   },
   {
    "id": 23,
@@ -506,7 +572,7 @@
    "plain": "4s24p25p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 6
   },
   {
    "id": 25,
@@ -521,7 +587,7 @@
    "plain": "4s4p4 2P3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 5
   },
   {
    "id": 26,
@@ -536,7 +602,7 @@
    "plain": "4s4p4 2P1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 5
   },
   {
    "id": 27,
@@ -551,7 +617,7 @@
    "plain": "4s4p4 2D3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 7
   },
   {
    "id": 28,
@@ -566,7 +632,7 @@
    "plain": "4s4p4 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 7
   },
   {
    "id": 29,
@@ -581,7 +647,7 @@
    "plain": "4s24p26p 4P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 2
   },
   {
    "id": 30,
@@ -596,7 +662,7 @@
    "plain": "4s24p26p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 1
   },
   {
    "id": 31,
@@ -611,7 +677,7 @@
    "plain": "4s24p26p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   },
   {
    "id": 32,
@@ -656,7 +722,7 @@
    "plain": "4s24p26p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   }
  ],
  "transitions": [
@@ -701,6 +767,50 @@
   },
   {
    "kind": "E1",
+   "freq": 1637.02571,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 9,
+   "wn": 54605.3,
+   "lam": 183.1324,
+   "air": null,
+   "br": 0.011,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 48.23,
+   "type": "E1 (intercombination)",
+   "A": 3333000.0,
+   "A_tier": "exp",
+   "A_src": "branching ratio / lifetime",
+   "d": 0.201,
+   "d_tier": "exp",
+   "d_src": "branching ratio / lifetime (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 1592.96521,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 8,
+   "wn": 53135.6,
+   "lam": 188.1977,
+   "air": null,
+   "br": 0.015,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 45.47,
+   "type": "E1 (intercombination)",
+   "A": 4286000.0,
+   "A_tier": "exp",
+   "A_src": "branching ratio / lifetime",
+   "d": 0.1679,
+   "d_tier": "exp",
+   "d_src": "branching ratio / lifetime (from A)"
+  },
+  {
+   "kind": "E1",
    "freq": 1585.83915,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -709,6 +819,10 @@
    "wn": 52897.9,
    "lam": 189.0434,
    "air": null,
+   "br": 0.98,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 43.01,
    "type": "E1",
    "A": 266000000.0,
    "A_tier": "nist",
@@ -729,6 +843,9 @@
    "lam": 193.7601,
    "air": null,
    "use": "resonance line (VUV); abundance work, atomic absorption",
+   "br": 0.94,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
    "gamma_MHz": 37.01,
    "type": "E1",
    "A": 219000000.0,
@@ -738,8 +855,6 @@
    "d": 1.773,
    "d_tier": "exp",
    "d_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2 (from A)",
-   "br": 0.9417,
-   "br_tier": "exp",
    "lam_obs": 193.759
   },
   {
@@ -753,6 +868,9 @@
    "lam": 197.2628,
    "air": null,
    "use": "resonance line (VUV); abundance work, atomic absorption",
+   "br": 0.94,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
    "gamma_MHz": 35.37,
    "type": "E1",
    "A": 202000000.0,
@@ -762,8 +880,6 @@
    "d": 1.237,
    "d_tier": "exp",
    "d_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2 (from A)",
-   "br": 0.909,
-   "br_tier": "exp",
    "lam_obs": 197.262
   },
   {
@@ -776,7 +892,17 @@
    "wn": 50242.3,
    "lam": 199.0355,
    "air": null,
+   "br": 0.78,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 49.74,
    "type": "E1",
+   "A": 243700000.0,
+   "A_tier": "theory",
+   "A_src": "branching ratio / lifetime",
+   "d": 1.948,
+   "d_tier": "theory",
+   "d_src": "branching ratio / lifetime (from A)",
    "lam_obs": 199.035
   },
   {
@@ -789,7 +915,17 @@
    "wn": 50222.5,
    "lam": 199.1139,
    "air": null,
+   "br": 0.11,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 56.84,
    "type": "E1",
+   "A": 39290000.0,
+   "A_tier": "exp",
+   "A_src": "branching ratio / lifetime",
+   "d": 0.9583,
+   "d_tier": "exp",
+   "d_src": "branching ratio / lifetime (from A)",
    "lam_obs": 199.113
   },
   {
@@ -807,6 +943,28 @@
   },
   {
    "kind": "E1",
+   "freq": 1496.56995,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 15,
+   "wn": 49920.2,
+   "lam": 200.3197,
+   "air": 200.2549,
+   "br": 0.016,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 49.74,
+   "type": "E1",
+   "A": 5000000.0,
+   "A_tier": "theory",
+   "A_src": "branching ratio / lifetime",
+   "d": 0.2817,
+   "d_tier": "theory",
+   "d_src": "branching ratio / lifetime (from A)"
+  },
+  {
+   "kind": "E1",
    "freq": 1495.97636,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -815,7 +973,17 @@
    "wn": 49900.4,
    "lam": 200.3992,
    "air": 200.3344,
+   "br": 0.79,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 56.84,
    "type": "E1",
+   "A": 282100000.0,
+   "A_tier": "exp",
+   "A_src": "branching ratio / lifetime",
+   "d": 2.593,
+   "d_tier": "exp",
+   "d_src": "branching ratio / lifetime (from A)",
    "lam_obs": 200.399
   },
   {
@@ -885,6 +1053,28 @@
   },
   {
    "kind": "E1",
+   "freq": 1319.47055,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 9,
+   "wn": 44012.8,
+   "lam": 227.2066,
+   "air": 227.1364,
+   "br": 0.0051,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 48.23,
+   "type": "E1",
+   "A": 1545000.0,
+   "A_tier": "exp",
+   "A_src": "branching ratio / lifetime",
+   "d": 0.1892,
+   "d_tier": "exp",
+   "d_src": "branching ratio / lifetime (from A)"
+  },
+  {
+   "kind": "E1",
    "freq": 1309.81423,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -893,6 +1083,10 @@
    "wn": 43690.7,
    "lam": 228.8817,
    "air": 228.8111,
+   "br": 0.79,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 48.23,
    "type": "E1",
    "A": 280000000.0,
    "A_tier": "nist",
@@ -912,6 +1106,10 @@
    "wn": 42648.7,
    "lam": 234.4737,
    "air": 234.4019,
+   "br": 0.061,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 49.74,
    "type": "E1",
    "A": 35000000.0,
    "A_tier": "nist",
@@ -931,6 +1129,10 @@
    "wn": 42543.1,
    "lam": 235.0557,
    "air": 234.9838,
+   "br": 0.87,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 45.47,
    "type": "E1",
    "A": 310000000.0,
    "A_tier": "nist",
@@ -942,6 +1144,28 @@
   },
   {
    "kind": "E1",
+   "freq": 1268.28399,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 7,
+   "wn": 42305.4,
+   "lam": 236.3764,
+   "air": 236.3042,
+   "br": 0.00077,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 43.01,
+   "type": "E1 (intercombination)",
+   "A": 208100.0,
+   "A_tier": "exp",
+   "A_src": "branching ratio / lifetime",
+   "d": 0.09022,
+   "d_tier": "exp",
+   "d_src": "branching ratio / lifetime (from A)"
+  },
+  {
+   "kind": "E1",
    "freq": 1264.74344,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -950,6 +1174,10 @@
    "wn": 42187.3,
    "lam": 237.0382,
    "air": 236.9658,
+   "br": 0.14,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 49.74,
    "type": "E1",
    "A": 60000000.0,
    "A_tier": "nist",
@@ -969,6 +1197,10 @@
    "wn": 42167.5,
    "lam": 237.1495,
    "air": 237.0771,
+   "br": 0.1,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 56.84,
    "type": "E1",
    "A": 42000000.0,
    "A_tier": "nist",
@@ -988,8 +1220,40 @@
    "wn": 41983.3,
    "lam": 238.1899,
    "air": 238.1173,
+   "br": 0.02,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 43.01,
    "type": "E1 (intercombination)",
+   "A": 5405000.0,
+   "A_tier": "exp",
+   "A_src": "branching ratio / lifetime",
+   "d": 0.4651,
+   "d_tier": "exp",
+   "d_src": "branching ratio / lifetime (from A)",
    "lam_obs": 238.191
+  },
+  {
+   "kind": "E1",
+   "freq": 1229.67971,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 6,
+   "wn": 41017.7,
+   "lam": 243.7972,
+   "air": 243.7233,
+   "br": 0.01,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 37.01,
+   "type": "E1 (intercombination)",
+   "A": 2330000.0,
+   "A_tier": "exp",
+   "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
+   "d": 0.2582,
+   "d_tier": "exp",
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
   },
   {
    "kind": "E1",
@@ -1001,16 +1265,17 @@
    "wn": 40695.6,
    "lam": 245.7268,
    "air": 245.6525,
+   "br": 0.043,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
    "gamma_MHz": 37.01,
    "type": "E1 (intercombination)",
-   "A": 7200000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy D)",
-   "d": 0.4592,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy D) (from A)",
-   "br": 0.031,
-   "br_tier": "nist",
+   "A": 10000000.0,
+   "A_tier": "exp",
+   "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
+   "d": 0.5412,
+   "d_tier": "exp",
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
    "lam_obs": 245.727
   },
   {
@@ -1023,16 +1288,17 @@
    "wn": 40101.3,
    "lam": 249.3685,
    "air": 249.2933,
+   "br": 0.057,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
    "gamma_MHz": 35.37,
    "type": "E1 (intercombination)",
-   "A": 12000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy D)",
-   "d": 0.4286,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy D) (from A)",
-   "br": 0.054,
-   "br_tier": "nist",
+   "A": 12700000.0,
+   "A_tier": "exp",
+   "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
+   "d": 0.4409,
+   "d_tier": "exp",
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
    "lam_obs": 249.366
   },
   {
@@ -1045,6 +1311,10 @@
    "wn": 36419.2,
    "lam": 274.5804,
    "air": 274.4992,
+   "br": 0.046,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 48.23,
    "type": "E1",
    "A": 26000000.0,
    "A_tier": "nist",
@@ -1064,6 +1334,10 @@
    "wn": 35957.8,
    "lam": 278.1038,
    "air": 278.0217,
+   "br": 0.15,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 48.23,
    "type": "E1",
    "A": 78000000.0,
    "A_tier": "nist",
@@ -1083,6 +1357,10 @@
    "wn": 34949.5,
    "lam": 286.1271,
    "air": 286.0431,
+   "br": 0.095,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 45.47,
    "type": "E1",
    "A": 55000000.0,
    "A_tier": "nist",
@@ -1102,6 +1380,10 @@
    "wn": 34488.1,
    "lam": 289.9551,
    "air": 289.8701,
+   "br": 0.017,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 45.47,
    "type": "E1",
    "A": 9900000.0,
    "A_tier": "nist",
@@ -1110,6 +1392,116 @@
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
    "lam_obs": 289.956
+  },
+  {
+   "kind": "E1",
+   "freq": 1026.80116,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 7,
+   "wn": 34250.4,
+   "lam": 291.9674,
+   "air": 291.8819,
+   "br": 5e-05,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 43.01,
+   "type": "E1 (intercombination)",
+   "A": 13510.0,
+   "A_tier": "exp",
+   "A_src": "branching ratio / lifetime",
+   "d": 0.03156,
+   "d_tier": "exp",
+   "d_src": "branching ratio / lifetime (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 1002.02931,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 6,
+   "wn": 33424.1,
+   "lam": 299.1853,
+   "air": 299.0981,
+   "br": 0.00093,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 37.01,
+   "type": "E1 (intercombination)",
+   "A": 216000.0,
+   "A_tier": "exp",
+   "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
+   "d": 0.1069,
+   "d_tier": "exp",
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 988.19689,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 6,
+   "wn": 32962.7,
+   "lam": 303.3732,
+   "air": 303.2849,
+   "br": 0.0039,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 37.01,
+   "type": "E1 (intercombination)",
+   "A": 907000.0,
+   "A_tier": "exp",
+   "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
+   "d": 0.2236,
+   "d_tier": "exp",
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 974.55633,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 5,
+   "wn": 32507.7,
+   "lam": 307.6194,
+   "air": 307.5301,
+   "br": 0.0016,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 35.37,
+   "type": "E1 (intercombination)",
+   "A": 355000.0,
+   "A_tier": "exp",
+   "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
+   "d": 0.101,
+   "d_tier": "exp",
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
+  },
+  {
+   "kind": "E1",
+   "freq": 960.7239,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 5,
+   "wn": 32046.3,
+   "lam": 312.0485,
+   "air": 311.958,
+   "br": 0.0024,
+   "br_tier": "exp",
+   "br_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1",
+   "gamma_MHz": 35.37,
+   "type": "E1 (intercombination)",
+   "A": 533000.0,
+   "A_tier": "exp",
+   "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
+   "d": 0.1264,
+   "d_tier": "exp",
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
   },
   {
    "kind": "E1",
@@ -1523,7 +1915,7 @@
      "1.773",
      "2.190e+08",
      "37.01",
-     "94.2",
+     "94",
      "resonance line"
     ],
     [
@@ -1534,7 +1926,7 @@
      "1.237",
      "2.020e+08",
      "35.37",
-     "90.9",
+     "94",
      "resonance line"
     ],
     [
@@ -1667,15 +2059,57 @@
      "359(59)",
      "–",
      "F=0: -1346.25   F=1: -987.25   F=2: -269.25   F=3: +807.75"
+    ],
+    [
+     "$4s^{2}4p^{2}5s\\ ^4P_{1/2}$",
+     "609(15)",
+     "–",
+     "F=1: -760.75   F=2: +456.45"
+    ],
+    [
+     "$4s^{2}4p^{2}5s\\ ^4P_{3/2}$",
+     "303(18)",
+     "–",
+     "F=0: -1135.50   F=1: -832.70   F=2: -227.10   F=3: +681.30"
+    ],
+    [
+     "$4s^{2}4p^{2}5s\\ ^4P_{5/2}$",
+     "734(12)",
+     "–",
+     "F=1: -3856.12   F=2: -2387.12   F=3: -183.62   F=4: +2754.38"
+    ],
+    [
+     "$4s^{2}4p^{2}5s\\ ^2P_{1/2}$",
+     "102(27)",
+     "–",
+     "F=1: -127.38   F=2: +76.42"
+    ],
+    [
+     "$4s^{2}4p^{2}5s\\ ^2P_{3/2}$",
+     "597(15)",
+     "–",
+     "F=0: -2237.25   F=1: -1640.65   F=2: -447.45   F=3: +1342.35"
+    ],
+    [
+     "$4s^{2}4p^{2}5s\\ ^2D_{5/2}$",
+     "833(18)",
+     "–",
+     "F=1: -4375.35   F=2: -2708.55   F=3: -208.35   F=4: +3125.25"
+    ],
+    [
+     "$4s^{2}4p^{2}5s\\ ^2D_{3/2}$",
+     "720(90)",
+     "–",
+     "F=0: -2698.12   F=1: -1978.62   F=2: -539.62   F=3: +1618.88"
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
-  "levels: 35   lines < 2000 nm: 53   with matrix element: 14",
-  "transition-rate provenance: exp: 2, nist: 12, theory: 8, wavelength only: 31",
-  "levels with a measured lifetime: 6"
+  "levels: 35   lines < 2000 nm: 64   with matrix element: 29",
+  "transition-rate provenance: exp: 17, nist: 10, theory: 10, wavelength only: 27",
+  "levels with a measured lifetime: 11"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (As); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, arsenic isotope table": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=As",
@@ -1684,7 +2118,12 @@
   "Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885, Table IX (relativistic MRCI; M1 + E2 decays)": "https://arxiv.org/pdf/2306.15885",
   "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), as quoted (\"Exp. 1987\") in Table X of Liu, Yu, Suo, Liu, Sahoo, Phys. Rev. A 108, 032804 (2023), arXiv:2306.15885": "https://arxiv.org/pdf/2306.15885",
   "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 1 (time-resolved VUV laser-induced fluorescence in a differentially heated cell)": "https://articles.adsabs.harvard.edu/pdf/1992A%26A...263..440B",
+  "Bouazza, Guern, Abjean, Bauche, Z. Phys. D 7, 33 (1987), Table 2 'This work' (Fabry-Perot interferometry in the far UV, hollow-cathode lamp)": "https://page-one.springer.com/pdf/preview/10.1007/BF01436649",
+  "Andersen, Jorgensen, Sorensen, J. Opt. Soc. Am. 64, 891 (1974) (beam-foil), as quoted in Table 2 of Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021)": "https://www.erachair.lu.lv/fileadmin/user_upload/lu_portal/projekti/fotonika-lv/ERA_Chair/Publications/2021_Berzins_Branching.pdf",
+  "Holmgren, Phys. Scr. 11, 15 (1975) (relativistic optimised Hartree-Fock-Slater, dipole-length), as quoted in Table 2 (row '[9] DL') of Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021)": "https://www.erachair.lu.lv/fileadmin/user_upload/lu_portal/projekti/fotonika-lv/ERA_Chair/Publications/2021_Berzins_Branching.pdf",
   "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2": "https://articles.adsabs.harvard.edu/pdf/1992A%26A...263..440B",
-  "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)": "https://nvlpubs.nist.gov/nistpubs/jres/68A/jresv68An1p61_A1b.pdf"
+  "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 1": "https://www.erachair.lu.lv/fileadmin/user_upload/lu_portal/projekti/fotonika-lv/ERA_Chair/Publications/2021_Berzins_Branching.pdf",
+  "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)": "https://nvlpubs.nist.gov/nistpubs/jres/68A/jresv68An1p61_A1b.pdf",
+  "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")": "https://www.erachair.lu.lv/fileadmin/user_upload/lu_portal/projekti/fotonika-lv/ERA_Chair/Publications/2021_Berzins_Branching.pdf"
  }
 }
