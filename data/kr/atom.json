@@ -6,15 +6,17 @@
   "symbol": "Kr",
   "A": null,
   "Z": 36,
-  "I": null,
+  "I": "9/2",
   "kind": "nist",
   "limit_cm": 112914.433,
   "scale": "auto",
   "spectrum": "Kr I",
   "auto": true,
+  "has_lit": true,
+  "freq_isotope": "84",
   "limit_text": "Kr$^+$ ionisation limit   112914.43 cm$^{-1}$  =  13.99961 eV  (88.563 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B). 83Kr values are hyperfine centre of gravity. 81Kr and 85Kr are radioactive ATTA tracers; their nuclear spins were not confirmed in an opened source and are therefore omitted. Level energies are NIST ASD values from data/kr/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only."
  },
  "columns": [
   {
@@ -87,8 +89,18 @@
    "g": null,
    "name": "2[3/2]^{o}_{2}",
    "plain": "4p55s 2[3/2]°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 28300000000.0,
+   "tau_unc": 1800000000.0,
+   "tau_tier": "exp",
+   "tau_src": "Lefers et al., Phys. Rev. A 66, 012507 (2002) (abstract)",
+   "hfs": {
+    "A": -244.04,
+    "A_unc": 0.03,
+    "B": -453.36,
+    "B_unc": 0.59,
+    "tier": "exp",
+    "src": "Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]"
+   },
    "col": 6
   },
   {
@@ -149,6 +161,14 @@
    "plain": "4p55p 2[1/2]1",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -143.0,
+    "A_unc": 0.09,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Husson et al., 'Mesure de constantes de structure hyperfine de niveaux 6p du xenon et 5p du krypton', J. Physique 45, 863 (1984) (abstract, HAL jpa-00209818)"
+   },
    "col": 1
   },
   {
@@ -162,8 +182,18 @@
    "g": null,
    "name": "2[5/2]_{3}",
    "plain": "4p55p 2[5/2]3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 28.0,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
+   "hfs": {
+    "A": -103.91,
+    "A_unc": 0.02,
+    "B": -437.03,
+    "B_unc": 0.67,
+    "tier": "exp",
+    "src": "Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]"
+   },
    "col": 3
   },
   {
@@ -984,6 +1014,26 @@
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A+) (from A)",
    "lam_obs": 123.5838
+  },
+  {
+   "kind": "forbidden",
+   "freq": 2397.4925,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 79971.7417,
+   "lam": 125.0442,
+   "air": null,
+   "use": "125.0 nm M2 decay of the metastable 3P2 state",
+   "type": "M2",
+   "gamma_MHz": 5.624e-09,
+   "A": 0.0354,
+   "A_tier": "exp",
+   "A_src": "Lefers et al., Phys. Rev. A 66, 012507 (2002) (abstract)",
+   "A_unc": 0.0022,
+   "br": 1.0,
+   "br_tier": "exp"
   },
   {
    "kind": "E1",
@@ -1812,6 +1862,16 @@
    "wn": 12322.6595,
    "lam": 811.5131,
    "air": 811.29,
+   "use": "811.3 nm (811.51 nm vacuum) laser-cooling / MOT / ATTA single-atom-counting line (1s5-2p9, closed)",
+   "isotope_shifts": {
+    "83-78": {
+     "value": 201.33,
+     "unc": 0.13,
+     "src": "Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]",
+     "url": "https://arxiv.org/abs/1012.4509"
+    }
+   },
+   "gamma_MHz": 5.684,
    "type": "E1",
    "A": 36100000.0,
    "A_tier": "nist",
@@ -1819,6 +1879,8 @@
    "d": 8.164,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy AAA) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 811.5132
   },
   {
@@ -1831,6 +1893,7 @@
    "wn": 12206.5729,
    "lam": 819.2308,
    "air": 819.0056,
+   "use": "819 nm second step of the optical (124 nm VUV + 819 nm) production of metastable Kr",
    "type": "E1",
    "A": 8940000.0,
    "A_tier": "nist",
@@ -2072,7 +2135,7 @@
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -2087,147 +2150,15 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
-     "92.2739",
+     "$^1S_{0}$ – $2[3/2]^{o}_{2}$",
+     "125.0442",
      "–",
-     "3248.9421",
-     "0.248",
-     "5.300e+07",
+     "2397.4925",
      "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
-     "92.3713",
-     "–",
-     "3245.5158",
-     "0.365",
-     "1.140e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
-     "94.5441",
-     "–",
-     "3170.9259",
-     "0.593",
-     "2.810e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
-     "94.6536",
-     "–",
-     "3167.2604",
-     "0.435",
-     "1.510e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
-     "95.3404",
-     "–",
-     "3144.4426",
-     "0.369",
-     "1.060e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
-     "96.3374",
-     "–",
-     "3111.8995",
-     "0.211",
-     "3.350e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
-     "100.1061",
-     "–",
-     "2994.7482",
-     "0.713",
-     "3.420e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
-     "100.3550",
-     "–",
-     "2987.3183",
-     "0.522",
-     "1.820e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[1/2]^{o}_{1}$",
-     "116.4867",
-     "–",
-     "2573.6195",
-     "0.850",
-     "3.090e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$^1S_{0}$ – $2[3/2]^{o}_{1}$",
-     "123.5838",
-     "–",
-     "2425.8237",
-     "0.913",
-     "2.980e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[3/2]^{o}_{1}$ – $2[1/2]_{0}$",
-     "758.9502",
-     "758.7413",
-     "395.0094",
-     "3.049",
-     "4.310e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[3/2]^{o}_{2}$ – $2[3/2]_{2}$",
-     "760.3638",
-     "760.1545",
-     "394.2750",
-     "5.444",
-     "2.732e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$2[1/2]^{o}_{1}$ – $2[1/2]_{0}$",
-     "768.7361",
-     "768.5246",
-     "389.9810",
-     "3.019",
-     "4.064e+07",
-     "–",
-     "–",
-     ""
+     "3.540e-02",
+     "5.624e-09",
+     "100",
+     "125.0 nm M2 decay of the metastable 3P2 state"
     ],
     [
      "$2[3/2]^{o}_{2}$ – $2[5/2]_{3}$",
@@ -2236,40 +2167,96 @@
      "369.4240",
      "8.164",
      "3.610e+07",
-     "–",
-     "–",
-     ""
+     "5.684",
+     "100",
+     "811.3 nm"
     ],
     [
-     "$2[1/2]^{o}_{1}$ – $2[3/2]_{2}$",
-     "826.5514",
-     "826.3242",
-     "362.7028",
-     "6.899",
-     "3.416e+07",
+     "$2[3/2]^{o}_{1}$ – $2[3/2]_{2}$",
+     "819.2308",
+     "819.0056",
+     "365.9438",
+     "3.483",
+     "8.940e+06",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$2[3/2]^{o}_{1}$ – $2[3/2]_{1}$",
-     "830.0390",
-     "829.8109",
-     "361.1787",
-     "4.982",
-     "2.931e+07",
-     "–",
-     "–",
-     ""
+     "819 nm second step of the optical"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{83}$Kr hyperfine structure  ($I$ = 9/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$2[3/2]^{o}_{2}$",
+     "-244.04(3)",
+     "-453.4(6)",
+     "F=5/2: +2476.65   F=7/2: +1820.86   F=9/2: +864.35   F=11/2: -477.87   F=13/2: -2309.70"
+    ],
+    [
+     "$2[1/2]_{1}$",
+     "-143.00(9)",
+     "–",
+     "F=7/2: +786.50   F=9/2: +143.00   F=11/2: -643.50"
+    ],
+    [
+     "$2[5/2]_{3}$",
+     "-103.910(20)",
+     "-437.0(7)",
+     "F=3/2: +1514.21   F=5/2: +1345.48   F=7/2: +1083.77   F=9/2: +703.58   F=11/2: +172.14   F=13/2: -550.62   F=15/2: -1512.04"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$2[3/2]^{o}_{2}$ – $2[5/2]_{3}$",
+     "811.513",
+     "83-78",
+     "201.33(13)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 45   lines < 2000 nm: 70   with matrix element: 70",
-  "transition-rate provenance: nist: 70",
-  "levels with a measured lifetime: 0"
+  "levels: 45   lines < 2000 nm: 71   with matrix element: 70",
+  "transition-rate provenance: exp: 1, nist: 70",
+  "levels with a measured lifetime: 2"
  ],
- "sources": {}
+ "sources": {
+  "NIST Atomic Weights and Isotopic Compositions (Kr)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Kr&ascii=ascii2&isotype=some",
+  "NIST Atomic Weights and Isotopic Compositions (Kr); nuclear spin from Williams et al., arXiv:1012.4509; Faust & Chow Chiu, Phys. Rev. 129, 1214 (1963)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Kr&ascii=ascii2&isotype=some",
+  "NIST Atomic Weights and Isotopic Compositions (Kr); nuclear spin from Aprile et al., arXiv:1305.6510 ('84Kr [has] no hyperfine structure')": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Kr&ascii=ascii2&isotype=some",
+  "Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]": "https://arxiv.org/abs/1012.4509",
+  "Cannon, Phys. Rev. A 47, 1148 (1993) (abstract)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.47.1148",
+  "NIST Atomic Spectra Database, levels of Kr I: limit Kr II (4p5 2P3/2) (cached data/nist/Kr_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Lefers et al., Phys. Rev. A 66, 012507 (2002) (abstract)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.66.012507",
+  "Katori & Shimizu, Phys. Rev. Lett. 70, 3545 (1993) (abstract)": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.70.3545",
+  "Indelicato et al. (1994) [as quoted in Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I]": "https://arxiv.org/abs/1110.1361",
+  "Cannon, Phys. Rev. A 47, 1148 (1993) [as quoted in Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]]": "https://arxiv.org/abs/1012.4509",
+  "Cannon & Janik, Phys. Rev. A 42, 397 (1990) [as quoted in Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]]": "https://arxiv.org/abs/1012.4509",
+  "Faust & Chow Chiu, Phys. Rev. 129, 1214 (1963) (abstract)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.129.1214",
+  "Husson et al., 'Mesure de constantes de structure hyperfine de niveaux 6p du xenon et 5p du krypton', J. Physique 45, 863 (1984) (abstract, HAL jpa-00209818)": "https://hal.science/jpa-00209818v1",
+  "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I": "https://arxiv.org/abs/1110.1361",
+  "Aprile, Yoon, Loose, Goetzke, Zelevinsky, 'An Atom Trap Trace Analysis System for Measuring Krypton Contamination in Xenon Dark Matter Detectors', arXiv:1305.6510": "https://arxiv.org/abs/1305.6510",
+  "Ding et al., Rev. Sci. Instrum. 78, 023103 (2007) [arXiv:physics/0612046]": "https://arxiv.org/abs/physics/0612046"
+ }
 }

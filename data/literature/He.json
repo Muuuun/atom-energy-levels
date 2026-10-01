@@ -160,19 +160,90 @@
    "nist_energy_cm": 169086.84033581,
    "label": "1s2p 3P1 (2 3P1)",
    "J": "1",
+   "fine_structure_splitting_MHz": {
+    "4": {
+     "value": 2291.17659,
+     "unc": 2.5e-05,
+     "method": "experiment",
+     "source": "Kato, Skinner, Hessels, Phys. Rev. Lett. 121, 143002 (2018) [arXiv:1807.07923]",
+     "url": "https://arxiv.org/abs/1807.07923",
+     "interval": "E(2 3P1) - E(2 3P2)",
+     "value_Hz_str": "2 291 176 590(25)",
+     "note": "microwave frequency-offset separated-oscillatory-fields measurement",
+     "alternatives": [
+      {
+       "value": 2291.17756,
+       "unc": 0.00019,
+       "method": "experiment",
+       "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
+       "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001",
+       "note": "laser spectroscopy at 1083 nm; 0.97 kHz above Kato 2018"
+      }
+     ]
+    }
+   },
    "lifetime": {
     "value": 9.789e-08,
     "method": "compilation",
     "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
     "url": "https://arxiv.org/abs/1110.1361",
     "unit": "s",
-    "note": "tabulated for the 2 3P term (see 2 3P2). The XUV decay to 1 1S0 has a partial lifetime of 5.66(25) ms (Dall 2008), a 1.7e-5 branch."
+    "note": "tabulated for the 2 3P term (see 2 3P2). The XUV decay to 1 1S0 has a partial lifetime of 5.66(25) ms (Dall 2008); derived branching 177 s^-1 x 97.89 ns = 1.7e-5."
    }
   },
   {
    "nist_energy_cm": 169087.82825101,
    "label": "1s2p 3P0 (2 3P0)",
    "J": "0",
+   "fine_structure_splitting_MHz": {
+    "4": {
+     "value": 29616.955018,
+     "unc": 6e-05,
+     "method": "experiment",
+     "source": "Heydarizadmotlagh, Skinner, Kato, George, Hessels, 'Precision measurement of the n=2 triplet P J=1-to-J=0 fine structure of atomic helium using frequency-offset separated oscillatory fields', arXiv:2310.17040 (2023)",
+     "url": "https://arxiv.org/abs/2310.17040",
+     "interval": "E(2 3P0) - E(2 3P1)",
+     "value_Hz_str": "29 616 955 018(60)",
+     "alternatives": [
+      {
+       "value": 29616.95342,
+       "unc": 0.00023,
+       "method": "experiment",
+       "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
+       "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001",
+       "note": "derived: difference of the two printed intervals 31 908 130.98(13) and 2 291 177.56(19) kHz"
+      }
+     ]
+    }
+   },
+   "fine_structure_splitting_to_J2_MHz": {
+    "4": {
+     "value": 31908.131608,
+     "unc": 6.5e-05,
+     "method": "experiment",
+     "source": "Heydarizadmotlagh, Skinner, Kato, George, Hessels, 'Precision measurement of the n=2 triplet P J=1-to-J=0 fine structure of atomic helium using frequency-offset separated oscillatory fields', arXiv:2310.17040 (2023)",
+     "url": "https://arxiv.org/abs/2310.17040",
+     "interval": "E(2 3P0) - E(2 3P2)",
+     "value_Hz_str": "31 908 131 608(65)",
+     "note": "obtained by the authors by combining their J=1-0 and J=2-1 (Kato 2018) microwave measurements",
+     "alternatives": [
+      {
+       "value": 31908.13098,
+       "unc": 0.00013,
+       "method": "experiment",
+       "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
+       "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001"
+      },
+      {
+       "value": 31908.13125,
+       "unc": 0.0003,
+       "method": "experiment",
+       "source": "Smiciklas & Shiner, Phys. Rev. Lett. 105, 123001 (2010) (abstract)",
+       "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.123001"
+      }
+     ]
+    }
+   },
    "lifetime": {
     "value": 9.789e-08,
     "method": "compilation",
@@ -497,101 +568,6 @@
    }
   },
   {
-   "lower_cm": 169086.76391031,
-   "upper_cm": 169086.84033581,
-   "lower_J": "2",
-   "upper_J": "1",
-   "label": "1s2p 3P2 - 1s2p 3P1",
-   "use": "2 3P fine-structure interval J=2-1 (2.29 GHz, fine-structure-constant test)",
-   "type": "M1",
-   "frequency_THz": {
-    "value": 0.00229117659,
-    "unc": 2.5e-11,
-    "method": "experiment",
-    "source": "Kato, Skinner, Hessels, Phys. Rev. Lett. 121, 143002 (2018) [arXiv:1807.07923]",
-    "url": "https://arxiv.org/abs/1807.07923",
-    "isotope": "4",
-    "value_Hz_str": "2 291 176 590(25)",
-    "alternatives": [
-     {
-      "value": 0.00229117756,
-      "unc": 1.9e-10,
-      "method": "experiment",
-      "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
-      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001",
-      "isotope": "4",
-      "note": "laser spectroscopy at 1083 nm; 0.97 kHz above Kato 2018"
-     }
-    ]
-   }
-  },
-  {
-   "lower_cm": 169086.84033581,
-   "upper_cm": 169087.82825101,
-   "lower_J": "1",
-   "upper_J": "0",
-   "label": "1s2p 3P1 - 1s2p 3P0",
-   "use": "2 3P fine-structure interval J=1-0 (29.6 GHz)",
-   "type": "M1",
-   "frequency_THz": {
-    "value": 0.029616955018,
-    "unc": 6e-11,
-    "method": "experiment",
-    "source": "Heydarizadmotlagh, Skinner, Kato, George, Hessels, 'Precision measurement of the n=2 triplet P J=1-to-J=0 fine structure of atomic helium using frequency-offset separated oscillatory fields', arXiv:2310.17040 (2023)",
-    "url": "https://arxiv.org/abs/2310.17040",
-    "isotope": "4",
-    "value_Hz_str": "29 616 955 018(60)",
-    "alternatives": [
-     {
-      "value": 0.02961695342,
-      "unc": 2.3e-10,
-      "method": "experiment",
-      "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
-      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001",
-      "isotope": "4",
-      "note": "derived: difference of the two printed intervals 31 908 130.98(13) and 2 291 177.56(19) kHz"
-     }
-    ]
-   }
-  },
-  {
-   "lower_cm": 169086.76391031,
-   "upper_cm": 169087.82825101,
-   "lower_J": "2",
-   "upper_J": "0",
-   "label": "1s2p 3P2 - 1s2p 3P0",
-   "use": "2 3P fine-structure interval J=2-0 (31.9 GHz)",
-   "type": "fine-structure interval",
-   "frequency_THz": {
-    "value": 0.031908131608,
-    "unc": 6.5e-11,
-    "method": "experiment",
-    "source": "Heydarizadmotlagh, Skinner, Kato, George, Hessels, 'Precision measurement of the n=2 triplet P J=1-to-J=0 fine structure of atomic helium using frequency-offset separated oscillatory fields', arXiv:2310.17040 (2023)",
-    "url": "https://arxiv.org/abs/2310.17040",
-    "isotope": "4",
-    "value_Hz_str": "31 908 131 608(65)",
-    "note": "obtained by the authors by combining their J=1-0 and J=2-1 (Kato 2018) microwave measurements",
-    "alternatives": [
-     {
-      "value": 0.03190813098,
-      "unc": 1.3e-10,
-      "method": "experiment",
-      "source": "Zheng, Sun, Chen, Jiang, Pachucki, Hu, Phys. Rev. Lett. 118, 063001 (2017) (abstract)",
-      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.063001",
-      "isotope": "4"
-     },
-     {
-      "value": 0.03190813125,
-      "unc": 3e-10,
-      "method": "experiment",
-      "source": "Smiciklas & Shiner, Phys. Rev. Lett. 105, 123001 (2010) (abstract)",
-      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.123001",
-      "isotope": "4"
-     }
-    ]
-   }
-  },
-  {
    "lower_cm": 159855.971776,
    "upper_cm": 166277.437635,
    "lower_J": "1",
@@ -790,13 +766,24 @@
    "use": "706.7 nm line (2 3P-3 3S)",
    "type": "E1",
    "frequency_THz": {
-    "value": 424.202774,
+    "value": 424.204793,
     "unc": 5e-06,
     "method": "experiment",
     "source": "Thomas, Ross, Henson, Shin, Baldwin, Hodgman, Truscott, Phys. Rev. Lett. 125, 013002 (2020) [arXiv:2002.04811]",
     "url": "https://arxiv.org/abs/2002.04811",
     "isotope": "4",
-    "note": "derived by the authors from their 2 3S1-3 3S1 frequency and the accurately known 2 3S1-2 3P1 frequency"
+    "note": "derived: measured 2 3S1-3 3S1 frequency 700 939 271(5) MHz (Thomas 2020) minus the 2 3S1-2 3P1 frequency 276 734 477.7043(16) MHz (Zheng 2019); agrees with the NIST Ritz value.",
+    "alternatives": [
+     {
+      "value": 424.202774,
+      "unc": 5e-06,
+      "method": "experiment",
+      "source": "not verified - Thomas, Ross, Henson, Shin, Baldwin, Hodgman, Truscott, Phys. Rev. Lett. 125, 013002 (2020) [arXiv:2002.04811]",
+      "url": "https://arxiv.org/abs/2002.04811",
+      "isotope": "4",
+      "note": "printed in the paper as 'the 2 3P1 -> 3 3S1 transition frequency ... 424,202,774(5) MHz'. It is 2.02 GHz below the NIST Ritz value for 2 3P1-3 3S1 and instead equals 700 939 271 MHz minus the 2 3S-2 3P CENTROID (276 736 496 MHz), so it appears to refer to the 2 3P centroid, not to J=1."
+     }
+    ]
    }
   }
  ],
@@ -815,7 +802,8 @@
   "2 3P0-2 3P2 interval: Heydarizadmotlagh et al. 2023 31 908 131 608(65) Hz vs Zheng et al. 2017 31 908 130.98(13) kHz and Smiciklas & Shiner 2010 31 908 131.25(30) kHz; the 2023 paper notes 'large disagreements with previous measurements'.",
   "3He 2 3S1(F=3/2)-2 1S0(F=1/2): van der Werf et al. 2023 192 504 914 418.96(17) kHz vs van Rooij et al. 2011 192 504 914 426.4(1.5) kHz (7.4 kHz, about 5 sigma).",
   "2 3S1 ionization energy: experiment 1 152 842 742.7082(55)(25) MHz (Clausen 2025) vs alpha^7 m theory 1 152 842 742.231(52) MHz (Patkos et al.), 9 sigma.",
+  "2 3P1-3 3S1 (706.7 nm): Thomas et al. print 424 202 774(5) MHz for '2 3P1 -> 3 3S1', 2.02 GHz below the NIST Ritz value; the number matches 2 3S1-3 3S1 minus the 2 3S-2 3P centroid. The entry uses the value derived with the 2 3S1-2 3P1 frequency (424 204 793(5) MHz) and keeps the printed one as a not-verified alternative.",
   "2 3S1 lifetime: Hodgman's abstract and text give 7870(510) s; some indexing snippets show 7920(510) s, which is not what the article prints."
  ],
- "notes": "Frequencies are 4He unless a key ends in _3 or 'isotope' says 3. 4He has I = 0 (no hyperfine structure); 3He frequencies are single hyperfine components or centroids as stated in each note, never silently centre-of-gravity. Isotope-shift keys 'A-B' mean nu(A) - nu(B). The three 2 3P fine-structure intervals are stored as transitions between the 2 3P_J levels (frequency in THz; use value_Hz_str for full precision). NIST energies copied from data/he/levels.csv (NIST ASD); the 2 3P order is inverted (J=2 lowest). Entries marked '(abstract)' were read on the publisher's abstract page only. Ionization energies are given as E_I/h in MHz for the excited states and in cm^-1 for the ground-state limit."
+ "notes": "Frequencies are 4He unless a key ends in _3 or 'isotope' says 3. 4He has I = 0 (no hyperfine structure); 3He frequencies are single hyperfine components or centroids as stated in each note, never silently centre-of-gravity. Isotope-shift keys 'A-B' mean nu(A) - nu(B). The 2 3P fine-structure intervals are stored on the 2 3P1 and 2 3P0 levels (fine_structure_splitting_MHz; use value_Hz_str for full precision). NIST energies copied from data/he/levels.csv (NIST ASD); the 2 3P order is inverted (J=2 lowest). Entries marked '(abstract)' were read on the publisher's abstract page only. Ionization energies are given as E_I/h in MHz for the excited states and in cm^-1 for the ground-state limit."
 }
