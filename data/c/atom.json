@@ -16,7 +16,7 @@
   "freq_isotope": "12",
   "limit_text": "C$^+$ ionisation limit   90820.35 cm$^{-1}$  =  11.26029 eV  (110.107 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Isotope shifts are nu(13C) - nu(12C) (and nu(14C) - nu(12C)); MHz values are unit conversions of shifts printed in cm^-1 or mK (1 cm^-1 = 29979.2458 MHz) and carry a 'derived' note, with the printed number kept in value_cm / value_mK. 12C has I = 0 (no hyperfine structure); 13C has I = 1/2, so only magnetic-dipole A constants exist. The 609 um / 370 um ground-term lines are outside the site's range; their frequencies are kept only under additional_isotope_data because they fix the 13C level positions. g_J values refer to 12C. Non-schema fields: J, lower_J/upper_J, alternatives, value_cm, value_mK, wavelength_air_A, top-level ionization_energy, additional_isotope_data, conflicts."
+  "notes": "Isotope shifts are nu(13C) - nu(12C) (and nu(14C) - nu(12C)); MHz values are unit conversions of shifts printed in cm^-1 or mK (1 cm^-1 = 29979.2458 MHz) and carry a 'derived' note, with the printed number kept in value_cm / value_mK. 12C has I = 0 (no hyperfine structure); 13C has I = 1/2, so only magnetic-dipole A constants exist. The 609 um / 370 um ground-term lines are outside the site's range; their frequencies are kept only under additional_isotope_data because they fix the 13C level positions. g_J values refer to 12C. Non-schema fields: J, lower_J/upper_J, alternatives, value_cm, value_mK, wavelength_air_A, top-level ionization_energy, additional_isotope_data, conflicts. Second pass (2026-10-01): A_s values from Goldbach & Nollez (1987) and Goldbach et al. (1989) were read from the scanned pages on NASA ADS (image checked by eye, not only the character recognition); they are wall-stabilised-arc emission measurements whose absolute scale rests on the mean measured lifetime of the 2s2p3 3D° term, blended lines were left out. Lifetimes of 3s 3P° and 2s2p3 3D° are term values copied to each J level. The ground-term M1 lines 3P0-3P1 and 3P1-3P2 now have schema entries (frequency_THz for 12C, frequency_THz_13 for the 13C hyperfine centre of gravity); the older additional_isotope_data block is kept unchanged. The two-photon entry carries the laser wavelength in wavelength_vac_nm. Owner's rule (2026-10-01): measurements older than 20 years do not replace NIST; the 1987/1989 arc-emission A values of Goldbach et al. are kept under \"A_s_older_measurement\" where NIST lists an A for the same line."
  },
  "columns": [
   {
@@ -38,6 +38,18 @@
    "width": 1.0
   },
   {
+   "key": "3F*",
+   "header": "^3F^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "3D",
+   "header": "^3D",
+   "group": null,
+   "width": 1.0
+  },
+  {
    "key": "1S",
    "header": "^1S",
    "group": null,
@@ -50,12 +62,6 @@
    "width": 1.0
   },
   {
-   "key": "1F*",
-   "header": "^1F^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
    "key": "1D",
    "header": "^1D",
    "group": null,
@@ -64,6 +70,12 @@
   {
    "key": "other odd",
    "header": "\\mathrm{other\\ (odd)}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1F*",
+   "header": "^1F^{o}",
    "group": null,
    "width": 1.0
   },
@@ -149,7 +161,7 @@
    "plain": "2s22p2 1D2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
    "id": 4,
@@ -164,7 +176,7 @@
    "plain": "2s22p2 1S0",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 5
   },
   {
    "id": 5,
@@ -177,8 +189,10 @@
    "g": null,
    "name": "2s^{2}2p3s\\ ^3P^{o}_{0}",
    "plain": "2s22p3s 3P°0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 2.9,
+   "tau_unc": 0.1,
+   "tau_tier": "exp",
+   "tau_src": "weighted mean of Lawrence and Savage (1966, phase shift), Bromander (1971, beam-foil), Mallow and Burns (1972, pulse decay); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987). Note: term lifetime of 2s22p3s 3P° (fine-structure levels not resolved): weighted mean of three measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
    "col": 1
   },
   {
@@ -192,8 +206,10 @@
    "g": null,
    "name": "2s^{2}2p3s\\ ^3P^{o}_{1}",
    "plain": "2s22p3s 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 2.9,
+   "tau_unc": 0.1,
+   "tau_tier": "exp",
+   "tau_src": "weighted mean of Lawrence and Savage (1966, phase shift), Bromander (1971, beam-foil), Mallow and Burns (1972, pulse decay); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987). Note: term lifetime of 2s22p3s 3P° (fine-structure levels not resolved): weighted mean of three measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
    "col": 1
   },
   {
@@ -207,8 +223,10 @@
    "g": null,
    "name": "2s^{2}2p3s\\ ^3P^{o}_{2}",
    "plain": "2s22p3s 3P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 2.9,
+   "tau_unc": 0.1,
+   "tau_tier": "exp",
+   "tau_src": "weighted mean of Lawrence and Savage (1966, phase shift), Bromander (1971, beam-foil), Mallow and Burns (1972, pulse decay); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987). Note: term lifetime of 2s22p3s 3P° (fine-structure levels not resolved): weighted mean of three measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
    "col": 1
   },
   {
@@ -226,7 +244,7 @@
    "tau_unc": 0.2,
    "tau_tier": "exp",
    "tau_src": "T. R. O'Brian and J. E. Lawler, J. Quant. Spectrosc. Radiat. Transf. 57, 309 (1997) (laser-induced fluorescence); Table 1 of W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 36, 1287 (2007)",
-   "col": 4
+   "col": 6
   },
   {
    "id": 9,
@@ -239,8 +257,10 @@
    "g": null,
    "name": "2s2p^{3}\\ ^3D^{o}_{3}",
    "plain": "2s2p3 3D°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 7.4,
+   "tau_unc": 0.1,
+   "tau_tier": "exp",
+   "tau_src": "weighted mean of Lawrence and Savage (1966, phase shift), Pegg et al. (1970, beam-foil), Bromander (1971, beam-foil), Poulizac and Druetta (1971, beam-foil), Brooks et al. (1977, phase shift); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987). Note: term lifetime of 2s2p3 3D° (fine-structure levels not resolved): weighted mean of five measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
    "col": 2
   },
   {
@@ -254,8 +274,10 @@
    "g": null,
    "name": "2s2p^{3}\\ ^3D^{o}_{1}",
    "plain": "2s2p3 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 7.4,
+   "tau_unc": 0.1,
+   "tau_tier": "exp",
+   "tau_src": "weighted mean of Lawrence and Savage (1966, phase shift), Pegg et al. (1970, beam-foil), Bromander (1971, beam-foil), Poulizac and Druetta (1971, beam-foil), Brooks et al. (1977, phase shift); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987). Note: term lifetime of 2s2p3 3D° (fine-structure levels not resolved): weighted mean of five measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
    "col": 2
   },
   {
@@ -269,12 +291,29 @@
    "g": null,
    "name": "2s2p^{3}\\ ^3D^{o}_{2}",
    "plain": "2s2p3 3D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 7.4,
+   "tau_unc": 0.1,
+   "tau_tier": "exp",
+   "tau_src": "weighted mean of Lawrence and Savage (1966, phase shift), Pegg et al. (1970, beam-foil), Bromander (1971, beam-foil), Poulizac and Druetta (1971, beam-foil), Brooks et al. (1977, phase shift); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987). Note: term lifetime of 2s2p3 3D° (fine-structure levels not resolved): weighted mean of five measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
    "col": 2
   },
   {
    "id": 12,
+   "E": 69744.05213,
+   "unc": 0.00014,
+   "J": 3.0,
+   "conf": "2s2.2p.3p",
+   "term": "3D",
+   "parity": "even",
+   "g": null,
+   "name": "2s^{2}2p3p\\ ^3D_{3}",
+   "plain": "2s22p3p 3D3",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
+  },
+  {
+   "id": 13,
    "E": 75254.0017,
    "unc": 0.0003,
    "J": 1.0,
@@ -289,7 +328,7 @@
    "col": 1
   },
   {
-   "id": 13,
+   "id": 14,
    "E": 75255.29373,
    "unc": 0.00013,
    "J": 2.0,
@@ -304,7 +343,7 @@
    "col": 1
   },
   {
-   "id": 14,
+   "id": 15,
    "E": 75256.1696,
    "unc": 0.0003,
    "J": 0.0,
@@ -319,7 +358,7 @@
    "col": 1
   },
   {
-   "id": 15,
+   "id": 16,
    "E": 77679.83311,
    "unc": 0.00019,
    "J": 2.0,
@@ -331,10 +370,25 @@
    "plain": "2s22p3d 1D°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 10
   },
   {
-   "id": 16,
+   "id": 17,
+   "E": 78105.00058,
+   "unc": 0.0003,
+   "J": 0.0,
+   "conf": "2s2.2p.4s",
+   "term": "3P*",
+   "parity": "odd",
+   "g": null,
+   "name": "2s^{2}2p4s\\ ^3P^{o}_{0}",
+   "plain": "2s22p4s 3P°0",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 18,
    "E": 78116.77336,
    "unc": 0.00014,
    "J": 1.0,
@@ -349,7 +403,7 @@
    "col": 1
   },
   {
-   "id": 17,
+   "id": 19,
    "E": 78148.10824,
    "unc": 0.00012,
    "J": 2.0,
@@ -364,7 +418,37 @@
    "col": 1
   },
   {
-   "id": 18,
+   "id": 20,
+   "E": 78199.09144,
+   "unc": 0.00021,
+   "J": 2.0,
+   "conf": "2s2.2p.3d",
+   "term": "3F*",
+   "parity": "odd",
+   "g": null,
+   "name": "2s^{2}2p3d\\ ^3F^{o}_{2}",
+   "plain": "2s22p3d 3F°2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 21,
+   "E": 78215.54012,
+   "unc": 0.00017,
+   "J": 3.0,
+   "conf": "2s2.2p.3d",
+   "term": "3F*",
+   "parity": "odd",
+   "g": null,
+   "name": "2s^{2}2p3d\\ ^3F^{o}_{3}",
+   "plain": "2s22p3d 3F°3",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 22,
    "E": 78293.51263,
    "unc": 0.00024,
    "J": 1.0,
@@ -379,7 +463,7 @@
    "col": 2
   },
   {
-   "id": 19,
+   "id": 23,
    "E": 78307.64625,
    "unc": 0.00017,
    "J": 2.0,
@@ -394,7 +478,7 @@
    "col": 2
   },
   {
-   "id": 20,
+   "id": 24,
    "E": 78318.26602,
    "unc": 9e-05,
    "J": 3.0,
@@ -409,7 +493,7 @@
    "col": 2
   },
   {
-   "id": 21,
+   "id": 25,
    "E": 78340.29782,
    "unc": 0.00023,
    "J": 1.0,
@@ -421,10 +505,10 @@
    "plain": "2s22p4s 1P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 6
   },
   {
-   "id": 22,
+   "id": 26,
    "E": 78529.64651,
    "unc": 0.00022,
    "J": 3.0,
@@ -436,10 +520,10 @@
    "plain": "2s22p3d 1F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 9
   },
   {
-   "id": 23,
+   "id": 27,
    "E": 78731.2956,
    "unc": 0.0004,
    "J": 1.0,
@@ -451,10 +535,10 @@
    "plain": "2s22p3d 1P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 6
   },
   {
-   "id": 24,
+   "id": 28,
    "E": 79310.86822,
    "unc": 9e-05,
    "J": 2.0,
@@ -469,7 +553,7 @@
    "col": 1
   },
   {
-   "id": 25,
+   "id": 29,
    "E": 79318.8093,
    "unc": 0.0003,
    "J": 1.0,
@@ -484,7 +568,7 @@
    "col": 1
   },
   {
-   "id": 26,
+   "id": 30,
    "E": 79323.1883,
    "unc": 0.0005,
    "J": 0.0,
@@ -499,7 +583,7 @@
    "col": 1
   },
   {
-   "id": 27,
+   "id": 31,
    "E": 83791.088,
    "unc": 0.0005,
    "J": 2.0,
@@ -514,7 +598,7 @@
    "col": 1
   },
   {
-   "id": 28,
+   "id": 32,
    "E": 83820.1576,
    "unc": 0.0008,
    "J": 1.0,
@@ -529,7 +613,7 @@
    "col": 2
   },
   {
-   "id": 29,
+   "id": 33,
    "E": 83838.0728,
    "unc": 0.0004,
    "J": 2.0,
@@ -544,7 +628,7 @@
    "col": 2
   },
   {
-   "id": 30,
+   "id": 34,
    "E": 83848.87,
    "unc": 0.0003,
    "J": 3.0,
@@ -559,7 +643,7 @@
    "col": 2
   },
   {
-   "id": 31,
+   "id": 35,
    "E": 83947.2231,
    "unc": 0.0004,
    "J": 3.0,
@@ -571,10 +655,10 @@
    "plain": "2s22p4d 1F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 9
   },
   {
-   "id": 32,
+   "id": 36,
    "E": 84032.1471,
    "unc": 0.0007,
    "J": 1.0,
@@ -586,10 +670,10 @@
    "plain": "2s22p4d 1P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 6
   },
   {
-   "id": 33,
+   "id": 37,
    "E": 84103.1238,
    "unc": 0.0004,
    "J": 2.0,
@@ -604,7 +688,7 @@
    "col": 1
   },
   {
-   "id": 34,
+   "id": 38,
    "E": 86362.54,
    "unc": 0.03,
    "J": 1.0,
@@ -619,7 +703,7 @@
    "col": 2
   },
   {
-   "id": 35,
+   "id": 39,
    "E": 86369.622,
    "unc": 0.021,
    "J": 2.0,
@@ -634,7 +718,7 @@
    "col": 1
   },
   {
-   "id": 36,
+   "id": 40,
    "E": 86389.425,
    "unc": 0.022,
    "J": 2.0,
@@ -649,7 +733,7 @@
    "col": 2
   },
   {
-   "id": 37,
+   "id": 41,
    "E": 86397.83,
    "unc": 0.04,
    "J": 3.0,
@@ -664,7 +748,7 @@
    "col": 2
   },
   {
-   "id": 38,
+   "id": 42,
    "E": 86449.208,
    "unc": 0.022,
    "J": 3.0,
@@ -676,10 +760,10 @@
    "plain": "2s22p5d 1F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 9
   },
   {
-   "id": 39,
+   "id": 43,
    "E": 86491.441,
    "unc": 0.015,
    "J": 1.0,
@@ -691,10 +775,10 @@
    "plain": "2s22p5d 1P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 6
   },
   {
-   "id": 40,
+   "id": 44,
    "E": 86506.7138,
    "unc": 0.002,
    "J": 2.0,
@@ -709,7 +793,7 @@
    "col": 1
   },
   {
-   "id": 41,
+   "id": 45,
    "E": 87753.763,
    "unc": 0.023,
    "J": 2.0,
@@ -724,7 +808,7 @@
    "col": 1
   },
   {
-   "id": 42,
+   "id": 46,
    "E": 87773.113,
    "unc": 0.023,
    "J": 2.0,
@@ -739,7 +823,7 @@
    "col": 2
   },
   {
-   "id": 43,
+   "id": 47,
    "E": 87777.18,
    "unc": 0.03,
    "J": 3.0,
@@ -754,7 +838,7 @@
    "col": 2
   },
   {
-   "id": 44,
+   "id": 48,
    "E": 87806.95,
    "unc": 0.03,
    "J": 3.0,
@@ -766,10 +850,10 @@
    "plain": "2s22p6d 1F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 9
   },
   {
-   "id": 45,
+   "id": 49,
    "E": 88606.32,
    "unc": 0.18,
    "J": 3.0,
@@ -781,10 +865,10 @@
    "plain": "2s22p7d 2[5/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 46,
+   "id": 50,
    "E": 88625.02,
    "unc": 0.04,
    "J": 3.0,
@@ -796,10 +880,10 @@
    "plain": "2s22p7d 2[7/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 47,
+   "id": 51,
    "E": 89155.71,
    "unc": 0.04,
    "J": 3.0,
@@ -811,10 +895,10 @@
    "plain": "2s22p8d 2[7/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 48,
+   "id": 52,
    "E": 89519.15,
    "unc": 0.04,
    "J": 3.0,
@@ -826,10 +910,10 @@
    "plain": "2s22p9d 2[7/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 49,
+   "id": 53,
    "E": 89779.1,
    "unc": 0.4,
    "J": 3.0,
@@ -841,10 +925,10 @@
    "plain": "2s22p10d 2[7/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 50,
+   "id": 54,
    "E": 90117.5,
    "unc": 0.3,
    "J": 3.0,
@@ -856,10 +940,10 @@
    "plain": "2s22p12d 2[7/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 51,
+   "id": 55,
    "E": 90165.6,
    "unc": 0.3,
    "J": 3.0,
@@ -871,10 +955,10 @@
    "plain": "2s22p13d 2[5/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 52,
+   "id": 56,
    "E": 90230.83,
    "unc": 0.19,
    "J": 3.0,
@@ -886,10 +970,10 @@
    "plain": "2s22p13d 2[7/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 53,
+   "id": 57,
    "E": 90256.58,
    "unc": 0.19,
    "J": 3.0,
@@ -901,10 +985,10 @@
    "plain": "2s22p14d 2[5/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 54,
+   "id": 58,
    "E": 90329.68,
    "unc": 0.2,
    "J": 3.0,
@@ -916,7 +1000,7 @@
    "plain": "2s22p15d 2[5/2]°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   }
  ],
  "transitions": [
@@ -926,7 +1010,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 45,
+   "upper": 49,
    "wn": 88562.9065,
    "lam": 112.9141,
    "air": null,
@@ -945,7 +1029,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 42,
+   "upper": 46,
    "wn": 87756.6963,
    "lam": 113.9514,
    "air": null,
@@ -964,7 +1048,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 43,
+   "upper": 47,
    "wn": 87733.7665,
    "lam": 113.9812,
    "air": null,
@@ -983,7 +1067,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 41,
+   "upper": 45,
    "wn": 87710.3495,
    "lam": 114.0116,
    "air": null,
@@ -1002,7 +1086,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 40,
+   "upper": 44,
    "wn": 86463.3003,
    "lam": 115.656,
    "air": null,
@@ -1021,7 +1105,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 36,
+   "upper": 40,
    "wn": 86373.0083,
    "lam": 115.7769,
    "air": null,
@@ -1040,7 +1124,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 34,
+   "upper": 38,
    "wn": 86362.54,
    "lam": 115.7909,
    "air": null,
@@ -1059,7 +1143,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 37,
+   "upper": 41,
    "wn": 86354.4165,
    "lam": 115.8018,
    "air": null,
@@ -1078,7 +1162,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 35,
+   "upper": 39,
    "wn": 86353.2053,
    "lam": 115.8035,
    "air": null,
@@ -1097,7 +1181,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 36,
+   "upper": 40,
    "wn": 86346.0115,
    "lam": 115.8131,
    "air": null,
@@ -1116,7 +1200,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 33,
+   "upper": 37,
    "wn": 84059.7103,
    "lam": 118.9631,
    "air": null,
@@ -1135,7 +1219,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 29,
+   "upper": 33,
    "wn": 83821.6561,
    "lam": 119.3009,
    "air": null,
@@ -1154,7 +1238,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 28,
+   "upper": 32,
    "wn": 83820.1576,
    "lam": 119.303,
    "air": null,
@@ -1173,7 +1257,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 30,
+   "upper": 34,
    "wn": 83805.4565,
    "lam": 119.324,
    "air": null,
@@ -1192,7 +1276,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 28,
+   "upper": 32,
    "wn": 83803.7409,
    "lam": 119.3264,
    "air": null,
@@ -1211,7 +1295,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 29,
+   "upper": 33,
    "wn": 83794.6593,
    "lam": 119.3393,
    "air": null,
@@ -1230,7 +1314,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 27,
+   "upper": 31,
    "wn": 83774.6713,
    "lam": 119.3678,
    "air": null,
@@ -1249,7 +1333,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 27,
+   "upper": 31,
    "wn": 83747.6745,
    "lam": 119.4063,
    "air": null,
@@ -1268,7 +1352,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 54,
+   "upper": 58,
    "wn": 80137.023,
    "lam": 124.7863,
    "air": null,
@@ -1287,7 +1371,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 53,
+   "upper": 57,
    "wn": 80063.923,
    "lam": 124.9002,
    "air": null,
@@ -1306,7 +1390,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 52,
+   "upper": 56,
    "wn": 80038.173,
    "lam": 124.9404,
    "air": null,
@@ -1325,7 +1409,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 51,
+   "upper": 55,
    "wn": 79972.943,
    "lam": 125.0423,
    "air": null,
@@ -1344,7 +1428,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 50,
+   "upper": 54,
    "wn": 79924.843,
    "lam": 125.1175,
    "air": null,
@@ -1363,7 +1447,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 49,
+   "upper": 53,
    "wn": 79586.443,
    "lam": 125.6495,
    "air": null,
@@ -1382,7 +1466,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 48,
+   "upper": 52,
    "wn": 79326.493,
    "lam": 126.0613,
    "air": null,
@@ -1401,7 +1485,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 25,
+   "upper": 29,
    "wn": 79318.8093,
    "lam": 126.0735,
    "air": null,
@@ -1420,7 +1504,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 26,
+   "upper": 30,
    "wn": 79306.7716,
    "lam": 126.0926,
    "air": null,
@@ -1439,7 +1523,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 25,
+   "upper": 29,
    "wn": 79302.3926,
    "lam": 126.0996,
    "air": null,
@@ -1458,7 +1542,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 24,
+   "upper": 28,
    "wn": 79294.4515,
    "lam": 126.1122,
    "air": null,
@@ -1477,7 +1561,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 25,
+   "upper": 29,
    "wn": 79275.3958,
    "lam": 126.1425,
    "air": null,
@@ -1496,7 +1580,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 24,
+   "upper": 28,
    "wn": 79267.4548,
    "lam": 126.1552,
    "air": null,
@@ -1515,7 +1599,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 47,
+   "upper": 51,
    "wn": 78963.053,
    "lam": 126.6415,
    "air": null,
@@ -1534,7 +1618,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 46,
+   "upper": 50,
    "wn": 78432.363,
    "lam": 127.4984,
    "air": null,
@@ -1553,7 +1637,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 18,
+   "upper": 22,
    "wn": 78293.5126,
    "lam": 127.7245,
    "air": null,
@@ -1572,7 +1656,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 19,
+   "upper": 23,
    "wn": 78291.2295,
    "lam": 127.7282,
    "air": null,
@@ -1591,7 +1675,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 18,
+   "upper": 22,
    "wn": 78277.0959,
    "lam": 127.7513,
    "air": null,
@@ -1610,7 +1694,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 20,
+   "upper": 24,
    "wn": 78274.8526,
    "lam": 127.755,
    "air": null,
@@ -1629,7 +1713,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 19,
+   "upper": 23,
    "wn": 78264.2328,
    "lam": 127.7723,
    "air": null,
@@ -1644,11 +1728,59 @@
   },
   {
    "kind": "E1",
+   "freq": 2345.87896,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 22,
+   "wn": 78250.0992,
+   "lam": 127.7954,
+   "air": null,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 2343.85762,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 20,
+   "wn": 78182.6747,
+   "lam": 127.9056,
+   "air": null,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 2343.5414,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 21,
+   "wn": 78172.1267,
+   "lam": 127.9228,
+   "air": null,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 2343.04828,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 20,
+   "wn": 78155.678,
+   "lam": 127.9498,
+   "air": null,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 2342.32919,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 17,
+   "upper": 19,
    "wn": 78131.6915,
    "lam": 127.989,
    "air": null,
@@ -1667,7 +1799,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 16,
+   "upper": 18,
    "wn": 78116.7734,
    "lam": 128.0135,
    "air": null,
@@ -1686,7 +1818,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 17,
+   "upper": 19,
    "wn": 78104.6948,
    "lam": 128.0333,
    "air": null,
@@ -1701,11 +1833,23 @@
   },
   {
    "kind": "E1",
+   "freq": 2341.03685,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 17,
+   "wn": 78088.5839,
+   "lam": 128.0597,
+   "air": null,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 2340.58045,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 16,
+   "upper": 18,
    "wn": 78073.3599,
    "lam": 128.0847,
    "air": null,
@@ -1724,7 +1868,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 44,
+   "upper": 48,
    "wn": 77614.293,
    "lam": 128.8422,
    "air": null,
@@ -1743,7 +1887,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 39,
+   "upper": 43,
    "wn": 76298.784,
    "lam": 131.0637,
    "air": null,
@@ -1762,7 +1906,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 38,
+   "upper": 42,
    "wn": 76256.551,
    "lam": 131.1363,
    "air": null,
@@ -1781,7 +1925,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 12,
+   "upper": 13,
    "wn": 75254.0017,
    "lam": 132.8833,
    "air": null,
@@ -1800,7 +1944,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 14,
+   "upper": 15,
    "wn": 75239.7529,
    "lam": 132.9085,
    "air": null,
@@ -1819,7 +1963,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 13,
+   "upper": 14,
    "wn": 75238.877,
    "lam": 132.91,
    "air": null,
@@ -1838,7 +1982,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 12,
+   "upper": 13,
    "wn": 75237.585,
    "lam": 132.9123,
    "air": null,
@@ -1857,7 +2001,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 13,
+   "upper": 14,
    "wn": 75211.8803,
    "lam": 132.9577,
    "air": null,
@@ -1876,7 +2020,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 12,
+   "upper": 13,
    "wn": 75210.5882,
    "lam": 132.96,
    "air": null,
@@ -1895,7 +2039,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 31,
+   "upper": 35,
    "wn": 73754.5661,
    "lam": 135.5848,
    "air": null,
@@ -1909,12 +2053,25 @@
    "lam_obs": 135.5843
   },
   {
+   "kind": "forbidden",
+   "freq": 2089.57258,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 12,
+   "wn": 69700.6387,
+   "lam": 143.4707,
+   "air": null,
+   "use": "two-photon excitation of ground-state carbon atoms at 2 x 286.9 nm (3P - 3D), detected by the cascade 3p 3D - 3s 3P° (1069 nm) and the 165.7 nm vacuum-ultraviolet fluorescence 3s 3P° - 2p2 3P; used for buffer-gas cooling diagnostics and proposed for two-photon laser cooling of carbon (Sakamoto, Suzuki, Yoshioka, arXiv:2407.09108 (2024); Sakamoto and Yoshioka, Phys. Rev. A 106, 052808 (2022))",
+   "type": "two-photon"
+  },
+  {
    "kind": "E1",
    "freq": 2054.73669,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 23,
+   "upper": 27,
    "wn": 68538.6386,
    "lam": 145.9031,
    "air": null,
@@ -1933,7 +2090,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 22,
+   "upper": 26,
    "wn": 68336.9895,
    "lam": 146.3336,
    "air": null,
@@ -1952,7 +2109,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 21,
+   "upper": 25,
    "wn": 68147.6408,
    "lam": 146.7402,
    "air": null,
@@ -1967,11 +2124,47 @@
   },
   {
    "kind": "E1",
+   "freq": 2042.35438,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 24,
+   "wn": 68125.609,
+   "lam": 146.7877,
+   "air": null,
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 2041.61229,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 22,
+   "wn": 68100.8556,
+   "lam": 146.841,
+   "air": null,
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 2039.27473,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 21,
+   "wn": 68022.8831,
+   "lam": 147.0094,
+   "air": null,
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
    "freq": 2023.21464,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 15,
+   "upper": 16,
    "wn": 67487.1761,
    "lam": 148.1763,
    "air": null,
@@ -1994,6 +2187,7 @@
    "wn": 64089.899,
    "lam": 156.0308,
    "air": null,
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 65400000.0,
    "A_tier": "nist",
@@ -2001,6 +2195,8 @@
    "d": 0.6065,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.484,
+   "br_tier": "nist",
    "lam_obs": 156.030827
   },
   {
@@ -2013,6 +2209,7 @@
    "wn": 64074.5768,
    "lam": 156.0681,
    "air": null,
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 88000000.0,
    "A_tier": "nist",
@@ -2020,6 +2217,8 @@
    "d": 0.9086,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.6512,
+   "br_tier": "nist",
    "lam_obs": 156.068148
   },
   {
@@ -2032,6 +2231,7 @@
    "wn": 64073.4823,
    "lam": 156.0708,
    "air": null,
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 48900000.0,
    "A_tier": "nist",
@@ -2039,6 +2239,8 @@
    "d": 0.5246,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.3619,
+   "br_tier": "nist",
    "lam_obs": 156.070782
   },
   {
@@ -2051,6 +2253,7 @@
    "wn": 64047.5801,
    "lam": 156.1339,
    "air": null,
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 29300000.0,
    "A_tier": "nist",
@@ -2058,6 +2261,8 @@
    "d": 0.5246,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.2168,
+   "br_tier": "nist",
    "lam_obs": 156.133893
   },
   {
@@ -2070,6 +2275,7 @@
    "wn": 64043.5562,
    "lam": 156.1437,
    "air": null,
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 117000000.0,
    "A_tier": "nist",
@@ -2077,6 +2283,8 @@
    "d": 1.24,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.8658,
+   "br_tier": "nist",
    "lam_obs": 156.143727
   },
   {
@@ -2085,7 +2293,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 32,
+   "upper": 36,
    "wn": 62384.1171,
    "lam": 160.2972,
    "air": null,
@@ -2117,6 +2325,7 @@
      "url": "https://www.mdpi.com/2218-2004/8/3/62"
     }
    },
+   "gamma_MHz": 54.88,
    "type": "E1",
    "A": 87000000.0,
    "A_tier": "nist",
@@ -2124,6 +2333,8 @@
    "d": 0.9877,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.2523,
+   "br_tier": "nist",
    "lam_obs": 165.626674
   },
   {
@@ -2145,6 +2356,7 @@
      "url": "https://www.mdpi.com/2218-2004/8/3/62"
     }
    },
+   "gamma_MHz": 54.88,
    "type": "E1",
    "A": 116000000.0,
    "A_tier": "nist",
@@ -2152,6 +2364,8 @@
    "d": 0.8839,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.3364,
+   "br_tier": "nist",
    "lam_obs": 165.692821
   },
   {
@@ -2173,6 +2387,7 @@
      "url": "https://www.mdpi.com/2218-2004/8/3/62"
     }
    },
+   "gamma_MHz": 54.88,
    "type": "E1",
    "A": 261000000.0,
    "A_tier": "nist",
@@ -2180,6 +2395,8 @@
    "d": 1.712,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.7569,
+   "br_tier": "nist",
    "lam_obs": 165.700751
   },
   {
@@ -2201,6 +2418,7 @@
      "url": "https://www.mdpi.com/2218-2004/8/3/62"
     }
    },
+   "gamma_MHz": 54.88,
    "type": "E1",
    "A": 87000000.0,
    "A_tier": "nist",
@@ -2208,6 +2426,8 @@
    "d": 0.7658,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.2523,
+   "br_tier": "nist",
    "lam_obs": 165.737863
   },
   {
@@ -2229,6 +2449,7 @@
      "url": "https://www.mdpi.com/2218-2004/8/3/62"
     }
    },
+   "gamma_MHz": 54.88,
    "type": "E1",
    "A": 347000000.0,
    "A_tier": "nist",
@@ -2236,6 +2457,8 @@
    "d": 0.8834,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 165.790661
   },
   {
@@ -2257,6 +2480,7 @@
      "url": "https://www.mdpi.com/2218-2004/8/3/62"
     }
    },
+   "gamma_MHz": 54.88,
    "type": "E1",
    "A": 144000000.0,
    "A_tier": "nist",
@@ -2264,6 +2488,8 @@
    "d": 0.9859,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.4176,
+   "br_tier": "nist",
    "lam_obs": 165.812045
   },
   {
@@ -2272,7 +2498,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 23,
+   "upper": 27,
    "wn": 57083.2656,
    "lam": 175.1827,
    "air": null,
@@ -2295,6 +2521,7 @@
    "wn": 51789.1751,
    "lam": 193.0905,
    "air": null,
+   "use": "193.09 nm line: carbon line used in white-dwarf and comet spectra (Goldbach et al. 1989); main decay channel of 2p3s 1P°1",
    "gamma_MHz": 58.95,
    "type": "E1",
    "A": 339000000.0,
@@ -2354,14 +2581,25 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
+     "$2s^{2}2p^{2}\\ ^3P_{2}$ – $2s^{2}2p3p\\ ^3D_{3}$",
+     "143.4707",
+     "–",
+     "2089.5726",
+     "–",
+     "–",
+     "–",
+     "–",
+     "two-photon excitation of ground-state carbon atoms at 2 x…"
+    ],
+    [
      "$2s^{2}2p^{2}\\ ^3P_{1}$ – $2s^{2}2p3s\\ ^3P^{o}_{2}$",
      "165.6267",
      "–",
      "1810.0495",
      "0.988",
      "8.700e+07",
-     "–",
-     "–",
+     "54.88",
+     "25.2",
      "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured f…"
     ],
     [
@@ -2371,8 +2609,8 @@
      "1809.3272",
      "0.884",
      "1.160e+08",
-     "–",
-     "–",
+     "54.88",
+     "33.6",
      "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured f…"
     ],
     [
@@ -2382,8 +2620,8 @@
      "1809.2402",
      "1.712",
      "2.610e+08",
-     "–",
-     "–",
+     "54.88",
+     "75.7",
      "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured f…"
     ],
     [
@@ -2393,8 +2631,8 @@
      "1808.8350",
      "0.766",
      "8.700e+07",
-     "–",
-     "–",
+     "54.88",
+     "25.2",
      "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured f…"
     ],
     [
@@ -2404,8 +2642,8 @@
      "1808.2591",
      "0.883",
      "3.470e+08",
-     "–",
-     "–",
+     "54.88",
+     "100",
      "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured f…"
     ],
     [
@@ -2415,9 +2653,20 @@
      "1808.0257",
      "0.986",
      "1.440e+08",
-     "–",
-     "–",
+     "54.88",
+     "41.8",
      "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured f…"
+    ],
+    [
+     "$2s^{2}2p^{2}\\ ^1D_{2}$ – $2s^{2}2p3s\\ ^1P^{o}_{1}$",
+     "193.0905",
+     "–",
+     "1552.6004",
+     "1.901",
+     "3.390e+08",
+     "58.95",
+     "91.5",
+     "193.09 nm line: carbon line used in white-dwarf and comet…"
     ],
     [
      "$2s^{2}2p^{2}\\ ^1S_{0}$ – $2s^{2}2p3s\\ ^1P^{o}_{1}$",
@@ -2521,9 +2770,9 @@
   }
  ],
  "validation": [
-  "levels: 55   lines < 2000 nm: 71   with matrix element: 70",
-  "transition-rate provenance: nist: 70, wavelength only: 1",
-  "levels with a measured lifetime: 1"
+  "levels: 59   lines < 2000 nm: 80   with matrix element: 70",
+  "transition-rate provenance: nist: 70, wavelength only: 10",
+  "levels with a measured lifetime: 7"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (C); nuclear spin: Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 (which quotes 98.94 % / 1.06 % from Meija et al. 2016)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=C",
@@ -2532,10 +2781,20 @@
   "Wolber, Figger, Haberstroh, Penselin, Z. Phys. 236, 337 (1970); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4; also Table VII of Carette and Godefroid, Phys. Rev. A 83, 062505 (2011), arXiv:1101.5318": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
   "Wolber, Figger, Haberstroh, Penselin, Z. Phys. 236, 337 (1970); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4; also Table VII of Carette and Godefroid, arXiv:1101.5318": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
   "T. R. O'Brian and J. E. Lawler, J. Quant. Spectrosc. Radiat. Transf. 57, 309 (1997) (laser-induced fluorescence); Table 1 of W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 36, 1287 (2007)": "https://www.nist.gov/system/files/documents/srd/jpcrd3620071287p.pdf",
+  "weighted mean of Lawrence and Savage (1966, phase shift), Pegg et al. (1970, beam-foil), Bromander (1971, beam-foil), Poulizac and Druetta (1971, beam-foil), Brooks et al. (1977, phase shift); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987)": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+  "weighted mean of Lawrence and Savage (1966, phase shift), Bromander (1971, beam-foil), Mallow and Burns (1972, pulse decay); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987)": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
   "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)": "https://www.mdpi.com/2218-2004/8/3/62",
+  "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
   "J. R. Holmes, J. Opt. Soc. Am. 41, 360 (1951) (agrees with C. R. Burnett, Phys. Rev. 80, 494 (1950)); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 and Table 6": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
   "J. R. Holmes, J. Opt. Soc. Am. 41, 360 (1951); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
   "K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
+  "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+  "Yamamoto and Saito, Astrophys. J. 370, L103 (1991) (submillimetre-wave absorption spectroscopy)": "https://articles.adsabs.harvard.edu/pdf/1991ApJ...370L.103Y",
+  "Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Tables 3 and 8 (arXiv:1704.07474), from the measurements of Yamamoto and Saito, Astrophys. J. 370, L103 (1991)": "https://arxiv.org/pdf/1704.07474",
+  "Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Table 6 (arXiv:1704.07474)": "https://arxiv.org/pdf/1704.07474",
+  "Klein, Lewen, Schieder, Stutzki, Winnewisser, Astrophys. J. 494, L125 (1998), as quoted in Table 3 of Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017) (arXiv:1704.07474)": "https://arxiv.org/pdf/1704.07474",
+  "Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Tables 3 and 8 (arXiv:1704.07474)": "https://arxiv.org/pdf/1704.07474",
+  "Sakamoto, Suzuki, Yoshioka, Buffer gas cooling of carbon atoms, arXiv:2407.09108 (2024)": "https://arxiv.org/pdf/2407.09108",
   "Labazan, Reinhold, Ubachs, Flambaum, Phys. Rev. A 71 (2005) (VUV laser spectroscopy); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 and Table 6": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
   "Bernheim and Kittrell, Spectrochim. Acta 35, 51 (1980); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
   "Yamamoto and Saito, Astrophys. J. Lett. 370, L103 (1991); Klein et al. (1998); Table 6 of Haris and Kramida 2017": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"

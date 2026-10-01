@@ -49,7 +49,18 @@
   "unit": "cm^-1",
   "method": "compilation",
   "source": "NIST Atomic Spectra Database, levels of Ar I: limit Ar II (3p5 2P3/2) (cached data/nist/Ar_I_levels.tsv)",
-  "url": "https://physics.nist.gov/asd"
+  "url": "https://physics.nist.gov/asd",
+  "alternatives": [
+   {
+    "value": 127109.842,
+    "unc": 0.004,
+    "method": "experiment",
+    "source": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999)",
+    "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf",
+    "note": "derived by the authors from their 105 nm calibration, the 2p9-1s2 interval (Minnhagen, Norlen) and the Rydberg limit of Boemmels et al.; I(2P1/2) = 128541.425(4) cm^-1",
+    "unit": "cm^-1"
+   }
+  ]
  },
  "levels": [
   {
@@ -64,7 +75,16 @@
     "unit": "s",
     "unc_plus": 8,
     "unc_minus": 5,
-    "note": "printed 38 (+8/-5) s; fluorescence decay in a MOT. Theory 56 s (Indelicato et al.) and 51 s (Small-Warren & Chiu) as tabulated in the Vassen review."
+    "note": "printed 38 (+8/-5) s; fluorescence decay in a MOT. Theory 56 s (Indelicato et al.) and 51 s (Small-Warren & Chiu) as tabulated in the Vassen review.",
+    "alternatives": [
+     {
+      "value": 55.9,
+      "method": "theory",
+      "source": "Small-Warren & Chiu, Phys. Rev. A 11, 1777 (1975) (abstract)",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.11.1777",
+      "unit": "s"
+     }
+    ]
    },
    "g_J": {
     "value": 1.500964,
@@ -145,6 +165,30 @@
      "source": "Traub, Roesler, Robertson, Cohen, J. Opt. Soc. Am. 57, 1452 (1967) [as quoted in Chu et al. (Ritterbusch, Lu), 'Optically enhanced discharge excitation and trapping of 39Ar', arXiv:2206.11089 (2022)]",
      "url": "https://arxiv.org/abs/2206.11089"
     }
+   },
+   "measured_energy_cm": {
+    "40": {
+     "value": 95399.833,
+     "unc": 0.003,
+     "method": "experiment",
+     "source": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999) [(1999)]",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf",
+     "note": "1 VUV + 1 UV photoionization at 105 nm, I2-calibrated; uncertainty dominated by dye-amplifier chirp"
+    },
+    "38": {
+     "value": 95399.815,
+     "unc": 0.003,
+     "method": "experiment",
+     "source": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999) [(1999)]",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf"
+    },
+    "36": {
+     "value": 95399.798,
+     "unc": 0.003,
+     "method": "experiment",
+     "source": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999) [(1999)]",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf"
+    }
    }
   },
   {
@@ -208,6 +252,89 @@
      "note": "calculated by Chu et al. from 37Ar measurements; not a direct 39Ar measurement"
     }
    }
+  },
+  {
+   "nist_energy_cm": 94553.6652,
+   "label": "3p5 4s' 2[1/2]0 (3P0, 1s3, metastable)",
+   "J": "0",
+   "lifetime": {
+    "value": 44.9,
+    "method": "theory",
+    "source": "Small-Warren & Chiu, Phys. Rev. A 11, 1777 (1975) (abstract)",
+    "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.11.1777",
+    "note": "theory (M1 decay to 3P1 plus E2 decay to 3P2); no measurement located",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 108722.6194,
+   "label": "3p5 4p' 2[1/2]0 (2p1)",
+   "J": "0",
+   "lifetime": {
+    "value": 2.1000000000000003e-08,
+    "unc": 2e-09,
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
+    "url": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
+    "note": "printed 2p1: 21 +- 2 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 107496.4166,
+   "label": "3p5 4p' 2[1/2]1 (2p2)",
+   "J": "1",
+   "lifetime": {
+    "value": 2.5000000000000002e-08,
+    "unc": 1e-09,
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
+    "url": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
+    "note": "printed 2p2: 25 +- 1 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 107289.7001,
+   "label": "3p5 4p' 2[3/2]2 (2p3)",
+   "J": "2",
+   "lifetime": {
+    "value": 2.6e-08,
+    "unc": 1e-09,
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
+    "url": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
+    "note": "printed 2p3: 26 +- 1 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 107131.7086,
+   "label": "3p5 4p' 2[3/2]1 (2p4)",
+   "J": "1",
+   "lifetime": {
+    "value": 3.1e-08,
+    "unc": 2e-09,
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
+    "url": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
+    "note": "printed 2p4: 31 +- 2 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 114821.939,
+   "label": "3p5 3d' 2[5/2]3",
+   "J": "3",
+   "lifetime": {
+    "value": 6.9e-08,
+    "unc": 1.2e-08,
+    "method": "experiment",
+    "source": "Keto & Kuo, J. Chem. Phys. 74 (11) (1981) (abstract, OSTI record 6405953)",
+    "url": "https://www.osti.gov/biblio/6405953",
+    "note": "printed 69 +- 12 nsec, assigned from the radiative cascade into 4p'[3/2]2 after electron-beam excitation of argon at 2-3000 Torr; indirect (cascade analysis)",
+    "unit": "s"
+   }
   }
  ],
  "transitions": [
@@ -240,7 +367,16 @@
     "method": "compilation",
     "source": "Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]",
     "url": "https://arxiv.org/abs/1012.4509",
-    "note": "quoted in the conclusions; no origin given"
+    "note": "quoted in the conclusions; no origin given",
+    "alternatives": [
+     {
+      "value": 5.87,
+      "method": "compilation",
+      "source": "Feng, Ebser, Ringena, Ritterbusch, Oberthaler, arXiv:1707.01658 (2017)",
+      "url": "https://arxiv.org/abs/1707.01658",
+      "note": "gamma = 2 pi x 5.87 MHz used for the 811.5 nm line; no origin given"
+     }
+    ]
    },
    "isotope_shift_MHz": {
     "36-38": {
@@ -385,19 +521,60 @@
      "note": "calculated (authors' footnote b)"
     }
    }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 95399.8276,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3p6 1S0 - 3p5 4s' 2[1/2]1",
+   "type": "E1",
+   "use": "104.8 nm resonance line (1s2); precision VUV laser calibration line that ties the excited levels and the ionization energy of Ar to the ground state",
+   "frequency_THz": {
+    "value": 2860.015,
+    "unc": 0.0001,
+    "method": "experiment",
+    "source": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999)",
+    "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf",
+    "note": "derived: converted from the printed 95399.833(3) cm^-1 (40Ar; no hyperfine structure)",
+    "isotope": "40"
+   },
+   "isotope_shift_MHz": {
+    "40-38": {
+     "value": 550,
+     "unc": 10,
+     "method": "experiment",
+     "source": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999)",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf",
+     "note": "nu(40) - nu(38), as printed (Table 2)"
+    },
+    "40-36": {
+     "value": 1036,
+     "unc": 7,
+     "method": "experiment",
+     "source": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999)",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf",
+     "note": "nu(40) - nu(36), as printed (Table 2)"
+    }
+   }
   }
  ],
  "not_found": [
   "801.5 nm quench line 4s[3/2]2-4p[5/2]2 (1s5-2p8): no measured frequency, isotope shift or A value beyond NIST located (the 800.8 nm line recorded here is the neighbouring 1s4-2p6 transition used for optical pumping).",
   "Absolute optical frequency of 811.5 nm better than NIST: not located.",
   "Directly measured lifetime of 4p[5/2]3 (2p9) and A values newer than NIST (Wiese et al. 1989 unified set is what NIST uses; its abstract has no numbers): 30.2 ns is the Vassen-review table value.",
-  "Lifetime of the second metastable 4s'[1/2]0 (3P0, 1s3): not located.",
-  "Welte et al. 2009 and Klein et al. 1996 primary papers not opened; their numbers are second-hand from Williams et al.",
-  "Experimental reduced matrix elements: none located."
+  "Experimental reduced matrix elements: none located.",
+  "Lifetime of the second metastable 4s'[1/2]0 (3P0, 1s3): no measurement located; theory 44.9 s (Small-Warren & Chiu 1975) stored.",
+  "Measured lifetimes of 2p5-2p10 (4p[1/2]0 ... 4p[1/2]1, including the 811.5 nm upper level 2p9) from a primary paper: Volz & Schmoranzer beam-gas-laser values, Chang & Setser (J. Chem. Phys. 69, 3885 (1978)) and Wiese et al. 1989 could not be opened; only Klose 1967 (2p1-2p4, abstract) is stored and 30.2 ns for 2p9 stays the Vassen-review value.",
+  "Lifetimes of the resonance levels 4s[3/2]1 and 4s'[1/2]1 and of the 5s, 3d, 4d, 5p levels drawn: none located in an open source (Inoue, Setser, Sadeghi 1982 abstract: Ar(5p) lifetimes 100-140 ns, 5s and 3d about 50 ns, no level-resolved numbers).",
+  "Welte et al. 2009 and Klein et al. 1996 primary papers not opened; their numbers are second-hand from Williams et al. (arXiv:1012.4509 turned out to be Williams et al., not Welte).",
+  "Absolute (frequency-comb) frequencies of the 4s-4p lines: none located."
  ],
  "conflicts": [
   "39Ar hyperfine A constants: Williams et al. 2011 [A(4s[3/2]2) = -285.36(13), A(4p[5/2]3) = -134.36(8) MHz] vs Welte et al. 2009 [-287.15(14), -135.16(12) MHz]: 1-2 MHz apart with ~0.1 MHz claimed uncertainties; the ratio A(4s)/A(4p) agrees to <0.1%. B constants agree. Williams (checked on 83Kr) is used.",
-  "g_J(4s[3/2]2): atomic-beam value 1.500964(8) (Lurio et al. 1960) vs 1.506 in NIST ASD (older optical value)."
+  "g_J(4s[3/2]2): atomic-beam value 1.500964(8) (Lurio et al. 1960) vs 1.506 in NIST ASD (older optical value).",
+  "Keto & Kuo 1981 also assign 61 +- 10 ns to 3d'[3/2]1 (115366.866 cm^-1) and 61 +- 6 ns to 3d[3/2]1 (114147.732 cm^-1). Both are J = 1 resonance levels whose NIST A values to the ground state are 3.13e8 and 2.70e8 s^-1 (natural lifetime of a few ns), so the 61 ns figures are radiation-trapped cascade lifetimes at 2-3000 Torr and were NOT stored as level lifetimes.",
+  "Klose 1967 lifetimes of 2p1-2p4 carry 5-15 % systematic errors by the author's own estimate; treat as low-accuracy values."
  ],
- "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier argon isotopes lie at higher frequency on 811.5 nm (Table III of Williams et al. is given relative to 38Ar: Delta nu(38,A') = nu(A') - nu(38)), while the 800.8 and 922.7 nm shifts of Chu et al. are printed relative to 40Ar. 39Ar and 37Ar are radioactive (ATTA tracers). Level energies are NIST ASD values from data/ar/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only."
+ "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier argon isotopes lie at higher frequency on 811.5 nm (Table III of Williams et al. is given relative to 38Ar: Delta nu(38,A') = nu(A') - nu(38)), while the 800.8 and 922.7 nm shifts of Chu et al. are printed relative to 40Ar. 39Ar and 37Ar are radioactive (ATTA tracers). Level energies are NIST ASD values from data/ar/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only. Added 2026-10-01 (second pass): the 105 nm measurements of Velchev et al. are from 1999 (older than 20 years), so the NIST energy stays in use; isotope shifts of that line are printed as nu(40) - nu(A). Paschen-labelled lifetimes (Klose) were assigned to NIST levels by energy order."
 }

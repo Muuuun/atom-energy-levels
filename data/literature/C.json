@@ -1,438 +1,1231 @@
 {
-  "element": "C",
-  "isotopes": {
-    "12": {
-      "I": "0",
-      "abundance_percent": 98.93,
-      "abundance_unc": 0.08,
-      "source": "abundance: NIST Atomic Weights and Isotopic Compositions (C); nuclear spin: Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 (which quotes 98.94 % / 1.06 % from Meija et al. 2016)",
-      "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=C",
-      "url_spin": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
-    },
-    "13": {
-      "I": "1/2",
-      "abundance_percent": 1.07,
-      "abundance_unc": 0.08,
-      "source": "abundance: NIST Atomic Weights and Isotopic Compositions (C); nuclear spin: Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 (which quotes 98.94 % / 1.06 % from Meija et al. 2016)",
-      "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=C",
-      "url_spin": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
-    }
+ "element": "C",
+ "isotopes": {
+  "12": {
+   "I": "0",
+   "abundance_percent": 98.93,
+   "abundance_unc": 0.08,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (C); nuclear spin: Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 (which quotes 98.94 % / 1.06 % from Meija et al. 2016)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=C",
+   "url_spin": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
   },
-  "ionization_energy": {
-    "natural": [
-      {
-        "value_cm": 90820.348,
-        "unc_cm": 0.009,
-        "method": "compilation",
-        "note": "limit C II 2s22p 2P1/2; 11.2602880(11) eV",
-        "source": "NIST ASD, C I levels table, 'Limit' row (file data/nist/C_I_levels.tsv) = Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), abstract",
-        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
-      }
+  "13": {
+   "I": "1/2",
+   "abundance_percent": 1.07,
+   "abundance_unc": 0.08,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (C); nuclear spin: Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 (which quotes 98.94 % / 1.06 % from Meija et al. 2016)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=C",
+   "url_spin": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+  }
+ },
+ "ionization_energy": {
+  "natural": [
+   {
+    "value_cm": 90820.348,
+    "unc_cm": 0.009,
+    "method": "compilation",
+    "note": "limit C II 2s22p 2P1/2; 11.2602880(11) eV",
+    "source": "NIST ASD, C I levels table, 'Limit' row (file data/nist/C_I_levels.tsv) = Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), abstract",
+    "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+   }
+  ]
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 16.416713,
+   "label": "2s22p2 3P1",
+   "J": "1",
+   "g_J": {
+    "value": 1.5010623,
+    "unc": 5e-06,
+    "isotope": "12",
+    "method": "compilation",
+    "note": "measured value 1.5010770(50), corrected by Haris & Kramida for the CODATA 2014 value of mu_B/h",
+    "source": "Beckmann, Boeklen, Bremer, Elke, Z. Phys. A 272, 143 (1975); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
+    "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
+    "alternatives": [
+     {
+      "value": 1.501052,
+      "unc": 1.3e-05,
+      "note": "Wolber, Figger, Haberstroh, Penselin, Phys. Lett. A 29, 461 (1969), as quoted by Haris & Kramida"
+     },
+     {
+      "value": 1.501077,
+      "unc": 5e-06,
+      "note": "Beckmann et al. 1975, uncorrected"
+     }
     ]
+   },
+   "hyperfine": {
+    "13": {
+     "A_MHz": 2.838,
+     "A_unc": 0.017,
+     "method": "compilation",
+     "note": "no B constant (I = 1/2). Measured F = 3/2 - 1/2 splitting adopted by Haris & Kramida: 4.200(25) MHz.",
+     "source": "Wolber, Figger, Haberstroh, Penselin, Z. Phys. 236, 337 (1970); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4; also Table VII of Carette and Godefroid, Phys. Rev. A 83, 062505 (2011), arXiv:1101.5318",
+     "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
+     "alternatives": [
+      {
+       "A_MHz": 2.829,
+       "A_unc": 0.017,
+       "note": "adjusted for the off-diagonal J-J' hyperfine interaction, Carette & Godefroid 2011",
+       "url": "https://arxiv.org/pdf/1101.5318"
+      }
+     ]
+    }
+   }
   },
-  "levels": [
-    {
-      "nist_energy_cm": 16.416713,
-      "label": "2s22p2 3P1",
-      "J": "1",
-      "g_J": {
-        "value": 1.5010623,
-        "unc": 5e-06,
-        "isotope": "12",
-        "method": "compilation",
-        "note": "measured value 1.5010770(50), corrected by Haris & Kramida for the CODATA 2014 value of mu_B/h",
-        "source": "Beckmann, Boeklen, Bremer, Elke, Z. Phys. A 272, 143 (1975); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
-        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
-        "alternatives": [
-          {
-            "value": 1.501052,
-            "unc": 1.3e-05,
-            "note": "Wolber, Figger, Haberstroh, Penselin, Phys. Lett. A 29, 461 (1969), as quoted by Haris & Kramida"
-          },
-          {
-            "value": 1.501077,
-            "unc": 5e-06,
-            "note": "Beckmann et al. 1975, uncorrected"
-          }
-        ]
-      },
-      "hyperfine": {
-        "13": {
-          "A_MHz": 2.838,
-          "A_unc": 0.017,
-          "method": "compilation",
-          "note": "no B constant (I = 1/2). Measured F = 3/2 - 1/2 splitting adopted by Haris & Kramida: 4.200(25) MHz.",
-          "source": "Wolber, Figger, Haberstroh, Penselin, Z. Phys. 236, 337 (1970); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4; also Table VII of Carette and Godefroid, Phys. Rev. A 83, 062505 (2011), arXiv:1101.5318",
-          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
-          "alternatives": [
-            {
-              "A_MHz": 2.829,
-              "A_unc": 0.017,
-              "note": "adjusted for the off-diagonal J-J' hyperfine interaction, Carette & Godefroid 2011",
-              "url": "https://arxiv.org/pdf/1101.5318"
-            }
-          ]
-        }
+  {
+   "nist_energy_cm": 43.4134567,
+   "label": "2s22p2 3P2",
+   "J": "2",
+   "g_J": {
+    "value": 1.5010469,
+    "unc": 5e-06,
+    "isotope": "12",
+    "method": "compilation",
+    "note": "measured value 1.5010616(50), corrected by Haris & Kramida for the CODATA 2014 value of mu_B/h",
+    "source": "Beckmann, Boeklen, Bremer, Elke, Z. Phys. A 272, 143 (1975); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
+    "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
+    "alternatives": [
+     {
+      "value": 1.501039,
+      "unc": 1.5e-05,
+      "note": "Wolber, Figger, Haberstroh, Penselin, Phys. Lett. A 29, 461 (1969), as quoted by Haris & Kramida"
+     },
+     {
+      "value": 1.5010616,
+      "unc": 5e-06,
+      "note": "Beckmann et al. 1975, uncorrected"
+     }
+    ]
+   },
+   "hyperfine": {
+    "13": {
+     "A_MHz": 149.055,
+     "A_unc": 0.01,
+     "method": "compilation",
+     "note": "uncertainty is two standard deviations (Haris & Kramida). Measured F = 5/2 - 3/2 splitting adopted there: 372.593(13) MHz.",
+     "source": "Wolber, Figger, Haberstroh, Penselin, Z. Phys. 236, 337 (1970); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4; also Table VII of Carette and Godefroid, arXiv:1101.5318",
+     "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
+     "alternatives": [
+      {
+       "A_MHz": 149.052,
+       "A_unc": 0.01,
+       "note": "adjusted for the off-diagonal hyperfine interaction, Carette & Godefroid 2011",
+       "url": "https://arxiv.org/pdf/1101.5318"
       }
-    },
-    {
-      "nist_energy_cm": 43.4134567,
-      "label": "2s22p2 3P2",
-      "J": "2",
-      "g_J": {
-        "value": 1.5010469,
-        "unc": 5e-06,
-        "isotope": "12",
-        "method": "compilation",
-        "note": "measured value 1.5010616(50), corrected by Haris & Kramida for the CODATA 2014 value of mu_B/h",
-        "source": "Beckmann, Boeklen, Bremer, Elke, Z. Phys. A 272, 143 (1975); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
-        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
-        "alternatives": [
-          {
-            "value": 1.501039,
-            "unc": 1.5e-05,
-            "note": "Wolber, Figger, Haberstroh, Penselin, Phys. Lett. A 29, 461 (1969), as quoted by Haris & Kramida"
-          },
-          {
-            "value": 1.5010616,
-            "unc": 5e-06,
-            "note": "Beckmann et al. 1975, uncorrected"
-          }
-        ]
-      },
-      "hyperfine": {
-        "13": {
-          "A_MHz": 149.055,
-          "A_unc": 0.01,
-          "method": "compilation",
-          "note": "uncertainty is two standard deviations (Haris & Kramida). Measured F = 5/2 - 3/2 splitting adopted there: 372.593(13) MHz.",
-          "source": "Wolber, Figger, Haberstroh, Penselin, Z. Phys. 236, 337 (1970); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4; also Table VII of Carette and Godefroid, arXiv:1101.5318",
-          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195",
-          "alternatives": [
-            {
-              "A_MHz": 149.052,
-              "A_unc": 0.01,
-              "note": "adjusted for the off-diagonal hyperfine interaction, Carette & Godefroid 2011",
-              "url": "https://arxiv.org/pdf/1101.5318"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "nist_energy_cm": 61981.83211,
-      "label": "2s22p3s 1P°1",
-      "J": "1",
-      "lifetime": {
-        "value": 2.7e-09,
-        "unc": 2e-10,
-        "unit": "s",
-        "method": "compilation",
-        "source": "T. R. O'Brian and J. E. Lawler, J. Quant. Spectrosc. Radiat. Transf. 57, 309 (1997) (laser-induced fluorescence); Table 1 of W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 36, 1287 (2007)",
-        "url": "https://www.nist.gov/system/files/documents/srd/jpcrd3620071287p.pdf",
-        "alternatives": [
-          {
-            "value": 2.72e-09,
-            "unit": "s",
-            "method": "theory",
-            "note": "MCHF (energy adjusted), same table"
-          }
-        ]
-      }
+     ]
     }
-  ],
-  "transitions": [
-    {
-      "lower_cm": 43.4134567,
-      "upper_cm": 60352.6584,
-      "lower_J": "2",
-      "upper_J": "1",
-      "label": "2s22p2 3P2 - 2s22p3s 3P1",
-      "type": "E1",
-      "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
-      "isotope_shift_MHz": {
-        "13-12": {
-          "value": -3118.0,
-          "unc": 1049.0,
-          "value_cm": -0.104,
-          "unc_cm": 0.035,
-          "method": "experiment",
-          "note": "derived: measured shift -0.104(35) cm^-1 converted to MHz; measured wavenumbers 12C 60309.245(25), 13C 60309.141(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
-          "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
-          "url": "https://www.mdpi.com/2218-2004/8/3/62",
-          "alternatives": [
-            {
-              "value": -2755.0,
-              "unc": 84.0,
-              "method": "compilation",
-              "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
-            },
-            {
-              "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lower_cm": 16.416713,
-      "upper_cm": 60333.4476,
-      "lower_J": "1",
-      "upper_J": "0",
-      "label": "2s22p2 3P1 - 2s22p3s 3P0",
-      "type": "E1",
-      "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
-      "isotope_shift_MHz": {
-        "13-12": {
-          "value": -3058.0,
-          "unc": 1049.0,
-          "value_cm": -0.102,
-          "unc_cm": 0.035,
-          "method": "experiment",
-          "note": "derived: measured shift -0.102(35) cm^-1 converted to MHz; measured wavenumbers 12C 60317.021(25), 13C 60316.919(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
-          "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
-          "url": "https://www.mdpi.com/2218-2004/8/3/62",
-          "alternatives": [
-            {
-              "value": -2755.0,
-              "unc": 84.0,
-              "method": "compilation",
-              "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
-            },
-            {
-              "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lower_cm": 16.416713,
-      "upper_cm": 60352.6584,
-      "lower_J": "1",
-      "upper_J": "1",
-      "label": "2s22p2 3P1 - 2s22p3s 3P1",
-      "type": "E1",
-      "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
-      "isotope_shift_MHz": {
-        "13-12": {
-          "value": -2578.0,
-          "unc": 1049.0,
-          "value_cm": -0.086,
-          "unc_cm": 0.035,
-          "method": "experiment",
-          "note": "derived: measured shift -0.086(35) cm^-1 converted to MHz; measured wavenumbers 12C 60336.234(25), 13C 60336.148(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
-          "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
-          "url": "https://www.mdpi.com/2218-2004/8/3/62",
-          "alternatives": [
-            {
-              "value": -2755.0,
-              "unc": 84.0,
-              "method": "compilation",
-              "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
-            },
-            {
-              "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lower_cm": 43.4134567,
-      "upper_cm": 60393.1693,
-      "lower_J": "2",
-      "upper_J": "2",
-      "label": "2s22p2 3P2 - 2s22p3s 3P2",
-      "type": "E1",
-      "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
-      "isotope_shift_MHz": {
-        "13-12": {
-          "value": -2908.0,
-          "unc": 1049.0,
-          "value_cm": -0.097,
-          "unc_cm": 0.035,
-          "method": "experiment",
-          "note": "derived: measured shift -0.097(35) cm^-1 converted to MHz; measured wavenumbers 12C 60349.750(25), 13C 60349.653(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
-          "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
-          "url": "https://www.mdpi.com/2218-2004/8/3/62",
-          "alternatives": [
-            {
-              "value": -2755.0,
-              "unc": 84.0,
-              "method": "compilation",
-              "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
-            },
-            {
-              "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lower_cm": 0.0,
-      "upper_cm": 60352.6584,
-      "lower_J": "0",
-      "upper_J": "1",
-      "label": "2s22p2 3P0 - 2s22p3s 3P1",
-      "type": "E1",
-      "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
-      "isotope_shift_MHz": {
-        "13-12": {
-          "value": -3418.0,
-          "unc": 1049.0,
-          "value_cm": -0.114,
-          "unc_cm": 0.035,
-          "method": "experiment",
-          "note": "derived: measured shift -0.114(35) cm^-1 converted to MHz; measured wavenumbers 12C 60352.663(25), 13C 60352.549(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
-          "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
-          "url": "https://www.mdpi.com/2218-2004/8/3/62",
-          "alternatives": [
-            {
-              "value": -2755.0,
-              "unc": 84.0,
-              "method": "compilation",
-              "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
-            },
-            {
-              "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lower_cm": 16.416713,
-      "upper_cm": 60393.1693,
-      "lower_J": "1",
-      "upper_J": "2",
-      "label": "2s22p2 3P1 - 2s22p3s 3P2",
-      "type": "E1",
-      "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
-      "isotope_shift_MHz": {
-        "13-12": {
-          "value": -3028.0,
-          "unc": 1049.0,
-          "value_cm": -0.101,
-          "unc_cm": 0.035,
-          "method": "experiment",
-          "note": "derived: measured shift -0.101(35) cm^-1 converted to MHz; measured wavenumbers 12C 60376.750(25), 13C 60376.649(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
-          "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
-          "url": "https://www.mdpi.com/2218-2004/8/3/62",
-          "alternatives": [
-            {
-              "value": -2755.0,
-              "unc": 84.0,
-              "method": "compilation",
-              "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
-            },
-            {
-              "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lower_cm": 21648.03,
-      "upper_cm": 61981.83211,
-      "lower_J": "0",
-      "upper_J": "1",
-      "label": "2s22p2 1S0 - 2s22p3s 1P1",
-      "type": "E1",
-      "use": "2478.56 A (air) line; isotope shift measured for 12C, 13C, 14C",
-      "isotope_shift_MHz": {
-        "13-12": {
-          "value": -4677.0,
-          "unc": 60.0,
-          "value_mK": -156,
-          "unc_mK": 2,
-          "method": "compilation",
-          "note": "derived: -156(2) mK converted to MHz (1 mK = 1e-3 cm^-1)",
-          "source": "J. R. Holmes, J. Opt. Soc. Am. 41, 360 (1951) (agrees with C. R. Burnett, Phys. Rev. 80, 494 (1950)); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 and Table 6",
-          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
-        },
-        "14-12": {
-          "value": -8814.0,
-          "unc": 60.0,
-          "value_mK": -294,
-          "unc_mK": 2,
-          "method": "compilation",
-          "note": "derived: -294(2) mK converted to MHz",
-          "source": "J. R. Holmes, J. Opt. Soc. Am. 41, 360 (1951); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
-          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
-        }
+   }
+  },
+  {
+   "nist_energy_cm": 61981.83211,
+   "label": "2s22p3s 1P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2.7e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "T. R. O'Brian and J. E. Lawler, J. Quant. Spectrosc. Radiat. Transf. 57, 309 (1997) (laser-induced fluorescence); Table 1 of W. L. Wiese and J. R. Fuhr, J. Phys. Chem. Ref. Data 36, 1287 (2007)",
+    "url": "https://www.nist.gov/system/files/documents/srd/jpcrd3620071287p.pdf",
+    "alternatives": [
+     {
+      "value": 2.72e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCHF (energy adjusted), same table"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 64086.96961,
+   "label": "2s2p3 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 7.4e-09,
+    "unc": 1e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "term lifetime of 2s2p3 3D° (fine-structure levels not resolved): weighted mean of five measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
+    "source": "weighted mean of Lawrence and Savage (1966, phase shift), Pegg et al. (1970, beam-foil), Bromander (1971, beam-foil), Poulizac and Druetta (1971, beam-foil), Brooks et al. (1977, phase shift); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "alternatives": [
+     {
+      "value": 8e-09,
+      "unc": 8e-10,
+      "note": "Lawrence and Savage 1966, phase shift"
+     },
+     {
+      "value": 7.3e-09,
+      "unc": 2e-10,
+      "note": "Pegg et al. 1970, beam-foil"
+     },
+     {
+      "value": 7.5e-09,
+      "unc": 2e-10,
+      "note": "Bromander 1971, beam-foil"
+     },
+     {
+      "value": 7.3e-09,
+      "unc": 2e-10,
+      "note": "Poulizac and Druetta 1971, beam-foil"
+     },
+     {
+      "value": 8e-09,
+      "unc": 8e-10,
+      "note": "Brooks et al. 1977, phase shift"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 64089.899,
+   "label": "2s2p3 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 7.4e-09,
+    "unc": 1e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "term lifetime of 2s2p3 3D° (fine-structure levels not resolved): weighted mean of five measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
+    "source": "weighted mean of Lawrence and Savage (1966, phase shift), Pegg et al. (1970, beam-foil), Bromander (1971, beam-foil), Poulizac and Druetta (1971, beam-foil), Brooks et al. (1977, phase shift); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "alternatives": [
+     {
+      "value": 8e-09,
+      "unc": 8e-10,
+      "note": "Lawrence and Savage 1966, phase shift"
+     },
+     {
+      "value": 7.3e-09,
+      "unc": 2e-10,
+      "note": "Pegg et al. 1970, beam-foil"
+     },
+     {
+      "value": 7.5e-09,
+      "unc": 2e-10,
+      "note": "Bromander 1971, beam-foil"
+     },
+     {
+      "value": 7.3e-09,
+      "unc": 2e-10,
+      "note": "Poulizac and Druetta 1971, beam-foil"
+     },
+     {
+      "value": 8e-09,
+      "unc": 8e-10,
+      "note": "Brooks et al. 1977, phase shift"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 64090.99351,
+   "label": "2s2p3 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 7.4e-09,
+    "unc": 1e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "term lifetime of 2s2p3 3D° (fine-structure levels not resolved): weighted mean of five measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
+    "source": "weighted mean of Lawrence and Savage (1966, phase shift), Pegg et al. (1970, beam-foil), Bromander (1971, beam-foil), Poulizac and Druetta (1971, beam-foil), Brooks et al. (1977, phase shift); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "alternatives": [
+     {
+      "value": 8e-09,
+      "unc": 8e-10,
+      "note": "Lawrence and Savage 1966, phase shift"
+     },
+     {
+      "value": 7.3e-09,
+      "unc": 2e-10,
+      "note": "Pegg et al. 1970, beam-foil"
+     },
+     {
+      "value": 7.5e-09,
+      "unc": 2e-10,
+      "note": "Bromander 1971, beam-foil"
+     },
+     {
+      "value": 7.3e-09,
+      "unc": 2e-10,
+      "note": "Poulizac and Druetta 1971, beam-foil"
+     },
+     {
+      "value": 8e-09,
+      "unc": 8e-10,
+      "note": "Brooks et al. 1977, phase shift"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 60333.4476,
+   "label": "2s22p3s 3P°0",
+   "J": "0",
+   "lifetime": {
+    "value": 2.9e-09,
+    "unc": 1e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "term lifetime of 2s22p3s 3P° (fine-structure levels not resolved): weighted mean of three measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
+    "source": "weighted mean of Lawrence and Savage (1966, phase shift), Bromander (1971, beam-foil), Mallow and Burns (1972, pulse decay); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "alternatives": [
+     {
+      "value": 3.1e-09,
+      "unc": 3e-10,
+      "note": "Lawrence and Savage 1966, phase shift"
+     },
+     {
+      "value": 2.9e-09,
+      "unc": 1e-10,
+      "note": "Bromander 1971, beam-foil"
+     },
+     {
+      "value": 3e-09,
+      "unc": 1.2e-09,
+      "note": "Mallow and Burns 1972, pulse decay"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 60352.6584,
+   "label": "2s22p3s 3P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2.9e-09,
+    "unc": 1e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "term lifetime of 2s22p3s 3P° (fine-structure levels not resolved): weighted mean of three measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
+    "source": "weighted mean of Lawrence and Savage (1966, phase shift), Bromander (1971, beam-foil), Mallow and Burns (1972, pulse decay); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "alternatives": [
+     {
+      "value": 3.1e-09,
+      "unc": 3e-10,
+      "note": "Lawrence and Savage 1966, phase shift"
+     },
+     {
+      "value": 2.9e-09,
+      "unc": 1e-10,
+      "note": "Bromander 1971, beam-foil"
+     },
+     {
+      "value": 3e-09,
+      "unc": 1.2e-09,
+      "note": "Mallow and Burns 1972, pulse decay"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 60393.1693,
+   "label": "2s22p3s 3P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 2.9e-09,
+    "unc": 1e-10,
+    "unit": "s",
+    "method": "compilation",
+    "note": "term lifetime of 2s22p3s 3P° (fine-structure levels not resolved): weighted mean of three measurements as printed in Table 1 of Goldbach & Nollez (derived by those authors); the original papers were not opened",
+    "source": "weighted mean of Lawrence and Savage (1966, phase shift), Bromander (1971, beam-foil), Mallow and Burns (1972, pulse decay); Table 1 of Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "alternatives": [
+     {
+      "value": 3.1e-09,
+      "unc": 3e-10,
+      "note": "Lawrence and Savage 1966, phase shift"
+     },
+     {
+      "value": 2.9e-09,
+      "unc": 1e-10,
+      "note": "Bromander 1971, beam-foil"
+     },
+     {
+      "value": 3e-09,
+      "unc": 1.2e-09,
+      "note": "Mallow and Burns 1972, pulse decay"
+     }
+    ]
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 60352.6584,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2s22p2 3P2 - 2s22p3s 3P1",
+   "type": "E1",
+   "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": -3118.0,
+     "unc": 1049.0,
+     "value_cm": -0.104,
+     "unc_cm": 0.035,
+     "method": "experiment",
+     "note": "derived: measured shift -0.104(35) cm^-1 converted to MHz; measured wavenumbers 12C 60309.245(25), 13C 60309.141(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
+     "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
+     "url": "https://www.mdpi.com/2218-2004/8/3/62",
+     "alternatives": [
+      {
+       "value": -2755.0,
+       "unc": 84.0,
+       "method": "compilation",
+       "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
       },
-      "wavelength_air_A": {
-        "12": "2478.56132(20)",
-        "13": "2478.57091(24)",
-        "14": "2478.57939(24)",
-        "method": "compilation",
-        "note": "isotope-resolved air wavelengths (Angstrom) derived by Haris & Kramida from the Ritz wavelength of natural C and the measured shifts",
-        "source": "K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
-        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+      {
+       "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
       }
+     ]
     }
-  ],
-  "additional_isotope_data": [
-    {
-      "quantity": "2s22p2 3P0,1,2 - 2s2p3 3S1 (945 A; upper level at 105 799 cm^-1, above the ionization limit, not drawn)",
-      "isotope_shift_13_12_mK": 510.7,
-      "unc_mK": 1.3,
-      "isotope_shift_13_12_MHz": 15310.0,
-      "unc_MHz": 39.0,
-      "method": "compilation",
-      "note": "weighted mean over the three components; MHz value derived by unit conversion",
-      "source": "Labazan, Reinhold, Ubachs, Flambaum, Phys. Rev. A 71 (2005) (VUV laser spectroscopy); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 and Table 6",
-      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
-    },
-    {
-      "quantity": "2s22p2 3P2 - 2s2p3 5S2 (2967 A intercombination line; level not drawn)",
-      "isotope_shift_13_12_mK": 670,
-      "unc_mK": 5,
-      "method": "compilation",
-      "source": "Bernheim and Kittrell, Spectrochim. Acta 35, 51 (1980); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
-      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
-    },
-    {
-      "quantity": "ground-term fine-structure lines 3P0-3P1 (492 GHz) and 3P1-3P2 (809 GHz), outside the 2 um range",
-      "frequency_MHz_12C": [
-        492160.651,
-        809341.97
-      ],
-      "unc_MHz": [
-        0.018,
-        0.017
-      ],
-      "frequency_MHz_13C_centre_of_gravity": [
-        492162.889,
-        809346.103
-      ],
-      "unc_MHz_13C": [
-        0.018,
-        0.044
-      ],
-      "method": "compilation",
-      "source": "Yamamoto and Saito, Astrophys. J. Lett. 370, L103 (1991); Klein et al. (1998); Table 6 of Haris and Kramida 2017",
-      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+   },
+   "A_s_older_measurement": {
+    "value": 150000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 22000000.0,
+    "note": "A as printed (1.5 x 10^8 s^-1) for the line at 1658.1222 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-15 %)."
+   }
+  },
+  {
+   "lower_cm": 16.416713,
+   "upper_cm": 60333.4476,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "2s22p2 3P1 - 2s22p3s 3P0",
+   "type": "E1",
+   "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": -3058.0,
+     "unc": 1049.0,
+     "value_cm": -0.102,
+     "unc_cm": 0.035,
+     "method": "experiment",
+     "note": "derived: measured shift -0.102(35) cm^-1 converted to MHz; measured wavenumbers 12C 60317.021(25), 13C 60316.919(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
+     "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
+     "url": "https://www.mdpi.com/2218-2004/8/3/62",
+     "alternatives": [
+      {
+       "value": -2755.0,
+       "unc": 84.0,
+       "method": "compilation",
+       "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
+      },
+      {
+       "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
+      }
+     ]
     }
-  ],
-  "not_found": [
-    "measured lifetimes of 2s22p3s 3P0,1,2 (60333-60393 cm^-1), 2s2p3 3D, 2s2p3 3P, 2p3d, 2p4s, 2pnd levels: no paper or table printing measured values could be opened (IOP pages are behind a bot wall, no arXiv copies found); only the laser-induced-fluorescence value for 2p3s 1P1 was found in an opened source",
-    "lifetimes of the metastable 2s22p2 1D2 and 1S0 levels: no measurement located",
-    "O'Brian and Lawler, JQSRT 57, 309 (1997), Wolber et al. 1969/1970, Beckmann et al. 1975, Holmes 1951: primary papers not opened; values are as printed in the NIST compilations cited",
-    "13C hyperfine constants of excited levels (2p3s 3P, 1P, ...): none located",
-    "measured g_J of excited C I levels: none located",
-    "direct measurements of 13C-12C shifts for VUV lines other than the 165.7 nm multiplet, 247.9 nm, 296.7 nm and 94.5 nm: none; the values in parentheses in Haris & Kramida Table 6 are calculated (Berengut et al. 2006) and were not entered as measurements",
-    "laser cooling of atomic carbon: none found",
-    "measured transition probabilities newer than the NIST set (Wiese & Fuhr 2007 / Haris & Kramida 2017): none located"
-  ],
-  "conflicts": [
-    "13C-12C shift of the 165.7 nm multiplet: directly measured -0.086 to -0.114 (35) cm^-1 (Lai et al. 2020) vs -0.0919(28) cm^-1 semi-theoretical (Haris & Kramida 2017) vs -0.14 to -0.16 cm^-1 (Haridass & Huber 1994); consistent within uncertainties, the direct measurement is kept as the entry although the semi-theoretical value is 12 times tighter",
-    "g_J of 2s22p2 3P1 / 3P2: Beckmann 1975 corrected 1.5010623(50) / 1.5010469(50) vs Wolber 1969 1.501052(13) / 1.501039(15); the corrected Beckmann values (already in data/c/levels.csv) are kept",
-    "13C A(3P1): 2.838(17) MHz as published (Wolber 1970) vs 2.829(17) MHz after the off-diagonal correction of Carette & Godefroid 2011",
-    "natural abundance: NIST composition page 98.93(8) / 1.07(8) % vs 98.94 / 1.06 % quoted by Haris & Kramida"
-  ],
-  "notes": "Isotope shifts are nu(13C) - nu(12C) (and nu(14C) - nu(12C)); MHz values are unit conversions of shifts printed in cm^-1 or mK (1 cm^-1 = 29979.2458 MHz) and carry a 'derived' note, with the printed number kept in value_cm / value_mK. 12C has I = 0 (no hyperfine structure); 13C has I = 1/2, so only magnetic-dipole A constants exist. The 609 um / 370 um ground-term lines are outside the site's range; their frequencies are kept only under additional_isotope_data because they fix the 13C level positions. g_J values refer to 12C. Non-schema fields: J, lower_J/upper_J, alternatives, value_cm, value_mK, wavelength_air_A, top-level ionization_energy, additional_isotope_data, conflicts."
+   },
+   "A_s_older_measurement": {
+    "value": 350000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 49000000.0,
+    "note": "A as printed (3.5 x 10^8 s^-1) for the line at 1657.9070 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-14 %)."
+   }
+  },
+  {
+   "lower_cm": 16.416713,
+   "upper_cm": 60352.6584,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2s22p2 3P1 - 2s22p3s 3P1",
+   "type": "E1",
+   "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": -2578.0,
+     "unc": 1049.0,
+     "value_cm": -0.086,
+     "unc_cm": 0.035,
+     "method": "experiment",
+     "note": "derived: measured shift -0.086(35) cm^-1 converted to MHz; measured wavenumbers 12C 60336.234(25), 13C 60336.148(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
+     "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
+     "url": "https://www.mdpi.com/2218-2004/8/3/62",
+     "alternatives": [
+      {
+       "value": -2755.0,
+       "unc": 84.0,
+       "method": "compilation",
+       "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
+      },
+      {
+       "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
+      }
+     ]
+    }
+   },
+   "A_s_older_measurement": {
+    "value": 90000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 13000000.0,
+    "note": "A as printed (0.9 x 10^8 s^-1) for the line at 1657.3797 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-14 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 60393.1693,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2s22p2 3P2 - 2s22p3s 3P2",
+   "type": "E1",
+   "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": -2908.0,
+     "unc": 1049.0,
+     "value_cm": -0.097,
+     "unc_cm": 0.035,
+     "method": "experiment",
+     "note": "derived: measured shift -0.097(35) cm^-1 converted to MHz; measured wavenumbers 12C 60349.750(25), 13C 60349.653(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
+     "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
+     "url": "https://www.mdpi.com/2218-2004/8/3/62",
+     "alternatives": [
+      {
+       "value": -2755.0,
+       "unc": 84.0,
+       "method": "compilation",
+       "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
+      },
+      {
+       "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
+      }
+     ]
+    }
+   },
+   "A_s_older_measurement": {
+    "value": 240000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 34000000.0,
+    "note": "A as printed (2.4 x 10^8 s^-1) for the line at 1657.0078 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-14 %)."
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 60352.6584,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2s22p2 3P0 - 2s22p3s 3P1",
+   "type": "E1",
+   "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": -3418.0,
+     "unc": 1049.0,
+     "value_cm": -0.114,
+     "unc_cm": 0.035,
+     "method": "experiment",
+     "note": "derived: measured shift -0.114(35) cm^-1 converted to MHz; measured wavenumbers 12C 60352.663(25), 13C 60352.549(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
+     "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
+     "url": "https://www.mdpi.com/2218-2004/8/3/62",
+     "alternatives": [
+      {
+       "value": -2755.0,
+       "unc": 84.0,
+       "method": "compilation",
+       "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
+      },
+      {
+       "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
+      }
+     ]
+    }
+   },
+   "A_s_older_measurement": {
+    "value": 110000000.00000001,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 17000000.0,
+    "note": "A as printed (1.1 x 10^8 s^-1) for the line at 1656.9282 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-15 %)."
+   }
+  },
+  {
+   "lower_cm": 16.416713,
+   "upper_cm": 60393.1693,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2s22p2 3P1 - 2s22p3s 3P2",
+   "type": "E1",
+   "use": "165.7 nm resonance multiplet 2p2 3P - 2p3s 3P: measured for both 12C and 13C (isotope-resolved VUV line)",
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": -3028.0,
+     "unc": 1049.0,
+     "value_cm": -0.101,
+     "unc_cm": 0.035,
+     "method": "experiment",
+     "note": "derived: measured shift -0.101(35) cm^-1 converted to MHz; measured wavenumbers 12C 60376.750(25), 13C 60376.649(25) cm^-1 (less precise than the NIST Ritz value for 12C). The table row labels are scrambled in the PDF text layer; the assignment was fixed by matching the 12C wavenumber to the NIST level difference.",
+     "source": "Lai, Ubachs, De Oliveira, Salumbides, Atoms 8, 62 (2020), Table 3 (Fourier-transform VUV absorption spectroscopy at the SOLEIL synchrotron)",
+     "url": "https://www.mdpi.com/2218-2004/8/3/62",
+     "alternatives": [
+      {
+       "value": -2755.0,
+       "unc": 84.0,
+       "method": "compilation",
+       "note": "about -0.0919(28) cm^-1 (individual lines -0.0914 to -0.0919): Haris & Kramida 2017 values as printed in Lai et al. Table 3 ('Ref. [10]'); these rest on calculated level shifts (Berengut et al. 2006), not on a direct measurement"
+      },
+      {
+       "note": "Haridass and Huber, Astrophys. J. 420, 433 (1994): -0.14 to -0.16 cm^-1 (as printed in Lai et al. Table 3)"
+      }
+     ]
+    }
+   },
+   "A_s_older_measurement": {
+    "value": 86000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 13000000.0,
+    "note": "A as printed (0.86 x 10^8 s^-1) for the line at 1656.2665 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-15 %)."
+   }
+  },
+  {
+   "lower_cm": 21648.03,
+   "upper_cm": 61981.83211,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2s22p2 1S0 - 2s22p3s 1P1",
+   "type": "E1",
+   "use": "2478.56 A (air) line; isotope shift measured for 12C, 13C, 14C",
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": -4677.0,
+     "unc": 60.0,
+     "value_mK": -156,
+     "unc_mK": 2,
+     "method": "compilation",
+     "note": "derived: -156(2) mK converted to MHz (1 mK = 1e-3 cm^-1)",
+     "source": "J. R. Holmes, J. Opt. Soc. Am. 41, 360 (1951) (agrees with C. R. Burnett, Phys. Rev. 80, 494 (1950)); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 and Table 6",
+     "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+    },
+    "14-12": {
+     "value": -8814.0,
+     "unc": 60.0,
+     "value_mK": -294,
+     "unc_mK": 2,
+     "method": "compilation",
+     "note": "derived: -294(2) mK converted to MHz",
+     "source": "J. R. Holmes, J. Opt. Soc. Am. 41, 360 (1951); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
+     "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+    }
+   },
+   "wavelength_air_A": {
+    "12": "2478.56132(20)",
+    "13": "2478.57091(24)",
+    "14": "2478.57939(24)",
+    "method": "compilation",
+    "note": "isotope-resolved air wavelengths (Angstrom) derived by Haris & Kramida from the Ritz wavelength of natural C and the measured shifts",
+    "source": "K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
+    "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 79318.8093,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2s22p2 3P0 - 2s22p3d 3P°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 50000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 7500000.0,
+    "note": "A as printed (0.5 x 10^8 s^-1) for the line at 1260.7360 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-15 %)."
+   }
+  },
+  {
+   "lower_cm": 16.416713,
+   "upper_cm": 79310.86822,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2s22p2 3P1 - 2s22p3d 3P°2",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 40000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 4800000.0,
+    "note": "A as printed (0.4 x 10^8 s^-1) for the line at 1261.1220 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-12 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 79318.8093,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2s22p2 3P2 - 2s22p3d 3P°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 63000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 8200000.0,
+    "note": "A as printed (0.63 x 10^8 s^-1) for the line at 1261.4260 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-13 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 79310.86822,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2s22p2 3P2 - 2s22p3d 3P°2",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 140000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 21000000.0,
+    "note": "A as printed (1.4 x 10^8 s^-1) for the line at 1261.5520 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-15 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 78307.64625,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2s22p2 3P2 - 2s22p3d 3D°2",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 65000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 13000000.0,
+    "note": "A as printed (0.65 x 10^8 s^-1) for the line at 1277.7230 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-20 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 78293.51263,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2s22p2 3P2 - 2s22p3d 3D°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 6400000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 1900000.0,
+    "note": "A as printed (0.064 x 10^8 s^-1) for the line at 1277.9540 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-30 %)."
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 75254.0017,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2s22p2 3P0 - 2s2p3 3P°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 81000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 11000000.0,
+    "note": "A as printed (0.81 x 10^8 s^-1) for the line at 1328.8332 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-13 %)."
+   }
+  },
+  {
+   "lower_cm": 10192.657,
+   "upper_cm": 78529.64651,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "2s22p2 1D2 - 2s22p3d 1F°3",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 190000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 25000000.0,
+    "note": "A as printed (1.9 x 10^8 s^-1) for the line at 1463.3360 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-13 %)."
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 64089.899,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2s22p2 3P0 - 2s2p3 3D°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 75000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "note": "A as printed (0.75 x 10^8 s^-1) for the line at 1560.3095 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. derived: this is the reference line of the experiment; its f = 0.082 and A were set by the authors from the mean measured lifetime of the 2s2p3 3D° term (7.4 ns), not measured independently."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 64086.96961,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "2s22p2 3P2 - 2s2p3 3D°3",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 120000000.0,
+    "method": "experiment",
+    "source": "Goldbach and Nollez, Astron. Astrophys. 181, 203 (1987), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1987A&A...181..203G",
+    "unc": 13000000.0,
+    "note": "A as printed (1.2 x 10^8 s^-1) for the line at 1561.4382 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-11 %)."
+   }
+  },
+  {
+   "lower_cm": 16.416713,
+   "upper_cm": 78148.10824,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2s22p2 3P1 - 2s22p4s 3P°2",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 27000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 5400000.0,
+    "note": "A as printed (0.27 x 10^8 s^-1) for the line at 1279.8900 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-20 %)."
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 78116.77336,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2s22p2 3P0 - 2s22p4s 3P°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 27000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 5400000.0,
+    "note": "A as printed (0.27 x 10^8 s^-1) for the line at 1280.1350 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-20 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 78148.10824,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2s22p2 3P2 - 2s22p4s 3P°2",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 52000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 10000000.0,
+    "note": "A as printed (0.52 x 10^8 s^-1) for the line at 1280.3330 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-20 %)."
+   }
+  },
+  {
+   "lower_cm": 16.416713,
+   "upper_cm": 78105.00058,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "2s22p2 3P1 - 2s22p4s 3P°0",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 79000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 16000000.0,
+    "note": "A as printed (0.79 x 10^8 s^-1) for the line at 1280.5970 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-20 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 78116.77336,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2s22p2 3P2 - 2s22p4s 3P°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 31000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 5900000.0,
+    "note": "A as printed (0.31 x 10^8 s^-1) for the line at 1280.8470 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-19 %)."
+   }
+  },
+  {
+   "lower_cm": 16.416713,
+   "upper_cm": 78199.09144,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2s22p2 3P1 - 2s22p3d 3F°2",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 1799999.9999999998,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 400000.0,
+    "note": "A as printed (0.018 x 10^8 s^-1) for the line at 1279.0560 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-22 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 78215.54012,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "2s22p2 3P2 - 2s22p3d 3F°3",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 11000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 2200000.0,
+    "note": "A as printed (0.11 x 10^8 s^-1) for the line at 1279.2290 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-20 %)."
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 78199.09144,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2s22p2 3P2 - 2s22p3d 3F°2",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 800000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 200000.0,
+    "note": "A as printed (0.008 x 10^8 s^-1) for the line at 1279.4980 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-25 %)."
+   }
+  },
+  {
+   "lower_cm": 10192.657,
+   "upper_cm": 78731.2956,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2s22p2 1D2 - 2s22p3d 1P°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 45000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 8600000.0,
+    "note": "A as printed (0.45 x 10^8 s^-1) for the line at 1459.0317 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-19 %)."
+   }
+  },
+  {
+   "lower_cm": 10192.657,
+   "upper_cm": 78340.29782,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2s22p2 1D2 - 2s22p4s 1P°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 57999999.99999999,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 11000000.0,
+    "note": "A as printed (0.58 x 10^8 s^-1) for the line at 1467.4020 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-19 %)."
+   }
+  },
+  {
+   "lower_cm": 10192.657,
+   "upper_cm": 78318.26602,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "2s22p2 1D2 - 2s22p3d 3D°3",
+   "type": "intercombination",
+   "A_s_older_measurement": {
+    "value": 1300000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 270000.0,
+    "note": "A as printed (0.013 x 10^8 s^-1) for the line at 1467.8770 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-21 %)."
+   }
+  },
+  {
+   "lower_cm": 10192.657,
+   "upper_cm": 78293.51263,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2s22p2 1D2 - 2s22p3d 3D°1",
+   "type": "intercombination",
+   "A_s_older_measurement": {
+    "value": 3900000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 780000.0,
+    "note": "A as printed (0.039 x 10^8 s^-1) for the line at 1468.4100 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-20 %)."
+   }
+  },
+  {
+   "lower_cm": 10192.657,
+   "upper_cm": 78215.54012,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "2s22p2 1D2 - 2s22p3d 3F°3",
+   "type": "intercombination",
+   "A_s_older_measurement": {
+    "value": 1500000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 300000.0,
+    "note": "A as printed (0.015 x 10^8 s^-1) for the line at 1470.0940 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-20 %)."
+   }
+  },
+  {
+   "lower_cm": 10192.657,
+   "upper_cm": 77679.83311,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2s22p2 1D2 - 2s22p3d 1D°2",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 38000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 7200000.0,
+    "note": "A as printed (0.38 x 10^8 s^-1) for the line at 1481.7635 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-19 %)."
+   }
+  },
+  {
+   "lower_cm": 21648.03,
+   "upper_cm": 78731.2956,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2s22p2 1S0 - 2s22p3d 1P°1",
+   "type": "E1",
+   "A_s_older_measurement": {
+    "value": 76000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 14000000.0,
+    "note": "A as printed (0.76 x 10^8 s^-1) for the line at 1751.8277 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-19 %)."
+   }
+  },
+  {
+   "lower_cm": 10192.657,
+   "upper_cm": 61981.83211,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2s22p2 1D2 - 2s22p3s 1P°1",
+   "type": "E1",
+   "use": "193.09 nm line: carbon line used in white-dwarf and comet spectra (Goldbach et al. 1989); main decay channel of 2p3s 1P°1",
+   "A_s_older_measurement": {
+    "value": 340000000.0,
+    "method": "experiment",
+    "source": "Goldbach, Martin, Nollez, Astron. Astrophys. 221, 155 (1989), Table 2",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1989A&A...221..155G",
+    "unc": 61000000.0,
+    "note": "A as printed (3.4 x 10^8 s^-1) for the line at 1930.9054 A (vacuum); wall-stabilised arc emission measurement, absolute scale fixed to the mean measured lifetime of 2s2p3 3D° through the 1560.31 A reference line. unc derived from the printed relative uncertainty of the oscillator strength (+-18 %). The authors recommend gf = 0.56 +- 0.05 for this line (mean of arc measurements and theory)."
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 16.416713,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2s22p2 3P0 - 2s22p2 3P1",
+   "type": "M1",
+   "use": "492 GHz (609 um) ground-term fine-structure line [C I]: major coolant and tracer of the interstellar medium; laboratory rest frequency for radio astronomy (far outside the 2 um range of the diagram)",
+   "frequency_THz": {
+    "value": 0.492160651,
+    "unc": 5.5e-08,
+    "isotope": "12",
+    "method": "experiment",
+    "note": "492160.651 +- 0.055 MHz, the uncertainty is three standard deviations as printed (Haris & Kramida 2017 reduce it to 0.018 MHz at one standard deviation). 12C has no hyperfine structure.",
+    "source": "Yamamoto and Saito, Astrophys. J. 370, L103 (1991) (submillimetre-wave absorption spectroscopy)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1991ApJ...370L.103Y",
+    "alternatives": [
+     {
+      "value": 0.4921607,
+      "unc": 1e-07,
+      "note": "Frerking et al. 1989, from astronomical line profiles (as printed in Table 1 of Yamamoto & Saito)"
+     },
+     {
+      "value": 0.4921611,
+      "unc": 1.2e-06,
+      "note": "Cooksy et al. 1986, far-infrared laser magnetic resonance (same table)"
+     },
+     {
+      "value": 0.4921623,
+      "unc": 7e-07,
+      "note": "Saykally and Evenson 1980, far-infrared laser magnetic resonance (same table)"
+     }
+    ]
+   },
+   "frequency_THz_13": {
+    "value": 0.492162889,
+    "unc": 1.8e-08,
+    "isotope": "13",
+    "method": "compilation",
+    "note": "hyperfine centre of gravity, derived by Haris & Kramida from a least-squares fit of the measured hyperfine components; measured components (Yamamoto & Saito 1991, uncertainties at three standard deviations): F = 3/2-1/2 492164.276(72) MHz, F = 1/2-1/2 492160.147(168) MHz",
+    "source": "Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Tables 3 and 8 (arXiv:1704.07474), from the measurements of Yamamoto and Saito, Astrophys. J. 370, L103 (1991)",
+    "url": "https://arxiv.org/pdf/1704.07474"
+   },
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": 2.238,
+     "unc": 0.025,
+     "method": "compilation",
+     "note": "derived: difference of the 13C centre of gravity 492162.889(18) MHz and the 12C frequency 492160.651(18) MHz; Haris & Kramida print +0.0747(8) mK",
+     "source": "Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Table 6 (arXiv:1704.07474)",
+     "url": "https://arxiv.org/pdf/1704.07474"
+    }
+   }
+  },
+  {
+   "lower_cm": 16.416713,
+   "upper_cm": 43.4134567,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2s22p2 3P1 - 2s22p2 3P2",
+   "type": "M1",
+   "use": "809 GHz (370 um) ground-term fine-structure line [C I]: interstellar-medium tracer (far outside the 2 um range of the diagram)",
+   "frequency_THz": {
+    "value": 0.80934197,
+    "unc": 1.7e-08,
+    "isotope": "12",
+    "method": "compilation",
+    "note": "809341.970(17) MHz, uncertainty reduced to one standard deviation by Haris & Kramida; the measuring paper was not opened",
+    "source": "Klein, Lewen, Schieder, Stutzki, Winnewisser, Astrophys. J. 494, L125 (1998), as quoted in Table 3 of Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017) (arXiv:1704.07474)",
+    "url": "https://arxiv.org/pdf/1704.07474"
+   },
+   "frequency_THz_13": {
+    "value": 0.809346103,
+    "unc": 4.4e-08,
+    "isotope": "13",
+    "method": "compilation",
+    "note": "hyperfine centre of gravity derived by Haris & Kramida from the hyperfine components measured by Klein et al. 1998",
+    "source": "Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Tables 3 and 8 (arXiv:1704.07474)",
+    "url": "https://arxiv.org/pdf/1704.07474"
+   },
+   "isotope_shift_MHz": {
+    "13-12": {
+     "value": 4.133,
+     "unc": 0.047,
+     "method": "compilation",
+     "note": "derived: difference of the 13C centre of gravity 809346.103(44) MHz and the 12C frequency 809341.970(17) MHz; Haris & Kramida print +0.1378(16) mK",
+     "source": "Haris and Kramida, Astrophys. J. Suppl. 233, 16 (2017), Table 6 (arXiv:1704.07474)",
+     "url": "https://arxiv.org/pdf/1704.07474"
+    }
+   }
+  },
+  {
+   "lower_cm": 43.4134567,
+   "upper_cm": 69744.05213,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "2s22p2 3P2 - 2s22p3p 3D3 (two-photon)",
+   "type": "two-photon",
+   "use": "two-photon excitation of ground-state carbon atoms at 2 x 286.9 nm (3P - 3D), detected by the cascade 3p 3D - 3s 3P° (1069 nm) and the 165.7 nm vacuum-ultraviolet fluorescence 3s 3P° - 2p2 3P; used for buffer-gas cooling diagnostics and proposed for two-photon laser cooling of carbon (Sakamoto, Suzuki, Yoshioka, arXiv:2407.09108 (2024); Sakamoto and Yoshioka, Phys. Rev. A 106, 052808 (2022))",
+   "wavelength_vac_nm": {
+    "value": 286.9,
+    "method": "experiment",
+    "note": "laser wavelength as printed (two photons of this wavelength); broadband pulsed excitation of the whole 3P - 3D multiplet, the J assignment 3P2 - 3D3 is the one drawn in Fig. 1(c) of the paper. No precise frequency is given.",
+    "source": "Sakamoto, Suzuki, Yoshioka, Buffer gas cooling of carbon atoms, arXiv:2407.09108 (2024)",
+    "url": "https://arxiv.org/pdf/2407.09108"
+   }
+  }
+ ],
+ "additional_isotope_data": [
+  {
+   "quantity": "2s22p2 3P0,1,2 - 2s2p3 3S1 (945 A; upper level at 105 799 cm^-1, above the ionization limit, not drawn)",
+   "isotope_shift_13_12_mK": 510.7,
+   "unc_mK": 1.3,
+   "isotope_shift_13_12_MHz": 15310.0,
+   "unc_MHz": 39.0,
+   "method": "compilation",
+   "note": "weighted mean over the three components; MHz value derived by unit conversion",
+   "source": "Labazan, Reinhold, Ubachs, Flambaum, Phys. Rev. A 71 (2005) (VUV laser spectroscopy); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4 and Table 6",
+   "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+  },
+  {
+   "quantity": "2s22p2 3P2 - 2s2p3 5S2 (2967 A intercombination line; level not drawn)",
+   "isotope_shift_13_12_mK": 670,
+   "unc_mK": 5,
+   "method": "compilation",
+   "source": "Bernheim and Kittrell, Spectrochim. Acta 35, 51 (1980); K. Haris and A. Kramida, Astrophys. J. Suppl. 233, 16 (2017), Sec. 4",
+   "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+  },
+  {
+   "quantity": "ground-term fine-structure lines 3P0-3P1 (492 GHz) and 3P1-3P2 (809 GHz), outside the 2 um range",
+   "frequency_MHz_12C": [
+    492160.651,
+    809341.97
+   ],
+   "unc_MHz": [
+    0.018,
+    0.017
+   ],
+   "frequency_MHz_13C_centre_of_gravity": [
+    492162.889,
+    809346.103
+   ],
+   "unc_MHz_13C": [
+    0.018,
+    0.044
+   ],
+   "method": "compilation",
+   "source": "Yamamoto and Saito, Astrophys. J. Lett. 370, L103 (1991); Klein et al. (1998); Table 6 of Haris and Kramida 2017",
+   "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=923195"
+  }
+ ],
+ "not_found": [
+  "lifetimes of the metastable 2s22p2 1D2 and 1S0 levels: no measurement located",
+  "O'Brian and Lawler, JQSRT 57, 309 (1997), Wolber et al. 1969/1970, Beckmann et al. 1975, Holmes 1951: primary papers not opened; values are as printed in the NIST compilations cited",
+  "13C hyperfine constants of excited levels (2p3s 3P, 1P, ...): none located",
+  "measured g_J of excited C I levels: none located",
+  "direct measurements of 13C-12C shifts for VUV lines other than the 165.7 nm multiplet, 247.9 nm, 296.7 nm and 94.5 nm: none; the values in parentheses in Haris & Kramida Table 6 are calculated (Berengut et al. 2006) and were not entered as measurements",
+  "laser cooling of atomic carbon: none found",
+  "J-resolved measured lifetimes of 2s22p3s 3P°, 2s2p3 3D°: only term values found (Table 1 of Goldbach & Nollez 1987). Measured lifetimes of 2s2p3 3P° (Brooks et al. 1977), 2p3d 3P°, 3D°, 1F° (Bromander 1971), 2p4s, 2pnd (n >= 4), 2p ns (n >= 5) levels: Goldbach & Nollez print only the oscillator strengths derived from them (multiplet f = 0.063, 0.038, 0.090, 0.068), not the lifetimes; the original papers (Phys. Scr., J. Opt. Soc. Am.) were not accessible.",
+  "lifetimes of the 2p3p levels used in the two-photon scheme (3p 3D: about 54 ns, 3s 3P°: about 4 ns are quoted by Sakamoto et al. 2024 from NIST transition rates, i.e. not measurements): not entered.",
+  "Klein et al., Astrophys. J. 494, L125 (1998) (809 GHz line; ADS/IOP copy access denied) not opened: values second-hand from Haris & Kramida 2017.",
+  "precise frequencies of two-photon 2p2 3P - 2p3p 3P / 3D lines (280 nm / 287 nm; Sakamoto & Yoshioka, Phys. Rev. A 106, 052808 (2022) not accessible): none entered.",
+  "transition probabilities for lines to 2p nd / ns levels with n >= 4 (other than 4s 3P°, 4s 1P°): no measurement located; NIST values stand."
+ ],
+ "conflicts": [
+  "13C-12C shift of the 165.7 nm multiplet: directly measured -0.086 to -0.114 (35) cm^-1 (Lai et al. 2020) vs -0.0919(28) cm^-1 semi-theoretical (Haris & Kramida 2017) vs -0.14 to -0.16 cm^-1 (Haridass & Huber 1994); consistent within uncertainties, the direct measurement is kept as the entry although the semi-theoretical value is 12 times tighter",
+  "g_J of 2s22p2 3P1 / 3P2: Beckmann 1975 corrected 1.5010623(50) / 1.5010469(50) vs Wolber 1969 1.501052(13) / 1.501039(15); the corrected Beckmann values (already in data/c/levels.csv) are kept",
+  "13C A(3P1): 2.838(17) MHz as published (Wolber 1970) vs 2.829(17) MHz after the off-diagonal correction of Carette & Godefroid 2011",
+  "natural abundance: NIST composition page 98.93(8) / 1.07(8) % vs 98.94 / 1.06 % quoted by Haris & Kramida",
+  "Measured A values added from the arc-emission experiments of Goldbach & Nollez (1987) and Goldbach, Martin & Nollez (1989) carry 11-30 per cent uncertainties, whereas NIST ASD lists calculated (MCHF) values of accuracy A/B for the same lines. Examples (measured vs NIST, 10^8 s^-1): 165.70 nm 3P2-3s 3P2 2.4 vs 2.61; 165.79 nm 3P1-3s 3P0 3.5 vs 3.47; 156.14 nm 3P2-2s2p3 3D3 1.2 vs 1.17; 127.77 nm 3P2-3d 3D2 0.65 vs 0.63; 126.16 nm 3P2-3d 3P2 1.4 vs 1.31; 193.09 nm 1D2-3s 1P1 3.4 vs 3.39; 175.18 nm 1S0-3d 1P1 0.76 vs 0.84; 148.18 nm 1D2-3d 1D2 0.38 vs 0.35; 128.03 nm 3P2-4s 3P2 0.52 vs 0.64. All agree within the experimental error, but the NIST values are the more accurate ones: if the pipeline gives measurements priority, these lines lose precision.",
+  "2s2p3 3D° term lifetime: 7.3-8.0 ns in five measurements (weighted mean 7.4(1) ns, Goldbach & Nollez 1987); 2p3s 3P° term lifetime 2.9-3.1 ns (weighted mean 2.9(1) ns). These are term values, entered identically for the three J levels.",
+  "3P0-3P1 frequency of 12C: 492160.651(55) MHz (Yamamoto & Saito 1991, 3 sigma) vs 492160.7(1) (Frerking 1989), 492161.1(1.2) (Cooksy 1986), 492162.3(7) MHz (Saykally & Evenson 1980); the 1980 value is 2.4 sigma high."
+ ],
+ "notes": "Isotope shifts are nu(13C) - nu(12C) (and nu(14C) - nu(12C)); MHz values are unit conversions of shifts printed in cm^-1 or mK (1 cm^-1 = 29979.2458 MHz) and carry a 'derived' note, with the printed number kept in value_cm / value_mK. 12C has I = 0 (no hyperfine structure); 13C has I = 1/2, so only magnetic-dipole A constants exist. The 609 um / 370 um ground-term lines are outside the site's range; their frequencies are kept only under additional_isotope_data because they fix the 13C level positions. g_J values refer to 12C. Non-schema fields: J, lower_J/upper_J, alternatives, value_cm, value_mK, wavelength_air_A, top-level ionization_energy, additional_isotope_data, conflicts. Second pass (2026-10-01): A_s values from Goldbach & Nollez (1987) and Goldbach et al. (1989) were read from the scanned pages on NASA ADS (image checked by eye, not only the character recognition); they are wall-stabilised-arc emission measurements whose absolute scale rests on the mean measured lifetime of the 2s2p3 3D° term, blended lines were left out. Lifetimes of 3s 3P° and 2s2p3 3D° are term values copied to each J level. The ground-term M1 lines 3P0-3P1 and 3P1-3P2 now have schema entries (frequency_THz for 12C, frequency_THz_13 for the 13C hyperfine centre of gravity); the older additional_isotope_data block is kept unchanged. The two-photon entry carries the laser wavelength in wavelength_vac_nm. Owner's rule (2026-10-01): measurements older than 20 years do not replace NIST; the 1987/1989 arc-emission A values of Goldbach et al. are kept under \"A_s_older_measurement\" where NIST lists an A for the same line."
 }

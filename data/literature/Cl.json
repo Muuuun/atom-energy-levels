@@ -193,6 +193,62 @@
         "url": "https://articles.adsabs.harvard.edu/pdf/1993ApJ...406..735S",
         "note": "derived by the authors from the 1088/1097 intensity ratio assuming equal initial populations of the two J=5/2 levels; not a direct decay-curve measurement. Level not drawn on the site at present."
       }
+    },
+    {
+      "nist_energy_cm": 99534.419,
+      "label": "3p4(1S)4s 2S1/2",
+      "J": "1/2",
+      "lifetime": {
+        "value": 1.0400000000000001e-09,
+        "unc": 8.000000000000001e-11,
+        "unit": "s",
+        "method": "experiment",
+        "note": "upper level of the 1004.68 A line (identified here by matching the vacuum wavelength to the NIST level energy); weighted average of runs at 130 and 170 keV; two-exponential fit to remove a Cl III blend at 1005.28 A. Level not drawn on the site at present.",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 1",
+        "url": "https://arxiv.org/pdf/1910.05803"
+      }
+    },
+    {
+      "nist_energy_cm": 92602.7,
+      "label": "3p4(3P0)5s 2[0]1/2 (called 5s 2P1/2 in the paper)",
+      "J": "1/2",
+      "lifetime": {
+        "value": 5.830000000000001e-09,
+        "unc": 3.6e-10,
+        "unit": "s",
+        "method": "experiment",
+        "note": "upper level of the 1079.88 A line (identified here by matching the vacuum wavelength to the NIST level energy); weighted average of runs at 130 and 170 keV; single-exponential fit. Level not drawn on the site at present.",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 1",
+        "url": "https://arxiv.org/pdf/1910.05803"
+      }
+    },
+    {
+      "nist_energy_cm": 91680.99,
+      "label": "3p4(3P2)5s 2[2]3/2 (called 5s 2P3/2 in the paper)",
+      "J": "3/2",
+      "lifetime": {
+        "value": 8.980000000000002e-09,
+        "unc": 7.2e-10,
+        "unit": "s",
+        "method": "experiment",
+        "note": "upper level of the 1090.73 A line (identified here by matching the vacuum wavelength to the NIST level energy); weighted average of runs at 130 and 170 keV; cascade-corrected (arbitrarily normalised decay curves); cascades of about 30 ns affected the primary lifetime by less than 16 per cent. Level not drawn on the site at present.",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 1",
+        "url": "https://arxiv.org/pdf/1910.05803"
+      }
+    },
+    {
+      "nist_energy_cm": 91343.5,
+      "label": "3p4(3P2)5s 2[2]5/2 in NIST (called 3d 2F5/2 in the paper, after Oliver & Hibbert 2007)",
+      "J": "5/2",
+      "lifetime": {
+        "value": 6.280000000000001e-09,
+        "unc": 1.8e-10,
+        "unit": "s",
+        "method": "experiment",
+        "note": "upper level of the 1094.77 A line (identified here by matching the vacuum wavelength to the NIST level energy); weighted average of runs at 130 and 170 keV; single-exponential fit; no detectable blending. Level not drawn on the site at present.",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 1",
+        "url": "https://arxiv.org/pdf/1910.05803"
+      }
     }
   ],
   "transitions": [
@@ -394,20 +450,430 @@
         "url": "https://hal.science/hal-01549418v1",
         "note": "the abstract gives 235.702 nm and the 726 nm fluorescence to (4s) 4P5/2; the upper-level name is stripped in the HAL text and was identified here (derived) from 2/235.702 nm + 882.35 cm^-1 = 85735.6 cm^-1"
       }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 99534.419,
+      "lower_J": "3/2",
+      "upper_J": "1/2",
+      "label": "3p5 2P°3/2 - 3p4(1S)4s 2S1/2 (1004.68 A)",
+      "type": "E1",
+      "use": "interstellar Cl I 1005 A absorption line (far-ultraviolet, diffuse-cloud chlorine and H2 tracer)",
+      "oscillator_strength_f": {
+        "value": 0.0473,
+        "unc": 0.0036,
+        "method": "experiment",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 2",
+        "url": "https://arxiv.org/pdf/1910.05803",
+        "note": "absorption f derived by the authors from their measured lifetime (dominant decay channel). Astronomical value of Sonnentrucker et al. (2006), same table: 0.0514 (+0.0058/-0.0051)"
+      },
+      "A_s": {
+        "value": 625000000.0,
+        "unc": 48000000.0,
+        "method": "experiment",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 2",
+        "url": "https://arxiv.org/pdf/1910.05803",
+        "note": "derived here from the printed absorption oscillator strength: A = 6.6702e15 g_l f / (g_u lambda^2[A])"
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 92602.7,
+      "lower_J": "3/2",
+      "upper_J": "1/2",
+      "label": "3p5 2P°3/2 - 3p4(3P0)5s 2[0]1/2 (1079.88 A)",
+      "type": "E1",
+      "use": "interstellar Cl I 1080 A absorption line (far-ultraviolet, diffuse-cloud chlorine and H2 tracer)",
+      "oscillator_strength_f": {
+        "value": 0.0047,
+        "unc": 0.0003,
+        "method": "experiment",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 2",
+        "url": "https://arxiv.org/pdf/1910.05803",
+        "note": "absorption f derived by the authors from their measured lifetime with a branching ratio taken from the calculation of Oliver & Hibbert (2013). Astronomical value of Sonnentrucker et al. (2006), same table: 0.0056 (+0.0013/-0.0012)"
+      },
+      "A_s": {
+        "value": 53800000.0,
+        "unc": 3400000.0,
+        "method": "experiment",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 2",
+        "url": "https://arxiv.org/pdf/1910.05803",
+        "note": "derived here from the printed absorption oscillator strength: A = 6.6702e15 g_l f / (g_u lambda^2[A])"
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 91680.99,
+      "lower_J": "3/2",
+      "upper_J": "3/2",
+      "label": "3p5 2P°3/2 - 3p4(3P2)5s 2[2]3/2 (1090.73 A)",
+      "type": "E1",
+      "use": "interstellar Cl I 1091 A absorption line (far-ultraviolet, diffuse-cloud chlorine and H2 tracer)",
+      "oscillator_strength_f": {
+        "value": 0.0095,
+        "unc": 0.0008,
+        "method": "experiment",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 2",
+        "url": "https://arxiv.org/pdf/1910.05803",
+        "note": "absorption f derived by the authors from their measured lifetime with a branching ratio taken from the calculation of Oliver & Hibbert (2013). Astronomical value of Sonnentrucker et al. (2006), same table: 0.0028(4), in disagreement (stellar blending)"
+      },
+      "A_s": {
+        "value": 53300000.0,
+        "unc": 4500000.0,
+        "method": "experiment",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 2",
+        "url": "https://arxiv.org/pdf/1910.05803",
+        "note": "derived here from the printed absorption oscillator strength: A = 6.6702e15 g_l f / (g_u lambda^2[A])"
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 91343.5,
+      "lower_J": "3/2",
+      "upper_J": "5/2",
+      "label": "3p5 2P°3/2 - 3p4(3P2)5s 2[2]5/2 (1094.77 A)",
+      "type": "E1",
+      "use": "interstellar Cl I 1095 A absorption line (far-ultraviolet, diffuse-cloud chlorine and H2 tracer)",
+      "oscillator_strength_f": {
+        "value": 0.0385,
+        "unc": 0.0011,
+        "method": "experiment",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 2",
+        "url": "https://arxiv.org/pdf/1910.05803",
+        "note": "absorption f derived by the authors from their measured lifetime (dominant decay channel). Astronomical value of Sonnentrucker et al. (2006), same table: 0.0396 (+0.0042/-0.0038)"
+      },
+      "A_s": {
+        "value": 143000000.0,
+        "unc": 4100000.0,
+        "method": "experiment",
+        "source": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 2",
+        "url": "https://arxiv.org/pdf/1910.05803",
+        "note": "derived here from the printed absorption oscillator strength: A = 6.6702e15 g_l f / (g_u lambda^2[A])"
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 71958.363,
+      "lower_J": "3/2",
+      "upper_J": "5/2",
+      "label": "3p5 2P°3/2 - 3p4 4s 4P5/2",
+      "type": "intercombination",
+      "use": "VUV resonance line of the 3p5 - 3p4 4s array (chlorine-atom resonance absorption / fluorescence detection in kinetics; interstellar Cl I)",
+      "oscillator_strength_f": {
+        "value": 0.00014,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1389.693 A line as printed in the review table; the original paper was not opened",
+        "unc": 1e-05,
+        "alternatives": [
+          {
+            "value": 9.819e-05,
+            "note": "Lawrence 1967 (lifetime-based, intermediate-coupling analysis), same table"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 322000.0,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 0.00014: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value",
+        "unc": 23000.0
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 72488.568,
+      "lower_J": "3/2",
+      "upper_J": "3/2",
+      "label": "3p5 2P°3/2 - 3p4 4s 4P3/2",
+      "type": "intercombination",
+      "use": "VUV resonance line of the 3p5 - 3p4 4s array (chlorine-atom resonance absorption / fluorescence detection in kinetics; interstellar Cl I)",
+      "oscillator_strength_f": {
+        "value": 0.0024,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1379.528 A line as printed in the review table; the original paper was not opened",
+        "unc": 0.0005,
+        "alternatives": [
+          {
+            "value": 0.0024,
+            "note": "Hofmann 1967, wall-stabilised arc emission"
+          },
+          {
+            "value": 0.002595,
+            "note": "Lawrence 1967"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 8410000.0,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 0.0024: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value",
+        "unc": 1800000.0
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 72827.038,
+      "lower_J": "3/2",
+      "upper_J": "1/2",
+      "label": "3p5 2P°3/2 - 3p4 4s 4P1/2",
+      "type": "intercombination",
+      "use": "VUV resonance line of the 3p5 - 3p4 4s array (chlorine-atom resonance absorption / fluorescence detection in kinetics; interstellar Cl I)",
+      "oscillator_strength_f": {
+        "value": 7.9e-05,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1373.116 A line as printed in the review table; the original paper was not opened",
+        "unc": 4.8e-05,
+        "alternatives": [
+          {
+            "value": 3.2e-05,
+            "note": "Hofmann 1967, wall-stabilised arc emission"
+          },
+          {
+            "value": 7.277e-05,
+            "note": "Lawrence 1967"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 559000.0,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 7.9e-05: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value",
+        "unc": 340000.0
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 74865.667,
+      "lower_J": "3/2",
+      "upper_J": "1/2",
+      "label": "3p5 2P°3/2 - 3p4 4s 2P1/2",
+      "type": "E1",
+      "use": "VUV resonance line of the 3p5 - 3p4 4s array (chlorine-atom resonance absorption / fluorescence detection in kinetics; interstellar Cl I)",
+      "oscillator_strength_f": {
+        "value": 0.028,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1335.726 A line as printed in the review table; the original paper was not opened",
+        "unc": 0.006,
+        "alternatives": [
+          {
+            "note": "Hofmann 1967: f > 1.3e-2 (lower bound)"
+          },
+          {
+            "value": 0.02328,
+            "note": "Lawrence 1967 (phase-shift lifetime)"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 209000000.0,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 0.028: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value",
+        "unc": 45000000.0
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 84121.872,
+      "lower_J": "3/2",
+      "upper_J": "3/2",
+      "label": "3p5 2P°3/2 - 3p4(1D)4s 2D3/2",
+      "type": "E1",
+      "use": "VUV resonance line of the 3p5 - 3p4 4s array (chlorine-atom resonance absorption / fluorescence detection in kinetics; interstellar Cl I)",
+      "oscillator_strength_f": {
+        "value": 0.005,
+        "method": "compilation",
+        "source": "Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1188.752 A line as printed in the review table; the original paper was not opened",
+        "unc": 0.001,
+        "alternatives": [
+          {
+            "value": 0.005977,
+            "note": "Lawrence 1967"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 23600000.0,
+        "method": "compilation",
+        "source": "Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 0.005: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value",
+        "unc": 4700000.0
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 84120.263,
+      "lower_J": "3/2",
+      "upper_J": "5/2",
+      "label": "3p5 2P°3/2 - 3p4(1D)4s 2D5/2",
+      "type": "E1",
+      "use": "VUV resonance line of the 3p5 - 3p4 4s array (chlorine-atom resonance absorption / fluorescence detection in kinetics; interstellar Cl I)",
+      "oscillator_strength_f": {
+        "value": 0.068,
+        "method": "compilation",
+        "source": "Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1188.774 A line as printed in the review table; the original paper was not opened",
+        "unc": 0.007,
+        "alternatives": [
+          {
+            "value": 0.07725,
+            "note": "Lawrence 1967"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 214000000.0,
+        "method": "compilation",
+        "source": "Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 0.068: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value",
+        "unc": 22000000.0
+      }
+    },
+    {
+      "lower_cm": 882.3515,
+      "upper_cm": 72488.568,
+      "lower_J": "1/2",
+      "upper_J": "3/2",
+      "label": "3p5 2P°1/2 - 3p4 4s 4P3/2",
+      "type": "intercombination",
+      "oscillator_strength_f": {
+        "value": 0.0007,
+        "method": "compilation",
+        "source": "Hofmann (1967), wall-stabilised arc emission; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1396.527 A line as printed in the review table; the original paper was not opened",
+        "alternatives": [
+          {
+            "value": 0.0006261,
+            "note": "Lawrence 1967"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 1200000.0,
+        "method": "compilation",
+        "source": "Hofmann (1967), wall-stabilised arc emission; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 0.0007: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value"
+      }
+    },
+    {
+      "lower_cm": 882.3515,
+      "upper_cm": 74865.667,
+      "lower_J": "1/2",
+      "upper_J": "1/2",
+      "label": "3p5 2P°1/2 - 3p4 4s 2P1/2",
+      "type": "E1",
+      "use": "VUV resonance line of the 3p5 - 3p4 4s array (chlorine-atom resonance absorption / fluorescence detection in kinetics; interstellar Cl I)",
+      "oscillator_strength_f": {
+        "value": 0.093,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1351.657 A line as printed in the review table; the original paper was not opened",
+        "unc": 0.016,
+        "alternatives": [
+          {
+            "value": 0.069,
+            "note": "Hofmann 1967, wall-stabilised arc emission"
+          },
+          {
+            "value": 0.08934,
+            "note": "Lawrence 1967"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 340000000.0,
+        "method": "compilation",
+        "source": "Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 0.093: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value",
+        "unc": 58000000.0
+      }
+    },
+    {
+      "lower_cm": 882.3515,
+      "upper_cm": 84121.872,
+      "lower_J": "1/2",
+      "upper_J": "3/2",
+      "label": "3p5 2P°1/2 - 3p4(1D)4s 2D3/2",
+      "type": "E1",
+      "use": "VUV resonance line of the 3p5 - 3p4 4s array (chlorine-atom resonance absorption / fluorescence detection in kinetics; interstellar Cl I)",
+      "oscillator_strength_f": {
+        "value": 0.102,
+        "method": "compilation",
+        "source": "Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "absorption oscillator strength of the 1201.353 A line as printed in the review table; the original paper was not opened",
+        "unc": 0.01,
+        "alternatives": [
+          {
+            "value": 0.09,
+            "note": "Hofmann 1967, wall-stabilised arc emission"
+          },
+          {
+            "value": 0.09039,
+            "note": "Lawrence 1967"
+          }
+        ]
+      },
+      "A_s": {
+        "value": 236000000.0,
+        "method": "compilation",
+        "source": "Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, Astron. Astrophys. 287, 290 (1994)",
+        "url": "https://articles.adsabs.harvard.edu/pdf/1994A&A...287..290B",
+        "note": "derived here from the quoted measured absorption oscillator strength f = 0.102: A = 6.6702e15 g_l f / (g_u lambda^2[A]); second-hand value",
+        "unc": 23000000.0
+      }
+    },
+    {
+      "lower_cm": 71958.363,
+      "upper_cm": 85735.091,
+      "lower_J": "5/2",
+      "upper_J": "3/2",
+      "label": "3p4 4s 4P5/2 - 3p4 4p 4S°3/2",
+      "type": "E1",
+      "use": "725.9 nm (vacuum) fluorescence line observed in two-photon laser-induced fluorescence of Cl: 4p 4S°3/2 is excited by 2 x 233.2 nm from 2P°3/2 or 2 x 235.7 nm from 2P°1/2 and detected through a 727 nm interference filter (Booth et al. 2012; Sirse et al. 2013; Foucher, thesis, Universite Paris 6 (2016), https://theses.hal.science/tel-01446485)"
     }
   ],
   "conflicts": [
     "4s 2P3/2 (74225.846 cm^-1): beam-foil lifetime 1.51(7) ns (Schectman et al. 1993) gives A(134.72 nm) = 5.64e+08 s^-1 and A(136.34 nm) = 9.78e+07 s^-1 (f = 0.153(11), 0.055(4)), about 35 per cent larger than the NIST ASD values 4.19e8 and 7.5e7 s^-1 (accuracy C+); the same paper lists earlier measurements f(1347) = 0.109(10) (Schwab & Anderson 1982), 0.10(3) (Clyne & Nip 1977), 0.113 (Lawrence 1967), 0.090 (Hofmann 1967).",
     "4s 4P5/2 (71958.363 cm^-1): phase-shift lifetime 1.5 us +-15 per cent (Lawrence 1967) versus 4.3 us implied by the NIST ASD A = 2.3e5 s^-1 (accuracy D) of the 138.97 nm intercombination line.",
-    "2P1/2-2P3/2 interval: 882.3519(12) cm^-1 (Dagenais et al. 1976, isotope-weighted mean) versus 882.35283(23) (35Cl) / 882.35367(23) (37Cl) (Braun et al. 1982) versus NIST 882.3515; all agree within about 1 sigma of the older value. Isotope shift 37-35: +28.2(2.0) MHz (Dagenais) versus +25.2 MHz from the difference of Braun's two values."
+    "2P1/2-2P3/2 interval: 882.3519(12) cm^-1 (Dagenais et al. 1976, isotope-weighted mean) versus 882.35283(23) (35Cl) / 882.35367(23) (37Cl) (Braun et al. 1982) versus NIST 882.3515; all agree within about 1 sigma of the older value. Isotope shift 37-35: +28.2(2.0) MHz (Dagenais) versus +25.2 MHz from the difference of Braun's two values.",
+    "Level naming around 91000-92000 cm^-1: the J = 5/2 level at 91343.50 cm^-1 is 5s 2[2]5/2 in NIST but is called 3d 2F5/2 by Alkhayat et al. 2019 (after Oliver & Hibbert 2007), whereas this file (after Schectman et al. 1993 and NIST) labels 91906.79 cm^-1 as 3d 2F5/2. Biemont et al. 1994 argue that the NIST labels of 91127.03 (3d 2D5/2) and 91906.79 (3d 2F5/2) should be interchanged. Entries are identified by energy; the labels are only names.",
+    "5s lifetimes: measured 5.83(36), 8.98(72), 6.28(18) ns (Alkhayat et al. 2019) vs 21.3, 17.8, 29.2 ns calculated by Ojha & Hibbert 1990 and 6.26, 8.07, 7.50 ns by Oliver & Hibbert 2013.",
+    "f(1090.73 A): 0.0095(8) from the beam-foil lifetime (Alkhayat 2019) vs 0.0028(4) from interstellar absorption (Sonnentrucker et al. 2006); the authors attribute the difference to blending in the stellar spectrum.",
+    "4s resonance lines: measured f values (Clyne & Nip 1977; Schwab & Anderson 1982; Hofmann 1967, quoted from Biemont et al. 1994) vs NIST ASD: e.g. 133.57 nm f = 0.028(6) -> A = 2.1e8 s^-1 (NIST 1.74e8), 118.877 nm f = 0.068(7) -> A = 2.1e8 s^-1 (NIST 2.33e8); for 137.31 nm (4P1/2) the measurements differ among themselves by a factor 2.5 (7.9(4.8)e-5 vs 3.2e-5). The second-hand measured values have 7-60 per cent uncertainties."
   ],
   "not_found": [
-    "radiative lifetime of the TALIF upper level 4p 4S°3/2 (85735.091 cm^-1) and of the other 4p / 5p levels in levels.csv: the TALIF papers (Booth et al., J. Phys. D 45, 195201 (2012); Sirse et al. 2013) are on iopscience.iop.org, which answered with a bot-manager challenge; abstracts (Crossref / HAL) carry no lifetime. No open copy located.",
+    "radiative lifetime of the TALIF upper level 4p 4S°3/2 (85735.091 cm^-1): a web-search snippet of the ResearchGate page of Booth, Azamoum, Sirse, Chabert, J. Phys. D 45, 195201 (2012) reports a fluorescence lifetime of 27.5 +- 1 ns (and a Cl2 quenching rate constant) measured after 355 nm photolysis of Cl2. The number could not be confirmed in any source that could be opened (IOP bot wall, ResearchGate 403, no archived copy; the Crossref/OSTI abstracts and the Foucher thesis do not print it), so it is NOT entered. Worth checking by hand.",
+    "lifetimes of the other 4p and all 5p levels drawn on the site: no measurement located (Singh, Jha, Mohan, Eur. Phys. J. D 38, 285 (2006), calculated lifetimes, is behind the Springer challenge page).",
+    "measured oscillator strengths of the 4s-4p lines (Wujec & Weniger, wall-stabilised arc, 1977; cited by Biemont et al. 1994): original not accessible.",
     "hyperfine A, B constants and isotope shifts of the excited levels 4s 4P_J and 4p 4D_J (Tate & Aturaliye, Phys. Rev. A 56, 1844 (1997)?; Tate & Walton, Phys. Rev. A 59, 1170 (1999), diode-laser saturation spectroscopy at 798-859 nm): only the abstract page could be opened, it contains no numbers. Not recorded.",
     "measured Lande g factors beyond those already in the NIST levels table (g_J(2P3/2) = 1.333925, g_J(2P1/2) = 0.665662 are in NIST; the Uslu, Code, Harvey 1974 EPR abstract was read but prints no g value).",
     "isotope shifts of optical / VUV lines (35Cl-37Cl): none located in an openable source; only the fine-structure-interval shift is recorded.",
     "measured lifetimes of 4s 4P3/2, 4P1/2, 4s' 2D and all 4p, 5p levels drawn on the site: no measurement located in an openable source.",
     "precise optical transition frequencies (beyond NIST Ritz values) for Cl I: none located."
   ],
-  "notes": "Literature search was limited: the session's web-search quota was exhausted, so sources were located through Crossref, HAL, OSTI, arXiv and NASA ADS queries and only open copies could be read (APS, IOP, Elsevier, Canadian Science Publishing full texts were not accessible). Hyperfine constants of the ground term are second-hand from Chichinin's JPCRD review (method 'compilation'). Signs: A, B as printed (Casimir convention, E = A*C/2 + B*[...]). The M1 A value is the calculated one adopted by NIST. Values marked 'derived' were computed here from the quoted measured numbers. Two-photon entries: wavelength_vac_nm is the laser wavelength (two photons of that wavelength reach the upper level)."
+  "notes": "Literature search was limited: the session's web-search quota was exhausted, so sources were located through Crossref, HAL, OSTI, arXiv and NASA ADS queries and only open copies could be read (APS, IOP, Elsevier, Canadian Science Publishing full texts were not accessible). Hyperfine constants of the ground term are second-hand from Chichinin's JPCRD review (method 'compilation'). Signs: A, B as printed (Casimir convention, E = A*C/2 + B*[...]). The M1 A value is the calculated one adopted by NIST. Values marked 'derived' were computed here from the quoted measured numbers. Two-photon entries: wavelength_vac_nm is the laser wavelength (two photons of that wavelength reach the upper level). Second pass (2026-10-01): beam-foil lifetimes of four more levels from arXiv:1910.05803; second-hand measured oscillator strengths of the 3p5 - 4s resonance lines read on the scanned Table 3 of Biemont et al. 1994 (NASA ADS; the image was checked by eye) and converted to A here (derived, method compilation). Lawrence-1967 entries in that table are listed only as alternatives because all but two of them come from an intermediate-coupling analysis of his lifetime measurements. Lines to 4s 4P levels are typed \"intercombination\"."
 }

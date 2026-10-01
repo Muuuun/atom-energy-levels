@@ -132,6 +132,20 @@
           "url": "https://srd.nist.gov/JPCRD/jpcrd710.pdf"
         }
       }
+    },
+    {
+      "nist_energy_cm": 79178.33,
+      "label": "4p4(3P1)5p 2[1]°3/2 (5p 4S°3/2 in the TALIF literature)",
+      "J": "3/2",
+      "lifetime": {
+        "value": 3.09e-08,
+        "unc": 1.4e-09,
+        "unit": "s",
+        "method": "experiment",
+        "note": "natural lifetime of the fluorescing (5p) 4S°3/2 state, obtained from fluorescence decays in an HBr inductively coupled plasma extrapolated to zero pressure; the same abstract gives the quenching rate constant by HBr, 1.02(7)e-15 m^3 s^-1. Read in the abstract of the paper as reproduced in the OSTI/INIS record (full text behind the IOP bot wall).",
+        "source": "Sirse, Foucher, Chabert, Booth, Plasma Sources Sci. Technol. 23, 062003 (2014), abstract",
+        "url": "https://www.osti.gov/etdeweb/biblio/22362940"
+      }
     }
   ],
   "transitions": [
@@ -192,6 +206,22 @@
         "url": "https://www.osti.gov/servlets/purl/1688760",
         "note": "derived: laser vacuum wavelength = 2/E(upper) from the NIST level energy. No opened source documents a measurement with this scheme; entry kept because the scheme was requested."
       }
+    },
+    {
+      "lower_cm": 63436.45,
+      "upper_cm": 79178.33,
+      "lower_J": "5/2",
+      "upper_J": "3/2",
+      "label": "4p4(3P2)5s 2[2]5/2 (5s 4P5/2) - 4p4(3P1)5p 2[1]°3/2 (5p 4S°3/2)",
+      "type": "E1",
+      "use": "635.25 nm fluorescence line used to detect Br atoms after two-photon excitation at 2 x 252.594 nm (TALIF in HBr plasmas)",
+      "wavelength_vac_nm": {
+        "value": 635.25,
+        "method": "experiment",
+        "note": "fluorescence wavelength as printed in the abstract (air or vacuum not stated); NIST level difference 15741.88 cm^-1 = 635.248 nm vacuum",
+        "source": "Sirse, Foucher, Chabert, Booth, Plasma Sources Sci. Technol. 23, 062003 (2014), abstract",
+        "url": "https://www.osti.gov/etdeweb/biblio/22362940"
+      }
     }
   ],
   "conflicts": [
@@ -199,13 +229,15 @@
     "2P1/2 lifetime: measured 0.96(9) s (He et al. 1999) versus 1.11 s from the NIST A = 0.90 s^-1 and 0.90 s calculated; all compatible within the experimental error except NIST's rounded A (1.6 sigma)."
   ],
   "not_found": [
-    "radiative lifetime of the TALIF upper level 5p 2[1]°3/2 (79178.33 cm^-1): Sirse et al., PSST 23, 062003 (2014) state in the abstract that the natural lifetime and the HBr quenching rate were determined, but the HAL abstract is truncated before the numbers and iopscience.iop.org answered with a bot-manager challenge. Not recorded.",
     "radiative lifetime of 5p 4D°3/2 (76743.08 cm^-1, the 260.6 nm / 844.9 nm scheme) and of all other 5s, 5p, 6p levels in levels.csv: no measurement located in an openable source (Lawrence 1967 states that Br lifetimes could not be measured and gives calculated A values only).",
     "hyperfine A, B constants of excited Br I levels (Ni, Deng, Wang, JQSRT 196, 165 (2017); Tolansky & Trivedi 1940): Elsevier full text not accessible, abstract withheld; not recorded.",
     "isotope shifts 79Br-81Br of optical transitions: none located.",
     "measured Lande g factors beyond those in the NIST levels table (g_J(2P3/2) = 1.333921, g_J(2P1/2) = 0.6655 are in NIST; Tech 1963 values are already those NIST lists).",
     "precise transition frequencies beyond NIST Ritz values; precise fine-structure interval (NIST 3685.24 cm^-1; only the strongest hyperfine component 3685.23(10) cm^-1 recorded).",
-    "measured transition probabilities newer than NIST for Br I: none located."
+    "measured transition probabilities newer than NIST for Br I: none located.",
+    "oscillator strengths of the Br I vacuum-ultraviolet resonance lines 4p5 2P - 5s (Clyne & Townsend, J. Chem. Soc. Faraday Trans. 2 70, 1863 (1974), resonance absorption): a web-search snippet lists f(157.7 nm) = 1.16(8)e-3, f(154.1) = 4.88(59)e-2, f(148.9) = 4.13(39)e-2 from 2P3/2 and f(163.4) = 6.4(1.2)e-3, f(157.5) = 1.5(5)e-2 from 2P1/2, but the RSC page answers 403 and no abstract is available from Crossref or Semantic Scholar; NOT entered. Worth checking by hand: they would give measured A values for five drawn 5s lines.",
+    "isotope shift 79Br-81Br: Cowley & Wahlgren (arXiv:astro-ph/0512294) mention that a shift of about 2.5 mA was measured for Br I 6122 A by Tolansky (Proc. R. Soc. A 136, 585 (1932)); no sign or uncertainty given, not entered.",
+    "hyperfine constants of excited levels: Ni, Deng, Wang, JQSRT 196, 165 (2017) report A and B for 20 even and 27 odd levels (Ti:sapphire concentration-modulation spectroscopy, 11300-12600 cm^-1); only the abstract is reachable, it contains no numbers."
   ],
-  "notes": "Literature search was limited: the session's web-search quota was exhausted, so sources were located through Crossref, HAL, OSTI, arXiv and NASA ADS queries and only open copies could be read. Ground-term hyperfine constants are second-hand from Chichinin's JPCRD review (method 'compilation'); the King & Jaccarino 1954 numbers were read on the APS abstract page. B < 0 for both isotopes as printed. The M1 A value is the calculated one adopted by NIST. Two-photon entries: wavelength_vac_nm is the laser wavelength."
+  "notes": "Literature search was limited: the session's web-search quota was exhausted, so sources were located through Crossref, HAL, OSTI, arXiv and NASA ADS queries and only open copies could be read. Ground-term hyperfine constants are second-hand from Chichinin's JPCRD review (method 'compilation'); the King & Jaccarino 1954 numbers were read on the APS abstract page. B < 0 for both isotopes as printed. The M1 A value is the calculated one adopted by NIST. Two-photon entries: wavelength_vac_nm is the laser wavelength. Second pass (2026-10-01): the measured lifetime of the TALIF upper level was found in the abstract reproduced by OSTI/INIS (ETDEWEB record 22362940)."
 }

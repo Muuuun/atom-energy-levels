@@ -68,6 +68,21 @@
       "url": "https://arxiv.org/abs/1110.1361",
       "unit": "s",
       "note": "other theory values in the same table: 17.1 s (Tachiev & Froese Fischer 2002), 24 s (Small-Warren & Chiu 1975)"
+     },
+     {
+      "value": 17.63,
+      "method": "theory",
+      "source": "Li, Jönsson, Godefroid, Dong, Gaigalas, arXiv:1211.4240 (2012), Table X (MCDHF with Breit interaction)",
+      "url": "https://arxiv.org/abs/1211.4240",
+      "note": "20Ne; 17.10 s for 21Ne (hyperfine-induced decay included)",
+      "unit": "s"
+     },
+     {
+      "value": 24.4,
+      "method": "theory",
+      "source": "Small-Warren & Chiu, Phys. Rev. A 11, 1777 (1975) (abstract)",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.11.1777",
+      "unit": "s"
      }
     ]
    },
@@ -87,7 +102,17 @@
      "B_unc": 0.1,
      "method": "compilation",
      "source": "Grosof, Buck, Lichten, Rabi, Phys. Rev. Lett. 1, 214 (1958) [as quoted in Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]]",
-     "url": "https://arxiv.org/abs/1105.2193"
+     "url": "https://arxiv.org/abs/1105.2193",
+     "alternatives": [
+      {
+       "A_MHz": -267.62,
+       "A_unc": 0.15,
+       "method": "compilation",
+       "source": "Geithner et al., Phys. Rev. C 71, 064319 (2005) [as quoted in Li, Godefroid, Wang, arXiv:1604.04075 (2016), Table 1]",
+       "url": "https://arxiv.org/abs/1604.04075",
+       "note": "collinear laser spectroscopy"
+      }
+     ]
     }
    }
   },
@@ -101,7 +126,18 @@
     "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
     "url": "https://arxiv.org/abs/1110.1361",
     "unit": "s",
-    "note": "upper-state lifetime of the 640.2 nm cooling line as tabulated in the review (origin not stated there)"
+    "note": "upper-state lifetime of the 640.2 nm cooling line as tabulated in the review (origin not stated there)",
+    "alternatives": [
+     {
+      "value": 1.94e-08,
+      "unc": 6e-10,
+      "method": "experiment",
+      "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+      "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+      "note": "printed 2p9(19.4 +- 0.6) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+      "unit": "s"
+     }
+    ]
    },
    "hyperfine": {
     "21": {
@@ -125,6 +161,222 @@
       }
      ]
     }
+   }
+  },
+  {
+   "nist_energy_cm": 134459.2871,
+   "label": "2p5 3s 2[3/2]1 (1s4)",
+   "J": "1",
+   "lifetime": {
+    "value": 1.995e-08,
+    "method": "theory",
+    "source": "Li, Jönsson, Godefroid, Dong, Gaigalas, arXiv:1211.4240 (2012), Table X (MCDHF with Breit interaction)",
+    "url": "https://arxiv.org/abs/1211.4240",
+    "note": "theory (no direct lifetime measurement opened); resonance level decaying at 74.4 nm",
+    "unit": "s"
+   },
+   "measured_energy_cm": {
+    "20": {
+     "value": 134459.34,
+     "unc": 0.05,
+     "method": "experiment",
+     "source": "Eikema, Ubachs, Hogervorst, Phys. Rev. A 49, 803 (1994) [(1994)]",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ne.pdf",
+     "note": "20Ne, 1 XUV + 1 UV photoionization, Te2 calibration; value of the note added in proof (abstract prints 134459.33(5) before recalibration of the tellurium atlas)"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 134818.6405,
+   "label": "2p5 3s' 2[1/2]0 (1s3) (3P0, metastable)",
+   "J": "0",
+   "lifetime": {
+    "value": 424.1,
+    "method": "theory",
+    "source": "Li, Jönsson, Godefroid, Dong, Gaigalas, arXiv:1211.4240 (2012), Table X (MCDHF with Breit interaction)",
+    "url": "https://arxiv.org/abs/1211.4240",
+    "note": "theory, 20Ne (M1 decay to 3s[3/2]1, A = 2.358e-3 s^-1 printed in Table VII); no measurement exists. For 21Ne the same calculation gives 0.6728 s (hyperfine-induced E1 decay).",
+    "unit": "s",
+    "isotope": "20",
+    "alternatives": [
+     {
+      "value": 430,
+      "method": "theory",
+      "source": "Small-Warren & Chiu, Phys. Rev. A 11, 1777 (1975) (abstract)",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.11.1777",
+      "unit": "s"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 135888.7173,
+   "label": "2p5 3s' 2[1/2]1 (1s2)",
+   "J": "1",
+   "lifetime": {
+    "value": 1.638e-09,
+    "method": "theory",
+    "source": "Li, Jönsson, Godefroid, Dong, Gaigalas, arXiv:1211.4240 (2012), Table X (MCDHF with Breit interaction)",
+    "url": "https://arxiv.org/abs/1211.4240",
+    "note": "theory (no direct lifetime measurement opened); resonance level decaying at 73.6 nm",
+    "unit": "s"
+   },
+   "measured_energy_cm": {
+    "20": {
+     "value": 135888.74,
+     "unc": 0.05,
+     "method": "experiment",
+     "source": "Eikema, Ubachs, Hogervorst, Phys. Rev. A 49, 803 (1994) [(1994)]",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ne.pdf",
+     "note": "20Ne; value of the note added in proof (abstract prints 135888.73(5))"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 152970.7328,
+   "label": "2p5 3p' 2[1/2]0 (2p1)",
+   "J": "0",
+   "lifetime": {
+    "value": 1.44e-08,
+    "unc": 3e-10,
+    "method": "experiment",
+    "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+    "note": "printed 2p1(14.4 +- 0.3) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 151038.4524,
+   "label": "2p5 3p' 2[1/2]1 (2p2)",
+   "J": "1",
+   "lifetime": {
+    "value": 1.88e-08,
+    "unc": 3e-10,
+    "method": "experiment",
+    "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+    "note": "printed 2p2(18.8 +- 0.3) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 150917.4307,
+   "label": "2p5 3p 2[1/2]0 (2p3)",
+   "J": "0",
+   "lifetime": {
+    "value": 1.76e-08,
+    "unc": 2e-10,
+    "method": "experiment",
+    "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+    "note": "printed 2p3(17.6 +- 0.2) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 150858.5079,
+   "label": "2p5 3p' 2[3/2]2 (2p4)",
+   "J": "2",
+   "lifetime": {
+    "value": 1.91e-08,
+    "unc": 3e-10,
+    "method": "experiment",
+    "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+    "note": "printed 2p4(19.1 +- 0.3) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 150772.1118,
+   "label": "2p5 3p' 2[3/2]1 (2p5)",
+   "J": "1",
+   "lifetime": {
+    "value": 1.99e-08,
+    "unc": 4e-10,
+    "method": "experiment",
+    "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+    "note": "printed 2p5(19.9 +- 0.4) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 150315.8612,
+   "label": "2p5 3p 2[3/2]2 (2p6)",
+   "J": "2",
+   "lifetime": {
+    "value": 1.97e-08,
+    "unc": 2e-10,
+    "method": "experiment",
+    "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+    "note": "printed 2p6(19.7 +- 0.2) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+    "unit": "s"
+   },
+   "hyperfine": {
+    "21": {
+     "A_MHz": -185.83,
+     "A_unc": 0.21,
+     "method": "compilation",
+     "source": "Geithner et al., Phys. Rev. C 71, 064319 (2005) [as quoted in Li, Godefroid, Wang, arXiv:1604.04075 (2016), Table 1]",
+     "url": "https://arxiv.org/abs/1604.04075",
+     "note": "collinear laser spectroscopy on the 614.3 nm line; B not quoted there. MCDHF theory of the citing paper: A = -180.72 MHz."
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 150121.5922,
+   "label": "2p5 3p 2[3/2]1 (2p7)",
+   "J": "1",
+   "lifetime": {
+    "value": 1.99e-08,
+    "unc": 4e-10,
+    "method": "experiment",
+    "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+    "note": "printed 2p7(19.9 +- 0.4) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 149824.2215,
+   "label": "2p5 3p 2[5/2]2 (2p8)",
+   "J": "2",
+   "lifetime": {
+    "value": 1.98e-08,
+    "unc": 2e-10,
+    "method": "experiment",
+    "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+    "note": "printed 2p8(19.8 +- 0.2) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+    "unit": "s"
+   }
+  },
+  {
+   "nist_energy_cm": 148257.7898,
+   "label": "2p5 3p 2[1/2]1 (2p10)",
+   "J": "1",
+   "lifetime": {
+    "value": 2.543e-08,
+    "unc": 9e-11,
+    "method": "experiment",
+    "source": "Hartmetz & Schmoranzer, Z. Phys. A 317, 1 (1984) (abstract, OSTI ETDEWEB record)",
+    "url": "https://www.osti.gov/etdeweb/biblio/6814108",
+    "note": "printed tau = (25.43 +- 0.09) ns, cascade-free beam-gas-dye-laser spectroscopy (one standard deviation)",
+    "unit": "s",
+    "alternatives": [
+     {
+      "value": 2.48e-08,
+      "unc": 4e-10,
+      "method": "experiment",
+      "source": "Bennett & Kindlmann, Phys. Rev. 149, 38 (1966) (abstract)",
+      "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.149.38",
+      "note": "printed 2p10(24.8 +- 0.4) ns in Paschen notation; delayed-coincidence decay after threshold electron excitation, extrapolated to zero pressure. Paschen-to-level assignment by energy order (2p1 highest, 2p10 lowest).",
+      "unit": "s"
+     }
+    ]
    }
   }
  ],
@@ -163,13 +415,37 @@
    },
    "isotope_shift_MHz": {
     "22-20": {
-     "value": 1625.9,
-     "unc": 0.15,
+     "value": 1626.051,
+     "unc": 0.11,
      "method": "experiment",
-     "source": "Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]",
-     "url": "https://arxiv.org/abs/1105.2193",
-     "note": "absorption imaging of MOTs; fluorescence method gives 1626.0(0.22). 22Ne lies at higher frequency (Fig. 2: nu - nu20).",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Table III",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); remeasurement that supersedes the 2016 value of the same group (new systematics identified)",
      "alternatives": [
+      {
+       "value": 1626.01,
+       "unc": 0.09,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1626.01(09) MHz"
+      },
+      {
+       "value": 1626.287,
+       "unc": 0.053,
+       "method": "experiment",
+       "source": "Ohayon, Gumpel, Ron, arXiv:1609.06904 (2016)",
+       "url": "https://arxiv.org/abs/1609.06904",
+       "note": "superseded: the 2019 paper of the same group reports two systematic effects not accounted for and remeasured the line"
+      },
+      {
+       "value": 1625.9,
+       "unc": 0.15,
+       "method": "experiment",
+       "source": "Feldker, Schuetz, John, Birkl, Eur. Phys. J. D 65, 257 (2011) [arXiv:1105.2193]",
+       "url": "https://arxiv.org/abs/1105.2193",
+       "note": "absorption imaging of MOTs; fluorescence method gives 1626.0(0.22). 22Ne lies at higher frequency (Fig. 2: nu - nu20)."
+      },
       {
        "value": 1630,
        "unc": 3,
@@ -251,19 +527,700 @@
      "note": "fluorescence; 607.0(0.47) calculated from the two absorption values"
     }
    }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 158795.9924,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2p6 1S0 - 2p5 4s 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2298.0,
+     "unc": 31.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2309(29) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 135888.7173,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2p6 1S0 - 2p5 3s' 2[1/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": -90,
+     "unc": 90,
+     "method": "experiment",
+     "source": "Eikema, Ubachs, Hogervorst, Phys. Rev. A 49, 803 (1994)",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ne.pdf",
+     "note": "derived: converted from the printed shift (20Ne - 22Ne) = +0.003(3) cm^-1 with the sign reversed to nu(22) - nu(20)",
+     "alternatives": [
+      {
+       "value": -98.0,
+       "unc": 16.0,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: -99(11) MHz"
+      }
+     ]
+    }
+   },
+   "use": "73.6 nm resonance line; XUV laser spectroscopy (ground-state isotope shift and absolute calibration, Eikema et al. 1994)"
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 134459.2871,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2p6 1S0 - 2p5 3s 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 420,
+     "unc": 90,
+     "method": "experiment",
+     "source": "Eikema, Ubachs, Hogervorst, Phys. Rev. A 49, 803 (1994)",
+     "url": "https://www.nat.vu.nl/~wimu/Publications/Ne.pdf",
+     "note": "derived: converted from the printed shift (20Ne - 22Ne) = -0.014(3) cm^-1 with the sign reversed to nu(22) - nu(20)",
+     "alternatives": [
+      {
+       "value": 417.0,
+       "unc": 16.0,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 415(11) MHz"
+      }
+     ]
+    }
+   },
+   "use": "74.4 nm resonance line; XUV laser spectroscopy (ground-state isotope shift and absolute calibration, Eikema et al. 1994)"
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 152970.7328,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p' 2[1/2]0",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1804.0,
+     "unc": 26.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1772.4(2.4) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 135888.7173,
+   "upper_cm": 152970.7328,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "2p5 3s' 2[1/2]1 - 2p5 3p' 2[1/2]0",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2286.3,
+     "unc": 2.7,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2286.1(2.2) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134041.84,
+   "upper_cm": 151038.4524,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2p5 3s 2[3/2]2 - 2p5 3p' 2[1/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1736.97,
+     "unc": 0.53,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1736.93(51) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134041.84,
+   "upper_cm": 150858.5079,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2p5 3s 2[3/2]2 - 2p5 3p' 2[3/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1716.0,
+     "unc": 1.1,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1715.77(94) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134041.84,
+   "upper_cm": 150772.1118,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2p5 3s 2[3/2]2 - 2p5 3p' 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1727.4,
+     "unc": 1.9,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1728.78(21) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 151038.4524,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p' 2[1/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1743.6,
+     "unc": 4.8,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1747.18(53) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 150917.4307,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p 2[1/2]0",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1702.0,
+     "unc": 2.5,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1701.6(2.5) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 150858.5079,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p' 2[3/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1725.3,
+     "unc": 2.5,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1726.03(95) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 150772.1118,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p' 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1737.6,
+     "unc": 2.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1739.04(25) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134041.84,
+   "upper_cm": 150315.8612,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2p5 3s 2[3/2]2 - 2p5 3p 2[3/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1663.0,
+     "unc": 1.2,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1664.01(25) MHz",
+     "alternatives": [
+      {
+       "value": 1663.58,
+       "method": "compilation",
+       "source": "Geithner et al., Phys. Rev. Lett. 101, 252502 (2008) [as quoted in Li, Godefroid, Wang, arXiv:1604.04075 (2016), Table 4]",
+       "url": "https://arxiv.org/abs/1604.04075",
+       "note": "collinear laser spectroscopy; no uncertainty quoted in the citing table"
+      }
+     ]
+    },
+    "21-20": {
+     "value": 874.94,
+     "method": "compilation",
+     "source": "Geithner et al., Phys. Rev. Lett. 101, 252502 (2008) [as quoted in Li, Godefroid, Wang, arXiv:1604.04075 (2016), Table 4]",
+     "url": "https://arxiv.org/abs/1604.04075",
+     "note": "nu(21Ne, centre of gravity) - nu(20Ne); no uncertainty quoted in the citing table"
+    }
+   },
+   "use": "614.3 nm line used for collinear laser spectroscopy of Ne isotopes (nuclear charge radii and moments, ISOLDE)"
+  },
+  {
+   "lower_cm": 134818.6405,
+   "upper_cm": 151038.4524,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2p5 3s' 2[1/2]0 - 2p5 3p' 2[1/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1656.4,
+     "unc": 2.8,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1655.19(54) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134041.84,
+   "upper_cm": 150121.5922,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2p5 3s 2[3/2]2 - 2p5 3p 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1669.43,
+     "unc": 0.08,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1669.43(8) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134818.6405,
+   "upper_cm": 150772.1118,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2p5 3s' 2[1/2]0 - 2p5 3p' 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1647.375,
+     "unc": 0.14,
+     "method": "experiment",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Table III",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); dual-sideband saturated absorption spectroscopy in an RF discharge; uncertainty = linear sum of statistical and systematic parts",
+     "alternatives": [
+      {
+       "value": 1647.05,
+       "unc": 0.1,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1647.05(10) MHz"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 150315.8612,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p 2[3/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1674.265,
+     "unc": 0.19,
+     "method": "experiment",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Table III",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); dual-sideband saturated absorption spectroscopy in an RF discharge; uncertainty = linear sum of statistical and systematic parts",
+     "alternatives": [
+      {
+       "value": 1674.28,
+       "unc": 0.19,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1674.26(19) MHz"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 134041.84,
+   "upper_cm": 149824.2215,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "2p5 3s 2[3/2]2 - 2p5 3p 2[5/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1641.052,
+     "unc": 0.16,
+     "method": "experiment",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Table III",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); dual-sideband saturated absorption spectroscopy in an RF discharge; uncertainty = linear sum of statistical and systematic parts",
+     "alternatives": [
+      {
+       "value": 1640.96,
+       "unc": 0.12,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1640.97(11) MHz"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 150121.5922,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1679.601,
+     "unc": 0.26,
+     "method": "experiment",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Table III",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); dual-sideband saturated absorption spectroscopy in an RF discharge; uncertainty = linear sum of statistical and systematic parts",
+     "alternatives": [
+      {
+       "value": 1679.63,
+       "unc": 0.26,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1679.68(17) MHz"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 149824.2215,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p 2[5/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1651.251,
+     "unc": 0.17,
+     "method": "experiment",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Table III",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); dual-sideband saturated absorption spectroscopy in an RF discharge; uncertainty = linear sum of statistical and systematic parts",
+     "alternatives": [
+      {
+       "value": 1651.25,
+       "unc": 0.18,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1651.22(15) MHz"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 134818.6405,
+   "upper_cm": 150121.5922,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2p5 3s' 2[1/2]0 - 2p5 3p 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1588.238,
+     "unc": 0.22,
+     "method": "experiment",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Table III",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); dual-sideband saturated absorption spectroscopy in an RF discharge; uncertainty = linear sum of statistical and systematic parts",
+     "alternatives": [
+      {
+       "value": 1587.68,
+       "unc": 0.16,
+       "method": "compilation",
+       "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+       "url": "https://arxiv.org/abs/1909.01991",
+       "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1587.69(16) MHz"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 135888.7173,
+   "upper_cm": 151038.4524,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2p5 3s' 2[1/2]1 - 2p5 3p' 2[1/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2260.1,
+     "unc": 1.8,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2260.8(1.3) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 135888.7173,
+   "upper_cm": 150917.4307,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "2p5 3s' 2[1/2]1 - 2p5 3p 2[1/2]0",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2196.0,
+     "unc": 14.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2215.2(2.8) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 135888.7173,
+   "upper_cm": 150858.5079,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2p5 3s' 2[1/2]1 - 2p5 3p' 2[3/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2231.4,
+     "unc": 4.4,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2239.7(1.5) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 135888.7173,
+   "upper_cm": 150772.1118,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2p5 3s' 2[1/2]1 - 2p5 3p' 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2256.6,
+     "unc": 2.7,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2252.7(1.3) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 135888.7173,
+   "upper_cm": 150315.8612,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2p5 3s' 2[1/2]1 - 2p5 3p 2[3/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2191.5,
+     "unc": 3.6,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2187.9(1.3) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 135888.7173,
+   "upper_cm": 150121.5922,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2p5 3s' 2[1/2]1 - 2p5 3p 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2180.0,
+     "unc": 20.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2193.3(1.3) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134041.84,
+   "upper_cm": 148257.7898,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "2p5 3s 2[3/2]2 - 2p5 3p 2[1/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1616.0,
+     "unc": 2.6,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1615.7(1.9) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 135888.7173,
+   "upper_cm": 149824.2215,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "2p5 3s' 2[1/2]1 - 2p5 3p 2[5/2]2",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 2130.0,
+     "unc": 20.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 2164.9(1.3) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134459.2871,
+   "upper_cm": 148257.7898,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2p5 3s 2[3/2]1 - 2p5 3p 2[1/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1626.7,
+     "unc": 3.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1626.0(1.9) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 134818.6405,
+   "upper_cm": 148257.7898,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "2p5 3s' 2[1/2]0 - 2p5 3p 2[1/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 1439.0,
+     "unc": 90.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 1534.0(1.9) MHz"
+    }
+   }
+  },
+  {
+   "lower_cm": 148257.7898,
+   "upper_cm": 158795.9924,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "2p5 3p 2[1/2]1 - 2p5 4s 2[3/2]1",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "22-20": {
+     "value": 360.0,
+     "unc": 90.0,
+     "method": "compilation",
+     "source": "Ohayon, Rahangdale, Geddes, Berengut, Ron, arXiv:1909.01991 (2019), Tables VIII-IX: dispersion-corrected weighted mean of the published measurements",
+     "url": "https://arxiv.org/abs/1909.01991",
+     "note": "nu(22Ne) - nu(20Ne); value recalculated from the global fit of level shifts in the same table: 268(31) MHz"
+    }
+   }
   }
  ],
  "not_found": [
-  "Absolute frequency of the 640.2 nm line better than NIST: no frequency-comb measurement located.",
-  "Directly measured lifetime of 2p5 3p 2[5/2]3 (3D3): primary lifetime papers (e.g. Hartmetz & Schmoranzer) could not be opened; 19.5 ns is the Vassen-review table value. Zinner et al. only give an experimental lower limit tau >= 59 s for decay of 3D3 by channels other than 640.2 nm.",
-  "Measured lifetimes of the other 3s levels (3P0 metastable) and repumper lines: not located.",
+  "Absolute frequency of the 640.2 nm line (or any 3s-3p line) better than NIST: no frequency-comb measurement located.",
+  "Precise beam-gas-laser lifetimes of 2p2-2p9 (Kandela & Schmoranzer, Phys. Lett. A 86, 101 (1981), 0.2-0.5 % uncertainty): only the abstract (no numbers) could be opened; the 1-3 % delayed-coincidence values of Bennett & Kindlmann (1966) are stored instead. 19.5 ns for 2p9 is the Vassen-review table value.",
+  "Measured lifetimes of the resonance levels 3s[3/2]1 and 3s'[1/2]1 and of the metastable 3s'[1/2]0: theory values (Li et al. 2012) stored; experimental oscillator strengths of the two resonance lines exist (table V of Li et al.: e.g. Chan et al. 0.0118(6) and 0.159(8)) but were not converted to lifetimes.",
+  "Lifetimes of the 4s, 5s, 3d, 4d, 4p levels drawn on the page: none located in an open source.",
+  "21Ne hyperfine constants of the 3p levels other than 2p9 (3D3) and 2p6 (A only), and all B constants of 2p6: Guthoehrlein & Windholz (1994), Julien et al. (1980), Geithner et al. (2005) could not be opened.",
   "Lande g factors of the 2p5 3p levels (Giacobino, J. Physique 38, 1377 (1977), HAL jpa-00208708): the abstract confirms six measured g factors at 1e-3 precision but the PDF is behind a bot wall, so no values were copied.",
-  "Julien, Pinard, Laloe (1980) primary values for the 640.2 / 626.6 nm lines: HAL abstract found, numbers elided there; taken second-hand from Feldker et al.",
-  "Experimental reduced matrix elements / A values newer than NIST: none located."
+  "21Ne isotope shifts of lines other than 640.2 and 614.3 nm.",
+  "Experimental reduced matrix elements / A values newer than NIST: none located (Hartmetz & Schmoranzer 1984 measured the four 2p10 -> 1s A values, numbers not in the abstract)."
  ],
  "conflicts": [
   "3P2 lifetime: published Phys. Rev. A abstract 14.73(14) s [0.06790(64) s^-1] vs arXiv v1 of the same paper 14.70(13) s [0.06801(62) s^-1]; the published value is used. All theory values (17.1-24 s) are longer.",
-  "22-20 isotope shift of 640.2 nm: Feldker 1625.9(0.15) MHz is 2-4 MHz below every earlier measurement (1628-1632 MHz); Feldker et al. state they could not identify the reason."
+  "22-20 isotope shift of 640.2 nm: Feldker 1625.9(0.15) MHz is 2-4 MHz below every earlier measurement (1628-1632 MHz); Feldker et al. state they could not identify the reason.",
+  "640.2 nm 22-20 isotope shift within one group: Ohayon et al. 2016 printed 1626.287(53) MHz, the 2019 paper of the same group remeasured 1626.051(110) MHz after finding two unaccounted systematics; the 2019 value is now the main entry (it agrees with Feldker 1625.9(0.15), which was the previous main entry and is kept as an alternative).",
+  "2p10 lifetime: 25.43(9) ns (Hartmetz & Schmoranzer 1984) vs 24.8(4) ns (Bennett & Kindlmann 1966), 1.6 sigma apart; the beam-gas-laser value is used.",
+  "Eikema et al. 1994 level energies: abstract 134459.33(5) / 135888.73(5) cm^-1, note added in proof 134459.34(5) / 135888.74(5) cm^-1 after a 0.002 cm^-1 recalibration of the Te2 atlas (as printed: the shift quoted and the change of 0.01 do not match exactly); the note-added-in-proof values are stored.",
+  "614.3 nm 22-20 isotope shift: collinear value 1663.58 MHz (Geithner 2008, second-hand) vs weighted mean of earlier measurements 1663.0(1.2) and global-fit value 1664.01(25) MHz (Ohayon 2019)."
  ],
- "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier neon isotopes lie at higher frequency on 640.2 nm. 21Ne values are hyperfine centre of gravity only where the note says so. Level energies are NIST ASD values from data/ne/levels.csv; Paschen names (1s5, 2p9) are given in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only."
+ "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier neon isotopes lie at higher frequency on 640.2 nm. 21Ne values are hyperfine centre of gravity only where the note says so. Level energies are NIST ASD values from data/ne/levels.csv; Paschen names (1s5, 2p9) are given in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only. Added 2026-10-01 (second pass): 3p lifetimes from Bennett & Kindlmann are labelled in Paschen notation in the source; they were assigned to NIST levels by energy order (2p1 = highest, 2p10 = lowest 2p5 3p level). Isotope shifts from Ohayon et al. 2019 follow their convention nu(heavier) - nu(lighter); 'compilation' entries are their weighted means of the literature, 'experiment' entries their own seven lines. Level labels in that paper (3p[K]J, primed = 2P1/2 core) were matched to NIST energies and checked against the printed air wavelengths."
 }
