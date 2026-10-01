@@ -6,17 +6,17 @@
   "symbol": "Sn",
   "A": null,
   "Z": 50,
-  "I": null,
+  "I": "1/2",
   "kind": "nist",
   "limit_cm": 59232.69,
   "scale": "auto",
   "spectrum": "Sn I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "120",
   "limit_text": "Sn$^+$ ionisation limit   59232.69 cm$^{-1}$  =  7.34392 eV  (168.826 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Isotope shifts are nu(first) - nu(second), kept relative to the reference isotope each source used (112Sn for Baird 1983 and the CRIS lines, 124Sn for the COLLAPS lines). For Gustafsson et al. \"unc\" is statistical and \"unc_syst\" systematic; only the stable isotopes 112-124 were transcribed (the table continues from 104Sn to 134Sn). 115Sn, 117Sn, 119Sn have I = 1/2, so there are no B constants; all A values are negative for 5p6s 3P°1 and 5p2 3P2/1D2 and positive for 5p2 3P1 (negative nuclear moments). Lifetime entries: Zhang et al. 2010 (time-resolved LIF, 38 odd levels 43682-56839 cm-1) for 5p5d, 5pns (n>=7), 5pnd; Holmgren & Svanberg 1972 (Hanle) for the three 5p6s levels - their paper was read only as the abstract on the Lund University portal; Zhang et al. 2008 for 5p7p (two-step excitation), which also gives Zeeman quantum-beat g_J factors. Older and conflicting values are under lifetime.alternatives. Zhang et al. print energies from Moore / Brown et al.; they were matched to the NIST energies by J and nearest energy (differences up to 0.6 cm-1 for the 5p7p levels, below 0.06 cm-1 otherwise). Ground-term (5p2) metastable lifetimes and linewidths are THEORY (Biémont et al. 1995 rates as tabulated by Zheng et al. 2026) and flagged as such. Extra fields beyond SCHEMA.md: ionization_limit, lifetime.alternatives, hyperfine.<A>.alternatives, isotope_shift_other, linewidth_Hz / linewidth_MHz, unc_syst, note. Level-wise comparison with NIST: the NIST Sn I A values are all from the Wiese & Martin 1980 compilation (tp_ref T4515, accuracy D except one C); measured lifetimes above should take precedence for total decay rates."
  },
  "columns": [
   {
@@ -113,8 +113,18 @@
    "g": 1.502,
    "name": "5s^{2}5p^{2}\\ ^3P_{1}",
    "plain": "5s25p2 3P1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11480000000.0,
+   "tau_unc": null,
+   "tau_tier": "theory",
+   "tau_src": "Zheng, Wang, Verma, Wang, Langin, DeMille, \"Simulated Laser Cooling and Magneto-Optical Trapping of Group IV Atoms\", Phys. Rev. A 113, 043115 (2026), arXiv:2509.04635, Table VI",
+   "hfs": {
+    "A": 578.296,
+    "A_unc": 0.004,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Childs, Goodman, Phys. Rev. 137, A35 (1965) (atomic-beam magnetic resonance; values read in the abstract)"
+   },
    "col": 0
   },
   {
@@ -130,6 +140,14 @@
    "plain": "5s25p2 3P2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -1269.419,
+    "A_unc": 0.003,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Childs, Goodman, Phys. Rev. 137, A35 (1965) (atomic-beam magnetic resonance; values read in the abstract)"
+   },
    "col": 0
   },
   {
@@ -145,6 +163,14 @@
    "plain": "5s25p2 1D2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -1328.745,
+    "A_unc": 0.004,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Childs, Phys. Rev. A 4, 439 (1971) (atomic-beam magnetic resonance; values read in the abstract)"
+   },
    "col": 5
   },
   {
@@ -188,8 +214,18 @@
    "g": 1.38,
    "name": "5s^{2}5p6s\\ ^3P^{o}_{1}",
    "plain": "5s25p6s 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.75,
+   "tau_unc": 0.18,
+   "tau_tier": "exp",
+   "tau_src": "Holmgren, Svanberg, Phys. Scr. 5, 135 (1972) (Hanle / zero-field level crossing on an atomic beam; values read in the abstract)",
+   "hfs": {
+    "A": -5011.0,
+    "A_unc": 3.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Yordanov et al., Commun. Phys. 3, 107 (2020) \"Structural trends in atomic nuclei from laser spectroscopy of tin\", Table 1 (collinear laser spectroscopy, COLLAPS)"
+   },
    "col": 1
   },
   {
@@ -203,8 +239,10 @@
    "g": 1.501,
    "name": "5s^{2}5p6s\\ ^3P^{o}_{2}",
    "plain": "5s25p6s 3P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.25,
+   "tau_unc": 0.23,
+   "tau_tier": "exp",
+   "tau_src": "Holmgren, Svanberg, Phys. Scr. 5, 135 (1972) (Hanle / zero-field level crossing on an atomic beam; values read in the abstract)",
    "col": 1
   },
   {
@@ -218,8 +256,18 @@
    "g": 1.121,
    "name": "5s^{2}5p6s\\ ^1P^{o}_{1}",
    "plain": "5s25p6s 1P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.11,
+   "tau_unc": 0.22,
+   "tau_tier": "exp",
+   "tau_src": "Holmgren, Svanberg, Phys. Scr. 5, 135 (1972) (Hanle / zero-field level crossing on an atomic beam; values read in the abstract)",
+   "hfs": {
+    "A": -259.1,
+    "A_unc": 1.0,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Yordanov et al., Commun. Phys. 3, 107 (2020) \"Structural trends in atomic nuclei from laser spectroscopy of tin\", Table 1 (collinear laser spectroscopy, COLLAPS)"
+   },
    "col": 4
   },
   {
@@ -248,8 +296,10 @@
    "g": 0.865,
    "name": "5s^{2}5p5d\\ ^3F^{o}_{2}",
    "plain": "5s25p5d 3F°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 23.0,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 6
   },
   {
@@ -263,8 +313,10 @@
    "g": 1.131,
    "name": "5s^{2}5p5d\\ ^3D^{o}_{2}",
    "plain": "5s25p5d 3D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 5.7,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 2
   },
   {
@@ -278,8 +330,10 @@
    "g": 0.635,
    "name": "5s^{2}5p5d\\ ^3D^{o}_{1}",
    "plain": "5s25p5d 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 4.6,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 2
   },
   {
@@ -293,8 +347,10 @@
    "g": 1.167,
    "name": "5s^{2}5p5d\\ ^3F^{o}_{3}",
    "plain": "5s25p5d 3F°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 7.3,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 6
   },
   {
@@ -308,8 +364,10 @@
    "g": 0.941,
    "name": "5s^{2}5p5d\\ ^1D^{o}_{2}",
    "plain": "5s25p5d 1D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 13.2,
+   "tau_unc": 0.9,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 7
   },
   {
@@ -323,8 +381,10 @@
    "g": 1.246,
    "name": "5s^{2}5p5d\\ ^3D^{o}_{3}",
    "plain": "5s25p5d 3D°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 7.4,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 2
   },
   {
@@ -338,8 +398,10 @@
    "g": 1.316,
    "name": "5s^{2}5p7s\\ ^3P^{o}_{1}",
    "plain": "5s25p7s 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 20.4,
+   "tau_unc": 0.6,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 1
   },
   {
@@ -353,8 +415,10 @@
    "g": 1.406,
    "name": "5s^{2}5p5d\\ ^3P^{o}_{2}",
    "plain": "5s25p5d 3P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 6.7,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 1
   },
   {
@@ -368,8 +432,10 @@
    "g": 1.229,
    "name": "5s^{2}5p5d\\ ^3P^{o}_{1}",
    "plain": "5s25p5d 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 5.7,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 1
   },
   {
@@ -383,8 +449,10 @@
    "g": 1.043,
    "name": "5s^{2}5p5d\\ ^1F^{o}_{3}",
    "plain": "5s25p5d 1F°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 5.3,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 9
   },
   {
@@ -398,8 +466,10 @@
    "g": 1.066,
    "name": "5s^{2}5p5d\\ ^1P^{o}_{1}",
    "plain": "5s25p5d 1P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11.3,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 4
   },
   {
@@ -413,8 +483,10 @@
    "g": 1.463,
    "name": "5s^{2}5p7p\\ ^3P_{1}",
    "plain": "5s25p7p 3P1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 163.0,
+   "tau_unc": 8.0,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Xu, Zhang, You, Ma, Han, Li, Sun, Jiang, Enzonga Yoca, Quinet, Biémont, Dai, Phys. Rev. A 78, 022505 (2008), Table I (time-resolved fluorescence after two-step laser excitation)",
    "col": 0
   },
   {
@@ -428,8 +500,10 @@
    "g": 0.863,
    "name": "5s^{2}5p6d\\ ^3D^{o}_{1}",
    "plain": "5s25p6d 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 16.3,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 2
   },
   {
@@ -443,8 +517,10 @@
    "g": null,
    "name": "5s^{2}5p6d\\ ^3F^{o}_{3}",
    "plain": "5s25p6d 3F°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 6.6,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 6
   },
   {
@@ -458,8 +534,10 @@
    "g": null,
    "name": "5s^{2}5p7s\\ ^1P^{o}_{1}",
    "plain": "5s25p7s 1P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 14.6,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 4
   },
   {
@@ -473,8 +551,10 @@
    "g": null,
    "name": "5s^{2}5p8s\\ ^3P^{o}_{1}",
    "plain": "5s25p8s 3P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 18.8,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 1
   },
   {
@@ -488,8 +568,10 @@
    "g": null,
    "name": "5s^{2}5p7d\\ \\mathrm{b}\\,^3D^{o}_{1}",
    "plain": "5s25p7d b 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 292.0,
+   "tau_unc": 9.0,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 10
   },
   {
@@ -503,8 +585,10 @@
    "g": null,
    "name": "5s^{2}5p8d\\ ^3D^{o}_{1}",
    "plain": "5s25p8d 3D°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 34.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)",
    "col": 2
   },
   {
@@ -534,6 +618,7 @@
    "wn": 48222.159,
    "lam": 207.3735,
    "air": 207.3074,
+   "gamma_MHz": 7.802,
    "type": "E1",
    "A": 3600000.0,
    "A_tier": "nist",
@@ -541,6 +626,8 @@
    "d": 0.218,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0734,
+   "br_tier": "nist",
    "lam_obs": 207.3736
   },
   {
@@ -553,6 +640,7 @@
    "wn": 45453.878,
    "lam": 220.0032,
    "air": 219.9346,
+   "gamma_MHz": 12.06,
    "type": "E1 (intercombination)",
    "A": 29000000.0,
    "A_tier": "nist",
@@ -560,6 +648,8 @@
    "d": 0.873,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.3828,
+   "br_tier": "nist",
    "lam_obs": 220.00322
   },
   {
@@ -572,6 +662,7 @@
    "wn": 45241.736,
    "lam": 221.0348,
    "air": 220.966,
+   "gamma_MHz": 23.75,
    "type": "E1",
    "A": 56000000.0,
    "A_tier": "nist",
@@ -579,6 +670,8 @@
    "d": 1.222,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.3752,
+   "br_tier": "nist",
    "lam_obs": 221.03486
   },
   {
@@ -591,6 +684,7 @@
    "wn": 44508.677,
    "lam": 224.6753,
    "air": 224.6056,
+   "gamma_MHz": 34.6,
    "type": "E1",
    "A": 160000000.0,
    "A_tier": "nist",
@@ -598,6 +692,8 @@
    "d": 1.639,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.736,
+   "br_tier": "nist",
    "lam_obs": 224.67539
   },
   {
@@ -610,6 +706,7 @@
    "wn": 44060.023,
    "lam": 226.9631,
    "air": 226.893,
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 120000000.0,
    "A_tier": "nist",
@@ -617,6 +714,8 @@
    "d": 2.202,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.888,
+   "br_tier": "nist",
    "lam_obs": 226.96312
   },
   {
@@ -629,6 +728,7 @@
    "wn": 43718.011,
    "lam": 228.7387,
    "air": 228.6681,
+   "gamma_MHz": 12.06,
    "type": "E1 (intercombination)",
    "A": 31000000.0,
    "A_tier": "nist",
@@ -636,6 +736,8 @@
    "d": 0.9568,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.4092,
+   "br_tier": "nist",
    "lam_obs": 228.73866
   },
   {
@@ -648,6 +750,7 @@
    "wn": 43141.716,
    "lam": 231.7942,
    "air": 231.723,
+   "gamma_MHz": 24.11,
    "type": "E1 (intercombination)",
    "A": 200000000.0,
    "A_tier": "nist",
@@ -655,6 +758,8 @@
    "d": 2.933,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 231.79422
   },
   {
@@ -667,6 +772,7 @@
    "wn": 42816.871,
    "lam": 233.5528,
    "air": 233.4812,
+   "gamma_MHz": 34.6,
    "type": "E1",
    "A": 66000000.0,
    "A_tier": "nist",
@@ -674,6 +780,8 @@
    "d": 1.116,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.3036,
+   "br_tier": "nist",
    "lam_obs": 233.55284
   },
   {
@@ -686,6 +794,7 @@
    "wn": 42452.562,
    "lam": 235.557,
    "air": 235.485,
+   "gamma_MHz": 27.92,
    "type": "E1",
    "A": 170000000.0,
    "A_tier": "nist",
@@ -693,6 +802,8 @@
    "d": 2.342,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.969,
+   "br_tier": "nist",
    "lam_obs": 235.55704
   },
   {
@@ -705,6 +816,7 @@
    "wn": 41990.931,
    "lam": 238.1467,
    "air": 238.074,
+   "gamma_MHz": 6.92,
    "type": "E1",
    "A": 3100000.0,
    "A_tier": "nist",
@@ -712,6 +824,8 @@
    "d": 0.3214,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0713,
+   "br_tier": "nist",
    "lam_obs": 238.14663
   },
   {
@@ -724,6 +838,7 @@
    "wn": 41513.016,
    "lam": 240.8883,
    "air": 240.8151,
+   "gamma_MHz": 14.08,
    "type": "E1",
    "A": 18000000.0,
    "A_tier": "nist",
@@ -731,6 +846,8 @@
    "d": 0.6104,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.2034,
+   "br_tier": "nist",
    "lam_obs": 240.8883
   },
   {
@@ -743,6 +860,7 @@
    "wn": 41280.868,
    "lam": 242.243,
    "air": 242.1694,
+   "gamma_MHz": 30.03,
    "type": "E1",
    "A": 250000000.0,
    "A_tier": "nist",
@@ -750,6 +868,8 @@
    "d": 3.504,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 242.24299
   },
   {
@@ -762,6 +882,7 @@
    "wn": 41148.333,
    "lam": 243.0232,
    "air": 242.9495,
+   "gamma_MHz": 21.8,
    "type": "E1",
    "A": 150000000.0,
    "A_tier": "nist",
@@ -769,6 +890,8 @@
    "d": 2.727,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 243.02325
   },
   {
@@ -781,6 +904,7 @@
    "wn": 41081.004,
    "lam": 243.4215,
    "air": 243.3477,
+   "gamma_MHz": 34.6,
    "type": "E1",
    "A": 800000.0,
    "A_tier": "nist",
@@ -788,6 +912,8 @@
    "d": 0.1307,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0037,
+   "br_tier": "nist",
    "lam_obs": 243.42152
   },
   {
@@ -800,6 +926,7 @@
    "wn": 40716.695,
    "lam": 245.5995,
    "air": 245.5252,
+   "gamma_MHz": 27.92,
    "type": "E1",
    "A": 1100000.0,
    "A_tier": "nist",
@@ -807,6 +934,8 @@
    "d": 0.2005,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0063,
+   "br_tier": "nist",
    "lam_obs": 245.59949
   },
   {
@@ -819,6 +948,7 @@
    "wn": 40368.979,
    "lam": 247.715,
    "air": 247.6401,
+   "gamma_MHz": 27.92,
    "type": "E1 (intercombination)",
    "A": 1100000.0,
    "A_tier": "nist",
@@ -826,6 +956,8 @@
    "d": 0.1573,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0063,
+   "br_tier": "nist",
    "lam_obs": 247.71494
   },
   {
@@ -838,6 +970,7 @@
    "wn": 40255.064,
    "lam": 248.416,
    "air": 248.341,
+   "gamma_MHz": 6.92,
    "type": "E1",
    "A": 21000000.0,
    "A_tier": "nist",
@@ -845,6 +978,8 @@
    "d": 0.8913,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.483,
+   "br_tier": "nist",
    "lam_obs": 248.41594
   },
   {
@@ -876,6 +1011,7 @@
    "wn": 40056.454,
    "lam": 249.6477,
    "air": 249.5724,
+   "gamma_MHz": 23.75,
    "type": "E1 (intercombination)",
    "A": 62000000.0,
    "A_tier": "nist",
@@ -883,6 +1019,8 @@
    "d": 1.543,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.4154,
+   "br_tier": "nist",
    "lam_obs": 249.64767
   },
   {
@@ -895,6 +1033,7 @@
    "wn": 39609.204,
    "lam": 252.4666,
    "air": 252.3907,
+   "gamma_MHz": 7.802,
    "type": "E1 (intercombination)",
    "A": 7400000.0,
    "A_tier": "nist",
@@ -902,6 +1041,8 @@
    "d": 0.4199,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.151,
+   "br_tier": "nist",
    "lam_obs": 252.46661
   },
   {
@@ -914,6 +1055,7 @@
    "wn": 39257.053,
    "lam": 254.7313,
    "air": 254.6548,
+   "gamma_MHz": 38.72,
    "type": "E1 (intercombination)",
    "A": 21000000.0,
    "A_tier": "nist",
@@ -921,6 +1063,8 @@
    "d": 0.7169,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0863,
+   "br_tier": "nist",
    "lam_obs": 254.73132
   },
   {
@@ -933,6 +1077,7 @@
    "wn": 39079.879,
    "lam": 255.8862,
    "air": 255.8094,
+   "gamma_MHz": 4.681,
    "type": "E1 (intercombination)",
    "A": 34000000.0,
    "A_tier": "nist",
@@ -940,6 +1085,8 @@
    "d": 0.9184,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 255.88616
   },
   {
@@ -952,6 +1099,7 @@
    "wn": 38874.741,
    "lam": 257.2364,
    "air": 257.1594,
+   "gamma_MHz": 21.51,
    "type": "E1 (intercombination)",
    "A": 45000000.0,
    "A_tier": "nist",
@@ -959,6 +1107,8 @@
    "d": 1.627,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.333,
+   "br_tier": "nist",
    "lam_obs": 257.23644
   },
   {
@@ -971,6 +1121,7 @@
    "wn": 38532.729,
    "lam": 259.5196,
    "air": 259.4421,
+   "gamma_MHz": 12.06,
    "type": "E1",
    "A": 30000000.0,
    "A_tier": "nist",
@@ -978,6 +1129,8 @@
    "d": 1.138,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.396,
+   "br_tier": "nist",
    "lam_obs": 259.51967
   },
   {
@@ -990,6 +1143,7 @@
    "wn": 37910.695,
    "lam": 263.7778,
    "air": 263.6992,
+   "gamma_MHz": 0.5451,
    "type": "E1 (intercombination)",
    "A": 11000000.0,
    "A_tier": "nist",
@@ -997,6 +1151,8 @@
    "d": 0.5467,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 263.77782
   },
   {
@@ -1009,6 +1165,7 @@
    "wn": 37565.247,
    "lam": 266.2035,
    "air": 266.1243,
+   "gamma_MHz": 38.72,
    "type": "E1 (intercombination)",
    "A": 11000000.0,
    "A_tier": "nist",
@@ -1016,6 +1173,8 @@
    "d": 0.5543,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0452,
+   "br_tier": "nist",
    "lam_obs": 266.20353
   },
   {
@@ -1028,6 +1187,7 @@
    "wn": 36937.07,
    "lam": 270.7307,
    "air": 270.6505,
+   "gamma_MHz": 37.45,
    "type": "E1",
    "A": 66000000.0,
    "A_tier": "nist",
@@ -1035,6 +1195,8 @@
    "d": 1.798,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.2805,
+   "br_tier": "nist",
    "lam_obs": 270.73075
   },
   {
@@ -1066,6 +1228,7 @@
    "wn": 35963.051,
    "lam": 278.0632,
    "air": 277.9811,
+   "gamma_MHz": 21.8,
    "type": "E1 (intercombination)",
    "A": 18000000.0,
    "A_tier": "nist",
@@ -1073,6 +1236,8 @@
    "d": 1.156,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.1314,
+   "br_tier": "nist",
    "lam_obs": 278.06317
   },
   {
@@ -1085,6 +1250,7 @@
    "wn": 35895.722,
    "lam": 278.5847,
    "air": 278.5026,
+   "gamma_MHz": 34.6,
    "type": "E1 (intercombination)",
    "A": 14000000.0,
    "A_tier": "nist",
@@ -1092,6 +1258,8 @@
    "d": 0.6695,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0644,
+   "br_tier": "nist",
    "lam_obs": 278.58473
   },
   {
@@ -1104,6 +1272,7 @@
    "wn": 35858.453,
    "lam": 278.8743,
    "air": 278.792,
+   "gamma_MHz": 8.466,
    "type": "E1 (intercombination)",
    "A": 14000000.0,
    "A_tier": "nist",
@@ -1111,6 +1280,8 @@
    "d": 0.6705,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.2632,
+   "br_tier": "nist",
    "lam_obs": 278.8742
   },
   {
@@ -1123,6 +1294,34 @@
    "wn": 35544.333,
    "lam": 281.3388,
    "air": 281.256,
+   "use": "alternative first step for collinear resonance ionization spectroscopy (CRIS) of neutron-deficient Sn isotopes",
+   "isotope_shifts": {
+    "116-112": {
+     "value": 491.2,
+     "unc": 8.3,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "118-112": {
+     "value": 754.2,
+     "unc": 5.9,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "122-112": {
+     "value": 1126.4,
+     "unc": 4.8,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "124-112": {
+     "value": 1276.5,
+     "unc": 5.2,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    }
+   },
+   "gamma_MHz": 10.9,
    "type": "E1",
    "A": 23000000.0,
    "A_tier": "nist",
@@ -1130,6 +1329,8 @@
    "d": 0.8708,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.3358,
+   "br_tier": "nist",
    "lam_obs": 281.33858
   },
   {
@@ -1142,6 +1343,7 @@
    "wn": 35531.413,
    "lam": 281.4411,
    "air": 281.3582,
+   "gamma_MHz": 27.92,
    "type": "E1 (intercombination)",
    "A": 12000000.0,
    "A_tier": "nist",
@@ -1149,6 +1351,8 @@
    "d": 0.8125,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0684,
+   "br_tier": "nist",
    "lam_obs": 281.44108
   },
   {
@@ -1161,6 +1365,64 @@
    "wn": 35201.203,
    "lam": 284.0812,
    "air": 283.9977,
+   "use": "first step of the resonance-ionization scheme used for collinear resonance ionization spectroscopy (CRIS) of exotic Sn isotopes",
+   "isotope_shifts": {
+    "114-112": {
+     "value": 314.4,
+     "unc": 4.8,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "115-112": {
+     "value": 417.2,
+     "unc": 2.2,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "116-112": {
+     "value": 654.7,
+     "unc": 4.7,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "117-112": {
+     "value": 754.8,
+     "unc": 4.3,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "118-112": {
+     "value": 957.8,
+     "unc": 3.0,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "119-112": {
+     "value": 1048.5,
+     "unc": 3.3,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "120-112": {
+     "value": 1225.3,
+     "unc": 2.2,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "122-112": {
+     "value": 1459.8,
+     "unc": 3.2,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "124-112": {
+     "value": 1678.3,
+     "unc": 3.4,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    }
+   },
+   "gamma_MHz": 37.45,
    "type": "E1",
    "A": 170000000.0,
    "A_tier": "nist",
@@ -1168,6 +1430,8 @@
    "d": 3.101,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.7225,
+   "br_tier": "nist",
    "lam_obs": 284.08116
   },
   {
@@ -1180,6 +1444,7 @@
    "wn": 35069.782,
    "lam": 285.1458,
    "air": 285.062,
+   "gamma_MHz": 6.92,
    "type": "E1 (intercombination)",
    "A": 33000000.0,
    "A_tier": "nist",
@@ -1187,6 +1452,8 @@
    "d": 1.374,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.759,
+   "br_tier": "nist",
    "lam_obs": 285.14572
   },
   {
@@ -1199,6 +1466,64 @@
    "wn": 34914.282,
    "lam": 286.4157,
    "air": 286.3317,
+   "use": "ground-state resonance line used for high-resolution (collinear / atomic-beam) laser spectroscopy of Sn isotopes: isotope shifts, hyperfine structure, charge radii (Baird 1983, Anselment 1986, Yordanov 2020, Gustafsson 2025); main atomic-absorption line",
+   "isotope_shifts": {
+    "114-112": {
+     "value": 319.5,
+     "unc": 1.64,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    },
+    "115-112": {
+     "value": 412.7,
+     "unc": 1.49,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    },
+    "116-112": {
+     "value": 640.0,
+     "unc": 1.17,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    },
+    "117-112": {
+     "value": 746.8,
+     "unc": 1.22,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    },
+    "118-112": {
+     "value": 945.2,
+     "unc": 1.22,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    },
+    "119-112": {
+     "value": 1039.3,
+     "unc": 1.49,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    },
+    "120-112": {
+     "value": 1214.4,
+     "unc": 1.12,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    },
+    "122-112": {
+     "value": 1448.5,
+     "unc": 1.22,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    },
+    "124-112": {
+     "value": 1656.0,
+     "unc": 1.22,
+     "src": "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)",
+     "url": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010"
+    }
+   },
+   "gamma_MHz": 33.51,
    "type": "E1",
    "A": 54000000.0,
    "A_tier": "nist",
@@ -1206,6 +1531,8 @@
    "d": 1.371,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.2565,
+   "br_tier": "nist",
    "lam_obs": 286.41555
   },
   {
@@ -1218,6 +1545,7 @@
    "wn": 34312.219,
    "lam": 291.4414,
    "air": 291.356,
+   "gamma_MHz": 9.764,
    "type": "E1 (intercombination)",
    "A": 83000000.0,
    "A_tier": "nist",
@@ -1225,6 +1553,8 @@
    "d": 1.744,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 291.44125
   },
   {
@@ -1237,6 +1567,7 @@
    "wn": 33222.476,
    "lam": 301.001,
    "air": 300.9134,
+   "gamma_MHz": 33.51,
    "type": "E1",
    "A": 38000000.0,
    "A_tier": "nist",
@@ -1244,6 +1575,8 @@
    "d": 1.239,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.1805,
+   "br_tier": "nist",
    "lam_obs": 301.00102
   },
   {
@@ -1256,6 +1589,7 @@
    "wn": 32963.472,
    "lam": 303.3661,
    "air": 303.2778,
+   "gamma_MHz": 14.08,
    "type": "E1",
    "A": 62000000.0,
    "A_tier": "nist",
@@ -1263,6 +1597,8 @@
    "d": 1.601,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.7006,
+   "br_tier": "nist",
    "lam_obs": 303.36606
   },
   {
@@ -1275,6 +1611,7 @@
    "wn": 32948.952,
    "lam": 303.4998,
    "air": 303.4115,
+   "use": "proposed laser-cooling / magneto-optical-trap transition: closed Type-II (J=1 -> J'=0) cycling line from the metastable 3P1 level, no repumper needed; lambda = 303 nm, Gamma/2pi = 32 MHz, I_sat = 150 mW/cm2, Doppler temperature 760 uK (simulation study, no experiment yet)",
    "type": "E1",
    "A": 200000000.0,
    "A_tier": "nist",
@@ -1294,6 +1631,7 @@
    "wn": 31819.435,
    "lam": 314.2733,
    "air": 314.1823,
+   "gamma_MHz": 27.92,
    "type": "E1 (intercombination)",
    "A": 19000000.0,
    "A_tier": "nist",
@@ -1301,6 +1639,8 @@
    "d": 0.9345,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.1083,
+   "br_tier": "nist",
    "lam_obs": 314.27334
   },
   {
@@ -1313,6 +1653,8 @@
    "wn": 31486.609,
    "lam": 317.5953,
    "air": 317.5035,
+   "use": "strongest decay branch of the 5p6s 3P°1 level (upper level of the 286.3 nm resonance line); fluorescence-detection line",
+   "gamma_MHz": 33.51,
    "type": "E1",
    "A": 100000000.0,
    "A_tier": "nist",
@@ -1320,6 +1662,8 @@
    "d": 2.178,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.475,
+   "br_tier": "nist",
    "lam_obs": 317.59539
   },
   {
@@ -1332,6 +1676,7 @@
    "wn": 31059.66,
    "lam": 321.961,
    "air": 321.8681,
+   "gamma_MHz": 7.802,
    "type": "E1 (intercombination)",
    "A": 4700000.0,
    "A_tier": "nist",
@@ -1339,6 +1684,8 @@
    "d": 0.4819,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0959,
+   "br_tier": "nist",
    "lam_obs": 321.96101
   },
   {
@@ -1370,6 +1717,7 @@
    "wn": 30644.098,
    "lam": 326.3271,
    "air": 326.233,
+   "gamma_MHz": 38.72,
    "type": "E1",
    "A": 270000000.0,
    "A_tier": "nist",
@@ -1377,6 +1725,8 @@
    "d": 3.727,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 326.32716
   },
   {
@@ -1389,6 +1739,7 @@
    "wn": 30015.921,
    "lam": 333.1565,
    "air": 333.0607,
+   "gamma_MHz": 37.45,
    "type": "E1 (intercombination)",
    "A": 20000000.0,
    "A_tier": "nist",
@@ -1396,6 +1747,8 @@
    "d": 1.351,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.085,
+   "br_tier": "nist",
    "lam_obs": 333.15652
   },
   {
@@ -1408,6 +1761,7 @@
    "wn": 27346.178,
    "lam": 365.6818,
    "air": 365.5777,
+   "gamma_MHz": 34.6,
    "type": "E1 (intercombination)",
    "A": 4100000.0,
    "A_tier": "nist",
@@ -1415,6 +1769,8 @@
    "d": 0.5448,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0189,
+   "br_tier": "nist",
    "lam_obs": 365.68179
   },
   {
@@ -1427,6 +1783,7 @@
    "wn": 26301.327,
    "lam": 380.209,
    "air": 380.101,
+   "gamma_MHz": 33.51,
    "type": "E1 (intercombination)",
    "A": 28000000.0,
    "A_tier": "nist",
@@ -1434,6 +1791,8 @@
    "d": 1.51,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.133,
+   "br_tier": "nist",
    "lam_obs": 380.20899
   },
   {
@@ -1446,6 +1805,64 @@
    "wn": 22094.554,
    "lam": 452.6002,
    "air": 452.4733,
+   "use": "visible line from the metastable 1S0 level used for collinear laser spectroscopy of Sn isotopes at COLLAPS (quadrupole moments, charge radii)",
+   "isotope_shifts": {
+    "112-124": {
+     "value": -1383.3,
+     "unc": 2.2,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "114-124": {
+     "value": -1115.3,
+     "unc": 1.9,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "115-124": {
+     "value": -1044.2,
+     "unc": 1.2,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "116-124": {
+     "value": -841.8,
+     "unc": 1.4,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "117-124": {
+     "value": -759.3,
+     "unc": 1.7,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "118-124": {
+     "value": -585.6,
+     "unc": 1.9,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "119-124": {
+     "value": -513.1,
+     "unc": 1.6,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "120-124": {
+     "value": -360.5,
+     "unc": 1.3,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    },
+    "122-124": {
+     "value": -167.3,
+     "unc": 1.6,
+     "src": "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II",
+     "url": "https://arxiv.org/abs/2504.17060"
+    }
+   },
+   "gamma_MHz": 38.72,
    "type": "E1",
    "A": 26000000.0,
    "A_tier": "nist",
@@ -1453,6 +1870,8 @@
    "d": 1.889,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.1069,
+   "br_tier": "nist",
    "lam_obs": 452.60032
   },
   {
@@ -1465,6 +1884,7 @@
    "wn": 17751.783,
    "lam": 563.3237,
    "air": 563.1674,
+   "gamma_MHz": 33.51,
    "type": "E1 (intercombination)",
    "A": 2400000.0,
    "A_tier": "nist",
@@ -1472,6 +1892,8 @@
    "d": 0.797,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.0114,
+   "br_tier": "nist",
    "lam_obs": 563.3239
   },
   {
@@ -1484,6 +1906,7 @@
    "wn": 16472.301,
    "lam": 607.0797,
    "air": 606.9117,
+   "gamma_MHz": 0.9764,
    "type": "E1",
    "A": 4600000.0,
    "A_tier": "nist",
@@ -1491,13 +1914,15 @@
    "d": 1.234,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 0.7498,
+   "br_tier": "nist",
    "lam_obs": 607.0797
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -1512,114 +1937,15 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p5d\\ ^3P^{o}_{2}$",
-     "221.0348",
-     "220.9660",
-     "1356.3131",
-     "1.222",
-     "5.600e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p5d\\ ^3D^{o}_{1}$",
-     "224.6753",
-     "224.6056",
-     "1334.3366",
-     "1.639",
-     "1.600e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p5d\\ ^3D^{o}_{3}$",
-     "226.9631",
-     "226.8930",
-     "1320.8863",
-     "2.202",
-     "1.200e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^1D_{2}$ – $5s^{2}5p6d\\ ^3F^{o}_{3}$",
-     "231.7942",
-     "231.7230",
-     "1293.3561",
-     "2.933",
-     "2.000e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^3P_{1}$ – $5s^{2}5p5d\\ ^3D^{o}_{1}$",
-     "233.5528",
-     "233.4812",
-     "1283.6175",
-     "1.116",
-     "6.600e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^3P_{1}$ – $5s^{2}5p5d\\ ^3D^{o}_{2}$",
-     "235.5570",
-     "235.4850",
-     "1272.6958",
-     "2.342",
-     "1.700e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^1D_{2}$ – $5s^{2}5p5d\\ ^1F^{o}_{3}$",
-     "242.2430",
-     "242.1694",
-     "1237.5693",
-     "3.504",
-     "2.500e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p5d\\ ^3F^{o}_{3}$",
-     "243.0232",
-     "242.9495",
-     "1233.5960",
-     "2.727",
-     "1.500e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^1D_{2}$ – $5s^{2}5p5d\\ ^3P^{o}_{2}$",
-     "249.6477",
-     "249.5724",
-     "1200.8623",
-     "1.543",
-     "6.200e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^3P_{1}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
-     "270.7307",
-     "270.6505",
-     "1107.3455",
-     "1.798",
-     "6.600e+07",
-     "–",
-     "–",
-     ""
+     "$5s^{2}5p^{2}\\ ^1S_{0}$ – $5s^{2}5p7s\\ ^1P^{o}_{1}$",
+     "281.3388",
+     "281.2560",
+     "1065.5923",
+     "0.871",
+     "2.300e+07",
+     "10.9",
+     "33.6",
+     "alternative first step for collinear resonance ionization…"
     ],
     [
      "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
@@ -1628,31 +1954,20 @@
      "1055.3055",
      "3.101",
      "1.700e+08",
-     "–",
-     "–",
-     ""
+     "37.45",
+     "72.2",
+     "first step of the resonance-ionization scheme used for co…"
     ],
     [
-     "$5s^{2}5p^{2}\\ ^1S_{0}$ – $5s^{2}5p6d\\ ^3D^{o}_{1}$",
-     "291.4414",
-     "291.3560",
-     "1028.6544",
-     "1.744",
-     "8.300e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$5s^{2}5p^{2}\\ ^1S_{0}$ – $5s^{2}5p5d\\ ^1P^{o}_{1}$",
-     "303.3661",
-     "303.2778",
-     "988.2200",
-     "1.601",
-     "6.200e+07",
-     "–",
-     "–",
-     ""
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.4157",
+     "286.3317",
+     "1046.7038",
+     "1.371",
+     "5.400e+07",
+     "33.51",
+     "25.7",
+     "ground-state resonance line used for high-resolution"
     ],
     [
      "$5s^{2}5p^{2}\\ ^3P_{1}$ – $5s^{2}5p6s\\ ^3P^{o}_{0}$",
@@ -1663,7 +1978,7 @@
      "2.000e+08",
      "–",
      "–",
-     ""
+     "proposed laser-cooling / magneto-optical-trap transition:…"
     ],
     [
      "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
@@ -1672,29 +1987,236 @@
      "943.9448",
      "2.178",
      "1.000e+08",
-     "–",
-     "–",
-     ""
+     "33.51",
+     "47.5",
+     "strongest decay branch of the 5p6s 3P°1 level"
     ],
     [
-     "$5s^{2}5p^{2}\\ ^1D_{2}$ – $5s^{2}5p6s\\ ^1P^{o}_{1}$",
-     "326.3271",
-     "326.2330",
-     "918.6870",
-     "3.727",
-     "2.700e+08",
-     "–",
-     "–",
-     ""
+     "$5s^{2}5p^{2}\\ ^1S_{0}$ – $5s^{2}5p6s\\ ^1P^{o}_{1}$",
+     "452.6002",
+     "452.4733",
+     "662.3781",
+     "1.889",
+     "2.600e+07",
+     "38.72",
+     "10.7",
+     "visible line from the metastable 1S0 level used for colli…"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{119}$Sn hyperfine structure  ($I$ = 1/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{1}$",
+     "578.296(4)",
+     "–",
+     "F=1/2: -578.30   F=3/2: +289.15"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$",
+     "-1269.419(3)",
+     "–",
+     "F=3/2: +1904.13   F=5/2: -1269.42"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^1D_{2}$",
+     "-1328.745(4)",
+     "–",
+     "F=3/2: +1993.12   F=5/2: -1328.74"
+    ],
+    [
+     "$5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "-5011(3)",
+     "–",
+     "F=1/2: +5011.00   F=3/2: -2505.50"
+    ],
+    [
+     "$5s^{2}5p6s\\ ^1P^{o}_{1}$",
+     "-259.1(10)",
+     "–",
+     "F=1/2: +259.10   F=3/2: -129.55"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$5s^{2}5p^{2}\\ ^1S_{0}$ – $5s^{2}5p7s\\ ^1P^{o}_{1}$",
+     "281.339",
+     "116-112",
+     "491(8)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^1S_{0}$ – $5s^{2}5p7s\\ ^1P^{o}_{1}$",
+     "281.339",
+     "118-112",
+     "754(6)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^1S_{0}$ – $5s^{2}5p7s\\ ^1P^{o}_{1}$",
+     "281.339",
+     "122-112",
+     "1126(5)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^1S_{0}$ – $5s^{2}5p7s\\ ^1P^{o}_{1}$",
+     "281.339",
+     "124-112",
+     "1276(5)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "114-112",
+     "314(5)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "115-112",
+     "417.2(22)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "116-112",
+     "655(5)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "117-112",
+     "755(4)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "118-112",
+     "958(3)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "119-112",
+     "1048(3)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "120-112",
+     "1225.3(22)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "122-112",
+     "1460(3)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{2}$ – $5s^{2}5p6s\\ ^3P^{o}_{2}$",
+     "284.081",
+     "124-112",
+     "1678(3)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "114-112",
+     "319.5(16)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "115-112",
+     "412.7(15)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "116-112",
+     "640.0(12)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "117-112",
+     "746.8(12)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "118-112",
+     "945.2(12)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "119-112",
+     "1039.3(15)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "120-112",
+     "1214.4(11)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "122-112",
+     "1448.5(12)"
+    ],
+    [
+     "$5s^{2}5p^{2}\\ ^3P_{0}$ – $5s^{2}5p6s\\ ^3P^{o}_{1}$",
+     "286.416",
+     "124-112",
+     "1656.0(12)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
   "levels: 29   lines < 2000 nm: 51   with matrix element: 51",
   "transition-rate provenance: nist: 51",
-  "levels with a measured lifetime: 0"
+  "levels with a measured lifetime: 22"
  ],
- "sources": {}
+ "sources": {
+  "NIST Atomic Weights and Isotopic Compositions (abundance); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data, \"Atomic Data for Sn\" (https://physics.nist.gov/PhysRefData/Handbook/Tables/tintable1.htm)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Sn",
+  "NIST ASD Sn I levels table (local copy data/nist/Sn_I_levels.tsv); NIST Handbook page lists 59232.7 cm-1 (7.34392 eV)": "https://physics.nist.gov/PhysRefData/Handbook/Tables/tintable1.htm",
+  "Childs, Goodman, Phys. Rev. 137, A35 (1965) (atomic-beam magnetic resonance; values read in the abstract)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.137.A35",
+  "Zheng, Wang, Verma, Wang, Langin, DeMille, \"Simulated Laser Cooling and Magneto-Optical Trapping of Group IV Atoms\", Phys. Rev. A 113, 043115 (2026), arXiv:2509.04635, Table VI": "https://arxiv.org/abs/2509.04635",
+  "Zheng, Wang, Verma, Wang, Langin, DeMille, \"Simulated Laser Cooling and Magneto-Optical Trapping of Group IV Atoms\", Phys. Rev. A 113, 043115 (2026), arXiv:2509.04635, Table II": "https://arxiv.org/abs/2509.04635",
+  "Childs, Phys. Rev. A 4, 439 (1971) (atomic-beam magnetic resonance; values read in the abstract)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.4.439",
+  "Zheng, Wang, Verma, Wang, Langin, DeMille, \"Simulated Laser Cooling and Magneto-Optical Trapping of Group IV Atoms\", Phys. Rev. A 113, 043115 (2026), arXiv:2509.04635, Table I": "https://arxiv.org/abs/2509.04635",
+  "Holmgren, Svanberg, Phys. Scr. 5, 135 (1972) (Hanle / zero-field level crossing on an atomic beam; values read in the abstract)": "https://portal.research.lu.se/en/publications/natural-radiative-lifetimes-of-the-5p6s1p1-5p6s3p12-and-5p5d3d123",
+  "Yordanov et al., Commun. Phys. 3, 107 (2020) \"Structural trends in atomic nuclei from laser spectroscopy of tin\", Table 1 (collinear laser spectroscopy, COLLAPS)": "https://www.nature.com/articles/s42005-020-0348-9.pdf",
+  "Baird et al., \"Laser spectroscopy of the tin isotopes\", J. Phys. B: At. Mol. Phys. 16, issue 14 (1983), doi 10.1088/0022-3700/16/14/010 (atomic-beam laser spectroscopy at 286 nm; values read in the abstract)": "https://iopscience.iop.org/article/10.1088/0022-3700/16/14/010",
+  "Zhang, Feng, Xu, Dai, Palmeri, Quinet, Biémont, J. Phys. B 43, 205005 (2010), Table 1 (time-resolved laser-induced fluorescence, laser-ablation atomic beam; statistical + systematic fitting error)": "https://orbi.uliege.be/bitstream/2268/152608/1/0953-4075_43_20_205005.pdf",
+  "Gorshkov, Verolainen, Opt. Spectrosc. 59, 1157 (1985), as quoted in Table 1 of Zhang et al., J. Phys. B 43, 205005 (2010)": "https://orbi.uliege.be/bitstream/2268/152608/1/0953-4075_43_20_205005.pdf",
+  "Penkin, Slavenas, Opt. Spectrosc. 15, 83 (1963) (hook method), as quoted in Table 1 of Zhang et al., J. Phys. B 43, 205005 (2010)": "https://orbi.uliege.be/bitstream/2268/152608/1/0953-4075_43_20_205005.pdf",
+  "Andersen, Madsen, Sørensen, J. Opt. Soc. Am. 62, 1118 (1972) (beam-foil), as quoted in Table 1 of Zhang et al., J. Phys. B 43, 205005 (2010)": "https://orbi.uliege.be/bitstream/2268/152608/1/0953-4075_43_20_205005.pdf",
+  "Xu, Feng, Sun, Dai, Chin. Phys. B 18, 3828 (2009) (time-resolved LIF), as quoted in Table 1 of Zhang et al., J. Phys. B 43, 205005 (2010)": "https://orbi.uliege.be/bitstream/2268/152608/1/0953-4075_43_20_205005.pdf",
+  "Zhang, Xu, Zhang, You, Ma, Han, Li, Sun, Jiang, Enzonga Yoca, Quinet, Biémont, Dai, Phys. Rev. A 78, 022505 (2008), Table I (time-resolved fluorescence after two-step laser excitation)": "https://orbi.umons.ac.be/bitstream/20.500.12907/4441/1/QUINET-2008-07-JOURNAL.pdf",
+  "Zhang, Xu, Zhang, You, Ma, Han, Li, Sun, Jiang, Enzonga Yoca, Quinet, Biémont, Dai, Phys. Rev. A 78, 022505 (2008), Table I (Zeeman quantum-beat)": "https://orbi.umons.ac.be/bitstream/20.500.12907/4441/1/QUINET-2008-07-JOURNAL.pdf",
+  "Gustafsson et al., \"Charge Radii Measurements of Exotic Tin Isotopes in the Proximity of N=50 and N=82\", arXiv:2504.17060v2 (2025), Table II": "https://arxiv.org/abs/2504.17060"
+ }
 }
