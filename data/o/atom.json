@@ -44,14 +44,14 @@
    "width": 1.0
   },
   {
-   "key": "1D*",
-   "header": "^1D^{o}",
+   "key": "1S",
+   "header": "^1S",
    "group": null,
    "width": 1.0
   },
   {
-   "key": "1S",
-   "header": "^1S",
+   "key": "1D*",
+   "header": "^1D^{o}",
    "group": null,
    "width": 1.0
   },
@@ -166,7 +166,7 @@
    "tau_unc": null,
    "tau_tier": "exp",
    "tau_src": "NIST ASD O I lines table with forbidden lines (557.7, 297.2, 295.8 nm, accuracy B+)",
-   "col": 5
+   "col": 4
   },
   {
    "id": 5,
@@ -506,7 +506,7 @@
    "plain": "2p33s 1D°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
    "id": 25,
@@ -1671,6 +1671,24 @@
   },
   {
    "kind": "forbidden",
+   "freq": 1013.07615,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 4,
+   "wn": 33792.583,
+   "lam": 295.9229,
+   "air": 295.8365,
+   "type": "E2",
+   "gamma_MHz": 2.126e-07,
+   "A": 0.000242,
+   "A_tier": "exp",
+   "A_src": "NIST ASD lines table with forbidden lines enabled (accuracy class C+); NIST gives no measurement for this line, the A value is a critically evaluated (calculated) one",
+   "br": 0.0002,
+   "br_tier": "exp"
+  },
+  {
+   "kind": "forbidden",
    "freq": 1008.33149,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -2116,8 +2134,8 @@
   }
  ],
  "validation": [
-  "levels: 35   lines < 2000 nm: 66   with matrix element: 58",
-  "transition-rate provenance: exp: 5, nist: 58, wavelength only: 3",
+  "levels: 35   lines < 2000 nm: 67   with matrix element: 58",
+  "transition-rate provenance: exp: 6, nist: 58, wavelength only: 3",
   "levels with a measured lifetime: 13"
  ],
  "sources": {
