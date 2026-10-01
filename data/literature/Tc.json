@@ -1,0 +1,774 @@
+{
+ "element": "Tc",
+ "isotopes": {
+  "97": {
+   "I": "9/2",
+   "half_life": "4.21e6 y",
+   "half_life_unc": "0.16e6 y",
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  },
+  "98": {
+   "I": "6",
+   "half_life": "4.2e6 y",
+   "half_life_unc": "0.3e6 y",
+   "note": "IAEA lists Jpi = (6)+; Kron et al. 2020 confirm I = 6 from the hyperfine spectra",
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  },
+  "99": {
+   "I": "9/2",
+   "half_life": "2.111e5 y",
+   "half_life_unc": "0.012e5 y",
+   "note": "the isotope available in weighable amounts (fission product); all Tc isotopes are radioactive, no natural abundance",
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  }
+ },
+ "nuclear_moments": {
+  "97": {
+   "mu_muN": 5.799,
+   "mu_unc": 0.066,
+   "Q_b": -0.167,
+   "Q_unc": 0.02,
+   "method": "experiment",
+   "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+   "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf",
+   "alternatives": [
+    {
+     "mu_muN": 5.82,
+     "mu_unc": 0.09,
+     "method": "experiment",
+     "source": "\"High resolution spectroscopy of the hyperfine structure splitting in 97,99Tc\", Hyperfine Interact. (2016), doi:10.1007/s10751-016-1389-z (abstract)",
+     "url": "https://link.springer.com/article/10.1007/s10751-016-1389-z"
+    }
+   ]
+  },
+  "98": {
+   "mu_muN": 4.651,
+   "mu_unc": 0.055,
+   "Q_b": 0.036,
+   "Q_unc": 0.024,
+   "note": "printed as 4.651(55) in Table II and as -4.651(55) in the running text; sign follows Table II",
+   "method": "experiment",
+   "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+   "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+  },
+  "99": {
+   "mu_muN": 5.6847,
+   "mu_unc": 0.0004,
+   "Q_b": -0.129,
+   "Q_unc": 0.006,
+   "note": "reference values (NMR, Walchli et al.; Q from Stone table) as listed in Table II",
+   "method": "compilation",
+   "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+   "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+  }
+ },
+ "ionization_limit": {
+  "nist_cm": {
+   "value": 57421.68,
+   "unc": 0.26,
+   "note": "Tc II 4d5 5s 7S3 limit; 7.11938(3) eV; NIST reference L15237",
+   "method": "compilation",
+   "source": "NIST ASD ionization energies (ie.pl), Tc I",
+   "url": "https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html"
+  },
+  "measurement_eV": {
+   "value": 7.11938,
+   "unc": 3.2e-05,
+   "isotope": "99",
+   "note": "Rydberg convergences to the Tc II ground state and two low-lying excited states, three-colour resonance ionization mass spectrometry on 99gTc; value read in the abstract. Kron et al. 2020 Fig. 3 prints the same limit as 57 421.68 cm^-1.",
+   "method": "experiment",
+   "source": "Mattolat, Gottwald, Raeder, Rothe, et al., Phys. Rev. A 81, 052513 (2010) (abstract, as indexed by OSTI/ETDEWEB)",
+   "url": "https://www.osti.gov/etdeweb/biblio/21408825"
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "J": "5/2",
+   "label": "4d55s2 6S5/2",
+   "hyperfine": {
+    "97": {
+     "A_MHz": -109.5,
+     "A_unc": 0.13,
+     "B_MHz": 1.9,
+     "B_unc": 4.4,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth; ground-state value is the weighted mean over the three transitions",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "98": {
+     "A_MHz": -65.86,
+     "A_unc": 0.1,
+     "B_MHz": 1.5,
+     "B_unc": 6.3,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth; ground-state value is the weighted mean over the three transitions",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "99": {
+     "A_MHz": -107.34,
+     "A_unc": 0.08,
+     "B_MHz": 0.3,
+     "B_unc": 2.0,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth; ground-state value is the weighted mean over the three transitions",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf",
+     "alternatives": [
+      {
+       "A_MHz": -109.12,
+       "A_unc": 0.9,
+       "note": "Fabry-Perot interferometry (ground-level splitting not fully resolved)",
+       "method": "compilation",
+       "source": "Wendlandt, Bauche, Luc, J. Phys. B 10, 1989 (1977), as tabulated in Table I of Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+       "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 16428.71,
+   "J": "5/2",
+   "label": "4d55s5p 8P°5/2",
+   "lifetime": {
+    "value": 1.0319917e-05,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 16874.51,
+   "J": "7/2",
+   "label": "4d55s5p 8P°7/2",
+   "lifetime": {
+    "value": 5.319149e-06,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 23265.32,
+   "J": "7/2",
+   "label": "4d55s5p 6P°7/2",
+   "lifetime": {
+    "value": 2.551e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   },
+   "hyperfine": {
+    "97": {
+     "A_MHz": 815.77,
+     "A_unc": 0.42,
+     "B_MHz": -59.2,
+     "B_unc": 7.5,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "98": {
+     "A_MHz": 490.96,
+     "A_unc": 0.32,
+     "B_MHz": 17.0,
+     "B_unc": 10.8,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "99": {
+     "A_MHz": 799.99,
+     "A_unc": 0.26,
+     "B_MHz": -43.9,
+     "B_unc": 3.5,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf",
+     "alternatives": [
+      {
+       "A_MHz": 798.6,
+       "A_unc": 3.6,
+       "B_MHz": -57,
+       "B_unc": 18,
+       "note": "Fabry-Perot interferometry (ground-level splitting not fully resolved)",
+       "method": "compilation",
+       "source": "Wendlandt, Bauche, Luc, J. Phys. B 10, 1989 (1977), as tabulated in Table I of Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+       "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 23455.21,
+   "J": "5/2",
+   "label": "4d55s5p 6P°5/2",
+   "lifetime": {
+    "value": 2.7027e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   },
+   "hyperfine": {
+    "97": {
+     "A_MHz": 911.32,
+     "A_unc": 0.45,
+     "B_MHz": 71.3,
+     "B_unc": 8.1,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "98": {
+     "A_MHz": 548.6,
+     "A_unc": 0.34,
+     "B_MHz": -9.4,
+     "B_unc": 11.2,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "99": {
+     "A_MHz": 894.08,
+     "A_unc": 0.28,
+     "B_MHz": 57.4,
+     "B_unc": 3.8,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf",
+     "alternatives": [
+      {
+       "A_MHz": 892.2,
+       "A_unc": 3.9,
+       "B_MHz": 93,
+       "B_unc": 18,
+       "note": "Fabry-Perot interferometry (ground-level splitting not fully resolved)",
+       "method": "compilation",
+       "source": "Wendlandt, Bauche, Luc, J. Phys. B 10, 1989 (1977), as tabulated in Table I of Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+       "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 23588.4,
+   "J": "3/2",
+   "label": "4d55s5p 6P°3/2",
+   "lifetime": {
+    "value": 2.8011e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   },
+   "hyperfine": {
+    "97": {
+     "A_MHz": 1207.19,
+     "A_unc": 0.42,
+     "B_MHz": -6.5,
+     "B_unc": 7.2,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "98": {
+     "A_MHz": 726.85,
+     "A_unc": 0.34,
+     "B_MHz": -3.1,
+     "B_unc": 10.5,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "99": {
+     "A_MHz": 1183.27,
+     "A_unc": 0.27,
+     "B_MHz": -12.6,
+     "B_unc": 3.4,
+     "note": "resonance ionization spectroscopy in the PI-LIST laser ion source, ~100 MHz linewidth",
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf",
+     "alternatives": [
+      {
+       "A_MHz": 1182.1,
+       "A_unc": 3.6,
+       "B_MHz": -12,
+       "B_unc": 12,
+       "note": "Fabry-Perot interferometry (ground-level splitting not fully resolved)",
+       "method": "compilation",
+       "source": "Wendlandt, Bauche, Luc, J. Phys. B 10, 1989 (1977), as tabulated in Table I of Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+       "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 27369.79,
+   "J": "9/2",
+   "label": "4d65p 6D°9/2",
+   "lifetime": {
+    "value": 1.105e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 27660.1,
+   "J": "7/2",
+   "label": "4d65p 6D°7/2",
+   "lifetime": {
+    "value": 1.1236e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 27940.73,
+   "J": "5/2",
+   "label": "4d65p 6D°5/2",
+   "lifetime": {
+    "value": 1.1601e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 28151.28,
+   "J": "3/2",
+   "label": "4d65p 6D°3/2",
+   "lifetime": {
+    "value": 1.1876e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 28296.67,
+   "J": "1/2",
+   "label": "4d65p 6D°1/2",
+   "lifetime": {
+    "value": 1.2019e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 30067.29,
+   "J": "11/2",
+   "label": "4d65p 6F°11/2",
+   "lifetime": {
+    "value": 8.547e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 30133.26,
+   "J": "9/2",
+   "label": "4d65p 6F°9/2",
+   "lifetime": {
+    "value": 1.0225e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 30382.06,
+   "J": "7/2",
+   "label": "4d65p 6F°7/2",
+   "lifetime": {
+    "value": 1e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 30528.86,
+   "J": "5/2",
+   "label": "4d65p 6F°5/2",
+   "lifetime": {
+    "value": 1.006e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 30630.62,
+   "J": "3/2",
+   "label": "4d65p 6F°3/2",
+   "lifetime": {
+    "value": 1.0091e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 30689.12,
+   "J": "1/2",
+   "label": "4d65p 6F°1/2",
+   "lifetime": {
+    "value": 1.0091e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 31114.08,
+   "J": "9/2",
+   "label": "4d65p 4F°9/2",
+   "lifetime": {
+    "value": 1.2837e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 31406.74,
+   "J": "5/2",
+   "label": "4d55s5p 6P°5/2",
+   "lifetime": {
+    "value": 7.299e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 31414.05,
+   "J": "7/2",
+   "label": "4d65p 6P°7/2",
+   "lifetime": {
+    "value": 4.484e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 31503.93,
+   "J": "3/2",
+   "label": "4d55s5p 6P°3/2",
+   "lifetime": {
+    "value": 5.952e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 31605.0,
+   "J": "7/2",
+   "label": "4d65p 4F°7/2",
+   "lifetime": {
+    "value": 1.3755e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 31927.01,
+   "J": "5/2",
+   "label": "4d65p 4P°5/2",
+   "lifetime": {
+    "value": 1.1377e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 32014.81,
+   "J": "5/2",
+   "label": "4d65p 4F°5/2",
+   "lifetime": {
+    "value": 1.4749e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 32253.65,
+   "J": "3/2",
+   "label": "4d65p 4F°3/2",
+   "lifetime": {
+    "value": 1.5576e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 32258.06,
+   "J": "3/2",
+   "label": "4d65p 4P°3/2",
+   "lifetime": {
+    "value": 2.1368e-08,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 34515.88,
+   "J": "5/2",
+   "label": "4d55s5p 4P°5/2",
+   "lifetime": {
+    "value": 6.667e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 38216.75,
+   "J": "5/2",
+   "label": "4d65p 6P°5/2",
+   "lifetime": {
+    "value": 2.11e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 38240.73,
+   "J": "7/2",
+   "label": "4d55s5p 6P°7/2",
+   "lifetime": {
+    "value": 2.033e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 38319.6,
+   "J": "3/2",
+   "label": "4d55s5p 6D°3/2",
+   "lifetime": {
+    "value": 2.016e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 39185.01,
+   "J": "9/2",
+   "label": "4d55s5p 6D°9/2",
+   "lifetime": {
+    "value": 5.319e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 39236.52,
+   "J": "11/2",
+   "label": "4d55s5p 6F°11/2",
+   "lifetime": {
+    "value": 4.184e-09,
+    "unit": "s",
+    "note": "calculated (Kurucz semi-empirical Cowan-code fit, 1/sum of A); no lifetime measurement exists for any Tc I level. Benchmark: the same Kurucz calculation for Ru I gives 13.2, 9.2 and 11.1 ns where experiment gives 17.3(9), 11.9(6) and 11.6(6) ns, so expect ~25 % accuracy for allowed decays and worse for the long-lived spin-forbidden 8P levels.",
+    "method": "theory",
+    "source": "Kurucz semi-empirical calculation (K17), life4300.dat",
+    "url": "http://kurucz.harvard.edu/atoms/4300/life4300.dat"
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23265.32,
+   "lower_J": "5/2",
+   "upper_J": "7/2",
+   "label": "4d5 5s2 6S5/2 - 4d5 5s5p 6P7/2, 430 nm",
+   "use": "first step of the three-step Ti:sapphire resonance-ionization schemes used at Mainz (RISIKO / PI-LIST) for Tc trace analysis and hyperfine spectroscopy: frequency-doubled first step from the ground state, second step near 385-395 nm into 4d6 5d 6P levels (48 572.10 / 49 433.18 cm^-1 in Fig. 3), third step near 840 nm into autoionizing states (60 452.32 / 61 333.58 cm^-1); 97Tc proposed as tracer for 99Tc quantification",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "97-99": {
+     "value": 347,
+     "unc": 14,
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "98-99": {
+     "value": 369,
+     "unc": 14,
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    }
+   },
+   "A_s": {
+    "value": 42000000.0,
+    "note": "calculated transition strength of Palmeri & Wyart, quoted in the text of Kron et al. (natural linewidth estimated there as 6.7 MHz); second-hand theory value",
+    "method": "theory",
+    "source": "Palmeri & Wyart, J. Quant. Spectrosc. Radiat. Transfer 61, 603 (1999), as quoted in Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+    "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+   },
+   "note": "Kron et al. state that the hyperfine centre of gravity of 97Tc lies at 23 265.388 cm^-1 (wavemeter value, no uncertainty given), versus the NIST level value 23 265.32 cm^-1. Isotope shifts are printed as delta-nu(99,A) = nu(A) - nu(99), uncertainty dominated by a 10 MHz centre-of-gravity error per spectrum."
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23455.21,
+   "lower_J": "5/2",
+   "upper_J": "5/2",
+   "label": "4d5 5s2 6S5/2 - 4d5 5s5p 6P5/2, 426 nm",
+   "use": "first step of the three-step Ti:sapphire resonance-ionization schemes used at Mainz (RISIKO / PI-LIST) for Tc trace analysis and hyperfine spectroscopy: frequency-doubled first step from the ground state, second step near 385-395 nm into 4d6 5d 6P levels (48 572.10 / 49 433.18 cm^-1 in Fig. 3), third step near 840 nm into autoionizing states (60 452.32 / 61 333.58 cm^-1); 97Tc proposed as tracer for 99Tc quantification",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "97-99": {
+     "value": 313,
+     "unc": 14,
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "98-99": {
+     "value": 327,
+     "unc": 14,
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    }
+   },
+   "note": "Isotope shifts are printed as delta-nu(99,A) = nu(A) - nu(99)."
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23588.4,
+   "lower_J": "5/2",
+   "upper_J": "3/2",
+   "label": "4d5 5s2 6S5/2 - 4d5 5s5p 6P3/2, 424 nm",
+   "use": "first step of the three-step Ti:sapphire resonance-ionization schemes used at Mainz (RISIKO / PI-LIST) for Tc trace analysis and hyperfine spectroscopy: frequency-doubled first step from the ground state, second step near 385-395 nm into 4d6 5d 6P levels (48 572.10 / 49 433.18 cm^-1 in Fig. 3), third step near 840 nm into autoionizing states (60 452.32 / 61 333.58 cm^-1); 97Tc proposed as tracer for 99Tc quantification",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "97-99": {
+     "value": 308,
+     "unc": 14,
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    },
+    "98-99": {
+     "value": 324,
+     "unc": 14,
+     "method": "experiment",
+     "source": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)",
+     "url": "https://repository.gsi.de/record/236408/files/PhysRevC.102.034307.pdf"
+    }
+   },
+   "note": "Isotope shifts are printed as delta-nu(99,A) = nu(A) - nu(99)."
+  }
+ ],
+ "conflicts": [
+  "Ground-state A(99Tc): Kron et al. 2020 -107.34(8) MHz vs Wendlandt et al. 1977 -109.12(90) MHz (2 sigma). Kron et al. argue the 0.9 MHz uncertainty of the older, unresolved measurement is underestimated; the 2020 value is kept.",
+  "B(99Tc) of 4d5 5s5p 6P5/2: 57.4(38) MHz (Kron 2020) vs 93(18) MHz (Wendlandt 1977), 2 sigma; 2020 value kept."
+ ],
+ "not_found": [
+  "Measured radiative lifetimes of Tc I levels: none exist as far as could be established. Palmeri, Froese Fischer, Wyart, Godefroid, MNRAS 363, 452 (2005) is a purely theoretical paper (MCHF+BP, MCDF, HFR+CP) and states that the radioactivity of all Tc isotopes is the reason for the scarcity of experimental data; its Tables 1-2 (gf values) are images on the publisher page and could not be read. No 2007 Tc I lifetime measurement was located. Theory lifetimes from Kurucz are given instead and flagged.",
+  "Measured transition probabilities / branching fractions for Tc I: none located (58 of the 70 drawn lines have no A in NIST). Only the calculated A = 4.2e7 s^-1 of the 430 nm line (Palmeri & Wyart, second-hand) is included.",
+  "Hyperfine constants of 99Tc in levels other than 6S5/2 and 4d5 5s5p 6P (e.g. 4d6 5s 6D metastables, 4d6 5p levels): Wendlandt, Bauche, Luc, J. Phys. B 10, 1989 (1977) studied the low multiplets but the paper (IOP) was not accessible.",
+  "Precise absolute transition frequencies: only wavemeter-level values (23 265.388 cm^-1 centre of gravity of 97Tc, no uncertainty) are given by Kron et al.; kept as a note, not as a frequency entry.",
+  "Measured Lande g factors beyond the NIST levels file: none located.",
+  "Wavelengths and level assignments of the second and third excitation steps of the Mainz schemes are only given graphically (Fig. 3 of Kron et al.); the exact pairing of steps was not tabulated and is described in the use string only. Raeder et al., Hyperfine Interact. 238, 15 (2017) and Mattolat et al. 2010 full texts were not accessible."
+ ],
+ "notes": "Hyperfine constants and isotope shifts are from resonance ionization spectroscopy with ~100 MHz resolution (Kron et al. 2020, open access via the GSI repository). Isotope shifts are nu(first) - nu(second). All level lifetimes in this file are THEORY (Kurucz) because no measurement exists; treat them as ~25 % estimates. nuclear_moments is an extra top-level block (not in the schema) with the moments derived in the same paper."
+}

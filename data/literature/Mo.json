@@ -1,0 +1,729 @@
+{
+ "element": "Mo",
+ "isotopes": {
+  "92": {
+   "I": "0",
+   "abundance_percent": 14.649,
+   "abundance_unc": 0.106,
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  },
+  "94": {
+   "I": "0",
+   "abundance_percent": 9.187,
+   "abundance_unc": 0.033,
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  },
+  "95": {
+   "I": "5/2",
+   "abundance_percent": 15.873,
+   "abundance_unc": 0.03,
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  },
+  "96": {
+   "I": "0",
+   "abundance_percent": 16.673,
+   "abundance_unc": 0.008,
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  },
+  "97": {
+   "I": "5/2",
+   "abundance_percent": 9.582,
+   "abundance_unc": 0.015,
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  },
+  "98": {
+   "I": "0",
+   "abundance_percent": 24.292,
+   "abundance_unc": 0.08,
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  },
+  "100": {
+   "I": "0",
+   "abundance_percent": 9.744,
+   "abundance_unc": 0.065,
+   "half_life": "7.01e18 y",
+   "note": "double-beta emitter, effectively stable",
+   "method": "compilation",
+   "source": "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)",
+   "url": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all"
+  }
+ },
+ "ionization_limit": {
+  "nist_cm": {
+   "value": 57204.3,
+   "unc": 0.3,
+   "note": "Mo II 4d5 6S5/2 limit; 7.09243(4) eV. NIST reference code L6829; the NIST Handbook page for Mo gives the same value with reference RMBH87, presumably Rayner, Mitchell, Bourne, Hackett, J. Opt. Soc. Am. B 4, 900 (1987), \"First-ionization potential of niobium and molybdenum by double-resonance, field-ionization spectroscopy\" (original not opened)",
+   "method": "compilation",
+   "source": "NIST ASD ionization energies (ie.pl), Mo I",
+   "url": "https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html"
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "J": "3",
+   "label": "4d55s a 7S3",
+   "hyperfine": {
+    "95": {
+     "A_MHz": -208.58206,
+     "A_unc": 1e-05,
+     "B_MHz": 0.03705,
+     "B_unc": 0.0001,
+     "note": "atomic-beam magnetic resonance; directly measured constants as printed (B = 37.050(100) kHz, C = -30(10) Hz, D = -3(3) Hz). After second-order corrections the abstract gives Ac = -208.582560(290) MHz, Bc = 16.920(4300) kHz.",
+     "method": "experiment",
+     "source": "Buettgenbach, Herschel, Meisel, Schroedl, Witte, Childs, Z. Phys. 266, 271 (1974) (abstract)",
+     "url": "https://link.springer.com/article/10.1007/BF01668819"
+    },
+    "97": {
+     "A_MHz": -212.98093,
+     "A_unc": 1e-05,
+     "B_MHz": -0.06999,
+     "B_unc": 0.00014,
+     "note": "atomic-beam magnetic resonance; directly measured constants as printed (B = -69.990(140) kHz, C = -5(10) Hz, D = 0(3) Hz). After second-order corrections: |Ac| = 212.981450(300) MHz (sign dropped in the printed abstract), Bc = -90.780(4400) kHz. Hyperfine anomaly 95-Delta-97 = -0.01009(17) %.",
+     "method": "experiment",
+     "source": "Buettgenbach, Herschel, Meisel, Schroedl, Witte, Childs, Z. Phys. 266, 271 (1974) (abstract)",
+     "url": "https://link.springer.com/article/10.1007/BF01668819"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 25614.367,
+   "J": "2",
+   "label": "4d55p z 7P°2",
+   "lifetime": {
+    "value": 1.63e-08,
+    "unit": "s",
+    "unc": 8e-10,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654",
+    "alternatives": [
+     {
+      "value": 1.71e-08,
+      "unit": "s",
+      "unc": 9e-10,
+      "note": "time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived)",
+      "method": "experiment",
+      "source": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+      "url": "https://www.osti.gov/etdeweb/biblio/5718080"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 25871.887,
+   "J": "3",
+   "label": "4d55p z 7P°3",
+   "lifetime": {
+    "value": 1.58e-08,
+    "unit": "s",
+    "unc": 8e-10,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654",
+    "alternatives": [
+     {
+      "value": 1.7e-08,
+      "unit": "s",
+      "unc": 9e-10,
+      "note": "time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived)",
+      "method": "experiment",
+      "source": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+      "url": "https://www.osti.gov/etdeweb/biblio/5718080"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 26320.42,
+   "J": "4",
+   "label": "4d55p z 7P°4",
+   "lifetime": {
+    "value": 1.47e-08,
+    "unit": "s",
+    "unc": 7e-10,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654",
+    "alternatives": [
+     {
+      "value": 1.59e-08,
+      "unit": "s",
+      "unc": 8e-10,
+      "note": "time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived)",
+      "method": "experiment",
+      "source": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+      "url": "https://www.osti.gov/etdeweb/biblio/5718080"
+     },
+     {
+      "value": 1.45e-08,
+      "unit": "s",
+      "unc": 4e-10,
+      "note": "derived: 1/Gamma with Gamma = 6.9(2)e7 s^-1 (second-hand; original paper not opened)",
+      "method": "compilation",
+      "source": "Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984), total decay rate 6.9(2)e7 s^-1 as quoted in Table I of Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+      "url": "https://arxiv.org/abs/2507.12291"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 28715.242,
+   "J": "1",
+   "label": "4d55p z 5P°1",
+   "lifetime": {
+    "value": 2.17e-08,
+    "unit": "s",
+    "unc": 1.1e-09,
+    "note": "time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived). First direct lifetime measurement of the z5P levels.",
+    "method": "experiment",
+    "source": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5718080"
+   }
+  },
+  {
+   "nist_energy_cm": 28836.592,
+   "J": "2",
+   "label": "4d55p z 5P°2",
+   "lifetime": {
+    "value": 2.21e-08,
+    "unit": "s",
+    "unc": 1.1e-09,
+    "note": "time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived). First direct lifetime measurement of the z5P levels.",
+    "method": "experiment",
+    "source": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5718080"
+   }
+  },
+  {
+   "nist_energy_cm": 28923.668,
+   "J": "3",
+   "label": "4d55p z 5P°3",
+   "lifetime": {
+    "value": 2.23e-08,
+    "unit": "s",
+    "unc": 1.1e-09,
+    "note": "time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived). First direct lifetime measurement of the z5P levels.",
+    "method": "experiment",
+    "source": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5718080"
+   }
+  },
+  {
+   "nist_energy_cm": 31154.935,
+   "J": "2",
+   "label": "4d45s5p z 7D°2",
+   "lifetime": {
+    "value": 3.56e-08,
+    "unit": "s",
+    "unc": 2e-09,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654"
+   }
+  },
+  {
+   "nist_energy_cm": 31299.876,
+   "J": "2",
+   "label": "4d45s5p y 7P°2",
+   "lifetime": {
+    "value": 6.6e-09,
+    "unit": "s",
+    "unc": 3e-10,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654"
+   }
+  },
+  {
+   "nist_energy_cm": 31533.206,
+   "J": "3",
+   "label": "4d45s5p y 7P°3",
+   "lifetime": {
+    "value": 7.3e-09,
+    "unit": "s",
+    "unc": 4e-10,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654"
+   }
+  },
+  {
+   "nist_energy_cm": 31654.786,
+   "J": "3",
+   "label": "4d45s5p z 7D°3",
+   "lifetime": {
+    "value": 2.12e-08,
+    "unit": "s",
+    "unc": 1e-09,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654"
+   }
+  },
+  {
+   "nist_energy_cm": 31913.171,
+   "J": "4",
+   "label": "4d45s5p y 7P°4",
+   "lifetime": {
+    "value": 5.6e-09,
+    "unit": "s",
+    "unc": 3e-10,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654"
+   }
+  },
+  {
+   "nist_energy_cm": 32123.128,
+   "J": "4",
+   "label": "4d45s5p z 7D°4",
+   "lifetime": {
+    "value": 1.19e-07,
+    "unit": "s",
+    "unc": 8e-09,
+    "note": "time-resolved fluorescence after selective pulsed-laser excitation of an atomic beam",
+    "method": "experiment",
+    "source": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+    "url": "https://www.osti.gov/etdeweb/biblio/5755654"
+   }
+  },
+  {
+   "nist_energy_cm": 39600.0,
+   "J": "6",
+   "label": "4d5.(4G).5p z 5G°6",
+   "lifetime": {
+    "value": 3.2e-08,
+    "unc": 1e-09,
+    "unit": "s",
+    "note": "lifetime measured by Whaling et al., JQSRT 32, 69 (1984), quoted (footnote *) in Table 1 of Whaling, Chevako, Lawler 1986, who correct the level assignment to z5G6 (J = 6) at 39599.9915 cm^-1",
+    "method": "compilation",
+    "source": "Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984), as quoted in Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 42283.18,
+   "J": "5",
+   "label": "4d5.(4G).5p z 3H°5",
+   "lifetime": {
+    "value": 1.87e-08,
+    "unc": 9e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 42344.929,
+   "J": "6",
+   "label": "4d5.(4G).5p z 3H°6",
+   "lifetime": {
+    "value": 1.83e-08,
+    "unc": 9e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 43299.059,
+   "J": "5",
+   "label": "4d5.(4D).5p x 5F°5",
+   "lifetime": {
+    "value": 3.89e-08,
+    "unc": 1.9e-09,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 43945.68,
+   "J": "5",
+   "label": "4d5.(4G).5p z 3G°5",
+   "lifetime": {
+    "value": 2.49e-08,
+    "unc": 1.2e-09,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 44330.156,
+   "J": "5",
+   "label": "4d4.5s.(4H).5p z 5I°5",
+   "lifetime": {
+    "value": 1.66e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 47704.609,
+   "J": "6",
+   "label": "4d4.5s.(4F).5p y 5G°6",
+   "lifetime": {
+    "value": 1.4e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 49302.075,
+   "J": "5",
+   "label": "4d4.5s.(4G).5p x 5G°5",
+   "lifetime": {
+    "value": 5.9e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 49400.368,
+   "J": "6",
+   "label": "4d4.5s.(4H).5p y 3I°6",
+   "lifetime": {
+    "value": 1.2e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 49408.53,
+   "J": "6",
+   "label": "4d4.5s.(4G).5p x 5G°6",
+   "lifetime": {
+    "value": 8.2e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 49650.658,
+   "J": "5",
+   "label": "4d4.5s.(4G).5p t 5F°5",
+   "lifetime": {
+    "value": 4.5e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 50276.822,
+   "J": "7",
+   "label": "4d5.(2I).5p z 3K°7",
+   "lifetime": {
+    "value": 1.47e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 52465.385,
+   "J": "5",
+   "label": "59°5",
+   "lifetime": {
+    "value": 1.17e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 52667.22,
+   "J": "5",
+   "label": "61°5",
+   "lifetime": {
+    "value": 1.22e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 55139.706,
+   "J": "6",
+   "label": "97°6",
+   "lifetime": {
+    "value": 7.4e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "note": "time-resolved laser fluorescence on a pulsed hollow-cathode atomic beam; printed as value(unc) ns in Table 1 (overall uncertainty +-5 %)",
+    "method": "experiment",
+    "source": "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)",
+    "url": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf"
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 26320.42,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "4d5 5s a7S3 - 4d5 5p z7P4, 379.8 nm (air)",
+   "use": "laser-cooling / MOT cycling transition (NIST chirped MOT of Mo, 2025; all five bosonic isotopes trapped); strongest member of the a7S3 - z7P resonance triplet",
+   "type": "E1",
+   "frequency_THz": {
+    "value": 789.06593,
+    "unc": 0.00055,
+    "isotope": "98",
+    "note": "98Mo (I = 0, no hyperfine structure); printed as 789 065.93(55) GHz in Table I; NIST ASD Ritz value quoted there is 789 066.6 GHz",
+    "method": "experiment",
+    "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+    "url": "https://arxiv.org/abs/2507.12291"
+   },
+   "A_s": {
+    "value": 69000000.0,
+    "unc": 2000000.0,
+    "note": "total radiative decay rate of z7P4 from the measured lifetime (Whaling et al. 1984), printed in Table I of Paladugu et al.; essentially all of it is this channel (branching below). NIST ASD lists 6.9(5)e7 s^-1.",
+    "method": "compilation",
+    "source": "Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984), as quoted in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+    "url": "https://arxiv.org/abs/2507.12291"
+   },
+   "branching": {
+    "value": 0.999979,
+    "note": "derived: 1 - (1150 + 290)/6.9e7, using the measured leak rates z7P4 -> a5D4 and a5D3 of Paladugu et al.",
+    "method": "experiment",
+    "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+    "url": "https://arxiv.org/abs/2507.12291"
+   },
+   "linewidth_MHz": {
+    "value": 11.0,
+    "unc": 0.8,
+    "note": "Gamma/2pi printed by Paladugu et al. (derived by them from Gamma = 6.9(5)e7 s^-1, NIST ASD); fitted beam linewidths agreed within 20 %; they use 2pi x 10.98 MHz in their fits",
+    "method": "compilation",
+    "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+    "url": "https://arxiv.org/abs/2507.12291"
+   },
+   "isotope_shift_MHz": {
+    "92-96": {
+     "value": 920.4,
+     "unc": 1.9,
+     "method": "experiment",
+     "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+     "url": "https://arxiv.org/abs/2507.12291",
+     "alternatives": [
+      {
+       "value": 899,
+       "unc": 3,
+       "method": "compilation",
+       "source": "Aufmuth, Clieves, Heilig, Steudel, Wendlandt, Bauche, Z. Phys. A 285, 357 (1978), as tabulated in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+       "url": "https://arxiv.org/abs/2507.12291"
+      }
+     ]
+    },
+    "94-96": {
+     "value": 418.4,
+     "unc": 1.6,
+     "method": "experiment",
+     "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+     "url": "https://arxiv.org/abs/2507.12291",
+     "alternatives": [
+      {
+       "value": 417,
+       "unc": 5,
+       "method": "compilation",
+       "source": "Aufmuth et al., Z. Phys. A 285, 357 (1978), as tabulated in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+       "url": "https://arxiv.org/abs/2507.12291"
+      }
+     ]
+    },
+    "98-96": {
+     "value": -289.4,
+     "unc": 1.6,
+     "method": "experiment",
+     "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+     "url": "https://arxiv.org/abs/2507.12291",
+     "alternatives": [
+      {
+       "value": -303,
+       "unc": 8,
+       "method": "compilation",
+       "source": "Aufmuth et al., Z. Phys. A 285, 357 (1978), as tabulated in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+       "url": "https://arxiv.org/abs/2507.12291"
+      }
+     ]
+    },
+    "100-96": {
+     "value": -812.0,
+     "unc": 1.9,
+     "method": "experiment",
+     "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+     "url": "https://arxiv.org/abs/2507.12291",
+     "alternatives": [
+      {
+       "value": -803,
+       "unc": 1,
+       "method": "compilation",
+       "source": "Aufmuth et al., Z. Phys. A 285, 357 (1978), as tabulated in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+       "url": "https://arxiv.org/abs/2507.12291"
+      }
+     ]
+    }
+   },
+   "note": "MOT parameters reported: Doppler temperature ~260 uK, lowest observed 1.1 mK; recoil temperature ~1.4 uK. Isotope shifts are nu(A) - nu(96); Aufmuth uncertainties are statistical only."
+  },
+  {
+   "lower_cm": 12346.28,
+   "upper_cm": 26320.42,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "4d4 5s2 a5D4 - 4d5 5p z7P4, 715 nm",
+   "use": "MOT repump line (leak channel of the 380 nm cooling transition into metastable a5D4)",
+   "type": "intercombination",
+   "frequency_THz": {
+    "value": 418.93367,
+    "unc": 0.00028,
+    "isotope": "98",
+    "note": "98Mo (I = 0, no hyperfine structure); printed as 418 933.67(28) GHz; NIST ASD value quoted there 418 934.0 GHz",
+    "method": "experiment",
+    "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+    "url": "https://arxiv.org/abs/2507.12291"
+   },
+   "A_s": {
+    "value": 1150.0,
+    "unc": 200.0,
+    "note": "partial decay rate z7P4 -> a5D4 from MOT loss rates with and without repump",
+    "method": "experiment",
+    "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+    "url": "https://arxiv.org/abs/2507.12291",
+    "alternatives": [
+     {
+      "value": 600000.0,
+      "unc": 200000.0,
+      "method": "compilation",
+      "source": "NIST ASD (Whaling & Brault, Phys. Scr. 38, 707 (1988)), as quoted in Table I of Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+      "url": "https://arxiv.org/abs/2507.12291"
+     },
+     {
+      "value": 40000.0,
+      "method": "theory",
+      "source": "Palmeri & Wyart, Phys. Scr. 58, 445 (1998) (pseudo-relativistic Hartree-Fock), as quoted in Table I of Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+      "url": "https://arxiv.org/abs/2507.12291"
+     }
+    ]
+   }
+  },
+  {
+   "lower_cm": 11858.498,
+   "upper_cm": 26320.42,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "4d4 5s2 a5D3 - 4d5 5p z7P4, 691 nm",
+   "use": "second leak channel of the 380 nm cooling transition (not repumped in the NIST MOT; limits MOT lifetime)",
+   "type": "intercombination",
+   "A_s": {
+    "value": 290.0,
+    "unc": 30.0,
+    "note": "partial decay rate z7P4 -> a5D3 from the MOT loss rate with the 715 nm repump on; first reported value. NIST-derived frequency quoted: 433 557.3 GHz (inferred, not measured).",
+    "method": "experiment",
+    "source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+    "url": "https://arxiv.org/abs/2507.12291"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 25871.887,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "4d5 5s a7S3 - 4d5 5p z7P3, 386.4 nm (air)",
+   "use": "member of the a7S3 - z7P resonance triplet; proposed for sub-Doppler cooling of Mo (gray molasses / blue-detuned MOT) by Paladugu et al.; branching to the ground state of all three z7P levels is approximately 98 % according to Whaling & Brault 1988 (as discussed by Paladugu et al.)",
+   "type": "E1",
+   "note": "no new measured rate or frequency located for this line; NIST ASD A value stands",
+   "use_source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+   "use_url": "https://arxiv.org/abs/2507.12291"
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 25614.367,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "4d5 5s a7S3 - 4d5 5p z7P2, 390.3 nm (air)",
+   "use": "member of the a7S3 - z7P resonance triplet; proposed for sub-Doppler cooling of Mo (gray molasses / blue-detuned MOT) by Paladugu et al.; branching to the ground state of all three z7P levels is approximately 98 % according to Whaling & Brault 1988 (as discussed by Paladugu et al.)",
+   "type": "E1",
+   "note": "no new measured rate or frequency located for this line; NIST ASD A value stands",
+   "use_source": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+   "use_url": "https://arxiv.org/abs/2507.12291"
+  }
+ ],
+ "conflicts": [
+  "A(z7P4 -> a5D4, 715 nm): Paladugu et al. 2025 measure 1.15(20)e3 s^-1 from MOT loss; NIST ASD / Whaling & Brault 1988 give 6(2)e5 s^-1 (500 times larger; Whaling & Brault themselves flag self-absorption problems for the z7P branching fractions) and Palmeri & Wyart theory 4e4 s^-1. The MOT value is kept.",
+  "Isotope shifts of the 379.8 nm line: Paladugu et al. 2025 vs Aufmuth et al. 1978 differ by more than 2 sigma for 92-96 (920.4(1.9) vs 899(3) MHz) and 100-96 (-812.0(1.9) vs -803(1) MHz); Aufmuth uncertainties are statistical only. Paladugu values kept.",
+  "z7P lifetimes: Kwiatkowski et al. 1981 (16.3(8), 15.8(8), 14.7(7) ns for J = 2, 3, 4) vs Duquette et al. 1981 (17.1, 17.0, 15.9 ns, +-5 %) vs Whaling et al. 1984 (z7P4: 14.5(4) ns, derived from the quoted decay rate). All agree within about 1.5 sigma; Kwiatkowski kept as entry because it was read directly.",
+  "Isotopic abundances: IAEA Live Chart values are used; the NIST Atomic Weights and Isotopic Compositions page lists slightly different numbers (e.g. 95Mo 15.84(11) %, 98Mo 24.39(37) %)."
+ ],
+ "not_found": [
+  "Lifetimes of the other 43 drawn odd levels (z5F, z5D, y5D, x5D, y5F, w5D, v5F, u5F, t5F, 3D/3F levels, numbered levels ...): measured for 56 levels by Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984) and for 14 levels (31654.79-47184.52 cm^-1) by Jiang et al., J. Opt. Soc. Am. B 30, 489 (2013), but both are paywalled (ScienceDirect / Optica refused access) and no open copy was located; only the abstracts were read. Hannaford & Lowe, Opt. Eng. 22(5) (1983) likewise not accessible.",
+  "Hyperfine constants A, B of 95Mo/97Mo in the metastable a5S2, a5D0-4 levels and in z7P2,3,4 and other odd levels: measured by Olsson et al., Phys. Scr. 29, 61 (1984) and 34, 24 (1986), Brenner et al., Z. Phys. A 316, 247 (1984) and Pendlebury & Ring, J. Phys. B 5 (doi:10.1088/0022-3700/5/2/035); the abstracts opened give no numbers and the full texts (IOP, Springer) were not accessible.",
+  "Isotope shifts in Mo I lines other than 379.8 nm (Aufmuth et al. 1978, 16 lines; Goble & Palmer, J. Phys. B 18, 2181 (1985); Olsson et al. 1986): full texts not accessible. The abstract of Aufmuth et al. gives only relative delta<r^2> values.",
+  "Measured Lande g factors beyond those already in the NIST levels file (Brenner et al. 1984 measured gJ of a5D, a5S, a5P, c5D by atomic-beam magnetic resonance): values not accessible.",
+  "Resonance-ionization schemes for Mo with wavelengths: the CERN RILIS database requires a login; no open paper giving a Mo scheme with level energies was located.",
+  "Measured branching fractions newer than Whaling & Brault 1988 (the NIST source) other than the two z7P4 leak rates above: none located. The full Whaling & Brault table is hosted at http://kurucz.harvard.edu/atoms/4200/whalingbrault.dat and is what NIST ASD already carries."
+ ],
+ "notes": "Lifetimes from Kwiatkowski 1981 and Duquette 1981 were read from the abstracts of the original papers (the abstracts list the numbers); the papers themselves are paywalled. Hyperfine constants of the ground state are the directly measured (uncorrected) ABMR values in MHz, B converted from kHz. Isotope shifts are nu(first) - nu(second). Frequencies are for 98Mo (boson, no hyperfine structure). The 15 lifetime entries above 39000 cm^-1 are J >= 5 levels that the site does not draw yet; the Whaling-Chevako-Lawler numbers were read from an OCR text layer of the scanned paper and checked by eye for the obvious OCR slips (e.g. \"t4.0\" = 14.0)."
+}

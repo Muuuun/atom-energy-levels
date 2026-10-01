@@ -6,17 +6,17 @@
   "symbol": "Mo",
   "A": null,
   "Z": 42,
-  "I": null,
+  "I": "5/2",
   "kind": "nist",
   "limit_cm": 57204.3,
   "scale": "auto",
   "spectrum": "Mo I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "98",
   "limit_text": "Mo$^+$ ionisation limit   57204.30 cm$^{-1}$  =  7.09243 eV  (174.812 nm)",
   "guide_tau": "Level caption:  NIST energy and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Lifetimes from Kwiatkowski 1981 and Duquette 1981 were read from the abstracts of the original papers (the abstracts list the numbers); the papers themselves are paywalled. Hyperfine constants of the ground state are the directly measured (uncorrected) ABMR values in MHz, B converted from kHz. Isotope shifts are nu(first) - nu(second). Frequencies are for 98Mo (boson, no hyperfine structure). The 15 lifetime entries above 39000 cm^-1 are J >= 5 levels that the site does not draw yet; the Whaling-Chevako-Lawler numbers were read from an OCR text layer of the scanned paper and checked by eye for the obvious OCR slips (e.g. \"t4.0\" = 14.0)."
  },
  "columns": [
   {
@@ -40,6 +40,12 @@
   {
    "key": "even J=3",
    "header": "J = 3",
+   "group": "\\mathrm{even}",
+   "width": 1.0
+  },
+  {
+   "key": "even J=4",
+   "header": "J = 4",
    "group": "\\mathrm{even}",
    "width": 1.0
   },
@@ -88,6 +94,14 @@
    "plain": "4d55s a 7S3",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": -208.58206,
+    "A_unc": 1e-05,
+    "B": 0.03705,
+    "B_unc": 0.0001,
+    "tier": "exp",
+    "src": "Buettgenbach, Herschel, Meisel, Schroedl, Witte, Childs, Z. Phys. 266, 271 (1974) (abstract)"
+   },
    "col": 3
   },
   {
@@ -167,6 +181,21 @@
   },
   {
    "id": 6,
+   "E": 12346.28,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4d4.5s2",
+   "term": "a 5D",
+   "parity": "even",
+   "g": 1.483,
+   "name": "\\mathrm{a}\\,^5D_{4}",
+   "plain": "4d45s2 a 5D4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
+  },
+  {
+   "id": 7,
    "E": 25614.367,
    "unc": null,
    "J": 2.0,
@@ -176,12 +205,14 @@
    "g": 2.299,
    "name": "\\mathrm{z}\\,^7P^{o}_{2}",
    "plain": "4d55p z 7P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 16.3,
+   "tau_unc": 0.8,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 7
   },
   {
-   "id": 7,
+   "id": 8,
    "E": 25871.887,
    "unc": null,
    "J": 3.0,
@@ -191,12 +222,14 @@
    "g": 1.892,
    "name": "\\mathrm{z}\\,^7P^{o}_{3}",
    "plain": "4d55p z 7P°3",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 7
+   "tau_ns": 15.8,
+   "tau_unc": 0.8,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 8
   },
   {
-   "id": 8,
+   "id": 9,
    "E": 26320.42,
    "unc": null,
    "J": 4.0,
@@ -206,12 +239,14 @@
    "g": 1.736,
    "name": "\\mathrm{z}\\,^7P^{o}_{4}",
    "plain": "4d55p z 7P°4",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 8
+   "tau_ns": 14.7,
+   "tau_unc": 0.7,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 9
   },
   {
-   "id": 9,
+   "id": 10,
    "E": 28715.242,
    "unc": null,
    "J": 1.0,
@@ -221,12 +256,14 @@
    "g": 2.5,
    "name": "\\mathrm{z}\\,^5P^{o}_{1}",
    "plain": "4d55p z 5P°1",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 5
+   "tau_ns": 21.7,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB). Note: time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived). First direct lifetime measurement of the z5P levels.",
+   "col": 6
   },
   {
-   "id": 10,
+   "id": 11,
    "E": 28836.592,
    "unc": null,
    "J": 2.0,
@@ -236,12 +273,14 @@
    "g": 1.831,
    "name": "\\mathrm{z}\\,^5P^{o}_{2}",
    "plain": "4d55p z 5P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 22.1,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB). Note: time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived). First direct lifetime measurement of the z5P levels.",
+   "col": 7
   },
   {
-   "id": 11,
+   "id": 12,
    "E": 28923.668,
    "unc": null,
    "J": 3.0,
@@ -251,12 +290,14 @@
    "g": 1.668,
    "name": "\\mathrm{z}\\,^5P^{o}_{3}",
    "plain": "4d55p z 5P°3",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 7
+   "tau_ns": 22.3,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB). Note: time-resolved laser-induced fluorescence on a hollow-cathode effusive beam; uncertainty printed as +-5 %, converted here (derived). First direct lifetime measurement of the z5P levels.",
+   "col": 8
   },
   {
-   "id": 12,
+   "id": 13,
    "E": 31154.935,
    "unc": null,
    "J": 2.0,
@@ -266,12 +307,14 @@
    "g": 2.034,
    "name": "\\mathrm{z}\\,^7D^{o}_{2}",
    "plain": "4d45s5p z 7D°2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 35.6,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 7
   },
   {
-   "id": 13,
+   "id": 14,
    "E": 31299.876,
    "unc": null,
    "J": 2.0,
@@ -281,12 +324,14 @@
    "g": 2.273,
    "name": "\\mathrm{y}\\,^7P^{o}_{2}",
    "plain": "4d45s5p y 7P°2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 6
+   "tau_ns": 6.6,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 7
   },
   {
-   "id": 14,
+   "id": 15,
    "E": 31533.206,
    "unc": null,
    "J": 3.0,
@@ -296,12 +341,14 @@
    "g": 1.84,
    "name": "\\mathrm{y}\\,^7P^{o}_{3}",
    "plain": "4d45s5p y 7P°3",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 7
+   "tau_ns": 7.3,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 8
   },
   {
-   "id": 15,
+   "id": 16,
    "E": 31654.786,
    "unc": null,
    "J": 3.0,
@@ -311,12 +358,14 @@
    "g": 1.744,
    "name": "\\mathrm{z}\\,^7D^{o}_{3}",
    "plain": "4d45s5p z 7D°3",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 7
+   "tau_ns": 21.2,
+   "tau_unc": 1.0,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 8
   },
   {
-   "id": 16,
+   "id": 17,
    "E": 31913.171,
    "unc": null,
    "J": 4.0,
@@ -326,12 +375,14 @@
    "g": 1.73,
    "name": "\\mathrm{y}\\,^7P^{o}_{4}",
    "plain": "4d45s5p y 7P°4",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 8
+   "tau_ns": 5.6,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 9
   },
   {
-   "id": 17,
+   "id": 18,
    "E": 32123.128,
    "unc": null,
    "J": 4.0,
@@ -341,12 +392,14 @@
    "g": 1.658,
    "name": "\\mathrm{z}\\,^7D^{o}_{4}",
    "plain": "4d45s5p z 7D°4",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 8
+   "tau_ns": 119.0,
+   "tau_unc": 8.0,
+   "tau_tier": "exp",
+   "tau_src": "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)",
+   "col": 9
   },
   {
-   "id": 18,
+   "id": 19,
    "E": 34740.38,
    "unc": null,
    "J": 3.0,
@@ -358,10 +411,10 @@
    "plain": "4d45s5p z 5F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 19,
+   "id": 20,
    "E": 35169.407,
    "unc": null,
    "J": 4.0,
@@ -373,10 +426,10 @@
    "plain": "4d45s5p z 5F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 20,
+   "id": 21,
    "E": 37968.418,
    "unc": null,
    "J": 3.0,
@@ -388,10 +441,10 @@
    "plain": "4d45s5p z 5D°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 21,
+   "id": 22,
    "E": 39915.644,
    "unc": null,
    "J": 4.0,
@@ -403,10 +456,10 @@
    "plain": "4d45s5p y 5D°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 22,
+   "id": 23,
    "E": 40036.94,
    "unc": null,
    "J": 1.0,
@@ -418,10 +471,10 @@
    "plain": "4d45s5p z 3D°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 23,
+   "id": 24,
    "E": 40488.277,
    "unc": null,
    "J": 3.0,
@@ -433,10 +486,10 @@
    "plain": "4d55p x 5D°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 24,
+   "id": 25,
    "E": 40698.382,
    "unc": null,
    "J": 1.0,
@@ -448,10 +501,10 @@
    "plain": "4d55p x 5D°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 25,
+   "id": 26,
    "E": 40828.781,
    "unc": null,
    "J": 2.0,
@@ -463,10 +516,10 @@
    "plain": "4d55p x 5D°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 26,
+   "id": 27,
    "E": 40843.482,
    "unc": null,
    "J": 4.0,
@@ -478,10 +531,10 @@
    "plain": "4d45s5p z 3F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 27,
+   "id": 28,
    "E": 40964.04,
    "unc": null,
    "J": 3.0,
@@ -493,10 +546,10 @@
    "plain": "4d45s5p z 3D°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 28,
+   "id": 29,
    "E": 41011.664,
    "unc": null,
    "J": 1.0,
@@ -508,10 +561,10 @@
    "plain": "4d55p y 5F°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 29,
+   "id": 30,
    "E": 41031.974,
    "unc": null,
    "J": 2.0,
@@ -523,10 +576,10 @@
    "plain": "4d55p y 5F°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 30,
+   "id": 31,
    "E": 41224.386,
    "unc": null,
    "J": 3.0,
@@ -538,10 +591,10 @@
    "plain": "4d55p y 5F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 31,
+   "id": 32,
    "E": 41395.523,
    "unc": null,
    "J": 4.0,
@@ -553,10 +606,10 @@
    "plain": "4d55p y 5F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 32,
+   "id": 33,
    "E": 42087.533,
    "unc": null,
    "J": 4.0,
@@ -568,10 +621,10 @@
    "plain": "4d55p y 3F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 33,
+   "id": 34,
    "E": 42156.079,
    "unc": null,
    "J": 1.0,
@@ -583,10 +636,10 @@
    "plain": "4d55p w 5D°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 34,
+   "id": 35,
    "E": 42173.008,
    "unc": null,
    "J": 0.0,
@@ -598,10 +651,10 @@
    "plain": "4d55p w 5D°0",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
-   "id": 35,
+   "id": 36,
    "E": 42237.314,
    "unc": null,
    "J": 2.0,
@@ -613,10 +666,10 @@
    "plain": "4d55p w 5D°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 36,
+   "id": 37,
    "E": 42422.323,
    "unc": null,
    "J": 3.0,
@@ -628,10 +681,10 @@
    "plain": "4d55p w 5D°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 37,
+   "id": 38,
    "E": 42741.804,
    "unc": null,
    "J": 4.0,
@@ -643,10 +696,10 @@
    "plain": "4d55p w 5D°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 38,
+   "id": 39,
    "E": 43245.567,
    "unc": null,
    "J": 3.0,
@@ -658,10 +711,10 @@
    "plain": "4d55p x 5F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 39,
+   "id": 40,
    "E": 45081.071,
    "unc": null,
    "J": 1.0,
@@ -673,10 +726,10 @@
    "plain": "3.7°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 40,
+   "id": 41,
    "E": 45388.7,
    "unc": null,
    "J": 2.0,
@@ -688,10 +741,10 @@
    "plain": "4°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 41,
+   "id": 42,
    "E": 45425.123,
    "unc": null,
    "J": 2.0,
@@ -703,10 +756,10 @@
    "plain": "4d45s5p w 5F°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 42,
+   "id": 43,
    "E": 46453.388,
    "unc": null,
    "J": 3.0,
@@ -718,10 +771,10 @@
    "plain": "4d55p v 5F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 43,
+   "id": 44,
    "E": 46756.458,
    "unc": null,
    "J": 4.0,
@@ -733,10 +786,10 @@
    "plain": "4d55p v 5F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 44,
+   "id": 45,
    "E": 47184.522,
    "unc": null,
    "J": 3.0,
@@ -748,10 +801,10 @@
    "plain": "4d55p w 3D°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 45,
+   "id": 46,
    "E": 47282.133,
    "unc": null,
    "J": 2.0,
@@ -763,10 +816,10 @@
    "plain": "15°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 46,
+   "id": 47,
    "E": 47402.144,
    "unc": null,
    "J": 1.0,
@@ -778,10 +831,10 @@
    "plain": "17°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 47,
+   "id": 48,
    "E": 47827.191,
    "unc": null,
    "J": 2.0,
@@ -793,10 +846,10 @@
    "plain": "4d45s5p u 5F°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 48,
+   "id": 49,
    "E": 48028.183,
    "unc": null,
    "J": 3.0,
@@ -808,10 +861,10 @@
    "plain": "4d45s5p u 5F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 49,
+   "id": 50,
    "E": 48085.181,
    "unc": null,
    "J": 2.0,
@@ -823,10 +876,10 @@
    "plain": "4d45s5p v 3D°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 50,
+   "id": 51,
    "E": 48192.009,
    "unc": null,
    "J": 4.0,
@@ -838,10 +891,10 @@
    "plain": "4d45s5p u 5F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 51,
+   "id": 52,
    "E": 48870.471,
    "unc": null,
    "J": 4.0,
@@ -853,10 +906,10 @@
    "plain": "4d45s5p v 5D°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 52,
+   "id": 53,
    "E": 48955.732,
    "unc": null,
    "J": 1.0,
@@ -868,10 +921,10 @@
    "plain": "26°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 53,
+   "id": 54,
    "E": 49169.268,
    "unc": null,
    "J": 1.0,
@@ -883,10 +936,10 @@
    "plain": "27°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 54,
+   "id": 55,
    "E": 49259.406,
    "unc": null,
    "J": 3.0,
@@ -898,10 +951,10 @@
    "plain": "28°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 55,
+   "id": 56,
    "E": 49346.196,
    "unc": null,
    "J": 2.0,
@@ -913,10 +966,10 @@
    "plain": "4d45s5p t 5F°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 56,
+   "id": 57,
    "E": 49369.475,
    "unc": null,
    "J": 4.0,
@@ -928,10 +981,10 @@
    "plain": "29°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 57,
+   "id": 58,
    "E": 49468.023,
    "unc": null,
    "J": 3.0,
@@ -943,10 +996,10 @@
    "plain": "4d45s5p t 5F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 58,
+   "id": 59,
    "E": 49590.828,
    "unc": null,
    "J": 4.0,
@@ -958,10 +1011,10 @@
    "plain": "4d45s5p t 5F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 59,
+   "id": 60,
    "E": 49711.894,
    "unc": null,
    "J": 2.0,
@@ -973,10 +1026,10 @@
    "plain": "4d45s5p w 5P°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
-   "id": 60,
+   "id": 61,
    "E": 49999.575,
    "unc": null,
    "J": 3.0,
@@ -988,7 +1041,7 @@
    "plain": "4d45s5p v 5P°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   }
  ],
  "transitions": [
@@ -998,7 +1051,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 60,
+   "upper": 61,
    "wn": 39231.243,
    "lam": 254.8989,
    "air": 254.8224,
@@ -1017,7 +1070,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 59,
+   "upper": 60,
    "wn": 38943.562,
    "lam": 256.7819,
    "air": 256.7049,
@@ -1036,7 +1089,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 59,
+   "upper": 60,
    "wn": 38257.532,
    "lam": 261.3864,
    "air": 261.3084,
@@ -1055,7 +1108,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 55,
+   "upper": 56,
    "wn": 38203.412,
    "lam": 261.7567,
    "air": 261.6786,
@@ -1074,7 +1127,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 60,
+   "upper": 61,
    "wn": 38141.077,
    "lam": 262.1845,
    "air": 262.1063,
@@ -1093,7 +1146,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 53,
+   "upper": 54,
    "wn": 38026.484,
    "lam": 262.9746,
    "air": 262.8962,
@@ -1112,7 +1165,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 57,
+   "upper": 58,
    "wn": 38013.661,
    "lam": 263.0633,
    "air": 262.9849,
@@ -1131,7 +1184,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 52,
+   "upper": 53,
    "wn": 37989.785,
    "lam": 263.2287,
    "air": 263.1502,
@@ -1150,7 +1203,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 55,
+   "upper": 56,
    "wn": 37891.834,
    "lam": 263.9091,
    "air": 263.8305,
@@ -1169,7 +1222,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 59,
+   "upper": 60,
    "wn": 37853.396,
    "lam": 264.1771,
    "air": 264.0984,
@@ -1188,7 +1241,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 54,
+   "upper": 55,
    "wn": 37805.044,
    "lam": 264.515,
    "air": 264.4362,
@@ -1207,7 +1260,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 58,
+   "upper": 59,
    "wn": 37732.33,
    "lam": 265.0247,
    "air": 264.9458,
@@ -1226,7 +1279,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 57,
+   "upper": 58,
    "wn": 37609.525,
    "lam": 265.8901,
    "air": 265.811,
@@ -1245,7 +1298,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 56,
+   "upper": 57,
    "wn": 37510.977,
    "lam": 266.5886,
    "air": 266.5094,
@@ -1264,7 +1317,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 51,
+   "upper": 52,
    "wn": 37011.973,
    "lam": 270.1828,
    "air": 270.1027,
@@ -1283,7 +1336,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 49,
+   "upper": 50,
    "wn": 36942.397,
    "lam": 270.6917,
    "air": 270.6114,
@@ -1302,7 +1355,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 47,
+   "upper": 48,
    "wn": 36684.407,
    "lam": 272.5954,
    "air": 272.5147,
@@ -1321,7 +1374,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 48,
+   "upper": 49,
    "wn": 36573.821,
    "lam": 273.4196,
    "air": 273.3387,
@@ -1340,7 +1393,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 46,
+   "upper": 47,
    "wn": 36436.197,
    "lam": 274.4524,
    "air": 274.3712,
@@ -1359,7 +1412,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 50,
+   "upper": 51,
    "wn": 36333.511,
    "lam": 275.228,
    "air": 275.1467,
@@ -1378,7 +1431,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 45,
+   "upper": 46,
    "wn": 36139.349,
    "lam": 276.7067,
    "air": 276.625,
@@ -1397,7 +1450,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 44,
+   "upper": 45,
    "wn": 35730.16,
    "lam": 279.8756,
    "air": 279.7931,
@@ -1416,7 +1469,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 42,
+   "upper": 43,
    "wn": 35685.056,
    "lam": 280.2293,
    "air": 280.1468,
@@ -1435,7 +1488,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 43,
+   "upper": 44,
    "wn": 34897.96,
    "lam": 286.5497,
    "air": 286.4656,
@@ -1454,7 +1507,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 39,
+   "upper": 40,
    "wn": 34115.124,
    "lam": 293.1251,
    "air": 293.0394,
@@ -1473,7 +1526,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 39,
+   "upper": 40,
    "wn": 33938.287,
    "lam": 294.6525,
    "air": 294.5664,
@@ -1492,7 +1545,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 40,
+   "upper": 41,
    "wn": 33934.338,
    "lam": 294.6868,
    "air": 294.6006,
@@ -1511,7 +1564,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 39,
+   "upper": 40,
    "wn": 33626.709,
    "lam": 297.3827,
    "air": 297.2959,
@@ -1530,7 +1583,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 41,
+   "upper": 42,
    "wn": 33566.625,
    "lam": 297.915,
    "air": 297.828,
@@ -1549,10 +1602,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 17,
+   "upper": 18,
    "wn": 32123.128,
    "lam": 311.3022,
    "air": 311.2119,
+   "gamma_MHz": 1.337,
    "type": "E1",
    "A": 6360000.0,
    "A_tier": "nist",
@@ -1560,6 +1614,8 @@
    "d": 0.9232,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.7568,
+   "br_tier": "nist",
    "lam_obs": 311.3022
   },
   {
@@ -1568,10 +1624,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 16,
+   "upper": 17,
    "wn": 31913.171,
    "lam": 313.3502,
    "air": 313.2595,
+   "gamma_MHz": 28.42,
    "type": "E1",
    "A": 179000000.0,
    "A_tier": "nist",
@@ -1579,6 +1636,8 @@
    "d": 4.946,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 313.3502
   },
   {
@@ -1587,10 +1646,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 15,
+   "upper": 16,
    "wn": 31654.786,
    "lam": 315.908,
    "air": 315.8166,
+   "gamma_MHz": 7.507,
    "type": "E1",
    "A": 46300000.0,
    "A_tier": "nist",
@@ -1598,6 +1658,8 @@
    "d": 2.246,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.9816,
+   "br_tier": "nist",
    "lam_obs": 315.908
   },
   {
@@ -1606,10 +1668,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 14,
+   "upper": 15,
    "wn": 31533.206,
    "lam": 317.126,
    "air": 317.0343,
+   "gamma_MHz": 21.8,
    "type": "E1",
    "A": 137000000.0,
    "A_tier": "nist",
@@ -1617,6 +1680,8 @@
    "d": 3.885,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 317.126
   },
   {
@@ -1625,7 +1690,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 38,
+   "upper": 39,
    "wn": 31387.069,
    "lam": 318.6025,
    "air": 318.5104,
@@ -1644,10 +1709,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 13,
+   "upper": 14,
    "wn": 31299.876,
    "lam": 319.4901,
    "air": 319.3977,
+   "gamma_MHz": 24.11,
    "type": "E1",
    "A": 153000000.0,
    "A_tier": "nist",
@@ -1655,6 +1721,8 @@
    "d": 3.509,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 319.4901
   },
   {
@@ -1663,7 +1731,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 33,
+   "upper": 34,
    "wn": 31190.132,
    "lam": 320.6142,
    "air": 320.5216,
@@ -1682,10 +1750,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 12,
+   "upper": 13,
    "wn": 31154.935,
    "lam": 320.9764,
    "air": 320.8837,
+   "gamma_MHz": 4.471,
    "type": "E1",
    "A": 27700000.0,
    "A_tier": "nist",
@@ -1693,6 +1762,8 @@
    "d": 1.503,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.9861,
+   "br_tier": "nist",
    "lam_obs": 320.9765
   },
   {
@@ -1701,7 +1772,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 35,
+   "upper": 36,
    "wn": 31094.53,
    "lam": 321.6,
    "air": 321.5071,
@@ -1720,7 +1791,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 34,
+   "upper": 35,
    "wn": 31030.224,
    "lam": 322.2664,
    "air": 322.1734,
@@ -1739,7 +1810,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 36,
+   "upper": 37,
    "wn": 30967.961,
    "lam": 322.9144,
    "air": 322.8212,
@@ -1758,7 +1829,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 37,
+   "upper": 38,
    "wn": 30883.306,
    "lam": 323.7995,
    "air": 323.7061,
@@ -1777,7 +1848,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 35,
+   "upper": 36,
    "wn": 30782.952,
    "lam": 324.8551,
    "air": 324.7614,
@@ -1796,7 +1867,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 33,
+   "upper": 34,
    "wn": 30701.717,
    "lam": 325.7147,
    "air": 325.6208,
@@ -1815,7 +1886,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 36,
+   "upper": 37,
    "wn": 30563.825,
    "lam": 327.1842,
    "air": 327.0899,
@@ -1834,7 +1905,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 35,
+   "upper": 36,
    "wn": 30378.816,
    "lam": 329.1768,
    "air": 329.082,
@@ -1853,7 +1924,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 32,
+   "upper": 33,
    "wn": 30229.035,
    "lam": 330.8078,
    "air": 330.7126,
@@ -1872,7 +1943,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 25,
+   "upper": 26,
    "wn": 30060.449,
    "lam": 332.663,
    "air": 332.5673,
@@ -1891,7 +1962,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 28,
+   "upper": 29,
    "wn": 30045.717,
    "lam": 332.8261,
    "air": 332.7304,
@@ -1910,7 +1981,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 29,
+   "upper": 30,
    "wn": 29889.19,
    "lam": 334.5691,
    "air": 334.473,
@@ -1929,7 +2000,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 28,
+   "upper": 29,
    "wn": 29868.88,
    "lam": 334.7966,
    "air": 334.7004,
@@ -1948,7 +2019,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 30,
+   "upper": 31,
    "wn": 29770.024,
    "lam": 335.9084,
    "air": 335.8119,
@@ -1967,7 +2038,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 23,
+   "upper": 24,
    "wn": 29719.945,
    "lam": 336.4744,
    "air": 336.3777,
@@ -1986,7 +2057,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 29,
+   "upper": 30,
    "wn": 29577.612,
    "lam": 338.0936,
    "air": 337.9965,
@@ -2005,7 +2076,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 24,
+   "upper": 25,
    "wn": 29555.598,
    "lam": 338.3454,
    "air": 338.2483,
@@ -2024,7 +2095,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 31,
+   "upper": 32,
    "wn": 29537.025,
    "lam": 338.5581,
    "air": 338.4609,
@@ -2043,7 +2114,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 30,
+   "upper": 31,
    "wn": 29365.888,
    "lam": 340.5312,
    "air": 340.4335,
@@ -2062,7 +2133,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 27,
+   "upper": 28,
    "wn": 29105.542,
    "lam": 343.5772,
    "air": 343.4787,
@@ -2081,7 +2152,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 22,
+   "upper": 23,
    "wn": 29070.993,
    "lam": 343.9855,
    "air": 343.8869,
@@ -2100,7 +2171,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 23,
+   "upper": 24,
    "wn": 29033.915,
    "lam": 344.4248,
    "air": 344.3261,
@@ -2119,7 +2190,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 26,
+   "upper": 27,
    "wn": 28984.984,
    "lam": 345.0062,
    "air": 344.9074,
@@ -2138,7 +2209,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 21,
+   "upper": 22,
    "wn": 28057.146,
    "lam": 356.4154,
    "air": 356.3137,
@@ -2153,21 +2224,54 @@
   },
   {
    "kind": "E1",
-   "freq": 789.06634,
-   "freq_tier": "nist",
-   "freq_src": "NIST ASD level energies",
+   "freq": 789.06593,
+   "freq_unc": 0.00055,
+   "freq_src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+   "freq_tier": "exp",
    "lower": 0,
-   "upper": 8,
-   "wn": 26320.42,
-   "lam": 379.9331,
-   "air": 379.8253,
+   "upper": 9,
+   "wn": 26320.4063,
+   "lam": 379.93334,
+   "air": 379.8255,
+   "use": "laser-cooling / MOT cycling transition (NIST chirped MOT of Mo, 2025; all five bosonic isotopes trapped); strongest member of the a7S3 - z7P resonance triplet",
+   "br": 0.999979,
+   "br_tier": "exp",
+   "br_src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+   "isotope_shifts": {
+    "92-96": {
+     "value": 920.4,
+     "unc": 1.9,
+     "src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+     "url": "https://arxiv.org/abs/2507.12291"
+    },
+    "94-96": {
+     "value": 418.4,
+     "unc": 1.6,
+     "src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+     "url": "https://arxiv.org/abs/2507.12291"
+    },
+    "98-96": {
+     "value": -289.4,
+     "unc": 1.6,
+     "src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+     "url": "https://arxiv.org/abs/2507.12291"
+    },
+    "100-96": {
+     "value": -812.0,
+     "unc": 1.9,
+     "src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+     "url": "https://arxiv.org/abs/2507.12291"
+    }
+   },
+   "gamma_MHz": 10.83,
    "type": "E1",
    "A": 69000000.0,
-   "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)",
+   "A_tier": "exp",
+   "A_src": "Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984), as quoted in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+   "A_unc": 2000000.0,
    "d": 4.1,
-   "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy B+) (from A)",
+   "d_tier": "exp",
+   "d_src": "Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984), as quoted in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025) (from A)",
    "lam_obs": 379.933
   },
   {
@@ -2176,7 +2280,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 20,
+   "upper": 21,
    "wn": 26109.92,
    "lam": 382.9962,
    "air": 382.8876,
@@ -2195,10 +2299,12 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 7,
+   "upper": 8,
    "wn": 25871.887,
    "lam": 386.5199,
    "air": 386.4104,
+   "use": "member of the a7S3 - z7P resonance triplet; proposed for sub-Doppler cooling of Mo (gray molasses / blue-detuned MOT) by Paladugu et al.; branching to the ground state of all three z7P levels is approximately 98 % according to Whaling & Brault 1988 (as discussed by Paladugu et al.)",
+   "gamma_MHz": 10.07,
    "type": "E1",
    "A": 62400000.0,
    "A_tier": "nist",
@@ -2206,6 +2312,8 @@
    "d": 3.528,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.9859,
+   "br_tier": "nist",
    "lam_obs": 386.5199
   },
   {
@@ -2214,10 +2322,12 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 6,
+   "upper": 7,
    "wn": 25614.367,
    "lam": 390.4059,
    "air": 390.2953,
+   "use": "member of the a7S3 - z7P resonance triplet; proposed for sub-Doppler cooling of Mo (gray molasses / blue-detuned MOT) by Paladugu et al.; branching to the ground state of all three z7P levels is approximately 98 % according to Whaling & Brault 1988 (as discussed by Paladugu et al.)",
+   "gamma_MHz": 9.764,
    "type": "E1",
    "A": 61700000.0,
    "A_tier": "nist",
@@ -2225,6 +2335,8 @@
    "d": 3.01,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 390.4059
   },
   {
@@ -2233,7 +2345,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 19,
+   "upper": 20,
    "wn": 23310.909,
    "lam": 428.9837,
    "air": 428.863,
@@ -2252,7 +2364,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 18,
+   "upper": 19,
    "wn": 23286.018,
    "lam": 429.4423,
    "air": 429.3215,
@@ -2271,10 +2383,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 11,
+   "upper": 12,
    "wn": 18155.336,
    "lam": 550.8023,
    "air": 550.6493,
+   "gamma_MHz": 7.137,
    "type": "E1",
    "A": 36100000.0,
    "A_tier": "nist",
@@ -2282,6 +2395,8 @@
    "d": 4.565,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A+) (from A)",
+   "br": 0.805,
+   "br_tier": "nist",
    "lam_obs": 550.8023
   },
   {
@@ -2290,10 +2405,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 10,
+   "upper": 11,
    "wn": 18068.26,
    "lam": 553.4567,
    "air": 553.303,
+   "gamma_MHz": 7.202,
    "type": "E1",
    "A": 37200000.0,
    "A_tier": "nist",
@@ -2301,6 +2417,8 @@
    "d": 3.945,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A+) (from A)",
+   "br": 0.8221,
+   "br_tier": "nist",
    "lam_obs": 553.4568
   },
   {
@@ -2309,10 +2427,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 9,
+   "upper": 10,
    "wn": 17946.91,
    "lam": 557.199,
    "air": 557.0443,
+   "gamma_MHz": 7.334,
    "type": "E1",
    "A": 33000000.0,
    "A_tier": "nist",
@@ -2320,13 +2439,62 @@
    "d": 2.907,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
+   "br": 0.7161,
+   "br_tier": "nist",
    "lam_obs": 557.1991
+  },
+  {
+   "kind": "E1",
+   "freq": 433.55751,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 5,
+   "upper": 9,
+   "wn": 14461.922,
+   "lam": 691.471,
+   "air": 691.2803,
+   "use": "second leak channel of the 380 nm cooling transition (not repumped in the NIST MOT; limits MOT lifetime)",
+   "gamma_MHz": 10.83,
+   "type": "E1 (intercombination)",
+   "A": 290.0,
+   "A_tier": "exp",
+   "A_src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+   "A_unc": 30.0,
+   "d": 0.02064,
+   "d_tier": "exp",
+   "d_src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025) (from A)",
+   "br": 0.0,
+   "br_tier": "exp"
+  },
+  {
+   "kind": "E1",
+   "freq": 418.93367,
+   "freq_unc": 0.00028,
+   "freq_src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+   "freq_tier": "exp",
+   "lower": 6,
+   "upper": 9,
+   "wn": 13974.1231,
+   "lam": 715.60841,
+   "air": 715.4112,
+   "use": "MOT repump line (leak channel of the 380 nm cooling transition into metastable a5D4)",
+   "gamma_MHz": 10.83,
+   "type": "E1 (intercombination)",
+   "A": 1150.0,
+   "A_tier": "exp",
+   "A_src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)",
+   "A_unc": 200.0,
+   "d": 0.04327,
+   "d_tier": "exp",
+   "d_src": "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025) (from A)",
+   "br": 0.0,
+   "br_tier": "exp"
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -2341,169 +2509,15 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$\\mathrm{a}\\,^5D_{2}$ – $\\mathrm{w}\\,^5P^{o}_{2}$",
-     "261.3864",
-     "261.3084",
-     "1146.9320",
-     "1.935",
-     "8.500e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{1}$ – $\\mathrm{t}\\,^5F^{o}_{2}$",
-     "261.7567",
-     "261.6786",
-     "1145.3095",
-     "1.797",
-     "7.300e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{2}$ – $\\mathrm{t}\\,^5F^{o}_{3}$",
-     "263.0633",
-     "262.9849",
-     "1139.6209",
-     "2.201",
-     "7.700e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{2}$ – $\\mathrm{t}\\,^5F^{o}_{2}$",
-     "263.9091",
-     "263.8305",
-     "1135.9686",
-     "1.857",
-     "7.600e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{3}$ – $\\mathrm{w}\\,^5P^{o}_{2}$",
-     "264.1771",
-     "264.0984",
-     "1134.8163",
-     "2.337",
-     "1.200e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{3}$ – $\\mathrm{t}\\,^5F^{o}_{4}$",
-     "265.0247",
-     "264.9458",
-     "1131.1868",
-     "2.847",
-     "9.800e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{3}$ – $\\mathrm{t}\\,^5F^{o}_{3}$",
-     "265.8901",
-     "265.8110",
-     "1127.5052",
-     "2.039",
-     "6.400e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{y}\\,^7P^{o}_{4}$",
-     "313.3502",
-     "313.2595",
-     "956.7328",
-     "4.946",
-     "1.790e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{y}\\,^7P^{o}_{3}$",
-     "317.1260",
-     "317.0343",
-     "945.3417",
-     "3.885",
-     "1.370e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{y}\\,^7P^{o}_{2}$",
-     "319.4901",
-     "319.3977",
-     "938.3467",
-     "3.509",
-     "1.530e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{1}$ – $\\mathrm{w}\\,^5D^{o}_{0}$",
-     "322.2664",
-     "322.1734",
-     "930.2627",
-     "1.526",
-     "1.410e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{2}$ – $\\mathrm{w}\\,^5D^{o}_{1}$",
-     "325.7147",
-     "325.6208",
-     "920.4143",
-     "1.879",
-     "6.900e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{2}$ – $\\mathrm{y}\\,^5F^{o}_{3}$",
-     "335.9084",
-     "335.8119",
-     "892.4829",
-     "3.153",
-     "7.590e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$\\mathrm{a}\\,^5D_{3}$ – $\\mathrm{y}\\,^5F^{o}_{4}$",
-     "338.5581",
-     "338.4609",
-     "885.4977",
-     "3.552",
-     "7.320e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
      "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{z}\\,^7P^{o}_{4}$",
-     "379.9331",
-     "379.8253",
-     "789.0663",
+     "379.9333",
+     "379.8255",
+     "789.0659(6)",
      "4.100",
      "6.900e+07",
-     "–",
-     "–",
-     ""
+     "10.83",
+     "100",
+     "laser-cooling / MOT cycling transition"
     ],
     [
      "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{z}\\,^7P^{o}_{3}$",
@@ -2512,18 +2526,122 @@
      "775.6197",
      "3.528",
      "6.240e+07",
-     "–",
-     "–",
-     ""
+     "10.07",
+     "98.6",
+     "member of the a7S3 - z7P resonance triplet"
+    ],
+    [
+     "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{z}\\,^7P^{o}_{2}$",
+     "390.4059",
+     "390.2953",
+     "767.8994",
+     "3.010",
+     "6.170e+07",
+     "9.764",
+     "100",
+     "member of the a7S3 - z7P resonance triplet"
+    ],
+    [
+     "$\\mathrm{a}\\,^5D_{3}$ – $\\mathrm{z}\\,^7P^{o}_{4}$",
+     "691.4710",
+     "691.2803",
+     "433.5575",
+     "0.021",
+     "2.900e+02",
+     "10.83",
+     "0",
+     "second leak channel of the 380 nm cooling transition"
+    ],
+    [
+     "$\\mathrm{a}\\,^5D_{4}$ – $\\mathrm{z}\\,^7P^{o}_{4}$",
+     "715.6084",
+     "715.4112",
+     "418.93367(28)",
+     "0.043",
+     "1.150e+03",
+     "10.83",
+     "0",
+     "MOT repump line"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{95}$Mo hyperfine structure  ($I$ = 5/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$\\mathrm{a}\\,^7S_{3}$",
+     "-208.582060(10)",
+     "0.03705(10)",
+     "F=1/2: +2085.84   F=3/2: +1772.96   F=5/2: +1251.49   F=7/2: +521.44   F=9/2: -417.18   F=11/2: -1564.36"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{z}\\,^7P^{o}_{4}$",
+     "379.933",
+     "92-96",
+     "920.4(19)"
+    ],
+    [
+     "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{z}\\,^7P^{o}_{4}$",
+     "379.933",
+     "94-96",
+     "418.4(16)"
+    ],
+    [
+     "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{z}\\,^7P^{o}_{4}$",
+     "379.933",
+     "98-96",
+     "-289.4(16)"
+    ],
+    [
+     "$\\mathrm{a}\\,^7S_{3}$ – $\\mathrm{z}\\,^7P^{o}_{4}$",
+     "379.933",
+     "100-96",
+     "-812.0(19)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 61   lines < 2000 nm: 70   with matrix element: 70",
-  "transition-rate provenance: nist: 70",
-  "levels with a measured lifetime: 0"
+  "levels: 62   lines < 2000 nm: 72   with matrix element: 72",
+  "transition-rate provenance: exp: 3, nist: 69",
+  "levels with a measured lifetime: 12"
  ],
- "sources": {}
+ "sources": {
+  "IAEA Nuclear Data Services, Live Chart of Nuclides API (ground_states table; ENSDF-based)": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
+  "NIST ASD ionization energies (ie.pl), Mo I": "https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html",
+  "Buettgenbach, Herschel, Meisel, Schroedl, Witte, Childs, Z. Phys. 266, 271 (1974) (abstract)": "https://link.springer.com/article/10.1007/BF01668819",
+  "Kwiatkowski, Micali, Werner, Zimmermann, Phys. Lett. A 85, 273 (1981) (abstract, as indexed by OSTI/ETDEWEB)": "https://www.osti.gov/etdeweb/biblio/5755654",
+  "Duquette, Salih, Lawler, Phys. Lett. A 83, 214 (1981) (abstract, as indexed by OSTI/ETDEWEB)": "https://www.osti.gov/etdeweb/biblio/5718080",
+  "Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984), total decay rate 6.9(2)e7 s^-1 as quoted in Table I of Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)": "https://arxiv.org/abs/2507.12291",
+  "Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984), as quoted in Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf",
+  "Whaling, Chevako, Lawler, J. Quant. Spectrosc. Radiat. Transfer 36, 491 (1986)": "https://lab.semi.ac.cn/download/0.3713493238911384.pdf",
+  "Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)": "https://arxiv.org/abs/2507.12291",
+  "Whaling, Hannaford, Lowe, Biemont, Grevesse, JQSRT 32, 69 (1984), as quoted in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)": "https://arxiv.org/abs/2507.12291",
+  "Aufmuth, Clieves, Heilig, Steudel, Wendlandt, Bauche, Z. Phys. A 285, 357 (1978), as tabulated in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)": "https://arxiv.org/abs/2507.12291",
+  "Aufmuth et al., Z. Phys. A 285, 357 (1978), as tabulated in Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)": "https://arxiv.org/abs/2507.12291",
+  "NIST ASD (Whaling & Brault, Phys. Scr. 38, 707 (1988)), as quoted in Table I of Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)": "https://arxiv.org/abs/2507.12291",
+  "Palmeri & Wyart, Phys. Scr. 58, 445 (1998) (pseudo-relativistic Hartree-Fock), as quoted in Table I of Paladugu, Pilgram, Eckel, Norrgard, \"Chirped magneto-optical trap of molybdenum\", arXiv:2507.12291v4 (2025)": "https://arxiv.org/abs/2507.12291"
+ }
 }
