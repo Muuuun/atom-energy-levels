@@ -447,14 +447,14 @@ def build_nist(key, cfg):
     lines = al.nist_lines(sym, 1 if cfg.get("auto") else 200)
     E = np.array([l["E"] for l in nist])
 
-    def find(e):
+    def find(e, tol=1.0):
         i = int(np.argmin(np.abs(E - e)))
-        return nist[i] if abs(E[i] - e) < 1.0 else None
+        return nist[i] if abs(E[i] - e) < tol else None
 
     # ---- which lines are drawn
     chosen = {}
     if cfg.get("auto"):
-        chosen = auto_select(nist, lines, find)
+        chosen = auto_select(nist, lines, lambda e: find(e, 0.05))
         lines = []
     for ln in lines:
         lo, up = find(ln["Ei"]), find(ln["Ek"])
@@ -466,7 +466,7 @@ def build_nist(key, cfg):
     for lt in lit.raw.get("transitions", []):
         lo, up = find(lt.get("lower_cm", -1e9)), find(lt.get("upper_cm", -1e9))
         if lo and up and up["E"] > lo["E"] and 1e7 / (up["E"] - lo["E"]) < LAMBDA_MAX_NM and up["E"] <= max(cfg["E_cut"], 0):
-            if cfg.get("auto") and len(chosen) >= 45 and not lt.get("use") and (lo["E"], up["E"]) not in chosen:
+            if cfg.get("auto") and len(chosen) >= 90 and not lt.get("use") and (lo["E"], up["E"]) not in chosen:
                 continue  # a big literature table must not flood an automatic page: only its annotated lines are added
             chosen.setdefault((lo["E"], up["E"]), {})
     used = sorted({e for pair in chosen for e in pair})
