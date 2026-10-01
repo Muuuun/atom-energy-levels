@@ -1,0 +1,2061 @@
+{
+ "element": "Si",
+ "isotopes": {
+  "28": {
+   "I": "0",
+   "abundance_percent": 92.223,
+   "abundance_unc": 0.019,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (Si); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, silicon Table 1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Si",
+   "url_spin": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable1.htm"
+  },
+  "29": {
+   "I": "1/2",
+   "abundance_percent": 4.685,
+   "abundance_unc": 0.008,
+   "magnetic_moment_muN": -0.5553,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (Si); nuclear spin and magnetic moment: NIST Handbook of Basic Atomic Spectroscopic Data, silicon Table 1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Si",
+   "url_spin": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable1.htm"
+  },
+  "30": {
+   "I": "0",
+   "abundance_percent": 3.092,
+   "abundance_unc": 0.011,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (Si); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, silicon Table 1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Si",
+   "url_spin": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable1.htm"
+  }
+ },
+ "ionization_limit_cm": {
+  "value": 65747.76,
+  "unc": 0.25,
+  "method": "compilation",
+  "source": "NIST ASD ionization-energy table, Si I (reference code L5815); 8.15168 eV in the NIST Handbook",
+  "url": "https://physics.nist.gov/PhysRefData/ASD/ionEnergy.html"
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 77.115,
+   "label": "3s23p2 3P1",
+   "J": "1",
+   "lifetime": {
+    "value": 120700.0,
+    "unit": "s",
+    "method": "theory",
+    "note": "derived: 1/A of the 3P1 -> 3P0 magnetic-dipole decay, A = 8.283e-6 s^-1 as calculated in the source (not a measurement)",
+    "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, text after Table 4",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+   },
+   "g_J": {
+    "value": 1.500794,
+    "unc": 2.3e-05,
+    "method": "experiment",
+    "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+    "note": "uncertainty is 1 standard deviation of the fit; the authors state that systematic errors are an order of magnitude larger and that the g factors come out slightly small (theory: 1.501097, Veseth 1980)"
+   },
+   "hyperfine": {
+    "29": {
+     "A_MHz": 1.84,
+     "method": "theory",
+     "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (footnote e: value estimated from semiempirical values and held fixed in the fit)",
+     "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+     "note": "not measured; estimate. I = 1/2, so no B constant."
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 223.157,
+   "label": "3s23p2 3P2",
+   "J": "2",
+   "lifetime": {
+    "value": 23690.0,
+    "unit": "s",
+    "method": "theory",
+    "note": "derived: 1/A of the 3P2 -> 3P1 magnetic-dipole decay, A = 4.221e-5 s^-1 as calculated in the source; the E2 branch to 3P0 is neglected, so this is an upper bound on the lifetime (not a measurement)",
+    "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, text after Table 4",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+   },
+   "g_J": {
+    "value": 1.500642,
+    "unc": 1.2e-05,
+    "method": "experiment",
+    "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B",
+    "note": "uncertainty is 1 standard deviation of the fit; the authors state that systematic errors are an order of magnitude larger (theory: 1.500974, Veseth 1980)"
+   },
+   "hyperfine": {
+    "29": {
+     "A_MHz": -160.1,
+     "A_unc": 1.3,
+     "method": "experiment",
+     "source": "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam, abstract and Table 2 (1 sigma)",
+     "url": "https://arxiv.org/pdf/1009.4961",
+     "note": "I = 1/2, so no B constant",
+     "alternatives": [
+      {
+       "A_MHz": -160.74,
+       "A_unc": 0.73,
+       "method": "experiment",
+       "note": "A2 from far-infrared laser magnetic resonance with A1 held at an estimated 1.84 MHz: Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3",
+       "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 6298.85,
+   "label": "3s23p2 1D2",
+   "J": "2",
+   "lifetime": {
+    "value": 366.6,
+    "unit": "s",
+    "method": "theory",
+    "note": "derived: 1/sum of the five calculated M1 and E2 A-values (to 3P0,1,2) listed in NIST ASD (accuracy D, D+); no measurement of this lifetime was located",
+    "source": "NIST ASD Si I lines table, forbidden lines 1587.6, 1607.3, 1645.9 nm (tp_ref c22,T4209), local cache data/nist/Si_I_lines_from1nm.tsv",
+    "url": "https://physics.nist.gov/PhysRefData/ASD/lines_form.html"
+   }
+  },
+  {
+   "nist_energy_cm": 15394.37,
+   "label": "3s23p2 1S0",
+   "J": "0",
+   "lifetime": {
+    "value": 0.9726,
+    "unit": "s",
+    "method": "theory",
+    "note": "derived: 1/sum of the calculated A-values of 1S0 -> 3P1 (M1, 652.9 nm), 3P2 (E2, 659.1 nm) and 1D2 (E2, 1099.4 nm) listed in NIST ASD (accuracy C, D); no measurement of this lifetime was located",
+    "source": "NIST ASD Si I lines table (tp_ref c22,T4209), local cache data/nist/Si_I_lines_from1nm.tsv",
+    "url": "https://physics.nist.gov/PhysRefData/ASD/lines_form.html"
+   }
+  },
+  {
+   "nist_energy_cm": 39683.163,
+   "label": "3s23p4s 3P°0",
+   "J": "0",
+   "lifetime": {
+    "value": 4.5e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 5.5300000000000005e-09,
+      "unc": 4.4000000000000003e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Marek & Richter, Astron. Astrophys. 26, 155 (1973) (experiment), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 4.53e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 39760.285,
+   "label": "3s23p4s 3P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 4.5e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 5.39e-09,
+      "unc": 4.3e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Marek & Richter, Astron. Astrophys. 26, 155 (1973) (experiment), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 4.51e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 39955.053,
+   "label": "3s23p4s 3P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 4.5e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 4.4000000000000005e-09,
+      "unc": 4.0000000000000007e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Becker, Kerkhoff, Kwiatkowski, Schmidt, Teppner, Zimmermann, Phys. Lett. A 76, 125 (1980) (laser-induced fluorescence), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 5.900000000000001e-09,
+      "unc": 7e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bashkin, Astner, Mannervik, Ramanujam, Scofield, Huldt, Martinson, Phys. Scr. 21, 820 (1980) (beam-foil), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 5.95e-09,
+      "unc": 4.8e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Marek & Richter, Astron. Astrophys. 26, 155 (1973) (experiment), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 6.1e-09,
+      "unc": 8e-10,
+      "unit": "s",
+      "method": "experiment",
+      "note": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1; lifetime of the whole 3p2 3P - 4s 3P° multiplet (2506 A)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S"
+     },
+     {
+      "value": 4.49e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 40991.884,
+   "label": "3s23p4s 1P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 4.3e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 4.0999999999999995e-09,
+      "unc": 4.0000000000000007e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Becker, Kerkhoff, Kwiatkowski, Schmidt, Teppner, Zimmermann, Phys. Lett. A 76, 125 (1980) (laser-induced fluorescence), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 4.0999999999999995e-09,
+      "unc": 2.0000000000000003e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bashkin, Astner, Mannervik, Ramanujam, Scofield, Huldt, Martinson, Phys. Scr. 21, 820 (1980) (beam-foil), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 4.06e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 45276.188,
+   "label": "3s3p3 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2.2e-08,
+    "unc": 1.1e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.8e-08,
+      "unc": 3e-09,
+      "unit": "s",
+      "method": "experiment",
+      "note": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1; lifetime of the whole 3p2 3P - 3D° multiplet (2208 A)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S"
+     },
+     {
+      "value": 2.618e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 45293.629,
+   "label": "3s3p3 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 2.2e-08,
+    "unc": 1.1e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 2.623e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 45321.848,
+   "label": "3s3p3 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 2.2e-08,
+    "unc": 1.1e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 2.04e-08,
+      "unc": 1e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bashkin, Astner, Mannervik, Ramanujam, Scofield, Huldt, Martinson, Phys. Scr. 21, 820 (1980) (beam-foil), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 2.633e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   },
+   "hyperfine": {
+    "29": {
+     "A_MHz": -532.9,
+     "A_unc": 0.6,
+     "method": "experiment",
+     "source": "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam; value of the published abstract (also the arXiv abstract)",
+     "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.82.042515",
+     "note": "I = 1/2, so no B constant",
+     "alternatives": [
+      {
+       "A_MHz": -531.8,
+       "A_unc": 0.9,
+       "note": "Table 2 of the arXiv version (arXiv:1009.4961v1) prints -531.8(0.9) MHz while its abstract prints -532.9(0.6) MHz",
+       "url": "https://arxiv.org/pdf/1009.4961"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 47351.554,
+   "label": "3s23p3d 1D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 2.25e-08,
+    "unc": 1.1e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 2.1300000000000002e-08,
+      "unc": 1.5000000000000002e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bashkin, Astner, Mannervik, Ramanujam, Scofield, Huldt, Martinson, Phys. Scr. 21, 820 (1980) (beam-foil), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 2.345e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 50499.838,
+   "label": "3s23p3d 3P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.14e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.271e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 50566.397,
+   "label": "3s23p3d 3P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.17e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.291e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 50602.44,
+   "label": "3s23p3d 3P°0",
+   "J": "0",
+   "lifetime": {
+    "value": 1.15e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.3e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 53362.24,
+   "label": "3s23p3d 1F°3",
+   "J": "3",
+   "lifetime": {
+    "value": 3.3e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.0000000000000004e-09,
+      "unc": 4.0000000000000007e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bashkin, Astner, Mannervik, Ramanujam, Scofield, Huldt, Martinson, Phys. Scr. 21, 820 (1980) (beam-foil), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 3.04e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 53387.334,
+   "label": "3s23p3d 1P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 8.5e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 8.1e-09,
+      "unc": 5e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Becker, Kerkhoff, Kwiatkowski, Schmidt, Teppner, Zimmermann, Phys. Lett. A 76, 125 (1980) (laser-induced fluorescence), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 8.199999999999999e-09,
+      "unc": 1.0000000000000002e-10,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bashkin, Astner, Mannervik, Ramanujam, Scofield, Huldt, Martinson, Phys. Scr. 21, 820 (1980) (beam-foil), as listed in Table 3 of Smith, Huber, Tozzi, Griesinger, Cardon, Lombardi, Astrophys. J. 322, 573 (1987)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1987ApJ...322..573S"
+     },
+     {
+      "value": 8.19e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 54185.264,
+   "label": "3s23p3d 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 4.2e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.69e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 54205.09,
+   "label": "3s23p3d 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 4e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.6e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 54245.02,
+   "label": "3s23p5s 3P°0",
+   "J": "0",
+   "lifetime": {
+    "value": 1.38e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.392e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 54257.582,
+   "label": "3s23p3d 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 4.1e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.6e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 54313.818,
+   "label": "3s23p5s 3P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.26e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.238e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 54528.22,
+   "label": "3s23p5s 3P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.34e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.38e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 54871.031,
+   "label": "3s23p5s 1P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 8.8e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 8.25e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 56503.346,
+   "label": "3s23p4d 1D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 4.45e-08,
+    "unc": 2.2e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.638e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 56690.903,
+   "label": "3s23p4d 3P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 3.72e-08,
+    "unc": 1.9e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.568e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 56700.25,
+   "label": "3s23p4d 3P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 3.24e-08,
+    "unc": 1.6e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 2.83e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 56733.38,
+   "label": "3s23p4d 3P°0",
+   "J": "0",
+   "lifetime": {
+    "value": 3.19e-08,
+    "unc": 1.6e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 2.815e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 58801.529,
+   "label": "3s23p4d 1P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.08e-08,
+    "unc": 5e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 9.78e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 58893.4,
+   "label": "3s23p4d 1F°3",
+   "J": "3",
+   "lifetime": {
+    "value": 6.3e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 5.52e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 59032.19,
+   "label": "3s23p4d 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 4.8e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 4.34e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 59056.508,
+   "label": "3s23p4d 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 5.7e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 5.13e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 59118.03,
+   "label": "3s23p4d 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 4.8e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 4.44e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 59221.11,
+   "label": "3s23p6s (1/2,1/2)°0",
+   "J": "0",
+   "lifetime": {
+    "value": 3.27e-08,
+    "unc": 1.6e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.152e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 59273.575,
+   "label": "3s23p6s (1/2,1/2)°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2.47e-08,
+    "unc": 1.2e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 2.227e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 59506.359,
+   "label": "3s23p6s (3/2,1/2)°2",
+   "J": "2",
+   "lifetime": {
+    "value": 3.46e-08,
+    "unc": 1.7e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.135e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 59636.667,
+   "label": "3s23p6s (3/2,1/2)°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2e-08,
+    "unc": 1e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.821e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 59917.336,
+   "label": "3s23pnd a 3P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.16e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.189e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 60010.458,
+   "label": "3s23pnd a 3P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.12e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.121e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 60042.5,
+   "label": "3s23pnd a 3P°0",
+   "J": "0",
+   "lifetime": {
+    "value": 1.14e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.117e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 60300.86,
+   "label": "3s23p5d 1D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 5.949e-08,
+    "unit": "s",
+    "method": "theory",
+    "source": "Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), MCDHF/RCI, Table B.2 (CDS J/A+A/682/A184); no measured lifetime is listed for this level",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+   }
+  },
+  {
+   "nist_energy_cm": 61305.67,
+   "label": "3s23p5d 1P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.34e-08,
+    "unc": 7e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 9.83e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61423.23,
+   "label": "3s23p5d 1F°3",
+   "J": "3",
+   "lifetime": {
+    "value": 1.02e-08,
+    "unc": 5e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 8.11e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61447.86,
+   "label": "3s23p5d 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 8.1e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 6.21e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61511.77,
+   "label": "3s23p5d 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.61e-08,
+    "unc": 8e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.832e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61574.814,
+   "label": "3s23p5d 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 8.5e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 6.5e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61595.43,
+   "label": "3s23p7s (1/2,1/2)°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2.36e-08,
+    "unc": 1.2e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.217e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61841.94,
+   "label": "3s23p5d 3P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.11e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.25e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61881.6,
+   "label": "3s23p7s (3/2,1/2)°1",
+   "J": "1",
+   "lifetime": {
+    "value": 4.59e-08,
+    "unc": 2.3e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 3.319e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61936.13,
+   "label": "3s23p5d 3P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.17e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.113e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 61960.26,
+   "label": "3s23p5d 3P°0",
+   "J": "0",
+   "lifetime": {
+    "value": 1.21e-08,
+    "unc": 6e-10,
+    "unit": "s",
+    "method": "compilation",
+    "source": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat",
+    "alternatives": [
+     {
+      "value": 1.086e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "MCDHF/RCI calculation, column 'Lifetime' of the same Table B.2 (Pehlivan Rhodin et al. 2024)",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 77.115,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p2 3P0 - 3P1",
+   "type": "M1",
+   "use": "ground-term fine-structure line at 129.7 um (far-infrared astronomy target; measured by laser magnetic resonance)",
+   "frequency_THz": {
+    "value": 2.31175574,
+    "unc": 1.2e-07,
+    "isotope": "28",
+    "method": "experiment",
+    "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (Delta E10 = 2311.75574(12) GHz, zero-field; combined fit with the data of Inguscio et al. 1984)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+   },
+   "A_s": {
+    "value": 8.283e-06,
+    "method": "theory",
+    "source": "calculated Einstein A quoted in Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+   }
+  },
+  {
+   "lower_cm": 77.115,
+   "upper_cm": 223.157,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p2 3P1 - 3P2",
+   "type": "M1",
+   "use": "ground-term fine-structure line at 68.47 um (far-infrared astronomy target)",
+   "frequency_THz": {
+    "value": 4.37832796,
+    "unc": 1.6e-07,
+    "isotope": "28",
+    "method": "experiment",
+    "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (Delta E21 = 4378.32796(16) GHz, zero-field)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+   },
+   "frequency_THz_29": {
+    "value": 4.3783306,
+    "unc": 6e-07,
+    "isotope": "29",
+    "method": "experiment",
+    "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3 (Delta E21 = 4378.33060(60) GHz; fine-structure interval with the hyperfine structure removed, i.e. hyperfine centre of gravity; hyperfine components F=5/2-3/2 4378.1691(10), F=3/2-1/2 4378.5734(13), F=3/2-3/2 4378.5706(13) GHz in Table 4)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+   },
+   "A_s": {
+    "value": 4.221e-05,
+    "method": "theory",
+    "source": "calculated Einstein A quoted in Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+   },
+   "isotope_shift_MHz": {
+    "29-28": {
+     "value": 2.6,
+     "unc": 0.6,
+     "method": "experiment",
+     "source": "Brown, Zink, Evenson, Astrophys. J. 423, L151 (1994), far-infrared laser magnetic resonance, Table 3, text",
+     "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...423L.151B"
+    }
+   }
+  },
+  {
+   "lower_cm": 15394.37,
+   "upper_cm": 39760.285,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p2 1S0 - 3s23p4s 3P°1",
+   "type": "intercombination",
+   "A_s": {
+    "value": 124000.0,
+    "unc": 22000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.00056,
+    "unc": 9.5e-05,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.1127,
+    "unc": 0.01,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "410.294 nm (air): weak spin-forbidden line used with 390.55 nm for Si abundances in metal-poor stars (Den Hartog et al. 2023)",
+   "use_url": "https://arxiv.org/pdf/2301.11391"
+  },
+  {
+   "lower_cm": 15394.37,
+   "upper_cm": 40991.884,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p2 1S0 - 3s23p4s 1P°1",
+   "type": "E1",
+   "A_s": {
+    "value": 12200000.0,
+    "unc": 1200000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.052,
+    "unc": 0.0047,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 1.038,
+    "unc": 0.052,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "390.552 nm (air): the Si I line usable from the ground in very metal-poor stars; Den Hartog et al. 2023 discuss its use (and its known problems) for stellar Si abundances",
+   "use_url": "https://arxiv.org/pdf/2301.11391"
+  },
+  {
+   "lower_cm": 6298.85,
+   "upper_cm": 39760.285,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p2 1D2 - 3s23p4s 3P°1",
+   "type": "intercombination",
+   "A_s": {
+    "value": 2300000.0,
+    "unc": 180000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.0103,
+    "unc": 0.00062,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.3015,
+    "unc": 0.012,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   }
+  },
+  {
+   "lower_cm": 6298.85,
+   "upper_cm": 39955.053,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p2 1D2 - 3s23p4s 3P°2",
+   "type": "intercombination",
+   "A_s": {
+    "value": 44400.0,
+    "unc": 4900.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.0002,
+    "unc": 2e-05,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.05361,
+    "unc": 0.0029,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   }
+  },
+  {
+   "lower_cm": 6298.85,
+   "upper_cm": 40991.884,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p2 1D2 - 3s23p4s 1P°1",
+   "type": "E1",
+   "A_s": {
+    "value": 219000000.0,
+    "unc": 11000000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.94,
+    "unc": 0.0047,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 2.787,
+    "unc": 0.07,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "288.158 nm (air): strongest Si I line of the NIST Handbook table (intensity 1000, persistent 'P'); classic analytical line of silicon",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  },
+  {
+   "lower_cm": 6298.85,
+   "upper_cm": 45276.188,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p2 1D2 - 3s3p3 3D°1",
+   "type": "intercombination",
+   "A_s": {
+    "value": 20000.0,
+    "unc": 5200.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.00044,
+    "unc": 0.00011,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.02236,
+    "unc": 0.0029,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   }
+  },
+  {
+   "lower_cm": 6298.85,
+   "upper_cm": 45293.629,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p2 1D2 - 3s3p3 3D°2",
+   "type": "intercombination",
+   "A_s": {
+    "value": 24300.0,
+    "unc": 4900.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.00053,
+    "unc": 0.0001,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.0318,
+    "unc": 0.0032,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   }
+  },
+  {
+   "lower_cm": 223.157,
+   "upper_cm": 39760.285,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p2 3P2 - 3s23p4s 3P°1",
+   "type": "E1",
+   "A_s": {
+    "value": 90800000.0,
+    "unc": 4500000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.409,
+    "unc": 0.0041,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 1.475,
+    "unc": 0.037,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged persistent ('P') in the NIST Handbook strong-line table, i.e. a standard analytical / detection line of Si I",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  },
+  {
+   "lower_cm": 77.115,
+   "upper_cm": 39760.285,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p2 3P1 - 3s23p4s 3P°1",
+   "type": "E1",
+   "A_s": {
+    "value": 54200000.0,
+    "unc": 2700000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.244,
+    "unc": 0.0024,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 1.133,
+    "unc": 0.028,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged persistent ('P') in the NIST Handbook strong-line table, i.e. a standard analytical / detection line of Si I",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  },
+  {
+   "lower_cm": 223.157,
+   "upper_cm": 39955.053,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p2 3P2 - 3s23p4s 3P°2",
+   "type": "E1",
+   "A_s": {
+    "value": 168000000.0,
+    "unc": 8400000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.757,
+    "unc": 0.0076,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 2.571,
+    "unc": 0.064,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged persistent ('P') in the NIST Handbook strong-line table, i.e. a standard analytical / detection line of Si I; strongest member (251.611 nm air)",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm",
+   "isotope_shift_MHz": {
+    "30-28": {
+     "value": 330,
+     "unc": 30,
+     "method": "experiment",
+     "note": "derived: 0.011(1) cm^-1 converted to MHz; value given in the abstract for the whole 3p2 3P - 4s 3P° multiplet ('~0.011 +/- 0.001'), sign not stated in the abstract (shift 'of 30Si relative to 28Si'); attached here to the strongest line of the multiplet",
+     "source": "Holmes & Hoover, J. Opt. Soc. Am. 52, 247 (1962), hollow cathode + Fabry-Perot, abstract",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-52-3-247"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 39760.285,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p2 3P0 - 3s23p4s 3P°1",
+   "type": "E1",
+   "A_s": {
+    "value": 74800000.0,
+    "unc": 3700000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.337,
+    "unc": 0.0034,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 1.327,
+    "unc": 0.033,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged persistent ('P') in the NIST Handbook strong-line table, i.e. a standard analytical / detection line of Si I",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  },
+  {
+   "lower_cm": 77.115,
+   "upper_cm": 39955.053,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p2 3P1 - 3s23p4s 3P°2",
+   "type": "E1",
+   "A_s": {
+    "value": 53900000.0,
+    "unc": 2700000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.243,
+    "unc": 0.0024,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 1.448,
+    "unc": 0.036,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "one of the six lines of the 250.7-252.9 nm (air) resonance multiplet 3p2 3P - 4s 3P°; flagged persistent ('P') in the NIST Handbook strong-line table, i.e. a standard analytical / detection line of Si I",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  },
+  {
+   "lower_cm": 223.157,
+   "upper_cm": 40991.884,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p2 3P2 - 3s23p4s 1P°1",
+   "type": "intercombination",
+   "A_s": {
+    "value": 501000.0,
+    "unc": 45000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.0022,
+    "unc": 0.00015,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.1046,
+    "unc": 0.0047,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "note": "Den Hartog et al. 2023 (footnote 11) point out that the NIST ASD A-values / log(gf) of 2443.365 A and 2452.118 A differ by +0.32 and -0.53 dex from O'Brian & Lawler 1991 and appear to be in error (same discrepancy in Kelleher & Podobedova 2008)"
+  },
+  {
+   "lower_cm": 77.115,
+   "upper_cm": 40991.884,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p2 3P1 - 3s23p4s 1P°1",
+   "type": "intercombination",
+   "A_s": {
+    "value": 552000.0,
+    "unc": 50000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.0024,
+    "unc": 0.00017,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.1092,
+    "unc": 0.0049,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "note": "Den Hartog et al. 2023 (footnote 11) point out that the NIST ASD A-values / log(gf) of 2443.365 A and 2452.118 A differ by +0.32 and -0.53 dex from O'Brian & Lawler 1991 and appear to be in error (same discrepancy in Kelleher & Podobedova 2008)"
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 40991.884,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p2 3P0 - 3s23p4s 1P°1",
+   "type": "intercombination",
+   "A_s": {
+    "value": 706000.0,
+    "unc": 64000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.003,
+    "unc": 0.00021,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.1232,
+    "unc": 0.0055,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   }
+  },
+  {
+   "lower_cm": 223.157,
+   "upper_cm": 45276.188,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p2 3P2 - 3s3p3 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 1130000.0,
+    "unc": 68000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.025,
+    "unc": 0.001,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.1353,
+    "unc": 0.0041,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   }
+  },
+  {
+   "lower_cm": 223.157,
+   "upper_cm": 45293.629,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p2 3P2 - 3s3p3 3D°2",
+   "type": "E1",
+   "A_s": {
+    "value": 10700000.0,
+    "unc": 540000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.236,
+    "unc": 0.0024,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.537,
+    "unc": 0.013,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "line of the 220.8-221.8 nm (air) multiplet 3p2 3P - 3s3p3 3D°; flagged persistent ('P') in the NIST Handbook strong-line table",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  },
+  {
+   "lower_cm": 223.157,
+   "upper_cm": 45321.848,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3s23p2 3P2 - 3s3p3 3D°3",
+   "type": "E1",
+   "use": "221.74 nm (vacuum; 221.667 nm air) J=2 -> J=3 cycling transition proposed for laser cooling and magneto-optical trapping of Si (lower level 3P2 is 223 cm^-1 above the ground level and thermally populated); intended as a deterministic single-ion source of 31Si (-> 31P qubits in the Kane quantum-computer scheme). Also flagged persistent in the NIST Handbook (2216.669 A).",
+   "use_url": "https://arxiv.org/pdf/1009.4961",
+   "linewidth_MHz": {
+    "value": 8.8,
+    "method": "compilation",
+    "source": "natural linewidth quoted without reference in Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam",
+    "url": "https://arxiv.org/pdf/1009.4961",
+    "alternatives": [
+     {
+      "value": 7.234,
+      "unc": 0.36,
+      "note": "derived: 1/(2 pi tau) with tau = 22.0(1.1) ns of O'Brian & Lawler 1991 (CDS J/A+A/682/A184 Table B.2); 8.8 MHz would correspond to tau = 18 ns, the 1966 phase-shift value of Savage & Lawrence",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/682/A184/tableb2.dat"
+     }
+    ]
+   },
+   "isotope_shift_MHz": {
+    "29-28": {
+     "value": 1753.3,
+     "unc": 1.1,
+     "method": "experiment",
+     "source": "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam, abstract and Table 2 (1 sigma)",
+     "url": "https://arxiv.org/pdf/1009.4961",
+     "note": "29Si value is the hyperfine centre of gravity (deduced with the fitted A constants); measured 29Si components relative to 28Si: F=5/2-7/2 1115.6(0.7), F=3/2-5/2 2576.8(1.5), F=5/2-5/2 2977.1(3.0) MHz (Table 1)"
+    },
+    "30-28": {
+     "value": 3359.9,
+     "unc": 0.6,
+     "method": "experiment",
+     "source": "Lee & Fairbank, Phys. Rev. A 82, 042515 (2010), arXiv:1009.4961, laser-induced fluorescence in an atomic beam, abstract and Tables 1-2",
+     "url": "https://arxiv.org/pdf/1009.4961",
+     "alternatives": [
+      {
+       "value": 3418,
+       "unc": 30,
+       "note": "Holmes & Hoover, J. Opt. Soc. Am. 52, 247 (1962) as quoted in Table 2 of Lee & Fairbank (their abstract gives ~0.115(2) cm^-1 for the 3p2 3P - 3D° multiplet)",
+       "url": "https://arxiv.org/pdf/1009.4961"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 77.115,
+   "upper_cm": 45276.188,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p2 3P1 - 3s3p3 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 18600000.0,
+    "unc": 930000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.409,
+    "unc": 0.0041,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.5461,
+    "unc": 0.014,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "line of the 220.8-221.8 nm (air) multiplet 3p2 3P - 3s3p3 3D°; flagged persistent ('P') in the NIST Handbook strong-line table",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  },
+  {
+   "lower_cm": 77.115,
+   "upper_cm": 45293.629,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p2 3P1 - 3s3p3 3D°2",
+   "type": "E1",
+   "A_s": {
+    "value": 34700000.0,
+    "unc": 1700000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.763,
+    "unc": 0.0038,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.9624,
+    "unc": 0.024,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "line of the 220.8-221.8 nm (air) multiplet 3p2 3P - 3s3p3 3D°; flagged persistent ('P') in the NIST Handbook strong-line table",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 45276.188,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p2 3P0 - 3s3p3 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 25700000.0,
+    "unc": 1300000.0,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3 (measured branching fraction divided by the O'Brian & Lawler 1991 laser-induced-fluorescence lifetime of the upper level)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "branching": {
+    "value": 0.566,
+    "unc": 0.0057,
+    "method": "experiment",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 2 (emission branching fraction, echelle spectrometer)",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "rme_J_ea0": {
+    "value": 0.6403,
+    "unc": 0.016,
+    "method": "experiment",
+    "note": "derived from the measured A-value with the SCHEMA convention (|d|^2 = A (2J'+1) lambda^3 / 2.02613e18, lambda = vacuum wavelength in Angstrom from the NIST level energies)",
+    "source": "Den Hartog, Lawler, Sneden, Roederer, Cowan, Astrophys. J. Suppl. Ser. 265, 42 (2023), arXiv:2301.11391, Table 3",
+    "url": "https://arxiv.org/pdf/2301.11391"
+   },
+   "use": "line of the 220.8-221.8 nm (air) multiplet 3p2 3P - 3s3p3 3D°; flagged persistent ('P') in the NIST Handbook strong-line table",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silicontable2.htm"
+  }
+ ],
+ "conflicts": [
+  "4s 3P° lifetimes: O'Brian & Lawler 1991 laser-induced fluorescence gives 4.5(2) ns for J=0,1,2 (kept); Becker et al. 1980 (LIF) 4.4(4) ns agrees, but beam-foil / phase-shift / older values are longer: Bashkin et al. 1980 5.9(7), Marek & Richter 1973 5.39-5.95, Savage & Lawrence 1966 6.1(8) ns. Smith et al. 1987 normalised their f-values to the Bashkin scale and their own Table 3 lifetimes (e.g. 6.3(6) ns for 4s 3P°, 28-37 ns for 3s3p3 3D°) are therefore systematically long; they are not used here.",
+  "3s3p3 3D° lifetimes: measured 22.0(1.1) ns (O'Brian & Lawler) vs MCDHF 26.2-26.3 ns (Pehlivan Rhodin et al. 2024) and 27.8-28.0 ns (Froese Fischer 2005, same CDS table); older measurements 18(3) ns (Savage & Lawrence) and 20.4(1.0) ns (Bashkin, J=3).",
+  "221.7 nm line: Lee & Fairbank quote a natural linewidth of 8.8 MHz, whereas the O'Brian & Lawler lifetime 22.0(1.1) ns gives 7.2(4) MHz.",
+  "29Si hyperfine A of 3s3p3 3D°3: abstract of Lee & Fairbank (journal and arXiv) -532.9(0.6) MHz; Table 2 of the arXiv version -531.8(0.9) MHz. The abstract value is kept.",
+  "29Si A(3P2): -160.1(1.3) MHz (optical, Lee & Fairbank) vs -160.74(73) MHz (laser magnetic resonance, Brown et al., with A(3P1) fixed at an estimate) - consistent.",
+  "NIST ASD A-values of the intercombination lines 244.3365 nm and 245.2118 nm (air; 3P1,2 - 4s 1P°1) are reported by Den Hartog et al. 2023 to be in error by +0.32 and -0.53 dex relative to O'Brian & Lawler 1991; the new measured values are 5.52e5 and 5.01e5 s^-1 (9 %).",
+  "Highly excited levels where MCDHF and experiment disagree strongly (same CDS table): 3p7s (1/2,1/2)°1 23.6(1.2) ns measured vs 12.17 ns; 3p5d 1P°1 13.4(7) vs 9.83 ns; 3p4d 1D°2 44.5(2.2) vs 36.4 ns."
+ ],
+ "not_found": [
+  "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991) itself could not be opened (paywalled); its 46 lifetimes are taken second-hand from CDS J/A+A/682/A184 Table B.2 (the abstract speaks of 47 levels; the CDS table carries 46). Their 36 transition probabilities were not accessible; NIST ASD is based on them.",
+  "lifetimes of 3p6d 3D°1,2,3 (62925.8, 62774.99, 62936.14 cm^-1) and 3p6d 1F°3 (62802.86 cm^-1): not in the O'Brian & Lawler list reproduced at CDS and not in the MCDHF table; nothing located",
+  "lifetime of 3p5d 1D°2 (60300.86 cm^-1): no measurement located, MCDHF value given and marked theory",
+  "measured lifetimes or forbidden-line A-values of the metastable 3p2 1D2 and 1S0 levels: none located; lifetimes given are derived from the calculated A-values already in NIST ASD",
+  "hyperfine structure and isotope shifts of the two-photon lines 3p2 3P0,1,2 - 3p4p 3P0,1,2 (Wendt et al., Phys. Rev. A 88, 052510 (2013)): only the abstract could be opened and it gives no numbers",
+  "29Si hyperfine constants of any other excited level (4s 3P°, 4s 1P°, 3d ...): no measurement located; A(3P1) of the ground term is only an estimate (1.84 MHz)",
+  "Holmes & Hoover 1962 line-by-line 30Si-28Si shifts (eleven UV lines, Table II): full text not accessible, only the two multiplet values of the abstract",
+  "measured Lande g factors of excited Si I levels (Persson, Z. Phys. D 28, 23 (1993); Lott, Roos, Ginter, J. Opt. Soc. Am. 56, 775 (1966)): papers not accessible",
+  "absolute optical transition frequencies better than the NIST level energies (e.g. frequency-comb values for 221.7, 251.6, 288.2, 390.6 nm): none located",
+  "a published laser-cooling proposal on a 252 nm transition (3P - 4s 3P°): none located; the only cooling scheme found is 3P2 - 3D°3 at 221.7 nm (Lee & Fairbank 2010, whose companion paper 'Fairbank & Lee, to be published' was not found)"
+ ],
+ "notes": "Level energies are the NIST ASD values (data/nist/Si_I_levels.tsv). Lifetimes of O'Brian & Lawler are quoted at second hand (method 'compilation'). Den Hartog et al. 2023 A-values = their measured branching fractions / O'Brian & Lawler lifetimes, so they are not independent of the lifetimes; the 'branching' field is the measured branching fraction of that decay channel. rme_J_ea0 values are derived from A as described in each note. Isotope shifts are nu(heavier) - nu(28Si) as printed (positive = heavier isotope at higher frequency for the 221.7 nm line). 29Si has I = 1/2 (no quadrupole constant); the 29Si frequency of the 3P1-3P2 interval is the hyperfine-free fine-structure interval. The g_J values of 3P1 and 3P2 are fitted from laser magnetic resonance and carry systematic errors larger than the printed 1-sigma. Lifetimes of 3P1, 3P2, 1D2, 1S0 are derived from calculated A-values (theory), not measured. Additional measured data not transcribed here: Pehlivan Rhodin et al. 2024 Table B.3 (CDS tableb3.dat) gives 17 semi-experimental log(gf) for near-infrared 4s-4p and 3s3p3 3D°-4p lines (measured branching fractions x calculated lifetimes); Smith et al. 1987 give branching fractions / f-values for 108 lines (already the basis of NIST ASD)."
+}

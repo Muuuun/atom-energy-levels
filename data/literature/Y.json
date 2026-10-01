@@ -3250,7 +3250,7 @@
     "source": "Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1",
     "url": "https://articles.adsabs.harvard.edu/pdf/1982ApJ...261..736H"
    },
-   "use": "proposed laser-cooling (cycling) line from the metastable a4F9/2 level (Eustice et al. 2020: 546.7986 nm vac-style wavelength from Meggers tables, linewidth 2pi x 10.0 MHz from this lifetime); branching ratio 100% measured",
+   "use": "proposed laser-cooling (cycling) line from the metastable a4F9/2 level (Eustice et al. 2020 quote 546.7986 nm and a linewidth of 2pi x 10.0 MHz based on this lifetime); branching ratio 100% measured",
    "linewidth_MHz": {
     "value": 10.1,
     "unc": 0.6,
@@ -4059,6 +4059,45 @@
    }
   },
   {
+   "lower_cm": 15864.481,
+   "upper_cm": 34029.802,
+   "lower_J": "7/2",
+   "upper_J": "7/2",
+   "label": "4d2(3F)5s a 2F7/2 - 4d2(3F)5p x 2F°7/2, 550.3464 nm (air)",
+   "type": "E1",
+   "wavelength_air_nm": {
+    "value": 550.3464,
+    "note": "as listed in Hannaford et al. 1982 Table 1 (from Palmer 1977)",
+    "method": "compilation",
+    "source": "Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1982ApJ...261..736H"
+   },
+   "branching": {
+    "value": 0.473,
+    "method": "experiment",
+    "source": "Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1982ApJ...261..736H",
+    "unc": 0.01,
+    "note": "printed f (0.39) is inconsistent with the printed branching ratio and lifetime (which give f = 0.29); A here is derived from branching ratio / lifetime"
+   },
+   "A_s": {
+    "value": 63900000.0,
+    "unc": 2200000.0,
+    "note": "derived: A = branching ratio / upper-level lifetime, both from Table 1 of the source",
+    "method": "experiment",
+    "source": "Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1982ApJ...261..736H"
+   },
+   "f_abs": {
+    "value": 0.39,
+    "unc": 0.02,
+    "note": "absorption oscillator strength as printed (This Work column)",
+    "method": "experiment",
+    "source": "Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1982ApJ...261..736H"
+   }
+  },
+  {
    "lower_cm": 15994.045,
    "upper_cm": 31508.441,
    "lower_J": "3/2",
@@ -4783,6 +4822,7 @@
   }
  ],
  "conflicts": [
+  "Hannaford 1982 Table 1, line 5503.464 A from x2F7/2: the wavelength corresponds to the lower level a2F7/2 (15864.48 cm^-1; a2F5/2 would give 5345 A), while the printed f = 0.39(2) is only consistent with branching/lifetime if the lower statistical weight is 6 (J=5/2). The transition is entered with lower J = 7/2 (energy match); A_s from branching/lifetime is unaffected.",
   "Hannaford 1982 Table 1, line 5740.218 A (a4F7/2 - z4G5/2): printed f = 0.015(1) is ten times larger than what the printed branching ratio 0.66(3)% and lifetime give (0.0015); branching ratios of that level sum to 100%, so the f value looks like a misprint (the Kurucz compilation gf3900hlgb.lab copies log gf = -0.92, i.e. the printed f). A_s here uses branching/lifetime.",
   "Hannaford 1982 Table 1, line 4379.327 A (a4F5/2 - x2D3/2): printed f = 0.150(8) is ten times larger than branching 5.5(1)% / lifetime 7.0 ns imply (0.015); same treatment.",
   "Hannaford 1982 text: their lifetimes are shorter by factors 1.5-1.9 than beam-foil values of Andersen, Ramanujam, Bahr (1978), and agree with Rudolph & Helbig (1982) except z2D5/2 (Hannaford larger by a factor 1.4); the other papers were not opened, so no numbers are recorded."

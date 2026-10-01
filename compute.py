@@ -97,7 +97,9 @@ class Literature:
             return None
         unit = self.level(e, j)["lifetime"].get("unit", "s")
         k = {"s": 1e9, "ms": 1e6, "us": 1e3, "µs": 1e3, "ns": 1.0}.get(unit, 1e9)
-        return v[0] * k, (v[1] * k if isinstance(v[1], (int, float)) else None), v[2], v[3]
+        note = str(self.level(e, j)["lifetime"].get("note", ""))
+        src = v[3] + (f". Note: {note}" if re.search(r"derived|bound|limit", note, re.I) else "")
+        return v[0] * k, (v[1] * k if isinstance(v[1], (int, float)) else None), v[2], src
 
     def hyperfine(self, e, j=None):
         h = self.level(e, j).get("hyperfine", {}).get(self.iso)

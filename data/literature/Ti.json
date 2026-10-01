@@ -1,0 +1,3525 @@
+{
+ "element": "Ti",
+ "isotopes": {
+  "46": {
+   "I": "0",
+   "abundance_percent": 8.25,
+   "abundance_unc": 0.03,
+   "source": "NIST Atomic Weights and Isotopic Compositions (Ti); nuclear spins as stated in Schrott et al. arXiv:2603.00282 and Neely et al. PRA 103, 032818 (I = 0 for 46, 48, 50; 5/2 for 47; 7/2 for 49)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ti"
+  },
+  "47": {
+   "I": "5/2",
+   "abundance_percent": 7.44,
+   "abundance_unc": 0.02,
+   "nuclear_moment_muN": -0.7865,
+   "nuclear_moment_unc": 0.0004,
+   "Q_barn": 0.302,
+   "Q_unc": 0.01,
+   "note": "mu_I and Q as quoted in Schrott et al. 2026 from the Stone IAEA tables",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Ti); nuclear spins as stated in Schrott et al. arXiv:2603.00282 and Neely et al. PRA 103, 032818 (I = 0 for 46, 48, 50; 5/2 for 47; 7/2 for 49)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ti"
+  },
+  "48": {
+   "I": "0",
+   "abundance_percent": 73.72,
+   "abundance_unc": 0.03,
+   "source": "NIST Atomic Weights and Isotopic Compositions (Ti); nuclear spins as stated in Schrott et al. arXiv:2603.00282 and Neely et al. PRA 103, 032818 (I = 0 for 46, 48, 50; 5/2 for 47; 7/2 for 49)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ti"
+  },
+  "49": {
+   "I": "7/2",
+   "abundance_percent": 5.41,
+   "abundance_unc": 0.02,
+   "nuclear_moment_muN": -1.1037,
+   "nuclear_moment_unc": 0.00014,
+   "Q_barn": 0.247,
+   "Q_unc": 0.011,
+   "note": "mu_I and Q as quoted in Schrott et al. 2026 from the Stone IAEA tables",
+   "source": "NIST Atomic Weights and Isotopic Compositions (Ti); nuclear spins as stated in Schrott et al. arXiv:2603.00282 and Neely et al. PRA 103, 032818 (I = 0 for 46, 48, 50; 5/2 for 47; 7/2 for 49)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ti"
+  },
+  "50": {
+   "I": "0",
+   "abundance_percent": 5.18,
+   "abundance_unc": 0.02,
+   "source": "NIST Atomic Weights and Isotopic Compositions (Ti); nuclear spins as stated in Schrott et al. arXiv:2603.00282 and Neely et al. PRA 103, 032818 (I = 0 for 46, 48, 50; 5/2 for 47; 7/2 for 49)",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ti"
+  }
+ },
+ "ionization_limit": {
+  "nist_cm": {
+   "value": 55072.5,
+   "unc": 0.1,
+   "method": "compilation",
+   "note": "Ti II 3d2 4s 4F3/2 limit as in the NIST levels file",
+   "source": "NIST ASD Ti I levels table (local copy data/nist/Ti_I_levels.tsv)",
+   "url": "https://physics.nist.gov/asd"
+  }
+ },
+ "laser_cooling_scheme": {
+  "summary": "Ti has no cycling line from the a3F ground term. Atoms from a Ti-sublimation source are optically pumped a3F4 -> y5D4 (391.5 nm) into metastable 3d3(4F)4s a5F5 (6842.962 cm-1) and laser-cooled on a5F5 -> y5G6 (498.3 nm, no repumper for I = 0 isotopes), then on a5F5 -> z5G6 (1040 nm). Alternative pumping routes proposed in 2020: via z5D4 (546.20 nm), y5F5 (350.76 nm), or two-colour 378.99 nm (y5G5) + 451.40 nm (y5F5); return to the ground state via a5F5 -> z3F4 (758 nm) with 403 / 401 nm clean-up. The brief's \"399 nm\" is the a3F4 -> y3F4 probe line.",
+  "MOT": {
+   "value": "48Ti: 8.30(26)e5 atoms, 90(15) uK, density 1.3(4)e11 cm^-3; two-body loss beta <= 2e-10 cm^3/s; 47Ti / 49Ti MOTs with 731(190) / 1142(240) atoms",
+   "method": "experiment",
+   "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+   "url": "https://arxiv.org/abs/2501.05544"
+  },
+  "g_ratio": {
+   "value": 0.945,
+   "method": "compilation",
+   "note": "ratio of Lande factors of the two levels of the 498 nm transition",
+   "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+   "url": "https://arxiv.org/abs/2501.05544"
+  }
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "J": "2",
+   "label": "3d2.4s2 a 3F2 (ground)"
+  },
+  {
+   "nist_energy_cm": 170.1328,
+   "J": "3",
+   "label": "3d2.4s2 a 3F3",
+   "hyperfine": {
+    "47": {
+     "A_MHz": -52.9047,
+     "A_unc": 0.0007,
+     "B_MHz": 28.082,
+     "B_unc": 0.009,
+     "method": "compilation",
+     "note": "column \"prev. exp.\" of Table I of Schrott et al. 2026, citing Channappa & Pendlebury, Proc. Phys. Soc. 86, 1145 (1965), Aydin et al., Z. Phys. D 15, 281 (1990) and the CRC Table of the Isotopes (originals not opened)",
+     "source": "Channappa & Pendlebury 1965 / Aydin et al. 1990, as tabulated in Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "49": {
+     "A_MHz": -52.183,
+     "A_unc": 0.0007,
+     "B_MHz": 23.03,
+     "B_unc": 0.01,
+     "method": "compilation",
+     "note": "column \"prev. exp.\" of Table I of Schrott et al. 2026, citing Channappa & Pendlebury, Proc. Phys. Soc. 86, 1145 (1965), Aydin et al., Z. Phys. D 15, 281 (1990) and the CRC Table of the Isotopes (originals not opened)",
+     "source": "Channappa & Pendlebury 1965 / Aydin et al. 1990, as tabulated in Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   },
+   "hyperfine_other": [
+    {
+     "isotope": "47",
+     "A_MHz": -51,
+     "A_unc": 3,
+     "B_MHz": 27,
+     "B_unc": 4,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "49",
+     "A_MHz": -51,
+     "A_unc": 3,
+     "B_MHz": 22,
+     "B_unc": 3,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 386.874,
+   "J": "4",
+   "label": "3d2.4s2 a 3F4 (optical-pumping start level)",
+   "hyperfine": {
+    "47": {
+     "A_MHz": -37.9918,
+     "A_unc": 0.0006,
+     "B_MHz": 37.681,
+     "B_unc": 0.01,
+     "method": "compilation",
+     "note": "column \"prev. exp.\" of Table I of Schrott et al. 2026, citing Channappa & Pendlebury, Proc. Phys. Soc. 86, 1145 (1965), Aydin et al., Z. Phys. D 15, 281 (1990) and the CRC Table of the Isotopes (originals not opened)",
+     "source": "Channappa & Pendlebury 1965 / Aydin et al. 1990, as tabulated in Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "49": {
+     "A_MHz": -38.0042,
+     "A_unc": 0.0005,
+     "B_MHz": 30.842,
+     "B_unc": 0.013,
+     "method": "compilation",
+     "note": "column \"prev. exp.\" of Table I of Schrott et al. 2026, citing Channappa & Pendlebury, Proc. Phys. Soc. 86, 1145 (1965), Aydin et al., Z. Phys. D 15, 281 (1990) and the CRC Table of the Isotopes (originals not opened)",
+     "source": "Channappa & Pendlebury 1965 / Aydin et al. 1990, as tabulated in Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   },
+   "hyperfine_other": [
+    {
+     "isotope": "47",
+     "A_MHz": -38.1,
+     "A_unc": 0.2,
+     "B_MHz": 35.0,
+     "B_unc": 3.2,
+     "method": "experiment",
+     "note": "two-/three-colour fluorescence spectroscopy of an atomic beam, Table I column \"exp.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "47",
+     "A_MHz": -37,
+     "A_unc": 4,
+     "B_MHz": 36,
+     "B_unc": 5,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "49",
+     "A_MHz": -37.9,
+     "A_unc": 0.2,
+     "B_MHz": 27.5,
+     "B_unc": 4.5,
+     "method": "experiment",
+     "note": "two-/three-colour fluorescence spectroscopy of an atomic beam, Table I column \"exp.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "49",
+     "A_MHz": -37,
+     "A_unc": 4,
+     "B_MHz": 30,
+     "B_unc": 4,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 6556.833,
+   "J": "1",
+   "label": "3d3.(4F).4s a 5F1"
+  },
+  {
+   "nist_energy_cm": 6598.765,
+   "J": "2",
+   "label": "3d3.(4F).4s a 5F2"
+  },
+  {
+   "nist_energy_cm": 6661.006,
+   "J": "3",
+   "label": "3d3.(4F).4s a 5F3"
+  },
+  {
+   "nist_energy_cm": 6742.756,
+   "J": "4",
+   "label": "3d3.(4F).4s a 5F4"
+  },
+  {
+   "nist_energy_cm": 6842.962,
+   "J": "5",
+   "label": "3d3.(4F).4s a 5F5 (metastable laser-cooling state)",
+   "hyperfine": {
+    "47": {
+     "A_MHz": -74.845,
+     "A_unc": 0.0025,
+     "B_MHz": -28.674,
+     "B_unc": 0.053,
+     "method": "compilation",
+     "note": "column \"prev. exp.\" of Table I of Schrott et al. 2026, citing Channappa & Pendlebury, Proc. Phys. Soc. 86, 1145 (1965), Aydin et al., Z. Phys. D 15, 281 (1990) and the CRC Table of the Isotopes (originals not opened)",
+     "source": "Channappa & Pendlebury 1965 / Aydin et al. 1990, as tabulated in Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "49": {
+     "A_MHz": -74.866,
+     "A_unc": 0.023,
+     "B_MHz": -23.484,
+     "B_unc": 0.052,
+     "method": "compilation",
+     "note": "column \"prev. exp.\" of Table I of Schrott et al. 2026, citing Channappa & Pendlebury, Proc. Phys. Soc. 86, 1145 (1965), Aydin et al., Z. Phys. D 15, 281 (1990) and the CRC Table of the Isotopes (originals not opened)",
+     "source": "Channappa & Pendlebury 1965 / Aydin et al. 1990, as tabulated in Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   },
+   "hyperfine_other": [
+    {
+     "isotope": "47",
+     "A_MHz": -75.3,
+     "A_unc": 0.3,
+     "B_MHz": -30.2,
+     "B_unc": 6.5,
+     "method": "experiment",
+     "note": "two-/three-colour fluorescence spectroscopy of an atomic beam, Table I column \"exp.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "47",
+     "A_MHz": -69,
+     "A_unc": 10,
+     "B_MHz": -27,
+     "B_unc": 4,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "49",
+     "A_MHz": -74.5,
+     "A_unc": 0.3,
+     "B_MHz": -29.2,
+     "B_unc": 8.9,
+     "method": "experiment",
+     "note": "two-/three-colour fluorescence spectroscopy of an atomic beam, Table I column \"exp.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "49",
+     "A_MHz": -69,
+     "A_unc": 10,
+     "B_MHz": -22,
+     "B_unc": 3,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   ],
+   "g_J": {
+    "value": 1.41,
+    "method": "compilation",
+    "note": "as quoted in the MOT paper (NIST levels file 1.41; Duim et al. use 7/5)",
+    "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+    "url": "https://arxiv.org/abs/2501.05544"
+   },
+   "magnetic_moment_muB": {
+    "value": 7,
+    "method": "compilation",
+    "note": "mu ~ 7 mu_B",
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   }
+  },
+  {
+   "nist_energy_cm": 11531.761,
+   "J": "2",
+   "label": "3d3.(4F).4s b 3F2"
+  },
+  {
+   "nist_energy_cm": 11639.8109,
+   "J": "3",
+   "label": "3d3.(4F).4s b 3F3"
+  },
+  {
+   "nist_energy_cm": 15108.111,
+   "J": "3",
+   "label": "3d3.(2G).4s a 3G3"
+  },
+  {
+   "nist_energy_cm": 15156.802,
+   "J": "4",
+   "label": "3d3.(2G).4s a 3G4"
+  },
+  {
+   "nist_energy_cm": 16458.671,
+   "J": "6",
+   "label": "3d2.(3F).4s.4p.(3P*) z 5G°6 (1040 nm narrow cooling-line upper level)",
+   "hyperfine": {
+    "47": {
+     "A_MHz": -85,
+     "A_unc": 9,
+     "B_MHz": 77,
+     "B_unc": 5,
+     "method": "theory",
+     "note": "CI + all-order calculation (no measurement exists), Table I",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "49": {
+     "A_MHz": -86,
+     "A_unc": 9,
+     "B_MHz": 63,
+     "B_unc": 4,
+     "method": "theory",
+     "note": "CI + all-order calculation (no measurement exists), Table I",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   },
+   "lifetime": {
+    "value": 8.2e-06,
+    "unc": 9e-07,
+    "unit": "s",
+    "method": "experiment",
+    "note": "shelving in z5G6 and monitoring the return to a5F5 via 498 nm fluorescence; weighted mean of 9(2) us (broad-line MOT) and 8(1) us (narrow-line MOT), 48Ti",
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   },
+   "g_J": {
+    "value": 1.3333,
+    "method": "compilation",
+    "note": "g_e = 4/3 used by Duim et al. (NIST levels file: 1.333)",
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   }
+  },
+  {
+   "nist_energy_cm": 25107.411,
+   "J": "2",
+   "label": "3d2.(3F).4s.4p.(1P*) y 3F°2",
+   "lifetime": {
+    "value": 1.77e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 15 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 25227.222,
+   "J": "3",
+   "label": "3d2.(3F).4s.4p.(1P*) y 3F°3",
+   "lifetime": {
+    "value": 1.69e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 10 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 25317.814,
+   "J": "1",
+   "label": "3d3.(4F).4p y 3D°1",
+   "lifetime": {
+    "value": 1.45e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 8 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 25388.331,
+   "J": "4",
+   "label": "3d2.(3F).4s.4p.(1P*) y 3F°4",
+   "lifetime": {
+    "value": 1.83e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 9 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 25438.908,
+   "J": "2",
+   "label": "3d3.(4F).4p y 3D°2",
+   "lifetime": {
+    "value": 1.85e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 13 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 25643.701,
+   "J": "3",
+   "label": "3d3.(4F).4p y 3D°3",
+   "lifetime": {
+    "value": 1.46e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 11 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 25926.771,
+   "J": "4",
+   "label": "3d2.(3P).4s.4p.(3P*) 5D°4 (y5D4, 391 nm optical-pumping upper level)",
+   "hyperfine": {
+    "47": {
+     "A_MHz": -96.6,
+     "A_unc": 0.2,
+     "B_MHz": -0.24,
+     "B_unc": 3.4,
+     "method": "experiment",
+     "note": "two-/three-colour fluorescence spectroscopy of an atomic beam, Table I column \"exp.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "49": {
+     "A_MHz": -96.4,
+     "A_unc": 0.2,
+     "B_MHz": -3.3,
+     "B_unc": 4.4,
+     "method": "experiment",
+     "note": "two-/three-colour fluorescence spectroscopy of an atomic beam, Table I column \"exp.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   },
+   "hyperfine_other": [
+    {
+     "isotope": "47",
+     "A_MHz": -88,
+     "A_unc": 11,
+     "B_MHz": 4,
+     "B_unc": 13,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "49",
+     "A_MHz": -88,
+     "A_unc": 11,
+     "B_MHz": -3,
+     "B_unc": 11,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   ],
+   "decay_rates_theory": {
+    "value": "theory / literature A (1e6 s^-1): a3F3 0.13(6) / 0.28(6); a3F4 1.8(8) / 2.11(28); a5F3 0.00036(12); a5F4 0.08(8) / 0.31(16); a5F5 0.4(4); b3F4 0.06(3); a5P3 0.129(4); branching ratios 0.049, 0.68, 0.00014, 0.030, 0.17, 0.02, 0.049",
+    "method": "theory",
+    "note": "Table S5 (CI+all-order; \"lit\" column = earlier literature values); natural linewidth of the 391 nm line 2 pi x 414(140) kHz, pumping efficiency to a5F5 ~ 0.5 (Schrott et al. 2024)",
+    "source": "Eustice, Filin, Schrott, Porsev, Cheung, Novoa, Stamper-Kurn, Safronova, Phys. Rev. A 107, L051102 (2023)",
+    "url": "https://arxiv.org/abs/2301.13363"
+   }
+  },
+  {
+   "nist_energy_cm": 26494.33,
+   "J": "2",
+   "label": "3d3.(4F).4p y 5G°2",
+   "lifetime": {
+    "value": 1.34e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 5 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 26564.4,
+   "J": "3",
+   "label": "3d3.(4F).4p y 5G°3",
+   "lifetime": {
+    "value": 1.33e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 7 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 26657.416,
+   "J": "4",
+   "label": "3d3.(4F).4p y 5G°4",
+   "lifetime": {
+    "value": 1.31e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 5 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 26772.968,
+   "J": "5",
+   "label": "3d3.(4F).4p y 5G°5",
+   "lifetime": {
+    "value": 1.3e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 3 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 26803.42,
+   "J": "2",
+   "label": "3d2.(1D).4s.4p.(3P*) x 3F°2",
+   "lifetime": {
+    "value": 1.59e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 8 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 26892.936,
+   "J": "3",
+   "label": "3d2.(1D).4s.4p.(3P*) x 3F°3",
+   "lifetime": {
+    "value": 1.58e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 10 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 26910.709,
+   "J": "6",
+   "label": "3d3.(4F).4p y 5G°6 (498 nm broad cooling-line upper level)",
+   "lifetime": {
+    "value": 1.28e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 1 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "hyperfine": {
+    "47": {
+     "A_MHz": -14.2,
+     "A_unc": 0.3,
+     "B_MHz": -1.1,
+     "B_unc": 6.9,
+     "method": "experiment",
+     "note": "two-/three-colour fluorescence spectroscopy of an atomic beam, Table I column \"exp.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "49": {
+     "A_MHz": -13.6,
+     "A_unc": 0.3,
+     "B_MHz": -5.0,
+     "B_unc": 10.9,
+     "method": "experiment",
+     "note": "two-/three-colour fluorescence spectroscopy of an atomic beam, Table I column \"exp.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   },
+   "hyperfine_other": [
+    {
+     "isotope": "47",
+     "A_MHz": -12,
+     "A_unc": 3,
+     "B_MHz": -3,
+     "B_unc": 5,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    {
+     "isotope": "49",
+     "A_MHz": -12,
+     "A_unc": 3,
+     "B_MHz": -2,
+     "B_unc": 4,
+     "method": "theory",
+     "note": "CI + all-order calculation, Table I column \"thr.\"",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   ],
+   "lifetime_other": [
+    {
+     "value": 1.475e-08,
+     "unc": 5e-11,
+     "unit": "s",
+     "method": "theory",
+     "note": "derived: 1/A with the CI+all-order rate A = 6.780(23)e7 s^-1 (Table S4); this is the origin of the \"10.8 MHz\" / \"10.79(4) MHz\" linewidth used in all Ti cold-atom papers",
+     "source": "Eustice, Filin, Schrott, Porsev, Cheung, Novoa, Stamper-Kurn, Safronova, Phys. Rev. A 107, L051102 (2023)",
+     "url": "https://arxiv.org/abs/2301.13363"
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 27025.659,
+   "J": "4",
+   "label": "3d2.(1D).4s.4p.(3P*) x 3F°4",
+   "lifetime": {
+    "value": 1.54e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 9 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 27498.982,
+   "J": "3",
+   "label": "3d2.(3F).4s.4p.(1P*) y 3G°3",
+   "lifetime": {
+    "value": 9.28e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 9 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 27614.679,
+   "J": "4",
+   "label": "3d2.(3F).4s.4p.(1P*) y 3G°4",
+   "lifetime": {
+    "value": 9.46e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 10 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 27750.135,
+   "J": "5",
+   "label": "3d2.(3F).4s.4p.(1P*) y 3G°5",
+   "lifetime": {
+    "value": 1.03e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 7 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 28596.313,
+   "J": "1",
+   "label": "3d3.(4F).4p y 5F°1",
+   "lifetime": {
+    "value": 8.91e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 3 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 28638.841,
+   "J": "2",
+   "label": "3d3.(4F).4p y 5F°2",
+   "lifetime": {
+    "value": 8.91e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 4 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 28702.778,
+   "J": "3",
+   "label": "3d3.(4F).4p y 5F°3",
+   "lifetime": {
+    "value": 8.72e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 5 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 28788.38,
+   "J": "4",
+   "label": "3d3.(4F).4p y 5F°4",
+   "lifetime": {
+    "value": 8.72e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 6 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 29661.25,
+   "J": "1",
+   "label": "3d2.(3F).4s.4p.(1P*) w 3D°1",
+   "lifetime": {
+    "value": 9.9e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 10 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 29768.675,
+   "J": "2",
+   "label": "3d2.(3F).4s.4p.(1P*) w 3D°2",
+   "lifetime": {
+    "value": 9.12e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 15 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 29829.112,
+   "J": "0",
+   "label": "3d3.(4F).4p x 5D°0",
+   "lifetime": {
+    "value": 7.19e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 1 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 29855.255,
+   "J": "1",
+   "label": "3d3.(4F).4p x 5D°1",
+   "lifetime": {
+    "value": 7.09e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 6 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 29907.286,
+   "J": "2",
+   "label": "3d3.(4F).4p x 5D°2",
+   "lifetime": {
+    "value": 7.21e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 11 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 29912.286,
+   "J": "3",
+   "label": "3d2.(3F).4s.4p.(1P*) w 3D°3",
+   "lifetime": {
+    "value": 8.63e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 16 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 29914.737,
+   "J": "3",
+   "label": "3d2.(1G).4s.4p.(3P*) x 3G°3",
+   "lifetime": {
+    "value": 1.07e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 12 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 29971.086,
+   "J": "4",
+   "label": "3d2.(1G).4s.4p.(3P*) x 3G°4",
+   "lifetime": {
+    "value": 1.07e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 6 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 30039.17,
+   "J": "5",
+   "label": "3d2.(1G).4s.4p.(3P*) x 3G°5",
+   "lifetime": {
+    "value": 1.08e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 4 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 31373.807,
+   "J": "3",
+   "label": "3d3.(4F).4p w 3G°3",
+   "lifetime": {
+    "value": 6.62e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 10 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 31489.476,
+   "J": "4",
+   "label": "3d3.(4F).4p w 3G°4",
+   "lifetime": {
+    "value": 6.32e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 8 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 31628.688,
+   "J": "5",
+   "label": "3d3.(4F).4p w 3G°5",
+   "lifetime": {
+    "value": 6.08e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 6 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 33680.248,
+   "J": "3",
+   "label": "3d3.(4F).4p w 3F°3",
+   "lifetime": {
+    "value": 4.76e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 13 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 33700.884,
+   "J": "4",
+   "label": "3d3.(4F).4p w 3F°4",
+   "lifetime": {
+    "value": 4.68e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 7 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 33980.653,
+   "J": "2",
+   "label": "3d2.(1G).4s.4p.(3P*) v 3F°2",
+   "lifetime": {
+    "value": 4.8e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 7 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 34078.606,
+   "J": "3",
+   "label": "3d2.(1G).4s.4p.(3P*) v 3F°3",
+   "lifetime": {
+    "value": 4.8e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 10 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 34204.985,
+   "J": "4",
+   "label": "3d2.(1G).4s.4p.(3P*) v 3F°4",
+   "lifetime": {
+    "value": 5.02e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 7 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 37555.058,
+   "J": "3",
+   "label": "3d3.(2G).4p v 3G°3",
+   "lifetime": {
+    "value": 9.93e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 11 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 37617.894,
+   "J": "4",
+   "label": "3d3.(2G).4p v 3G°4",
+   "lifetime": {
+    "value": 8.77e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 10 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 37690.327,
+   "J": "5",
+   "label": "3d3.(2G).4p v 3G°5",
+   "lifetime": {
+    "value": 8.69e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 7 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 37851.802,
+   "J": "1",
+   "label": "3d2.(3P).4s.4p.(1P*) u 3D°1",
+   "lifetime": {
+    "value": 4.03e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 9 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 37976.589,
+   "J": "2",
+   "label": "3d2.(3P).4s.4p.(1P*) u 3D°2",
+   "lifetime": {
+    "value": 4.08e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 12 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 38159.461,
+   "J": "3",
+   "label": "3d2.(3P).4s.4p.(1P*) u 3D°3",
+   "lifetime": {
+    "value": 4.1e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 11 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 38451.309,
+   "J": "2",
+   "label": "3d3.(2G).4p t 3F°2",
+   "lifetime": {
+    "value": 5.9e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 6 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 38544.316,
+   "J": "3",
+   "label": "3d3.(2G).4p t 3F°3",
+   "lifetime": {
+    "value": 5.88e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 9 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 38670.723,
+   "J": "4",
+   "label": "3d3.(2G).4p t 3F°4",
+   "lifetime": {
+    "value": 5.9e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 6 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 39662.081,
+   "J": "1",
+   "label": "3d3.(2D2).4p s 3D°1",
+   "lifetime": {
+    "value": 8.33e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 7 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 39685.964,
+   "J": "2",
+   "label": "3d3.(2D2).4p s 3D°2",
+   "lifetime": {
+    "value": 8.23e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 11 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 39715.439,
+   "J": "3",
+   "label": "3d3.(2D2).4p s 3D°3",
+   "lifetime": {
+    "value": 8.34e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 9 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 41341.543,
+   "J": "5",
+   "label": "3d3.(2H).4p 3G°5",
+   "lifetime": {
+    "value": 1.29e-08,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 3 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "nist_energy_cm": 42311.264,
+   "J": "3",
+   "label": "3d.4s2.4p q 3D°3",
+   "lifetime": {
+    "value": 8.42e-09,
+    "unit": "s",
+    "method": "experiment",
+    "note": "derived: 1/sum(A) over the 7 branches of this upper level in Lawler et al. Table 3. Their branching fractions are normalised to the LIF lifetimes of Salih & Lawler, Astron. Astrophys. 239, 407 (1990) and Lawler, Astron. Astrophys. 252, 853 (1991) (originals not opened), so this reproduces the measured lifetime except for omitted weak/problem branches (then it is an UPPER BOUND on tau); the paper itself notes the sums can fall short of the inverse lifetime",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 25107.411,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F2 - 3d2.(3F).4s.4p.(1P*) y 3F°2, 398.289 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 45300000.0,
+    "unc": 2300000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3981.7616 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.658,
+    "unc": 0.067,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 25317.814,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d2.4s2 a 3F2 - 3d3.(4F).4p y 3D°1, 394.979 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 56700000.0,
+    "unc": 2900000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3948.6705 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.274,
+    "unc": 0.058,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 26494.33,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F2 - 3d3.(4F).4p y 5G°2, 377.439 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 145000.0,
+    "unc": 16000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3773.3205 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.1387,
+    "unc": 0.0077,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 26564.4,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F2 - 3d3.(4F).4p y 5G°3, 376.444 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 25000.0,
+    "unc": 4000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3763.3673 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.06788,
+    "unc": 0.0054,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 26803.42,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F2 - 3d2.(1D).4s.4p.(3P*) x 3F°2, 373.087 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 50400000.0,
+    "unc": 2500000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3729.8065 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.541,
+    "unc": 0.063,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 27498.982,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F2 - 3d2.(3F).4s.4p.(1P*) y 3G°3, 363.650 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 92000000.0,
+    "unc": 5000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3635.4620 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.91,
+    "unc": 0.11,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 29661.25,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d2.4s2 a 3F2 - 3d2.(3F).4s.4p.(1P*) w 3D°1, 337.140 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 79000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3370.4339 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.117,
+    "unc": 0.054,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 29914.737,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F2 - 3d2.(1G).4s.4p.(3P*) x 3G°3, 334.283 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 79000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3341.8731 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.193,
+    "unc": 0.081,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 31373.807,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F2 - 3d3.(4F).4p w 3G°3, 318.737 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 96000000.0,
+    "unc": 6000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3186.4508 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.277,
+    "unc": 0.1,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 33980.653,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F2 - 3d2.(1G).4s.4p.(3P*) v 3F°2, 294.285 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 111000000.0,
+    "unc": 7000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2941.9908 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.642,
+    "unc": 0.083,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 34078.606,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F2 - 3d2.(1G).4s.4p.(3P*) v 3F°3, 293.439 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 10200000.0,
+    "unc": 900000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2933.5342 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.9436,
+    "unc": 0.042,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 37555.058,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F2 - 3d3.(2G).4p v 3G°3, 266.276 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 8500000.0,
+    "unc": 1300000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2661.9653 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.7446,
+    "unc": 0.057,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 37851.802,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d2.4s2 a 3F2 - 3d2.(3P).4s.4p.(1P*) u 3D°1, 264.188 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 193000000.0,
+    "unc": 10000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2641.0953 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.295,
+    "unc": 0.059,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 37976.589,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F2 - 3d2.(3P).4s.4p.(1P*) u 3D°2, 263.320 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 25000000.0,
+    "unc": 1300000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2632.4164 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.061,
+    "unc": 0.028,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 38451.309,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F2 - 3d3.(2G).4p t 3F°2, 260.069 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 69000000.0,
+    "unc": 7000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2599.9146 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.731,
+    "unc": 0.088,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 39662.081,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d2.4s2 a 3F2 - 3d3.(2D2).4p s 3D°1, 252.130 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 40000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2520.5415 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.9743,
+    "unc": 0.037,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 25227.222,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F3 - 3d2.(3F).4s.4p.(1P*) y 3F°3, 399.089 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 44400000.0,
+    "unc": 2200000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3989.7582 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.123,
+    "unc": 0.077,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 25438.908,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F3 - 3d3.(4F).4p y 3D°2, 395.745 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 35800000.0,
+    "unc": 1800000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3956.3338 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.34,
+    "unc": 0.059,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 26564.4,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F3 - 3d3.(4F).4p y 5G°3, 378.870 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 23000.0,
+    "unc": 4000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3787.6259 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.06574,
+    "unc": 0.0057,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 26657.416,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F3 - 3d3.(4F).4p y 5G°4, 377.540 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 41000.0,
+    "unc": 4000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3774.3244 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.099,
+    "unc": 0.0048,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 26892.936,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F3 - 3d2.(1D).4s.4p.(3P*) x 3F°3, 374.212 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 47900000.0,
+    "unc": 2400000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3741.0588 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.945,
+    "unc": 0.074,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 27614.679,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F3 - 3d2.(3F).4s.4p.(1P*) y 3G°4, 364.371 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 91000000.0,
+    "unc": 5000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3642.6731 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 4.422,
+    "unc": 0.12,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 29768.675,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F3 - 3d2.(3F).4s.4p.(1P*) w 3D°2, 337.854 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 72000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3377.5748 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.618,
+    "unc": 0.073,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 29971.086,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F3 - 3d2.(1G).4s.4p.(3P*) x 3G°4, 335.560 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 84000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3354.6332 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.755,
+    "unc": 0.089,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 31489.476,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F3 - 3d3.(4F).4p w 3G°4, 319.291 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 106000000.0,
+    "unc": 6000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3191.9922 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.915,
+    "unc": 0.11,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 33680.248,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F3 - 3d3.(4F).4p w 3F°3, 298.417 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 9500000.0,
+    "unc": 600000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2983.3031 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.9339,
+    "unc": 0.029,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 33980.653,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F3 - 3d2.(1G).4s.4p.(3P*) v 3F°2, 295.766 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 13900000.0,
+    "unc": 1100000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2956.7954 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.9421,
+    "unc": 0.037,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 34078.606,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F3 - 3d2.(1G).4s.4p.(3P*) v 3F°3, 294.912 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 103000000.0,
+    "unc": 6000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2948.2536 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.021,
+    "unc": 0.088,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 34204.985,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F3 - 3d2.(1G).4s.4p.(3P*) v 3F°4, 293.816 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 7300000.0,
+    "unc": 700000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2937.3056 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.9069,
+    "unc": 0.043,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 37617.894,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F3 - 3d3.(2G).4p v 3G°4, 267.039 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 12000000.0,
+    "unc": 1800000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2669.5929 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.007,
+    "unc": 0.076,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 37976.589,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F3 - 3d2.(3P).4s.4p.(1P*) u 3D°2, 264.505 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 158000000.0,
+    "unc": 8000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2644.2632 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.686,
+    "unc": 0.068,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 38159.461,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F3 - 3d2.(3P).4s.4p.(1P*) u 3D°3, 263.232 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 19800000.0,
+    "unc": 1100000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2631.5336 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.117,
+    "unc": 0.031,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 38451.309,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F3 - 3d3.(2G).4p t 3F°2, 261.225 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 14700000.0,
+    "unc": 2500000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2611.4701 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.8041,
+    "unc": 0.068,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 38544.316,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F3 - 3d3.(2G).4p t 3F°3, 260.592 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 63000000.0,
+    "unc": 5000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2605.1403 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.963,
+    "unc": 0.078,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 170.1328,
+   "upper_cm": 39685.964,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d2.4s2 a 3F3 - 3d3.(2D2).4p s 3D°2, 253.063 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 35000000.0,
+    "unc": 5000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2529.8707 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.183,
+    "unc": 0.085,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 25388.331,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F4 - 3d2.(3F).4s.4p.(1P*) y 3F°4, 399.977 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 48400000.0,
+    "unc": 2400000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3998.6363 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.709,
+    "unc": 0.092,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "400 nm (399.98 nm vac) a3F4 -> y3F4: fluorescence probe of ground-term atoms (A = 2 pi x 7.6 MHz, ~0.1 branching to dark states per Schrott et al. 2024)"
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 25643.701,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F4 - 3d3.(4F).4p y 3D°3, 395.933 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 47700000.0,
+    "unc": 2500000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3958.2055 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.198,
+    "unc": 0.084,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 25926.771,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F4 - 3d2.(3P).4s.4p.(3P*) 5D°4, 391.544 nm (vac)",
+   "type": "intercombination",
+   "use": "optical pumping a3F4 -> y5D4 -> a5F5 (391.5 nm): enriches the laser-cooling state (~50 % of a3F4 atoms)",
+   "linewidth_MHz": {
+    "value": 0.41,
+    "unc": 0.02,
+    "method": "compilation",
+    "note": "natural linewidth of the y5D4 level as printed in Fig. 1 of Duim et al. (2 pi x 0.41(2) MHz); Schrott et al. 2024 give 2 pi x 414(140) kHz from the Eustice 2023 calculation - not a direct measurement",
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   },
+   "A_s": {
+    "value": 2300000.0,
+    "method": "compilation",
+    "note": "NIST ASD, accuracy C; Eustice et al. 2023 Table S5 list 2.11(28)e6 (literature) and 1.8(8)e6 (theory)",
+    "source": "NIST ASD Ti I lines table (local copy data/nist/Ti_I_lines_from1nm.tsv)",
+    "url": "https://physics.nist.gov/asd"
+   },
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -942.6,
+     "unc": 3.1,
+     "method": "experiment",
+     "note": "atomic-beam fluorescence, Table II",
+     "alternatives": [
+      {
+       "value": -900,
+       "unc": 2,
+       "note": "saturated absorption in a hollow-cathode lamp, Table I of the MOT paper (arXiv v1); the later Schrott et al. table quotes this earlier result as -950(2)",
+       "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+       "url": "https://arxiv.org/abs/2501.05544"
+      }
+     ],
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "50-48": {
+     "value": 883.9,
+     "unc": 3.3,
+     "method": "experiment",
+     "note": "atomic-beam fluorescence, Table II",
+     "alternatives": [
+      {
+       "value": 880,
+       "unc": 2,
+       "note": "hollow-cathode lamp, Table I of the MOT paper; the later Schrott et al. table quotes it as \"-880(2)\" (sign evidently a typo)",
+       "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+       "url": "https://arxiv.org/abs/2501.05544"
+      }
+     ],
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "47-48": {
+     "value": -447.8,
+     "unc": 3.1,
+     "method": "experiment",
+     "note": "centre of gravity of the hyperfine multiplet",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "49-48": {
+     "value": 474.2,
+     "unc": 3.1,
+     "method": "experiment",
+     "note": "centre of gravity of the hyperfine multiplet",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   },
+   "king_plot": {
+    "value": "F = -334(34) MHz/fm^2, k = 579(5.2) GHz amu",
+    "method": "experiment",
+    "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+    "url": "https://arxiv.org/abs/2603.00282"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 26772.968,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "3d2.4s2 a 3F4 - 3d3.(4F).4p y 5G°5, 378.988 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 46000.0,
+    "unc": 5000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3788.7991 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.1166,
+    "unc": 0.0063,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 27025.659,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F4 - 3d2.(1D).4s.4p.(3P*) x 3F°4, 375.392 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 58500000.0,
+    "unc": 2900000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3752.8583 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.708,
+    "unc": 0.092,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 27750.135,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "3d2.4s2 a 3F4 - 3d2.(3F).4s.4p.(1P*) y 3G°5, 365.454 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 87000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3653.4943 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 4.801,
+    "unc": 0.11,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 29912.286,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F4 - 3d2.(3F).4s.4p.(1P*) w 3D°3, 338.691 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 55000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3385.9408 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.717,
+    "unc": 0.074,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 30039.17,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "3d2.4s2 a 3F4 - 3d2.(1G).4s.4p.(3P*) x 3G°5, 337.242 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 90000000.0,
+    "unc": 5000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3371.4517 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 4.329,
+    "unc": 0.12,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 31628.688,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "3d2.4s2 a 3F4 - 3d3.(4F).4p w 3G°5, 320.084 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 122000000.0,
+    "unc": 7000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3199.9136 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 4.661,
+    "unc": 0.13,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 33700.884,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F4 - 3d3.(4F).4p w 3F°4, 300.174 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 12200000.0,
+    "unc": 800000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 3000.8653 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.211,
+    "unc": 0.04,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 34078.606,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F4 - 3d2.(1G).4s.4p.(3P*) v 3F°3, 296.809 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 9600000.0,
+    "unc": 700000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2967.2208 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.9313,
+    "unc": 0.034,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 34204.985,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F4 - 3d2.(1G).4s.4p.(3P*) v 3F°4, 295.700 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 111000000.0,
+    "unc": 7000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2956.1317 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.57,
+    "unc": 0.11,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 37690.327,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "3d2.4s2 a 3F4 - 3d3.(2G).4p v 3G°5, 268.072 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 13100000.0,
+    "unc": 1900000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2679.9208 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.171,
+    "unc": 0.085,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 38159.461,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F4 - 3d2.(3P).4s.4p.(1P*) u 3D°3, 264.742 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 155000000.0,
+    "unc": 8000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2646.6344 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 3.152,
+    "unc": 0.081,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 38544.316,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F4 - 3d3.(2G).4p t 3F°3, 262.072 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 15500000.0,
+    "unc": 1300000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2619.9389 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.9818,
+    "unc": 0.041,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 38670.723,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "3d2.4s2 a 3F4 - 3d3.(2G).4p t 3F°4, 261.207 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 76000000.0,
+    "unc": 8000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2611.2878 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.453,
+    "unc": 0.13,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 39715.439,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F4 - 3d3.(2D2).4p s 3D°3, 254.268 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 46000000.0,
+    "unc": 6000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2541.9177 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 1.616,
+    "unc": 0.11,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 386.874,
+   "upper_cm": 42311.264,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d2.4s2 a 3F4 - 3d.4s2.4p q 3D°3, 238.525 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 5200000.0,
+    "unc": 500000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 2384.5193 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.4938,
+    "unc": 0.024,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6556.833,
+   "upper_cm": 26494.33,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3d3.(4F).4s a 5F1 - 3d3.(4F).4p y 5G°2, 501.567 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 57600000.0,
+    "unc": 2900000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5014.2762 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 4.235,
+    "unc": 0.11,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "a5F1 - y5G2 line of the laser-cooling multiplet",
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -682.69,
+     "unc": 0.31,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 642.14,
+     "unc": 0.38,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    }
+   }
+  },
+  {
+   "lower_cm": 6556.833,
+   "upper_cm": 28638.841,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3d3.(4F).4s a 5F1 - 3d3.(4F).4p y 5F°2, 452.857 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 23100000.0,
+    "unc": 1200000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4527.3041 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.301,
+    "unc": 0.06,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6556.833,
+   "upper_cm": 29829.112,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "3d3.(4F).4s a 5F1 - 3d3.(4F).4p x 5D°0, 429.696 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 139000000.0,
+    "unc": 7000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4295.7493 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.333,
+    "unc": 0.059,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6556.833,
+   "upper_cm": 29855.255,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3d3.(4F).4s a 5F1 - 3d3.(4F).4p x 5D°1, 429.214 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 46500000.0,
+    "unc": 2300000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4290.9289 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.333,
+    "unc": 0.058,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6598.765,
+   "upper_cm": 26494.33,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d3.(4F).4s a 5F2 - 3d3.(4F).4p y 5G°2, 502.625 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 15700000.0,
+    "unc": 800000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5024.8444 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.218,
+    "unc": 0.057,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "a5F2 - y5G2 line of the laser-cooling multiplet",
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -674.0,
+     "unc": 2.2,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 657.3,
+     "unc": 1.4,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    }
+   }
+  },
+  {
+   "lower_cm": 6598.765,
+   "upper_cm": 26564.4,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d3.(4F).4s a 5F2 - 3d3.(4F).4p y 5G°3, 500.861 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 56600000.0,
+    "unc": 2800000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5007.2093 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 4.957,
+    "unc": 0.12,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "a5F2 - y5G3 line of the laser-cooling multiplet",
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -691.3,
+     "unc": 2.3,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 651.96,
+     "unc": 0.5,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    }
+   }
+  },
+  {
+   "lower_cm": 6598.765,
+   "upper_cm": 28596.313,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3d3.(4F).4s a 5F2 - 3d3.(4F).4p y 5F°1, 454.596 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 37900000.0,
+    "unc": 1900000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4544.6871 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.296,
+    "unc": 0.058,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6598.765,
+   "upper_cm": 28702.778,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d3.(4F).4s a 5F2 - 3d3.(4F).4p y 5F°3, 452.407 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 25000000.0,
+    "unc": 1300000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4522.7970 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.828,
+    "unc": 0.074,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6598.765,
+   "upper_cm": 29907.286,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3d3.(4F).4s a 5F2 - 3d3.(4F).4p x 5D°2, 429.028 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 37800000.0,
+    "unc": 1900000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4289.0698 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.714,
+    "unc": 0.068,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6661.006,
+   "upper_cm": 26494.33,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d3.(4F).4s a 5F3 - 3d3.(4F).4p y 5G°2, 504.202 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 1110000.0,
+    "unc": 60000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5040.6136 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.5925,
+    "unc": 0.016,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6661.006,
+   "upper_cm": 26564.4,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "3d3.(4F).4s a 5F3 - 3d3.(4F).4p y 5G°3, 502.427 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 17600000.0,
+    "unc": 900000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5022.8679 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.777,
+    "unc": 0.071,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "a5F3 - y5G3 line of the laser-cooling multiplet",
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -690.09,
+     "unc": 0.47,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 660.29,
+     "unc": 0.28,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    }
+   }
+  },
+  {
+   "lower_cm": 6661.006,
+   "upper_cm": 26657.416,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d3.(4F).4s a 5F3 - 3d3.(4F).4p y 5G°4, 500.090 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 62000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4999.5030 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 5.869,
+    "unc": 0.14,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "a5F3 - y5G4 line of the laser-cooling multiplet",
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -703.2,
+     "unc": 1.2,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 660.15,
+     "unc": 0.62,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    }
+   }
+  },
+  {
+   "lower_cm": 6661.006,
+   "upper_cm": 28638.841,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d3.(4F).4s a 5F3 - 3d3.(4F).4p y 5F°2, 455.004 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 33700000.0,
+    "unc": 1700000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4548.7635 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.799,
+    "unc": 0.071,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6661.006,
+   "upper_cm": 28788.38,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d3.(4F).4s a 5F3 - 3d3.(4F).4p y 5F°4, 451.929 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 20200000.0,
+    "unc": 1000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4518.0220 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.878,
+    "unc": 0.071,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6742.756,
+   "upper_cm": 26564.4,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d3.(4F).4s a 5F4 - 3d3.(4F).4p y 5G°3, 504.499 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 950000.0,
+    "unc": 50000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5043.5838 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.6492,
+    "unc": 0.017,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6742.756,
+   "upper_cm": 26657.416,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "3d3.(4F).4s a 5F4 - 3d3.(4F).4p y 5G°4, 502.143 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 13800000.0,
+    "unc": 700000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5020.0263 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.786,
+    "unc": 0.071,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "a5F4 - y5G4 line of the laser-cooling multiplet",
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -701.9,
+     "unc": 5.2,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 670.6,
+     "unc": 1.1,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    }
+   }
+  },
+  {
+   "lower_cm": 6742.756,
+   "upper_cm": 26772.968,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "3d3.(4F).4s a 5F4 - 3d3.(4F).4p y 5G°5, 499.246 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 69000000.0,
+    "unc": 3000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4991.0660 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 6.827,
+    "unc": 0.15,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "a5F4 - y5G5 line of the laser-cooling multiplet",
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -706.74,
+     "unc": 0.88,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 669.36,
+     "unc": 0.39,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    }
+   }
+  },
+  {
+   "lower_cm": 6842.962,
+   "upper_cm": 16458.671,
+   "lower_J": "5",
+   "upper_J": "6",
+   "label": "3d3.(4F).4s a 5F5 - 3d2.(3F).4s.4p.(3P*) z 5G°6, 1039.965 nm (vac)",
+   "type": "E1",
+   "use": "narrow laser-cooling line (1040 nm): second-stage narrow-line MOT, T_3D = 1.28(7) uK",
+   "linewidth_kHz": {
+    "value": 20,
+    "unc": 2,
+    "method": "experiment",
+    "note": "gamma/2pi from the measured z5G6 lifetime 8.2(9) us",
+    "alternatives": [
+     {
+      "value": 16.4,
+      "unc": 1.3,
+      "method": "theory",
+      "note": "CI+all-order, A = 1.03(8)e5 s^-1 (Table S4)",
+      "source": "Eustice, Filin, Schrott, Porsev, Cheung, Novoa, Stamper-Kurn, Safronova, Phys. Rev. A 107, L051102 (2023)",
+      "url": "https://arxiv.org/abs/2301.13363"
+     },
+     {
+      "value": 11.3,
+      "unc": 1.6,
+      "method": "compilation",
+      "note": "from the solar spectrum (Borrero et al., Astron. Astrophys. 404, 749 (2003)), as quoted and found inconsistent by Duim et al.; this is the 11.3 kHz of the 2020 proposal and of NIST (A = 7.1e4 s^-1, accuracy E)",
+      "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+      "url": "https://arxiv.org/abs/2609.10725"
+     },
+     {
+      "value": 21.9,
+      "method": "compilation",
+      "note": "semi-empirical (Kurucz & Bell 1995) as quoted by Duim et al.",
+      "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+      "url": "https://arxiv.org/abs/2609.10725"
+     }
+    ],
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   },
+   "A_s": {
+    "value": 122000.0,
+    "unc": 13000.0,
+    "method": "experiment",
+    "note": "derived: 1/tau with tau = 8.2(9) us, treating the transition as closed (theory branching 0.99999969)",
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   },
+   "rme_J_ea0": {
+    "value": 0.938,
+    "unc": 0.05,
+    "method": "experiment",
+    "note": "derived from 1/tau; theory value D = 0.86(3) a.u. (Eustice et al. 2023, Table S4)",
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   },
+   "saturation_intensity_uW_cm2": {
+    "value": 2.3,
+    "method": "compilation",
+    "note": "stretched-state transition, computed from the measured linewidth",
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   },
+   "leak_to_metastable": {
+    "alpha_upper_bound": {
+     "value": 0.00044,
+     "method": "experiment",
+     "note": "rough UPPER BOUND 4.4(1)e-4 from the narrow-line MOT lifetime 472(11) ms",
+     "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+     "url": "https://arxiv.org/abs/2609.10725"
+    },
+    "alpha_theory": {
+     "value": 3.1e-07,
+     "unc": 2e-08,
+     "method": "theory",
+     "note": "z5G6 -> a3G5 at 8076 nm",
+     "source": "Eustice, Filin, Schrott, Porsev, Cheung, Novoa, Stamper-Kurn, Safronova, Phys. Rev. A 107, L051102 (2023)",
+     "url": "https://arxiv.org/abs/2301.13363"
+    }
+   },
+   "isotope_shift_MHz": {
+    "50-48": {
+     "value": -1609.91,
+     "unc": 0.06,
+     "method": "experiment",
+     "note": "printed as delta f_50 = -1.60991(6) GHz; optical-pumping spectroscopy in the quadrupole trap",
+     "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+     "url": "https://arxiv.org/abs/2609.10725"
+    },
+    "46-48": {
+     "value": 1690.38,
+     "unc": 0.06,
+     "method": "experiment",
+     "note": "printed as delta f_46 = +1.69038(6) GHz",
+     "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+     "url": "https://arxiv.org/abs/2609.10725"
+    }
+   }
+  },
+  {
+   "lower_cm": 6842.962,
+   "upper_cm": 25926.771,
+   "lower_J": "5",
+   "upper_J": "4",
+   "label": "3d3.(4F).4s a 5F5 - 3d2.(3P).4s.4p.(3P*) 5D°4, 524.004 nm (vac)",
+   "type": "E1",
+   "use": "decay channel y5D4 -> a5F5 (524.0 nm) that populates the laser-cooling state",
+   "A_s": {
+    "value": 400000.0,
+    "unc": 400000.0,
+    "method": "theory",
+    "note": "CI+all-order 0.4(4)e6 s^-1, branching ratio 0.17 (Table S5); no measurement (NIST lists the line without A)",
+    "source": "Eustice, Filin, Schrott, Porsev, Cheung, Novoa, Stamper-Kurn, Safronova, Phys. Rev. A 107, L051102 (2023)",
+    "url": "https://arxiv.org/abs/2301.13363"
+   }
+  },
+  {
+   "lower_cm": 6842.962,
+   "upper_cm": 26657.416,
+   "lower_J": "5",
+   "upper_J": "4",
+   "label": "3d3.(4F).4s a 5F5 - 3d3.(4F).4p y 5G°4, 504.682 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 416000.0,
+    "unc": 25000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5045.4140 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.4874,
+    "unc": 0.015,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 6842.962,
+   "upper_cm": 26772.968,
+   "lower_J": "5",
+   "upper_J": "5",
+   "label": "3d3.(4F).4s a 5F5 - 3d3.(4F).4p y 5G°5, 501.756 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 7900000.0,
+    "unc": 400000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 5016.1609 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 2.328,
+    "unc": 0.059,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "a5F5 - y5G5 line of the laser-cooling multiplet",
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -714.02,
+     "unc": 0.56,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 682.91,
+     "unc": 0.56,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp, Table II",
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    }
+   }
+  },
+  {
+   "lower_cm": 6842.962,
+   "upper_cm": 26910.709,
+   "lower_J": "5",
+   "upper_J": "6",
+   "label": "3d3.(4F).4s a 5F5 - 3d3.(4F).4p y 5G°6, 498.312 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 78000000.0,
+    "unc": 4000000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 4981.7305 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 7.869,
+    "unc": 0.2,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "use": "broad laser-cooling line of metastable Ti (498.3 nm): MOT, imaging; 47Ti / 49Ti cooled on F = I+J -> F' = I+J+1 with two repump tones",
+   "linewidth_MHz": {
+    "value": 10.79,
+    "unc": 0.04,
+    "method": "theory",
+    "note": "not a measurement: A/2pi from the CI+all-order rate 6.780(23)e7 s^-1 (Eustice et al. 2023, Table S4), quoted as 10.8 MHz in the MOT papers and 10.79(4) MHz by Duim et al.",
+    "alternatives": [
+     {
+      "value": 12.4,
+      "unc": 0.6,
+      "method": "experiment",
+      "note": "derived: A/2pi with the measured A = 78(4)e6 s^-1 of Lawler et al. 2013 (this branch is the only one listed from y5G6)",
+      "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+      "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+     },
+     {
+      "value": 10.5,
+      "method": "compilation",
+      "note": "value used in the 2020 proposal (from the NIST A = 6.60e7 s^-1, accuracy C+)",
+      "source": "Eustice, Cassella, Stamper-Kurn, Phys. Rev. A 102, 053327 (2020)",
+      "url": "https://arxiv.org/abs/2008.06147"
+     }
+    ],
+    "source": "Duim, Eustice, Schrott, Sawaoka, Stamper-Kurn, \"Narrow-line magneto-optical trap of titanium atoms\", arXiv:2609.10725 (2026)",
+    "url": "https://arxiv.org/abs/2609.10725"
+   },
+   "A_s_other": [
+    {
+     "value": 67800000.0,
+     "unc": 230000.0,
+     "method": "theory",
+     "note": "CI+all-order, Table S4; D = 7.337(12) a.u.",
+     "source": "Eustice, Filin, Schrott, Porsev, Cheung, Novoa, Stamper-Kurn, Safronova, Phys. Rev. A 107, L051102 (2023)",
+     "url": "https://arxiv.org/abs/2301.13363"
+    },
+    {
+     "value": 66000000.0,
+     "method": "compilation",
+     "note": "NIST ASD, accuracy C+",
+     "source": "NIST ASD Ti I lines table (local copy data/nist/Ti_I_lines_from1nm.tsv)",
+     "url": "https://physics.nist.gov/asd"
+    }
+   ],
+   "saturation_intensity_mW_cm2": {
+    "value": 11.4,
+    "method": "compilation",
+    "note": "stretched-state transition (printed as \"I0 = 11.4 mW\")",
+    "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+    "url": "https://arxiv.org/abs/2501.05544"
+   },
+   "doppler_limit_uK": {
+    "value": 270,
+    "method": "compilation",
+    "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+    "url": "https://arxiv.org/abs/2501.05544"
+   },
+   "branching": {
+    "value": 0.9999975,
+    "method": "experiment",
+    "note": "LOWER BOUND, derived: 1 - alpha with the measured upper bound alpha <= 2.5e-6 on the leakage branching ratio",
+    "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+    "url": "https://arxiv.org/abs/2501.05544"
+   },
+   "leak_to_metastable": {
+    "alpha_upper_bound": {
+     "value": 2.5e-06,
+     "method": "experiment",
+     "note": "UPPER BOUND on the total leakage branching ratio from MOT lifetime vs scattering rate",
+     "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+     "url": "https://arxiv.org/abs/2501.05544"
+    },
+    "alpha_fit": {
+     "value": 9.2e-07,
+     "unc": 3.5e-07,
+     "method": "experiment",
+     "note": "fit value 9.2(3.5)stat(+7.7/-4.8)sys x 1e-7; background-loss assumptions make this model dependent",
+     "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+     "url": "https://arxiv.org/abs/2501.05544"
+    },
+    "alpha_theory": {
+     "value": 1.1e-06,
+     "unc": 5e-07,
+     "method": "theory",
+     "note": "CI+all-order: channels y5G6 -> a3G5 (~2e-7), a3H5 (4.7(2.0)e-8), a3H6 (9(3)e-7), a1H5 (~7e-11)",
+     "source": "Eustice, Filin, Schrott, Porsev, Cheung, Novoa, Stamper-Kurn, Safronova, Phys. Rev. A 107, L051102 (2023)",
+     "url": "https://arxiv.org/abs/2301.13363"
+    }
+   },
+   "isotope_shift_MHz": {
+    "46-48": {
+     "value": -716.19,
+     "unc": 0.39,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp",
+     "alternatives": [
+      {
+       "value": -703,
+       "unc": 2,
+       "note": "absorption spectroscopy of the MOT (authors note the 13 MHz discrepancy with Neely et al.)",
+       "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+       "url": "https://arxiv.org/abs/2501.05544"
+      },
+      {
+       "value": -708.3,
+       "unc": 3.0,
+       "note": "atomic-beam fluorescence, Table II",
+       "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+       "url": "https://arxiv.org/abs/2603.00282"
+      }
+     ],
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "50-48": {
+     "value": 671.6,
+     "unc": 2.1,
+     "method": "experiment",
+     "note": "saturated absorption in a hollow-cathode lamp",
+     "alternatives": [
+      {
+       "value": 673,
+       "unc": 2,
+       "note": "absorption spectroscopy of the MOT",
+       "source": "Eustice, Schrott, Stoeltzel, Wolf, Novoa, Cassella, Stamper-Kurn, Phys. Rev. Research 7, 023025 (2025) \"A Magneto-Optical Trap of Titanium Atoms\"",
+       "url": "https://arxiv.org/abs/2501.05544"
+      },
+      {
+       "value": 670.7,
+       "unc": 3.2,
+       "note": "atomic-beam fluorescence, Table II",
+       "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+       "url": "https://arxiv.org/abs/2603.00282"
+      }
+     ],
+     "source": "Neely, Cassella, Eustice, Stamper-Kurn, Phys. Rev. A 103, 032818 (2021)",
+     "url": "https://arxiv.org/abs/2011.05968"
+    },
+    "47-48": {
+     "value": -345.6,
+     "unc": 3.2,
+     "method": "experiment",
+     "note": "centre of gravity of the hyperfine multiplet, Table II",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    },
+    "49-48": {
+     "value": 354.9,
+     "unc": 3.2,
+     "method": "experiment",
+     "note": "centre of gravity of the hyperfine multiplet, Table II",
+     "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+     "url": "https://arxiv.org/abs/2603.00282"
+    }
+   },
+   "king_plot": {
+    "value": "F = -230(56) MHz/fm^2, k = 428(9.0) GHz amu (Schrott 2026); Neely 2021: k_SMS = 438.77(25)(202) GHz amu, F = -185.89(58) MHz/fm^2",
+    "method": "experiment",
+    "source": "Schrott, Eustice, Sadeghpour, Duim, Sawaoka, Filin, Safronova, Stamper-Kurn, \"Hyperfine spectroscopy and laser cooling of the fermionic isotopes 47Ti and 49Ti\", arXiv:2603.00282 (2026)",
+    "url": "https://arxiv.org/abs/2603.00282"
+   }
+  },
+  {
+   "lower_cm": 11531.761,
+   "upper_cm": 26564.4,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3d3.(4F).4s b 3F2 - 3d3.(4F).4p y 5G°3, 665.219 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 12000.0,
+    "unc": 1900.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 6650.3555 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.1105,
+    "unc": 0.0087,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 11639.8109,
+   "upper_cm": 26657.416,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "3d3.(4F).4s b 3F3 - 3d3.(4F).4p y 5G°4, 665.885 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 16600.0,
+    "unc": 1900.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 6657.0131 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.1476,
+    "unc": 0.0084,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 15108.111,
+   "upper_cm": 26494.33,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "3d3.(2G).4s a 3G3 - 3d3.(4F).4p y 5G°2, 878.255 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 26000.0,
+    "unc": 3000.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 8780.1355 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.2085,
+    "unc": 0.012,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  },
+  {
+   "lower_cm": 15156.802,
+   "upper_cm": 26564.4,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "3d3.(2G).4s a 3G4 - 3d3.(4F).4p y 5G°3, 876.609 nm (vac)",
+   "type": "E1",
+   "A_s": {
+    "value": 17100.0,
+    "unc": 1900.0,
+    "method": "experiment",
+    "note": "machine-readable Table 3 (FTS/echelle branching fraction x LIF lifetime); air wavelength 8763.6806 A",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   },
+   "rme_J_ea0": {
+    "value": 0.1995,
+    "unc": 0.011,
+    "method": "experiment",
+    "note": "derived from the measured A with NIST level energies (SCHEMA convention)",
+    "source": "Lawler, Guzman, Wood, Sneden, Cowan, Astrophys. J. Suppl. Ser. 205, 11 (2013)",
+    "url": "https://content.cld.iop.org/journals/0067-0049/205/2/11/revision1/apjs461528t3_mrt.txt"
+   }
+  }
+ ],
+ "not_found": [
+  "radiative lifetime of the metastable a5F_J levels: \"has not been measured\" (Eustice et al. 2020, expected 10-100 s); Eustice et al. 2023 give only calculated E2/M1 clock-transition rates",
+  "directly measured LIF lifetimes of Ti I levels (Salih & Lawler, Astron. Astrophys. 239, 407 (1990); Lawler, Astron. Astrophys. 252, 853 (1991)): originals not located online; the lifetimes given here are 1/sum(A) of the Lawler et al. 2013 table that was normalised to them",
+  "directly measured natural linewidth / lifetime of y5G6 (498 nm upper level): the 10.8 MHz used by the experiments is a calculation",
+  "hyperfine constants of the a3F2 ground level of 47Ti / 49Ti (Channappa & Pendlebury 1965, not accessible) and of z5G6 (theory only)",
+  "absolute optical frequencies of the 498 nm, 1040 nm and 391 nm lines (only NIST Ritz wavelengths and isotope shifts)",
+  "Schrott et al. Table III (individual hyperfine line positions of the 391 nm and 498 nm multiplets) is not transcribed here; see arXiv:2603.00282",
+  "lifetimes of the 3d2 4s 5p levels above 43400 cm-1 drawn on the site: no Lawler et al. branches"
+ ],
+ "conflicts": [
+  "Brief vs literature: the 498.3 nm cooling transition is 3d3(4F)4s a5F5 -> 3d3(4F)4p y5G6 (6842.962 -> 26910.709 cm-1), not \"a3F4 -> y3G5\"; neither level is in data/ti/levels.csv (which stops at a5F3 / y5G5), so both are added here.",
+  "498.3 nm transition probability: measured 78(4)e6 s^-1 (Lawler et al. 2013; Gamma/2pi = 12.4(6) MHz) vs calculated 6.780(23)e7 s^-1 (Eustice et al. 2023; 10.79(4) MHz, the value used by the Berkeley experiment) vs NIST 6.60e7 s^-1 (C+; 10.5 MHz). The MOT paper itself names the linewidth as its dominant systematic. Neely et al. mention a \"mean excited state lifetime of 15 ns\".",
+  "1040 nm linewidth: measured 20(2) kHz (Duim et al. 2026) vs 16.4(1.3) kHz theory, 21.9 kHz Kurucz, and 11.3(1.6) kHz (Borrero et al. solar value, also NIST A = 7.1e4 s^-1 and the 2020 proposal).",
+  "498 nm isotope shift 46-48: -716.19(39) MHz (Neely, hollow cathode) vs -703(2) MHz (MOT absorption) vs -708.3(3.0) MHz (atomic beam).",
+  "391 nm isotope shifts: MOT paper Table I gives -900(2) / +880(2) MHz (46, 50); Schrott et al. quote the same earlier measurement as -950(2) / -880(2) MHz and measure -942.6(3.1) / +883.9(3.3) MHz. The -900 in the arXiv v1 MOT paper is probably a misprint of -950.",
+  "Energy of y5D4: Eustice et al. 2023 Table S5 prints \"25967 cm-1\" and of y5G6 \"26911\"; NIST: 25926.771 and 26910.709 cm-1.",
+  "Isotopic abundances: MOT paper (CRC) 0.08249(21), 0.73720(22), 0.05185(13) for 46, 48, 50 vs NIST 0.0825(3), 0.7372(3), 0.0518(2)."
+ ],
+ "notes": "Transition probabilities are from the machine-readable Table 3 of Lawler et al. 2013 (948 lines), restricted to lines the site draws plus all lines from y5G, y5D4; level energies there (Saloman 2012) equal the NIST energies. NIST ASD already carries A values for most of these lines (often from the same group). rme_J_ea0 is derived from A with the SCHEMA convention. Level lifetimes marked \"derived\" are 1/sum(A) over the Lawler branches (see note in each entry); only z5G6 has a direct cold-atom lifetime measurement. Isotope shifts are nu(A) - nu(48) as printed in the sources; fermion shifts refer to the hyperfine centre of gravity. Hyperfine A, B follow E = A K/2 + B [3K(K+1) - 4J(J+1)I(I+1)] / [8I(2I-1)J(2J-1)] (Eq. 6 of Schrott et al.); all A are negative. Extra fields beyond SCHEMA.md: top-level ionization_limit, laser_cooling_scheme, conflicts; level fields hyperfine_other, lifetime_other, decay_rates_theory, magnetic_moment_muB; transition fields linewidth_MHz / linewidth_kHz, A_s_other, saturation_intensity_*, doppler_limit_uK, leak_to_metastable, king_plot. Entries whose note says UPPER BOUND / LOWER BOUND / derived / theory are not direct measurements."
+}
