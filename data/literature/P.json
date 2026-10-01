@@ -464,7 +464,7 @@
    "upper_J": "1/2",
    "label": "3s23p3 4S°3/2 - 3s23p24s 4P1/2",
    "type": "E1",
-   "use": "177.5 / 178.3 / 178.8 nm resonance triplet 3p3 4S°3/2 - 4s 4P: persistent ('P') lines of the NIST Handbook table, the usual VUV detection lines of atomic P; Lee & Fairbank (arXiv:1009.4961) note that this 177 nm transition is too far in the vacuum UV for direct laser cooling of P",
+   "use": "177.5 / 178.3 / 178.8 nm resonance triplet 3p3 4S°3/2 - 4s 4P: flagged 'P' (persistent lines) in the NIST Handbook strong-line table; Lee & Fairbank (arXiv:1009.4961) note that this 177 nm transition is too far in the vacuum UV for direct laser cooling of P",
    "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/phosphorustable2.htm",
    "multiplet_intensity_fraction": {
     "value": 0.275,
@@ -481,7 +481,7 @@
    "upper_J": "3/2",
    "label": "3s23p3 4S°3/2 - 3s23p24s 4P3/2",
    "type": "E1",
-   "use": "177.5 / 178.3 / 178.8 nm resonance triplet 3p3 4S°3/2 - 4s 4P: persistent ('P') lines of the NIST Handbook table, the usual VUV detection lines of atomic P; Lee & Fairbank (arXiv:1009.4961) note that this 177 nm transition is too far in the vacuum UV for direct laser cooling of P",
+   "use": "177.5 / 178.3 / 178.8 nm resonance triplet 3p3 4S°3/2 - 4s 4P: flagged 'P' (persistent lines) in the NIST Handbook strong-line table; Lee & Fairbank (arXiv:1009.4961) note that this 177 nm transition is too far in the vacuum UV for direct laser cooling of P",
    "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/phosphorustable2.htm",
    "multiplet_intensity_fraction": {
     "value": 0.33,
@@ -498,7 +498,7 @@
    "upper_J": "5/2",
    "label": "3s23p3 4S°3/2 - 3s23p24s 4P5/2",
    "type": "E1",
-   "use": "177.5 / 178.3 / 178.8 nm resonance triplet 3p3 4S°3/2 - 4s 4P: persistent ('P') lines of the NIST Handbook table, the usual VUV detection lines of atomic P; Lee & Fairbank (arXiv:1009.4961) note that this 177 nm transition is too far in the vacuum UV for direct laser cooling of P",
+   "use": "177.5 / 178.3 / 178.8 nm resonance triplet 3p3 4S°3/2 - 4s 4P: flagged 'P' (persistent lines) in the NIST Handbook strong-line table; Lee & Fairbank (arXiv:1009.4961) note that this 177 nm transition is too far in the vacuum UV for direct laser cooling of P",
    "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/phosphorustable2.htm",
    "multiplet_intensity_fraction": {
     "value": 0.495,
@@ -558,26 +558,11 @@
     "url": "https://articles.adsabs.harvard.edu/pdf/1996A%26A...311..340M",
     "note": "this is NOT the branching fraction of the upper level (each upper level here decays almost only to 4S°3/2); it is the relative photon flux of the three multiplet lines in an optically thin hollow cathode and tests the relative gA values"
    }
-  },
-  {
-   "lower_cm": 0.0,
-   "upper_cm": 56339.656,
-   "lower_J": "3/2",
-   "upper_J": "5/2",
-   "label": "3s23p3 4S° - 3s23p24s 4P (whole multiplet, attached to the J=5/2 line)",
-   "type": "E1",
-   "A_s": {
-    "value": 250000000.0,
-    "method": "experiment",
-    "source": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method with cascade correction, Table 1: multiplet transition probability A_mn = 2.50e8 s^-1 = 1/tau with branching ratio 1 (tau = 4.0(0.5) ns)",
-    "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S",
-    "note": "multiplet value: every 4s 4P_J level decays to 4S°3/2 with this total rate; NIST ASD lists 2.13-2.17e8 s^-1"
-   }
   }
  ],
  "conflicts": [
   "4p 4S°3/2 lifetime: measured 36.9(1.8) ns (Berzinsh et al. 1997) vs their own relativistic Hartree-Fock 22.0 ns and MCHF 27.8 ns; the authors flag this level as the one clear disagreement (strong cancellation in the 4s 4P - 4p 4S° radial integral).",
-  "4s 4P lifetime: 4.0(0.5) ns measured for the multiplet (Savage & Lawrence 1966) vs ab initio MCHF 4.9-5.0 ns; NIST ASD A-values (2.13-2.17e8 s^-1, accuracy 25 %) correspond to 4.6-4.7 ns.",
+  "4s 4P lifetime: 4.0(0.5) ns measured for the multiplet (Savage & Lawrence 1966; their multiplet A = 2.50e8 s^-1) vs ab initio MCHF 4.9-5.0 ns; NIST ASD A-values (2.13-2.17e8 s^-1, accuracy 25 %) correspond to 4.6-4.7 ns.",
   "3s3p4 4P levels: the ab initio MCHF table gives lifetimes of 1.6-2.8 microseconds, whereas the NIST ASD A-values of the 167 nm lines (3.9-4.0e7 s^-1, accuracy 50 %) imply about 25 ns; the theory value is not used here.",
   "Relative strengths within 3p3 4S° - 3s3p4 4P: Mazzoni & Ricci 1996 measure I(1679.7):I(1674.6):I(1671.7) = 0.534:0.277:0.189, i.e. the J=5/2 and J=3/2 lines in the ratio 1.93 rather than the 1.46 expected from the NIST (Wiese & Martin 1980) gA values; the 1671.7 A line is blended."
  ],

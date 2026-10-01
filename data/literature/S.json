@@ -1,0 +1,2313 @@
+{
+ "element": "S",
+ "isotopes": {
+  "32": {
+   "I": "0",
+   "abundance_percent": 94.99,
+   "abundance_unc": 0.26,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (S); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, sulfur Table 1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=S",
+   "url_spin": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sulfurtable1.htm"
+  },
+  "33": {
+   "I": "3/2",
+   "abundance_percent": 0.75,
+   "abundance_unc": 0.02,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (S); nuclear spin and magnetic moment: NIST Handbook of Basic Atomic Spectroscopic Data, sulfur Table 1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=S",
+   "url_spin": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sulfurtable1.htm",
+   "magnetic_moment_muN": 0.64382
+  },
+  "34": {
+   "I": "0",
+   "abundance_percent": 4.25,
+   "abundance_unc": 0.24,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (S); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, sulfur Table 1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=S",
+   "url_spin": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sulfurtable1.htm"
+  },
+  "36": {
+   "I": "0",
+   "abundance_percent": 0.01,
+   "abundance_unc": 0.01,
+   "source": "abundance: NIST Atomic Weights and Isotopic Compositions (S); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, sulfur Table 1",
+   "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=S",
+   "url_spin": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sulfurtable1.htm"
+  }
+ },
+ "ionization_limit_cm": {
+  "value": 83559.17,
+  "unc": 0.011,
+  "method": "compilation",
+  "source": "NIST ASD ionization-energy table, S I (reference code L23116); the older NIST Handbook value is 83559.1 cm^-1",
+  "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Si+I%2C+P+I%2C+S+I&units=0&format=0&order=0&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+ },
+ "levels": [
+  {
+   "nist_energy_cm": 0.0,
+   "label": "3s23p4 3P2",
+   "J": "2",
+   "hyperfine": {
+    "33": {
+     "A_MHz": 130.09,
+     "B_MHz": -31.6,
+     "method": "theory",
+     "source": "Carette & Godefroid, J. Phys. B 44, 105001 (2011), arXiv:1101.5645, MCHF/CI with relativistic corrections, Tables 8-9 (the authors state that no measurement of the neutral-sulfur hyperfine structure exists)",
+     "url": "https://arxiv.org/pdf/1101.5645",
+     "note": "calculated, not measured; B computed with Q(33S) = -0.0657(6) b; I(33S) = 3/2"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 396.05648,
+   "label": "3s23p4 3P1",
+   "J": "1",
+   "hyperfine": {
+    "33": {
+     "A_MHz": -4.62,
+     "B_MHz": 15.8,
+     "method": "theory",
+     "source": "Carette & Godefroid, J. Phys. B 44, 105001 (2011), arXiv:1101.5645, MCHF/CI with relativistic corrections, Tables 8-9 (the authors state that no measurement of the neutral-sulfur hyperfine structure exists)",
+     "url": "https://arxiv.org/pdf/1101.5645",
+     "note": "calculated, not measured; A1 results from a near cancellation of orbital (+105.04 MHz) and spin-dipole (-110.74 MHz) terms and is uncertain by about 1 MHz"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 9238.609,
+   "label": "3s23p4 1D2",
+   "J": "2",
+   "lifetime": {
+    "value": 36.47,
+    "unit": "s",
+    "method": "theory",
+    "note": "derived: 1/sum of the calculated A-values of 1D2 -> 3P2 (M1, 1082.4 nm), 3P1 (M1 + E2, 1130.9 nm), 3P0 (E2) listed in NIST ASD (accuracy C-D); no measurement of this lifetime was located",
+    "source": "NIST ASD S I lines table (tp_ref T8595,T7942c84), local cache data/nist/S_I_lines_from1nm.tsv",
+    "url": "https://physics.nist.gov/PhysRefData/ASD/lines_form.html"
+   }
+  },
+  {
+   "nist_energy_cm": 22179.9542,
+   "label": "3s23p4 1S0",
+   "J": "0",
+   "lifetime": {
+    "value": 0.5942,
+    "unit": "s",
+    "method": "theory",
+    "note": "derived: 1/sum of the calculated A-values of 1S0 -> 3P2 (E2), 3P1 (M1, 459.05 nm), 1D2 (E2, 772.72 nm) listed in NIST ASD (accuracy B-D); no absolute measurement was opened",
+    "source": "NIST ASD S I lines table (tp_ref T8595,T7942c84), local cache data/nist/S_I_lines_from1nm.tsv",
+    "url": "https://physics.nist.gov/PhysRefData/ASD/lines_form.html"
+   }
+  },
+  {
+   "nist_energy_cm": 52623.605,
+   "label": "3s23p34s 5S°2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.7615e-05,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db",
+    "note": "calculated intercombination-decay lifetime; a measurement exists (N. J. Mason, Phys. Scr. 49, 578 (1994)) but could not be opened"
+   }
+  },
+  {
+   "nist_energy_cm": 55330.775,
+   "label": "3s23p34s 3S°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.875e-09,
+    "unc": 9.4e-11,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator); two-exponential fits of the 1807.34 and 1820.36 A decay curves",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B",
+    "alternatives": [
+     {
+      "value": 1.5e-09,
+      "unc": 3e-10,
+      "unit": "s",
+      "method": "experiment",
+      "note": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1 (3p4 3P - 4s 3S°, 1807 A)",
+      "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S"
+     },
+     {
+      "value": 1.4e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     },
+     {
+      "value": 1.9284e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 63446.038,
+   "label": "3s23p34p 5P1",
+   "J": "1",
+   "lifetime": {
+    "value": 3.6919e-08,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 63457.1166,
+   "label": "3s23p34p 5P2",
+   "J": "2",
+   "lifetime": {
+    "value": 3.6829e-08,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 63475.027,
+   "label": "3s23p34p 5P3",
+   "J": "3",
+   "lifetime": {
+    "value": 3.6679e-08,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 64888.9325,
+   "label": "3s23p34p 3P1",
+   "J": "1",
+   "lifetime": {
+    "value": 4.61e-08,
+    "unc": 1e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record): tau(3P0) = tau(3P1) = tau(3P2) = 46.1(1.0) ns",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583",
+    "alternatives": [
+     {
+      "value": 3.3000000000000004e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bridges & Wiese 1968, arc measurement, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.2000000000000002e-08
+     },
+     {
+      "value": 4.6314e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 64891.3536,
+   "label": "3s23p34p 3P0",
+   "J": "0",
+   "lifetime": {
+    "value": 4.61e-08,
+    "unc": 1e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record): tau(3P0) = tau(3P1) = tau(3P2) = 46.1(1.0) ns",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583",
+    "alternatives": [
+     {
+      "value": 3.3000000000000004e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bridges & Wiese 1968, arc measurement, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.2000000000000002e-08
+     },
+     {
+      "value": 4.6303e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 64892.5514,
+   "label": "3s23p34p 3P2",
+   "J": "2",
+   "lifetime": {
+    "value": 4.61e-08,
+    "unc": 1e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record): tau(3P0) = tau(3P1) = tau(3P2) = 46.1(1.0) ns",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583",
+    "alternatives": [
+     {
+      "value": 3.3000000000000004e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bridges & Wiese 1968, arc measurement, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.2000000000000002e-08
+     },
+     {
+      "value": 4.627e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 67816.321,
+   "label": "3s23p34s 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 6.8006e-09,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 67825.166,
+   "label": "3s23p34s 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 7.0244e-09,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 67842.8458,
+   "label": "3s23p34s 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 7.5032e-09,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 67885.508,
+   "label": "3s23p33d 5D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.5375e-07,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 67887.782,
+   "label": "3s23p33d 5D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 7.865e-08,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 67889.998,
+   "label": "3s23p33d 5D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 4.1505e-08,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 69237.872,
+   "label": "3s23p34s 1D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.5e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1 (3p4 1D - 4s' 1D°, 1667 A)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S",
+    "alternatives": [
+     {
+      "value": 1.7000000000000001e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<1.7' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     },
+     {
+      "value": 2.232e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 70164.61,
+   "label": "3s23p33d 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2.1e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1; lifetime of the whole multiplet 3p4 3P - 3d 3D° (1425 A), fine structure not resolved",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S",
+    "alternatives": [
+     {
+      "value": 3.0000000000000004e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 6e-10
+     },
+     {
+      "value": 1.5000000000000002e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<1.5' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     },
+     {
+      "value": 3.6895e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 70166.1526,
+   "label": "3s23p33d 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 2.1e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1; lifetime of the whole multiplet 3p4 3P - 3d 3D° (1425 A), fine structure not resolved",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S",
+    "alternatives": [
+     {
+      "value": 3.0000000000000004e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 6e-10
+     },
+     {
+      "value": 1.5000000000000002e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<1.5' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     },
+     {
+      "value": 3.6837e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 70173.9334,
+   "label": "3s23p33d 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 2.1e-09,
+    "unc": 3e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1; lifetime of the whole multiplet 3p4 3P - 3d 3D° (1425 A), fine structure not resolved",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S",
+    "alternatives": [
+     {
+      "value": 3.0000000000000004e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 6e-10
+     },
+     {
+      "value": 1.5000000000000002e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<1.5' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     },
+     {
+      "value": 3.6662e-09,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 71351.3635,
+   "label": "3s23p35s 3S°1",
+   "J": "1",
+   "lifetime": {
+    "value": 7.1e-09,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 5e-10,
+    "alternatives": [
+     {
+      "value": 6.9000000000000006e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.4e-09
+     },
+     {
+      "value": 6.400000000000001e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<6.4' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 73911.238,
+   "label": "3s23p35p 5P1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.5932e-07,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 73914.91,
+   "label": "3s23p35p 5P2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.5886e-07,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 73920.945,
+   "label": "3s23p35p 5P3",
+   "J": "3",
+   "lifetime": {
+    "value": 6.15e-07,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Delalic, Erman, Kallne, Phys. Scr. 42, 540 (1990), high-frequency deflection technique; value as listed in column 'tau_exp (others)' of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 5.0000000000000004e-08,
+    "note": "isolated measurement, four times longer than every calculation; see conflicts",
+    "alternatives": [
+     {
+      "value": 9.700000000000001e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Bridges & Wiese 1968, arc measurement, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as '<97(30)' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 3.0000000000000004e-08
+     },
+     {
+      "value": 1.5808e-07,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     },
+     {
+      "value": 1.301e-07,
+      "unit": "s",
+      "method": "theory",
+      "note": "relativistic Hartree-Fock, Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1 (Opacity Project: 165 ns)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 74268.528,
+   "label": "3s23p35p 3P2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.8800000000000002e-07,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 1.3e-08,
+    "alternatives": [
+     {
+      "value": 1.85e-07,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Delalic, Erman, Kallne, Phys. Scr. 42, 540 (1990), high-frequency deflection technique, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.5000000000000002e-08
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 75951.78,
+   "label": "3s23p34d 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.26e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 1.3e-09,
+    "alternatives": [
+     {
+      "value": 1.1400000000000001e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "W. H. Smith, Phys. Scr. 17, 513 (1978), phase-shift measurement (multiplet), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.5000000000000002e-09
+     },
+     {
+      "value": 9.6e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; multiplet value",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.9e-09
+     },
+     {
+      "value": 8.5e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<8.5' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 75952.293,
+   "label": "3s23p34d 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.2500000000000001e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 7e-10,
+    "alternatives": [
+     {
+      "value": 1.1400000000000001e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "W. H. Smith, Phys. Scr. 17, 513 (1978), phase-shift measurement (multiplet), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.5000000000000002e-09
+     },
+     {
+      "value": 9.6e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; multiplet value",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.9e-09
+     },
+     {
+      "value": 8.5e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<8.5' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 75956.411,
+   "label": "3s23p34d 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 1.2900000000000001e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 1.1000000000000001e-09,
+    "alternatives": [
+     {
+      "value": 1.1400000000000001e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "W. H. Smith, Phys. Scr. 17, 513 (1978), phase-shift measurement (multiplet), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.5000000000000002e-09
+     },
+     {
+      "value": 9.6e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; multiplet value",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 1.9e-09
+     },
+     {
+      "value": 8.5e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<8.5' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 76720.685,
+   "label": "3s23p36s 3S°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.77e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 1.1000000000000001e-09,
+    "alternatives": [
+     {
+      "value": 1.69e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 3.4000000000000003e-09
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 77135.55,
+   "label": "3s23p34s 3P°0",
+   "J": "0",
+   "lifetime": {
+    "value": 3e-09,
+    "unit": "s",
+    "method": "theory",
+    "source": "relativistic Hartree-Fock, Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; this level was not measured (Beideck et al. 1994 could not measure it because its only line is blended and assumed the mean of the J=1,2 values)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "alternatives": [
+     {
+      "value": 2.8e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "W. H. Smith, Phys. Scr. 17, 513 (1978), phase-shift measurement (multiplet); lifetime of the 1299 A multiplet, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 3e-10
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 77150.15,
+   "label": "3s23p34s 3P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 2.034e-09,
+    "unc": 1.02e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator); decay curves of the unblended 1305.89 A line",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B",
+    "alternatives": [
+     {
+      "value": 2.8e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "W. H. Smith, Phys. Scr. 17, 513 (1978), phase-shift measurement (multiplet); lifetime of the 1299 A multiplet, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 3e-10
+     },
+     {
+      "value": 2.1e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 2.0000000000000003e-10
+     },
+     {
+      "value": 1.2e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Mueller, Z. Naturforsch. 23a, 1707 (1968), wall-stabilized arc, as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; printed as an upper limit '<1.2' (bound)",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 77181.13,
+   "label": "3s23p34s 3P°2",
+   "J": "2",
+   "lifetime": {
+    "value": 2.146e-09,
+    "unc": 1.29e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator); decay curves of the 1295.66 A line",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B",
+    "alternatives": [
+     {
+      "value": 2.1e-09,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 2.0000000000000003e-10
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 77856.448,
+   "label": "3s23p36p 5P3",
+   "J": "3",
+   "lifetime": {
+    "value": 2.65e-07,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Delalic, Erman, Kallne, Phys. Scr. 42, 540 (1990), high-frequency deflection technique; value as listed in column 'tau_exp (others)' of Table 1 of Biemont et al., Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 2e-08
+   }
+  },
+  {
+   "nist_energy_cm": 78288.43,
+   "label": "3s23p34s 1P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.6047e-09,
+    "unit": "s",
+    "method": "theory",
+    "source": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
+    "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+   }
+  },
+  {
+   "nist_energy_cm": 78691.843,
+   "label": "3s23p35d 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 4e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 4e-09,
+    "alternatives": [
+     {
+      "value": 3.7500000000000005e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; multiplet value",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 7.500000000000001e-09
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 78692.557,
+   "label": "3s23p35d 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 4.13e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "note": "no uncertainty printed for this entry in the table",
+    "alternatives": [
+     {
+      "value": 3.7500000000000005e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1; multiplet value",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 7.500000000000001e-09
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 79185.35,
+   "label": "3s23p37s 3S°1",
+   "J": "1",
+   "lifetime": {
+    "value": 3.56e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Berzinsh, Luo Caiyan, Zerne, Svanberg, Biemont, Phys. Rev. A 55, 1836 (1997), time-resolved VUV laser spectroscopy in a laser-produced plasma; value and 2-sigma error as listed in column tau_exp of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 4e-09,
+    "alternatives": [
+     {
+      "value": 3.1e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 8.4e-09
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 79375.778,
+   "label": "3s23p3(2D°)4p 3P2",
+   "J": "2",
+   "lifetime": {
+    "value": 5.35e-08,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Delalic, Erman, Kallne, Phys. Scr. 42, 540 (1990), high-frequency deflection technique; value as listed in column 'tau_exp (others)' of Table 1 of Biemont et al., Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 4e-09
+   }
+  },
+  {
+   "nist_energy_cm": 79991.995,
+   "label": "3s23p36d 5D°4",
+   "J": "4",
+   "lifetime": {
+    "value": 2.6e-07,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Delalic, Erman, Kallne, Phys. Scr. 42, 540 (1990), high-frequency deflection technique; value as listed in column 'tau_exp (others)' of Table 1 of Biemont et al., Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 2e-08
+   }
+  },
+  {
+   "nist_energy_cm": 80182.18,
+   "label": "3s23p36d 3D°3",
+   "J": "3",
+   "lifetime": {
+    "value": 7.5e-08,
+    "unc": 7e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1 (entries marked *: present work), three-photon (two-step) time-resolved VUV laser spectroscopy, 2-sigma error; one value given for all fine-structure levels of 6d 3D°",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "alternatives": [
+     {
+      "value": 1.9900000000000002e-07,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 9.000000000000001e-08
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 80183.71,
+   "label": "3s23p36d 3D°2",
+   "J": "2",
+   "lifetime": {
+    "value": 7.5e-08,
+    "unc": 7e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1 (entries marked *: present work), three-photon (two-step) time-resolved VUV laser spectroscopy, 2-sigma error; one value given for all fine-structure levels of 6d 3D°",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "alternatives": [
+     {
+      "value": 1.9900000000000002e-07,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 9.000000000000001e-08
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 80185.51,
+   "label": "3s23p36d 3D°1",
+   "J": "1",
+   "lifetime": {
+    "value": 7.5e-08,
+    "unc": 7e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1 (entries marked *: present work), three-photon (two-step) time-resolved VUV laser spectroscopy, 2-sigma error; one value given for all fine-structure levels of 6d 3D°",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "alternatives": [
+     {
+      "value": 1.9900000000000002e-07,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 9.000000000000001e-08
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 80521.46,
+   "label": "3s23p38s 3S°1",
+   "J": "1",
+   "lifetime": {
+    "value": 4e-08,
+    "unc": 5e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1 (entries marked *: present work), three-photon (two-step) time-resolved VUV laser spectroscopy, 2-sigma error",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "alternatives": [
+     {
+      "value": 7.33e-08,
+      "unit": "s",
+      "method": "compilation",
+      "note": "Federman & Cardelli, Astrophys. J. 452, 269 (1995), lifetime inferred from interstellar-absorption f-values (HST/GHRS), as listed in Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 1",
+      "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+      "unc": 4.4000000000000004e-08
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 80995.24,
+   "label": "3s23p37d 5D°4",
+   "J": "4",
+   "lifetime": {
+    "value": 5.05e-07,
+    "unit": "s",
+    "method": "compilation",
+    "source": "Delalic, Erman, Kallne, Phys. Scr. 42, 540 (1990), high-frequency deflection technique; value as listed in column 'tau_exp (others)' of Table 1 of Biemont et al., Astrophys. J. 502, 1010 (1998)",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf",
+    "unc": 4e-08
+   }
+  },
+  {
+   "nist_energy_cm": 81438.167,
+   "label": "3s23p33d 1P°1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.7e-08,
+    "unc": 2e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1: line 1687.51 A (3p4 1S0 - upper level at 81440.3 cm^-1, which the authors classify as 3s3p5 1P1 following Toresson), cascade free",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1966ApJ...146..940S",
+    "alternatives": [
+     {
+      "value": 1.388e-08,
+      "unit": "s",
+      "method": "theory",
+      "note": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST",
+      "url": "https://nlte.nist.gov/MCHF/Elements/S/S_16.33.BSRM_ZOI-lev.lt.db"
+     }
+    ]
+   }
+  }
+ ],
+ "transitions": [
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 573.59573,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "3s23p4 3P1 - 3P0",
+   "type": "M1",
+   "use": "ground-term fine-structure line at 56.3 um",
+   "frequency_THz": {
+    "value": 5.322492905,
+    "unc": 2.8e-06,
+    "isotope": "32",
+    "method": "compilation",
+    "note": "derived: 177.539253(93) cm^-1 converted to THz",
+    "source": "Brown, Evenson, Zink, Astrophys. J. 431 (1994), far-infrared laser magnetic resonance, as quoted in Table III of Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020) (their own two-photon value: 177.5383(14) cm^-1)",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 396.05648,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3P1",
+   "type": "M1",
+   "use": "ground-term fine-structure line at 25.249 um",
+   "frequency_THz": {
+    "value": 11.8734722,
+    "unc": 2.1e-05,
+    "isotope": "32",
+    "method": "experiment",
+    "note": "derived: 396.0564(7) cm^-1 converted to THz; least-squares level fit combining the two-photon data with the forbidden-line (Eriksson 1978) and laser-magnetic-resonance measurements",
+    "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, Table IV",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   }
+  },
+  {
+   "lower_cm": 55330.775,
+   "upper_cm": 64888.9325,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p34s 3S°1 - 3s23p34p 3P1",
+   "type": "E1",
+   "use": "1045.5-1045.9 nm near-infrared triplet (persistent lines 10455.451, 10456.757, 10459.406 A of the NIST Handbook table)",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sulfurtable2.htm",
+   "f_abs": {
+    "value": 0.36,
+    "unc": 0.008,
+    "method": "experiment",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record) (oscillator strength derived directly from the measured lifetime 46.1(1.0) ns)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   },
+   "A_s": {
+    "value": 21940000.0,
+    "unc": 490000.0,
+    "method": "experiment",
+    "note": "derived from the absorption f-value: A = 6.6702e15 g_l f / (g_u lambda^2), lambda in Angstrom (vacuum, from NIST level energies)",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   },
+   "rme_J_ea0": {
+    "value": 6.099,
+    "unc": 0.068,
+    "method": "experiment",
+    "note": "derived from the f-value with the SCHEMA convention",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   }
+  },
+  {
+   "lower_cm": 55330.775,
+   "upper_cm": 64891.3536,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "3s23p34s 3S°1 - 3s23p34p 3P0",
+   "type": "E1",
+   "use": "1045.5-1045.9 nm near-infrared triplet (persistent lines 10455.451, 10456.757, 10459.406 A of the NIST Handbook table)",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sulfurtable2.htm",
+   "f_abs": {
+    "value": 0.12,
+    "unc": 0.003,
+    "method": "experiment",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record) (oscillator strength derived directly from the measured lifetime 46.1(1.0) ns)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   },
+   "A_s": {
+    "value": 21950000.0,
+    "unc": 550000.0,
+    "method": "experiment",
+    "note": "derived from the absorption f-value: A = 6.6702e15 g_l f / (g_u lambda^2), lambda in Angstrom (vacuum, from NIST level energies)",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   },
+   "rme_J_ea0": {
+    "value": 3.521,
+    "unc": 0.044,
+    "method": "experiment",
+    "note": "derived from the f-value with the SCHEMA convention",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   }
+  },
+  {
+   "lower_cm": 55330.775,
+   "upper_cm": 64892.5514,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p34s 3S°1 - 3s23p34p 3P2",
+   "type": "E1",
+   "use": "1045.5-1045.9 nm near-infrared triplet (persistent lines 10455.451, 10456.757, 10459.406 A of the NIST Handbook table)",
+   "use_url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sulfurtable2.htm",
+   "f_abs": {
+    "value": 0.6,
+    "unc": 0.013,
+    "method": "experiment",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record) (oscillator strength derived directly from the measured lifetime 46.1(1.0) ns)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   },
+   "A_s": {
+    "value": 21950000.0,
+    "unc": 480000.0,
+    "method": "experiment",
+    "note": "derived from the absorption f-value: A = 6.6702e15 g_l f / (g_u lambda^2), lambda in Angstrom (vacuum, from NIST level energies)",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   },
+   "rme_J_ea0": {
+    "value": 7.872,
+    "unc": 0.085,
+    "method": "experiment",
+    "note": "derived from the f-value with the SCHEMA convention",
+    "source": "Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation, time-resolved fluorescence; abstract (Lund University Publications record)",
+    "url": "https://lup.lub.lu.se/search/publication/227f2050-4d44-494e-bea8-c6b3a39fc583"
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 55330.775,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p34s 3S°1",
+   "type": "E1",
+   "branching": {
+    "value": 0.069,
+    "unc": 0.013,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator); B(1826)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "f_abs": {
+    "value": 0.056,
+    "unc": 0.011,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator), Table 1",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "A_s": {
+    "value": 36800000.0,
+    "unc": 7200000.0,
+    "method": "experiment",
+    "note": "derived: measured branching fraction / measured mean life 1.875(0.094) ns, uncertainties combined in quadrature",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "rme_J_ea0": {
+    "value": 0.5761,
+    "unc": 0.056,
+    "method": "experiment",
+    "note": "derived from the A-value above with the SCHEMA convention",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 55330.775,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p34s 3S°1",
+   "type": "E1",
+   "branching": {
+    "value": 0.319,
+    "unc": 0.039,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator); B(1820)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "f_abs": {
+    "value": 0.085,
+    "unc": 0.011,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator), Table 1",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "A_s": {
+    "value": 170100000.0,
+    "unc": 22000000.0,
+    "method": "experiment",
+    "note": "derived: measured branching fraction / measured mean life 1.875(0.094) ns, uncertainties combined in quadrature",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "rme_J_ea0": {
+    "value": 1.233,
+    "unc": 0.081,
+    "method": "experiment",
+    "note": "derived from the A-value above with the SCHEMA convention",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 55330.775,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p34s 3S°1",
+   "type": "E1",
+   "branching": {
+    "value": 0.612,
+    "unc": 0.029,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator); B(1807)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "f_abs": {
+    "value": 0.096,
+    "unc": 0.007,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator), Table 1",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "A_s": {
+    "value": 326400000.0,
+    "unc": 23000000.0,
+    "method": "experiment",
+    "note": "derived: measured branching fraction / measured mean life 1.875(0.094) ns, uncertainties combined in quadrature",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "rme_J_ea0": {
+    "value": 1.689,
+    "unc": 0.058,
+    "method": "experiment",
+    "note": "derived from the A-value above with the SCHEMA convention",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "use": "180.731 nm (vacuum) resonance line: the line of primary interest for neutral-sulfur abundances in diffuse interstellar clouds (Beideck et al. 1994); flagged 'P' (persistent line) in the NIST Handbook strong-line table",
+   "use_url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 64891.3536,
+   "lower_J": "0",
+   "upper_J": "0",
+   "label": "3s23p4 3P0 - 3s23p34p 3P0 (two-photon)",
+   "type": "two-photon",
+   "use": "Doppler-free two-photon excitation (2 x ~308-311 nm) used by Lai et al. 2020 for precision spectroscopy linking the even- and odd-parity level systems of S I (S atoms from H2S photolysis, ion detection); the same two-photon step (2 x 308 nm) is the excitation used for the lifetime measurements of Zerne et al. 1997 and Biemont et al. 1998",
+   "use_url": "https://arxiv.org/pdf/2006.11322",
+   "frequency_THz": {
+    "value": 1928.1978194,
+    "unc": 2.7e-05,
+    "isotope": "32",
+    "method": "experiment",
+    "note": "derived: 64317.7561(9) cm^-1 (total two-photon energy) converted to THz; 32S has I = 0 (no hyperfine structure). The pairing of each printed wavenumber with its J -> J' labels was reconstructed from the level energies of Table III because the table columns were scrambled in the text extraction (all seven agree within 0.002 cm^-1).",
+    "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, Table I",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 64892.5514,
+   "lower_J": "0",
+   "upper_J": "2",
+   "label": "3s23p4 3P0 - 3s23p34p 3P2 (two-photon)",
+   "type": "two-photon",
+   "use": "Doppler-free two-photon excitation (2 x ~308-311 nm) used by Lai et al. 2020 for precision spectroscopy linking the even- and odd-parity level systems of S I (S atoms from H2S photolysis, ion detection); the same two-photon step (2 x 308 nm) is the excitation used for the lifetime measurements of Zerne et al. 1997 and Biemont et al. 1998",
+   "use_url": "https://arxiv.org/pdf/2006.11322",
+   "frequency_THz": {
+    "value": 1928.2337945,
+    "unc": 2.7e-05,
+    "isotope": "32",
+    "method": "experiment",
+    "note": "derived: 64318.9561(9) cm^-1 (total two-photon energy) converted to THz; 32S has I = 0 (no hyperfine structure). The pairing of each printed wavenumber with its J -> J' labels was reconstructed from the level energies of Table III because the table columns were scrambled in the text extraction (all seven agree within 0.002 cm^-1).",
+    "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, Table I",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 64888.9325,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p34p 3P1 (two-photon)",
+   "type": "two-photon",
+   "use": "Doppler-free two-photon excitation (2 x ~308-311 nm) used by Lai et al. 2020 for precision spectroscopy linking the even- and odd-parity level systems of S I (S atoms from H2S photolysis, ion detection); the same two-photon step (2 x 308 nm) is the excitation used for the lifetime measurements of Zerne et al. 1997 and Biemont et al. 1998",
+   "use_url": "https://arxiv.org/pdf/2006.11322",
+   "frequency_THz": {
+    "value": 1933.447755,
+    "unc": 2.7e-05,
+    "isotope": "32",
+    "method": "experiment",
+    "note": "derived: 64492.8751(9) cm^-1 (total two-photon energy) converted to THz; 32S has I = 0 (no hyperfine structure). The pairing of each printed wavenumber with its J -> J' labels was reconstructed from the level energies of Table III because the table columns were scrambled in the text extraction (all seven agree within 0.002 cm^-1).",
+    "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, Table I",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 64892.5514,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p4 3P1 - 3s23p34p 3P2 (two-photon)",
+   "type": "two-photon",
+   "use": "Doppler-free two-photon excitation (2 x ~308-311 nm) used by Lai et al. 2020 for precision spectroscopy linking the even- and odd-parity level systems of S I (S atoms from H2S photolysis, ion detection); the same two-photon step (2 x 308 nm) is the excitation used for the lifetime measurements of Zerne et al. 1997 and Biemont et al. 1998",
+   "use_url": "https://arxiv.org/pdf/2006.11322",
+   "frequency_THz": {
+    "value": 1933.5561779,
+    "unc": 6.9e-05,
+    "isotope": "32",
+    "method": "experiment",
+    "note": "derived: 64496.4917(23) cm^-1 (total two-photon energy) converted to THz; 32S has I = 0 (no hyperfine structure). The pairing of each printed wavenumber with its J -> J' labels was reconstructed from the level energies of Table III because the table columns were scrambled in the text extraction (all seven agree within 0.002 cm^-1).",
+    "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, Table I",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 64888.9325,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p34p 3P1 (two-photon)",
+   "type": "two-photon",
+   "use": "Doppler-free two-photon excitation (2 x ~308-311 nm) used by Lai et al. 2020 for precision spectroscopy linking the even- and odd-parity level systems of S I (S atoms from H2S photolysis, ion detection); the same two-photon step (2 x 308 nm) is the excitation used for the lifetime measurements of Zerne et al. 1997 and Biemont et al. 1998",
+   "use_url": "https://arxiv.org/pdf/2006.11322",
+   "frequency_THz": {
+    "value": 1945.3212331,
+    "unc": 2.7e-05,
+    "isotope": "32",
+    "method": "experiment",
+    "note": "derived: 64888.9317(9) cm^-1 (total two-photon energy) converted to THz; 32S has I = 0 (no hyperfine structure). The pairing of each printed wavenumber with its J -> J' labels was reconstructed from the level energies of Table III because the table columns were scrambled in the text extraction (all seven agree within 0.002 cm^-1).",
+    "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, Table I",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 64891.3536,
+   "lower_J": "2",
+   "upper_J": "0",
+   "label": "3s23p4 3P2 - 3s23p34p 3P0 (two-photon)",
+   "type": "two-photon",
+   "use": "Doppler-free two-photon excitation (2 x ~308-311 nm) used by Lai et al. 2020 for precision spectroscopy linking the even- and odd-parity level systems of S I (S atoms from H2S photolysis, ion detection); the same two-photon step (2 x 308 nm) is the excitation used for the lifetime measurements of Zerne et al. 1997 and Biemont et al. 1998",
+   "use_url": "https://arxiv.org/pdf/2006.11322",
+   "frequency_THz": {
+    "value": 1945.3938399,
+    "unc": 2.7e-05,
+    "isotope": "32",
+    "method": "experiment",
+    "note": "derived: 64891.3536(9) cm^-1 (total two-photon energy) converted to THz; 32S has I = 0 (no hyperfine structure). The pairing of each printed wavenumber with its J -> J' labels was reconstructed from the level energies of Table III because the table columns were scrambled in the text extraction (all seven agree within 0.002 cm^-1).",
+    "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, Table I",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 64892.5514,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p4 3P2 - 3s23p34p 3P2 (two-photon)",
+   "type": "two-photon",
+   "use": "Doppler-free two-photon excitation (2 x ~308-311 nm) used by Lai et al. 2020 for precision spectroscopy linking the even- and odd-parity level systems of S I (S atoms from H2S photolysis, ion detection); the same two-photon step (2 x 308 nm) is the excitation used for the lifetime measurements of Zerne et al. 1997 and Biemont et al. 1998",
+   "use_url": "https://arxiv.org/pdf/2006.11322",
+   "frequency_THz": {
+    "value": 1945.4296891,
+    "unc": 2.7e-05,
+    "isotope": "32",
+    "method": "experiment",
+    "note": "derived: 64892.5494(9) cm^-1 (total two-photon energy) converted to THz; 32S has I = 0 (no hyperfine structure). The pairing of each printed wavenumber with its J -> J' labels was reconstructed from the level energies of Table III because the table columns were scrambled in the text extraction (all seven agree within 0.002 cm^-1).",
+    "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, Table I",
+    "url": "https://arxiv.org/pdf/2006.11322"
+   },
+   "isotope_shift_MHz": {
+    "34-32": {
+     "value": 536.6,
+     "unc": 12.0,
+     "method": "experiment",
+     "note": "derived: 0.0179(4) cm^-1 converted to MHz; nu(34S) - nu(32S) of the two-photon resonance (statistical and relative-calibration error only); normal mass shift 0.0650 cm^-1, extracted specific mass shift -0.0471(4) cm^-1",
+     "source": "Lai, Salumbides, Ubachs, J. Phys. B 53, 175002 (2020), arXiv:2006.11322, Doppler-free two-photon spectroscopy with a narrowband pulsed laser, calibrated against I2 hyperfine components, text and Fig. 5",
+     "url": "https://arxiv.org/pdf/2006.11322"
+    }
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 71351.3635,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p35s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 13710000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.2393,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 71351.3635,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p35s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 41940000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.4169,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 71351.3635,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p35s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 72250000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.5427,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 75951.78,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p34d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 43160000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.3863,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 75951.78,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p34d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 33000000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.3366,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 75952.293,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p4 3P1 - 3s23p34d 3D°2",
+   "type": "E1",
+   "A_s": {
+    "value": 58690000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.5795,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 75951.78,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p34d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 2298000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.08812,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 75952.293,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p4 3P2 - 3s23p34d 3D°2",
+   "type": "E1",
+   "A_s": {
+    "value": 20410000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.339,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 75956.411,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3s23p4 3P2 - 3s23p34d 3D°3",
+   "type": "E1",
+   "A_s": {
+    "value": 76670000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.7775,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 76720.685,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p36s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 5355000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.134,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 76720.685,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p36s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 16390000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.2336,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 77150.15,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p3(2P°)4s 3P°1",
+   "type": "E1",
+   "f_abs": {
+    "value": 0.15,
+    "unc": 0.013,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator), Table 2 (line 1305.89 A; from measured mean lives and branching ratios)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "A_s": {
+    "value": 195600000.0,
+    "unc": 17000000.0,
+    "method": "experiment",
+    "note": "derived from the absorption f-value: A = 6.6702e15 g_l f / (g_u lambda^2), lambda in Angstrom (vacuum, from NIST level energies)",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "rme_J_ea0": {
+    "value": 0.803,
+    "unc": 0.035,
+    "method": "experiment",
+    "note": "derived from the f-value with the SCHEMA convention",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 76720.685,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p36s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 28520000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.3058,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 77150.15,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p3(2P°)4s 3P°1",
+   "type": "E1",
+   "f_abs": {
+    "value": 0.039,
+    "unc": 0.006,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator), Table 2 (line 1302.87 A; from measured mean lives and branching ratios)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "A_s": {
+    "value": 153300000.0,
+    "unc": 24000000.0,
+    "method": "experiment",
+    "note": "derived from the absorption f-value: A = 6.6702e15 g_l f / (g_u lambda^2), lambda in Angstrom (vacuum, from NIST level energies)",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "rme_J_ea0": {
+    "value": 0.7084,
+    "unc": 0.054,
+    "method": "experiment",
+    "note": "derived from the f-value with the SCHEMA convention",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 77181.13,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p4 3P1 - 3s23p3(2P°)4s 3P°2",
+   "type": "E1",
+   "f_abs": {
+    "value": 0.051,
+    "unc": 0.005,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator), Table 2 (line 1302.34 A; from measured mean lives and branching ratios)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "A_s": {
+    "value": 120300000.0,
+    "unc": 12000000.0,
+    "method": "experiment",
+    "note": "derived from the absorption f-value: A = 6.6702e15 g_l f / (g_u lambda^2), lambda in Angstrom (vacuum, from NIST level energies)",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "rme_J_ea0": {
+    "value": 0.8099,
+    "unc": 0.04,
+    "method": "experiment",
+    "note": "derived from the f-value with the SCHEMA convention",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 77150.15,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p3(2P°)4s 3P°1",
+   "type": "E1",
+   "f_abs": {
+    "value": 0.022,
+    "unc": 0.002,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator), Table 2 (line 1296.17 A; from measured mean lives and branching ratios)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "A_s": {
+    "value": 145600000.0,
+    "unc": 13000000.0,
+    "method": "experiment",
+    "note": "derived from the absorption f-value: A = 6.6702e15 g_l f / (g_u lambda^2), lambda in Angstrom (vacuum, from NIST level energies)",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "rme_J_ea0": {
+    "value": 0.6851,
+    "unc": 0.031,
+    "method": "experiment",
+    "note": "derived from the f-value with the SCHEMA convention",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "use": "129.6 nm ground-state lines of the 1299 A multiplet used for interstellar S I column densities (Beideck et al. 1994)",
+   "use_url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 77181.13,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p4 3P2 - 3s23p3(2P°)4s 3P°2",
+   "type": "E1",
+   "f_abs": {
+    "value": 0.087,
+    "unc": 0.006,
+    "method": "experiment",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator), Table 2 (line 1295.66 A; from measured mean lives and branching ratios)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "A_s": {
+    "value": 345700000.0,
+    "unc": 24000000.0,
+    "method": "experiment",
+    "note": "derived from the absorption f-value: A = 6.6702e15 g_l f / (g_u lambda^2), lambda in Angstrom (vacuum, from NIST level energies)",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "rme_J_ea0": {
+    "value": 1.362,
+    "unc": 0.047,
+    "method": "experiment",
+    "note": "derived from the f-value with the SCHEMA convention",
+    "source": "Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy (Toledo Heavy Ion Accelerator)",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+   },
+   "use": "129.6 nm ground-state lines of the 1299 A multiplet used for interstellar S I column densities (Beideck et al. 1994)",
+   "use_url": "https://articles.adsabs.harvard.edu/pdf/1994ApJ...428..393B"
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 78692.557,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p35d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 13120000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.2019,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 78691.43,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p4 3P1 - 3s23p35d 3D°2",
+   "type": "E1",
+   "A_s": {
+    "value": 17870000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.3031,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 78692.557,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p35d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 10240000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.1777,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 79185.35,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p37s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 2532000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.08785,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 78691.43,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p4 3P2 - 3s23p35d 3D°2",
+   "type": "E1",
+   "A_s": {
+    "value": 6518000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.1817,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 78691.843,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3s23p4 3P2 - 3s23p35d 3D°3",
+   "type": "E1",
+   "A_s": {
+    "value": 24700000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.4185,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 78692.557,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p35d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 740200.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.04742,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 79185.35,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p37s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 7912000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.1548,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 79185.35,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p37s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 14270000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.2063,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 80185.51,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p36d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 7770000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.151,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 80183.71,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3s23p4 3P1 - 3s23p36d 3D°2",
+   "type": "E1",
+   "A_s": {
+    "value": 10420000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.225,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 80185.51,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p36d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 5133000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.1223,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 573.59573,
+   "upper_cm": 80521.46,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3s23p4 3P0 - 3s23p38s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 2577000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.08641,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 396.05648,
+   "upper_cm": 80521.46,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3s23p4 3P1 - 3s23p38s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 7464000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.1466,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 80182.18,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "3s23p4 3P2 - 3s23p36d 3D°3",
+   "type": "E1",
+   "A_s": {
+    "value": 13160000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.297,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 80183.71,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3s23p4 3P2 - 3s23p36d 3D°2",
+   "type": "E1",
+   "A_s": {
+    "value": 2738000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.1145,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 80185.51,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p36d 3D°1",
+   "type": "E1",
+   "A_s": {
+    "value": 261300.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.02739,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 80521.46,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3s23p4 3P2 - 3s23p38s 3S°1",
+   "type": "E1",
+   "A_s": {
+    "value": 11810000.0,
+    "method": "experiment",
+    "note": "semi-empirical: measured lifetime of the upper level combined with a calculated branching ratio; no uncertainty printed (lifetime uncertainties are 6-12 %, 2 sigma)",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   },
+   "rme_J_ea0": {
+    "value": 0.183,
+    "method": "experiment",
+    "note": "derived from the semi-empirical A-value above with the SCHEMA convention",
+    "source": "Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d: laser-spectroscopy lifetime (Berzinsh et al. 1997 or this work) x relativistic Hartree-Fock branching ratio",
+    "url": "https://lup.lub.lu.se/search/files/5300541/2297075.pdf"
+   }
+  }
+ ],
+ "conflicts": [
+  "4s 3S°1 lifetime: beam-foil 1.875(0.094) ns (Beideck et al. 1994, kept) vs 1.5(0.3) ns (Savage & Lawrence 1966) and 1.4 ns (Mueller 1968); B-spline R-matrix theory 1.93 ns supports the beam-foil value.",
+  "3P0 - 4s 3S°1 (182.62 nm): Beideck's measured branching fraction 0.069(13) gives A = 3.7(7)e7 s^-1, whereas NIST ASD lists 5.64e7 s^-1 (LS-like ratio); the two stronger lines agree with NIST.",
+  "5p 5P3 lifetime: 615(50) ns (Delalic et al. 1990) vs '<97(30)' ns (Bridges & Wiese 1968) vs theory 130-165 ns (HFR, Opacity Project, B-spline R-matrix 158 ns). The Delalic value is kept as the only direct lifetime measurement but looks inconsistent with every calculation.",
+  "3d 3D° lifetime: 2.1(0.3) ns (Savage & Lawrence, multiplet) vs 3.0(0.6) ns (Federman & Cardelli, astronomical) vs 3.7 ns (B-spline R-matrix) vs '<1.5' ns (Mueller).",
+  "4d 3D°, 5s-8s 3S°, 5d, 6d 3D°: the laser lifetimes are about twice the relativistic Hartree-Fock values of the same authors (e.g. 4d 3D° 12.6 vs 6.0 ns; 6d 3D° 75(7) vs 16 ns); for 6d 3D° and 8s 3S° the astronomical values (199(90), 73(44) ns) are longer still.",
+  "4s'' 3P° lifetime: beam-foil 2.034(0.102) / 2.146(0.129) ns (kept) vs phase shift 2.8(0.3) ns (Smith 1978) vs '<1.2' ns (Mueller 1968).",
+  "3d 1P°1 (81438 cm^-1): 17(2) ns measured by Savage & Lawrence for the level they call 3s3p5 1P1 at 81440.3 cm^-1; B-spline R-matrix 13.9 ns.",
+  "4p 3P lifetime: 46.1(1.0) ns (Zerne et al. 1997, kept) vs 33(12) ns (Bridges & Wiese arc) vs HFR 36 ns; B-spline R-matrix 46.3 ns agrees with the laser value.",
+  "Level energies of 4p 3P: Lai et al. 2020 find the older compilation (Martin, Zalubas, Musgrove 1990) too high by 0.032 cm^-1 for all three levels; the current NIST values (64888.9325, 64891.3536, 64892.5514) already include the correction."
+ ],
+ "not_found": [
+  "33S hyperfine structure of the 3p4 3P ground term or of any excited level: no measurement exists according to Carette & Godefroid 2011; only their calculated A and B are given",
+  "measured lifetime of the metastable 4s 5S°2 level (N. J. Mason, Phys. Scr. 49, 578 (1994)): paper not accessible; theory value given",
+  "measured absolute A-values of the forbidden lines 458.9 nm (1S0-3P1) and 772.5 nm (1S0-1D2) (Kernahan & Pang, Can. J. Phys. 53, 1114 (1975)): only the first sentence of the abstract could be opened, no numbers; measured lifetimes of 1D2 and 1S0 not located",
+  "original tables of Berzinsh et al., Phys. Rev. A 55, 1836 (1997), Zerne et al., Phys. Scr. 56, 459 (1997), Li et al., Eur. Phys. J. D 2, 11 (1998) and Delalic et al., Phys. Scr. 42, 540 (1990): paywalled; values taken from the Biemont et al. 1998 comparison table and from the Zerne abstract",
+  "lifetimes of 4p 5P1,2,3, 4s' 3D°1,2,3, 3d 5D°1,2,3, 5p 5P1,2, 4s'' 1P°1: no measurement located, B-spline R-matrix values given and marked theory",
+  "lifetimes of 3s3p5 3P°2,1 (72023.471, 72382.305 cm^-1), 5d 3D°2 (78691.43 cm^-1; only J=1 and J=3 are listed), 12d 3D°3 (82723.25 cm^-1): nothing usable (the B-spline R-matrix table gives 6.5-6.7 microseconds for 3s3p5 3P°, which disagrees with the NIST A-values by a factor of about 7, so it is not included)",
+  "33S and 36S isotope shifts; isotope shifts of any one-photon line: none located (only 34S-32S on the 3P2 - 4p 3P2 two-photon line)",
+  "measured Lande g factors of excited levels (EPR of ground-term levels, Brown, J. Chem. Phys. 44, 2827 (1966), not accessible; NIST ASD already lists g(3P2), g(3P1))",
+  "empirical f-values of the weak VUV multiplets from interstellar absorption (Federman & Cardelli, Astrophys. J. 452, 269 (1995)): scanned paper downloaded but not transcribed; their values appear in column e of Biemont et al. 1998 Table 2",
+  "laser cooling: no scheme for atomic sulfur located",
+  "7p 5P3: Biemont et al. list a Delalic lifetime 415(25) ns at 79786 cm^-1, but NIST ASD puts 7p 5P3 at 79810.66 cm^-1; the level could not be identified unambiguously and is left out"
+ ],
+ "notes": "Level energies are the NIST ASD values (data/nist/S_I_levels.tsv). Uncertainties copied from Biemont et al. 1998 Table 1 are 2 sigma ('b represents a 2 sigma uncertainty'); Beideck et al. 1994 uncertainties are 1 sigma as printed in the original (Biemont et al. list them doubled). Lifetimes attributed to Berzinsh et al. 1997, Delalic et al. 1990, Bridges & Wiese, Smith 1978, Mueller 1968, Federman & Cardelli 1995 are second-hand (method 'compilation'). The Federman & Cardelli 'lifetimes' are inferred from interstellar absorption f-values, not laboratory lifetimes. Savage & Lawrence values are multiplet lifetimes attached to each fine-structure level. A-values of the 3P - ns 3S°, nd 3D° lines from Biemont et al. are semi-empirical (measured lifetime x calculated branching ratio); they are close to what NIST ASD already lists. 'f_abs' (absorption oscillator strength) is a non-schema field; type 'two-photon' is used for the Doppler-free two-photon lines (frequency = total energy of both photons). 32S and 34S have I = 0; 33S has I = 3/2. Lifetimes of 1D2 and 1S0 are derived from calculated A-values (theory)."
+}

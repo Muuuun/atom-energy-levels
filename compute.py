@@ -465,7 +465,11 @@ def build_nist(key, cfg):
         if ln["A"] is None and not cfg["keep_unrated"] and not lit.transition(lo["E"], up["E"]):
             continue
         chosen[(lo["E"], up["E"])] = ln
-    for lt in lit.raw.get("transitions", []):
+    def lit_rank(lt):  # annotated lines first, then the strongest
+        v = Literature.val(lt.get("A_s"))
+        return (0 if lt.get("use") else 1, -(v[0] if v else 0))
+
+    for lt in sorted(lit.raw.get("transitions", []), key=lit_rank):
         lo, up = find(lt.get("lower_cm", -1e9)), find(lt.get("upper_cm", -1e9))
         if lo and up and up["E"] > lo["E"] and 1e7 / (up["E"] - lo["E"]) < LAMBDA_MAX_NM and up["E"] <= max(cfg["E_cut"], 0):
             if cfg.get("auto") and len(chosen) >= 90 and not lt.get("use") and (lo["E"], up["E"]) not in chosen:
