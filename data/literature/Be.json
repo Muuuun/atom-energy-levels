@@ -1,0 +1,1211 @@
+{
+  "element": "Be",
+  "isotopes": {
+    "9": {
+      "I": "3/2",
+      "abundance_percent": 100,
+      "source": "abundance: NIST Atomic Weights and Isotopic Compositions (Be): single isotope 9Be, isotopic composition 1, relative atomic mass 9.012 183 065(82); nuclear spin: Blachman & Lurio, Phys. Rev. 153, 164 (1967) abstract ('4Be9 (I = 3/2)'), also Cook et al. PRA 101, 042503 ('nuclear spin I = 3/2')",
+      "url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Be",
+      "url_spin": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.153.164",
+      "nuclear_magnetic_moment_muN": {
+        "value": -1.177432,
+        "unc": 3e-06,
+        "method": "compilation",
+        "source": "N. J. Stone table value as adopted in Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026) (section III E)",
+        "url": "https://arxiv.org/pdf/2603.11098"
+      },
+      "nuclear_quadrupole_moment_b": {
+        "value": 0.0535,
+        "unc": 0.00014,
+        "method": "compilation",
+        "note": "from the measured B(2s2p 3P2) of Blachman & Lurio combined with explicitly-correlated-Gaussian theory; Tang et al. arXiv:2411.13013 obtain 0.05320(50) b; Blachman & Lurio's own value was +0.049(3) b",
+        "source": "Puchalski, Komasa, Pachucki, Phys. Rev. Research 3, 013293 (2021) [arXiv:2102.01437]",
+        "url": "https://arxiv.org/pdf/2102.01437"
+      }
+    }
+  },
+  "ionization_energy": {
+    "9": [
+      {
+        "value_cm": 75192.64,
+        "unc_cm": 0.06,
+        "reference_level": "2s2 1S0 ground state; limit Be II 2s 2S1/2",
+        "method": "compilation",
+        "source": "NIST ASD levels file Be_I_levels.tsv ('Limit' row); value from Beigang, Schmidt, West, J. Phys. Colloq. 44, C7 (1983), laser spectroscopy of high 2sns 1S and 2snd 1D Rydberg members, quoted as 75 192.64(6) cm^-1 in Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript) and adopted in Kramida & Martin JPCRD 26, 1185 (1997); Fuhr & Wiese (2010) give 9.3227 eV",
+        "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503"
+      },
+      {
+        "value_cm": 75192.5,
+        "unc_cm": 0.1,
+        "reference_level": "2s2 1S0 ground state",
+        "method": "compilation",
+        "source": "Seaton, J. Phys. B 9, 3001 (1976), semi-empirical quantum-defect analysis, as quoted in Kramida & Martin, J. Phys. Chem. Ref. Data 26, 1185 (1997)",
+        "url": "https://srd.nist.gov/jpcrdreprint/1.555999.pdf"
+      },
+      {
+        "value_cm": 75192.699,
+        "unc_cm": 0.007,
+        "reference_level": "2s2 1S0 ground state",
+        "method": "theory",
+        "source": "Puchalski, Komasa, Pachucki, Phys. Rev. A 87, 030502(R) (2013) (abstract)",
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.87.030502"
+      }
+    ]
+  },
+  "levels": [
+    {
+      "nist_energy_cm": 21978.925,
+      "label": "2s2p 3P1",
+      "lifetime": {
+        "value": 3.593,
+        "unit": "s",
+        "method": "theory",
+        "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I (length gauge; printed relative uncertainty 136%)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 2.307,
+            "unit": "s",
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer, J. Phys. B 32, 5805 (1999), Table 3 (MCHF + Breit-Pauli)",
+            "url": "https://nlte.nist.gov/MCHF/all/p252.pdf",
+            "note": "implies A = 0.433 s^-1 for the 454.9 nm intercombination line; NIST ASD lists Aki = 0.42 s^-1 (accuracy E)"
+          }
+        ],
+        "note": "No measurement exists. The two calculations disagree by a factor 1.6; arXiv:2603.11098 itself says this lifetime 'still needs further research' (strong gauge dependence)."
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": -139.373,
+          "A_unc": 0.012,
+          "B_MHz": -0.753,
+          "B_unc": 0.044,
+          "method": "experiment",
+          "source": "Blachman & Lurio, Phys. Rev. 153, 164 (1967), atomic-beam magnetic resonance; corrected (second/third-order) A and B as quoted in Table VI of Tang et al., 'Revisiting the hyperfine interval for the 2s2p 3PJ state in 9Be', arXiv:2411.13013, and Table VI of arXiv:2603.11098",
+          "url": "https://arxiv.org/pdf/2411.13013",
+          "zero_field_intervals_MHz": {
+            "F=1/2-3/2": {
+              "value": 202.9529,
+              "unc": 0.0015
+            },
+            "F=3/2-5/2": {
+              "value": 354.4365,
+              "unc": 0.0027
+            },
+            "source": "Blachman & Lurio, Phys. Rev. 153, 164 (1967), abstract",
+            "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.153.164"
+          },
+          "alternatives": [
+            {
+              "A_MHz": -139.3566,
+              "A_unc": 0.0083,
+              "B_MHz": -0.714,
+              "B_unc": 0.03,
+              "method": "compilation",
+              "note": "re-analysis of the Blachman-Lurio intervals with MCDHF second/third-order corrections ('Recommend' row)",
+              "source": "Tang et al., arXiv:2411.13013, Table VI",
+              "url": "https://arxiv.org/pdf/2411.13013"
+            },
+            {
+              "A_MHz": -140.1564,
+              "A_unc": 0.0008,
+              "B_MHz": -3.2363,
+              "B_unc": 0.0007,
+              "method": "compilation",
+              "note": "first-order (uncorrected for hyperfine mixing between 3P_J levels) constants derived from the Blachman-Lurio intervals; do not mix with the corrected values",
+              "source": "Puchalski, Komasa, Pachucki, Phys. Rev. Research 3, 013293 (2021) [arXiv:2102.01437], Table II",
+              "url": "https://arxiv.org/pdf/2102.01437"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 21981.26,
+      "label": "2s2p 3P2",
+      "lifetime": {
+        "value": 3592.0,
+        "unit": "s",
+        "method": "theory",
+        "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I (length gauge; printed relative uncertainty 0.01%)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 5872.6,
+            "unit": "s",
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer, J. Phys. B 32, 5805 (1999), Table 3 (MCHF + Breit-Pauli)",
+            "url": "https://nlte.nist.gov/MCHF/all/p252.pdf",
+            "note": "decay is the M2 line 2s2 1S0 - 2s2p 3P2; Fuhr & Wiese JPCRD 39, 013101 (2010) Table 4 list A(M2) = 1.66e-04 s^-1 from Froese Fischer & Tachiev"
+          }
+        ],
+        "note": "No measurement exists. Theory values differ by a factor 1.6."
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": -124.5368,
+          "A_unc": 0.0017,
+          "B_MHz": 1.429,
+          "B_unc": 0.008,
+          "method": "experiment",
+          "source": "Blachman & Lurio, Phys. Rev. 153, 164 (1967), atomic-beam magnetic resonance; corrected (second/third-order) A and B as quoted in Table VI of Tang et al., 'Revisiting the hyperfine interval for the 2s2p 3PJ state in 9Be', arXiv:2411.13013, and Table VI of arXiv:2603.11098",
+          "url": "https://arxiv.org/pdf/2411.13013",
+          "zero_field_intervals_MHz": {
+            "F=1/2-3/2": {
+              "value": 187.6157,
+              "unc": 0.0042
+            },
+            "F=3/2-5/2": {
+              "value": 312.0226,
+              "unc": 0.0021
+            },
+            "F=5/2-7/2": {
+              "value": 435.4773,
+              "unc": 0.0021
+            },
+            "source": "Blachman & Lurio, Phys. Rev. 153, 164 (1967), abstract",
+            "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.153.164"
+          },
+          "alternatives": [
+            {
+              "A_MHz": -124.5341,
+              "A_unc": 0.001,
+              "B_MHz": 1.4542,
+              "B_unc": 0.0067,
+              "C_MHz": 0.00012,
+              "C_unc": 8e-05,
+              "method": "compilation",
+              "note": "re-analysis of the Blachman-Lurio intervals including the octupole constant C ('Recommend' row); B is 1.7% larger than the original",
+              "source": "Tang et al., arXiv:2411.13013, Table VI",
+              "url": "https://arxiv.org/pdf/2411.13013"
+            },
+            {
+              "A_MHz": -124.6165,
+              "A_unc": 0.0005,
+              "B_MHz": 0.78,
+              "B_unc": 0.0021,
+              "C_MHz": -0.0003,
+              "C_unc": 9e-05,
+              "method": "compilation",
+              "note": "first-order (uncorrected for hyperfine mixing) constants derived from the Blachman-Lurio intervals; do not mix with the corrected values",
+              "source": "Puchalski, Komasa, Pachucki, Phys. Rev. Research 3, 013293 (2021) [arXiv:2102.01437], Table II",
+              "url": "https://arxiv.org/pdf/2102.01437"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 42565.4502,
+      "label": "2s2p 1P1",
+      "lifetime": {
+        "value": 1.85e-09,
+        "unc": 4e-11,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Schnabel & Kock, Phys. Rev. A 61, 062506 (2000) (abstract): nonlinear time-resolved laser-induced fluorescence, cascade-free",
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.61.062506",
+        "alternatives": [
+          {
+            "value": 1.77e-09,
+            "unc": 5e-11,
+            "source": "Irving, Henderson, Curtis, Martinson, Bengtsson, Can. J. Phys. 77, 137 (1999), beam-foil with ANDC cascade correction as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098",
+            "method": "compilation"
+          },
+          {
+            "value": 1.8e-09,
+            "unc": 1.5e-10,
+            "source": "Hontzeas, Martinson, Erman, Buchta, Phys. Scr. 6, 55 (1972), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098",
+            "method": "compilation"
+          },
+          {
+            "value": 2.05e-09,
+            "unc": 6e-11,
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil (no cascade correction) as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098",
+            "method": "compilation"
+          },
+          {
+            "value": 2.3e-09,
+            "unc": 1e-10,
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098",
+            "method": "compilation"
+          },
+          {
+            "value": 2.5e-09,
+            "unc": 2e-10,
+            "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098",
+            "method": "compilation"
+          },
+          {
+            "value": 1.805e-09,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.7861e-09,
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer, J. Phys. B 32, 5805 (1999), Table 3 (MCHF + Breit-Pauli)",
+            "url": "https://nlte.nist.gov/MCHF/all/p252.pdf"
+          }
+        ]
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": -13.836,
+          "B_MHz": 0.8452,
+          "method": "theory",
+          "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table V (MCDHF/RCI; no measurement located)",
+          "url": "https://arxiv.org/pdf/2603.11098"
+        },
+        "note": "Not measured: Cook et al. PRL 121, 053001 (2018) abstract states the hyperfine constants could not be extracted because of the large natural linewidth; hyperfine splitting is smaller than the 88 MHz natural linewidth (Cook et al. PRA 101, 042503)."
+      },
+      "measured_energy_cm": {
+        "value": 42565.4501,
+        "unc": 0.0013,
+        "method": "experiment",
+        "source": "Cook, Vira, Patterson, Livernois, Williams, Phys. Rev. Lett. 121, 053001 (2018) (abstract); centre of gravity, saturated absorption on an atomic beam",
+        "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.053001"
+      }
+    },
+    {
+      "nist_energy_cm": 52080.943,
+      "label": "2s3s 3S1",
+      "lifetime": {
+        "value": 6.4e-09,
+        "unc": 2e-10,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kerkhoff, Schmidt, Zimmermann, Phys. Lett. A 80, 11 (1980) (abstract): selective pulsed dye-laser excitation from metastable 2s2p 3P, time-resolved fluorescence",
+        "url": "https://www.osti.gov/etdeweb/biblio/6249639",
+        "alternatives": [
+          {
+            "value": 5.95e-09,
+            "unc": 1.6e-10,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 7.3e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 6.2e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 6.712e-09,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 6.6133e-09,
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer, J. Phys. B 32, 5805 (1999), Table 3 (MCHF + Breit-Pauli)",
+            "url": "https://nlte.nist.gov/MCHF/all/p252.pdf"
+          }
+        ]
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": -332.25,
+          "B_MHz": 0.0,
+          "method": "theory",
+          "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table V (MCDHF/RCI; no measurement located)",
+          "url": "https://arxiv.org/pdf/2603.11098"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 54677.349,
+      "label": "2s3s 1S0",
+      "lifetime": {
+        "value": 2.885e-08,
+        "unit": "s",
+        "method": "theory",
+        "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I (length gauge; printed relative uncertainty 0.48%)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 2.9886e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer, J. Phys. B 32, 5805 (1999), Table 3 (MCHF + Breit-Pauli)",
+            "url": "https://nlte.nist.gov/MCHF/all/p252.pdf"
+          }
+        ],
+        "note": "No measured lifetime located."
+      },
+      "measured_energy_cm": {
+        "value": 54677.35,
+        "unc": 0.005,
+        "method": "experiment",
+        "source": "Ahrendsen, Karani, Williams, Phys. Rev. A 110, 032818 (2024) (abstract); saturated absorption in a hollow-cathode lamp, frequency comb",
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.032818"
+      }
+    },
+    {
+      "nist_energy_cm": 56882.5474,
+      "label": "2p2 1D2",
+      "lifetime": {
+        "value": 0.0001636,
+        "unit": "s",
+        "method": "theory",
+        "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I (length gauge; printed relative uncertainty 2.53%)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 0.00081856,
+            "unit": "s",
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer, J. Phys. B 32, 5805 (1999), Table 3 (MCHF + Breit-Pauli)",
+            "url": "https://nlte.nist.gov/MCHF/all/p252.pdf"
+          }
+        ],
+        "note": "No measured lifetime located. The two calculations differ by a factor 5 (decay 2p2 1D2 - 2s2p 1P1 at 698 nm is strongly cancellation-affected; arXiv:2603.11098 notes the E2 branch to the ground state is non-negligible)."
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": -13.938,
+          "B_MHz": 1.7418,
+          "method": "theory",
+          "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table V (MCDHF/RCI; no measurement located)",
+          "url": "https://arxiv.org/pdf/2603.11098"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 59693.6,
+      "label": "2p2 3P0",
+      "lifetime": {
+        "value": 2.4e-09,
+        "unc": 1e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil (re-analysis of the Stockholm decay curves), term value for 2p2 3P (J not resolved) as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 2.42e-09,
+            "unc": 6e-11,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 2.3e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 2.36e-09,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Tables I and IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 59694.99,
+      "label": "2p2 3P1",
+      "lifetime": {
+        "value": 2.4e-09,
+        "unc": 1e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil (re-analysis of the Stockholm decay curves), term value for 2p2 3P (J not resolved) as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 2.42e-09,
+            "unc": 6e-11,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 2.3e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 2.36e-09,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Tables I and IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": 18.101,
+          "B_MHz": 0.7337,
+          "method": "theory",
+          "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table V (MCDHF/RCI; no measurement located)",
+          "url": "https://arxiv.org/pdf/2603.11098"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 59696.98,
+      "label": "2p2 3P2",
+      "lifetime": {
+        "value": 2.4e-09,
+        "unc": 1e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil (re-analysis of the Stockholm decay curves), term value for 2p2 3P (J not resolved) as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 2.42e-09,
+            "unc": 6e-11,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 2.3e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 2.36e-09,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Tables I and IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": 3.3859,
+          "B_MHz": -1.468,
+          "method": "theory",
+          "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table V (MCDHF/RCI; no measurement located)",
+          "url": "https://arxiv.org/pdf/2603.11098"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 60187.4434,
+      "label": "2s3p 1P1",
+      "lifetime": {
+        "value": 7.002e-08,
+        "unit": "s",
+        "method": "theory",
+        "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I (length gauge; printed relative uncertainty 0.32%)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 6.9996e-08,
+            "unit": "s",
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer, J. Phys. B 32, 5805 (1999), Table 3 (MCHF + Breit-Pauli)",
+            "url": "https://nlte.nist.gov/MCHF/all/p252.pdf"
+          }
+        ],
+        "note": "No measured lifetime located."
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": -6.7039,
+          "B_MHz": 0.4272,
+          "method": "theory",
+          "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table V (MCDHF/RCI; no measurement located)",
+          "url": "https://arxiv.org/pdf/2603.11098"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 62053.7385,
+      "label": "2s3d 3D1",
+      "lifetime": {
+        "value": 5.2e-09,
+        "unc": 2e-10,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kerkhoff, Schmidt, Zimmermann, Phys. Lett. A 80, 11 (1980) (abstract): selective pulsed dye-laser excitation from metastable 2s2p 3P, time-resolved fluorescence; term value for 2s3d 3D (J not resolved)",
+        "url": "https://www.osti.gov/etdeweb/biblio/6249639",
+        "alternatives": [
+          {
+            "value": 5e-09,
+            "unc": 1.4e-10,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 4.9e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 5.4e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 5.229e-09,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": 150.6,
+          "B_MHz": 0.0159,
+          "method": "theory",
+          "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table V (MCDHF/RCI; no measurement located)",
+          "url": "https://arxiv.org/pdf/2603.11098"
+        }
+      }
+    },
+    {
+      "nist_energy_cm": 62053.742,
+      "label": "2s3d 3D2 and 3D3 (same NIST energy)",
+      "lifetime": {
+        "value": 5.2e-09,
+        "unc": 2e-10,
+        "unit": "s",
+        "method": "experiment",
+        "source": "Kerkhoff, Schmidt, Zimmermann, Phys. Lett. A 80, 11 (1980) (abstract): selective pulsed dye-laser excitation from metastable 2s2p 3P, time-resolved fluorescence; term value for 2s3d 3D (J not resolved)",
+        "url": "https://www.osti.gov/etdeweb/biblio/6249639",
+        "alternatives": [
+          {
+            "value": 5e-09,
+            "unc": 1.4e-10,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 4.9e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 5.4e-09,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 5.229e-09,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      },
+      "hyperfine_theory_by_J": {
+        "3D2": {
+          "A_MHz": -50.946,
+          "B_MHz": 0.0226
+        },
+        "3D3": {
+          "A_MHz": -101.22,
+          "B_MHz": 0.0456
+        },
+        "method": "theory",
+        "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table V",
+        "url": "https://arxiv.org/pdf/2603.11098"
+      }
+    },
+    {
+      "nist_energy_cm": 64428.4032,
+      "label": "2s3d 1D2",
+      "lifetime": {
+        "value": 1.23e-08,
+        "unc": 4e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 1.2e-08,
+            "unc": 3e-10,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1e-08,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.04e-08,
+            "unc": 1e-09,
+            "method": "compilation",
+            "source": "Andersen, Roberts, Sorensen, Phys. Scr. 4, 52 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.2e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.2484e-08,
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer, J. Phys. B 32, 5805 (1999), Table 3 (MCHF + Breit-Pauli)",
+            "url": "https://nlte.nist.gov/MCHF/all/p252.pdf"
+          }
+        ],
+        "note": "Beam-foil results split into two groups (about 10 ns and about 12 ns); the 12 ns group agrees with theory."
+      },
+      "hyperfine": {
+        "9": {
+          "A_MHz": 4,
+          "A_unc": 1,
+          "method": "compilation",
+          "note": "magnitude only as quoted ('measured magnetic dipole constant A = 4(1) MHz'); sign not stated in the opened text; MCDHF theory gives A = -3.9842 MHz, B = 0.5005 MHz (arXiv:2603.11098 Table V)",
+          "source": "Poulsen, Andersen, Skouboe, J. Phys. B 8, 1393 (1975), fast-beam zero-field level crossing, as quoted in Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript)",
+          "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503"
+        }
+      },
+      "measured_energy_cm": {
+        "value": 64428.40321,
+        "unc": 0.00055,
+        "method": "experiment",
+        "source": "Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript); resonant two-photon spectroscopy, centre of gravity, limited by unresolved hyperfine structure",
+        "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503"
+      }
+    },
+    {
+      "nist_energy_cm": 64506.483,
+      "label": "2s4s 3S1",
+      "lifetime": {
+        "value": 1.82e-08,
+        "unc": 7e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Wang, Quinet, Li, Yu, Li, Wang, Gong, Dai, JQSRT 212, 112 (2018), time-resolved laser-induced fluorescence as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 1.804e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table I",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 67941.63,
+      "label": "2s4d 3D1",
+      "lifetime": {
+        "value": 1.17e-08,
+        "unc": 6e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Wang, Quinet, Li, Yu, Li, Wang, Gong, Dai, JQSRT 212, 112 (2018), time-resolved laser-induced fluorescence; term value for 2s4d 3D as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 1.12e-08,
+            "unc": 6e-10,
+            "method": "compilation",
+            "source": "Bromander, Buchta, Lundin, Phys. Lett. A 29, 523 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.15e-08,
+            "unc": 5e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.08e-08,
+            "unc": 4e-10,
+            "method": "compilation",
+            "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.171e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 67941.65,
+      "label": "2s4d 3D2",
+      "lifetime": {
+        "value": 1.17e-08,
+        "unc": 6e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Wang, Quinet, Li, Yu, Li, Wang, Gong, Dai, JQSRT 212, 112 (2018), time-resolved laser-induced fluorescence; term value for 2s4d 3D as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 1.12e-08,
+            "unc": 6e-10,
+            "method": "compilation",
+            "source": "Bromander, Buchta, Lundin, Phys. Lett. A 29, 523 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.15e-08,
+            "unc": 5e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.08e-08,
+            "unc": 4e-10,
+            "method": "compilation",
+            "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.171e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 67941.68,
+      "label": "2s4d 3D3",
+      "lifetime": {
+        "value": 1.17e-08,
+        "unc": 6e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Wang, Quinet, Li, Yu, Li, Wang, Gong, Dai, JQSRT 212, 112 (2018), time-resolved laser-induced fluorescence; term value for 2s4d 3D as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 1.12e-08,
+            "unc": 6e-10,
+            "method": "compilation",
+            "source": "Bromander, Buchta, Lundin, Phys. Lett. A 29, 523 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.15e-08,
+            "unc": 5e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.08e-08,
+            "unc": 4e-10,
+            "method": "compilation",
+            "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.171e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 68780.96,
+      "label": "2s4d 1D2",
+      "lifetime": {
+        "value": 1.93e-08,
+        "unc": 5e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Bromander, Phys. Scr. 4, 61 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 1.88e-08,
+            "unc": 5e-10,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.36e-08,
+            "unc": 2e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.4e-08,
+            "unc": 1.5e-09,
+            "method": "compilation",
+            "source": "Andersen, Roberts, Sorensen, Phys. Scr. 4, 52 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.45e-08,
+            "unc": 1e-09,
+            "method": "compilation",
+            "source": "Poulsen, Andersen, Skouboe, J. Phys. B 8, 1393 (1975), fast-beam level crossing as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 2.004e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ],
+        "note": "Strong conflict: Stockholm beam-foil values about 19 ns (agree with theory 20.0 ns), Aarhus values about 14 ns."
+      }
+    },
+    {
+      "nist_energy_cm": 69010.18,
+      "label": "2s5s 3S1",
+      "lifetime": {
+        "value": 3.86e-08,
+        "unc": 6e-10,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Wang, Quinet, Li, Yu, Li, Wang, Gong, Dai, JQSRT 212, 112 (2018), time-resolved laser-induced fluorescence as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 1.17e-08,
+            "unc": 6e-10,
+            "method": "compilation",
+            "source": "Bergstrom et al., Phys. Lett. A 28, 721 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 1.05e-08,
+            "unc": 5e-10,
+            "method": "compilation",
+            "source": "Andersen, Jessen, Sorensen, Phys. Rev. 188, 76 (1969), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          },
+          {
+            "value": 3.822e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ],
+        "note": "The two old beam-foil values listed for this level in Table IV of arXiv:2603.11098 (about 11 ns) are a factor 3.5 below the laser value and theory; they are probably blended/misassigned and should not be used."
+      }
+    },
+    {
+      "nist_energy_cm": 70603.73,
+      "label": "2s5d 3D3",
+      "lifetime": {
+        "value": 2.33e-08,
+        "unc": 1e-09,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Wang, Quinet, Li, Yu, Li, Wang, Gong, Dai, JQSRT 212, 112 (2018), time-resolved laser-induced fluorescence; term value for 2s5d 3D as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 2.242e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 70603.76,
+      "label": "2s5d 3D1 and 3D2 (same NIST energy)",
+      "lifetime": {
+        "value": 2.33e-08,
+        "unc": 1e-09,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Wang, Quinet, Li, Yu, Li, Wang, Gong, Dai, JQSRT 212, 112 (2018), time-resolved laser-induced fluorescence; term value for 2s5d 3D as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 2.242e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 71002.406,
+      "label": "2s5d 1D2",
+      "lifetime": {
+        "value": 1.9e-08,
+        "unc": 2e-09,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Andersen, Roberts, Sorensen, Phys. Scr. 4, 52 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 3.541e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV (Moccia & Spizzo 35.1 ns and Chang 35.5 ns agree)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ],
+        "note": "Only measurement; it is a factor 1.9 below three independent calculations (about 35 ns). arXiv:2603.11098 calls the measurement 'relatively old and scarce'. Treat as unreliable."
+      }
+    },
+    {
+      "nist_energy_cm": 71160.514,
+      "label": "2s6s 3S1",
+      "lifetime": {
+        "value": 7.34e-08,
+        "unc": 2.7e-09,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Wang, Quinet, Li, Yu, Li, Wang, Gong, Dai, JQSRT 212, 112 (2018), time-resolved laser-induced fluorescence as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 7.003e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ]
+      }
+    },
+    {
+      "nist_energy_cm": 72251.22,
+      "label": "2s6d 1D2",
+      "lifetime": {
+        "value": 3.8e-08,
+        "unc": 4e-09,
+        "unit": "s",
+        "method": "compilation",
+        "source": "Andersen, Roberts, Sorensen, Phys. Scr. 4, 52 (1971), beam-foil as quoted in Table IV of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+        "url": "https://arxiv.org/pdf/2603.11098",
+        "alternatives": [
+          {
+            "value": 5.841e-08,
+            "method": "theory",
+            "source": "Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026), Table IV (Moccia & Spizzo 57.3 ns and Chang 58.4 ns agree)",
+            "url": "https://arxiv.org/pdf/2603.11098"
+          }
+        ],
+        "note": "Only measurement; a factor 1.5 below theory (about 58 ns). Treat as unreliable."
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 42565.4502,
+      "label": "2s2 1S0 - 2s2p 1P1",
+      "use": "234.9 nm resonance line; first (resonant) step of two-photon photoionization loading of Be+ ion traps",
+      "type": "E1",
+      "wavenumber_cm": {
+        "value": 42565.4501,
+        "unc": 0.0013,
+        "isotope": "9",
+        "method": "experiment",
+        "source": "Cook, Vira, Patterson, Livernois, Williams, Phys. Rev. Lett. 121, 053001 (2018) (abstract); centre of gravity, saturated absorption on an atomic beam, laser referenced to an ultra-low-expansion cavity",
+        "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.053001",
+        "alternatives": [
+          {
+            "value": 42565.4503,
+            "unc": 0.0014,
+            "method": "experiment",
+            "source": "Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript) (resonant two-photon measurement)",
+            "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503"
+          },
+          {
+            "value": 42565.4498,
+            "unc": 0.0017,
+            "method": "experiment",
+            "source": "Ahrendsen, Karani, Williams, Phys. Rev. A 110, 032818 (2024) (abstract); saturated absorption in a hollow-cathode lamp, frequency comb",
+            "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.032818"
+          },
+          {
+            "value": 42565.35,
+            "unc": 0.18,
+            "method": "compilation",
+            "source": "Johansson, Ark. Fys. 23, 119 (1962), as quoted in Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript)",
+            "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503"
+          },
+          {
+            "value": 42565.441,
+            "unc": 0.011,
+            "method": "theory",
+            "source": "Puchalski, Komasa, Pachucki, Phys. Rev. A 87, 030502(R) (2013) (abstract), explicitly correlated Gaussians with QED",
+            "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.87.030502"
+          }
+        ]
+      },
+      "frequency_THz": {
+        "value": 1276.08008,
+        "unc": 5e-05,
+        "isotope": "9",
+        "method": "experiment",
+        "source": "Ahrendsen, Karani, Williams, Phys. Rev. A 110, 032818 (2024) (abstract); saturated absorption in a hollow-cathode lamp, frequency comb; printed as 1 276 080 080(50) MHz",
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.032818"
+      },
+      "oscillator_strength_f": {
+        "value": 1.34,
+        "unc": 0.03,
+        "method": "experiment",
+        "source": "Schnabel & Kock, Phys. Rev. A 61, 062506 (2000) (abstract), from the measured 1P1 lifetime 1.85(4) ns",
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.61.062506",
+        "alternatives": [
+          {
+            "value": 1.4,
+            "unc": 0.04,
+            "method": "compilation",
+            "source": "Irving et al., Can. J. Phys. 77, 137 (1999), beam-foil ANDC, as quoted in Fuhr & Wiese, J. Phys. Chem. Ref. Data 39, 013101 (2010), Table 1 (Tachiev & Froese Fischer 1999 Table 8 quote the same result as 1.40(6))",
+            "url": "https://srd.nist.gov/jpcrdreprint/1.3286088.pdf"
+          },
+          {
+            "value": 1.38,
+            "method": "theory",
+            "source": "Tachiev & Froese Fischer MCHF, as listed in Fuhr & Wiese, J. Phys. Chem. Ref. Data 39, 013101 (2010), Table 1",
+            "url": "https://srd.nist.gov/jpcrdreprint/1.3286088.pdf"
+          }
+        ]
+      },
+      "natural_linewidth_MHz": {
+        "value": 88,
+        "method": "compilation",
+        "source": "Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript): 'hyperfine splitting smaller than the 88 MHz natural linewidth' (stated without uncertainty or derivation)",
+        "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503"
+      },
+      "isotope_shift_MHz": {
+        "11-9": {
+          "value": 16015.29,
+          "unc": 0.03,
+          "method": "theory",
+          "note": "THEORY, no measurement exists for this line. Described as the 11Be-9Be isotope mass shift; printed as 16.01529(3) GHz; MCDHF/RCI gives 16.007 GHz. Sign assumed nu(11Be) - nu(9Be).",
+          "source": "Puchalski, Pachucki, Komasa, Phys. Rev. A 89, 012506 (2014), as quoted in the text of Wu, Tian, Si, Wang, Jonsson, Gaigalas, Godefroid, Amarsi, Chen, 'Atomic data benchmarked by large-scale MCDHF calculations for beryllium', arXiv:2603.11098 (accepted J. Phys. Chem. Ref. Data 2026)",
+          "url": "https://arxiv.org/pdf/2603.11098"
+        }
+      }
+    },
+    {
+      "lower_cm": 42565.4502,
+      "upper_cm": 64428.4032,
+      "label": "2s2p 1P1 - 2s3d 1D2",
+      "use": "457.4 nm second step of resonant two-photon spectroscopy",
+      "type": "E1",
+      "wavenumber_cm": {
+        "value": 21862.9529,
+        "unc": 0.0014,
+        "isotope": "9",
+        "method": "experiment",
+        "source": "Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript)",
+        "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503",
+        "alternatives": [
+          {
+            "value": 21862.96,
+            "unc": 0.05,
+            "method": "compilation",
+            "source": "Johansson, Ark. Fys. 23, 119 (1962), as quoted in Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript)",
+            "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503"
+          }
+        ]
+      },
+      "natural_linewidth_MHz": {
+        "value": 12,
+        "method": "compilation",
+        "source": "Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript): 'the 12 MHz 1P1-1D2 natural linewidth' (stated without uncertainty)",
+        "url": "https://link.aps.org/accepted/10.1103/PhysRevA.101.042503"
+      }
+    },
+    {
+      "lower_cm": 42565.4502,
+      "upper_cm": 54677.349,
+      "label": "2s2p 1P1 - 2s3s 1S0",
+      "use": "825.6 nm",
+      "type": "E1",
+      "frequency_THz": {
+        "value": 363.10565,
+        "unc": 0.00013,
+        "isotope": "9",
+        "method": "experiment",
+        "source": "Ahrendsen, Karani, Williams, Phys. Rev. A 110, 032818 (2024) (abstract); saturated absorption in a hollow-cathode lamp, frequency comb; printed as 363 105 650(130) MHz",
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.032818"
+      }
+    },
+    {
+      "lower_cm": 0.0,
+      "upper_cm": 21978.925,
+      "label": "2s2 1S0 - 2s2p 3P1",
+      "use": "454.9 nm intercombination line",
+      "type": "intercombination",
+      "wavenumber_cm": {
+        "value": 21978.925,
+        "unc": 0.01,
+        "method": "compilation",
+        "source": "Bozman, Corliss, Meggers, Trees, J. Res. Natl. Bur. Stand. 50, 131 (1953), as quoted in Cook, Vira, Williams, Phys. Rev. A 101, 042503 (2020) (accepted manuscript) and in Kramida & Martin, J. Phys. Chem. Ref. Data 26, 1185 (1997) (air wavelength 4548.538 A, vacuum 4549.813 A, measurement uncertainty 0.002 A)",
+        "url": "https://srd.nist.gov/jpcrdreprint/1.555999.pdf"
+      },
+      "A_s": {
+        "value": 0.43,
+        "method": "theory",
+        "note": "THEORY (no measurement). Printed as 4.3e-09 in units of 10^8 s^-1, accuracy class E. arXiv:2603.11098 gives a 3P1 lifetime of 3.593 s (i.e. a rate about 1.6 times smaller) with a stated 136% relative uncertainty.",
+        "source": "Fuhr & Wiese, J. Phys. Chem. Ref. Data 39, 013101 (2010), Table 3 line 1 (from Tachiev & Froese Fischer MCHF)",
+        "url": "https://srd.nist.gov/jpcrdreprint/1.3286088.pdf"
+      }
+    }
+  ],
+  "not_found": [
+    "Measured ionization energy newer than Beigang 1983: the task named a 'Cook et al. PRA 101, 042503 (2020) Rydberg / ionization energy' paper; the opened manuscript of PRA 101, 042503 is 'Resonant two-photon spectroscopy of the 2s3d 1D2 level' and only announces a future Rydberg measurement of the threshold. No published Rydberg-series ionization-energy measurement by that group was located (web search + arXiv listing).",
+    "Cook et al. Phys. Rev. A 98, 053415 (2018): could not be located/opened; the 1S0-1P1 frequency result found is Cook et al. PRL 121, 053001 (2018) (abstract only; full text paywalled, so the measured hyperfine constants/linewidth of 1P1 from that paper are not recorded).",
+    "Isotope shift of the 234.9 nm line (9Be-10Be, 9Be-7Be): no measurement located; only theory (Puchalski et al. PRA 89, 012506, 11Be-9Be value quoted second-hand). The only measured neutral-Be isotope shifts found are 10Be-9Be shifts of two-photon 2s2 1S0 - 2sns 1S / 2snd 1D Rydberg transitions (Wen, Travis, Lucatorto, Johnson, Clark, PRA 37, 4207 (1988)); the abstract gives no per-line numbers.",
+    "Measured hyperfine constants of 2s2p 1P1 and 2s3s 3S1: none located (theory values from arXiv:2603.11098 entered and marked).",
+    "Measured g_J of the 2s2p 3P levels: not stated in the Blachman & Lurio abstract or in the papers that re-analyse it; full text of Phys. Rev. 153, 164 is paywalled. Only LS/MCDHF theory values (3P1,2: 1.5000; 1P1: 1.0000; 3S1: 2.0000; arXiv:2603.11098 Table V) were seen, not entered.",
+    "Lifetime of 2s2p 3P0: no value located (for 9Be it decays only by hyperfine-induced E1; searched for neutral-Be hyperfine-quenching rates, found only Be-like ions). 3P1 and 3P2 lifetimes are theory only.",
+    "Measured lifetimes of 2p2 1D2, 2s3s 1S0, 2s3p 1P1, 2s3p 3P: none listed in the experiment column of Table IV of arXiv:2603.11098 and none found by search; theory values entered. The original beam-foil papers (Andersen 1969 'mean lives of 11 states in Be I', Bromander 1971, Hontzeas 1972, Bergstrom 1969) are paywalled and their abstracts contain no numbers, so they may hold further values not captured here.",
+    "Martinson, Gaupp & Curtis, J. Phys. B 7, L463 (1974) 1P1 lifetime: page not openable (IOP blocked) and not quoted in the opened tables.",
+    "Irving et al. Can. J. Phys. 77, 137 (1999) original page returned HTTP 403; its 1P1 lifetime 1.77(5) ns and f = 1.40(4) are taken from two secondary tables.",
+    "Photoionization cross sections / saturation parameters for 235 nm loading: not searched in depth."
+  ],
+  "notes": "All energies identifying levels are copied from data/nist/Be_I_levels.tsv. 9Be is the only stable isotope (I = 3/2). Hyperfine sign convention: A and B of 2s2p 3P1,2 are the Blachman-Lurio constants AFTER second/third-order corrections for hyperfine mixing among the 3P_J levels (A negative because the 9Be nuclear moment is negative). First-order constants fitted directly to the same intervals (A1 = -140.1564, B1 = -3.2363, A2 = -124.6165, B2 = 0.7800 MHz; Puchalski et al. 2021) are a different definition - do not mix. The abstract of arXiv:2411.13013 quotes the old B(3P2) as 1.427(9) MHz while its Table VI and arXiv:2603.11098 give 1.429(8) MHz; the table value is used. Fine structure of 2s2p 3P: Blachman & Lurio (abstract) deduced W(3P2)-W(3P1) = 71.86(24) GHz and W(3P1)-W(3P0) = 19.41(19) GHz from the magnetic-field dependence of the hyperfine structure (not a direct measurement); Puchalski et al. 2021 calculate 71.379 and 19.498 GHz and suspect the experimental 3P2-3P1 value is inaccurate; the NIST level differences are 2.335 and 0.615 cm^-1. Lifetimes taken from Table IV of arXiv:2603.11098 are marked 'compilation' with the original paper named; for multiplets the measurement is a term value and is repeated on each J level. Where several measurements exist the laser (cascade-free) result is the main value and beam-foil results are in 'alternatives'; for 2p2 3P, 2s3d 1D and 2s4d 1D the main value is Bromander 1971 (a re-analysis of the Bergstrom 1969 Stockholm decay curves). The 2s5d 1D2 and 2s6d 1D2 beam-foil lifetimes disagree strongly with theory. 1S0-1P1: all three laser measurements (Cook 2018, Cook 2020, Ahrendsen 2024) agree; they are centre-of-gravity values limited by unresolved hyperfine structure. The line has natural width about 88 MHz; NIST ASD lists Aki = 5.52e8 s^-1, consistent with the measured 1.85(4) ns lifetime. Photoionization loading of 9Be+: neutral Be needs 9.3 eV (133 nm); the standard scheme is resonance-enhanced two-photon ionization with two 235 nm photons, the first resonant with 2s2 1S0 - 2s2p 1P1 and the second ionizing non-resonantly from 1P1. CW source (28 mW at 235 nm, twice-doubled 940 nm diode laser): Lo, Alonso, Kienzler, Keitch, de Clercq, Negnevitsky, Home, Appl. Phys. B 114, 17 (2014), arXiv:1306.3780 (https://arxiv.org/pdf/1306.3780). Pulsed source (60 ns, 150 nJ pulses near 235 nm, frequency-quadrupled Ti:sapphire; 266 nm non-resonant two-photon ionization also discussed): Wolf, Studer, Wendt, Schmidt-Kaler, Appl. Phys. B 124, 30 (2018), arXiv:1711.01060 (https://arxiv.org/pdf/1711.01060). Isotope shifts: Wen et al. PRA 37, 4207 (1988) (abstract, https://journals.aps.org/pra/abstract/10.1103/PhysRevA.37.4207) measured 10Be-9Be shifts in the 1S and 1D Rydberg series by resonance-ionization mass spectrometry and inferred a finite-mass correction to the ionization energy of 10Be of 270(40) MHz. Forbidden decays (theory, Fuhr & Wiese 2010 Table 4): M2 line 2s2 1S0 - 2s2p 3P2 at 4549.33 A (vacuum) A = 1.66e-04 s^-1; M1 within 2s2p 3P: 3P1-3P2 1.74e-10 s^-1, 3P0-3P1 4.83e-12 s^-1."
+}

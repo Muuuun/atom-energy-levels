@@ -22,16 +22,16 @@ where the literature file has one; column *ν meas.*).
 | Potassium-39 | 84 | 82 | 0 | 0 | 0 | 2 | 33 | 0 | 0 | 33 | 0 | 0 | 10 |
 | Potassium-40 | 84 | 82 | 0 | 0 | 0 | 2 | 33 | 0 | 0 | 33 | 0 | 0 | 4 |
 | Potassium-41 | 84 | 82 | 0 | 0 | 0 | 2 | 33 | 0 | 0 | 33 | 0 | 0 | 6 |
-| Beryllium-9 | 24 | 24 | 0 | 0 | 0 | 0 | 14 | 0 | 0 | 0 | 14 | 0 | 0 |
-| Magnesium-24 | 61 | 61 | 0 | 0 | 0 | 0 | 17 | 0 | 0 | 0 | 17 | 0 | 0 |
-| Magnesium-25 | 61 | 61 | 0 | 0 | 0 | 0 | 17 | 0 | 0 | 0 | 17 | 0 | 0 |
-| Calcium-40 | 55 | 55 | 0 | 0 | 0 | 0 | 33 | 0 | 0 | 0 | 33 | 0 | 0 |
-| Calcium-43 | 55 | 55 | 0 | 0 | 0 | 0 | 33 | 0 | 0 | 0 | 33 | 0 | 0 |
+| Beryllium-9 | 24 | 24 | 0 | 0 | 0 | 0 | 14 | 7 | 4 | 0 | 3 | 2 | 8 |
+| Magnesium-24 | 61 | 60 | 1 | 0 | 0 | 0 | 17 | 13 | 1 | 0 | 3 | 4 | 0 |
+| Magnesium-25 | 61 | 60 | 1 | 0 | 0 | 0 | 17 | 13 | 1 | 0 | 3 | 0 | 3 |
+| Calcium-40 | 61 | 53 | 5 | 0 | 0 | 3 | 34 | 15 | 1 | 0 | 18 | 2 | 0 |
+| Calcium-43 | 61 | 53 | 5 | 0 | 0 | 3 | 34 | 15 | 1 | 0 | 18 | 0 | 5 |
 
 Totals over 12 elements (one isotope each):
 
-- transition rates / matrix elements: nist 592 (71%), exp 64 (8%), theory 151 (18%), model 0 (0%), none 21 (3%)
-- lifetimes of excited levels: exp 106 (29%), theory 34 (9%), model 103 (28%), none 122 (33%)
+- transition rates / matrix elements: nist 589 (71%), exp 70 (8%), theory 151 (18%), model 0 (0%), none 24 (3%)
+- lifetimes of excited levels: exp 141 (39%), theory 40 (11%), model 103 (28%), none 82 (22%)
 
 nist = NIST ASD compilation; exp = measurement from data/literature; theory = high-accuracy calculation quoted from the
 literature; model = ARC model potential; none = no value (wavelength only / no lifetime).
