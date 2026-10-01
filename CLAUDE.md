@@ -49,9 +49,10 @@ requests, mark derived / second-hand values, list conflicts.
 ## Status (2026-10-01)
 
 - 90 elements have a page; 65 have a literature file. Campaign log: `data/literature/QUEUE.md`.
-- Not yet searched (31 elements, 7 groups): Sb Te Pb Bi | La Ce Pr | Nd Pm Sm | Gd Tb Lu | Hf Ta W | Re Os Ir Pt | Po At Rn Ac Th.
-  Pr, Re, Os have NIST levels but no classified lines: ask the subagent for classified lines too (as done for Zr, Nb, Se).
-- Thin files worth re-running: As Se Au Cu Ga C Cl Br I Ne Ar Kr Xe Zn Mo Er.
+- Round 4 (the last 31 elements) was searched on 2026-10-01; every element with NIST data now has a literature file.
+- Thin files worth re-running: As Se Au Cu Ga C Cl Br I Ne Ar Kr Xe Zn Mo Er, and from round 4 Nd Ce Te Gd Tb Ir Pt Rn Th
+  (their key papers are paywalled or bot-blocked; each file lists them under `not_found`).
+- Research subagents sometimes store 1/sum(A) from NIST as a "lifetime": move such values out of `lifetime` (see Hf.json).
 - Why the campaign stopped: a session can make at most 200 WebSearch calls, counted across the main conversation and
   every subagent (Claude Code docs, tools reference, "session search limit"). Resuming a session does not reset the count;
   a new session or `/clear` does. The owner can raise (not remove) the cap by setting the environment variable

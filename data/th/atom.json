@@ -12,11 +12,11 @@
   "scale": "auto",
   "spectrum": "Th I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "232",
   "limit_text": "Th$^+$ ionisation limit   50867.00 cm$^{-1}$  =  6.30670 eV  (196.591 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Natural thorium is 232Th (I = 0, no hyperfine structure); 229Th (I = 5/2) is the nuclear-clock isotope. Isotope shifts are nu(A) - nu(232); Raeder et al. give level shifts in cm^-1, converted here with 1 cm^-1 = 29979.2458 MHz. The pulsed-laser level energies of Raeder et al. for 232Th are much less precise than NIST and are listed only so that the 228-230Th values can be compared on the same scale. The intermediate levels re-measured by Li et al. 2025 (38807.60(6), 39096.36(15), 38366.56(15) cm^-1) agree with NIST and were not entered. The 2025 Leuven paper also determined the Th+ ionization potential, 12.300(9) eV."
  },
  "columns": [
   {
@@ -1076,6 +1076,21 @@
    "tau_ns": null,
    "tau_tier": "none",
    "col": 10
+  },
+  {
+   "id": 66,
+   "E": 38700.2507,
+   "unc": 0.0007,
+   "J": 4.0,
+   "conf": "",
+   "term": "",
+   "parity": "even",
+   "g": 1.22,
+   "name": "(38700)_{4}",
+   "plain": "4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
   }
  ],
  "transitions": [
@@ -1232,7 +1247,34 @@
    "wn": 26878.1618,
    "lam": 372.0493,
    "air": 371.9435,
+   "use": "first step of the Mainz three-step resonance ionization scheme for thorium (372.05 nm -> 38700.25 cm^-1 -> autoionizing state at 51762.92 cm^-1) and of the TRIUMF / ORNL Rydberg-series schemes; isotope shifts of 228-232Th measured on it",
+   "isotope_shifts": {
+    "230-232": {
+     "value": 8994,
+     "unc": 1199,
+     "src": "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3 (level isotope shifts in cm^-1: 0.3(0.04); resonance ionization in a hot graphite oven, pulsed Ti:sapphire lasers)",
+     "url": "https://arxiv.org/pdf/1105.4646"
+    },
+    "228-232": {
+     "value": 18887,
+     "unc": 1199,
+     "src": "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3 (level isotope shifts in cm^-1: 0.63(0.04); resonance ionization in a hot graphite oven, pulsed Ti:sapphire lasers)",
+     "url": "https://arxiv.org/pdf/1105.4646"
+    },
+    "229-232": {
+     "value": 15589,
+     "unc": 1799,
+     "src": "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3 (level isotope shifts in cm^-1: 0.52(0.06); resonance ionization in a hot graphite oven, pulsed Ti:sapphire lasers); 229Th hyperfine structure unresolved, centre of gravity not verified",
+     "url": "https://arxiv.org/pdf/1105.4646"
+    }
+   },
    "type": "E1",
+   "A": 22000000.0,
+   "A_tier": "exp",
+   "A_src": "value printed in Fig. 2 of Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (taken there from the literature, refs. [25, 26] of that paper)",
+   "d": 1.978,
+   "d_tier": "exp",
+   "d_src": "value printed in Fig. 2 of Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (taken there from the literature, refs. [25, 26] of that paper) (from A)",
    "lam_obs": 372.049251
   },
   {
@@ -1245,7 +1287,14 @@
    "wn": 26287.0494,
    "lam": 380.4155,
    "air": 380.3075,
+   "use": "alternative strong first step considered for resonance ionization (Raeder et al. 2011, Fig. 2)",
    "type": "E1",
+   "A": 130000000.0,
+   "A_tier": "exp",
+   "A_src": "value printed in Fig. 2 of Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (literature value, refs. [25, 26] there)",
+   "d": 3.255,
+   "d_tier": "exp",
+   "d_src": "value printed in Fig. 2 of Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (literature value, refs. [25, 26] there) (from A)",
    "lam_obs": 380.415454
   },
   {
@@ -1258,7 +1307,22 @@
    "wn": 26113.2689,
    "lam": 382.9471,
    "air": 382.8384,
+   "use": "first step of the KU Leuven in-gas-jet resonance ionization scheme (382.947 nm), on which neutral 229Th was resolved with 238(30) MHz linewidth; also one of the three lines of the 229Th ground-state hyperfine study of Sonnenschein et al. 2012",
+   "isotope_shifts": {
+    "229-232": {
+     "value": 19218,
+     "unc": 90,
+     "src": "Claessens, Ivandikov, Brasseur, Dragoun, Duellmann, Ferrer, et al., Phys. Rev. A 112, 052810 (2025) [arXiv:2507.21946] centroid 26113.910(3) cm^-1 for 229Th minus the NIST Ritz energy 26113.26894(15) cm^-1 (232Th)",
+     "url": "https://arxiv.org/pdf/2507.21946"
+    }
+   },
    "type": "E1",
+   "A": 19000000.0,
+   "A_tier": "exp",
+   "A_src": "value printed in Fig. 2 of Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (literature value, refs. [25, 26] there)",
+   "d": 1.623,
+   "d_tier": "exp",
+   "d_src": "value printed in Fig. 2 of Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (literature value, refs. [25, 26] there) (from A)",
    "lam_obs": 382.947075
   },
   {
@@ -1913,6 +1977,33 @@
   },
   {
    "kind": "E1",
+   "freq": 354.41731,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 50,
+   "upper": 66,
+   "wn": 11822.0889,
+   "lam": 845.8742,
+   "air": 845.6418,
+   "use": "second step of the Mainz resonance ionization scheme",
+   "isotope_shifts": {
+    "230-232": {
+     "value": 5096,
+     "unc": 1709,
+     "src": "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3: difference of the level isotope shifts 0.47(4) and 0.30(4) cm^-1",
+     "url": "https://arxiv.org/pdf/1105.4646"
+    },
+    "228-232": {
+     "value": 10193,
+     "unc": 1709,
+     "src": "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3: difference of the level isotope shifts 0.97(4) and 0.63(4) cm^-1",
+     "url": "https://arxiv.org/pdf/1105.4646"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 315.63406,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -1993,7 +2084,7 @@
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -2006,14 +2097,130 @@
     "Use"
    ],
    "aligns": "lrrrrrrrl",
-   "rows": [],
+   "rows": [
+    [
+     "$^3F_{2}$ – $^3G^{o}_{3}$",
+     "372.0493",
+     "371.9435",
+     "805.7870",
+     "1.978",
+     "2.200e+07",
+     "–",
+     "–",
+     "first step of the Mainz three-step resonance ionization s…"
+    ],
+    [
+     "$^3F_{2}$ – $^3D^{o}_{1}$",
+     "380.4155",
+     "380.3075",
+     "788.0659",
+     "3.255",
+     "1.300e+08",
+     "–",
+     "–",
+     "alternative strong first step considered for resonance io…"
+    ],
+    [
+     "$^3F_{2}$ – $(26113)^{o}_{2}$",
+     "382.9471",
+     "382.8384",
+     "782.8561",
+     "1.623",
+     "1.900e+07",
+     "–",
+     "–",
+     "first step of the KU Leuven in-gas-jet resonance ionizati…"
+    ],
+    [
+     "$^3G^{o}_{3}$ – $(38700)_{4}$",
+     "845.8742",
+     "845.6418",
+     "354.4173",
+     "–",
+     "–",
+     "–",
+     "–",
+     "second step of the Mainz resonance ionization scheme"
+    ]
+   ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$^3F_{2}$ – $^3G^{o}_{3}$",
+     "372.049",
+     "230-232",
+     "8994(1199)"
+    ],
+    [
+     "$^3F_{2}$ – $^3G^{o}_{3}$",
+     "372.049",
+     "228-232",
+     "18887(1199)"
+    ],
+    [
+     "$^3F_{2}$ – $^3G^{o}_{3}$",
+     "372.049",
+     "229-232",
+     "15589(1799)"
+    ],
+    [
+     "$^3F_{2}$ – $(26113)^{o}_{2}$",
+     "382.947",
+     "229-232",
+     "19218(90)"
+    ],
+    [
+     "$^3G^{o}_{3}$ – $(38700)_{4}$",
+     "845.874",
+     "230-232",
+     "5096(1709)"
+    ],
+    [
+     "$^3G^{o}_{3}$ – $(38700)_{4}$",
+     "845.874",
+     "228-232",
+     "10193(1709)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 66   lines < 2000 nm: 70   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 70",
+  "levels: 67   lines < 2000 nm: 71   with matrix element: 3",
+  "transition-rate provenance: exp: 3, wavelength only: 68",
   "levels with a measured lifetime: 0"
  ],
- "sources": {}
+ "sources": {
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; moments as listed in the same table (compilation)": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
+  "NIST ASD Th I levels table (local copy data/nist/Th_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Li, Liu, Stracener, Lassen, 'Laser resonance ionization spectroscopy of thorium', arXiv:2508.06733 (2025)": "https://arxiv.org/pdf/2508.06733",
+  "Claessens, Ivandikov, Brasseur, Dragoun, Duellmann, Ferrer, et al., Phys. Rev. A 112, 052810 (2025) [arXiv:2507.21946]": "https://arxiv.org/pdf/2507.21946",
+  "Goncharov & Heaven, as quoted in Table 5 of Li, Liu, Stracener, Lassen, 'Laser resonance ionization spectroscopy of thorium', arXiv:2508.06733 (2025) (original not opened)": "https://arxiv.org/pdf/2508.06733",
+  "Claessens, Ivandikov, Brasseur, Dragoun, Duellmann, Ferrer, et al., Phys. Rev. A 112, 052810 (2025) [arXiv:2507.21946] (2025): centroid of the narrow-band in-gas-jet spectrum of neutral 229Th on the 382.947 nm line, fitted with the hyperfine constants of Sonnenschein et al. 2012 held fixed": "https://arxiv.org/pdf/2507.21946",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (2011), Table 3": "https://arxiv.org/pdf/1105.4646",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (2011), Table 3; unresolved hyperfine structure, not verified to be the hyperfine centre of gravity": "https://arxiv.org/pdf/1105.4646",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (2011), Table 3 (NIST value 26878.16179(8) is far more precise)": "https://arxiv.org/pdf/1105.4646",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (2011), Table 3 (NIST value is far more precise)": "https://arxiv.org/pdf/1105.4646",
+  "value printed in Fig. 2 of Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (taken there from the literature, refs. [25, 26] of that paper)": "https://arxiv.org/pdf/1105.4646",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3 (level isotope shifts in cm^-1: 0.3(0.04); resonance ionization in a hot graphite oven, pulsed Ti:sapphire lasers)": "https://arxiv.org/pdf/1105.4646",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3 (level isotope shifts in cm^-1: 0.63(0.04); resonance ionization in a hot graphite oven, pulsed Ti:sapphire lasers)": "https://arxiv.org/pdf/1105.4646",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3 (level isotope shifts in cm^-1: 0.52(0.06); resonance ionization in a hot graphite oven, pulsed Ti:sapphire lasers); 229Th hyperfine structure unresolved, centre of gravity not verified": "https://arxiv.org/pdf/1105.4646",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3: difference of the level isotope shifts 0.47(4) and 0.30(4) cm^-1": "https://arxiv.org/pdf/1105.4646",
+  "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646], Table 3: difference of the level isotope shifts 0.97(4) and 0.63(4) cm^-1": "https://arxiv.org/pdf/1105.4646",
+  "value printed in Fig. 2 of Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (literature value, refs. [25, 26] there)": "https://arxiv.org/pdf/1105.4646",
+  "Claessens, Ivandikov, Brasseur, Dragoun, Duellmann, Ferrer, et al., Phys. Rev. A 112, 052810 (2025) [arXiv:2507.21946]: HFR + core-polarization gA = 7.38e7 s^-1 for the line to the ground level": "https://arxiv.org/pdf/2507.21946",
+  "Claessens, Ivandikov, Brasseur, Dragoun, Duellmann, Ferrer, et al., Phys. Rev. A 112, 052810 (2025) [arXiv:2507.21946]: centroid 26113.910(3) cm^-1 of the 229Th hyperfine pattern (hyperfine centre of gravity from a fit with fixed hyperfine constants)": "https://arxiv.org/pdf/2507.21946",
+  "Claessens, Ivandikov, Brasseur, Dragoun, Duellmann, Ferrer, et al., Phys. Rev. A 112, 052810 (2025) [arXiv:2507.21946] centroid 26113.910(3) cm^-1 for 229Th minus the NIST Ritz energy 26113.26894(15) cm^-1 (232Th)": "https://arxiv.org/pdf/2507.21946"
+ }
 }

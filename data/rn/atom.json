@@ -12,11 +12,11 @@
   "scale": "auto",
   "spectrum": "Rn I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "202",
   "limit_text": "Rn$^+$ ionisation limit   86692.50 cm$^{-1}$  =  10.74850 eV  (115.350 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Radon is the least-studied of these atoms: apart from the classical emission spectra there is a single collinear-laser-spectroscopy study (ISOLDE, published 1987) on the 745 nm line, whose numbers could not be opened in this session. Nuclear spins, half-lives and moments are taken from the IAEA table; moments printed there for even-even isotopes belong to isomers and were left out. The site's default isotope (222Rn) has I = 0, so no hyperfine structure applies to it."
  },
  "columns": [
   {
@@ -299,6 +299,7 @@
    "wn": 13419.13,
    "lam": 745.2048,
    "air": 744.9996,
+   "use": "the line of the only laser-spectroscopy study of radon: collinear fast-beam laser spectroscopy at ISOLDE (Borchers, Neugart, Otten et al., Hyperfine Interact. 34, 25 (1987)): isotope shifts between 16 isotopes in the range 202-222Rn and hyperfine structure of 7 odd-A isotopes, per the abstract.",
    "type": "E1",
    "lam_obs": 745.205
   },
@@ -358,7 +359,7 @@
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -371,7 +372,19 @@
     "Use"
    ],
    "aligns": "lrrrrrrrl",
-   "rows": [],
+   "rows": [
+    [
+     "$2[3/2]^{o}_{2}$ – $2[5/2]_{3}$",
+     "745.2048",
+     "744.9996",
+     "402.2954",
+     "–",
+     "–",
+     "–",
+     "–",
+     "the line of the only laser-spectroscopy study of radon: c…"
+    ]
+   ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
   }
  ],
@@ -380,5 +393,9 @@
   "transition-rate provenance: wavelength only: 10",
   "levels with a measured lifetime: 0"
  ],
- "sources": {}
+ "sources": {
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; magnetic dipole and electric quadrupole moments as listed in the same table (they originate from collinear fast-beam laser spectroscopy of the Rn I 745 nm line at ISOLDE; the original papers were not opened)": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
+  "NIST ASD Rn I levels table (local copy data/nist/Rn_I_levels.tsv)": "https://physics.nist.gov/asd"
+ }
 }

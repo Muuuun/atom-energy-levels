@@ -6,17 +6,17 @@
   "symbol": "Po",
   "A": null,
   "Z": 84,
-  "I": null,
+  "I": "5/2",
   "kind": "nist",
   "limit_cm": 67896.31,
   "scale": "auto",
   "spectrum": "Po I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "192",
   "limit_text": "Po$^+$ ionisation limit   67896.31 cm$^{-1}$  =  8.41807 eV  (147.283 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "All optical data are from in-source resonance ionization spectroscopy at ISOLDE (Doppler-limited, GHz linewidths). Isotope shifts are nu(A) - nu(210). Hyperfine keys: 'ls'/'hs' = low-spin (3/2-) and high-spin (13/2+) states of 193,195Po whose ordering is not known; a trailing 'm' = 13/2+ isomer. The hyperfine constants listed under the 39081.19 cm^-1 level were printed in GHz and are converted to MHz here. The site's default isotope may have I = 0 (208, 210Po) - then no hyperfine structure applies."
  },
  "columns": [
   {
@@ -52,6 +52,14 @@
    "plain": "6p4 3P2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 139.5,
+    "A_unc": 0.3,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "ratio A(6p4 3P2)/A(6p3 7s 5S2) = 0.2474(4) for 207Po given in Skripnikov & Barzakh, Phys. Rev. C 109, 024315 (2024) [arXiv:2311.00621], Eq. (23) (from the atomic-beam magnetic resonance data of Olsmats, Axensten, Liljegren, Ark. Fys. 19, 469 (1961) and Kowalewska et al. 1991), multiplied by A(5S2) = 564(1) MHz"
+   },
    "col": 0
   },
   {
@@ -97,6 +105,14 @@
    "plain": "6p37s 5S°2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 564,
+    "A_unc": 1,
+    "B": 367,
+    "B_unc": 7,
+    "tier": "exp",
+    "src": "Kowalewska, Bekk, Goering, Hanser, Kaelber, Meisel, Rebel, Phys. Rev. A 44, R1442 (1991) (laser spectroscopy of the 255.8 nm line), as quoted as reference values in Seliverstov et al., Phys. Rev. C 89, 034323 (2014), Sec. III"
+   },
    "col": 2
   },
   {
@@ -139,6 +155,7 @@
    "wn": 39081.19,
    "lam": 255.8776,
    "air": 255.8008,
+   "use": "first step of the ISOLDE-RILIS polonium resonance ionization scheme (255.8 nm, frequency-tripled dye laser), followed by 843.4 nm and 532 nm or a Rydberg step; earlier isotope-shift / hyperfine line of Kowalewska et al. 1991",
    "type": "E1 (intercombination)",
    "lam_obs": 255.878
   },
@@ -172,7 +189,7 @@
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -185,8 +202,45 @@
     "Use"
    ],
    "aligns": "lrrrrrrrl",
-   "rows": [],
+   "rows": [
+    [
+     "$6p^{4}\\ ^3P_{2}$ – $6p^{3}7s\\ ^5S^{o}_{2}$",
+     "255.8776",
+     "255.8008",
+     "1171.6246",
+     "–",
+     "–",
+     "–",
+     "–",
+     "first step of the ISOLDE-RILIS polonium resonance ionizat…"
+    ]
+   ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{207}$Po hyperfine structure  ($I$ = 5/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$6p^{4}\\ ^3P_{2}$",
+     "139.5(3)",
+     "–",
+     "F=1/2: -976.50   F=3/2: -767.25   F=5/2: -418.50   F=7/2: +69.75   F=9/2: +697.50"
+    ],
+    [
+     "$6p^{3}7s\\ ^5S^{o}_{2}$",
+     "564.0(10)",
+     "367(7)",
+     "F=1/2: -3691.10   F=3/2: -3010.25   F=5/2: -1783.75   F=7/2: +126.03   F=9/2: +2911.75"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
@@ -194,5 +248,19 @@
   "transition-rate provenance: wavelength only: 4",
   "levels with a measured lifetime: 0"
  ],
- "sources": {}
+ "sources": {
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; magnetic and quadrupole moments: re-evaluation of the laser-spectroscopy hyperfine constants with relativistic coupled-cluster electronic factors, Skripnikov & Barzakh, Phys. Rev. C 109, 024315 (2024) [arXiv:2311.00621] Table III ('this work' column)": "https://arxiv.org/pdf/2311.00621",
+  "NIST ASD Po I levels table (local copy data/nist/Po_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Fink, Blaum, Fedosseev, Marsh, Rossel, Rothe, Spectrochim. Acta B 151, 72 (2019) (in-source resonance ionization spectroscopy of 208Po at ISOLDE)": "https://inspirehep.net/files/edfd46913665511392b7776a1174593a",
+  "Raeder et al., TRIUMF-ISAC measurement, as listed in Table 2 of Fink, Blaum, Fedosseev, Marsh, Rossel, Rothe, Spectrochim. Acta B 151, 72 (2019)": "https://inspirehep.net/files/edfd46913665511392b7776a1174593a",
+  "ratio A(6p4 3P2)/A(6p3 7s 5S2) = 0.2474(4) for 207Po given in Skripnikov & Barzakh, Phys. Rev. C 109, 024315 (2024) [arXiv:2311.00621], Eq. (23) (from the atomic-beam magnetic resonance data of Olsmats, Axensten, Liljegren, Ark. Fys. 19, 469 (1961) and Kowalewska et al. 1991), multiplied by A(5S2) = 564(1) MHz": "https://arxiv.org/pdf/2311.00621",
+  "Seliverstov, Cocolios, Dexters, et al., Phys. Rev. C 89, 034323 (2014), Table I (in-source resonance ionization spectroscopy of the 843.38 nm line at ISOLDE; constants of the lower level 6p3 7s 5S2 with A(5P2)/A(5S2) fixed to 0.06(1); statistical errors)": "https://eprints.whiterose.ac.uk/id/eprint/78826/1/Po_Seliverstov_PhysRevC.89.034323_2014.pdf",
+  "Kowalewska, Bekk, Goering, Hanser, Kaelber, Meisel, Rebel, Phys. Rev. A 44, R1442 (1991) (laser spectroscopy of the 255.8 nm line), as quoted as reference values in Seliverstov et al., Phys. Rev. C 89, 034323 (2014), Sec. III": "https://eprints.whiterose.ac.uk/id/eprint/78826/1/Po_Seliverstov_PhysRevC.89.034323_2014.pdf",
+  "Fink, Cocolios, Andreyev, et al., Phys. Rev. X 5, 011018 (2015), Table II (Laser Ion Source and Trap, 843.4 nm line; fit with I = 9/2; with I = 11/2: A = -364(20) MHz, B = 0(400) MHz)": "https://inspirehep.net/files/655670252447c8f10838571cea15c7b1",
+  "Seliverstov et al., Phys. Rev. C 89, 034323 (2014), Sec. III B: (A2/A1)exp = 0.06(1) from fits of the 209Po spectra with A(5S2) = 2127(3) MHz fixed": "https://eprints.whiterose.ac.uk/id/eprint/78826/1/Po_Seliverstov_PhysRevC.89.034323_2014.pdf",
+  "Cocolios, Dexters, Seliverstov, et al., Phys. Rev. Lett. 106, 052503 (2011) [arXiv:1010.2103], Table I (in-source resonance ionization spectroscopy at ISOLDE, 843.38 nm line; nu(A) - nu(210))": "https://arxiv.org/pdf/1010.2103",
+  "Fink, Cocolios, Andreyev, et al., Phys. Rev. X 5, 011018 (2015), Table I (LIST measurement, from delta-nu(218,216) = 2586(100) MHz)": "https://inspirehep.net/files/655670252447c8f10838571cea15c7b1",
+  "Fink, Cocolios, Andreyev, et al., Phys. Rev. X 5, 011018 (2015), Table I (fit with I = 9/2; I = 11/2 gives -9985(200) MHz)": "https://inspirehep.net/files/655670252447c8f10838571cea15c7b1"
+ }
 }

@@ -6,17 +6,17 @@
   "symbol": "Ac",
   "A": null,
   "Z": 89,
-  "I": null,
+  "I": "3/2",
   "kind": "nist",
   "limit_cm": 43394.52,
   "scale": "auto",
   "spectrum": "Ac I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "215",
   "limit_text": "Ac$^+$ ionisation limit   43394.52 cm$^{-1}$  =  5.38023 eV  (230.444 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Actinium has no stable isotope; the site isotope is presumably 227Ac (I = 3/2, 21.77 y). Hyperfine constants from Sonnenschein's thesis carry statistical errors only. In Ferrer/Granados the first bracket is a 2-sigma statistical error and the second a systematic one; where one 'unc' is given here the two were combined in quadrature. Isotope shifts are stored as nu(first) - nu(second) following Verstraelen et al.; see the conflict about the sign in Ferrer et al. Second-step lines of the resonance ionization scheme (434.51 nm, 424.69 nm from the 22801 cm^-1 level) end on autoionizing states that are not in the NIST level list and are not entered. Transition probabilities shown on the site come from NIST ASD, whose Ac I data appear to follow Kramida 2022 (mostly scaled Cowan-code calculations, normalised to the three measured lifetimes)."
  },
  "columns": [
   {
@@ -34,6 +34,12 @@
   {
    "key": "2D*",
    "header": "^2D^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "2P*",
+   "header": "^2P^{o}",
    "group": null,
    "width": 1.0
   },
@@ -58,12 +64,6 @@
   {
    "key": "4G*",
    "header": "^4G^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "2P*",
-   "header": "^2P^{o}",
    "group": null,
    "width": 1.0
   },
@@ -100,6 +100,14 @@
    "plain": "6d7s2 2D3/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 50.46,
+    "A_unc": 0.48,
+    "B": 595.6,
+    "B_unc": 1.5,
+    "tier": "exp",
+    "src": "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): weighted mean of transitions A, B, C"
+   },
    "col": 0
   },
   {
@@ -113,8 +121,18 @@
    "g": null,
    "name": "6d7s^{2}\\ ^2D_{5/2}",
    "plain": "6d7s2 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 8300000000.0,
+   "tau_unc": 83000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (1.0 %) converted - derived",
+   "hfs": {
+    "A": 255.0,
+    "A_unc": 3.5,
+    "B": 706,
+    "B_unc": 19,
+    "tier": "exp",
+    "src": "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): weighted mean of transitions D and E"
+   },
    "col": 0
   },
   {
@@ -128,9 +146,11 @@
    "g": null,
    "name": "7s^{2}7p\\ ^2P^{o}_{1/2}",
    "plain": "7s27p 2P°1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 7
+   "tau_ns": 668.0,
+   "tau_unc": 11.0,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713] (two-step resonance ionization with delayed ionization pulse in a hot atomizer)",
+   "col": 3
   },
   {
    "id": 3,
@@ -143,9 +163,11 @@
    "g": null,
    "name": "6d^{2}7s\\ ^4F_{3/2}",
    "plain": "6d27s 4F3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 5
+   "tau_ns": 10000000.0,
+   "tau_unc": 5000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (50 %) converted - derived",
+   "col": 6
   },
   {
    "id": 4,
@@ -158,9 +180,11 @@
    "g": null,
    "name": "6d^{2}7s\\ ^4F_{5/2}",
    "plain": "6d27s 4F5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 5
+   "tau_ns": 9700000000.0,
+   "tau_unc": 3686000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (38 %) converted - derived",
+   "col": 6
   },
   {
    "id": 5,
@@ -173,9 +197,11 @@
    "g": null,
    "name": "6d^{2}7s\\ ^4F_{7/2}",
    "plain": "6d27s 4F7/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 5
+   "tau_ns": 12700000000.0,
+   "tau_unc": 1397000000.0,
+   "tau_tier": "theory",
+   "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (11 %) converted - derived",
+   "col": 6
   },
   {
    "id": 6,
@@ -188,9 +214,19 @@
    "g": null,
    "name": "7s^{2}7p\\ ^2P^{o}_{3/2}",
    "plain": "7s27p 2P°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 7
+   "tau_ns": 255.0,
+   "tau_unc": 7.0,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713]",
+   "hfs": {
+    "A": 513,
+    "A_unc": 8,
+    "B": 1260,
+    "B_unc": 52,
+    "tier": "exp",
+    "src": "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713] (fit of the partly resolved 814.6 nm line with the ground-state constants fixed to A = 50.5(10), B = 596(6) MHz; theory in the same paper: A = 499(21)(84), B = 1332(130)(77) MHz)"
+   },
+   "col": 3
   },
   {
    "id": 7,
@@ -203,9 +239,11 @@
    "g": null,
    "name": "6d7s7p\\ ^4F^{o}_{3/2}",
    "plain": "6d7s7p 4F°3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 4
+   "tau_ns": 352.0,
+   "tau_unc": 11.0,
+   "tau_tier": "exp",
+   "tau_src": "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713]",
+   "col": 5
   },
   {
    "id": 8,
@@ -220,7 +258,7 @@
    "plain": "6d7s7p 4F°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
    "id": 9,
@@ -235,7 +273,7 @@
    "plain": "6d7s7p 4D°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   },
   {
    "id": 10,
@@ -250,7 +288,7 @@
    "plain": "6d7s7p 4F°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
    "id": 11,
@@ -265,7 +303,7 @@
    "plain": "6d7s7p 4D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   },
   {
    "id": 12,
@@ -310,7 +348,7 @@
    "plain": "6d7s7p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   },
   {
    "id": 15,
@@ -323,8 +361,10 @@
    "g": null,
    "name": "6d7s7p\\ ^2F^{o}_{5/2}",
    "plain": "6d7s7p 2F°5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 23.0,
+   "tau_unc": 2.3,
+   "tau_tier": "theory",
+   "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (10 %) converted - derived",
    "col": 1
   },
   {
@@ -338,9 +378,11 @@
    "g": null,
    "name": "6d7s7p\\ ^4D^{o}_{7/2}",
    "plain": "6d7s7p 4D°7/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 3
+   "tau_ns": 160.0,
+   "tau_unc": 16.0,
+   "tau_tier": "theory",
+   "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (10 %) converted - derived",
+   "col": 4
   },
   {
    "id": 17,
@@ -355,6 +397,14 @@
    "plain": "6d7s7p 4P°5/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 2104.8,
+    "A_unc": 2.2,
+    "B": 110.1,
+    "B_unc": 2.2,
+    "tier": "exp",
+    "src": "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 for A: a = 2104.8(10)(20) MHz (statistical 2 sigma, systematic; combined here). B from Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): transition B (438.58 nm) A_U = 2104.8(5), B_U = 110.1(22) MHz; Granados et al. 2017 quote b_u/b_l = 0.184(6)(8)"
+   },
    "col": 9
   },
   {
@@ -415,6 +465,14 @@
    "plain": "6d7s7p 2F°7/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -280.3,
+    "A_unc": 3.5,
+    "B": 1277.5,
+    "B_unc": 30.5,
+    "tier": "exp",
+    "src": "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): transition E (439.79 nm, from the 2231.43 cm^-1 level; overlapping resonances, parameters strongly correlated)"
+   },
    "col": 1
   },
   {
@@ -430,7 +488,15 @@
    "plain": "6d7s7p 2P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "hfs": {
+    "A": 1971.5,
+    "A_unc": 3.7,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): transition A (388.67 nm)"
+   },
+   "col": 3
   },
   {
    "id": 23,
@@ -445,7 +511,15 @@
    "plain": "6d7s7p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "hfs": {
+    "A": -990.7,
+    "A_unc": 1.2,
+    "B": -20.7,
+    "B_unc": 3.6,
+    "tier": "exp",
+    "src": "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): weighted mean of transitions C (383.64 nm: -990.6(12), -20.9(37)) and D (419.56 nm: -1002.0(108), -8.8(270))"
+   },
+   "col": 3
   },
   {
    "id": 24,
@@ -490,7 +564,7 @@
    "plain": "6d27p 4G°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
    "id": 27,
@@ -505,7 +579,7 @@
    "plain": "6d7s7p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 3
   },
   {
    "id": 28,
@@ -520,7 +594,7 @@
    "plain": "6d27p 4G°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
    "id": 29,
@@ -535,7 +609,7 @@
    "plain": "6d27p 4F°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
    "id": 30,
@@ -550,7 +624,7 @@
    "plain": "6d27p 4G°9/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 7
   },
   {
    "id": 31,
@@ -580,7 +654,7 @@
    "plain": "6d27p 4F°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
    "id": 33,
@@ -610,7 +684,7 @@
    "plain": "6d27p 4F°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
    "id": 35,
@@ -655,7 +729,7 @@
    "plain": "6d27p 4D°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   },
   {
    "id": 38,
@@ -685,7 +759,7 @@
    "plain": "6d27p 4D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   },
   {
    "id": 40,
@@ -730,7 +804,7 @@
    "plain": "6d27p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 4
   },
   {
    "id": 43,
@@ -745,7 +819,7 @@
    "plain": "6d27p 4F°9/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
    "id": 44,
@@ -758,9 +832,11 @@
    "g": null,
    "name": "6d^{2}7p\\ ^4D^{o}_{7/2}",
    "plain": "6d27p 4D°7/2",
-   "tau_ns": null,
-   "tau_tier": "none",
-   "col": 3
+   "tau_ns": 8.1,
+   "tau_unc": 0.8099999999999999,
+   "tau_tier": "theory",
+   "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (10 %) converted - derived",
+   "col": 4
   }
  ],
  "transitions": [
@@ -1002,6 +1078,7 @@
    "wn": 26066.045,
    "lam": 383.6409,
    "air": 383.5321,
+   "use": "hyperfine structure of 227Ac measured (transition C of Sonnenschein's thesis)",
    "type": "E1",
    "A": 47800000.0,
    "A_tier": "nist",
@@ -1040,6 +1117,7 @@
    "wn": 25729.03,
    "lam": 388.666,
    "air": 388.5559,
+   "use": "hyperfine structure of 227Ac measured (transition A of Sonnenschein's thesis); smaller splitting than the 438.58 nm line but higher count rate",
    "type": "E1",
    "A": 269000000.0,
    "A_tier": "nist",
@@ -1078,6 +1156,7 @@
    "wn": 24963.982,
    "lam": 400.5771,
    "air": 400.4639,
+   "gamma_MHz": 19.65,
    "type": "E1",
    "A": 11000000.0,
    "A_tier": "nist",
@@ -1085,6 +1164,8 @@
    "d": 1.671,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.0891,
+   "br_tier": "nist",
    "lam_obs": 400.5771
   },
   {
@@ -1249,6 +1330,7 @@
    "wn": 23834.613,
    "lam": 419.5579,
    "air": 419.4397,
+   "use": "hyperfine structure of 227Ac measured (transition D of Sonnenschein's thesis)",
    "type": "E1",
    "A": 65300000.0,
    "A_tier": "nist",
@@ -1374,19 +1456,71 @@
   },
   {
    "kind": "E1",
-   "freq": 683.56008,
-   "freq_tier": "nist",
-   "freq_src": "NIST ASD level energies",
+   "freq": 683.618211,
+   "freq_unc": 0.000101,
+   "freq_src": "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2, footnote: centre of gravity of 215Ac 683,618,211(12)(100) MHz (hyperfine centre of gravity, in-gas-jet spectroscopy)",
+   "freq_tier": "exp",
    "lower": 0,
    "upper": 17,
-   "wn": 22801.11,
-   "lam": 438.5751,
-   "air": 438.4519,
+   "wn": 22803.049,
+   "lam": 438.53785,
+   "air": 438.4147,
+   "use": "the actinium laser-spectroscopy line: first step of the resonance ionization scheme (438.58 nm, then 434.51 nm or 424.69 nm to autoionizing states) used for in-gas-cell / in-gas-jet (LISOL) and in-source (TRIUMF) hyperfine and isotope-shift measurements of 212-215Ac and 225-229Ac",
+   "isotope_shifts": {
+    "225-215": {
+     "value": -50300,
+     "unc": 210,
+     "src": "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I (2014 data: -50.3(0.06){0.2} GHz; 2016 data: -49.9(0.1){0.3} GHz; high-resolution value of Raeder et al. quoted there: -50.2(0.02){0.1} GHz); nu(A) - nu(215)",
+     "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf"
+    },
+    "226-215": {
+     "value": -54700,
+     "unc": 220,
+     "src": "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I (printed -54.7(0.1){0.2} GHz)",
+     "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf"
+    },
+    "227-215": {
+     "value": -58300,
+     "unc": 100,
+     "src": "Ferrer et al. 2017 value as quoted with this sign in Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I: -58.3(0.01){0.1} GHz. Ferrer et al. print 58,319(19)(133) MHz without sign",
+     "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf"
+    },
+    "228-215": {
+     "value": -62000,
+     "unc": 1000,
+     "src": "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I (printed -62(0.2){1} GHz)",
+     "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf"
+    },
+    "229-215": {
+     "value": -64900,
+     "unc": 320,
+     "src": "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I (printed -64.9(0.1){0.3} GHz)",
+     "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf"
+    },
+    "214-215": {
+     "value": 2969,
+     "unc": 42,
+     "src": "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-jet; printed 2,969(14)(40) MHz as delta-nu(A,215)); gas-cell 3008(170)(390)",
+     "url": "https://www.nature.com/articles/ncomms14520"
+    },
+    "213-215": {
+     "value": 4282,
+     "unc": 404,
+     "src": "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-cell; printed 4,282(240)(325) MHz)",
+     "url": "https://www.nature.com/articles/ncomms14520"
+    },
+    "212-215": {
+     "value": 7710,
+     "unc": 393,
+     "src": "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-cell; printed 7,710(270)(285) MHz)",
+     "url": "https://www.nature.com/articles/ncomms14520"
+    }
+   },
    "type": "E1 (intercombination)",
    "A": 19000000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy D+)",
-   "d": 2.179,
+   "d": 2.178,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
    "lam_obs": 438.5761
@@ -1401,6 +1535,7 @@
    "wn": 22737.862,
    "lam": 439.7951,
    "air": 439.6716,
+   "use": "hyperfine structure of 227Ac measured (transition E of Sonnenschein's thesis)",
    "type": "E1",
    "A": 73700000.0,
    "A_tier": "nist",
@@ -1591,6 +1726,7 @@
    "wn": 21195.87,
    "lam": 471.79,
    "air": 471.6581,
+   "gamma_MHz": 6.92,
    "type": "E1",
    "A": 31800000.0,
    "A_tier": "nist",
@@ -1598,6 +1734,8 @@
    "d": 3.145,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.7314,
+   "br_tier": "nist",
    "lam_obs": 471.7901
   },
   {
@@ -1742,6 +1880,7 @@
    "wn": 19000.878,
    "lam": 526.2915,
    "air": 526.145,
+   "gamma_MHz": 0.9947,
    "type": "E1 (intercombination)",
    "A": 1300000.0,
    "A_tier": "nist",
@@ -1749,6 +1888,8 @@
    "d": 0.865,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy E) (from A)",
+   "br": 0.208,
+   "br_tier": "nist",
    "lam_obs": 526.2914
   },
   {
@@ -1780,6 +1921,7 @@
    "wn": 18964.438,
    "lam": 527.3027,
    "air": 527.156,
+   "gamma_MHz": 6.92,
    "type": "E1",
    "A": 8400000.0,
    "A_tier": "nist",
@@ -1787,6 +1929,8 @@
    "d": 1.91,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
+   "br": 0.1932,
+   "br_tier": "nist",
    "lam_obs": 527.3027
   },
   {
@@ -2046,6 +2190,8 @@
    "wn": 13712.902,
    "lam": 729.2402,
    "air": 729.0394,
+   "use": "first-step line used for the lifetime measurement of the 4F°3/2 level (Zhang et al. 2020)",
+   "gamma_MHz": 0.4521,
    "type": "E1 (intercombination)",
    "A": 2380000.0,
    "A_tier": "nist",
@@ -2053,6 +2199,8 @@
    "d": 1.35,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.8378,
+   "br_tier": "nist",
    "lam_obs": 729.2405
   },
   {
@@ -2076,6 +2224,20 @@
   },
   {
    "kind": "E1",
+   "freq": 368.04294,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 6,
+   "wn": 12276.591,
+   "lam": 814.5584,
+   "air": 814.3345,
+   "use": "first step of the two-step resonance ionization in which the level was discovered; hyperfine structure of 227Ac partly resolved on it (Zhang et al. 2020)",
+   "gamma_MHz": 0.6241,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 301.14629,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
@@ -2084,6 +2246,7 @@
    "wn": 10045.159,
    "lam": 995.5044,
    "air": 995.2315,
+   "gamma_MHz": 0.6241,
    "type": "E1",
    "A": 3640000.0,
    "A_tier": "nist",
@@ -2091,13 +2254,39 @@
    "d": 2.663,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.9282,
+   "br_tier": "nist",
    "lam_obs": 995.505
+  },
+  {
+   "kind": "E1",
+   "freq": 224.16561,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 2,
+   "wn": 7477.36,
+   "lam": 1337.3704,
+   "air": 1337.0048,
+   "use": "first observed 2020 by two-step resonance ionization (Mainz); only E1 decay channel of the lowest odd level; discussed by Zhang et al. for laser cooling / efficient ionization schemes",
+   "br": 1.0,
+   "br_tier": "exp",
+   "br_src": "Kramida, Atoms 10, 42 (2022), Sec. 3.3: 'the only allowed channel of radiative decay of this level'",
+   "gamma_MHz": 0.2383,
+   "type": "E1",
+   "A": 1497000.0,
+   "A_tier": "exp",
+   "A_src": "Kramida, Atoms 10, 42 (2022), Table 1 (accuracy A+): from the measured lifetime 668(11) ns of Zhang et al. 2020, this being the only allowed decay branch",
+   "A_unc": 25000.0,
+   "d": 1.88,
+   "d_tier": "exp",
+   "d_src": "Kramida, Atoms 10, 42 (2022), Table 1 (accuracy A+): from the measured lifetime 668(11) ns of Zhang et al. 2020, this being the only allowed decay branch (from A)"
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -2112,17 +2301,6 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$6d7s^{2}\\ ^2D_{3/2}$ – $5f7s^{2}\\ ^2F^{o}_{5/2}$",
-     "314.4619",
-     "314.3709",
-     "953.3505",
-     "1.990",
-     "4.300e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
      "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^2P^{o}_{3/2}$",
      "383.6409",
      "383.5321",
@@ -2131,18 +2309,7 @@
      "4.780e+07",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$6d7s^{2}\\ ^2D_{5/2}$ – $6d7s7p\\ ^2P^{o}_{3/2}$",
-     "384.4130",
-     "384.3040",
-     "779.8708",
-     "4.209",
-     "1.580e+08",
-     "–",
-     "–",
-     ""
+     "hyperfine structure of 227Ac measured"
     ],
     [
      "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^2P^{o}_{1/2}$",
@@ -2153,51 +2320,7 @@
      "2.690e+08",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$6d^{2}7s\\ ^4F_{5/2}$ – $6d^{2}7p\\ ^4D^{o}_{5/2}$",
-     "403.3090",
-     "403.1951",
-     "743.3319",
-     "2.774",
-     "3.960e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$6d7s^{2}\\ ^2D_{5/2}$ – $6d7s7p\\ ^2D^{o}_{5/2}$",
-     "406.4254",
-     "406.3106",
-     "737.6322",
-     "4.965",
-     "1.240e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^2D^{o}_{3/2}$",
-     "418.1155",
-     "417.9977",
-     "717.0087",
-     "4.230",
-     "1.240e+08",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^2F^{o}_{5/2}$",
-     "418.4299",
-     "418.3120",
-     "716.4700",
-     "4.634",
-     "9.900e+07",
-     "–",
-     "–",
-     ""
+     "hyperfine structure of 227Ac measured"
     ],
     [
      "$6d7s^{2}\\ ^2D_{5/2}$ – $6d7s7p\\ ^2P^{o}_{3/2}$",
@@ -2208,29 +2331,18 @@
      "6.530e+07",
      "–",
      "–",
-     ""
+     "hyperfine structure of 227Ac measured"
     ],
     [
-     "$6d^{2}7s\\ ^4F_{7/2}$ – $6d^{2}7p\\ ^4D^{o}_{5/2}$",
-     "421.0093",
-     "420.8907",
-     "712.0804",
-     "3.432",
-     "5.330e+07",
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.5378",
+     "438.4147",
+     "683.61821(10)",
+     "2.178",
+     "1.900e+07",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$6d^{2}7s\\ ^4F_{3/2}$ – $6d^{2}7p\\ ^4D^{o}_{1/2}$",
-     "422.7180",
-     "422.5990",
-     "709.2020",
-     "3.089",
-     "1.280e+08",
-     "–",
-     "–",
-     ""
+     "the actinium laser-spectroscopy line: first step of the r…"
     ],
     [
      "$6d7s^{2}\\ ^2D_{5/2}$ – $6d7s7p\\ ^2F^{o}_{7/2}$",
@@ -2241,60 +2353,211 @@
      "7.370e+07",
      "–",
      "–",
-     ""
+     "hyperfine structure of 227Ac measured"
     ],
     [
-     "$6d7s^{2}\\ ^2D_{5/2}$ – $6d7s7p\\ ^2F^{o}_{7/2}$",
-     "446.3983",
-     "446.2731",
-     "671.5806",
-     "5.015",
-     "7.160e+07",
-     "–",
-     "–",
-     ""
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4F^{o}_{3/2}$",
+     "729.2402",
+     "729.0394",
+     "411.1025",
+     "1.350",
+     "2.380e+06",
+     "0.4521",
+     "83.8",
+     "first-step line used for the lifetime measurement of the…"
     ],
     [
-     "$6d^{2}7s\\ ^4F_{3/2}$ – $6d^{2}7p\\ ^4F^{o}_{3/2}$",
-     "472.1594",
-     "472.0274",
-     "634.9390",
-     "2.894",
-     "4.030e+07",
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $7s^{2}7p\\ ^2P^{o}_{3/2}$",
+     "814.5584",
+     "814.3345",
+     "368.0429",
      "–",
      "–",
-     ""
+     "0.6241",
+     "–",
+     "first step of the two-step resonance ionization in which…"
     ],
     [
-     "$6d^{2}7s\\ ^4F_{7/2}$ – $6d^{2}7p\\ ^4F^{o}_{5/2}$",
-     "485.7045",
-     "485.5688",
-     "617.2323",
-     "3.698",
-     "4.030e+07",
-     "–",
-     "–",
-     ""
-    ],
-    [
-     "$6d^{2}7s\\ ^4F_{7/2}$ – $6d^{2}7p\\ ^4G^{o}_{9/2}$",
-     "510.7270",
-     "510.5847",
-     "586.9916",
-     "5.205",
-     "4.120e+07",
-     "–",
-     "–",
-     ""
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $7s^{2}7p\\ ^2P^{o}_{1/2}$",
+     "1337.3704",
+     "1337.0048",
+     "224.1656",
+     "1.880",
+     "1.497e+06",
+     "0.2383",
+     "100",
+     "first observed 2020 by two-step resonance ionization"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{227}$Ac hyperfine structure  ($I$ = 3/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$",
+     "50.5(5)",
+     "595.6(15)",
+     "F=0: +555.27   F=1: +10.13   F=2: -484.55   F=3: +262.44"
+    ],
+    [
+     "$6d7s^{2}\\ ^2D_{5/2}$",
+     "255(4)",
+     "706(19)",
+     "F=1: -844.55   F=2: -899.35   F=3: -452.05   F=4: +1132.75"
+    ],
+    [
+     "$7s^{2}7p\\ ^2P^{o}_{3/2}$",
+     "513(8)",
+     "1260(52)",
+     "F=0: -348.75   F=1: -1095.75   F=2: -1329.75   F=3: +1469.25"
+    ],
+    [
+     "$6d7s7p\\ ^4P^{o}_{5/2}$",
+     "2104.8(22)",
+     "110.1(22)",
+     "F=1: -10973.13   F=2: -6851.61   F=3: -586.75   F=4: +7920.52"
+    ],
+    [
+     "$6d7s7p\\ ^2F^{o}_{7/2}$",
+     "-280(4)",
+     "1278(30)",
+     "F=2: +2576.40   F=3: +823.00   F=4: -663.20   F=5: -1152.20"
+    ],
+    [
+     "$6d7s7p\\ ^2P^{o}_{1/2}$",
+     "1972(4)",
+     "–",
+     "F=1: -2464.38   F=2: +1478.62"
+    ],
+    [
+     "$6d7s7p\\ ^2P^{o}_{3/2}$",
+     "-990.7(12)",
+     "-21(4)",
+     "F=0: +3689.25   F=1: +2719.25   F=2: +758.55   F=3: -2234.25"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.538",
+     "225-215",
+     "-50300(210)"
+    ],
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.538",
+     "226-215",
+     "-54700(220)"
+    ],
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.538",
+     "227-215",
+     "-58300(100)"
+    ],
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.538",
+     "228-215",
+     "-62000(1000)"
+    ],
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.538",
+     "229-215",
+     "-64900(320)"
+    ],
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.538",
+     "214-215",
+     "2969(42)"
+    ],
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.538",
+     "213-215",
+     "4282(404)"
+    ],
+    [
+     "$6d7s^{2}\\ ^2D_{3/2}$ – $6d7s7p\\ ^4P^{o}_{5/2}$",
+     "438.538",
+     "212-215",
+     "7710(393)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 45   lines < 2000 nm: 70   with matrix element: 70",
-  "transition-rate provenance: nist: 70",
-  "levels with a measured lifetime: 0"
+  "levels: 45   lines < 2000 nm: 72   with matrix element: 71",
+  "transition-rate provenance: exp: 1, nist: 70, wavelength only: 1",
+  "levels with a measured lifetime: 10"
  ],
- "sources": {}
+ "sources": {
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; moments: Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-cell; printed 4.36(5)(21))": "https://www.nature.com/articles/ncomms14520",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; moments: Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-cell; printed 3.64(5)(14))": "https://www.nature.com/articles/ncomms14520",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; moments: Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-jet; printed 4.234(3)(8) and 0.14(6)(6), errors combined here; reference uncertainty not included)": "https://www.nature.com/articles/ncomms14520",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; moments: Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-jet; printed 3.625(2)(7) and 0.04(8)(6), errors combined here; scaled to 227Ac, whose 17 % / 6 % reference uncertainty is not included)": "https://www.nature.com/articles/ncomms14520",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; moments: Li, Teigelhoefer, Li, Bieron, et al., Phys. Rev. C 111, 054320 (2025) [arXiv:2503.13732], Table II (collinear laser spectroscopy of the Ac+ 342 nm line at TRIUMF; statistical errors are in the 5th-6th digit, the 10 % atomic-theory systematic uncertainty is used here as 'unc' - derived)": "https://arxiv.org/pdf/2503.13732",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; moments: Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (from the measured hyperfine constants and multiconfiguration Dirac-Hartree-Fock field factors; 17 % and 6 % theory uncertainty)": "https://www.nature.com/articles/ncomms14520",
+  "Kramida, Atoms 10, 42 (2022), Sec. 3.4": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405742/",
+  "Rossnagel, Raeder, Hakimi, Ferrer, Trautmann, Wendt, Phys. Rev. A 85, 012525 (2012), as quoted in Kramida, Atoms 10, 42 (2022), Sec. 3.1 (original not opened)": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405742/",
+  "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): weighted mean of transitions A, B, C": "https://jyx.jyu.fi/handle/123456789/45033",
+  "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2: b(2D3/2) = 597(4)(5) MHz": "https://www.nature.com/articles/ncomms14520",
+  "Granados, Creemers, Ferrer, Gaffney, et al., Phys. Rev. C 96, 054331 (2017), Table I (in-gas-jet; b_l = 13(26)(20) MHz; A not determined independently: a_u/a_l fixed to 41.6(8)(16))": "https://inspirehep.net/files/ef73f007cde9872ae756ed8748d34a90",
+  "Granados, Creemers, Ferrer, Gaffney, et al., Phys. Rev. C 96, 054331 (2017), Table I (in-gas-jet; b_l = 48(22)(20) MHz)": "https://inspirehep.net/files/ef73f007cde9872ae756ed8748d34a90",
+  "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405742/",
+  "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): weighted mean of transitions D and E": "https://jyx.jyu.fi/handle/123456789/45033",
+  "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713] (two-step resonance ionization with delayed ionization pulse in a hot atomizer)": "https://arxiv.org/pdf/2005.03713",
+  "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713], Table I, 'Calc. II' (CI + linearized coupled cluster); 'Calc. I' gives 647 ns; Dzuba, Flambaum, Roberts as corrected: 733(70) ns": "https://arxiv.org/pdf/2005.03713",
+  "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713] (2020), printed 7477.36(1)stat(4)sys": "https://arxiv.org/pdf/2005.03713",
+  "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713]": "https://arxiv.org/pdf/2005.03713",
+  "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713], Table I, 'Calc. II'; 'Calc. I' 209 ns; Dzuba et al. as corrected 238(20) ns": "https://arxiv.org/pdf/2005.03713",
+  "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713] (2020), printed 12276.59(1)stat(2)sys": "https://arxiv.org/pdf/2005.03713",
+  "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713] (fit of the partly resolved 814.6 nm line with the ground-state constants fixed to A = 50.5(10), B = 596(6) MHz; theory in the same paper: A = 499(21)(84), B = 1332(130)(77) MHz)": "https://arxiv.org/pdf/2005.03713",
+  "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713], Table I, 'Calc. II'; 'Calc. I' 327 ns; Dzuba et al. 317(30) ns": "https://arxiv.org/pdf/2005.03713",
+  "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 for A: a = 2104.8(10)(20) MHz (statistical 2 sigma, systematic; combined here). B from Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): transition B (438.58 nm) A_U = 2104.8(5), B_U = 110.1(22) MHz; Granados et al. 2017 quote b_u/b_l = 0.184(6)(8)": "https://www.nature.com/articles/ncomms14520",
+  "Granados, Creemers, Ferrer, Gaffney, et al., Phys. Rev. C 96, 054331 (2017), Table I / Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-jet resonance ionization at LISOL; printed 2377.0(10)(40)); gas-cell value 2386(17)(90)": "https://inspirehep.net/files/ef73f007cde9872ae756ed8748d34a90",
+  "Granados, Creemers, Ferrer, Gaffney, et al., Phys. Rev. C 96, 054331 (2017), Table I / Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-jet; printed 2498.4(10)(40), I = 5); gas-cell value 2525(22)(90)": "https://inspirehep.net/files/ef73f007cde9872ae756ed8748d34a90",
+  "Granados, Creemers, Ferrer, Gaffney, et al., Phys. Rev. C 96, 054331 (2017), Table I (in-gas-cell; printed 2385(31)(90), I = (9/2))": "https://inspirehep.net/files/ef73f007cde9872ae756ed8748d34a90",
+  "Granados, Creemers, Ferrer, Gaffney, et al., Phys. Rev. C 96, 054331 (2017), Table I (in-gas-cell; printed 1837(22)(90), I = (7))": "https://inspirehep.net/files/ef73f007cde9872ae756ed8748d34a90",
+  "Raeder, Beerwerth, Block, et al. (ref. [28] of Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019)), high-resolution value quoted in Table II as 2290(4){6}; Verstraelen's own in-source values: 2269(6){21} (2014) and 2243(9){47} (2016)": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table II (in-source resonance ionization at TRIUMF; printed 2749(100){21}, I = (1))": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table II (printed 926(74){208}, I = 3)": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table II (printed 3142(37){71}, I = (3/2))": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): transition E (439.79 nm, from the 2231.43 cm^-1 level; overlapping resonances, parameters strongly correlated)": "https://jyx.jyu.fi/handle/123456789/45033",
+  "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): transition A (388.67 nm)": "https://jyx.jyu.fi/handle/123456789/45033",
+  "Sonnenschein, PhD thesis 'Laser developments and high resolution resonance ionization spectroscopy of actinide elements', University of Jyvaskyla (2015), Sec. 6 and Table 7 (227Ac, crossed-beam resonance ionization with an injection-locked Ti:sapphire laser; statistical errors only): weighted mean of transitions C (383.64 nm: -990.6(12), -20.9(37)) and D (419.56 nm: -1002.0(108), -8.8(270))": "https://jyx.jyu.fi/handle/123456789/45033",
+  "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2, footnote: centre of gravity of 215Ac 683,618,211(12)(100) MHz (hyperfine centre of gravity, in-gas-jet spectroscopy)": "https://www.nature.com/articles/ncomms14520",
+  "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I (2014 data: -50.3(0.06){0.2} GHz; 2016 data: -49.9(0.1){0.3} GHz; high-resolution value of Raeder et al. quoted there: -50.2(0.02){0.1} GHz); nu(A) - nu(215)": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I (printed -54.7(0.1){0.2} GHz)": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Ferrer et al. 2017 value as quoted with this sign in Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I: -58.3(0.01){0.1} GHz. Ferrer et al. print 58,319(19)(133) MHz without sign": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I (printed -62(0.2){1} GHz)": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Verstraelen, Teigelhoefer, Ryssens, Ames, et al., Phys. Rev. C 100, 044321 (2019), Table I (printed -64.9(0.1){0.3} GHz)": "https://dipot.ulb.ac.be/dspace/bitstream/2013/295017/3/PhysRevC.100.044321.pdf",
+  "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-jet; printed 2,969(14)(40) MHz as delta-nu(A,215)); gas-cell 3008(170)(390)": "https://www.nature.com/articles/ncomms14520",
+  "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-cell; printed 4,282(240)(325) MHz)": "https://www.nature.com/articles/ncomms14520",
+  "Ferrer, Barzakh, Bastin, Beerwerth, Block, et al., Nat. Commun. 8, 14520 (2017), Table 2 (in-gas-cell; printed 7,710(270)(285) MHz)": "https://www.nature.com/articles/ncomms14520",
+  "Kramida, Atoms 10, 42 (2022), Table 1 (accuracy A+): from the measured lifetime 668(11) ns of Zhang et al. 2020, this being the only allowed decay branch": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405742/",
+  "Kramida, Atoms 10, 42 (2022), Sec. 3.3: 'the only allowed channel of radiative decay of this level'": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10405742/"
+ }
 }

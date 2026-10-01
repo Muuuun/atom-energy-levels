@@ -6,17 +6,17 @@
   "symbol": "At",
   "A": null,
   "Z": 85,
-  "I": null,
+  "I": "9/2",
   "kind": "nist",
   "limit_cm": 75150.8,
   "scale": "auto",
   "spectrum": "At I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "195",
   "limit_text": "At$^+$ ionisation limit   75150.80 cm$^{-1}$  =  9.31751 eV  (133.066 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "Astatine has no stable or long-lived isotope (longest 210At, 8.1 h); every optical number comes from in-source laser resonance ionization at ISOLDE or TRIUMF, Doppler-limited (a few GHz linewidth). Isotope shifts are nu(A) - nu(205). Hyperfine keys ending in m, m1, m2 are nuclear isomers. The A and B constants listed for the 46233.6 cm^-1 level were obtained from fits of the 795 nm line with the upper/lower A ratio fixed. The electron affinity of astatine was measured as 2.41578(7) eV (Leimbach et al., Nat. Commun. (2020), doi:10.1038/s41467-020-17599-2, arXiv:2002.11418) - a property of the negative ion, recorded here only for reference. Calculated isotope-shift constants for the 795 nm line: F = -11.47(57) GHz/fm^2 (multiconfiguration Dirac-Hartree-Fock, quoted in Barzakh et al. 2019)."
  },
  "columns": [
   {
@@ -46,6 +46,14 @@
    "plain": "6p5 2P°3/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 676,
+    "A_unc": 100,
+    "B": 1835,
+    "B_unc": 775,
+    "tier": "exp",
+    "src": "Cubiss et al., Phys. Rev. C 97, 054327 (2018), Sec. III B 2: ratios A(4P3/2)/A(ground) = -0.54(8) (from 197mAt) and B(ground)/B(4P3/2) = -5(2), combined with the Table I constants of the 46234 cm-1 level"
+   },
    "col": 0
   },
   {
@@ -76,6 +84,14 @@
    "plain": "6p47s 4P3/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -365,
+    "A_unc": 3,
+    "B": -367,
+    "B_unc": 50,
+    "tier": "exp",
+    "src": "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included)"
+   },
    "col": 1
   }
  ],
@@ -90,6 +106,51 @@
    "wn": 46233.6,
    "lam": 216.2929,
    "air": 216.225,
+   "use": "first step of the ISOLDE-RILIS / TRIUMF-TRILIS three-colour resonance ionization scheme for astatine (216 nm + 795 nm + 532 nm or Rydberg/dye step); hyperfine structure and isotope shifts of 195-211At measured on it",
+   "isotope_shifts": {
+    "197-205": {
+     "value": -7190,
+     "unc": 750,
+     "src": "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(216 nm), nu(A) - nu(205)",
+     "url": "https://doi.org/10.1103/PhysRevC.97.054327"
+    },
+    "197m-205": {
+     "value": -2975,
+     "unc": 750,
+     "src": "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(216 nm), nu(A) - nu(205)",
+     "url": "https://doi.org/10.1103/PhysRevC.97.054327"
+    },
+    "198-205": {
+     "value": -8731,
+     "unc": 750,
+     "src": "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(216 nm), nu(A) - nu(205)",
+     "url": "https://doi.org/10.1103/PhysRevC.97.054327"
+    },
+    "203-205": {
+     "value": -3437,
+     "unc": 900,
+     "src": "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(216 nm), nu(A) - nu(205)",
+     "url": "https://doi.org/10.1103/PhysRevC.97.054327"
+    },
+    "207-205": {
+     "value": 2201,
+     "unc": 900,
+     "src": "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(216 nm), nu(A) - nu(205)",
+     "url": "https://doi.org/10.1103/PhysRevC.97.054327"
+    },
+    "209-205": {
+     "value": 6232,
+     "unc": 750,
+     "src": "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(216 nm), nu(A) - nu(205)",
+     "url": "https://doi.org/10.1103/PhysRevC.97.054327"
+    },
+    "211-205": {
+     "value": 9423,
+     "unc": 900,
+     "src": "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(216 nm), nu(A) - nu(205)",
+     "url": "https://doi.org/10.1103/PhysRevC.97.054327"
+    }
+   },
    "type": "E1 (intercombination)",
    "lam_obs": 216.293
   },
@@ -103,6 +164,7 @@
    "wn": 44549.3,
    "lam": 224.4704,
    "air": 224.4008,
+   "use": "alternative first step for resonance ionization (224 nm + 273 nm two-colour scheme used for the first threshold scan; second-step levels were also verified through it), Rothe et al. 2013",
    "type": "E1 (intercombination)",
    "lam_obs": 224.471
   }
@@ -110,7 +172,7 @@
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -123,8 +185,111 @@
     "Use"
    ],
    "aligns": "lrrrrrrrl",
-   "rows": [],
+   "rows": [
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{3/2}$",
+     "216.2929",
+     "216.2250",
+     "1386.0485",
+     "–",
+     "–",
+     "–",
+     "–",
+     "first step of the ISOLDE-RILIS / TRIUMF-TRILIS three-colo…"
+    ],
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{5/2}$",
+     "224.4704",
+     "224.4008",
+     "1335.5544",
+     "–",
+     "–",
+     "–",
+     "–",
+     "alternative first step for resonance ionization"
+    ]
+   ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{205}$At hyperfine structure  ($I$ = 9/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$",
+     "676(100)",
+     "1835(775)",
+     "F=3: -4735.96   F=4: -3255.29   F=5: -257.58   F=6: +5021.75"
+    ],
+    [
+     "$6p^{4}7s\\ ^4P_{3/2}$",
+     "-365(3)",
+     "-367(50)",
+     "F=3: +2843.04   F=4: +1627.71   F=5: -120.83   F=6: -2555.50"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{3/2}$",
+     "216.293",
+     "197-205",
+     "-7190(750)"
+    ],
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{3/2}$",
+     "216.293",
+     "197m-205",
+     "-2975(750)"
+    ],
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{3/2}$",
+     "216.293",
+     "198-205",
+     "-8731(750)"
+    ],
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{3/2}$",
+     "216.293",
+     "203-205",
+     "-3437(900)"
+    ],
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{3/2}$",
+     "216.293",
+     "207-205",
+     "2201(900)"
+    ],
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{3/2}$",
+     "216.293",
+     "209-205",
+     "6232(750)"
+    ],
+    [
+     "$6p^{5}\\ ^2P^{o}_{3/2}$ – $6p^{4}7s\\ ^4P_{3/2}$",
+     "216.293",
+     "211-205",
+     "9423(900)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
@@ -132,5 +297,16 @@
   "transition-rate provenance: wavelength only: 2",
   "levels with a measured lifetime: 0"
  ],
- "sources": {}
+ "sources": {
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
+  "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; magnetic moment: reference value used by Cubiss et al., Phys. Rev. C 97, 054327 (2018), derived there from the g factor of the 21/2- isomer of 211At (not a direct ground-state measurement)": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
+  "NIST ASD At I levels table (local copy data/nist/At_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Rothe, Andreyev, Antalic, Borschevsky, et al., Nat. Commun. 4, 1835 (2013) (in-source laser resonance ionization at ISOLDE-RILIS)": "https://www.nature.com/articles/ncomms2819",
+  "Cubiss et al., Phys. Rev. C 97, 054327 (2018), Sec. III B 2: ratios A(4P3/2)/A(ground) = -0.54(8) (from 197mAt) and B(ground)/B(4P3/2) = -5(2), combined with the Table I constants of the 46234 cm-1 level": "https://doi.org/10.1103/PhysRevC.97.054327",
+  "Rothe, Andreyev, Antalic, Borschevsky, et al., Nat. Commun. 4, 1835 (2013), Gaussian fits of laser scans across the 216 nm resonance of 205At (hyperfine structure unresolved)": "https://www.nature.com/articles/ncomms2819",
+  "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included)": "https://doi.org/10.1103/PhysRevC.97.054327",
+  "Barzakh, Cubiss, Andreyev, Seliverstov, et al., Phys. Rev. C 99, 054317 (2019), Table I (in-source resonance ionization spectroscopy of the 795 nm line at ISOLDE; a-constant of the 46234 cm-1 level with a(58805)/a(46234) fixed to -1.69(2))": "https://inspirehep.net/files/6ad428eadbd442ac8c8f852031e0fafd",
+  "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(216 nm), nu(A) - nu(205)": "https://doi.org/10.1103/PhysRevC.97.054327",
+  "Cubiss, Barzakh, Seliverstov, Andreyev, et al., Phys. Rev. C 97, 054327 (2018), Table I (in-source resonance ionization spectroscopy at ISOLDE; round brackets = statistical error, for I = 9/2 and 1/2 an extra 1.2 % for the fixed A-ratio is included); column delta-nu(795 nm), nu(A) - nu(205)": "https://doi.org/10.1103/PhysRevC.97.054327"
+ }
 }
