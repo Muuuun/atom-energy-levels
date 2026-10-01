@@ -6,17 +6,17 @@
   "symbol": "Tb",
   "A": null,
   "Z": 65,
-  "I": null,
+  "I": "3/2",
   "kind": "nist",
   "limit_cm": 47295.0,
   "scale": "auto",
   "spectrum": "Tb I",
   "auto": true,
-  "has_lit": false,
-  "freq_isotope": "None",
+  "has_lit": true,
+  "freq_isotope": "159",
   "limit_text": "Tb$^+$ ionisation limit   47295.00 cm$^{-1}$  =  5.86383 eV  (211.439 nm)",
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": ""
+  "notes": "159Tb is the only stable isotope (I = 3/2), so there are no isotope shifts between stable isotopes. Very thin file: nearly all Tb I atomic data sit behind paywalls or bot protection (IOP, Elsevier, APS, RSC). The four hyperfine entries were read from the publisher abstract pages of the Optica journals, whose HTML embeds the tables, through an automated page reader (both tables were read twice with identical results). The 8G hyperfine constants are 1966 optical-interferometry values converted from mK and marked derived. Level 509.845 (8G11/2) and 4670.455 (6H°11/2) are not drawn by the site but carry the only precise data. Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source."
  },
  "columns": [
   {
@@ -97,6 +97,14 @@
    "plain": "4f85d6s2 8G13/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 530.6,
+    "A_unc": 6.0,
+    "B": 989,
+    "B_unc": 60,
+    "tier": "exp",
+    "src": "Arnoult, Gerstenkorn, J. Opt. Soc. Am. 56, 177 (1966), Table II"
+   },
    "col": 5
   },
   {
@@ -112,6 +120,14 @@
    "plain": "4f85d6s2 8G15/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 470.7,
+    "A_unc": 6.0,
+    "B": 1169,
+    "B_unc": 60,
+    "tier": "exp",
+    "src": "Arnoult, Gerstenkorn, J. Opt. Soc. Am. 56, 177 (1966), Table II"
+   },
    "col": 6
   },
   {
@@ -445,6 +461,31 @@
    "aligns": "lrrrrrrrl",
    "rows": [],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{159}$Tb hyperfine structure  ($I$ = 3/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$^8G_{13/2}$",
+     "531(6)",
+     "989(60)",
+     "F=5: -5588.86   F=6: -3013.88   F=7: +567.18   F=8: +5420.60"
+    ],
+    [
+     "$^8G_{15/2}$",
+     "471(6)",
+     "1169(60)",
+     "F=6: -5575.57   F=7: -2982.07   F=8: +649.92   F=9: +5587.62"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
@@ -452,5 +493,11 @@
   "transition-rate provenance: wavelength only: 10",
   "levels with a measured lifetime: 0"
  ],
- "sources": {}
+ "sources": {
+  "NIST Atomic Weights and Isotopic Compositions (Tb, monoisotopic); nuclear spin from the IAEA/ENSDF ground-state table (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=159tb) and Karshenboim et al. 2005": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Tb",
+  "NIST ASD Tb I levels table (local copy data/nist/Tb_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Arnoult, Gerstenkorn, J. Opt. Soc. Am. 56, 177 (1966), Table II": "https://opg.optica.org/josa/abstract.cfm?uri=josa-56-2-177",
+  "Childs, Crosswhite, Goodman, Pfeufer, J. Opt. Soc. Am. B 1, 22 (1984), Table 6": "https://opg.optica.org/josab/abstract.cfm?uri=josab-1-1-22",
+  "Karshenboim, Nevsky, Angstmann, Dzuba, Flambaum, \"A New Option for a Search for alpha Variation: Narrow Transitions with Enhanced Sensitivity\", arXiv:physics/0511180 (2005)": "https://arxiv.org/abs/physics/0511180"
+ }
 }
