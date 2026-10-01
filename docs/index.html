@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rb energy levels and transitions</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Interactive Grotrian diagram of rubidium: 36 levels, every E1 line below 2 µm, wavelengths and dipole matrix elements cross-checked between NIST, ARC and pairinteraction.">
+<style>
+  :root { --ink: #1a1a1a; --muted: #5b5b5b; --line: #dcd8cf; --panel: #ffffff; --bg: #f6f4ef; --accent: #8a1c1c; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; background: var(--bg); color: var(--ink);
+         font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; padding: 10px 16px;
+           border-bottom: 1px solid var(--line); background: var(--panel); }
+  h1 { font-size: 18px; margin: 0; }
+  header .hint { color: var(--muted); font-size: 13.5px; flex: 1 1 320px; }
+  header nav { display: flex; gap: 14px; font-size: 13.5px; }
+  a { color: var(--accent); }
+  #stage { position: relative; flex: 1 1 auto; min-height: 0; overflow: hidden; background: #fff; cursor: grab; touch-action: none; }
+  #stage.dragging { cursor: grabbing; }
+  #stage svg { width: 100%; height: 100%; display: block; user-select: none; -webkit-user-select: none; }
+  #stage .loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); }
+
+  /* hover emphasis: everything that is a transition fades unless it carries .hl */
+  svg [id^="tr-"], svg [id^="trl-"] { transition: opacity .12s; }
+  svg.dim [id^="tr-"], svg.dim [id^="trl-"] { opacity: .07; }
+  svg.dim [id^="tr-"].hl, svg.dim [id^="trl-"].hl { opacity: 1; }
+  svg [id^="hit-"], svg [id^="trl-"], svg [id^="lv"] { cursor: pointer; }
+  svg [id^="hit-"] path { pointer-events: stroke; }
+
+  #zoom { position: absolute; left: 12px; top: 12px; display: flex; gap: 6px; }
+  #zoom button { width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel);
+                 color: var(--ink); font-size: 18px; line-height: 1; cursor: pointer; }
+  #zoom button:hover { border-color: var(--muted); }
+  #zoom button.wide { width: auto; padding: 0 12px; font-size: 13.5px; }
+
+  #info { position: absolute; right: 12px; top: 12px; width: min(330px, calc(100% - 24px)); max-height: calc(100% - 24px);
+          overflow: auto; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px;
+          background: rgba(255, 255, 255, .96); box-shadow: 0 4px 18px rgba(0, 0, 0, .08); font-size: 14px; }
+  #info h2 { font-size: 17px; margin: 0 0 6px; }
+  #info .tag { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  #info table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  #info td, #info th { padding: 3px 0; text-align: left; vertical-align: baseline; }
+  #info td:last-child, #info th:last-child { text-align: right; }
+  #info td:first-child { color: var(--muted); padding-right: 10px; }
+  #info table.lines td:first-child { color: var(--ink); }
+  #info table.lines th { font-size: 12px; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line); }
+  #info table.lines tr.row { cursor: pointer; }
+  #info table.lines tr.row:hover td { background: #f4f2ee; }
+  #info .note { margin-top: 8px; font-size: 12.5px; color: var(--muted); }
+  #info .swatch { display: inline-block; width: 26px; height: 5px; border-radius: 3px; vertical-align: middle; margin-right: 8px; }
+  @media (max-width: 640px) { #info { top: auto; bottom: 12px; max-height: 45%; } header .hint { display: none; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Rubidium (Rb I) energy levels and transitions</h1>
+  <span class="hint">Hover a line or a level to isolate it. Click to keep it selected. Scroll to zoom, drag to move.</span>
+  <nav>
+    <a href="rb_energy_levels.pdf">PDF</a>
+    <a href="https://github.com/Muuuun/rb-energy-levels/blob/main/data/transitions.csv">Data</a>
+    <a href="https://github.com/Muuuun/rb-energy-levels">Source</a>
+  </nav>
+</header>
+<div id="stage">
+  <div class="loading">Loading diagram…</div>
+  <div id="zoom">
+    <button id="zin" title="Zoom in" aria-label="Zoom in">+</button>
+    <button id="zout" title="Zoom out" aria-label="Zoom out">−</button>
+    <button id="zfit" class="wide" title="Show the whole diagram">Fit</button>
+  </div>
+  <div id="info"></div>
+</div>
+<script>
+(async function () {
+  const stage = document.getElementById('stage');
+  const info = document.getElementById('info');
+  const [svgText, data] = await Promise.all([
+    fetch('rb_energy_levels.svg').then(r => r.text()),
+    fetch('data.json').then(r => r.json()),
+  ]);
+  stage.querySelector('.loading').remove();
+  stage.insertAdjacentHTML('afterbegin', svgText.slice(svgText.indexOf('<svg')));
+  const svg = stage.querySelector('svg');
+  svg.removeAttribute('width');
+  svg.removeAttribute('height');
+  const T = data.transitions, L = data.levels;
+  const levelIndex = Object.fromEntries(L.map((l, k) => [l.name, k]));
+  const linesOf = L.map(() => []);
+  T.forEach((t, i) => { for (const s of [t.lower, t.upper]) if (s in levelIndex) linesOf[levelIndex[s]].push(i); });
+
+  // ---------- formatting
+  const st = s => s.replace(/^(\d+[A-Z])(.+)$/, '$1<sub>$2</sub>');
+  const fd = d => d >= 10 ? d.toFixed(2) : d >= 0.1 ? d.toFixed(3) : d.toFixed(4);
+  const fA = a => { const e = Math.floor(Math.log10(a)); return (a / 10 ** e).toFixed(2) + ' × 10<sup>' + e + '</sup>'; };
+  const ftau = ns => ns == null ? 'stable' : ns < 1000 ? ns.toFixed(1) + ' ns' : (ns / 1000).toFixed(2) + ' µs';
+  const colorOf = i => { const p = svg.querySelector('#tr-' + i + ' path'); return p ? p.style.stroke || p.style.fill : '#888'; };
+  const row = (k, v) => '<tr><td>' + k + '</td><td>' + v + '</td></tr>';
+
+  function transitionCard(i) {
+    const t = T[i];
+    let h = '<h2><span class="swatch" style="background:' + colorOf(i) + '"></span>' + st(t.lower) + ' → ' + st(t.upper) + '</h2>';
+    if (t.rydberg) {
+      h += '<div class="tag">Rydberg excitation, shown for n = 70</div><table>' +
+        row('Wavelength (vacuum)', t.lam.toFixed(3) + ' nm') +
+        row('Frequency', t.freq.toFixed(3) + ' THz') +
+        row('Series limit (n → ∞)', t.limit.toFixed(3) + ' nm') +
+        row('|⟨J‖er‖J′⟩| pairinteraction', fd(t.d) + ' ea₀') +
+        row('|⟨J‖er‖J′⟩| ARC', fd(t.d_arc) + ' ea₀') + '</table>' +
+        (t.lower === '5S1/2' ? '<div class="note">The two codes differ by about 2× on this line: order of magnitude only.</div>' : '');
+    } else {
+      h += '<table>' +
+        row('Wavelength (vacuum)', t.lam.toFixed(4) + ' nm') +
+        row('Wavelength (air)', t.air.toFixed(4) + ' nm') +
+        row('Frequency', t.freq.toFixed(4) + ' THz') +
+        row('Wavenumber', t.wn.toFixed(3) + ' cm⁻¹') +
+        row('|⟨J‖er‖J′⟩|', fd(t.d) + ' ea₀') +
+        row('Einstein A (' + t.A_src + ')', fA(t.A) + ' s⁻¹') +
+        row('Branching from ' + st(t.upper), (t.br * 100).toFixed(1) + ' %') +
+        row('Upper-level linewidth Γ/2π', t.gamma.toFixed(3) + ' MHz') + '</table>';
+    }
+    return h;
+  }
+
+  function levelCard(k) {
+    const l = L[k];
+    const rows = linesOf[k].slice().sort((a, b) => T[a].lam - T[b].lam).map(i => {
+      const t = T[i], other = t.lower === l.name ? '→ ' + st(t.upper) : '← ' + st(t.lower);
+      return '<tr class="row" data-i="' + i + '"><td><span class="swatch" style="background:' + colorOf(i) + '"></span>' + other +
+             '</td><td>' + t.lam.toFixed(3) + '</td><td>' + fd(t.d) + '</td></tr>';
+    }).join('');
+    return '<h2>' + st(l.name) + '</h2><table>' + row('Energy', l.E.toFixed(3) + ' cm⁻¹') + row('Lifetime (0 K)', ftau(l.tau)) + '</table>' +
+      '<table class="lines" style="margin-top:8px"><tr><th>' + linesOf[k].length + ' lines</th><th>λ vac (nm)</th><th>d (ea₀)</th></tr>' + rows + '</table>';
+  }
+
+  const helpCard = '<h2>How to read this</h2><div class="note" style="margin-top:0;font-size:13.5px;color:inherit">' +
+    'Each arrow is an electric-dipole line, labelled with its vacuum wavelength and reduced dipole matrix element.<br><br>' +
+    'Point at an arrow, its label, or a level to fade everything else. Click to pin the selection; click empty space to release it.</div>';
+
+  // ---------- emphasis
+  let pinned = null, shown = null;
+  function apply(sel) {
+    if (JSON.stringify(sel) === JSON.stringify(shown)) return;
+    shown = sel;
+    svg.querySelectorAll('.hl').forEach(e => e.classList.remove('hl'));
+    if (!sel) { svg.classList.remove('dim'); info.innerHTML = helpCard; return; }
+    const ids = sel.type === 'tr' ? [sel.i] : linesOf[sel.i];
+    for (const i of ids) for (const p of ['tr-', 'trl-']) {
+      const e = svg.getElementById(p + i);
+      if (e) { e.classList.add('hl'); if (p === 'trl-') e.parentNode.appendChild(e); }  // label on top of its neighbours
+    }
+    svg.classList.add('dim');
+    info.innerHTML = sel.type === 'tr' ? transitionCard(sel.i) : levelCard(sel.i);
+  }
+  function target(e) {
+    for (let n = e.target; n && n !== svg; n = n.parentNode) {
+      const m = n.id && n.id.match(/^(hit|tr|trl|lv|lvn|lvd)-(\d+)$/);
+      if (m) return { type: m[1].startsWith('lv') ? 'lv' : 'tr', i: +m[2] };
+    }
+    return null;
+  }
+  svg.addEventListener('mouseover', e => { if (!drag) apply(target(e) || pinned); });
+  svg.addEventListener('mouseleave', () => apply(pinned));
+  info.addEventListener('mouseover', e => { const r = e.target.closest('tr.row'); if (r) apply({ type: 'tr', i: +r.dataset.i }); });
+  info.addEventListener('click', e => { const r = e.target.closest('tr.row'); if (r) { pinned = { type: 'tr', i: +r.dataset.i }; apply(pinned); } });
+  info.addEventListener('mouseleave', () => apply(pinned));
+  apply(null);
+  info.innerHTML = helpCard;
+
+  // ---------- pan and zoom on the viewBox
+  const full = svg.viewBox.baseVal;
+  const home = { x: full.x, y: full.y, w: full.width, h: full.height };
+  let vb = { ...home };
+  const setVB = () => svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
+  function toSvg(cx, cy) { const p = new DOMPoint(cx, cy).matrixTransform(svg.getScreenCTM().inverse()); return p; }
+  function zoomAt(cx, cy, f) {
+    const w = Math.min(home.w * 1.2, Math.max(home.w / 40, vb.w * f));
+    f = w / vb.w;
+    const p = toSvg(cx, cy);
+    vb = { x: p.x - (p.x - vb.x) * f, y: p.y - (p.y - vb.y) * f, w, h: vb.h * f };
+    setVB();
+  }
+  const centre = () => { const r = stage.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; };
+  stage.addEventListener('wheel', e => {
+    if (e.target.closest('#info')) return;
+    e.preventDefault();
+    zoomAt(e.clientX, e.clientY, Math.exp(Math.max(-60, Math.min(60, e.deltaY)) * (e.ctrlKey ? 0.012 : 0.004)));
+  }, { passive: false });
+  document.getElementById('zin').onclick = () => zoomAt(...centre(), 1 / 1.5);
+  document.getElementById('zout').onclick = () => zoomAt(...centre(), 1.5);
+  document.getElementById('zfit').onclick = () => { vb = { ...home }; setVB(); };
+
+  let drag = null, moved = 0;
+  const pointers = new Map();
+  svg.addEventListener('pointerdown', e => {
+    pointers.set(e.pointerId, e);
+    if (pointers.size === 1) { drag = { x: e.clientX, y: e.clientY }; moved = 0; }
+  });
+  window.addEventListener('pointermove', e => {
+    if (!pointers.has(e.pointerId)) return;
+    if (pointers.size === 2) {  // pinch
+      const [a, b] = [...pointers.values()];
+      const d0 = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+      pointers.set(e.pointerId, e);
+      const [c, d] = [...pointers.values()];
+      const d1 = Math.hypot(c.clientX - d.clientX, c.clientY - d.clientY);
+      if (d0 > 0 && d1 > 0) zoomAt((c.clientX + d.clientX) / 2, (c.clientY + d.clientY) / 2, d0 / d1);
+      moved = 99;
+      return;
+    }
+    pointers.set(e.pointerId, e);
+    if (!drag) return;
+    moved += Math.abs(e.clientX - drag.x) + Math.abs(e.clientY - drag.y);
+    if (moved > 4) stage.classList.add('dragging');
+    const p0 = toSvg(drag.x, drag.y), p1 = toSvg(e.clientX, e.clientY);
+    vb.x -= p1.x - p0.x;
+    vb.y -= p1.y - p0.y;
+    drag = { x: e.clientX, y: e.clientY };
+    setVB();
+  });
+  window.addEventListener('pointerup', e => {
+    if (!pointers.delete(e.pointerId)) return;
+    stage.classList.remove('dragging');
+    if (moved <= 4) {  // a click, not a drag: pin or release
+      const t = target(e);
+      pinned = t && JSON.stringify(t) === JSON.stringify(pinned) ? null : t;
+      apply(pinned);
+    }
+    drag = null;
+  });
+  window.addEventListener('pointercancel', e => { pointers.delete(e.pointerId); drag = null; });
+})();
+</script>
+</body>
+</html>
