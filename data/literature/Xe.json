@@ -248,6 +248,14 @@
       }
      ]
     }
+   },
+   "g_J": {
+    "value": 1.2055,
+    "unc": 0.0002,
+    "method": "experiment",
+    "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
+    "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
+    "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (480.7 nm line 7p[1/2]0 - 6s[3/2]1); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
    }
   },
   {
@@ -339,12 +347,22 @@
    "label": "5p5 6p 2[5/2]3 (upper level of the 882 nm cooling line)",
    "J": "3",
    "lifetime": {
-    "value": 3.303e-08,
-    "method": "compilation",
-    "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
-    "url": "https://arxiv.org/abs/1110.1361",
+    "value": 3.4e-08,
     "unit": "s",
-    "note": "upper-state lifetime of the 882 nm cooling line as tabulated in the review (origin not stated there; equals 1/A of NIST ASD, A = 3.00e7 s^-1)"
+    "method": "compilation",
+    "source": "Horiguchi, Chang, Setser, J. Chem. Phys. 75, 1207 (1981) [as tabulated in Doery, Vredenbregt, Tempelaars, Beijerinck, Verhaar, Phys. Rev. A 57, 3603 (1998), Table VI, p. 3611 (TU Eindhoven repository copy)]",
+    "url": "https://pure.tue.nl/ws/files/1467575/Metis125196.pdf",
+    "note": "printed tau = 34 ns for the upper level of the 882.184 nm (vacuum) line of 136Xe, footnote g = Horiguchi et al.; no uncertainty printed. 34 ns x A_NIST(3.00e7 s^-1) = 1.02. Made the main entry because it is a measured lifetime; the previously stored 33.03 ns equals 1/A_NIST.",
+    "alternatives": [
+     {
+      "value": 3.303e-08,
+      "method": "compilation",
+      "source": "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I",
+      "url": "https://arxiv.org/abs/1110.1361",
+      "unit": "s",
+      "note": "upper-state lifetime of the 882 nm cooling line as tabulated in the review (origin not stated there; equals 1/A of NIST ASD, A = 3.00e7 s^-1)"
+     }
+    ]
    }
   },
   {
@@ -431,6 +449,16 @@
        "source": "Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)",
        "url": "https://www.osti.gov/servlets/purl/1959223",
        "note": "Bounds et al. own measurement, 823.39 nm line"
+      },
+      {
+       "A_MHz": -886.49,
+       "A_unc": 0.9,
+       "method": "experiment",
+       "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554",
+       "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+       "A_mK": -29.57,
+       "A_mK_unc": 0.03,
+       "note": "derived unit conversion: printed A 6p(3/2)2 = -29.57 +- 0.03 mK (1 mK = 29.9792458 MHz); high-field level crossing after selective dye-laser excitation; A = g_J x (measured |A/g_J|); sign fixed by the authors from other experimental and theoretical values"
       }
      ]
     },
@@ -452,9 +480,31 @@
        "source": "Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)",
        "url": "https://www.osti.gov/servlets/purl/1959223",
        "note": "Bounds et al. own measurement, 823.39 nm line"
+      },
+      {
+       "A_MHz": 262.62,
+       "A_unc": 0.3,
+       "method": "experiment",
+       "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau III, p. 554",
+       "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+       "A_mK": 8.76,
+       "A_mK_unc": 0.01,
+       "B_MHz": 30.28,
+       "B_unc": 0.6,
+       "B_mK": 1.01,
+       "B_mK_unc": 0.02,
+       "note": "derived unit conversion: printed A 6p(3/2)2 = 8.76 +- 0.01 mK, B = 1.01 +- 0.02 mK; level crossing; signs fixed by comparison with other values"
       }
      ]
     }
+   },
+   "g_J": {
+    "value": 1.3836,
+    "unc": 0.0007,
+    "method": "compilation",
+    "source": "Husson and Grandin (double resonance, 'a paraitre') / Huet et al. [as listed in the g_J column of Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554]",
+    "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+    "note": "g_J value used by Husson et al. to convert A/g_J into A"
    }
   },
   {
@@ -476,6 +526,16 @@
        "source": "Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)",
        "url": "https://www.osti.gov/servlets/purl/1959223",
        "note": "Bounds et al. own measurement, 820.86 nm line"
+      },
+      {
+       "A_MHz": -4427.04,
+       "A_unc": 1.5,
+       "method": "experiment",
+       "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554",
+       "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+       "A_mK": -147.67,
+       "A_mK_unc": 0.05,
+       "note": "derived unit conversion: printed A 6p'(3/2)1 = -147.67 +- 0.05 mK (1 mK = 29.9792458 MHz); high-field level crossing after selective dye-laser excitation; A = g_J x (measured |A/g_J|); sign fixed by the authors from other experimental and theoretical values"
       }
      ]
     },
@@ -497,9 +557,27 @@
        "source": "Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)",
        "url": "https://www.osti.gov/servlets/purl/1959223",
        "note": "Bounds et al. own measurement, 820.86 nm line"
+      },
+      {
+       "A_MHz": 1311.95,
+       "A_unc": 0.45,
+       "method": "experiment",
+       "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau III, p. 554",
+       "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+       "A_mK": 43.762,
+       "A_mK_unc": 0.015,
+       "note": "derived unit conversion: printed A 6p'(3/2)1 = 43.762 +- 0.015 mK; level crossing. B was not measured for this J = 1 level (a calculated B was assumed in the analysis); sign fixed by comparison with other values"
       }
      ]
     }
+   },
+   "g_J": {
+    "value": 0.7925,
+    "unc": 0.0002,
+    "method": "experiment",
+    "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
+    "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
+    "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (491.6 nm line; Husson & Grandin (magnetic resonance) 0.7926(4)); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
    }
   },
   {
@@ -512,7 +590,19 @@
      "A_unc": 4.7,
      "method": "compilation",
      "source": "Suzuki, Katoh, Nishimiya, Spectrochim. Acta A 58, 2519 (2002) [as quoted in Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)]",
-     "url": "https://www.osti.gov/servlets/purl/1959223"
+     "url": "https://www.osti.gov/servlets/purl/1959223",
+     "alternatives": [
+      {
+       "A_MHz": -2885.2,
+       "A_unc": 3.6,
+       "method": "experiment",
+       "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554",
+       "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+       "A_mK": -96.24,
+       "A_mK_unc": 0.12,
+       "note": "derived unit conversion: printed A 6p'(3/2)2 = -96.24 +- 0.12 mK (1 mK = 29.9792458 MHz); high-field level crossing after selective dye-laser excitation; A = g_J x (measured |A/g_J|); sign fixed by the authors from other experimental and theoretical values"
+      }
+     ]
     },
     "131": {
      "A_MHz": 858.9,
@@ -532,9 +622,31 @@
        "source": "Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)",
        "url": "https://www.osti.gov/servlets/purl/1959223",
        "note": "Bounds et al. own measurement, 834.91 nm line"
+      },
+      {
+       "A_MHz": 855.01,
+       "A_unc": 1.2,
+       "method": "experiment",
+       "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau III, p. 554",
+       "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+       "A_mK": 28.52,
+       "A_mK_unc": 0.04,
+       "B_MHz": -17.09,
+       "B_unc": 0.3,
+       "B_mK": -0.57,
+       "B_mK_unc": 0.01,
+       "note": "derived unit conversion: printed A 6p'(3/2)2 = 28.52 +- 0.04 mK, B = -0.57 +- 0.01 mK; level crossing; signs fixed by comparison with other values"
       }
      ]
     }
+   },
+   "g_J": {
+    "value": 1.19,
+    "unc": 0.001,
+    "method": "compilation",
+    "source": "Husson and Grandin (double resonance, 'a paraitre') / Huet et al. [as listed in the g_J column of Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554]",
+    "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+    "note": "g_J value used by Husson et al. to convert A/g_J into A"
    }
   },
   {
@@ -556,6 +668,16 @@
        "source": "Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)",
        "url": "https://www.osti.gov/servlets/purl/1959223",
        "note": "Bounds et al. own measurement, 826.88 nm line"
+      },
+      {
+       "A_MHz": 1981.33,
+       "A_unc": 1.5,
+       "method": "experiment",
+       "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554",
+       "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+       "A_mK": 66.09,
+       "A_mK_unc": 0.05,
+       "note": "derived unit conversion: printed A 6p'(1/2)1 = 66.09 +- 0.05 mK (1 mK = 29.9792458 MHz); high-field level crossing after selective dye-laser excitation; A = g_J x (measured |A/g_J|); sign fixed by the authors from other experimental and theoretical values"
       }
      ]
     },
@@ -577,9 +699,27 @@
        "source": "Bounds, Kolomenskii, Trainham, Manard, Schuessler, Spectrochim. Acta B 202, 106635 (2023) (OSTI accepted manuscript)",
        "url": "https://www.osti.gov/servlets/purl/1959223",
        "note": "Bounds et al. own measurement, 826.88 nm line"
+      },
+      {
+       "A_MHz": -587.29,
+       "A_unc": 0.6,
+       "method": "experiment",
+       "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau III, p. 554",
+       "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+       "A_mK": -19.59,
+       "A_mK_unc": 0.02,
+       "note": "derived unit conversion: printed A 6p'(1/2)1 = -19.59 +- 0.02 mK; level crossing. B was not measured for this J = 1 level (a calculated B was assumed in the analysis); sign fixed by comparison with other values"
       }
      ]
     }
+   },
+   "g_J": {
+    "value": 1.551,
+    "unc": 0.001,
+    "method": "compilation",
+    "source": "Husson and Grandin (double resonance, 'a paraitre') / Huet et al. [as listed in the g_J column of Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554]",
+    "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+    "note": "g_J value used by Husson et al. to convert A/g_J into A"
    }
   },
   {
@@ -752,6 +892,152 @@
      "note": "derived: converted from the printed transition frequency 2 726 086 012 471(630) kHz of 132Xe (Ramsey-comb spectroscopy at 110 nm, seventh harmonic of 770 nm)"
     }
    }
+  },
+  {
+   "nist_energy_cm": 88744.559,
+   "label": "5p5 7p 2[3/2]1",
+   "J": "1",
+   "hyperfine": {
+    "129": {
+     "A_MHz": -2740.4,
+     "A_unc": 0.9,
+     "method": "experiment",
+     "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554",
+     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+     "A_mK": -91.41,
+     "A_mK_unc": 0.03,
+     "note": "derived unit conversion: printed A 7p(3/2)1 = -91.41 +- 0.03 mK (1 mK = 29.9792458 MHz); high-field level crossing after selective dye-laser excitation; A = g_J x (measured |A/g_J|); sign fixed by the authors from other experimental and theoretical values"
+    },
+    "131": {
+     "A_MHz": 812.26,
+     "A_unc": 0.24,
+     "method": "experiment",
+     "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau III, p. 554",
+     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+     "A_mK": 27.094,
+     "A_mK_unc": 0.008,
+     "note": "derived unit conversion: printed A 7p(3/2)1 = 27.094 +- 0.008 mK; level crossing. B was not measured for this J = 1 level (a calculated B was assumed in the analysis); sign fixed by comparison with other values"
+    }
+   },
+   "g_J": {
+    "value": 0.9039,
+    "unc": 0.0002,
+    "method": "experiment",
+    "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
+    "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
+    "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (483.0 nm line); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
+   }
+  },
+  {
+   "nist_energy_cm": 90839.777,
+   "label": "5p5 4f 2[3/2]1",
+   "J": "1",
+   "hyperfine": {
+    "129": {
+     "A_MHz": 1187.18,
+     "A_unc": 3.0,
+     "method": "experiment",
+     "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554",
+     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+     "A_mK": 39.6,
+     "A_mK_unc": 0.1,
+     "note": "derived unit conversion: printed A 4f(3/2)1 = 39.6 +- 0.1 mK (1 mK = 29.9792458 MHz); high-field level crossing after selective dye-laser excitation; A = g_J x (measured |A/g_J|); sign fixed by the authors from other experimental and theoretical values"
+    },
+    "131": {
+     "A_MHz": -352.56,
+     "A_unc": 0.9,
+     "method": "experiment",
+     "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau III, p. 554",
+     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+     "A_mK": -11.76,
+     "A_mK_unc": 0.03,
+     "note": "derived unit conversion: printed A 4f(3/2)1 = -11.76 +- 0.03 mK; level crossing. B was not measured for this J = 1 level (a calculated B was assumed in the analysis); sign fixed by comparison with other values"
+    }
+   },
+   "g_J": {
+    "value": 0.4997,
+    "unc": 0.0004,
+    "method": "compilation",
+    "source": "Husson and Grandin (double resonance, 'a paraitre') / Huet et al. [as listed in the g_J column of Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554]",
+    "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+    "note": "g_J value used by Husson et al. to convert A/g_J into A; for 4f[3/2]1 the authors assumed g(4f[3/2]1) = g(5f[3/2]1), so this is an assumption, not a measurement (derived)"
+   }
+  },
+  {
+   "nist_energy_cm": 93362.671,
+   "label": "5p5 5f 2[3/2]1",
+   "J": "1",
+   "hyperfine": {
+    "129": {
+     "A_MHz": 1223.15,
+     "A_unc": 6.0,
+     "method": "experiment",
+     "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554",
+     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+     "A_mK": 40.8,
+     "A_mK_unc": 0.2,
+     "note": "derived unit conversion: printed A 5f(3/2)1 = 40.8 +- 0.2 mK (1 mK = 29.9792458 MHz); high-field level crossing after selective dye-laser excitation; A = g_J x (measured |A/g_J|); sign fixed by the authors from other experimental and theoretical values"
+    },
+    "131": {
+     "A_MHz": -365.45,
+     "A_unc": 2.1,
+     "method": "experiment",
+     "source": "Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau III, p. 554",
+     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
+     "A_mK": -12.19,
+     "A_mK_unc": 0.07,
+     "note": "derived unit conversion: printed A 5f(3/2)1 = -12.19 +- 0.07 mK; level crossing. B was not measured for this J = 1 level (a calculated B was assumed in the analysis); sign fixed by comparison with other values"
+    }
+   },
+   "g_J": {
+    "value": 0.4997,
+    "unc": 0.0004,
+    "method": "experiment",
+    "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
+    "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
+    "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (582.4 nm line; apparent g of 0.5003(4), 0.5044(2), 0.5123(3) at 4279, 12732, 21228 G corrected for the Paschen-Back effect; final value from the text of Sec. 5); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
+   }
+  },
+  {
+   "nist_energy_cm": 88686.5,
+   "label": "5p5 7p 2[3/2]2",
+   "J": "2",
+   "g_J": {
+    "value": 1.352,
+    "unc": 0.0002,
+    "method": "experiment",
+    "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
+    "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
+    "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (484.3 nm line; the authors note a disagreement with Chenevier & Moskowitz 1.346(2) and Liberman's calculated 1.345); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
+   }
+  },
+  {
+   "nist_energy_cm": 87927.131,
+   "label": "5p5 7p 2[1/2]1",
+   "J": "1",
+   "g_J": {
+    "value": 1.7272,
+    "unc": 0.0002,
+    "method": "experiment",
+    "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
+    "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
+    "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (502.8 nm line); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
+   }
+  },
+  {
+   "nist_energy_cm": 89860.015,
+   "label": "5p5 6p' 2[1/2]0 (2p1)",
+   "J": "0",
+   "lifetime_alternatives": [
+    {
+     "value": 4.1e-08,
+     "unit": "s",
+     "method": "compilation",
+     "source": "Eichhorn, Scholze, Bundesmann, Spemann, Neumann, Leiter, AIAA paper 2019-4168 [as quoted in Eichhorn et al., EPJ Techniques and Instrumentation 9, 2 (2022), Sec. 2.1, p. 6 (open access)]",
+     "url": "https://epjtechniquesandinstrumentation.springeropen.com/counter/pdf/10.1140/epjti/s40485-022-00077-y.pdf",
+     "note": "two-photon laser-induced fluorescence (excitation near 222.6 nm, fluorescence at 788.7 nm) in the plume of a radio-frequency ion thruster; printed tau = 41 ns, no uncertainty; the authors call it 'in reasonable agreement with literature values of the natural lifetimes' (Inoue et al. 1984; Whitehead et al. 1995) and state that collisional deactivation is negligible. Low-accuracy value. Check against NIST ASD: the two rated decay branches of this level (458.4 nm, A = 1.3e6, and 788.96 nm, A = 3.5e7 s^-1, accuracy C / C+) sum to 3.63e7 s^-1, so 41 ns x sum(A_NIST) = 1.49 (1/sum(A_NIST) would be 27.5 ns): this lifetime and the NIST rates are mutually inconsistent, see 'conflicts'. Not shown on the page: lifetime x sum(A_NIST) = 1.49, inconsistent with the NIST rates (accuracy C+/C); second-hand value, moved to alternatives 2026-10-02"
+    }
+   ]
   }
  ],
  "transitions": [
@@ -1350,12 +1636,12 @@
    "type": "E1",
    "use": "110 nm line measured by Ramsey-comb (frequency-comb) spectroscopy with high-harmonic generation: VUV frequency-metrology demonstration",
    "frequency_THz": {
-    "value": 2726086.012471,
+    "value": 2726.086012471,
     "unc": 6.3e-07,
     "method": "experiment",
     "source": "Dreissen, Roth, Gruendeman, Krauth, Favier, Eikema, arXiv:2101.07601 (2021)",
     "url": "https://arxiv.org/abs/2101.07601",
-    "note": "132Xe (even isotope, no hyperfine structure); printed 2 726 086 012 471(630) kHz",
+    "note": "132Xe (even isotope, no hyperfine structure); printed 2 726 086 012 471(630) kHz; value stored in THz (an earlier version of this file held the GHz figure by mistake, corrected 2026-10-02)",
     "isotope": "132"
    },
    "isotope_shift_MHz": {
@@ -1415,16 +1701,14 @@
   }
  ],
  "not_found": [
-  "882 nm cooling line: isotope shifts for the nine stable isotopes and the 131Xe (and 129Xe) hyperfine constants of 6p[5/2]3 measured in a MOT by Walhout, Megens, Witte, Rolston (Phys. Rev. A 48, R879 (1993)) - only the abstract (no numbers) could be opened; no other open source for A, B of 6p[5/2]3 was found (Husson, Grandin, Kucal, J. Physique 40, 551 (1979), HAL jpa-00209138, is behind a bot wall).",
-  "823 nm line isotope shifts (D'Amico et al. 1999): abstract only, no numbers; the 841.15 and 820.86 nm shifts of Bounds et al. are recorded instead.",
+  "882 nm cooling line: isotope shifts for the nine stable isotopes and the 131Xe (and 129Xe) hyperfine constants of 6p[5/2]3 measured in a MOT by Walhout, Megens, Witte, Rolston (Phys. Rev. A 48, R879 (1993)) - still closed (Semantic Scholar: closed access; no arXiv, NIST or repository copy; 2 web searches; the open papers citing it - Vassen review, Bounds et al. 2023, Doery et al. 1998 - do not reprint its table). Husson, Grandin, Kucal (J. Physique 40, 551 (1979)) was opened in this pass and does NOT cover 6p[5/2]3 (it covers 6p'[1/2]1, 6p'[3/2]1, 7p[3/2]1, 6p'[3/2]2, 6p[3/2]2, 4f[3/2]1, 5f[3/2]1, all stored now).",
+  "823 nm line isotope shifts (D'Amico et al. 1999): abstract only, no numbers; the 841.15 and 820.86 nm shifts of Bounds et al. are recorded instead. Third pass: Phys. Rev. A 60, 4409 (1999) still closed (no open copy found); its hyperfine constants remain second-hand from Bounds et al.",
   "Absolute optical frequencies of 882 / 823 nm better than NIST: not located.",
   "Directly measured lifetime of 6p[5/2]3 and A values newer than NIST: 33.03 ns is the Vassen-review table value.",
-  "Measured Lande g factors beyond NIST ASD: Huet et al. (J. Physique 40, 541 (1979)) covers 6s[3/2]1, 6p'[3/2]1 and 7p levels but the PDF could not be opened; NIST ASD already lists g for the levels drawn.",
   "Experimental reduced matrix elements: none located.",
   "Lifetime of 129Xe / 131Xe 3P2 (hyperfine-quenched): the Walhout abstract states it is much shorter in 129Xe but gives no number. The 6s'[1/2]0 clock-state decay rate is now stored from the Opt. Lett. abstract.",
-  "Level-resolved radiative lifetimes of the 6p, 6p', 7p, 6d levels: Inoue, Ku, Setser (J. Chem. Phys. 81, 5760 (1984)) abstract gives only ranges (30-48 ns for 6p and 6p', 68-172 ns for 7p); Bruce et al. (J. Chem. Phys. 92, 2917 (1990)) and Boewering et al. (84, 715 (1986)) abstracts carry no numbers; full texts are paywalled. Suzuki & Shimoda (J. Phys. Soc. Jpn. 43, 1977; OSTI abstract) give 35 +- 2 ns and 37 +- 4 ns for levels written '6p22' and '6p01' and 520 +- 30 ns for '5d33'; the notation could not be mapped to NIST levels with certainty, so they were not stored.",
-  "Two-photon laser-induced-fluorescence (TALIF) lines of Xe (224.3 / 225.5 nm schemes) with measured lifetimes: the open-access review (Eur. Phys. J. Techn. Instrum. 2022) is behind a bot wall; no annotation added.",
-  "Interferometric 6s[3/2]2-6s'[1/2]0 clock frequency (Opt. Lett. 20, 1421 (1995)): not opened.",
+  "Level-resolved radiative lifetimes of the 6p, 6p', 7p, 6d levels: Inoue, Ku, Setser (J. Chem. Phys. 81, 5760 (1984)) abstract gives only ranges (30-48 ns for 6p and 6p', 68-172 ns for 7p); Bruce et al. (J. Chem. Phys. 92, 2917 (1990)) and Boewering et al. (84, 715 (1986)) abstracts carry no numbers; full texts are paywalled. Suzuki & Shimoda (J. Phys. Soc. Jpn. 43, 1977; OSTI abstract) give 35 +- 2 ns and 37 +- 4 ns for levels written '6p22' and '6p01' and 520 +- 30 ns for '5d33'; the notation could not be mapped to NIST levels with certainty, so they were not stored. Third pass (2026-10-02): all three J. Chem. Phys. papers are closed access per Semantic Scholar and no repository copy or reprinted table was found (2 web searches); only single second-hand numbers could be stored: 34 ns for 6p[5/2]3 (Horiguchi et al. 1981 via Doery et al. 1998) and 41 ns for 6p'[1/2]0 (thruster-plume measurement via Eichhorn et al. 2022). Das & Karmakar, Eur. Phys. J. D 32, 285 (2005) (lifetimes of nf and 8s, 9s levels) - OSTI abstract carries no numbers.",
+  "Interferometric 6s[3/2]2-6s'[1/2]0 clock frequency (Opt. Lett. 20, 1421 (1995)): not opened. Third pass: Semantic Scholar lists Opt. Lett. 20, 1421 (1995) as closed; no NIST-hosted copy found.",
   "AFIT thesis 'Investigation of Metastable Xenon' (129Xe hyperfine coefficient of 6p[5/2]3 at 882 nm) blocked for automated access."
  ],
  "conflicts": [
@@ -1433,7 +1717,10 @@
   "3P2 lifetime 42.9(9) s (Walhout 1994) is less than half of the theoretical values (96-150 s); no competing measurement.",
   "6s'[1/2]0 lifetime: measured spontaneous rate 7.8(38) s^-1 (0.128 s, 49 % uncertainty) vs theory 0.078 s (12.8 s^-1), 1.3 sigma apart; the effective room-temperature lifetime is 13.3 ms because of blackbody-induced deexcitation.",
   "8s[3/2]1 energy: Ramsey-comb value for 132Xe 90932.44142 cm^-1 vs NIST 90932.432 cm^-1 (natural mixture), 0.009 cm^-1 apart.",
-  "Brandi et al. 2001 calibrated energies (136Xe 8d[1/2]1 94228.0187, 8d[3/2]1 94685.4822; 132Xe 7s'[1/2]1 95800.5867 cm^-1) lie 0.003-0.015 cm^-1 above the NIST values; the measurement is older than 20 years, so NIST stays in use."
+  "Brandi et al. 2001 calibrated energies (136Xe 8d[1/2]1 94228.0187, 8d[3/2]1 94685.4822; 132Xe 7s'[1/2]1 95800.5867 cm^-1) lie 0.003-0.015 cm^-1 above the NIST values; the measurement is older than 20 years, so NIST stays in use.",
+  "Hyperfine constants from the 1979 level-crossing work of Husson et al. (now stored as alternatives) vs the laser-spectroscopy values kept as main entries: 129Xe A(6p'[1/2]1) 1981.3(1.5) vs 1977(1) MHz; A(6p'[3/2]1) -4427.0(1.5) vs -4424(1); A(6p'[3/2]2) -2885.2(3.6) vs -2894.6(4.7); A(6p[3/2]2) -886.5(0.9) vs -889.6(0.4); 131Xe B(6p'[3/2]2) -17.1(0.3) vs -14(17) and 3.5(1.0) MHz; B(6p[3/2]2) 30.3(0.6) vs 23.8(0.4) MHz. The level-crossing A values depend on the g_J used.",
+  "6p[5/2]3 lifetime: 33.03 ns (Vassen review, equal to 1/A_NIST) vs 34 ns (Horiguchi et al. 1981 as quoted by Doery et al. 1998); no uncertainties printed.",
+  "6p'[1/2]0 (89860.015 cm^-1) lifetime: the second-hand thruster-plume value 41 ns (Eichhorn et al. 2022, no uncertainty) exceeds 1/sum(A_NIST) = 27.5 ns (A = 3.5e7 + 1.3e6 s^-1, NIST accuracy C+ / C); lifetime x sum(A_NIST) = 1.49. Either the NIST rates are too large or the plume lifetime is too long; the 41 ns value is kept as the only level-specific number found but should be treated as low accuracy (verification pass 2026-10-02)."
  ],
- "notes": "Hyperfine entries taken from the comparison table of Bounds et al. are second-hand (method 'compilation', original named in the source); Bounds' own results are listed as alternatives. Isotope-shift keys are kept exactly as printed (pair label 'A-B' with a negative value); see each note on the unverified sign convention. Values converted from mK carry the printed mK numbers alongside. Level energies are NIST ASD values from data/xe/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page or HAL record only. Added 2026-10-01 (second pass): VUV isotope shifts of Brandi et al. are printed as nu(136) - nu(A) (positive = lighter isotope at lower frequency); Dreissen et al. print nu(A) - nu(132). 'use_source' / 'use_url' name the paper a use annotation was taken from."
+ "notes": "Hyperfine entries taken from the comparison table of Bounds et al. are second-hand (method 'compilation', original named in the source); Bounds' own results are listed as alternatives. Isotope-shift keys are kept exactly as printed (pair label 'A-B' with a negative value); see each note on the unverified sign convention. Values converted from mK carry the printed mK numbers alongside. Level energies are NIST ASD values from data/xe/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page or HAL record only. Added 2026-10-01 (second pass): VUV isotope shifts of Brandi et al. are printed as nu(136) - nu(A) (positive = lighter isotope at lower frequency); Dreissen et al. print nu(A) - nu(132). 'use_source' / 'use_url' name the paper a use annotation was taken from. Added 2026-10-02 (third pass, papers opened in full): Husson, Grandin, Kucal 1979 (hyperfine constants, printed in mK, converted with 1 mK = 29.9792458 MHz, printed numbers kept in A_mK / B_mK) and Huet et al. 1979 (Lande factors; identical to the NIST ASD values, now with uncertainties). The 4f[3/2]1 and 5f[3/2]1 levels were added for their hyperfine constants only."
 }

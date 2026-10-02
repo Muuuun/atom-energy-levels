@@ -17,7 +17,7 @@
   "limit_text": "Au$^+$ ionisation limit   74409.11 cm$^{-1}$  =  9.22555 eV  (134.392 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "197Au is the only stable isotope (I = 3/2). Hyperfine B constants of the 5d9 6s2 2D levels are large and negative; C is the magnetic-octupole constant from the same atomic-beam papers (extra key C_MHz). All A_s and rme_J_ea0 entries are CIPT theory from Dzuba et al. 2021 (method 'theory', accuracy poor for E1: compare the 6p lifetimes) and are given only for the E2/M1 lines NIST does not list (2S1/2-2D5/2 clock, 2S1/2-2D3/2, 2D5/2-2D3/2, 2P1/2-2P3/2). No E1 entries are given: the NIST A values already rest on the Hannaford lifetimes and branching ratios, and the CIPT E1 rates of Dzuba et al. (2.45e8, 3.02e8 s^-1 for the resonance lines) are about 50 % too large. rme convention: A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' upper level (the convention of Dzuba's Eq. 3). Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, E2_amplitude_au, C_MHz, lifetime_alternatives. Second pass: 7p 2P lifetimes and 6p alternatives come from the abstract of Gaarde et al., Phys. Rev. A 50, 209 (1994); the 6p 2P3/2 width of Goldmann et al. 1969 was read in a Wayback Machine copy of the Springer abstract page."
+  "notes": "197Au is the only stable isotope (I = 3/2). Hyperfine B constants of the 5d9 6s2 2D levels are large and negative; C is the magnetic-octupole constant from the same atomic-beam papers (extra key C_MHz). All A_s and rme_J_ea0 entries are CIPT theory from Dzuba et al. 2021 (method 'theory', accuracy poor for E1: compare the 6p lifetimes) and are given only for the E2/M1 lines NIST does not list (2S1/2-2D5/2 clock, 2S1/2-2D3/2, 2D5/2-2D3/2, 2P1/2-2P3/2). No E1 entries are given: the NIST A values already rest on the Hannaford lifetimes and branching ratios, and the CIPT E1 rates of Dzuba et al. (2.45e8, 3.02e8 s^-1 for the resonance lines) are about 50 % too large. rme convention: A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' upper level (the convention of Dzuba's Eq. 3). Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, E2_amplitude_au, C_MHz, lifetime_alternatives. Second pass: 7p 2P lifetimes and 6p alternatives come from the abstract of Gaarde et al., Phys. Rev. A 50, 209 (1994); the 6p 2P3/2 width of Goldmann et al. 1969 was read in a Wayback Machine copy of the Springer abstract page. Third pass (2026-10-02): ground-state A with full precision, 6p 2P1/2 A (second-hand, see conflicts) and the branching ratios of the two resonance lines (0.98(1) and 0.911(4), Hannaford's 1986 review) added; 'branching' on the 267.6 and 242.8 nm transitions is the fraction of the 6p decay that goes to the ground level."
  },
  "columns": [
   {
@@ -72,12 +72,12 @@
    "tau_ns": null,
    "tau_tier": "stable",
    "hfs": {
-    "A": 3049.66,
-    "A_unc": null,
+    "A": 3049.660092,
+    "A_unc": 7e-06,
     "B": null,
     "B_unc": null,
     "tier": "exp",
-    "src": "Demidov, Konovalova, Imanbaeva, Kozlov, Barzakh, Phys. Rev. A 103, 032824 (2021), Sec. VI text; original: Dahmen, Penselin, Z. Phys. 200, 456 (1967) (quoted to 0.01 MHz, no uncertainty printed)"
+    "src": "Dahmen, Penselin, Z. Phys. 200, 456 (1967) (atomic-beam magnetic resonance), as quoted with full precision in Barzakh, Atanasov, Andreyev, Al Monthery, Althubiti, Andel, et al., 'Shape coexistence in 187Au studied by laser spectroscopy', Phys. Rev. C 101, 064321 (2020), Sec. III text (KU Leuven Lirias copy) and identically in Harding, Andreyev, Barzakh, Atanasov, Cubiss, Van Duppen, et al., 'Laser-assisted decay spectroscopy for the ground states of 180,182Au', Phys. Rev. C 102, 024312 (2020), Sec. III text (KU Leuven Lirias copy); original not opened"
    },
    "col": 0
   },
@@ -145,7 +145,15 @@
    "tau_ns": 6.0,
    "tau_unc": 0.1,
    "tau_tier": "exp",
-   "tau_src": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I footnote a; original: Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981)",
+   "tau_src": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I footnote a; original: Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981); the same values 6.0(1) / 4.6(2) ns are also printed in Table 3 of Hannaford & Lowe, Aust. J. Phys. 39, 829 (1986), read in this session",
+   "hfs": {
+    "A": 321.7,
+    "A_unc": 1.2,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Passler, Rikovska, Arnold, Kluge, Monz, Neugart, Ravn, Wendt, Nucl. Phys. A 580, 173 (1994), as quoted in Barzakh, Atanasov, Andreyev, Al Monthery, Althubiti, Andel, et al., 'Shape coexistence in 187Au studied by laser spectroscopy', Phys. Rev. C 101, 064321 (2020), Sec. III text (KU Leuven Lirias copy); original not opened"
+   },
    "col": 1
   },
   {
@@ -162,7 +170,7 @@
    "tau_ns": 4.6,
    "tau_unc": 0.2,
    "tau_tier": "exp",
-   "tau_src": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I footnote a; original: Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981)",
+   "tau_src": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I footnote a; original: Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981); the same values 6.0(1) / 4.6(2) ns are also printed in Table 3 of Hannaford & Lowe, Aust. J. Phys. 39, 829 (1986), read in this session",
    "hfs": {
     "A": 14.0,
     "A_unc": 0.5,
@@ -421,6 +429,9 @@
    "wn": 41174.613,
    "lam": 242.8681,
    "air": 242.7944,
+   "br": 0.911,
+   "br_tier": "exp",
+   "br_src": "Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981), as quoted in Table 3 (p. 840) of Hannaford & Lowe, 'Some recent developments in atomic lifetime determinations', Aust. J. Phys. 39, 829 (1986) (CSIRO open PDF, Wayback Machine copy); original not opened",
    "gamma_MHz": 34.6,
    "type": "E1",
    "A": 198000000.0,
@@ -429,8 +440,6 @@
    "d": 2.366,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
-   "br": 0.9108,
-   "br_tier": "nist",
    "lam_obs": 242.869
   },
   {
@@ -462,6 +471,9 @@
    "wn": 37358.991,
    "lam": 267.6732,
    "air": 267.5937,
+   "br": 0.98,
+   "br_tier": "exp",
+   "br_src": "Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981), as quoted in Table 3 (p. 840) of Hannaford & Lowe, 'Some recent developments in atomic lifetime determinations', Aust. J. Phys. 39, 829 (1986) (CSIRO open PDF, Wayback Machine copy); original not opened",
    "gamma_MHz": 26.53,
    "type": "E1",
    "A": 164000000.0,
@@ -470,8 +482,6 @@
    "d": 1.762,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A+) (from A)",
-   "br": 0.984,
-   "br_tier": "nist",
    "lam_obs": 267.675
   },
   {
@@ -841,7 +851,7 @@
    "rows": [
     [
      "$5d^{10}6s\\ ^2S_{1/2}$",
-     "3049.660",
+     "3049.660092(7)",
      "–",
      "F=1: -3812.07   F=2: +2287.24"
     ],
@@ -856,6 +866,12 @@
      "199.84250(20)",
      "-911.0766(5)",
      "F=0: -1888.26   F=1: -777.34   F=2: +533.43   F=3: +221.88"
+    ],
+    [
+     "$5d^{10}6p\\ ^2P^{o}_{1/2}$",
+     "321.7(12)",
+     "–",
+     "F=1: -402.12   F=2: +241.28"
     ],
     [
      "$5d^{10}6p\\ ^2P^{o}_{3/2}$",
@@ -875,6 +891,7 @@
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (isotopic composition); nuclear spin from Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table III": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Au&ascii=ascii",
   "NIST Atomic Spectra Database, levels of Au I, series limit (cached data/nist/Au_I_levels.tsv, NIST reference code L12088)": "https://physics.nist.gov/PhysRefData/ASD/levels_form.html",
+  "Dahmen, Penselin, Z. Phys. 200, 456 (1967) (atomic-beam magnetic resonance), as quoted with full precision in Barzakh, Atanasov, Andreyev, Al Monthery, Althubiti, Andel, et al., 'Shape coexistence in 187Au studied by laser spectroscopy', Phys. Rev. C 101, 064321 (2020), Sec. III text (KU Leuven Lirias copy) and identically in Harding, Andreyev, Barzakh, Atanasov, Cubiss, Van Duppen, et al., 'Laser-assisted decay spectroscopy for the ground states of 180,182Au', Phys. Rev. C 102, 024312 (2020), Sec. III text (KU Leuven Lirias copy); original not opened": "https://lirias.kuleuven.be/retrieve/7589128e-1d11-4096-b6d7-18cdeeb76a09",
   "Demidov, Konovalova, Imanbaeva, Kozlov, Barzakh, Phys. Rev. A 103, 032824 (2021), Sec. VI text; original: Dahmen, Penselin, Z. Phys. 200, 456 (1967) (quoted to 0.01 MHz, no uncertainty printed)": "https://arxiv.org/pdf/2012.00401",
   "Wessel, Lew, Phys. Rev. 92, 641 (1953), abstract (hyperfine splitting |Delta nu| = 6107.1(1.0) Mc/s)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.92.641",
   "Wessel, Lew, Phys. Rev. 92, 641 (1953), abstract (ratio g_J(Au)/g_J(Cs))": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.92.641",
@@ -884,9 +901,11 @@
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT; decays mainly by M1 to 2D5/2). No measurement located": "https://arxiv.org/pdf/2006.14735",
   "Blachman, Landman, Lurio, Phys. Rev. 161, 60 (1967), abstract (atomic-beam magnetic resonance)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.161.60",
   "Blachman, Landman, Lurio, Phys. Rev. 161, 60 (1967), abstract; same numbers in Itano, Phys. Rev. A 73, 022510 (2006), Table XIII": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.161.60",
-  "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I footnote a; original: Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981)": "https://arxiv.org/pdf/2006.14735",
+  "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I footnote a; original: Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981); the same values 6.0(1) / 4.6(2) ns are also printed in Table 3 of Hannaford & Lowe, Aust. J. Phys. 39, 829 (1986), read in this session": "https://arxiv.org/pdf/2006.14735",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT; the authors state their lifetimes are less accurate than their energies)": "https://arxiv.org/pdf/2006.14735",
   "Gaarde, Zerne, Luo Caiyan, Jiang Zhankui, Larsson, Svanberg, Phys. Rev. A 50, 209 (1994), abstract (direct VUV pulsed-laser excitation from the ground state, time-resolved laser-induced fluorescence)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.50.209",
+  "Passler, Rikovska, Arnold, Kluge, Monz, Neugart, Ravn, Wendt, Nucl. Phys. A 580, 173 (1994), as quoted in Barzakh, Atanasov, Andreyev, Al Monthery, Althubiti, Andel, et al., 'Shape coexistence in 187Au studied by laser spectroscopy', Phys. Rev. C 101, 064321 (2020), Sec. III text (KU Leuven Lirias copy); original not opened": "https://lirias.kuleuven.be/retrieve/7589128e-1d11-4096-b6d7-18cdeeb76a09",
+  "the same Passler et al. 1994 constant as quoted in Harding, Andreyev, Barzakh, Atanasov, Cubiss, Van Duppen, et al., 'Laser-assisted decay spectroscopy for the ground states of 180,182Au', Phys. Rev. C 102, 024312 (2020), Sec. III text (KU Leuven Lirias copy); probably a digit transposition": "https://lirias.kuleuven.be/retrieve/02dcd636-639c-45f3-b528-4eb3d09b99a0",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table I (CIPT)": "https://arxiv.org/pdf/2006.14735",
   "Goldmann, Hahn, Ney, Z. Phys. 225, 1 (1969), abstract (level crossing / resonance scattering)": "https://web.archive.org/web/20180615091500/https://link.springer.com/article/10.1007%2FBF01392550",
   "Einfeld, Ney, Wilken, Z. Naturforsch. A 26, 668 (1971), abstract (Crossref record) (level crossing in parallel electric and magnetic fields; signs determined positive; the abstract prints 'A = + 14.0 (5) Mc/sec; 5=+327.6 (1.6) Mc/sec', the '5' being a scanning error for B)": "https://api.crossref.org/works/10.1515/zna-1971-0407",
@@ -896,6 +915,7 @@
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II": "https://arxiv.org/pdf/2006.14735",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1 only, amplitude 0.0008 mu_B)": "https://arxiv.org/pdf/2006.14735",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1, amplitude 1.549 mu_B)": "https://arxiv.org/pdf/2006.14735",
+  "Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981), as quoted in Table 3 (p. 840) of Hannaford & Lowe, 'Some recent developments in atomic lifetime determinations', Aust. J. Phys. 39, 829 (1986) (CSIRO open PDF, Wayback Machine copy); original not opened": "https://web.archive.org/web/20241114055218/https://www.publish.csiro.au/ph/pdf/PH860829",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1, amplitude 1.141 mu_B)": "https://arxiv.org/pdf/2006.14735"
  }
 }

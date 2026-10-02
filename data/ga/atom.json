@@ -17,7 +17,7 @@
   "limit_text": "Ga$^+$ ionisation limit   48387.63 cm$^{-1}$  =  5.99930 eV  (206.664 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Both stable isotopes have I = 3/2. Ground-doublet hyperfine constants come from atomic-beam magnetic resonance (Lurio & Prodell 1956; Daly & Holloway 1954 as reproduced in Fig. 1 of Marago et al. 2003); values labelled derived were computed here from the printed intervals. Rehse et al. 2001 quote 3-sigma errors. Isotope shifts follow nu(first)-nu(second); where the source does not state the sign this is said in the note. Extra fields beyond SCHEMA.md: isotope_shift_factors, hyperfine_A_ratio_5s_over_4p32, ionization_energy, mu_N. The UDel portal has no neutral Ga entry (only Ga+). Added 2026-10-01 (second pass): 6p and 7p 2P lifetimes and hyperfine constants. Jonsson et al., Z. Phys. A 322, 351 (1985) (read in the archived Lund University copy) also give, for levels absent from NIST ASD: lifetimes 8p 660(40) ns, 9p 920(60) ns, 10p 1450(100) ns, 11p 2000(200) ns (2P doublets, room temperature; fit tau = 6.0 (n*)^2.67 ns) and 2P3/2 hyperfine constants A / B in MHz for 69Ga: 8p 6.35(2) / 0.85(1), 9p 3.96(1) / 0.51(2), 10p 2.64(1) / 0.34(1), 11p 1.84(1) / 0.22(2); for 71Ga: 9p A = 5.03(1), 10p A = 3.35(1), 11p 2.33(1) / 0.13(2) (other 71Ga entries illegible in the scan). The same paper's Table 4 quotes the atomic-beam ground-doublet constants of 69Ga as A(2P1/2) = 1338.994, A(2P3/2) = 190.794, B(2P3/2) = 62.522 MHz, in agreement with the entries here."
+  "notes": "Both stable isotopes have I = 3/2. Ground-doublet hyperfine constants come from atomic-beam magnetic resonance (Lurio & Prodell 1956; Daly & Holloway 1954 as reproduced in Fig. 1 of Marago et al. 2003); values labelled derived were computed here from the printed intervals. Rehse et al. 2001 quote 3-sigma errors. Isotope shifts follow nu(first)-nu(second); where the source does not state the sign this is said in the note. Extra fields beyond SCHEMA.md: isotope_shift_factors, hyperfine_A_ratio_5s_over_4p32, ionization_energy, mu_N. The UDel portal has no neutral Ga entry (only Ga+). Added 2026-10-01 (second pass): 6p and 7p 2P lifetimes and hyperfine constants. Jonsson et al., Z. Phys. A 322, 351 (1985) (read in the archived Lund University copy) also give, for levels absent from NIST ASD: lifetimes 8p 660(40) ns, 9p 920(60) ns, 10p 1450(100) ns, 11p 2000(200) ns (2P doublets, room temperature; fit tau = 6.0 (n*)^2.67 ns) and 2P3/2 hyperfine constants A / B in MHz for 69Ga: 8p 6.35(2) / 0.85(1), 9p 3.96(1) / 0.51(2), 10p 2.64(1) / 0.34(1), 11p 1.84(1) / 0.22(2); for 71Ga: 9p A = 5.03(1), 10p A = 3.35(1), 11p 2.33(1) / 0.13(2) (other 71Ga entries illegible in the scan). The same paper's Table 4 quotes the atomic-beam ground-doublet constants of 69Ga as A(2P1/2) = 1338.994, A(2P3/2) = 190.794, B(2P3/2) = 62.522 MHz, in agreement with the entries here. Third pass (2026-10-02): nd 2D (n = 4-9) and ns 2S (n = 7-11) lifetimes of Carlsson et al. 1986 entered second-hand (method compilation) from Brage et al. 1987, Table VI (open Lund copy, saved as pdf/Ga_Brage_1987.pdf) and Yildiz et al. 2009, Tables III, VI, VII (open access, saved as pdf/Ga_Yildiz_2009.pdf); the 2D lifetimes are term values attached to both fine-structure levels."
  },
  "columns": [
   {
@@ -122,8 +122,10 @@
    "g": null,
    "name": "4s^{2}4d\\ ^2D_{3/2}",
    "plain": "4s24d 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 7.4,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "hfs": {
     "A": -36.3,
     "A_unc": 2.2,
@@ -145,8 +147,10 @@
    "g": null,
    "name": "4s^{2}4d\\ ^2D_{5/2}",
    "plain": "4s24d 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 7.4,
+   "tau_unc": 0.3,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "hfs": {
     "A": 77.3,
     "A_unc": 0.9,
@@ -233,8 +237,10 @@
    "g": null,
    "name": "4s^{2}5d\\ ^2D_{3/2}",
    "plain": "4s25d 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 29.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "col": 2
   },
   {
@@ -248,8 +254,10 @@
    "g": null,
    "name": "4s^{2}5d\\ ^2D_{5/2}",
    "plain": "4s25d 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 29.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "col": 2
   },
   {
@@ -263,8 +271,10 @@
    "g": null,
    "name": "4s^{2}7s\\ ^2S_{1/2}",
    "plain": "4s27s 2S1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 49.0,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 7; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)",
    "col": 1
   },
   {
@@ -278,8 +288,10 @@
    "g": null,
    "name": "4s^{2}6d\\ ^2D_{3/2}",
    "plain": "4s26d 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 69.0,
+   "tau_unc": 7.0,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "col": 2
   },
   {
@@ -293,8 +305,10 @@
    "g": null,
    "name": "4s^{2}6d\\ ^2D_{5/2}",
    "plain": "4s26d 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 69.0,
+   "tau_unc": 7.0,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "col": 2
   },
   {
@@ -308,8 +322,10 @@
    "g": null,
    "name": "4s^{2}8s\\ ^2S_{1/2}",
    "plain": "4s28s 2S1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 80.0,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 8; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)",
    "col": 1
   },
   {
@@ -323,8 +339,10 @@
    "g": null,
    "name": "4s^{2}7d\\ ^2D_{5/2}",
    "plain": "4s27d 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 150.0,
+   "tau_unc": 20.0,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "col": 2
   },
   {
@@ -338,8 +356,10 @@
    "g": null,
    "name": "4s^{2}9s\\ ^2S_{1/2}",
    "plain": "4s29s 2S1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 135.0,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 9; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)",
    "col": 1
   },
   {
@@ -353,8 +373,10 @@
    "g": null,
    "name": "4s^{2}8d\\ ^2D_{3/2}",
    "plain": "4s28d 2D3/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 270.0,
+   "tau_unc": 29.999999999999996,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "col": 2
   },
   {
@@ -368,8 +390,10 @@
    "g": null,
    "name": "4s^{2}8d\\ ^2D_{5/2}",
    "plain": "4s28d 2D5/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 270.0,
+   "tau_unc": 29.999999999999996,
+   "tau_tier": "exp",
+   "tau_src": "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)",
    "col": 2
   },
   {
@@ -383,8 +407,10 @@
    "g": null,
    "name": "4s^{2}10s\\ ^2S_{1/2}",
    "plain": "4s210s 2S1/2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 200.0,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 10; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)",
    "col": 1
   }
  ],
@@ -399,13 +425,16 @@
    "wn": 45536.67,
    "lam": 219.6032,
    "air": 219.5346,
+   "gamma_MHz": 1.179,
    "type": "E1",
    "A": 1940000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C+)",
    "d": 0.1424,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)"
+   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.2619,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -417,6 +446,7 @@
    "wn": 45448.21,
    "lam": 220.0307,
    "air": 219.962,
+   "gamma_MHz": 0.7958,
    "type": "E1",
    "A": 3110000.0,
    "A_tier": "nist",
@@ -424,6 +454,8 @@
    "d": 0.1808,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.622,
+   "br_tier": "nist",
    "lam_obs": 220.031
   },
   {
@@ -436,6 +468,7 @@
    "wn": 45145.81,
    "lam": 221.5045,
    "air": 221.4355,
+   "gamma_MHz": 0.5895,
    "type": "E1",
    "A": 3170000.0,
    "A_tier": "nist",
@@ -443,6 +476,8 @@
    "d": 0.3194,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.8559,
+   "br_tier": "nist",
    "lam_obs": 221.505
   },
   {
@@ -455,13 +490,16 @@
    "wn": 45143.01,
    "lam": 221.5182,
    "air": 221.4492,
+   "gamma_MHz": 0.5895,
    "type": "E1",
    "A": 530000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C+)",
    "d": 0.1066,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)"
+   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.1431,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -473,13 +511,16 @@
    "wn": 44710.48,
    "lam": 223.6612,
    "air": 223.5918,
+   "gamma_MHz": 1.179,
    "type": "E1",
    "A": 4000000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C+)",
    "d": 0.2102,
    "d_tier": "nist",
-   "d_src": "NIST ASD (accuracy C+) (from A)"
+   "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.54,
+   "br_tier": "nist"
   },
   {
    "kind": "E1",
@@ -491,6 +532,7 @@
    "wn": 44332.27,
    "lam": 225.5693,
    "air": 225.4995,
+   "gamma_MHz": 1.989,
    "type": "E1",
    "A": 3150000.0,
    "A_tier": "nist",
@@ -498,6 +540,8 @@
    "d": 0.1889,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.252,
+   "br_tier": "nist",
    "lam_obs": 225.5733
   },
   {
@@ -510,6 +554,7 @@
    "wn": 44249.54,
    "lam": 225.991,
    "air": 225.9211,
+   "gamma_MHz": 1.061,
    "type": "E1",
    "A": 3100000.0,
    "A_tier": "nist",
@@ -517,6 +562,8 @@
    "d": 0.3255,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.465,
+   "br_tier": "nist",
    "lam_obs": 225.9926
   },
   {
@@ -529,6 +576,7 @@
    "wn": 43575.11,
    "lam": 229.4888,
    "air": 229.4181,
+   "gamma_MHz": 2.307,
    "type": "E1",
    "A": 6970000.0,
    "A_tier": "nist",
@@ -536,6 +584,8 @@
    "d": 0.4078,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.4809,
+   "br_tier": "nist",
    "lam_obs": 229.49
   },
   {
@@ -548,6 +598,7 @@
    "wn": 43506.08,
    "lam": 229.8529,
    "air": 229.7821,
+   "gamma_MHz": 1.989,
    "type": "E1",
    "A": 5560000.0,
    "A_tier": "nist",
@@ -555,6 +606,8 @@
    "d": 0.2582,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.4448,
+   "br_tier": "nist",
    "lam_obs": 229.8577
   },
   {
@@ -567,6 +620,7 @@
    "wn": 42754.25,
    "lam": 233.8949,
    "air": 233.8232,
+   "gamma_MHz": 2.307,
    "type": "E1",
    "A": 9750000.0,
    "A_tier": "nist",
@@ -574,6 +628,8 @@
    "d": 0.6078,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.6728,
+   "br_tier": "nist",
    "lam_obs": 233.896
   },
   {
@@ -586,6 +642,7 @@
    "wn": 42748.92,
    "lam": 233.924,
    "air": 233.8524,
+   "gamma_MHz": 2.307,
    "type": "E1",
    "A": 1580000.0,
    "A_tier": "nist",
@@ -593,6 +650,8 @@
    "d": 0.1998,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.109,
+   "br_tier": "nist",
    "lam_obs": 233.9313
   },
   {
@@ -605,6 +664,7 @@
    "wn": 42158.77,
    "lam": 237.1986,
    "air": 237.1262,
+   "gamma_MHz": 3.248,
    "type": "E1",
    "A": 5570000.0,
    "A_tier": "nist",
@@ -612,6 +672,8 @@
    "d": 0.2709,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.2729,
+   "br_tier": "nist",
    "lam_obs": 237.201
   },
   {
@@ -624,6 +686,7 @@
    "wn": 41332.58,
    "lam": 241.9399,
    "air": 241.8664,
+   "gamma_MHz": 3.248,
    "type": "E1",
    "A": 10000000.0,
    "A_tier": "nist",
@@ -631,6 +694,8 @@
    "d": 0.3739,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.49,
+   "br_tier": "nist",
    "lam_obs": 241.942
   },
   {
@@ -643,6 +708,7 @@
    "wn": 40802.86,
    "lam": 245.0809,
    "air": 245.0066,
+   "gamma_MHz": 5.488,
    "type": "E1",
    "A": 27800000.0,
    "A_tier": "nist",
@@ -650,6 +716,8 @@
    "d": 0.8988,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.8062,
+   "br_tier": "nist",
    "lam_obs": 245.082
   },
   {
@@ -662,6 +730,7 @@
    "wn": 39985.22,
    "lam": 250.0924,
    "air": 250.017,
+   "gamma_MHz": 5.488,
    "type": "E1",
    "A": 33400000.0,
    "A_tier": "nist",
@@ -669,6 +738,8 @@
    "d": 1.244,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.9686,
+   "br_tier": "nist",
    "lam_obs": 250.0941
   },
   {
@@ -681,6 +752,7 @@
    "wn": 39976.67,
    "lam": 250.1459,
    "air": 250.0705,
+   "gamma_MHz": 5.488,
    "type": "E1",
    "A": 5540000.0,
    "A_tier": "nist",
@@ -688,6 +760,8 @@
    "d": 0.4138,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.1607,
+   "br_tier": "nist",
    "lam_obs": 250.1468
   },
   {
@@ -738,6 +812,16 @@
    "wn": 34781.66,
    "lam": 287.5078,
    "air": 287.4235,
+   "use": "287.4 nm (air) resonance line",
+   "isotope_shifts": {
+    "71-69": {
+     "value": 123,
+     "unc": 20,
+     "src": "Zhao, Carlsson, Lundberg, Wahlstrom, Z. Phys. D 3, 365 (1986), p. 365 (text of Sec. 2; first two pages read in the publisher's preview; cw UV laser on a collimated atomic beam): 'isotope shifts nu71 - nu69 ... 123(20) MHz'",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01437193"
+    }
+   },
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 117000000.0,
    "A_tier": "nist",
@@ -745,6 +829,8 @@
    "d": 2.343,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.8658,
+   "br_tier": "nist",
    "lam_obs": 287.5078
   },
   {
@@ -766,6 +852,7 @@
      "url": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855"
     }
    },
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 134000000.0,
    "A_tier": "nist",
@@ -773,6 +860,8 @@
    "d": 3.183,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.9916,
+   "br_tier": "nist",
    "lam_obs": 294.4497
   },
   {
@@ -793,6 +882,7 @@
      "url": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855"
     }
    },
+   "gamma_MHz": 21.51,
    "type": "E1",
    "A": 26100000.0,
    "A_tier": "nist",
@@ -800,6 +890,8 @@
    "d": 1.147,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.1931,
+   "br_tier": "nist",
    "lam_obs": 294.5034
   },
   {
@@ -911,14 +1003,25 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
+     "$3d^{10}4s^{2}4p\\ ^2P^{o}_{1/2}$ – $4s^{2}4d\\ ^2D_{3/2}$",
+     "287.5078",
+     "287.4235",
+     "1042.7279",
+     "2.343",
+     "1.170e+08",
+     "21.51",
+     "86.6",
+     "287.4 nm"
+    ],
+    [
      "$3d^{10}4s^{2}4p\\ ^2P^{o}_{3/2}$ – $4s^{2}4d\\ ^2D_{5/2}$",
      "294.4497",
      "294.3636",
      "1018.1449",
      "3.183",
      "1.340e+08",
-     "–",
-     "–",
+     "21.51",
+     "99.2",
      "294.45 nm laser-cooling"
     ],
     [
@@ -1034,6 +1137,12 @@
    "aligns": "lrlr",
    "rows": [
     [
+     "$3d^{10}4s^{2}4p\\ ^2P^{o}_{1/2}$ – $4s^{2}4d\\ ^2D_{3/2}$",
+     "287.508",
+     "71-69",
+     "123(20)"
+    ],
+    [
      "$3d^{10}4s^{2}4p\\ ^2P^{o}_{3/2}$ – $4s^{2}4d\\ ^2D_{5/2}$",
      "294.450",
      "71-69",
@@ -1064,7 +1173,7 @@
  "validation": [
   "levels: 19   lines < 2000 nm: 25   with matrix element: 23",
   "transition-rate provenance: nist: 23, wavelength only: 2",
-  "levels with a measured lifetime: 3"
+  "levels with a measured lifetime: 16"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (Ga); nuclear spin and magnetic moment: UDel Portal for High-Precision Atomic Data and Computation, nuclear-data table of the Ga+ entry, read 2026-10-01": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ga",
@@ -1089,16 +1198,29 @@
   "Farooq-Smith et al., Phys. Rev. C 96, 044324 (2017), Table I footnote c: A(5s 2S1/2)/A(4p 2P3/2), weighted mean over Ga isotopes from Cheal et al. 2010": "https://journals.aps.org/prc/pdf/10.1103/PhysRevC.96.044324",
   "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract) (laser-induced fluorescence in an atomic beam; 3-sigma errors)": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855",
   "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract) (3-sigma errors)": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855",
+  "Brage, Froese Fischer, Carlsson, Wahlstrom, Phys. Rev. A 35, 1113 (1987), p. 1117, Table VI, row 'Observed, Ref. 1'; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986) (time-resolved laser spectroscopy)": "https://lup.lub.lu.se/search/files/2685830/2297093.pdf",
+  "Brage et al., Phys. Rev. A 35, 1113 (1987), Table VI, rows 'Observed, Ref. 7' (first of the two j rows); original: Lindgard, Mannervik, Jelenkovic, Veje, Z. Phys. A 301, 1 (1981) (beam-foil)": "https://lup.lub.lu.se/search/files/2685830/2297093.pdf",
+  "Brage et al., Phys. Rev. A 35, 1113 (1987), Table VI, rows 'Observed, Ref. 7' (second of the two j rows); original: Lindgard, Mannervik, Jelenkovic, Veje, Z. Phys. A 301, 1 (1981) (beam-foil)": "https://lup.lub.lu.se/search/files/2685830/2297093.pdf",
   "Jonsson, Levinson, Svanberg, Wahlstrom, Phys. Lett. A 93, 121 (1983) (abstract on OSTI; time-resolved laser spectroscopy, stepwise excitation via 5s 2S1/2)": "https://www.osti.gov/etdeweb/biblio/5983320",
   "Jonsson, Levinson, Lindgren, Persson, Wahlstrom, Z. Phys. A 322, 351 (1985), Table 4, row 'Experimental [4]'; original: Jonsson, Levinson, Svanberg, Wahlstrom, Phys. Lett. A 93, 121 (1983)": "https://lup.lub.lu.se/search/files/4618766/2297324.pdf",
   "Jonsson, Levinson, Lindgren, Persson, Wahlstrom, Z. Phys. A 322, 351 (1985), Table 1 (time-resolved laser spectroscopy, two-step excitation in an atomic beam)": "https://lup.lub.lu.se/search/files/4618766/2297324.pdf",
   "Jonsson, Levinson, Lindgren, Persson, Wahlstrom, Z. Phys. A 322, 351 (1985), Table 2 (hyperfine quantum beats)": "https://lup.lub.lu.se/search/files/4618766/2297324.pdf",
+  "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 645, Table VI, column 'Exp. results (Ref. [25])', n = 9; original: Carlsson et al., Z. Phys. D 3, 345 (1986)": "https://przyrbwn.icm.edu.pl/APP/PDF/115/a115z308.pdf",
+  "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 645, Table VII, column 'Exp. results (Ref. [25])', n = 9; original: Carlsson et al., Z. Phys. D 3, 345 (1986)": "https://przyrbwn.icm.edu.pl/APP/PDF/115/a115z308.pdf",
+  "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 7; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)": "https://przyrbwn.icm.edu.pl/APP/PDF/115/a115z308.pdf",
+  "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 8; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)": "https://przyrbwn.icm.edu.pl/APP/PDF/115/a115z308.pdf",
+  "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 9; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)": "https://przyrbwn.icm.edu.pl/APP/PDF/115/a115z308.pdf",
+  "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 10; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)": "https://przyrbwn.icm.edu.pl/APP/PDF/115/a115z308.pdf",
+  "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 643, Table III, column 'Exp. results (Ref. [25])', n = 11; original: Carlsson, Lundberg, Peng, Persson, Wahlstrom, Brage, Froese Fischer, Z. Phys. D 3, 345 (1986)": "https://przyrbwn.icm.edu.pl/APP/PDF/115/a115z308.pdf",
+  "Yildiz, Celik, Kilic, Acta Phys. Pol. A 115, 641 (2009), p. 644, Table IV, column 'Exp. results (Ref. [24]) tau_exp', n = 5; Ref. [24] is Safronova, Cowan, Safronova, J. Phys. B 39, 749 (2006), a theory paper that quotes experiments; the original measurement is not identified in the page read": "https://przyrbwn.icm.edu.pl/APP/PDF/115/a115z308.pdf",
   "Marago', Fazio, Gucciardi, Arimondo, Appl. Phys. B 77, 809 (2003) (arXiv:physics/0407085), Sec. 2: \"isotope shifts are Delta_IS,1 = 32.8(3.5) MHz\"; original: Neijzen, Donszelmann, Physica 98C, 235 (1980)": "https://arxiv.org/pdf/physics/0407085",
   "Farooq-Smith et al., Phys. Rev. C 96, 044324 (2017), Table III, column \"Procter et al.\": delta-nu(71,69) = +40(4) MHz; original: Procter et al., Phys. Rev. C 86, 034329 (2012)": "https://journals.aps.org/prc/pdf/10.1103/PhysRevC.96.044324",
   "Marago', Fazio, Gucciardi, Arimondo, Appl. Phys. B 77, 809 (2003) (arXiv:physics/0407085), Sec. 2 (Delta_IS,2); original: Neijzen, Donszelmann, Physica 98C, 235 (1980); sign not stated": "https://arxiv.org/pdf/physics/0407085",
   "Farooq-Smith et al., Phys. Rev. C 96, 044324 (2017), Table III, this work (CRIS)": "https://journals.aps.org/prc/pdf/10.1103/PhysRevC.96.044324",
   "Farooq-Smith et al., Phys. Rev. C 96, 044324 (2017), Sec. III (atomic factors of the 417.2 nm line, from Procter et al. 2012)": "https://journals.aps.org/prc/pdf/10.1103/PhysRevC.96.044324",
   "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract): isotope shift 114(8) MHz, \"the lines of 71Ga are shifted to the blue\" (294.50 nm)": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855",
-  "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract): isotope shift 115(7) MHz, 71Ga shifted to the blue (294.45 nm)": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855"
+  "Rehse, Fairbank, Lee, J. Opt. Soc. Am. B 18, 855 (2001) (abstract): isotope shift 115(7) MHz, 71Ga shifted to the blue (294.45 nm)": "https://opg.optica.org/josab/abstract.cfm?uri=josab-18-6-855",
+  "Zhao, Carlsson, Lundberg, Wahlstrom, Z. Phys. D 3, 365 (1986), p. 365 (text of Sec. 2; first two pages read in the publisher's preview; cw UV laser on a collimated atomic beam): nu71 - nu69 = 100(20) MHz": "https://page-one.springer.com/pdf/preview/10.1007/BF01437193",
+  "Zhao, Carlsson, Lundberg, Wahlstrom, Z. Phys. D 3, 365 (1986), p. 365 (text of Sec. 2; first two pages read in the publisher's preview; cw UV laser on a collimated atomic beam): 'isotope shifts nu71 - nu69 ... 123(20) MHz'": "https://page-one.springer.com/pdf/preview/10.1007/BF01437193"
  }
 }

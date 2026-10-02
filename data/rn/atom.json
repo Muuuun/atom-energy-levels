@@ -6,7 +6,7 @@
   "symbol": "Rn",
   "A": null,
   "Z": 86,
-  "I": null,
+  "I": "7/2",
   "kind": "nist",
   "limit_cm": 86692.5,
   "scale": "auto",
@@ -17,7 +17,7 @@
   "limit_text": "Rn$^+$ ionisation limit   86692.50 cm$^{-1}$  =  10.74850 eV  (115.350 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Radon is the least-studied of these atoms: apart from the classical emission spectra there is a single collinear-laser-spectroscopy study (ISOLDE, published 1987) on the 745 nm line, whose numbers could not be opened in this session. Nuclear spins, half-lives and moments are taken from the IAEA table; moments printed there for even-even isotopes belong to isomers and were left out. The site's default isotope (222Rn) has I = 0, so no hyperfine structure applies to it."
+  "notes": "Radon is the least-studied of these atoms: apart from the classical emission spectra there is a single collinear-laser-spectroscopy study (ISOLDE, published 1987) on the 745 nm line, whose hyperfine constants were read in the third pass (2026-10-02) from the CERN preprint scan of the conference paper (data/literature/pdf/Rn_Borchers_1987.pdf); its isotope shifts exist only as a graph. Nuclear spins, half-lives and moments are taken from the IAEA table; moments printed there for even-even isotopes belong to isomers and were left out. The site's default isotope (222Rn) has I = 0, so no hyperfine structure applies to it."
  },
  "columns": [
   {
@@ -86,6 +86,14 @@
    "plain": "6p57s 2[3/2]°2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -18.4,
+    "A_unc": 0.6,
+    "B": 2184.4,
+    "B_unc": 4.4,
+    "tier": "exp",
+    "src": "Borchers, Neugart, Otten, Duong, Ulm, Wendt and the ISOLDE Collaboration, Hyperfine Interact. 34, 25 (1987); read as preprint CERN-EP/86-191 (KEK library scan), Table 1, p. 4"
+   },
    "col": 5
   },
   {
@@ -146,6 +154,14 @@
    "plain": "6p57p 2[5/2]3",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": -3.75,
+    "A_unc": 0.4,
+    "B": 2082.5,
+    "B_unc": 6.0,
+    "tier": "exp",
+    "src": "Borchers, Neugart, Otten, Duong, Ulm, Wendt and the ISOLDE Collaboration, Hyperfine Interact. 34, 25 (1987); read as preprint CERN-EP/86-191 (KEK library scan), Table 1, p. 4"
+   },
    "col": 3
   },
   {
@@ -387,6 +403,31 @@
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{221}$Rn hyperfine structure  ($I$ = 7/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$2[3/2]^{o}_{2}$",
+     "-18.4(6)",
+     "2184(4)",
+     "F=3/2: +1335.81   F=5/2: +314.64   F=7/2: -568.91   F=9/2: -768.74   F=11/2: +417.30"
+    ],
+    [
+     "$2[5/2]_{3}$",
+     "-3.8(4)",
+     "2082(6)",
+     "F=1/2: +1166.25   F=3/2: +788.75   F=5/2: +258.75   F=7/2: -275.00   F=9/2: -604.25   F=11/2: -461.25   F=13/2: +481.25"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
@@ -397,6 +438,7 @@
  "sources": {
   "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
   "spin and half-life: IAEA Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-01 through its data service; magnetic dipole and electric quadrupole moments as listed in the same table (they originate from collinear fast-beam laser spectroscopy of the Rn I 745 nm line at ISOLDE; the original papers were not opened)": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=all",
-  "NIST ASD Rn I levels table (local copy data/nist/Rn_I_levels.tsv)": "https://physics.nist.gov/asd"
+  "NIST ASD Rn I levels table (local copy data/nist/Rn_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "Borchers, Neugart, Otten, Duong, Ulm, Wendt and the ISOLDE Collaboration, Hyperfine Interact. 34, 25 (1987); read as preprint CERN-EP/86-191 (KEK library scan), Table 1, p. 4": "https://lib-extopc.kek.jp/preprints/PDF/1986/8612/8612092.pdf"
  }
 }

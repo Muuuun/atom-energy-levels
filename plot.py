@@ -214,6 +214,9 @@ def draw(key):
     unit_in = float(np.clip(38.0 / units, 3.7, 6.2))
     left_pad, right_pad = 0.75, 0.25
     fig_w = (units + left_pad + right_pad) * unit_in + 1.9
+    if fig_w < 36:  # few columns (No, Fm, H ...): widen them so that the header texts fit side by side
+        unit_in = (36 - 1.9) / (units + left_pad + right_pad)
+        fig_w = 36.0
     placed, tab_h, tab_fs = table_layout(atom["tables"], fig_w - 2.2)
     fig_h = HEAD_IN + DIAG_IN + tab_h + 1.1
     fig = plt.figure(figsize=(fig_w, fig_h), facecolor="white")
@@ -412,8 +415,9 @@ def draw(key):
     spin = f",  nuclear spin $I$ = {meta['I']}" if meta["A"] else ""
     hax.text(0, 0.05, f"{meta['element']}-{meta['A']}" if meta["A"] else meta["element"], fontsize=58, fontweight="bold", color=INK, va="top", ha="left")
     n_d = sum(1 for t in bound if t.get("d") is not None)
+    lit_lv = (meta.get("lit_levels") or 0) > (len(atom["levels"]) - 1) / 2  # most excited levels come from the literature file
     hax.text(0, 1.25, f"{iso}  ({meta['spectrum']}){spin}.   "
-             + ("Classified transitions below 2 µm (levels and lines from the literature):  " if (meta.get("lit_levels") or 0) > len(atom["levels"]) / 2
+             + ("Classified transitions below 2 µm (levels and lines from the literature):  " if lit_lv
                 else "Strongest classified transitions below 2 µm (NIST):  " if meta.get("auto") else "Energy levels and transitions below 2 µm:  ")
              + f"{len(levels)} levels, {len(bound)} lines.", fontsize=21, color=INK, va="top", ha="left")
     if not has_ryd:
@@ -422,7 +426,7 @@ def draw(key):
              "Matrix elements are measured or NIST values;   *  = high-accuracy theory,   ≈  = model calculation.\n"
              r"Arrow width grows with the Einstein coefficient $A$.   Dotted: forbidden (clock, M1, E2).   Dashed: Rydberg excitation, $n$ = 70." "\n"
              + meta["guide_tau"])
-    gx = max(strip_w * 0.36, 13.5)
+    gx = max(strip_w * 0.36, 17.5 if lit_lv else 13.5)
     hax.text(gx, 0.12, guide, fontsize=14.5, color=INK, va="top", ha="left", linespacing=1.6)
     kx0, kx1 = max(strip_w - 9.5, gx + 13.4), strip_w - 0.3
     if kx1 - kx0 > 4:
@@ -445,7 +449,7 @@ def draw(key):
     fig.savefig(os.path.join(out, "diagram.pdf"))
     fig.savefig(os.path.join(out, "preview.png"), dpi=1800 / fig_w)
     plt.close(fig)
-    keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "tau_ns", "tau_bound", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term", "E_nist", "E_tier", "E_src")
+    keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "g_tier", "tau_ns", "tau_bound", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term", "E_nist", "E_tier", "E_src")
     with open(os.path.join(out, "data.json"), "w") as f:
         json.dump(dict(meta={k: meta.get(k) for k in ("slug", "element", "symbol", "A", "I", "limit_cm", "spectrum", "auto")},
                        sources=atom.get("sources", {}),

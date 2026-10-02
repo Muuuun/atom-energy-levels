@@ -17,7 +17,7 @@
   "limit_text": "Tb$^+$ ionisation limit   47295.00 cm$^{-1}$  =  5.86383 eV  (211.439 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "159Tb is the only stable isotope (I = 3/2), so there are no isotope shifts between stable isotopes. Very thin file: nearly all Tb I atomic data sit behind paywalls or bot protection (IOP, Elsevier, APS, RSC). The four hyperfine entries were read from the publisher abstract pages of the Optica journals, whose HTML embeds the tables, through an automated page reader (both tables were read twice with identical results). The 8G hyperfine constants are 1966 optical-interferometry values converted from mK and marked derived. Level 509.845 (8G11/2) and 4670.455 (6H°11/2) are not drawn by the site but carry the only precise data. Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source."
+  "notes": "159Tb is the only stable isotope (I = 3/2), so there are no isotope shifts between stable isotopes. Hyperfine constants: 94 levels now carry A (and mostly B). Sources actually opened: (1) Elantkowska et al., Eur. Phys. J. Plus 132, 455 (2017) (open access; PDF from the Wayback copy of the Springer file, saved as pdf/Tb_Elantkowska_2017.pdf) - its Table 3 compiles all measured A, B of even-parity levels with the original reference per row (Childs 1970; Childs & Goodman 1979; Childs 1992; Furmann et al. 2015, 2016; Stefanska et al. 2017; private communication); these are stored with method 'compilation'. (2) Childs & Goodman, J. Opt. Soc. Am. 69, 815 (1979) and Childs, J. Opt. Soc. Am. B 9, 191 (1992): the tables embedded in the publisher abstract pages, read from Wayback Machine copies (saved as pdf/Tb_Childs_1979.html, pdf/Tb_Childs_1992.html); values measured in those papers are 'experiment'. (3) Arnoult & Gerstenkorn 1966 and Childs et al. 1984, read on the publisher abstract pages in the first pass. Eight levels with hyperfine data from Childs & Goodman 1979 are odd-parity upper levels (17118.72, 17341.92, 17409.62, 18461.87, 19450.45, 19658.41, 21837.92, 22223.87). Sign convention: A, B in MHz as printed. Still no lifetime and no transition rate for Tb I (see not_found). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source; hyperfine field C_MHz (magnetic-octupole fit constant, 5425.06 only)."
  },
  "columns": [
   {
@@ -83,6 +83,14 @@
    "plain": "4f96s2 6H°15/2",
    "tau_ns": null,
    "tau_tier": "stable",
+   "hfs": {
+    "A": 673.755,
+    "A_unc": 0.001,
+    "B": 1449.445,
+    "B_unc": 0.012,
+    "tier": "exp",
+    "src": "earlier atomic-beam magnetic-resonance work (Childs, Phys. Rev. A 2, 316 (1970)), as quoted in Childs, Goodman, J. Opt. Soc. Am. 69, 815 (1979), Table II (previous values)"
+   },
    "col": 2
   },
   {
@@ -99,12 +107,12 @@
    "tau_ns": null,
    "tau_tier": "none",
    "hfs": {
-    "A": 530.6,
-    "A_unc": 6.0,
-    "B": 989,
-    "B_unc": 60,
+    "A": 532.204,
+    "A_unc": 0.002,
+    "B": 928.861,
+    "B_unc": 0.02,
     "tier": "exp",
-    "src": "Arnoult, Gerstenkorn, J. Opt. Soc. Am. 56, 177 (1966), Table II"
+    "src": "Childs, Phys. Rev. A 2, 316 (1970) (atomic-beam magnetic resonance), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp"
    },
    "col": 5
   },
@@ -122,12 +130,12 @@
    "tau_ns": null,
    "tau_tier": "none",
    "hfs": {
-    "A": 470.7,
-    "A_unc": 6.0,
-    "B": 1169,
-    "B_unc": 60,
+    "A": 472.643,
+    "A_unc": 0.002,
+    "B": 1154.239,
+    "B_unc": 0.017,
     "tier": "exp",
-    "src": "Arnoult, Gerstenkorn, J. Opt. Soc. Am. 56, 177 (1966), Table II"
+    "src": "Childs, Phys. Rev. A 2, 316 (1970) (atomic-beam magnetic resonance), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp"
    },
    "col": 6
   },
@@ -144,6 +152,14 @@
    "plain": "4f85d6s2 8D11/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 405.106,
+    "A_unc": 0.003,
+    "B": -92.638,
+    "B_unc": 0.05,
+    "tier": "exp",
+    "src": "Childs, Phys. Rev. A 2, 316 (1970) (atomic-beam magnetic resonance), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp"
+   },
    "col": 4
   },
   {
@@ -163,6 +179,29 @@
   },
   {
    "id": 5,
+   "E": 17249.59,
+   "unc": null,
+   "J": 8.5,
+   "conf": "4f9.(6H*<15/2>).6s.6p.(3P*<2>)?",
+   "term": "(15/2,2)?",
+   "parity": "even",
+   "g": null,
+   "name": "(15/2,2)_{17/2}",
+   "plain": "4f96s6p (15/2,2)17/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 857.1,
+    "A_unc": 0.4,
+    "B": 1758,
+    "B_unc": 5,
+    "tier": "exp",
+    "src": "Childs, Goodman, J. Opt. Soc. Am. 69, 815 (1979), Table II (laser-fluorescence values)"
+   },
+   "col": 7
+  },
+  {
+   "id": 6,
    "E": 19131.45,
    "unc": null,
    "J": 8.5,
@@ -177,7 +216,7 @@
    "col": 3
   },
   {
-   "id": 6,
+   "id": 7,
    "E": 23043.43,
    "unc": null,
    "J": 6.5,
@@ -189,10 +228,18 @@
    "plain": "4f96s6p (15/2,1)13/2",
    "tau_ns": null,
    "tau_tier": "none",
+   "hfs": {
+    "A": 685.7,
+    "A_unc": 2.0,
+    "B": 915.0,
+    "B_unc": 24.0,
+    "tier": "exp",
+    "src": "Stefanska, Furmann, private communication, as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp"
+   },
    "col": 5
   },
   {
-   "id": 7,
+   "id": 8,
    "E": 23107.25,
    "unc": null,
    "J": 8.5,
@@ -207,7 +254,7 @@
    "col": 7
   },
   {
-   "id": 8,
+   "id": 9,
    "E": 23147.92,
    "unc": null,
    "J": 7.5,
@@ -222,7 +269,7 @@
    "col": 6
   },
   {
-   "id": 9,
+   "id": 10,
    "E": 25076.26,
    "unc": null,
    "J": 7.5,
@@ -237,7 +284,7 @@
    "col": 2
   },
   {
-   "id": 10,
+   "id": 11,
    "E": 25717.68,
    "unc": null,
    "J": 6.5,
@@ -252,7 +299,7 @@
    "col": 5
   },
   {
-   "id": 11,
+   "id": 12,
    "E": 25825.53,
    "unc": null,
    "J": 7.5,
@@ -267,7 +314,7 @@
    "col": 6
   },
   {
-   "id": 12,
+   "id": 13,
    "E": 26087.13,
    "unc": null,
    "J": 8.5,
@@ -282,7 +329,7 @@
    "col": 3
   },
   {
-   "id": 13,
+   "id": 14,
    "E": 26385.99,
    "unc": null,
    "J": 6.5,
@@ -297,7 +344,7 @@
    "col": 1
   },
   {
-   "id": 14,
+   "id": 15,
    "E": 27102.94,
    "unc": null,
    "J": 4.5,
@@ -319,7 +366,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 13,
+   "upper": 14,
    "wn": 26100.49,
    "lam": 383.1346,
    "air": 383.0259,
@@ -332,7 +379,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 12,
+   "upper": 13,
    "wn": 25625.05,
    "lam": 390.2431,
    "air": 390.1326,
@@ -345,7 +392,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 14,
+   "upper": 15,
    "wn": 24792.85,
    "lam": 403.3421,
    "air": 403.2281,
@@ -358,7 +405,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 9,
+   "upper": 10,
    "wn": 24614.18,
    "lam": 406.2699,
    "air": 406.1552,
@@ -371,7 +418,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 8,
+   "upper": 9,
    "wn": 23147.92,
    "lam": 432.0043,
    "air": 431.8828,
@@ -384,7 +431,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 7,
+   "upper": 8,
    "wn": 23107.25,
    "lam": 432.7646,
    "air": 432.6429,
@@ -397,7 +444,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 11,
+   "upper": 12,
    "wn": 23053.855,
    "lam": 433.7669,
    "air": 433.645,
@@ -410,7 +457,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 6,
+   "upper": 7,
    "wn": 23043.43,
    "lam": 433.9632,
    "air": 433.8412,
@@ -423,7 +470,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 10,
+   "upper": 11,
    "wn": 22946.005,
    "lam": 435.8057,
    "air": 435.6832,
@@ -436,18 +483,31 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 5,
+   "upper": 6,
    "wn": 18669.37,
    "lam": 535.6367,
    "air": 535.4878,
    "type": "E1",
    "lam_obs": 535.637
+  },
+  {
+   "kind": "E1",
+   "freq": 517.1297,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 5,
+   "wn": 17249.59,
+   "lam": 579.7239,
+   "air": 579.5632,
+   "use": "first classified line between 433.8 and 1023.9 nm that connects with the Tb I ground level (classified from its resolved hyperfine structure); hyperfine constants of both levels measured on this line",
+   "type": "E1"
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -460,7 +520,19 @@
     "Use"
    ],
    "aligns": "lrrrrrrrl",
-   "rows": [],
+   "rows": [
+    [
+     "$^6H^{o}_{15/2}$ – $(15/2,2)_{17/2}$",
+     "579.7239",
+     "579.5632",
+     "517.1297",
+     "–",
+     "–",
+     "–",
+     "–",
+     "first classified line between 433.8 and 1023.9 nm that co…"
+    ]
+   ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
   },
   {
@@ -474,31 +546,67 @@
    "aligns": "lrrl",
    "rows": [
     [
+     "$^6H^{o}_{15/2}$",
+     "673.7550(10)",
+     "1449.445(12)",
+     "F=6: -8062.36   F=7: -4215.75   F=8: +1008.64   F=9: +7942.10"
+    ],
+    [
      "$^8G_{13/2}$",
-     "531(6)",
-     "989(60)",
-     "F=5: -5588.86   F=6: -3013.88   F=7: +567.18   F=8: +5420.60"
+     "532.2040(20)",
+     "928.861(20)",
+     "F=5: -5630.04   F=6: -3008.42   F=7: +591.97   F=8: +5421.20"
     ],
     [
      "$^8G_{15/2}$",
-     "471(6)",
-     "1169(60)",
-     "F=6: -5575.57   F=7: -2982.07   F=8: +649.92   F=9: +5587.62"
+     "472.6430(20)",
+     "1154.239(17)",
+     "F=6: -5605.73   F=7: -2989.77   F=8: +659.46   F=9: +5605.79"
+    ],
+    [
+     "$^8D_{11/2}$",
+     "405.106(3)",
+     "-92.64(5)",
+     "F=4: -3988.10   F=5: -1903.62   F=6: +542.17   F=7: +3318.97"
+    ],
+    [
+     "$(15/2,2)_{17/2}$",
+     "857.1(4)",
+     "1758(5)",
+     "F=7: -11599.67   F=8: -5776.98   F=9: +1762.41   F=10: +11367.52"
+    ],
+    [
+     "$(15/2,1)_{13/2}$",
+     "685.7(20)",
+     "915(24)",
+     "F=5: -7362.20   F=6: -3811.08   F=7: +865.65   F=8: +6914.32"
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."
   }
  ],
  "validation": [
-  "levels: 15   lines < 2000 nm: 10   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 10",
+  "levels: 16   lines < 2000 nm: 11   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 11",
   "levels with a measured lifetime: 0"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Tb, monoisotopic); nuclear spin from the IAEA/ENSDF ground-state table (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=159tb) and Karshenboim et al. 2005": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Tb",
   "NIST ASD Tb I levels table (local copy data/nist/Tb_I_levels.tsv)": "https://physics.nist.gov/asd",
+  "earlier atomic-beam magnetic-resonance work (Childs, Phys. Rev. A 2, 316 (1970)), as quoted in Childs, Goodman, J. Opt. Soc. Am. 69, 815 (1979), Table II (previous values)": "http://web.archive.org/web/20250425202219/https://opg.optica.org/josa/abstract.cfm?uri=josa-69-6-815",
+  "Childs, Goodman, J. Opt. Soc. Am. 69, 815 (1979), Table II (laser-fluorescence values)": "http://web.archive.org/web/20250425202219/https://opg.optica.org/josa/abstract.cfm?uri=josa-69-6-815",
+  "Childs, Phys. Rev. A 2, 316 (1970) (atomic-beam magnetic resonance), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp": "http://web.archive.org/web/20180727211546/https://link.springer.com/content/pdf/10.1140%2Fepjp%2Fi2017-11725-0.pdf",
   "Arnoult, Gerstenkorn, J. Opt. Soc. Am. 56, 177 (1966), Table II": "https://opg.optica.org/josa/abstract.cfm?uri=josa-56-2-177",
   "Childs, Crosswhite, Goodman, Pfeufer, J. Opt. Soc. Am. B 1, 22 (1984), Table 6": "https://opg.optica.org/josab/abstract.cfm?uri=josab-1-1-22",
-  "Karshenboim, Nevsky, Angstmann, Dzuba, Flambaum, \"A New Option for a Search for alpha Variation: Narrow Transitions with Enhanced Sensitivity\", arXiv:physics/0511180 (2005)": "https://arxiv.org/abs/physics/0511180"
+  "Childs, J. Opt. Soc. Am. B 9, 191 (1992), Table 2 (level energies from Table 1)": "http://web.archive.org/web/20250425132714/https://opg.optica.org/josab/abstract.cfm?uri=josab-9-2-191",
+  "Stefanska, Elantkowska, Ruczkowski, Furmann, J. Quant. Spectrosc. Radiat. Transfer 189, 441 (2017), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp": "http://web.archive.org/web/20180727211546/https://link.springer.com/content/pdf/10.1140%2Fepjp%2Fi2017-11725-0.pdf",
+  "Childs, Goodman, J. Opt. Soc. Am. 69, 815 (1979), Table III": "http://web.archive.org/web/20250425202219/https://opg.optica.org/josa/abstract.cfm?uri=josa-69-6-815",
+  "Childs, J. Opt. Soc. Am. B 9, 191 (1992), Table 2": "http://web.archive.org/web/20250425132714/https://opg.optica.org/josab/abstract.cfm?uri=josab-9-2-191",
+  "Furmann, Stefanska, Krzykowski, Spectrochim. Acta B 111, 38 (2015), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp": "http://web.archive.org/web/20180727211546/https://link.springer.com/content/pdf/10.1140%2Fepjp%2Fi2017-11725-0.pdf",
+  "Furmann, Stefanska, Krzykowski, J. Phys. B 49, 025001 (2016), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp": "http://web.archive.org/web/20180727211546/https://link.springer.com/content/pdf/10.1140%2Fepjp%2Fi2017-11725-0.pdf",
+  "Childs, J. Opt. Soc. Am. B 9, 191 (1992), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp": "http://web.archive.org/web/20180727211546/https://link.springer.com/content/pdf/10.1140%2Fepjp%2Fi2017-11725-0.pdf",
+  "Stefanska, Furmann, private communication, as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp": "http://web.archive.org/web/20180727211546/https://link.springer.com/content/pdf/10.1140%2Fepjp%2Fi2017-11725-0.pdf",
+  "Karshenboim, Nevsky, Angstmann, Dzuba, Flambaum, \"A New Option for a Search for alpha Variation: Narrow Transitions with Enhanced Sensitivity\", arXiv:physics/0511180 (2005)": "https://arxiv.org/abs/physics/0511180",
+  "Childs, Goodman, J. Opt. Soc. Am. 69, 815 (1979), Table I and abstract": "http://web.archive.org/web/20250425202219/https://opg.optica.org/josa/abstract.cfm?uri=josa-69-6-815"
  }
 }

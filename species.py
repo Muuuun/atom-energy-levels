@@ -90,7 +90,8 @@ SPECIES = {
 from elements import ELEMENTS, N_NIST  # noqa: E402
 
 CURATED = {cfg["symbol"] for cfg in SPECIES.values()}
-for _e in ELEMENTS[:N_NIST]:
-    if _e["symbol"] not in CURATED:
+LIT_ONLY = {"Fm", "No"}  # beyond the NIST tables, but with levels measured by laser spectroscopy (literature file)
+for _e in ELEMENTS:
+    if (_e["Z"] <= N_NIST or _e["symbol"] in LIT_ONLY) and _e["symbol"] not in CURATED:
         SPECIES[_e["symbol"].lower()] = dict(kind="nist", auto=True, symbol=_e["symbol"], element=_e["name"], Z=_e["Z"], A=None, I=None,
                                              slug=_e["name"].lower(), core=[], E_cut=1e9, columns="auto", keep_unrated=False)

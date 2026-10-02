@@ -111,7 +111,7 @@ def atom_page(key, pages):
         counts[t.get("A_tier", "none")] = counts.get(t.get("A_tier", "none"), 0) + 1
     prov = ", ".join(f"{v} {TIER[k]}" for k, v in sorted(counts.items(), key=lambda kv: -kv[1]) if k in TIER)
 
-    lit_levels = (meta.get("lit_levels") or 0) > len(L) / 2  # levels from the literature file, NIST has none (actinides)
+    lit_levels = (meta.get("lit_levels") or 0) > (len(L) - 1) / 2  # levels from the literature file, NIST has none (actinides)
     if lit_levels:
         desc = desc.replace("Measured and NIST data, with sources.", "Levels and lines from the cited literature.")
         lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): {len(L)} levels and {len(bound)} "
@@ -229,7 +229,7 @@ def atom_page(key, pages):
             tau = (l["tau_bound"] + " " if l.get("tau_bound") else "") + fmt_tau(l["tau_ns"]) + badge(l["tau_tier"])
         h = l.get("hfs") or {}
         rows.append(dict(id=f"level-{l['id']}", cells=[al.tex_to_html(l["name"]), f"{l['E']:.3f}", al.jstr(l["J"]), l["parity"], tau,
-                                                       f"{l['g']:.5g}" if l.get("g") else "–",
+                                                       (f"{l['g']:.5g}" + (badge("theory") if l.get("g_tier") == "theory" else "")) if l.get("g") else "–",
                                                        f"{h['A']:g}" if h else "–", f"{h['B']:g}" if h.get("B") else "–",
                                                        cite(atom, l.get("tau_src")), cite(atom, h.get("src"))]))
     parts.append(f"<h2>{iso} energy levels</h2>")
@@ -260,8 +260,90 @@ def atom_page(key, pages):
     with open(os.path.join(DOCS, slug, "index.html"), "w") as f:
         f.write("".join(parts))
 
+FACTS = os.path.join(al.HERE, "data", "literature", "heaviest_elements.json")
+FACT_TIER = {"experiment": "exp", "theory": "theory", "nist": "nist", "compilation": "theory"}
 
-def landing(pages):
+
+def fact_pages(pages):
+    """Pages for the elements without any measured excited level (Md, Lr, Rf-Og): what is known, with sources; no diagram."""
+    if not os.path.exists(FACTS):
+        return []
+    with open(FACTS) as f:
+        sheet = json.load(f)
+    link = lambda x: (f'<a href="{html.escape(x["url"])}" rel="noopener">{html.escape(x["source"])}</a>' if x.get("url")
+                      else html.escape(x.get("source", "")))
+    term = lambda t: al.tex_to_html(al.term_tex(re.sub(r"[\d/]+$", "", t["value"]), al.Fraction(t["J"]))) if t.get("J") else html.escape(t["value"])
+    out = []
+    for sym, e in sheet["elements"].items():
+        if e.get("excited_level_measured"):
+            continue
+        name, slug = e["name"], e["name"].lower()
+        url = f"{BASE}/{slug}/"
+        ie, conf, gt, iso = e["ionization_energy_eV"], e["ground_configuration"], e["ground_term"], e.get("longest_lived_isotope") or {}
+        measured = ie.get("method") == "experiment"
+        title = f"{name} ({sym}, Z = {e['Z']}) – atomic energy levels: what is known"
+        desc = (f"No excited level of neutral {slug} ({sym} I) has been measured. Ground state, "
+                f"{'measured' if measured else 'calculated'} ionisation energy and calculated transitions, each with its source.")
+        if ie.get("unc_plus"):
+            ie_txt = f'{ie["value"]:g} +{ie["unc_plus"]:g} / −{ie["unc_minus"]:g} eV'
+        else:
+            ie_txt = f'{ie["value"]:g}' + (f' ± {ie["unc"]:g}' if ie.get("unc") else "") + " eV"
+        rows = [["Ground configuration", html.escape(conf["value"]) + badge(FACT_TIER.get(conf["method"])), link(conf)],
+                ["Ground term", term(gt) + badge(FACT_TIER.get(gt["method"])), link(gt)],
+                ["First ionisation energy", ie_txt + badge(FACT_TIER.get(ie["method"])), link(ie)]]
+        if iso.get("isotope"):
+            hl = iso["half_life"]
+            rows.append(["Longest-lived isotope", f'{html.escape(iso["isotope"])}, half-life {hl["value"]:g}'
+                         + (f' ± {hl["unc"]:g}' if hl.get("unc") else "") + f' {html.escape(hl["unit"])}', link(iso)])
+        parts = [f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(title)}</title>
+<meta name="description" content="{html.escape(desc)}">
+<link rel="canonical" href="{url}">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../assets/style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{html.escape(title)}">
+<meta property="og:description" content="{html.escape(desc)}">
+<meta property="og:url" content="{url}">
+</head>
+<body>
+{nav(pages)}
+<main>
+<div class="wrap">
+<h1>{name} ({sym}, Z = {e['Z']}): atomic energy levels</h1>
+<p class="lead">No energy level diagram can be drawn for neutral {slug}: no excited level of the atom has been measured, so there is
+no observed transition to show. This page lists what is known instead, and marks every calculated number as theory.</p>
+<h2>What has been measured</h2>
+<p>{html.escape(e["what_has_been_measured"]["text"])}</p>
+"""]
+        parts.append(table(["Quantity", "Value", "Source"], rows, left=(0, 1, 2), wrap=(2,)))
+        pl = e.get("predicted_lines") or []
+        if pl:
+            prow = [[html.escape(x.get("lower", "")), html.escape(x.get("upper", "")), f'{x["wavenumber_cm"]:g}',
+                     f'{1e7 / x["wavenumber_cm"]:.1f}', html.escape(x.get("type", "")),
+                     (f'{x["A_s"]:.3g}' if x.get("A_s") else "–"), link(x)] for x in pl]
+            parts.append("<h2>Calculated transitions from the ground state</h2>"
+                         '<p class="note">Theory only: none of these lines has been observed. Wavelengths are converted from the '
+                         "calculated level energies.</p>")
+            parts.append(table(["Lower level", "Upper level", "Energy (cm⁻¹)", "λ vacuum (nm)", "Type", "A (s⁻¹)" + badge("theory"),
+                                "Source"], prow, left=(0, 1, 4, 6), wrap=(6,)))
+        srcs = {x["source"]: x for x in e["what_has_been_measured"].get("sources", [])}
+        parts.append('<h2>Sources</h2><ul class="sources">' + "".join(f"<li>{link(x)}</li>" for x in srcs.values()) + "</ul>")
+        parts.append('<p><a href="../">All elements: periodic table</a></p>'
+                     f'<footer>Data: the cited literature. Built {datetime.date.today().isoformat()}. '
+                     f'<a href="{REPO}">Code and data on GitHub</a>.</footer></div></main>\n</body></html>\n')
+        os.makedirs(os.path.join(DOCS, slug), exist_ok=True)
+        with open(os.path.join(DOCS, slug, "index.html"), "w") as f:
+            f.write("".join(parts))
+        out.append(dict(symbol=sym, slug=slug, name=name, measured_ie=measured))
+    return out
+
+
+def landing(pages, facts=()):
     title = "Atomic energy level diagrams – interactive periodic table of Grotrian diagrams"
     n_el = len({p["symbol"] for p in pages})
     desc = (f"Interactive energy level diagrams for {n_el} elements of the periodic table: transitions below 2 µm with wavelengths, "
@@ -276,6 +358,11 @@ def landing(pages):
         row = e["row"] + (1 if e["row"] >= 9 else 0)  # blank grid row between the main table and the f-block
         style = f'style="grid-row:{row};grid-column:{e["col"]}"'
         inner = f'<span class="z">{e["Z"]}</span><span class="sym">{e["symbol"]}</span><span class="nm">{e["name"]}</span>'
+        fp = next((x for x in facts if x["symbol"] == e["symbol"]), None)
+        if not ps and fp:
+            cells.append(f'<a class="el nolevels {e["category"]}" {style} href="{fp["slug"]}/" data-name="{e["name"].lower()} {e["symbol"].lower()}" '
+                         f'title="{e["name"]}: no excited level measured; ground state and ionisation energy">{inner}<span class="ct">no spectrum</span></a>')
+            continue
         if not ps:
             cells.append(f'<div class="el none {e["category"]}" {style} title="{e["name"]}: no classified lines in NIST ASD">{inner}</div>')
             continue
@@ -336,7 +423,9 @@ with its citation; calculated values are tagged as such.</p>
 <p>A zoomable diagram (also as PDF and SVG), a table of the key or strongest transitions, the transition list with wavelengths in
 vacuum and air, frequencies, dipole matrix elements and Einstein A coefficients, and the level energies. Level energies and most
 transition rates come from the <a href="https://physics.nist.gov/asd">NIST Atomic Spectra Database</a>; for the actinides from
-protactinium onwards, where NIST lists only the ground level, they come from the literature cited on the page. All tables are downloadable
+protactinium onwards, where NIST lists only the ground level, they come from the literature cited on the page. For mendelevium,
+lawrencium and the elements from rutherfordium on, no excited level has ever been measured: their cells (dashed) open a short page with
+the ground state, the ionisation energy and calculated lines, marked as theory. All tables are downloadable
 as CSV from the <a href="{REPO}">GitHub repository</a>.</p>
 <footer>Data: NIST Atomic Spectra Database and the measurements cited on each page. Built {datetime.date.today().isoformat()}.</footer>
 </div>
@@ -370,16 +459,17 @@ def main():
     pages.sort(key=lambda p: (p["Z"], p["A"] or 0))
     for p in pages:
         atom_page(p["key"], pages)
-    landing(pages)
+    facts = fact_pages(pages)
+    landing(pages, facts)
     today = datetime.date.today().isoformat()
-    urls = [BASE + "/"] + [f"{BASE}/{p['slug']}/" for p in pages]
+    urls = [BASE + "/"] + [f"{BASE}/{p['slug']}/" for p in pages] + [f"{BASE}/{x['slug']}/" for x in facts]
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                 + "".join(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     with open(os.path.join(DOCS, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
-    print(f"site: {len(pages)} atom pages + landing, sitemap, robots.txt")
+    print(f"site: {len(pages)} atom pages + {len(facts)} fact pages + landing, sitemap, robots.txt")
 
 
 if __name__ == "__main__":

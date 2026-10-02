@@ -75,7 +75,7 @@
     if (l.E_nist != null) h += row('NIST energy', l.E_nist.toFixed(3) + ' cm⁻¹');
     if (l.tau_tier === 'stable') h += row('Lifetime', 'stable');
     else if (l.tau_ns != null) h += row('Lifetime' + badge(l.tau_tier), (l.tau_bound ? l.tau_bound + ' ' : '') + ftau(l.tau_ns) + (l.tau_unc ? ' ± ' + ftau(l.tau_unc) : ''));
-    if (l.g != null) h += row('Landé g<sub>J</sub>', l.g);
+    if (l.g != null) h += row('Landé g<sub>J</sub>', l.g + (l.g_tier === 'theory' ? ' (theory)' : ''));
     if (l.hfs) h += row('Hyperfine A', l.hfs.A + ' MHz') + (l.hfs.B ? row('Hyperfine B', l.hfs.B + ' MHz') : '');
     h += '</table><table class="lines" style="margin-top:8px"><tr><th>' + linesOf[k].length +
          ' lines</th><th>λ vac (nm)</th><th>d (ea₀)</th></tr>' + rows + '</table>';

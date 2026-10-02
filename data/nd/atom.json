@@ -17,7 +17,7 @@
   "limit_text": "Nd$^+$ ionisation limit   44560.11 cm$^{-1}$  =  5.52475 eV  (224.416 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Thin file: the key Nd I measurements (lifetimes, branching fractions, ground-term hyperfine structure) are in paywalled journals that could not be opened in this session. Hyperfine A constants are for the even-parity metastable levels 7L5, 7L11, 7K4 (second-hand) and the ground level 5I4 of 143Nd (abstract of the original paper). Nuclear spins 7/2 for 143Nd and 145Nd from the IAEA/ENSDF ground-state table (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=143nd)."
+  "notes": "Nd I lifetimes (second pass): 15 levels measured by Biemont et al. 2004 (opened, Lund University repository) and 84 lifetimes of Den Hartog, Fittante, Lawler 2011 read second-hand in two open theses (Ryder 2011 Table 5.2; Putnam 2014 Table 6.1) (method \"compilation\", no uncertainty printed; the original abstract quotes +/-5%). Where both exist the directly opened Biemont value is the entry and the Den Hartog value sits under the level key \"alternatives\" (each alternative names its quantity), except for 20300.875 cm^-1 where the Biemont value fails the tau x sum(A) check (see conflicts). Lifetimes were checked against the NIST A values: tau x sum(A) <= 0.96 for all drawn levels except those listed under conflicts. The branching-fraction paper (Stockett 2011) and the ground-term hyperfine paper (Childs & Goodman 1972) remain closed. Hyperfine A constants are for the even-parity metastable levels 7L5, 7L11, 7K4 (second-hand) and the ground level 5I4 of 143Nd (abstract of the original paper). Nuclear spins 7/2 for 143Nd and 145Nd from the IAEA/ENSDF ground-state table (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=143nd)."
  },
  "columns": [
   {
@@ -155,8 +155,10 @@
    "g": 0.96,
    "name": "(20177)^{o}_{5}",
    "plain": "°5",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 32.6,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
    "col": 6
   },
   {
@@ -170,8 +172,10 @@
    "g": 0.775,
    "name": "^5K^{o}_{5}",
    "plain": "4f46s6p 5K°5",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 10.6,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
    "col": 6
   },
   {
@@ -185,8 +189,10 @@
    "g": 0.92,
    "name": "(21185)^{o}_{4}",
    "plain": "°4",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 28.7,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
    "col": 5
   },
   {
@@ -206,6 +212,23 @@
   },
   {
    "id": 8,
+   "E": 21345.837,
+   "unc": null,
+   "J": 4.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.88,
+   "name": "(21346)^{o}_{4}",
+   "plain": "°4",
+   "tau_ns": 20.5,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
+   "col": 5
+  },
+  {
+   "id": 9,
    "E": 21543.326,
    "unc": null,
    "J": 6.0,
@@ -215,12 +238,14 @@
    "g": 0.9,
    "name": "^5K^{o}_{6}",
    "plain": "4f46s6p 5K°6",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 16.0,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
    "col": 7
   },
   {
-   "id": 9,
+   "id": 10,
    "E": 21572.61,
    "unc": null,
    "J": 3.0,
@@ -230,12 +255,14 @@
    "g": 0.65,
    "name": "^5H^{o}_{3}",
    "plain": "4f46s6p 5H°3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 11.3,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
    "col": 4
   },
   {
-   "id": 10,
+   "id": 11,
    "E": 23996.513,
    "unc": null,
    "J": 6.0,
@@ -245,12 +272,14 @@
    "g": 1.045,
    "name": "(23997)^{o}_{6}",
    "plain": "°6",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 20.1,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
    "col": 7
   },
   {
-   "id": 11,
+   "id": 12,
    "E": 25518.7,
    "unc": null,
    "J": 9.0,
@@ -260,8 +289,10 @@
    "g": 1.22,
    "name": "^5K^{o}_{9}",
    "plain": "4f46s6p 5K°9",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 9.3,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
    "col": 8
   }
  ],
@@ -272,10 +303,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 10,
+   "upper": 11,
    "wn": 21629.916,
    "lam": 462.3226,
    "air": 462.1932,
+   "gamma_MHz": 7.918,
    "type": "E1",
    "A": 56000000.0,
    "A_tier": "nist",
@@ -283,6 +315,8 @@
    "d": 5.959,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy n/a) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 462.323
   },
   {
@@ -291,10 +325,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 9,
+   "upper": 10,
    "wn": 21572.61,
    "lam": 463.5508,
    "air": 463.421,
+   "gamma_MHz": 14.08,
    "type": "E1",
    "A": 84000000.0,
    "A_tier": "nist",
@@ -302,25 +337,30 @@
    "d": 5.377,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy n/a) (from A)",
+   "br": 0.9492,
+   "br_tier": "nist",
    "lam_obs": 463.554
   },
   {
    "kind": "E1",
-   "freq": 639.92415,
+   "freq": 639.93209,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 7,
-   "wn": 21345.572,
-   "lam": 468.4812,
-   "air": 468.3501,
+   "upper": 8,
+   "wn": 21345.837,
+   "lam": 468.4754,
+   "air": 468.3443,
+   "gamma_MHz": 7.764,
    "type": "E1",
    "A": 52000000.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy n/a)",
-   "d": 5.857,
+   "d": 4.873,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy n/a) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 468.476
   },
   {
@@ -333,6 +373,7 @@
    "wn": 21184.881,
    "lam": 472.0347,
    "air": 471.9027,
+   "gamma_MHz": 5.545,
    "type": "E1",
    "A": 33000000.0,
    "A_tier": "nist",
@@ -340,6 +381,8 @@
    "d": 3.927,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy n/a) (from A)",
+   "br": 0.9471,
+   "br_tier": "nist",
    "lam_obs": 472.034
   },
   {
@@ -348,10 +391,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 11,
+   "upper": 12,
    "wn": 20470.098,
    "lam": 488.5174,
    "air": 488.381,
+   "gamma_MHz": 17.11,
    "type": "E1",
    "A": 88000000.0,
    "A_tier": "nist",
@@ -359,6 +403,8 @@
    "d": 9.809,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy n/a) (from A)",
+   "br": 0.8184,
+   "br_tier": "nist",
    "lam_obs": 488.517
   },
   {
@@ -367,10 +413,11 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 8,
+   "upper": 9,
    "wn": 20415.27,
    "lam": 489.8294,
    "air": 489.6927,
+   "gamma_MHz": 9.947,
    "type": "E1",
    "A": 59000000.0,
    "A_tier": "nist",
@@ -378,6 +425,8 @@
    "d": 6.67,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy n/a) (from A)",
+   "br": 0.944,
+   "br_tier": "nist",
    "lam_obs": 489.83
   },
   {
@@ -390,6 +439,7 @@
    "wn": 20300.875,
    "lam": 492.5896,
    "air": 492.4521,
+   "gamma_MHz": 15.01,
    "type": "E1",
    "A": 90000000.0,
    "A_tier": "nist",
@@ -397,6 +447,8 @@
    "d": 7.642,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy n/a) (from A)",
+   "br": 0.954,
+   "br_tier": "nist",
    "lam_obs": 492.59
   },
   {
@@ -428,6 +480,7 @@
    "wn": 20176.912,
    "lam": 495.616,
    "air": 495.4777,
+   "gamma_MHz": 4.882,
    "type": "E1",
    "A": 29000000.0,
    "A_tier": "nist",
@@ -435,6 +488,8 @@
    "d": 4.378,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy n/a) (from A)",
+   "br": 0.9454,
+   "br_tier": "nist",
    "lam_obs": 495.616
   }
  ],
@@ -462,8 +517,8 @@
      "648.4486",
      "5.959",
      "5.600e+07",
-     "–",
-     "–",
+     "7.918",
+     "100",
      ""
     ],
     [
@@ -473,19 +528,19 @@
      "646.7306",
      "5.377",
      "8.400e+07",
-     "–",
-     "–",
+     "14.08",
+     "94.9",
      ""
     ],
     [
-     "$^5I_{4}$ – $(21346)^{o}_{6}$",
-     "468.4812",
-     "468.3501",
-     "639.9242",
-     "5.857",
+     "$^5I_{4}$ – $(21346)^{o}_{4}$",
+     "468.4754",
+     "468.3443",
+     "639.9321",
+     "4.873",
      "5.200e+07",
-     "–",
-     "–",
+     "7.764",
+     "100",
      ""
     ],
     [
@@ -495,8 +550,8 @@
      "635.1068",
      "3.927",
      "3.300e+07",
-     "–",
-     "–",
+     "5.545",
+     "94.7",
      ""
     ],
     [
@@ -506,8 +561,8 @@
      "613.6781",
      "9.809",
      "8.800e+07",
-     "–",
-     "–",
+     "17.11",
+     "81.8",
      ""
     ],
     [
@@ -517,8 +572,8 @@
      "612.0344",
      "6.670",
      "5.900e+07",
-     "–",
-     "–",
+     "9.947",
+     "94.4",
      ""
     ],
     [
@@ -528,8 +583,8 @@
      "608.6049",
      "7.642",
      "9.000e+07",
-     "–",
-     "–",
+     "15.01",
+     "95.4",
      ""
     ],
     [
@@ -550,8 +605,8 @@
      "604.8886",
      "4.378",
      "2.900e+07",
-     "–",
-     "–",
+     "4.882",
+     "94.5",
      ""
     ]
    ],
@@ -578,14 +633,21 @@
   }
  ],
  "validation": [
-  "levels: 12   lines < 2000 nm: 9   with matrix element: 9",
+  "levels: 13   lines < 2000 nm: 9   with matrix element: 9",
   "transition-rate provenance: nist: 9",
-  "levels with a measured lifetime: 0"
+  "levels with a measured lifetime: 8"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Nd); nuclear spin from IAEA Nuclear Data Services ground-state table (ENSDF)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Nd",
   "NIST ASD Nd I levels table (local copy data/nist/Nd_I_levels.tsv)": "https://physics.nist.gov/asd",
   "Spalding, Proc. Phys. Soc. (London) 81, 156 (1963), abstract": "https://www.osti.gov/biblio/4694730",
-  "Childs, Phys. Rev. A 44, 760 (1991) (laser-rf double resonance), as tabulated in Persson, 'Hyperfine anomalies in Gd and Nd', arXiv:0904.0516v2 (published Atoms 6, 63 (2018)), Table 1": "https://arxiv.org/abs/0904.0516"
+  "Childs, Phys. Rev. A 44, 760 (1991) (laser-rf double resonance), as tabulated in Persson, 'Hyperfine anomalies in Gd and Nd', arXiv:0904.0516v2 (published Atoms 6, 63 (2018)), Table 1": "https://arxiv.org/abs/0904.0516",
+  "Blagoev & Komarovskii (1994), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Table 5.2 (PDF pp. 191-196)": "http://web.archive.org/web/20250326111002/https://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1473&context=oa_dissertations",
+  "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column": "http://web.archive.org/web/20250326111002/https://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1473&context=oa_dissertations",
+  "Biemont, Quinet, Svanberg, Xu, J. Phys. B 37, 1381 (2004), Table 2 (p. 1384), column \"This work\" (time-resolved laser-induced fluorescence, laser-ablation plume)": "https://lup.lub.lu.se/search/files/4681298/2368886.pdf",
+  "Marek & Stahnke, Z. Phys. A 298, 81 (1980) (delayed coincidence with laser excitation), as quoted in Biemont et al., J. Phys. B 37, 1381 (2004), Table 2, column \"Previous\"": "https://lup.lub.lu.se/search/files/4681298/2368886.pdf",
+  "Gorshkov, Komarovskii, Osherovich, Penkin (1982) (pulsed-electron delayed coincidence), as quoted in Biemont et al., J. Phys. B 37, 1381 (2004), Table 2, column \"Previous\"": "https://lup.lub.lu.se/search/files/4681298/2368886.pdf",
+  "Gorshkov, Komarovskii, Osherovich, Penkin (1982), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Table 5.2 (PDF pp. 191-196)": "http://web.archive.org/web/20250326111002/https://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1473&context=oa_dissertations",
+  "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011), as adopted in R. Putnam, thesis \"Recent Advances in the Measurement of Rare-Earth Metal Transition Probabilities Using Laser-Induced Plasmas\", University of Windsor (2014), Table 6.1 (PDF pp. 74-75), lifetime column": "http://web.archive.org/web/20240916063810/https://scholar.uwindsor.ca/cgi/viewcontent.cgi?article=6274&context=etd"
  }
 }

@@ -498,6 +498,19 @@ def build_nist(key, cfg):
         l["i"] = i
     lines = al.nist_lines(sym, 1 if cfg.get("auto") else 200)
     E = np.array([l["E"] for l in nist])
+    # NIST occasionally attaches an electric-dipole line to a neighbouring level whose J makes the line impossible
+    # (Nd 468.48 nm: lower J = 4, listed upper J = 6 at 21345.572; the J = 4 level at 21345.837 fits the wavelength).
+    # Such a line goes to the level within 1 cm^-1 that allows it, or is dropped.
+    fixed = []
+    for ln in lines:
+        if not ln["type"] and ln["Ji"] is not None and ln["Jk"] is not None and abs(ln["Ji"] - ln["Jk"]) > 1:
+            ok = [l for l in nist if abs(l["E"] - ln["Ek"]) < 1.0 and l["J"] is not None and abs(l["J"] - ln["Ji"]) <= 1]
+            if not ok:
+                continue
+            best = min(ok, key=lambda l: abs(l["E"] - ln["Ek"]))
+            ln = dict(ln, Ek=best["E"], Jk=best["J"])
+        fixed.append(ln)
+    lines = fixed
 
     def find(e, tol=1.0, j=None):
         """Nearest NIST level; J decides between fine-structure components NIST lists at one energy."""
@@ -596,6 +609,8 @@ def build_nist(key, cfg):
         g = lit.val(lit.level(lv["E"], lv["J"]).get("g_J"))
         if g and L["g"] is None:
             L["g"] = g[0]
+            if g[2] == "theory":
+                L["g_tier"] = "theory"  # calculated g factor: shown with the theory tag
         levels.append(L)
     groups = {}
     for L in levels:
@@ -717,7 +732,7 @@ def build_nist(key, cfg):
     n_d = sum(1 for t in transitions if t.get("d") is not None)
     # levels taken from the literature file because NIST does not list them (actinides)
     n_lit_lv = sum(1 for l in levels if l.get("E_tier") and "E_nist" not in l)
-    lit_levels = n_lit_lv > len(levels) / 2
+    lit_levels = n_lit_lv > (len(levels) - 1) / 2  # most excited levels are literature-only
     if lit_levels:
         tables[0]["note"] = tables[0]["note"].replace("λ, ν from NIST level energies", "λ, ν from the level energies of the cited literature (NIST lists no excited levels)")
     tiers = {}

@@ -64,14 +64,17 @@
    "J": "2",
    "label": "5p3(4S°)7p 5P2",
    "note": "level not among those drawn in data/te/levels.csv",
-   "lifetime": {
-    "value": 9.9e-08,
-    "unit": "s",
-    "method": "experiment",
-    "source": "Zerne, Berzinsh, Svanberg, Z. Phys. D 32, 31 (1994) (two-step pulsed-laser excitation of Te vapour, time-resolved fluorescence; values read in the abstract as reproduced by OSTI/ETDEWEB)",
-    "url": "https://www.osti.gov/etdeweb/biblio/6608731",
-    "unc": 8e-09
-   }
+   "lifetime_alternatives": [
+    {
+     "value": 9.9e-08,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Zerne, Berzinsh, Svanberg, Z. Phys. D 32, 31 (1994) (two-step pulsed-laser excitation of Te vapour, time-resolved fluorescence; values read in the abstract as reproduced by OSTI/ETDEWEB)",
+     "url": "https://www.osti.gov/etdeweb/biblio/6608731",
+     "unc": 8e-09,
+     "note": "moved 2026-10-02 from 'lifetime': this 99(8) ns value was first attached here because Zerne et al. label the level '7p 5P2'; their excitation / detection wavelengths (588 / 515 nm, p. 32) fit the NIST level 63669.944 (587.48 / 514.87 nm air) and not this one (589.53 / 516.44 nm air), so the value is now stored on 63669.944"
+    }
+   ]
   },
   {
    "nist_energy_cm": 63921.485,
@@ -83,7 +86,8 @@
     "method": "experiment",
     "source": "Zerne, Berzinsh, Svanberg, Z. Phys. D 32, 31 (1994) (two-step pulsed-laser excitation of Te vapour, time-resolved fluorescence; values read in the abstract as reproduced by OSTI/ETDEWEB)",
     "url": "https://www.osti.gov/etdeweb/biblio/6608731",
-    "unc": 8e-09
+    "unc": 8e-09,
+    "note": "Confirmed 2026-10-02 in the paper itself (publisher preview, p. 32): 7p 3P2 excited at 579 nm, detected at 508 nm, which fits 63921.485."
    }
   },
   {
@@ -97,7 +101,137 @@
     "method": "experiment",
     "source": "Zerne, Berzinsh, Svanberg, Z. Phys. D 32, 31 (1994) (two-step pulsed-laser excitation of Te vapour, time-resolved fluorescence; values read in the abstract as reproduced by OSTI/ETDEWEB)",
     "url": "https://www.osti.gov/etdeweb/biblio/6608731",
-    "unc": 1e-08
+    "unc": 1e-08,
+    "note": "Confirmed 2026-10-02 in the paper itself (publisher preview, p. 32): 7p 3P1 excited at 573 nm, detected at 504 nm, which fits 64088.997 (573.36 / 504.0 nm air)."
+   }
+  },
+  {
+   "nist_energy_cm": 0.0,
+   "J": "2",
+   "label": "5p4 3P2",
+   "hyperfine": {
+    "123": {
+     "A_MHz": -828,
+     "A_unc": 11,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-9, column A (ground state), row 123g",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "125": {
+     "A_MHz": -998,
+     "A_unc": 14,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-9, column A (ground state), row 125g (also Tableau III-10, p. 102)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 46652.738,
+   "J": "1",
+   "label": "5p3(4S°)6s 3S°1",
+   "lifetime": {
+    "value": 3.1e-09,
+    "unc": 5e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Bengtsson, Berzinsh, Larsson, Svanberg, Z. Phys. D 23, 29 (1992), abstract and p. 30, Table 1, column 'this work' (short-pulse laser excitation at 214 nm in a differentially heated cell; first two pages read in the publisher's preview)",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01436699",
+    "alternatives": [
+     {
+      "value": 2.4e-09,
+      "unc": 4e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "beam-foil, Dynefors, Phys. Scr. 11, 375 (1975), as quoted in Table 1 (column [8]) of Bengtsson, Berzinsh, Larsson, Svanberg, Z. Phys. D 23, 29 (1992)",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01436699"
+     },
+     {
+      "value": 2.2e-09,
+      "unc": 2e-10,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Table 1 (column [12,13]) of Bengtsson, Berzinsh, Larsson, Svanberg, Z. Phys. D 23, 29 (1992)",
+      "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01436699",
+      "note": "derived by Bengtsson et al. from the relative transition probabilities of Ubelis and Berzinsh and the 5S2 lifetime of Garpman et al.; the same table lists < 1.5 ns (Corliss and Bozman) and theory 4.1, 2.4, 2.0 ns"
+     }
+    ]
+   },
+   "hyperfine": {
+    "123": {
+     "A_MHz": 783,
+     "A_unc": 20,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-9, column A' (excited state), row 123g",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "125": {
+     "A_MHz": 943,
+     "A_unc": 20,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-9, column A' (excited state), row 125g",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 44253.0,
+   "J": "2",
+   "label": "5p3(4S°)6s 5S°2",
+   "lifetime": {
+    "value": 7.18e-08,
+    "unc": 2.2e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Garpman, Lido, Rydberg, Svanberg, Z. Phys. 247, 238 (1971) (optical double resonance and zero-field level crossing; value read in the abstract on the Lund University publication record)",
+    "url": "https://lup.lub.lu.se/search/publication/62f65674-ae92-45e9-9398-202a75691d4e",
+    "note": "the same value is quoted on p. 29 of Bengtsson et al., Z. Phys. D 23, 29 (1992), who state that it was verified by time-resolved laser spectroscopy in Lund"
+   },
+   "g_J": {
+    "value": 1.9657,
+    "unc": 0.0012,
+    "method": "experiment",
+    "source": "Garpman, Lido, Rydberg, Svanberg, Z. Phys. 247, 238 (1971) (optical double resonance and zero-field level crossing; value read in the abstract on the Lund University publication record)",
+    "url": "https://lup.lub.lu.se/search/publication/62f65674-ae92-45e9-9398-202a75691d4e",
+    "note": "the abstract prints g_J = -1.9657(12) (electron-g sign convention); magnitude stored. NIST ASD lists 1.960(3)"
+   },
+   "hyperfine": {
+    "125": {
+     "A_MHz": 1010.4,
+     "A_unc": 1.3,
+     "method": "experiment",
+     "source": "Garpman, Svanberg, Phys. Scr. 5, 213 (1972) (optical double resonance and level crossing on enriched 125Te; value read in the abstract on the Lund University publication record)",
+     "url": "https://lup.lub.lu.se/record/2258203",
+     "note": "bound on sign: only the magnitude |a| = 1010.4(1.3) MHz is given, the sign was not determined"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 63556.707,
+   "J": "1",
+   "label": "5p3(4S°)7p a 5P1",
+   "lifetime": {
+    "value": 1.28e-07,
+    "unc": 1.1e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Zerne, Berzinsh, Svanberg, Z. Phys. D 32, 31 (1994), abstract (p. 31) and p. 32 (first two pages read in the publisher's preview): '7p 5P1' excited from 6s 3S1 at 591 nm and detected at 518 nm",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425920",
+    "note": "level identification derived here from the printed wavelengths: 46652.738 -> 63556.707 is 591.41 nm in air (591.58 nm vacuum) and 63556.707 -> 44253.000 is 517.89 nm in air (518.04 nm vacuum); the other NIST 5P1 level (b 5P1, 63669.944) would need 587.48 / 514.87 nm (air)"
+   }
+  },
+  {
+   "nist_energy_cm": 63669.944,
+   "J": "1",
+   "label": "5p3(4S°)7p b 5P1",
+   "lifetime": {
+    "value": 9.9e-08,
+    "unc": 8e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Zerne, Berzinsh, Svanberg, Z. Phys. D 32, 31 (1994), abstract (p. 31) and p. 32: level called '7p 5P2' by the authors, excited from 6s 3S1 at 588 nm and detected at 515 nm",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01425920",
+    "note": "level identification derived here from the printed wavelengths, not from the authors' J label: 46652.738 -> 63669.944 is 587.48 nm in air (587.64 nm vacuum) and 63669.944 -> 44253.000 is 514.87 nm in air (515.01 nm vacuum), matching 588 / 515 nm; the NIST 5P2 level 63610.819 would need 589.53 / 516.44 nm (air), which would be printed as 590 / 516 nm. The other three levels of the paper reproduce the printed wavelengths to within 0.5 nm with NIST energies (579 / 508, 573 / 504, 591 / 518 nm), which supports the identification. NIST (Morillon and Verges classification) labels 63669.944 'b 5P1' (J = 1) while Zerne et al. call the level 5P2: J assignment in conflict, see 'conflicts'"
    }
   }
  ],
@@ -109,7 +243,96 @@
    "upper_J": "1",
    "label": "5p4 3P2 - 5p3(4S°)6s 3S°1, 214.281 nm (air)",
    "type": "E1",
-   "use": "first step of the ISOLDE RILIS resonance-ionization scheme for tellurium {214 nm | 573 nm | 901 nm} (ionization efficiency > 18 %)"
+   "use": "first step of the ISOLDE RILIS resonance-ionization scheme for tellurium {214 nm | 573 nm | 901 nm} (ionization efficiency > 18 %)",
+   "A_s": {
+    "value": 231000000.0,
+    "unc": 37000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Cowan, et al., Astrophys. J. Lett. 747, L8 (2012), arXiv:1202.2378, Table 1",
+    "url": "https://arxiv.org/pdf/1202.2378",
+    "note": "derived by Roederer et al. from the branching ratios of Ubelis and Berzinsh, Phys. Scr. 28, 171 (1983) and the laser lifetime 3.1(5) ns of Bengtsson et al. 1992; printed uncertainty about 16 %, dominated by the lifetime. Not an independent measurement of A"
+   },
+   "oscillator_strength_abs": {
+    "value": 0.098,
+    "unc": 0.017,
+    "method": "experiment",
+    "source": "Bengtsson, Berzinsh, Larsson, Svanberg, Z. Phys. D 23, 29 (1992), abstract: f_abs(Te I, 214.3 nm) = 0.098(17), from the measured 3S1 lifetime and the branching ratios of Ubelis and Berzinsh",
+    "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01436699",
+    "note": "derived by the authors from their measured lifetime 3.1(5) ns and second-hand branching ratios; not a direct absorption measurement"
+   },
+   "isotope_shift_MHz": {
+    "120-130": {
+     "value": -1029,
+     "unc": 11,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-8 (even isotopes, relative to 130Te)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "122-130": {
+     "value": -829,
+     "unc": 13,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-8 (even isotopes, relative to 130Te)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "124-130": {
+     "value": -625,
+     "unc": 13,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-8 (even isotopes, relative to 130Te)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "126-130": {
+     "value": -426,
+     "unc": 11,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-8 (even isotopes, relative to 130Te)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "128-130": {
+     "value": -211,
+     "unc": 11,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-8 (even isotopes, relative to 130Te)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "132-130": {
+     "value": 214,
+     "unc": 15,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-8 (even isotopes, relative to 130Te)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "134-130": {
+     "value": 402,
+     "unc": 15,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-8 (even isotopes, relative to 130Te)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "136-130": {
+     "value": 1242,
+     "unc": 21,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-8 (even isotopes, relative to 130Te)",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "123-130": {
+     "value": -815,
+     "unc": 15,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-9 (odd isotopes, hyperfine centre of gravity relative to 130Te), row 123g",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    },
+    "125-130": {
+     "value": -594,
+     "unc": 19,
+     "method": "experiment",
+     "source": "R. Sifi, PhD thesis, Universite Paris-Sud / IPN Orsay (2007), 'Ionisation resonante par faisceaux laser: application aux sources d'ions et a l'etude de la structure des noyaux radioactifs de tellure' (HAL tel-00252001), COMPLIS resonance-ionization spectroscopy on the 214.35 nm (vacuum) line 5p4 3P2 - 5p3 6s 3S1; same data set as Sifi et al., Hyperfine Interact. 171, 173 (2006); p. 100, Tableau III-9 (odd isotopes, hyperfine centre of gravity relative to 130Te), row 125g",
+     "url": "https://theses.hal.science/tel-00252001/document"
+    }
+   },
+   "isotope_shift_note": "nu(A) - nu(130Te) as printed. The thesis also gives radioactive odd isotopes and isomers (Tableau III-9): 125m -659(79), 127m -302(50), 129m -167(12), 131m 104(50), 133m 319(42), 133g 283(31), 135 952(13) MHz."
   },
   {
    "lower_cm": 46652.738,
@@ -119,16 +342,77 @@
    "label": "5p3(4S°)6s 3S°1 - 5p3(4S°)7p 3P1, 573.360 nm (air)",
    "type": "E1",
    "use": "second step of the ISOLDE RILIS resonance-ionization scheme for tellurium; third step 64088.997 -> 75181.41(20) cm-1 at 901.270(17) nm (air) reaches a state above the NIST ionization limit, not in the NIST level list"
+  },
+  {
+   "lower_cm": 4706.495,
+   "upper_cm": 46652.738,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "5p4 3P0 - 5p3(4S°)6s 3S°1, 238.328 nm (air)",
+   "type": "E1",
+   "A_s": {
+    "value": 30000000.0,
+    "unc": 5000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Cowan, et al., Astrophys. J. Lett. 747, L8 (2012), arXiv:1202.2378, Table 1",
+    "url": "https://arxiv.org/pdf/1202.2378",
+    "note": "derived by Roederer et al. from the branching ratios of Ubelis and Berzinsh, Phys. Scr. 28, 171 (1983) and the laser lifetime 3.1(5) ns of Bengtsson et al. 1992; printed uncertainty about 16 %, dominated by the lifetime. Not an independent measurement of A"
+   }
+  },
+  {
+   "lower_cm": 4750.712,
+   "upper_cm": 46652.738,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "5p4 3P1 - 5p3(4S°)6s 3S°1, 238.579 nm (air)",
+   "type": "E1",
+   "A_s": {
+    "value": 60000000.0,
+    "unc": 10000000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Cowan, et al., Astrophys. J. Lett. 747, L8 (2012), arXiv:1202.2378, Table 1",
+    "url": "https://arxiv.org/pdf/1202.2378",
+    "note": "derived by Roederer et al. from the branching ratios of Ubelis and Berzinsh, Phys. Scr. 28, 171 (1983) and the laser lifetime 3.1(5) ns of Bengtsson et al. 1992; printed uncertainty about 16 %, dominated by the lifetime. Not an independent measurement of A"
+   }
+  },
+  {
+   "lower_cm": 10557.877,
+   "upper_cm": 46652.738,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "5p4 1D2 - 5p3(4S°)6s 3S°1, 276.966 nm (air)",
+   "type": "E1",
+   "A_s": {
+    "value": 900000.0,
+    "unc": 150000.0,
+    "method": "compilation",
+    "source": "Roederer, Lawler, Cowan, et al., Astrophys. J. Lett. 747, L8 (2012), arXiv:1202.2378, Table 1",
+    "url": "https://arxiv.org/pdf/1202.2378",
+    "note": "derived by Roederer et al. from the branching ratios of Ubelis and Berzinsh, Phys. Scr. 28, 171 (1983) and the laser lifetime 3.1(5) ns of Bengtsson et al. 1992; printed uncertainty about 16 %, dominated by the lifetime. Not an independent measurement of A"
+   }
+  },
+  {
+   "lower_cm": 46652.738,
+   "upper_cm": 63556.707,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "5p3(4S°)6s 3S°1 - 5p3(4S°)7p a 5P1, 591.413 nm (air)",
+   "type": "E1",
+   "use": "second resonant step (printed as 591.53 / 591.6 nm in the thesis; 591.58 nm vacuum from NIST energies) of the COMPLIS three-step ionization scheme after 214.35 nm (Sifi thesis 2007, HAL tel-00252001); excitation line of the 7p 5P1 lifetime measurement of Zerne et al. 1994"
   }
  ],
  "not_found": [
-  "Lifetime of 5p3(4S°)7p 5P1: Zerne et al. 1994 give 128(11) ns for '7p 5P1', but NIST lists two levels, a 5P1 at 63556.707 and b 5P1 at 63669.944 cm-1 (the site draws the second); the abstract does not say which one was measured, so the value is not attached to a level.",
-  "Lifetimes of the 5p3 6s 5S°2 (44253.000) and 3S°1 (46652.738) resonance levels: no measurement could be opened. Ubelis & Berzinsh, Phys. Scr. 43, 162 (1991) (transition probabilities of 20 Te I lines by the Ladenburg method, normalised to known 6s lifetimes) - only the abstract (https://www.osti.gov/etdeweb/biblio/5622530) was readable, it prints no numbers.",
-  "Hyperfine constants of 123Te and 125Te (I = 1/2) in any Te I level: none found in an openable source (Ross & Murakawa, Phys. Rev. 85, 559 (1952) is paywalled).",
-  "Isotope shifts of the 214.28 nm line (COMPLIS: Sifi et al., Hyperfine Interact. 171, 173 (2006), 120-136Te): paper and the ISOLDE proposal INTC-P-561 could not be opened (publisher paywall / bot protection).",
   "Lifetimes of the metastable 5p4 3P1, 3P0, 1D2, 1S0 levels and A values of the forbidden lines (e.g. 3P2-1D2 at 947 nm, drawn by the site): no measurement located; Biémont et al. 1995 calculations are cited by Mulholland et al. (arXiv:2410.05958) but no table of Te I forbidden A values was found there.",
-  "Precise transition frequencies, laser-cooling or clock lines: none located for neutral Te."
+  "Precise transition frequencies, laser-cooling or clock lines: none located for neutral Te.",
+  "Ubelis & Berzinsh, Phys. Scr. 43, 162 (1991) (20 Te I transition probabilities) and Phys. Scr. 28, 171 (1983): full table still not read. Tried 2026-10-02: IOPscience PDF (captcha), web.archive.org (no snapshot), OSTI/ETDEWEB (abstract only), OpenAlex / Semantic Scholar (no open copy). Only the four 6s 3S1 lines renormalised by Roederer et al. 2012 are entered.",
+  "Dynefors, Phys. Scr. 11, 375 (1975) 'Lifetime Measurements in Se I and Te I': IOPscience marks it free-to-read but serves a captcha; no archive copy. Only the Te 3S1 value 2.4(4) ns quoted by Bengtsson et al. 1992 is entered; the lifetime of the second level he measured (called 1D2 by Zerne et al.) is still missing.",
+  "Zerne et al. 1994, pages 33-34 (decay curves, pressure extrapolation, comparison table): the Lund repository file is access-restricted (HTTP 403) and has no archive copy; only pages 31-32 (publisher preview) were read.",
+  "Ross & Murakawa, Phys. Rev. 85, 559 (1952) (optical hyperfine structure and isotope shifts of Te I/II lines): APS paywall, no open copy found. Hyperfine constants of 123,125Te are now entered only for 5p4 3P2, 6s 3S1 (Sifi thesis) and 6s 5S2 (Garpman & Svanberg 1972, magnitude only); none for other levels.",
+  "Electric quadrupole constants B: none for the stable isotopes (I = 1/2)."
  ],
- "conflicts": [],
- "notes": "Thin file: neutral Te has little modern precision spectroscopy in open sources. The three lifetimes come from an abstract (OSTI/ETDEWEB record of Z. Phys. D 32, 31), read through an automated page reader and not checked against the printed paper. NIST carries A values for six 5p4 - 5p3 6s lines (Ubelis & Berzinsh); nothing better was found. Abundances: NIST isotopic compositions (120Te 0.09(1) %, 130Te 34.08(62) %)."
+ "conflicts": [
+  "6s 3S°1 lifetime: laser 3.1(5) ns (Bengtsson et al. 1992) vs beam-foil 2.4(4) ns (Dynefors 1975) vs 2.2(2) ns derived from relative transition probabilities; laser value kept. The NIST ASD A values of the 214.3 / 238.3 / 238.6 nm lines (3.12e8, 4.04e7, 8.08e7 s^-1, Ubelis and Berzinsh scale) sum to 4.3e8 s^-1, i.e. tau x sum(A) = 1.34 with the 3.1 ns laser lifetime; the Roederer et al. 2012 values stored here (2.31e8, 3.0e7, 6.0e7, 9.0e5 s^-1) are renormalised to 3.1 ns and give 1.00.",
+  "7p level called '5P2' by Zerne et al. 1994 (99(8) ns): excitation / detection wavelengths 588 / 515 nm fit the NIST level 63669.944 cm^-1, which NIST labels 'b 5P1' (J = 1), not the NIST 5P2 level 63610.819 cm^-1 (589.53 / 516.44 nm in air, against 587.48 / 514.87 nm for 63669.944). The lifetime is stored on 63669.944; the J label of that level differs between Zerne et al. and NIST."
+ ],
+ "notes": "Thin file: neutral Te has little modern precision spectroscopy in open sources. The three lifetimes come from an abstract (OSTI/ETDEWEB record of Z. Phys. D 32, 31), read through an automated page reader and not checked against the printed paper. NIST carries A values for six 5p4 - 5p3 6s lines (Ubelis & Berzinsh); nothing better was found. Abundances: NIST isotopic compositions (120Te 0.09(1) %, 130Te 34.08(62) %). Third pass (2026-10-02): added the 6s 3S1 and 6s 5S2 lifetimes, the a 5P1 lifetime (identified through the excitation wavelengths printed on p. 32 of Zerne et al.), 123,125Te hyperfine constants and the 214 nm isotope shifts of 120-136Te from the open PhD thesis of R. Sifi (HAL tel-00252001, saved as pdf/Te_Sifi_2007.pdf). In that thesis A is the ground-level constant and A' the 6s 3S1 constant; isotope shifts are nu(A) - nu(130). Extra fields beyond SCHEMA.md: oscillator_strength_abs, isotope_shift_note, lifetime_alternatives."
 }

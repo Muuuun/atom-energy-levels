@@ -298,23 +298,23 @@
    "label": "3d9 4s4p 4P3/2",
    "J": "3/2",
    "lifetime": {
-    "value": 3.44e-07,
-    "unc": 2e-08,
+    "value": 3.18e-07,
+    "unc": 1.6e-08,
     "unit": "s",
-    "method": "compilation",
-    "source": "de Groote et al., Nature Physics 16, 620 (2020), Methods ('the 344(20) ns lifetime of the excited state' at 40,114.01 cm^-1; no reference given there)",
-    "url": "https://www.osti.gov/servlets/purl/1615730",
-    "note": "second-hand; origin (measurement or NIST A values) not stated in the source"
+    "method": "experiment",
+    "source": "Kowalski, zu Putlitz, Z. Phys. 208, 459 (1968), abstract (optical double resonance on the stable odd isotopes)",
+    "url": "https://web.archive.org/web/20180616175551/https://link.springer.com/article/10.1007%2FBF01379990",
+    "note": "direct measurement (optical double resonance), read in the abstract; shown in place of the second-hand 344(20) ns since 2026-10-02"
    },
    "lifetime_alternatives": [
     {
-     "value": 3.18e-07,
-     "unc": 1.6e-08,
+     "value": 3.44e-07,
+     "unc": 2e-08,
      "unit": "s",
-     "method": "experiment",
-     "source": "Kowalski, zu Putlitz, Z. Phys. 208, 459 (1968), abstract (optical double resonance on the stable odd isotopes)",
-     "url": "https://web.archive.org/web/20180616175551/https://link.springer.com/article/10.1007%2FBF01379990",
-     "note": "direct measurement read in the abstract; recommended over the second-hand 344(20) ns entry (see conflicts)"
+     "method": "compilation",
+     "source": "de Groote et al., Nature Physics 16, 620 (2020), Methods ('the 344(20) ns lifetime of the excited state' at 40,114.01 cm^-1; no reference given there)",
+     "url": "https://www.osti.gov/servlets/purl/1615730",
+     "note": "second-hand; origin (measurement or NIST A values) not stated in the source; replaced by the direct measurement on 2026-10-02"
     }
    ],
    "hyperfine": {
@@ -1042,7 +1042,7 @@
   "A values of the resonance lines: NIST ASD gives 1.376e8 (327.4 nm) and 1.395e8 s^-1 (324.8 nm), i.e. exactly 1/tau of Carlsson et al. 1989; subtracting the NIST 2P-2D branches gives 1.359e8 and 1.372e8 s^-1 (1.2 % and 1.6 % lower)",
   "2P-2D lines (510.6, 578.2, 570.0 nm): CIPT theory A = 1.13e6, 8.48e5, 8.23e4 s^-1 vs NIST 2.0e6, 1.65e6, 2.4e5 s^-1; NIST preferred",
   "65Cu 4p 2P3/2 hyperfine constants A = 208.4(2), B = -25.9(4) MHz appear in Vingerhoets' Table II as results and in the text as literature reference values; treat as literature-anchored",
-  "3d9 4s4p 4P3/2 lifetime: 318(16) ns measured by optical double resonance (Kowalski & zu Putlitz 1968, abstract read) vs 344(20) ns quoted without reference by de Groote et al. 2020 (existing entry, second-hand). Consistent within 1 sigma; the 1968 value is a direct measurement and is recommended, it is stored under lifetime_alternatives because the existing entry was left in place",
+  "3d9 4s4p 4P3/2 lifetime: 318(16) ns measured by optical double resonance (Kowalski & zu Putlitz 1968, abstract read) vs 344(20) ns quoted without reference by de Groote et al. 2020 (existing entry, second-hand). Consistent within 1 sigma; the 1968 value is a direct measurement and is recommended, it is the displayed value since 2026-10-02; the second-hand 344(20) ns is kept under lifetime_alternatives",
   "65Cu ground-state A: 6284.405(5) MHz (half the Ting & Lew 1957 splitting, existing entry) vs 6284.389972(60) MHz (Figger et al. 1967, as tabulated by Cocolios et al.): 3 sigma apart; 63Cu: 5866.915(5) vs 5866.908706(20) MHz. The Figger values are the more precise and are stored as alternatives (second-hand)",
   "3d9 4s4p 4P1/2 hyperfine A: 2432(8) / 2588(15) MHz for 63Cu / 65Cu measured by Cocolios et al. (in-gas-cell, GHz-wide lines) vs 2280.0 / 2425.53 MHz in the Kurucz compilation (attributed there to Budick & Levin 1968, whose abstract however deals with 4p 2P3/2): 6 % apart, unresolved",
   "63Cu 4p 2P3/2: A = 194.5(11), B = -28.0(6) (Vingerhoets 2010, entry) vs 194.3 / -26.2 (Bergstrom 1989 via Popov) vs 194.72 / -28.8 (Ney 1966 via Kurucz); 4p 2P1/2 A = 506.6 (Bergstrom) vs 505.6 (Ney)",

@@ -11,3 +11,12 @@ Round 5 (done 2026-10-01, 62 web searches): second pass on As Se Ga Zn | Au Cu M
 Still thin, blocked by paywalled / bot-protected papers (listed in each file's not_found), a further web pass will not help: Se Ga Au Er Mo Br I Ar Xe, and from round 4: Nd Ce Te Gd Tb Ir Pt Rn Th (key papers paywalled or bot-blocked; each file lists them under not_found).
 Decided by the user 2026-10-01: keep the page-reader lifetime tables (Tm, Ho, Dy, Co, Ni) but verify them; measured energies of the last 20 years override NIST, older ones do not. Still open: boron 249.75 nm isotope-shift sign.
 2026-10-02: Kr 819 nm branching set to 0.751(8); 95 old measured rates that differ from NIST moved to `A_s_older_measurement`; La, Sm, Pb, Bi lifetimes verified. Waiting for the owner's PDFs (待下载论文清单.md).
+
+## Round 7 (2026-10-02, evening): finish the table
+
+- Fm.json, No.json (measured levels, hyperfine constants, isotope shifts; each re-read by a second agent) -> pages.
+- heaviest_elements.json: Md, Lr, Rf-Og have no measured excited level -> 17 fact pages.
+- Open-access hunt for the 18 thin elements, with an independent verification pass: Ce 153 + Gd 136 + Pt 58 + Ir 62 + Nd 96 +
+  Er 103 lifetimes, Mo 14 lifetimes and 129 rates, Tb hyperfine constants of 95 levels, Ar 4p lifetimes and isotope shifts,
+  Xe and Rn hyperfine constants, Te and Ga lifetimes. Se: nothing. Still closed: see 待下载论文清单.md.
+- Fixed on the way: Xe 110 nm frequency stored in GHz instead of THz; two-digit multiplicities; random hyperfine isotope.

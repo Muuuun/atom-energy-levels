@@ -1,0 +1,234 @@
+{
+ "meta": {
+  "key": "no",
+  "slug": "nobelium",
+  "element": "Nobelium",
+  "symbol": "No",
+  "A": null,
+  "Z": 102,
+  "I": "9/2",
+  "kind": "nist",
+  "limit_cm": 53444.0,
+  "scale": "auto",
+  "spectrum": "No I",
+  "auto": true,
+  "has_lit": true,
+  "freq_isotope": "254",
+  "limit_text": "No$^+$ ionisation limit   53444.00 cm$^{-1}$  =  6.62621 eV  (187.112 nm)",
+  "lit_levels": 1,
+  "guide_tau": "Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists).",
+  "notes": "Nobelium exists only as single atoms from heavy-ion fusion (a few 254No ions per second at GSI Darmstadt); everything measured comes from two-step resonance ionization with detection by alpha decay. MEASURED: (1) the line 5f14 7s2 1S0 - 5f14 7s7p 1P1 at 29 961.457 cm^-1 in 254No with its Einstein coefficient (deduced from the saturation curve by a rate-equation fit, not from a decay curve), (2) its isotope shifts for 252, 253, 255No relative to 254No and the hyperfine constants of 253No, (3) the ionization potential 53 444.0(4) cm^-1 from a Rydberg series, (4) one further level at 29 652 (+8/-1) cm^-1, reached only by buffer-gas collisions from 1P1 and located through the convergence limit of two Rydberg series; its label 3D3 is an assignment. All wavenumbers were measured in 65-95 mbar argon and are not corrected for the pressure shift except the ionization potential. CALCULATED (method 'theory', energies only, accuracy a few hundred cm^-1): the eight other low levels in levels_not_in_nist from Dzuba, Safronova & Safronova 2014; their calculated g-factors are under 'g_J_theory' so that they cannot be mistaken for measurements. Isotope shifts are nu(first) - nu(second) in MHz: lighter isotopes lie at higher frequency (field shift dominates). frequency_THz values are derived from printed wavenumbers. Asymmetric uncertainties are stored as unc_plus / unc_minus with 'unc' = the larger side. Nuclear moments of 253No are not purely experimental: they combine the measured A and B with calculated atomic factors (B_e/J = -6.3(0.9) GHz I/mu_N, electric field gradient 0.476(70) GHz/eb, field-shift constant -95.8(7.0) GHz/fm^2). Non-schema keys used: unc_plus, unc_minus, wavenumber_cm, half_life, mu_*, Q_*, g_J_theory, collisional_decay_time, lifetime_not_direct, buffer_gas_quenching, rydberg_series, value_range_cm, saturation_photon_flux_note, alternatives, isotope."
+ },
+ "columns": [
+  {
+   "key": "1S",
+   "header": "^1S",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1P*",
+   "header": "^1P^{o}",
+   "group": null,
+   "width": 1.0
+  }
+ ],
+ "levels": [
+  {
+   "id": 0,
+   "E": 0.0,
+   "unc": 0.0,
+   "J": 0.0,
+   "conf": "7s2",
+   "term": "1S",
+   "parity": "even",
+   "g": null,
+   "name": "7s^{2}\\ ^1S_{0}",
+   "plain": "7s2 1S0",
+   "tau_ns": null,
+   "tau_tier": "stable",
+   "col": 0
+  },
+  {
+   "id": 1,
+   "E": 29961.457,
+   "unc": 0.041,
+   "J": 1.0,
+   "conf": "5f14.7s.7p",
+   "term": "1P*",
+   "parity": "odd",
+   "g": null,
+   "name": "5f^{14}7s7p\\ ^1P^{o}_{1}",
+   "plain": "5f147s7p 1P°1",
+   "E_tier": "exp",
+   "E_src": "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 496, Table 1 and Extended Data Table 1",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 734,
+    "A_unc": 46,
+    "B": 2820,
+    "B_unc": 690,
+    "tier": "exp",
+    "src": "Raeder, Ackermann, Backe, Beerwerth, Berengut, Block, et al., 'Probing sizes and shapes of nobelium isotopes by laser spectroscopy', Phys. Rev. Lett. 120, 232503 (2018), Table I, Fig. 1 and p. 232503-3"
+   },
+   "col": 1
+  }
+ ],
+ "transitions": [
+  {
+   "kind": "E1",
+   "freq": 898.2219,
+   "freq_unc": 0.0012,
+   "freq_src": "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 496 and Table 1",
+   "freq_tier": "exp",
+   "lower": 0,
+   "upper": 1,
+   "wn": 29961.4575,
+   "lam": 333.76213,
+   "air": 333.6662,
+   "use": "the only optical line of nobelium observed so far: first step of the two-step resonance ionization of single atoms in a buffer-gas cell (RADRIS) or gas jet (JetRIS), followed by 351 nm excimer light into the continuum or by a tunable second step (23 000 - 23 650 cm^-1) into Rydberg levels; used for the isotope shifts of 252-255No, the hyperfine structure of 253No and the ionization potential",
+   "isotope_shifts": {
+    "253-254": {
+     "value": 6720,
+     "unc": 180,
+     "src": "Raeder, Ackermann, Backe, Beerwerth, Berengut, Block, et al., 'Probing sizes and shapes of nobelium isotopes by laser spectroscopy', Phys. Rev. Lett. 120, 232503 (2018), Table I and p. 232503-4",
+     "url": "https://lirias.kuleuven.be/retrieve/1145d939-ecca-441d-b3b7-68cf3a5c8832"
+    },
+    "252-254": {
+     "value": 10080,
+     "unc": 690,
+     "src": "Raeder, Ackermann, Backe, Beerwerth, Berengut, Block, et al., 'Probing sizes and shapes of nobelium isotopes by laser spectroscopy', Phys. Rev. Lett. 120, 232503 (2018), Table I and p. 232503-4",
+     "url": "https://lirias.kuleuven.be/retrieve/1145d939-ecca-441d-b3b7-68cf3a5c8832"
+    },
+    "255-254": {
+     "value": -7700,
+     "unc": 800,
+     "src": "Warbinek, Rickert, Raeder, et al., 'Smooth trends in fermium charge radii and the impact of shell effects', Nature 634, 1075 (2024), Table 1",
+     "url": "https://www.nature.com/articles/s41586-024-08062-z.pdf"
+    }
+   },
+   "type": "E1",
+   "A": 420000000.0,
+   "A_tier": "exp",
+   "A_src": "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 496 and Table 1; analysis in Chhetri, Ackermann, Backe, Block, Cheal, Duellmann, et al., 'Impact of buffer gas quenching on the 1S0 - 1P1 ground-state atomic transition in nobelium', Eur. Phys. J. D 71, 195 (2017), Sec. 4.2 and Fig. 7",
+   "A_unc": 280000000.0,
+   "d": 4.808,
+   "d_tier": "exp",
+   "d_src": "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 496 and Table 1; analysis in Chhetri, Ackermann, Backe, Block, Cheal, Duellmann, et al., 'Impact of buffer gas quenching on the 1S0 - 1P1 ground-state atomic transition in nobelium', Eur. Phys. J. D 71, 195 (2017), Sec. 4.2 and Fig. 7 (from A)"
+  }
+ ],
+ "rydberg_levels": [],
+ "tables": [
+  {
+   "title": "Key transitions",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "λ air (nm)",
+    "ν (THz)",
+    "|⟨J‖er‖J′⟩| (ea₀)",
+    "A (s⁻¹)",
+    "Γ/2π up. (MHz)",
+    "branch (%)",
+    "Use"
+   ],
+   "aligns": "lrrrrrrrl",
+   "rows": [
+    [
+     "$7s^{2}\\ ^1S_{0}$ – $5f^{14}7s7p\\ ^1P^{o}_{1}$",
+     "333.7621",
+     "333.6662",
+     "898.2219(12)",
+     "4.808",
+     "4.200e+08",
+     "–",
+     "–",
+     "the only optical line of nobelium observed so far: first…"
+    ]
+   ],
+   "note": "λ, ν from the level energies of the cited literature (NIST lists no excited levels) unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{253}$No hyperfine structure  ($I$ = 9/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$5f^{14}7s7p\\ ^1P^{o}_{1}$",
+     "734(46)",
+     "2820(690)",
+     "F=7/2: -2744.50   F=9/2: -2614.00   F=11/2: +4008.00"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$7s^{2}\\ ^1S_{0}$ – $5f^{14}7s7p\\ ^1P^{o}_{1}$",
+     "333.762",
+     "253-254",
+     "6720(180)"
+    ],
+    [
+     "$7s^{2}\\ ^1S_{0}$ – $5f^{14}7s7p\\ ^1P^{o}_{1}$",
+     "333.762",
+     "252-254",
+     "10080(690)"
+    ],
+    [
+     "$7s^{2}\\ ^1S_{0}$ – $5f^{14}7s7p\\ ^1P^{o}_{1}$",
+     "333.762",
+     "255-254",
+     "-7700(800)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
+  }
+ ],
+ "validation": [
+  "levels: 2   lines < 2000 nm: 1   with matrix element: 1",
+  "transition-rate provenance: exp: 1",
+  "levels with a measured lifetime: 0"
+ ],
+ "sources": {
+  "IAEA Nuclear Data Services Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-02 through its data service": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=252no",
+  "half-life: IAEA Nuclear Data Services Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-02 through its data service; spin and moments: Raeder, Ackermann, Backe, Beerwerth, Berengut, Block, et al., 'Probing sizes and shapes of nobelium isotopes by laser spectroscopy', Phys. Rev. Lett. 120, 232503 (2018), Table I and p. 232503-3": "https://lirias.kuleuven.be/retrieve/1145d939-ecca-441d-b3b7-68cf3a5c8832",
+  "half-life and spin: IAEA Nuclear Data Services Live Chart of Nuclides ground-state table (ENSDF-based), retrieved 2026-10-02 through its data service; spin assumption of the laser fit: Warbinek, Rickert, Raeder, et al., 'Smooth trends in fermium charge radii and the impact of shell effects', Nature 634, 1075 (2024), Methods ('Centroid position')": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=255no",
+  "NIST ASD No I levels table (local copy data/nist/No_I_levels.tsv)": "https://physics.nist.gov/PhysRefData/ASD/levels_form.html",
+  "Chhetri, Ackermann, Backe, Block, Cheal, Droese, et al., 'Precision measurement of the first ionization potential of nobelium', Phys. Rev. Lett. 120, 263003 (2018), abstract, p. 263003-3/-4 and Table I": "https://lirias.kuleuven.be/retrieve/c23d5744-2dd9-4dd6-a0f2-b201b509a4cb",
+  "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 497 and Table 1": "http://web.archive.org/web/20220705234955/https://pure.rug.nl/ws/files/203347933/nature19345.pdf",
+  "Dzuba, Safronova & Safronova, 'Atomic properties of superheavy elements No, Lr, and Rf', Phys. Rev. A 90, 012504 (2014), arXiv:1406.0262v1, Table IV, column 'Present +Lamb' (configuration interaction + all-order calculation with quantum-electrodynamic correction)": "https://arxiv.org/pdf/1406.0262",
+  "Chhetri, Ackermann, Backe, Block, Cheal, Droese, et al., 'Precision measurement of the first ionization potential of nobelium', Phys. Rev. Lett. 120, 263003 (2018), p. 263003-4 and Table I": "https://lirias.kuleuven.be/retrieve/c23d5744-2dd9-4dd6-a0f2-b201b509a4cb",
+  "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 496, Table 1 and Extended Data Table 1": "http://web.archive.org/web/20220705234955/https://pure.rug.nl/ws/files/203347933/nature19345.pdf",
+  "P. Chhetri, 'Laser spectroscopy of nobelium isotopes', doctoral thesis, Technische Universitaet Darmstadt (2018), urn:nbn:de:tuda-tuprints-82047, Sec. 5.1.1, p. 57-58 and Fig. 5.4(a)": "http://web.archive.org/web/20240908074516/https://tuprints.ulb.tu-darmstadt.de/8204/8/PremadityaChhetri_Thesis.pdf",
+  "Chhetri, Ackermann, Backe, Block, Cheal, Droese, et al., 'Precision measurement of the first ionization potential of nobelium', Phys. Rev. Lett. 120, 263003 (2018), Fig. 1(c) and p. 263003-3": "https://lirias.kuleuven.be/retrieve/c23d5744-2dd9-4dd6-a0f2-b201b509a4cb",
+  "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 496 and Table 1": "http://web.archive.org/web/20220705234955/https://pure.rug.nl/ws/files/203347933/nature19345.pdf",
+  "Lantis, Claessens, Muenzberg, Auler, Block, Chhetri, et al., 'In-gas-jet laser spectroscopy of 254No with JetRIS', Phys. Rev. Research 6, 023318 (2024), Sec. IV B, IV C and Table II": "https://link.aps.org/pdf/10.1103/PhysRevResearch.6.023318",
+  "Raeder et al., Phys. Rev. Lett. 120, 232503 (2018) and Laatiaoui et al., Nature 538, 495 (2016) as tabulated in Warbinek, Rickert, Raeder, et al., 'Smooth trends in fermium charge radii and the impact of shell effects', Nature 634, 1075 (2024), Extended Data Table 1 (the two originals were opened but print only the isotope shift, not this centroid)": "https://www.nature.com/articles/s41586-024-08062-z.pdf",
+  "Raeder et al., Phys. Rev. Lett. 120, 232503 (2018) as tabulated in Warbinek, Rickert, Raeder, et al., 'Smooth trends in fermium charge radii and the impact of shell effects', Nature 634, 1075 (2024), Extended Data Table 1 (the original was opened but prints only the isotope shift, not this centroid)": "https://www.nature.com/articles/s41586-024-08062-z.pdf",
+  "Warbinek, Rickert, Raeder, et al., 'Smooth trends in fermium charge radii and the impact of shell effects', Nature 634, 1075 (2024), Table 1 and Extended Data Table 1": "https://www.nature.com/articles/s41586-024-08062-z.pdf",
+  "Raeder, Ackermann, Backe, Beerwerth, Berengut, Block, et al., 'Probing sizes and shapes of nobelium isotopes by laser spectroscopy', Phys. Rev. Lett. 120, 232503 (2018), Table I, Fig. 1 and p. 232503-3": "https://lirias.kuleuven.be/retrieve/1145d939-ecca-441d-b3b7-68cf3a5c8832",
+  "P. Chhetri, 'Laser spectroscopy of nobelium isotopes', doctoral thesis, Technische Universitaet Darmstadt (2018), urn:nbn:de:tuda-tuprints-82047, Sec. 5.1.1, p. 58": "http://web.archive.org/web/20240908074516/https://tuprints.ulb.tu-darmstadt.de/8204/8/PremadityaChhetri_Thesis.pdf",
+  "P. Chhetri, 'Laser spectroscopy of nobelium isotopes', doctoral thesis, Technische Universitaet Darmstadt (2018), urn:nbn:de:tuda-tuprints-82047, Sec. 5.1.1, p. 58 and Fig. 5.4(b)": "http://web.archive.org/web/20240908074516/https://tuprints.ulb.tu-darmstadt.de/8204/8/PremadityaChhetri_Thesis.pdf",
+  "Chhetri, Ackermann, Backe, Block, Cheal, Duellmann, et al., 'Impact of buffer gas quenching on the 1S0 - 1P1 ground-state atomic transition in nobelium', Eur. Phys. J. D 71, 195 (2017), Table 1 and Sec. 4.2": "http://web.archive.org/web/20240910050814/https://pure.rug.nl/ws/portalfiles/portal/48876863/Impact_of_buffer_gas_quenching_on_the.pdf",
+  "Warbinek, Rickert, Raeder, et al., 'Smooth trends in fermium charge radii and the impact of shell effects', Nature 634, 1075 (2024), Table 1": "https://www.nature.com/articles/s41586-024-08062-z.pdf",
+  "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 496 and Table 1; analysis in Chhetri, Ackermann, Backe, Block, Cheal, Duellmann, et al., 'Impact of buffer gas quenching on the 1S0 - 1P1 ground-state atomic transition in nobelium', Eur. Phys. J. D 71, 195 (2017), Sec. 4.2 and Fig. 7": "http://web.archive.org/web/20220705234955/https://pure.rug.nl/ws/files/203347933/nature19345.pdf",
+  "Raeder, Ackermann, Backe, Beerwerth, Berengut, Block, et al., 'Probing sizes and shapes of nobelium isotopes by laser spectroscopy', Phys. Rev. Lett. 120, 232503 (2018), Table I and p. 232503-4": "https://lirias.kuleuven.be/retrieve/1145d939-ecca-441d-b3b7-68cf3a5c8832",
+  "Chhetri, Ackermann, Backe, Block, Cheal, Droese, et al., 'Precision measurement of the first ionization potential of nobelium', Phys. Rev. Lett. 120, 263003 (2018), p. 263003-3/-4, Fig. 1-3; P. Chhetri, 'Laser spectroscopy of nobelium isotopes', doctoral thesis, Technische Universitaet Darmstadt (2018), urn:nbn:de:tuda-tuprints-82047, chapter 5": "https://lirias.kuleuven.be/retrieve/c23d5744-2dd9-4dd6-a0f2-b201b509a4cb"
+ }
+}

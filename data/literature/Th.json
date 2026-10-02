@@ -75,7 +75,36 @@
   {
    "nist_energy_cm": 0.0,
    "label": "6d2 7s2 3F2",
-   "J": "2"
+   "J": "2",
+   "hyperfine": {
+    "229": {
+     "A_MHz": 39.0,
+     "A_unc": 9.0,
+     "B_MHz": 390.0,
+     "B_unc": 180.0,
+     "method": "compilation",
+     "source": "Sonnenschein, Raeder, Hakimi, Moore, Wendt, J. Phys. B 45, 165005 (2012) (high-resolution resonance ionization spectroscopy), as quoted in Table 5.1 (p. 90) of I. Pohjalainen, PhD thesis, University of Jyvaskyla, Research Report 5/2018 (ISBN 978-951-39-7477-0, JYX repository, Wayback Machine copy); original not opened",
+     "url": "https://web.archive.org/web/20240606225429/https://jyx.jyu.fi/bitstream/handle/123456789/58547/978-951-39-7477-0.pdf",
+     "note": "B uncertainty printed asymmetric (+120/-180 MHz); the larger side is stored as B_unc; 229Th, I = 5/2; hyperfine components were only partly resolved (chi-square analysis, per the abstract of the original paper)"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 26096.98491,
+   "J": "3",
+   "label": "odd level, J = 3 (26096.98 cm^-1)",
+   "hyperfine": {
+    "229": {
+     "A_MHz": 93.0,
+     "A_unc": 18.0,
+     "B_MHz": 1200.0,
+     "B_unc": 240.0,
+     "method": "compilation",
+     "source": "Sonnenschein, Raeder, Hakimi, Moore, Wendt, J. Phys. B 45, 165005 (2012) (high-resolution resonance ionization spectroscopy), as quoted in Table 5.1 (p. 90) of I. Pohjalainen, PhD thesis, University of Jyvaskyla, Research Report 5/2018 (ISBN 978-951-39-7477-0, JYX repository, Wayback Machine copy); original not opened",
+     "url": "https://web.archive.org/web/20240606225429/https://jyx.jyu.fi/bitstream/handle/123456789/58547/978-951-39-7477-0.pdf",
+     "note": "A uncertainty printed asymmetric (+9/-18 MHz); the larger side is stored as A_unc; B uncertainty printed asymmetric (+240/-150 MHz); the larger side is stored as B_unc"
+    }
+   }
   },
   {
    "nist_energy_cm": 26113.26894,
@@ -89,6 +118,18 @@
      "method": "experiment",
      "source": "Claessens, Ivandikov, Brasseur, Dragoun, Duellmann, Ferrer, et al., Phys. Rev. A 112, 052810 (2025) [arXiv:2507.21946] (2025): centroid of the narrow-band in-gas-jet spectrum of neutral 229Th on the 382.947 nm line, fitted with the hyperfine constants of Sonnenschein et al. 2012 held fixed",
      "url": "https://arxiv.org/pdf/2507.21946"
+    }
+   },
+   "hyperfine": {
+    "229": {
+     "A_MHz": 39.0,
+     "A_unc": 9.0,
+     "B_MHz": -390.0,
+     "B_unc": 180.0,
+     "method": "compilation",
+     "source": "Sonnenschein, Raeder, Hakimi, Moore, Wendt, J. Phys. B 45, 165005 (2012) (high-resolution resonance ionization spectroscopy), as quoted in Table 5.1 (p. 90) of I. Pohjalainen, PhD thesis, University of Jyvaskyla, Research Report 5/2018 (ISBN 978-951-39-7477-0, JYX repository, Wayback Machine copy); original not opened",
+     "url": "https://web.archive.org/web/20240606225429/https://jyx.jyu.fi/bitstream/handle/123456789/58547/978-951-39-7477-0.pdf",
+     "note": "B uncertainty printed asymmetric (+60/-180 MHz); the larger side is stored as B_unc; the thesis table prints the same A = 39(9) MHz and |B| = 390 MHz for this level as for the ground level (with opposite sign of B); copied as printed, to be checked against the original paper"
     }
    }
   },
@@ -129,6 +170,22 @@
      "method": "experiment",
      "source": "Raeder, Sonnenschein, Gottwald, Moore, Reponen, Rothe, Trautmann, Wendt, J. Phys. B 44, 165005 (2011) [arXiv:1105.4646] (2011), Table 3 (NIST value 26878.16179(8) is far more precise)",
      "url": "https://arxiv.org/pdf/1105.4646"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 38278.8753,
+   "J": "1",
+   "label": "odd level, J = 1 (38278.88 cm^-1)",
+   "hyperfine": {
+    "229": {
+     "A_MHz": 630.0,
+     "A_unc": 30.0,
+     "B_MHz": 30.0,
+     "B_unc": 60.0,
+     "method": "compilation",
+     "source": "Sonnenschein, Raeder, Hakimi, Moore, Wendt, J. Phys. B 45, 165005 (2012) (high-resolution resonance ionization spectroscopy), as quoted in Table 5.1 (p. 90) of I. Pohjalainen, PhD thesis, University of Jyvaskyla, Research Report 5/2018 (ISBN 978-951-39-7477-0, JYX repository, Wayback Machine copy); original not opened",
+     "url": "https://web.archive.org/web/20240606225429/https://jyx.jyu.fi/bitstream/handle/123456789/58547/978-951-39-7477-0.pdf"
     }
    }
   },
@@ -304,10 +361,10 @@
  "not_found": [
   "radiative lifetimes of Th I levels: no measurement found. The beam-laser work of Simonsen, Worm, Jessen, Poulsen (Phys. Scr. 38, 370 (1988)) concerns Th II according to its title (OSTI record); three web searches for Th I lifetimes returned nothing",
   "experimental transition probabilities / branching fractions for Th I lines (NIST ASD lists none for the lines the site draws); only the three A-values printed in Raeder et al. 2011 Fig. 2 were recovered, second-hand",
-  "hyperfine A and B constants of neutral 229Th (ground level 3F2 and levels at 26096.98, 26113.27, 38278.88 cm^-1): measured by Sonnenschein, Moore, Raeder, Hakimi, Wendt, J. Phys. B 45, 165005 (2012), but the paper is paywalled; only the abstract (OSTI) was read and the thesis reprints it in the print version only",
-  "isotope shifts of 228-230Th on other lines (Sonnenschein et al., Eur. Phys. J. A 48, 52 (2012)): paywalled, not opened",
+  "original of the neutral 229Th hyperfine constants: Sonnenschein, Moore, Raeder, Hakimi, Wendt, J. Phys. B 45, 165005 (2012) is closed (OpenAlex and Semantic Scholar: no open copy; Sonnenschein's own thesis, JYFL Research Report 1/2015, was downloaded from a Wayback copy of JYX and reprints the article in the print version only). The four A/B pairs are now entered second-hand from Table 5.1 of Pohjalainen's thesis (Jyvaskyla 2018); the asymmetric error bars and the identical A, |B| of the ground and 26113 cm^-1 levels should be checked against the original",
+  "isotope shifts of 228-230Th on other lines (Sonnenschein et al., Eur. Phys. J. A 48, 52 (2012)): closed (Springer, OpenAlex lists no repository copy); neither Sonnenschein's nor Pohjalainen's thesis reprints the shift table. Not obtained",
   "Lande g-factors: the site already takes them from NIST; no newer measurement searched",
   "precise optical frequencies beyond the NIST Ritz values (hollow-cathode Fourier-transform line list, 'The Spectrum of Thorium from 250 nm to 5500 nm: Ritz Wavelengths and Optimized Energy Levels'): none - the NIST Th I Ritz energies (uncertainties ~1e-4 cm^-1) are already the best available"
  ],
- "notes": "Natural thorium is 232Th (I = 0, no hyperfine structure); 229Th (I = 5/2) is the nuclear-clock isotope. Isotope shifts are nu(A) - nu(232); Raeder et al. give level shifts in cm^-1, converted here with 1 cm^-1 = 29979.2458 MHz. The pulsed-laser level energies of Raeder et al. for 232Th are much less precise than NIST and are listed only so that the 228-230Th values can be compared on the same scale. The intermediate levels re-measured by Li et al. 2025 (38807.60(6), 39096.36(15), 38366.56(15) cm^-1) agree with NIST and were not entered. The 2025 Leuven paper also determined the Th+ ionization potential, 12.300(9) eV."
+ "notes": "Natural thorium is 232Th (I = 0, no hyperfine structure); 229Th (I = 5/2) is the nuclear-clock isotope. Isotope shifts are nu(A) - nu(232); Raeder et al. give level shifts in cm^-1, converted here with 1 cm^-1 = 29979.2458 MHz. The pulsed-laser level energies of Raeder et al. for 232Th are much less precise than NIST and are listed only so that the 228-230Th values can be compared on the same scale. The intermediate levels re-measured by Li et al. 2025 (38807.60(6), 39096.36(15), 38366.56(15) cm^-1) agree with NIST and were not entered. The 2025 Leuven paper also determined the Th+ ionization potential, 12.300(9) eV. Second pass (2026-10-02): 229Th hyperfine A and B of the ground level and of the odd levels at 26096.98, 26113.27 and 38278.88 cm^-1 added second-hand (method 'compilation'); where the printed uncertainty is asymmetric the larger side is stored and the printed form is in the note."
 }

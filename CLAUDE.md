@@ -48,33 +48,36 @@ Matching is by NIST level energy plus `J` / `lower_J` / `upper_J`; isotope-speci
 Briefs for research subagents must say: do the research yourself (no delegation), no e-mail or personal identifier in
 requests, mark derived / second-hand values, list conflicts.
 
-## Status (2026-10-02)
+## Status (2026-10-02, evening)
 
-- 99 elements (hydrogen to einsteinium) have a page and a literature file. Campaign log: `data/literature/QUEUE.md`.
-- Pa U Np Pu Am Cm Bk Cf Es pages are built from `levels_not_in_nist` (Blaise & Wyart tables, archived web copy): NIST lists
-  only their ground level. `meta.lit_levels` switches the page wording to "from the literature". Fm, No: owner decided not to add.
-- Lifetime limits carry `tau_bound` ("<" / ">") and are shown as limits.
+- All 118 cells of the periodic table open a page. 101 elements (hydrogen to einsteinium, fermium, nobelium) have a diagram
+  page and a literature file; the 17 elements with no measured excited level (Md, Lr, Rf-Og) have a fact page (ground state,
+  ionisation energy, calculated lines marked theory) built by `fact_pages()` in `build_site.py` from
+  `data/literature/heaviest_elements.json`. Campaign log: `data/literature/QUEUE.md`.
+- Pa-Es, Fm, No pages are built from `levels_not_in_nist`: NIST lists only their ground level. `meta.lit_levels` (most excited
+  levels literature-only) switches the page wording to "from the literature". Fm and No are registered through `LIT_ONLY` in
+  `species.py` (the owner reversed the earlier "do not add" decision on 2026-10-02).
+- Lifetime limits carry `tau_bound` ("<" / ">"); calculated g factors carry `g_tier: "theory"` and are tagged on the page.
 - Old measured rates (owner's decision 2026-10-02): where a measurement older than 20 years differs from the NIST rate of the
   same line, NIST is shown; `check_old_rates.py` lists candidates, `revert_old_rates.py` moves them to `A_s_older_measurement`.
-- Papers the owner has to download for the 18 thin elements: `data/literature/待下载论文清单.md`; PDFs go in `data/literature/pdf/`.
-- Round 4 (the last 31 elements) was searched on 2026-10-01; every element with NIST data now has a literature file.
-- Round 5 (2026-10-01) re-ran the 16 thin files. Still thin: Se Ga Au Er Mo Br I Ar Xe and Nd Ce Te Gd Tb Ir Pt Rn Th.
-  Their key papers are paywalled or bot-blocked (each file lists them under `not_found`); another web pass will not help,
-  the owner has to supply the PDFs.
-- Old measurements vs NIST: where a subagent brings measured A values older than 20 years for lines NIST already rates,
-  keep NIST (see `A_s_older_measurement` in C.json).
+- Round 6 (2026-10-02): an open-access hunt (repositories, theses, Wayback copies; no pirate sites) filled much of the 18 thin
+  elements, each ingest re-read by a second agent. What is still closed is in `data/literature/待下载论文清单.md` (17 starred
+  papers); only owner-supplied PDFs help now. PDFs live in `data/literature/pdf/` (git-ignored: never publish them).
+- Useful routes found: Wayback copies of Optica abstract pages embed full tables; HAL serves PDFs to plain curl; OpenAlex and
+  Semantic Scholar key-less quotas run out after a few hundred calls per day.
 - Research subagents sometimes store 1/sum(A) from NIST as a "lifetime": move such values out of `lifetime` (see Hf.json).
-- Why the campaign stopped: a session can make at most 200 WebSearch calls, counted across the main conversation and
-  every subagent (Claude Code docs, tools reference, "session search limit"). Resuming a session does not reset the count;
-  a new session or `/clear` does. The owner can raise (not remove) the cap by setting the environment variable
-  `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION` before launching Claude Code. Do not change the owner's settings yourself.
-  Spend the budget deliberately: few research subagents at a time, and tell each one the budget is shared.
+  A second-hand lifetime with lifetime x sum(A_NIST) well above 1 is not shown (Xe 89860.015, Nd 21345.572).
+- NIST attaches a few E1 lines to a level whose J forbids them (Nd 468.48 nm); `build_nist` moves such a line to the level
+  within 1 cm^-1 that allows it, or drops it.
+- The hyperfine isotope of an element page is chosen deterministically (abundance, number of levels, then heaviest).
+- Web-search cap: a session can make at most 200 WebSearch calls, shared with every subagent; WebFetch / curl do not count.
+  The owner can raise it with `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`. Do not change the owner's settings yourself.
 
 ## Decisions still owed by the owner
 
-1. (Decided 2026-10-01: keep and verify. Decided: recent measured energies override NIST; Fr 8S, 8P3/2, 9P, 10P now measured,
-   Fr 7D (measured 2000) stays NIST.)
-2. Boron 249.75 nm isotope-shift sign (paper text contradicts its own absolute frequencies; stored as +5031.3 MHz).
+None. (Boron 249.75 nm isotope-shift sign: resolved 2026-10-02, Tables I and II of Maass et al. 2019 define nu(10B) - nu(11B)
+and print it positive. Copper 4P3/2 lifetime: the direct 1968 measurement 318(16) ns is shown.)
+The owner still has to submit the sitemap in Google Search Console and, if wanted, download the papers on the list.
 
 ## Known limitations
 

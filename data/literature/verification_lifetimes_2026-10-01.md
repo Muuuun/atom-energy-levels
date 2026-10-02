@@ -49,3 +49,47 @@ internal gA check.
 - Bi (Andersen, Madsen, Sørensen 1972, 5 lifetimes): second read of the publisher table: 4.7(1.0), 4.3(4), 5.5(5), 27(3), 3.8(1.0) ns,
   equal to the stored values. The table has a sixth row, read as "7s 4P3/2 (second entry) 4.8(4) ns"; its level label is evidently
   misread (probably the 7s 2P level), so it is not stored. Needs the PDF.
+
+## Sm, the 13 single-read lifetimes: second reading (2026-10-02)
+The 13 levels are those of Den Hartog & Lawler, J. Phys. B 46, 185001 (2013), Table 1 that have no line in the 2013 rate paper
+(and no NIST rate either, so check 1 is not available for them).
+
+Result: no independent printing could be opened, so the check asked for is NOT done. What was done instead is a second,
+machine reading of the same deposit, which rules out a transcription error but not an error in the deposit itself.
+
+- Second reading: the spreadsheet file of the Figshare deposit (Table1.xls, https://ndownloader.figshare.com/files/1480528,
+  listed at https://iop.figshare.com/articles/dataset/_Radiative_lifetimes_of_120_odd_parity_levels_of_neutral_Sm/1012705)
+  was downloaded and its cells read by program, not by a page reader. Table 1, columns "Energy", "J", "Laser wavelength in air (nm)",
+  "This work" and "Other LIF experiment" (lifetimes in ns):
+  - 25572.10 J=4: 415.121, 429.082; 441; no other value
+  - 27263.07 J=7: 430.127, 705.655; 196; no other value
+  - 27406.90 J=4: 385.733, 624.812; 89.5; other 27.5(10) (footnote l)
+  - 27627.25 J=2: 365.732, 382.481; 59.7; other 59.6(12) (footnote j)
+  - 27671.35 J=2: 365.142, 381.836; 27.2; other 28.5(8) (j)
+  - 27709.40 J=2: 381.282, 591.262; 43.5; other 43.3(6) (j)
+  - 27992.35 J=3: 589.896; 47.7; other 48.0(9) (j)
+  - 28250.02 J=7: 412.606; 483; other 449(10) (l)
+  - 28913.97 J=1: 345.755, 349.289; 54.7; other 36.0(21) (j)
+  - 29023.96 J=5: 386.013, 399.834; 17.0; no other value
+  - 29041.31 J=2: 347.742, 354.140; 42.8; other 42.8(10) (j)
+  - 29200.62 J=2: 352.152, 360.764; 47.2; other 47.7(11) (j)
+  - 29282.28 J=3: 589.141, 608.265; 30.5; other 32.0(20) (j)
+  All 13 "This work" values, all 13 J values and all 10 "other experiment" values equal what Sm.json stores. Sm.json was not changed.
+- Row identity: each printed laser wavelength, converted to a wavenumber and subtracted from the level energy, lands on a NIST
+  even level (0, 292.58, 811.92, 1489.55, 2273.09, 3125.46, 4020.66, 10801.10, 11044.90, 11406.50, 12313.11,
+  12846.64, 13095.75 cm^-1) within about 0.2 cm^-1, so no row is shifted against its energy. (This test is a calculation of mine and
+  says nothing about the lifetime column.)
+- Weak outside support, inside the same table only: for 7 of the 13 levels the earlier experiment quoted in the last column
+  agrees with the 2013 value within 5 % (27627.25, 27671.35, 27709.40, 27992.35, 29041.31, 29200.62, 29282.28) and for 28250.02
+  within 8 %. 27406.90 and 28913.97 disagree with the earlier experiment (already in the `conflicts` list of Sm.json).
+  25572.10, 27263.07 and 29023.96 have no other measurement at all.
+- Where an independent printing was looked for and not obtained:
+  - the article itself (https://iopscience.iop.org/article/10.1088/0953-4075/46/18/185001 and /pdf): publisher robot check,
+    no table reached; the Internet Archive holds only redirects to that robot check; OpenAlex and Semantic Scholar list no open copy;
+    the OSTI record (https://www.osti.gov/etdeweb/biblio/22214446) is bibliographic only.
+  - the nine citing papers listed by OpenAlex: the only one that plausibly reprints these lifetimes is Yu, Wang, Yang, "New branching
+    fractions, transition probabilities, and oscillator strengths for Sm I levels", J. Quant. Spectrosc. Radiat. Transfer (2026),
+    doi 10.1016/j.jqsrt.2026.110003 (closed access, publisher page returns "forbidden"; whether it reprints them is not verified).
+    The 2013 rate paper has no line from these 13 levels; the others concern even-parity levels or do not tabulate lifetimes.
+- Still open: these 13 values rest on two readings of one deposit. To close it the owner needs the PDF of the 2013 lifetime
+  paper or of the 2026 paper above.

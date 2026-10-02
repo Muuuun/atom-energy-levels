@@ -1,0 +1,1779 @@
+{
+ "description": "Fact sheet for the elements with no measured excited atomic level: Md (101), Lr (103), Rf-Og (104-118). Not an element file of the SCHEMA.md kind (no NIST level to attach data to); compute.py does not read it.",
+ "compiled": "2026-10-02",
+ "status_no_measured_levels": {
+  "statement": "As of June 2026 no excited level of the neutral atom has been measured by optical or laser spectroscopy for any of these 17 elements. The heaviest element with measured atomic levels is nobelium (Z = 102); for lawrencium the GSI laser search has so far found no transition.",
+  "sources": [
+   {
+    "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), abstract and p. 1-2: 'The heaviest chemical element for which atomic levels were experimentally determined to date is nobelium'; p. 9: 'did not reveal a clear indication of a transition'",
+    "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+   },
+   {
+    "source": "S.-M. Udrescu, A. Belley, J.D. Holt et al., 'Probing the electroweak structure of nuclei with rare atoms and molecules', arXiv:2608.18219 (2026), p. 38: 'establishing nobelium as the heaviest element studied by optical spectroscopy'",
+    "url": "https://arxiv.org/abs/2608.18219"
+   },
+   {
+    "source": "J. Li, V. Dzuba, J. Quant. Spectrosc. Radiat. Transf. 247, 106943 (2020), arXiv:2002.08033v1, p. 2 (Md: no measurements)",
+    "url": "https://arxiv.org/abs/2002.08033"
+   },
+   {
+    "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 48: 'Only for the elements up to the actinides ionization potentials have been determined experimentally'",
+    "url": "https://arxiv.org/abs/2301.02553"
+   },
+   {
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02): only the ground level for Md, Lr, Rf, Db, Sg, Bh, Hs; no neutral-atom data at all for Mt-Og",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   }
+  ]
+ },
+ "elements": {
+  "Md": {
+   "Z": 101,
+   "name": "Mendelevium",
+   "ground_configuration": {
+    "value": "[Rn] 5f13 7s2",
+    "method": "nist",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Md I",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ground_term": {
+    "value": "2F*7/2",
+    "J": "7/2",
+    "method": "nist",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Md I (also data/nist/Md_I_levels.tsv)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ionization_energy_eV": {
+    "value": 6.59,
+    "unc": 0.13,
+    "method": "experiment",
+    "isotope": "251",
+    "source": "T.K. Sato et al., J. Am. Chem. Soc. 140, 14609 (2018), p. 14610 Table 1 and p. 14611 Table 2 (surface ionisation of 251Md on a tantalum surface at 2900 K, mass separation, alpha counting)",
+    "url": "http://web.archive.org/web/20240819001911/https://pubs.acs.org/doi/pdf/10.1021/jacs.8b09068",
+    "note": "The conversion from the measured effective ionisation energy IP1* = 6.43(13) eV to IP1 uses calculated partition functions (correction 0.16(1) eV, same table).",
+    "alternatives": [
+     {
+      "value": 6.58,
+      "unc": 0.07,
+      "method": "theory",
+      "note": "semi-empirical; NIST prints it in square brackets; NIST reference L16359 = J. Sugar, J. Chem. Phys. 60, 4103 (1974); limit [53100(600)] cm-1 in data/nist/Md_I_levels.tsv",
+      "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Md I",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+     },
+     {
+      "value": 6.557,
+      "method": "theory",
+      "note": "CCSD(T) calculation, 'present work' row",
+      "source": "T.K. Sato et al., J. Am. Chem. Soc. 140, 14609 (2018), p. 14611 Table 2",
+      "url": "http://web.archive.org/web/20240819001911/https://pubs.acs.org/doi/pdf/10.1021/jacs.8b09068"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "Only the first ionisation potential, by surface ionisation of 251Md atoms one at a time on a hot tantalum surface followed by mass separation and alpha counting (6.59(13) eV). No atomic level or optical transition has been measured.",
+    "sources": [
+     {
+      "source": "T.K. Sato et al., J. Am. Chem. Soc. 140, 14609 (2018)",
+      "url": "http://web.archive.org/web/20240819001911/https://pubs.acs.org/doi/pdf/10.1021/jacs.8b09068"
+     },
+     {
+      "source": "J. Li, V. Dzuba, J. Quant. Spectrosc. Radiat. Transf. 247, 106943 (2020), arXiv:2002.08033v1, p. 2: 'To the best of our knowledge, there are no similar measurements or calculations for Md'",
+      "url": "https://arxiv.org/abs/2002.08033"
+     },
+     {
+      "source": "M. Block, M. Laatiaoui, S. Raeder, Prog. Part. Nucl. Phys. 116, 103834 (2021), arXiv:2010.11941, Fig. 2 (p. 8: Md appears only with theoretical predictions) and p. 41",
+      "url": "https://arxiv.org/abs/2010.11941"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "258Md",
+    "half_life": {
+     "value": 51.59,
+     "unc": 0.29,
+     "unit": "d"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 258Md",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 28817,
+     "wavelength_nm": 347.02,
+     "lower": "5f13 7s2, J=7/2 (ground)",
+     "upper": "5f13 7s7p, J=5/2 (state no. 12)",
+     "A_s": 364000000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "J. Li, V. Dzuba, J. Quant. Spectrosc. Radiat. Transf. 247, 106943 (2020), arXiv:2002.08033v1, p. 9 Table III (energy) and p. 10 Table IV (wavelength, A)",
+     "url": "https://arxiv.org/abs/2002.08033"
+    },
+    {
+     "wavenumber_cm": 28796,
+     "wavelength_nm": 347.27,
+     "lower": "5f13 7s2, J=7/2 (ground)",
+     "upper": "5f13 7s7p, J=9/2 (state no. 11)",
+     "A_s": 320000000.0,
+     "type": "E1",
+     "method": "theory",
+     "note": "added by the verification pass (2026-10-02): second-strongest ground-state line of Table IV, transition 1-11",
+     "source": "J. Li, V. Dzuba, J. Quant. Spectrosc. Radiat. Transf. 247, 106943 (2020), arXiv:2002.08033v1, p. 9 Table III (energy) and p. 10 Table IV (wavelength, A)",
+     "url": "https://arxiv.org/abs/2002.08033"
+    },
+    {
+     "wavenumber_cm": 20647,
+     "wavelength_nm": 484.33,
+     "lower": "5f13 7s2, J=7/2 (ground)",
+     "upper": "5f13 7s7p, J=9/2 (state no. 5)",
+     "A_s": 18900000.0,
+     "type": "E1",
+     "method": "theory",
+     "note": "added by the verification pass (2026-10-02): third-strongest ground-state line of Table IV, transition 1-5",
+     "source": "J. Li, V. Dzuba, J. Quant. Spectrosc. Radiat. Transf. 247, 106943 (2020), arXiv:2002.08033v1, p. 9 Table III (energy) and p. 10 Table IV (wavelength, A)",
+     "url": "https://arxiv.org/abs/2002.08033"
+    },
+    {
+     "wavenumber_cm": 21013,
+     "wavelength_nm": 475.9,
+     "lower": "5f13 7s2, J=7/2 (ground)",
+     "upper": "5f13 7s7p, J=5/2 (state no. 6)",
+     "A_s": 18800000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "J. Li, V. Dzuba, J. Quant. Spectrosc. Radiat. Transf. 247, 106943 (2020), arXiv:2002.08033v1, p. 9 Table III and p. 10 Table IV",
+     "url": "https://arxiv.org/abs/2002.08033"
+    },
+    {
+     "wavenumber_cm": 25548,
+     "wavelength_nm": 391.42,
+     "lower": "5f13 7s2, J=7/2 (ground)",
+     "upper": "5f13 7s7p, J=5/2 (state no. 8)",
+     "A_s": 2980000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "J. Li, V. Dzuba, J. Quant. Spectrosc. Radiat. Transf. 247, 106943 (2020), arXiv:2002.08033v1, p. 9 Table III and p. 10 Table IV",
+     "url": "https://arxiv.org/abs/2002.08033",
+     "note": "transition 1-8; weaker than six other ground-state lines of Table IV (kept because it was in the first version of this file)"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Lr": {
+   "Z": 103,
+   "name": "Lawrencium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 7s2 7p",
+    "method": "theory",
+    "note": "From calculation, never confirmed by spectroscopy. NIST lists it (reference L11515 = E. Eliav, U. Kaldor, Y. Ishikawa, Phys. Rev. A 52, 291 (1995), a calculation); the measured ionisation potential agrees with the calculations that give this configuration (Rickert et al. 2026, p. 2).",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Lr I (also data/nist/Lr_I_levels.tsv)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ground_term": {
+    "value": "2P*1/2",
+    "J": "1/2",
+    "method": "theory",
+    "note": "calculated, as listed by NIST (reference L11515, Eliav et al. 1995)",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Lr I",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ionization_energy_eV": {
+    "value": 4.96,
+    "unc": 0.05,
+    "unc_plus": 0.05,
+    "unc_minus": 0.04,
+    "method": "experiment",
+    "isotope": "256",
+    "source": "T.K. Sato et al., J. Am. Chem. Soc. 140, 14609 (2018), p. 14611 Table 2 and text (weighted average of the 2015 and 2018 surface-ionisation measurements of 256Lr)",
+    "url": "http://web.archive.org/web/20240819001911/https://pubs.acs.org/doi/pdf/10.1021/jacs.8b09068",
+    "note": "Printed as 4.96 +0.05 -0.04 eV; 'unc' holds the larger side. NIST adopts 4.96(5) eV (limit 40005(400) cm-1) from this paper (NIST reference L21372).",
+    "alternatives": [
+     {
+      "value": 4.96,
+      "unc": 0.08,
+      "unc_plus": 0.08,
+      "unc_minus": 0.07,
+      "method": "experiment",
+      "isotope": "256",
+      "note": "first measurement; number read in the abstract (Europe PMC record), the full text was not opened",
+      "source": "T.K. Sato et al., Nature 520, 209 (2015), abstract",
+      "url": "https://europepmc.org/article/MED/25855457"
+     },
+     {
+      "value": 4.963,
+      "unc": 0.015,
+      "method": "theory",
+      "note": "relativistic coupled-cluster calculation quoted in the same abstract and in Sato 2018 Table 2",
+      "source": "T.K. Sato et al., Nature 520, 209 (2015), abstract",
+      "url": "https://europepmc.org/article/MED/25855457"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "The first ionisation potential, by surface ionisation of 256Lr atoms one at a time (4.96 +0.05/-0.04 eV), and a lower limit of 13.0 eV for the second ionisation potential from a charge-exchange reaction (second-hand, Kwarsick et al., cited by Rickert et al.). A laser search at GSI (two-step resonance ionisation of 255Lr, about 1500 cm-1 scanned in total around the transitions predicted near 20 300 and 28 600 cm-1) found no atomic transition.",
+    "sources": [
+     {
+      "source": "T.K. Sato et al., J. Am. Chem. Soc. 140, 14609 (2018)",
+      "url": "http://web.archive.org/web/20240819001911/https://pubs.acs.org/doi/pdf/10.1021/jacs.8b09068"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), abstract, p. 2 and p. 9",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "266Lr",
+    "half_life": {
+     "value": 22,
+     "unc": 14,
+     "unit": "h"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 266Lr",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 28580,
+     "lower": "7s2 7p 2P*1/2 (ground)",
+     "upper": "7s2 7d 2D3/2",
+     "A_s": 61400000.0,
+     "type": "E1",
+     "method": "theory",
+     "note": "CI+MBPT; the authors estimate +-300 cm-1 on energies and 40% on A",
+     "source": "E.V. Kahl, S. Raeder, E. Eliav, A. Borschevsky, J.C. Berengut, Phys. Rev. A 104, 052810 (2021), arXiv:2103.11287v2, arXiv p. 7 Table IV and p. 13 Table VIII",
+     "url": "https://arxiv.org/abs/2103.11287"
+    },
+    {
+     "wavenumber_cm": 20485,
+     "lower": "7s2 7p 2P*1/2 (ground)",
+     "upper": "7s2 8s 2S1/2",
+     "A_s": 33100000.0,
+     "type": "E1",
+     "method": "theory",
+     "note": "CI+MBPT; the coupled-cluster value of the same level is 20533(303) cm-1 (Table II)",
+     "source": "E.V. Kahl, S. Raeder, E. Eliav, A. Borschevsky, J.C. Berengut, Phys. Rev. A 104, 052810 (2021), arXiv:2103.11287v2, arXiv p. 7 Table IV and p. 12 Table VIII",
+     "url": "https://arxiv.org/abs/2103.11287"
+    },
+    {
+     "wavenumber_cm": 25381,
+     "lower": "7s2 7p 2P*1/2 (ground)",
+     "upper": "7s 7p2 4P1/2",
+     "A_s": 25100000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "E.V. Kahl, S. Raeder, E. Eliav, A. Borschevsky, J.C. Berengut, Phys. Rev. A 104, 052810 (2021), arXiv:2103.11287v2, arXiv p. 7 Table IV and p. 12 Table VIII",
+     "url": "https://arxiv.org/abs/2103.11287"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Rf": {
+   "Z": 104,
+   "name": "Rutherfordium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d2 7s2",
+    "method": "theory",
+    "note": "calculated; listed by NIST (reference L11503 = E. Eliav, U. Kaldor, Y. Ishikawa, Phys. Rev. Lett. 74, 1079 (1995))",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Rf I (also data/nist/Rf_I_levels.tsv)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ground_term": {
+    "value": "3F2",
+    "J": "2",
+    "method": "theory",
+    "note": "calculated, as listed by NIST",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Rf I",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ionization_energy_eV": {
+    "value": 6.02,
+    "unc": 0.04,
+    "method": "theory",
+    "note": "NIST prints it in parentheses (theoretical): limit (48580(350)) cm-1, NIST reference L19691 = Dzuba et al. 2016, whose Table II gives the calculated 48579 cm-1 next to the earlier coupled-cluster value 48500(500) cm-1.",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Rf I; V.A. Dzuba, M.S. Safronova, U.I. Safronova, A. Kramida, Phys. Rev. A 94, 042503 (2016), Table II (author manuscript)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data",
+    "alternatives": [
+     {
+      "value": 6.01,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Dzuba, Safronova, Safronova, Phys. Rev. A 90, 012504 (2014); Eliav, Kaldor, Borschevsky (2011)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ],
+    "url_dzuba2016": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5207219/"
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only chemistry with single atoms: liquid-phase studies of (oxo)halide complexes and gas-phase adsorption chromatography of volatile compounds.",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "267Rf",
+    "half_life": {
+     "value": 2.5,
+     "unc": 1.5,
+     "unit": "h"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 267Rf",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 2737,
+     "lower": "7s2 6d2 3F2 (ground)",
+     "upper": "7s2 7p6d 3F*2",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only; the paper gives no transition rate, so these three lines are the lowest odd levels it names as connected to the ground state by E1, not a ranking by strength",
+     "source": "S.O. Allehabi, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 104, 052811 (2021), arXiv:2109.13716v2, p. 5 Table III and p. 8 Table X",
+     "url": "https://arxiv.org/abs/2109.13716"
+    },
+    {
+     "wavenumber_cm": 8028,
+     "lower": "7s2 6d2 3F2 (ground)",
+     "upper": "7s2 7p6d 3D*1",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no rate given",
+     "source": "S.O. Allehabi, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 104, 052811 (2021), arXiv:2109.13716v2, p. 5 Table III and p. 8 Table X",
+     "url": "https://arxiv.org/abs/2109.13716"
+    },
+    {
+     "wavenumber_cm": 11235,
+     "lower": "7s2 6d2 3F2 (ground)",
+     "upper": "7s2 7p6d 3D*2",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no rate given",
+     "source": "S.O. Allehabi, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 104, 052811 (2021), arXiv:2109.13716v2, p. 5 Table III and p. 8 Table X",
+     "url": "https://arxiv.org/abs/2109.13716"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Db": {
+   "Z": 105,
+   "name": "Dubnium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d3 7s2",
+    "method": "theory",
+    "note": "calculated; listed by NIST (reference L12825 = M. Dolg, H. Stoll, H. Preuss, R.M. Pitzer, J. Phys. Chem. 97, 5852 (1993))",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Db I (also data/nist/Db_I_levels.tsv)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ground_term": {
+    "value": "4F3/2",
+    "J": "3/2",
+    "method": "theory",
+    "note": "calculated, as listed by NIST; same term in Lackenby et al. 2018, Table II",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Db I",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ionization_energy_eV": {
+    "value": 6.8,
+    "unc": 0.5,
+    "method": "theory",
+    "note": "NIST prints it in parentheses (theoretical); limit (55000(4000)) cm-1, NIST reference L12825 (Dolg et al. 1993)",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Db I",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data",
+    "alternatives": [
+     {
+      "value": 7.01,
+      "method": "theory",
+      "note": "CIPT calculation; the 2018 paper of the same authors prints 56744 cm-1 in the text (arXiv p. 4) and 56733 cm-1 in its Table II",
+      "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 16 Table VIII",
+      "url": "https://arxiv.org/abs/1902.06819"
+     },
+     {
+      "value": 6.814,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Dzuba, Phys. Rev. A 93, 032519 (2016); Lackenby et al. 2018; H. Arbely, A. Borschevsky, thesis, Groningen (2018)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only chemistry with single atoms: liquid-phase studies of (oxo)halide complexes and gas-phase chromatography (the element was identified chemically by gas thermochromatography).",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "268Db",
+    "half_life": {
+     "value": 29,
+     "unc": 3,
+     "unit": "h"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 268Db",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 29832,
+     "lower": "6d3 7s2 4F3/2 (ground)",
+     "upper": "6d3 7s7p 4D*1/2 (state 37)",
+     "A_s": 59700000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 022518 (2018), arXiv:1804.08244v1, p. 5 Table II (energy) and p. 6 Table III (rate)",
+     "url": "https://arxiv.org/abs/1804.08244"
+    },
+    {
+     "wavenumber_cm": 21811,
+     "lower": "6d3 7s2 4F3/2 (ground)",
+     "upper": "6d2 7s2 7p 6F*3/2 (state 17)",
+     "A_s": 7850000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 022518 (2018), arXiv:1804.08244v1, p. 5 Table II and p. 6 Table III",
+     "url": "https://arxiv.org/abs/1804.08244"
+    },
+    {
+     "wavenumber_cm": 27479,
+     "lower": "6d3 7s2 4F3/2 (ground)",
+     "upper": "6d2 7s2 7p 2S*1/2 (state 28)",
+     "A_s": 6830000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 022518 (2018), arXiv:1804.08244v1, p. 5 Table II and p. 6 Table III",
+     "url": "https://arxiv.org/abs/1804.08244"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Sg": {
+   "Z": 106,
+   "name": "Seaborgium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d4 7s2",
+    "method": "theory",
+    "note": "calculated; listed by NIST (NIST reference L7830 = E. Johnson, V. Pershina, B. Fricke, J. Phys. Chem. A 103, 8458 (1999))",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Sg I (also data/nist/Sg_I_levels.tsv)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ground_term": {
+    "value": "5D0",
+    "J": "0",
+    "method": "theory",
+    "note": "NIST gives only J = 0 (no term); the LS label is from the calculation cited here",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV; NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02)",
+    "url": "https://arxiv.org/abs/1902.06819"
+   },
+   "ionization_energy_eV": {
+    "value": 7.8,
+    "unc": 0.5,
+    "method": "theory",
+    "note": "NIST prints it in square brackets (semi-empirical / extrapolated calculation); NIST reference L7830 = E. Johnson, V. Pershina, B. Fricke, J. Phys. Chem. A 103, 8458 (1999)",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Sg I",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data",
+    "alternatives": [
+     {
+      "value": 8.22,
+      "method": "theory",
+      "note": "CIPT calculation; the authors quote 'a few percent' uncertainty",
+      "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 16 Table VIII",
+      "url": "https://arxiv.org/abs/1902.06819"
+     },
+     {
+      "value": 7.7,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read in a review table. The same number appears as 7.70 eV in the 'RHF' column (relativistic Hartree-Fock with semi-empirical core-polarisation correction, attributed there to V.A. Dzuba, Phys. Rev. A 93, 032519 (2016)) of Lackenby et al. 2019, arXiv:1902.06819v2, p. 16 Table VIII, which was opened; Dzuba 2016 itself was not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Lackenby et al., Phys. Rev. A 99, 042509 (2019); Dzuba, Phys. Rev. A 93, 032519 (2016)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only chemistry with single atoms: liquid-phase (oxo)halide studies and gas-phase adsorption chromatography of volatile compounds.",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "269Sg",
+    "half_life": {
+     "value": 5,
+     "unc": 2,
+     "unit": "min"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 269Sg",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 24382,
+     "lower": "6d4 7s2 5D0 (ground)",
+     "upper": "6d3 7s2 7p, J=1 odd (state 14)",
+     "A_s": 13400000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    },
+    {
+     "wavenumber_cm": 40073,
+     "lower": "6d4 7s2 5D0 (ground)",
+     "upper": "6d3 7s2 7p, J=1 odd (state 51)",
+     "A_s": 11900000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    },
+    {
+     "wavenumber_cm": 30868,
+     "lower": "6d4 7s2 5D0 (ground)",
+     "upper": "6d3 7s2 7p, J=1 odd (state 25)",
+     "A_s": 6970000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Bh": {
+   "Z": 107,
+   "name": "Bohrium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d5 7s2",
+    "method": "theory",
+    "note": "calculated; listed by NIST (NIST reference L13544 = E. Johnson et al., J. Chem. Phys. 116, 1862 (2002))",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Bh I (also data/nist/Bh_I_levels.tsv)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ground_term": {
+    "value": "6S5/2",
+    "J": "5/2",
+    "method": "theory",
+    "note": "NIST gives only J = 5/2 (no term); the LS label is from the calculation cited here",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV; NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02)",
+    "url": "https://arxiv.org/abs/1902.06819"
+   },
+   "ionization_energy_eV": {
+    "value": 7.7,
+    "unc": 0.5,
+    "method": "theory",
+    "note": "NIST prints it in square brackets (semi-empirical / extrapolated calculation); NIST reference L13544 = E. Johnson et al., J. Chem. Phys. 116, 1862 (2002)",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Bh I",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data",
+    "alternatives": [
+     {
+      "value": 8.03,
+      "method": "theory",
+      "note": "CIPT calculation; the authors quote 'a few percent' uncertainty",
+      "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 16 Table VIII",
+      "url": "https://arxiv.org/abs/1902.06819"
+     },
+     {
+      "value": 8.6,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read in a review table. The same number appears as 8.63 eV in the 'RHF' column (relativistic Hartree-Fock with semi-empirical core-polarisation correction, attributed there to V.A. Dzuba, Phys. Rev. A 93, 032519 (2016)) of Lackenby et al. 2019, arXiv:1902.06819v2, p. 16 Table VIII, which was opened; Dzuba 2016 itself was not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Lackenby et al., Phys. Rev. A 99, 042509 (2019); Dzuba, Phys. Rev. A 93, 032519 (2016)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only gas-phase adsorption chromatography of a volatile compound with single atoms (Steinegger 2021 names Mt, Ds and Rg as the only superheavy elements up to Fl without any chemical study; the specific Bh compound was not read in a source opened here).",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "270Bh",
+    "half_life": {
+     "value": 3.8,
+     "unc": 3.0,
+     "unit": "min"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 270Bh",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 32814,
+     "lower": "6d5 7s2 6S5/2 (ground)",
+     "upper": "6d4 7s2 7p, J=7/2 odd (state 21)",
+     "A_s": 31200000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819",
+     "note": "the authors quote about 2000 cm-1 uncertainty for the odd levels of Bh"
+    },
+    {
+     "wavenumber_cm": 29885,
+     "lower": "6d5 7s2 6S5/2 (ground)",
+     "upper": "6d4 7s2 7p, J=3/2 odd (state 18)",
+     "A_s": 30000000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    },
+    {
+     "wavenumber_cm": 31078,
+     "lower": "6d5 7s2 6S5/2 (ground)",
+     "upper": "6d4 7s2 7p, J=7/2 odd (state 19)",
+     "A_s": 23300000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Hs": {
+   "Z": 108,
+   "name": "Hassium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d6 7s2",
+    "method": "theory",
+    "note": "calculated; listed by NIST (NIST reference L13544 = E. Johnson et al., J. Chem. Phys. 116, 1862 (2002))",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Hs I (also data/nist/Hs_I_levels.tsv)",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data"
+   },
+   "ground_term": {
+    "value": "5D4",
+    "J": "4",
+    "method": "theory",
+    "note": "NIST gives only J = 4 (no term); the LS label is from the calculation cited here",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV; NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02)",
+    "url": "https://arxiv.org/abs/1902.06819"
+   },
+   "ionization_energy_eV": {
+    "value": 7.6,
+    "unc": 0.5,
+    "method": "theory",
+    "note": "NIST prints it in square brackets (semi-empirical / extrapolated calculation); NIST reference L13544 = E. Johnson et al., J. Chem. Phys. 116, 1862 (2002)",
+    "source": "NIST Atomic Spectra Database, Ground States and Ionization Energies table (retrieved 2026-10-02), row Hs I",
+    "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl?spectra=Md-Og&units=1&format=3&at_num_out=on&sp_name_out=on&ion_charge_out=on&el_name_out=on&shells_out=on&level_out=on&ion_conf_out=on&e_out=0&unc_out=on&biblio=on&submit=Retrieve+Data",
+    "alternatives": [
+     {
+      "value": 8.52,
+      "method": "theory",
+      "note": "CIPT calculation; the authors quote 'a few percent' uncertainty",
+      "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 16 Table VIII",
+      "url": "https://arxiv.org/abs/1902.06819"
+     },
+     {
+      "value": 9.5,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read in a review table. The same number appears as 9.52 eV in the 'RHF' column (relativistic Hartree-Fock with semi-empirical core-polarisation correction, attributed there to V.A. Dzuba, Phys. Rev. A 93, 032519 (2016)) of Lackenby et al. 2019, arXiv:1902.06819v2, p. 16 Table VIII, which was opened; Dzuba 2016 itself was not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Lackenby et al., Phys. Rev. A 99, 042509 (2019); Dzuba, Phys. Rev. A 93, 032519 (2016)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only gas-phase adsorption chromatography of a volatile compound with single atoms (Steinegger 2021 names Mt, Ds and Rg as the only superheavy elements up to Fl without any chemical study; the specific Hs compound was not read in a source opened here).",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "269Hs",
+    "half_life": {
+     "value": 15,
+     "unc": 7,
+     "unit": "s"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 269Hs",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt",
+    "alternative": {
+     "isotope": "277Hs isomer (277Hsm)",
+     "half_life": {
+      "value": 130,
+      "unc": 100,
+      "unit": "s"
+     },
+     "note": "NUBASE2020 lists this isomer (excitation energy from systematics) with a longer but poorly known half-life"
+    }
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 39652,
+     "lower": "6d6 7s2 5D4 (ground)",
+     "upper": "6d5 7s2 7p, J=3 odd (state 35)",
+     "A_s": 80000000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819",
+     "note": "state 35 is labelled 8o3 in Table IV and 7o3 in Table V of the paper"
+    },
+    {
+     "wavenumber_cm": 39268,
+     "lower": "6d6 7s2 5D4 (ground)",
+     "upper": "6d5 7s2 7p, J=5 odd (state 33)",
+     "A_s": 77500000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    },
+    {
+     "wavenumber_cm": 34812,
+     "lower": "6d6 7s2 5D4 (ground)",
+     "upper": "6d5 7s2 7p, J=3 odd (state 24)",
+     "A_s": 35500000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Mt": {
+   "Z": 109,
+   "name": "Meitnerium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d7 7s2",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Mt_I_levels.tsv holds the 'No data are available' page).",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 13 Table IV",
+    "url": "https://arxiv.org/abs/1902.06819"
+   },
+   "ground_term": {
+    "value": "4F9/2",
+    "J": "9/2",
+    "method": "theory",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 13 Table IV",
+    "url": "https://arxiv.org/abs/1902.06819"
+   },
+   "ionization_energy_eV": {
+    "value": 9.86,
+    "method": "theory",
+    "note": "CIPT calculation; the authors quote 'a few percent' uncertainty; the review of Smits et al. (arXiv:2301.02553, p. 49) considers CIPT values of the late 6d elements too high",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 16 Table VIII",
+    "url": "https://arxiv.org/abs/1902.06819",
+    "alternatives": [
+     {
+      "value": 10.4,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read in a review table. The same number appears as 10.4 eV in the 'RHF' column (relativistic Hartree-Fock with semi-empirical core-polarisation correction, attributed there to V.A. Dzuba, Phys. Rev. A 93, 032519 (2016)) of Lackenby et al. 2019, arXiv:1902.06819v2, p. 16 Table VIII, which was opened; Dzuba 2016 itself was not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Lackenby et al., Phys. Rev. A 99, 042509 (2019); Dzuba, Phys. Rev. A 93, 032519 (2016)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "Nothing beyond nuclear decay properties: no atomic-physics measurement and no chemistry experiment (Steinegger 2021: Mt, Ds and Rg 'have yet dodged a chemical assessment completely').",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "277Mt",
+    "half_life": {
+     "value": 9,
+     "unc": 6,
+     "unit": "s"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 277Mt",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt",
+    "alternative": {
+     "isotope": "278Mt",
+     "half_life": {
+      "value": 6,
+      "unc": 3,
+      "unit": "s"
+     },
+     "note": "NUBASE2020 also lists the isomer 276Mtm with 7(3) s; none of these exceeds 277Mt"
+    }
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 38027,
+     "lower": "6d7 7s2 4F9/2 (ground)",
+     "upper": "6d7 7s7p 6F*11/2 (state 17)",
+     "A_s": 33300000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    },
+    {
+     "wavenumber_cm": 33505,
+     "lower": "6d7 7s2 4F9/2 (ground)",
+     "upper": "6d7 7s7p 6D*9/2 (state 13)",
+     "A_s": 12300000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    },
+    {
+     "wavenumber_cm": 35117,
+     "lower": "6d7 7s2 4F9/2 (ground)",
+     "upper": "6d6 7s2 7p, J=7/2 odd (state 15)",
+     "A_s": 946000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 99, 042509 (2019), arXiv:1902.06819v2, p. 12-13 Tables III-IV (energy) and p. 14 Table V (rate)",
+     "url": "https://arxiv.org/abs/1902.06819"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Ds": {
+   "Z": 110,
+   "name": "Darmstadtium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d8 7s2",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Ds_I_levels.tsv holds the 'No data are available' page).",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 9 Table VIII",
+    "url": "https://arxiv.org/abs/1910.01414"
+   },
+   "ground_term": {
+    "value": "3F4",
+    "J": "4",
+    "method": "theory",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 9 Table VIII",
+    "url": "https://arxiv.org/abs/1910.01414"
+   },
+   "ionization_energy_eV": {
+    "value": 10.158,
+    "value_cm": 81933,
+    "method": "theory",
+    "note": "derived: the paper prints 81933 cm-1; converted here with 1 eV = 8065.544 cm-1. The review of Smits et al. (arXiv:2301.02553, p. 49) considers the CIPT values of the last 6d elements too high.",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 9 Table VIII",
+    "url": "https://arxiv.org/abs/1910.01414",
+    "alternatives": [
+     {
+      "value": 9.562,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: H. Arbely, A. Borschevsky, thesis, Groningen (2018)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "Nothing beyond nuclear decay properties: no atomic-physics measurement and no chemistry experiment (Steinegger 2021: Mt, Ds and Rg 'have yet dodged a chemical assessment completely').",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "281Ds",
+    "half_life": {
+     "value": 14,
+     "unc": 3,
+     "unit": "s"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 281Ds",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt",
+    "alternative": {
+     "isotope": "282Ds",
+     "half_life": {
+      "value": 4.2,
+      "unc": 3.3,
+      "unit": "min"
+     },
+     "note": "NUBASE2020 lists this longer but very uncertain value (discovery year 2016)"
+    }
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 40173,
+     "lower": "6d8 7s2 3F4 (ground)",
+     "upper": "J=5 odd (state 2o5)",
+     "A_s": 50900000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 8 Table VII",
+     "url": "https://arxiv.org/abs/1910.01414"
+    },
+    {
+     "wavenumber_cm": 43915,
+     "lower": "6d8 7s2 3F4 (ground)",
+     "upper": "J=4 odd (state 4o4)",
+     "A_s": 22200000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 8 Table VII",
+     "url": "https://arxiv.org/abs/1910.01414"
+    },
+    {
+     "wavenumber_cm": 34919,
+     "lower": "6d8 7s2 3F4 (ground)",
+     "upper": "J=4 odd (state 2o4)",
+     "A_s": 12300000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 8 Table VII",
+     "url": "https://arxiv.org/abs/1910.01414"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Rg": {
+   "Z": 111,
+   "name": "Roentgenium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d9 7s2",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Rg_I_levels.tsv holds the 'No data are available' page).",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 5 Table III",
+    "url": "https://arxiv.org/abs/1910.01414"
+   },
+   "ground_term": {
+    "value": "2D5/2",
+    "J": "5/2",
+    "method": "theory",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 5 Table III",
+    "url": "https://arxiv.org/abs/1910.01414"
+   },
+   "ionization_energy_eV": {
+    "value": 11.175,
+    "value_cm": 90132,
+    "method": "theory",
+    "note": "derived: the paper prints 90132 cm-1; converted here with 1 eV = 8065.544 cm-1. The review of Smits et al. (arXiv:2301.02553, p. 49) considers the CIPT values of the last 6d elements too high.",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 9 Table VIII",
+    "url": "https://arxiv.org/abs/1910.01414",
+    "alternatives": [
+     {
+      "value": 11.03,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Eliav, Kaldor, Borschevsky (2011); Dzuba 2016; Kaygorodov et al., Phys. Rev. A 105, 062805 (2022)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "Nothing beyond nuclear decay properties: no atomic-physics measurement and no chemistry experiment (Steinegger 2021: Mt, Ds and Rg 'have yet dodged a chemical assessment completely').",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "282Rg",
+    "half_life": {
+     "value": 130,
+     "unc": 50,
+     "unit": "s"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 282Rg",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 42709,
+     "lower": "6d9 7s2 2D5/2 (ground)",
+     "upper": "6d9 7s7p 4P*5/2",
+     "A_s": 22900000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 5 Table III and p. 8 Table VII",
+     "url": "https://arxiv.org/abs/1910.01414"
+    },
+    {
+     "wavenumber_cm": 32677,
+     "lower": "6d9 7s2 2D5/2 (ground)",
+     "upper": "6d8 7s2 7p, J=3/2 odd (state 1o3/2)",
+     "A_s": 4200000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 5 Table III and p. 8 Table VII",
+     "url": "https://arxiv.org/abs/1910.01414"
+    },
+    {
+     "wavenumber_cm": 34398,
+     "lower": "6d9 7s2 2D5/2 (ground)",
+     "upper": "6d8 7s2 7p, J=5/2 odd (state 1o5/2)",
+     "A_s": 1920000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 5 Table III and p. 8 Table VII",
+     "url": "https://arxiv.org/abs/1910.01414"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Cn": {
+   "Z": 112,
+   "name": "Copernicium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d10 7s2",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Cn_I_levels.tsv holds the 'No data are available' page).",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 6 Table V",
+    "url": "https://arxiv.org/abs/1910.01414"
+   },
+   "ground_term": {
+    "value": "1S0",
+    "J": "0",
+    "method": "theory",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 6 Table V",
+    "url": "https://arxiv.org/abs/1910.01414"
+   },
+   "ionization_energy_eV": {
+    "value": 12.145,
+    "value_cm": 97956,
+    "method": "theory",
+    "note": "derived: the paper prints 97956 cm-1; converted here with 1 eV = 8065.544 cm-1. The review of Smits et al. (arXiv:2301.02553, p. 49) considers the CIPT values of the last 6d elements too high.",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 9 Table VIII",
+    "url": "https://arxiv.org/abs/1910.01414",
+    "alternatives": [
+     {
+      "value": 12.02,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Eliav, Kaldor, Borschevsky (2011); Kaygorodov et al., Phys. Rev. A 105, 062805 (2022); Pershina et al., J. Chem. Phys. 128, 024707 (2008)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only gas-phase adsorption chromatography of single atoms in the elemental state, which confirmed Cn as the least reactive member of group 12.",
+    "sources": [
+     {
+      "source": "P. Steinegger, Commun. Chem. 4, 87 (2021)",
+      "url": "https://europepmc.org/article/PMC/PMC9814703"
+     },
+     {
+      "source": "A. Yakushev et al., Front. Chem. 12, 1474820 (2024), introduction",
+      "url": "https://europepmc.org/article/PMC/PMC11464923"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "285Cn",
+    "half_life": {
+     "value": 30,
+     "unc": 8,
+     "unit": "s"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 285Cn",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt",
+    "alternative": {
+     "isotope": "286Cn",
+     "half_life": {
+      "value": 30,
+      "unc": 30,
+      "unit": "s"
+     }
+    }
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 47293,
+     "lower": "6d10 7s2 1S0 (ground)",
+     "upper": "6d10 7s7p 3P*1",
+     "type": "intercombination",
+     "method": "theory",
+     "note": "level energy only, no rate given for Cn I in this paper; the 2008 calculation puts the same level at 53144-55057 cm-1",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 101, 012514 (2020), arXiv:1910.01414v1, p. 6 Table V",
+     "url": "https://arxiv.org/abs/1910.01414"
+    },
+    {
+     "wavenumber_cm": 58260,
+     "lower": "6d10 7s2 1S0 (ground)",
+     "upper": "6d9 7s2 7p, J=1 odd, (6d5/2,7p3/2)",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no rate given",
+     "source": "T.H. Dinh, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 78, 062502 (2008), arXiv:0810.2507v1, p. 5 Table III (method B)",
+     "url": "https://arxiv.org/abs/0810.2507"
+    },
+    {
+     "wavenumber_cm": 78697,
+     "lower": "6d10 7s2 1S0 (ground)",
+     "upper": "6d10 7s7p 1P*1",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no rate given; method A of the same table gives 79637 cm-1",
+     "source": "T.H. Dinh, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 78, 062502 (2008), arXiv:0810.2507v1, p. 5 Table III (method B)",
+     "url": "https://arxiv.org/abs/0810.2507"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Nh": {
+   "Z": 113,
+   "name": "Nihonium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d10 7s2 7p",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Nh_I_levels.tsv holds the 'No data are available' page).",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 6 Table 3",
+    "url": "https://arxiv.org/abs/1608.03048"
+   },
+   "ground_term": {
+    "value": "2P*1/2",
+    "J": "1/2",
+    "method": "theory",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 6 Table 3",
+    "url": "https://arxiv.org/abs/1608.03048"
+   },
+   "ionization_energy_eV": {
+    "value": 7.37,
+    "method": "theory",
+    "note": "CI + all-order calculation; the authors expect about 1% accuracy for energies",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 6 Table 3 and p. 8 Table 6",
+    "url": "https://arxiv.org/abs/1608.03048",
+    "alternatives": [
+     {
+      "value": 7.49,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Kaygorodov et al. 2022; Guo et al., J. Phys. B (2022); Eliav et al., Phys. Rev. A 53, 3926 (1996); Pershina et al., J. Phys. Chem. A 112, 13712 (2008)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only gas-solid chromatography of single 284Nh atoms: adsorption enthalpy on silicon oxide -dH_ads = 58 (+8/-3) kJ/mol, a chemical (not spectroscopic) quantity.",
+    "sources": [
+     {
+      "source": "A. Yakushev et al., Front. Chem. 12, 1474820 (2024), abstract",
+      "url": "https://europepmc.org/article/PMC/PMC11464923"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "286Nh",
+    "half_life": {
+     "value": 12,
+     "unc": 5,
+     "unit": "s"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 286Nh",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt",
+    "alternative": {
+     "isotope": "290Nh",
+     "half_life": {
+      "value": 8,
+      "unc": 6,
+      "unit": "s"
+     }
+    }
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 36665,
+     "lower": "7s2 7p 2P*1/2 (ground)",
+     "upper": "7s2 8s 2S1/2",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no transition rate given in the paper",
+     "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 6 Table 3",
+     "url": "https://arxiv.org/abs/1608.03048"
+    },
+    {
+     "wavenumber_cm": 48768,
+     "lower": "7s2 7p 2P*1/2 (ground)",
+     "upper": "7s2 7d 2D3/2",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no transition rate given in the paper",
+     "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 6 Table 3",
+     "url": "https://arxiv.org/abs/1608.03048"
+    },
+    {
+     "wavenumber_cm": 49774,
+     "lower": "7s2 7p 2P*1/2 (ground)",
+     "upper": "7s2 9s 2S1/2",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no transition rate given in the paper",
+     "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 6 Table 3",
+     "url": "https://arxiv.org/abs/1608.03048"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Fl": {
+   "Z": 114,
+   "name": "Flerovium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d10 7s2 7p2",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Fl_I_levels.tsv holds the 'No data are available' page).",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 4",
+    "url": "https://arxiv.org/abs/1608.03048"
+   },
+   "ground_term": {
+    "value": "1S0",
+    "J": "0",
+    "method": "theory",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 4",
+    "url": "https://arxiv.org/abs/1608.03048",
+    "note": "J = 0; the LS label is nominal because spin-orbit mixing is strong (7p1/2 subshell closed)"
+   },
+   "ionization_energy_eV": {
+    "value": 8.37,
+    "method": "theory",
+    "note": "CI + all-order calculation; the authors expect about 1% accuracy for energies",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 4 and p. 8 Table 6",
+    "url": "https://arxiv.org/abs/1608.03048",
+    "alternatives": [
+     {
+      "value": 8.65,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Eliav, Kaldor, Borschevsky (2011); Kaygorodov et al. 2022; Pershina et al. 2008; Borschevsky et al., Chem. Phys. Lett. 480, 49 (2009)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only gas-phase adsorption chromatography of single atoms on gold and silicon oxide surfaces (first study: -dH_ads on gold = 34 (+54/-11) kJ/mol, quoted second-hand from Eichler et al. 2010); a volatile, weakly reactive metal.",
+    "sources": [
+     {
+      "source": "A. Yakushev et al., Front. Chem. 10, 976635 (2022), introduction and conclusion",
+      "url": "https://europepmc.org/article/PMC/PMC9453156"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "289Fl",
+    "half_life": {
+     "value": 2.1,
+     "unc": 0.6,
+     "unit": "s"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 289Fl",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt",
+    "alternative": {
+     "isotope": "290Fl",
+     "half_life": {
+      "value": 80,
+      "unc": 60,
+      "unit": "s"
+     },
+     "note": "NUBASE2020 lists this longer but very uncertain value (discovery year 2016)"
+    }
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 44362,
+     "lower": "7s2 7p2 1S0 (ground, J=0)",
+     "upper": "7s2 8s7p 3P*1",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no transition rate given in the paper",
+     "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 4",
+     "url": "https://arxiv.org/abs/1608.03048"
+    },
+    {
+     "wavenumber_cm": 57244,
+     "lower": "7s2 7p2 1S0 (ground, J=0)",
+     "upper": "7s2 7p7d 1P*1",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no transition rate given in the paper",
+     "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 4",
+     "url": "https://arxiv.org/abs/1608.03048"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Mc": {
+   "Z": 115,
+   "name": "Moscovium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d10 7s2 7p3",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Mc_I_levels.tsv holds the 'No data are available' page).",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 5",
+    "url": "https://arxiv.org/abs/1608.03048"
+   },
+   "ground_term": {
+    "value": "2P*3/2 (label as printed; J = 3/2)",
+    "J": "3/2",
+    "method": "theory",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 5",
+    "url": "https://arxiv.org/abs/1608.03048"
+   },
+   "ionization_energy_eV": {
+    "value": 5.56,
+    "method": "theory",
+    "note": "CI + all-order calculation; the authors expect about 1% accuracy for energies",
+    "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 5 and p. 8 Table 6",
+    "url": "https://arxiv.org/abs/1608.03048",
+    "alternatives": [
+     {
+      "value": 5.574,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: Borschevsky et al., Phys. Rev. A 91, 020501 (2015); Dzuba and Flambaum 2016",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "No atomic-physics measurement. Only gas-solid chromatography of single 288Mc atoms: adsorption enthalpy on silicon oxide -dH_ads = 54 (+11/-5) kJ/mol, a chemical (not spectroscopic) quantity.",
+    "sources": [
+     {
+      "source": "A. Yakushev et al., Front. Chem. 12, 1474820 (2024), abstract",
+      "url": "https://europepmc.org/article/PMC/PMC11464923"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "290Mc",
+    "half_life": {
+     "value": 840,
+     "unc": 360,
+     "unit": "ms"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 290Mc",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 18377,
+     "lower": "7p3, J=3/2 odd (ground)",
+     "upper": "7p2 8s 2S1/2",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no transition rate given in the paper",
+     "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 5",
+     "url": "https://arxiv.org/abs/1608.03048"
+    },
+    {
+     "wavenumber_cm": 33092,
+     "lower": "7p3, J=3/2 odd (ground)",
+     "upper": "7p2 7d 2D3/2",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no transition rate given in the paper",
+     "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 5",
+     "url": "https://arxiv.org/abs/1608.03048"
+    },
+    {
+     "wavenumber_cm": 33273,
+     "lower": "7p3, J=3/2 odd (ground)",
+     "upper": "7p2 7d 2D5/2",
+     "type": "E1",
+     "method": "theory",
+     "note": "level energy only, no transition rate given in the paper",
+     "source": "V.A. Dzuba, V.V. Flambaum, Hyperfine Interact. 237, 160 (2016), arXiv:1608.03048v2, p. 7 Table 5",
+     "url": "https://arxiv.org/abs/1608.03048"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Lv": {
+   "Z": 116,
+   "name": "Livermorium",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d10 7s2 7p4",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Lv_I_levels.tsv holds the 'No data are available' page).",
+    "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6",
+    "url": "https://arxiv.org/abs/2505.22895"
+   },
+   "ground_term": {
+    "value": "3P2",
+    "J": "2",
+    "method": "theory",
+    "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6",
+    "url": "https://arxiv.org/abs/2505.22895"
+   },
+   "ionization_energy_eV": {
+    "value": 6.749,
+    "value_cm": 54433,
+    "method": "theory",
+    "note": "derived: the paper prints 54433 cm-1; converted here with 1 eV = 8065.544 cm-1. The authors estimate about 1% accuracy.",
+    "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 7 Table VIII",
+    "url": "https://arxiv.org/abs/2505.22895",
+    "alternatives": [
+     {
+      "value": 6.855,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: A. Borschevsky, L.F. Pasteka, V. Pershina, E. Eliav, U. Kaldor, Phys. Rev. A 91, 020501 (2015)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "Nothing beyond nuclear decay properties: no atomic-physics measurement and no chemistry experiment (Yakushev et al. 2024 name Lv and Ts as targets of future chemical research).",
+    "sources": [
+     {
+      "source": "A. Yakushev et al., Front. Chem. 12, 1474820 (2024), conclusion",
+      "url": "https://europepmc.org/article/PMC/PMC11464923"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "293Lv",
+    "half_life": {
+     "value": 70,
+     "unc": 30,
+     "unit": "ms"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 293Lv",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt",
+    "alternative": {
+     "isotope": "293Lv isomer (293Lvm)",
+     "half_life": {
+      "value": 80,
+      "unc": 60,
+      "unit": "ms"
+     },
+     "note": "NUBASE2020 lists this isomer (excitation energy from systematics, 720# keV) with a nominally longer but poorly known half-life"
+    }
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 24790,
+     "lower": "7p4 3P2 (ground)",
+     "upper": "7p3 8s 5S*2",
+     "E1_reduced_amplitude_ea0": 3.39,
+     "type": "E1",
+     "method": "theory",
+     "note": "the paper gives the reduced E1 amplitude <a||E1||b> in atomic units (e a0), no A coefficient",
+     "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6 Tables V-VII",
+     "url": "https://arxiv.org/abs/2505.22895"
+    },
+    {
+     "wavenumber_cm": 27190,
+     "lower": "7p4 3P2 (ground)",
+     "upper": "7p3 8s 3S*1",
+     "E1_reduced_amplitude_ea0": 3.26,
+     "type": "E1",
+     "method": "theory",
+     "note": "the paper gives the reduced E1 amplitude <a||E1||b> in atomic units (e a0), no A coefficient",
+     "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6 Tables V-VII",
+     "url": "https://arxiv.org/abs/2505.22895"
+    },
+    {
+     "wavenumber_cm": 41467,
+     "lower": "7p4 3P2 (ground)",
+     "upper": "7p3 8s 3D*3",
+     "E1_reduced_amplitude_ea0": 1.97,
+     "type": "E1",
+     "method": "theory",
+     "note": "the paper gives the reduced E1 amplitude <a||E1||b> in atomic units (e a0), no A coefficient",
+     "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6 Tables V-VII",
+     "url": "https://arxiv.org/abs/2505.22895"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Ts": {
+   "Z": 117,
+   "name": "Tennessine",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d10 7s2 7p5",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Ts_I_levels.tsv holds the 'No data are available' page).",
+    "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6",
+    "url": "https://arxiv.org/abs/2505.22895"
+   },
+   "ground_term": {
+    "value": "2P*3/2",
+    "J": "3/2",
+    "method": "theory",
+    "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6",
+    "url": "https://arxiv.org/abs/2505.22895"
+   },
+   "ionization_energy_eV": {
+    "value": 7.643,
+    "value_cm": 61643,
+    "method": "theory",
+    "note": "derived: the paper prints 61643 cm-1; converted here with 1 eV = 8065.544 cm-1. The authors estimate about 1% accuracy.",
+    "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 7 Table VIII",
+    "url": "https://arxiv.org/abs/2505.22895",
+    "alternatives": [
+     {
+      "value": 7.654,
+      "method": "compilation",
+      "note": "calculated (theory) value, not a measurement; read second-hand in a review table, original not opened",
+      "source": "O.R. Smits, P. Indelicato, W. Nazarewicz, M. Piibeleht, P. Schwerdtfeger, 'Pushing the limits of the periodic table', arXiv:2301.02553v1 (2023), p. 47, Table 2; original: A. Borschevsky, L.F. Pasteka, V. Pershina, E. Eliav, U. Kaldor, Phys. Rev. A 91, 020501 (2015); R.F. de Farias, Chem. Phys. Lett. 667, 1 (2017)",
+      "url": "https://arxiv.org/abs/2301.02553"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "Nothing beyond nuclear decay properties: no atomic-physics measurement and no chemistry experiment (Yakushev et al. 2024 name Lv and Ts as targets of future chemical research).",
+    "sources": [
+     {
+      "source": "A. Yakushev et al., Front. Chem. 12, 1474820 (2024), conclusion",
+      "url": "https://europepmc.org/article/PMC/PMC11464923"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "294Ts",
+    "half_life": {
+     "value": 70,
+     "unc": 30,
+     "unit": "ms"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 294Ts",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt"
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 31208,
+     "lower": "7p5 2P*3/2 (ground)",
+     "upper": "7p4 8s 2[2]3/2",
+     "E1_reduced_amplitude_ea0": 2.98,
+     "type": "E1",
+     "method": "theory",
+     "note": "the paper gives the reduced E1 amplitude <a||E1||b> in atomic units (e a0), no A coefficient",
+     "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6 Tables V-VII",
+     "url": "https://arxiv.org/abs/2505.22895"
+    },
+    {
+     "wavenumber_cm": 38506,
+     "lower": "7p5 2P*3/2 (ground)",
+     "upper": "7p4 8s 2[0]1/2",
+     "E1_reduced_amplitude_ea0": 2.26,
+     "type": "E1",
+     "method": "theory",
+     "note": "the paper gives the reduced E1 amplitude <a||E1||b> in atomic units (e a0), no A coefficient",
+     "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6 Tables V-VII",
+     "url": "https://arxiv.org/abs/2505.22895"
+    },
+    {
+     "wavenumber_cm": 27658,
+     "lower": "7p5 2P*3/2 (ground)",
+     "upper": "7p4 8s 2[2]5/2",
+     "E1_reduced_amplitude_ea0": 1.62,
+     "type": "E1",
+     "method": "theory",
+     "note": "the paper gives the reduced E1 amplitude <a||E1||b> in atomic units (e a0), no A coefficient",
+     "source": "V.A. Dzuba, V.V. Flambaum, G.K. Vong, Phys. Rev. A 112, 012822 (2025), arXiv:2505.22895v2, p. 6 Tables V-VII",
+     "url": "https://arxiv.org/abs/2505.22895"
+    }
+   ],
+   "excited_level_measured": false
+  },
+  "Og": {
+   "Z": 118,
+   "name": "Oganesson",
+   "ground_configuration": {
+    "value": "[Rn] 5f14 6d10 7s2 7p6",
+    "method": "theory",
+    "note": "NIST ASD has no data for the neutral atom (data/nist/Og_I_levels.tsv holds the 'No data are available' page).",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 042512 (2018), arXiv:1809.02325v2, p. 2 Table I",
+    "url": "https://arxiv.org/abs/1809.02325"
+   },
+   "ground_term": {
+    "value": "1S0",
+    "J": "0",
+    "method": "theory",
+    "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 042512 (2018), arXiv:1809.02325v2, p. 2 Table I",
+    "url": "https://arxiv.org/abs/1809.02325"
+   },
+   "ionization_energy_eV": {
+    "value": 8.888,
+    "unc": 0.044,
+    "method": "theory",
+    "note": "relativistic coupled-cluster CBS-CCSDT(Q) with Breit and QED corrections",
+    "source": "Y. Guo, L.F. Pasteka, E. Eliav, A. Borschevsky, arXiv:2107.02164v2 (2021) (listed in the Smits et al. review as Adv. Quantum Chem. 83, 107 (2021)), p. 14 Table 5",
+    "url": "https://arxiv.org/abs/2107.02164",
+    "alternatives": [
+     {
+      "value": 8.866,
+      "value_cm": 71508,
+      "method": "theory",
+      "note": "derived: the paper prints 71508 cm-1; converted here with 1 eV = 8065.544 cm-1. CIPT calculation.",
+      "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 042512 (2018), arXiv:1809.02325v2, p. 2 Table I",
+      "url": "https://arxiv.org/abs/1809.02325"
+     }
+    ]
+   },
+   "what_has_been_measured": {
+    "text": "Nothing beyond nuclear decay properties: no atomic-physics measurement and no chemistry experiment (production rate about one atom per month).",
+    "sources": [
+     {
+      "source": "A. Yakushev et al., Front. Chem. 12, 1474820 (2024), introduction",
+      "url": "https://europepmc.org/article/PMC/PMC11464923"
+     },
+     {
+      "source": "E. Rickert et al., Eur. Phys. J. D 80, 88 (2026), p. 1-2",
+      "url": "https://lirias.kuleuven.be/retrieve/2d544b79-b809-49d0-bc6b-15a0742b1dc5"
+     }
+    ]
+   },
+   "longest_lived_isotope": {
+    "isotope": "294Og",
+    "half_life": {
+     "value": 0.7,
+     "unc": 0.3,
+     "unit": "ms"
+    },
+    "method": "compilation",
+    "source": "NUBASE2020: F.G. Kondev, M. Wang, W.J. Huang, S. Naimi, G. Audi, Chin. Phys. C 45, 030001 (2021), machine-readable table nubase_4.mas20.txt, line for 294Og",
+    "url": "https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt",
+    "alternative": {
+     "isotope": "295Og",
+     "half_life": {
+      "value": 680,
+      "unc": 540,
+      "unit": "ms"
+     },
+     "note": "NUBASE2020 lists this longer, very uncertain value (ENSDF-year field empty, discovery year 2006, decay mode 'A~100'); kept as an alternative"
+    }
+   },
+   "predicted_lines": [
+    {
+     "wavenumber_cm": 36689,
+     "lower": "7s2 7p6 1S0 (ground)",
+     "upper": "7s2 7p5 8s 1P*1",
+     "A_s": 145000000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 042512 (2018), arXiv:1809.02325v2, p. 2 Table I (energy) and p. 4 Table III (rate)",
+     "url": "https://arxiv.org/abs/1809.02325",
+     "note": "the authors estimate 20% on this rate; the only one of the three in the optical range"
+    },
+    {
+     "wavenumber_cm": 57855,
+     "lower": "7s2 7p6 1S0 (ground)",
+     "upper": "7s2 7p5 7d 1P*1",
+     "A_s": 936000000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 042512 (2018), arXiv:1809.02325v2, p. 2 Table I (energy) and p. 4 Table III (rate)",
+     "url": "https://arxiv.org/abs/1809.02325"
+    },
+    {
+     "wavenumber_cm": 54725,
+     "lower": "7s2 7p6 1S0 (ground)",
+     "upper": "7s2 7p5 7d, J=1 odd (printed 1S*1)",
+     "A_s": 58400000.0,
+     "type": "E1",
+     "method": "theory",
+     "source": "B.G.C. Lackenby, V.A. Dzuba, V.V. Flambaum, Phys. Rev. A 98, 042512 (2018), arXiv:1809.02325v2, p. 2 Table I (energy) and p. 4 Table III (rate)",
+     "url": "https://arxiv.org/abs/1809.02325"
+    }
+   ],
+   "excited_level_measured": false
+  }
+ },
+ "conflicts": [
+  "Md ionisation energy: measured 6.59(13) eV (Sato 2018) vs NIST [6.58(7)] eV, which is Sugar's 1974 semi-empirical value, not a measurement; they agree. The measured value is the entry.",
+  "Lr ionisation energy: 4.96 +0.08/-0.07 eV (Sato 2015) vs 4.96 +0.05/-0.04 eV (Sato 2018, weighted average of both runs, adopted by NIST as 4.96(5)). The 2018 value is the entry.",
+  "Db, Sg, Bh, Hs ionisation energy: NIST theoretical values 6.8(5), 7.8(5), 7.7(5), 7.6(5) eV vs CIPT calculations 7.01, 8.22, 8.03, 8.52 eV (Lackenby et al. 2019) vs the Smits et al. review table 6.814, 7.7, 8.6, 9.5 eV. All are calculations; NIST is the entry, the others are alternatives. For Hs the spread reaches 1.9 eV.",
+  "Ds, Rg, Cn ionisation energy: CIPT 10.158, 11.175, 12.145 eV (derived from cm-1, Lackenby et al. 2020) vs the review table 9.562, 11.03, 12.02 eV; the review says CIPT overestimates the late 6d elements. The CIPT value is the entry only because that paper was opened; the review values are second-hand.",
+  "Db ionisation limit in Lackenby et al. 2018: 56744 cm-1 in the text, 56733 cm-1 in Table II.",
+  "Lr predicted 7s2 8s 2S1/2 level: 20485 cm-1 (CI+MBPT) and 20533(303) cm-1 (coupled cluster) in Kahl et al. 2021; Rickert et al. 2026 quote a newer multiconfiguration calculation (Andrews et al., arXiv:2505.15121, not opened) that moves the two search lines to 20736 and 28607 cm-1.",
+  "Cn 6d10 7s7p 3P*1 level: 47293 cm-1 (Lackenby et al. 2020) vs 53144 / 55057 cm-1 (Dinh et al. 2008, methods B / A).",
+  "Sg, Bh, Hs, Mt ionisation energy in the Smits et al. review table (7.7, 8.6, 9.5, 10.4 eV) equals the 'RHF' column of Lackenby et al. 2019 Table VIII (7.70, 8.63, 9.52, 10.4 eV, from Dzuba 2016), not the CIPT column (8.22, 8.03, 8.52, 9.86 eV) of the same table; both are calculations."
+ ],
+ "not_found": [
+  "Sato et al., Nature 520, 209 (2015) full text: the CERN repository preprint is behind a bot check and its archived copy is the check page; only the abstract (Europe PMC) was read.",
+  "Transition rates for Rf I, Cn I, Nh I, Fl I, Mc I: the opened papers give level energies only; 'predicted_lines' for these elements are E1-allowed levels, not ranked by strength.",
+  "Fl: only two E1-allowed (J = 1 odd) levels are listed in the opened table.",
+  "Original papers behind the Smits et al. review table (Borschevsky 2015 for Mc, Lv, Ts; Kaygorodov 2022 for Rg, Cn, Nh, Fl; Arbely thesis for Db, Ds) were not opened.",
+  "Original papers behind the NIST values for Db (Dolg 1993), Sg (Johnson 1999), Bh, Hs (Johnson 2002) and Md (Sugar 1974) were not opened; the numbers are as NIST prints them.",
+  "The specific compounds used in Bh and Hs gas-phase chemistry, and the Cn adsorption enthalpy on gold, were not read in an opened source.",
+  "Half-lives newer than NUBASE2020 (several heaviest isotopes have been remeasured since) were not collected."
+ ],
+ "notes": "All ionisation energies except Md and Lr are calculations (method 'theory'); entries with method 'compilation' under 'alternatives' are also calculated values, read second-hand in a review. Ground configurations and terms are calculated for every element here except Md (as listed by NIST). 'predicted_lines' are theory throughout; A_s is the calculated Einstein coefficient of that line. Values with 'value_cm' were printed in cm-1 and converted to eV here (derived). Lr uncertainties are asymmetric (unc_plus / unc_minus). Half-lives are from NUBASE2020; where NUBASE lists a longer but poorly known isotope or isomer it is given under 'alternative'. Verification pass 2026-10-02: every number was re-read in its source; for Md the two strong ground-state lines to J = 9/2 levels (347.27 nm, 484.33 nm) were added, so Md lists five predicted lines ordered by A.",
+ "verified": "2026-10-02 (independent second reading of all sources)"
+}
