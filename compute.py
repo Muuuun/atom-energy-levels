@@ -476,7 +476,8 @@ def build_nist(key, cfg):
         with_hfs = {k for l in lit.raw.get("levels", []) for k in (l.get("hyperfine") or {})}
         if with_hfs:
             n_hfs = lambda k: sum(1 for l in lit.raw.get("levels", []) if k in (l.get("hyperfine") or {}))
-            hfs_iso = max(with_hfs, key=lambda k: (ab(k) if k in iso else -1, n_hfs(k)))
+            # ties go to the heaviest isotope (a set has no fixed order, so the choice must not depend on it)
+            hfs_iso = max(sorted(with_hfs), key=lambda k: (ab(k) if k in iso else -1, n_hfs(k), int(re.sub(r"\D", "", str(k)) or 0)))
             cfg = dict(cfg, I=str((iso.get(hfs_iso) or {}).get("I", "0")) if isinstance(iso.get(hfs_iso), dict) else "0")
     nist, limit = al.nist_levels(sym)
     # levels NIST does not carry (actinides: only the ground level is in ASD), taken from the literature file

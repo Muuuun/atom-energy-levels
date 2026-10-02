@@ -153,7 +153,7 @@ def conf_tex(c):
     return "".join(parts)
 
 
-LS_TERM = r"(?:([a-z]) ?)?(\d)([A-Z])(\*?)\??"  # optional NIST prefix letter, multiplicity, L, parity
+LS_TERM = r"(?:([a-z]) ?)?(\d{1,2})([A-Z])(\*?)\??"  # optional NIST prefix letter, multiplicity, L, parity
 
 
 def term_tex(term, j):
@@ -163,7 +163,8 @@ def term_tex(term, j):
     if m:
         odd = "^{o}" if m.group(4) else ""
         pre = rf"\mathrm{{{m.group(1)}}}\," if m.group(1) else ""
-        return rf"{pre}^{m.group(2)}{m.group(3)}{odd}_{{{js}}}"
+        mult = m.group(2) if len(m.group(2)) == 1 else "{" + m.group(2) + "}"
+        return rf"{pre}^{mult}{m.group(3)}{odd}_{{{js}}}"
     t = (term or "").replace("*", "^{o}").replace("?", "")
     return rf"{t}_{{{js}}}" if t else rf"J{{=}}{js}"
 
