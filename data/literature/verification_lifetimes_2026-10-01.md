@@ -33,3 +33,19 @@ equals (2J+1) x stored branching ratio / stored lifetime for all 8 stored lines 
 of the second read came out shifted and was not used. The two identical rows of level 34354.08 (0.081(6), 0.0185(16)) are printed
 twice in both reads and are below the 0.10 cut, so they are not in W.json. All other Ta / W rows rest on the single read plus the
 internal gA check.
+
+## La, Sm, Pb, Bi (checked 2026-10-02)
+- La (Den Hartog, Palmer, Lawler 2015, 69 lifetimes): all 69 levels have NIST rates; lifetime x sum(NIST A) has median 0.994 and no
+  level lies outside 0.3-1.1. NIST's La I rates are built on these lifetimes, so a misread lifetime would show up here. No re-read needed.
+- Sm (Den Hartog & Lawler 2013, 120 lifetimes read from the Figshare table; Lawler, Fittante, Den Hartog 2013, 299 rates parsed
+  from the PDF text by regular expression): two separate documents read by two separate routes. For the 107 levels that have both,
+  lifetime x sum(A of the 2013 rate paper) has median 0.999, range 0.748-1.003. A wrong lifetime or a wrongly parsed rate would break
+  this. The other 13 lifetimes rest on the single read. Two upper levels with rates have no lifetime (13999.5, 14863.85).
+  The 124 measured energies differ from NIST by -0.172 to +0.064 cm^-1 (median 0.05), i.e. no mismatched level.
+  Sm 21813.22 (J=2): stored 7.7 ns; NIST's single old rate 1.3e7 s^-1 would allow 77 ns. The 2013 rates of the three lines sum to
+  1/7.7 ns, so the stored value is right and the NIST rate is the outdated number.
+- Pb (Biémont et al. 2000, 3 lifetimes): second independent read of the publisher page: 6.8(3), 6.0(3), 4.9(3) ns, equal to the stored
+  values; lifetime x sum(NIST A) median 1.01.
+- Bi (Andersen, Madsen, Sørensen 1972, 5 lifetimes): second read of the publisher table: 4.7(1.0), 4.3(4), 5.5(5), 27(3), 3.8(1.0) ns,
+  equal to the stored values. The table has a sixth row, read as "7s 4P3/2 (second entry) 4.8(4) ns"; its level label is evidently
+  misread (probably the 7s 2P level), so it is not stored. Needs the PDF.
