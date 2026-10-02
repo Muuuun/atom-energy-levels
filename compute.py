@@ -711,6 +711,11 @@ def build_nist(key, cfg):
                            rows=rows[:22], note="Shift = ν(first isotope) − ν(second isotope)."))
 
     n_d = sum(1 for t in transitions if t.get("d") is not None)
+    # levels taken from the literature file because NIST does not list them (actinides)
+    n_lit_lv = sum(1 for l in levels if l.get("E_tier") and "E_nist" not in l)
+    lit_levels = n_lit_lv > len(levels) / 2
+    if lit_levels:
+        tables[0]["note"] = tables[0]["note"].replace("λ, ν from NIST level energies", "λ, ν from the level energies of the cited literature (NIST lists no excited levels)")
     tiers = {}
     for t in transitions:
         k = t.get("A_tier", "wavelength only")
@@ -727,7 +732,9 @@ def build_nist(key, cfg):
                 has_lit=bool(lit.raw.get("levels") or lit.raw.get("transitions")), freq_isotope=lit.iso if cfg.get("auto") else None,
                 limit_text=(rf"{sym}$^+$ ionisation limit   {limit:.2f} cm$^{{-1}}$  =  {limit / al.EV_TO_CM:.5f} eV  ({1e7 / limit:.3f} nm)"
                             if limit else "ionisation limit not listed by NIST"),
-                guide_tau="Level caption:  energy (NIST, or a measurement of the last %d years where one exists) and measured lifetime (where one exists)." % ENERGY_MAX_AGE_YR,
+                lit_levels=n_lit_lv,
+                guide_tau=("Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists)." if lit_levels else
+                           "Level caption:  energy (NIST, or a measurement of the last %d years where one exists) and measured lifetime (where one exists)." % ENERGY_MAX_AGE_YR),
                 notes=lit.raw.get("notes", ""))
     return dict(meta=meta, columns=columns, levels=levels, transitions=transitions, rydberg_levels=[], tables=tables, validation=validation,
                 sources=lit.source_urls())

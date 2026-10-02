@@ -111,7 +111,15 @@ def atom_page(key, pages):
         counts[t.get("A_tier", "none")] = counts.get(t.get("A_tier", "none"), 0) + 1
     prov = ", ".join(f"{v} {TIER[k]}" for k, v in sorted(counts.items(), key=lambda kv: -kv[1]) if k in TIER)
 
-    if auto:
+    lit_levels = (meta.get("lit_levels") or 0) > len(L) / 2  # levels from the literature file, NIST has none (actinides)
+    if lit_levels:
+        desc = desc.replace("Measured and NIST data, with sources.", "Levels and lines from the cited literature.")
+        lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): {len(L)} levels and {len(bound)} "
+                f"classified lines below 2 µm taken from the cited literature, each line with its vacuum wavelength and frequency"
+                + (f" and, for {n_d} of them, the reduced dipole matrix element" if n_d else "") + ". The NIST Atomic Spectra Database "
+                f"lists only the ground level and the ionisation limit of {meta['element'].lower()}, so the level energies on this page "
+                "are those of the literature sources named below.")
+    elif auto:
         lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): the {len(bound)} strongest classified "
                 f"lines below 2 µm from the NIST Atomic Spectra Database and the {len(L)} levels they connect, each line with its vacuum "
                 f"wavelength, frequency and, for {n_d} of them, the reduced dipole matrix element derived from the NIST transition rate. "
@@ -247,7 +255,7 @@ def atom_page(key, pages):
                      f'<span>{p["levels"]} levels, {p["lines"]} lines</span></div></a></li>' for p in pages if p["slug"] != slug and p["A"])
     parts.append(f'<h2>Atoms with measured data</h2><ul class="grid">{others}</ul>'
                  '<p><a href="../">All elements: periodic table</a></p>')
-    parts.append(f'<footer>Data: NIST Atomic Spectra Database and the cited measurements. Built {datetime.date.today().isoformat()}. '
+    parts.append(f'<footer>Data: {"the cited literature" if lit_levels else "NIST Atomic Spectra Database and the cited measurements"}. Built {datetime.date.today().isoformat()}. '
                  f'<a href="{REPO}">Code and data on GitHub</a>.</footer></div></main>\n<script src="../assets/viewer.js"></script>\n</body></html>\n')
     with open(os.path.join(DOCS, slug, "index.html"), "w") as f:
         f.write("".join(parts))
@@ -327,7 +335,8 @@ with its citation; calculated values are tagged as such.</p>
 <h2>What each page contains</h2>
 <p>A zoomable diagram (also as PDF and SVG), a table of the key or strongest transitions, the transition list with wavelengths in
 vacuum and air, frequencies, dipole matrix elements and Einstein A coefficients, and the level energies. Level energies and most
-transition rates come from the <a href="https://physics.nist.gov/asd">NIST Atomic Spectra Database</a>. All tables are downloadable
+transition rates come from the <a href="https://physics.nist.gov/asd">NIST Atomic Spectra Database</a>; for the actinides from
+protactinium onwards, where NIST lists only the ground level, they come from the literature cited on the page. All tables are downloadable
 as CSV from the <a href="{REPO}">GitHub repository</a>.</p>
 <footer>Data: NIST Atomic Spectra Database and the measurements cited on each page. Built {datetime.date.today().isoformat()}.</footer>
 </div>
