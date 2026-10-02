@@ -323,7 +323,7 @@ def draw(key):
         elif L.get("tau_ns") is None:
             tau = ""
         else:
-            tau = (r"$\tau$ ≈ " if tier == "model" else r"$\tau$ = ") + fmt_tau(L["tau_ns"]) + ("*" if tier == "theory" else "")
+            tau = (r"$\tau$ ≈ " if tier == "model" else rf"$\tau$ {L['tau_bound']} " if L.get("tau_bound") else r"$\tau$ = ") + fmt_tau(L["tau_ns"]) + ("*" if tier == "theory" else "")
         energy = f"{L['E']:.3f} cm$^{{-1}}$"
         name = f"${L['name']}$"
         if alkali and k in has_out:
@@ -413,7 +413,8 @@ def draw(key):
     hax.text(0, 0.05, f"{meta['element']}-{meta['A']}" if meta["A"] else meta["element"], fontsize=58, fontweight="bold", color=INK, va="top", ha="left")
     n_d = sum(1 for t in bound if t.get("d") is not None)
     hax.text(0, 1.25, f"{iso}  ({meta['spectrum']}){spin}.   "
-             + ("Strongest classified transitions below 2 µm (NIST):  " if meta.get("auto") else "Energy levels and transitions below 2 µm:  ")
+             + ("Classified transitions below 2 µm (levels and lines from the literature):  " if (meta.get("lit_levels") or 0) > len(atom["levels"]) / 2
+                else "Strongest classified transitions below 2 µm (NIST):  " if meta.get("auto") else "Energy levels and transitions below 2 µm:  ")
              + f"{len(levels)} levels, {len(bound)} lines.", fontsize=21, color=INK, va="top", ha="left")
     if not has_ryd:
         hax.text(0, 1.78, meta["limit_text"], fontsize=15, color=MUTED, va="top", ha="left")
@@ -444,7 +445,7 @@ def draw(key):
     fig.savefig(os.path.join(out, "diagram.pdf"))
     fig.savefig(os.path.join(out, "preview.png"), dpi=1800 / fig_w)
     plt.close(fig)
-    keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "tau_ns", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term", "E_nist", "E_tier", "E_src")
+    keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "tau_ns", "tau_bound", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term", "E_nist", "E_tier", "E_src")
     with open(os.path.join(out, "data.json"), "w") as f:
         json.dump(dict(meta={k: meta.get(k) for k in ("slug", "element", "symbol", "A", "I", "limit_cm", "spectrum", "auto")},
                        sources=atom.get("sources", {}),

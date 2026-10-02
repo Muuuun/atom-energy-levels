@@ -579,6 +579,9 @@ def build_nist(key, cfg):
             L.update(tau_ns=None, tau_tier="stable")
         elif tau:
             L.update(tau_ns=sig(tau[0], 6), tau_unc=tau[1], tau_tier=tau[2], tau_src=tau[3])
+            bound = re.search(r"Note: .*?\b(upper|lower) (limit|bound)", tau[3], re.I)
+            if bound:  # a limit is not a measured value: shown as "< 30 ns"
+                L["tau_bound"] = "<" if bound.group(1).lower() == "upper" else ">"
         else:
             L.update(tau_ns=None, tau_tier="none")
         if hfs_iso:

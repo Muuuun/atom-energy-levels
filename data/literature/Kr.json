@@ -698,11 +698,21 @@
    "use": "819 nm second step of the optical (124 nm VUV + 819 nm) production of metastable Kr",
    "type": "E1",
    "branching_upper_to_metastable": {
-    "value": 0.9,
-    "method": "compilation",
-    "source": "Ding et al., Rev. Sci. Instrum. 78, 023103 (2007) [arXiv:physics/0612046]",
-    "url": "https://arxiv.org/abs/physics/0612046",
-    "note": "5p[3/2]2 decays to the metastable 5s[3/2]2 with a 90% branching ratio (stated in the text; no origin given). For 83Kr the strongest hyperfine path gives 32%."
+    "value": 0.751,
+    "unc": 0.008,
+    "method": "experiment",
+    "source": "Dzierzega, Volz, Nave, Griesmann, Phys. Rev. A 62, 022505 (2000) [arXiv:physics/0005057], Table 4",
+    "url": "https://arxiv.org/abs/physics/0005057",
+    "note": "Measured branching fraction of 5p[3/2]2 to the metastable 5s[3/2]2 (760 nm line); confirmed by 0.75(4) (Dakka 2018). Replaces 0.90 (owner's decision 2026-10-02).",
+    "alternatives": [
+     {
+      "value": 0.9,
+      "method": "compilation",
+      "source": "Ding et al., Rev. Sci. Instrum. 78, 023103 (2007) [arXiv:physics/0612046]",
+      "url": "https://arxiv.org/abs/physics/0612046",
+      "note": "5p[3/2]2 decays to the metastable 5s[3/2]2 with a 90% branching ratio (stated in the text; no origin given). For 83Kr the strongest hyperfine path gives 32%."
+     }
+    ]
    },
    "A_s": {
     "value": 8940000.0,
@@ -1749,7 +1759,7 @@
  "conflicts": [
   "3P2 (5s[3/2]2) lifetime: Lefers et al. 2002 28.3(1.8) s (absolute VUV M2 rate, 84Kr) vs Katori & Shimizu 1993 39 (+5/-4) s (MOT fluorescence decay); theory 63-85 s. The more recent, directly normalised Lefers value is used; Ding et al. and other ATTA papers quote '40 s'.",
   "5p'[3/2]2 (2p2, the TALIF level) lifetime: TALIF measurements give 34.6(2.3) ns (Gazeli 2020), 34.1 ns (Niemi 2001), 35.4(2.7), 33.6(1.1) ns, whereas Dzierzega et al. 2000 list 26.9(0.3) ns (pulsed laser, Chang et al.), a best experimental estimate 29.5(2.4) ns and a semi-empirical 28.59(7) ns, which they used for the A values of the three 2p2 lines. The direct recent TALIF value is the main entry; the A values of the 2p2 lines therefore rest on a lifetime about 20 % shorter.",
-  "Branching of 5p[3/2]2 to the metastable 5s[3/2]2 (760 nm): measured 0.751(8) / 0.743(7) (Dzierzega 2000) and 0.75(4) (Dakka 2018); the existing entry 'branching_upper_to_metastable' = 0.90 on the 819 nm line (stated without origin by Ding et al. 2007) is contradicted by these measurements and should not be used.",
+  "Branching of 5p[3/2]2 to the metastable 5s[3/2]2 (760 nm): measured 0.751(8) / 0.743(7) (Dzierzega 2000) and 0.75(4) (Dakka 2018); the entry 'branching_upper_to_metastable' on the 819 nm line is now 0.751(8); the 0.90 stated without origin by Ding et al. 2007 is kept as an alternative only.",
   "5p[5/2]3 (2p9) lifetime: main entry changed from the Vassen-review 28.0 ns to the beam-gas-laser value 27.694(18) ns (second-hand via Dzierzega et al.); the review value is kept as an alternative.",
   "2p1, 2p5, 2p10 lifetimes: experimental best estimates 24.6(2.0), 23.5(1.9), 40.9(3.3) ns vs semi-empirical 24.58(85), 23.12(85), 38.13(1.07) ns; the A values of Dzierzega et al. for lines from these levels use the semi-empirical lifetimes."
  ],

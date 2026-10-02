@@ -1,6 +1,6 @@
 # Measured transition rates older than 2006 shown instead of a NIST rate
 
-455 lines. Written by `check_old_rates.py`; nothing has been changed.
+360 lines. Written by `check_old_rates.py`; nothing has been changed.
 
 ## Ytterbium (yb171): 3 lines
 
@@ -18,92 +18,33 @@
 | 6s2 1S0 – 4f135d26s °1 | 267.275 | 1.430e+07 | 1.430e+07 (–) | +0.0 % | NIST ASD Yb I lines (local Yb_I_lines.tsv, tp_ref T7227 = D. C. Morton, Astrophys. J. Supp |
 | 6s2 1S0 – 4f135d6s2 (7/2,5/2)°1 | 346.536 | 6.830e+07 | 6.830e+07 (–) | +0.0 % | NIST ASD Yb I lines (local Yb_I_lines.tsv, tp_ref T7227 = D. C. Morton, Astrophys. J. Supp |
 
-## Magnesium (mg24): 1 lines
+## Nitrogen (n): 1 lines
 
 | Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
 |---|---|---|---|---|---|
-| 3s2 1S0 – 3s3p 3P°1 | 457.238 | 2.190e+02 | 2.540e+02 (D) | -13.8 % | Kwong, Smith, Parkinson, Phys. Rev. A 25, 2629 (1982) (abstract): A = (2.19 +- 0.30)e2 s^- |
-
-## Magnesium (mg25): 1 lines
-
-| Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
-|---|---|---|---|---|---|
-| 3s2 1S0 – 3s3p 3P°1 | 457.238 | 2.190e+02 | 2.540e+02 (D) | -13.8 % | Kwong, Smith, Parkinson, Phys. Rev. A 25, 2629 (1982) (abstract): A = (2.19 +- 0.30)e2 s^- |
-
-## Nitrogen (n): 8 lines
-
-| Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
-|---|---|---|---|---|---|
-| 2s22p23s 4P3/2 – 2s22p23p 4P°5/2 | 818.711 | 7.860e+06 | 8.210e+06 (B+) | -4.3 % | Musielok, Wiese, Veres, Phys. Rev. A 51, 3588 (1995) (wall-stabilized arc emission), as ta |
-| 2s22p23s 4P1/2 – 2s22p23p 4P°3/2 | 819.026 | 1.220e+07 | 1.250e+07 (B+) | -2.4 % | Musielok, Wiese, Veres, Phys. Rev. A 51, 3588 (1995) (wall-stabilized arc emission), as ta |
-| 2s22p23s 4P1/2 – 2s22p23p 4P°1/2 | 820.261 | 4.850e+06 | 4.680e+06 (B+) | +3.6 % | Musielok, Wiese, Veres, Phys. Rev. A 51, 3588 (1995) (wall-stabilized arc emission), as ta |
-| 2s22p23s 4P3/2 – 2s22p23p 4P°3/2 | 821.297 | 5.020e+06 | 5.230e+06 (B+) | -4.0 % | Musielok, Wiese, Veres, Phys. Rev. A 51, 3588 (1995) (wall-stabilized arc emission), as ta |
-| 2s22p23s 4P5/2 – 2s22p23p 4P°5/2 | 821.860 | 2.210e+07 | 2.260e+07 (B+) | -2.2 % | Musielok, Wiese, Veres, Phys. Rev. A 51, 3588 (1995) (wall-stabilized arc emission), as ta |
 | 2s22p23s 4P3/2 – 2s22p23p 4P°1/2 | 822.539 | 2.650e+07 | 2.620e+07 (B+) | +1.1 % | Musielok, Wiese, Veres, Phys. Rev. A 51, 3588 (1995) (wall-stabilized arc emission), as ta |
-| 2s22p23s 4P5/2 – 2s22p23p 4P°3/2 | 824.466 | 1.340e+07 | 1.310e+07 (B+) | +2.3 % | Musielok, Wiese, Veres, Phys. Rev. A 51, 3588 (1995) (wall-stabilized arc emission), as ta |
-| 2s22p23s 4P5/2 – 2s22p23p 4D°3/2 | 874.977 | 8.800e+05 | 9.650e+05 (B+) | -8.8 % | Musielok, Wiese, Veres, Phys. Rev. A 51, 3588 (1995) (wall-stabilized arc emission), as ta |
 
-## Sulfur (s): 41 lines
+## Sulfur (s): 11 lines
 
 | Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
 |---|---|---|---|---|---|
-| 3s23p4 3P2 – 3s23p38s 3S°1 | 124.191 | 1.181e+07 | 1.220e+07 (D+) | -3.2 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p36d 3D°1 | 124.711 | 2.613e+05 | 2.690e+05 (D) | -2.9 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p36d 3D°2 | 124.714 | 2.738e+06 | 2.820e+06 (D+) | -2.9 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p36d 3D°3 | 124.716 | 1.316e+07 | 1.360e+07 (D+) | -3.2 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
 | 3s23p4 3P1 – 3s23p38s 3S°1 | 124.804 | 7.464e+06 | 7.530e+06 (D+) | -0.9 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P0 – 3s23p38s 3S°1 | 125.082 | 2.577e+06 | 2.660e+06 (D) | -3.1 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P1 – 3s23p36d 3D°1 | 125.330 | 5.133e+06 | 5.290e+06 (D+) | -3.0 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P1 – 3s23p36d 3D°2 | 125.333 | 1.042e+07 | 1.070e+07 (D+) | -2.6 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P0 – 3s23p36d 3D°1 | 125.609 | 7.770e+06 | 7.980e+06 (D+) | -2.6 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p37s 3S°1 | 126.286 | 1.427e+07 | 1.480e+07 (D+) | -3.6 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P1 – 3s23p37s 3S°1 | 126.921 | 7.912e+06 | 8.180e+06 (D+) | -3.3 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p35d 3D°1 | 127.077 | 7.402e+05 | 7.600e+05 (D) | -2.6 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p35d 3D°3 | 127.078 | 2.470e+07 | 2.540e+07 (C) | -2.8 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p35d 3D°2 | 127.079 | 6.518e+06 | 6.700e+06 (D+) | -2.7 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P0 – 3s23p37s 3S°1 | 127.207 | 2.532e+06 | 2.620e+06 (D) | -3.4 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P1 – 3s23p35d 3D°1 | 127.720 | 1.024e+07 | 1.050e+07 (D+) | -2.5 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P1 – 3s23p35d 3D°2 | 127.722 | 1.787e+07 | 1.840e+07 (D+) | -2.9 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P0 – 3s23p35d 3D°1 | 128.010 | 1.312e+07 | 1.350e+07 (D+) | -2.8 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
 | 3s23p4 3P2 – 3s23p34s 3P°2 | 129.565 | 3.457e+08 | 3.460e+08 (C+) | -0.1 % | Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy |
 | 3s23p4 3P2 – 3s23p34s 3P°1 | 129.617 | 1.456e+08 | 1.460e+08 (C) | -0.3 % | Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy |
 | 3s23p4 3P1 – 3s23p34s 3P°2 | 130.234 | 1.203e+08 | 1.200e+08 (C) | +0.2 % | Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy |
 | 3s23p4 3P1 – 3s23p34s 3P°1 | 130.286 | 1.533e+08 | 1.530e+08 (C) | +0.2 % | Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy |
-| 3s23p4 3P2 – 3s23p36s 3S°1 | 130.343 | 2.852e+07 | 2.950e+07 (D+) | -3.3 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
 | 3s23p4 3P0 – 3s23p34s 3P°1 | 130.588 | 1.956e+08 | 1.960e+08 (C) | -0.2 % | Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy |
-| 3s23p4 3P1 – 3s23p36s 3S°1 | 131.019 | 1.639e+07 | 1.700e+07 (D+) | -3.6 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P0 – 3s23p36s 3S°1 | 131.325 | 5.355e+06 | 5.540e+06 (D+) | -3.3 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p34d 3D°3 | 131.655 | 7.667e+07 | 7.890e+07 (C) | -2.8 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p34d 3D°2 | 131.662 | 2.041e+07 | 2.100e+07 (C) | -2.8 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p34d 3D°1 | 131.662 | 2.298e+06 | 2.370e+06 (D) | -3.0 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P1 – 3s23p34d 3D°2 | 132.352 | 5.869e+07 | 6.040e+07 (C) | -2.8 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P1 – 3s23p34d 3D°1 | 132.353 | 3.300e+07 | 3.400e+07 (C) | -2.9 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P0 – 3s23p34d 3D°1 | 132.664 | 4.316e+07 | 4.440e+07 (C) | -2.8 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P2 – 3s23p35s 3S°1 | 140.151 | 7.225e+07 | 7.480e+07 (C) | -3.4 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P1 – 3s23p35s 3S°1 | 140.934 | 4.194e+07 | 4.350e+07 (C) | -3.6 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
-| 3s23p4 3P0 – 3s23p35s 3S°1 | 141.287 | 1.371e+07 | 1.420e+07 (D+) | -3.5 % | Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998), Table 2, column d |
 | 3s23p4 3P2 – 3s23p34s 3S°1 | 180.731 | 3.264e+08 | 3.270e+08 (C+) | -0.2 % | Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy |
 | 3s23p4 3P1 – 3s23p34s 3S°1 | 182.034 | 1.701e+08 | 1.710e+08 (C+) | -0.5 % | Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy |
-| 3s23p4 3P0 – 3s23p34s 3S°1 | 182.625 | 3.680e+07 | 5.640e+07 (C) | -34.8 % | Beideck, Schectman, Federman, Ellis, Astrophys. J. 428, 393 (1994), beam-foil spectroscopy |
 | 3s23p34s 3S°1 – 3s23p34p 3P2 | 1045.831 | 2.195e+07 | 2.170e+07 (B+) | +1.2 % | Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation |
 | 3s23p34s 3S°1 – 3s23p34p 3P0 | 1045.962 | 2.195e+07 | 2.180e+07 (B+) | +0.7 % | Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation |
 | 3s23p34s 3S°1 – 3s23p34p 3P1 | 1046.227 | 2.194e+07 | 2.180e+07 (B+) | +0.6 % | Zerne, Luo Caiyan, Berzinsh, Svanberg, Phys. Scr. 56, 459 (1997), two-photon UV excitation |
 
-## Chlorine (cl): 11 lines
+## Chlorine (cl): 1 lines
 
 | Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
 |---|---|---|---|---|---|
-| 3p5 2P°3/2 – 3p44s 2D3/2 | 118.875 | 2.360e+07 | 2.710e+07 (C) | -12.9 % | Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, |
-| 3p5 2P°3/2 – 3p44s 2D5/2 | 118.877 | 2.140e+08 | 2.330e+08 (C) | -8.2 % | Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, |
 | 3p5 2P°1/2 – 3p44s 2D3/2 | 120.135 | 2.360e+08 | 2.390e+08 (C) | -1.3 % | Schwab and Anderson (1982), absorption technique; Table 3 of Biemont, Gebarowski, Zeippen, |
-| 3p5 2P°3/2 – 3p44s 2P1/2 | 133.573 | 2.090e+08 | 1.740e+08 (C) | +20.1 % | Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen |
-| 3p5 2P°3/2 – 3p44s 2P3/2 | 134.724 | 5.640e+08 | 4.190e+08 (C+) | +34.6 % | Schectman, Federman, Beideck, Ellis, Astrophys. J. 406, 735 (1993) (beam-foil) |
-| 3p5 2P°1/2 – 3p44s 2P1/2 | 135.166 | 3.400e+08 | 3.230e+08 (C+) | +5.3 % | Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen |
-| 3p5 2P°1/2 – 3p44s 2P3/2 | 136.345 | 9.780e+07 | 7.500e+07 (C+) | +30.4 % | Schectman, Federman, Beideck, Ellis, Astrophys. J. 406, 735 (1993) (beam-foil) |
-| 3p5 2P°3/2 – 3p44s 4P1/2 | 137.312 | 5.590e+05 | 2.900e+05 (D) | +92.8 % | Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen |
-| 3p5 2P°3/2 – 3p44s 4P3/2 | 137.953 | 8.410e+06 | 1.100e+07 (D) | -23.5 % | Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen |
-| 3p5 2P°3/2 – 3p44s 4P5/2 | 138.969 | 3.220e+05 | 2.300e+05 (D) | +40.0 % | Clyne and Nip (1977), atomic resonance absorption; Table 3 of Biemont, Gebarowski, Zeippen |
-| 3p5 2P°1/2 – 3p44s 4P3/2 | 139.653 | 1.200e+06 | 1.500e+06 (D) | -20.0 % | Hofmann (1967), wall-stabilised arc emission; Table 3 of Biemont, Gebarowski, Zeippen, Ast |
 
 ## Copper (cu): 2 lines
 
@@ -111,37 +52,6 @@
 |---|---|---|---|---|---|
 | 3d104s 2S1/2 – 3d104p 2P°3/2 | 324.847 | 1.372e+08 | 1.395e+08 (AA) | -1.6 % | Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract (lifetime) combined wit |
 | 3d104s 2S1/2 – 3d104p 2P°1/2 | 327.490 | 1.359e+08 | 1.376e+08 (AA) | -1.2 % | Carlsson, Sturesson, Svanberg, Z. Phys. D 11, 287 (1989), abstract (lifetime) combined wit |
-
-## Germanium (ge): 26 lines
-
-| Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
-|---|---|---|---|---|---|
-| 4p2 3P1 – 4p4d 3P°0 | 194.473 | 1.250e+08 | 7.000e+07 (C) | +78.6 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P1 – 4p4d 3P°1 | 195.512 | 4.300e+07 | 2.800e+07 (C) | +53.6 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P2 – 4p4d 3P°1 | 198.827 | 4.120e+07 | 2.500e+07 (C) | +64.8 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P2 – 4p4d 3P°2 | 199.889 | 1.240e+08 | 5.500e+07 (C) | +125.5 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P0 – 4p4d 3D°1 | 204.237 | 1.560e+08 | 1.100e+08 (C) | +41.8 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P1 – 4p4d 3D°1 | 206.588 | 7.300e+07 | 8.500e+07 (C) | -14.1 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P1 – 4p4d 3D°2 | 206.932 | 1.490e+08 | 1.200e+08 (C) | +24.2 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P1 – 4p4d 1D°2 | 208.668 | 1.500e+07 | 4.000e+07 (C) | -62.5 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P2 – 4p4d 3D°3 | 209.492 | 1.630e+08 | 9.700e+07 (C) | +68.0 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P2 – 4p4d 3D°2 | 210.649 | 1.470e+07 | 1.700e+07 (C) | -13.5 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 1D2 – 4p4d 3P°2 | 225.670 | 6.590e+06 | 3.200e+06 (C) | +105.9 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 1D2 – 4p4d 1D°2 | 241.810 | 5.770e+07 | 9.600e+07 (C) | -39.9 % | Li, Norin, Persson, Wahlstrom, Svanberg, Doidge, Biemont, Phys. Rev. A 60, 198 (1999), Tab |
-| 4p2 3P0 – 4p5s 1P°1 | 249.872 | 1.100e+07 | 1.300e+07 (C) | -15.4 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 3P1 – 4p5s 1P°1 | 253.399 | 8.560e+06 | 1.000e+07 (C) | -14.4 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 3P2 – 4p5s 1P°1 | 258.996 | 3.970e+06 | 5.100e+06 (C) | -22.2 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 3P1 – 4p5s 3P°2 | 259.331 | 6.040e+07 | 7.100e+07 (C) | -14.9 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 3P2 – 4p5s 3P°2 | 265.196 | 1.600e+08 | 2.000e+08 (C) | -20.0 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 3P0 – 4p5s 3P°1 | 265.236 | 6.940e+07 | 8.500e+07 (C) | -18.4 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 3P1 – 4p5s 3P°1 | 269.214 | 4.730e+07 | 6.100e+07 (C) | -22.5 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 3P1 – 4p5s 3P°0 | 271.043 | 2.080e+08 | 2.800e+08 (C) | -25.7 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 3P2 – 4p5s 3P°1 | 275.540 | 7.920e+07 | 1.100e+08 (C) | -28.0 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 1D2 – 4p5s 1P°1 | 303.995 | 2.040e+08 | 2.800e+08 (C) | -27.1 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 1D2 – 4p5s 3P°2 | 312.572 | 1.590e+06 | 3.100e+06 (C) | -48.7 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 1D2 – 4p5s 3P°1 | 327.043 | 1.720e+07 | 2.900e+07 (C) | -40.7 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 1S0 – 4p5s 1P°1 | 422.775 | 9.430e+06 | 2.100e+07 (C) | -55.1 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
-| 4p2 1S0 – 4p5s 3P°1 | 468.714 | 4.980e+05 | 9.500e+06 (C) | -94.8 % | Biemont, Lynga, Li, Svanberg, Garnir, Doidge, Mon. Not. R. Astron. Soc. 303, 721 (1999), T |
 
 ## Arsenic (as): 2 lines
 
@@ -185,7 +95,7 @@
 | 4p55s 2[1/2]°0 – 4p55p 2[1/2]1 | 1673.109 | 1.260e+05 | 1.260e+05 (B+) | +0.0 % | Dzierzega, Volz, Nave, Griesmann, Phys. Rev. A 62, 022505 (2000) [arXiv:physics/0005057],  |
 | 4p55s 2[1/2]°1 – 4p55p 2[1/2]1 | 1879.060 | 7.400e+04 | 7.400e+04 (B+) | +0.0 % | Dzierzega, Volz, Nave, Griesmann, Phys. Rev. A 62, 022505 (2000) [arXiv:physics/0005057],  |
 
-## Yttrium (y): 83 lines
+## Yttrium (y): 75 lines
 
 | Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
 |---|---|---|---|---|---|
@@ -197,14 +107,10 @@
 | 4d5s2 a 2D3/2 – 4d25p y 4D°3/2 | 300.614 | 4.780e+06 | 4.700e+06 (B+) | +1.7 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d25p x 2F°5/2 | 302.316 | 6.580e+06 | 6.600e+06 (B+) | -0.3 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d25p y 4D°5/2 | 304.625 | 1.070e+07 | 1.070e+07 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d5s2 a 2D5/2 – 4d25p y 4D°3/2 | 305.484 | 1.940e+05 | 1.860e+05 (B) | +4.3 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D3/2 – 4d25p y 4F°5/2 | 315.656 | 2.670e+05 | 2.700e+05 (C+) | -1.1 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D3/2 – 4d25p y 4F°3/2 | 317.375 | 1.010e+06 | 1.010e+06 (C+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d5s2 a 2D5/2 – 4d25p y 4F°7/2 | 318.686 | 1.240e+05 | 1.920e+05 (C+) | -35.4 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d25p y 4F°5/2 | 321.031 | 2.970e+05 | 3.000e+05 (C+) | -1.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d25p y 4F°3/2 | 322.809 | 1.090e+05 | 1.090e+05 (C+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d5s2 a 2D3/2 – 4d25p z 4G°5/2 | 348.504 | 1.200e+06 | 6.700e+05 (B+) | +79.1 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d5s2 a 2D5/2 – 4d25p z 4G°5/2 | 355.067 | 1.020e+05 | 8.200e+04 (C+) | +24.4 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D3/2 – 4d5s5p x 2P°3/2 | 355.370 | 2.280e+07 | 2.280e+07 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d5s5p x 2P°3/2 | 362.197 | 2.340e+08 | 2.340e+08 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D3/2 – 4d5s5p y 2D°5/2 | 404.096 | 1.120e+07 | 1.120e+07 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
@@ -229,25 +135,19 @@
 | 4d25s a 4F3/2 – 4d25p y 4D°3/2 | 447.870 | 3.190e+07 | 3.210e+07 (B+) | -0.6 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F5/2 – 4d25p y 4D°5/2 | 448.853 | 2.010e+07 | 2.010e+07 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F3/2 – 4d25p y 4D°1/2 | 448.872 | 1.490e+08 | 1.490e+08 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 4F5/2 – 4d25p y 4D°3/2 | 450.721 | 1.070e+08 | 1.010e+08 (B+) | +5.9 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F7/2 – 4d25p y 4D°5/2 | 452.905 | 8.330e+07 | 8.300e+07 (B+) | +0.4 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D3/2 – 4d5s5p z 2F°5/2 | 464.499 | 1.800e+07 | 1.800e+07 (C+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d5s5p z 2F°7/2 | 467.616 | 1.330e+07 | 1.330e+07 (C+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d5s5p z 2F°5/2 | 476.231 | 3.500e+06 | 3.500e+06 (C+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 4P1/2 – 4d25p z 4S°3/2 | 478.150 | 8.960e+06 | 7.600e+06 (B+) | +17.9 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F7/2 – 4d25p y 4F°9/2 | 478.237 | 1.010e+07 | 1.010e+07 (B) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F5/2 – 4d25p y 4F°7/2 | 480.064 | 1.570e+07 | 1.570e+07 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 2F5/2 – 4d25p z 4S°3/2 | 480.565 | 2.600e+07 | 2.260e+07 (B+) | +15.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 4P3/2 – 4d25p z 4S°3/2 | 480.614 | 3.830e+07 | 3.470e+07 (B+) | +10.4 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F3/2 – 4d25p y 4F°5/2 | 482.098 | 1.580e+07 | 1.580e+07 (B) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 4P5/2 – 4d25p z 4S°3/2 | 484.050 | 3.160e+07 | 3.050e+07 (B+) | +3.6 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F9/2 – 4d25p y 4F°9/2 | 484.121 | 8.610e+07 | 8.600e+07 (B) | +0.1 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F7/2 – 4d25p y 4F°7/2 | 484.702 | 6.700e+07 | 6.800e+07 (B+) | -1.5 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F5/2 – 4d25p y 4F°5/2 | 485.403 | 6.280e+07 | 6.300e+07 (B) | -0.3 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F3/2 – 4d25p y 4F°3/2 | 486.120 | 7.260e+07 | 7.300e+07 (B) | -0.5 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F5/2 – 4d25p y 4F°3/2 | 489.480 | 2.220e+07 | 2.220e+07 (C+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F7/2 – 4d25p y 4F°5/2 | 490.145 | 1.980e+07 | 1.980e+07 (B) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 4F9/2 – 4d25p y 4F°7/2 | 490.748 | 1.250e+07 | 1.200e+07 (B) | +4.2 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 2F5/2 – 4d25p x 2D°3/2 | 538.213 | 3.200e+07 | 3.200e+07 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4P5/2 – 4d25p x 2D°3/2 | 542.587 | 3.490e+07 | 3.490e+07 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F9/2 – 4d25p z 4G°11/2 | 546.798 | 6.370e+07 | 6.400e+07 (B+) | -0.5 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
@@ -261,16 +161,18 @@
 | 4d25s a 4P5/2 – 4d25p y 4D°5/2 | 559.250 | 4.870e+06 | 4.900e+06 (B+) | -0.6 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s b 2D5/2 – 4d25p x 2F°7/2 | 559.568 | 5.000e+06 | 5.000e+06 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 4F9/2 – 4d25p z 4G°9/2 | 560.789 | 5.840e+06 | 5.800e+06 (B+) | +0.7 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 4F3/2 – 4d25p z 4G°5/2 | 563.169 | 4.930e+07 | 4.500e+07 (B+) | +9.6 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
+| 4d25s a 4P5/2 – 4d25p y 4D°3/2 | 562.153 | 1.990e+06 | 1.960e+06 (B) | +1.5 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s b 2D5/2 – 4d25p x 2D°3/2 | 563.447 | 7.430e+06 | 7.400e+06 (B+) | +0.4 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 4F5/2 – 4d25p z 4G°5/2 | 567.684 | 9.220e+06 | 8.500e+06 (B+) | +8.5 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
+| 4d25s b 2D3/2 – 4d25p x 2F°5/2 | 567.722 | 4.200e+06 | 4.200e+06 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s5p z 4D°3/2 – 5p25s e 4P3/2 | 569.521 | 1.120e+07 | 1.100e+07 (D+) | +1.8 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
-| 4d25s a 4F7/2 – 4d25p z 4G°5/2 | 574.181 | 3.980e+05 | 3.600e+05 (B+) | +10.6 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
+| 4d25s a 2F7/2 – 4d25p y 4D°5/2 | 571.653 | 2.040e+06 | 2.040e+06 (B+) | +0.0 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s5p z 4D°5/2 – 5p25s e 4P3/2 | 576.726 | 3.730e+07 | 3.700e+07 (D+) | +0.8 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D3/2 – 4d5s5p z 2D°3/2 | 619.343 | 4.630e+06 | 4.600e+06 (C+) | +0.7 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D3/2 – 4d5s5p z 2D°5/2 | 622.430 | 5.840e+05 | 5.800e+05 (C+) | +0.7 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d5s5p z 2D°3/2 | 640.378 | 2.690e+05 | 2.700e+05 (C+) | -0.4 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d5s2 a 2D5/2 – 4d5s5p z 2D°5/2 | 643.678 | 4.050e+06 | 4.100e+06 (C+) | -1.2 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
+| 4d25s a 2G9/2 – 4d25p x 2F°7/2 | 643.895 | 4.860e+06 | 4.900e+06 (C+) | -0.8 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
+| 4d25s b 2D3/2 – 4d25p y 4F°3/2 | 644.563 | 3.170e+06 | 3.200e+06 (D) | -0.9 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 | 4d25s a 2P1/2 – 4d25p x 2D°3/2 | 681.703 | 7.140e+06 | 7.100e+06 (C) | +0.6 % | Hannaford, Lowe, Grevesse, Biémont, Whaling, Astrophys. J. 261, 736 (1982), Table 1 |
 
 ## Iodine (i): 1 lines
@@ -353,21 +255,12 @@
 | 4f75d 6s a 10D°5/2 – 4f75d 6p z 10F3/2 | 641.180 | 3.340e+07 | 3.340e+07 (B+) | +0.0 % | Den Hartog, Wickliffe, Lawler, Astrophys. J. Suppl. Ser. 141, 255 (2002) |
 | 4f75d 6s a 8D°5/2 – 4f75d 6p z 8D7/2 | 641.304 | 2.330e+07 | 2.330e+07 (B+) | +0.0 % | Den Hartog, Wickliffe, Lawler, Astrophys. J. Suppl. Ser. 141, 255 (2002) |
 
-## Holmium (ho): 12 lines
+## Holmium (ho): 3 lines
 
 | Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
 |---|---|---|---|---|---|
-| 4f116s2 4I°15/2 – 4f105d6s2 13/2 | 404.195 | 4.480e+07 | 3.730e+07 (–) | +20.1 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
-| 4f116s2 4I°15/2 – 4f116s6p (15/2,1)15/2 | 405.502 | 2.000e+08 | 1.620e+08 (–) | +23.5 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
-| 4f116s2 4I°15/2 – 4f116s6p (15/2,1)17/2 | 410.496 | 2.040e+08 | 1.550e+08 (–) | +31.6 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
 | 4f116s2 4I°13/2 – 4f116s6p (13/2,1)13/2 | 410.978 | 2.000e+08 | 2.000e+08 (–) | +0.0 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
 | 4f116s2 4I°13/2 – 4f116s6p (13/2,1)15/2 | 412.832 | 2.120e+08 | 2.100e+08 (–) | +1.0 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
-| 4f116s2 4I°15/2 – 4f116s6p (15/2,1)13/2 | 416.420 | 1.060e+08 | 8.970e+07 (–) | +18.2 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
-| 4f116s2 4I°15/2 – 4f116s6p (13/2,2)13/2 | 417.437 | 3.120e+07 | 2.580e+07 (–) | +20.9 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
-| 4f116s2 4I°13/2 – 4f116s6p (13/2,1)11/2 | 422.832 | 1.060e+08 | 1.100e+08 (–) | -3.6 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
-| 4f116s2 4I°15/2 – 4f116s6p (13/2,2)17/2 | 425.558 | 1.000e+07 | 1.150e+07 (–) | -13.0 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
-| 4f116s2 4I°15/2 – 4f105d6s2 (5,5/2)13/2 | 435.195 | 9.300e+06 | 8.900e+06 (–) | +4.5 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
-| 4f116s2 4I°15/2 – 4f105d6s2 (6,5/2)13/2 | 494.039 | 2.150e+06 | 2.600e+06 (–) | -17.3 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
 | 4f116s2 4I°15/2 – 4f116s6p (15/2,1)17/2 | 598.451 | 9.200e+05 | 9.300e+05 (–) | -1.1 % | G. Nave, J. Opt. Soc. Am. B 20, 2193 (2003), Table 2 |
 
 ## Thulium (tm): 1 lines
@@ -512,43 +405,40 @@
 | 5d46s a 6D7/2 – 5d36s6p z 6D°7/2 | 643.258 | 2.875e+06 | 2.880e+06 (B+) | -0.2 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 1 |
 | 5d46s a 6D9/2 – 5d36s6p z 6D°9/2 | 648.710 | 5.800e+06 | 5.800e+06 (B+) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 1 |
 
-## Tungsten (w): 26 lines
+## Tungsten (w): 24 lines
 
 | Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
 |---|---|---|---|---|---|
 | 5d46s2 5D0 – °1 | 288.024 | 2.433e+07 | 2.460e+07 (B) | -1.1 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
-| 5d46s2 5D0 – °1 | 291.185 | 7.667e+06 | 7.200e+06 (B) | +6.5 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
-| 5d46s2 5D1 – °2 | 293.585 | 1.460e+07 | 1.500e+07 (C) | -2.7 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D3 – °4 | 301.467 | 6.444e+06 | 6.400e+06 (B) | +0.7 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D4 – °5 | 301.735 | 9.273e+06 | 9.270e+06 (B) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d56s 7S3 – °4 | 301.832 | 1.211e+07 | 1.210e+07 (B) | +0.1 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
-| 5d46s2 5D1 – °1 | 302.581 | 1.400e+07 | 1.580e+07 (B) | -11.4 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D1 – °2 | 304.733 | 5.800e+06 | 5.800e+06 (B) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d56s 7S3 – °2 | 305.058 | 1.720e+07 | 1.700e+07 (B) | +1.2 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D3 – °4 | 309.441 | 4.444e+06 | 4.400e+06 (B) | +1.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
+| 5d46s2 5D0 – °1 | 319.249 | 3.233e+06 | 3.200e+06 (B) | +1.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D3 – °4 | 319.976 | 4.556e+06 | 4.600e+06 (B) | -1.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D2 – °2 | 320.921 | 4.400e+06 | 4.400e+06 (B) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D4 – °5 | 321.649 | 2.091e+07 | 2.100e+07 (B) | -0.4 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D3 – °4 | 330.177 | 8.111e+06 | 8.100e+06 (B) | +0.1 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d56s 7S3 – °2 | 331.235 | 5.600e+06 | 5.600e+06 (B) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
-| 5d56s 7S3 – 5d46s6p 5P°3 | 361.855 | 1.071e+07 | 1.100e+07 (B) | -2.6 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
+| 5d46s2 5D1 – 5d46s6p 5P°1 | 376.952 | 3.467e+06 | 3.470e+06 (B) | -0.1 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d56s 7S3 – 5d46s6p 5P°2 | 378.185 | 4.200e+06 | 4.200e+06 (B) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D2 – 5d46s6p 5P°2 | 383.614 | 5.200e+06 | 5.200e+06 (B) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D0 – 5d46s6p 5F°1 | 384.858 | 8.333e+05 | 8.300e+05 (B) | +0.4 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d56s 7S3 – 5d46s6p 7D°4 | 386.908 | 4.556e+06 | 4.600e+06 (B) | -1.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
+| 5d46s2 5D3 – 5d46s6p 5P°3 | 388.249 | 3.571e+06 | 3.600e+06 (B) | -0.8 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d56s 7S3 – 5d56p 7P°4 | 400.988 | 1.633e+07 | 1.630e+07 (B) | +0.2 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D3 – 5d46s6p 5P°2 | 407.110 | 3.600e+06 | 3.600e+06 (B) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
-| 5d56s 7S3 – 5d56p 7P°3 | 407.551 | 1.043e+07 | 1.000e+07 (B) | +4.3 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d46s2 5D4 – 5d46s6p 5P°3 | 410.386 | 4.857e+06 | 4.900e+06 (B) | -0.9 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d56s 7S3 – 5d56p 7P°2 | 429.581 | 1.240e+07 | 1.240e+07 (A) | +0.0 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 | 5d56s 7S3 – 5d46s6p 7D°3 | 430.331 | 3.571e+06 | 3.600e+06 (B) | -0.8 % | Den Hartog, Duquette, Lawler, J. Opt. Soc. Am. B 4, 48 (1987), Table 2 |
 
-## Thallium (tl): 9 lines
+## Thallium (tl): 8 lines
 
 | Line | λ vac (nm) | A shown (s⁻¹) | A NIST (accuracy) | difference | Source of the shown value |
 |---|---|---|---|---|---|
 | 6p 2P°1/2 – 7d 2D3/2 | 238.031 | 4.400e+07 | 4.400e+07 (C) | +0.0 % | Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Tab |
-| 6p 2P°1/2 – 8s 2S1/2 | 258.092 | 1.760e+07 | 1.800e+07 (D) | -2.2 % | Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Tab |
 | 6p 2P°1/2 – 6d 2D3/2 | 276.871 | 1.260e+08 | 1.260e+08 (C) | +0.0 % | Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Tab |
 | 6p 2P°3/2 – 7d 2D5/2 | 291.917 | 4.200e+07 | 4.200e+07 (C) | +0.0 % | Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Tab |
 | 6p 2P°3/2 – 8s 2S1/2 | 323.068 | 1.730e+07 | 1.730e+07 (C) | +0.0 % | Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Tab |

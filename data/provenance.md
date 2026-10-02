@@ -23,17 +23,17 @@ where the literature file has one; column *ν meas.*).
 | Potassium-40 | 84 | 77 | 5 | 0 | 0 | 2 | 33 | 16 | 13 | 4 | 0 | 2 | 7 |
 | Potassium-41 | 84 | 77 | 5 | 0 | 0 | 2 | 33 | 16 | 13 | 4 | 0 | 2 | 12 |
 | Beryllium-9 | 26 | 26 | 0 | 0 | 0 | 0 | 16 | 8 | 4 | 0 | 4 | 3 | 8 |
-| Magnesium-24 | 61 | 60 | 1 | 0 | 0 | 0 | 17 | 13 | 1 | 0 | 3 | 4 | 0 |
-| Magnesium-25 | 61 | 60 | 1 | 0 | 0 | 0 | 17 | 13 | 1 | 0 | 3 | 0 | 3 |
+| Magnesium-24 | 61 | 61 | 0 | 0 | 0 | 0 | 17 | 13 | 1 | 0 | 3 | 4 | 0 |
+| Magnesium-25 | 61 | 61 | 0 | 0 | 0 | 0 | 17 | 13 | 1 | 0 | 3 | 0 | 3 |
 | Calcium-40 | 61 | 53 | 5 | 0 | 0 | 3 | 34 | 15 | 1 | 0 | 18 | 2 | 0 |
 | Calcium-43 | 61 | 53 | 5 | 0 | 0 | 3 | 34 | 15 | 1 | 0 | 18 | 0 | 5 |
 
 Totals over the 12 curated elements (one isotope each):
 
-- transition rates / matrix elements: nist 582 (70%), exp 79 (9%), theory 151 (18%), model 0 (0%), none 24 (3%)
+- transition rates / matrix elements: nist 583 (70%), exp 78 (9%), theory 151 (18%), model 0 (0%), none 24 (3%)
 - lifetimes of excited levels: exp 170 (46%), theory 90 (24%), model 25 (7%), none 83 (23%)
 
-NIST-only element pages (78 elements, no literature compiled yet): 4684 lines drawn, 2306 with a NIST transition rate, 547 wavelength only; no lifetimes.
+NIST-only element pages (87 elements, no literature compiled yet): 5285 lines drawn, 2389 with a NIST transition rate, 1088 wavelength only; no lifetimes.
 
 nist = NIST ASD compilation; exp = measurement from data/literature; theory = high-accuracy calculation quoted from the
 literature; model = ARC model potential; none = no value (wavelength only / no lifetime).

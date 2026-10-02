@@ -48,9 +48,15 @@ Matching is by NIST level energy plus `J` / `lower_J` / `upper_J`; isotope-speci
 Briefs for research subagents must say: do the research yourself (no delegation), no e-mail or personal identifier in
 requests, mark derived / second-hand values, list conflicts.
 
-## Status (2026-10-01)
+## Status (2026-10-02)
 
-- 90 elements have a page; 65 have a literature file. Campaign log: `data/literature/QUEUE.md`.
+- 99 elements (hydrogen to einsteinium) have a page and a literature file. Campaign log: `data/literature/QUEUE.md`.
+- Pa U Np Pu Am Cm Bk Cf Es pages are built from `levels_not_in_nist` (Blaise & Wyart tables, archived web copy): NIST lists
+  only their ground level. `meta.lit_levels` switches the page wording to "from the literature". Fm, No: owner decided not to add.
+- Lifetime limits carry `tau_bound` ("<" / ">") and are shown as limits.
+- Old measured rates (owner's decision 2026-10-02): where a measurement older than 20 years differs from the NIST rate of the
+  same line, NIST is shown; `check_old_rates.py` lists candidates, `revert_old_rates.py` moves them to `A_s_older_measurement`.
+- Papers the owner has to download for the 18 thin elements: `data/literature/待下载论文清单.md`; PDFs go in `data/literature/pdf/`.
 - Round 4 (the last 31 elements) was searched on 2026-10-01; every element with NIST data now has a literature file.
 - Round 5 (2026-10-01) re-ran the 16 thin files. Still thin: Se Ga Au Er Mo Br I Ar Xe and Nd Ce Te Gd Tb Ir Pt Rn Th.
   Their key papers are paywalled or bot-blocked (each file lists them under `not_found`); another web pass will not help,

@@ -15,6 +15,7 @@
   "has_lit": true,
   "freq_isotope": "226",
   "limit_text": "Ra$^+$ ionisation limit   42573.36 cm$^{-1}$  =  5.27842 eV  (234.889 nm)",
+  "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Level energies are the NIST ASD values (226Ra; NIST adopts Santra et al. for 1P1 and Guest/Scielzo et al. for 3P1). rme_J_ea0 is |<J||D||J'>| in e a0 in the symmetric convention of the Safronova papers / UDel portal, A = 2.02613e18 |d|^2 / ((2J'+1) lambda^3[Angstrom]), J' = upper level; Dzuba & Flambaum (their Eq. 12) and Dzuba & Ginges use the same convention, so no conversion was needed. The UDel portal does carry neutral Ra (element key \"Ra1\": 48 matrix elements, 24 rates, lifetimes; data service https://atom.ece.udel.edu/graphql behind https://www1.udel.edu/atom/); all its Ra I numbers are theory except the 3P1 lifetime, which it attributes to Scielzo et al. It also carries Ra+ (key \"Ra2\"), not used here. Isotope shifts are nu(first) - nu(second); the ISOLDE tables are referenced to 214Ra, and for odd isotopes refer to hyperfine centres of gravity. Hyperfine A, B signs as printed in the compilation. frequency_THz entries are for 226Ra (I = 0, no hyperfine structure); frequency_THz_225 entries are centres of gravity derived here from the measured hyperfine component and A, and the measured components themselves are under hyperfine_component_frequency_THz. Extra fields beyond the schema: ionization_energy, linewidth_MHz and measured_energy_cm on levels, oscillator_strength, hyperfine_component_frequency_THz, wavenumber_cm inside frequency entries, half_life / mu / Q in isotopes (abundance_percent is null: no stable isotope). Radium has no stable isotope; 226Ra (1600 y) and 225Ra (14.9 d, I=1/2) are the laser-cooled ones, 223Ra (11.43 d, I=3/2) is the third of interest."
  },
@@ -122,6 +123,7 @@
    "tau_unc": 60000.0,
    "tau_tier": "exp",
    "tau_src": "Guest, Scielzo, Ahmad, Bailey, Greene, Holt, Lu, O'Connor, Potterveld, Phys. Rev. Lett. 98, 093001 (2007) [arXiv:physics/0701263]; from the room-temperature blackbody repumping rate 3P0 -> 3D1 measured in the MOT (T = 296(3) K); also in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table IV. Note: the authors interpret this number as a lower bound on the lifetime, because other loss channels from 3P0 could contribute to the measured rate",
+   "tau_bound": ">",
    "col": 5
   },
   {

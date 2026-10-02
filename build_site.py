@@ -226,7 +226,7 @@ def atom_page(key, pages):
         elif l.get("tau_ns") is None:
             tau = "–"
         else:
-            tau = fmt_tau(l["tau_ns"]) + badge(l["tau_tier"])
+            tau = (l["tau_bound"] + " " if l.get("tau_bound") else "") + fmt_tau(l["tau_ns"]) + badge(l["tau_tier"])
         h = l.get("hfs") or {}
         rows.append(dict(id=f"level-{l['id']}", cells=[al.tex_to_html(l["name"]), f"{l['E']:.3f}", al.jstr(l["J"]), l["parity"], tau,
                                                        f"{l['g']:.5g}" if l.get("g") else "–",

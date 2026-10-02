@@ -6,7 +6,7 @@
   "symbol": "Tc",
   "A": null,
   "Z": 43,
-  "I": "9/2",
+  "I": "6",
   "kind": "nist",
   "limit_cm": 57421.68,
   "scale": "auto",
@@ -15,6 +15,7 @@
   "has_lit": true,
   "freq_isotope": "97",
   "limit_text": "Tc$^+$ ionisation limit   57421.68 cm$^{-1}$  =  7.11938 eV  (174.150 nm)",
+  "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Hyperfine constants and isotope shifts are from resonance ionization spectroscopy with ~100 MHz resolution (Kron et al. 2020, open access via the GSI repository). Isotope shifts are nu(first) - nu(second). All level lifetimes in this file are THEORY (Kurucz) because no measurement exists; treat them as ~25 % estimates. nuclear_moments is an extra top-level block (not in the schema) with the moments derived in the same paper."
  },
@@ -83,10 +84,10 @@
    "tau_ns": null,
    "tau_tier": "stable",
    "hfs": {
-    "A": -107.34,
-    "A_unc": 0.08,
-    "B": 0.3,
-    "B_unc": 2.0,
+    "A": -65.86,
+    "A_unc": 0.1,
+    "B": 1.5,
+    "B_unc": 6.3,
     "tier": "exp",
     "src": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)"
    },
@@ -217,10 +218,10 @@
    "tau_tier": "theory",
    "tau_src": "Kurucz semi-empirical calculation (K17), life4300.dat",
    "hfs": {
-    "A": 799.99,
-    "A_unc": 0.26,
-    "B": -43.9,
-    "B_unc": 3.5,
+    "A": 490.96,
+    "A_unc": 0.32,
+    "B": 17.0,
+    "B_unc": 10.8,
     "tier": "exp",
     "src": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)"
    },
@@ -242,10 +243,10 @@
    "tau_tier": "theory",
    "tau_src": "Kurucz semi-empirical calculation (K17), life4300.dat",
    "hfs": {
-    "A": 894.08,
-    "A_unc": 0.28,
-    "B": 57.4,
-    "B_unc": 3.8,
+    "A": 548.6,
+    "A_unc": 0.34,
+    "B": -9.4,
+    "B_unc": 11.2,
     "tier": "exp",
     "src": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)"
    },
@@ -267,10 +268,10 @@
    "tau_tier": "theory",
    "tau_src": "Kurucz semi-empirical calculation (K17), life4300.dat",
    "hfs": {
-    "A": 1183.27,
-    "A_unc": 0.27,
-    "B": -12.6,
-    "B_unc": 3.4,
+    "A": 726.85,
+    "A_unc": 0.34,
+    "B": -3.1,
+    "B_unc": 10.5,
     "tier": "exp",
     "src": "Kron, Beerwerth, Raeder, Fritzsche, Heinke, Schoenberg, Truemper, Wendt, Phys. Rev. C 102, 034307 (2020)"
    },
@@ -1896,7 +1897,7 @@
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
   },
   {
-   "title": "$^{99}$Tc hyperfine structure  ($I$ = 9/2)",
+   "title": "$^{98}$Tc hyperfine structure  ($I$ = 6)",
    "header": [
     "Level",
     "A (MHz)",
@@ -1907,27 +1908,27 @@
    "rows": [
     [
      "$4d^{5}5s^{2}\\ ^6S_{5/2}$",
-     "-107.34(8)",
-     "0.3(20)",
-     "F=2: +1476.06   F=3: +1153.95   F=4: +724.51   F=5: +187.76   F=6: -456.26   F=7: -1207.50"
+     "-65.86(10)",
+     "2(6)",
+     "F=7/2: +1153.15   F=9/2: +856.32   F=11/2: +493.71   F=13/2: +65.44   F=15/2: -428.35   F=17/2: -987.52"
     ],
     [
      "$4d^{5}5s5p\\ ^6P^{o}_{7/2}$",
-     "799.99(26)",
-     "-44(4)",
-     "F=1: -15419.93   F=2: -13813.68   F=3: -11405.61   F=4: -8197.28   F=5: -4190.80   F=6: +611.23   F=7: +6205.67   F=8: +12588.87"
+     "491.0(3)",
+     "17(11)",
+     "F=5/2: -12021.76   F=7/2: -10306.30   F=9/2: -8100.04   F=11/2: -5402.49   F=13/2: -2213.05   F=15/2: +1469.02   F=17/2: +5644.52   F=19/2: +10314.41"
     ],
     [
      "$4d^{5}5s5p\\ ^6P^{o}_{5/2}$",
-     "894.08(28)",
-     "57(4)",
-     "F=2: -12267.29   F=3: -9602.27   F=4: -6042.22   F=5: -1581.38   F=6: +3787.40   F=7: +10072.75"
+     "548.6(3)",
+     "-9(11)",
+     "F=7/2: -9604.24   F=9/2: -7132.65   F=11/2: -4113.01   F=13/2: -545.99   F=15/2: +3567.55   F=17/2: +8226.65"
     ],
     [
      "$4d^{5}5s5p\\ ^6P^{o}_{3/2}$",
-     "1183.27(27)",
-     "-13(3)",
-     "F=3: -9767.75   F=4: -5026.27   F=5: +892.70   F=6: +7983.92"
+     "726.9(3)",
+     "-3(10)",
+     "F=9/2: -7633.16   F=11/2: -3633.55   F=13/2: +1091.44   F=15/2: +6540.88"
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."

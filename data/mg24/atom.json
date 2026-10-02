@@ -15,6 +15,7 @@
   "has_lit": true,
   "freq_isotope": null,
   "limit_text": "Mg$^+$ ionisation limit   61671.05 cm$^{-1}$  =  7.64624 eV  (162.151 nm)",
+  "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Isotope shifts are nu(first) - nu(second) in MHz. On 1S0-3P1, 1S0-3P0, 1S0-1P1 and 3P-3D the heavier isotope lies at HIGHER frequency (positive 26-24); on the 517 nm 3P-4s 3S1 triplet the heavier isotope lies at LOWER frequency (negative 26-24): He et al. print unsigned 'Delta 24-26' values and the sign was fixed from Hallstadius & Hansen as quoted by Berengut et al. 2005 / Aldenius et al. 2007. Frequencies refer to 24Mg unless an 'isotope' key says otherwise; NIST level energies in this file are natural-mixture values copied from data/nist/Mg_I_levels.tsv. frequency_THz values given with wavenumber_cm were converted with c = 299792458 m/s. Entries with method 'compilation' were read in a later paper/thesis that quotes the original experiment (original named in 'source'). Fields marked 'derived here' are simple differences/centroids/1-over-rate of quoted numbers. Non-schema keys used: alternatives, note, natural_linewidth_MHz, magic_wavelength_nm, quadratic_zeeman_MHz_per_T2, lattice_light_shift_slope, hyperfine_components_25Mg_MHz, wavenumber_cm, intercombination_decay_rate_s, unc_plus/unc_minus, nuclear_moment_muN. 3P1 lifetime: experiments (4.0-5.3 ms) sit above most theory (2.8-3.8 ms). 4s 3S1 lifetime: experiments scatter 9.7-14.8 ns. 3P2 lifetime 2050 s is for 24Mg; 25Mg is shortened by hyperfine quenching (theory). Photoionization: Mg is ionized by resonance-enhanced two-photon ionization at 285 nm: 3s2 1S0 -> 3s3p 1P1 (35051.264 cm^-1) followed by a second 285 nm photon into the continuum (2 x 35051 cm^-1 > limit); isotope-selective by tuning the first step (isotope shifts 0.73 and 1.41 GHz, ~80 MHz natural width) - Kjaergaard, Hornekaer, Thommesen, Videsen, Drewsen, Appl. Phys. B 71, 207 (2000), https://phys.au.dk/fileadmin/site_files/forskning/iontrap/pdfs/Isotope_Kjaergaard_ApplPhysB_71_2000.pdf (in an ion trap the 280 nm Mg+ cooling light can also provide the second photon). Absolute photo-ionization cross section of 3s3p 1P1 at 285 nm: (8.1 +- 2.3)e-17 cm^2, Madsen & Thomsen, J. Phys. B 35, 2173 (2002), abstract at https://www.osti.gov/etdeweb/biblio/20277584 ; this two-photon ionization is the dominant loss of 285 nm Mg MOTs (Therkildsen thesis). First ionization limit Mg II (3s 2S1/2): 61671.05(3) cm^-1, 'Limit' row of data/nist/Mg_I_levels.tsv (NIST ASD, https://physics.nist.gov/PhysRefData/ASD/levels_form.html ; Kjaergaard et al. show E0 = 7.65 eV)."
  },
@@ -1082,15 +1083,14 @@
    },
    "gamma_MHz": 3.617e-05,
    "type": "E1 (intercombination)",
-   "A": 219.0,
-   "A_tier": "exp",
-   "A_src": "Kwong, Smith, Parkinson, Phys. Rev. A 25, 2629 (1982) (abstract): A = (2.19 +- 0.30)e2 s^-1, f = (2.06 +- 0.29)e-6, laser selective excitation. Compare 1/tau = 227 s^-1 from the 4.4(2) ms lifetime (only decay channel of 3P1)",
-   "A_unc": 30,
-   "d": 0.005568,
-   "d_tier": "exp",
-   "d_src": "Kwong, Smith, Parkinson, Phys. Rev. A 25, 2629 (1982) (abstract): A = (2.19 +- 0.30)e2 s^-1, f = (2.06 +- 0.29)e-6, laser selective excitation. Compare 1/tau = 227 s^-1 from the 4.4(2) ms lifetime (only decay channel of 3P1) (from A)",
-   "br": 0.9636,
-   "br_tier": "exp",
+   "A": 254.0,
+   "A_tier": "nist",
+   "A_src": "NIST ASD (accuracy D)",
+   "d": 0.005996,
+   "d_tier": "nist",
+   "d_src": "NIST ASD (accuracy D) (from A)",
+   "br": 1.0,
+   "br_tier": "nist",
    "lam_obs": 457.23767
   },
   {
@@ -1818,9 +1818,9 @@
      "457.1096",
      "655.659924",
      "0.006",
-     "2.190e+02",
+     "2.540e+02",
      "3.617e-05",
-     "96.4",
+     "100",
      "intercombination line: narrow-line spectroscopy / Ramsey-…"
     ],
     [
@@ -2018,7 +2018,7 @@
  ],
  "validation": [
   "levels: 18   lines < 2000 nm: 61   with matrix element: 23",
-  "transition-rate provenance: exp: 1, nist: 60",
+  "transition-rate provenance: nist: 61",
   "levels with a measured lifetime: 14"
  ],
  "sources": {
@@ -2065,10 +2065,10 @@
   "quoted in Kjaergaard et al., Appl. Phys. B 71, 207 (2000)": "https://phys.au.dk/fileadmin/site_files/forskning/iontrap/pdfs/Isotope_Kjaergaard_ApplPhysB_71_2000.pdf",
   "Friebe et al., 'Remote frequency measurement of the 1S0-3P1 transition in laser cooled 24Mg' (2011) [arXiv:1107.3051]: 655 659 923 839 730 (48) Hz, laser-cooled 24Mg, fibre link to PTB": "https://arxiv.org/pdf/1107.3051",
   "Friebe et al., Phys. Rev. A 78, 033830 (2008) [arXiv:0711.4926]: 655 659 923 839.6 (1.6) kHz, thermal beam": "https://arxiv.org/pdf/0711.4926",
-  "Kwong, Smith, Parkinson, Phys. Rev. A 25, 2629 (1982) (abstract): A = (2.19 +- 0.30)e2 s^-1, f = (2.06 +- 0.29)e-6, laser selective excitation. Compare 1/tau = 227 s^-1 from the 4.4(2) ms lifetime (only decay channel of 3P1)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.25.2629",
   "Sterr, Sengstock, Muller, Ertmer, Appl. Phys. B 56, 62 (1993), optical Ramsey spectroscopy; value as quoted in Table II of Friebe et al., Phys. Rev. A 78, 033830 (2008) [arXiv:0711.4926]": "https://arxiv.org/pdf/0711.4926",
   "centroid derived here from the three 25Mg hyperfine components of Sterr et al. 1993 quoted in Table II of Friebe et al., Phys. Rev. A 78, 033830 (2008) [arXiv:0711.4926] (shift relative to 24Mg: F=7/2 1040.7(1), F=5/2 1556.8(1), F=3/2 1906.8(1) MHz; weights 2F+1)": "https://arxiv.org/pdf/0711.4926",
   "Sterr et al. 1993 via Table II of Friebe et al., Phys. Rev. A 78, 033830 (2008) [arXiv:0711.4926]": "https://arxiv.org/pdf/0711.4926",
+  "Kwong, Smith, Parkinson, Phys. Rev. A 25, 2629 (1982) (abstract): A = (2.19 +- 0.30)e2 s^-1, f = (2.06 +- 0.29)e-6, laser selective excitation. Compare 1/tau = 227 s^-1 from the 4.4(2) ms lifetime (only decay channel of 3P1)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.25.2629",
   "Kulosa et al., Phys. Rev. Lett. 115, 240801 (2015) [arXiv:1508.01118]: 655 058 646 691(101) kHz, direct magnetic-field-induced spectroscopy in a magic-wavelength lattice": "https://arxiv.org/pdf/1508.01118",
   "calculated from nu(1S0-3P1) minus the 3P0-3P1 interval, Table 2 of Friebe et al., 'Remote frequency measurement of the 1S0-3P1 transition in laser cooled 24Mg' (2011) [arXiv:1107.3051] (25Mg: 655 060 050 580 000(102 000) Hz; 26Mg: 655 061 328 149 000(20 000) Hz)": "https://arxiv.org/pdf/1107.3051",
   "Kulosa et al., Phys. Rev. Lett. 115, 240801 (2015) [arXiv:1508.01118] (theory in same paper: 468.45(23) nm)": "https://arxiv.org/pdf/1508.01118",

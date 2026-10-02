@@ -15,6 +15,7 @@
   "has_lit": true,
   "freq_isotope": "52",
   "limit_text": "Cr$^+$ ionisation limit   54575.60 cm$^{-1}$  =  6.76651 eV  (183.232 nm)",
+  "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Lifetimes are the Cooper, Gibson, Lawler (1997) LIF values as reprinted in Table 1 of Sobeck et al. 2007 (arXiv version read; 65 of the 131 levels) - method \"compilation\" because the original was not opened. Transition probabilities are from the machine-readable Table 3 of Sobeck et al. at CDS, restricted to lines the site draws plus all lines from z7P, y7P and z5P; NIST ASD already contains A values of comparable origin for most of them. rme_J_ea0 is derived from A with the SCHEMA convention. 53Cr has negative A in 7S3, 7P4, 5D4, 5D3 (inverted hyperfine structure; F = 9/2 is the lowest ground-state level). Isotope-shift keys are written 53-52 with the sign as printed in the source; where the source did not state its sign convention this is said in the note. Extra fields beyond SCHEMA.md: top-level ionization_limit, laser_cooling_scheme, conflicts; level fields lifetime_other, decay_to_metastable, magnetic_moment_muB; transition fields wavelength_vac_nm (measured, with isotope), linewidth_MHz, saturation_intensity_mW_cm2, doppler_limit_uK. Lifetime entries whose note says LOWER BOUND are bounds. The a5D4 level (8307.5753 cm-1) is not in data/cr/levels.csv but is the main leak / repump state and is included."
  },
@@ -187,6 +188,7 @@
    "tau_unc": null,
    "tau_tier": "exp",
    "tau_src": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001). Note: LOWER BOUND (tau_D > 50 s) deduced from magnetic-trap decay times",
+   "tau_bound": ">",
    "hfs": {
     "A": -35.683,
     "A_unc": 0.005,
@@ -212,6 +214,7 @@
    "tau_unc": null,
    "tau_tier": "exp",
    "tau_src": "Stuhler, Schmidt, Hensler, Werner, Mlynek, Pfau, Phys. Rev. A 64, 031405(R) (2001). Note: LOWER BOUND (tau_D > 50 s) deduced from magnetic-trap decay times; the Stuhler thesis states > 60 s",
+   "tau_bound": ">",
    "hfs": {
     "A": -48.755,
     "A_unc": 0.005,

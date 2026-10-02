@@ -1,0 +1,3510 @@
+{
+ "meta": {
+  "key": "pu",
+  "slug": "plutonium",
+  "element": "Plutonium",
+  "symbol": "Pu",
+  "A": null,
+  "Z": 94,
+  "I": "5/2",
+  "kind": "nist",
+  "limit_cm": 48601.0,
+  "scale": "auto",
+  "spectrum": "Pu I",
+  "auto": true,
+  "has_lit": true,
+  "freq_isotope": "238",
+  "limit_text": "Pu$^+$ ionisation limit   48601.00 cm$^{-1}$  =  6.02576 eV  (205.757 nm)",
+  "lit_levels": 79,
+  "guide_tau": "Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists).",
+  "notes": "Plutonium has no stable isotope; level energies are those of 240Pu from the Blaise-Wyart compilation (archived web tables of Laboratoire Aime Cotton; energies printed without uncertainty, typically 0.001 cm-1 digits from Fourier-transform spectra). levels_not_in_nist holds the levels of the entered lines plus every tabulated level below 16000 cm-1. Lines: the \"selected wavelengths\" table of the same compilation (strong classified Pu I lines, air wavelengths, levels printed truncated to 1 cm-1 and matched here to the level tables by energy, J and wavenumber; the residual is in each note); the highest-intensity lines and those from the lowest levels were kept (table has 184 Pu I lines). Many upper levels lie above 30000 cm-1 because the strong ultraviolet lines end there. relative_intensity is the table intensity, not calibrated. isotope_shift_MHz with key 240-239 is derived from the level-shift columns Delta-T(240-239) (10^-3 cm^-1; the zero of that scale is arbitrary, only differences matter) and means nu(240Pu) - nu(239Pu); sign checked against Voss 2017. Voss shifts are stored as nu(A) - nu(240). g_J values in levels_not_in_nist are the table values (Zeeman-effect measurements quoted in the compilation). Laser excitation steps without an emission-line entry carry a note."
+ },
+ "columns": [
+  {
+   "key": "even J=0",
+   "header": "J = 0",
+   "group": "\\mathrm{even}",
+   "width": 1.0
+  },
+  {
+   "key": "even J=1",
+   "header": "J = 1",
+   "group": "\\mathrm{even}",
+   "width": 1.0
+  },
+  {
+   "key": "even J=2",
+   "header": "J = 2",
+   "group": "\\mathrm{even}",
+   "width": 1.0
+  },
+  {
+   "key": "even J=3",
+   "header": "J = 3",
+   "group": "\\mathrm{even}",
+   "width": 1.0
+  },
+  {
+   "key": "even J=4",
+   "header": "J = 4",
+   "group": "\\mathrm{even}",
+   "width": 1.0
+  },
+  {
+   "key": "even J=6",
+   "header": "J = 6",
+   "group": "\\mathrm{even}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=0",
+   "header": "J = 0",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=1",
+   "header": "J = 1",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=2",
+   "header": "J = 2",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=3",
+   "header": "J = 3",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=4",
+   "header": "J = 4",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=5",
+   "header": "J = 5",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=6",
+   "header": "J = 6",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  }
+ ],
+ "levels": [
+  {
+   "id": 0,
+   "E": 0.0,
+   "unc": 0.0,
+   "J": 0.0,
+   "conf": "5f6.7s2",
+   "term": "7F",
+   "parity": "even",
+   "g": null,
+   "name": "^7F_{0}",
+   "plain": "5f67s2 7F0",
+   "tau_ns": null,
+   "tau_tier": "stable",
+   "col": 0
+  },
+  {
+   "id": 1,
+   "E": 2203.606,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s2",
+   "term": "7F",
+   "parity": "even",
+   "g": 1.495,
+   "name": "^7F_{1}",
+   "plain": "5f67s2 7F1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": -2.2,
+    "A_unc": 4.8,
+    "B": 1058.6,
+    "B_unc": 8.2,
+    "tier": "exp",
+    "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)"
+   },
+   "col": 1
+  },
+  {
+   "id": 2,
+   "E": 4299.659,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s2",
+   "term": "7F",
+   "parity": "even",
+   "g": 1.482,
+   "name": "^7F_{2}",
+   "plain": "5f67s2 7F2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 3,
+   "E": 6144.515,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f6.7s2",
+   "term": "7F",
+   "parity": "even",
+   "g": 1.473,
+   "name": "^7F_{3}",
+   "plain": "5f67s2 7F3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 4,
+   "E": 6313.866,
+   "unc": null,
+   "J": 4.0,
+   "conf": "5f5(6H).6d.7s2",
+   "term": "7K*",
+   "parity": "odd",
+   "g": 0.487,
+   "name": "^7K^{o}_{4}",
+   "plain": "5f56d7s2 7K°4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 10
+  },
+  {
+   "id": 5,
+   "E": 7774.653,
+   "unc": null,
+   "J": 4.0,
+   "conf": "5f6.7s2",
+   "term": "7F",
+   "parity": "even",
+   "g": 1.463,
+   "name": "^7F_{4}",
+   "plain": "5f67s2 7F4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
+  },
+  {
+   "id": 6,
+   "E": 8768.139,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f5(6H).6d.7s2",
+   "term": "7H*",
+   "parity": "odd",
+   "g": 0.362,
+   "name": "^7H^{o}_{2}",
+   "plain": "5f56d7s2 7H°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 7,
+   "E": 9386.801,
+   "unc": null,
+   "J": 5.0,
+   "conf": "5f5(6H).6d.7s2",
+   "term": "7K*",
+   "parity": "odd",
+   "g": 0.801,
+   "name": "^7K^{o}_{5}",
+   "plain": "5f56d7s2 7K°5",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 11
+  },
+  {
+   "id": 8,
+   "E": 10238.473,
+   "unc": null,
+   "J": 6.0,
+   "conf": "5f6.7s2",
+   "term": "7F",
+   "parity": "even",
+   "g": 1.431,
+   "name": "^7F_{6}",
+   "plain": "5f67s2 7F6",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 5
+  },
+  {
+   "id": 9,
+   "E": 10486.922,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5(6H).6d.7s2",
+   "term": "7G*",
+   "parity": "odd",
+   "g": 0.355,
+   "name": "^7G^{o}_{1}",
+   "plain": "5f56d7s2 7G°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 10,
+   "E": 13517.647,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f5(6H).6d.7s2",
+   "term": "7G*",
+   "parity": "odd",
+   "g": 0.892,
+   "name": "^7G^{o}_{2}",
+   "plain": "5f56d7s2 7G°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 11,
+   "E": 15406.76,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5(6H).6d.7s2",
+   "term": "7G*",
+   "parity": "odd",
+   "g": 0.89,
+   "name": "^7G^{o}_{1}",
+   "plain": "5f56d7s2 7G°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 12,
+   "E": 15449.472,
+   "unc": null,
+   "J": 0.0,
+   "conf": "5f6.7s.7p",
+   "term": "9G*",
+   "parity": "odd",
+   "g": null,
+   "name": "^9G^{o}_{0}",
+   "plain": "5f67s7p 9G°0",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 6
+  },
+  {
+   "id": 13,
+   "E": 15856.888,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7G*",
+   "parity": "odd",
+   "g": 1.103,
+   "name": "^7G^{o}_{1}",
+   "plain": "5f56d7s2 7G°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 14,
+   "E": 16202.112,
+   "unc": null,
+   "J": 0.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7F*",
+   "parity": "odd",
+   "g": null,
+   "name": "^7F^{o}_{0}",
+   "plain": "5f56d7s2 7F°0",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 6
+  },
+  {
+   "id": 15,
+   "E": 16595.111,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7G*",
+   "parity": "odd",
+   "g": 0.999,
+   "name": "^7G^{o}_{3}",
+   "plain": "5f56d7s2 7G°3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 9
+  },
+  {
+   "id": 16,
+   "E": 16734.152,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f5(6H).6d.7s2",
+   "term": "7F*",
+   "parity": "odd",
+   "g": 0.928,
+   "name": "^7F^{o}_{2}",
+   "plain": "5f56d7s2 7F°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 17,
+   "E": 17045.776,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "9G*",
+   "parity": "odd",
+   "g": 1.474,
+   "name": "^9G^{o}_{1}",
+   "plain": "5f67s7p 9G°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 18,
+   "E": 17500.977,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7D*",
+   "parity": "odd",
+   "g": 2.258,
+   "name": "^7D^{o}_{1}",
+   "plain": "5f56d7s2 7D°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 19,
+   "E": 17615.482,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7F*",
+   "parity": "odd",
+   "g": 1.45,
+   "name": "^7F^{o}_{2}",
+   "plain": "5f56d7s2 7F°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 20,
+   "E": 17897.119,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f5(6H<5/2>).7s2.7p<1/2>",
+   "term": "(5/2,1/2)",
+   "parity": "even",
+   "g": 0.45,
+   "name": "(5/2,1/2)_{3}",
+   "plain": "5f57s27p (5/2,1/2)3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 21,
+   "E": 18346.917,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7D*",
+   "parity": "odd",
+   "g": 1.518,
+   "name": "^7D^{o}_{2}",
+   "plain": "5f56d7s2 7D°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 22,
+   "E": 18578.669,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "9F*",
+   "parity": "odd",
+   "g": 1.932,
+   "name": "^9F^{o}_{1}",
+   "plain": "5f67s7p 9F°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 23,
+   "E": 19074.292,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "9G*",
+   "parity": "odd",
+   "g": 1.532,
+   "name": "^9G^{o}_{2}",
+   "plain": "5f67s7p 9G°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 24,
+   "E": 19203.415,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "5G*",
+   "parity": "odd",
+   "g": 1.021,
+   "name": "^5G^{o}_{2}",
+   "plain": "5f56d7s2 5G°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 25,
+   "E": 19281.917,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7P*",
+   "parity": "odd",
+   "g": 1.822,
+   "name": "^7P^{o}_{2}",
+   "plain": "5f56d7s2 7P°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 26,
+   "E": 19426.512,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7F*",
+   "parity": "odd",
+   "g": 1.435,
+   "name": "^7F^{o}_{3}",
+   "plain": "5f56d7s2 7F°3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 9
+  },
+  {
+   "id": 27,
+   "E": 19959.027,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "7G*",
+   "parity": "odd",
+   "g": 0.76,
+   "name": "^7G^{o}_{1}",
+   "plain": "5f67s7p 7G°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 28,
+   "E": 20306.482,
+   "unc": null,
+   "J": 4.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "5G*",
+   "parity": "odd",
+   "g": 1.123,
+   "name": "^5G^{o}_{4}",
+   "plain": "5f56d7s2 5G°4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 10
+  },
+  {
+   "id": 29,
+   "E": 20828.477,
+   "unc": null,
+   "J": 4.0,
+   "conf": "5f6.6d.7s(8K).7p",
+   "term": "9L",
+   "parity": "even",
+   "g": 0.352,
+   "name": "^9L_{4}",
+   "plain": "5f66d7s7p 9L4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
+  },
+  {
+   "id": 30,
+   "E": 21227.793,
+   "unc": null,
+   "J": 4.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7F*",
+   "parity": "odd",
+   "g": 1.346,
+   "name": "^7F^{o}_{4}",
+   "plain": "5f56d7s2 7F°4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 10
+  },
+  {
+   "id": 31,
+   "E": 21417.765,
+   "unc": null,
+   "J": 4.0,
+   "conf": "5f5(6H<7/2>).7s2.7p<1/2>",
+   "term": "(7/2,1/2)",
+   "parity": "even",
+   "g": 0.802,
+   "name": "(7/2,1/2)_{4}",
+   "plain": "5f57s27p (7/2,1/2)4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
+  },
+  {
+   "id": 32,
+   "E": 21420.983,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f6.7s.7p",
+   "term": "9D*",
+   "parity": "odd",
+   "g": 1.663,
+   "name": "^9D^{o}_{3}",
+   "plain": "5f67s7p 9D°3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 9
+  },
+  {
+   "id": 33,
+   "E": 22176.323,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "5D*",
+   "parity": "odd",
+   "g": null,
+   "name": "^5D^{o}_{1}",
+   "plain": "5f67s7p 5D°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 34,
+   "E": 22182.03,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "7G*",
+   "parity": "odd",
+   "g": null,
+   "name": "^7G^{o}_{2}",
+   "plain": "5f67s7p 7G°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 35,
+   "E": 23037.432,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5.6d.7s2",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.87,
+   "name": "(23037)^{o}_{1}",
+   "plain": "5f56d7s2 °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 36,
+   "E": 23274.858,
+   "unc": null,
+   "J": 4.0,
+   "conf": "5f6.7s.7p",
+   "term": "9D*",
+   "parity": "odd",
+   "g": 1.604,
+   "name": "^9D^{o}_{4}",
+   "plain": "5f67s7p 9D°4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 10
+  },
+  {
+   "id": 37,
+   "E": 23315.211,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "7F*",
+   "parity": "odd",
+   "g": 1.335,
+   "name": "^7F^{o}_{2}",
+   "plain": "5f67s7p 7F°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 38,
+   "E": 23766.139,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "7D*",
+   "parity": "odd",
+   "g": 2.162,
+   "name": "^7D^{o}_{1}",
+   "plain": "5f67s7p 7D°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 39,
+   "E": 24012.509,
+   "unc": null,
+   "J": 6.0,
+   "conf": "5f5(6F).6d.7s2",
+   "term": "7F*",
+   "parity": "odd",
+   "g": 1.248,
+   "name": "^7F^{o}_{6}",
+   "plain": "5f56d7s2 7F°6",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 12
+  },
+  {
+   "id": 40,
+   "E": 24091.173,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f6.7s.7p",
+   "term": "7G*",
+   "parity": "odd",
+   "g": 1.245,
+   "name": "^7G^{o}_{3}",
+   "plain": "5f67s7p 7G°3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 9
+  },
+  {
+   "id": 41,
+   "E": 24158.741,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "5D*",
+   "parity": "odd",
+   "g": 1.24,
+   "name": "^5D^{o}_{2}",
+   "plain": "5f67s7p 5D°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 42,
+   "E": 24188.639,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5.6d2.7s",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.667,
+   "name": "(24189)^{o}_{1}",
+   "plain": "5f56d27s °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 43,
+   "E": 25660.792,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5.6d2.7s",
+   "term": "*",
+   "parity": "odd",
+   "g": null,
+   "name": "(25661)^{o}_{1}",
+   "plain": "5f56d27s °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 44,
+   "E": 25959.849,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5.6d2.7s",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.037,
+   "name": "(25960)^{o}_{1}",
+   "plain": "5f56d27s °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": -278.1,
+    "A_unc": 5.6,
+    "B": 100.8,
+    "B_unc": 18.0,
+    "tier": "exp",
+    "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)"
+   },
+   "col": 7
+  },
+  {
+   "id": 45,
+   "E": 26498.599,
+   "unc": null,
+   "J": 0.0,
+   "conf": "5f6.7s.7p",
+   "term": "5D*",
+   "parity": "odd",
+   "g": null,
+   "name": "^5D^{o}_{0}",
+   "plain": "5f67s7p 5D°0",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 6
+  },
+  {
+   "id": 46,
+   "E": 26633.288,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.124,
+   "name": "(26633)^{o}_{1}",
+   "plain": "5f67s7p °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 47,
+   "E": 26872.323,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f5(6F).6d2(3F)(8F)7s",
+   "term": "9F*",
+   "parity": "odd",
+   "g": 2.69,
+   "name": "^9F^{o}_{1}",
+   "plain": "5f56d27s 9F°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 48,
+   "E": 27563.217,
+   "unc": null,
+   "J": 1.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.745,
+   "name": "(27563)^{o}_{1}",
+   "plain": "°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 49,
+   "E": 27651.19,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f5.6d2.7s",
+   "term": "9F*",
+   "parity": "odd",
+   "g": 1.57,
+   "name": "^9F^{o}_{2}",
+   "plain": "5f56d27s 9F°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 50,
+   "E": 27979.161,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.186,
+   "name": "(27979)^{o}_{2}",
+   "plain": "5f67s7p °2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 37.7,
+    "A_unc": 3.4,
+    "B": -175.4,
+    "B_unc": 14.3,
+    "tier": "exp",
+    "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)"
+   },
+   "col": 8
+  },
+  {
+   "id": 51,
+   "E": 28268.265,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.252,
+   "name": "(28268)^{o}_{1}",
+   "plain": "5f67s7p °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 52,
+   "E": 28470.96,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.104,
+   "name": "(28471)^{o}_{2}",
+   "plain": "5f67s7p °2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 53,
+   "E": 28565.887,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.911,
+   "name": "(28566)^{o}_{2}",
+   "plain": "5f67s7p °2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 54,
+   "E": 28690.48,
+   "unc": null,
+   "J": 1.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.195,
+   "name": "(28690)^{o}_{1}",
+   "plain": "°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 55,
+   "E": 28820.548,
+   "unc": null,
+   "J": 0.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": null,
+   "name": "(28821)^{o}_{0}",
+   "plain": "5f67s7p °0",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 6
+  },
+  {
+   "id": 56,
+   "E": 29009.483,
+   "unc": null,
+   "J": 4.0,
+   "conf": "5f5.6d.7s(8K).7p",
+   "term": "7K",
+   "parity": "even",
+   "g": 0.695,
+   "name": "^7K_{4}",
+   "plain": "5f56d7s7p 7K4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
+  },
+  {
+   "id": 57,
+   "E": 29068.029,
+   "unc": null,
+   "J": 2.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.284,
+   "name": "(29068)^{o}_{2}",
+   "plain": "°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 58,
+   "E": 29073.454,
+   "unc": null,
+   "J": 1.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.356,
+   "name": "(29073)^{o}_{1}",
+   "plain": "°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 59,
+   "E": 29299.312,
+   "unc": null,
+   "J": 1.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.307,
+   "name": "(29299)^{o}_{1}",
+   "plain": "°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 60,
+   "E": 29810.974,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.184,
+   "name": "(29811)^{o}_{3}",
+   "plain": "5f67s7p °3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 9
+  },
+  {
+   "id": 61,
+   "E": 30131.388,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.232,
+   "name": "(30131)^{o}_{3}",
+   "plain": "5f67s7p °3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 9
+  },
+  {
+   "id": 62,
+   "E": 30319.724,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.01,
+   "name": "(30320)^{o}_{3}",
+   "plain": "5f67s7p °3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 9
+  },
+  {
+   "id": 63,
+   "E": 30361.813,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.044,
+   "name": "(30362)^{o}_{2}",
+   "plain": "5f67s7p °2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 64,
+   "E": 30612.323,
+   "unc": null,
+   "J": 3.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.408,
+   "name": "(30612)^{o}_{3}",
+   "plain": "5f67s7p °3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 9
+  },
+  {
+   "id": 65,
+   "E": 30770.2,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.216,
+   "name": "(30770)^{o}_{2}",
+   "plain": "5f67s7p °2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 66,
+   "E": 30929.52,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 2.26,
+   "name": "(30930)^{o}_{1}",
+   "plain": "5f67s7p °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 67,
+   "E": 30995.84,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.47,
+   "name": "(30996)^{o}_{2}",
+   "plain": "5f67s7p °2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 68,
+   "E": 31130.61,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 2.342,
+   "name": "(31131)^{o}_{1}",
+   "plain": "5f67s7p °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 69,
+   "E": 31151.87,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.632,
+   "name": "(31152)^{o}_{2}",
+   "plain": "5f67s7p °2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 70,
+   "E": 31211.91,
+   "unc": null,
+   "J": 1.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.235,
+   "name": "(31212)^{o}_{1}",
+   "plain": "5f67s7p °1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 71,
+   "E": 32186.12,
+   "unc": null,
+   "J": 4.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.212,
+   "name": "(32186)^{o}_{4}",
+   "plain": "°4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 10
+  },
+  {
+   "id": 72,
+   "E": 32263.31,
+   "unc": null,
+   "J": 4.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.158,
+   "name": "(32263)^{o}_{4}",
+   "plain": "°4",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 10
+  },
+  {
+   "id": 73,
+   "E": 32919.61,
+   "unc": null,
+   "J": 1.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.49,
+   "name": "(32920)^{o}_{1}",
+   "plain": "°1",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 74,
+   "E": 33974.8,
+   "unc": null,
+   "J": 2.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.11,
+   "name": "(33975)^{o}_{2}",
+   "plain": "°2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 75,
+   "E": 34004.3,
+   "unc": null,
+   "J": 5.0,
+   "conf": "5f6.7s.7p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.239,
+   "name": "(34004)^{o}_{5}",
+   "plain": "5f67s7p °5",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 11
+  },
+  {
+   "id": 76,
+   "E": 35568.75,
+   "unc": null,
+   "J": 2.0,
+   "conf": "",
+   "term": "",
+   "parity": "even",
+   "g": 1.04,
+   "name": "(35569)_{2}",
+   "plain": "2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 77,
+   "E": 36137.73,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f6.7s.8s",
+   "term": "7F",
+   "parity": "even",
+   "g": 1.525,
+   "name": "^7F_{2}",
+   "plain": "5f67s8s 7F2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 78,
+   "E": 36291.82,
+   "unc": null,
+   "J": 3.0,
+   "conf": "",
+   "term": "",
+   "parity": "even",
+   "g": 0.98,
+   "name": "(36292)_{3}",
+   "plain": "3",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 79,
+   "E": 36838.42,
+   "unc": null,
+   "J": 6.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.318,
+   "name": "(36838)^{o}_{6}",
+   "plain": "°6",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 12
+  }
+ ],
+ "transitions": [
+  {
+   "kind": "E1",
+   "freq": 927.24368,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 66,
+   "wn": 30929.52,
+   "lam": 323.3157,
+   "air": 323.2224,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2218.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 920.84263,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 73,
+   "wn": 30716.004,
+   "lam": 325.5632,
+   "air": 325.4693,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 889.63835,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 74,
+   "wn": 29675.141,
+   "lam": 336.9824,
+   "air": 336.8856,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2398.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 878.37128,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 59,
+   "wn": 29299.312,
+   "lam": 341.3049,
+   "air": 341.2071,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1649.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 867.84712,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 69,
+   "wn": 28948.264,
+   "lam": 345.4439,
+   "air": 345.3449,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3538.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 826.32446,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 48,
+   "wn": 27563.217,
+   "lam": 362.8024,
+   "air": 362.6989,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2218.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 825.1392,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 6,
+   "upper": 78,
+   "wn": 27523.681,
+   "lam": 363.3235,
+   "air": 363.22,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -7525.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234321/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1e.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 806.80899,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 70,
+   "wn": 26912.251,
+   "lam": 371.578,
+   "air": 371.4723,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2308.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 805.61198,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 47,
+   "wn": 26872.323,
+   "lam": 372.1301,
+   "air": 372.0243,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2069.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 805.53778,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 58,
+   "wn": 26869.848,
+   "lam": 372.1644,
+   "air": 372.0585,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1139.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 805.37514,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 57,
+   "wn": 26864.423,
+   "lam": 372.2395,
+   "air": 372.1337,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1289.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 804.37168,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 68,
+   "wn": 26830.951,
+   "lam": 372.7039,
+   "air": 372.5979,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2188.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 800.33137,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 67,
+   "wn": 26696.181,
+   "lam": 374.5854,
+   "air": 374.479,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2428.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 798.44589,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 46,
+   "wn": 26633.288,
+   "lam": 375.47,
+   "air": 375.3633,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3657.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 798.34315,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 66,
+   "wn": 26629.861,
+   "lam": 375.5183,
+   "air": 375.4116,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2368.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 797.95585,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 55,
+   "wn": 26616.942,
+   "lam": 375.7006,
+   "air": 375.5938,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 797.44635,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 8,
+   "upper": 79,
+   "wn": 26599.947,
+   "lam": 375.9406,
+   "air": 375.8338,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3208.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 794.05651,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 54,
+   "wn": 26486.874,
+   "lam": 377.5455,
+   "air": 377.4383,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 480.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 793.56686,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 65,
+   "wn": 26470.541,
+   "lam": 377.7785,
+   "air": 377.6712,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2159.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 790.3213,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 53,
+   "wn": 26362.281,
+   "lam": 379.3298,
+   "air": 379.2222,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3418.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 788.83382,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 64,
+   "wn": 26312.664,
+   "lam": 380.0451,
+   "air": 379.9373,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2698.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 787.47546,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 52,
+   "wn": 26267.354,
+   "lam": 380.7007,
+   "air": 380.5927,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3448.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 786.34503,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 5,
+   "upper": 75,
+   "wn": 26229.647,
+   "lam": 381.248,
+   "air": 381.1398,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2338.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 783.02178,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 72,
+   "wn": 26118.795,
+   "lam": 382.8661,
+   "air": 382.7574,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1739.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 781.39882,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 51,
+   "wn": 26064.659,
+   "lam": 383.6613,
+   "air": 383.5524,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3957.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 780.70768,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 71,
+   "wn": 26041.605,
+   "lam": 384.0009,
+   "air": 383.892,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2608.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 780.06192,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 62,
+   "wn": 26020.065,
+   "lam": 384.3188,
+   "air": 384.2098,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2968.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 778.25669,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 44,
+   "wn": 25959.849,
+   "lam": 385.2103,
+   "air": 385.101,
+   "use": "385.210 nm line used for high-resolution in-source resonance ionization spectroscopy of 239-244Pu (hyperfine structure and isotope shifts; Voss et al. 2017)",
+   "isotope_shifts": {
+    "244-240": {
+     "value": -1955.2,
+     "unc": 9.7,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    },
+    "242-240": {
+     "value": -969.4,
+     "unc": 9.7,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    },
+    "241-240": {
+     "value": -379.5,
+     "unc": 14.2,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    },
+    "239-240": {
+     "value": 757.8,
+     "unc": 10.0,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 772.7317,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 50,
+   "wn": 25775.555,
+   "lam": 387.9645,
+   "air": 387.8546,
+   "use": "387.965 nm line from the thermally populated 7F1 level, used for high-resolution in-source resonance ionization spectroscopy of 238-244Pu (Voss et al. 2017; the text of that paper prints the upper level once as 27929.161 cm-1, the figure gives 27979.161)",
+   "isotope_shifts": {
+    "244-240": {
+     "value": -6288.1,
+     "unc": 10.0,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    },
+    "242-240": {
+     "value": -3099.3,
+     "unc": 12.0,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    },
+    "241-240": {
+     "value": -1228.3,
+     "unc": 14.4,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    },
+    "239-240": {
+     "value": 2438.7,
+     "unc": 14.4,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    },
+    "238-240": {
+     "value": 4126.7,
+     "unc": 15.3,
+     "src": "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)",
+     "url": "https://arxiv.org/abs/1703.01845"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 769.29119,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 43,
+   "wn": 25660.792,
+   "lam": 389.6996,
+   "air": 389.5892,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -390.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 762.89938,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 49,
+   "wn": 25447.584,
+   "lam": 392.9646,
+   "air": 392.8534,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1139.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 728.34557,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 45,
+   "wn": 24294.993,
+   "lam": 411.6074,
+   "air": 411.4913,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -4437.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 726.01633,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 63,
+   "wn": 24217.298,
+   "lam": 412.928,
+   "air": 412.8115,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2878.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 725.15715,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 42,
+   "wn": 24188.639,
+   "lam": 413.4172,
+   "air": 413.3006,
+   "use": "first step of the Mainz two-step resonance-ionization scheme chosen for plutonium in actinide mixtures (no uranium interference): 24188.45(4) cm-1 measured on 244Pu, then 24690.34(5) cm-1 to an autoionizing state; saturation power 6.6(4) mW (apparatus-dependent). Source: Kneip, Duellmann, Gadelshin, Heinke, Mokry, Raeder, Runke, Studer, Trautmann, Weber, Wendt, Hyperfine Interact. 241, 45 (2020), Table 1",
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1919.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 724.63737,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 52,
+   "wn": 24171.301,
+   "lam": 413.7138,
+   "air": 413.5971,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3508.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 719.10836,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 61,
+   "wn": 23986.873,
+   "lam": 416.8947,
+   "air": 416.7772,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2578.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 718.56073,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 51,
+   "wn": 23968.606,
+   "lam": 417.2124,
+   "air": 417.0948,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -4017.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 712.49092,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 38,
+   "wn": 23766.139,
+   "lam": 420.7667,
+   "air": 420.6482,
+   "use": "first step (420.77 nm vacuum, 5f6 7s2 7F0 - 5f6 7s7p 7D1) of the standard three-step Ti:sapphire resonance-ionization scheme for plutonium ultratrace and isotope-ratio analysis (Mainz RIMS, resonant-laser SNMS in Hannover, Oak Ridge hot-cavity laser ion source); second steps 847.26 nm or 808.3 nm. Measured level energy for 242Pu quoted as 23765.98(2) cm-1 in Galindo-Uribarri et al. 2021 (from Gruening et al. 2004, not opened; that paper prints the wavelength once as 402.77 nm, a misprint); laser set to 23766.114 cm-1 in Bosco et al. 2020",
+   "isotope_shifts": {
+    "240-239": {
+     "value": -4647.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 712.19425,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 44,
+   "wn": 23756.243,
+   "lam": 420.942,
+   "air": 420.8234,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -809.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 709.89361,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 50,
+   "wn": 23679.502,
+   "lam": 422.3062,
+   "air": 422.1873,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2638.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 709.50259,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 60,
+   "wn": 23666.459,
+   "lam": 422.5389,
+   "air": 422.4199,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2698.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 703.22874,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 43,
+   "wn": 23457.186,
+   "lam": 426.3086,
+   "air": 426.1886,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -480.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 700.06129,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 49,
+   "wn": 23351.531,
+   "lam": 428.2374,
+   "air": 428.117,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1199.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 690.64484,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 35,
+   "wn": 23037.432,
+   "lam": 434.0762,
+   "air": 433.9542,
+   "use": "alternative uranium-free first step (23037 cm-1) tested for two-step resonance ionization of plutonium in Kneip et al., Hyperfine Interact. 241, 45 (2020)",
+   "isotope_shifts": {
+    "240-239": {
+     "value": 5336.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 680.39748,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 4,
+   "upper": 56,
+   "wn": 22695.617,
+   "lam": 440.6137,
+   "air": 440.49,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -5096.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234321/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1e.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 632.91,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 37,
+   "wn": 21111.605,
+   "lam": 473.6731,
+   "air": 473.5407,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1199.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 556.97448,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 22,
+   "wn": 18578.669,
+   "lam": 538.2517,
+   "air": 538.1021,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1889.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 540.05291,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 41,
+   "wn": 18014.226,
+   "lam": 555.1168,
+   "air": 554.9627,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3478.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 538.02727,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 40,
+   "wn": 17946.658,
+   "lam": 557.2068,
+   "air": 557.0521,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3268.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 536.1,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 34,
+   "wn": 17882.371,
+   "lam": 559.21,
+   "air": 559.0547,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3777.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 535.9289,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 33,
+   "wn": 17876.664,
+   "lam": 559.3885,
+   "air": 559.2332,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1079.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 532.29413,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 27,
+   "wn": 17755.421,
+   "lam": 563.2083,
+   "air": 563.052,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3777.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 524.66609,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 18,
+   "wn": 17500.977,
+   "lam": 571.3967,
+   "air": 571.2382,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 1739.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 513.28438,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 32,
+   "wn": 17121.324,
+   "lam": 584.067,
+   "air": 583.9051,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -540.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 511.01951,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 17,
+   "wn": 17045.776,
+   "lam": 586.6556,
+   "air": 586.493,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -2398.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 483.96429,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 21,
+   "wn": 16143.311,
+   "lam": 619.4516,
+   "air": 619.2803,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 2368.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 475.37754,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 13,
+   "wn": 15856.888,
+   "lam": 630.6408,
+   "air": 630.4664,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 4077.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 464.68446,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 5,
+   "upper": 36,
+   "wn": 15500.205,
+   "lam": 645.1528,
+   "air": 644.9745,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -1709.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 462.03642,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 19,
+   "wn": 15411.876,
+   "lam": 648.8503,
+   "air": 648.671,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 3837.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 461.88305,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 11,
+   "wn": 15406.76,
+   "lam": 649.0657,
+   "air": 648.8864,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 3717.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 458.60365,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 18,
+   "wn": 15297.371,
+   "lam": 653.7071,
+   "air": 653.5265,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 1649.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 457.97699,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 32,
+   "wn": 15276.468,
+   "lam": 654.6016,
+   "air": 654.4208,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -600.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 453.49164,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 26,
+   "wn": 15126.853,
+   "lam": 661.076,
+   "air": 660.8935,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 2398.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 452.1853,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 30,
+   "wn": 15083.278,
+   "lam": 662.9859,
+   "air": 662.8028,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 2488.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 449.1568,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 25,
+   "wn": 14982.258,
+   "lam": 667.4561,
+   "air": 667.2719,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 4767.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 446.80336,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 24,
+   "wn": 14903.756,
+   "lam": 670.9718,
+   "air": 670.7866,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 4587.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 442.93235,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 23,
+   "wn": 14774.633,
+   "lam": 676.8358,
+   "air": 676.649,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -600.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 435.61481,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 16,
+   "wn": 14530.546,
+   "lam": 688.2054,
+   "air": 688.0155,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 5306.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 435.13709,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 4,
+   "upper": 29,
+   "wn": 14514.611,
+   "lam": 688.9609,
+   "air": 688.7709,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -5576.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234321/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1e.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 424.56509,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 3,
+   "upper": 28,
+   "wn": 14161.967,
+   "lam": 706.1166,
+   "air": 705.9219,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 5246.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 421.1262,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 21,
+   "wn": 14047.258,
+   "lam": 711.8827,
+   "air": 711.6865,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 2308.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 419.66465,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 14,
+   "wn": 13998.506,
+   "lam": 714.3619,
+   "air": 714.1651,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 3478.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 412.93521,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 8,
+   "upper": 39,
+   "wn": 13774.036,
+   "lam": 726.0036,
+   "air": 725.8036,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 2848.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 409.3151,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 13,
+   "wn": 13653.282,
+   "lam": 732.4246,
+   "air": 732.2229,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 3987.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 399.19833,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 19,
+   "wn": 13315.823,
+   "lam": 750.9863,
+   "air": 750.7795,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 3777.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 397.10107,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 12,
+   "wn": 13245.866,
+   "lam": 754.9525,
+   "air": 754.7447,
+   "isotope_shifts": {
+    "240-239": {
+     "value": -3957.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 395.8206,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 11,
+   "wn": 13203.154,
+   "lam": 757.3948,
+   "air": 757.1863,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 3627.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 395.76556,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 18,
+   "wn": 13201.318,
+   "lam": 757.5001,
+   "air": 757.2916,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 1589.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 370.89097,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 38,
+   "upper": 77,
+   "wn": 12371.591,
+   "lam": 808.3035,
+   "air": 808.0813,
+   "use": "second step (808.3 nm vacuum) of the alternative three-step plutonium scheme \"b\" used for spectroscopic work and resonant-laser SNMS (Bosco et al. 2020: laser at 12371.630 cm-1, third step 12653.665 cm-1 to an autoionizing J=2 state at 48791.409 cm-1). Level measured at 36137.66(4) cm-1 for 242Pu (J=2) by Galindo-Uribarri et al. 2021, Table 1",
+   "isotope_shifts": {
+    "240-239": {
+     "value": 1649.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234321/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1e.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 368.60838,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 2,
+   "upper": 15,
+   "wn": 12295.452,
+   "lam": 813.3089,
+   "air": 813.0853,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 4527.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 360.67923,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 7,
+   "upper": 31,
+   "wn": 12030.964,
+   "lam": 831.1886,
+   "air": 830.9602,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 1079.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234321/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1e.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 353.83338,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 38,
+   "upper": 76,
+   "wn": 11802.611,
+   "lam": 847.2702,
+   "air": 847.0374,
+   "use": "second step (847.26 nm vacuum) of the standard three-step plutonium resonance-ionization scheme; third step 767.53 nm or 750.24 nm to autoionizing states. Level measured at 35568.73(3) cm-1 for 242Pu (J=2) by Galindo-Uribarri et al. 2021, Table 1",
+   "isotope_shifts": {
+    "240-239": {
+     "value": 2698.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234321/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1e.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 347.25719,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 4,
+   "upper": 20,
+   "wn": 11583.253,
+   "lam": 863.3153,
+   "air": 863.0783,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 1349.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234321/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1e.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 339.18642,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 1,
+   "upper": 10,
+   "wn": 11314.041,
+   "lam": 883.8575,
+   "air": 883.6149,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 5396.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 314.39001,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 9,
+   "wn": 10486.922,
+   "lam": 953.5686,
+   "air": 953.3071,
+   "isotope_shifts": {
+    "240-239": {
+     "value": 5366.0,
+     "unc": null,
+     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)",
+     "url": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+    }
+   },
+   "type": "E1"
+  }
+ ],
+ "rydberg_levels": [],
+ "tables": [
+  {
+   "title": "Key transitions",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "λ air (nm)",
+    "ν (THz)",
+    "|⟨J‖er‖J′⟩| (ea₀)",
+    "A (s⁻¹)",
+    "Γ/2π up. (MHz)",
+    "branch (%)",
+    "Use"
+   ],
+   "aligns": "lrrrrrrrl",
+   "rows": [
+    [
+     "$^7F_{0}$ – $(25960)^{o}_{1}$",
+     "385.2103",
+     "385.1010",
+     "778.2567",
+     "–",
+     "–",
+     "–",
+     "–",
+     "385.210 nm line used for high-resolution in-source resona…"
+    ],
+    [
+     "$^7F_{1}$ – $(27979)^{o}_{2}$",
+     "387.9645",
+     "387.8546",
+     "772.7317",
+     "–",
+     "–",
+     "–",
+     "–",
+     "387.965 nm line from the thermally populated 7F1 level, u…"
+    ],
+    [
+     "$^7F_{0}$ – $(24189)^{o}_{1}$",
+     "413.4172",
+     "413.3006",
+     "725.1572",
+     "–",
+     "–",
+     "–",
+     "–",
+     "first step of the Mainz two-step resonance-ionization sch…"
+    ],
+    [
+     "$^7F_{0}$ – $^7D^{o}_{1}$",
+     "420.7667",
+     "420.6482",
+     "712.4909",
+     "–",
+     "–",
+     "–",
+     "–",
+     "first step"
+    ],
+    [
+     "$^7F_{0}$ – $(23037)^{o}_{1}$",
+     "434.0762",
+     "433.9542",
+     "690.6448",
+     "–",
+     "–",
+     "–",
+     "–",
+     "alternative uranium-free first step"
+    ],
+    [
+     "$^7D^{o}_{1}$ – $^7F_{2}$",
+     "808.3035",
+     "808.0813",
+     "370.8910",
+     "–",
+     "–",
+     "–",
+     "–",
+     "second step"
+    ],
+    [
+     "$^7D^{o}_{1}$ – $(35569)_{2}$",
+     "847.2702",
+     "847.0374",
+     "353.8334",
+     "–",
+     "–",
+     "–",
+     "–",
+     "second step"
+    ]
+   ],
+   "note": "λ, ν from the level energies of the cited literature (NIST lists no excited levels) unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
+  },
+  {
+   "title": "$^{241}$Pu hyperfine structure  ($I$ = 5/2)",
+   "header": [
+    "Level",
+    "A (MHz)",
+    "B (MHz)",
+    "Shift of each F level from the centre of gravity (MHz)"
+   ],
+   "aligns": "lrrl",
+   "rows": [
+    [
+     "$^7F_{1}$",
+     "-2(5)",
+     "1059(8)",
+     "F=3/2: +748.72   F=5/2: -844.68   F=7/2: +259.15"
+    ],
+    [
+     "$(25960)^{o}_{1}$",
+     "-278(6)",
+     "101(18)",
+     "F=3/2: +1043.91   F=5/2: +197.46   F=7/2: -670.05"
+    ],
+    [
+     "$(27979)^{o}_{2}$",
+     "38(3)",
+     "-175(14)",
+     "F=1/2: -386.68   F=3/2: -251.20   F=5/2: -69.25   F=7/2: +93.39   F=9/2: +144.65"
+    ]
+   ],
+   "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$^7F_{0}$ – $(30930)^{o}_{1}$",
+     "323.316",
+     "240-239",
+     "-2218.00"
+    ],
+    [
+     "$^7F_{2}$ – $(33975)^{o}_{2}$",
+     "336.982",
+     "240-239",
+     "-2398.00"
+    ],
+    [
+     "$^7F_{0}$ – $(29299)^{o}_{1}$",
+     "341.305",
+     "240-239",
+     "-1649.00"
+    ],
+    [
+     "$^7F_{1}$ – $(31152)^{o}_{2}$",
+     "345.444",
+     "240-239",
+     "-3538.00"
+    ],
+    [
+     "$^7F_{0}$ – $(27563)^{o}_{1}$",
+     "362.802",
+     "240-239",
+     "-2218.00"
+    ],
+    [
+     "$^7H^{o}_{2}$ – $(36292)_{3}$",
+     "363.324",
+     "240-239",
+     "-7525.00"
+    ],
+    [
+     "$^7F_{2}$ – $(31212)^{o}_{1}$",
+     "371.578",
+     "240-239",
+     "-2308.00"
+    ],
+    [
+     "$^7F_{0}$ – $^9F^{o}_{1}$",
+     "372.130",
+     "240-239",
+     "-2069.00"
+    ],
+    [
+     "$^7F_{1}$ – $(29073)^{o}_{1}$",
+     "372.164",
+     "240-239",
+     "-1139.00"
+    ],
+    [
+     "$^7F_{1}$ – $(29068)^{o}_{2}$",
+     "372.240",
+     "240-239",
+     "-1289.00"
+    ],
+    [
+     "$^7F_{2}$ – $(31131)^{o}_{1}$",
+     "372.704",
+     "240-239",
+     "-2188.00"
+    ],
+    [
+     "$^7F_{2}$ – $(30996)^{o}_{2}$",
+     "374.585",
+     "240-239",
+     "-2428.00"
+    ],
+    [
+     "$^7F_{0}$ – $(26633)^{o}_{1}$",
+     "375.470",
+     "240-239",
+     "-3657.00"
+    ],
+    [
+     "$^7F_{2}$ – $(30930)^{o}_{1}$",
+     "375.518",
+     "240-239",
+     "-2368.00"
+    ],
+    [
+     "$^7F_{6}$ – $(36838)^{o}_{6}$",
+     "375.941",
+     "240-239",
+     "-3208.00"
+    ],
+    [
+     "$^7F_{1}$ – $(28690)^{o}_{1}$",
+     "377.546",
+     "240-239",
+     "480.00"
+    ],
+    [
+     "$^7F_{2}$ – $(30770)^{o}_{2}$",
+     "377.779",
+     "240-239",
+     "-2159.00"
+    ],
+    [
+     "$^7F_{1}$ – $(28566)^{o}_{2}$",
+     "379.330",
+     "240-239",
+     "-3418.00"
+    ],
+    [
+     "$^7F_{2}$ – $(30612)^{o}_{3}$",
+     "380.045",
+     "240-239",
+     "-2698.00"
+    ],
+    [
+     "$^7F_{1}$ – $(28471)^{o}_{2}$",
+     "380.701",
+     "240-239",
+     "-3448.00"
+    ],
+    [
+     "$^7F_{4}$ – $(34004)^{o}_{5}$",
+     "381.248",
+     "240-239",
+     "-2338.00"
+    ],
+    [
+     "$^7F_{3}$ – $(32263)^{o}_{4}$",
+     "382.866",
+     "240-239",
+     "-1739.00"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
+  }
+ ],
+ "validation": [
+  "levels: 80   lines < 2000 nm: 85   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 85",
+  "levels with a measured lifetime: 0"
+ ],
+ "sources": {
+  "IAEA Nuclear Data Services LiveChart ground-state table (ENSDF-based), retrieved 2026-10-02 through its data service": "https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=238pu",
+  "NIST ASD levels file data/nist/Pu_I_levels.tsv; Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)": "https://arxiv.org/abs/1703.01845",
+  "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I even (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)": "https://web.archive.org/web/20150731234321/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1e.html",
+  "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Pu I odd (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html",
+  "Hubbs, Marrus, Nierenberg, Worcester, report UCRL-3884 (1957), preprint of Phys. Rev. 109, 390 (1958) (atomic-beam magnetic resonance on 239Pu)": "https://escholarship.org/content/qt21w220jc/qt21w220jc.pdf",
+  "Voss, Sonnenschein, Campbell, Cheal, Kron, Moore, Pohjalainen, Raeder, Trautmann, Wendt, Phys. Rev. A 95, 032506 (2017), Table I (high-resolution in-source resonance ionization spectroscopy with an injection-locked Ti:sapphire laser, Mainz)": "https://arxiv.org/abs/1703.01845",
+  "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, table of selected wavelengths (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)": "https://web.archive.org/web/20131118023337/http://web2.lac.u-psud.fr/lac/Database/Tab-long/Pu-Wv.html",
+  "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level tables (column Delta-T) (archived copy in the Internet Archive); the table follows Blaise, Fred, Gutmacher, J. Opt. Soc. Am. B 3, 403 (1986) and report ANL-83-95 (1983) (originals not opened)": "https://web.archive.org/web/20150731234326/http://web2.lac.u-psud.fr/lac/Database/Tab-energy/Plutonium/Pu-tables/Pu1o.html"
+ }
+}

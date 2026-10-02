@@ -6,7 +6,7 @@
   "symbol": "Po",
   "A": null,
   "Z": 84,
-  "I": "5/2",
+  "I": "1/2",
   "kind": "nist",
   "limit_cm": 67896.31,
   "scale": "auto",
@@ -15,6 +15,7 @@
   "has_lit": true,
   "freq_isotope": "192",
   "limit_text": "Po$^+$ ionisation limit   67896.31 cm$^{-1}$  =  8.41807 eV  (147.283 nm)",
+  "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "All optical data are from in-source resonance ionization spectroscopy at ISOLDE (Doppler-limited, GHz linewidths). Isotope shifts are nu(A) - nu(210). Hyperfine keys: 'ls'/'hs' = low-spin (3/2-) and high-spin (13/2+) states of 193,195Po whose ordering is not known; a trailing 'm' = 13/2+ isomer. The hyperfine constants listed under the 39081.19 cm^-1 level were printed in GHz and are converted to MHz here. The site's default isotope may have I = 0 (208, 210Po) - then no hyperfine structure applies."
  },
@@ -52,14 +53,6 @@
    "plain": "6p4 3P2",
    "tau_ns": null,
    "tau_tier": "stable",
-   "hfs": {
-    "A": 139.5,
-    "A_unc": 0.3,
-    "B": null,
-    "B_unc": null,
-    "tier": "exp",
-    "src": "ratio A(6p4 3P2)/A(6p3 7s 5S2) = 0.2474(4) for 207Po given in Skripnikov & Barzakh, Phys. Rev. C 109, 024315 (2024) [arXiv:2311.00621], Eq. (23) (from the atomic-beam magnetic resonance data of Olsmats, Axensten, Liljegren, Ark. Fys. 19, 469 (1961) and Kowalewska et al. 1991), multiplied by A(5S2) = 564(1) MHz"
-   },
    "col": 0
   },
   {
@@ -106,10 +99,10 @@
    "tau_ns": null,
    "tau_tier": "none",
    "hfs": {
-    "A": 564,
-    "A_unc": 1,
-    "B": 367,
-    "B_unc": 7,
+    "A": 2127,
+    "A_unc": 3,
+    "B": null,
+    "B_unc": null,
     "tier": "exp",
     "src": "Kowalewska, Bekk, Goering, Hanser, Kaelber, Meisel, Rebel, Phys. Rev. A 44, R1442 (1991) (laser spectroscopy of the 255.8 nm line), as quoted as reference values in Seliverstov et al., Phys. Rev. C 89, 034323 (2014), Sec. III"
    },
@@ -218,7 +211,7 @@
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
   },
   {
-   "title": "$^{207}$Po hyperfine structure  ($I$ = 5/2)",
+   "title": "$^{209}$Po hyperfine structure  ($I$ = 1/2)",
    "header": [
     "Level",
     "A (MHz)",
@@ -228,16 +221,10 @@
    "aligns": "lrrl",
    "rows": [
     [
-     "$6p^{4}\\ ^3P_{2}$",
-     "139.5(3)",
-     "–",
-     "F=1/2: -976.50   F=3/2: -767.25   F=5/2: -418.50   F=7/2: +69.75   F=9/2: +697.50"
-    ],
-    [
      "$6p^{3}7s\\ ^5S^{o}_{2}$",
-     "564.0(10)",
-     "367(7)",
-     "F=1/2: -3691.10   F=3/2: -3010.25   F=5/2: -1783.75   F=7/2: +126.03   F=9/2: +2911.75"
+     "2127(3)",
+     "–",
+     "F=3/2: -3190.50   F=5/2: +2127.00"
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."
