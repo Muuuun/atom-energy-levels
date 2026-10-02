@@ -17,7 +17,7 @@
   "limit_text": "Tb$^+$ ionisation limit   47295.00 cm$^{-1}$  =  5.86383 eV  (211.439 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "159Tb is the only stable isotope (I = 3/2), so there are no isotope shifts between stable isotopes. Hyperfine constants: 94 levels now carry A (and mostly B). Sources actually opened: (1) Elantkowska et al., Eur. Phys. J. Plus 132, 455 (2017) (open access; PDF from the Wayback copy of the Springer file, saved as pdf/Tb_Elantkowska_2017.pdf) - its Table 3 compiles all measured A, B of even-parity levels with the original reference per row (Childs 1970; Childs & Goodman 1979; Childs 1992; Furmann et al. 2015, 2016; Stefanska et al. 2017; private communication); these are stored with method 'compilation'. (2) Childs & Goodman, J. Opt. Soc. Am. 69, 815 (1979) and Childs, J. Opt. Soc. Am. B 9, 191 (1992): the tables embedded in the publisher abstract pages, read from Wayback Machine copies (saved as pdf/Tb_Childs_1979.html, pdf/Tb_Childs_1992.html); values measured in those papers are 'experiment'. (3) Arnoult & Gerstenkorn 1966 and Childs et al. 1984, read on the publisher abstract pages in the first pass. Eight levels with hyperfine data from Childs & Goodman 1979 are odd-parity upper levels (17118.72, 17341.92, 17409.62, 18461.87, 19450.45, 19658.41, 21837.92, 22223.87). Sign convention: A, B in MHz as printed. Still no lifetime and no transition rate for Tb I (see not_found). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source; hyperfine field C_MHz (magnetic-octupole fit constant, 5425.06 only)."
+  "notes": "159Tb is the only stable isotope (I = 3/2), so there are no isotope shifts between stable isotopes. Hyperfine constants: 94 levels now carry A (and mostly B). Sources actually opened: (1) Elantkowska et al., Eur. Phys. J. Plus 132, 455 (2017) (open access; PDF from the Wayback copy of the Springer file, saved as pdf/Tb_Elantkowska_2017.pdf) - its Table 3 compiles all measured A, B of even-parity levels with the original reference per row (Childs 1970; Childs & Goodman 1979; Childs 1992; Furmann et al. 2015, 2016; Stefanska et al. 2017; private communication); these are stored with method 'compilation'. (2) Childs & Goodman, J. Opt. Soc. Am. 69, 815 (1979) and Childs, J. Opt. Soc. Am. B 9, 191 (1992): the tables embedded in the publisher abstract pages, read from Wayback Machine copies (saved as pdf/Tb_Childs_1979.html, pdf/Tb_Childs_1992.html); values measured in those papers are 'experiment'. (3) Arnoult & Gerstenkorn 1966 and Childs et al. 1984, read on the publisher abstract pages in the first pass. Eight levels with hyperfine data from Childs & Goodman 1979 are odd-parity upper levels (17118.72, 17341.92, 17409.62, 18461.87, 19450.45, 19658.41, 21837.92, 22223.87). Sign convention: A, B in MHz as printed. Still no lifetime for Tb I (see not_found). Transition rates: 7 lines from Irvine et al. 2023 (laser-induced-breakdown Saha-Boltzmann estimates, low accuracy, see the note on each entry; 5 of them are lines the site draws); the lifetime x sum(A) check could not be run because no lifetime is available. Sum of the stored A out of 26087.13 is 4.10e7, 23147.92: 4.03e7, 23107.25: 7.75e7, 25717.68: 6.80e7, 23043.43: 6.55e6, 25076.26: 9.47e6, 19131.45: 3.47e6 s^-1 (one line each, so these sums are derived lower bounds on the total decay rate only if the estimates are right). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source; hyperfine field C_MHz (magnetic-octupole fit constant, 5425.06 only)."
  },
  "columns": [
   {
@@ -179,6 +179,29 @@
   },
   {
    "id": 5,
+   "E": 6351.75,
+   "unc": null,
+   "J": 6.5,
+   "conf": "4f8.(7F).5d.6s2",
+   "term": "8H",
+   "parity": "even",
+   "g": 1.35,
+   "name": "^8H_{13/2}",
+   "plain": "4f85d6s2 8H13/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 438.5,
+    "A_unc": 2.2,
+    "B": 1122.0,
+    "B_unc": 29.0,
+    "tier": "exp",
+    "src": "Stefanska, Elantkowska, Ruczkowski, Furmann, J. Quant. Spectrosc. Radiat. Transfer 189, 441 (2017), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp"
+   },
+   "col": 5
+  },
+  {
+   "id": 6,
    "E": 17249.59,
    "unc": null,
    "J": 8.5,
@@ -201,7 +224,7 @@
    "col": 7
   },
   {
-   "id": 6,
+   "id": 7,
    "E": 19131.45,
    "unc": null,
    "J": 8.5,
@@ -216,7 +239,7 @@
    "col": 3
   },
   {
-   "id": 7,
+   "id": 8,
    "E": 23043.43,
    "unc": null,
    "J": 6.5,
@@ -239,7 +262,7 @@
    "col": 5
   },
   {
-   "id": 8,
+   "id": 9,
    "E": 23107.25,
    "unc": null,
    "J": 8.5,
@@ -254,7 +277,7 @@
    "col": 7
   },
   {
-   "id": 9,
+   "id": 10,
    "E": 23147.92,
    "unc": null,
    "J": 7.5,
@@ -269,7 +292,7 @@
    "col": 6
   },
   {
-   "id": 10,
+   "id": 11,
    "E": 25076.26,
    "unc": null,
    "J": 7.5,
@@ -284,7 +307,7 @@
    "col": 2
   },
   {
-   "id": 11,
+   "id": 12,
    "E": 25717.68,
    "unc": null,
    "J": 6.5,
@@ -299,7 +322,7 @@
    "col": 5
   },
   {
-   "id": 12,
+   "id": 13,
    "E": 25825.53,
    "unc": null,
    "J": 7.5,
@@ -314,7 +337,7 @@
    "col": 6
   },
   {
-   "id": 13,
+   "id": 14,
    "E": 26087.13,
    "unc": null,
    "J": 8.5,
@@ -329,7 +352,7 @@
    "col": 3
   },
   {
-   "id": 14,
+   "id": 15,
    "E": 26385.99,
    "unc": null,
    "J": 6.5,
@@ -344,7 +367,7 @@
    "col": 1
   },
   {
-   "id": 15,
+   "id": 16,
    "E": 27102.94,
    "unc": null,
    "J": 4.5,
@@ -366,7 +389,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 14,
+   "upper": 15,
    "wn": 26100.49,
    "lam": 383.1346,
    "air": 383.0259,
@@ -379,7 +402,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 13,
+   "upper": 14,
    "wn": 25625.05,
    "lam": 390.2431,
    "air": 390.1326,
@@ -392,7 +415,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 15,
+   "upper": 16,
    "wn": 24792.85,
    "lam": 403.3421,
    "air": 403.2281,
@@ -405,7 +428,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 10,
+   "upper": 11,
    "wn": 24614.18,
    "lam": 406.2699,
    "air": 406.1552,
@@ -418,7 +441,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 9,
+   "upper": 10,
    "wn": 23147.92,
    "lam": 432.0043,
    "air": 431.8828,
@@ -431,7 +454,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 8,
+   "upper": 9,
    "wn": 23107.25,
    "lam": 432.7646,
    "air": 432.6429,
@@ -444,7 +467,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 12,
+   "upper": 13,
    "wn": 23053.855,
    "lam": 433.7669,
    "air": 433.645,
@@ -457,7 +480,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 7,
+   "upper": 8,
    "wn": 23043.43,
    "lam": 433.9632,
    "air": 433.8412,
@@ -470,7 +493,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 11,
+   "upper": 12,
    "wn": 22946.005,
    "lam": 435.8057,
    "air": 435.6832,
@@ -479,11 +502,35 @@
   },
   {
    "kind": "E1",
+   "freq": 607.73193,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 8,
+   "wn": 20271.755,
+   "lam": 493.2972,
+   "air": 493.1595,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 561.34669,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 5,
+   "upper": 11,
+   "wn": 18724.51,
+   "lam": 534.0594,
+   "air": 533.9109,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 559.69363,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 6,
+   "upper": 7,
    "wn": 18669.37,
    "lam": 535.6367,
    "air": 535.4878,
@@ -496,7 +543,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 5,
+   "upper": 6,
    "wn": 17249.59,
    "lam": 579.7239,
    "air": 579.5632,
@@ -570,6 +617,12 @@
      "F=4: -3988.10   F=5: -1903.62   F=6: +542.17   F=7: +3318.97"
     ],
     [
+     "$^8H_{13/2}$",
+     "438.5(22)",
+     "1122(29)",
+     "F=5: -4501.59   F=6: -2561.05   F=7: +357.41   F=8: +4555.88"
+    ],
+    [
      "$(15/2,2)_{17/2}$",
      "857.1(4)",
      "1758(5)",
@@ -586,8 +639,8 @@
   }
  ],
  "validation": [
-  "levels: 16   lines < 2000 nm: 11   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 11",
+  "levels: 17   lines < 2000 nm: 13   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 13",
   "levels with a measured lifetime: 0"
  ],
  "sources": {
@@ -607,6 +660,13 @@
   "Childs, J. Opt. Soc. Am. B 9, 191 (1992), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp": "http://web.archive.org/web/20180727211546/https://link.springer.com/content/pdf/10.1140%2Fepjp%2Fi2017-11725-0.pdf",
   "Stefanska, Furmann, private communication, as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp": "http://web.archive.org/web/20180727211546/https://link.springer.com/content/pdf/10.1140%2Fepjp%2Fi2017-11725-0.pdf",
   "Karshenboim, Nevsky, Angstmann, Dzuba, Flambaum, \"A New Option for a Search for alpha Variation: Narrow Transitions with Enhanced Sensitivity\", arXiv:physics/0511180 (2005)": "https://arxiv.org/abs/physics/0511180",
-  "Childs, Goodman, J. Opt. Soc. Am. 69, 815 (1979), Table I and abstract": "http://web.archive.org/web/20250425202219/https://opg.optica.org/josa/abstract.cfm?uri=josa-69-6-815"
+  "Childs, Goodman, J. Opt. Soc. Am. 69, 815 (1979), Table I and abstract": "http://web.archive.org/web/20250425202219/https://opg.optica.org/josa/abstract.cfm?uri=josa-69-6-815",
+  "Irvine, Andrews, Myhre, Coble, J. Quant. Spectrosc. Radiat. Transfer 297, 108486 (2023), Supporting Information Table S.13 (PDF p. 54 of the accepted manuscript, OSTI 1922313); row lambda(reported) = 390.133 nm, lambda(observed) = 390.167 nm": "https://www.osti.gov/servlets/purl/1922313",
+  "Irvine, Andrews, Myhre, Coble, J. Quant. Spectrosc. Radiat. Transfer 297, 108486 (2023), Supporting Information Table S.13 (PDF p. 55 of the accepted manuscript, OSTI 1922313); row lambda(reported) = 431.885 nm, lambda(observed) = 431.920 nm": "https://www.osti.gov/servlets/purl/1922313",
+  "Irvine, Andrews, Myhre, Coble, J. Quant. Spectrosc. Radiat. Transfer 297, 108486 (2023), Supporting Information Table S.13 (PDF p. 55 of the accepted manuscript, OSTI 1922313); row lambda(reported) = 432.647 nm, lambda(observed) = 432.657 nm": "https://www.osti.gov/servlets/purl/1922313",
+  "Irvine, Andrews, Myhre, Coble, J. Quant. Spectrosc. Radiat. Transfer 297, 108486 (2023), Supporting Information Table S.13 (PDF p. 55 of the accepted manuscript, OSTI 1922313); row lambda(reported) = 435.684 nm, lambda(observed) = 435.712 nm": "https://www.osti.gov/servlets/purl/1922313",
+  "Irvine, Andrews, Myhre, Coble, J. Quant. Spectrosc. Radiat. Transfer 297, 108486 (2023), Supporting Information Table S.13 (PDF p. 55 of the accepted manuscript, OSTI 1922313); row lambda(reported) = 493.162 nm, lambda(observed) = 493.215 nm": "https://www.osti.gov/servlets/purl/1922313",
+  "Irvine, Andrews, Myhre, Coble, J. Quant. Spectrosc. Radiat. Transfer 297, 108486 (2023), Supporting Information Table S.13 (PDF p. 55 of the accepted manuscript, OSTI 1922313); row lambda(reported) = 533.911 nm, lambda(observed) = 533.862 nm": "https://www.osti.gov/servlets/purl/1922313",
+  "Irvine, Andrews, Myhre, Coble, J. Quant. Spectrosc. Radiat. Transfer 297, 108486 (2023), Supporting Information Table S.13 (PDF p. 55 of the accepted manuscript, OSTI 1922313); row lambda(reported) = 535.488 nm, lambda(observed) = 535.530 nm": "https://www.osti.gov/servlets/purl/1922313"
  }
 }

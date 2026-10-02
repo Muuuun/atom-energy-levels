@@ -20,3 +20,12 @@ Decided by the user 2026-10-01: keep the page-reader lifetime tables (Tm, Ho, Dy
   Er 103 lifetimes, Mo 14 lifetimes and 129 rates, Tb hyperfine constants of 95 levels, Ar 4p lifetimes and isotope shifts,
   Xe and Rn hyperfine constants, Te and Ga lifetimes. Se: nothing. Still closed: see 待下载论文清单.md.
 - Fixed on the way: Xe 110 nm frequency stored in GHz instead of THz; two-digit multiplicities; random hyperfine isotope.
+
+## Round 8 (2026-10-02, night): publisher pages through WebFetch
+
+- None of the 17 starred papers: IOP, Springer, APS, Elsevier now answer automated requests with a bot check or login (not bypassed).
+- Got from other open sources (each verified by a second agent): Nd 38 lifetimes (Gorshkov 1982) + isotope shifts of 8 lines,
+  Gd isotope shifts of 43 lines (Ankush & Deo 2013), Pt-195 hyperfine constants (Neu 1987) + isotope shifts (LaBelle 1989),
+  Ar 13 lifetimes, Xe 30+ lifetimes and two transitions (Sterr 1995), Sm 61 lifetimes (Zhang 2010).
+- Tb: 7 plasma-estimated rates (Irvine 2023) stored as A_s_other_measurement, not shown.
+- Route that works: plain curl on opg.optica.org abstract pages (tables are in the HTML).

@@ -17,7 +17,7 @@
   "limit_text": "Gd$^+$ ionisation limit   49601.45 cm$^{-1}$  =  6.14980 eV  (201.607 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Stable isotopes: 155Gd and 157Gd have I = 3/2 (both nuclear moments negative: mu = -0.2591 and -0.3398 nuclear magnetons in the IAEA table); the others have I = 0. Hyperfine convention: E = A K/2 + B [3K(K+1) - 4I(I+1)J(J+1)] / [8I(2I-1)J(2J-1)], K = F(F+1)-J(J+1)-I(I+1) (as printed by Adhikari et al.). Ground-term 9D°J (J = 2-6) hyperfine constants of 155Gd and 157Gd are from Unsworth 1969, Table 1 (scanned PDF pdf/Gd_Unsworth_1969.pdf, numbers checked against the page image, signs as printed); the unsigned LLNL modeling constants for 9D°2 are kept as alternatives and agree in magnitude. The LLNL constants for the 17380.827 level and the 575.19 nm line are modeling inputs printed without signs or uncertainties; treat them as indicative. Lifetimes: all 136 levels of Den Hartog, Bilty, Lawler 2011, Table 1 (pdf/Gd_DenHartog_2011.pdf; parsed from the PDF text, all matched to NIST energy and J within 0.002 cm-1); one common stated uncertainty of ±5 % (unc = 5 % of the value). Directly read values of Xu, Jiang, Svanberg 2003 (pdf/Gd_Xu_2003.pdf, 25 levels) and Wang et al. 2013 (pdf/Gd_Wang_2013.pdf, 27 levels; checked against the page image) are stored as \"alternatives\" where Den Hartog has the level, and as the entry for 13 levels that only they measured (30394.64, 35794.634, 36191.722, 36394.507 from Xu; 31327.52, 32226.746, 32272.125, 32549.565, 37090.08, 37284.744, 37425.155, 37809.508, 38434.97 from Wang). Values of Marek & Stahnke 1980, Miyabe 1997 and Gorshkov 1983 are second-hand (method \"compilation\") from the \"Other expt\" column of Den Hartog et al. Access note: the Journal of Physics B PDFs (Den Hartog 2011, Lawler 2011, Xu 2003, Wang 2013, which OpenAlex marks closed, and Unsworth 1969, bronze open) were served directly by iopscience.iop.org to the fetch tool without any login; the article HTML and supplement pages were blocked by a bot check and were not pursued. Sanity check: lifetime x (sum of NIST A values plus the A entered here) is at most 0.84 for the 18 levels that have both. Isotope-shift keys \"A-B\" mean nu(A) - nu(B). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source."
+  "notes": "Stable isotopes: 155Gd and 157Gd have I = 3/2 (both nuclear moments negative: mu = -0.2591 and -0.3398 nuclear magnetons in the IAEA table); the others have I = 0. Hyperfine convention: E = A K/2 + B [3K(K+1) - 4I(I+1)J(J+1)] / [8I(2I-1)J(2J-1)], K = F(F+1)-J(J+1)-I(I+1) (as printed by Adhikari et al.). Ground-term 9D°J (J = 2-6) hyperfine constants of 155Gd and 157Gd are from Unsworth 1969, Table 1 (scanned PDF pdf/Gd_Unsworth_1969.pdf, numbers checked against the page image, signs as printed); the unsigned LLNL modeling constants for 9D°2 are kept as alternatives and agree in magnitude. The LLNL constants for the 17380.827 level and the 575.19 nm line are modeling inputs printed without signs or uncertainties; treat them as indicative. Lifetimes: all 136 levels of Den Hartog, Bilty, Lawler 2011, Table 1 (pdf/Gd_DenHartog_2011.pdf; parsed from the PDF text, all matched to NIST energy and J within 0.002 cm-1); one common stated uncertainty of ±5 % (unc = 5 % of the value). Directly read values of Xu, Jiang, Svanberg 2003 (pdf/Gd_Xu_2003.pdf, 25 levels) and Wang et al. 2013 (pdf/Gd_Wang_2013.pdf, 27 levels; checked against the page image) are stored as \"alternatives\" where Den Hartog has the level, and as the entry for 13 levels that only they measured (30394.64, 35794.634, 36191.722, 36394.507 from Xu; 31327.52, 32226.746, 32272.125, 32549.565, 37090.08, 37284.744, 37425.155, 37809.508, 38434.97 from Wang). Values of Marek & Stahnke 1980, Miyabe 1997 and Gorshkov 1983 are second-hand (method \"compilation\") from the \"Other expt\" column of Den Hartog et al. Access note: the Journal of Physics B PDFs (Den Hartog 2011, Lawler 2011, Xu 2003, Wang 2013, which OpenAlex marks closed, and Unsworth 1969, bronze open) were served directly by iopscience.iop.org to the fetch tool without any login; the article HTML and supplement pages were blocked by a bot check and were not pursued. Sanity check: lifetime x (sum of NIST A values plus the A entered here) is at most 0.84 for the 18 levels that have both. Isotope-shift keys \"A-B\" mean nu(A) - nu(B). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source. Isotope shifts \"160-156\" of 43 lines between 364 and 494 nm are from Ankush and Deo, Journal of Spectroscopy 2013, 741020, Table 1 (open access; archived publisher PDF saved as pdf/Gd_Ankush_2013.pdf; parsed from the PDF text and each line matched to NIST levels by its printed truncated level energies, the air wavelength recomputed from the NIST energies agreeing within 0.01 nm, and the J selection rule). The paper prints Delta-sigma(156,160) in cm-1 (accuracy 0.003 cm-1 for shifts above 0.060 cm-1, 0.005 cm-1 below); the MHz values stored are that number times 29979.2458 and the sign is taken as nu(160) - nu(156), which the paper does not state explicitly. These are Doppler-limited Fourier-transform values on a 0.001 cm-1 grid (about 30 MHz); the value -0.111 cm-1 recurs in 16 lines. Literature values of Blaum et al. 2000 and Jin et al. 1990 quoted in that paper are stored as alternatives with method \"compilation\"."
  },
  "columns": [
   {
@@ -47,6 +47,18 @@
   {
    "key": "odd J=6",
    "header": "J = 6",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=7",
+   "header": "J = 7",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=8",
+   "header": "J = 8",
    "group": "\\mathrm{odd}",
    "width": 1.0
   },
@@ -211,6 +223,112 @@
   },
   {
    "id": 5,
+   "E": 6378.146,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "11F*",
+   "parity": "odd",
+   "g": 2.98,
+   "name": "^{11}F^{o}_{2}",
+   "plain": "4f75d2 6s 11F°2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": -227.108,
+    "A_unc": 0.002,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Childs, Phys. Rev. A 39, 4956 (1989) (atomic-beam laser-rf double resonance; quoted in Persson, \"Hyperfine anomalies in Gd and Nd\", arXiv:0904.0516 (2015 version), Table 3; original not opened)"
+   },
+   "col": 0
+  },
+  {
+   "id": 6,
+   "E": 7234.91,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f7.(8S*).5d.6s2",
+   "term": "7D*",
+   "parity": "odd",
+   "g": 1.65,
+   "name": "^7D^{o}_{4}",
+   "plain": "4f75d6s2 7D°4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 7,
+   "E": 7426.71,
+   "unc": null,
+   "J": 3.0,
+   "conf": "4f7.(8S*).5d.6s2",
+   "term": "7D*",
+   "parity": "odd",
+   "g": 1.744,
+   "name": "^7D^{o}_{3}",
+   "plain": "4f75d6s2 7D°3",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 8,
+   "E": 8498.434,
+   "unc": null,
+   "J": 8.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "11F*",
+   "parity": "odd",
+   "g": 1.62,
+   "name": "^{11}F^{o}_{8}",
+   "plain": "4f75d2 6s 11F°8",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": -106.124,
+    "A_unc": 0.002,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Childs, Phys. Rev. A 39, 4956 (1989) (atomic-beam laser-rf double resonance; quoted in Persson, \"Hyperfine anomalies in Gd and Nd\", arXiv:0904.0516 (2015 version), Table 3; original not opened)"
+   },
+   "col": 6
+  },
+  {
+   "id": 9,
+   "E": 10883.505,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "9F*",
+   "parity": "odd",
+   "g": 1.684,
+   "name": "^9F^{o}_{4}",
+   "plain": "4f75d2 6s 9F°4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 10,
+   "E": 12486.547,
+   "unc": null,
+   "J": 7.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "9F*",
+   "parity": "odd",
+   "g": 1.56,
+   "name": "^9F^{o}_{7}",
+   "plain": "4f75d2 6s 9F°7",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 5
+  },
+  {
+   "id": 11,
    "E": 14298.311,
    "unc": null,
    "J": 3.0,
@@ -230,10 +348,10 @@
     "tier": "exp",
     "src": "Adhikari, Battles, Simien, OSA Continuum 2, 1548 (2019), Table 1"
    },
-   "col": 7
+   "col": 9
   },
   {
-   "id": 6,
+   "id": 12,
    "E": 15174.0,
    "unc": null,
    "J": 5.0,
@@ -253,10 +371,10 @@
     "tier": "exp",
     "src": "Adhikari, Battles, Simien, OSA Continuum 2, 1548 (2019), Table 1"
    },
-   "col": 9
+   "col": 11
   },
   {
-   "id": 7,
+   "id": 13,
    "E": 17380.827,
    "unc": null,
    "J": 2.0,
@@ -278,10 +396,10 @@
     "tier": "exp",
     "src": "Rotter, Carson, Robben, Haynam, Johnson, Isselhardt, Appl. Phys. B 132, 100 (2026), Table 1 (read in the open report LLNL-JRNL-2015430)"
    },
-   "col": 6
+   "col": 8
   },
   {
-   "id": 8,
+   "id": 14,
    "E": 22334.508,
    "unc": null,
    "J": 2.0,
@@ -295,10 +413,10 @@
    "tau_unc": 0.54,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 6
+   "col": 8
   },
   {
-   "id": 9,
+   "id": 15,
    "E": 22563.824,
    "unc": null,
    "J": 3.0,
@@ -312,10 +430,10 @@
    "tau_unc": 0.69,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 7
+   "col": 9
   },
   {
-   "id": 10,
+   "id": 16,
    "E": 22820.895,
    "unc": null,
    "J": 4.0,
@@ -329,10 +447,10 @@
    "tau_unc": 1.0,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 8
+   "col": 10
   },
   {
-   "id": 11,
+   "id": 17,
    "E": 23103.66,
    "unc": null,
    "J": 1.0,
@@ -346,10 +464,27 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 5
+   "col": 7
   },
   {
-   "id": 12,
+   "id": 18,
+   "E": 23215.028,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f7.(8S*).5d (9D*).6s.6p.(1P*)",
+   "term": "",
+   "parity": "even",
+   "g": 2.176,
+   "name": "(23215)_{2}",
+   "plain": "4f75d 6s6p 2",
+   "tau_ns": 10.0,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 8
+  },
+  {
+   "id": 19,
    "E": 23389.782,
    "unc": null,
    "J": 3.0,
@@ -363,10 +498,44 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 7
+   "col": 9
   },
   {
-   "id": 13,
+   "id": 20,
+   "E": 23644.156,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f7.(8S*).5d (9D*).6s.6p.(1P*)",
+   "term": "",
+   "parity": "even",
+   "g": 1.696,
+   "name": "(23644)_{4}",
+   "plain": "4f75d 6s6p 4",
+   "tau_ns": 9.9,
+   "tau_unc": 0.5,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 10
+  },
+  {
+   "id": 21,
+   "E": 23999.912,
+   "unc": null,
+   "J": 5.0,
+   "conf": "4f7.(8S*).5d (9D*).6s.6p.(1P*)",
+   "term": "",
+   "parity": "even",
+   "g": 1.631,
+   "name": "(24000)_{5}",
+   "plain": "4f75d 6s6p 5",
+   "tau_ns": 10.2,
+   "tau_unc": 0.51,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 11
+  },
+  {
+   "id": 22,
    "E": 24430.425,
    "unc": null,
    "J": 6.0,
@@ -380,10 +549,10 @@
    "tau_unc": 0.87,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10
+   "col": 12
   },
   {
-   "id": 14,
+   "id": 23,
    "E": 24849.514,
    "unc": null,
    "J": 4.0,
@@ -397,10 +566,10 @@
    "tau_unc": 0.53,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 8
+   "col": 10
   },
   {
-   "id": 15,
+   "id": 24,
    "E": 24854.297,
    "unc": null,
    "J": 6.0,
@@ -414,10 +583,10 @@
    "tau_unc": 0.96,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10
+   "col": 12
   },
   {
-   "id": 16,
+   "id": 25,
    "E": 25043.649,
    "unc": null,
    "J": 5.0,
@@ -431,10 +600,10 @@
    "tau_unc": 0.5499999999999999,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 9
+   "col": 11
   },
   {
-   "id": 17,
+   "id": 26,
    "E": 25376.313,
    "unc": null,
    "J": 7.0,
@@ -448,10 +617,27 @@
    "tau_unc": 0.47000000000000003,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 13
+  },
+  {
+   "id": 27,
+   "E": 25380.885,
+   "unc": null,
+   "J": 5.0,
+   "conf": "4f8.(7F).5d (8G).6s",
+   "term": "9G",
+   "parity": "even",
+   "g": 1.63,
+   "name": "^9G_{5}",
+   "plain": "4f85d 6s 9G5",
+   "tau_ns": 21.2,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
    "col": 11
   },
   {
-   "id": 18,
+   "id": 28,
    "E": 25661.34,
    "unc": null,
    "J": 6.0,
@@ -465,10 +651,91 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 12
+  },
+  {
+   "id": 29,
+   "E": 26615.044,
+   "unc": null,
+   "J": 5.0,
+   "conf": "4f7.(8S*).5d (7D*).6s.6p.(3P*)",
+   "term": "7F",
+   "parity": "even",
+   "g": 1.55,
+   "name": "^7F_{5}",
+   "plain": "4f75d 6s6p 7F5",
+   "tau_ns": 58.8,
+   "tau_unc": 2.9,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 11
+  },
+  {
+   "id": 30,
+   "E": 26866.385,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f7.(8S*).5d (7D*).6s.6p.(3P*)",
+   "term": "7F",
+   "parity": "even",
+   "g": 1.565,
+   "name": "^7F_{4}",
+   "plain": "4f75d 6s6p 7F4",
+   "tau_ns": 55.1,
+   "tau_unc": 2.8,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
    "col": 10
   },
   {
-   "id": 19,
+   "id": 31,
+   "E": 27040.865,
+   "unc": null,
+   "J": 4.0,
+   "conf": "",
+   "term": "9F",
+   "parity": "even",
+   "g": 1.6,
+   "name": "^9F_{4}",
+   "plain": "9F4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 10
+  },
+  {
+   "id": 32,
+   "E": 27041.751,
+   "unc": null,
+   "J": 3.0,
+   "conf": "",
+   "term": "9F",
+   "parity": "even",
+   "g": 1.67,
+   "name": "^9F_{3}",
+   "plain": "9F3",
+   "tau_ns": 54.7,
+   "tau_unc": 2.7,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 9
+  },
+  {
+   "id": 33,
+   "E": 27129.239,
+   "unc": null,
+   "J": 1.0,
+   "conf": "",
+   "term": "9F",
+   "parity": "even",
+   "g": 2.34,
+   "name": "^9F_{1}",
+   "plain": "9F1",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 34,
    "E": 27135.695,
    "unc": null,
    "J": 3.0,
@@ -482,10 +749,10 @@
    "tau_unc": 0.18,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 7
+   "col": 9
   },
   {
-   "id": 20,
+   "id": 35,
    "E": 27425.245,
    "unc": null,
    "J": 4.0,
@@ -499,10 +766,161 @@
    "tau_unc": 0.2,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 10
+  },
+  {
+   "id": 36,
+   "E": 28414.925,
+   "unc": null,
+   "J": 5.0,
+   "conf": "4f8.(7F).5d.6s?",
+   "term": "7F?",
+   "parity": "even",
+   "g": 1.55,
+   "name": "^7F_{5}",
+   "plain": "4f85d6s 7F5",
+   "tau_ns": 31.5,
+   "tau_unc": 1.6,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 11
+  },
+  {
+   "id": 37,
+   "E": 28504.435,
+   "unc": null,
+   "J": 7.0,
+   "conf": "",
+   "term": "9F?",
+   "parity": "even",
+   "g": 1.55,
+   "name": "^9F_{7}",
+   "plain": "9F7",
+   "tau_ns": 63.5,
+   "tau_unc": 3.2,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 13
+  },
+  {
+   "id": 38,
+   "E": 28731.59,
+   "unc": null,
+   "J": 6.0,
+   "conf": "",
+   "term": "9F?",
+   "parity": "even",
+   "g": 1.58,
+   "name": "^9F_{6}",
+   "plain": "9F6",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 12
+  },
+  {
+   "id": 39,
+   "E": 29119.955,
+   "unc": null,
+   "J": 5.0,
+   "conf": "",
+   "term": "9F?",
+   "parity": "even",
+   "g": 1.64,
+   "name": "^9F_{5}",
+   "plain": "9F5",
+   "tau_ns": 43.0,
+   "tau_unc": 2.1999999999999997,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 11
+  },
+  {
+   "id": 40,
+   "E": 30505.374,
+   "unc": null,
+   "J": 7.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6p",
+   "term": "9G",
+   "parity": "even",
+   "g": 1.51,
+   "name": "^9G_{7}",
+   "plain": "4f75d2 6p 9G7",
+   "tau_ns": 15.1,
+   "tau_unc": 0.75,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 13
+  },
+  {
+   "id": 41,
+   "E": 30694.874,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6p",
+   "term": "9F",
+   "parity": "even",
+   "g": 2.136,
+   "name": "^9F_{2}",
+   "plain": "4f75d2 6p 9F2",
+   "tau_ns": 7.3,
+   "tau_unc": 0.36,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
    "col": 8
   },
   {
-   "id": 21,
+   "id": 42,
+   "E": 30809.375,
+   "unc": null,
+   "J": 3.0,
+   "conf": "4f7.(8S*).5d.6s.6p?",
+   "term": "",
+   "parity": "even",
+   "g": 2.15,
+   "name": "(30809)_{3}",
+   "plain": "4f75d6s6p 3",
+   "tau_ns": 18.1,
+   "tau_unc": 0.9099999999999999,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 9
+  },
+  {
+   "id": 43,
+   "E": 31135.795,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6p",
+   "term": "9F",
+   "parity": "even",
+   "g": 1.685,
+   "name": "^9F_{4}",
+   "plain": "4f75d2 6p 9F4",
+   "tau_ns": 6.6,
+   "tau_unc": 0.33,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 10
+  },
+  {
+   "id": 44,
+   "E": 31327.52,
+   "unc": null,
+   "J": 3.0,
+   "conf": "4f8.(7F).5d.6s?",
+   "term": "7D?",
+   "parity": "even",
+   "g": 1.58,
+   "name": "^7D_{3}",
+   "plain": "4f85d6s 7D3",
+   "tau_ns": 56.0,
+   "tau_unc": 1.0999999999999999,
+   "tau_tier": "exp",
+   "tau_src": "Wang, Jiang, Jiang, Shang, Tian, Dai, J. Phys. B 46, 045003 (2013), Table 1 (p. 3; time-resolved laser-induced fluorescence in a laser-produced plasma)",
+   "col": 9
+  },
+  {
+   "id": 45,
    "E": 32448.112,
    "unc": null,
    "J": 3.0,
@@ -516,10 +934,10 @@
    "tau_unc": 0.58,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 7
+   "col": 9
   },
   {
-   "id": 22,
+   "id": 46,
    "E": 32886.276,
    "unc": null,
    "J": 4.0,
@@ -533,10 +951,10 @@
    "tau_unc": 0.47000000000000003,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 8
+   "col": 10
   },
   {
-   "id": 23,
+   "id": 47,
    "E": 33348.226,
    "unc": null,
    "J": 5.0,
@@ -550,10 +968,27 @@
    "tau_unc": 0.36,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 11
+  },
+  {
+   "id": 48,
+   "E": 33704.627,
+   "unc": null,
+   "J": 3.0,
+   "conf": "",
+   "term": "",
+   "parity": "even",
+   "g": 1.75,
+   "name": "(33705)_{3}",
+   "plain": "3",
+   "tau_ns": 8.2,
+   "tau_unc": 0.41,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
    "col": 9
   },
   {
-   "id": 24,
+   "id": 49,
    "E": 33851.828,
    "unc": null,
    "J": 6.0,
@@ -567,7 +1002,54 @@
    "tau_unc": 0.38,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 12
+  },
+  {
+   "id": 50,
+   "E": 34147.343,
+   "unc": null,
+   "J": 2.0,
+   "conf": "",
+   "term": "",
+   "parity": "even",
+   "g": 2.119,
+   "name": "(34147)_{2}",
+   "plain": "2",
+   "tau_ns": 6.4,
+   "tau_unc": 0.32,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
+   "col": 8
+  },
+  {
+   "id": 51,
+   "E": 34836.98,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f7.(8S*).5d2.(3F) (8F*).6p?",
+   "term": "9G?",
+   "parity": "even",
+   "g": 1.47,
+   "name": "^9G_{4}",
+   "plain": "4f75d2 6p 9G4",
+   "tau_ns": null,
+   "tau_tier": "none",
    "col": 10
+  },
+  {
+   "id": 52,
+   "E": 36147.13,
+   "unc": null,
+   "J": 6.0,
+   "conf": "",
+   "term": "",
+   "parity": "even",
+   "g": 1.59,
+   "name": "(36147)_{6}",
+   "plain": "6",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 12
   }
  ],
  "transitions": [
@@ -577,7 +1059,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 23,
+   "upper": 47,
    "wn": 32815.249,
    "lam": 304.7364,
    "air": 304.6477,
@@ -599,7 +1081,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 22,
+   "upper": 46,
    "wn": 32671.152,
    "lam": 306.0804,
    "air": 305.9915,
@@ -621,7 +1103,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 21,
+   "upper": 45,
    "wn": 32448.112,
    "lam": 308.1843,
    "air": 308.0949,
@@ -643,7 +1125,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 23,
+   "upper": 47,
    "wn": 32349.105,
    "lam": 309.1276,
    "air": 309.0378,
@@ -665,7 +1147,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 24,
+   "upper": 49,
    "wn": 32132.741,
    "lam": 311.2091,
    "air": 311.1188,
@@ -683,11 +1165,73 @@
   },
   {
    "kind": "E1",
+   "freq": 821.90513,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 36,
+   "wn": 27415.804,
+   "lam": 364.7531,
+   "air": 364.6492,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -2398.3,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 5.053,
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 821.73922,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 7,
+   "upper": 51,
+   "wn": 27410.27,
+   "lam": 364.8268,
+   "air": 364.7228,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -2997.9,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 821.45736,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 39,
+   "wn": 27400.868,
+   "lam": 364.9519,
+   "air": 364.848,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 3.701,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 813.50767,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 19,
+   "upper": 34,
    "wn": 27135.695,
    "lam": 368.5183,
    "air": 368.4134,
@@ -706,11 +1250,72 @@
   },
   {
    "kind": "E1",
+   "freq": 813.31412,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 33,
+   "wn": 27129.239,
+   "lam": 368.606,
+   "air": 368.5011,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3627.5,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 810.6913,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 32,
+   "wn": 27041.751,
+   "lam": 369.7985,
+   "air": 369.6933,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3597.5,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 2.91,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 809.81447,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 38,
+   "wn": 27012.503,
+   "lam": 370.1989,
+   "air": 370.0936,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -4077.2,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 807.05842,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 19,
+   "upper": 34,
    "wn": 26920.571,
    "lam": 371.4631,
    "air": 371.3575,
@@ -733,7 +1338,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 20,
+   "upper": 35,
    "wn": 26892.268,
    "lam": 371.8541,
    "air": 371.7483,
@@ -751,11 +1356,94 @@
   },
   {
    "kind": "E1",
+   "freq": 804.21548,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 31,
+   "wn": 26825.741,
+   "lam": 372.7763,
+   "air": 372.6703,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3297.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 803.00453,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 37,
+   "wn": 26785.348,
+   "lam": 373.3384,
+   "air": 373.2323,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -2997.9,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 2.506,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 801.06442,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 7,
+   "upper": 50,
+   "wn": 26720.633,
+   "lam": 374.2426,
+   "air": 374.1363,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -2997.9,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 24.87,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 793.54215,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 6,
+   "upper": 48,
+   "wn": 26469.717,
+   "lam": 377.7902,
+   "air": 377.6829,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 19.41,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 792.23527,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 20,
+   "upper": 35,
    "wn": 26426.124,
    "lam": 378.4134,
    "air": 378.306,
@@ -773,11 +1461,73 @@
   },
   {
    "kind": "E1",
+   "freq": 789.45571,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 30,
+   "wn": 26333.408,
+   "lam": 379.7458,
+   "air": 379.638,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3417.6,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 2.888,
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 780.71184,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 31,
+   "wn": 26041.744,
+   "lam": 383.9989,
+   "air": 383.89,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3687.4,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 767.94605,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 29,
+   "wn": 25615.923,
+   "lam": 390.3822,
+   "air": 390.2716,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3927.3,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 2.707,
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
    "freq": 739.35473,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 18,
+   "upper": 28,
    "wn": 24662.219,
    "lam": 405.4785,
    "air": 405.364,
@@ -799,10 +1549,18 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 14,
+   "upper": 23,
    "wn": 24634.39,
    "lam": 405.9366,
    "air": 405.822,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3297.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
    "gamma_MHz": 15.16,
    "type": "E1",
    "A": 57000000.0,
@@ -821,10 +1579,18 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 16,
+   "upper": 25,
    "wn": 24510.672,
    "lam": 407.9856,
    "air": 407.8704,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3657.5,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
    "gamma_MHz": 14.47,
    "type": "E1",
    "A": 59000000.0,
@@ -839,11 +1605,95 @@
   },
   {
    "kind": "E1",
+   "freq": 732.42982,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 5,
+   "upper": 42,
+   "wn": 24431.229,
+   "lam": 409.3122,
+   "air": 409.1967,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -2638.2,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 8.793,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 728.99717,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 5,
+   "upper": 41,
+   "wn": 24316.728,
+   "lam": 411.2395,
+   "air": 411.1235,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -1199.2,
+     "unc": 150.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 21.8,
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 728.99144,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 23,
+   "wn": 24316.537,
+   "lam": 411.2428,
+   "air": 411.1268,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.16,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 720.83682,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 25,
+   "wn": 24044.528,
+   "lam": 415.895,
+   "air": 415.7778,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3747.4,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 14.47,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 717.77069,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 18,
+   "upper": 28,
    "wn": 23942.253,
    "lam": 417.6716,
    "air": 417.5539,
@@ -861,14 +1711,43 @@
   },
   {
    "kind": "E1",
+   "freq": 716.52826,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 7,
+   "upper": 44,
+   "wn": 23900.81,
+   "lam": 418.3959,
+   "air": 418.278,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3897.3,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 2.842,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 715.16018,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 15,
+   "upper": 24,
    "wn": 23855.176,
    "lam": 419.1962,
    "air": 419.0781,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -4227.1,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
    "gamma_MHz": 8.289,
    "type": "E1",
    "A": 30000000.0,
@@ -883,15 +1762,85 @@
   },
   {
    "kind": "E1",
+   "freq": 715.01679,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 23,
+   "wn": 23850.393,
+   "lam": 419.2803,
+   "air": 419.1622,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -2997.9,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.16,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 709.36286,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 27,
+   "wn": 23661.798,
+   "lam": 422.6222,
+   "air": 422.5032,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3897.3,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 7.507,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 709.32643,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 10,
+   "upper": 52,
+   "wn": 23660.583,
+   "lam": 422.6439,
+   "air": 422.5249,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -2098.5,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 709.22579,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 17,
+   "upper": 26,
    "wn": 23657.226,
    "lam": 422.7038,
    "air": 422.5848,
    "use": "proposed laser-cooling line (423 nm, J = 6 -> 7, treated as closed two-level system for the bosonic isotopes; Battles thesis 2020; proposal, no experiment); also the reference line of King plots (422 nm)",
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3477.6,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
    "gamma_MHz": 16.93,
    "type": "E1",
    "A": 89000000.0,
@@ -906,14 +1855,148 @@
   },
   {
    "kind": "E1",
+   "freq": 703.52101,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 21,
+   "wn": 23466.935,
+   "lam": 426.1315,
+   "air": 426.0116,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.6,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 702.45282,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 22,
+   "wn": 23431.304,
+   "lam": 426.7795,
+   "air": 426.6594,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3627.5,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 9.147,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 702.38471,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 20,
+   "wn": 23429.032,
+   "lam": 426.8209,
+   "air": 426.7008,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3627.5,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 16.08,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 701.20802,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 19,
+   "wn": 23389.782,
+   "lam": 427.5371,
+   "air": 427.4168,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.92,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 699.25278,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 25,
+   "wn": 23324.562,
+   "lam": 428.7326,
+   "air": 428.612,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3747.4,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 14.47,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 695.96903,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 18,
+   "wn": 23215.028,
+   "lam": 430.7555,
+   "air": 430.6343,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3627.5,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.92,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 694.75877,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 12,
+   "upper": 19,
    "wn": 23174.658,
    "lam": 431.5058,
    "air": 431.3845,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3297.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
    "gamma_MHz": 15.92,
    "type": "E1",
    "A": 43000000.0,
@@ -928,14 +2011,64 @@
   },
   {
    "kind": "E1",
+   "freq": 693.57615,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 24,
+   "wn": 23135.21,
+   "lam": 432.2416,
+   "air": 432.1201,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -4227.1,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 8.289,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 692.85572,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 20,
+   "wn": 23111.179,
+   "lam": 432.691,
+   "air": 432.5694,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 16.08,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 692.6303,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 11,
+   "upper": 17,
    "wn": 23103.66,
    "lam": 432.8319,
    "air": 432.7102,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
    "gamma_MHz": 16.08,
    "type": "E1",
    "A": 52000000.0,
@@ -950,14 +2083,85 @@
   },
   {
    "kind": "E1",
+   "freq": 689.54637,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 21,
+   "wn": 23000.791,
+   "lam": 434.7677,
+   "air": 434.6455,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.6,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 689.51978,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 18,
+   "wn": 22999.904,
+   "lam": 434.7844,
+   "air": 434.6622,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.92,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 685.22978,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 19,
+   "wn": 22856.805,
+   "lam": 437.5065,
+   "air": 437.3836,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.92,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 680.86878,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 13,
+   "upper": 22,
    "wn": 22711.338,
    "lam": 440.3087,
    "air": 440.1851,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
    "gamma_MHz": 9.147,
    "type": "E1",
    "A": 38000000.0,
@@ -972,11 +2176,32 @@
   },
   {
    "kind": "E1",
+   "freq": 678.88107,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 20,
+   "wn": 22645.035,
+   "lam": 441.5979,
+   "air": 441.4739,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 16.08,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 677.70397,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 10,
+   "upper": 16,
    "wn": 22605.771,
    "lam": 442.3649,
    "air": 442.2407,
@@ -998,7 +2223,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 9,
+   "upper": 15,
    "wn": 22563.824,
    "lam": 443.1873,
    "air": 443.0629,
@@ -1017,11 +2242,32 @@
   },
   {
    "kind": "E1",
+   "freq": 667.96233,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 4,
+   "upper": 21,
+   "wn": 22280.825,
+   "lam": 448.8164,
+   "air": 448.6905,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 15.6,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 663.12245,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 8,
+   "upper": 14,
    "wn": 22119.384,
    "lam": 452.0922,
    "air": 451.9654,
@@ -1040,11 +2286,53 @@
   },
   {
    "kind": "E1",
+   "freq": 659.75146,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 8,
+   "upper": 40,
+   "wn": 22006.94,
+   "lam": 454.4021,
+   "air": 454.2747,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -2308.4,
+     "unc": 90.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 10.54,
+   "type": "E1 (intercombination)"
+  },
+  {
+   "kind": "E1",
+   "freq": 607.14838,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 9,
+   "upper": 43,
+   "wn": 20252.29,
+   "lam": 493.7713,
+   "air": 493.6335,
+   "isotope_shifts": {
+    "160-156": {
+     "value": -1349.1,
+     "unc": 150.0,
+     "src": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   },
+   "gamma_MHz": 24.11,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
    "freq": 521.06408,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 7,
+   "upper": 13,
    "wn": 17380.827,
    "lam": 575.3466,
    "air": 575.1871,
@@ -1104,7 +2392,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 5,
+   "upper": 11,
    "wn": 13765.334,
    "lam": 726.4626,
    "air": 726.2624,
@@ -1143,7 +2431,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 6,
+   "upper": 12,
    "wn": 13454.913,
    "lam": 743.2229,
    "air": 743.0183,
@@ -1326,6 +2614,18 @@
      "F=9/2: +416.50   F=11/2: -61.37   F=13/2: -257.81   F=15/2: +11.30"
     ],
     [
+     "$^{11}F^{o}_{2}$",
+     "-227.1080(20)",
+     "–",
+     "F=1/2: +1021.99   F=3/2: +681.32   F=5/2: +113.55   F=7/2: -681.32"
+    ],
+    [
+     "$^{11}F^{o}_{8}$",
+     "-106.1240(20)",
+     "–",
+     "F=13/2: +1432.67   F=15/2: +636.74   F=17/2: -265.31   F=19/2: -1273.49"
+    ],
+    [
      "$^{11}F_{3}$",
      "-77(5)",
      "590(4)",
@@ -1357,97 +2657,145 @@
    "aligns": "lrlr",
    "rows": [
     [
-     "$^9D^{o}_{2}$ – $^9F_{2}$",
-     "575.347",
-     "152-156",
-     "2232.00"
-    ],
-    [
-     "$^9D^{o}_{2}$ – $^9F_{2}$",
-     "575.347",
-     "154-156",
-     "1116.00"
-    ],
-    [
-     "$^9D^{o}_{2}$ – $^9F_{2}$",
-     "575.347",
-     "155-156",
-     "763.00"
-    ],
-    [
-     "$^9D^{o}_{2}$ – $^9F_{2}$",
-     "575.347",
-     "157-156",
-     "-21.00"
-    ],
-    [
-     "$^9D^{o}_{2}$ – $^9F_{2}$",
-     "575.347",
-     "158-156",
-     "-1119.00"
-    ],
-    [
-     "$^9D^{o}_{2}$ – $^9F_{2}$",
-     "575.347",
+     "$^9D^{o}_{5}$ – $^7F_{5}$",
+     "364.753",
      "160-156",
-     "-2233.00"
+     "-2398(90)"
     ],
     [
-     "$^9D^{o}_{4}$ – $^{11}F_{3}$",
-     "726.463",
-     "158-160",
-     "964(4)"
+     "$^7D^{o}_{3}$ – $^9G_{4}$",
+     "364.827",
+     "160-156",
+     "-2998(90)"
     ],
     [
-     "$^9D^{o}_{4}$ – $^{11}F_{3}$",
-     "726.463",
-     "157-160",
-     "2154(20)"
+     "$^9D^{o}_{6}$ – $^9F_{5}$",
+     "364.952",
+     "160-156",
+     "-3328(90)"
     ],
     [
-     "$^9D^{o}_{4}$ – $^{11}F_{3}$",
-     "726.463",
-     "156-160",
-     "2563(4)"
+     "$^9D^{o}_{2}$ – $^9F_{1}$",
+     "368.606",
+     "160-156",
+     "-3628(90)"
     ],
     [
-     "$^9D^{o}_{4}$ – $^{11}F_{3}$",
-     "726.463",
-     "155-160",
-     "3243(12)"
+     "$^9D^{o}_{2}$ – $^9F_{3}$",
+     "369.798",
+     "160-156",
+     "-3598(90)"
     ],
     [
-     "$^9D^{o}_{6}$ – $^{11}F_{5}$",
-     "743.223",
-     "158-160",
-     "1054(4)"
+     "$^9D^{o}_{6}$ – $^9F_{6}$",
+     "370.199",
+     "160-156",
+     "-4077(90)"
     ],
     [
-     "$^9D^{o}_{6}$ – $^{11}F_{5}$",
-     "743.223",
-     "157-160",
-     "486(65)"
+     "$^9D^{o}_{3}$ – $^9F_{4}$",
+     "372.776",
+     "160-156",
+     "-3298(90)"
     ],
     [
-     "$^9D^{o}_{6}$ – $^{11}F_{5}$",
-     "743.223",
-     "156-160",
-     "2029(4)"
+     "$^9D^{o}_{6}$ – $^9F_{7}$",
+     "373.338",
+     "160-156",
+     "-2998(90)"
     ],
     [
-     "$^9D^{o}_{6}$ – $^{11}F_{5}$",
-     "743.223",
-     "155-160",
-     "2476(12)"
+     "$^7D^{o}_{3}$ – $(34147)_{2}$",
+     "374.243",
+     "160-156",
+     "-2998(90)"
+    ],
+    [
+     "$^7D^{o}_{4}$ – $(33705)_{3}$",
+     "377.790",
+     "160-156",
+     "-3328(90)"
+    ],
+    [
+     "$^9D^{o}_{4}$ – $^7F_{4}$",
+     "379.746",
+     "160-156",
+     "-3418(90)"
+    ],
+    [
+     "$^9D^{o}_{5}$ – $^9F_{4}$",
+     "383.999",
+     "160-156",
+     "-3687(90)"
+    ],
+    [
+     "$^9D^{o}_{5}$ – $^7F_{5}$",
+     "390.382",
+     "160-156",
+     "-3927(90)"
+    ],
+    [
+     "$^9D^{o}_{3}$ – $(24850)_{4}$",
+     "405.937",
+     "160-156",
+     "-3298(90)"
+    ],
+    [
+     "$^9D^{o}_{4}$ – $(25044)_{5}$",
+     "407.986",
+     "160-156",
+     "-3658(90)"
+    ],
+    [
+     "$^{11}F^{o}_{2}$ – $(30809)_{3}$",
+     "409.312",
+     "160-156",
+     "-2638(90)"
+    ],
+    [
+     "$^{11}F^{o}_{2}$ – $^9F_{2}$",
+     "411.240",
+     "160-156",
+     "-1199(150)"
+    ],
+    [
+     "$^9D^{o}_{4}$ – $(24850)_{4}$",
+     "411.243",
+     "160-156",
+     "-3328(90)"
+    ],
+    [
+     "$^9D^{o}_{5}$ – $(25044)_{5}$",
+     "415.895",
+     "160-156",
+     "-3747(90)"
+    ],
+    [
+     "$^7D^{o}_{3}$ – $^7D_{3}$",
+     "418.396",
+     "160-156",
+     "-3897(90)"
+    ],
+    [
+     "$^9D^{o}_{5}$ – $^9G_{6}$",
+     "419.196",
+     "160-156",
+     "-4227(90)"
+    ],
+    [
+     "$^9D^{o}_{5}$ – $(24850)_{4}$",
+     "419.280",
+     "160-156",
+     "-2998(90)"
     ]
    ],
    "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 25   lines < 2000 nm: 24   with matrix element: 22",
-  "transition-rate provenance: exp: 6, nist: 16, wavelength only: 2",
-  "levels with a measured lifetime: 18"
+  "levels: 53   lines < 2000 nm: 60   with matrix element: 22",
+  "transition-rate provenance: exp: 6, nist: 16, wavelength only: 38",
+  "levels with a measured lifetime: 35"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Gd); nuclear spin from the IAEA/ENSDF ground-state table (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=155gd) and Battles thesis 2020 Table 1": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Gd",
@@ -1463,8 +2811,11 @@
   "Gorshkov, Komarovskii, Osherovich, Penkin, Opt. Spectrosc. (USSR) 54, 122 (1983) (electron-beam excitation, delayed coincidence; Den Hartog et al. attribute the longer values to cascade repopulation)": "https://iopscience.iop.org/article/10.1088/0953-4075/44/5/055001/pdf",
   "Xu, Jiang, Svanberg, J. Phys. B 36, 411 (2003), Table 1 (p. 415; time-resolved laser-induced fluorescence in a laser-produced plasma)": "https://iopscience.iop.org/article/10.1088/0953-4075/36/3/301/pdf",
   "Wang, Jiang, Jiang, Shang, Tian, Dai, J. Phys. B 46, 045003 (2013), Table 1 (p. 3; time-resolved laser-induced fluorescence in a laser-produced plasma)": "https://iopscience.iop.org/article/10.1088/0953-4075/46/4/045003/pdf",
+  "Jin, Sakata, Wakasugi, Horiguchi, Yoshizawa, Phys. Rev. A 42, 1416 (1990) and others, as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 2 (p. 5)": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
   "Battles, \"Laser Cooling Transitions in Atomic Gadolinium\", thesis, University of Alabama at Birmingham (2020)": "https://web.archive.org/web/20240708084202/https://digitalcommons.library.uab.edu/cgi/viewcontent.cgi?article=2115&context=etd-collection",
   "Adhikari, Battles, Simien, OSA Continuum 2, 1548 (2019), Table 2": "https://web.archive.org/web/20231024032506/https://opg.optica.org/osac/fulltext.cfm?uri=osac-2-5-1548",
+  "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
+  "Blaum, Bushaw, Diel, Geppert, Kuschnick, Mueller, Noertershaeuser, Schmitt, Wendt, Eur. Phys. J. D 11, 37 (2000), as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
   "Lawler, Bilty, Den Hartog, J. Phys. B 44, 095001 (2011), Table 6 (printed portion, p. 7)": "https://iopscience.iop.org/article/10.1088/0953-4075/44/9/095001/pdf"
  }
 }

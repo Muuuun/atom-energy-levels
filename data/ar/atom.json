@@ -17,7 +17,7 @@
   "limit_text": "Ar$^+$ ionisation limit   127109.84 cm$^{-1}$  =  15.75961 eV  (78.672 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier argon isotopes lie at higher frequency on 811.5 nm (Table III of Williams et al. is given relative to 38Ar: Delta nu(38,A') = nu(A') - nu(38)), while the 800.8 and 922.7 nm shifts of Chu et al. are printed relative to 40Ar. 39Ar and 37Ar are radioactive (ATTA tracers). Level energies are NIST ASD values from data/ar/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only. Added 2026-10-01 (second pass): the 105 nm measurements of Velchev et al. are from 1999 (older than 20 years), so the NIST energy stays in use; isotope shifts of that line are printed as nu(40) - nu(A). Paschen-labelled lifetimes (Klose) were assigned to NIST levels by energy order. Added 2026-10-02 (third pass, papers opened in full): Wiese et al. 1989 (scanned PDF from the Max Planck repository; tables read from the page images), Klein et al. 1996 (CERN preprint scan), Welte's 2011 thesis, de Regt et al. 1996. Lifetimes of all ten 4p levels are second-hand (Quadfasel & Helbig unpublished, via Wiese Table II, no uncertainties printed). Isotope-shift entries of the 763.5 nm line carry the statistical error in 'unc' and the systematic one in 'unc_sys'. The rates A_s of the 5p[5/2]2 branches are R/tau from one paper, so tau x sum(A) = 1 by construction."
+  "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier argon isotopes lie at higher frequency on 811.5 nm (Table III of Williams et al. is given relative to 38Ar: Delta nu(38,A') = nu(A') - nu(38)), while the 800.8 and 922.7 nm shifts of Chu et al. are printed relative to 40Ar. 39Ar and 37Ar are radioactive (ATTA tracers). Level energies are NIST ASD values from data/ar/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only. Added 2026-10-01 (second pass): the 105 nm measurements of Velchev et al. are from 1999 (older than 20 years), so the NIST energy stays in use; isotope shifts of that line are printed as nu(40) - nu(A). Paschen-labelled lifetimes (Klose) were assigned to NIST levels by energy order. Added 2026-10-02 (third pass, papers opened in full): Wiese et al. 1989 (scanned PDF from the Max Planck repository; tables read from the page images), Klein et al. 1996 (CERN preprint scan), Welte's 2011 thesis, de Regt et al. 1996. Lifetimes of all ten 4p levels are second-hand (Quadfasel & Helbig unpublished, via Wiese Table II, no uncertainties printed). Isotope-shift entries of the 763.5 nm line carry the statistical error in 'unc' and the systematic one in 'unc_sys'. The rates A_s of the 5p[5/2]2 branches are R/tau from one paper, so tau x sum(A) = 1 by construction. Added 2026-10-02 (fourth pass, publisher pages read directly): opg.optica.org abstract pages embed the full tables of a paper in their HTML and journals.aps.org abstract pages are readable; both were fetched with curl and parsed by script (each Optica table occurs twice in the page and the two copies were compared; a WebFetch reading of the Klose table agreed). New: Lawrence 1968 (abstract: lifetimes of the six lowest J = 1 levels; the two 4s resonance levels fail the lifetime x sum(A_NIST) <= 1 test and sit under 'lifetime_alternatives'), Klose 1968 Table II (seven 5p lifetimes; 'unc' = statistical standard error, 'unc_sys' = printed systematic percentage times the value), Klose 1967 Table I (systematic errors added to the existing alternatives as 'unc_sys_percent'), Asghar et al. 2020 Table 1 (27 measured A values stored as 'A_s_other_measurement', a key the pipeline does not read, because they are less accurate than the NIST set; the same table supplies the uncertainties of the Chang & Setser lifetimes, stored as 'unc' with 'unc_source' on the existing second-hand alternatives). Saved page texts: data/literature/pdf/Ar_Lawrence_1968.txt, Ar_Klose_1967.txt, Ar_Klose_1968.txt, Ar_Asghar_2020.txt."
  },
  "columns": [
   {
@@ -424,8 +424,10 @@
    "g": null,
    "name": "2[3/2]^{o}_{1}",
    "plain": "3p55s 2[3/2]°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 10.1,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
    "col": 5
   },
   {
@@ -439,8 +441,10 @@
    "g": null,
    "name": "2[3/2]^{o}_{1}",
    "plain": "3p53d 2[3/2]°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 3.48,
+   "tau_unc": 0.2,
+   "tau_tier": "exp",
+   "tau_src": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
    "col": 5
   },
   {
@@ -469,8 +473,10 @@
    "g": null,
    "name": "2[1/2]^{o}_{1}",
    "plain": "3p55s 2[1/2]°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 17.5,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
    "col": 5
   },
   {
@@ -484,8 +490,10 @@
    "g": null,
    "name": "2[3/2]^{o}_{1}",
    "plain": "3p53d 2[3/2]°1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 3.0,
+   "tau_unc": 0.4,
+   "tau_tier": "exp",
+   "tau_src": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
    "col": 5
   },
   {
@@ -499,8 +507,10 @@
    "g": null,
    "name": "2[5/2]_{3}",
    "plain": "3p55p 2[5/2]3",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 141.0,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables). Note: printed '3p9 | 3p9 -> 1s5 | 4201 | 141±2 | 5%' : mean life 141 +- 2 ns (standard error of the mean) with an estimated systematic error of 5 %; electron excitation and delayed coincidence, line at 4201 A (NIST air wavelength 4200.7 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.14 is no real test.",
    "col": 3
   },
   {
@@ -531,8 +541,10 @@
    "g": 1.01,
    "name": "2[3/2]_{1}",
    "plain": "3p55p 2[3/2]1",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 149.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables). Note: printed '3p7 | 3p7 -> 1s4 | 4272 | 149±3 | 5%' : mean life 149 +- 3 ns (standard error of the mean) with an estimated systematic error of 5 %; electron excitation and delayed coincidence, line at 4272 A (NIST air wavelength 4272.2 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.18 is no real test.",
    "col": 1
   },
   {
@@ -546,8 +558,10 @@
    "g": 1.42,
    "name": "2[3/2]_{2}",
    "plain": "3p55p 2[3/2]2",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 124.0,
+   "tau_unc": 3.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables). Note: printed '3p6 | 3p6 -> 1s5 | 4159 | 124±3 | 10%' : mean life 124 +- 3 ns (standard error of the mean) with an estimated systematic error of 10 %; electron excitation and delayed coincidence, line at 4159 A (NIST air wavelength 4158.6 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.21 is no real test.",
    "col": 2
   },
   {
@@ -561,8 +575,10 @@
    "g": null,
    "name": "2[1/2]_{0}",
    "plain": "3p55p 2[1/2]0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 95.0,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables). Note: printed '3p5 | 3p5 -> 1s2 | 4511 | 95±2 | 5%' : mean life 95 +- 2 ns (standard error of the mean) with an estimated systematic error of 5 %; electron excitation and delayed coincidence, line at 4511 A (NIST air wavelength 4510.7 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. Also: a second determination on the 3p5 -> 1s4 line at 4198 A gave 98 +- 2 ns (systematic error 10 %). NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.36 is no real test.",
    "col": 0
   },
   {
@@ -651,8 +667,10 @@
    "g": null,
    "name": "2[1/2]_{0}",
    "plain": "3p55p 2[1/2]0",
-   "tau_ns": null,
-   "tau_tier": "none",
+   "tau_ns": 71.0,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables). Note: printed '3p1 | 3p1 -> 1s2 | 4259 | 71±2 | 5%' : mean life 71 +- 2 ns (standard error of the mean) with an estimated systematic error of 5 %; electron excitation and delayed coincidence, line at 4259 A (NIST air wavelength 4259.4 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.28 is no real test.",
    "col": 0
   },
   {
@@ -907,6 +925,7 @@
    "wn": 115366.866,
    "lam": 86.68,
    "air": null,
+   "gamma_MHz": 53.05,
    "type": "E1",
    "A": 313000000.0,
    "A_tier": "nist",
@@ -914,6 +933,8 @@
    "d": 0.5494,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.939,
+   "br_tier": "nist",
    "lam_obs": 86.68
   },
   {
@@ -926,6 +947,7 @@
    "wn": 114975.019,
    "lam": 86.9754,
    "air": null,
+   "gamma_MHz": 9.095,
    "type": "E1",
    "A": 35000000.0,
    "A_tier": "nist",
@@ -933,6 +955,8 @@
    "d": 0.1847,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.6125,
+   "br_tier": "nist",
    "lam_obs": 86.9754
   },
   {
@@ -945,6 +969,7 @@
    "wn": 114147.732,
    "lam": 87.6058,
    "air": null,
+   "gamma_MHz": 45.73,
    "type": "E1",
    "A": 270000000.0,
    "A_tier": "nist",
@@ -952,6 +977,8 @@
    "d": 0.5185,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.9396,
+   "br_tier": "nist",
    "lam_obs": 87.6058
   },
   {
@@ -964,6 +991,7 @@
    "wn": 113643.26,
    "lam": 87.9947,
    "air": null,
+   "gamma_MHz": 15.76,
    "type": "E1",
    "A": 77000000.0,
    "A_tier": "nist",
@@ -971,6 +999,8 @@
    "d": 0.2787,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.7777,
+   "br_tier": "nist",
    "lam_obs": 87.9947
   },
   {
@@ -1094,6 +1124,7 @@
    "wn": 24039.8301,
    "lam": 415.9763,
    "air": 415.8591,
+   "gamma_MHz": 1.284,
    "type": "E1",
    "A": 1400000.0,
    "A_tier": "nist",
@@ -1101,6 +1132,8 @@
    "d": 0.4987,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.1736,
+   "br_tier": "nist",
    "lam_obs": 415.9762
   },
   {
@@ -1174,6 +1207,7 @@
    "wn": 23812.3575,
    "lam": 419.95,
    "air": 419.8317,
+   "gamma_MHz": 1.675,
    "type": "E1",
    "A": 2570000.0,
    "A_tier": "nist",
@@ -1181,6 +1215,8 @@
    "d": 0.3065,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.2442,
+   "br_tier": "nist",
    "lam_obs": 419.95
   },
   {
@@ -1193,6 +1229,7 @@
    "wn": 23798.9942,
    "lam": 420.1858,
    "air": 420.0675,
+   "gamma_MHz": 1.129,
    "type": "E1",
    "A": 970000.0,
    "A_tier": "nist",
@@ -1200,6 +1237,8 @@
    "d": 0.4986,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.1368,
+   "br_tier": "nist",
    "lam_obs": 420.1858
   },
   {
@@ -1212,6 +1251,7 @@
    "wn": 23471.0894,
    "lam": 426.0561,
    "air": 425.9362,
+   "gamma_MHz": 2.242,
    "type": "E1",
    "A": 3980000.0,
    "A_tier": "nist",
@@ -1219,6 +1259,8 @@
    "d": 0.3898,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
+   "br": 0.2826,
+   "br_tier": "nist",
    "lam_obs": 426.0561
   },
   {
@@ -1231,6 +1273,7 @@
    "wn": 23432.9923,
    "lam": 426.7487,
    "air": 426.6287,
+   "gamma_MHz": 1.284,
    "type": "E1",
    "A": 310000.0,
    "A_tier": "nist",
@@ -1238,6 +1281,8 @@
    "d": 0.2438,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
+   "br": 0.0384,
+   "br_tier": "nist",
    "lam_obs": 426.7487
   },
   {
@@ -1250,6 +1295,7 @@
    "wn": 23400.7286,
    "lam": 427.3371,
    "air": 427.2169,
+   "gamma_MHz": 1.068,
    "type": "E1",
    "A": 800000.0,
    "A_tier": "nist",
@@ -1257,6 +1303,8 @@
    "d": 0.304,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
+   "br": 0.1192,
+   "br_tier": "nist",
    "lam_obs": 427.3371
   },
   {
@@ -1623,6 +1671,19 @@
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
    "lam_obs": 641.8081
+  },
+  {
+   "kind": "E1",
+   "freq": 448.84992,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 14,
+   "wn": 14972.0216,
+   "lam": 667.9125,
+   "air": 667.7281,
+   "gamma_MHz": 7.334,
+   "type": "E1"
   },
   {
    "kind": "E1",
@@ -2270,6 +2331,7 @@
    "wn": 10872.92,
    "lam": 919.7161,
    "air": 919.4638,
+   "gamma_MHz": 9.095,
    "type": "E1",
    "A": 1760000.0,
    "A_tier": "nist",
@@ -2277,6 +2339,8 @@
    "d": 1.424,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.0308,
+   "br_tier": "nist",
    "lam_obs": 919.7161
   },
   {
@@ -2439,6 +2503,7 @@
    "wn": 9541.161,
    "lam": 1048.0905,
    "air": 1047.8034,
+   "gamma_MHz": 15.76,
    "type": "E1",
    "A": 2440000.0,
    "A_tier": "nist",
@@ -2446,6 +2511,8 @@
    "d": 2.039,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
+   "br": 0.0246,
+   "br_tier": "nist",
    "lam_obs": 1048.0905
   },
   {
@@ -2823,9 +2890,9 @@
   }
  ],
  "validation": [
-  "levels: 51   lines < 2000 nm: 74   with matrix element: 73",
-  "transition-rate provenance: exp: 8, nist: 66",
-  "levels with a measured lifetime: 13"
+  "levels: 51   lines < 2000 nm: 75   with matrix element: 73",
+  "transition-rate provenance: exp: 8, nist: 66, wavelength only: 1",
+  "levels with a measured lifetime: 22"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Ar); nuclear spin from Williams et al., arXiv:1012.4509 (even isotopes show no hyperfine structure)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ar&ascii=ascii2&isotype=some",
@@ -2842,19 +2909,23 @@
   "Welte, 'Atom Trap Trace Analysis of 39Ar', PhD thesis, Heidelberg University (2011), Table 2.2, p. 21": "https://www.kip.uni-heidelberg.de/Veroeffentlichungen/download/5174/pdf-5174.pdf",
   "Klein, Brown, Georg, Keim, Lievens, Neugart, Neuroth, Silverans, Vermeeren and the ISOLDE Collaboration, Nucl. Phys. A 607, 1 (1996); read as preprint CERN-PPE/96-59 (KEK library scan), Table 1, p. 7": "https://lib-extopc.kek.jp/preprints/PDF/1996/9607/9607235.pdf",
   "Traub, Roesler, Robertson, Cohen, J. Opt. Soc. Am. 57, 1452 (1967) [as quoted in Chu et al. (Ritterbusch, Lu), 'Optically enhanced discharge excitation and trapping of 39Ar', arXiv:2206.11089 (2022)]": "https://arxiv.org/abs/2206.11089",
+  "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.175.40",
   "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999) [(1999)]": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf",
   "Quadfasel and Helbig (unpublished; laser-induced fluorescence, selective laser excitation of all ten 4p levels) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]": "https://pure.mpg.de/pubman/item/item_153394",
   "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]": "https://pure.mpg.de/pubman/item/item_153394",
   "Vassen et al., 'Cold and trapped metastable noble gases', Rev. Mod. Phys. 84, 175 (2012) [arXiv:1110.1361], Table I": "https://arxiv.org/abs/1110.1361",
   "Klein et al., Nucl. Phys. A 607, 1 (1996) [as quoted in Chu et al. (Ritterbusch, Lu), 'Optically enhanced discharge excitation and trapping of 39Ar', arXiv:2206.11089 (2022)]": "https://arxiv.org/abs/2206.11089",
   "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
+  "Erman and Huldt (ref. 21 of Asghar et al.) [as tabulated in Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote a]": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
   "Fujimoto, Goto, Uetani, Fukuda, Phys. Scr. (ref. 52 of Wiese et al.) [as quoted in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), p. 2464, text]": "https://pure.mpg.de/pubman/item/item_153394",
   "Keto & Kuo, J. Chem. Phys. 74 (11) (1981) (abstract, OSTI record 6405953)": "https://www.osti.gov/biblio/6405953",
   "Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Sec. III A (pp. 2463-2464) and Table I": "https://pure.mpg.de/pubman/item/item_153394",
   "Hirabayashi, Okuda, Nambu, Fujimoto (ref. 35 of Wiese et al.) [as quoted in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), p. 2463]": "https://pure.mpg.de/pubman/item/item_153394",
+  "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables)": "https://opg.optica.org/josa/abstract.cfm?uri=josa-58-11-1509",
   "Feng, Ebser, Ringena, Ritterbusch, Oberthaler, arXiv:1707.01658 (2017)": "https://arxiv.org/abs/1707.01658",
   "D'Amico, Pesce, Sasso, J. Opt. Soc. Am. B 16, 1033 (1999) [as quoted in Williams, Lu, Rudinger, Xu, Yokochi, Mueller, Phys. Rev. A 83, 012512 (2011) [arXiv:1012.4509]]": "https://arxiv.org/abs/1012.4509",
   "Welte, 'Atom Trap Trace Analysis of 39Ar', PhD thesis, Heidelberg University (2011), Table 2.1, p. 15": "https://www.kip.uni-heidelberg.de/Veroeffentlichungen/download/5174/pdf-5174.pdf",
+  "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
   "Chu et al. (Ritterbusch, Lu), 'Optically enhanced discharge excitation and trapping of 39Ar', arXiv:2206.11089 (2022)": "https://arxiv.org/abs/2206.11089",
   "Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table I, p. 2464": "https://pure.mpg.de/pubman/item/item_153394",
   "de Regt, Tas, van der Mullen, van der Sijde, Schram, J. Quant. Spectrosc. Radiat. Transfer 56, 67 (1996), Table 1, p. 70 (TU Eindhoven repository copy)": "https://pure.tue.nl/ws/files/1499029/588581.pdf",

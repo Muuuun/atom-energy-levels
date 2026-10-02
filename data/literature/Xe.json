@@ -152,6 +152,16 @@
       },
       "A_abs_derived_MHz": 2384.5031,
       "note": "atomic-beam magnetic resonance. Derived: |A| = interval/(5/2) = 2384.5031 MHz for J=2, I=1/2 (first order); sign negative as in D'Amico et al."
+     },
+     "zero_field_intervals_MHz_optical": {
+      "method": "experiment",
+      "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 5 (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+      "F=5/2-3/2": {
+       "value": -5959.4,
+       "unc": 2.0
+      },
+      "note": "printed splitting E(5/2) - E(3/2) of 129Xe 6s[3/2]2 from the 450 nm line; the table quotes the atomic-beam value -5961.2577(9) MHz as 'previous result' (already stored above)."
      }
     },
     "131": {
@@ -201,6 +211,24 @@
        "unc": 0.0004
       },
       "note": "atomic-beam magnetic resonance; A, B and the octupole constant C are not printed in the abstract"
+     },
+     "zero_field_intervals_MHz_optical": {
+      "method": "experiment",
+      "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 5 (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+      "F=3/2-1/2": {
+       "value": 840.2,
+       "unc": 2.3
+      },
+      "F=5/2-3/2": {
+       "value": 1609.8,
+       "unc": 1.4
+      },
+      "F=7/2-5/2": {
+       "value": 2691.5,
+       "unc": 2.3
+      },
+      "note": "printed splittings of 131Xe 6s[3/2]2 (upper F minus lower F) from the 450 nm line; the 'Previous Results' column of the same table repeats the atomic-beam values 838.7636(4), 1608.3475(8), 2693.6234(7) MHz already stored above."
      }
     }
    }
@@ -256,7 +284,18 @@
     "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
     "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
     "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (480.7 nm line 7p[1/2]0 - 6s[3/2]1); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
-   }
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 3.79e-09,
+     "unc": 1.2e-10,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Anderson, Phys. Rev. 137, A21 (1965) (abstract; read through the publisher page)",
+     "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.137.A21",
+     "note": "printed tau(3P1) = 3.79 +- 0.12 x 10^-9 sec; zero-field level crossing (Hanle effect) on the 147 nm resonance line; the abstract also gives the oscillator strength f3 = 0.256 +- 0.008. 3P1 = 6s[3/2]1 (1s4). lifetime x sum(A_NIST) = 1.03 +- 0.03 (sum of the rated NIST branches 2.73e+08 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    }
+   ]
   },
   {
    "nist_energy_cm": 77185.041,
@@ -319,6 +358,15 @@
       }
      ]
     }
+   },
+   "lifetime": {
+    "value": 3.17e-09,
+    "unc": 1.9e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Anderson, Phys. Rev. 137, A21 (1965) (abstract; read through the publisher page)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.137.A21",
+    "note": "printed tau(1P1) = 3.17 +- 0.19 x 10^-9 sec; zero-field level crossing (Hanle effect) on the 129.6 nm resonance line; the abstract also gives f1 = 0.238 +- 0.015. 1P1 = 6s'[1/2]1 (1s2). lifetime x sum(A_NIST) = 0.80 +- 0.05 (sum of the rated NIST branches 2.53e+08 s^-1)."
    }
   },
   {
@@ -505,7 +553,18 @@
     "source": "Husson and Grandin (double resonance, 'a paraitre') / Huet et al. [as listed in the g_J column of Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554]",
     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
     "note": "g_J value used by Husson et al. to convert A/g_J into A"
-   }
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 3.3e-08,
+     "unc": 2e-08,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+     "note": "printed '6p_{3/2,2} | 8231 | 33±20' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 8231.6 A). Uncertainty of 60 %: low-accuracy value, deliberately kept as an alternative only. lifetime x sum(A_NIST) = 1.21 +- 0.73 (sum of the rated NIST branches 3.67e+07 s^-1)."
+    }
+   ]
   },
   {
    "nist_energy_cm": 88379.126,
@@ -647,7 +706,63 @@
     "source": "Husson and Grandin (double resonance, 'a paraitre') / Huet et al. [as listed in the g_J column of Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554]",
     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
     "note": "g_J value used by Husson et al. to convert A/g_J into A"
-   }
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 4.08e-08,
+     "unc": 2e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Niemi, Schulz-von der Gathen, Doebele, Plasma Sources Sci. Technol. 14, 375 (2005), Table 1, p. 380 (Queen's University Belfast repository copy)",
+     "url": "https://pure.qub.ac.uk/ws/files/551230/niemi05PSST14_375.pdf",
+     "note": "printed 'Xe(6p'[3/2]2) 40.8 ± 2.0' ns in the column 'This work'; two-photon laser excitation at 2 x 224.31 nm in a xenon cell, fluorescence at 834.9 nm, zero-pressure intercept of the Stern-Volmer plot (self-quenching coefficient 3.6 +- 0.4 x 10^-10 cm^3 s^-1). Cascade-free selective excitation; the same table is repeated in Doebele et al., Plasma Sources Sci. Technol. 14, S31 (2005). lifetime x sum(A_NIST) = 1.79 +- 0.09 (sum of the rated NIST branches 4.38e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    },
+    {
+     "value": 4e-08,
+     "unc": 6e-09,
+     "unit": "s",
+     "method": "compilation",
+     "source": "Alekseev and Setser, J. Phys. Chem. 100, 5766 (1996) [as quoted in Niemi, Schulz-von der Gathen, Doebele, Plasma Sources Sci. Technol. 14, 375 (2005), Table 1, p. 380 (Queen's University Belfast repository copy), column 'Others', footnote c]",
+     "url": "https://pure.qub.ac.uk/ws/files/551230/niemi05PSST14_375.pdf",
+     "note": "printed 40 ± 6 ns; second-hand, original not opened. lifetime x sum(A_NIST) = 1.75 +- 0.26 (sum of the rated NIST branches 4.38e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    },
+    {
+     "value": 3.7e-08,
+     "unc": 2e-09,
+     "unit": "s",
+     "method": "compilation",
+     "source": "Inoue, Ku, Setser, J. Chem. Phys. 81, 5760 (1984) [as quoted in Niemi, Schulz-von der Gathen, Doebele, Plasma Sources Sci. Technol. 14, 375 (2005), Table 1, p. 380 (Queen's University Belfast repository copy), column 'Others', footnote d]",
+     "url": "https://pure.qub.ac.uk/ws/files/551230/niemi05PSST14_375.pdf",
+     "note": "printed 37 ± 2 ns; second-hand, original not opened (paywalled). lifetime x sum(A_NIST) = 1.62 +- 0.09 (sum of the rated NIST branches 4.38e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    },
+    {
+     "value": 3.9e-08,
+     "unc": 1.5e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+     "note": "printed '6p'_{3/2,2} | 4524 | 39.0±1.5' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4524.7 A). lifetime x sum(A_NIST) = 1.71 +- 0.07 (sum of the rated NIST branches 4.38e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    },
+    {
+     "value": 3.9e-08,
+     "unc": 7e-10,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+     "note": "printed '6p'_{3/2,2} | 4734 | 39.0±0.7' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4734.2 A). Second row of the same level in the table (other line). lifetime x sum(A_NIST) = 1.71 +- 0.03 (sum of the rated NIST branches 4.38e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    },
+    {
+     "value": 3.05e-08,
+     "unc": 3e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+     "note": "printed '6p'(3/2)_2 | 452.4 | 30.5±3' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 452.47 nm). Second line used: 473.4 nm. lifetime x sum(A_NIST) = 1.34 +- 0.13 (sum of the rated NIST branches 4.38e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    }
+   ]
   },
   {
    "nist_energy_cm": 89278.706,
@@ -678,8 +793,30 @@
        "A_mK": 66.09,
        "A_mK_unc": 0.05,
        "note": "derived unit conversion: printed A 6p'(1/2)1 = 66.09 +- 0.05 mK (1 mK = 29.9792458 MHz); high-field level crossing after selective dye-laser excitation; A = g_J x (measured |A/g_J|); sign fixed by the authors from other experimental and theoretical values"
+      },
+      {
+       "A_MHz": 1986.8,
+       "A_unc": 0.3,
+       "method": "experiment",
+       "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 5 (read through the publisher page, which embeds the tables)",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+       "note": "derived: A = interval/(3/2) from the printed splitting 2980.2(4) MHz (I = 1/2, J = 1); not printed as an A constant in the paper"
       }
-     ]
+     ],
+     "zero_field_intervals_MHz": {
+      "method": "experiment",
+      "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 5 (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+      "F=3/2-1/2": {
+       "value": 2980.2,
+       "unc": 0.4
+      },
+      "F=3/2-1/2_from_450nm_line": {
+       "value": 2981.0,
+       "unc": 2.6
+      },
+      "note": "printed hyperfine splitting E(F=3/2) - E(F=1/2) of 129Xe 6p'[1/2]1: 2980.2(4) MHz from the 764 nm line and 2981.0(26) MHz from the 450 nm line (previous result quoted there: 2980(9) MHz)."
+     }
     },
     "131": {
      "A_MHz": -581.0,
@@ -709,8 +846,40 @@
        "A_mK": -19.59,
        "A_mK_unc": 0.02,
        "note": "derived unit conversion: printed A 6p'(1/2)1 = -19.59 +- 0.02 mK; level crossing. B was not measured for this J = 1 level (a calculated B was assumed in the analysis); sign fixed by comparison with other values"
+      },
+      {
+       "A_MHz": -586.92,
+       "A_unc": 0.15,
+       "B_MHz": -6.0,
+       "B_unc": 0.2,
+       "method": "experiment",
+       "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 5 (read through the publisher page, which embeds the tables)",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+       "note": "derived from the two printed 764-nm-line splittings with the first-order formulas for I = 3/2, J = 1: E(5/2)-E(3/2) = 5A/2 + 5B/4, E(3/2)-E(1/2) = 3A/2 - 9B/4; not printed as A and B in the paper"
       }
-     ]
+     ],
+     "zero_field_intervals_MHz": {
+      "method": "experiment",
+      "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 5 (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+      "F=3/2-1/2": {
+       "value": -866.9,
+       "unc": 0.5
+      },
+      "F=5/2-3/2": {
+       "value": -1474.8,
+       "unc": 0.4
+      },
+      "F=3/2-1/2_from_450nm_line": {
+       "value": -863.9,
+       "unc": 2.3
+      },
+      "F=5/2-3/2_from_450nm_line": {
+       "value": -1476.0,
+       "unc": 1.4
+      },
+      "note": "printed hyperfine splittings of 131Xe 6p'[1/2]1 (upper F minus lower F): from the 764 nm line -866.9(5) and -1474.8(4) MHz, from the 450 nm line -863.9(23) and -1476.0(14) MHz (previous results quoted there: -863(9) and -1463(9) MHz)."
+     }
     }
    },
    "g_J": {
@@ -720,7 +889,27 @@
     "source": "Husson and Grandin (double resonance, 'a paraitre') / Huet et al. [as listed in the g_J column of Husson, Grandin, Kucal, J. Physique 40, 551 (1979), Tableau II, p. 554]",
     "url": "https://hal.science/jpa-00209138/file/ajp-jphys_1979_40_6_551_0.pdf",
     "note": "g_J value used by Husson et al. to convert A/g_J into A"
-   }
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 2.95e-08,
+     "unc": 3e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+     "note": "printed '6p'(1/2)_1 | 450.0 | 29.5±3' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 450.10 nm). lifetime x sum(A_NIST) = 1.14 +- 0.12 (sum of the rated NIST branches 3.87e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    },
+    {
+     "value": 4.35e-08,
+     "unc": 1.5e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+     "note": "printed '6p'_{1/2,1} | 4500 | 43.5±1.5' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4501.0 A). lifetime x sum(A_NIST) = 1.68 +- 0.06 (sum of the rated NIST branches 3.87e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    }
+   ]
   },
   {
    "nist_energy_cm": 76196.767,
@@ -926,6 +1115,26 @@
     "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
     "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
     "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (483.0 nm line); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
+   },
+   "lifetime": {
+    "value": 1e-07,
+    "unc": 7e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '7p(3/2)_1 | 483.0 | 100±7' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 482.97 nm). lifetime x sum(A_NIST) = 0.82 +- 0.06 (sum of the rated NIST branches 8.15e+06 s^-1).",
+    "alternatives": [
+     {
+      "value": 1.01e-07,
+      "unc": 6e-09,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+      "note": "printed '7p_{3/2,1} | 4830 | 101±6' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4829.7 A). lifetime x sum(A_NIST) = 0.82 +- 0.05 (sum of the rated NIST branches 8.15e+06 s^-1)."
+     }
+    ]
    }
   },
   {
@@ -1009,6 +1218,35 @@
     "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
     "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
     "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (484.3 nm line; the authors note a disagreement with Chenevier & Moskowitz 1.346(2) and Liberman's calculated 1.345); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
+   },
+   "lifetime": {
+    "value": 1.07e-07,
+    "unc": 9e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '7p(3/2)_2 | 484.3 | 107±9' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 484.33 nm). Second line used: 462.4 nm. lifetime x sum(A_NIST) = 0.64 +- 0.05 (sum of the rated NIST branches 6.02e+06 s^-1).",
+    "alternatives": [
+     {
+      "value": 1.48e-07,
+      "unc": 1.1e-08,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+      "note": "printed '7p_{3/2,2} | 4624 | 148±11' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4624.3 A). lifetime x sum(A_NIST) = 0.89 +- 0.07 (sum of the rated NIST branches 6.02e+06 s^-1)."
+     },
+     {
+      "value": 1.56e-07,
+      "unc": 1.2e-08,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+      "note": "printed '7p_{3/2,2} | 4843 | 156±12' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4843.3 A). Second row of the same level in the table (other line). lifetime x sum(A_NIST) = 0.94 +- 0.07 (sum of the rated NIST branches 6.02e+06 s^-1)."
+     }
+    ]
    }
   },
   {
@@ -1022,7 +1260,27 @@
     "source": "Huet, Kucal, Bigeon, Husson, J. Physique 40, 541 (1979), Tableau I, p. 543",
     "url": "http://web.archive.org/web/20251128042651/https://hal.science/jpa-00209136/document",
     "note": "Fabry-Perot interferometry of the Zeeman pattern on 136Xe in fields up to 21 kG (502.8 nm line); uncertainty = 3 standard deviations plus field error. NIST ASD lists the same value."
-   }
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 1.56e-07,
+     "unc": 8e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+     "note": "printed '7p(1/2)_1 | 502.8 | 156±8' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 502.83 nm). lifetime x sum(A_NIST) = 1.21 +- 0.06 (sum of the rated NIST branches 7.78e+06 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    },
+    {
+     "value": 1.43e-07,
+     "unc": 4e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+     "note": "printed '7p_{1/2,1} | 5028 | 143±4' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 5028.3 A). lifetime x sum(A_NIST) = 1.11 +- 0.03 (sum of the rated NIST branches 7.78e+06 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    }
+   ]
   },
   {
    "nist_energy_cm": 89860.015,
@@ -1036,8 +1294,253 @@
      "source": "Eichhorn, Scholze, Bundesmann, Spemann, Neumann, Leiter, AIAA paper 2019-4168 [as quoted in Eichhorn et al., EPJ Techniques and Instrumentation 9, 2 (2022), Sec. 2.1, p. 6 (open access)]",
      "url": "https://epjtechniquesandinstrumentation.springeropen.com/counter/pdf/10.1140/epjti/s40485-022-00077-y.pdf",
      "note": "two-photon laser-induced fluorescence (excitation near 222.6 nm, fluorescence at 788.7 nm) in the plume of a radio-frequency ion thruster; printed tau = 41 ns, no uncertainty; the authors call it 'in reasonable agreement with literature values of the natural lifetimes' (Inoue et al. 1984; Whitehead et al. 1995) and state that collisional deactivation is negligible. Low-accuracy value. Check against NIST ASD: the two rated decay branches of this level (458.4 nm, A = 1.3e6, and 788.96 nm, A = 3.5e7 s^-1, accuracy C / C+) sum to 3.63e7 s^-1, so 41 ns x sum(A_NIST) = 1.49 (1/sum(A_NIST) would be 27.5 ns): this lifetime and the NIST rates are mutually inconsistent, see 'conflicts'. Not shown on the page: lifetime x sum(A_NIST) = 1.49, inconsistent with the NIST rates (accuracy C+/C); second-hand value, moved to alternatives 2026-10-02"
+    },
+    {
+     "value": 3.07e-08,
+     "unc": 1e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+     "note": "printed '6p'(1/2)_0 | 458.3 | 30.7±1' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 458.27 nm). lifetime x sum(A_NIST) = 1.11 +- 0.04 (sum of the rated NIST branches 3.63e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    },
+    {
+     "value": 3.85e-08,
+     "unc": 1.5e-09,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+     "note": "printed '6p'_{1/2,0} | 4583 | 38.5±1.5' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4582.7 A). lifetime x sum(A_NIST) = 1.40 +- 0.05 (sum of the rated NIST branches 3.63e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
     }
    ]
+  },
+  {
+   "nist_energy_cm": 80118.962,
+   "label": "5p5 6p 2[1/2]0 (2p5)",
+   "J": "0",
+   "lifetime_alternatives": [
+    {
+     "value": 4e-08,
+     "unc": 1.2e-08,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+     "note": "printed '6p_{1/2,0} | 8280 | 40±12' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 8280.1 A). lifetime x sum(A_NIST) = 1.48 +- 0.44 (sum of the rated NIST branches 3.69e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 88842.256,
+   "label": "5p5 7p 2[1/2]0",
+   "J": "0",
+   "lifetime": {
+    "value": 8.7e-08,
+    "unc": 5e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+    "note": "printed '7p_{1/2,0} | 4807 | 87±5' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4807.0 A). lifetime x sum(A_NIST) = 0.93 +- 0.05 (sum of the rated NIST branches 1.07e+07 s^-1).",
+    "alternatives": [
+     {
+      "value": 1.07e-07,
+      "unc": 8e-09,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+      "note": "printed '7p(1/2)_0 | 480.7 | 107±8' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 480.70 nm). lifetime x sum(A_NIST) = 1.15 +- 0.09 (sum of the rated NIST branches 1.07e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 88351.681,
+   "label": "5p5 7p 2[5/2]2",
+   "J": "2",
+   "lifetime": {
+    "value": 1.68e-07,
+    "unc": 1.5e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '7p(5/2)_2 | 492.3 | 168±15' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 492.32 nm). Second line used: 469.7 nm. lifetime x sum(A_NIST) = 0.84 +- 0.07 (sum of the rated NIST branches 4.98e+06 s^-1).",
+    "alternatives": [
+     {
+      "value": 2e-07,
+      "unc": 1.2e-08,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+      "note": "printed '7p_{5/2,2} | 4923 | 200±12' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4923.2 A). lifetime x sum(A_NIST) = 1.00 +- 0.06 (sum of the rated NIST branches 4.98e+06 s^-1)."
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 88469.213,
+   "label": "5p5 7p 2[5/2]3",
+   "J": "3",
+   "lifetime": {
+    "value": 1.83e-07,
+    "unc": 1e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '7p(5/2)_3 | 467.1 | 183±10' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 467.12 nm). lifetime x sum(A_NIST) = 0.79 +- 0.04 (sum of the rated NIST branches 4.33e+06 s^-1).",
+    "alternatives": [
+     {
+      "value": 1.41e-07,
+      "unc": 1e-08,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+      "note": "printed '7p_{5/2,3} | 4671 | 141±10' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 4671.2 A). lifetime x sum(A_NIST) = 0.61 +- 0.04 (sum of the rated NIST branches 4.33e+06 s^-1)."
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 92128.287,
+   "label": "5p5 7d 2[1/2]1",
+   "J": "1",
+   "lifetime_alternatives": [
+    {
+     "value": 8.7e-08,
+     "unc": 1.2e-08,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+     "note": "printed '7d_{1/2,1} | 6728 | 87±12' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 6728.0 A). J = 1 level with a strong resonance line to the ground state (A_NIST = 4.28e7 s^-1): the measured decay is lengthened by radiation trapping. lifetime x sum(A_NIST) = 3.72 +- 0.51 (sum of the rated NIST branches 4.28e+07 s^-1). Exceeds 1/sum(A_NIST) by more than its uncertainty: kept as an alternative, not shown as the level lifetime."
+    }
+   ]
+  },
+  {
+   "nist_energy_cm": 92555.135,
+   "label": "5p5 8p 2[1/2]0",
+   "J": "0",
+   "lifetime": {
+    "value": 1.71e-07,
+    "unc": 9e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '8p(1/2)_0 | 407.8 | 171±9' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 407.88 nm). NIST lists no transition probabilities out of this level, so no sum-rule check is possible."
+   }
+  },
+  {
+   "nist_energy_cm": 92333.066,
+   "label": "5p5 8p 2[3/2]1",
+   "J": "1",
+   "lifetime": {
+    "value": 3.5e-07,
+    "unc": 2e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '8p(3/2)_1 | 411.6 | 350±20' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 411.61 nm). NIST lists no transition probabilities out of this level, so no sum-rule check is possible."
+   }
+  },
+  {
+   "nist_energy_cm": 92370.923,
+   "label": "5p5 8p 2[3/2]2",
+   "J": "2",
+   "lifetime": {
+    "value": 2.85e-07,
+    "unc": 1.2e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '8p(3/2)_2 | 395.0 | 285±12' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 395.09 nm). lifetime x sum(A_NIST) = 0.16 +- 0.01 (sum of the rated NIST branches 5.6e+05 s^-1)."
+   }
+  },
+  {
+   "nist_energy_cm": 92264.95,
+   "label": "5p5 8p 2[5/2]3",
+   "J": "3",
+   "lifetime": {
+    "value": 4.19e-07,
+    "unc": 1.6e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '8p(5/2)_3 | 396.7 | 419±16' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 396.75 nm). lifetime x sum(A_NIST) = 0.22 +- 0.01 (sum of the rated NIST branches 5.3e+05 s^-1).",
+    "alternatives": [
+     {
+      "value": 2.75e-07,
+      "unc": 2.3e-08,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+      "note": "printed '8p_{5/2,3} | 3967 | 275±23' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 3967.5 A). lifetime x sum(A_NIST) = 0.15 +- 0.01 (sum of the rated NIST branches 5.3e+05 s^-1)."
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 94226.32,
+   "label": "5p5 8d 2[7/2]4",
+   "J": "4",
+   "lifetime": {
+    "value": 1.35e-07,
+    "unc": 5e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+    "note": "printed '8d_{7/2,4} | 6318 | 135±5' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 6318.1 A). NIST lists no transition probabilities out of this level, so no sum-rule check is possible."
+   }
+  },
+  {
+   "nist_energy_cm": 96334.479,
+   "label": "5p5 11d 2[7/2]3",
+   "J": "3",
+   "lifetime": {
+    "value": 4.45e-07,
+    "unc": 1.8e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Jimenez, Campos, Sanchez del Rio, J. Opt. Soc. Am. 64, 1009 (1974), Table I (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-64-7-1009",
+    "note": "printed '11d(7/2)_3 | 548.8 | 445±18' (level, spectral line in nm, lifetime in ns); electron-impact excitation, delayed coincidence with single-photon counting. Level identified through the line used (NIST air wavelength 548.86 nm). NIST lists no transition probabilities out of this level, so no sum-rule check is possible.",
+    "alternatives": [
+     {
+      "value": 3.33e-07,
+      "unc": 2.7e-08,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+      "note": "printed '11d_{7/2,3} | 5487 | 333±27' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 5488.6 A). The printed wavelength 5487 A is 1.6 A from the NIST position of the 11d[7/2]3 - 6p[5/2]2 line (5488.6 A). NIST lists no transition probabilities out of this level, so no sum-rule check is possible."
+     }
+    ]
+   }
+  },
+  {
+   "nist_energy_cm": 96842.085,
+   "label": "5p5 13d 2[7/2]4",
+   "J": "4",
+   "lifetime": {
+    "value": 7e-07,
+    "unc": 2e-07,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Allen, Jones, Schofield, J. Opt. Soc. Am. 59, 842 (1969), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-59-7-842",
+    "note": "printed '13d_{7/2,4} | 5422 | ~700±200' (level, observed wavelength in A, lifetime in ns); pulsed electron-beam excitation, delayed coincidence, no cascade-free selection. Level identified through the observed line (NIST air wavelength 5421.8 A). Printed with a '~' sign: approximate value. Footnote a: measured from 5422 A, which is distinguishable from the 5419 A line of Xe II only with some difficulty. NIST lists no transition probabilities out of this level, so no sum-rule check is possible."
+   }
   }
  ],
  "transitions": [
@@ -1670,7 +2173,34 @@
    "upper_J": "0",
    "label": "5p5 6s 2[3/2]2 - 5p5 6s' 2[1/2]0",
    "type": "clock",
-   "use": "proposed optical frequency standard: two-photon clock transition between the two metastable states (Walhout et al. 1995)"
+   "use": "proposed optical frequency standard: two-photon clock transition between the two metastable states (Walhout et al. 1995)",
+   "frequency_THz": {
+    "value": 273.6871844248,
+    "unc": 7.795e-07,
+    "isotope": "132",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), abstract and Tables 1-2 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived: the abstract prints the wave number of the two-photon clock transition as 4564.610902(13) cm^-1 for 132Xe, which is the per-photon value; the level interval is twice that, 9129.221804(26) cm^-1 (equal to the difference of the 132Xe wave numbers of Table 1 and Table 2, 22211.160356 - 13081.938552), converted with c = 29979.2458 MHz per cm^-1. 'Better than 1 MHz' according to the abstract. Even isotope, no hyperfine structure."
+   },
+   "frequency_THz_134": {
+    "value": 273.6871787288,
+    "unc": 1.5488e-06,
+    "isotope": "134",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Tables 1-2 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived: difference of the printed 134Xe wave numbers of the 450 nm line (22211.15825(5) cm^-1, Table 1) and the 764 nm line (13081.936636(13) cm^-1, Table 2) = 9129.221614 cm^-1; uncertainties added in quadrature; not printed in this form in the paper."
+   },
+   "frequency_THz_136": {
+    "value": 273.6871544756,
+    "unc": 1.5488e-06,
+    "isotope": "136",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Tables 1-2 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived: difference of the printed 136Xe wave numbers of the 450 nm line (22211.15445(5) cm^-1, Table 1) and the 764 nm line (13081.933645(13) cm^-1, Table 2) = 9129.220805 cm^-1; uncertainties added in quadrature; not printed in this form in the paper."
+   }
   },
   {
    "lower_cm": 0.0,
@@ -1698,18 +2228,312 @@
    "label": "5p5 6s 2[3/2]1 - 5p5 6p 2[3/2]2",
    "type": "E1",
    "use": "895.5 nm second step (after 147 nm) of the all-optical production of metastable Xe beams (Stollenwerk et al. 2024)"
+  },
+  {
+   "lower_cm": 67067.547,
+   "upper_cm": 89278.706,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "5p5 6s 2[3/2]2 - 5p5 6p' 2[1/2]1",
+   "type": "E1",
+   "use": "450.1 nm (450.22 nm vacuum) line from the 3P2 metastable state; one arm of the interferometric determination of the 6s[3/2]2-6s'[1/2]0 clock interval (Sterr et al. 1995)",
+   "use_source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995)",
+   "use_url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+   "frequency_THz": {
+    "value": 665.8738358157,
+    "unc": 6.895e-07,
+    "isotope": "132",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 1 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived unit conversion: printed wave number 22211.160356(23) cm^-1 for 132Xe (even isotope, no hyperfine structure), multiplied by c = 29979.2458 MHz per cm^-1; interferometric comparison with an iodine-stabilized 633 nm He-Ne laser."
+   },
+   "frequency_THz_128": {
+    "value": 665.8739744398,
+    "unc": 1.499e-06,
+    "isotope": "128",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 1 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived unit conversion: printed wave number 22211.16498(5) cm^-1 for 128Xe (even isotope, no hyperfine structure), multiplied by c = 29979.2458 MHz per cm^-1; interferometric comparison with an iodine-stabilized 633 nm He-Ne laser."
+   },
+   "frequency_THz_130": {
+    "value": 665.8739021898,
+    "unc": 1.499e-06,
+    "isotope": "130",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 1 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived unit conversion: printed wave number 22211.16257(5) cm^-1 for 130Xe (even isotope, no hyperfine structure), multiplied by c = 29979.2458 MHz per cm^-1; interferometric comparison with an iodine-stabilized 633 nm He-Ne laser."
+   },
+   "frequency_THz_134": {
+    "value": 665.8737726794,
+    "unc": 1.499e-06,
+    "isotope": "134",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 1 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived unit conversion: printed wave number 22211.15825(5) cm^-1 for 134Xe (even isotope, no hyperfine structure), multiplied by c = 29979.2458 MHz per cm^-1; interferometric comparison with an iodine-stabilized 633 nm He-Ne laser."
+   },
+   "frequency_THz_136": {
+    "value": 665.8736587583,
+    "unc": 1.499e-06,
+    "isotope": "136",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 1 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived unit conversion: printed wave number 22211.15445(5) cm^-1 for 136Xe (even isotope, no hyperfine structure), multiplied by c = 29979.2458 MHz per cm^-1; interferometric comparison with an iodine-stabilized 633 nm He-Ne laser."
+   },
+   "hyperfine_component_wavenumber_cm": {
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 1 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "printed wave numbers of the hyperfine components of the odd isotopes, labelled F(lower)-F(upper); uncertainty (5) in the last digit each; no centre of gravity is printed",
+    "129": {
+     "3/2-1/2": 22210.97975,
+     "3/2-3/2": 22211.07918,
+     "5/2-3/2": 22211.27797
+    },
+    "131": {
+     "7/2-5/2": 22211.06141,
+     "5/2-5/2": 22211.15118,
+     "5/2-3/2": 22211.20042,
+     "3/2-3/2": 22211.25412,
+     "3/2-1/2": 22211.28293,
+     "1/2-1/2": 22211.31096
+    }
+   },
+   "isotope_shift_MHz": {
+    "128-136": {
+     "value": 315.6,
+     "unc": 3.0,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 315.6(30) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 330,
+       "unc": 9,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    },
+    "129-136": {
+     "value": 325.6,
+     "unc": 2.5,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 325.6(25) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 321,
+       "unc": 13,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    },
+    "130-136": {
+     "value": 243.3,
+     "unc": 2.3,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 243.3(23) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 252,
+       "unc": 9,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    },
+    "131-136": {
+     "value": 274.4,
+     "unc": 2.5,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 274.4(25) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity"
+    },
+    "132-136": {
+     "value": 176.8,
+     "unc": 2.5,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 176.8(25) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 181,
+       "unc": 7,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    },
+    "134-136": {
+     "value": 113.9,
+     "unc": 2.1,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 113.9(21) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 129,
+       "unc": 7,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 76196.767,
+   "upper_cm": 89278.706,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "5p5 6s' 2[1/2]0 - 5p5 6p' 2[1/2]1",
+   "type": "E1",
+   "use": "764.2 nm (764.41 nm vacuum) line from the 3P0 clock state; second arm of the interferometric determination of the clock interval (Sterr et al. 1995)",
+   "use_source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995)",
+   "use_url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+   "frequency_THz": {
+    "value": 392.1866513909,
+    "unc": 3.298e-07,
+    "isotope": "132",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 2 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived unit conversion: printed wave number 13081.938552(11) cm^-1 for 132Xe (even isotope, no hyperfine structure), multiplied by c = 29979.2458 MHz per cm^-1; interferometric comparison with an iodine-stabilized 633 nm He-Ne laser."
+   },
+   "frequency_THz_134": {
+    "value": 392.1865939507,
+    "unc": 3.897e-07,
+    "isotope": "134",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 2 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived unit conversion: printed wave number 13081.936636(13) cm^-1 for 134Xe (even isotope, no hyperfine structure), multiplied by c = 29979.2458 MHz per cm^-1; interferometric comparison with an iodine-stabilized 633 nm He-Ne laser."
+   },
+   "frequency_THz_136": {
+    "value": 392.1865042827,
+    "unc": 3.897e-07,
+    "isotope": "136",
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 2 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "derived unit conversion: printed wave number 13081.933645(13) cm^-1 for 136Xe (even isotope, no hyperfine structure), multiplied by c = 29979.2458 MHz per cm^-1; interferometric comparison with an iodine-stabilized 633 nm He-Ne laser."
+   },
+   "hyperfine_component_wavenumber_cm": {
+    "method": "experiment",
+    "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 2 (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+    "note": "printed wave numbers of the hyperfine components of the odd isotopes, labelled F(lower)-F(upper); uncertainty (13) in the last digits each",
+    "129": {
+     "1/2-3/2": 13081.975775,
+     "1/2-1/2": 13081.876366
+    },
+    "131": {
+     "3/2-1/2": 13081.989593,
+     "3/2-3/2": 13081.960677,
+     "3/2-5/2": 13081.911483
+    }
+   },
+   "isotope_shift_MHz": {
+    "129-136": {
+     "value": 269.6,
+     "unc": 0.3,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 269.6(3) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 276,
+       "unc": 9,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    },
+    "131-136": {
+     "value": 217.4,
+     "unc": 0.3,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 217.4(3) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 205,
+       "unc": 12,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    },
+    "132-136": {
+     "value": 147.1,
+     "unc": 0.3,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 147.1(3) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 150,
+       "unc": 9,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    },
+    "134-136": {
+     "value": 89.6,
+     "unc": 0.4,
+     "method": "experiment",
+     "source": "Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'This Work' (read through the publisher page, which embeds the tables)",
+     "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421",
+     "note": "printed 89.6(4) MHz; isotope shift relative to 136Xe, nu(A) - nu(136) (sign checked against the wave numbers of Tables 1 and 2: lighter isotopes lie at higher frequency); odd isotopes: hyperfine centre of gravity",
+     "alternatives": [
+      {
+       "value": 85,
+       "unc": 6,
+       "method": "compilation",
+       "source": "Ref. 12 of Sterr et al. (earlier measurement; reference list not shown on the page) [as tabulated in Sterr, Bard, Sansonetti, Rolston, Gillaspy, Opt. Lett. 20, 1421 (1995), Table 4, column 'Ref. 12']",
+       "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-20-12-1421"
+      }
+     ]
+    }
+   }
   }
  ],
  "not_found": [
-  "882 nm cooling line: isotope shifts for the nine stable isotopes and the 131Xe (and 129Xe) hyperfine constants of 6p[5/2]3 measured in a MOT by Walhout, Megens, Witte, Rolston (Phys. Rev. A 48, R879 (1993)) - still closed (Semantic Scholar: closed access; no arXiv, NIST or repository copy; 2 web searches; the open papers citing it - Vassen review, Bounds et al. 2023, Doery et al. 1998 - do not reprint its table). Husson, Grandin, Kucal (J. Physique 40, 551 (1979)) was opened in this pass and does NOT cover 6p[5/2]3 (it covers 6p'[1/2]1, 6p'[3/2]1, 7p[3/2]1, 6p'[3/2]2, 6p[3/2]2, 4f[3/2]1, 5f[3/2]1, all stored now).",
-  "823 nm line isotope shifts (D'Amico et al. 1999): abstract only, no numbers; the 841.15 and 820.86 nm shifts of Bounds et al. are recorded instead. Third pass: Phys. Rev. A 60, 4409 (1999) still closed (no open copy found); its hyperfine constants remain second-hand from Bounds et al.",
+  "882 nm cooling line: isotope shifts for the nine stable isotopes and the 131Xe (and 129Xe) hyperfine constants of 6p[5/2]3 measured in a MOT by Walhout, Megens, Witte, Rolston (Phys. Rev. A 48, R879 (1993)) - still closed (Semantic Scholar: closed access; no arXiv, NIST or repository copy; 2 web searches; the open papers citing it - Vassen review, Bounds et al. 2023, Doery et al. 1998 - do not reprint its table). Husson, Grandin, Kucal (J. Physique 40, 551 (1979)) was opened in this pass and does NOT cover 6p[5/2]3 (it covers 6p'[1/2]1, 6p'[3/2]1, 7p[3/2]1, 6p'[3/2]2, 6p[3/2]2, 4f[3/2]1, 5f[3/2]1, all stored now).  Fourth pass (2026-10-02): doi 10.1103/PhysRevA.48.R879 - journals.aps.org/pra/pdf answers HTTP 401 and the abstract page shows only the abstract behind 'Authorization Required' (no numbers); OpenAlex: closed, no repository copy; the Wayback Machine could not be reached through WebFetch and has no snapshot of the PDF address; the OSA Annual Meeting 1993 abstract TuDD.3 of the same authors carries no numbers; one web search found no thesis or reprint. Not obtained.",
+  "823 nm line isotope shifts (D'Amico et al. 1999): abstract only, no numbers; the 841.15 and 820.86 nm shifts of Bounds et al. are recorded instead. Third pass: Phys. Rev. A 60, 4409 (1999) still closed (no open copy found); its hyperfine constants remain second-hand from Bounds et al.  Fourth pass (2026-10-02): doi 10.1103/PhysRevA.60.4409 - APS abstract page readable (abstract only: constants for 1s5, 1s4, 1s2, 2p2, 2p4, 2p6; isotope shifts for 820.8 and 823.3 nm), full text behind login; the companion paper Hyperfine Interact. 127, 121 (2000) (doi 10.1023/A:1012666811805) redirects to the Springer login (idp.springer.com). Not obtained.",
   "Absolute optical frequencies of 882 / 823 nm better than NIST: not located.",
   "Directly measured lifetime of 6p[5/2]3 and A values newer than NIST: 33.03 ns is the Vassen-review table value.",
   "Experimental reduced matrix elements: none located.",
   "Lifetime of 129Xe / 131Xe 3P2 (hyperfine-quenched): the Walhout abstract states it is much shorter in 129Xe but gives no number. The 6s'[1/2]0 clock-state decay rate is now stored from the Opt. Lett. abstract.",
-  "Level-resolved radiative lifetimes of the 6p, 6p', 7p, 6d levels: Inoue, Ku, Setser (J. Chem. Phys. 81, 5760 (1984)) abstract gives only ranges (30-48 ns for 6p and 6p', 68-172 ns for 7p); Bruce et al. (J. Chem. Phys. 92, 2917 (1990)) and Boewering et al. (84, 715 (1986)) abstracts carry no numbers; full texts are paywalled. Suzuki & Shimoda (J. Phys. Soc. Jpn. 43, 1977; OSTI abstract) give 35 +- 2 ns and 37 +- 4 ns for levels written '6p22' and '6p01' and 520 +- 30 ns for '5d33'; the notation could not be mapped to NIST levels with certainty, so they were not stored. Third pass (2026-10-02): all three J. Chem. Phys. papers are closed access per Semantic Scholar and no repository copy or reprinted table was found (2 web searches); only single second-hand numbers could be stored: 34 ns for 6p[5/2]3 (Horiguchi et al. 1981 via Doery et al. 1998) and 41 ns for 6p'[1/2]0 (thruster-plume measurement via Eichhorn et al. 2022). Das & Karmakar, Eur. Phys. J. D 32, 285 (2005) (lifetimes of nf and 8s, 9s levels) - OSTI abstract carries no numbers.",
-  "Interferometric 6s[3/2]2-6s'[1/2]0 clock frequency (Opt. Lett. 20, 1421 (1995)): not opened. Third pass: Semantic Scholar lists Opt. Lett. 20, 1421 (1995) as closed; no NIST-hosted copy found.",
-  "AFIT thesis 'Investigation of Metastable Xenon' (129Xe hyperfine coefficient of 6p[5/2]3 at 882 nm) blocked for automated access."
+  "Level-resolved radiative lifetimes of the 6p, 6p', 7p, 6d levels: Inoue, Ku, Setser (J. Chem. Phys. 81, 5760 (1984)) abstract gives only ranges (30-48 ns for 6p and 6p', 68-172 ns for 7p); Bruce et al. (J. Chem. Phys. 92, 2917 (1990)) and Boewering et al. (84, 715 (1986)) abstracts carry no numbers; full texts are paywalled. Suzuki & Shimoda (J. Phys. Soc. Jpn. 43, 1977; OSTI abstract) give 35 +- 2 ns and 37 +- 4 ns for levels written '6p22' and '6p01' and 520 +- 30 ns for '5d33'; the notation could not be mapped to NIST levels with certainty, so they were not stored. Third pass (2026-10-02): all three J. Chem. Phys. papers are closed access per Semantic Scholar and no repository copy or reprinted table was found (2 web searches); only single second-hand numbers could be stored: 34 ns for 6p[5/2]3 (Horiguchi et al. 1981 via Doery et al. 1998) and 41 ns for 6p'[1/2]0 (thruster-plume measurement via Eichhorn et al. 2022). Das & Karmakar, Eur. Phys. J. D 32, 285 (2005) (lifetimes of nf and 8s, 9s levels) - OSTI abstract carries no numbers.  Fourth pass (2026-10-02): Inoue, Ku, Setser (doi 10.1063/1.447628), Bruce et al. (10.1063/1.457939) and Horiguchi, Chang, Setser (10.1063/1.442169) - pubs.aip.org answers HTTP 403 to WebFetch and curl; Schmitt & Schmoranzer, Phys. Lett. A 263, 193 (1999) (beam-gas-laser lifetimes of the 6p levels, doi 10.1016/S0375-9601(99)00729-X) and Cabrera, Ortiz, Campos, Physica B+C 104, 416 (1981) (seven 6p lifetimes, 21 A values) - sciencedirect.com HTTP 403; Das & Karmakar, Phys. Scr. 71, 170 (2005) (nd levels) and Drag et al., Plasma Sources Sci. Technol. (2021), doi 10.1088/1361-6595/abfbeb (6p' lifetimes) - IOP bot check, HAL copy behind an Anubis bot check. What could be read instead and is now stored: Allen, Jones, Schofield 1969 (17 Xe I levels) and Jimenez, Campos, Sanchez del Rio 1974 (14 levels) from the Optica pages, Niemi et al. 2005 (6p'[3/2]2, with the Inoue 1984 and Alekseev & Setser 1996 values second-hand), Anderson 1965 (the two 6s resonance levels, abstract). Still without any lifetime: 6p[1/2]1, 6p[5/2]2, 6p[3/2]1, 6p'[3/2]1, 5d, 6d, 7s levels.",
+  "Interferometric 6s[3/2]2-6s'[1/2]0 clock frequency (Sterr et al., Opt. Lett. 20, 1421 (1995)): OBTAINED in the fourth pass (2026-10-02) - Tables 1, 2, 4, 5 read from the Optica abstract page and stored (wave numbers of the 450 and 764 nm lines, isotope shifts, hyperfine splittings of 6p'[1/2]1, clock interval). Not stored: the 764 nm isotope shifts of 128Xe and 130Xe, printed as 274(6) and 202(4) MHz in rows whose empty cells are dropped by the page, so that it cannot be told whether they belong to the column 'This Work' or 'Ref. 12' (Table 2 lists no 128Xe / 130Xe component for that line); the reference list (refs. 12, 13, 15) is not shown on the page.",
+  "AFIT thesis 'Investigation of Metastable Xenon' (129Xe hyperfine coefficient of 6p[5/2]3 at 882 nm) blocked for automated access.",
+  "Shafer, Phys. Rev. A 3, 752 (1971): isotope shifts of the 2.02 um laser line (5d[3/2]1-6p[3/2]1) for 132/134/136Xe - abstract read, but it prints '500 +- 300 kHz (0.17 +- 0.01 x 10^-3 cm^-1)' for 132-134, two figures that contradict each other; not stored."
  ],
  "conflicts": [
   "131Xe B(6s[3/2]2): D'Amico et al. 255.7(0.6) MHz vs Bounds et al. 246.7(2) MHz (823 nm) and 259(7) MHz (841 nm); A(131) 705.4(0.4) vs 708.3(1) MHz. The D'Amico values, consistent with the atomic-beam intervals of Faust & McDermott (|A129| = 2384.50 MHz derived), are used.",
@@ -1720,7 +2544,13 @@
   "Brandi et al. 2001 calibrated energies (136Xe 8d[1/2]1 94228.0187, 8d[3/2]1 94685.4822; 132Xe 7s'[1/2]1 95800.5867 cm^-1) lie 0.003-0.015 cm^-1 above the NIST values; the measurement is older than 20 years, so NIST stays in use.",
   "Hyperfine constants from the 1979 level-crossing work of Husson et al. (now stored as alternatives) vs the laser-spectroscopy values kept as main entries: 129Xe A(6p'[1/2]1) 1981.3(1.5) vs 1977(1) MHz; A(6p'[3/2]1) -4427.0(1.5) vs -4424(1); A(6p'[3/2]2) -2885.2(3.6) vs -2894.6(4.7); A(6p[3/2]2) -886.5(0.9) vs -889.6(0.4); 131Xe B(6p'[3/2]2) -17.1(0.3) vs -14(17) and 3.5(1.0) MHz; B(6p[3/2]2) 30.3(0.6) vs 23.8(0.4) MHz. The level-crossing A values depend on the g_J used.",
   "6p[5/2]3 lifetime: 33.03 ns (Vassen review, equal to 1/A_NIST) vs 34 ns (Horiguchi et al. 1981 as quoted by Doery et al. 1998); no uncertainties printed.",
-  "6p'[1/2]0 (89860.015 cm^-1) lifetime: the second-hand thruster-plume value 41 ns (Eichhorn et al. 2022, no uncertainty) exceeds 1/sum(A_NIST) = 27.5 ns (A = 3.5e7 + 1.3e6 s^-1, NIST accuracy C+ / C); lifetime x sum(A_NIST) = 1.49. Either the NIST rates are too large or the plume lifetime is too long; the 41 ns value is kept as the only level-specific number found but should be treated as low accuracy (verification pass 2026-10-02)."
+  "6p'[1/2]0 (89860.015 cm^-1) lifetime: the second-hand thruster-plume value 41 ns (Eichhorn et al. 2022, no uncertainty) exceeds 1/sum(A_NIST) = 27.5 ns (A = 3.5e7 + 1.3e6 s^-1, NIST accuracy C+ / C); lifetime x sum(A_NIST) = 1.49. Either the NIST rates are too large or the plume lifetime is too long; the 41 ns value is kept as the only level-specific number found but should be treated as low accuracy (verification pass 2026-10-02).",
+  "Lifetimes of the 6p' levels vs NIST ASD transition probabilities: every measured lifetime exceeds 1/sum(A_NIST). 6p'[3/2]2 (89162.356 cm^-1): 40.8(20) ns (Niemi et al. 2005, two-photon laser excitation), 40(6) ns (Alekseev & Setser 1996), 37(2) ns (Inoue et al. 1984), 39.0(15) / 39.0(7) ns (Allen et al. 1969), 30.5(30) ns (Jimenez et al. 1974) vs 1/sum(A_NIST) = 22.8 ns (sum 4.38e7 s^-1, accuracy C+): lifetime x sum(A) = 1.3-1.8. 6p'[1/2]1: 29.5(30) and 43.5(15) ns vs 25.9 ns; 6p'[1/2]0: 30.7(10), 38.5(15), 41 ns vs 27.5 ns. Four independent methods agree on about 40 ns for 6p'[3/2]2, so the NIST rates of the 6p'-6s' lines (C/C+) are probably too large by a factor of about 1.5-1.8; under the rule 'lifetime x sum(A) must not exceed 1' all these lifetimes sit in 'lifetime_alternatives' and are not shown. A decision by the owner is needed.",
+  "6s[3/2]1 (147 nm resonance level): Hanle lifetime 3.79(12) ns (Anderson 1965) vs 1/A_NIST = 3.66 ns (A = 2.73e8 s^-1); lifetime x A = 1.035 +- 0.033, i.e. it fails the sum-rule test by a hair (1.1 sigma) and is therefore stored under 'lifetime_alternatives'; 6s'[1/2]1: 3.17(19) ns vs 3.95 ns (A = 2.53e8 s^-1), stored as the entry.",
+  "Allen et al. 1969 vs Jimenez et al. 1974 (both electron-impact delayed coincidence) disagree far beyond their errors for several levels: 7p[3/2]2 148(11)/156(12) vs 107(9) ns; 7p[5/2]3 141(10) vs 183(10) ns; 7p[5/2]2 200(12) vs 168(15) ns; 8p[5/2]3 275(23) vs 419(16) ns; 11d[7/2]3 333(27) vs 445(18) ns; 6p' levels 39-44 vs 30-31 ns. Where both pass the sum-rule test the later measurement (Jimenez) is the entry; 7p[1/2]0: Allen 87(5) ns is the entry because Jimenez 107(8) ns gives lifetime x sum(A_NIST) = 1.15; 7p[1/2]1: both (143(4), 156(8) ns) exceed 1/sum(A_NIST) = 128.5 ns and are alternatives only. Cascades are not excluded in either experiment; treat all these as +-20 % values.",
+  "6p[1/2]0 (80118.962 cm^-1) 40(12) ns and 6p[3/2]2 (79212.465 cm^-1) 33(20) ns (Allen et al. 1969) vs 1/A_NIST = 27.1 and 27.2 ns; 7d[1/2]1 87(12) ns vs 1/A_NIST = 23.4 ns (resonance level, trapped). Alternatives only.",
+  "129Xe A(6p'[1/2]1): 1986.8(3) MHz derived from the splitting 2980.2(4) MHz of Sterr et al. 1995 vs 1977(1) MHz (D'Amico et al., second-hand, kept as the entry), 1981.3(15) MHz (Husson et al. 1979) and 1969(6) MHz (Bounds et al.). 131Xe: A = -586.92(15), B = -6.0(2) MHz derived from Sterr et al. vs -581.0(6), -6.2(4) (D'Amico) and -587.29(60) (Husson). The interferometric splittings are the most precise direct data; the D'Amico entry should be re-examined once the original paper is available.",
+  "6s[3/2]2-6s'[1/2]0 interval: 9129.221804(26) cm^-1 for 132Xe and 9129.220805(52) cm^-1 for 136Xe (Sterr et al. 1995) vs 9129.220 cm^-1 from the NIST level values."
  ],
- "notes": "Hyperfine entries taken from the comparison table of Bounds et al. are second-hand (method 'compilation', original named in the source); Bounds' own results are listed as alternatives. Isotope-shift keys are kept exactly as printed (pair label 'A-B' with a negative value); see each note on the unverified sign convention. Values converted from mK carry the printed mK numbers alongside. Level energies are NIST ASD values from data/xe/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page or HAL record only. Added 2026-10-01 (second pass): VUV isotope shifts of Brandi et al. are printed as nu(136) - nu(A) (positive = lighter isotope at lower frequency); Dreissen et al. print nu(A) - nu(132). 'use_source' / 'use_url' name the paper a use annotation was taken from. Added 2026-10-02 (third pass, papers opened in full): Husson, Grandin, Kucal 1979 (hyperfine constants, printed in mK, converted with 1 mK = 29.9792458 MHz, printed numbers kept in A_mK / B_mK) and Huet et al. 1979 (Lande factors; identical to the NIST ASD values, now with uncertainties). The 4f[3/2]1 and 5f[3/2]1 levels were added for their hyperfine constants only."
+ "notes": "Hyperfine entries taken from the comparison table of Bounds et al. are second-hand (method 'compilation', original named in the source); Bounds' own results are listed as alternatives. Isotope-shift keys are kept exactly as printed (pair label 'A-B' with a negative value); see each note on the unverified sign convention. Values converted from mK carry the printed mK numbers alongside. Level energies are NIST ASD values from data/xe/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page or HAL record only. Added 2026-10-01 (second pass): VUV isotope shifts of Brandi et al. are printed as nu(136) - nu(A) (positive = lighter isotope at lower frequency); Dreissen et al. print nu(A) - nu(132). 'use_source' / 'use_url' name the paper a use annotation was taken from. Added 2026-10-02 (third pass, papers opened in full): Husson, Grandin, Kucal 1979 (hyperfine constants, printed in mK, converted with 1 mK = 29.9792458 MHz, printed numbers kept in A_mK / B_mK) and Huet et al. 1979 (Lande factors; identical to the NIST ASD values, now with uncertainties). The 4f[3/2]1 and 5f[3/2]1 levels were added for their hyperfine constants only. Added 2026-10-02 (fourth pass, publisher pages read directly): opg.optica.org abstract pages embed the full tables in their HTML and journals.aps.org abstract pages are readable; both were fetched with curl and parsed by script, each Optica table occurs twice in the page (copies compared, identical) and was read a second time through WebFetch with a differently worded request (all numbers agreed; only the column placement of rows with empty cells is ambiguous, see not_found). New sources: Allen et al. 1969 Table II and Jimenez et al. 1974 Table I (electron-impact lifetimes; levels identified through the observed line, checked against NIST wavelengths), Niemi et al. 2005 Table 1 (PDF from the Belfast repository), Anderson 1965 (abstract), Sterr et al. 1995 Tables 1, 2, 4, 5. Lifetimes that exceed 1/sum(A_NIST) by more than their uncertainty are stored under 'lifetime_alternatives' (or as 'alternatives' of the entry) and are not drawn. Sterr et al.: frequencies are the printed wave numbers times c (even isotopes only; the hyperfine components of 129Xe and 131Xe are kept as printed under 'hyperfine_component_wavenumber_cm'); isotope shifts are nu(A) - nu(136), keys 'A-136'; hyperfine splittings are stored as printed under 'zero_field_intervals_MHz' (upper F minus lower F) and the A, B constants derived from them only as flagged alternatives. The clock-transition frequency is the level interval (twice the printed two-photon wave number). Saved: data/literature/pdf/Xe_Allen_1969.txt, Xe_Jimenez_1974.txt, Xe_Sterr_1995.txt, Xe_Anderson_1965.txt, Xe_Niemi_2005.pdf."
 }

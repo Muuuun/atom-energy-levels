@@ -190,7 +190,18 @@
      "source": "Traub, Roesler, Robertson, Cohen, J. Opt. Soc. Am. 57, 1452 (1967) [as quoted in Chu et al. (Ritterbusch, Lu), 'Optically enhanced discharge excitation and trapping of 39Ar', arXiv:2206.11089 (2022)]",
      "url": "https://arxiv.org/abs/2206.11089"
     }
-   }
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 8.6e-09,
+     "unc": 4e-10,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
+     "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.175.40",
+     "note": "printed '1066.66, 8.6 +- 0.4' (wavelength of the resonance line in Angstrom, lifetime in ns) in the abstract; pulsed-electron excitation, delayed-coincidence decay of the vacuum-ultraviolet resonance line, extrapolated to zero pressure against photon entrapment; the author states the error estimates are roughly ten times the statistical errors. Level identified by the resonance wavelength (NIST: 1066.66 A). lifetime x sum(A_NIST) = 1.14 +- 0.05. Exceeds 1/sum(A_NIST) by more than its uncertainty, so it is kept as an alternative and not shown as the level lifetime."
+    }
+   ]
   },
   {
    "nist_energy_cm": 95399.8276,
@@ -230,7 +241,18 @@
      "source": "Velchev, Hogervorst, Ubachs, J. Phys. B 32, L511 (1999) [(1999)]",
      "url": "https://www.nat.vu.nl/~wimu/Publications/Ar.pdf"
     }
-   }
+   },
+   "lifetime_alternatives": [
+    {
+     "value": 2.15e-09,
+     "unc": 2e-10,
+     "unit": "s",
+     "method": "experiment",
+     "source": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
+     "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.175.40",
+     "note": "printed '1048.22, 2.15 +- 0.2' (wavelength of the resonance line in Angstrom, lifetime in ns) in the abstract; pulsed-electron excitation, delayed-coincidence decay of the vacuum-ultraviolet resonance line, extrapolated to zero pressure against photon entrapment; the author states the error estimates are roughly ten times the statistical errors. Level identified by the resonance wavelength (NIST: 1048.22 A). lifetime x sum(A_NIST) = 1.14 +- 0.11. Exceeds 1/sum(A_NIST) by more than its uncertainty, so it is kept as an alternative and not shown as the level lifetime."
+    }
+   ]
   },
   {
    "nist_energy_cm": 105462.7596,
@@ -250,7 +272,10 @@
       "method": "compilation",
       "source": "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
-      "note": "printed 30.1 ns; selective tunable-laser excitation"
+      "note": "printed 30.1 ns; selective tunable-laser excitation Uncertainty added 2026-10-02: Asghar et al. 2020 print the Chang and Setser lifetime of 2p9 as 30.1 +- 0.4 ns (second-hand; the original paper is still paywalled).",
+      "unc": 4e-10,
+      "unc_source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote b = Chang and Setser",
+      "unc_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240"
      },
      {
       "value": 3.02e-08,
@@ -353,7 +378,10 @@
       "method": "compilation",
       "source": "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
-      "note": "printed 27.0 ns; selective tunable-laser excitation"
+      "note": "printed 27.0 ns; selective tunable-laser excitation Uncertainty added 2026-10-02: Asghar et al. 2020 print the Chang and Setser lifetime of 2p6 as 27 +- 1.0 ns (second-hand; the original paper is still paywalled).",
+      "unc": 1e-09,
+      "unc_source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote b = Chang and Setser",
+      "unc_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240"
      }
     ]
    }
@@ -389,8 +417,18 @@
       "method": "experiment",
       "source": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
       "url": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
-      "note": "printed 2p1: 21 +- 2 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level).",
-      "unit": "s"
+      "note": "printed 2p1: 21 +- 2 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level). Added 2026-10-02 from Table I of the paper (publisher page, tables embedded): row '2p1 -> 1s4 | 6677 A | 21±2 | 10%' - the +-2 ns is the probable error and the estimated systematic error is 10 %.",
+      "unit": "s",
+      "unc_sys_percent": 10
+     },
+     {
+      "value": 2e-08,
+      "unc": 2e-09,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Erman and Huldt (ref. 21 of Asghar et al.) [as tabulated in Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote a]",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+      "note": "printed 20 +- 2 ns for 2p1 (the lifetime Asghar et al. adopt for this level); second-hand, original not opened. lifetime x sum(A_NIST) = 0.90."
      }
     ]
    }
@@ -413,7 +451,10 @@
       "method": "compilation",
       "source": "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
-      "note": "printed 26.5 ns; selective tunable-laser excitation"
+      "note": "printed 26.5 ns; selective tunable-laser excitation Uncertainty added 2026-10-02: Asghar et al. 2020 print the Chang and Setser lifetime of 2p2 as 26.5 +- 0.4 ns (second-hand; the original paper is still paywalled).",
+      "unc": 4e-10,
+      "unc_source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote b = Chang and Setser",
+      "unc_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240"
      },
      {
       "value": 2.5000000000000002e-08,
@@ -421,8 +462,9 @@
       "method": "experiment",
       "source": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
       "url": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
-      "note": "printed 2p2: 25 +- 1 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level).",
-      "unit": "s"
+      "note": "printed 2p2: 25 +- 1 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level). Added 2026-10-02 from Table I of the paper (publisher page, tables embedded): row '2p2 -> 1s5 | 6965 A | 25±1 | 5%' - the +-1 ns is the probable error and the estimated systematic error is 5 %.",
+      "unit": "s",
+      "unc_sys_percent": 5
      }
     ]
    }
@@ -445,7 +487,10 @@
       "method": "compilation",
       "source": "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
-      "note": "printed 27.6 ns; selective tunable-laser excitation"
+      "note": "printed 27.6 ns; selective tunable-laser excitation Uncertainty added 2026-10-02: Asghar et al. 2020 print the Chang and Setser lifetime of 2p3 as 27.6 +- 0.9 ns (second-hand; the original paper is still paywalled).",
+      "unc": 9e-10,
+      "unc_source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote b = Chang and Setser",
+      "unc_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240"
      },
      {
       "value": 2.6e-08,
@@ -453,8 +498,9 @@
       "method": "experiment",
       "source": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
       "url": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
-      "note": "printed 2p3: 26 +- 1 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level).",
-      "unit": "s"
+      "note": "printed 2p3: 26 +- 1 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level). Added 2026-10-02 from Table I of the paper (publisher page, tables embedded): row '2p3 -> 1s5 | 7067 A | 26±1 | 5%' - the +-1 ns is the probable error and the estimated systematic error is 5 %.",
+      "unit": "s",
+      "unc_sys_percent": 5
      }
     ]
    }
@@ -477,7 +523,10 @@
       "method": "compilation",
       "source": "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
-      "note": "printed 33.2 ns; selective tunable-laser excitation"
+      "note": "printed 33.2 ns; selective tunable-laser excitation Uncertainty added 2026-10-02: Asghar et al. 2020 print the Chang and Setser lifetime of 2p4 as 33.2 +- 0.8 ns (second-hand; the original paper is still paywalled).",
+      "unc": 8e-10,
+      "unc_source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote b = Chang and Setser",
+      "unc_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240"
      },
      {
       "value": 3.05e-08,
@@ -493,8 +542,9 @@
       "method": "experiment",
       "source": "Klose, J. Opt. Soc. Am. 57, 1242 (1967) (abstract)",
       "url": "https://opg.optica.org/abstract.cfm?uri=josa-57-10-1242",
-      "note": "printed 2p4: 31 +- 2 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level).",
-      "unit": "s"
+      "note": "printed 2p4: 31 +- 2 nsec (Paschen notation), delayed coincidence; the abstract adds that the lifetimes contain estimated systematic errors of 5-15 %. Paschen-to-level assignment by energy order (2p1 highest 3p5 4p level). Added 2026-10-02 from Table I of the paper (publisher page, tables embedded): row '2p4 -> 1s5 | 7147 A | 31±2 | 15%' - the +-2 ns is the probable error and the estimated systematic error is 15 %.",
+      "unit": "s",
+      "unc_sys_percent": 15
      }
     ]
    }
@@ -524,7 +574,17 @@
     "source": "Quadfasel and Helbig (unpublished; laser-induced fluorescence, selective laser excitation of all ten 4p levels) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
     "url": "https://pure.mpg.de/pubman/item/item_153394",
     "note": "printed 24.4 ns in the row '4p[1/2]0' of Table II (no uncertainty printed). Second-hand value: the original is unpublished. Wiese et al. adopt these lifetimes as the absolute scale of their recommended 4s-4p transition probabilities (the set NIST ASD uses), so lifetime x sum(A_NIST) is 0.97-1.03 by construction.",
-    "alternatives": []
+    "alternatives": [
+     {
+      "value": 2.1e-08,
+      "unc": 3e-09,
+      "unit": "s",
+      "method": "compilation",
+      "source": "Erman and Huldt (ref. 21 of Asghar et al.) [as tabulated in Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote a]",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+      "note": "printed 21 +- 3 ns for 2p5 (the lifetime Asghar et al. adopt for this level); second-hand, original not opened. lifetime x sum(A_NIST) = 0.84."
+     }
+    ]
    }
   },
   {
@@ -545,7 +605,10 @@
       "method": "compilation",
       "source": "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
-      "note": "printed 29.8 ns; selective tunable-laser excitation"
+      "note": "printed 29.8 ns; selective tunable-laser excitation Uncertainty added 2026-10-02: Asghar et al. 2020 print the Chang and Setser lifetime of 2p7 as 29.8 +- 0.7 ns (second-hand; the original paper is still paywalled).",
+      "unc": 7e-10,
+      "unc_source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote b = Chang and Setser",
+      "unc_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240"
      }
     ]
    }
@@ -568,7 +631,10 @@
       "method": "compilation",
       "source": "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
-      "note": "printed 32.8 ns; selective tunable-laser excitation"
+      "note": "printed 32.8 ns; selective tunable-laser excitation Uncertainty added 2026-10-02: Asghar et al. 2020 print the Chang and Setser lifetime of 2p8 as 32.8 +- 0.7 ns (second-hand; the original paper is still paywalled).",
+      "unc": 7e-10,
+      "unc_source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote b = Chang and Setser",
+      "unc_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240"
      }
     ]
    }
@@ -591,7 +657,10 @@
       "method": "compilation",
       "source": "Chang and Setser, J. Chem. Phys. 69, 3885 (1978) [as tabulated in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), Table II, p. 2465]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
-      "note": "printed 42.2 ns; selective tunable-laser excitation"
+      "note": "printed 42.2 ns; selective tunable-laser excitation Uncertainty added 2026-10-02: Asghar et al. 2020 print the Chang and Setser lifetime of 2p10 as 42.2 +- 1.0 ns (second-hand; the original paper is still paywalled).",
+      "unc": 1e-09,
+      "unc_source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), lifetime column, footnote b = Chang and Setser",
+      "unc_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240"
      }
     ]
    }
@@ -617,8 +686,164 @@
       "source": "Hirabayashi, Okuda, Nambu, Fujimoto (ref. 35 of Wiese et al.) [as quoted in Wiese, Brault, Danzmann, Helbig, Kock, Phys. Rev. A 39, 2461 (1989), p. 2463]",
       "url": "https://pure.mpg.de/pubman/item/item_153394",
       "note": "judged by Wiese et al. to suffer from a long extrapolation to zero pressure"
+     },
+     {
+      "value": 1.66e-07,
+      "unc": 5e-09,
+      "unc_sys": 1.66e-08,
+      "unit": "s",
+      "method": "experiment",
+      "source": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables)",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-58-11-1509",
+      "note": "printed '3p8 | 3p8 -> 1s4 | 4300 | 166±5 | 10%' : mean life 166 +- 5 ns (standard error of the mean) with an estimated systematic error of 10 %; electron excitation and delayed coincidence, line at 4300 A (NIST air wavelength 4300.1 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.12 is no real test."
      }
     ]
+   }
+  },
+  {
+   "nist_energy_cm": 113643.26,
+   "label": "3p5 5s 2[3/2]1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.01e-08,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.175.40",
+    "note": "printed '879.95, 10.1 +- 0.4' (wavelength of the resonance line in Angstrom, lifetime in ns) in the abstract; pulsed-electron excitation, delayed-coincidence decay of the vacuum-ultraviolet resonance line, extrapolated to zero pressure against photon entrapment; the author states the error estimates are roughly ten times the statistical errors. Level identified by the resonance wavelength (NIST: 879.95 A). lifetime x sum(A_NIST) = 0.98 +- 0.04."
+   }
+  },
+  {
+   "nist_energy_cm": 114147.732,
+   "label": "3p5 3d 2[3/2]1",
+   "J": "1",
+   "lifetime": {
+    "value": 3.48e-09,
+    "unc": 2e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.175.40",
+    "note": "printed '876.06, 3.48 +- 0.2' (wavelength of the resonance line in Angstrom, lifetime in ns) in the abstract; pulsed-electron excitation, delayed-coincidence decay of the vacuum-ultraviolet resonance line, extrapolated to zero pressure against photon entrapment; the author states the error estimates are roughly ten times the statistical errors. Level identified by the resonance wavelength (NIST: 876.06 A). lifetime x sum(A_NIST) = 1.00 +- 0.06."
+   }
+  },
+  {
+   "nist_energy_cm": 114975.019,
+   "label": "3p5 5s' 2[1/2]1",
+   "J": "1",
+   "lifetime": {
+    "value": 1.75e-08,
+    "unc": 2e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.175.40",
+    "note": "printed '869.75, 17.5 +- 2.0' (wavelength of the resonance line in Angstrom, lifetime in ns) in the abstract; pulsed-electron excitation, delayed-coincidence decay of the vacuum-ultraviolet resonance line, extrapolated to zero pressure against photon entrapment; the author states the error estimates are roughly ten times the statistical errors. Level identified by the resonance wavelength (NIST: 869.75 A). lifetime x sum(A_NIST) = 0.97 +- 0.11."
+   }
+  },
+  {
+   "nist_energy_cm": 115366.866,
+   "label": "3p5 3d' 2[3/2]1",
+   "J": "1",
+   "lifetime": {
+    "value": 3e-09,
+    "unc": 4e-10,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Lawrence, Phys. Rev. 175, 40 (1968) (abstract; read through the publisher page)",
+    "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.175.40",
+    "note": "printed '966.8, 3.0 +- 0.4' (wavelength of the resonance line in Angstrom, lifetime in ns) in the abstract; pulsed-electron excitation, delayed-coincidence decay of the vacuum-ultraviolet resonance line, extrapolated to zero pressure against photon entrapment; the author states the error estimates are roughly ten times the statistical errors. Level identified by the resonance wavelength (NIST: 866.80 A). lifetime x sum(A_NIST) = 0.99 +- 0.13. Identification: the abstract prints '966.8', which matches no Ar I resonance line; it is read here as 866.8 A (NIST 866.80 A, 3d'[3/2]1), the sixth of the 'six lowest-energy J = 1 levels' apart from the weak 3d[1/2]1 line at 894.3 A; the lifetime agrees with 1/A_NIST = 3.2 ns. Assignment not confirmed from the full text (paywalled)."
+   }
+  },
+  {
+   "nist_energy_cm": 118870.917,
+   "label": "3p5 5p' 2[1/2]0 (3p1)",
+   "J": "0",
+   "lifetime": {
+    "value": 7.1e-08,
+    "unc": 2e-09,
+    "unc_sys": 3.55e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-58-11-1509",
+    "note": "printed '3p1 | 3p1 -> 1s2 | 4259 | 71±2 | 5%' : mean life 71 +- 2 ns (standard error of the mean) with an estimated systematic error of 5 %; electron excitation and delayed coincidence, line at 4259 A (NIST air wavelength 4259.4 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.28 is no real test."
+   }
+  },
+  {
+   "nist_energy_cm": 117562.9553,
+   "label": "3p5 5p 2[1/2]0 (3p5)",
+   "J": "0",
+   "lifetime": {
+    "value": 9.5e-08,
+    "unc": 2e-09,
+    "unc_sys": 4.75e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-58-11-1509",
+    "note": "printed '3p5 | 3p5 -> 1s2 | 4511 | 95±2 | 5%' : mean life 95 +- 2 ns (standard error of the mean) with an estimated systematic error of 5 %; electron excitation and delayed coincidence, line at 4511 A (NIST air wavelength 4510.7 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. Also: a second determination on the 3p5 -> 1s4 line at 4198 A gave 98 +- 2 ns (systematic error 10 %). NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.36 is no real test."
+   }
+  },
+  {
+   "nist_energy_cm": 117183.5901,
+   "label": "3p5 5p 2[3/2]2 (3p6)",
+   "J": "2",
+   "lifetime": {
+    "value": 1.24e-07,
+    "unc": 3e-09,
+    "unc_sys": 1.24e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-58-11-1509",
+    "note": "printed '3p6 | 3p6 -> 1s5 | 4159 | 124±3 | 10%' : mean life 124 +- 3 ns (standard error of the mean) with an estimated systematic error of 10 %; electron excitation and delayed coincidence, line at 4159 A (NIST air wavelength 4158.6 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.21 is no real test."
+   }
+  },
+  {
+   "nist_energy_cm": 117151.3264,
+   "label": "3p5 5p 2[3/2]1 (3p7)",
+   "J": "1",
+   "lifetime": {
+    "value": 1.49e-07,
+    "unc": 3e-09,
+    "unc_sys": 7.45e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-58-11-1509",
+    "note": "printed '3p7 | 3p7 -> 1s4 | 4272 | 149±3 | 5%' : mean life 149 +- 3 ns (standard error of the mean) with an estimated systematic error of 5 %; electron excitation and delayed coincidence, line at 4272 A (NIST air wavelength 4272.2 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.18 is no real test."
+   }
+  },
+  {
+   "nist_energy_cm": 116942.7542,
+   "label": "3p5 5p 2[5/2]3 (3p9)",
+   "J": "3",
+   "lifetime": {
+    "value": 1.41e-07,
+    "unc": 2e-09,
+    "unc_sys": 7.05e-09,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-58-11-1509",
+    "note": "printed '3p9 | 3p9 -> 1s5 | 4201 | 141±2 | 5%' : mean life 141 +- 2 ns (standard error of the mean) with an estimated systematic error of 5 %; electron excitation and delayed coincidence, line at 4201 A (NIST air wavelength 4200.7 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.14 is no real test."
+   }
+  },
+  {
+   "nist_energy_cm": 116659.9934,
+   "label": "3p5 5p 2[1/2]1 (3p10)",
+   "J": "1",
+   "lifetime": {
+    "value": 1.89e-07,
+    "unc": 3e-09,
+    "unc_sys": 1.89e-08,
+    "unit": "s",
+    "method": "experiment",
+    "source": "Klose, J. Opt. Soc. Am. 58, 1509 (1968), Table II (read through the publisher page, which embeds the tables)",
+    "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-58-11-1509",
+    "note": "printed '3p10 | 3p10 -> 1s3 | 4522 | 189±3 | 10%' : mean life 189 +- 3 ns (standard error of the mean) with an estimated systematic error of 10 %; electron excitation and delayed coincidence, line at 4522 A (NIST air wavelength 4522.3 A confirms the Paschen-to-Racah assignment). unc is the printed statistical error; unc_sys is derived from the printed percentage. Cascade repopulation is possible with electron excitation. Also: a second determination on the 3p10 -> 1s2 line at 4702 A gave 191 ns (no statistical error printed, systematic error 15 %). NIST lists A values only for the 5p-4s branches of this level, so lifetime x sum(A_NIST) = 0.06 is no real test."
    }
   }
  ],
@@ -749,6 +974,14 @@
      "url": "https://arxiv.org/abs/1012.4509",
      "note": "39Ar cycling component lies 941.76(10) MHz above 36Ar"
     }
+   },
+   "A_s_other_measurement": {
+    "value": 33220000.0,
+    "unc": 3910000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '33.22 ± 3.91' x 10^6 s^-1 for the 811.53 nm line (2p9 - 1s5); NIST column of the same table: 33 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 3.3e+07 s^-1."
    }
   },
   {
@@ -782,6 +1015,14 @@
      "url": "https://arxiv.org/abs/2206.11089",
      "note": "calculated from the measured stable-isotope shifts via King plots (authors' footnote b)"
     }
+   },
+   "A_s_other_measurement": {
+    "value": 4550000.0,
+    "unc": 400000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '4.55 ± 0.4' x 10^6 s^-1 for the 800.62 nm line (2p6 - 1s4); NIST column of the same table: 4.90 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 4.9e+06 s^-1."
    }
   },
   {
@@ -815,6 +1056,14 @@
      "url": "https://arxiv.org/abs/2206.11089",
      "note": "calculated (authors' footnote b)"
     }
+   },
+   "A_s_other_measurement": {
+    "value": 4110000.0,
+    "unc": 360000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '4.11 ± 0.36' x 10^6 s^-1 for the 922.45 nm line (2p6 - 1s2); NIST column of the same table: 5 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 5e+06 s^-1."
    }
   },
   {
@@ -1353,6 +1602,382 @@
      "url": "https://lib-extopc.kek.jp/preprints/PDF/1996/9607/9607235.pdf",
      "note": "printed delta nu(38,A) = 835.2(2.3)[12.1] MHz: statistical error in parentheses, systematic (voltage calibration) in brackets; the sign makes heavier isotopes lie at higher frequency, i.e. nu(A) - nu(38); odd-A values refer to the hyperfine centre of gravity"
     }
+   },
+   "A_s_other_measurement": {
+    "value": 28370000.0,
+    "unc": 2470000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '28.37 ± 2.47' x 10^6 s^-1 for the 763.51 nm line (2p6 - 1s5); NIST column of the same table: 24.50 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 2.45e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 95399.8276,
+   "upper_cm": 108722.6194,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "3p5 4s' 2[1/2]1 - 3p5 4p' 2[1/2]0",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 43230000.0,
+    "unc": 6480000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '43.23 ± 6.48' x 10^6 s^-1 for the 750.39 nm line (2p1 - 1s2); NIST column of the same table: 45 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 4.5e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93750.5978,
+   "upper_cm": 108722.6194,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "3p5 4s 2[3/2]1 - 3p5 4p' 2[1/2]0",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 250000.0,
+    "unc": 40000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '0.25 ± 0.04' x 10^6 s^-1 for the 667.73 nm line (2p1 - 1s4); NIST column of the same table: 0.236 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 2.36e+05 s^-1."
+   }
+  },
+  {
+   "lower_cm": 95399.8276,
+   "upper_cm": 107496.4166,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3p5 4s' 2[1/2]1 - 3p5 4p' 2[1/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 16740000.0,
+    "unc": 1090000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '16.74 ± 1.09' x 10^6 s^-1 for the 826.45 nm line (2p2 - 1s2); NIST column of the same table: 15.30 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 1.53e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 94553.6652,
+   "upper_cm": 107496.4166,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3p5 4s' 2[1/2]0 - 3p5 4p' 2[1/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 17680000.0,
+    "unc": 1150000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '17.68 ± 1.15' x 10^6 s^-1 for the 772.42 nm line (2p2 - 1s3); NIST column of the same table: 11.70 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 1.17e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93750.5978,
+   "upper_cm": 107496.4166,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3p5 4s 2[3/2]1 - 3p5 4p' 2[1/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 2310000.0,
+    "unc": 150000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '2.31 ± 0.15' x 10^6 s^-1 for the 727.29 nm line (2p2 - 1s4); NIST column of the same table: 1.83 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 1.83e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93143.76,
+   "upper_cm": 107496.4166,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3p5 4s 2[3/2]2 - 3p5 4p' 2[1/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 6740000.0,
+    "unc": 440000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '6.74 ± 0.44' x 10^6 s^-1 for the 696.54 nm line (2p2 - 1s5); NIST column of the same table: 6.4 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 6.4e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 95399.8276,
+   "upper_cm": 107289.7001,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3p5 4s' 2[1/2]1 - 3p5 4p' 2[3/2]2",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 22530000.0,
+    "unc": 1860000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '22.53 ± 1.86' x 10^6 s^-1 for the 840.82 nm line (2p3 - 1s2); NIST column of the same table: 22.30 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 2.23e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93750.5978,
+   "upper_cm": 107289.7001,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3p5 4s 2[3/2]1 - 3p5 4p' 2[3/2]2",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 8230000.0,
+    "unc": 680000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '8.23 0.68' x 10^6 s^-1 for the 738.4 nm line (2p3 - 1s4); NIST column of the same table: 8.5 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. The '+-' sign is missing in the printed cell. NIST ASD A = 8.5e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93143.76,
+   "upper_cm": 107289.7001,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3p5 4s 2[3/2]2 - 3p5 4p' 2[3/2]2",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 3250000.0,
+    "unc": 270000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '3.25 ± 0.27' x 10^6 s^-1 for the 706.72 nm line (2p3 - 1s5); NIST column of the same table: 3.80 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 3.8e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 95399.8276,
+   "upper_cm": 107131.7086,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3p5 4s' 2[1/2]1 - 3p5 4p' 2[3/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 13180000.0,
+    "unc": 970000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '13.18 ± 0.97' x 10^6 s^-1 for the 852.15 nm line (2p4 - 1s2); NIST column of the same table: 13.90 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 1.39e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 94553.6652,
+   "upper_cm": 107131.7086,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3p5 4s' 2[1/2]0 - 3p5 4p' 2[3/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 18070000.0,
+    "unc": 1340000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '18.07 ± 1.34' x 10^6 s^-1 for the 794.82 nm line (2p4 - 1s3); NIST column of the same table: 18.60 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 1.86e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93143.76,
+   "upper_cm": 107131.7086,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3p5 4s 2[3/2]2 - 3p5 4p' 2[3/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 1200000.0,
+    "unc": 90000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '1.2 ± 0.09' x 10^6 s^-1 for the 714.71 nm line (2p4 - 1s5); NIST column of the same table: 0.63 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 6.3e+05 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93750.5978,
+   "upper_cm": 107054.272,
+   "lower_J": "1",
+   "upper_J": "0",
+   "label": "3p5 4s 2[3/2]1 - 3p5 4p 2[1/2]0",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 47620000.0,
+    "unc": 4320000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '47.62 ± 4.32' x 10^6 s^-1 for the 751.47 nm line (2p5 - 1s4); NIST column of the same table: 40 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 4e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 95399.8276,
+   "upper_cm": 106087.2598,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3p5 4s' 2[1/2]1 - 3p5 4p 2[3/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 1080000.0,
+    "unc": 80000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '1.08 ± 0.08' x 10^6 s^-1 for the 935.42 nm line (2p7 - 1s2); NIST column of the same table: 1.06 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 1.06e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 94553.6652,
+   "upper_cm": 106087.2598,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3p5 4s' 2[1/2]0 - 3p5 4p 2[3/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 2660000.0,
+    "unc": 200000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '2.66 ± 0.2' x 10^6 s^-1 for the 866.79 nm line (2p7 - 1s3); NIST column of the same table: 2.43 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 2.43e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93750.5978,
+   "upper_cm": 106087.2598,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3p5 4s 2[3/2]1 - 3p5 4p 2[3/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 25320000.0,
+    "unc": 1860000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '25.32 ± 1.86' x 10^6 s^-1 for the 810.37 nm line (2p7 - 1s4); NIST column of the same table: 25 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 2.5e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93143.76,
+   "upper_cm": 106087.2598,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3p5 4s 2[3/2]2 - 3p5 4p 2[3/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 5060000.0,
+    "unc": 370000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '5.06 ± 0.37' x 10^6 s^-1 for the 772.38 nm line (2p7 - 1s5); NIST column of the same table: 5.2 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 5.2e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 95399.8276,
+   "upper_cm": 105617.27,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3p5 4s' 2[1/2]1 - 3p5 4p 2[5/2]2",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 1570000.0,
+    "unc": 110000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '1.57 ± 0.11' x 10^6 s^-1 for the 978.45 nm line (2p8 - 1s2); NIST column of the same table: 1.47 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 1.47e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93750.5978,
+   "upper_cm": 105617.27,
+   "lower_J": "1",
+   "upper_J": "2",
+   "label": "3p5 4s 2[3/2]1 - 3p5 4p 2[5/2]2",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 20330000.0,
+    "unc": 1450000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '20.33 ± 1.45' x 10^6 s^-1 for the 842.47 nm line (2p8 - 1s4); NIST column of the same table: 21.50 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 2.15e+07 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93143.76,
+   "upper_cm": 105617.27,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "3p5 4s 2[3/2]2 - 3p5 4p 2[5/2]2",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 8590000.0,
+    "unc": 1750000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '8.59 ± 1.75' x 10^6 s^-1 for the 801.48 nm line (2p8 - 1s5); NIST column of the same table: 9.3 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 9.3e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 94553.6652,
+   "upper_cm": 104102.099,
+   "lower_J": "0",
+   "upper_J": "1",
+   "label": "3p5 4s' 2[1/2]0 - 3p5 4p 2[1/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 830000.0,
+    "unc": 80000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '0.83 ± 0.08' x 10^6 s^-1 for the 1047.01 nm line (2p10 - 1s3); NIST column of the same table: 0.98 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 9.8e+05 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93750.5978,
+   "upper_cm": 104102.099,
+   "lower_J": "1",
+   "upper_J": "1",
+   "label": "3p5 4s 2[3/2]1 - 3p5 4p 2[1/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 5770000.0,
+    "unc": 430000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '5.77 ± 0.43' x 10^6 s^-1 for the 965.78 nm line (2p10 - 1s4); NIST column of the same table: 5.4 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 5.4e+06 s^-1."
+   }
+  },
+  {
+   "lower_cm": 93143.76,
+   "upper_cm": 104102.099,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "3p5 4s 2[3/2]2 - 3p5 4p 2[1/2]1",
+   "type": "E1",
+   "A_s_other_measurement": {
+    "value": 17110000.0,
+    "unc": 1260000.0,
+    "method": "experiment",
+    "source": "Asghar, Piracha, Ali, Baig, Appl. Opt. 59, 4240 (2020), Table 1 (read through the publisher page, which embeds the tables), column 'Present Work'",
+    "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-14-4240",
+    "note": "printed '17.11 ± 1.26' x 10^6 s^-1 for the 912.3 nm line (2p10 - 1s5); NIST column of the same table: 18.90 x 10^6. Branching fractions measured in an argon hollow-cathode lamp, put on an absolute scale with the upper-level lifetimes of Chang and Setser 1978 (Erman and Huldt for 2p1 and 2p5), so the sum over the branches of one upper level equals 1/lifetime by construction. Stored beside, not instead of, the NIST value: NIST ASD rates of this array (Wiese et al. 1989) are rated A-B, the relative uncertainty here is 6-20 %, and several lines differ from NIST by more than the stated error. NIST ASD A = 1.89e+07 s^-1."
    }
   }
  ],
@@ -1361,12 +1986,12 @@
   "Absolute optical frequency of 811.5 nm better than NIST: not located.",
   "Experimental reduced matrix elements: none located.",
   "Lifetime of the second metastable 4s'[1/2]0 (3P0, 1s3): no measurement located; theory 44.9 s (Small-Warren & Chiu 1975) stored.",
-  "Lifetimes of the resonance levels 4s[3/2]1 and 4s'[1/2]1 and of the 5s, 3d, 4d and the other 5p levels drawn: none located (5p[5/2]2 is now stored from Wiese et al. 1989) in an open source (Inoue, Setser, Sadeghi 1982 abstract: Ar(5p) lifetimes 100-140 ns, 5s and 3d about 50 ns, no level-resolved numbers).",
+  "Lifetimes of the 3d, 4d and 5s levels other than the J = 1 resonance levels, and of the three 5p' levels 5p'[3/2]1, 5p'[1/2]1, 5p'[3/2]2 (3p4, 3p3, 3p2): none located in an open source. Fourth pass (2026-10-02): the six lowest J = 1 resonance levels are now stored from the abstract of Lawrence, Phys. Rev. 175, 40 (1968), and seven 5p levels from Klose, J. Opt. Soc. Am. 58, 1509 (1968) (tables embedded in the publisher's abstract page). Still not opened: Inoue, Setser, Sadeghi 1982 (abstract only: Ar(5p) lifetimes 100-140 ns, 5s and 3d about 50 ns); Aguilera, Blanco, Campos, Phys. Rev. A 45, 2753 (1992) (five 6p levels; abstract has no numbers); Das and Karmakar, 'Radiative Lifetimes of Some Excited States of Neutral Argon', Phys. Scr. 71, 266 (2005) (IOP page answers with a bot check).",
   "Absolute (frequency-comb) frequencies of the 4s-4p lines: none located.",
-  "Primary papers behind the 4p lifetimes: Quadfasel & Helbig is listed as unpublished in Wiese et al. 1989, and Chang & Setser (J. Chem. Phys. 69, 3885 (1978)) is paywalled (Semantic Scholar: closed; no repository copy). Their numbers are stored second-hand from Wiese et al. Table II, which prints no uncertainties.",
-  "Volz & Schmoranzer beam-gas-laser lifetimes of Ar 4p levels: no open copy located (2 web searches, arXiv API, Semantic Scholar citation list of Wiese 1989; the open arXiv paper physics/0005057 that cites their method is about Kr). Not stored.",
+  "Chang & Setser, J. Chem. Phys. 69, 3885 (1978) (doi:10.1063/1.437126): original still not opened. Fourth pass (2026-10-02): pubs.aip.org answers HTTP 403 to both WebFetch and curl (article page and PDF address), OpenAlex and Semantic Scholar list it as closed with no repository copy, the Wayback Machine has no snapshot. Their lifetimes WITH uncertainties for 2p2-2p4 and 2p6-2p10 are now stored second-hand from Table 1 of Asghar et al., Appl. Opt. 59, 4240 (2020) (they agree with the numbers Wiese et al. 1989 tabulate without uncertainties). Chang & Setser's 2p1 and 2p5 values and their quenching constants are still missing. Quadfasel & Helbig is listed as unpublished in Wiese et al. 1989.",
+  "Volz & Schmoranzer beam-gas-laser lifetimes of Ar 4p levels: not obtained, and it is not established that such a measurement was published for argon. Fourth pass (2026-10-02): the two candidate papers are Schmoranzer & Volz, Phys. Scr. T47, 42 (1993) (doi:10.1088/0031-8949/1993/T47/005; iopscience.iop.org redirects every request - article page and /pdf, WebFetch and curl - to a Radware bot-check page, not pursued) and Volz & Schmoranzer, AIP Conf. Proc. (1998), pp. 67-88 (doi:10.1063/1.56170; pubs.aip.org HTTP 403). The open papers of that group that were read (arXiv physics/0005057 on Kr; arXiv:2105.11245) contain no argon 4p lifetimes. Zatsarinny & Bartschat, J. Phys. B 39, 2145 (2006), whose comparison tables may quote them, is behind the same IOP bot check.",
   "Welte et al., Rev. Sci. Instrum. 80, 113109 (2009): journal article not opened (not on arXiv); Welte's 2011 Heidelberg thesis (open) was read instead and gives slightly different final 39Ar constants, stored as alternatives.",
-  "Wiese et al. 1989 Table IV / VI (recommended A values of the 4s-4p and 4s-5p arrays) were not copied line by line: NIST ASD already carries this set and the site uses the NIST values. The scanned PDF is saved as data/literature/pdf/Ar_Wiese_1989.pdf if a line-by-line cross-check is wanted."
+  "Wiese et al. 1989 Table IV / VI (recommended A values of the 4s-4p and 4s-5p arrays) were not copied line by line: NIST ASD already carries this set and the site uses the NIST values. The scanned PDF is saved as data/literature/pdf/Ar_Wiese_1989.pdf if a line-by-line cross-check is wanted. Fourth pass: a 2020 hollow-cathode measurement of 27 lines of the 4s-4p array (Asghar et al., Appl. Opt. 59, 4240) is stored on the transitions as 'A_s_other_measurement' (not as 'A_s'), see notes."
  ],
  "conflicts": [
   "39Ar hyperfine A constants: Williams et al. 2011 [A(4s[3/2]2) = -285.36(13), A(4p[5/2]3) = -134.36(8) MHz] vs Welte et al. 2009 [-287.15(14), -135.16(12) MHz]: 1-2 MHz apart with ~0.1 MHz claimed uncertainties; the ratio A(4s)/A(4p) agrees to <0.1%. B constants agree. Williams (checked on 83Kr) is used.",
@@ -1377,7 +2002,12 @@
   "2p9 (811.5 nm upper level): 30.7 ns (Quadfasel & Helbig), 30.1 ns (Chang & Setser), 30.2 ns (Vassen review table = 1/A_NIST). Doery et al., Phys. Rev. A 57, 3603 (1998), Table VI print '33.1 ns' citing Wiese et al.; that number equals the Wiese/NIST A value 3.31e7 s^-1 read as a lifetime and was not stored.",
   "5p[5/2]2 lifetime: 152(7) and 154(7) ns (Wiese et al. / Stryla et al., low pressure) vs 127(10) ns (Hirabayashi et al., high pressure).",
   "39Ar hyperfine constants from Heidelberg: thesis values (Welte 2011: A_s = -285.9(0.14), A_p = -134.6(0.12) MHz) agree with Williams et al. within about 0.5 MHz, whereas the 2009 article values quoted by Williams (-287.15, -135.16) do not.",
-  "A(476.9, 487.6, 542.1 nm): de Regt et al. 1996 (7.40, 7.46, 7.33 x 10^5 s^-1, +-20 %) vs NIST ASD (8.6, 7.8, 6.0 x 10^5 s^-1, accuracy D-class); consistent within the uncertainties."
+  "A(476.9, 487.6, 542.1 nm): de Regt et al. 1996 (7.40, 7.46, 7.33 x 10^5 s^-1, +-20 %) vs NIST ASD (8.6, 7.8, 6.0 x 10^5 s^-1, accuracy D-class); consistent within the uncertainties.",
+  "Resonance levels 4s[3/2]1 and 4s'[1/2]1: Lawrence 1968 (pulsed electrons) 8.60(40) and 2.15(20) ns vs 1/A_NIST = 7.58 ns (A = 1.32e8 s^-1, accuracy A+) and 1.88 ns (5.32e8 s^-1, AA); lifetime x A = 1.14 for both, i.e. the old lifetimes are about 14 % too long (residual radiation trapping). They are stored under 'lifetime_alternatives' and not shown.",
+  "3d'[3/2]1 (115366.866 cm^-1) lifetime 3.0(4) ns: the Lawrence 1968 abstract prints the wavelength as '966.8' A, read here as 866.8 A; assignment by elimination and by agreement with 1/A_NIST = 3.2 ns, not confirmed in the full text.",
+  "5p[5/2]2 lifetime: Klose 1968 (electron excitation, delayed coincidence) 166 +- 5 ns (+-10 % systematic) vs 153 +- 7 ns (Wiese et al. 1989, laser-induced fluorescence, kept as the entry) and 127 +- 10 ns (Hirabayashi et al.). The other six Klose 5p lifetimes (71-189 ns) are the only measurements stored for their levels and carry 5-10 % systematic errors.",
+  "4s-4p transition probabilities: Asghar et al. 2020 vs NIST ASD - most of the 27 lines agree within the stated 6-20 %, but 772.42 nm (2p2-1s3) 1.768(115)e7 vs 1.17e7, 714.70 nm (2p4-1s5) 1.2(1)e6 vs 6.3e5, 727.29 nm 2.31(15)e6 vs 1.83e6, 763.51 nm 2.84(25)e7 vs 2.45e7 and 751.47 nm 4.76(43)e7 vs 4.0e7 s^-1 do not. The 772.42/772.38 nm pair is a close blend. NIST values stay in use.",
+  "2p1 and 2p5 lifetimes: Erman and Huldt as quoted by Asghar et al. 2020 (20 +- 2 and 21 +- 3 ns) vs Quadfasel & Helbig (21.7 and 24.4 ns, the entries) and Klose 1967 (2p1: 21 +- 2 ns)."
  ],
- "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier argon isotopes lie at higher frequency on 811.5 nm (Table III of Williams et al. is given relative to 38Ar: Delta nu(38,A') = nu(A') - nu(38)), while the 800.8 and 922.7 nm shifts of Chu et al. are printed relative to 40Ar. 39Ar and 37Ar are radioactive (ATTA tracers). Level energies are NIST ASD values from data/ar/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only. Added 2026-10-01 (second pass): the 105 nm measurements of Velchev et al. are from 1999 (older than 20 years), so the NIST energy stays in use; isotope shifts of that line are printed as nu(40) - nu(A). Paschen-labelled lifetimes (Klose) were assigned to NIST levels by energy order. Added 2026-10-02 (third pass, papers opened in full): Wiese et al. 1989 (scanned PDF from the Max Planck repository; tables read from the page images), Klein et al. 1996 (CERN preprint scan), Welte's 2011 thesis, de Regt et al. 1996. Lifetimes of all ten 4p levels are second-hand (Quadfasel & Helbig unpublished, via Wiese Table II, no uncertainties printed). Isotope-shift entries of the 763.5 nm line carry the statistical error in 'unc' and the systematic one in 'unc_sys'. The rates A_s of the 5p[5/2]2 branches are R/tau from one paper, so tau x sum(A) = 1 by construction."
+ "notes": "Isotope-shift keys 'A-B' mean nu(A) - nu(B); heavier argon isotopes lie at higher frequency on 811.5 nm (Table III of Williams et al. is given relative to 38Ar: Delta nu(38,A') = nu(A') - nu(38)), while the 800.8 and 922.7 nm shifts of Chu et al. are printed relative to 40Ar. 39Ar and 37Ar are radioactive (ATTA tracers). Level energies are NIST ASD values from data/ar/levels.csv; Paschen names in the labels. Entries marked '(abstract)' were read on the publisher's abstract page only. Added 2026-10-01 (second pass): the 105 nm measurements of Velchev et al. are from 1999 (older than 20 years), so the NIST energy stays in use; isotope shifts of that line are printed as nu(40) - nu(A). Paschen-labelled lifetimes (Klose) were assigned to NIST levels by energy order. Added 2026-10-02 (third pass, papers opened in full): Wiese et al. 1989 (scanned PDF from the Max Planck repository; tables read from the page images), Klein et al. 1996 (CERN preprint scan), Welte's 2011 thesis, de Regt et al. 1996. Lifetimes of all ten 4p levels are second-hand (Quadfasel & Helbig unpublished, via Wiese Table II, no uncertainties printed). Isotope-shift entries of the 763.5 nm line carry the statistical error in 'unc' and the systematic one in 'unc_sys'. The rates A_s of the 5p[5/2]2 branches are R/tau from one paper, so tau x sum(A) = 1 by construction. Added 2026-10-02 (fourth pass, publisher pages read directly): opg.optica.org abstract pages embed the full tables of a paper in their HTML and journals.aps.org abstract pages are readable; both were fetched with curl and parsed by script (each Optica table occurs twice in the page and the two copies were compared; a WebFetch reading of the Klose table agreed). New: Lawrence 1968 (abstract: lifetimes of the six lowest J = 1 levels; the two 4s resonance levels fail the lifetime x sum(A_NIST) <= 1 test and sit under 'lifetime_alternatives'), Klose 1968 Table II (seven 5p lifetimes; 'unc' = statistical standard error, 'unc_sys' = printed systematic percentage times the value), Klose 1967 Table I (systematic errors added to the existing alternatives as 'unc_sys_percent'), Asghar et al. 2020 Table 1 (27 measured A values stored as 'A_s_other_measurement', a key the pipeline does not read, because they are less accurate than the NIST set; the same table supplies the uncertainties of the Chang & Setser lifetimes, stored as 'unc' with 'unc_source' on the existing second-hand alternatives). Saved page texts: data/literature/pdf/Ar_Lawrence_1968.txt, Ar_Klose_1967.txt, Ar_Klose_1968.txt, Ar_Asghar_2020.txt."
 }

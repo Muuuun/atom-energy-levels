@@ -56,29 +56,125 @@
      "method": "compilation",
      "note": "second-hand: atomic-beam magnetic-resonance value quoted as A_gs = 5.70264(23) GHz by Hirayama et al.; original paper not opened. I = 1/2, so there is no B",
      "source": "Büttgenbach, Glaeser, Roski, Träber, Z. Phys. A 317, 237 (1984), as quoted in Hirayama et al., 'In-gas-cell laser spectroscopy for magnetic dipole moment of 199Pt toward N = 126', Phys. Rev. C 96, 014307 (2017), arXiv:1605.03674",
-     "url": "https://arxiv.org/pdf/1605.03674"
+     "url": "https://arxiv.org/pdf/1605.03674",
+     "alternatives": [
+      {
+       "A_MHz": 5702.646,
+       "A_unc": 0.024,
+       "method": "compilation",
+       "note": "derived by unit conversion: printed 190.2198(8) mK; same measurement as the entry, quoted with more digits (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+       "source": "Atomic-beam magnetic-resonance value of Büttgenbach, Glaeser, Roski, Träber, Z. Phys. A 317, 237 (1984), as quoted (column 'Refs. [6, 7]') in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22); original not opened",
+       "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+      }
+     ]
     }
+   },
+   "g_J": {
+    "value": 1.33392,
+    "method": "compilation",
+    "source": "experimental g_J as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 4 (preprint p. 24), column 'Exp.'; the table does not name the origin of the experimental values (the precise ones are the atomic-beam magnetic-resonance results: Büttgenbach et al. 1984 for 3D3 and 3D2 according to that paper's abstract); original not opened",
+    "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
    }
   },
   {
    "nist_energy_cm": 775.8761,
    "J": "2",
-   "label": "5d9.6s a 1D2"
+   "label": "5d9.6s a 1D2",
+   "hyperfine": {
+    "195": {
+     "A_MHz": -2607.0354,
+     "A_unc": 0.0036,
+     "method": "compilation",
+     "note": "derived by unit conversion: printed -86.96134(12) mK for the level printed as '5d9 6s 3D2, 775.892 cm^-1' (NIST labels this level 5d9.6s a 1D2; identified by energy, J = 2 and g_J = 1.0666) (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Atomic-beam magnetic-resonance value quoted as 'Ref. 12' in Table 2 of LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989) (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical); the reference list is not shown on that page - from the context this is Büttgenbach, Glaeser, Roski, Träber, Z. Phys. A 317, 237 (1984); original not opened",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137",
+     "alternatives": [
+      {
+       "A_MHz": -2607.0,
+       "A_unc": 1.8,
+       "method": "experiment",
+       "note": "derived by unit conversion: printed -86.96(6) mK ('This Research', Fourier-transform and saturation spectroscopy of the 270.24 nm line) (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+       "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 2 (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+       "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+      },
+      {
+       "A_MHz": -2609.6484,
+       "A_unc": 0.003,
+       "method": "compilation",
+       "note": "derived by unit conversion: printed -87.0485(1) mK. Conflict: differs from the -86.96134(12) mK that LaBelle et al. 1989 quote for the same atomic-beam measurement and from LaBelle's own -86.96(6) mK; one of the two quotations is a misprint, the original paper could not be opened (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+       "source": "Büttgenbach et al., Z. Phys. A 317, 237 (1984), as quoted (column 'Refs. [6, 7]') in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22); original not opened",
+       "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+      }
+     ]
+    }
+   },
+   "g_J": {
+    "value": 1.06657,
+    "method": "compilation",
+    "source": "experimental g_J as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 4 (preprint p. 24), column 'Exp.'; the table does not name the origin of the experimental values (the precise ones are the atomic-beam magnetic-resonance results: Büttgenbach et al. 1984 for 3D3 and 3D2 according to that paper's abstract); original not opened",
+    "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+   }
   },
   {
    "nist_energy_cm": 823.6608,
    "J": "4",
-   "label": "5d8.6s2 3F4"
+   "label": "5d8.6s2 3F4",
+   "hyperfine": {
+    "195": {
+     "A_MHz": 849.014,
+     "A_unc": 0.0021,
+     "method": "compilation",
+     "note": "derived by unit conversion: printed 28.32006(7) mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Atomic-beam magnetic-resonance value quoted as 'Ref. 13' in Table 2 of LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989) (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical); reference list not shown on that page. Neu et al. 1987 (Table 2 of CERN-EP/87-132) quote the same quantity as 28.3201(1) mK and attribute it to Greenebaum, Childs, Goodman, Bull. Am. Phys. Soc. 16, 532 (1971); original not opened",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137",
+     "alternatives": [
+      {
+       "A_MHz": 848.4,
+       "A_unc": 6.0,
+       "method": "experiment",
+       "note": "derived by unit conversion: printed 28.3(2) mK ('This Research') (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+       "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 2 (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+       "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+      }
+     ]
+    }
+   },
+   "g_J": {
+    "value": 1.23948,
+    "method": "compilation",
+    "source": "experimental g_J as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 4 (preprint p. 24), column 'Exp.'; the table does not name the origin of the experimental values (the precise ones are the atomic-beam magnetic-resonance results: Büttgenbach et al. 1984 for 3D3 and 3D2 according to that paper's abstract); original not opened",
+    "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+   }
   },
   {
    "nist_energy_cm": 10116.7158,
    "J": "3",
-   "label": "5d8.6s2 3F3"
+   "label": "5d8.6s2 3F3",
+   "hyperfine": {
+    "195": {
+     "A_MHz": 1223.0,
+     "A_unc": 18.0,
+     "method": "experiment",
+     "note": "derived by unit conversion: printed 40.8(6) mK ('This work'); earlier values quoted alongside: 41.3(1.2) mK (Baird & Stacey 1974), 36(3) mK (Müller & Winkler 1975) (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
   },
   {
    "nist_energy_cm": 21967.101,
    "J": "4",
-   "label": "5d8.6s2 1G4"
+   "label": "5d8.6s2 1G4",
+   "hyperfine": {
+    "195": {
+     "A_MHz": 1289.0,
+     "A_unc": 60.0,
+     "method": "compilation",
+     "note": "derived by unit conversion: printed 43(2) mK; value printed in the original: 37(3) mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Müller, Winkler, Z. Phys. A 273, 313 (1975), re-evaluated by Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22) (footnote b: 'Reevaluated from Ref. [4] with the new results of this work'); original not opened",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
   },
   {
    "nist_energy_cm": 30156.846,
@@ -128,6 +224,16 @@
       "note": "the same table also quotes the older beam-sputtering value 16(2) ns of Ramanujam & Andersen (1978)"
      }
     ]
+   },
+   "hyperfine": {
+    "195": {
+     "A_MHz": 1850.3,
+     "A_unc": 4.8,
+     "method": "experiment",
+     "note": "derived by unit conversion: printed 61.72(16) mK ('This work', laser fluorescence on an atomic beam, level printed as 5d9 6p 3P2); earlier values quoted alongside: 61.8(1.2) and 60(1) mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
    }
   },
   {
@@ -153,6 +259,16 @@
       "note": "the same table also quotes the older beam-sputtering value 98(10) ns of Ramanujam & Andersen (1978)"
      }
     ]
+   },
+   "hyperfine": {
+    "195": {
+     "A_MHz": 3793.3,
+     "A_unc": 3.9,
+     "method": "experiment",
+     "note": "derived by unit conversion: printed 126.53(13) mK ('This work', level printed as 5d8 6s6p 5G5, upper level of the 304.26 nm line from 5d8 6s2 3F4; NIST labels it a 5F°5); earlier value quoted alongside: 127.3(4) mK (Baird & Stacey 1974) (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
    }
   },
   {
@@ -178,6 +294,16 @@
       "note": "the same table also quotes the older beam-sputtering value 17(2) ns of Ramanujam & Andersen (1978)"
      }
     ]
+   },
+   "hyperfine": {
+    "195": {
+     "A_MHz": 3073.8,
+     "A_unc": 4.5,
+     "method": "experiment",
+     "note": "derived by unit conversion: printed 102.53(15) mK ('This work', level printed as 5d9 6p 3F3); earlier value quoted alongside: 95(3) mK (Müller & Winkler 1975), which the text calls the one exception to good agreement (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
    }
   },
   {
@@ -309,9 +435,19 @@
      "A_MHz": 1917.2,
      "A_unc": 0.9,
      "method": "experiment",
-     "note": "derived: printed value 63.95(3) mK (1 mK = 0.001 cm-1 = 29.979 MHz); saturation spectroscopy in a hollow-cathode discharge combined with other data; read in the paper's abstract only. I = 1/2, no B",
-     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989)",
-     "url": "https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+     "note": "derived by unit conversion: printed 63.95(3) mK (1 mK = 0.001 cm^-1 = 29.979 MHz), level printed as 5d9 6p 8_3, 37769.073 cm^-1; saturation spectroscopy in a hollow-cathode discharge. Table 2 also quotes the literature values 63.04(1.0) mK (its Ref. 14, not named on the page) and 64.9(5) mK (Neu et al. 1987). I = 1/2, no B",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 2 and abstract (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137",
+     "alternatives": [
+      {
+       "A_MHz": 1946.0,
+       "A_unc": 15.0,
+       "method": "experiment",
+       "note": "derived by unit conversion: printed 64.9(5) mK ('This work', level printed as 8_3, interference spectroscopy); differs from the 63.95(3) mK of LaBelle et al. 1989 by about two of its standard deviations (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+       "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22)",
+       "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+      }
+     ]
     }
    },
    "lifetime": {
@@ -1065,6 +1201,102 @@
     "url": "https://web.archive.org/web/20251230040407/https://iopscience.iop.org/article/10.1086/426381/pdf",
     "note": "uncertainty derived from the rule stated in the table footnote: the larger of 5 % or 0.2 ns (no per-level uncertainty printed)"
    }
+  },
+  {
+   "nist_energy_cm": 10131.8684,
+   "J": "1",
+   "label": "5d9.6s 3D1",
+   "hyperfine": {
+    "195": {
+     "A_MHz": -5037.0,
+     "A_unc": 60.0,
+     "method": "experiment",
+     "note": "derived by unit conversion: printed -168(2) mK ('This work'); the earlier value of Müller & Winkler, Z. Phys. A 273, 313 (1975) quoted alongside is -176(5) mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 13496.2595,
+   "J": "2",
+   "label": "5d9.6s b 1D2",
+   "hyperfine": {
+    "195": {
+     "A_MHz": 5546.0,
+     "A_unc": 15.0,
+     "method": "experiment",
+     "note": "derived by unit conversion: printed 185.0(5) mK ('This work') for the level printed as 5d9 6s 1D2 (g_J 1.17). The column for Müller & Winkler 1975 prints -182(3) mK, i.e. the opposite sign; Table 6 of the preprint uses +185.0(5) (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 6567.4517,
+   "J": "2",
+   "label": "5d9.6s 3D2",
+   "hyperfine": {
+    "195": {
+     "A_MHz": 2087.0,
+     "A_unc": 15.0,
+     "method": "compilation",
+     "note": "derived by unit conversion: printed 69.6(5) mK for the level printed as 5d8 6s2 3P2 (NIST labels the 6567.45 cm^-1 level 5d9.6s 3D2; identified through the experimental g_J = 1.11691 printed in Table 4, which is the NIST Lande factor of this level); Müller & Winkler 1975 value quoted alongside: 66(2) mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "H. Grethen, diploma work, Berlin 1976 (unpublished; reference [40], footnote a), as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22); original not opened",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   },
+   "g_J": {
+    "value": 1.11691,
+    "method": "compilation",
+    "source": "experimental g_J as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 4 (preprint p. 24), column 'Exp.'; the table does not name the origin of the experimental values (the precise ones are the atomic-beam magnetic-resonance results: Büttgenbach et al. 1984 for 3D3 and 3D2 according to that paper's abstract); original not opened",
+    "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+   }
+  },
+  {
+   "nist_energy_cm": 15501.8344,
+   "J": "2",
+   "label": "5d8.6s2 3F2",
+   "hyperfine": {
+    "195": {
+     "A_MHz": 1649.0,
+     "A_unc": 240.0,
+     "method": "compilation",
+     "note": "derived by unit conversion: printed 55(8) mK; value printed in the original: 45(8) mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Müller, Winkler, Z. Phys. A 273, 313 (1975), re-evaluated by Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 2 (preprint p. 22) (footnote b: 'Reevaluated from Ref. [4] with the new results of this work'); original not opened",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 18566.545,
+   "J": "1",
+   "label": "5d8.6s2 3P1",
+   "hyperfine": {
+    "195": {
+     "A_MHz": -150.0,
+     "A_unc": 300.0,
+     "method": "compilation",
+     "note": "derived by unit conversion: printed -5(10) mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Müller, Winkler, Z. Phys. A 273, 313 (1975), as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 6 (preprint PDF p. 26, 'experimental values taken from Table 2 and Ref. [4]'); original not opened",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "nist_energy_cm": 26638.576,
+   "J": "2",
+   "label": "5d8.6s2 1D2",
+   "hyperfine": {
+    "195": {
+     "A_MHz": 1949.0,
+     "A_unc": 300.0,
+     "method": "compilation",
+     "note": "derived by unit conversion: printed 65(10) mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz). I = 1/2, no B",
+     "source": "Müller, Winkler, Z. Phys. A 273, 313 (1975), as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 6 (preprint PDF p. 26, 'experimental values taken from Table 2 and Ref. [4]'); original not opened",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
   }
  ],
  "transitions": [
@@ -1105,7 +1337,51 @@
    "upper_J": "3",
    "label": "5d9.6s a 1D2 - 5d9.6p 3D°3, 270.24 nm (air)",
    "type": "E1",
-   "use": "saturation spectroscopy in a hollow-cathode discharge: isotope shifts and 195Pt hyperfine splittings (LaBelle et al., J. Opt. Soc. Am. B 6, 137 (1989); assignment of the 270.24 nm line to this level pair derived here from the NIST line list)"
+   "use": "saturation spectroscopy in a hollow-cathode discharge: isotope shifts and 195Pt hyperfine splittings (LaBelle et al., J. Opt. Soc. Am. B 6, 137 (1989); assignment of the 270.24 nm line to this level pair derived here from the NIST line list)",
+   "isotope_shift_MHz": {
+    "196-194": {
+     "value": -2068.0,
+     "unc": 3.0,
+     "method": "experiment",
+     "note": "printed position nu(196) - nu(194) = -68.98(10) mK (the 194Pt reference itself is printed as 0.00(7)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137",
+     "alternatives": [
+      {
+       "value": -2173.0,
+       "unc": 45.0,
+       "method": "experiment",
+       "note": "printed delta nu(A,A') = -72.5(1.5) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+       "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+       "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+      }
+     ]
+    },
+    "192-194": {
+     "value": 2005.3,
+     "unc": 2.4,
+     "method": "experiment",
+     "note": "printed position nu(192) - nu(194) = 66.89(8) mK (the 194Pt reference itself is printed as 0.00(7)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+    },
+    "198-194": {
+     "value": -4312.2,
+     "unc": 2.4,
+     "method": "experiment",
+     "note": "printed position nu(198) - nu(194) = -143.84(8) mK (the 194Pt reference itself is printed as 0.00(7)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+    },
+    "195-194": {
+     "value": -952.7,
+     "unc": 1.8,
+     "method": "experiment",
+     "note": "printed position nu(195) - nu(194) = -31.78(6) mK (the 194Pt reference itself is printed as 0.00(7)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. For 195Pt this is the centre of gravity nu0 of the hyperfine pattern (row '195 (nu0)'), a value derived by the authors from the measured hyperfine components, not a directly observed line. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+    }
+   }
   },
   {
    "lower_cm": 823.6608,
@@ -1114,7 +1390,49 @@
    "upper_J": "3",
    "label": "5d8.6s2 3F4 - 5d9.6p 3D°3, 270.59 nm (air)",
    "type": "E1",
-   "use": "saturation spectroscopy in a hollow-cathode discharge: isotope shifts and 195Pt hyperfine splittings (LaBelle et al., J. Opt. Soc. Am. B 6, 137 (1989); assignment of the 270.59 nm line to this level pair derived here from the NIST line list)"
+   "use": "saturation spectroscopy in a hollow-cathode discharge: isotope shifts and 195Pt hyperfine splittings (LaBelle et al., J. Opt. Soc. Am. B 6, 137 (1989); assignment of the 270.59 nm line to this level pair derived here from the NIST line list)",
+   "isotope_shift_MHz": {
+    "190-194": {
+     "value": 8616.0,
+     "unc": 1.5,
+     "method": "experiment",
+     "note": "printed position nu(190) - nu(194) = 287.40(5) mK (the 194Pt reference itself is printed as 0.00(6)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+    },
+    "192-194": {
+     "value": 4530.8,
+     "unc": 1.5,
+     "method": "experiment",
+     "note": "printed position nu(192) - nu(194) = 151.13(5) mK (the 194Pt reference itself is printed as 0.00(6)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+    },
+    "196-194": {
+     "value": -4671.1,
+     "unc": 2.1,
+     "method": "experiment",
+     "note": "printed position nu(196) - nu(194) = -155.81(7) mK (the 194Pt reference itself is printed as 0.00(6)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+    },
+    "198-194": {
+     "value": -9741.8,
+     "unc": 2.1,
+     "method": "experiment",
+     "note": "printed position nu(198) - nu(194) = -324.95(7) mK (the 194Pt reference itself is printed as 0.00(6)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+    },
+    "195-194": {
+     "value": -2137.5,
+     "unc": 1.5,
+     "method": "experiment",
+     "note": "printed position nu(195) - nu(194) = -71.30(5) mK (the 194Pt reference itself is printed as 0.00(6)); saturation / Fourier-transform spectroscopy in a hollow-cathode discharge. For 195Pt this is the centre of gravity nu0 of the hyperfine pattern (row '195 (nu0)'), a value derived by the authors from the measured hyperfine components, not a directly observed line. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "LaBelle, Fairbank, Engleman, Keller, J. Opt. Soc. Am. B 6, 137 (1989), Table 1 'Observed positions of isotopic and hyperfine structure lines relative to 194Pt (in mK)' (tables read through the publisher page: Wayback Machine copy of the Optica abstract page, which embeds the article tables; two captures, 2019 and 2025, parsed and identical)",
+     "url": "https://web.archive.org/web/20251118111104/https://opg.optica.org/josab/abstract.cfm?uri=josab-6-2-137"
+    }
+   }
   },
   {
    "lower_cm": 21967.101,
@@ -1165,20 +1483,278 @@
      "url": "https://arxiv.org/pdf/1605.03674"
     }
    }
+  },
+  {
+   "lower_cm": 775.8761,
+   "upper_cm": 34122.1452,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "5d9.6s a 1D2 - 5d9.6p 3F°3, 299.79 nm (air)",
+   "type": "E1",
+   "use": "isotope-shift and 195Pt hyperfine measurements of Neu et al. 1987: laser fluorescence spectroscopy on a collimated atomic beam (frequency-doubled cw dye laser); printed as 5d9 6s 3D2 - 5d9 6p 3F3",
+   "isotope_shift_MHz": {
+    "194-192": {
+     "value": -1631.0,
+     "unc": 36.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -54.4(1.2) x 10^-3 cm^-1 for A,A' = 192,194; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "195-194": {
+     "value": -782.2,
+     "unc": 2.7,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -26.09(9) x 10^-3 cm^-1 for A,A' = 194,195; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "196-194": {
+     "value": -1692.0,
+     "unc": 13.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -56.43(44) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "198-196": {
+     "value": -1823.0,
+     "unc": 13.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -60.81(44) x 10^-3 cm^-1 for A,A' = 196,198; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 823.6608,
+   "upper_cm": 34122.1452,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "5d8.6s2 3F4 - 5d9.6p 3F°3, 300.22 nm (air)",
+   "type": "E1",
+   "use": "isotope-shift and 195Pt hyperfine measurements of Neu et al. 1987: laser fluorescence spectroscopy on a collimated atomic beam",
+   "isotope_shift_MHz": {
+    "194-192": {
+     "value": -4154.0,
+     "unc": 11.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -138.57(36) x 10^-3 cm^-1 for A,A' = 192,194; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "195-194": {
+     "value": -1956.1,
+     "unc": 2.1,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -65.25(7) x 10^-3 cm^-1 for A,A' = 194,195; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "196-194": {
+     "value": -4270.0,
+     "unc": 11.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -142.44(38) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "198-196": {
+     "value": -4634.0,
+     "unc": 12.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -154.58(40) x 10^-3 cm^-1 for A,A' = 196,198; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 823.6608,
+   "upper_cm": 33680.39,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "5d8.6s2 3F4 - 5d8.6s.(4F).6p a 5F°5, 304.26 nm (air)",
+   "type": "E1",
+   "use": "isotope-shift and 195Pt hyperfine measurements of Neu et al. 1987: laser fluorescence spectroscopy on a collimated atomic beam; upper level printed as 5d8 6s6p 5G5",
+   "isotope_shift_MHz": {
+    "194-192": {
+     "value": -2524.9,
+     "unc": 8.7,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -84.22(29) x 10^-3 cm^-1 for A,A' = 192,194; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "195-194": {
+     "value": -1192.9,
+     "unc": 5.1,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -39.79(17) x 10^-3 cm^-1 for A,A' = 194,195; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "196-194": {
+     "value": -2596.8,
+     "unc": 5.4,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -86.62(18) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "198-196": {
+     "value": -2796.5,
+     "unc": 5.7,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -93.28(19) x 10^-3 cm^-1 for A,A' = 196,198; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 32620.0047,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "5d9.6s 3D3 - 5d9.6p a 3P°2, 306.47 nm (air)",
+   "type": "E1",
+   "use": "isotope-shift and 195Pt hyperfine measurements of Neu et al. 1987: laser fluorescence spectroscopy on a collimated atomic beam; strongest line, used for the first accurate 190Pt shift",
+   "isotope_shift_MHz": {
+    "192-190": {
+     "value": -1158.7,
+     "unc": 2.4,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -38.65(8) x 10^-3 cm^-1 for A,A' = 190,192; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "194-192": {
+     "value": -1295.0,
+     "unc": 17.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -43.19(56) x 10^-3 cm^-1 for A,A' = 192,194; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "195-194": {
+     "value": -607.0,
+     "unc": 18.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -20.24(60) x 10^-3 cm^-1 for A,A' = 194,195; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "196-194": {
+     "value": -1308.0,
+     "unc": 17.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -43.62(56) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    },
+    "198-196": {
+     "value": -1430.9,
+     "unc": 3.6,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -47.73(12) x 10^-3 cm^-1 for A,A' = 196,198; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 13496.2595,
+   "upper_cm": 37769.0673,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "5d9.6s b 1D2 - 5d9.6p 3D°3, 411.86 nm (air)",
+   "type": "E1",
+   "use": "isotope-shift and 195Pt hyperfine measurements of Neu et al. 1987: hollow-cathode Fabry-Perot interference spectroscopy; level pair assigned here from the NIST energies (1D2 - 8_3 in Fig. 1 of the preprint)",
+   "isotope_shift_MHz": {
+    "196-194": {
+     "value": -2370.0,
+     "unc": 25.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -79.06(84) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 10116.7158,
+   "upper_cm": 34122.1452,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "5d8.6s2 3F3 - 5d9.6p 3F°3, 416.45 nm (air)",
+   "type": "E1",
+   "use": "isotope-shift and 195Pt hyperfine measurements of Neu et al. 1987: hollow-cathode Fabry-Perot interference spectroscopy",
+   "isotope_shift_MHz": {
+    "196-194": {
+     "value": -4425.0,
+     "unc": 27.0,
+     "method": "experiment",
+     "note": "printed delta nu(A,A') = -147.6(9) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21)",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 10116.7158,
+   "upper_cm": 32620.0047,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "5d8.6s2 3F3 - 5d9.6p a 3P°2, 444.25 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "196-194": {
+     "value": -4950.0,
+     "unc": 12.0,
+     "method": "compilation",
+     "note": "printed delta nu(A,A') = -165.1(4) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Stacey, Kuhn, Proc. R. Soc. A 322, 301 (1971) (reference [2]), as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21); original not opened",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 13496.2595,
+   "upper_cm": 32620.0047,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "5d9.6s b 1D2 - 5d9.6p a 3P°2, 522.76 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "196-194": {
+     "value": -2488.0,
+     "unc": 30.0,
+     "method": "compilation",
+     "note": "printed delta nu(A,A') = -83(1) x 10^-3 cm^-1 for A,A' = 194,196; taken as nu(A') - nu(A) with A' the heavier isotope (the preprint does not spell the convention out; this reading agrees in sign and size with the line positions nu(A) - nu(194) of LaBelle et al. 1989 for the 270.24 nm line), i.e. the heavier isotope lies at lower frequency. Derived by unit conversion from mK (1 mK = 0.001 cm^-1 = 29.9792458 MHz).",
+     "source": "Müller, Winkler, Z. Phys. A 273, 313 (1975) (reference [4]), as quoted in Neu, Passler, Sawatzky, Winkler, Kluge, 'Isotope shift and hyperfine structure of stable platinum isotopes', Z. Phys. D 7, 193 (1987); read in the scanned CERN preprint CERN-EP/87-132 (27 July 1987, 'submitted to Z. Phys. D'), not in the journal print, Table 1 (preprint p. 21); original not opened",
+     "url": "https://web.archive.org/web/20240421053259/https://cds.cern.ch/record/179858/files/198709022.pdf"
+    }
+   }
   }
  ],
  "conflicts": [
-  "54178.509 cm^-1 (J=4) level: the measured lifetime 8.3 ns (Den Hartog et al. 2005) corresponds to a total decay rate of 1.2e8 s^-1, but NIST lists A = 2.1e8 s^-1 (accuracy E, older source) for the single line 184.575 nm to the ground level, so lifetime x sum(A) = 1.74. The NIST A value of that line is too large; the measured lifetime is kept"
+  "54178.509 cm^-1 (J=4) level: the measured lifetime 8.3 ns (Den Hartog et al. 2005) corresponds to a total decay rate of 1.2e8 s^-1, but NIST lists A = 2.1e8 s^-1 (accuracy E, older source) for the single line 184.575 nm to the ground level, so lifetime x sum(A) = 1.74. The NIST A value of that line is too large; the measured lifetime is kept",
+  "195Pt hyperfine constant A of the 775.8761 cm^-1 level (J=2): the atomic-beam value of Büttgenbach et al. 1984 is quoted as -86.96134(12) mK by LaBelle et al. 1989 (Table 2) and as -87.0485(1) mK by the Neu et al. 1987 preprint (Table 2); LaBelle's own optical value is -86.96(6) mK. The LaBelle quotation (-2607.035 MHz) is kept as the entry because an independent measurement supports it; the other two are alternatives. The original paper could not be opened",
+  "195Pt hyperfine constant A of the 37769.0673 cm^-1 level (J=3): 63.95(3) mK (LaBelle et al. 1989, entry) vs 64.9(5) mK (Neu et al. 1987, alternative) vs 63.04(1.0) mK (reference 14 of LaBelle, not named on the page, not entered)",
+  "isotope shift 196-194 of the 270.24 nm line: -68.98(10) mK (LaBelle et al. 1989, entry) vs -72.5(1.5) mK (Neu et al. 1987, interference spectroscopy, alternative); 2.3 standard deviations apart",
+  "sign of the 195Pt hyperfine constant of the 13496.2595 cm^-1 level (5d9.6s b 1D2): +185.0(5) mK in Neu et al. 1987 (Tables 2 and 6) but -182(3) mK in the column quoting Müller & Winkler 1975 in the same Table 2; the Neu value is entered"
  ],
  "not_found": [
   "original papers of the older Pt I lifetimes: Gough, Hannaford, Lowe, J. Phys. B 15, L431 (1982) and Lotrian & Guern, J. Phys. B 15, 69 (1982) are behind the IOP bot wall (no Wayback capture of the PDFs, OpenAlex lists no repository copy); the 15 Gough values reprinted in Table 2 of Den Hartog et al. 2005 are stored as 'alternatives' (method compilation). The 58 lifetimes of Den Hartog et al. 2005 are now entered from a Wayback Machine copy of the publisher's free PDF",
-  "195Pt hyperfine A of the first excited 3D2 level (6567.45 cm-1) and g_J factors measured by Büttgenbach, Glaeser, Roski, Träber, Z. Phys. A 317, 237 (1984): only the OSTI abstract (record 6779138) was readable and it gives no numbers",
-  "isotope shifts and hyperfine splittings of the 270.24 and 270.59 nm lines (LaBelle et al. 1989): only the abstract was readable; it gives relative nuclear-charge-radius ratios (192-190 = 0.8164(45), 194-192 = 0.8997(26), 196-194 = 0.9253(17), 198-196 = 1, 195-194 = 0.4254(16)) but no shifts in MHz, so nothing was entered as isotope_shift_MHz",
-  "'Isotope shift and hyperfine structure of stable platinum isotopes' (Z. Phys., doi:10.1007/BF01384588) and 'Ground-state properties of neutron-deficient platinum isotopes' (doi:10.1007/BF01294481, 266 nm line): Springer pages not readable",
+  "Büttgenbach, Glaeser, Roski, Träber, Z. Phys. A 317, 237 (1984) (195Pt A of 3D3 and of the first metastable level at 775.88 cm^-1, g_J): original still closed (Springer article and PDF addresses redirect to the idp.springer.com login, plain requests get a 'Client Challenge' page; the 2018 Wayback capture shows only the abstract, no numbers; OSTI record 6779138 abstract only). Its values are now entered second-hand from LaBelle et al. 1989 Table 2 and from the Neu et al. 1987 preprint, which disagree on the 775.88 cm^-1 level (-86.96134(12) vs -87.0485(1) mK) - the original is needed to settle this. Correction of the earlier note: the 'first excited 3D2' level of that paper is NIST 775.8761 cm^-1 (NIST label a 1D2, g_J 1.0666), not 6567.45 cm^-1",
+  "LaBelle et al., J. Opt. Soc. Am. B 6, 137 (1989): Tables 1-5 are now read from Wayback copies of the Optica abstract page and entered (line positions relative to 194Pt for 270.24 and 270.59 nm, hyperfine constants). Not entered: the individual 195Pt hyperfine-component positions of Table 1, the King-plot ratios (Table 3), the relative charge-radius parameters (Table 4) and the Fourier-transform wavenumbers of the 194Pt lines (Table 5: 36993.2173 and 36945.4829 cm^-1). The article text and reference list are behind the subscription wall, so its references 12-14 could not be named with certainty",
+  "Neu et al., Z. Phys. D 7, 193 (1987) (doi:10.1007/BF01384588): the journal print is closed (Springer login redirect), but the scanned CERN preprint CERN-EP/87-132 was obtained from a Wayback copy of the CERN Document Server file and its Tables 1, 2, 4 and 6 are entered; numbers in the printed article may differ slightly from the preprint. Not entered: the hyperfine constant 60.9(1.5) mK of the odd level printed as '22_3' (5d8 6s6p; could not be matched to a NIST level with certainty), the fine-structure and isotope-shift parameters (Tables 3, 5, 7-9), the branching ratios of Lotrian & Guern shown in Fig. 1. 'Ground-state properties of neutron-deficient platinum isotopes' (doi:10.1007/BF01294481, 266 nm line): still not readable",
   "precise optical transition frequencies: Hirayama et al. print nu0 = 1204992.36 GHz for the 248.792 nm line, but this equals c times the tabulated level energy (40194.22 cm-1) and is not a measurement, so it is not entered",
-  "other 195Pt hyperfine constants in mK attributed to LaBelle et al. 1989 appeared only in a search-engine snippet and were not entered",
   "laser-cooling lines: none found for neutral Pt",
-  "hyperfine constants and isotope shifts behind the line-structure patterns of Den Hartog et al. 2005, Table 7 (Kronfeldt & Basar 1995; Basar, Kronfeldt, Kroeger, Z. Phys. D 36, 35 (1996); Neu et al. 1987): the table prints only reconstructed component positions (signs lost in the text layer), not A constants or shifts, so nothing was entered from it; the original papers (Springer, Physica Scripta) were not openable. Second pass 2026-10-02: tried OpenAlex, Semantic Scholar, arXiv API, INSPIRE, CERN CDS (bot wall), Wayback Machine"
+  "hyperfine constants and isotope shifts behind the line-structure patterns of Den Hartog et al. 2005, Table 7 (Kronfeldt & Basar 1995; Basar, Kronfeldt, Kroeger, Z. Phys. D 36, 35 (1996); Neu et al. 1987): the table prints only reconstructed component positions (signs lost in the text layer), not A constants or shifts, so nothing was entered from it; the original papers (Springer, Physica Scripta) were not openable. Second pass 2026-10-02: tried OpenAlex, Semantic Scholar, arXiv API, INSPIRE, CERN CDS (bot wall), Wayback Machine",
+  "third pass 2026-10-02, routes tried for the closed papers: WebFetch and curl on iopscience.iop.org (Gough et al. 1982, Lotrian & Guern 1982: redirect to the Radware bot check validate.perfdrive.com, not followed), link.springer.com article and PDF addresses (login redirect / 'Client Challenge'), opg.optica.org live page ('tables available to subscribers only'), cds.cern.ch live (Anubis bot check); Internet Archive periodical scans hold only tables of contents for Z. Phys. A/D of these years. Gough et al., J. Phys. B 15, L431 (1982) and Lotrian & Guern, J. Phys. B 15, 69 (1982) remain unopened"
  ],
- "notes": "NIST ASD already carries A values for 166 Pt I lines; of the 58 measured lines (Gough-Hannaford-Lowe 1982, Lotrian-Guern 1982) in the Kurucz list gf7800.all only 3 are missing from NIST and those are added here (derived from log gf with A = 0.66702 sigma^2 gf / (2J'+1)). Isotope shifts are nu(first) - nu(second); for the 248.792 nm line the heavier isotope lies at higher frequency. The 199Pt-198Pt shift on the same line is 0.98(48) GHz (199Pt is radioactive, not listed under isotopes). 195Pt has I = 1/2: hyperfine entries have A only. Isotope abundances in percent; abundance_unc in percent. Second pass (2026-10-02): 58 odd-level lifetimes from Den Hartog et al., Astrophys. J. 619, 639 (2005), Table 1 (levels there carry the Blaise et al. 1992 energies, matched to the NIST levels within 0.04 cm^-1 (most within 0.02) and by J). Where Table 2 prints an explicit uncertainty it is used; otherwise the uncertainty is the paper's stated rule 'larger of 5 % or 0.2 ns'. The NIST A values of Pt I already come from this paper's Table 3, so no transition rates were added."
+ "notes": "NIST ASD already carries A values for 166 Pt I lines; of the 58 measured lines (Gough-Hannaford-Lowe 1982, Lotrian-Guern 1982) in the Kurucz list gf7800.all only 3 are missing from NIST and those are added here (derived from log gf with A = 0.66702 sigma^2 gf / (2J'+1)). Isotope shifts are nu(first) - nu(second); for the 248.792 nm line the heavier isotope lies at higher frequency. The 199Pt-198Pt shift on the same line is 0.98(48) GHz (199Pt is radioactive, not listed under isotopes). 195Pt has I = 1/2: hyperfine entries have A only. Isotope abundances in percent; abundance_unc in percent. Second pass (2026-10-02): 58 odd-level lifetimes from Den Hartog et al., Astrophys. J. 619, 639 (2005), Table 1 (levels there carry the Blaise et al. 1992 energies, matched to the NIST levels within 0.04 cm^-1 (most within 0.02) and by J). Where Table 2 prints an explicit uncertainty it is used; otherwise the uncertainty is the paper's stated rule 'larger of 5 % or 0.2 ns'. The NIST A values of Pt I already come from this paper's Table 3, so no transition rates were added. Third pass (2026-10-02): 195Pt hyperfine constants of 14 levels, isotope shifts of 11 lines and four g_J values from (a) the scanned CERN preprint of Neu et al. 1987 (pages read as images, Table 1 and Table 2 each read twice at two resolutions) and (b) the tables of LaBelle et al. 1989 embedded in Wayback copies of the Optica abstract page (parsed from the HTML, two captures identical). All were printed in mK (10^-3 cm^-1) and converted to MHz. Level names in those papers differ from NIST for the mixed J=2 even levels: paper '5d9 6s 3D2' = NIST 775.8761 (a 1D2), paper '5d8 6s2 3P2' = NIST 6567.4517 (3D2), paper '5d9 6s 1D2' = NIST 13496.2595 (b 1D2); paper '5d8 6s6p 5G5' = NIST 33680.39 (a 5F°5); paper '8_3' = NIST 37769.0673. The matching used the transition wavelengths and the printed g_J values. Isotope-shift keys follow nu(first) - nu(second): Neu values are stored as heavier-minus-lighter (negative), LaBelle values as nu(A) - nu(194). The lifetimes shown in Fig. 1 of the Neu preprint (130(3), 17.2(5), 14.0(3) ns) are the Gough et al. 1982 values already stored as alternatives."
 }

@@ -3283,7 +3283,16 @@
      "method": "compilation",
      "note": "second-hand modeling constant, printed relative to 156Gd (taken as 0) without uncertainty; sign convention nu(A) - nu(156) inferred from the direction of the other Gd shifts, not stated explicitly",
      "source": "Rotter, Carson, Robben, Haynam, Johnson, Isselhardt, Appl. Phys. B 132, 100 (2026), Table 1 (read in the open report LLNL-JRNL-2015430)",
-     "url": "https://www.osti.gov/pages/servlets/purl/3691345"
+     "url": "https://www.osti.gov/pages/servlets/purl/3691345",
+     "alternatives": [
+      {
+       "value": -2188.5,
+       "method": "compilation",
+       "note": "second-hand: -0.073 cm-1 printed for the 575.188 nm line and attributed to Kronfeldt et al. (1988, 1990), Jin et al. 1990, Dutta et al. 1990 and Niki et al. 1989 (Odintsova and Striganov 1976: -0.072 cm-1); converted to MHz (derived unit conversion); originals not opened; sign taken as nu(160) - nu(156)",
+       "source": "Jin, Sakata, Wakasugi, Horiguchi, Yoshizawa, Phys. Rev. A 42, 1416 (1990) and others, as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 2 (p. 5)",
+       "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+      }
+     ]
     }
    }
   },
@@ -3428,6 +3437,25 @@
     "method": "compilation",
     "source": "Battles, \"Laser Cooling Transitions in Atomic Gadolinium\", thesis, University of Alabama at Birmingham (2020)",
     "url": "https://web.archive.org/web/20240708084202/https://digitalcommons.library.uab.edu/cgi/viewcontent.cgi?article=2115&context=etd-collection"
+   },
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3477.6,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.116 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 422.5850 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
+     "alternatives": [
+      {
+       "value": -3477.6,
+       "method": "compilation",
+       "note": "second-hand: -0.116 cm-1 printed in the 'Literature data' column, converted to MHz (derived unit conversion); original not opened; same sign convention assumed",
+       "source": "Blaum, Bushaw, Diel, Geppert, Kuschnick, Mueller, Noertershaeuser, Schmitt, Wendt, Eur. Phys. J. D 11, 37 (2000), as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1",
+       "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+      }
+     ]
+    }
    }
   },
   {
@@ -3509,6 +3537,807 @@
     "source": "Lawler, Bilty, Den Hartog, J. Phys. B 44, 095001 (2011), Table 6 (printed portion, p. 7)",
     "url": "https://iopscience.iop.org/article/10.1088/0953-4075/44/9/095001/pdf"
    }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 28414.925,
+   "lower_J": "5",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 4f8.(7F).5d.6s? 7F? J=5, 364.6480 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -2398.3,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.080 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 364.6480 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 7426.71,
+   "upper_cm": 34836.98,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 7D* J=3 - 4f7.(8S*).5d2.(3F) (8F*).6p? 9G? J=4, 364.720 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -2997.9,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.100 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 364.720 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 1719.087,
+   "upper_cm": 29119.955,
+   "lower_J": "6",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=6 - 9F? J=5, 364.848 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 364.848 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 27129.239,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "4f7.(8S*).5d.6s2 9D* J=2 - 9F J=1, 368.501 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3627.5,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.121 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 368.501 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 27041.751,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "4f7.(8S*).5d.6s2 9D* J=2 - 9F J=3, 369.693 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3597.5,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.120 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 369.693 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 1719.087,
+   "upper_cm": 28731.59,
+   "lower_J": "6",
+   "upper_J": "6",
+   "label": "4f7.(8S*).5d.6s2 9D* J=6 - 9F? J=6, 370.093 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -4077.2,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.136 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 370.093 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 215.124,
+   "upper_cm": 27040.865,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=3 - 9F J=4, 372.670 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3297.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.110 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 372.670 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 1719.087,
+   "upper_cm": 28504.435,
+   "lower_J": "6",
+   "upper_J": "7",
+   "label": "4f7.(8S*).5d.6s2 9D* J=6 - 9F? J=7, 373.2324 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -2997.9,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.100 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 373.2324 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 7426.71,
+   "upper_cm": 34147.343,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "4f7.(8S*).5d.6s2 7D* J=3 -  J=2, 374.136 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -2997.9,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.100 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 374.136 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 7234.91,
+   "upper_cm": 33704.627,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "4f7.(8S*).5d.6s2 7D* J=4 -  J=3, 377.683 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 377.683 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 532.977,
+   "upper_cm": 26866.385,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=4 - 4f7.(8S*).5d (7D*).6s.6p.(3P*) 7F J=4, 379.637 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3417.6,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.114 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 379.637 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 27040.865,
+   "lower_J": "5",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 9F J=4, 383.8900 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3687.4,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.123 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 383.8900 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 26615.044,
+   "lower_J": "5",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 4f7.(8S*).5d (7D*).6s.6p.(3P*) 7F J=5, 390.2709 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3927.3,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.131 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 390.2709 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 215.124,
+   "upper_cm": 24849.514,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=3 - 4f7.(8S*).5d (7D*).6s.6p.(3P*) J=4, 405.8219 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3297.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.110 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 405.8219 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 532.977,
+   "upper_cm": 25043.649,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=4 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=5, 407.8700 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3657.5,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.122 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 407.8700 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 6378.146,
+   "upper_cm": 30809.375,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "4f7.(8S*).5d2.(3F) (10F*).6s 11F* J=2 - 4f7.(8S*).5d.6s.6p? J=3, 409.1968 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -2638.2,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.088 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 409.1968 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 532.977,
+   "upper_cm": 24849.514,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=4 - 4f7.(8S*).5d (7D*).6s.6p.(3P*) J=4, 411.125 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 411.125 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 6378.146,
+   "upper_cm": 30694.874,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "4f7.(8S*).5d2.(3F) (10F*).6s 11F* J=2 - 4f7.(8S*).5d2.(3F) (10F*).6p 9F J=2, 411.125 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -1199.2,
+     "unc": 150.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.040 cm-1 (stated accuracy +-0.005 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 411.125 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 25043.649,
+   "lower_J": "5",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=5, 415.7784 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3747.4,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.125 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 415.7784 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 7426.71,
+   "upper_cm": 31327.52,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "4f7.(8S*).5d.6s2 7D* J=3 - 4f8.(7F).5d.6s? 7D? J=3, 418.2767 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3897.3,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.130 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 418.2767 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 24854.297,
+   "lower_J": "5",
+   "upper_J": "6",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 4f8.(7F).5d (8G).6s 9G J=6, 419.0776 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -4227.1,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.141 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 419.0776 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 24849.514,
+   "lower_J": "5",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 4f7.(8S*).5d (7D*).6s.6p.(3P*) J=4, 419.1626 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -2997.9,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.100 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 419.1626 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 1719.087,
+   "upper_cm": 25380.885,
+   "lower_J": "6",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=6 - 4f8.(7F).5d (8G).6s 9G J=5, 422.5028 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3897.3,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.130 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 422.5028 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 12486.547,
+   "upper_cm": 36147.13,
+   "lower_J": "7",
+   "upper_J": "6",
+   "label": "4f7.(8S*).5d2.(3F) (10F*).6s 9F* J=7 -  J=6, 422.5259 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -2098.5,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.070 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 422.5259 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 532.977,
+   "upper_cm": 23999.912,
+   "lower_J": "4",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=4 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=5, 426.0116 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 426.0116 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
+     "alternatives": [
+      {
+       "value": -3327.7,
+       "method": "compilation",
+       "note": "second-hand: -0.111 cm-1 printed in the 'Literature data' column, converted to MHz (derived unit conversion); original not opened; same sign convention assumed",
+       "source": "Blaum, Bushaw, Diel, Geppert, Kuschnick, Mueller, Noertershaeuser, Schmitt, Wendt, Eur. Phys. J. D 11, 37 (2000), as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1",
+       "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 24430.425,
+   "lower_J": "5",
+   "upper_J": "6",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=6, 426.6595 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3627.5,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.121 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 426.6595 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
+     "alternatives": [
+      {
+       "value": -3477.6,
+       "method": "compilation",
+       "note": "second-hand: -0.116 cm-1 printed in the 'Literature data' column, converted to MHz (derived unit conversion); original not opened; same sign convention assumed",
+       "source": "Blaum, Bushaw, Diel, Geppert, Kuschnick, Mueller, Noertershaeuser, Schmitt, Wendt, Eur. Phys. J. D 11, 37 (2000), as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1",
+       "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 215.124,
+   "upper_cm": 23644.156,
+   "lower_J": "3",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=3 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=4, 426.7002 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3627.5,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.121 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 426.7002 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
+     "alternatives": [
+      {
+       "value": -3387.7,
+       "method": "compilation",
+       "note": "second-hand: -0.113 cm-1 printed in the 'Literature data' column, converted to MHz (derived unit conversion); original not opened; same sign convention assumed",
+       "source": "Blaum, Bushaw, Diel, Geppert, Kuschnick, Mueller, Noertershaeuser, Schmitt, Wendt, Eur. Phys. J. D 11, 37 (2000), as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1",
+       "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23389.782,
+   "lower_J": "2",
+   "upper_J": "3",
+   "label": "4f7.(8S*).5d.6s2 9D* J=2 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=3, 427.4167 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 427.4167 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
+     "alternatives": [
+      {
+       "value": -3447.6,
+       "method": "compilation",
+       "note": "second-hand: -0.115 cm-1 printed in the 'Literature data' column, converted to MHz (derived unit conversion); original not opened; same sign convention assumed",
+       "source": "Blaum, Bushaw, Diel, Geppert, Kuschnick, Mueller, Noertershaeuser, Schmitt, Wendt, Eur. Phys. J. D 11, 37 (2000), as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1",
+       "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 1719.087,
+   "upper_cm": 25043.649,
+   "lower_J": "6",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=6 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=5, 428.6122 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3747.4,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.125 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 428.6122 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf",
+     "alternatives": [
+      {
+       "value": -3717.4,
+       "method": "compilation",
+       "note": "second-hand: -0.124 cm-1 printed in the 'Literature data' column, converted to MHz (derived unit conversion); original not opened; same sign convention assumed",
+       "source": "Blaum, Bushaw, Diel, Geppert, Kuschnick, Mueller, Noertershaeuser, Schmitt, Wendt, Eur. Phys. J. D 11, 37 (2000), as quoted by Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1",
+       "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23215.028,
+   "lower_J": "2",
+   "upper_J": "2",
+   "label": "4f7.(8S*).5d.6s2 9D* J=2 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=2, 430.6340 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3627.5,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.121 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 430.6340 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 215.124,
+   "upper_cm": 23389.782,
+   "lower_J": "3",
+   "upper_J": "3",
+   "label": "4f7.(8S*).5d.6s2 9D* J=3 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=3, 431.3845 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3297.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.110 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 431.3845 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 1719.087,
+   "upper_cm": 24854.297,
+   "lower_J": "6",
+   "upper_J": "6",
+   "label": "4f7.(8S*).5d.6s2 9D* J=6 - 4f8.(7F).5d (8G).6s 9G J=6, 432.1198 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -4227.1,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.141 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 432.1198 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 532.977,
+   "upper_cm": 23644.156,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=4 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=4, 432.5693 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 432.5693 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 0.0,
+   "upper_cm": 23103.66,
+   "lower_J": "2",
+   "upper_J": "1",
+   "label": "4f7.(8S*).5d.6s2 9D* J=2 - 4f7.(8S*).5d2.(3F) (10F*).6p J=1, 432.7125 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 432.7125 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 23999.912,
+   "lower_J": "5",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=5, 434.6458 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 434.6458 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 215.124,
+   "upper_cm": 23215.028,
+   "lower_J": "3",
+   "upper_J": "2",
+   "label": "4f7.(8S*).5d.6s2 9D* J=3 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=2, 434.6624 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 434.6624 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 532.977,
+   "upper_cm": 23389.782,
+   "lower_J": "4",
+   "upper_J": "3",
+   "label": "4f7.(8S*).5d.6s2 9D* J=4 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=3, 437.3833 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 437.3833 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 1719.087,
+   "upper_cm": 24430.425,
+   "lower_J": "6",
+   "upper_J": "6",
+   "label": "4f7.(8S*).5d.6s2 9D* J=6 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=6, 440.1857 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 440.1857 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 999.121,
+   "upper_cm": 23644.156,
+   "lower_J": "5",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d.6s2 9D* J=5 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=4, 441.4732 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 441.4732 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 1719.087,
+   "upper_cm": 23999.912,
+   "lower_J": "6",
+   "upper_J": "5",
+   "label": "4f7.(8S*).5d.6s2 9D* J=6 - 4f7.(8S*).5d (9D*).6s.6p.(1P*) J=5, 448.6900 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -3327.7,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.111 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 448.6900 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 8498.434,
+   "upper_cm": 30505.374,
+   "lower_J": "8",
+   "upper_J": "7",
+   "label": "4f7.(8S*).5d2.(3F) (10F*).6s 11F* J=8 - 4f7.(8S*).5d2.(3F) (10F*).6p 9G J=7, 454.274 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -2308.4,
+     "unc": 90.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.077 cm-1 (stated accuracy +-0.003 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 454.274 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
+  },
+  {
+   "lower_cm": 10883.505,
+   "upper_cm": 31135.795,
+   "lower_J": "4",
+   "upper_J": "4",
+   "label": "4f7.(8S*).5d2.(3F) (10F*).6s 9F* J=4 - 4f7.(8S*).5d2.(3F) (10F*).6p 9F J=4, 493.633 nm (air)",
+   "type": "E1",
+   "isotope_shift_MHz": {
+    "160-156": {
+     "value": -1349.1,
+     "unc": 150.0,
+     "method": "experiment",
+     "note": "derived: unit conversion of the printed isotope shift Delta-sigma(156,160) = -0.045 cm-1 (stated accuracy +-0.005 cm-1) to MHz; Fourier-transform spectrum of a liquid-nitrogen-cooled hollow-cathode lamp with enriched 156Gd and 160Gd; the paper does not state the sign convention explicitly: taken as nu(160) - nu(156) (heavier isotope at lower wavenumber), consistent with the laser values stored for the 575.19 nm line; line printed at 493.633 nm (air)",
+     "source": "Ankush, Deo, Journal of Spectroscopy 2013, 741020 (2013), Table 1 (p. 4)",
+     "url": "https://web.archive.org/web/20231123204530/https://downloads.hindawi.com/journals/jspec/2013/741020.pdf"
+    }
+   }
   }
  ],
  "conflicts": [
@@ -3518,15 +4347,17 @@
   "Lifetimes 10.8 ns (22334.508) and 13.7 ns (22563.824), now read directly in Den Hartog et al. 2011, are much shorter than 1/A of the single NIST-listed line from each level (26 ns and 33 ns): the old unrated NIST A values (T7227) are too small or other strong branches exist; the Lawler et al. 2011 line table that would settle it is a closed supplement.",
   "Lifetime of 27135.695 (9P3): Den Hartog 2011 gives 3.5 ns (entered) and Xu 2003 3.5(2) ns; Gorshkov 1983 (electron beam) 5.4(5) ns. With the NIST A values of the 368.4 and 371.4 nm lines (9.1e7 + 9.2e7 s-1) lifetime x sum(A) = 0.64. Likewise 27425.245: 4.0 ns vs Xu 3.9(2) and Gorshkov 6.7(5) ns.",
   "Den Hartog 2011 vs other lifetime sets (kept as alternatives): Gorshkov 1983 electron-beam values are longer by 13-65 % (cascade repopulation, per Den Hartog et al.); Xu 2003 agrees below 10 ns but is on average 9 % longer above 10 ns; Wang 2013 agrees within about 5 % (largest difference 31865.242: 5.3 vs 5.7(2) ns).",
-  "Ground level 9D°2 hyperfine constants: Unsworth 1969 (entered) A155 = 36.5753(98), B155 = 179.407(44), A157 = 47.9591(76), B157 = 191.161(72) MHz; the LLNL modeling table prints 36.575 / 179.4 / 47.95 / 191.16 MHz without signs - consistent."
+  "Ground level 9D°2 hyperfine constants: Unsworth 1969 (entered) A155 = 36.5753(98), B155 = 179.407(44), A157 = 47.9591(76), B157 = 191.161(72) MHz; the LLNL modeling table prints 36.575 / 179.4 / 47.95 / 191.16 MHz without signs - consistent.",
+  "156-160 isotope shifts of Ankush and Deo 2013 versus the literature values printed next to them in their Table 1: mostly within 0.007 cm-1 (210 MHz), but 422.5028 nm -0.130 vs -0.160 cm-1 (Ahmad et al. 1979), 418.2767 nm -0.130 vs -0.144, 419.0776 nm -0.141 vs -0.131, 432.1198 nm -0.141 vs -0.130/-0.132, 454.274 nm -0.077 vs -0.067. Against the laser values of Blaum et al. 2000 (second-hand): 426.6595 nm -0.121 vs -0.116, 426.7002 nm -0.121 vs -0.113, 427.4167 nm -0.111 vs -0.115 cm-1. The Ankush values are kept as entries because they were read directly; the Blaum laser values are probably more accurate."
  ],
  "not_found": [
-  "Full 1290-line table of experimental transition probabilities (Lawler, Bilty, Den Hartog, J. Phys. B 44, 095001 (2011), Table 6): online supplement (stacks.iop.org/JPhysB/44/095001/mmedia), blocked by the publisher bot check; only the 5 printed stub rows were read, none of them a drawn line. The A values the site shows for the drawn lines are still the older unrated NIST ones (reference T7227). Routes tried 2026-10-02: OpenAlex, Semantic Scholar, OSTI, NIST publication server, Lund portal (file link returns 403), Wayback Machine, publisher page.",
+  "Full 1290-line table of experimental transition probabilities (Lawler, Bilty, Den Hartog, J. Phys. B 44, 095001 (2011), Table 6): online supplement (stacks.iop.org/JPhysB/44/095001/mmedia), blocked by the publisher bot check; only the 5 printed stub rows were read, none of them a drawn line. The A values the site shows for the drawn lines are still the older unrated NIST ones (reference T7227). Routes tried 2026-10-02: OpenAlex, Semantic Scholar, OSTI, NIST publication server, Lund portal (file link returns 403), Wayback Machine, publisher page. Routes tried in the second pass of 2026-10-02: fetch tool and curl on iopscience.iop.org/article/10.1088/0953-4075/44/9/095001/data, .../pdf and the /0953-4075/44/9/095001/media path (all now redirect to the publisher bot check, validate.perfdrive.com, not pursued); stacks.iop.org/JPhysB/44/095001/mmedia (redirects to the journal home page); Wayback Machine index for the article, media and stacks addresses (no archived copy of the supplement); OpenAlex (closed, no repository copy); figshare and Zenodo search; the Texas lab-data page as.utexas.edu/~chris/lab.html (links only to the papers on ions); OSTI record (no full text). Still not obtained.",
   "Lifetimes of the drawn levels 14298.311 (11F3) and 15174.0 (11F5): not in Den Hartog et al. 2011, Xu et al. 2003 or Wang et al. 2013; no measurement located. (The other 15 drawn excited levels now have a lifetime.) Marek & Stahnke, Z. Phys. A 298, 81 (1980), Miyabe et al., Z. Phys. D 39, 181 (1997) and Gorshkov et al. (1983) were not opened; their values are entered only as quoted by Den Hartog et al.",
-  "J-dependent isotope shifts and hyperfine constants of the 4f7 5d 6s6p 9D and 9F levels (Jin et al., Phys. Rev. A 42, 1416 (1990); Blaum et al., Eur. Phys. J. D (2000), doi:10.1007/s100530070103; Niki et al. 2005, blue diode-laser lines): paywalled (APS, Springer redirects to login), no repository copy in OpenAlex / Semantic Scholar / OSTI; only abstracts read. So isotope shifts and upper-level hyperfine constants for the drawn 368-452 nm lines are still missing.",
+  "J-dependent isotope shifts and hyperfine constants of the 4f7 5d 6s6p 9D and 9F levels (Jin et al., Phys. Rev. A 42, 1416 (1990); Blaum et al., Eur. Phys. J. D (2000), doi:10.1007/s100530070103; Niki et al. 2005, blue diode-laser lines): paywalled (APS, Springer redirects to login), no repository copy in OpenAlex / Semantic Scholar / OSTI; only abstracts read. So isotope shifts and upper-level hyperfine constants for the drawn 368-452 nm lines are still missing. Routes tried in the second pass of 2026-10-02: Jin 1990: journals.aps.org/pra/pdf/10.1103/PhysRevA.42.1416 answers HTTP 401, link.aps.org leads to the abstract page only, no Wayback copy. Blaum 2000: link.springer.com article and PDF addresses redirect to the Springer login (idp.springer.com), OSTI records 15001364 and etdeweb 20089528 carry no full text, no Wayback copy. Partly filled instead from the open-access paper of Ankush and Deo, Journal of Spectroscopy 2013, 741020 (pdf/Gd_Ankush_2013.pdf, archived publisher PDF): 156-160 isotope shifts of 43 lines 364-494 nm (7 of them drawn lines: 405.82, 407.87, 419.08, 422.58, 431.38, 432.71, 440.19 nm), plus six Blaum 2000 and one Jin 1990 value as second-hand alternatives. Still missing: isotope shifts of the drawn 368.41, 371.36, 371.75, 378.31, 405.36, 417.55, 442.24, 443.06 and 451.97 nm lines, shifts for the other isotope pairs, and all upper-level hyperfine constants.",
   "Precise absolute transition frequencies (frequency-comb or wavemeter based): none found for Gd I.",
   "Laser cooling or trapping of Gd: no experimental demonstration found; only a thesis-level proposal (368 nm, 423 nm) and a Zeeman-slower test with a broadband diode laser.",
-  "Level 34586 cm^-1 (J = 1) of the LLNL photoionization scheme (lifetime 820 ns; 581.037 nm step with A = 2.305e5 s^-1) is not in the NIST level list used by the site and was not entered."
+  "Level 34586 cm^-1 (J = 1) of the LLNL photoionization scheme (lifetime 820 ns; 581.037 nm step with A = 2.305e5 s^-1) is not in the NIST level list used by the site and was not entered.",
+  "Ankush and Deo 2013, Table 1: six of the 49 rows were not entered - 367.405 nm (0-27425, IS -0.070 cm-1): printed classification does not reproduce the wavelength or violates the J selection rule with NIST levels; 395.925 nm (6976-32226): printed \"~0\", no number; 431.663 nm (7234-30394, IS -0.077 cm-1): printed classification does not reproduce the wavelength or violates the J selection rule with NIST levels; 437.0180 nm (6550-29426): printed \"~0\", no number; 462.2187 nm (7103-28414, IS -0.057 cm-1): printed classification does not reproduce the wavelength or violates the J selection rule with NIST levels; 491.945 nm (7103-27425): printed \"~0\", no number. The level isotope shifts of Tables 3-5 (derived by the authors from line shifts) and the literature line shifts of Table 2 (other than the 575.188 nm line) were not entered either."
  ],
- "notes": "Stable isotopes: 155Gd and 157Gd have I = 3/2 (both nuclear moments negative: mu = -0.2591 and -0.3398 nuclear magnetons in the IAEA table); the others have I = 0. Hyperfine convention: E = A K/2 + B [3K(K+1) - 4I(I+1)J(J+1)] / [8I(2I-1)J(2J-1)], K = F(F+1)-J(J+1)-I(I+1) (as printed by Adhikari et al.). Ground-term 9D°J (J = 2-6) hyperfine constants of 155Gd and 157Gd are from Unsworth 1969, Table 1 (scanned PDF pdf/Gd_Unsworth_1969.pdf, numbers checked against the page image, signs as printed); the unsigned LLNL modeling constants for 9D°2 are kept as alternatives and agree in magnitude. The LLNL constants for the 17380.827 level and the 575.19 nm line are modeling inputs printed without signs or uncertainties; treat them as indicative. Lifetimes: all 136 levels of Den Hartog, Bilty, Lawler 2011, Table 1 (pdf/Gd_DenHartog_2011.pdf; parsed from the PDF text, all matched to NIST energy and J within 0.002 cm-1); one common stated uncertainty of ±5 % (unc = 5 % of the value). Directly read values of Xu, Jiang, Svanberg 2003 (pdf/Gd_Xu_2003.pdf, 25 levels) and Wang et al. 2013 (pdf/Gd_Wang_2013.pdf, 27 levels; checked against the page image) are stored as \"alternatives\" where Den Hartog has the level, and as the entry for 13 levels that only they measured (30394.64, 35794.634, 36191.722, 36394.507 from Xu; 31327.52, 32226.746, 32272.125, 32549.565, 37090.08, 37284.744, 37425.155, 37809.508, 38434.97 from Wang). Values of Marek & Stahnke 1980, Miyabe 1997 and Gorshkov 1983 are second-hand (method \"compilation\") from the \"Other expt\" column of Den Hartog et al. Access note: the Journal of Physics B PDFs (Den Hartog 2011, Lawler 2011, Xu 2003, Wang 2013, which OpenAlex marks closed, and Unsworth 1969, bronze open) were served directly by iopscience.iop.org to the fetch tool without any login; the article HTML and supplement pages were blocked by a bot check and were not pursued. Sanity check: lifetime x (sum of NIST A values plus the A entered here) is at most 0.84 for the 18 levels that have both. Isotope-shift keys \"A-B\" mean nu(A) - nu(B). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source."
+ "notes": "Stable isotopes: 155Gd and 157Gd have I = 3/2 (both nuclear moments negative: mu = -0.2591 and -0.3398 nuclear magnetons in the IAEA table); the others have I = 0. Hyperfine convention: E = A K/2 + B [3K(K+1) - 4I(I+1)J(J+1)] / [8I(2I-1)J(2J-1)], K = F(F+1)-J(J+1)-I(I+1) (as printed by Adhikari et al.). Ground-term 9D°J (J = 2-6) hyperfine constants of 155Gd and 157Gd are from Unsworth 1969, Table 1 (scanned PDF pdf/Gd_Unsworth_1969.pdf, numbers checked against the page image, signs as printed); the unsigned LLNL modeling constants for 9D°2 are kept as alternatives and agree in magnitude. The LLNL constants for the 17380.827 level and the 575.19 nm line are modeling inputs printed without signs or uncertainties; treat them as indicative. Lifetimes: all 136 levels of Den Hartog, Bilty, Lawler 2011, Table 1 (pdf/Gd_DenHartog_2011.pdf; parsed from the PDF text, all matched to NIST energy and J within 0.002 cm-1); one common stated uncertainty of ±5 % (unc = 5 % of the value). Directly read values of Xu, Jiang, Svanberg 2003 (pdf/Gd_Xu_2003.pdf, 25 levels) and Wang et al. 2013 (pdf/Gd_Wang_2013.pdf, 27 levels; checked against the page image) are stored as \"alternatives\" where Den Hartog has the level, and as the entry for 13 levels that only they measured (30394.64, 35794.634, 36191.722, 36394.507 from Xu; 31327.52, 32226.746, 32272.125, 32549.565, 37090.08, 37284.744, 37425.155, 37809.508, 38434.97 from Wang). Values of Marek & Stahnke 1980, Miyabe 1997 and Gorshkov 1983 are second-hand (method \"compilation\") from the \"Other expt\" column of Den Hartog et al. Access note: the Journal of Physics B PDFs (Den Hartog 2011, Lawler 2011, Xu 2003, Wang 2013, which OpenAlex marks closed, and Unsworth 1969, bronze open) were served directly by iopscience.iop.org to the fetch tool without any login; the article HTML and supplement pages were blocked by a bot check and were not pursued. Sanity check: lifetime x (sum of NIST A values plus the A entered here) is at most 0.84 for the 18 levels that have both. Isotope-shift keys \"A-B\" mean nu(A) - nu(B). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source. Isotope shifts \"160-156\" of 43 lines between 364 and 494 nm are from Ankush and Deo, Journal of Spectroscopy 2013, 741020, Table 1 (open access; archived publisher PDF saved as pdf/Gd_Ankush_2013.pdf; parsed from the PDF text and each line matched to NIST levels by its printed truncated level energies, the air wavelength recomputed from the NIST energies agreeing within 0.01 nm, and the J selection rule). The paper prints Delta-sigma(156,160) in cm-1 (accuracy 0.003 cm-1 for shifts above 0.060 cm-1, 0.005 cm-1 below); the MHz values stored are that number times 29979.2458 and the sign is taken as nu(160) - nu(156), which the paper does not state explicitly. These are Doppler-limited Fourier-transform values on a 0.001 cm-1 grid (about 30 MHz); the value -0.111 cm-1 recurs in 16 lines. Literature values of Blaum et al. 2000 and Jin et al. 1990 quoted in that paper are stored as alternatives with method \"compilation\"."
 }

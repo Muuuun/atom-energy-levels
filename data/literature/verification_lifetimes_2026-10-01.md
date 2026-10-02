@@ -93,3 +93,33 @@ machine reading of the same deposit, which rules out a transcription error but n
     The 2013 rate paper has no line from these 13 levels; the others concern even-parity levels or do not tabulate lifetimes.
 - Still open: these 13 values rest on two readings of one deposit. To close it the owner needs the PDF of the 2013 lifetime
   paper or of the 2026 paper above.
+
+## Sm, the 13 single-read lifetimes: attempt through the publisher page (2026-10-02, later the same day)
+Result: the article of Den Hartog & Lawler, J. Phys. B 46, 185001 (2013) could again NOT be opened, so the "This work" column of
+the 13 rows still has no second independent printing. No value in Sm.json was corrected (nothing proves a misreading).
+
+- Publisher route: https://iopscience.iop.org/article/10.1088/0953-4075/46/18/185001, the same address with /pdf and /meta, and
+  http://stacks.iop.org/0953-4075/46/i=18/a=185001/pdf were each requested with the page reader; every one answers with a redirect
+  to a robot check (validate.perfdrive.com). The redirect was not followed. The page reader cannot open web.archive.org; the
+  Wayback index lists only captures of that same redirect (status 302). OpenAlex: closed, no repository copy. osti.gov: abstract only.
+  Yu, Wang, Yang (2026), https://www.sciencedirect.com/science/article/pii/S0022407326001974: "forbidden".
+- What was obtained instead: the paper behind footnote "j" of that table. Zhang, Feng, Dai, J. Opt. Soc. Am. B 27, 2255 (2010),
+  Table 1 (79 lifetimes of odd levels with J = 0-3) is embedded in the HTML of the publisher's abstract page
+  (https://opg.optica.org/josab/abstract.cfm?uri=josab-27-11-2255); its cells were extracted by program (text copy:
+  data/literature/pdf/Sm_Zhang_2010.txt). One reading by the page reader of the rows 27627-28856 cm^-1 gave the same numbers; a
+  second page-reader request returned no rows (it reported the table as subscriber-only), so the program extraction is the reading relied on.
+  For the 8 of the 13 levels that carry footnote "j", the 2010 paper prints (level, J, lifetime in ns):
+  27627.25 J=2 59.6(1.2); 27671.35 J=2 28.5(0.8); 27709.4 J=2 43.3(0.6); 27992.35 J=3 48.0(0.9); 28913.97 J=1 36.0(2.1);
+  29041.31 J=2 42.8(1.0); 29200.62 J=2 47.7(1.1); 29282.68 (sic; NIST and the 2013 table 29282.28) J=3 32.0(2.0).
+  These equal the "Other LIF experiment" column of the Figshare table for all 8 rows, and J agrees for all 8. So for these 8 rows the
+  deposit's level, J and comparison value are confirmed by an independent printing; the 2013 lifetime itself agrees with the 2010
+  measurement within 5 % for 7 of them and disagrees for 28913.97 (54.7 against 36.0(2.1) ns, a real disagreement between the two
+  experiments, already in `conflicts`).
+  In the whole table, all 18 levels common to both papers have a 2010 value equal to the footnote-"j" value stored in Sm.json.
+- Still without any outside check: 25572.10, 27263.07, 29023.96 (no other measurement exists) and 27406.90, 28250.02 (footnote "l",
+  probably Zhang, Feng, Sun, Dai, J. Phys. B 43, 235005 (2010), the J = 4-7 companion paper; iopscience.iop.org robot check, only the
+  abstract on osti.gov was read, so this attribution is not verified).
+- Changes to Sm.json: the 18 footnote-"j" alternatives now cite the 2010 paper directly (method "experiment"); 61 further levels
+  measured only in the 2010 paper were added with their lifetime. None of those 61 has a transition rate in NIST or in the 2013 rate
+  paper, so lifetime x sum(A) cannot be applied to them; they rest on the single program reading of the 2010 table.
+- To close the item the owner still needs the PDF of the 2013 lifetime paper.

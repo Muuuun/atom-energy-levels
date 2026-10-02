@@ -17,7 +17,7 @@
   "limit_text": "Nd$^+$ ionisation limit   44560.11 cm$^{-1}$  =  5.52475 eV  (224.416 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "Nd I lifetimes (second pass): 15 levels measured by Biemont et al. 2004 (opened, Lund University repository) and 84 lifetimes of Den Hartog, Fittante, Lawler 2011 read second-hand in two open theses (Ryder 2011 Table 5.2; Putnam 2014 Table 6.1) (method \"compilation\", no uncertainty printed; the original abstract quotes +/-5%). Where both exist the directly opened Biemont value is the entry and the Den Hartog value sits under the level key \"alternatives\" (each alternative names its quantity), except for 20300.875 cm^-1 where the Biemont value fails the tau x sum(A) check (see conflicts). Lifetimes were checked against the NIST A values: tau x sum(A) <= 0.96 for all drawn levels except those listed under conflicts. The branching-fraction paper (Stockett 2011) and the ground-term hyperfine paper (Childs & Goodman 1972) remain closed. Hyperfine A constants are for the even-parity metastable levels 7L5, 7L11, 7K4 (second-hand) and the ground level 5I4 of 143Nd (abstract of the original paper). Nuclear spins 7/2 for 143Nd and 145Nd from the IAEA/ENSDF ground-state table (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=143nd)."
+  "notes": "Nd I lifetimes (second pass): 15 levels measured by Biemont et al. 2004 (opened, Lund University repository) and 84 lifetimes of Den Hartog, Fittante, Lawler 2011 read second-hand in two open theses (Ryder 2011 Table 5.2; Putnam 2014 Table 6.1) (method \"compilation\", no uncertainty printed; the original abstract quotes +/-5%). Where both exist the directly opened Biemont value is the entry and the Den Hartog value sits under the level key \"alternatives\" (each alternative names its quantity), except for 20300.875 cm^-1 where the Biemont value fails the tau x sum(A) check (see conflicts). Lifetimes were checked against the NIST A values: tau x sum(A) <= 0.96 for all drawn levels except those listed under conflicts. The branching-fraction paper (Stockett 2011) and the ground-term hyperfine paper (Childs & Goodman 1972) remain closed. Hyperfine A constants are for the even-parity metastable levels 7L5, 7L11, 7K4 (second-hand) and the ground level 5I4 of 143Nd (abstract of the original paper). Nuclear spins 7/2 for 143Nd and 145Nd from the IAEA/ENSDF ground-state table (https://nds.iaea.org/relnsd/v1/data?fields=ground_states&nuclides=143nd). Third pass (2026-10-02): added (a) 38 Nd I lifetimes read directly in Gorshkov et al., Astrophysics 17, 437 (1982), Table 1 (Springer free preview): 3 levels that had no lifetime get it as the entry (19590.241, 22229.000, 23562.766), 2 second-hand quotes of the same numbers are replaced by the direct reading with uncertainty (19700.856, 25478.135), the rest sit under \"alternatives\" beside the laser-based values; (b) isotope shifts of 8 Nd I lines (567.6-630.2 nm) from van Leeuwen et al., Z. Phys. A 301, 95 (1981), Table 1, stored with keys written heavier-lighter (e.g. \"144-142\" = nu(144) - nu(142)) so that the printed sign is kept; the printed errors are three times the statistical error; (c) isotope shifts of the 562.2 nm line relative to 150Nd, second-hand (Suryanarayana 2022 quoting D'yachkov 2018), the odd-isotope values being calculated, not measured. The NIST lines file carries A values for only 9 Nd I lines, so the tau x sum(A) check could be applied only to the upper levels of those lines."
  },
  "columns": [
   {
@@ -146,6 +146,147 @@
   },
   {
    "id": 4,
+   "E": 15863.061,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f4.6s.6p",
+   "term": "7H*",
+   "parity": "odd",
+   "g": 1.02,
+   "name": "^7H^{o}_{4}",
+   "plain": "4f46s6p 7H°4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 5
+  },
+  {
+   "id": 5,
+   "E": 15898.902,
+   "unc": null,
+   "J": 3.0,
+   "conf": "4f3.(4I*).5d2.(3F) (4H*).6s",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.6,
+   "name": "(15899)^{o}_{3}",
+   "plain": "4f35d2 6s °3",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
+  },
+  {
+   "id": 6,
+   "E": 16059.191,
+   "unc": null,
+   "J": 4.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.713,
+   "name": "(16059)^{o}_{4}",
+   "plain": "°4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 5
+  },
+  {
+   "id": 7,
+   "E": 16757.037,
+   "unc": null,
+   "J": 5.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.035,
+   "name": "(16757)^{o}_{5}",
+   "plain": "°5",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 6
+  },
+  {
+   "id": 8,
+   "E": 16979.352,
+   "unc": null,
+   "J": 3.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.52,
+   "name": "(16979)^{o}_{3}",
+   "plain": "°3",
+   "tau_ns": 615.0,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Blagoev & Komarovskii (1994), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Table 5.2 (PDF pp. 191-196)",
+   "col": 4
+  },
+  {
+   "id": 9,
+   "E": 17162.93,
+   "unc": null,
+   "J": 5.0,
+   "conf": "4f4.6s.6p",
+   "term": "*",
+   "parity": "odd",
+   "g": 1.135,
+   "name": "(17163)^{o}_{5}",
+   "plain": "4f46s6p °5",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 6
+  },
+  {
+   "id": 10,
+   "E": 17786.992,
+   "unc": null,
+   "J": 3.0,
+   "conf": "4f3.(4F*).5d.6s2",
+   "term": "5H*",
+   "parity": "odd",
+   "g": 0.6,
+   "name": "^5H^{o}_{3}",
+   "plain": "4f35d6s2 5H°3",
+   "tau_ns": 76.3,
+   "tau_unc": null,
+   "tau_tier": "exp",
+   "tau_src": "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column",
+   "col": 4
+  },
+  {
+   "id": 11,
+   "E": 17790.018,
+   "unc": null,
+   "J": 4.0,
+   "conf": "",
+   "term": "*",
+   "parity": "odd",
+   "g": 0.92,
+   "name": "(17790)^{o}_{4}",
+   "plain": "°4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 5
+  },
+  {
+   "id": 12,
+   "E": 18741.337,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f3.(4F*).5d.6s2",
+   "term": "5H*",
+   "parity": "odd",
+   "g": 0.93,
+   "name": "^5H^{o}_{4}",
+   "plain": "4f35d6s2 5H°4",
+   "tau_ns": 83.0,
+   "tau_unc": 5.0,
+   "tau_tier": "exp",
+   "tau_src": "Biemont, Quinet, Svanberg, Xu, J. Phys. B 37, 1381 (2004), Table 2 (p. 1384), column \"This work\" (time-resolved laser-induced fluorescence, laser-ablation plume)",
+   "col": 5
+  },
+  {
+   "id": 13,
    "E": 20176.912,
    "unc": null,
    "J": 5.0,
@@ -162,7 +303,7 @@
    "col": 6
   },
   {
-   "id": 5,
+   "id": 14,
    "E": 20300.875,
    "unc": null,
    "J": 5.0,
@@ -179,7 +320,7 @@
    "col": 6
   },
   {
-   "id": 6,
+   "id": 15,
    "E": 21184.881,
    "unc": null,
    "J": 4.0,
@@ -196,7 +337,7 @@
    "col": 5
   },
   {
-   "id": 7,
+   "id": 16,
    "E": 21345.572,
    "unc": null,
    "J": 6.0,
@@ -211,7 +352,7 @@
    "col": 7
   },
   {
-   "id": 8,
+   "id": 17,
    "E": 21345.837,
    "unc": null,
    "J": 4.0,
@@ -228,7 +369,7 @@
    "col": 5
   },
   {
-   "id": 9,
+   "id": 18,
    "E": 21543.326,
    "unc": null,
    "J": 6.0,
@@ -245,7 +386,7 @@
    "col": 7
   },
   {
-   "id": 10,
+   "id": 19,
    "E": 21572.61,
    "unc": null,
    "J": 3.0,
@@ -262,7 +403,7 @@
    "col": 4
   },
   {
-   "id": 11,
+   "id": 20,
    "E": 23996.513,
    "unc": null,
    "J": 6.0,
@@ -279,7 +420,7 @@
    "col": 7
   },
   {
-   "id": 12,
+   "id": 21,
    "E": 25518.7,
    "unc": null,
    "J": 9.0,
@@ -303,7 +444,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 11,
+   "upper": 20,
    "wn": 21629.916,
    "lam": 462.3226,
    "air": 462.1932,
@@ -325,7 +466,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 10,
+   "upper": 19,
    "wn": 21572.61,
    "lam": 463.5508,
    "air": 463.421,
@@ -347,7 +488,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 8,
+   "upper": 17,
    "wn": 21345.837,
    "lam": 468.4754,
    "air": 468.3443,
@@ -369,7 +510,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 6,
+   "upper": 15,
    "wn": 21184.881,
    "lam": 472.0347,
    "air": 471.9027,
@@ -391,7 +532,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 12,
+   "upper": 21,
    "wn": 20470.098,
    "lam": 488.5174,
    "air": 488.381,
@@ -413,7 +554,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 9,
+   "upper": 18,
    "wn": 20415.27,
    "lam": 489.8294,
    "air": 489.6927,
@@ -435,7 +576,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 5,
+   "upper": 14,
    "wn": 20300.875,
    "lam": 492.5896,
    "air": 492.4521,
@@ -457,7 +598,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 7,
+   "upper": 16,
    "wn": 20217.516,
    "lam": 494.6206,
    "air": 494.4826,
@@ -476,7 +617,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 4,
+   "upper": 13,
    "wn": 20176.912,
    "lam": 495.616,
    "air": 495.4777,
@@ -491,12 +632,454 @@
    "br": 0.9454,
    "br_tier": "nist",
    "lam_obs": 495.616
+  },
+  {
+   "kind": "E1",
+   "freq": 533.24061,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 10,
+   "wn": 17786.992,
+   "lam": 562.2086,
+   "air": 562.0526,
+   "use": "first step of a three-step photoionization scheme proposed for 150Nd enrichment (Suryanarayana 2022)",
+   "isotope_shifts": {
+    "142-150": {
+     "value": -3048.0,
+     "unc": null,
+     "src": "D'yachkov et al., Quantum Electron. 48, 75 (2018) (original not opened), as tabulated in M. V. Suryanarayana, Sci. Rep. 12, 11471 (2022), Table 2 (p. 3), \"Isotope shift with reference to 150Nd (MHz)\" for the 562.2086 nm line",
+     "url": "https://www.nature.com/articles/s41598-022-15597-6"
+    },
+    "144-150": {
+     "value": -2448.0,
+     "unc": null,
+     "src": "D'yachkov et al., Quantum Electron. 48, 75 (2018) (original not opened), as tabulated in M. V. Suryanarayana, Sci. Rep. 12, 11471 (2022), Table 2 (p. 3), \"Isotope shift with reference to 150Nd (MHz)\" for the 562.2086 nm line",
+     "url": "https://www.nature.com/articles/s41598-022-15597-6"
+    },
+    "146-150": {
+     "value": -1833.0,
+     "unc": null,
+     "src": "D'yachkov et al., Quantum Electron. 48, 75 (2018) (original not opened), as tabulated in M. V. Suryanarayana, Sci. Rep. 12, 11471 (2022), Table 2 (p. 3), \"Isotope shift with reference to 150Nd (MHz)\" for the 562.2086 nm line",
+     "url": "https://www.nature.com/articles/s41598-022-15597-6"
+    },
+    "148-150": {
+     "value": -1131.0,
+     "unc": null,
+     "src": "D'yachkov et al., Quantum Electron. 48, 75 (2018) (original not opened), as tabulated in M. V. Suryanarayana, Sci. Rep. 12, 11471 (2022), Table 2 (p. 3), \"Isotope shift with reference to 150Nd (MHz)\" for the 562.2086 nm line",
+     "url": "https://www.nature.com/articles/s41598-022-15597-6"
+    },
+    "143-150": {
+     "value": -3060.0,
+     "unc": null,
+     "src": "D'yachkov et al., Quantum Electron. 48, 75 (2018) (original not opened), as tabulated in M. V. Suryanarayana, Sci. Rep. 12, 11471 (2022), Table 2 (p. 3), \"Isotope shift with reference to 150Nd (MHz)\" for the 562.2086 nm line",
+     "url": "https://www.nature.com/articles/s41598-022-15597-6"
+    },
+    "145-150": {
+     "value": -2300.0,
+     "unc": null,
+     "src": "D'yachkov et al., Quantum Electron. 48, 75 (2018) (original not opened), as tabulated in M. V. Suryanarayana, Sci. Rep. 12, 11471 (2022), Table 2 (p. 3), \"Isotope shift with reference to 150Nd (MHz)\" for the 562.2086 nm line",
+     "url": "https://www.nature.com/articles/s41598-022-15597-6"
+    }
+   },
+   "gamma_MHz": 2.086,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 528.03288,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 12,
+   "wn": 17613.281,
+   "lam": 567.7534,
+   "air": 567.5959,
+   "isotope_shifts": {
+    "144-142": {
+     "value": 657.5,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "146-144": {
+     "value": 586.9,
+     "unc": 0.5,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "148-146": {
+     "value": 720.7,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "150-148": {
+     "value": 1169.4,
+     "unc": 0.8,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "143-142": {
+     "value": 257.6,
+     "unc": 0.5,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "145-144": {
+     "value": 190.2,
+     "unc": 0.4,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    }
+   },
+   "gamma_MHz": 1.918,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 514.5317,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 9,
+   "wn": 17162.93,
+   "lam": 582.6511,
+   "air": 582.4896,
+   "isotope_shifts": {
+    "144-142": {
+     "value": -262.2,
+     "unc": 0.9,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "146-144": {
+     "value": -265.8,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "148-146": {
+     "value": -228.5,
+     "unc": 0.5,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "150-148": {
+     "value": -127.1,
+     "unc": 0.2,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "143-142": {
+     "value": -146.7,
+     "unc": 0.7,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "145-144": {
+     "value": -155.2,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 509.02817,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 8,
+   "wn": 16979.352,
+   "lam": 588.9506,
+   "air": 588.7874,
+   "isotope_shifts": {
+    "144-142": {
+     "value": -223.7,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "146-144": {
+     "value": -227.1,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "148-146": {
+     "value": -194.4,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "150-148": {
+     "value": -105.8,
+     "unc": 0.2,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "143-142": {
+     "value": -126.5,
+     "unc": 0.2,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "145-144": {
+     "value": -133.4,
+     "unc": 0.2,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    }
+   },
+   "gamma_MHz": 0.2588,
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 502.36333,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 7,
+   "wn": 16757.037,
+   "lam": 596.7642,
+   "air": 596.5989,
+   "isotope_shifts": {
+    "144-142": {
+     "value": -872.3,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "146-144": {
+     "value": -818.5,
+     "unc": 0.4,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "148-146": {
+     "value": -882.3,
+     "unc": 0.7,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "150-148": {
+     "value": -1126.9,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "143-142": {
+     "value": -396.8,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "145-144": {
+     "value": -352.1,
+     "unc": 0.4,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 499.51305,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 1,
+   "upper": 11,
+   "wn": 16661.962,
+   "lam": 600.1694,
+   "air": 600.0032,
+   "isotope_shifts": {
+    "144-142": {
+     "value": -818.3,
+     "unc": 0.9,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "146-144": {
+     "value": -769.7,
+     "unc": 0.9,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "148-146": {
+     "value": -824.4,
+     "unc": 0.9,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "150-148": {
+     "value": -1040.4,
+     "unc": 0.8,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "143-142": {
+     "value": -391.4,
+     "unc": 0.7,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "145-144": {
+     "value": -340.5,
+     "unc": 0.7,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 481.44243,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 6,
+   "wn": 16059.191,
+   "lam": 622.6964,
+   "air": 622.5241,
+   "isotope_shifts": {
+    "144-142": {
+     "value": -382.4,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "146-144": {
+     "value": -373.1,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "148-146": {
+     "value": -359.0,
+     "unc": 0.4,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "150-148": {
+     "value": -337.2,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "143-142": {
+     "value": -194.5,
+     "unc": 0.2,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "145-144": {
+     "value": -190.7,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 476.63709,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 5,
+   "wn": 15898.902,
+   "lam": 628.9743,
+   "air": 628.8003,
+   "isotope_shifts": {
+    "144-142": {
+     "value": -673.7,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "146-144": {
+     "value": -638.3,
+     "unc": 0.9,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "148-146": {
+     "value": -669.9,
+     "unc": 0.9,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "150-148": {
+     "value": -802.8,
+     "unc": 0.5,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "143-142": {
+     "value": -315.6,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "145-144": {
+     "value": -287.6,
+     "unc": 0.6,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    }
+   },
+   "type": "E1"
+  },
+  {
+   "kind": "E1",
+   "freq": 475.5626,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 4,
+   "wn": 15863.061,
+   "lam": 630.3954,
+   "air": 630.2211,
+   "isotope_shifts": {
+    "144-142": {
+     "value": -324.9,
+     "unc": 0.9,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "146-144": {
+     "value": -321.8,
+     "unc": 0.5,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "148-146": {
+     "value": -296.7,
+     "unc": 0.7,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    },
+    "150-148": {
+     "value": -236.7,
+     "unc": 0.3,
+     "src": "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)",
+     "url": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237"
+    }
+   },
+   "type": "E1 (intercombination)"
   }
  ],
  "rydberg_levels": [],
  "tables": [
   {
-   "title": "Strongest transitions",
+   "title": "Key transitions",
    "header": [
     "Transition",
     "λ vac (nm)",
@@ -511,103 +1094,15 @@
    "aligns": "lrrrrrrrl",
    "rows": [
     [
-     "$^5I_{6}$ – $(23997)^{o}_{6}$",
-     "462.3226",
-     "462.1932",
-     "648.4486",
-     "5.959",
-     "5.600e+07",
-     "7.918",
-     "100",
-     ""
-    ],
-    [
      "$^5I_{4}$ – $^5H^{o}_{3}$",
-     "463.5508",
-     "463.4210",
-     "646.7306",
-     "5.377",
-     "8.400e+07",
-     "14.08",
-     "94.9",
-     ""
-    ],
-    [
-     "$^5I_{4}$ – $(21346)^{o}_{4}$",
-     "468.4754",
-     "468.3443",
-     "639.9321",
-     "4.873",
-     "5.200e+07",
-     "7.764",
-     "100",
-     ""
-    ],
-    [
-     "$^5I_{4}$ – $(21185)^{o}_{4}$",
-     "472.0347",
-     "471.9027",
-     "635.1068",
-     "3.927",
-     "3.300e+07",
-     "5.545",
-     "94.7",
-     ""
-    ],
-    [
-     "$^5I_{8}$ – $^5K^{o}_{9}$",
-     "488.5174",
-     "488.3810",
-     "613.6781",
-     "9.809",
-     "8.800e+07",
-     "17.11",
-     "81.8",
-     ""
-    ],
-    [
-     "$^5I_{5}$ – $^5K^{o}_{6}$",
-     "489.8294",
-     "489.6927",
-     "612.0344",
-     "6.670",
-     "5.900e+07",
-     "9.947",
-     "94.4",
-     ""
-    ],
-    [
-     "$^5I_{4}$ – $^5K^{o}_{5}$",
-     "492.5896",
-     "492.4521",
-     "608.6049",
-     "7.642",
-     "9.000e+07",
-     "15.01",
-     "95.4",
-     ""
-    ],
-    [
-     "$^5I_{5}$ – $(21346)^{o}_{6}$",
-     "494.6206",
-     "494.4826",
-     "606.1059",
-     "7.212",
-     "6.700e+07",
+     "562.2086",
+     "562.0526",
+     "533.2406",
      "–",
      "–",
-     ""
-    ],
-    [
-     "$^5I_{4}$ – $(20177)^{o}_{5}$",
-     "495.6160",
-     "495.4777",
-     "604.8886",
-     "4.378",
-     "2.900e+07",
-     "4.882",
-     "94.5",
-     ""
+     "2.086",
+     "–",
+     "first step of a three-step photoionization scheme propose…"
     ]
    ],
    "note": "λ, ν from NIST level energies unless a measured frequency for this isotope is available.  A: measured value or NIST.\nΓ/2π: natural linewidth of the upper level, 1/(2πτ)."
@@ -630,12 +1125,157 @@
     ]
    ],
    "note": "Measured A, B constants; sources in the data file."
+  },
+  {
+   "title": "Isotope shifts",
+   "header": [
+    "Transition",
+    "λ vac (nm)",
+    "Isotopes",
+    "Shift (MHz)"
+   ],
+   "aligns": "lrlr",
+   "rows": [
+    [
+     "$^5I_{4}$ – $^5H^{o}_{3}$",
+     "562.209",
+     "142-150",
+     "-3048.00"
+    ],
+    [
+     "$^5I_{4}$ – $^5H^{o}_{3}$",
+     "562.209",
+     "144-150",
+     "-2448.00"
+    ],
+    [
+     "$^5I_{4}$ – $^5H^{o}_{3}$",
+     "562.209",
+     "146-150",
+     "-1833.00"
+    ],
+    [
+     "$^5I_{4}$ – $^5H^{o}_{3}$",
+     "562.209",
+     "148-150",
+     "-1131.00"
+    ],
+    [
+     "$^5I_{4}$ – $^5H^{o}_{3}$",
+     "562.209",
+     "143-150",
+     "-3060.00"
+    ],
+    [
+     "$^5I_{4}$ – $^5H^{o}_{3}$",
+     "562.209",
+     "145-150",
+     "-2300.00"
+    ],
+    [
+     "$^5I_{5}$ – $^5H^{o}_{4}$",
+     "567.753",
+     "144-142",
+     "657.5(6)"
+    ],
+    [
+     "$^5I_{5}$ – $^5H^{o}_{4}$",
+     "567.753",
+     "146-144",
+     "586.9(5)"
+    ],
+    [
+     "$^5I_{5}$ – $^5H^{o}_{4}$",
+     "567.753",
+     "148-146",
+     "720.7(6)"
+    ],
+    [
+     "$^5I_{5}$ – $^5H^{o}_{4}$",
+     "567.753",
+     "150-148",
+     "1169.4(8)"
+    ],
+    [
+     "$^5I_{5}$ – $^5H^{o}_{4}$",
+     "567.753",
+     "143-142",
+     "257.6(5)"
+    ],
+    [
+     "$^5I_{5}$ – $^5H^{o}_{4}$",
+     "567.753",
+     "145-144",
+     "190.2(4)"
+    ],
+    [
+     "$^5I_{4}$ – $(17163)^{o}_{5}$",
+     "582.651",
+     "144-142",
+     "-262.2(9)"
+    ],
+    [
+     "$^5I_{4}$ – $(17163)^{o}_{5}$",
+     "582.651",
+     "146-144",
+     "-265.8(6)"
+    ],
+    [
+     "$^5I_{4}$ – $(17163)^{o}_{5}$",
+     "582.651",
+     "148-146",
+     "-228.5(5)"
+    ],
+    [
+     "$^5I_{4}$ – $(17163)^{o}_{5}$",
+     "582.651",
+     "150-148",
+     "-127.10(20)"
+    ],
+    [
+     "$^5I_{4}$ – $(17163)^{o}_{5}$",
+     "582.651",
+     "143-142",
+     "-146.7(7)"
+    ],
+    [
+     "$^5I_{4}$ – $(17163)^{o}_{5}$",
+     "582.651",
+     "145-144",
+     "-155.2(6)"
+    ],
+    [
+     "$^5I_{4}$ – $(16979)^{o}_{3}$",
+     "588.951",
+     "144-142",
+     "-223.7(3)"
+    ],
+    [
+     "$^5I_{4}$ – $(16979)^{o}_{3}$",
+     "588.951",
+     "146-144",
+     "-227.1(3)"
+    ],
+    [
+     "$^5I_{4}$ – $(16979)^{o}_{3}$",
+     "588.951",
+     "148-146",
+     "-194.4(3)"
+    ],
+    [
+     "$^5I_{4}$ – $(16979)^{o}_{3}$",
+     "588.951",
+     "150-148",
+     "-105.80(20)"
+    ]
+   ],
+   "note": "Shift = ν(first isotope) − ν(second isotope)."
   }
  ],
  "validation": [
-  "levels: 13   lines < 2000 nm: 9   with matrix element: 9",
-  "transition-rate provenance: nist: 9",
-  "levels with a measured lifetime: 8"
+  "levels: 22   lines < 2000 nm: 18   with matrix element: 9",
+  "transition-rate provenance: nist: 9, wavelength only: 9",
+  "levels with a measured lifetime: 11"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Nd); nuclear spin from IAEA Nuclear Data Services ground-state table (ENSDF)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Nd",
@@ -644,10 +1284,11 @@
   "Childs, Phys. Rev. A 44, 760 (1991) (laser-rf double resonance), as tabulated in Persson, 'Hyperfine anomalies in Gd and Nd', arXiv:0904.0516v2 (published Atoms 6, 63 (2018)), Table 1": "https://arxiv.org/abs/0904.0516",
   "Blagoev & Komarovskii (1994), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Table 5.2 (PDF pp. 191-196)": "http://web.archive.org/web/20250326111002/https://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1473&context=oa_dissertations",
   "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011) (time-resolved laser-induced fluorescence on an atomic beam), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Dissertations Paper 474, Table 5.2 \"Nd I radiative properties\" (thesis pp. 171-176, PDF pp. 191-196), lifetime column": "http://web.archive.org/web/20250326111002/https://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1473&context=oa_dissertations",
+  "Gorshkov, Komarovskii, Osherovich, Penkin, Astrophysics 17, 437 (1982) [transl. of Astrofizika 17, 799 (1981)], Table 1 (p. 438), column tau (delayed coincidence, crossed atomic and electron beams); read from the publisher free two-page preview (pp. 437-438)": "https://page-one.springer.com/pdf/preview/10.1007/BF01004243",
   "Biemont, Quinet, Svanberg, Xu, J. Phys. B 37, 1381 (2004), Table 2 (p. 1384), column \"This work\" (time-resolved laser-induced fluorescence, laser-ablation plume)": "https://lup.lub.lu.se/search/files/4681298/2368886.pdf",
   "Marek & Stahnke, Z. Phys. A 298, 81 (1980) (delayed coincidence with laser excitation), as quoted in Biemont et al., J. Phys. B 37, 1381 (2004), Table 2, column \"Previous\"": "https://lup.lub.lu.se/search/files/4681298/2368886.pdf",
-  "Gorshkov, Komarovskii, Osherovich, Penkin (1982) (pulsed-electron delayed coincidence), as quoted in Biemont et al., J. Phys. B 37, 1381 (2004), Table 2, column \"Previous\"": "https://lup.lub.lu.se/search/files/4681298/2368886.pdf",
-  "Gorshkov, Komarovskii, Osherovich, Penkin (1982), as adopted in C. A. Ryder, PhD thesis, Wayne State University (2011), Table 5.2 (PDF pp. 191-196)": "http://web.archive.org/web/20250326111002/https://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1473&context=oa_dissertations",
-  "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011), as adopted in R. Putnam, thesis \"Recent Advances in the Measurement of Rare-Earth Metal Transition Probabilities Using Laser-Induced Plasmas\", University of Windsor (2014), Table 6.1 (PDF pp. 74-75), lifetime column": "http://web.archive.org/web/20240916063810/https://scholar.uwindsor.ca/cgi/viewcontent.cgi?article=6274&context=etd"
+  "Den Hartog, Fittante, Lawler, J. Phys. B 44, 225001 (2011), as adopted in R. Putnam, thesis \"Recent Advances in the Measurement of Rare-Earth Metal Transition Probabilities Using Laser-Induced Plasmas\", University of Windsor (2014), Table 6.1 (PDF pp. 74-75), lifetime column": "http://web.archive.org/web/20240916063810/https://scholar.uwindsor.ca/cgi/viewcontent.cgi?article=6274&context=etd",
+  "van Leeuwen, Eliel, Post, Hogervorst, Z. Phys. A 301, 95 (1981), Table 1 (p. 96) (cw ring dye laser on a collimated atomic beam; errors are three times the statistical error); read from the publisher free two-page preview (pp. 95-96)": "https://page-one.springer.com/pdf/preview/10.1007/BF01419237",
+  "D'yachkov et al., Quantum Electron. 48, 75 (2018) (original not opened), as tabulated in M. V. Suryanarayana, Sci. Rep. 12, 11471 (2022), Table 2 (p. 3), \"Isotope shift with reference to 150Nd (MHz)\" for the 562.2086 nm line": "https://www.nature.com/articles/s41598-022-15597-6"
  }
 }
