@@ -82,6 +82,11 @@ The file must be valid JSON (check it with `python3 -m json.tool`).
 - **Measured level energies**: `"measured_energy_cm"` on a level, either one entry or `{"<A>": entry}` per isotope. Use
   `method: "experiment"` only for a measurement whose paper you opened, and write the publication year in parentheses in
   `source`: the pipeline replaces the NIST energy only with measurements of the last 20 years.
+- **Levels NIST does not list** (actinides, newly found levels): top-level `"levels_not_in_nist": [{"energy_cm", "J",
+  "configuration" (NIST style, e.g. "5f3.6d.7s2", "" if unknown), "term" ("" if unknown), "parity" ("odd"/"even"),
+  "g_J" (optional), "unc", "method", "source", "url"}]`. The pipeline adds them to the level list; lifetimes, hyperfine
+  constants and transitions then refer to them through `nist_energy_cm` / `lower_cm` / `upper_cm` = that `energy_cm`.
+  Transitions without a rate may carry `"relative_intensity"` (number) so the strongest are drawn (at most ~90 lines per page).
 - **Privacy**: never put the user's e-mail address or any personal identifier into request headers or query parameters.
 - What the site currently draws for an element is in `data/<symbol lowercase>/levels.csv` and `transitions.csv`
   (NIST-only pages) — cover those levels first, then add the lines NIST lacks that laser-cooling / spectroscopy work uses.

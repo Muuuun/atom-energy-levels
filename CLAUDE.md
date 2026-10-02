@@ -4,6 +4,8 @@ Site: https://muuuun.github.io/atom-energy-levels/ · Repo: https://github.com/M
 GitHub Pages from `docs/` on `main`). This folder is its own git repo, nested inside the untracked home-directory repo.
 The owner reads Chinese; reply in Chinese and spell out abbreviations.
 
+**Remaining work: see `PLAN.md` (written 2026-10-02) and follow it.**
+
 ## The owner's rules
 
 - Numbers must be experimental or NIST wherever possible. Priority for every value:

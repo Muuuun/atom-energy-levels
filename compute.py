@@ -479,6 +479,22 @@ def build_nist(key, cfg):
             hfs_iso = max(with_hfs, key=lambda k: (ab(k) if k in iso else -1, n_hfs(k)))
             cfg = dict(cfg, I=str((iso.get(hfs_iso) or {}).get("I", "0")) if isinstance(iso.get(hfs_iso), dict) else "0")
     nist, limit = al.nist_levels(sym)
+    # levels NIST does not carry (actinides: only the ground level is in ASD), taken from the literature file
+    for x in lit.raw.get("levels_not_in_nist", []):
+        if not isinstance(x.get("energy_cm"), (int, float)) or any(abs(l["E"] - x["energy_cm"]) < 0.05 for l in nist):
+            continue
+        try:
+            j = float(Fraction(str(x.get("J"))))
+        except (ValueError, ZeroDivisionError):
+            continue
+        term = x.get("term") or ""
+        if x.get("parity") == "odd" and "*" not in term:
+            term += "*"
+        nist.append(dict(conf=x.get("configuration") or "", term=term, J=j, E=x["energy_cm"], unc=x.get("unc"), g=x.get("g_J"),
+                         lit=(TIER_OF.get(x.get("method"), "exp"), x.get("source", ""))))
+    nist.sort(key=lambda l: l["E"])
+    for i, l in enumerate(nist):
+        l["i"] = i
     lines = al.nist_lines(sym, 1 if cfg.get("auto") else 200)
     E = np.array([l["E"] for l in nist])
 
@@ -504,7 +520,8 @@ def build_nist(key, cfg):
         merge_line(chosen, (lo["i"], up["i"]), ln)
     def lit_rank(lt):  # annotated lines first, then the strongest
         v = Literature.val(lt.get("A_s"))
-        return (0 if lt.get("use") else 1, -(v[0] if v else 0))
+        inten = lt.get("relative_intensity")
+        return (0 if lt.get("use") else 1, -(v[0] if v else 0), -(inten if isinstance(inten, (int, float)) else 0))
 
     for lt in sorted(lit.raw.get("transitions", []), key=lit_rank):
         lo, up = find(lt.get("lower_cm", -1e9), j=jof(lt.get("lower_J"))), find(lt.get("upper_cm", -1e9), j=jof(lt.get("upper_J")))
@@ -555,6 +572,8 @@ def build_nist(key, cfg):
         em = lit.energy(lv["E"], lv["J"], lv["unc"]) if lv["E"] else None
         if em:
             L.update(E=em[0], unc=em[1], E_nist=lv["E"], E_tier="exp", E_src=em[2])
+        elif lv.get("lit"):
+            L.update(E_tier=lv["lit"][0], E_src=lv["lit"][1])
         tau = lit.lifetime_ns(lv["E"], lv["J"])
         if lv["E"] == 0:
             L.update(tau_ns=None, tau_tier="stable")
