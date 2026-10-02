@@ -77,7 +77,9 @@ requests, mark derived / second-hand values, list conflicts.
 
 None. (Boron 249.75 nm isotope-shift sign: resolved 2026-10-02, Tables I and II of Maass et al. 2019 define nu(10B) - nu(11B)
 and print it positive. Copper 4P3/2 lifetime: the direct 1968 measurement 318(16) ns is shown.)
-The owner still has to submit the sitemap in Google Search Console and, if wanted, download the papers on the list.
+Owner's decision 2026-10-02 (night): the elements whose papers stay closed are left as they are; do not run further
+literature passes unless the owner supplies PDFs or asks. The sitemap still has to be submitted in Google Search Console by the
+owner (Bing / IndexNow was notified on 2026-10-02; the key file is in `docs/`).
 
 ## Known limitations
 
