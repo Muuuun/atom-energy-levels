@@ -53,6 +53,66 @@ def fmt_d(d):
     return f"{d:.2f}" if d >= 10 else f"{d:.3f}" if d >= 0.1 else f"{d:.3g}"
 
 
+def sci(x):
+    m, e = f"{x:.2e}".split("e")
+    return f"{float(m):g} × 10<sup>{str(int(e)).replace('-', '−')}</sup>"
+
+
+def fmt_share(x):
+    return f"{x * 100:.3g} %" if x >= 1e-3 else sci(x)
+
+
+def fmt_count(n):
+    return f"{n:.2g}" if n < 100 else f"{round(n):,}" if n < 1e6 else sci(n)
+
+
+FROM = {"exp": "from measured data", "nist": "from NIST data", "theory": "from theory", "model": "from model calc."}
+
+
+def cycling_section(L, T, iso):
+    """Closed and nearly closed lines (cycling.py): those that start on the ground or a metastable level and leak at most 10 %.
+    A lower limit that leaves more than three possible decay paths without a rate says too little to be listed."""
+    mark = lambda s, tier: ("≈ " if tier == "model" else "") + s + ("*" if tier == "theory" else "")
+    name = lambda r: al.tex_to_html(L[r["lv"]]["name"]) if "lv" in r else r["html"]
+    picked = [t for t in T if t.get("cyc") and t["cyc"]["lower"] != "decays"
+              and (t["cyc"]["cls"] == "closed" or (t["cyc"]["cls"] == "leak" and t["cyc"]["leak"] <= 0.1
+                                                   and not (t["cyc"]["bound"] and t["cyc"]["n_open"] > 3)))]
+    picked.sort(key=lambda t: (t["cyc"].get("leak", 0), -(t.get("A") or 0)))
+    rows = []
+    for t in picked[:20]:
+        c = t["cyc"]
+        cells = [f'{al.tex_to_html(L[t["lower"]]["name"])} → {al.tex_to_html(L[t["upper"]]["name"])}', f"{t['lam']:.4f}",
+                 "ground" if c["lower"] == "ground" else "metastable", f"{t['A']:.3e}" + badge(t.get("A_tier")) if t.get("A") else "–"]
+        if c["cls"] == "closed":
+            cells += ["closed", "–", "no other level can be reached by electric-dipole decay"]
+        else:
+            to = [f'{name(r)} {mark(fmt_share(r["f"]), r["tier"])}' + (" (long-lived)" if r["dark"] else "") for r in c["ch"][:3]]
+            if len(c["ch"]) + c.get("more", 0) > 3:
+                to.append(f'{len(c["ch"]) + c.get("more", 0) - 3} weaker lines')
+            if c["bound"]:
+                to.append(f'{c["n_open"]} more possible path{"s" if c["n_open"] > 1 else ""} without a listed rate')
+            if c["basis"] == "direct" and not to:
+                to.append("leak channels not listed")
+            elif c.get("ch_sum") and not 0.5 < c["ch_sum"] / c["leak"] < 2:  # e.g. a measured leak next to calculated lines
+                to.append(f'the listed lines add up to {mark(fmt_share(c["ch_sum"]), c["ch_tier"])}')
+            cells += [("≥ " if c["bound"] else "") + fmt_share(c["leak"]) + (f' <span class="tier {c["tier"]}">{FROM[c["tier"]]}</span>' if c["tier"] in FROM else ""), ("≤ " if c["bound"] else "") + fmt_count(c["n"]), "; ".join(to)]
+        rows.append(cells)
+    if not rows:
+        return ""
+    return (f"<h2>Closed and nearly closed transitions of {iso}</h2>"
+            + table(["Transition", "λ vacuum (nm)", "Lower level", "A (s⁻¹)", "Leak per scattered photon", "Photons before a leak", "Where the leak goes"],
+                    rows, left=(0, 2, 6), wrap=(6,))
+            + '<p class="note">A transition is closed when its upper level can decay only to the level it was excited from, so the atom keeps '
+              "scattering photons. “closed”: among the levels NIST lists, no other level below the upper level has the opposite parity and "
+              "|ΔJ| ≤ 1, so no other electric-dipole decay exists. Otherwise the leak is the sum of the branching ratios of the other "
+              "decay lines of the upper level (or 1 − branching ratio where that of the line itself has been measured), and the number of "
+              "photons is 1 / leak. “≥” and “≤”: at least one possible decay path has no listed rate, so the leak is a lower limit.\n"
+              "These numbers are derived from the branching ratios, lifetimes and rates of this page, not measured as such; the tag names the "
+              "weakest of the inputs, * marks theory and ≈ a model calculation. Listed: lines that start on the ground level or on a metastable level "
+              "and leak at most 10 %, unless more than three possible decay paths have no listed rate. Fine-structure levels only: hyperfine and Zeeman dark states and forbidden decays without a listed rate "
+              "are not considered. Select a line in the diagram for the full list of its leak channels.</p>")
+
+
 def cite(atom, s):
     """Citation text linked to its URL (NIST or the literature entry it starts with)."""
     if not s:
@@ -218,6 +278,8 @@ def atom_page(key, pages):
         parts.append(table([cell(h) for h in tb["header"]], [[cell(c) for c in r] for r in tb["rows"]], left=left, wrap=[len(tb["header"]) - 1]))
         if tb.get("note"):
             parts.append(f'<p class="note">{html.escape(tb["note"])}</p>')
+
+    parts.append(cycling_section(L, T, iso if not auto else meta["element"].lower()))
 
     # ---- all transitions
     rows = []

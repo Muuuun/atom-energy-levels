@@ -19,6 +19,7 @@ from fractions import Fraction
 import numpy as np
 
 import atomlib as al
+import cycling
 from species import SPECIES
 
 warnings.filterwarnings("ignore")
@@ -308,7 +309,7 @@ def build_alkali(key, cfg):
                 t["d_unc"] = unc
             if "br" not in t:
                 # share of the upper level's decays, from the ARC rate set (consistent normalisation)
-                t.update(br=round(atom.getTransitionRate(*b, *a, temperature=0) * atom.getStateLifetime(*b), 4), br_tier="model")
+                t.update(br=sig(atom.getTransitionRate(*b, *a, temperature=0) * atom.getStateLifetime(*b), 4), br_tier="model")
             t["lam_arc"] = round(abs(atom.getTransitionWavelength(*a, *b)) * 1e9, 4)
             if nl.get("obs"):
                 t["lam_obs"] = nl["obs"]
@@ -327,6 +328,13 @@ def build_alkali(key, cfg):
     for t in transitions:
         t.setdefault("type", "E1")
     transitions.sort(key=lambda t: t["lam"])
+    # closed-transition analysis: ARC supplies the decay lines that are not drawn (beyond 2 um), so the set is complete
+    have = {(t["lower"], t["upper"]) for t in transitions}
+    extra = [dict(upper=up["id"], lower=lo["id"], tier="model",
+                  br=atom.getTransitionRate(up["n"], up["l"], up["J"], lo["n"], lo["l"], lo["J"], temperature=0) * atom.getStateLifetime(up["n"], up["l"], up["J"]))
+             for up in levels for lo in levels
+             if lo["E"] < up["E"] and abs(lo["l"] - up["l"]) == 1 and abs(lo["J"] - up["J"]) <= 1 and (lo["id"], up["id"]) not in have]
+    cycling.annotate(levels, transitions, levels, {l["id"]: l["id"] for l in levels}, extra, None)
     n0 = levels[0]["n"]
     P = sorted({l["n"] for l in levels if l["l"] == 1})[:2]
     if "rydberg_draw" not in cfg:
@@ -522,6 +530,7 @@ def build_nist(key, cfg):
 
     # ---- which lines are drawn
     chosen = {}
+    all_lines, line_tol = lines, 0.05 if cfg.get("auto") else 1.0
     if cfg.get("auto"):
         chosen = auto_select(nist, lines, lambda e, j: find(e, 0.05, j))
         lines = []
@@ -562,6 +571,12 @@ def build_nist(key, cfg):
             k += 1
         cfg["core"] = [".".join(confs[0][:k]) + "."] if k else []
 
+    def level_name(lv):
+        if (lv["term"] or "").strip("*?") == "":
+            # no term assigned by NIST: name the level by its energy
+            return rf"({lv['E']:.0f})" + ("^{o}" if al.parity_of(lv["conf"], lv["term"]) == "odd" else "") + rf"_{{{al.jstr(lv['J'])}}}"
+        return (al.conf_tex(al.short_conf(lv["conf"], cfg["core"])) + r"\ " if cfg["columns"] == "LS" else "") + al.term_tex(lv["term"], lv["J"])
+
     # ---- levels and columns
     levels = []
     for i in used:
@@ -576,11 +591,7 @@ def build_nist(key, cfg):
             group, gtex = f"other {par}", (r"\mathrm{other\ (odd)}" if par == "odd" else r"\mathrm{other\ (even)}")
         else:
             group, gtex = par, rf"\mathrm{{{par}}}"
-        if (lv["term"] or "").strip("*?") == "":
-            # no term assigned by NIST: name the level by its energy
-            name = rf"({lv['E']:.0f})" + ("^{o}" if par == "odd" else "") + rf"_{{{al.jstr(lv['J'])}}}"
-        else:
-            name = (al.conf_tex(sc) + r"\ " if cfg["columns"] == "LS" else "") + al.term_tex(lv["term"], lv["J"])
+        name = level_name(lv)
         L = dict(id=len(levels), E=lv["E"], unc=lv["unc"], J=lv["J"], conf=lv["conf"], term=lv["term"], parity=par, g=lv["g"],
                  name=name, plain=f"{sc.replace('.', '')} {lv['term'].replace('*', '°').replace('?', '')}{al.jstr(lv['J'])}".strip(), _group=group, _gtex=gtex, _i=i)
         em = lit.energy(lv["E"], lv["J"], lv["unc"]) if lv["E"] else None
@@ -689,11 +700,35 @@ def build_nist(key, cfg):
             if t["kind"] == "E1":
                 t.update(d=sig(al.rme_from_rate(A, t["wn"], up["J"]), 4), d_tier=tier, d_src=src + " (from A)")
             if "br" not in t and up.get("tau_ns"):
-                t.update(br=round(min(1.0, A * up["tau_ns"] * 1e-9), 4), br_tier=tier)
+                t.update(br=sig(min(1.0, A * up["tau_ns"] * 1e-9), 4), br_tier=tier)
         if ln.get("obs"):
             t["lam_obs"] = ln["obs"]
         transitions.append(t)
     transitions.sort(key=lambda t: t["lam"])
+
+    # ---- closed-transition analysis: decay lines of the drawn levels that are not drawn (weak NIST lines, literature lines beyond 2 um)
+    extra = {}
+    for ln in all_lines:
+        lo, up = find(ln["Ei"], line_tol, ln["Ji"]), find(ln["Ek"], line_tol, ln["Jk"])
+        if lo and up and up["E"] > lo["E"] and up["i"] in by_E and (lo["i"], up["i"]) not in chosen and ln["A"] and ln["type"] != "2P":
+            merge_line(extra, (lo["i"], up["i"]), ln)
+    extra = {k: dict(A=ln["A"], tier="nist") for k, ln in extra.items()}
+    for lt in lit.raw.get("transitions", []):
+        lo, up = find(lt.get("lower_cm", -1e9), j=jof(lt.get("lower_J"))), find(lt.get("upper_cm", -1e9), j=jof(lt.get("upper_J")))
+        if not lo or not up or up["E"] <= lo["E"] or up["i"] not in by_E or (lo["i"], up["i"]) in chosen:
+            continue
+        br, A, d = Literature.val(lt.get("branching")), Literature.val(lt.get("A_s")), Literature.rme(lt)
+        if not A and d and al.parity_of(lo["conf"], lo["term"]) != al.parity_of(up["conf"], up["term"]):
+            A = (al.rate_from_rme(d[0], up["E"] - lo["E"], up["J"]), None, d[2])
+        old = extra.get((lo["i"], up["i"]))
+        if A and old and A[2] != "exp":
+            A = None  # NIST ranks above a calculated rate
+        if br or A:
+            extra[(lo["i"], up["i"])] = dict(A=A[0] if A else old and old["A"], br=br[0] if br else None, tier=(br or A)[2])
+    pool = [dict(E=l["E"], J=l["J"], parity=al.parity_of(l["conf"], l["term"])) for l in nist]
+    cycling.annotate(levels, transitions, pool, {l["id"]: i for i, l in by_E.items()},
+                     [dict(x, lower=lo, upper=by_E[up]["id"]) for (lo, up), x in extra.items()],
+                     lambda k: al.tex_to_html(level_name(nist[k])))
 
     # ---- tables
     I = float(Fraction(cfg["I"] or 0))
@@ -819,13 +854,15 @@ def write_outputs(key, atom):
     with open(os.path.join(out, "transitions.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["lower", "upper", "kind", "wavelength_vac_nm", "wavelength_air_nm", "frequency_THz", "frequency_source", "wavenumber_cm",
-                    "rme_J_ea0", "rme_tier", "rme_source", "A_s", "A_tier", "branching", "upper_linewidth_MHz", "nist_observed_vac_nm", "use", "type", "rme_source_url"])
+                    "rme_J_ea0", "rme_tier", "rme_source", "A_s", "A_tier", "branching", "upper_linewidth_MHz", "nist_observed_vac_nm", "use", "type", "rme_source_url",
+                    "cycle_class", "cycle_lower_level", "leak_per_photon", "leak_is_lower_limit", "photons_before_leak", "leak_tier", "leak_basis"])
         for t in atom["transitions"]:
             up = L[t["upper"]]["plain"] if "upper" in t else t["upper_plain"]
             w.writerow([L[t["lower"]]["plain"], up, t["kind"], t["lam"], t.get("air", ""), t["freq"], t.get("freq_src", ""), t.get("wn", ""),
                         t.get("d", ""), t.get("d_tier", ""), t.get("d_src", ""), t.get("A", ""), t.get("A_tier", ""), t.get("br", ""),
                         t.get("gamma_MHz", ""), t.get("lam_obs", ""), t.get("use", ""), t.get("type", "Rydberg E1"),
-                        url_of(atom, t.get("d_src") or t.get("A_src"))])
+                        url_of(atom, t.get("d_src") or t.get("A_src"))]
+                       + [(t.get("cyc") or {}).get(k, "") for k in ("cls", "lower", "leak", "bound", "n", "tier", "basis")])
     with open(os.path.join(out, "validation.txt"), "w") as f:
         f.write("\n".join(atom["validation"]) + "\n")
     print(f"== {key}\n" + "\n".join(atom["validation"]))

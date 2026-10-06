@@ -738,7 +738,34 @@
    "lam": 159.3598,
    "air": null,
    "type": "E1",
-   "lam_obs": 159.36
+   "lam_obs": 159.36,
+   "cyc": {
+    "lower": "ground",
+    "cls": "open",
+    "n_open": 7,
+    "open": [
+     {
+      "lv": 1,
+      "lam": 191.72
+     },
+     {
+      "lv": 2,
+      "lam": 192.91
+     },
+     {
+      "lv": 4,
+      "lam": 226.74
+     },
+     {
+      "html": "4s<sup>2</sup>4p<sup>2</sup>5p <sup>4</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 5289.0
+     },
+     {
+      "lv": 16,
+      "lam": 9380.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -751,7 +778,30 @@
    "lam": 175.8594,
    "air": null,
    "type": "E1",
-   "lam_obs": 175.86
+   "lam_obs": 175.86,
+   "cyc": {
+    "lower": "ground",
+    "cls": "open",
+    "n_open": 4,
+    "open": [
+     {
+      "lv": 1,
+      "lam": 216.12
+     },
+     {
+      "lv": 2,
+      "lam": 217.63
+     },
+     {
+      "lv": 3,
+      "lam": 258.55
+     },
+     {
+      "lv": 4,
+      "lam": 261.67
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -764,7 +814,26 @@
    "lam": 180.615,
    "air": null,
    "type": "E1",
-   "lam_obs": 180.615
+   "lam_obs": 180.615,
+   "cyc": {
+    "lower": "ground",
+    "cls": "open",
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 1,
+      "lam": 223.34
+     },
+     {
+      "lv": 2,
+      "lam": 224.96
+     },
+     {
+      "lv": 4,
+      "lam": 272.34
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -786,7 +855,48 @@
    "A_src": "branching ratio / lifetime",
    "d": 0.201,
    "d_tier": "exp",
-   "d_src": "branching ratio / lifetime (from A)"
+   "d_src": "branching ratio / lifetime (from A)",
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.989,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.991,
+    "ch_tier": "exp",
+    "n": 1.01,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 228.88,
+      "f": 0.79,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 278.1,
+      "f": 0.15,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 274.58,
+      "f": 0.046,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 227.21,
+      "f": 0.0051,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -808,7 +918,41 @@
    "A_src": "branching ratio / lifetime",
    "d": 0.1679,
    "d_tier": "exp",
-   "d_src": "branching ratio / lifetime (from A)"
+   "d_src": "branching ratio / lifetime (from A)",
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.985,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.982,
+    "ch_tier": "exp",
+    "n": 1.02,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 235.06,
+      "f": 0.87,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 286.13,
+      "f": 0.095,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 289.96,
+      "f": 0.017,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -831,7 +975,41 @@
    "d": 2.307,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C+) (from A)",
-   "lam_obs": 189.042
+   "lam_obs": 189.042,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.02,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.0208,
+    "ch_tier": "exp",
+    "n": 50.0,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 238.19,
+      "f": 0.02,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 236.38,
+      "f": 0.00077,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 291.97,
+      "f": 5e-05,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -856,7 +1034,48 @@
    "d": 1.773,
    "d_tier": "exp",
    "d_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2 (from A)",
-   "lam_obs": 193.759
+   "lam_obs": 193.759,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.06,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.0578,
+    "ch_tier": "exp",
+    "n": 16.7,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 245.73,
+      "f": 0.043,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 243.8,
+      "f": 0.01,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 303.37,
+      "f": 0.0039,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 299.19,
+      "f": 0.00093,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -881,7 +1100,41 @@
    "d": 1.237,
    "d_tier": "exp",
    "d_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Astron. Astrophys. 263, 440 (1992), Table 2 (from A)",
-   "lam_obs": 197.262
+   "lam_obs": 197.262,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.06,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.061,
+    "ch_tier": "exp",
+    "n": 16.7,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 249.37,
+      "f": 0.057,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 312.05,
+      "f": 0.0024,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 307.62,
+      "f": 0.0016,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -904,7 +1157,56 @@
    "d": 1.948,
    "d_tier": "theory",
    "d_src": "branching ratio / lifetime (from A)",
-   "lam_obs": 199.035
+   "lam_obs": 199.035,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.22,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.217,
+    "ch_tier": "exp",
+    "n": 4.55,
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 237.04,
+      "f": 0.14,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 234.47,
+      "f": 0.061,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 200.32,
+      "f": 0.016,
+      "tier": "exp",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 164.38
+     },
+     {
+      "lv": 12,
+      "lam": 14549.0
+     },
+     {
+      "lv": 13,
+      "lam": 230950.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -927,7 +1229,41 @@
    "d": 0.9583,
    "d_tier": "exp",
    "d_src": "branching ratio / lifetime (from A)",
-   "lam_obs": 199.113
+   "lam_obs": 199.113,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.89,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.89,
+    "ch_tier": "exp",
+    "n": 1.12,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 200.4,
+      "f": 0.79,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 237.15,
+      "f": 0.1,
+      "tier": "exp",
+      "dark": true
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 164.43
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -940,7 +1276,34 @@
    "lam": 199.543,
    "air": null,
    "type": "E1",
-   "lam_obs": 199.543
+   "lam_obs": 199.543,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 16,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 146.41
+     },
+     {
+      "lv": 1,
+      "lam": 173.29
+     },
+     {
+      "lv": 2,
+      "lam": 174.26
+     },
+     {
+      "lv": 4,
+      "lam": 201.4
+     },
+     {
+      "lv": 12,
+      "lam": 1226.5
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -962,7 +1325,56 @@
    "A_src": "branching ratio / lifetime",
    "d": 0.2817,
    "d_tier": "theory",
-   "d_src": "branching ratio / lifetime (from A)"
+   "d_src": "branching ratio / lifetime (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.984,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.981,
+    "ch_tier": "exp",
+    "n": 1.02,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 199.04,
+      "f": 0.78,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 237.04,
+      "f": 0.14,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 234.47,
+      "f": 0.061,
+      "tier": "exp",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 164.38
+     },
+     {
+      "lv": 12,
+      "lam": 14549.0
+     },
+     {
+      "lv": 13,
+      "lam": 230950.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -985,7 +1397,41 @@
    "d": 2.593,
    "d_tier": "exp",
    "d_src": "branching ratio / lifetime (from A)",
-   "lam_obs": 200.399
+   "lam_obs": 200.399,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.21,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.21,
+    "ch_tier": "exp",
+    "n": 4.76,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 199.11,
+      "f": 0.11,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 237.15,
+      "f": 0.1,
+      "tier": "exp",
+      "dark": true
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 164.43
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -998,7 +1444,34 @@
    "lam": 200.984,
    "air": 200.9191,
    "type": "E1",
-   "lam_obs": 200.984
+   "lam_obs": 200.984,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 12,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 146.19
+     },
+     {
+      "lv": 1,
+      "lam": 172.98
+     },
+     {
+      "lv": 2,
+      "lam": 173.95
+     },
+     {
+      "html": "4s<sup>2</sup>4p<sup>2</sup>5p <sup>4</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 1325.9
+     },
+     {
+      "lv": 16,
+      "lam": 1488.6
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1011,7 +1484,34 @@
    "lam": 201.3973,
    "air": 201.3323,
    "type": "E1",
-   "lam_obs": 201.397
+   "lam_obs": 201.397,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 16,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 146.41
+     },
+     {
+      "lv": 1,
+      "lam": 173.29
+     },
+     {
+      "lv": 2,
+      "lam": 174.26
+     },
+     {
+      "lv": 3,
+      "lam": 199.54
+     },
+     {
+      "lv": 12,
+      "lam": 1226.5
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1024,7 +1524,34 @@
    "lam": 211.366,
    "air": 211.2991,
    "type": "E1",
-   "lam_obs": 211.366
+   "lam_obs": 211.366,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 12,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 152.68
+     },
+     {
+      "lv": 1,
+      "lam": 182.13
+     },
+     {
+      "lv": 4,
+      "lam": 213.45
+     },
+     {
+      "lv": 12,
+      "lam": 1869.2
+     },
+     {
+      "lv": 13,
+      "lam": 2125.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1037,7 +1564,34 @@
    "lam": 214.4754,
    "air": 214.4078,
    "type": "E1",
-   "lam_obs": 214.476
+   "lam_obs": 214.476,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 16,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 154.29
+     },
+     {
+      "lv": 1,
+      "lam": 184.44
+     },
+     {
+      "lv": 2,
+      "lam": 185.54
+     },
+     {
+      "lv": 4,
+      "lam": 216.62
+     },
+     {
+      "lv": 12,
+      "lam": 2144.1
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1050,7 +1604,34 @@
    "lam": 216.619,
    "air": 216.551,
    "type": "E1",
-   "lam_obs": 216.62
+   "lam_obs": 216.62,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 16,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 154.29
+     },
+     {
+      "lv": 1,
+      "lam": 184.44
+     },
+     {
+      "lv": 2,
+      "lam": 185.54
+     },
+     {
+      "lv": 3,
+      "lam": 214.48
+     },
+     {
+      "lv": 12,
+      "lam": 2144.1
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1072,7 +1653,48 @@
    "A_src": "branching ratio / lifetime",
    "d": 0.1892,
    "d_tier": "exp",
-   "d_src": "branching ratio / lifetime (from A)"
+   "d_src": "branching ratio / lifetime (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.995,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.997,
+    "ch_tier": "exp",
+    "n": 1.01,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 228.88,
+      "f": 0.79,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 278.1,
+      "f": 0.15,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 274.58,
+      "f": 0.046,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 183.13,
+      "f": 0.011,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1095,7 +1717,48 @@
    "d": 2.574,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 228.883
+   "lam_obs": 228.883,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.21,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.212,
+    "ch_tier": "exp",
+    "n": 4.76,
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 278.1,
+      "f": 0.15,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 274.58,
+      "f": 0.046,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 183.13,
+      "f": 0.011,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 227.21,
+      "f": 0.0051,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1118,7 +1781,56 @@
    "d": 0.9438,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 234.475
+   "lam_obs": 234.475,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.939,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.936,
+    "ch_tier": "exp",
+    "n": 1.06,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 199.04,
+      "f": 0.78,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 237.04,
+      "f": 0.14,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 200.32,
+      "f": 0.016,
+      "tier": "exp",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 164.38
+     },
+     {
+      "lv": 12,
+      "lam": 14549.0
+     },
+     {
+      "lv": 13,
+      "lam": 230950.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1141,7 +1853,41 @@
    "d": 1.994,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 235.056
+   "lam_obs": 235.056,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.13,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.127,
+    "ch_tier": "exp",
+    "n": 7.69,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 286.13,
+      "f": 0.095,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 289.96,
+      "f": 0.017,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 188.2,
+      "f": 0.015,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1163,7 +1909,41 @@
    "A_src": "branching ratio / lifetime",
    "d": 0.09022,
    "d_tier": "exp",
-   "d_src": "branching ratio / lifetime (from A)"
+   "d_src": "branching ratio / lifetime (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.999,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 1.0,
+    "ch_tier": "exp",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 189.04,
+      "f": 0.98,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 238.19,
+      "f": 0.02,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 291.97,
+      "f": 5e-05,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1186,7 +1966,56 @@
    "d": 1.256,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 237.039
+   "lam_obs": 237.039,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.86,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.857,
+    "ch_tier": "exp",
+    "n": 1.16,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 199.04,
+      "f": 0.78,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 234.47,
+      "f": 0.061,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 200.32,
+      "f": 0.016,
+      "tier": "exp",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 164.38
+     },
+     {
+      "lv": 12,
+      "lam": 14549.0
+     },
+     {
+      "lv": 13,
+      "lam": 230950.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1209,7 +2038,41 @@
    "d": 1.288,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 237.149
+   "lam_obs": 237.149,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.9,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.9,
+    "ch_tier": "exp",
+    "n": 1.11,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 200.4,
+      "f": 0.79,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 199.11,
+      "f": 0.11,
+      "tier": "exp",
+      "dark": true
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 164.43
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1232,7 +2095,41 @@
    "d": 0.4651,
    "d_tier": "exp",
    "d_src": "branching ratio / lifetime (from A)",
-   "lam_obs": 238.191
+   "lam_obs": 238.191,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.98,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.981,
+    "ch_tier": "exp",
+    "n": 1.02,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 189.04,
+      "f": 0.98,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 236.38,
+      "f": 0.00077,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 291.97,
+      "f": 5e-05,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1254,7 +2151,48 @@
    "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
    "d": 0.2582,
    "d_tier": "exp",
-   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.99,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.988,
+    "ch_tier": "exp",
+    "n": 1.01,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 193.76,
+      "f": 0.94,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 245.73,
+      "f": 0.043,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 303.37,
+      "f": 0.0039,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 299.19,
+      "f": 0.00093,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1277,7 +2215,48 @@
    "d": 0.5412,
    "d_tier": "exp",
    "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
-   "lam_obs": 245.727
+   "lam_obs": 245.727,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.957,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.955,
+    "ch_tier": "exp",
+    "n": 1.04,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 193.76,
+      "f": 0.94,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 243.8,
+      "f": 0.01,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 303.37,
+      "f": 0.0039,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 299.19,
+      "f": 0.00093,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1300,7 +2279,41 @@
    "d": 0.4409,
    "d_tier": "exp",
    "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
-   "lam_obs": 249.366
+   "lam_obs": 249.366,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.943,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.944,
+    "ch_tier": "exp",
+    "n": 1.06,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 197.26,
+      "f": 0.94,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 312.05,
+      "f": 0.0024,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 307.62,
+      "f": 0.0016,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1323,7 +2336,48 @@
    "d": 1.031,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 274.581
+   "lam_obs": 274.581,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.954,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.956,
+    "ch_tier": "exp",
+    "n": 1.05,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 228.88,
+      "f": 0.79,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 278.1,
+      "f": 0.15,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 183.13,
+      "f": 0.011,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 227.21,
+      "f": 0.0051,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1346,7 +2400,48 @@
    "d": 1.82,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 278.104
+   "lam_obs": 278.104,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.85,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.852,
+    "ch_tier": "exp",
+    "n": 1.18,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 228.88,
+      "f": 0.79,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 274.58,
+      "f": 0.046,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 183.13,
+      "f": 0.011,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 227.21,
+      "f": 0.0051,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1369,7 +2464,41 @@
    "d": 1.128,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 286.128
+   "lam_obs": 286.128,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.905,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.902,
+    "ch_tier": "exp",
+    "n": 1.1,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 235.06,
+      "f": 0.87,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 289.96,
+      "f": 0.017,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 188.2,
+      "f": 0.015,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1392,7 +2521,41 @@
    "d": 0.4881,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 289.956
+   "lam_obs": 289.956,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.983,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.98,
+    "ch_tier": "exp",
+    "n": 1.02,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 235.06,
+      "f": 0.87,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 286.13,
+      "f": 0.095,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 188.2,
+      "f": 0.015,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1414,7 +2577,41 @@
    "A_src": "branching ratio / lifetime",
    "d": 0.03156,
    "d_tier": "exp",
-   "d_src": "branching ratio / lifetime (from A)"
+   "d_src": "branching ratio / lifetime (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 1.0,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 1.0,
+    "ch_tier": "exp",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 189.04,
+      "f": 0.98,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 238.19,
+      "f": 0.02,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 236.38,
+      "f": 0.00077,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1436,7 +2633,48 @@
    "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
    "d": 0.1069,
    "d_tier": "exp",
-   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.999,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.997,
+    "ch_tier": "exp",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 193.76,
+      "f": 0.94,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 245.73,
+      "f": 0.043,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 243.8,
+      "f": 0.01,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 303.37,
+      "f": 0.0039,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1458,7 +2696,48 @@
    "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
    "d": 0.2236,
    "d_tier": "exp",
-   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.996,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.994,
+    "ch_tier": "exp",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 193.76,
+      "f": 0.94,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 245.73,
+      "f": 0.043,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 243.8,
+      "f": 0.01,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 299.19,
+      "f": 0.00093,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1480,7 +2759,41 @@
    "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
    "d": 0.101,
    "d_tier": "exp",
-   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.998,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.999,
+    "ch_tier": "exp",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 197.26,
+      "f": 0.94,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 249.37,
+      "f": 0.057,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 312.05,
+      "f": 0.0024,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1502,7 +2815,41 @@
    "A_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\")",
    "d": 0.1264,
    "d_tier": "exp",
-   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)"
+   "d_src": "Berzins, Ubelis, Bziskjans, J. Quant. Spectrosc. Radiat. Transfer 276, 107943 (2021), Table 3 (column \"Our data\") (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.998,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.999,
+    "ch_tier": "exp",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 197.26,
+      "f": 0.94,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 249.37,
+      "f": 0.057,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 307.62,
+      "f": 0.0016,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1515,7 +2862,34 @@
    "lam": 507.0377,
    "air": 506.8964,
    "type": "E1",
-   "lam_obs": 507.039
+   "lam_obs": 507.039,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 38,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 456.07
+     },
+     {
+      "lv": 6,
+      "lam": 475.96
+     },
+     {
+      "lv": 8,
+      "lam": 513.22
+     },
+     {
+      "lv": 9,
+      "lam": 555.09
+     },
+     {
+      "lv": 10,
+      "lam": 579.58
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1528,7 +2902,34 @@
    "lam": 512.2741,
    "air": 512.1314,
    "type": "E1",
-   "lam_obs": 512.277
+   "lam_obs": 512.277,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 23,
+    "open": [
+     {
+      "lv": 7,
+      "lam": 548.45
+     },
+     {
+      "lv": 9,
+      "lam": 605.12
+     },
+     {
+      "lv": 10,
+      "lam": 634.33
+     },
+     {
+      "lv": 11,
+      "lam": 700.9
+     },
+     {
+      "lv": 14,
+      "lam": 969.37
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1541,7 +2942,34 @@
    "lam": 514.3054,
    "air": 514.1622,
    "type": "E1",
-   "lam_obs": 514.306
+   "lam_obs": 514.306,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 8,
+    "open": [
+     {
+      "lv": 10,
+      "lam": 589.09
+     },
+     {
+      "lv": 14,
+      "lam": 867.56
+     },
+     {
+      "lv": 20,
+      "lam": 1042.7
+     },
+     {
+      "html": "4s<sup>2</sup>4p<sup>2</sup>4d <sup>2</sup>F<sub>5/2</sub>",
+      "lam": 1298.3
+     },
+     {
+      "html": "4s<sup>2</sup>4p<sup>2</sup>4d <sup>2</sup>D<sub>5/2</sub>",
+      "lam": 1780.6
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1554,7 +2982,34 @@
    "lam": 514.3054,
    "air": 514.1622,
    "type": "E1",
-   "lam_obs": 514.306
+   "lam_obs": 514.306,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 31,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 491.16
+     },
+     {
+      "lv": 7,
+      "lam": 550.78
+     },
+     {
+      "lv": 8,
+      "lam": 558.09
+     },
+     {
+      "lv": 9,
+      "lam": 607.95
+     },
+     {
+      "lv": 10,
+      "lam": 637.45
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1586,7 +3041,34 @@
    "lam": 540.9558,
    "air": 540.8054,
    "type": "E1",
-   "lam_obs": 540.963
+   "lam_obs": 540.963,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 32,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 477.84
+     },
+     {
+      "lv": 6,
+      "lam": 499.72
+     },
+     {
+      "lv": 7,
+      "lam": 534.09
+     },
+     {
+      "lv": 9,
+      "lam": 587.68
+     },
+     {
+      "lv": 10,
+      "lam": 615.2
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1599,7 +3081,34 @@
    "lam": 545.283,
    "air": 545.1315,
    "type": "E1",
-   "lam_obs": 545.284
+   "lam_obs": 545.284,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 28,
+    "open": [
+     {
+      "lv": 6,
+      "lam": 468.73
+     },
+     {
+      "lv": 7,
+      "lam": 498.84
+     },
+     {
+      "lv": 10,
+      "lam": 568.89
+     },
+     {
+      "lv": 11,
+      "lam": 621.86
+     },
+     {
+      "lv": 14,
+      "lam": 824.44
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1631,7 +3140,34 @@
    "lam": 843.1277,
    "air": 842.896,
    "type": "E1 (intercombination)",
-   "lam_obs": 843.123
+   "lam_obs": 843.123,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 9,
+    "open": [
+     {
+      "lv": 6,
+      "lam": 913.73
+     },
+     {
+      "lv": 7,
+      "lam": 1035.6
+     },
+     {
+      "lv": 8,
+      "lam": 1061.7
+     },
+     {
+      "lv": 9,
+      "lam": 1258.0
+     },
+     {
+      "lv": 10,
+      "lam": 1391.2
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1644,7 +3180,34 @@
    "lam": 882.4178,
    "air": 882.1756,
    "type": "E1",
-   "lam_obs": 882.415
+   "lam_obs": 882.415,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 9,
+    "open": [
+     {
+      "lv": 6,
+      "lam": 960.05
+     },
+     {
+      "lv": 7,
+      "lam": 1095.5
+     },
+     {
+      "lv": 8,
+      "lam": 1124.8
+     },
+     {
+      "lv": 9,
+      "lam": 1347.5
+     },
+     {
+      "lv": 10,
+      "lam": 1501.5
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1676,7 +3239,34 @@
    "lam": 926.9731,
    "air": 926.7188,
    "type": "E1",
-   "lam_obs": 926.982
+   "lam_obs": 926.982,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 6,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 854.39
+     },
+     {
+      "lv": 8,
+      "lam": 1079.6
+     },
+     {
+      "lv": 9,
+      "lam": 1283.3
+     },
+     {
+      "lv": 11,
+      "lam": 1806.9
+     },
+     {
+      "html": "4s4p<sup>4</sup> <sup>4</sup>P<sub>1/2</sub>",
+      "lam": 2036.7
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1689,7 +3279,34 @@
    "lam": 930.3104,
    "air": 930.0552,
    "type": "E1",
-   "lam_obs": 930.316
+   "lam_obs": 930.316,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 11,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 772.01
+     },
+     {
+      "lv": 6,
+      "lam": 830.79
+     },
+     {
+      "lv": 8,
+      "lam": 951.35
+     },
+     {
+      "lv": 9,
+      "lam": 1106.0
+     },
+     {
+      "lv": 10,
+      "lam": 1207.6
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1721,7 +3338,34 @@
    "lam": 960.0522,
    "air": 959.789,
    "type": "E1",
-   "lam_obs": 960.058
+   "lam_obs": 960.058,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 9,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 882.42
+     },
+     {
+      "lv": 7,
+      "lam": 1095.5
+     },
+     {
+      "lv": 8,
+      "lam": 1124.8
+     },
+     {
+      "lv": 9,
+      "lam": 1347.5
+     },
+     {
+      "lv": 10,
+      "lam": 1501.5
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1734,7 +3378,34 @@
    "lam": 962.9366,
    "air": 962.6725,
    "type": "E1",
-   "lam_obs": 962.934
+   "lam_obs": 962.934,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 7,
+    "open": [
+     {
+      "lv": 6,
+      "lam": 856.71
+     },
+     {
+      "lv": 9,
+      "lam": 1152.4
+     },
+     {
+      "lv": 10,
+      "lam": 1263.2
+     },
+     {
+      "lv": 11,
+      "lam": 1557.8
+     },
+     {
+      "lv": 14,
+      "lam": 4052.2
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1747,7 +3418,34 @@
    "lam": 990.3245,
    "air": 990.0531,
    "type": "E1",
-   "lam_obs": 990.326
+   "lam_obs": 990.326,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 5,
+    "open": [
+     {
+      "lv": 6,
+      "lam": 1089.2
+     },
+     {
+      "lv": 8,
+      "lam": 1306.2
+     },
+     {
+      "lv": 9,
+      "lam": 1616.5
+     },
+     {
+      "lv": 11,
+      "lam": 2545.9
+     },
+     {
+      "html": "4s4p<sup>4</sup> <sup>4</sup>P<sub>1/2</sub>",
+      "lam": 3027.2
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1760,7 +3458,34 @@
    "lam": 991.8372,
    "air": 991.5653,
    "type": "E1",
-   "lam_obs": 991.843
+   "lam_obs": 991.843,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 16,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 714.6
+     },
+     {
+      "lv": 6,
+      "lam": 764.68
+     },
+     {
+      "lv": 7,
+      "lam": 848.2
+     },
+     {
+      "lv": 8,
+      "lam": 865.65
+     },
+     {
+      "lv": 10,
+      "lam": 1072.8
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1773,7 +3498,34 @@
    "lam": 992.5755,
    "air": 992.3035,
    "type": "E1",
-   "lam_obs": 992.577
+   "lam_obs": 992.577,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 6,
+    "open": [
+     {
+      "lv": 7,
+      "lam": 1138.0
+     },
+     {
+      "lv": 9,
+      "lam": 1412.5
+     },
+     {
+      "lv": 10,
+      "lam": 1582.6
+     },
+     {
+      "lv": 11,
+      "lam": 2074.1
+     },
+     {
+      "lv": 14,
+      "lam": 11494.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1786,7 +3538,26 @@
    "lam": 1002.6771,
    "air": 1002.4023,
    "type": "E1",
-   "lam_obs": 1002.679
+   "lam_obs": 1002.679,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 10,
+      "lam": 1332.5
+     },
+     {
+      "lv": 14,
+      "lam": 4863.3
+     },
+     {
+      "lv": 20,
+      "lam": 83264.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1799,7 +3570,34 @@
    "lam": 1057.7925,
    "air": 1057.5027,
    "type": "E1 (intercombination)",
-   "lam_obs": 1057.792
+   "lam_obs": 1057.792,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 5,
+    "open": [
+     {
+      "lv": 6,
+      "lam": 1171.3
+     },
+     {
+      "lv": 8,
+      "lam": 1426.2
+     },
+     {
+      "lv": 9,
+      "lam": 1804.4
+     },
+     {
+      "lv": 11,
+      "lam": 3045.2
+     },
+     {
+      "html": "4s4p<sup>4</sup> <sup>4</sup>P<sub>1/2</sub>",
+      "lam": 3760.3
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1812,7 +3610,34 @@
    "lam": 1061.7064,
    "air": 1061.4156,
    "type": "E1",
-   "lam_obs": 1061.698
+   "lam_obs": 1061.698,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 9,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 843.13
+     },
+     {
+      "lv": 6,
+      "lam": 913.73
+     },
+     {
+      "lv": 7,
+      "lam": 1035.6
+     },
+     {
+      "lv": 9,
+      "lam": 1258.0
+     },
+     {
+      "lv": 10,
+      "lam": 1391.2
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1887,7 +3712,7 @@
    "A": 0.059,
    "A_tier": "theory",
    "A_src": "R. H. Garstang, J. Res. Natl. Bur. Stand. 68A, 61 (1964), Table 20 (intermediate-coupling calculation)",
-   "br": 0.0637,
+   "br": 0.06372,
    "br_tier": "theory"
   }
  ],

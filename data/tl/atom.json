@@ -350,7 +350,50 @@
    "d": 1.082,
    "d_tier": "exp",
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
-   "lam_obs": 238.042
+   "lam_obs": 238.042,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.277,
+    "bound": true,
+    "basis": "rates",
+    "tier": "exp",
+    "n": 3.61,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 292.24,
+      "f": 0.128,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 1273.6,
+      "f": 0.121,
+      "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 1459.8,
+      "f": 0.0286,
+      "tier": "exp",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
+     {
+      "lv": 8,
+      "lam": 15545.0
+     },
+     {
+      "lv": 9,
+      "lam": 36955.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -369,7 +412,39 @@
    "d": 0.5527,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 258.091
+   "lam_obs": 258.091,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.59,
+    "bound": false,
+    "basis": "rates",
+    "tier": "theory",
+    "n": 1.69,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 323.07,
+      "f": 0.394,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 2789.6,
+      "f": 0.111,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 2180.5,
+      "f": 0.0849,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -392,7 +467,39 @@
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
    "br": 0.7812,
    "br_tier": "exp",
-   "lam_obs": 276.869
+   "lam_obs": 276.869,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.14,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 7.14,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 353.04,
+      "f": 0.136,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 5107.3,
+      "f": 0.0037,
+      "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 10452.0,
+      "f": 4.58e-05,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -412,7 +519,32 @@
    "d": 1.759,
    "d_tier": "exp",
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
-   "lam_obs": 291.917
+   "lam_obs": 291.917,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.159,
+    "bound": true,
+    "basis": "rates",
+    "tier": "theory",
+    "n": 6.29,
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 1451.8,
+      "f": 0.159,
+      "tier": "theory",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 9,
+      "lam": 32446.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -431,7 +563,50 @@
    "A_unc": 800000.0,
    "d": 0.6199,
    "d_tier": "exp",
-   "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)"
+   "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.872,
+    "bound": true,
+    "basis": "rates",
+    "tier": "exp",
+    "n": 1.15,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 238.03,
+      "f": 0.723,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 1273.6,
+      "f": 0.121,
+      "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 1459.8,
+      "f": 0.0286,
+      "tier": "exp",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
+     {
+      "lv": 8,
+      "lam": 15545.0
+     },
+     {
+      "lv": 9,
+      "lam": 36955.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -451,7 +626,39 @@
    "d": 0.7588,
    "d_tier": "exp",
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
-   "lam_obs": 323.068
+   "lam_obs": 323.068,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.606,
+    "bound": false,
+    "basis": "rates",
+    "tier": "theory",
+    "n": 1.65,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 258.09,
+      "f": 0.41,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 2789.6,
+      "f": 0.111,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 2180.5,
+      "f": 0.0849,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -472,7 +679,25 @@
    "d": 4.002,
    "d_tier": "exp",
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
-   "lam_obs": 352.025
+   "lam_obs": 352.025,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.000478,
+    "bound": false,
+    "basis": "rates",
+    "tier": "theory",
+    "n": 2090.0,
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 9626.5,
+      "f": 0.000478,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -495,7 +720,39 @@
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
    "br": 0.1364,
    "br_tier": "exp",
-   "lam_obs": 353.044
+   "lam_obs": 353.044,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.785,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.27,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 276.87,
+      "f": 0.781,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 5107.3,
+      "f": 0.0037,
+      "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 10452.0,
+      "f": 4.58e-05,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -529,7 +786,27 @@
    "d": 1.823,
    "d_tier": "exp",
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
-   "lam_obs": 377.679
+   "lam_obs": 377.679,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.537,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.537,
+    "ch_tier": "exp",
+    "n": 1.86,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 535.19,
+      "f": 0.537,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -554,7 +831,27 @@
    "d": 3.266,
    "d_tier": "exp",
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Gallagher, Lurio, Phys. Rev. 136, A87 (1964) (from A)",
-   "lam_obs": 535.195
+   "lam_obs": 535.195,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.463,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.463,
+    "ch_tier": "exp",
+    "n": 2.16,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 377.68,
+      "f": 0.463,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -585,7 +882,26 @@
    "d_tier": "exp",
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Alonso-Medina, J. Phys. B 30, 1377 (1997) (from A)",
    "br": 0.7917,
-   "br_tier": "exp"
+   "br_tier": "exp",
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 1778.4
+     },
+     {
+      "lv": 6,
+      "lam": 1804.8
+     },
+     {
+      "lv": 7,
+      "lam": 3339.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -616,7 +932,22 @@
    "d_tier": "exp",
    "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Alonso-Medina, J. Phys. B 30, 1377 (1997) (from A)",
    "br": 0.6812,
-   "br_tier": "exp"
+   "br_tier": "exp",
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 2,
+    "open": [
+     {
+      "lv": 5,
+      "lam": 1904.7
+     },
+     {
+      "lv": 7,
+      "lam": 3813.6
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -639,7 +970,11 @@
    "d_src": "Hunter, Commins, Roesch, Phys. Rev. A 25, 885 (1982) (abstract) (from A)",
    "br": 1.0,
    "br_tier": "exp",
-   "lam_obs": 1151.597
+   "lam_obs": 1151.597,
+   "cyc": {
+    "lower": "decays",
+    "cls": "closed"
+   }
   },
   {
    "kind": "E1",
@@ -658,7 +993,50 @@
    "A_unc": 620000.0,
    "d": 5.475,
    "d_tier": "exp",
-   "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Alonso-Medina, J. Quant. Spectrosc. Radiat. Transfer 56, 557 (1996) (from A)"
+   "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Alonso-Medina, J. Quant. Spectrosc. Radiat. Transfer 56, 557 (1996) (from A)",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.879,
+    "bound": true,
+    "basis": "rates",
+    "tier": "exp",
+    "n": 1.14,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 238.03,
+      "f": 0.723,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 292.24,
+      "f": 0.128,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 1459.8,
+      "f": 0.0286,
+      "tier": "exp",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
+     {
+      "lv": 8,
+      "lam": 15545.0
+     },
+     {
+      "lv": 9,
+      "lam": 36955.0
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -709,7 +1087,11 @@
    "d_src": "Hunter, Commins, Roesch, Phys. Rev. A 25, 885 (1982) (abstract) (from A)",
    "br": 1.0,
    "br_tier": "exp",
-   "lam_obs": 1301.68
+   "lam_obs": 1301.68,
+   "cyc": {
+    "lower": "decays",
+    "cls": "closed"
+   }
   },
   {
    "kind": "E1",
@@ -727,7 +1109,32 @@
    "A_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table V (all-order SD transition rate)",
    "d": 8.474,
    "d_tier": "theory",
-   "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table V (all-order SD transition rate) (from A)"
+   "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table V (all-order SD transition rate) (from A)",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.841,
+    "bound": true,
+    "basis": "rates",
+    "tier": "theory",
+    "n": 1.19,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 291.92,
+      "f": 0.841,
+      "tier": "exp",
+      "dark": true
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 9,
+      "lam": 32446.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -746,7 +1153,50 @@
    "A_unc": 150000.0,
    "d": 3.269,
    "d_tier": "exp",
-   "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Alonso-Medina, J. Quant. Spectrosc. Radiat. Transfer 56, 557 (1996) (from A)"
+   "d_src": "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Alonso-Medina, J. Quant. Spectrosc. Radiat. Transfer 56, 557 (1996) (from A)",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.971,
+    "bound": true,
+    "basis": "rates",
+    "tier": "exp",
+    "n": 1.03,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 238.03,
+      "f": 0.723,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 292.24,
+      "f": 0.128,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 1273.6,
+      "f": 0.121,
+      "tier": "exp",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
+     {
+      "lv": 8,
+      "lam": 15545.0
+     },
+     {
+      "lv": 9,
+      "lam": 36955.0
+     }
+    ]
+   }
   }
  ],
  "rydberg_levels": [],

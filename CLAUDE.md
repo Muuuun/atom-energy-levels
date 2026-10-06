@@ -39,6 +39,18 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
   only isotope pages (target: `PRIMARY`). Hg-199 has no hyperfine table: no measured constant could be opened (`Hg.json`).
 - Isotope pages of one element are linked by the switch under the page title (`isotope_switch()` in `build_site.py`:
   mass number, boson / fermion from the neutron number, nuclear spin); the header no longer lists every isotope.
+- `cycling.py` (added 2026-10-06): closed-transition analysis, called at the end of both builders in `compute.py`; writes
+  `t["cyc"]` on every drawn E1 line. "closed" = no other level below the upper level with opposite parity and |ΔJ| ≤ 1 in the
+  NIST level list (needs no rate); otherwise leak per scattered photon = 1 − branching ratio when the line's own ratio is in
+  the literature file, else the sum over the other decay lines (drawn lines, undrawn NIST lines, literature lines beyond
+  2 µm, for alkalis the full ARC set), flagged as a lower limit while a reachable level has no rate. Shown in the transition
+  card (`cycleCard` in `viewer.js`), in the "Closed and nearly closed transitions" table (`cycling_section` in
+  `build_site.py`, page only, not in the figure) and in the last columns of `transitions.csv`. These numbers are derived:
+  their tag reads "from measured data" etc., never "measured". Fine structure only (no hyperfine / Zeeman dark states).
+  While a line is pinned, `decayArrows()` in `viewer.js` draws the decay channels of its upper level as wavy arrows
+  (spontaneous emission) labelled with their share, in the SVG group `#decay`: next to the straight arrow of a drawn line,
+  bar to bar for a line that is not drawn; sizes follow the zoom so the shares stay readable in the full view. Pinned only,
+  never on hover.
 - `elements.py`: periodic-table layout. `atomlib.py`: NIST download/parsing, conversions, naming.
 - `docs/assets/viewer.js`, `style.css`: hover-to-preview, click-to-pin, zoom/pan, filter by transition type.
   A pinned card changes on clicks only (diagram, rows and level names in the card, Back, ×, Esc); hovering changes only the

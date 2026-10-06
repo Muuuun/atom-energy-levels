@@ -397,7 +397,11 @@
    "d_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425 (from A)",
    "br": 1.0,
    "br_tier": "exp",
-   "lam_obs": 228.87282
+   "lam_obs": 228.87282,
+   "cyc": {
+    "lower": "ground",
+    "cls": "closed"
+   }
   },
   {
    "kind": "E1",
@@ -416,7 +420,48 @@
    "d": 0.9733,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 283.77342
+   "lam_obs": 283.77342,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.462,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 2.16,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 288.21,
+      "f": 0.462,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 9,
+    "open": [
+     {
+      "lv": 3,
+      "lam": 298.27
+     },
+     {
+      "lv": 4,
+      "lam": 461.66
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 1436.3
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1451.0
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1488.6
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -435,7 +480,48 @@
    "d": 1.575,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 288.16121
+   "lam_obs": 288.16121,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.263,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 3.8,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 298.22,
+      "f": 0.263,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 6,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 461.54
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1449.8
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1487.4
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1834.3
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 29996.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -454,7 +540,48 @@
    "d": 0.9223,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 288.20697
+   "lam_obs": 288.20697,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.538,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 1.86,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 283.77,
+      "f": 0.538,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 9,
+    "open": [
+     {
+      "lv": 3,
+      "lam": 298.27
+     },
+     {
+      "lv": 4,
+      "lam": 461.66
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 1436.3
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1451.0
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1488.6
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -473,7 +600,22 @@
    "d": 2.324,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 298.14902
+   "lam_obs": 298.14902,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 2,
+    "open": [
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1485.5
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 36560.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -492,7 +634,48 @@
    "d": 0.9909,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 298.22325
+   "lam_obs": 298.22325,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.737,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 1.36,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 288.16,
+      "f": 0.737,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 6,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 461.54
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1449.8
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1487.4
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1834.3
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 29996.0
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -606,7 +789,11 @@
    "d_src": "Hofsaess, Padilla-Castillo, Wright, Kray, Thomas, Sartakov, Ohayon, Meijer, Truppe, 'High-resolution isotope-shift spectroscopy of Cd I', Phys. Rev. Research 5, 013043 (2023), arXiv:2210.11425 (from A)",
    "br": 1.0,
    "br_tier": "exp",
-   "lam_obs": 326.19951
+   "lam_obs": 326.19951,
+   "cyc": {
+    "lower": "ground",
+    "cls": "closed"
+   }
   },
   {
    "kind": "forbidden",
@@ -670,7 +857,51 @@
    "d": 2.121,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
-   "lam_obs": 340.46287
+   "lam_obs": 340.46287,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.482,
+    "bound": true,
+    "basis": "rates",
+    "tier": "theory",
+    "n": 2.07,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 346.86,
+      "f": 0.451,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 361.55,
+      "f": 0.0304,
+      "tier": "theory",
+      "dark": true
+     }
+    ],
+    "n_open": 4,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 633.18
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 9133.5
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 9764.0
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11764.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -689,7 +920,40 @@
    "d": 3.513,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 346.71923
+   "lam_obs": 346.71923,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.226,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 4.42,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 361.39,
+      "f": 0.226,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 632.69
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 9650.0
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11599.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -708,7 +972,51 @@
    "d": 2.035,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 346.86477
+   "lam_obs": 346.86477,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.549,
+    "bound": true,
+    "basis": "rates",
+    "tier": "theory",
+    "n": 1.82,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 340.46,
+      "f": 0.518,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 361.55,
+      "f": 0.0304,
+      "tier": "theory",
+      "dark": true
+     }
+    ],
+    "n_open": 4,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 633.18
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 9133.5
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 9764.0
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11764.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -772,7 +1080,18 @@
    "d": 4.6,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 361.15375
+   "lam_obs": 361.15375,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 1,
+    "open": [
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11360.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -791,7 +1110,40 @@
    "d": 2.019,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 361.39033
+   "lam_obs": 361.39033,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.774,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 1.29,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 346.72,
+      "f": 0.774,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 632.69
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 9650.0
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11599.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -810,7 +1162,51 @@
    "A_src": "Robert, Manzoor, Chiarotti, Poli, 'Multipole transition amplitudes and radiative decay rates in neutral cadmium', arXiv:2510.04715 (2025)",
    "d": 0.5618,
    "d_tier": "theory",
-   "d_src": "Robert, Manzoor, Chiarotti, Poli, 'Multipole transition amplitudes and radiative decay rates in neutral cadmium', arXiv:2510.04715 (2025) (from A)"
+   "d_src": "Robert, Manzoor, Chiarotti, Poli, 'Multipole transition amplitudes and radiative decay rates in neutral cadmium', arXiv:2510.04715 (2025) (from A)",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.97,
+    "bound": true,
+    "basis": "rates",
+    "tier": "theory",
+    "n": 1.03,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 340.46,
+      "f": 0.518,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 346.86,
+      "f": 0.451,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 4,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 633.18
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 9133.5
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 9764.0
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11764.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -829,7 +1225,34 @@
    "d": 0.9077,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D) (from A)",
-   "lam_obs": 414.14665
+   "lam_obs": 414.14665,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 8,
+    "open": [
+     {
+      "lv": 2,
+      "lam": 268.95
+     },
+     {
+      "lv": 3,
+      "lam": 277.69
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1066.5
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1086.6
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1260.9
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -848,7 +1271,34 @@
    "d": 1.173,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
-   "lam_obs": 466.36572
+   "lam_obs": 466.36572,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 7,
+    "open": [
+     {
+      "lv": 2,
+      "lam": 290.03
+     },
+     {
+      "lv": 3,
+      "lam": 300.23
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1498.5
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1538.7
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1913.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -867,7 +1317,39 @@
    "d": 1.404,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
-   "lam_obs": 467.94587
+   "lam_obs": 467.94587,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.882,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 1.13,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 508.72,
+      "f": 0.509,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 480.13,
+      "f": 0.373,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 1283.4
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -931,7 +1413,39 @@
    "d": 2.592,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
-   "lam_obs": 480.1254
+   "lam_obs": 480.1254,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.627,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 1.59,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 508.72,
+      "f": 0.509,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 467.95,
+      "f": 0.118,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 1283.4
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -950,7 +1464,39 @@
    "d": 3.304,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
-   "lam_obs": 508.72393
+   "lam_obs": 508.72393,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.491,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 2.04,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 480.13,
+      "f": 0.373,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 467.95,
+      "f": 0.118,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 1283.4
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -969,7 +1515,30 @@
    "d": 6.236,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy C) (from A)",
-   "lam_obs": 644.0249
+   "lam_obs": 644.0249,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 4,
+    "open": [
+     {
+      "lv": 2,
+      "lam": 350.1
+     },
+     {
+      "lv": 3,
+      "lam": 365.06
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 13190.0
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 17122.0
+     }
+    ]
+   }
   }
  ],
  "rydberg_levels": [],

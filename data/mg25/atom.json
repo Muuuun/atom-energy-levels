@@ -416,7 +416,68 @@
    "d_src": "NIST ASD (accuracy B+) (from A)",
    "br": 0.8201,
    "br_tier": "nist",
-   "lam_obs": 202.6477
+   "lam_obs": 202.6477,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.118,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 8.47,
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 1711.3,
+      "f": 0.118,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 364.49,
+      "f": 5.39e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 363.95,
+      "f": 3.83e-12,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 363.68,
+      "f": 1.32e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1227.1,
+      "f": 8.35e-13,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 7,
+      "lam": 3397.1
+     },
+     {
+      "lv": 11,
+      "lam": 7195.8
+     },
+     {
+      "lv": 13,
+      "lam": 7195.9
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -433,7 +494,7 @@
    "A": 7.24e-12,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy E)",
-   "br": 0.0,
+   "br": 4.272e-20,
    "br_tier": "nist"
   },
   {
@@ -451,7 +512,7 @@
    "A": 0.00106,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C)",
-   "br": 0.0,
+   "br": 6.254e-12,
    "br_tier": "nist"
   },
   {
@@ -484,7 +545,7 @@
    "A": 1640.0,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy A)",
-   "br": 0.0001,
+   "br": 0.0001328,
    "br_tier": "nist"
   },
   {
@@ -522,7 +583,39 @@
    "d_src": "NIST ASD (accuracy A) (from A)",
    "br": 0.9771,
    "br_tier": "nist",
-   "lam_obs": 285.2965
+   "lam_obs": 285.2965,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 7e-13,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 1430000000000.0,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 761.03,
+      "f": 2.89e-13,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 758.68,
+      "f": 2.19e-13,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 757.53,
+      "f": 1.92e-13,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -542,9 +635,57 @@
    "d": 0.4112,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy D+) (from A)",
-   "br": 0.0896,
+   "br": 0.08961,
    "br_tier": "nist",
-   "lam_obs": 333.0877
+   "lam_obs": 333.0877,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.789,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 1.27,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 333.76,
+      "f": 0.493,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 333.31,
+      "f": 0.296,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 5,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 594.49
+     },
+     {
+      "lv": 8,
+      "lam": 2480.5
+     },
+     {
+      "lv": 9,
+      "lam": 2482.6
+     },
+     {
+      "lv": 10,
+      "lam": 2486.7
+     },
+     {
+      "lv": 14,
+      "lam": 3959.1
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -566,7 +707,55 @@
    "d_src": "NIST ASD (accuracy B) (from A)",
    "br": 0.2958,
    "br_tier": "nist",
-   "lam_obs": 333.3104
+   "lam_obs": 333.3104,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.583,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 1.72,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 333.76,
+      "f": 0.493,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 333.09,
+      "f": 0.0896,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 5,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 594.49
+     },
+     {
+      "lv": 8,
+      "lam": 2480.5
+     },
+     {
+      "lv": 9,
+      "lam": 2482.6
+     },
+     {
+      "lv": 10,
+      "lam": 2486.7
+     },
+     {
+      "lv": 14,
+      "lam": 3959.1
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -588,7 +777,55 @@
    "d_src": "NIST ASD (accuracy B) (from A)",
    "br": 0.493,
    "br_tier": "nist",
-   "lam_obs": 333.7634
+   "lam_obs": 333.7634,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.385,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 2.6,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 333.31,
+      "f": 0.296,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 333.09,
+      "f": 0.0896,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 5,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 594.49
+     },
+     {
+      "lv": 8,
+      "lam": 2480.5
+     },
+     {
+      "lv": 9,
+      "lam": 2482.6
+     },
+     {
+      "lv": 10,
+      "lam": 2486.7
+     },
+     {
+      "lv": 14,
+      "lam": 3959.1
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -605,7 +842,7 @@
    "A": 9.89e-05,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy D)",
-   "br": 0.0,
+   "br": 1.325e-12,
    "br_tier": "nist"
   },
   {
@@ -623,7 +860,7 @@
    "A": 0.0002858,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C)",
-   "br": 0.0,
+   "br": 3.83e-12,
    "br_tier": "nist"
   },
   {
@@ -641,7 +878,7 @@
    "A": 0.000402,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C)",
-   "br": 0.0,
+   "br": 5.387e-12,
    "br_tier": "nist"
   },
   {
@@ -673,7 +910,68 @@
    "d_src": "NIST ASD (accuracy B+) (from A)",
    "br": 0.5304,
    "br_tier": "nist",
-   "lam_obs": 383.04414
+   "lam_obs": 383.04414,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.424,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 2.36,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 383.34,
+      "f": 0.398,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 383.94,
+      "f": 0.0264,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 3.59e-15,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 208.52,
+      "f": 4.27e-20,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 8,
+      "lam": 86252.0
+     },
+     {
+      "lv": 9,
+      "lam": 88775.0
+     },
+     {
+      "lv": 10,
+      "lam": 94432.0
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -699,7 +997,7 @@
    "A": 2.11e-05,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
-   "br": 0.0,
+   "br": 1.245e-13,
    "br_tier": "nist"
   },
   {
@@ -731,7 +1029,68 @@
    "d_src": "NIST ASD (accuracy B+) (from A)",
    "br": 0.3977,
    "br_tier": "nist",
-   "lam_obs": 383.33869
+   "lam_obs": 383.33869,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.557,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 1.8,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 383.04,
+      "f": 0.53,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 383.94,
+      "f": 0.0264,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 3.59e-15,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 208.52,
+      "f": 4.27e-20,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 8,
+      "lam": 86252.0
+     },
+     {
+      "lv": 9,
+      "lam": 88775.0
+     },
+     {
+      "lv": 10,
+      "lam": 94432.0
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -757,7 +1116,7 @@
    "A": 2.2e-05,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
-   "br": 0.0,
+   "br": 1.298e-13,
    "br_tier": "nist"
   },
   {
@@ -789,7 +1148,64 @@
    "d_src": "NIST ASD (accuracy B+) (from A)",
    "br": 0.7139,
    "br_tier": "nist",
-   "lam_obs": 383.3391
+   "lam_obs": 383.3391,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.238,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 4.2,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 383.94,
+      "f": 0.238,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 208.52,
+      "f": 6.25e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 383.04,
+      "f": 1.24e-13,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 3.23e-14,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
+     {
+      "lv": 9,
+      "lam": 88800.0
+     },
+     {
+      "lv": 10,
+      "lam": 94460.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -818,8 +1234,69 @@
    "d": 0.6127,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B) (from A)",
-   "br": 0.0264,
-   "br_tier": "nist"
+   "br": 0.02643,
+   "br_tier": "nist",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.928,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 1.08,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 383.04,
+      "f": 0.53,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 383.34,
+      "f": 0.398,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 3.59e-15,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 208.52,
+      "f": 4.27e-20,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 8,
+      "lam": 86252.0
+     },
+     {
+      "lv": 9,
+      "lam": 88775.0
+     },
+     {
+      "lv": 10,
+      "lam": 94432.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -850,7 +1327,46 @@
    "d_src": "NIST ASD (accuracy B+) (from A)",
    "br": 0.9499,
    "br_tier": "nist",
-   "lam_obs": 383.93806
+   "lam_obs": 383.93806,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 1.38e-08,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 72500000.0,
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 383.34,
+      "f": 1.3e-13,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 1.3e-13,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 10,
+      "lam": 94444.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -881,7 +1397,64 @@
    "d_src": "NIST ASD (accuracy B+) (from A)",
    "br": 0.2378,
    "br_tier": "nist",
-   "lam_obs": 383.93831
+   "lam_obs": 383.93831,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.714,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 1.4,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 383.34,
+      "f": 0.714,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 208.52,
+      "f": 6.25e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 383.04,
+      "f": 1.24e-13,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 3.23e-14,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
+     {
+      "lv": 9,
+      "lam": 88800.0
+     },
+     {
+      "lv": 10,
+      "lam": 94460.0
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1020,7 +1593,7 @@
    "A": 0.000471,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B+)",
-   "br": 0.0,
+   "br": 3.815e-11,
    "br_tier": "nist"
   },
   {
@@ -1038,7 +1611,7 @@
    "A": 0.00105,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B+)",
-   "br": 0.0,
+   "br": 8.505e-11,
    "br_tier": "nist"
   },
   {
@@ -1056,7 +1629,7 @@
    "A": 0.000809,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B+)",
-   "br": 0.0,
+   "br": 6.553e-11,
    "br_tier": "nist"
   },
   {
@@ -1112,7 +1685,11 @@
    "d_src": "NIST ASD (accuracy D) (from A)",
    "br": 1.0,
    "br_tier": "nist",
-   "lam_obs": 457.23767
+   "lam_obs": 457.23767,
+   "cyc": {
+    "lower": "ground",
+    "cls": "closed"
+   }
   },
   {
    "kind": "forbidden",
@@ -1162,7 +1739,7 @@
    "A": 0.00204,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B+)",
-   "br": 0.0,
+   "br": 9.588e-11,
    "br_tier": "nist"
   },
   {
@@ -1201,7 +1778,41 @@
    "d": 1.52,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
-   "lam_obs": 516.87609
+   "lam_obs": 516.87609,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.888,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.888,
+    "ch_tier": "nist",
+    "n": 1.13,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 518.5,
+      "f": 0.549,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 517.41,
+      "f": 0.339,
+      "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 1627.0,
+      "f": 3.54e-15,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1239,7 +1850,41 @@
    "d": 2.629,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
-   "lam_obs": 517.4125
+   "lam_obs": 517.4125,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.661,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.661,
+    "ch_tier": "nist",
+    "n": 1.51,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 518.5,
+      "f": 0.549,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 516.88,
+      "f": 0.112,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 1627.0,
+      "f": 3.54e-15,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1277,7 +1922,41 @@
    "d": 3.403,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
-   "lam_obs": 518.50478
+   "lam_obs": 518.50478,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.451,
+    "bound": false,
+    "basis": "direct",
+    "tier": "exp",
+    "ch_sum": 0.451,
+    "ch_tier": "nist",
+    "n": 2.22,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 517.41,
+      "f": 0.339,
+      "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 516.88,
+      "f": 0.112,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 1627.0,
+      "f": 3.54e-15,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1307,7 +1986,34 @@
    "d_src": "NIST ASD (accuracy B+) (from A)",
    "br": 0.7923,
    "br_tier": "nist",
-   "lam_obs": 552.99403
+   "lam_obs": 552.99403,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 5,
+    "open": [
+     {
+      "lv": 2,
+      "lam": 319.85
+     },
+     {
+      "lv": 3,
+      "lam": 320.27
+     },
+     {
+      "lv": 9,
+      "lam": 1890.3
+     },
+     {
+      "lv": 10,
+      "lam": 1892.7
+     },
+     {
+      "lv": 14,
+      "lam": 2640.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1329,7 +2035,26 @@
    "d_src": "NIST ASD (accuracy B) (from A)",
    "br": 0.386,
    "br_tier": "nist",
-   "lam_obs": 571.26724
+   "lam_obs": 571.26724,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 2,
+      "lam": 325.88
+     },
+     {
+      "lv": 9,
+      "lam": 2122.3
+     },
+     {
+      "lv": 14,
+      "lam": 3115.8
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1346,7 +2071,7 @@
    "A": 9.67e-05,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy D+)",
-   "br": 0.0,
+   "br": 1.924e-13,
    "br_tier": "nist"
   },
   {
@@ -1364,7 +2089,7 @@
    "A": 0.0001098,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C)",
-   "br": 0.0,
+   "br": 2.185e-13,
    "br_tier": "nist"
   },
   {
@@ -1382,7 +2107,7 @@
    "A": 0.0001455,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C)",
-   "br": 0.0,
+   "br": 2.895e-13,
    "br_tier": "nist"
   },
   {
@@ -1400,7 +2125,7 @@
    "A": 6.09e-07,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C+)",
-   "br": 0.0,
+   "br": 3.593e-15,
    "br_tier": "nist"
   },
   {
@@ -1418,7 +2143,7 @@
    "A": 2.2e-05,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B+)",
-   "br": 0.0,
+   "br": 1.298e-13,
    "br_tier": "nist"
   },
   {
@@ -1436,7 +2161,7 @@
    "A": 5.48e-06,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
-   "br": 0.0,
+   "br": 3.233e-14,
    "br_tier": "nist"
   },
   {
@@ -1504,7 +2229,53 @@
    "d_src": "NIST ASD (accuracy A) (from A)",
    "br": 1.0,
    "br_tier": "nist",
-   "lam_obs": 880.9175
+   "lam_obs": 880.9175,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.000133,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 7520.0,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 215.5,
+      "f": 0.000133,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 407.62,
+      "f": 8.51e-11,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 408.3,
+      "f": 6.55e-11,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 407.29,
+      "f": 3.81e-11,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1921.0,
+      "f": 2.53e-14,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1526,7 +2297,32 @@
    "d_src": "NIST ASD (accuracy A) (from A)",
    "br": 1.0,
    "br_tier": "nist",
-   "lam_obs": 1183.1408
+   "lam_obs": 1183.1408,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 9.59e-11,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 10400000000.0,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 463.13,
+      "f": 9.59e-11,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 2,
+      "lam": 462.26
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1543,7 +2339,7 @@
    "A": 6.23e-05,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B+)",
-   "br": 0.0,
+   "br": 8.348e-13,
    "br_tier": "nist"
   },
   {
@@ -1561,7 +2357,7 @@
    "A": 2.33,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy A)",
-   "br": 0.0,
+   "br": 1.375e-08,
    "br_tier": "nist"
   },
   {
@@ -1579,7 +2375,7 @@
    "A": 2.33,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy A)",
-   "br": 0.0,
+   "br": 1.375e-08,
    "br_tier": "nist"
   },
   {
@@ -1597,7 +2393,7 @@
    "A": 2.33,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy A)",
-   "br": 0.0,
+   "br": 1.375e-08,
    "br_tier": "nist"
   },
   {
@@ -1617,7 +2413,60 @@
    "d": 10.63,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
-   "lam_obs": 1502.9103
+   "lam_obs": 1502.9103,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 5.6e-06,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 179000.0,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 384.9,
+      "f": 2.43e-06,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 385.51,
+      "f": 1.89e-06,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 384.6,
+      "f": 1.08e-06,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 208.98,
+      "f": 1.99e-07,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 781.26,
+      "f": 3.54e-12,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 7,
+      "lam": 6905.6
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1636,7 +2485,61 @@
    "d": 8.219,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy A) (from A)",
-   "lam_obs": 1504.4356
+   "lam_obs": 1504.4356,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 5.46e-06,
+    "bound": true,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 183000.0,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 385.61,
+      "f": 4.09e-06,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 385.0,
+      "f": 1.37e-06,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 781.67,
+      "f": 3.21e-11,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 384.7,
+      "f": 2.28e-12,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 209.01
+     },
+     {
+      "lv": 6,
+      "lam": 2303.6
+     },
+     {
+      "lv": 7,
+      "lam": 6937.9
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1655,7 +2558,39 @@
    "d": 4.749,
    "d_tier": "nist",
    "d_src": "NIST ASD (accuracy B+) (from A)",
-   "lam_obs": 1505.1826
+   "lam_obs": 1505.1826,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 5.46e-06,
+    "bound": false,
+    "basis": "rates",
+    "tier": "nist",
+    "n": 183000.0,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 385.65,
+      "f": 5.46e-06,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 385.05,
+      "f": 6.87e-12,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 781.87,
+      "f": 3.07e-12,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1672,7 +2607,7 @@
    "A": 3.65e-07,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy B)",
-   "br": 0.0,
+   "br": 3.54e-15,
    "br_tier": "nist"
   },
   {
@@ -1695,7 +2630,68 @@
    "d_src": "NIST ASD (accuracy A) (from A)",
    "br": 0.1181,
    "br_tier": "nist",
-   "lam_obs": 1711.3304
+   "lam_obs": 1711.3304,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.82,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 1.22,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 202.65,
+      "f": 0.82,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 364.49,
+      "f": 5.39e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 363.95,
+      "f": 3.83e-12,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 363.68,
+      "f": 1.32e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1227.1,
+      "f": 8.35e-13,
+      "tier": "nist",
+      "dark": false
+     }
+    ],
+    "n_open": 3,
+    "open": [
+     {
+      "lv": 7,
+      "lam": 3397.1
+     },
+     {
+      "lv": 11,
+      "lam": 7195.8
+     },
+     {
+      "lv": 13,
+      "lam": 7195.9
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1712,7 +2708,7 @@
    "A": 3.12e-07,
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C+)",
-   "br": 0.0,
+   "br": 2.527e-14,
    "br_tier": "nist"
   }
  ],
@@ -1763,7 +2759,7 @@
      "–",
      "2.110e-05",
      "26.98",
-     "0",
+     "1.24e-11",
      "triplet MOT / repumping"
     ],
     [
@@ -1785,7 +2781,7 @@
      "–",
      "2.200e-05",
      "26.98",
-     "0",
+     "1.3e-11",
      "triplet MOT / repumping"
     ],
     [

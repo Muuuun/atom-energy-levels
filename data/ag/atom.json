@@ -596,7 +596,34 @@
    "lam": 165.187,
    "air": null,
    "type": "E1 (intercombination)",
-   "lam_obs": 165.187
+   "lam_obs": 165.187,
+   "cyc": {
+    "lower": "ground",
+    "cls": "open",
+    "n_open": 15,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 387.25
+     },
+     {
+      "lv": 5,
+      "lam": 556.13
+     },
+     {
+      "lv": 8,
+      "lam": 847.93
+     },
+     {
+      "lv": 10,
+      "lam": 1156.0
+     },
+     {
+      "lv": 13,
+      "lam": 1578.7
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -609,7 +636,34 @@
    "lam": 170.9268,
    "air": null,
    "type": "E1 (intercombination)",
-   "lam_obs": 170.926
+   "lam_obs": 170.926,
+   "cyc": {
+    "lower": "ground",
+    "cls": "open",
+    "n_open": 15,
+    "open": [
+     {
+      "lv": 2,
+      "lam": 353.83
+     },
+     {
+      "lv": 4,
+      "lam": 420.34
+     },
+     {
+      "lv": 5,
+      "lam": 627.02
+     },
+     {
+      "lv": 8,
+      "lam": 1024.5
+     },
+     {
+      "lv": 9,
+      "lam": 1026.7
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -622,7 +676,34 @@
    "lam": 176.6133,
    "air": null,
    "type": "E1",
-   "lam_obs": 176.62
+   "lam_obs": 176.62,
+   "cyc": {
+    "lower": "ground",
+    "cls": "open",
+    "n_open": 6,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 456.48
+     },
+     {
+      "lv": 5,
+      "lam": 711.0
+     },
+     {
+      "lv": 8,
+      "lam": 1269.5
+     },
+     {
+      "lv": 10,
+      "lam": 2112.4
+     },
+     {
+      "lv": 13,
+      "lam": 4136.1
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -644,7 +725,60 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.155,
    "br_tier": "theory",
-   "lam_obs": 184.773
+   "lam_obs": 184.773,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.869,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.15,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4476.0,
+      "f": 0.507,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 864.68,
+      "f": 0.36,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 9,
+      "lam": 1866.8,
+      "f": 0.0986,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 418.78,
+      "f": 0.0503,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 8,
+      "lam": 1859.7,
+      "f": 0.0103,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 515.28,
+      "f": 0.00217,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -664,8 +798,47 @@
    "d": 0.032,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
-   "br": 0.0467,
-   "br_tier": "theory"
+   "br": 0.04665,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.955,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.05,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4642.4,
+      "f": 0.528,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 870.71,
+      "f": 0.3,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 1887.8,
+      "f": 0.147,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 517.42,
+      "f": 0.0208,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -695,7 +868,39 @@
    "d_src": "NIST ASD (accuracy D) (from A)",
    "br": 0.2418,
    "br_tier": "nist",
-   "lam_obs": 206.1821
+   "lam_obs": 206.1821,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.779,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.28,
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1682.2,
+      "f": 0.838,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 547.69,
+      "f": 0.013,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 725.34,
+      "f": 0.000392,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -717,7 +922,32 @@
    "d_src": "NIST ASD (accuracy D) (from A)",
    "br": 0.1425,
    "br_tier": "nist",
-   "lam_obs": 207.0505
+   "lam_obs": 207.0505,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 0.869,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.15,
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1741.8,
+      "f": 0.945,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 736.2,
+      "f": 0.00393,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -756,7 +986,7 @@
    "A": 1.13e-05,
    "A_tier": "theory",
    "A_src": "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1 only, amplitude 0.0002 mu_B)",
-   "br": 0.0,
+   "br": 4.52e-10,
    "br_tier": "theory"
   },
   {
@@ -790,7 +1020,25 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.4 (lifetime); original: Carlsson, Jönsson, Sturesson, Z. Phys. D 16, 87 (1990) (from A)",
    "br": 1.0,
    "br_tier": "exp",
-   "lam_obs": 328.1625
+   "lam_obs": 328.1625,
+   "cyc": {
+    "lower": "ground",
+    "cls": "leak",
+    "leak": 1.09e-08,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "exp",
+    "n": 91700000.0,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 43409.0,
+      "f": 1.09e-08,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -851,7 +1099,11 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.4 (lifetime); original: Carlsson, Jönsson, Sturesson, Z. Phys. D 16, 87 (1990) (from A)",
    "br": 1.0,
    "br_tier": "exp",
-   "lam_obs": 338.3858
+   "lam_obs": 338.3858,
+   "cyc": {
+    "lower": "ground",
+    "cls": "closed"
+   }
   },
   {
    "kind": "E1",
@@ -864,7 +1116,34 @@
    "lam": 350.2924,
    "air": 350.1922,
    "type": "E1 (intercombination)",
-   "lam_obs": 350.2923
+   "lam_obs": 350.2923,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 6,
+    "open": [
+     {
+      "lv": 9,
+      "lam": 997.44
+     },
+     {
+      "lv": 16,
+      "lam": 2185.2
+     },
+     {
+      "lv": 21,
+      "lam": 4797.5
+     },
+     {
+      "lv": 24,
+      "lam": 13578.0
+     },
+     {
+      "html": "4d<sup>10</sup>6g <sup>2</sup>G<sub>7/2</sub>",
+      "lam": 13602.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -877,7 +1156,34 @@
    "lam": 350.9029,
    "air": 350.8025,
    "type": "E1",
-   "lam_obs": 350.9028
+   "lam_obs": 350.9028,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 13,
+    "open": [
+     {
+      "lv": 3,
+      "lam": 362.62
+     },
+     {
+      "lv": 6,
+      "lam": 1025.4
+     },
+     {
+      "lv": 7,
+      "lam": 1047.2
+     },
+     {
+      "lv": 11,
+      "lam": 2494.4
+     },
+     {
+      "lv": 12,
+      "lam": 2545.3
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -890,7 +1196,34 @@
    "lam": 352.2127,
    "air": 352.112,
    "type": "E1",
-   "lam_obs": 352.213
+   "lam_obs": 352.213,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 16,
+    "open": [
+     {
+      "lv": 7,
+      "lam": 964.9
+     },
+     {
+      "lv": 12,
+      "lam": 2108.2
+     },
+     {
+      "lv": 14,
+      "lam": 2146.0
+     },
+     {
+      "lv": 15,
+      "lam": 2146.0
+     },
+     {
+      "lv": 18,
+      "lam": 3786.3
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -903,7 +1236,34 @@
    "lam": 358.7699,
    "air": 358.6675,
    "type": "E1",
-   "lam_obs": 358.7703
+   "lam_obs": 358.7703,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 7,
+    "open": [
+     {
+      "lv": 3,
+      "lam": 371.02
+     },
+     {
+      "lv": 6,
+      "lam": 1095.6
+     },
+     {
+      "lv": 7,
+      "lam": 1120.5
+     },
+     {
+      "lv": 11,
+      "lam": 2955.0
+     },
+     {
+      "lv": 12,
+      "lam": 3026.7
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -916,7 +1276,34 @@
    "lam": 362.5721,
    "air": 362.4687,
    "type": "E1",
-   "lam_obs": 362.5723
+   "lam_obs": 362.5723,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 11,
+    "open": [
+     {
+      "lv": 7,
+      "lam": 1046.8
+     },
+     {
+      "lv": 12,
+      "lam": 2543.1
+     },
+     {
+      "lv": 14,
+      "lam": 2598.3
+     },
+     {
+      "lv": 15,
+      "lam": 2598.3
+     },
+     {
+      "lv": 18,
+      "lam": 5464.8
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -929,7 +1316,34 @@
    "lam": 368.3543,
    "air": 368.2495,
    "type": "E1",
-   "lam_obs": 368.3552
+   "lam_obs": 368.3552,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 10,
+    "open": [
+     {
+      "lv": 3,
+      "lam": 381.28
+     },
+     {
+      "lv": 6,
+      "lam": 1190.1
+     },
+     {
+      "lv": 7,
+      "lam": 1219.7
+     },
+     {
+      "lv": 11,
+      "lam": 3761.1
+     },
+     {
+      "lv": 12,
+      "lam": 3877.9
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -942,7 +1356,34 @@
    "lam": 371.0243,
    "air": 370.9188,
    "type": "E1",
-   "lam_obs": 371.0247
+   "lam_obs": 371.0247,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 7,
+    "open": [
+     {
+      "lv": 1,
+      "lam": 358.77
+     },
+     {
+      "lv": 6,
+      "lam": 1095.6
+     },
+     {
+      "lv": 7,
+      "lam": 1120.5
+     },
+     {
+      "lv": 11,
+      "lam": 2955.0
+     },
+     {
+      "lv": 12,
+      "lam": 3026.7
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -955,7 +1396,34 @@
    "lam": 381.2021,
    "air": 381.094,
    "type": "E1",
-   "lam_obs": 381.2023
+   "lam_obs": 381.2023,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 8,
+    "open": [
+     {
+      "lv": 7,
+      "lam": 1218.8
+     },
+     {
+      "lv": 12,
+      "lam": 3869.4
+     },
+     {
+      "lv": 14,
+      "lam": 3998.8
+     },
+     {
+      "lv": 15,
+      "lam": 3998.8
+     },
+     {
+      "lv": 18,
+      "lam": 20748.0
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -968,7 +1436,34 @@
    "lam": 381.284,
    "air": 381.1758,
    "type": "E1",
-   "lam_obs": 381.2855
+   "lam_obs": 381.2855,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 10,
+    "open": [
+     {
+      "lv": 1,
+      "lam": 368.35
+     },
+     {
+      "lv": 6,
+      "lam": 1190.1
+     },
+     {
+      "lv": 7,
+      "lam": 1219.7
+     },
+     {
+      "lv": 11,
+      "lam": 3761.1
+     },
+     {
+      "lv": 12,
+      "lam": 3877.9
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -990,7 +1485,53 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.2397,
    "br_tier": "theory",
-   "lam_obs": 384.1839
+   "lam_obs": 384.1839,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.778,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.29,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 398.27,
+      "f": 0.423,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 1412.3,
+      "f": 0.143,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 6848.7,
+      "f": 0.125,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1372.9,
+      "f": 0.0807,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 6492.6,
+      "f": 0.0672,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1003,7 +1544,34 @@
    "lam": 384.8938,
    "air": 384.7847,
    "type": "E1 (intercombination)",
-   "lam_obs": 384.8937
+   "lam_obs": 384.8937,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "open",
+    "n_open": 5,
+    "open": [
+     {
+      "lv": 4,
+      "lam": 464.92
+     },
+     {
+      "lv": 8,
+      "lam": 1337.0
+     },
+     {
+      "lv": 9,
+      "lam": 1340.6
+     },
+     {
+      "lv": 13,
+      "lam": 4949.6
+     },
+     {
+      "lv": 16,
+      "lam": 4975.3
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1025,7 +1593,53 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.4234,
    "br_tier": "theory",
-   "lam_obs": 398.2706
+   "lam_obs": 398.2706,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.608,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.64,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 384.18,
+      "f": 0.24,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 1412.3,
+      "f": 0.143,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 6848.7,
+      "f": 0.125,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1372.9,
+      "f": 0.0807,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 6492.6,
+      "f": 0.0672,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1047,7 +1661,53 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.6341,
    "br_tier": "theory",
-   "lam_obs": 405.6621
+   "lam_obs": 405.6621,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.296,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 3.38,
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 1693.3,
+      "f": 0.15,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 421.4,
+      "f": 0.115,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 1753.7,
+      "f": 0.0309,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 61697.0,
+      "f": 3.27e-05,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 121930.0,
+      "f": 8.42e-07,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1067,8 +1727,26 @@
    "d": 0.0696,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class A) (from A)",
-   "br": 0.0012,
-   "br_tier": "theory"
+   "br": 0.001183,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.999,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 9,
+      "lam": 1838.1,
+      "f": 1.0,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1088,8 +1766,47 @@
    "d": 0.01571,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class B+) (from A)",
-   "br": 0.0001,
-   "br_tier": "theory"
+   "br": 8.009e-05,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 1.0,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 8,
+      "lam": 1831.2,
+      "f": 0.93,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 9,
+      "lam": 1838.1,
+      "f": 0.0697,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 513.07,
+      "f": 0.00107,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 6211200.0,
+      "f": 5.73e-11,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1109,8 +1826,61 @@
    "d": 0.1691,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class E) (from A)",
-   "br": 0.0503,
-   "br_tier": "theory"
+   "br": 0.05026,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.958,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.04,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4476.0,
+      "f": 0.507,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 864.68,
+      "f": 0.36,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 184.77,
+      "f": 0.155,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 9,
+      "lam": 1866.8,
+      "f": 0.0986,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 1859.7,
+      "f": 0.0103,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 515.28,
+      "f": 0.00217,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1132,7 +1902,46 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.7861,
    "br_tier": "theory",
-   "lam_obs": 421.2146
+   "lam_obs": 421.2146,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.214,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 4.67,
+    "ch": [
+     {
+      "lv": 7,
+      "lam": 1750.5,
+      "f": 0.214,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 108160.0,
+      "f": 8.39e-06,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 15,
+      "lam": 1133900.0,
+      "f": 5.78e-09,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 1131900.0,
+      "f": 2.91e-10,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1154,7 +1963,53 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.1149,
    "br_tier": "theory",
-   "lam_obs": 421.4001
+   "lam_obs": 421.4001,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.815,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.23,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 405.66,
+      "f": 0.634,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1693.3,
+      "f": 0.15,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 1753.7,
+      "f": 0.0309,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 61697.0,
+      "f": 3.27e-05,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 121930.0,
+      "f": 8.42e-07,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1176,7 +2031,39 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.2832,
    "br_tier": "theory",
-   "lam_obs": 447.7296
+   "lam_obs": 447.7296,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.755,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.32,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 466.98,
+      "f": 0.493,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 2953.2,
+      "f": 0.248,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 2785.9,
+      "f": 0.134,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1198,7 +2085,39 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.4931,
    "br_tier": "theory",
-   "lam_obs": 466.9784
+   "lam_obs": 466.9784,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.574,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.74,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 447.73,
+      "f": 0.283,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 2953.2,
+      "f": 0.248,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 2785.9,
+      "f": 0.134,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1218,8 +2137,47 @@
    "d": 0.0783,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class A+) (from A)",
-   "br": 0.0011,
-   "br_tier": "theory"
+   "br": 0.001071,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.999,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 8,
+      "lam": 1831.2,
+      "f": 0.93,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 9,
+      "lam": 1838.1,
+      "f": 0.0697,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 417.32,
+      "f": 8.01e-05,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 13,
+      "lam": 6211200.0,
+      "f": 5.73e-11,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1239,8 +2197,61 @@
    "d": 0.04795,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class E) (from A)",
-   "br": 0.0022,
-   "br_tier": "theory"
+   "br": 0.00217,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.998,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4476.0,
+      "f": 0.507,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 864.68,
+      "f": 0.36,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 184.77,
+      "f": 0.155,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 9,
+      "lam": 1866.8,
+      "f": 0.0986,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 418.78,
+      "f": 0.0503,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 8,
+      "lam": 1859.7,
+      "f": 0.0103,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1260,8 +2271,47 @@
    "d": 0.09994,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class E) (from A)",
-   "br": 0.0208,
-   "br_tier": "theory"
+   "br": 0.02082,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.98,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.02,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4642.4,
+      "f": 0.528,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 870.71,
+      "f": 0.3,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 1887.8,
+      "f": 0.147,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 185.04,
+      "f": 0.0466,
+      "tier": "theory",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1283,7 +2333,39 @@
    "d_src": "NIST ASD (accuracy D) (from A)",
    "br": 0.825,
    "br_tier": "nist",
-   "lam_obs": 521.0528
+   "lam_obs": 521.0528,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.154,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 6.49,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 547.31,
+      "f": 0.154,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 22393.0,
+      "f": 6.82e-05,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 41125.0,
+      "f": 2.18e-06,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1319,7 +2401,25 @@
    "d_src": "NIST ASD (accuracy D) (from A)",
    "br": 1.0,
    "br_tier": "nist",
-   "lam_obs": 546.7016
+   "lam_obs": 546.7016,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 1.9e-05,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 52600.0,
+    "ch": [
+     {
+      "lv": 7,
+      "lam": 37964.0,
+      "f": 1.9e-05,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1341,7 +2441,39 @@
    "d_src": "NIST ASD (accuracy D) (from A)",
    "br": 0.154,
    "br_tier": "nist",
-   "lam_obs": 547.3075
+   "lam_obs": 547.3075,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.825,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.21,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 521.05,
+      "f": 0.825,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 22393.0,
+      "f": 6.82e-05,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 41125.0,
+      "f": 2.18e-06,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1370,9 +2502,41 @@
    "d": 0.2326,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class E) (from A)",
-   "br": 0.013,
+   "br": 0.01301,
    "br_tier": "theory",
-   "lam_obs": 547.6897
+   "lam_obs": 547.6897,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 0.988,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.01,
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1682.2,
+      "f": 0.838,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 206.18,
+      "f": 0.242,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 725.34,
+      "f": 0.000392,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "forbidden",
@@ -1399,7 +2563,34 @@
    "lam": 627.0206,
    "air": 626.8472,
    "type": "E1 (intercombination)",
-   "lam_obs": 627.023
+   "lam_obs": 627.023,
+   "cyc": {
+    "lower": "decays",
+    "cls": "open",
+    "n_open": 15,
+    "open": [
+     {
+      "lv": 0,
+      "lam": 170.93
+     },
+     {
+      "lv": 2,
+      "lam": 353.83
+     },
+     {
+      "lv": 4,
+      "lam": 420.34
+     },
+     {
+      "lv": 8,
+      "lam": 1024.5
+     },
+     {
+      "lv": 9,
+      "lam": 1026.7
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1419,8 +2610,40 @@
    "d": 0.06154,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class E) (from A)",
-   "br": 0.0004,
-   "br_tier": "theory"
+   "br": 0.000392,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 1.0,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1682.2,
+      "f": 0.838,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 206.18,
+      "f": 0.242,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 547.69,
+      "f": 0.013,
+      "tier": "theory",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1440,9 +2663,34 @@
    "d": 0.1277,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class E) (from A)",
-   "br": 0.0039,
+   "br": 0.00393,
    "br_tier": "theory",
-   "lam_obs": 736.199
+   "lam_obs": 736.199,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.996,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1741.8,
+      "f": 0.945,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 207.05,
+      "f": 0.142,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1464,7 +2712,25 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.3817,
    "br_tier": "theory",
-   "lam_obs": 768.9888
+   "lam_obs": 768.9888,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.647,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.55,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 827.58,
+      "f": 0.699,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1486,7 +2752,25 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.6989,
    "br_tier": "theory",
-   "lam_obs": 827.5783
+   "lam_obs": 827.5783,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.353,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 2.83,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 768.99,
+      "f": 0.382,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1507,7 +2791,60 @@
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.3598,
-   "br_tier": "theory"
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.696,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.44,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4476.0,
+      "f": 0.507,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 184.77,
+      "f": 0.155,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 9,
+      "lam": 1866.8,
+      "f": 0.0986,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 418.78,
+      "f": 0.0503,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 8,
+      "lam": 1859.7,
+      "f": 0.0103,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 515.28,
+      "f": 0.00217,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1529,7 +2866,46 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.2998,
    "br_tier": "theory",
-   "lam_obs": 870.724
+   "lam_obs": 870.724,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.712,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.4,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4642.4,
+      "f": 0.528,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 1887.8,
+      "f": 0.147,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 185.04,
+      "f": 0.0466,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 517.42,
+      "f": 0.0208,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1549,8 +2925,54 @@
    "d": 1.45,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
-   "br": 0.0807,
-   "br_tier": "theory"
+   "br": 0.08066,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.925,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.08,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 398.27,
+      "f": 0.423,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 384.18,
+      "f": 0.24,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 1412.3,
+      "f": 0.143,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 6848.7,
+      "f": 0.125,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 6492.6,
+      "f": 0.0672,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1571,7 +2993,53 @@
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.1427,
-   "br_tier": "theory"
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.868,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.15,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 398.27,
+      "f": 0.423,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 384.18,
+      "f": 0.24,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 6848.7,
+      "f": 0.125,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1372.9,
+      "f": 0.0807,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 6492.6,
+      "f": 0.0672,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1593,7 +3061,39 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.8377,
    "br_tier": "theory",
-   "lam_obs": 1682.4
+   "lam_obs": 1682.4,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.234,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 4.27,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 206.18,
+      "f": 0.242,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 547.69,
+      "f": 0.013,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 725.34,
+      "f": 0.000392,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1614,7 +3114,53 @@
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.15,
-   "br_tier": "theory"
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.78,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.28,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 405.66,
+      "f": 0.634,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 421.4,
+      "f": 0.115,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 1753.7,
+      "f": 0.0309,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 61697.0,
+      "f": 3.27e-05,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 121930.0,
+      "f": 8.42e-07,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1636,7 +3182,32 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.945,
    "br_tier": "theory",
-   "lam_obs": 1742.1
+   "lam_obs": 1742.1,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.134,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 7.46,
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 207.05,
+      "f": 0.142,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 736.2,
+      "f": 0.00393,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1657,7 +3228,46 @@
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.2139,
-   "br_tier": "theory"
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.786,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.27,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 421.21,
+      "f": 0.786,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 108160.0,
+      "f": 8.39e-06,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 15,
+      "lam": 1133900.0,
+      "f": 5.78e-09,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 1131900.0,
+      "f": 2.91e-10,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1677,8 +3287,54 @@
    "d": 3.56,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
-   "br": 0.0309,
-   "br_tier": "theory"
+   "br": 0.03094,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.899,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.11,
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 405.66,
+      "f": 0.634,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1693.3,
+      "f": 0.15,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 421.4,
+      "f": 0.115,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 61697.0,
+      "f": 3.27e-05,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 121930.0,
+      "f": 8.42e-07,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1700,7 +3356,46 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.9302,
    "br_tier": "theory",
-   "lam_obs": 1831.3
+   "lam_obs": 1831.3,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.0708,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 14.1,
+    "ch": [
+     {
+      "lv": 9,
+      "lam": 1838.1,
+      "f": 0.0697,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 513.07,
+      "f": 0.00107,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 417.32,
+      "f": 8.01e-05,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 13,
+      "lam": 6211200.0,
+      "f": 5.73e-11,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1722,7 +3417,25 @@
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.9999,
    "br_tier": "theory",
-   "lam_obs": 1838.7
+   "lam_obs": 1838.7,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.00118,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 847.0,
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 417.32,
+      "f": 0.00118,
+      "tier": "theory",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1742,9 +3455,48 @@
    "d": 4.283,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
-   "br": 0.0697,
+   "br": 0.06972,
    "br_tier": "theory",
-   "lam_obs": 1838.7
+   "lam_obs": 1838.7,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.93,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.08,
+    "ch": [
+     {
+      "lv": 8,
+      "lam": 1831.2,
+      "f": 0.93,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 513.07,
+      "f": 0.00107,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 417.32,
+      "f": 8.01e-05,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 13,
+      "lam": 6211200.0,
+      "f": 5.73e-11,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1764,8 +3516,61 @@
    "d": 0.717,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
-   "br": 0.0103,
-   "br_tier": "theory"
+   "br": 0.01032,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.991,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.01,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4476.0,
+      "f": 0.507,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 864.68,
+      "f": 0.36,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 184.77,
+      "f": 0.155,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 9,
+      "lam": 1866.8,
+      "f": 0.0986,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 418.78,
+      "f": 0.0503,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 515.28,
+      "f": 0.00217,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1785,8 +3590,61 @@
    "d": 2.228,
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
-   "br": 0.0986,
-   "br_tier": "theory"
+   "br": 0.09856,
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.917,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.09,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4476.0,
+      "f": 0.507,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 864.68,
+      "f": 0.36,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 184.77,
+      "f": 0.155,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 418.78,
+      "f": 0.0503,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 8,
+      "lam": 1859.7,
+      "f": 0.0103,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 515.28,
+      "f": 0.00217,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1807,7 +3665,46 @@
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (FSMRCC, length gauge) (from A)",
    "br": 0.1473,
-   "br_tier": "theory"
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.859,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 1.16,
+    "ch": [
+     {
+      "lv": 10,
+      "lam": 4642.4,
+      "f": 0.528,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 870.71,
+      "f": 0.3,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 185.04,
+      "f": 0.0466,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 517.42,
+      "f": 0.0208,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "kind": "E1",
@@ -1828,7 +3725,39 @@
    "d_tier": "theory",
    "d_src": "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class E) (from A)",
    "br": 0.6548,
-   "br_tier": "theory"
+   "br_tier": "theory",
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.0692,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "theory",
+    "n": 14.5,
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 2357.6,
+      "f": 0.0692,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 2236.2,
+      "f": 5.8e-05,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 288.07,
+      "f": 4.52e-10,
+      "tier": "theory",
+      "dark": true
+     }
+    ]
+   }
   }
  ],
  "rydberg_levels": [],
@@ -1856,7 +3785,7 @@
      "–",
      "1.130e-05",
      "0.003979",
-     "0",
+     "4.52e-08",
      "two-photon line at 576 nm"
     ],
     [
