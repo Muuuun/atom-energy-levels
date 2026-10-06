@@ -53,11 +53,20 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
   never on hover. `enlarge()` does the same for the label of the pinned line and the captions of its levels (a `transform`
   on `trl-i`, `lvn-k`, `lvd-k`, class `grown`): about 12 px on screen in the full view, back to the drawn size once zoomed in.
   Enlarging every label of the figure is not possible (they would overlap), and the fonts of the figure itself were not changed.
+  Cascade (added 2026-10-06, owner's request): the decays are followed down to the ground level or to a level that no
+  electric-dipole decay can leave ("long-lived"; a forbidden line of such a level is not followed). `cycling.py` writes
+  `l["decay"]` on every drawn short-lived level (its decay lines as shares, normalised to at most 1) and `cyc["end"]` on every
+  line (where the atom ends up, followed through levels that are not drawn too; `end_lost` = share the listed rates do not
+  cover). `cascade(i)` in `viewer.js` turns this into the arrows (those of later steps in the group class `next`, at most 24,
+  a share that has no room is hidden until the view is zoomed in) and into the card tables "Further decays" and "Where the
+  atom ends up". The arrows of the pinned line's own upper level still come from `cyc` (leak = what the card states).
 - `elements.py`: periodic-table layout. `atomlib.py`: NIST download/parsing, conversions, naming.
 - `docs/assets/viewer.js`, `style.css`: hover-to-preview, click-to-pin, zoom/pan, filter by transition type.
   A pinned card changes on clicks only (diagram, rows and level names in the card, Back, ×, Esc); hovering changes only the
   emphasis in the diagram (`pinned` / `hover` / `rowHover`, classes `hl` strong and `sf` soft). Keep it that way.
   SVG ids: `tr-i` arrow, `trl-i` label, `hit-i` hover target, `lv-k` / `lvn-k` / `lvd-k` level.
+  The list of lines in a level card is sorted by a click on a column head (`SORTS`, `lineTable()`: other level, wavelength,
+  matrix element, Einstein A; second click reverses; lines without the value stay last); the order is kept from card to card.
 - Use system `/usr/bin/python3` (ARC 3.9.0, pairinteraction 2.3.1 — only Rb tables cached, cannot download others).
 - zsh does not word-split variables: pass keys explicitly or use the `auto` / `curated` keywords.
 - `publish.sh` does `git add -A`, so half-written literature files of running subagents get committed too (harmless).

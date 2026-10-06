@@ -105,7 +105,18 @@
    "tau_unc": 200000.0,
    "tau_tier": "exp",
    "tau_src": "Hansen, Therkildsen, Malossi, Jensen, van Ooijen, Brusch, Muller, Hald, Thomsen, Phys. Rev. A 77, 062502 (2008), MOT recapture of 24Mg; read in Therkildsen PhD thesis (Univ. Copenhagen 2009) Sec. 5.2 and reprint appended there",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 457.24,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 3,
@@ -139,7 +150,39 @@
    "tau_unc": 0.08,
    "tau_tier": "exp",
    "tau_src": "Lurio, Phys. Rev. 136, A376 (1964), zero-field level crossing (Hanle) on an atomic beam (abstract)",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 285.3,
+      "f": 0.977,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 761.03,
+      "f": 2.89e-13,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 758.68,
+      "f": 2.19e-13,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 757.53,
+      "f": 1.92e-13,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 5,
@@ -156,7 +199,39 @@
    "tau_unc": 0.6,
    "tau_tier": "exp",
    "tau_src": "Kwiatkowski, Teppner, Zimmermann, Z. Phys. A 294, 109 (1980), laser excitation; quoted in Table 1 of Pehlivan Rhodin et al., Astron. Astrophys. (2017) [arXiv:1611.07000]",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 518.5,
+      "f": 0.549,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 517.41,
+      "f": 0.339,
+      "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 516.88,
+      "f": 0.112,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 1627.0,
+      "f": 3.54e-15,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 6,
@@ -173,7 +248,25 @@
    "tau_unc": 3.0,
    "tau_tier": "exp",
    "tau_src": "Jonsson, Kroll, Persson, Svanberg, Phys. Rev. A 30, 2429 (1984); quoted in Table 1 of Pehlivan Rhodin et al., Astron. Astrophys. (2017) [arXiv:1611.07000]",
-   "col": 0
+   "col": 0,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 1183.1,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 463.13,
+      "f": 9.59e-11,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 7,
@@ -190,7 +283,53 @@
    "tau_unc": 6.0,
    "tau_tier": "exp",
    "tau_src": "Jonsson, Kroll, Persson, Svanberg, Phys. Rev. A 30, 2429 (1984); quoted in Table 1 of Pehlivan Rhodin et al., Astron. Astrophys. (2017) [arXiv:1611.07000]",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 880.92,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 215.5,
+      "f": 0.000133,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 407.62,
+      "f": 8.5e-11,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 408.3,
+      "f": 6.55e-11,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 407.29,
+      "f": 3.81e-11,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1921.0,
+      "f": 2.53e-14,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 8,
@@ -205,7 +344,39 @@
    "plain": "3s4p 3P°0",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1505.2,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 385.65,
+      "f": 5.46e-06,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 385.05,
+      "f": 6.87e-12,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 781.87,
+      "f": 3.07e-12,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 9,
@@ -220,7 +391,46 @@
    "plain": "3s4p 3P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1504.4,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 385.61,
+      "f": 4.09e-06,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 385.0,
+      "f": 1.37e-06,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 781.67,
+      "f": 3.21e-11,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 384.7,
+      "f": 2.28e-12,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 10,
@@ -235,7 +445,53 @@
    "plain": "3s4p 3P°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 1502.9,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 384.9,
+      "f": 2.43e-06,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 385.51,
+      "f": 1.89e-06,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 384.6,
+      "f": 1.08e-06,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 208.98,
+      "f": 1.99e-07,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 781.26,
+      "f": 3.54e-12,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 11,
@@ -252,7 +508,53 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "Aldenius, Tanner, Johansson, Lundberg, Ryan, Astron. Astrophys. 461, 767 (2007) [arXiv:astro-ph/0610033] Table 1, laser-induced fluorescence",
-   "col": 3
+   "col": 3,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 383.34,
+      "f": 0.714,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 383.94,
+      "f": 0.238,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 208.52,
+      "f": 6.25e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 383.04,
+      "f": 1.24e-13,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 3.23e-14,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 12,
@@ -269,7 +571,39 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "Aldenius, Tanner, Johansson, Lundberg, Ryan, Astron. Astrophys. 461, 767 (2007) [arXiv:astro-ph/0610033] Table 1, laser-induced fluorescence",
-   "col": 3
+   "col": 3,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 383.94,
+      "f": 0.95,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 383.34,
+      "f": 1.3e-13,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 1.3e-13,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 13,
@@ -286,7 +620,53 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "Aldenius, Tanner, Johansson, Lundberg, Ryan, Astron. Astrophys. 461, 767 (2007) [arXiv:astro-ph/0610033] Table 1, laser-induced fluorescence",
-   "col": 3
+   "col": 3,
+   "decay": {
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 383.04,
+      "f": 0.53,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 383.34,
+      "f": 0.398,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 383.94,
+      "f": 0.0264,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1479.4,
+      "f": 1.38e-08,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 774.85,
+      "f": 3.59e-15,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 208.52,
+      "f": 4.27e-20,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 14,
@@ -303,7 +683,53 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Larsson & Svanberg, Z. Phys. D 25, 127 (1993), pulsed level-crossing (Hanle) spectroscopy at 202.6 nm (abstract)",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 202.65,
+      "f": 0.82,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 6,
+      "lam": 1711.3,
+      "f": 0.118,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 364.49,
+      "f": 5.39e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 363.95,
+      "f": 3.83e-12,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 363.68,
+      "f": 1.32e-12,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 5,
+      "lam": 1227.1,
+      "f": 8.35e-13,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 15,
@@ -320,7 +746,32 @@
    "tau_unc": 3.0,
    "tau_tier": "exp",
    "tau_src": "Aldenius, Tanner, Johansson, Lundberg, Ryan, Astron. Astrophys. 461, 767 (2007) [arXiv:astro-ph/0610033] Table 1, laser-induced fluorescence",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 333.76,
+      "f": 0.493,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 333.31,
+      "f": 0.296,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 333.09,
+      "f": 0.0896,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 16,
@@ -337,7 +788,18 @@
    "tau_unc": 5.0,
    "tau_tier": "exp",
    "tau_src": "Jonsson, Kroll, Persson, Svanberg, Phys. Rev. A 30, 2429 (1984); quoted in Table 1 of Pehlivan Rhodin et al., Astron. Astrophys. (2017) [arXiv:1611.07000]",
-   "col": 0
+   "col": 0,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 571.27,
+      "f": 0.386,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 17,
@@ -354,7 +816,18 @@
    "tau_unc": 3.0,
    "tau_tier": "exp",
    "tau_src": "Jonsson, Kroll, Persson, Svanberg, Phys. Rev. A 30, 2429 (1984); quoted in Table 1 of Pehlivan Rhodin et al., Astron. Astrophys. (2017) [arXiv:1611.07000]",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 552.99,
+      "f": 0.792,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   }
  ],
  "transitions": [
@@ -453,7 +926,28 @@
       "lv": 13,
       "lam": 7195.9
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.935,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 1.72e-11,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 1.44e-12,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0645
    }
   },
   {
@@ -592,7 +1086,28 @@
       "tier": "nist",
       "dark": true
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.977,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 2.89e-13,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 1.92e-13,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0229
    }
   },
   {
@@ -662,7 +1177,28 @@
       "lv": 14,
       "lam": 3959.1
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.493,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.296,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0896,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.122
    }
   },
   {
@@ -732,7 +1268,28 @@
       "lv": 14,
       "lam": 3959.1
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.493,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.296,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0896,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.122
    }
   },
   {
@@ -802,7 +1359,28 @@
       "lv": 14,
       "lam": 3959.1
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.493,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.296,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0896,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.122
    }
   },
   {
@@ -948,7 +1526,28 @@
       "lv": 10,
       "lam": 94432.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.53,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.398,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.0264,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0455
    }
   },
   {
@@ -1067,7 +1666,28 @@
       "lv": 10,
       "lam": 94432.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.53,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.398,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.0264,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0455
    }
   },
   {
@@ -1182,7 +1802,28 @@
       "lv": 10,
       "lam": 94460.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.714,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.238,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 1.54e-09,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0483
    }
   },
   {
@@ -1273,7 +1914,28 @@
       "lv": 10,
       "lam": 94432.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.53,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.398,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.0264,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0455
    }
   },
   {
@@ -1343,7 +2005,28 @@
       "lv": 10,
       "lam": 94444.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.95,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 4.66e-09,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 1.54e-09,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0501
    }
   },
   {
@@ -1431,7 +2114,28 @@
       "lv": 10,
       "lam": 94460.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.714,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.238,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 1.54e-09,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0483
    }
   },
   {
@@ -1667,7 +2371,15 @@
    "lam_obs": 457.23767,
    "cyc": {
     "lower": "ground",
-    "cls": "closed"
+    "cls": "closed",
+    "end": [
+     {
+      "lv": 0,
+      "p": 1.0,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ]
    }
   },
   {
@@ -1791,6 +2503,26 @@
       "tier": "nist",
       "dark": false
      }
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.549,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.339,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -1863,6 +2595,26 @@
       "tier": "nist",
       "dark": false
      }
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.549,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.339,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -1934,6 +2686,26 @@
       "f": 3.54e-15,
       "tier": "nist",
       "dark": false
+     }
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.549,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.339,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
      }
     ]
    }
@@ -2254,7 +3026,28 @@
       "tier": "nist",
       "dark": false
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.977,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 6.58e-11,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 3.83e-11,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0229
    }
   },
   {
@@ -2301,7 +3094,28 @@
       "lv": 2,
       "lam": 462.26
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.977,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 9.62e-11,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 1.92e-13,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0229
    }
   },
   {
@@ -2445,6 +3259,26 @@
       "lv": 7,
       "lam": 6905.6
      }
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.549,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.339,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -2518,6 +3352,26 @@
       "lv": 7,
       "lam": 6937.9
      }
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.549,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.339,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -2568,6 +3422,26 @@
       "f": 3.07e-12,
       "tier": "nist",
       "dark": false
+     }
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.549,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.339,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
      }
     ]
    }
@@ -2670,7 +3544,28 @@
       "lv": 13,
       "lam": 7195.9
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.935,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 1.72e-11,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 1.44e-12,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0645
    }
   },
   {

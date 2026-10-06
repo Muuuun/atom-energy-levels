@@ -127,7 +127,18 @@
    "tau_unc": 10000.0,
    "tau_tier": "exp",
    "tau_src": "Degenhardt, Stoehr, Lisdat, Wilpers, Schnatz, Lipphardt, Nazarova, Pottie, Sterr, Helmcke, Riehle, Phys. Rev. A 72, 062111 (2005), Appendix A (fluorescence decay of ultracold 40Ca; natural linewidth 374(9) Hz)",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 657.46,
+      "f": 0.978,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 3,
@@ -206,7 +217,32 @@
    "tau_unc": 400000.0,
    "tau_tier": "exp",
    "tau_src": "Drozdowski, Kwela, Walkiewicz, Z. Phys. D 27, 321 (1993) (time of flight); as quoted in Dammalapati et al., Meas. Sci. Technol. 20, 095303 (2009)",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 1506.1,
+      "f": 0.783,
+      "tier": "theory",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 1530.5,
+      "f": 0.16,
+      "tier": "theory",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 457.67,
+      "f": 0.0566,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 8,
@@ -223,7 +259,25 @@
    "tau_unc": 0.0017000000000000001,
    "tau_tier": "exp",
    "tau_src": "Vogt, Grain, Nazarova et al., Eur. Phys. J. D 44, 73 (2007) (photoassociation spectroscopy); as tabulated in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 422.79,
+      "f": 1.0,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 7,
+      "lam": 5547.3,
+      "f": 1e-05,
+      "tier": "exp",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 9,
@@ -240,7 +294,32 @@
    "tau_unc": 0.6,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 616.39,
+      "f": 0.555,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 612.39,
+      "f": 0.334,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 610.44,
+      "f": 0.112,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 10,
@@ -255,7 +334,32 @@
    "plain": "3d4p 3F°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 8,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 649.56,
+      "f": 0.841,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 650.14,
+      "f": 0.155,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 651.06,
+      "f": 0.00459,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 11,
@@ -270,7 +374,25 @@
    "plain": "3d4p 3F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 8,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 646.44,
+      "f": 0.888,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 647.35,
+      "f": 0.112,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 12,
@@ -285,7 +407,25 @@
    "plain": "3d4p 1D°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 9
+   "col": 9,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 645.16,
+      "f": 0.865,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 645.74,
+      "f": 0.135,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 13,
@@ -300,7 +440,18 @@
    "plain": "3d4p 3F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 8,
+   "decay": {
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 644.09,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 14,
@@ -315,7 +466,18 @@
    "plain": "4s5p 3P°0",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 616.81,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 15,
@@ -330,7 +492,25 @@
    "plain": "4s5p 3P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 617.07,
+      "f": 0.752,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 616.55,
+      "f": 0.248,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 16,
@@ -345,7 +525,32 @@
    "plain": "4s5p 3P°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 617.13,
+      "f": 0.843,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 616.3,
+      "f": 0.146,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 615.77,
+      "f": 0.0102,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 17,
@@ -360,7 +565,25 @@
    "plain": "4s5p 1P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 7,
+      "lam": 671.95,
+      "f": 0.978,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 272.25,
+      "f": 0.022,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 18,
@@ -394,7 +617,32 @@
    "tau_unc": 0.6,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 442.67,
+      "f": 0.576,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 443.69,
+      "f": 0.396,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 445.79,
+      "f": 0.0283,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 20,
@@ -411,7 +659,25 @@
    "tau_unc": 0.6,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 443.62,
+      "f": 0.77,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 445.71,
+      "f": 0.23,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 21,
@@ -428,7 +694,18 @@
    "tau_unc": 0.6,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 445.6,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 22,
@@ -443,7 +720,32 @@
    "plain": "3d4p 3D°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 7,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 560.0,
+      "f": 0.754,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 560.44,
+      "f": 0.246,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 261.83,
+      "f": 0.000281,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 23,
@@ -458,7 +760,32 @@
    "plain": "3d4p 3D°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 7,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 559.6,
+      "f": 0.692,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 560.28,
+      "f": 0.157,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 559.17,
+      "f": 0.151,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 24,
@@ -473,7 +800,25 @@
    "plain": "3d4p 3D°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 7,
+   "decay": {
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 559.03,
+      "f": 0.891,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 558.35,
+      "f": 0.109,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 25,
@@ -490,7 +835,18 @@
    "tau_unc": 0.29,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 3
+   "col": 3,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 430.9,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 26,
@@ -507,7 +863,32 @@
    "tau_unc": 0.2800000000000001,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 3
+   "col": 3,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 431.99,
+      "f": 0.41,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 429.06,
+      "f": 0.332,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 430.02,
+      "f": 0.258,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 27,
@@ -524,7 +905,25 @@
    "tau_unc": 0.2800000000000001,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 3
+   "col": 3,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 430.37,
+      "f": 0.758,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 428.42,
+      "f": 0.242,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 28,
@@ -539,7 +938,18 @@
    "plain": "3d4p 3P°0",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 526.37,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 29,
@@ -554,7 +964,32 @@
    "plain": "3d4p 3P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 526.7,
+      "f": 0.746,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 526.32,
+      "f": 0.254,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 254.22,
+      "f": 0.000288,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 30,
@@ -569,7 +1004,32 @@
    "plain": "3d4p 3P°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 527.17,
+      "f": 0.837,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 526.57,
+      "f": 0.152,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 526.19,
+      "f": 0.0102,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 31,
@@ -586,7 +1046,32 @@
    "tau_unc": 1.6000000000000003,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 397.48,
+      "f": 0.555,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 395.82,
+      "f": 0.311,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 1,
+      "lam": 395.0,
+      "f": 0.106,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 32,
@@ -603,7 +1088,18 @@
    "tau_unc": 0.14000000000000004,
    "tau_tier": "exp",
    "tau_src": "Hunter, Watson, Weiss, Zajonc, Phys. Rev. A 31, 2268 (1985) (Hanle effect); as tabulated in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 8,
+      "lam": 585.91,
+      "f": 0.955,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 33,
@@ -620,7 +1116,25 @@
    "tau_unc": 1.0,
    "tau_tier": "exp",
    "tau_src": "this-work TR-LIF measurement (UW Madison, +-5%) in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 7,
+      "lam": 504.3,
+      "f": 0.664,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 239.93,
+      "f": 0.336,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 34,
@@ -637,7 +1151,18 @@
    "tau_unc": 0.8000000000000002,
    "tau_tier": "exp",
    "tau_src": "Havey, Balling, Wright, J. Opt. Soc. Am. 67, 488 (1977); as tabulated in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
-   "col": 0
+   "col": 0,
+   "decay": {
+    "ch": [
+     {
+      "lv": 8,
+      "lam": 551.45,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   }
  ],
  "transitions": [
@@ -701,7 +1226,22 @@
       "lv": 18,
       "lam": 2282.7
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.882,
+      "tier": "theory",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.106,
+      "tier": "theory",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0117
    }
   },
   {
@@ -766,6 +1306,26 @@
      {
       "lv": 19,
       "lam": 6300.7
+     }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.746,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.254,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 0,
+      "p": 0.000288,
+      "tier": "nist",
+      "at": "ground"
      }
     ]
    }
@@ -832,6 +1392,26 @@
      {
       "lv": 19,
       "lam": 22513.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 4,
+      "p": 0.754,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.246,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 0,
+      "p": 0.000281,
+      "tier": "nist",
+      "at": "ground"
      }
     ]
    }
@@ -968,7 +1548,22 @@
       "html": "4s5s <sup>1</sup>S<sub>0</sub>",
       "lam": 2928.8
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.826,
+      "tier": "theory",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.157,
+      "tier": "theory",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0172
    }
   },
   {
@@ -1038,7 +1633,28 @@
       "lv": 15,
       "lam": 2551.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.555,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.304,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0356
    }
   },
   {
@@ -1108,7 +1724,28 @@
       "lv": 15,
       "lam": 2551.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.555,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.304,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0356
    }
   },
   {
@@ -1178,7 +1815,28 @@
       "lv": 15,
       "lam": 2551.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.555,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.304,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0356
    }
   },
   {
@@ -1263,7 +1921,22 @@
       "lv": 5,
       "lam": 3027.5
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.9999982201,
+      "tier": "theory",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 1.6e-06,
+      "tier": "theory",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 1.76e-07
    }
   },
   {
@@ -1326,7 +1999,22 @@
       "lv": 15,
       "lam": 5008.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.758,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.236,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.00544
    }
   },
   {
@@ -1396,7 +2084,28 @@
       "lv": 15,
       "lam": 5235.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.41,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 0.332,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.252,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.00581
    }
   },
   {
@@ -1466,7 +2175,28 @@
       "lv": 15,
       "lam": 5235.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.41,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 0.332,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.252,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.00581
    }
   },
   {
@@ -1530,7 +2260,22 @@
       "lv": 15,
       "lam": 5008.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.758,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.236,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.00544
    }
   },
   {
@@ -1645,7 +2390,28 @@
       "lv": 15,
       "lam": 5235.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.41,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 0.332,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.252,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.00581
    }
   },
   {
@@ -1715,7 +2481,28 @@
       "lv": 15,
       "lam": 8379.1
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.576,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.387,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.0283,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0089
    }
   },
   {
@@ -1778,7 +2565,22 @@
       "lv": 15,
       "lam": 8353.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.753,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.23,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0173
    }
   },
   {
@@ -1848,7 +2650,28 @@
       "lv": 15,
       "lam": 8379.1
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.576,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.387,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.0283,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0089
    }
   },
   {
@@ -1960,7 +2783,22 @@
       "lv": 15,
       "lam": 8353.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.753,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.23,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0173
    }
   },
   {
@@ -2030,7 +2868,28 @@
       "lv": 15,
       "lam": 8379.1
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.576,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.387,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.0283,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0089
    }
   },
   {
@@ -2153,7 +3012,22 @@
       "lv": 18,
       "lam": 2282.7
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.882,
+      "tier": "theory",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.106,
+      "tier": "theory",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0117
    }
   },
   {
@@ -2218,6 +3092,26 @@
      {
       "lv": 20,
       "lam": 6296.4
+     }
+    ],
+    "end": [
+     {
+      "lv": 6,
+      "p": 0.837,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.152,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.0102,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -2285,6 +3179,26 @@
      {
       "lv": 19,
       "lam": 6300.7
+     }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.746,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.254,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 0,
+      "p": 0.000288,
+      "tier": "nist",
+      "at": "ground"
      }
     ]
    }
@@ -2391,6 +3305,26 @@
       "lv": 20,
       "lam": 6296.4
      }
+    ],
+    "end": [
+     {
+      "lv": 6,
+      "p": 0.837,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.152,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.0102,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -2458,6 +3392,26 @@
       "lv": 19,
       "lam": 6300.7
      }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.746,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.254,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 0,
+      "p": 0.000288,
+      "tier": "nist",
+      "at": "ground"
+     }
     ]
    }
   },
@@ -2524,6 +3478,26 @@
      {
       "lv": 20,
       "lam": 6296.4
+     }
+    ],
+    "end": [
+     {
+      "lv": 6,
+      "p": 0.837,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.152,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.0102,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -2630,6 +3604,20 @@
       "lv": 21,
       "lam": 19933.0
      }
+    ],
+    "end": [
+     {
+      "lv": 6,
+      "p": 0.891,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.109,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -2685,6 +3673,20 @@
      {
       "lv": 21,
       "lam": 19933.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 6,
+      "p": 0.891,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.109,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -2753,6 +3755,26 @@
       "lv": 20,
       "lam": 21402.0
      }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.692,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 6,
+      "p": 0.157,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.151,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -2819,6 +3841,26 @@
      {
       "lv": 20,
       "lam": 21402.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.692,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 6,
+      "p": 0.157,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.151,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -2887,6 +3929,26 @@
       "lv": 19,
       "lam": 22513.0
      }
+    ],
+    "end": [
+     {
+      "lv": 4,
+      "p": 0.754,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.246,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 0,
+      "p": 0.000281,
+      "tier": "nist",
+      "at": "ground"
+     }
     ]
    }
   },
@@ -2954,6 +4016,26 @@
       "lv": 20,
       "lam": 21402.0
      }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.692,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 6,
+      "p": 0.157,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.151,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -3020,6 +4102,26 @@
      {
       "lv": 19,
       "lam": 22513.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 4,
+      "p": 0.754,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.246,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 0,
+      "p": 0.000281,
+      "tier": "nist",
+      "at": "ground"
      }
     ]
    }
@@ -3124,7 +4226,28 @@
       "lv": 8,
       "lam": 1267.9
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.555,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.326,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.00751
    }
   },
   {
@@ -3178,7 +4301,28 @@
       "lv": 8,
       "lam": 1267.9
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.555,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.326,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.00751
    }
   },
   {
@@ -3231,6 +4375,26 @@
      {
       "lv": 9,
       "lam": 1985.9
+     }
+    ],
+    "end": [
+     {
+      "lv": 6,
+      "p": 0.843,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.146,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.0102,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -3286,6 +4450,26 @@
      {
       "lv": 9,
       "lam": 1985.9
+     }
+    ],
+    "end": [
+     {
+      "lv": 6,
+      "p": 0.843,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.146,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.0102,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -3356,7 +4540,28 @@
       "lv": 8,
       "lam": 1267.9
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.555,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.326,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.00751
    }
   },
   {
@@ -3411,6 +4616,20 @@
      {
       "html": "4s5s <sup>1</sup>S<sub>0</sub>",
       "lam": 3088.8
+     }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.752,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.248,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -3498,6 +4717,20 @@
       "html": "4s5s <sup>1</sup>S<sub>0</sub>",
       "lam": 3088.8
      }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.752,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.248,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -3553,6 +4786,26 @@
       "lv": 9,
       "lam": 1985.9
      }
+    ],
+    "end": [
+     {
+      "lv": 6,
+      "p": 0.843,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.146,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 4,
+      "p": 0.0102,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -3576,7 +4829,15 @@
    "lam_obs": 644.085,
    "cyc": {
     "lower": "decays",
-    "cls": "closed"
+    "cls": "closed",
+    "end": [
+     {
+      "lv": 6,
+      "p": 1.0,
+      "tier": "nist",
+      "at": "open"
+     }
+    ]
    }
   },
   {
@@ -3627,6 +4888,20 @@
      {
       "lv": 9,
       "lam": 2327.8
+     }
+    ],
+    "end": [
+     {
+      "lv": 4,
+      "p": 0.865,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.135,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -3680,6 +4955,20 @@
       "lv": 9,
       "lam": 2327.8
      }
+    ],
+    "end": [
+     {
+      "lv": 4,
+      "p": 0.865,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.135,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -3724,6 +5013,20 @@
       "lv": 7,
       "lam": 715.87
      }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.888,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 6,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -3767,6 +5070,20 @@
      {
       "lv": 7,
       "lam": 715.87
+     }
+    ],
+    "end": [
+     {
+      "lv": 5,
+      "p": 0.888,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 6,
+      "p": 0.112,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -3823,6 +5140,26 @@
       "lv": 9,
       "lam": 2386.1
      }
+    ],
+    "end": [
+     {
+      "lv": 4,
+      "p": 0.841,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.155,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 6,
+      "p": 0.00459,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -3878,6 +5215,26 @@
       "lv": 9,
       "lam": 2386.1
      }
+    ],
+    "end": [
+     {
+      "lv": 4,
+      "p": 0.841,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.155,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 6,
+      "p": 0.00459,
+      "tier": "nist",
+      "at": "open"
+     }
     ]
    }
   },
@@ -3931,6 +5288,26 @@
      {
       "lv": 9,
       "lam": 2386.1
+     }
+    ],
+    "end": [
+     {
+      "lv": 4,
+      "p": 0.841,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 5,
+      "p": 0.155,
+      "tier": "nist",
+      "at": "open"
+     },
+     {
+      "lv": 6,
+      "p": 0.00459,
+      "tier": "nist",
+      "at": "open"
      }
     ]
    }
@@ -3992,7 +5369,16 @@
    "lam_obs": 657.46,
    "cyc": {
     "lower": "ground",
-    "cls": "closed"
+    "cls": "closed",
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.978,
+      "tier": "exp",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.0225
    }
   },
   {
@@ -4081,7 +5467,22 @@
       "html": "4s5s <sup>1</sup>S<sub>0</sub>",
       "lam": 2928.8
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.826,
+      "tier": "theory",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.157,
+      "tier": "theory",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0172
    }
   },
   {
@@ -4131,7 +5532,22 @@
       "tier": "exp",
       "dark": true
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.822,
+      "tier": "theory",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.16,
+      "tier": "theory",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0176
    }
   },
   {
@@ -4181,7 +5597,22 @@
       "tier": "exp",
       "dark": true
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.822,
+      "tier": "theory",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.16,
+      "tier": "theory",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0176
    }
   },
   {
@@ -4198,7 +5629,15 @@
    "type": "E1",
    "cyc": {
     "lower": "metastable",
-    "cls": "closed"
+    "cls": "closed",
+    "end": [
+     {
+      "lv": 3,
+      "p": 1.0,
+      "tier": null,
+      "at": "dark"
+     }
+    ]
    }
   }
  ],

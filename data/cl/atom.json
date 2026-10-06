@@ -157,7 +157,18 @@
    "tau_unc": 225.0,
    "tau_tier": "exp",
    "tau_src": "G. M. Lawrence, Astrophys. J. 148, 261 (1967), Table 7 (phase-shift method, stated accuracy +-15 per cent), line 1390 A in CCl4. Note: unc derived from the +-15 per cent printed in the table header (text gives +-20 per cent as a liberal systematic limit). NIST ASD lists A = 2.3e5 s^-1 (accuracy D) for the only decay 138.97 nm, i.e. 4.3 us: disagreement by a factor 2.9.",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 138.97,
+      "f": 0.345,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 3,
@@ -172,7 +183,25 @@
    "plain": "3p44s 4P3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 137.95,
+      "f": 0.88,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 139.65,
+      "f": 0.12,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 4,
@@ -187,7 +216,18 @@
    "plain": "3p44s 4P1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 5,
+   "decay": {
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 139.0,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 5,
@@ -204,7 +244,25 @@
    "tau_unc": 0.07,
    "tau_tier": "exp",
    "tau_src": "Schectman, Federman, Beideck, Ellis, Astrophys. J. 406, 735 (1993) (beam-foil)",
-   "col": 7
+   "col": 7,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 134.72,
+      "f": 0.852,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 136.34,
+      "f": 0.148,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 6,
@@ -221,7 +279,25 @@
    "tau_unc": 0.3,
    "tau_tier": "exp",
    "tau_src": "G. M. Lawrence, Astrophys. J. 148, 261 (1967), Table 7 (phase-shift method, stated accuracy +-15 per cent), line 1335 A in CCl4. Note: unc derived from the +-15 per cent printed in the table header; agrees with the 2.01 ns implied by NIST ASD (1.74e8 + 3.23e8 s^-1)",
-   "col": 7
+   "col": 7,
+   "decay": {
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 135.17,
+      "f": 0.646,
+      "tier": "nist",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 133.57,
+      "f": 0.348,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 7,
@@ -236,7 +312,25 @@
    "plain": "3p44p 4P°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 912.36,
+      "f": 0.72,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 958.74,
+      "f": 0.28,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 8,
@@ -251,7 +345,32 @@
    "plain": "3p44p 4P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 895.05,
+      "f": 0.496,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 970.51,
+      "f": 0.376,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 939.64,
+      "f": 0.128,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 9,
@@ -266,7 +385,25 @@
    "plain": "3p44p 4P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 919.43,
+      "f": 0.843,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 948.96,
+      "f": 0.157,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 10,
@@ -281,7 +418,18 @@
    "plain": "3p44p 4D°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 837.82,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 11,
@@ -296,7 +444,18 @@
    "plain": "3p44s 2D5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 118.88,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 12,
@@ -311,7 +470,25 @@
    "plain": "3p44s 2D3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 1,
+      "lam": 120.14,
+      "f": 0.897,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 0,
+      "lam": 118.88,
+      "f": 0.103,
+      "tier": "nist",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 13,
@@ -326,7 +503,25 @@
    "plain": "3p44p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 858.83,
+      "f": 0.706,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 821.43,
+      "f": 0.294,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 14,
@@ -341,7 +536,32 @@
    "plain": "3p44p 4D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 833.56,
+      "f": 0.541,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 857.76,
+      "f": 0.405,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 798.28,
+      "f": 0.0541,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 15,
@@ -356,7 +576,25 @@
    "plain": "3p44p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 8,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 959.49,
+      "f": 0.93,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 788.04,
+      "f": 0.0698,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 16,
@@ -371,7 +609,25 @@
    "plain": "3p44p 4D°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 843.06,
+      "f": 0.828,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 819.67,
+      "f": 0.172,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 17,
@@ -386,7 +642,32 @@
    "plain": "3p44p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 8,
+   "decay": {
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 987.87,
+      "f": 0.745,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 929.14,
+      "f": 0.173,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 800.01,
+      "f": 0.0824,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 18,
@@ -401,7 +682,25 @@
    "plain": "3p44p 2P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 0
+   "col": 0,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 907.57,
+      "f": 0.696,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 963.52,
+      "f": 0.304,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 19,
@@ -416,7 +715,32 @@
    "plain": "3p44p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 0
+   "col": 0,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 741.62,
+      "f": 0.48,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 771.97,
+      "f": 0.306,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 792.68,
+      "f": 0.214,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 20,
@@ -431,7 +755,39 @@
    "plain": "3p44p 4S°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 3,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 725.86,
+      "f": 0.403,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 754.92,
+      "f": 0.323,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 774.71,
+      "f": 0.169,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 868.87,
+      "f": 0.105,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 21,
@@ -446,7 +802,18 @@
    "plain": "3p44p 2S°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 9
+   "col": 9,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 855.28,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 22,
@@ -480,7 +847,18 @@
    "tau_unc": 0.18,
    "tau_tier": "exp",
    "tau_src": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 1",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 109.48,
+      "f": 0.898,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 24,
@@ -497,7 +875,18 @@
    "tau_unc": 0.72,
    "tau_tier": "exp",
    "tau_src": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 1",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 109.07,
+      "f": 0.479,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 25,
@@ -531,7 +920,18 @@
    "tau_unc": 0.36,
    "tau_tier": "exp",
    "tau_src": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 1",
-   "col": 2
+   "col": 2,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 107.99,
+      "f": 0.314,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 27,
@@ -546,7 +946,32 @@
    "plain": "3p44p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 0
+   "col": 0,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 497.8,
+      "f": 0.449,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 514.18,
+      "f": 0.321,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 458.18,
+      "f": 0.231,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 28,
@@ -561,7 +986,25 @@
    "plain": "3p45p 4P°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 443.97,
+      "f": 0.965,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 454.68,
+      "f": 0.0351,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 29,
@@ -576,7 +1019,25 @@
    "plain": "3p45p 4P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 440.43,
+      "f": 0.813,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 457.95,
+      "f": 0.187,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 30,
@@ -591,7 +1052,18 @@
    "plain": "3p45p 4D°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 2,
+      "lam": 439.1,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 31,
@@ -606,7 +1078,32 @@
    "plain": "3p45p 2D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 8,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 447.66,
+      "f": 0.531,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 485.41,
+      "f": 0.284,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 437.28,
+      "f": 0.185,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 32,
@@ -621,7 +1118,25 @@
    "plain": "3p45p 4P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 444.74,
+      "f": 0.53,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 481.98,
+      "f": 0.47,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 33,
@@ -636,7 +1151,39 @@
    "plain": "3p45p 4D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 438.11,
+      "f": 0.633,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 474.21,
+      "f": 0.19,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 444.71,
+      "f": 0.104,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 428.17,
+      "f": 0.0724,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 34,
@@ -651,7 +1198,32 @@
    "plain": "3p45p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 436.45,
+      "f": 0.642,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 472.26,
+      "f": 0.198,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 426.58,
+      "f": 0.16,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 35,
@@ -666,7 +1238,32 @@
    "plain": "3p45p 2S°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 9
+   "col": 9,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 469.28,
+      "f": 0.567,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 440.38,
+      "f": 0.299,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 433.91,
+      "f": 0.134,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 36,
@@ -681,7 +1278,25 @@
    "plain": "3p45p 4D°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 6
+   "col": 6,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 439.16,
+      "f": 0.594,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 467.91,
+      "f": 0.406,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 37,
@@ -696,7 +1311,46 @@
    "plain": "3p45p 4S°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 3
+   "col": 3,
+   "decay": {
+    "ch": [
+     {
+      "lv": 3,
+      "lam": 432.46,
+      "f": 0.458,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 422.76,
+      "f": 0.229,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 438.88,
+      "f": 0.15,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 467.58,
+      "f": 0.0833,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 482.0,
+      "f": 0.0792,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 38,
@@ -711,7 +1365,39 @@
    "plain": "3p45p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 8,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 437.07,
+      "f": 0.391,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 465.53,
+      "f": 0.274,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 421.09,
+      "f": 0.229,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 479.83,
+      "f": 0.106,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 39,
@@ -726,7 +1412,32 @@
    "plain": "3p45p 2P°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 0
+   "col": 0,
+   "decay": {
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 452.75,
+      "f": 0.785,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 466.25,
+      "f": 0.185,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 410.59,
+      "f": 0.0308,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 40,
@@ -741,7 +1452,39 @@
    "plain": "3p44p 2D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 8
+   "col": 8,
+   "decay": {
+    "ch": [
+     {
+      "lv": 12,
+      "lam": 808.78,
+      "f": 0.881,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 808.67,
+      "f": 0.0974,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 449.23,
+      "f": 0.0111,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 462.52,
+      "f": 0.0104,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 41,
@@ -756,7 +1499,32 @@
    "plain": "3p45p 2P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 0
+   "col": 0,
+   "decay": {
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 460.23,
+      "f": 0.68,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 447.06,
+      "f": 0.259,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 414.84,
+      "f": 0.0615,
+      "tier": "nist",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 42,
@@ -773,7 +1541,18 @@
    "tau_unc": 0.08,
    "tau_tier": "exp",
    "tau_src": "Alkhayat, Irving, Federman, Ellis, Cheng, Lifetimes and Oscillator Strengths for Ultraviolet Transitions in Neutral Chlorine, arXiv:1910.05803 (2019) (beam-foil, Toledo Heavy Ion Accelerator), Table 1",
-   "col": 11
+   "col": 11,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 100.47,
+      "f": 0.65,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   }
  ],
  "transitions": [
@@ -1134,6 +1913,20 @@
       "lv": 9,
       "lam": 13211.0
      }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.897,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.103,
+      "tier": "nist",
+      "at": "ground"
+     }
     ]
    }
   },
@@ -1227,6 +2020,20 @@
       "lv": 9,
       "lam": 13211.0
      }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.897,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.103,
+      "tier": "nist",
+      "at": "ground"
+     }
     ]
    }
   },
@@ -1268,7 +2075,22 @@
       "tier": "nist",
       "dark": true
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.646,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.348,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.006
    }
   },
   {
@@ -1312,6 +2134,20 @@
       "tier": "exp",
       "dark": true
      }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.852,
+      "tier": "exp",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.148,
+      "tier": "exp",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -1353,7 +2189,22 @@
       "tier": "nist",
       "dark": true
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.646,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.348,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.006
    }
   },
   {
@@ -1396,6 +2247,20 @@
       "f": 0.852,
       "tier": "exp",
       "dark": true
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.852,
+      "tier": "exp",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.148,
+      "tier": "exp",
+      "at": "dark"
      }
     ]
    }
@@ -1459,6 +2324,20 @@
       "tier": "nist",
       "dark": true
      }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.88,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.12,
+      "tier": "nist",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -1486,7 +2365,16 @@
    "lam_obs": 138.9693,
    "cyc": {
     "lower": "ground",
-    "cls": "closed"
+    "cls": "closed",
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.345,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.655
    }
   },
   {
@@ -1552,6 +2440,20 @@
       "f": 0.88,
       "tier": "nist",
       "dark": true
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.88,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.12,
+      "tier": "nist",
+      "at": "dark"
      }
     ]
    }
@@ -1620,7 +2522,22 @@
       "html": " z <sup>2</sup>S<sub>1/2</sub>",
       "lam": 940.35
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.744,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.235,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0213
    }
   },
   {
@@ -1686,7 +2603,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>1/2</sub>",
       "lam": 1201.7
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.511,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.485,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.00408
    }
   },
   {
@@ -1760,7 +2692,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>5/2</sub>",
       "lam": 1311.2
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.5,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.349,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.151
    }
   },
   {
@@ -1841,7 +2788,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1347.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.581,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.268,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.151
    }
   },
   {
@@ -1908,7 +2870,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1386.5
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.789,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.105
    }
   },
   {
@@ -1988,7 +2965,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1347.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.581,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.268,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.151
    }
   },
   {
@@ -2055,7 +3047,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1386.5
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.789,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.105
    }
   },
   {
@@ -2129,7 +3136,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>5/2</sub>",
       "lam": 1311.2
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.5,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.349,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.151
    }
   },
   {
@@ -2195,7 +3217,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1506.3
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.773,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.121
    }
   },
   {
@@ -2269,7 +3306,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>5/2</sub>",
       "lam": 1382.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.744,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.208,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0474
    }
   },
   {
@@ -2349,7 +3401,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1347.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.581,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.268,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.151
    }
   },
   {
@@ -2455,6 +3522,20 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1349.7
      }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.654,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.346,
+      "tier": "nist",
+      "at": "ground"
+     }
     ]
    }
   },
@@ -2521,6 +3602,20 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>1/2</sub>",
       "lam": 1377.0
      }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.601,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.399,
+      "tier": "nist",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -2581,7 +3676,22 @@
       "lv": 12,
       "lam": 948.6
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.281,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.187,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.533
    }
   },
   {
@@ -2641,7 +3751,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>5/2</sub>",
       "lam": 1562.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.364,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.00422,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.632
    }
   },
   {
@@ -2714,7 +3839,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>5/2</sub>",
       "lam": 1382.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.744,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.208,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0474
    }
   },
   {
@@ -2772,6 +3912,20 @@
      {
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1473.8
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.867,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.133,
+      "tier": "nist",
+      "at": "dark"
      }
     ]
    }
@@ -2839,7 +3993,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>1/2</sub>",
       "lam": 1201.7
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.511,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.485,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.00408
    }
   },
   {
@@ -2906,7 +4075,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1506.3
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.773,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.121
    }
   },
   {
@@ -2979,7 +4163,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>5/2</sub>",
       "lam": 1189.6
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.799,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.201,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 6.26e-05
    }
   },
   {
@@ -3046,7 +4245,22 @@
       "html": " z <sup>2</sup>S<sub>1/2</sub>",
       "lam": 940.35
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.744,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.235,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0213
    }
   },
   {
@@ -3120,7 +4334,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>5/2</sub>",
       "lam": 1311.2
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.5,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.349,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.151
    }
   },
   {
@@ -3200,7 +4429,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1347.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.581,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.268,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.151
    }
   },
   {
@@ -3258,6 +4502,20 @@
      {
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1349.7
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.654,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.346,
+      "tier": "nist",
+      "at": "ground"
      }
     ]
    }
@@ -3326,6 +4584,20 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>1/2</sub>",
       "lam": 1377.0
      }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.601,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.399,
+      "tier": "nist",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -3393,7 +4665,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1386.5
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.789,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.105
    }
   },
   {
@@ -3467,7 +4754,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>5/2</sub>",
       "lam": 1382.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.744,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.208,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0474
    }
   },
   {
@@ -3525,6 +4827,20 @@
      {
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1473.8
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.867,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.133,
+      "tier": "nist",
+      "at": "dark"
      }
     ]
    }
@@ -3592,7 +4908,22 @@
       "html": "3p<sup>4</sup>3d <sup>4</sup>D<sub>3/2</sub>",
       "lam": 1506.3
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.773,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.106,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.121
    }
   },
   {
@@ -3658,7 +4989,22 @@
       "html": " z <sup>2</sup>S<sub>1/2</sub>",
       "lam": 1158.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.697,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.301,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.00192
    }
   },
   {
@@ -3729,7 +5075,22 @@
       "html": " z <sup>2</sup>S<sub>1/2</sub>",
       "lam": 178090.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.512,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.224,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.264
    }
   },
   {
@@ -3792,7 +5153,22 @@
       "lv": 12,
       "lam": 7572.6
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.435,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.251,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.314
    }
   },
   {
@@ -3862,7 +5238,22 @@
       "html": " z <sup>2</sup>S<sub>1/2</sub>",
       "lam": 178090.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.512,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.224,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.264
    }
   },
   {
@@ -3925,7 +5316,22 @@
       "lv": 12,
       "lam": 7572.6
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.435,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.251,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.314
    }
   },
   {
@@ -3995,7 +5401,22 @@
       "html": " z <sup>2</sup>S<sub>1/2</sub>",
       "lam": 178090.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.512,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.224,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.264
    }
   },
   {
@@ -4047,7 +5468,22 @@
       "lv": 12,
       "lam": 19003.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.817,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.137,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0457
    }
   },
   {
@@ -4110,7 +5546,22 @@
       "lv": 12,
       "lam": 7572.6
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.435,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.251,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.314
    }
   },
   {
@@ -4173,7 +5624,22 @@
       "lv": 12,
       "lam": 27515.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.494,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.47,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0354
    }
   },
   {
@@ -4236,7 +5702,22 @@
       "lv": 12,
       "lam": 11539.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.517,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.479,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.00447
    }
   },
   {
@@ -4287,6 +5768,20 @@
      {
       "lv": 12,
       "lam": 17644.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.848,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.152,
+      "tier": "nist",
+      "at": "ground"
      }
     ]
    }
@@ -4340,7 +5835,22 @@
       "lv": 12,
       "lam": 962460.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.723,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0848,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.192
    }
   },
   {
@@ -4403,7 +5913,22 @@
       "lv": 12,
       "lam": 27515.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.494,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.47,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0354
    }
   },
   {
@@ -4426,7 +5951,16 @@
    "lam_obs": 837.824,
    "cyc": {
     "lower": "decays",
-    "cls": "closed"
+    "cls": "closed",
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.345,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.655
    }
   },
   {
@@ -4477,6 +6011,20 @@
      {
       "lv": 12,
       "lam": 17644.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.848,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.152,
+      "tier": "nist",
+      "at": "ground"
      }
     ]
    }
@@ -4587,7 +6135,22 @@
       "lv": 12,
       "lam": 27515.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.494,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.47,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0354
    }
   },
   {
@@ -4639,7 +6202,22 @@
       "lv": 12,
       "lam": 962460.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.723,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0848,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.192
    }
   },
   {
@@ -4709,7 +6287,22 @@
       "html": " z <sup>2</sup>S<sub>1/2</sub>",
       "lam": 178090.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.512,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.224,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.264
    }
   },
   {
@@ -4764,7 +6357,22 @@
       "lv": 6,
       "lam": 1209.9
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.391,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.284,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.325
    }
   },
   {
@@ -4816,7 +6424,22 @@
       "lv": 12,
       "lam": 8909.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.699,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.299,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.00182
    }
   },
   {
@@ -4860,7 +6483,22 @@
       "lv": 5,
       "lam": 1150.3
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.495,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0336,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.472
    }
   },
   {
@@ -4907,6 +6545,20 @@
      {
       "lv": 6,
       "lam": 1176.6
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.742,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.258,
+      "tier": "nist",
+      "at": "dark"
      }
     ]
    }
@@ -4971,7 +6623,22 @@
       "lv": 12,
       "lam": 11539.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.517,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.479,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.00447
    }
   },
   {
@@ -5026,7 +6693,22 @@
       "lv": 6,
       "lam": 1209.9
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.391,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.284,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.325
    }
   },
   {
@@ -5074,6 +6756,20 @@
       "lv": 6,
       "lam": 1176.6
      }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.742,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.258,
+      "tier": "nist",
+      "at": "dark"
+     }
     ]
    }
   },
@@ -5118,7 +6814,22 @@
       "lv": 5,
       "lam": 1150.3
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.495,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0336,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.472
    }
   },
   {
@@ -5170,7 +6881,22 @@
       "lv": 12,
       "lam": 19003.0
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.817,
+      "tier": "nist",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.137,
+      "tier": "nist",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0457
    }
   },
   {
@@ -5225,7 +6951,22 @@
       "lv": 6,
       "lam": 1209.9
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.391,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.284,
+      "tier": "nist",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.325
    }
   }
  ],

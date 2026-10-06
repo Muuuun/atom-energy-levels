@@ -25,6 +25,7 @@
   const lvBtn = k => '<button type="button" data-lv="' + k + '" title="Show this level">' + L[k].html + '</button>';
   const fd = d => d >= 10 ? d.toFixed(2) : d >= 0.1 ? d.toFixed(3) : d.toPrecision(3);
   const fA = a => { const e = Math.floor(Math.log10(a)); return (a / 10 ** e).toFixed(2) + ' × 10<sup>' + e + '</sup>'; };
+  const fkept = x => x > 0.999 && x < 1 ? +(x * 100).toFixed(Math.min(8, Math.ceil(-Math.log10((1 - x) * 100)) + 1)) + ' %' : +(x * 100).toPrecision(3) + ' %';
   const ftau = ns => ns < 1e3 ? +ns.toPrecision(4) + ' ns' : ns < 1e6 ? +(ns / 1e3).toPrecision(4) + ' µs'
     : ns < 1e9 ? +(ns / 1e6).toPrecision(4) + ' ms' : +(ns / 1e9).toPrecision(4) + ' s';
   const colorOf = i => { const p = svg.querySelector('#tr-' + i + ' path'); return p ? p.style.stroke || p.style.fill : '#888'; };
@@ -47,8 +48,8 @@
   const lvRef = r => r.lv != null ? lvBtn(r.lv) : r.html;
   const FROM = { exp: 'from measured data', nist: 'from NIST data', theory: 'from theory', model: 'from model calc.' };
   const derived = t => FROM[t] ? '<span class="tier ' + t + '">' + FROM[t] + '</span>' : '';  // a derived number is never tagged "measured"
-  function cycleCard(t) {
-    const c = t.cyc;
+  function cycleCard(i) {
+    const t = T[i], c = t.cyc;
     if (!c) return '';
     const lo = L[t.lower].html, up = L[t.upper].html, s = n => n > 1 ? 's' : '';
     const paths = c.open ? c.open.map(r => lvRef(r) + ' (' + flam(r.lam) + ')').join(', ') + (c.n_open > c.open.length ? ', …' : '') : '';
@@ -74,7 +75,19 @@
       if (c.ch.some(r => r.tier === 'theory' || r.tier === 'model') || c.ch_tier === 'theory' || c.ch_tier === 'model') notes.push('* theory, ≈ model calculation.');
     }
     if (c.lower === 'decays') notes.push('The lower level ' + lo + ' decays itself, so this line cannot cycle on its own.');
-    if (c.cls !== 'open') notes.push('While this line is pinned, wavy arrows in the diagram show the decay channels of ' + up + ' with their share.');
+    if (c.end && (c.cls === 'leak' || c.lower === 'decays')) {  // the decays followed down through every short-lived level
+      const AT = { ground: 'ground level', dark: 'long-lived', open: 'decay not on record' }, next = cascade(i).filter(e => e.next);
+      next.sort((a, b) => L[b.from].E - L[a.from].E || b.f - a.f);
+      if (next.length) h += '<table class="lines steps"><tr><th>Further decays</th><th>to</th><th>Share</th></tr>' + next.map((e, n) =>
+        '<tr><td>' + (n && next[n - 1].from === e.from ? '' : lvBtn(e.from)) + '</td><td>' + (e.to != null ? lvBtn(e.to) : e.html) + '</td><td>' + e.label + '</td></tr>').join('') + '</table>';
+      h += '<table class="lines"><tr><th>Where the atom ends up</th><th>Share</th></tr>' + c.end.map(r =>
+        '<tr><td>' + lvRef(r) + '<span class="dark">' + AT[r.at] + '</span></td><td>' + mark(r.p > 0.999 ? fkept(r.p) : fshare(r.p), r.tier) + '</td></tr>').join('') +
+        (c.end_more ? '<tr><td>other levels</td><td>' + fshare(c.end_more) + '</td></tr>' : '') +
+        (c.end_lost ? '<tr><td>not covered by the listed rates</td><td>' + fshare(c.end_lost) + '</td></tr>' : '') + '</table>';
+      notes.push('Where the atom ends up: every further decay is followed, through each short-lived level, down to the ground level or to a level that no electric-dipole decay can leave (long-lived).');
+      if (c.end.some(r => r.tier === 'theory' || r.tier === 'model') && !notes.includes('* theory, ≈ model calculation.')) notes.push('* theory, ≈ model calculation.');
+    }
+    if (c.cls !== 'open') notes.push('While this line is pinned, wavy arrows in the diagram show the decay lines of ' + up + ' and of every short-lived level they lead to, each with its share of the decays of the level it starts from. Where the arrows are dense, zoom in to see every share.');
     return h + (notes.length ? '<div class="note">' + notes.join(' ') + '</div>' : '') +
       '<div class="note">Derived from the data of this page, not measured as such. Fine structure only: hyperfine and Zeeman dark states are not considered.</div></div>';
   }
@@ -99,7 +112,7 @@
     for (const [pair, s] of Object.entries(t.isotope_shifts || {}))
       h += row('Isotope shift ' + pair, s.value + (s.unc ? ' ± ' + s.unc : '') + ' MHz');
     h += '</table>';
-    h += cycleCard(t);
+    h += cycleCard(i);
     if (t.uncertain) h += '<div class="note">' + (t.kind === 'rydberg' ? 'Two calculations differ by about 2× on this line: order of magnitude only.' : 'This value is a bound or an estimate, not a direct measurement.') + '</div>';
     h += src(t.d != null ? 'Matrix element / A' : 'A', t.d_src || t.A_src);
     if (t.freq_tier === 'exp') h += src('Frequency', t.freq_src);
@@ -108,21 +121,39 @@
     return h;
   }
 
+  // the list of a level's lines can be sorted by any of its columns: a click on a column head, a second click reverses the order
+  const SORTS = {  // column: [value of a line of level k, order of the first click, what the column head says on hover]
+    other: [(t, k) => t.lower !== k ? L[t.lower].E : t.upper != null ? L[t.upper].E : Infinity, 1, 'energy of the other level'],
+    lam: [t => t.lam, 1, 'wavelength'],
+    d: [t => t.d, -1, 'reduced dipole matrix element'],
+    A: [t => t.A, -1, 'Einstein A (decay rate of the line)'],
+  };
+  let sort = { by: 'lam', dir: 1 };
+  const fAs = a => { const e = Math.floor(Math.log10(a)); return (a / 10 ** e).toFixed(2) + '×10<sup>' + String(e).replace('-', '−') + '</sup>'; };
+  function lineTable(k) {
+    const val = i => { const x = SORTS[sort.by][0](T[i], k); return x == null ? null : x; };
+    const ids = linesOf[k].slice().sort((a, b) => {  // lines without the value stay at the end; equal values in order of wavelength
+      const x = val(a), y = val(b);
+      return (x == null) - (y == null) || (x != null && (x - y) * sort.dir) || T[a].lam - T[b].lam;
+    });
+    const th = (key, label) => '<th' + (sort.by === key ? ' aria-sort="' + (sort.dir > 0 ? 'ascending' : 'descending') + '"' : '') +
+      '><button type="button" data-sort="' + key + '" title="Sort by ' + SORTS[key][2] + '">' + label + (sort.by === key ? (sort.dir > 0 ? ' ▲' : ' ▼') : '') + '</button></th>';
+    return '<table class="lines sortable"><tr>' + th('other', ids.length + ' lines') + th('lam', 'λ vac (nm)') + th('d', 'd (ea₀)') + th('A', 'A (s⁻¹)') + '</tr>' +
+      ids.map(i => {
+        const t = T[i], other = t.lower === k ? '→ ' + upName(t) : '← ' + L[t.lower].html;
+        return '<tr class="row" data-i="' + i + '"><td><span class="swatch" style="background:' + colorOf(i) + '"></span>' + other +
+               '</td><td>' + t.lam.toFixed(3) + '</td><td>' + (t.d != null ? fd(t.d) : '–') + '</td><td>' + (t.A ? fAs(t.A) : '–') + '</td></tr>';
+      }).join('') + '</table>';
+  }
   function levelCard(k) {
     const l = L[k];
-    const rows = linesOf[k].slice().sort((a, b) => T[a].lam - T[b].lam).map(i => {
-      const t = T[i], other = t.lower === k ? '→ ' + upName(t) : '← ' + L[t.lower].html;
-      return '<tr class="row" data-i="' + i + '"><td><span class="swatch" style="background:' + colorOf(i) + '"></span>' + other +
-             '</td><td>' + t.lam.toFixed(3) + '</td><td>' + (t.d != null ? fd(t.d) : '–') + '</td></tr>';
-    }).join('');
     let h = '<h3>' + l.html + '</h3><table>' + row('Energy' + (l.E_tier ? badge(l.E_tier) : ''), l.E.toFixed(3) + ' cm⁻¹');
     if (l.E_nist != null) h += row('NIST energy', l.E_nist.toFixed(3) + ' cm⁻¹');
     if (l.tau_tier === 'stable') h += row('Lifetime', 'stable');
     else if (l.tau_ns != null) h += row('Lifetime' + badge(l.tau_tier), (l.tau_bound ? l.tau_bound + ' ' : '') + ftau(l.tau_ns) + (l.tau_unc ? ' ± ' + ftau(l.tau_unc) : ''));
     if (l.g != null) h += row('Landé g<sub>J</sub>', l.g + (l.g_tier === 'theory' ? ' (theory)' : ''));
     if (l.hfs) h += row('Hyperfine A', l.hfs.A + ' MHz') + (l.hfs.B ? row('Hyperfine B', l.hfs.B + ' MHz') : '');
-    h += '</table><table class="lines" style="margin-top:8px"><tr><th>' + linesOf[k].length +
-         ' lines</th><th>λ vac (nm)</th><th>d (ea₀)</th></tr>' + rows + '</table>';
+    h += '</table>' + lineTable(k);
     return h + src('Energy', l.E_src) + src('Lifetime', l.tau_src) + src('Hyperfine', l.hfs && l.hfs.src);
   }
 
@@ -176,7 +207,9 @@
   const grownEls = [];
   let grownKey = null, grownBoxes = [];  // what enlarge() made bigger, and the room it takes: the decay labels keep clear of it
   // ---------- decay channels of the pinned line's upper level: wavy arrows (spontaneous emission) labelled with their share
-  const decay = svg.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'g'));
+  // The group sits among the figure's own elements, so that the captions of the levels involved can be lifted above the arrows.
+  const host = (svg.querySelector('[id^="lv-"]') || { parentNode: svg }).parentNode;
+  const decay = host.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'g'));
   decay.id = 'decay';
   const lineOf = {};
   T.forEach((t, i) => { if (t.upper != null) lineOf[t.lower + '>' + t.upper] = i; });
@@ -188,7 +221,6 @@
   };
   const clamp = (x, a, b) => Math.min(Math.max(x, a), b);
   const sup = s => s.replace(/<sup>(.*?)<\/sup>/g, (m, e) => e.replace(/./g, ch => ch === '−' ? '⁻' : '⁰¹²³⁴⁵⁶⁷⁸⁹'[ch]));  // SVG text has no <sup>
-  const fkept = x => x > 0.999 && x < 1 ? +(x * 100).toFixed(Math.min(8, Math.ceil(-Math.log10((1 - x) * 100)) + 1)) + ' %' : +(x * 100).toPrecision(3) + ' %';
   function wavy(S, E, color, g) {  // g: size factor (user units per screen pixel). Returns the arrow and where a label can sit
     const dx = E[0] - S[0], dy = E[1] - S[1], len = Math.hypot(dx, dy);
     if (len < 12) return null;
@@ -203,48 +235,84 @@
     return { svg: '<path class="halo" d="' + d + '"/><path d="' + d + '" style="stroke:' + color + '"/><polygon points="' + tip + '" style="fill:' + color + '"/>',
              at: (t, side, far) => [S[0] + dx * t + n[0] * side * (a + 13 * g) * far, S[1] + dy * t + n[1] * side * (a + 13 * g) * far] };
   }
+  // The decay lines to draw for line i: those of its upper level, then those of every short-lived level they lead to, down to
+  // the ground level or a long-lived level (a level without l.decay). Each carries the share of the decays of the level it starts from.
+  const MAX_NEXT = 24, cascades = {};
+  function cascade(i) {
+    if (cascades[i]) return cascades[i];
+    const t = T[i], c = t.cyc, out = [], next = [], arrive = {};
+    if (!c || c.cls === 'open') return cascades[i] = out;
+    // back to the lower level: what the leak leaves over; then the other decay lines that end on a drawn level
+    out.push({ from: t.upper, to: t.lower, w: 1 - (c.leak || 0), label: c.cls === 'closed' ? '100 %' : (c.bound ? '≤ ' : '') + fkept(1 - c.leak) });
+    for (const r of c.ch || []) if (r.lv != null) out.push({ from: t.upper, to: r.lv, w: r.f, label: mark(fshare(r.f), r.tier) });
+    for (const e of out) arrive[e.to] = (arrive[e.to] || 0) + e.w;
+    for (const k of L.map((l, k) => k).sort((a, b) => L[b].E - L[a].E)) {  // from the top down: what feeds a level is known by then
+      if (!arrive[k] || k === t.upper || !L[k].decay) continue;
+      for (const r of L[k].decay.ch) {  // a level that is not drawn (r.html) gets its line in the card, but no arrow
+        const w = arrive[k] * r.f;
+        if (r.lv != null) arrive[r.lv] = (arrive[r.lv] || 0) + w;
+        next.push({ from: k, to: r.lv, html: r.html, w, f: r.f, next: true, label: mark(r.f > 0.999 ? fkept(r.f) : fshare(r.f), r.tier) });
+      }
+    }
+    next.sort((a, b) => b.w - a.w);  // if there are too many, the lines that carry most of the atoms
+    return cascades[i] = out.concat(next.slice(0, MAX_NEXT));
+  }
   let decayKey = null;
+  const lifted = new Set();
   function decayArrows() {
     const i = pinned && pinned.type === 'tr' ? pinned.i : null, c = i != null && T[i].cyc;
     // drawn at a constant size on screen until the diagram is zoomed in to its own scale, so the shares can be read in the full view
-    const m = c && c.cls !== 'open' && svg.getScreenCTM(), g = m ? +clamp(1 / m.a, 1, 5).toFixed(1) : 1, key = m ? i + '@' + g : null;
+    // (and, zoomed in further than that, they grow only half as fast as the figure: more room where levels lie close together)
+    const m = c && c.cls !== 'open' && svg.getScreenCTM(), g = m ? +clamp(1 / m.a, 0.5, 5).toFixed(1) : 1, key = m ? i + '@' + g : null;
     if (key === decayKey) return;
     decayKey = key;
     decay.innerHTML = '';
     if (key == null) return;
     decay.style.setProperty('--g', g);
-    const t = T[i], U = ends('lv-' + t.upper);
-    // back to the lower level: what the leak leaves over; then the other decay lines that end on a drawn level
-    const chans = [{ lv: t.lower, label: c.cls === 'closed' ? '100 %' : (c.bound ? '≤ ' : '') + fkept(1 - c.leak) }]
-      .concat((c.ch || []).filter(r => r.lv != null).map(r => ({ lv: r.lv, label: mark(fshare(r.f), r.tier) })));
     let h = '', texts = '';
-    const boxes = grownBoxes.slice(), fs = 12.5 * g;
-    for (const ch of chans) {
-      const j = lineOf[ch.lv + '>' + t.upper], line = j != null && ends('hit-' + j), D = ends('lv-' + ch.lv);
+    const boxes = grownBoxes.slice(), fs = 12.5 * g, caps = new Set();
+    const lines = cascade(i).filter(e => e.to != null);
+    for (const ch of lines) for (const k of [ch.from, ch.to]) for (const p of ['lvn-', 'lvd-']) {
+      const el = svg.getElementById(p + k);
+      if (el) caps.add(el);
+    }
+    for (const el of caps) {  // the captions of the levels involved are lifted above the arrows: the shares keep clear of them
+      if (el.parentNode === host && !lifted.has(el)) { host.appendChild(el); lifted.add(el); }
+      if (!el.classList.contains('grown')) { const b = el.getBBox(); boxes.push([b.x, b.y, b.x + b.width, b.y + b.height]); }
+    }
+    // where the n-th line that is not drawn meets a bar: from the end nearest to the other level inwards, so that the lines of
+    // neighbouring levels do not run on top of each other
+    const left = {}, come = {}, spot = (bar, other, n) => {
+      const mid = (other[0][0] + other[1][0]) / 2, w = bar[1][0] - bar[0][0], at = w * (0.12 + 0.22 * ((n - 1) % 4));
+      return mid < bar[0][0] ? bar[0][0] + at : mid > bar[1][0] ? bar[1][0] - at : clamp(mid + at - 0.45 * w, bar[0][0] + 8, bar[1][0] - 8);
+    };
+    for (const ch of lines) {
+      const j = lineOf[ch.to + '>' + ch.from], line = j != null && ends('hit-' + j), U = ends('lv-' + ch.from), D = ends('lv-' + ch.to);
       if (!U || !D) continue;
       let S, E, shift = 0;
-      if (line) {  // next to the straight arrow of the drawn line, at a constant distance from it
+      if (line) {  // a drawn line: along it, and for the pinned line next to its straight arrow, at a constant distance from it
         E = line[0]; S = line[1];
-        const d = clamp(17 * g * Math.hypot(E[0] - S[0], E[1] - S[1]) / Math.abs(E[1] - S[1]), 17 * g, 46 * g);
+        const d = j !== i ? 0 : clamp(17 * g * Math.hypot(E[0] - S[0], E[1] - S[1]) / Math.abs(E[1] - S[1]), 17 * g, 46 * g);
         const right = Math.min(U[1][0] - S[0], D[1][0] - E[0]), left = Math.min(S[0] - U[0][0], E[0] - D[0][0]);  // room on the two level bars
         shift = right >= left ? Math.min(d, Math.max(right, 0)) : -Math.min(d, Math.max(left, 0));
-      } else {     // a line that is not drawn (beyond 2 µm, or too weak for the diagram)
-        S = [clamp((D[0][0] + D[1][0]) / 2, U[0][0] + 8, U[1][0] - 8), U[0][1]];
-        E = [clamp((U[0][0] + U[1][0]) / 2, D[0][0] + 8, D[1][0] - 8), D[0][1]];
+      } else {     // a line that is not drawn (beyond 2 µm, or too weak for the diagram): from bar to bar
+        S = [spot(U, D, left[ch.from] = (left[ch.from] || 0) + 1), U[0][1]];
+        E = [spot(D, U, come[ch.to] = (come[ch.to] || 0) + 1), D[0][1]];
       }
       const arrow = wavy([S[0] + shift, S[1]], [E[0] + shift, E[1]], line ? colorOf(j) : '#666', g);
       if (!arrow) continue;
-      h += arrow.svg;
+      h += ch.next ? '<g class="next">' + arrow.svg + '</g>' : arrow.svg;
       // label: on the far side of the straight arrow if it fits there, at the first place that is clear of the labels already set
       const text = sup(ch.label), far = shift && (S[1] - E[1]) * shift > 0 ? 1 : -1, w = fs * 0.31 * text.length + 2 * g, hh = fs * 0.65;
-      let box = null;
+      let box = null, clear = false;
       search: for (const out of [1, 2.4]) for (const side of [far, -far]) for (const at of [0.5, 0.34, 0.66, 0.24, 0.76, 0.42, 0.58]) {
         const p = arrow.at(at, side, out), b = [p[0] - w, p[1] - hh, p[0] + w, p[1] + hh];
         if (!box) box = b;  // nothing is clear: the first choice
-        if (!boxes.some(o => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) { box = b; break search; }
+        if (!boxes.some(o => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) { box = b; clear = true; break search; }
       }
+      if (!clear && ch.next) continue;  // further down the cascade a share that has no room waits until the view is zoomed in
       boxes.push(box);
-      texts += '<text x="' + ((box[0] + box[2]) / 2).toFixed(1) + '" y="' + ((box[1] + box[3]) / 2).toFixed(1) + '">' + text + '</text>';
+      texts += '<text' + (ch.next ? ' class="next"' : '') + ' x="' + ((box[0] + box[2]) / 2).toFixed(1) + '" y="' + ((box[1] + box[3]) / 2).toFixed(1) + '">' + text + '</text>';
     }
     h += texts;  // above every arrow
     decay.innerHTML = h;
@@ -267,7 +335,7 @@
     if (pinned.type === 'lv') role.set(pinned.i, false);
     if (line != null) {
       const t = T[line], label = svg.getElementById('trl-' + line);
-      if (rowHover == null && t.cyc && t.cyc.ch) t.cyc.ch.forEach(r => r.lv != null && role.set(r.lv, true));
+      if (rowHover == null) for (const e of cascade(line)) if (e.to != null && e.to !== t.lower) role.set(e.to, true);
       if (!role.has(t.lower)) role.set(t.lower, pinned.type === 'tr');
       if (t.upper != null) role.set(t.upper, false);
       const seg = ends('hit-' + line);
@@ -328,8 +396,18 @@
   });
   info.addEventListener('pointerleave', () => { rowHover = hover = null; render(); });
   info.addEventListener('click', e => {  // moving on from inside the card keeps a way back
-    const act = e.target.closest('[data-act]'), r = e.target.closest('tr.row'), lv = e.target.closest('[data-lv]');
+    const act = e.target.closest('[data-act]'), r = e.target.closest('tr.row'), lv = e.target.closest('[data-lv]'), so = e.target.closest('[data-sort]');
     const cur = pinned || hover, to = r ? { type: 'tr', i: +r.dataset.i } : lv ? { type: 'lv', i: +lv.dataset.lv } : null;
+    if (so && cur && cur.type === 'lv') {  // a column head of the list of lines: only the list is rewritten, the card stays where it is
+      const by = so.dataset.sort, top = info.scrollTop;
+      sort = { by, dir: sort.by === by ? -sort.dir : SORTS[by][1] };
+      pinned = cur;
+      hover = null;
+      render();
+      info.querySelector('table.sortable').outerHTML = lineTable(cur.i);
+      info.scrollTop = top;
+      return;
+    }
     if (act) { pinned = act.dataset.act === 'back' ? trail.pop() : null; if (!pinned) trail = []; }
     else if (String(getSelection())) return;  // the click that ends a text selection
     else if (to) { if (cur && !same(cur, to)) trail.push(cur); pinned = to; }

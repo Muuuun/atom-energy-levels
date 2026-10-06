@@ -162,7 +162,25 @@
    "tau_unc": 14.999999999999998,
    "tau_tier": "exp",
    "tau_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Zerne, J. Phys. II France 2, 773 (1992) (time-resolved laser-induced fluorescence, 207 nm excitation, extrapolated to zero vapour pressure)",
-   "col": 4
+   "col": 4,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 207.55,
+      "f": 0.84,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 216.48,
+      "f": 0.16,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 6,
@@ -179,7 +197,39 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Bengtsson, Berzinsh, Larsson, Svanberg, Z. Phys. D 23, 29 (1992) (short-pulse laser excitation in a differentially heated cell; value read in the abstract on the Lund University publication record)",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 0,
+      "lam": 196.09,
+      "f": 0.617,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 1,
+      "lam": 204.05,
+      "f": 0.284,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 2,
+      "lam": 206.34,
+      "f": 0.0952,
+      "tier": "exp",
+      "dark": true
+     },
+     {
+      "lv": 3,
+      "lam": 241.42,
+      "f": 0.0034,
+      "tier": "exp",
+      "dark": true
+     }
+    ]
+   }
   },
   {
    "id": 7,
@@ -304,7 +354,34 @@
       "lv": 4,
       "lam": 350.25
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.617,
+      "tier": "exp",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.284,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 2,
+      "p": 0.0952,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 3,
+      "p": 0.0034,
+      "tier": "exp",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0004
    }
   },
   {
@@ -408,7 +485,34 @@
       "lv": 4,
       "lam": 350.25
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.617,
+      "tier": "exp",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.284,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 2,
+      "p": 0.0952,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 3,
+      "p": 0.0034,
+      "tier": "exp",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0004
    }
   },
   {
@@ -472,7 +576,34 @@
       "lv": 4,
       "lam": 350.25
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.617,
+      "tier": "exp",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.284,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 2,
+      "p": 0.0952,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 3,
+      "p": 0.0034,
+      "tier": "exp",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0004
    }
   },
   {
@@ -521,6 +652,20 @@
      {
       "lv": 3,
       "lam": 259.03
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.84,
+      "tier": "exp",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.16,
+      "tier": "exp",
+      "at": "dark"
      }
     ]
    }
@@ -571,6 +716,20 @@
      {
       "lv": 3,
       "lam": 259.03
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.84,
+      "tier": "exp",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.16,
+      "tier": "exp",
+      "at": "dark"
      }
     ]
    }
@@ -637,7 +796,34 @@
       "lv": 4,
       "lam": 350.25
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.617,
+      "tier": "exp",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.284,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 2,
+      "p": 0.0952,
+      "tier": "exp",
+      "at": "dark"
+     },
+     {
+      "lv": 3,
+      "p": 0.0034,
+      "tier": "exp",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0004
    }
   },
   {

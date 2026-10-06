@@ -449,7 +449,7 @@ def draw(key):
     fig.savefig(os.path.join(out, "diagram.pdf"))
     fig.savefig(os.path.join(out, "preview.png"), dpi=1800 / fig_w)
     plt.close(fig)
-    keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "g_tier", "tau_ns", "tau_bound", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term", "E_nist", "E_tier", "E_src")
+    keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "g_tier", "tau_ns", "tau_bound", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term", "E_nist", "E_tier", "E_src", "decay")
     with open(os.path.join(out, "data.json"), "w") as f:
         json.dump(dict(meta={k: meta.get(k) for k in ("slug", "element", "symbol", "A", "I", "limit_cm", "spectrum", "auto")},
                        sources=atom.get("sources", {}),

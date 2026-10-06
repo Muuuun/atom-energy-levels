@@ -706,16 +706,17 @@ def build_nist(key, cfg):
         transitions.append(t)
     transitions.sort(key=lambda t: t["lam"])
 
-    # ---- closed-transition analysis: decay lines of the drawn levels that are not drawn (weak NIST lines, literature lines beyond 2 um)
+    # ---- closed-transition analysis: decay lines that are not drawn (weak NIST lines, literature lines beyond 2 um), of every
+    # level: a decay is followed down through levels that are not drawn too
     extra = {}
     for ln in all_lines:
         lo, up = find(ln["Ei"], line_tol, ln["Ji"]), find(ln["Ek"], line_tol, ln["Jk"])
-        if lo and up and up["E"] > lo["E"] and up["i"] in by_E and (lo["i"], up["i"]) not in chosen and ln["A"] and ln["type"] != "2P":
+        if lo and up and up["E"] > lo["E"] and (lo["i"], up["i"]) not in chosen and ln["A"] and ln["type"] != "2P":
             merge_line(extra, (lo["i"], up["i"]), ln)
     extra = {k: dict(A=ln["A"], tier="nist") for k, ln in extra.items()}
     for lt in lit.raw.get("transitions", []):
         lo, up = find(lt.get("lower_cm", -1e9), j=jof(lt.get("lower_J"))), find(lt.get("upper_cm", -1e9), j=jof(lt.get("upper_J")))
-        if not lo or not up or up["E"] <= lo["E"] or up["i"] not in by_E or (lo["i"], up["i"]) in chosen:
+        if not lo or not up or up["E"] <= lo["E"] or (lo["i"], up["i"]) in chosen:
             continue
         br, A, d = Literature.val(lt.get("branching")), Literature.val(lt.get("A_s")), Literature.rme(lt)
         if not A and d and al.parity_of(lo["conf"], lo["term"]) != al.parity_of(up["conf"], up["term"]):
@@ -727,7 +728,7 @@ def build_nist(key, cfg):
             extra[(lo["i"], up["i"])] = dict(A=A[0] if A else old and old["A"], br=br[0] if br else None, tier=(br or A)[2])
     pool = [dict(E=l["E"], J=l["J"], parity=al.parity_of(l["conf"], l["term"])) for l in nist]
     cycling.annotate(levels, transitions, pool, {l["id"]: i for i, l in by_E.items()},
-                     [dict(x, lower=lo, upper=by_E[up]["id"]) for (lo, up), x in extra.items()],
+                     [dict(x, lower=lo, upper=up) for (lo, up), x in extra.items()],
                      lambda k: al.tex_to_html(level_name(nist[k])))
 
     # ---- tables
