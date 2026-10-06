@@ -33,6 +33,8 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
 - `species.py`: 22 curated isotopes (`kind="alkali"` uses ARC so every E1-allowed pair gets a matrix element;
   `kind="nist"` is NIST + literature). Every other element gets an automatic entry (`auto=True`, key = lowercase symbol,
   slug = element name): strongest classified NIST lines 1 nm – 2 µm, plus annotated literature lines.
+- Isotope pages of one element are linked by the switch under the page title (`isotope_switch()` in `build_site.py`:
+  mass number, boson / fermion from the neutron number, nuclear spin); the header no longer lists every isotope.
 - `elements.py`: periodic-table layout. `atomlib.py`: NIST download/parsing, conversions, naming.
 - `docs/assets/viewer.js`, `style.css`: hover-to-preview, click-to-pin, zoom/pan, filter by transition type.
   A pinned card changes on clicks only (diagram, rows and level names in the card, Back, ×, Esc); hovering changes only the

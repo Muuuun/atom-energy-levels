@@ -14,6 +14,20 @@ a { color: var(--accent); }
 h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.15; margin: 26px 0 10px; text-wrap: balance; }
 h2 { font-size: 22px; margin: 40px 0 10px; }
 .lead { font-size: 17.5px; max-width: 78ch; margin: 0 0 16px; }
+/* isotope switch under the title */
+.iso { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 4px 0 18px; }
+.iso > span { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.iso > div { display: inline-flex; flex-wrap: wrap; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.iso a { display: flex; flex-direction: column; min-width: 124px; padding: 6px 16px 7px; border-radius: 9px; text-decoration: none;
+         color: var(--ink); line-height: 1.25; transition: background .12s; }
+.iso a b { font-size: 18px; }
+.iso a sup { font-size: .62em; }
+.iso a small { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+.iso a:hover { background: var(--stripe); }
+.iso a[aria-current] { background: var(--ink); color: #fff; cursor: default; }
+.iso a[aria-current] small { color: rgba(255, 255, 255, .72); }
+@media (max-width: 640px) { .iso > div { display: flex; flex-wrap: nowrap; width: 100%; }
+                            .iso a { flex: 1; min-width: 0; padding: 6px 9px 7px; } .iso a small { font-size: 11.5px; } }
 .hint { color: var(--muted); font-size: 14.5px; margin: 0 0 8px; }
 .downloads { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14.5px; margin: 10px 0 0; }
 

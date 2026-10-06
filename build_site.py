@@ -76,12 +76,22 @@ def table(header, rows, left=(0,), wrap=()):
     return f'<div class="scroll"><table class="data"><thead><tr>{th}</tr></thead><tbody>{"".join(body)}</tbody></table></div>'
 
 
-def nav(pages, current=None):
-    cur = ' aria-current="page"'
-    links = "".join(f'<a href="../{p["slug"]}/"{cur if p["slug"] == current else ""}>'
-                    f'<sup>{p["A"]}</sup>{p["symbol"]}</a>' for p in pages if p["A"])
-    return (f'<header class="top"><a class="brand" href="../">{SITE}</a><nav aria-label="Atoms">'
-            f'<a href="../">Periodic table</a>{links}</nav></header>')
+def nav():
+    return f'<header class="top"><a class="brand" href="../">{SITE}</a><nav><a href="../">Periodic table</a></nav></header>'
+
+
+def isotope_switch(pages, slug):
+    """Segmented control under the title: the isotope pages of this element, with quantum statistics and nuclear spin."""
+    here = next(p for p in pages if p["slug"] == slug)
+    sibs = [p for p in pages if p["symbol"] == here["symbol"] and p["A"]]
+    if len(sibs) < 2:
+        return ""
+    items = "".join(
+        f'<a href="../{p["slug"]}/"{" aria-current=" + chr(34) + "page" + chr(34) if p is here else ""}>'
+        f'<b><sup>{p["A"]}</sup>{p["symbol"]}</b>'
+        # a neutral atom has as many electrons as protons, so the neutron number decides its statistics
+        f'<small>{"boson" if (p["A"] - p["Z"]) % 2 == 0 else "fermion"} · <i>I</i> = {p["I"]}</small></a>' for p in sibs)
+    return f'<nav class="iso" aria-label="Isotopes of {here["element"].lower()}"><span>Isotope</span><div>{items}</div></nav>\n'
 
 
 def atom_page(key, pages):
@@ -167,11 +177,11 @@ def atom_page(key, pages):
             {"@type": "ListItem", "position": 2, "name": name, "item": url}]})}</script>
 </head>
 <body>
-{nav(pages, slug)}
+{nav()}
 <main>
 <div class="wrap">
 <h1>{name} energy level diagram</h1>
-<p class="lead">{lead}</p>
+{isotope_switch(pages, slug)}<p class="lead">{lead}</p>
 <p class="hint">Hover a line or a level to isolate it, click to keep it selected. Scroll to zoom, drag to move.</p>
 </div>
 <div id="stage">
@@ -311,7 +321,7 @@ def fact_pages(pages):
 <meta property="og:url" content="{url}">
 </head>
 <body>
-{nav(pages)}
+{nav()}
 <main>
 <div class="wrap">
 <h1>{name} ({sym}, Z = {e['Z']}): atomic energy levels</h1>
@@ -453,7 +463,7 @@ def main():
             continue
         with open(p) as f:
             atom = json.load(f)
-        pages.append(dict(key=key, slug=cfg["slug"], element=cfg["element"], symbol=cfg["symbol"], A=cfg["A"], Z=cfg["Z"],
+        pages.append(dict(key=key, slug=cfg["slug"], element=cfg["element"], symbol=cfg["symbol"], A=cfg["A"], Z=cfg["Z"], I=atom["meta"].get("I"),
                           levels=len(atom["levels"]), lines=sum(1 for t in atom["transitions"] if t["kind"] != "rydberg"),
                           has_lit=atom["meta"].get("has_lit")))
     pages.sort(key=lambda p: (p["Z"], p["A"] or 0))
