@@ -23,9 +23,10 @@ h2 { font-size: 22px; margin: 40px 0 10px; }
 #stage svg { width: 100%; height: 100%; display: block; user-select: none; -webkit-user-select: none; }
 #stage .loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); }
 #stage .loading img { max-width: 100%; max-height: 100%; opacity: .5; }
-/* hover emphasis: every transition fades unless it carries .hl */
+/* emphasis: every transition fades unless it carries .hl (selected) or .sf (glanced at next to the selection) */
 svg [id^="tr-"], svg [id^="trl-"] { transition: opacity .12s; }
 svg.dim [id^="tr-"], svg.dim [id^="trl-"] { opacity: .07; }
+svg.dim [id^="tr-"].sf, svg.dim [id^="trl-"].sf { opacity: .4; transition-delay: .05s; }
 svg.dim [id^="tr-"].hl, svg.dim [id^="trl-"].hl { opacity: 1; }
 svg [id^="hit-"], svg [id^="trl-"], svg [id^="lv"] { cursor: pointer; }
 svg [id^="hit-"] path { pointer-events: stroke; }
@@ -36,8 +37,20 @@ svg [id^="hit-"] path { pointer-events: stroke; }
 #zoom button.wide { width: auto; padding: 0 12px; font-size: 13.5px; }
 #info { position: absolute; right: 12px; top: 12px; width: min(350px, calc(100% - 24px)); max-height: calc(100% - 24px);
         overflow: auto; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px;
-        background: rgba(255, 255, 255, .96); box-shadow: 0 4px 18px rgba(0, 0, 0, .08); font-size: 14px; line-height: 1.4; }
+        background: rgba(255, 255, 255, .96); box-shadow: 0 4px 18px rgba(0, 0, 0, .08); font-size: 14px; line-height: 1.4;
+        cursor: auto; overscroll-behavior: contain; }
+#info.pinned { border-color: var(--muted); box-shadow: 0 6px 22px rgba(0, 0, 0, .16); }
+#info .bar { position: sticky; top: -12px; z-index: 1; display: flex; justify-content: space-between; align-items: center; gap: 8px;
+             min-height: 30px; margin: -12px -14px 10px; padding: 2px 6px 2px 14px; border-bottom: 1px solid var(--line);
+             background: var(--panel); font-size: 12.5px; color: var(--muted); }
+#info button { font: inherit; color: inherit; background: none; border: 0; margin: 0; padding: 0; cursor: pointer; }
+#info .bar button { padding: 2px 8px; margin-left: -8px; border-radius: 6px; }
+#info .bar button:hover { background: var(--stripe); color: var(--ink); }
+#info .bar .close { margin: 0; font-size: 20px; line-height: 1; }
 #info h3 { font-size: 17px; margin: 0 0 6px; }
+#info h3 button { text-decoration-line: underline; text-decoration-style: dotted; text-decoration-color: var(--muted);
+                  text-underline-offset: 4px; }
+#info h3 button:hover { color: var(--accent); }
 #info .tag { font-size: 12.5px; color: var(--muted); margin-bottom: 8px; }
 #info table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
 #info td, #info th { padding: 3px 0; text-align: left; vertical-align: baseline; }

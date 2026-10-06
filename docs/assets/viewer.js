@@ -1,4 +1,4 @@
-// Interactive level diagram: hover to isolate a line or a level, click to pin, wheel / drag / pinch to navigate.
+// Interactive level diagram: hover to preview a line or a level, click to pin its card, wheel / drag / pinch to navigate.
 (async function () {
   const stage = document.getElementById('stage');
   const info = document.getElementById('info');
@@ -22,6 +22,7 @@
   const badge = t => t && TIER[t] ? '<span class="tier ' + t + '">' + TIER[t] + '</span>' : '';
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const upName = t => t.upper != null ? L[t.upper].html : t.upper_html;
+  const lvBtn = k => '<button type="button" data-lv="' + k + '" title="Show this level">' + L[k].html + '</button>';
   const fd = d => d >= 10 ? d.toFixed(2) : d >= 0.1 ? d.toFixed(3) : d.toPrecision(3);
   const fA = a => { const e = Math.floor(Math.log10(a)); return (a / 10 ** e).toFixed(2) + ' × 10<sup>' + e + '</sup>'; };
   const ftau = ns => ns < 1e3 ? +ns.toPrecision(4) + ' ns' : ns < 1e6 ? +(ns / 1e3).toPrecision(4) + ' µs'
@@ -39,7 +40,8 @@
 
   function transitionCard(i) {
     const t = T[i];
-    let h = '<h3><span class="swatch" style="background:' + colorOf(i) + '"></span>' + L[t.lower].html + ' → ' + upName(t) + '</h3>';
+    let h = '<h3><span class="swatch" style="background:' + colorOf(i) + '"></span>' + lvBtn(t.lower) + ' → ' +
+            (t.upper != null ? lvBtn(t.upper) : t.upper_html) + '</h3>';
     if (t.kind === 'rydberg') h += '<div class="tag">Rydberg excitation, shown for n = 70</div>';
     if (t.kind === 'forbidden') h += '<div class="tag">Forbidden line (not electric-dipole allowed)</div>';
     if (t.use) h += '<div class="tag">' + esc(t.use) + '</div>';
@@ -84,23 +86,51 @@
 
   const helpCard = '<h3>How to read this</h3><div class="note" style="margin-top:0;font-size:13.5px;color:inherit">' +
     'Each arrow is a transition, labelled with its vacuum wavelength and reduced dipole matrix element.<br><br>' +
-    'Point at an arrow, its label, or a level to fade everything else. Click to pin the selection; click empty space to release it.</div>';
+    'Point at an arrow, its label, or a level to fade everything else.<br><br>' +
+    'Click to pin it: the card then stays put, so you can move to it, follow its sources, or pick a line from a level’s list. ' +
+    'Release with ×, Esc, or a click on empty space.</div>';
 
-  // ---------- emphasis
-  let pinned = null, shown;
-  function apply(sel) {
-    if (JSON.stringify(sel) === JSON.stringify(shown)) return;
-    shown = sel;
-    svg.querySelectorAll('.hl').forEach(e => e.classList.remove('hl'));
-    if (!sel) { svg.classList.remove('dim'); info.innerHTML = helpCard; return; }
-    const ids = sel.type === 'tr' ? [sel.i] : linesOf[sel.i];
-    for (const i of ids) for (const p of ['tr-', 'trl-']) {
+  // ---------- selection
+  // `pinned` owns the card and changes on clicks only. `hover` (what the pointer rests on in the diagram) borrows the card
+  // only while nothing is pinned, and `rowHover` (a line of a level card's list) never touches it: hovering only changes
+  // what the diagram emphasises, so the pointer can cross other lines on its way to a pinned card and then use it.
+  let pinned = null, hover = null, rowHover = null, trail = [], cardKey, paintKey;
+  const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+  const linesFor = s => !s ? [] : s.type === 'tr' ? [s.i] : linesOf[s.i];
+  const nameOf = s => s.type === 'tr' ? L[T[s.i].lower].html + ' → ' + upName(T[s.i]) : L[s.i].html;
+  function paint() {
+    const sel = pinned || hover;
+    let strong = linesFor(sel), soft = [];
+    if (rowHover != null) { soft = strong; strong = [rowHover]; }  // one line out of the level's list
+    else if (pinned && hover) soft = linesFor(hover);              // a glance at something else next to the pinned selection
+    const key = JSON.stringify([!!sel, strong, soft]);
+    if (key === paintKey) return;
+    paintKey = key;
+    svg.querySelectorAll('.hl, .sf').forEach(e => e.classList.remove('hl', 'sf'));
+    svg.classList.toggle('dim', !!sel);
+    for (const [ids, cls] of [[soft, 'sf'], [strong, 'hl']]) for (const i of ids) for (const p of ['tr-', 'trl-']) {
       const e = svg.getElementById(p + i);
-      if (e) { e.classList.add('hl'); if (p === 'trl-') e.parentNode.appendChild(e); }  // label on top of its neighbours
+      if (!e) continue;
+      e.classList.remove('sf');
+      e.classList.add(cls);
+      if (p === 'trl-') e.parentNode.appendChild(e);  // label on top of its neighbours
     }
-    svg.classList.add('dim');
-    info.innerHTML = sel.type === 'tr' ? transitionCard(sel.i) : levelCard(sel.i);
   }
+  function card() {  // rewritten only when its owner changes, so a pinned card keeps its scroll position and text selection
+    const sel = pinned || hover, key = JSON.stringify([sel, !!pinned, trail.length]);
+    if (key === cardKey) return;
+    cardKey = key;
+    rowHover = null;
+    info.classList.toggle('pinned', !!pinned);
+    if (!sel) { info.innerHTML = helpCard; return; }
+    const back = trail.length ? '<button type="button" data-act="back" title="Back">‹ ' + nameOf(trail[trail.length - 1]) + '</button>'
+      : '<span>Pinned</span>';
+    const bar = !pinned ? '<span>Preview · click to pin</span>' : back +
+      '<button type="button" class="close" data-act="close" title="Release (Esc)" aria-label="Release the pinned selection">×</button>';
+    info.innerHTML = '<div class="bar">' + bar + '</div>' + (sel.type === 'tr' ? transitionCard(sel.i) : levelCard(sel.i));
+    info.scrollTop = 0;
+  }
+  const render = () => { card(); paint(); };
   function target(e) {
     for (let n = e.target; n && n !== svg; n = n.parentNode) {
       const m = n.id && n.id.match(/^(hit|tr|trl|lv|lvn|lvd)-(\d+)$/);
@@ -109,12 +139,31 @@
     return null;
   }
   let drag = null, moved = 0;
-  svg.addEventListener('mouseover', e => { if (!drag) apply(target(e) || pinned); });
-  svg.addEventListener('mouseleave', () => apply(pinned));
-  info.addEventListener('mouseover', e => { const r = e.target.closest('tr.row'); if (r) apply({ type: 'tr', i: +r.dataset.i }); });
-  info.addEventListener('click', e => { const r = e.target.closest('tr.row'); if (r) { pinned = { type: 'tr', i: +r.dataset.i }; apply(pinned); } });
-  info.addEventListener('mouseleave', () => apply(pinned));
-  apply(null);
+  svg.addEventListener('pointerover', e => { if (e.pointerType !== 'touch' && !drag) { hover = target(e); render(); } });
+  svg.addEventListener('pointerleave', e => {  // a preview survives a move straight from its line into the card
+    if (pinned || !(e.relatedTarget && info.contains(e.relatedTarget))) hover = null;
+    render();
+  });
+  info.addEventListener('pointerover', e => {
+    if (e.pointerType === 'touch') return;
+    const r = e.target.closest('tr.row');
+    rowHover = r ? +r.dataset.i : null;
+    paint();
+  });
+  info.addEventListener('pointerleave', () => { rowHover = hover = null; render(); });
+  info.addEventListener('click', e => {  // moving on from inside the card keeps a way back
+    const act = e.target.closest('[data-act]'), r = e.target.closest('tr.row'), lv = e.target.closest('[data-lv]');
+    const cur = pinned || hover, to = r ? { type: 'tr', i: +r.dataset.i } : lv ? { type: 'lv', i: +lv.dataset.lv } : null;
+    if (act) { pinned = act.dataset.act === 'back' ? trail.pop() : null; if (!pinned) trail = []; }
+    else if (String(getSelection())) return;  // the click that ends a text selection
+    else if (to) { if (cur && !same(cur, to)) trail.push(cur); pinned = to; }
+    else if (cur) pinned = cur;
+    else return;
+    hover = null;
+    render();
+  });
+  window.addEventListener('keydown', e => { if (e.key === 'Escape' && pinned) { pinned = null; trail = []; render(); } });
+  render();
 
   // ---------- filter by transition type (E1, intercombination, M1, E2, M2, Rydberg ...)
   const typeOf = t => t.kind === 'rydberg' ? 'Rydberg' : (t.type || 'E1');
@@ -179,8 +228,10 @@
     }
     pointers.set(e.pointerId, e);
     if (!drag) return;
-    moved += Math.abs(e.clientX - drag.x) + Math.abs(e.clientY - drag.y);
-    if (moved > 4) stage.classList.add('dragging');
+    const slop = e.pointerType === 'touch' ? 10 : 5;  // a click may wobble by a few pixels without becoming a drag
+    if (!moved && Math.hypot(e.clientX - drag.x, e.clientY - drag.y) < slop) return;
+    moved = 99;
+    stage.classList.add('dragging');
     const p0 = toSvg(drag.x, drag.y), p1 = toSvg(e.clientX, e.clientY);
     vb.x -= p1.x - p0.x;
     vb.y -= p1.y - p0.y;
@@ -190,10 +241,11 @@
   window.addEventListener('pointerup', e => {
     if (!pointers.delete(e.pointerId)) return;
     stage.classList.remove('dragging');
-    if (moved <= 4) {  // a click, not a drag: pin or release
+    if (!moved) {  // a click, not a drag: pin or release
       const t = target(e);
-      pinned = t && JSON.stringify(t) === JSON.stringify(pinned) ? null : t;
-      apply(pinned);
+      pinned = t && same(t, pinned) ? null : t;
+      trail = [];
+      render();
     }
     drag = null;
   });

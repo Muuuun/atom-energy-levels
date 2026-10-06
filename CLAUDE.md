@@ -34,7 +34,9 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
   `kind="nist"` is NIST + literature). Every other element gets an automatic entry (`auto=True`, key = lowercase symbol,
   slug = element name): strongest classified NIST lines 1 nm – 2 µm, plus annotated literature lines.
 - `elements.py`: periodic-table layout. `atomlib.py`: NIST download/parsing, conversions, naming.
-- `docs/assets/viewer.js`, `style.css`: hover-to-isolate, click-to-pin, zoom/pan, filter by transition type.
+- `docs/assets/viewer.js`, `style.css`: hover-to-preview, click-to-pin, zoom/pan, filter by transition type.
+  A pinned card changes on clicks only (diagram, rows and level names in the card, Back, ×, Esc); hovering changes only the
+  emphasis in the diagram (`pinned` / `hover` / `rowHover`, classes `hl` strong and `sf` soft). Keep it that way.
   SVG ids: `tr-i` arrow, `trl-i` label, `hit-i` hover target, `lv-k` / `lvn-k` / `lvd-k` level.
 - Use system `/usr/bin/python3` (ARC 3.9.0, pairinteraction 2.3.1 — only Rb tables cached, cannot download others).
 - zsh does not word-split variables: pass keys explicitly or use the `auto` / `curated` keywords.
