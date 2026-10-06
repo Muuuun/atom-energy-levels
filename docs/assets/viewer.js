@@ -141,6 +141,7 @@
   const linesFor = s => !s ? [] : s.type === 'tr' ? [s.i] : linesOf[s.i];
   const nameOf = s => s.type === 'tr' ? L[T[s.i].lower].html + ' → ' + upName(T[s.i]) : L[s.i].html;
   function paint() {
+    enlarge();
     const sel = pinned || hover;
     let strong = linesFor(sel), soft = [];
     if (rowHover != null) { soft = strong; strong = [rowHover]; }  // one line out of the level's list
@@ -172,6 +173,8 @@
     info.innerHTML = '<div class="bar">' + bar + '</div>' + (sel.type === 'tr' ? transitionCard(sel.i) : levelCard(sel.i));
     info.scrollTop = 0;
   }
+  const grownEls = [];
+  let grownKey = null, grownBoxes = [];  // what enlarge() made bigger, and the room it takes: the decay labels keep clear of it
   // ---------- decay channels of the pinned line's upper level: wavy arrows (spontaneous emission) labelled with their share
   const decay = svg.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'g'));
   decay.id = 'decay';
@@ -198,7 +201,7 @@
     const B = [E[0] - u[0] * head, E[1] - u[1] * head], hw = head * 0.4, d = 'M' + pts.join('L') + 'L' + f(B);
     const tip = [E, [B[0] + n[0] * hw, B[1] + n[1] * hw], [B[0] - n[0] * hw, B[1] - n[1] * hw]].map(f).join(' ');
     return { svg: '<path class="halo" d="' + d + '"/><path d="' + d + '" style="stroke:' + color + '"/><polygon points="' + tip + '" style="fill:' + color + '"/>',
-             at: (t, side) => [S[0] + dx * t + n[0] * side * (a + 13 * g), S[1] + dy * t + n[1] * side * (a + 13 * g)] };
+             at: (t, side, far) => [S[0] + dx * t + n[0] * side * (a + 13 * g) * far, S[1] + dy * t + n[1] * side * (a + 13 * g) * far] };
   }
   let decayKey = null;
   function decayArrows() {
@@ -215,14 +218,14 @@
     const chans = [{ lv: t.lower, label: c.cls === 'closed' ? '100 %' : (c.bound ? '≤ ' : '') + fkept(1 - c.leak) }]
       .concat((c.ch || []).filter(r => r.lv != null).map(r => ({ lv: r.lv, label: mark(fshare(r.f), r.tier) })));
     let h = '', texts = '';
-    const boxes = [], fs = 12.5 * g;
+    const boxes = grownBoxes.slice(), fs = 12.5 * g;
     for (const ch of chans) {
       const j = lineOf[ch.lv + '>' + t.upper], line = j != null && ends('hit-' + j), D = ends('lv-' + ch.lv);
       if (!U || !D) continue;
       let S, E, shift = 0;
       if (line) {  // next to the straight arrow of the drawn line, at a constant distance from it
         E = line[0]; S = line[1];
-        const d = clamp(14 * g * Math.hypot(E[0] - S[0], E[1] - S[1]) / Math.abs(E[1] - S[1]), 14 * g, 40 * g);
+        const d = clamp(17 * g * Math.hypot(E[0] - S[0], E[1] - S[1]) / Math.abs(E[1] - S[1]), 17 * g, 46 * g);
         const right = Math.min(U[1][0] - S[0], D[1][0] - E[0]), left = Math.min(S[0] - U[0][0], E[0] - D[0][0]);  // room on the two level bars
         shift = right >= left ? Math.min(d, Math.max(right, 0)) : -Math.min(d, Math.max(left, 0));
       } else {     // a line that is not drawn (beyond 2 µm, or too weak for the diagram)
@@ -235,8 +238,8 @@
       // label: on the far side of the straight arrow if it fits there, at the first place that is clear of the labels already set
       const text = sup(ch.label), far = shift && (S[1] - E[1]) * shift > 0 ? 1 : -1, w = fs * 0.31 * text.length + 2 * g, hh = fs * 0.65;
       let box = null;
-      search: for (const side of [far, -far]) for (const at of [0.5, 0.34, 0.66, 0.24, 0.76, 0.42, 0.58]) {
-        const p = arrow.at(at, side), b = [p[0] - w, p[1] - hh, p[0] + w, p[1] + hh];
+      search: for (const out of [1, 2.4]) for (const side of [far, -far]) for (const at of [0.5, 0.34, 0.66, 0.24, 0.76, 0.42, 0.58]) {
+        const p = arrow.at(at, side, out), b = [p[0] - w, p[1] - hh, p[0] + w, p[1] + hh];
         if (!box) box = b;  // nothing is clear: the first choice
         if (!boxes.some(o => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) { box = b; break search; }
       }
@@ -245,6 +248,63 @@
     }
     h += texts;  // above every arrow
     decay.innerHTML = h;
+  }
+  // ---------- reading size for what is pinned: the label of the line and the captions of its levels grow with the view, like the
+  // decay labels, and return to their drawn size once the diagram is zoomed in. Pinned selections only, never a hover preview.
+  function grow(el, k, ox, oy, tx, ty) {  // scaled by k about (ox, oy), which then goes to (tx, ty)
+    el.setAttribute('transform', 'translate(' + tx + ' ' + ty + ') scale(' + k + ') translate(' + -ox + ' ' + -oy + ')');
+    el.classList.add('grown');
+    grownEls.push(el);
+  }
+  function enlarge() {
+    const m = pinned && svg.getScreenCTM(), g = m ? +clamp(1 / m.a, 1, 5).toFixed(1) : 1, key = g > 1 ? JSON.stringify([pinned, rowHover, g]) : null;
+    if (key === grownKey) return;
+    grownKey = key;
+    for (const el of grownEls.splice(0)) { el.removeAttribute('transform'); el.classList.remove('grown'); }
+    grownBoxes = [];
+    if (!key) return;
+    const line = rowHover != null ? rowHover : pinned.type === 'tr' ? pinned.i : null, role = new Map();  // level -> does light arrive on it from above
+    if (pinned.type === 'lv') role.set(pinned.i, false);
+    if (line != null) {
+      const t = T[line], label = svg.getElementById('trl-' + line);
+      if (rowHover == null && t.cyc && t.cyc.ch) t.cyc.ch.forEach(r => r.lv != null && role.set(r.lv, true));
+      if (!role.has(t.lower)) role.set(t.lower, pinned.type === 'tr');
+      if (t.upper != null) role.set(t.upper, false);
+      const seg = ends('hit-' + line);
+      if (label && seg) {  // to the middle of its line, and no longer than the line
+        const b = label.getBBox(), long = Math.hypot(b.width, b.height), dx = seg[1][0] - seg[0][0], dy = seg[1][1] - seg[0][1], len = Math.hypot(dx, dy);
+        const k = Math.min(1 + (g - 1) * 1.3, 0.8 * len / long), mx = seg[0][0] + dx / 2, my = seg[0][1] + dy / 2;
+        if (k > 1.05) {
+          grow(label, k, b.x + b.width / 2, b.y + b.height / 2, mx, my);
+          for (let s = -long * k / 2; s <= long * k / 2; s += 10 * k)  // its room, as a row of small boxes along the line
+            grownBoxes.push([mx + dx / len * s - 8 * k, my + dy / len * s - 8 * k, mx + dx / len * s + 8 * k, my + dy / len * s + 8 * k]);
+        }
+      }
+    }
+    const caps = [];
+    for (const [k, below] of role) {
+      const bar = ends('lv-' + k), parts = ['lvn-', 'lvd-'].map(p => svg.getElementById(p + k)).filter(Boolean);
+      if (!bar || !parts.length) continue;
+      const bs = parts.map(e => e.getBBox()), x0 = Math.min(...bs.map(b => b.x)), x1 = Math.max(...bs.map(b => b.x + b.width));
+      const y0 = Math.min(...bs.map(b => b.y)), y1 = Math.max(...bs.map(b => b.y + b.height)), y = bar[0][1];
+      // grows away from its bar; a caption above a bar that decay arrows arrive on moves below the bar, out of their way
+      caps.push({ parts, x0, x1, y0, y1, ox: clamp((x0 + x1) / 2, bar[0][0], bar[1][0]), oy: y, k: g, flip: below && y1 <= y + 1 });
+    }
+    const box = c => {
+      const dy = c.flip ? (2 * c.oy - c.y0 - c.y1) * c.k : 0;
+      return [c.ox + (c.x0 - c.ox) * c.k, c.oy + (c.y0 - c.oy) * c.k + dy, c.ox + (c.x1 - c.ox) * c.k, c.oy + (c.y1 - c.oy) * c.k + dy];
+    };
+    for (let n = 0, hit = true; hit && n < 14; n++) {  // fine-structure neighbours: shrink until their captions clear each other
+      hit = false;
+      for (const a of caps) for (const b of caps) {
+        const p = box(a), q = box(b);
+        if (a !== b && a.k > 1 && p[0] < q[2] && p[2] > q[0] && p[1] < q[3] && p[3] > q[1]) { a.k = Math.max(1, a.k * 0.88); hit = true; }
+      }
+    }
+    for (const c of caps) if (c.k > 1.05) {
+      for (const e of c.parts) grow(e, c.k, c.ox, c.oy, c.ox, c.oy + (c.flip ? (2 * c.oy - c.y0 - c.y1) * c.k : 0));
+      grownBoxes.push(box(c));
+    }
   }
   const render = () => { card(); paint(); decayArrows(); };
   function target(e) {
@@ -306,7 +366,7 @@
   const full = svg.viewBox.baseVal;
   const home = { x: full.x, y: full.y, w: full.width, h: full.height };
   let vb = { ...home };
-  const setVB = () => { svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h); decayArrows(); };
+  const setVB = () => { svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h); enlarge(); decayArrows(); };
   const toSvg = (cx, cy) => new DOMPoint(cx, cy).matrixTransform(svg.getScreenCTM().inverse());
   function zoomAt(cx, cy, f) {
     const w = Math.min(home.w * 1.2, Math.max(home.w / 60, vb.w * f));

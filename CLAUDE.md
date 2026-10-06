@@ -50,7 +50,9 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
   While a line is pinned, `decayArrows()` in `viewer.js` draws the decay channels of its upper level as wavy arrows
   (spontaneous emission) labelled with their share, in the SVG group `#decay`: next to the straight arrow of a drawn line,
   bar to bar for a line that is not drawn; sizes follow the zoom so the shares stay readable in the full view. Pinned only,
-  never on hover.
+  never on hover. `enlarge()` does the same for the label of the pinned line and the captions of its levels (a `transform`
+  on `trl-i`, `lvn-k`, `lvd-k`, class `grown`): about 12 px on screen in the full view, back to the drawn size once zoomed in.
+  Enlarging every label of the figure is not possible (they would overlap), and the fonts of the figure itself were not changed.
 - `elements.py`: periodic-table layout. `atomlib.py`: NIST download/parsing, conversions, naming.
 - `docs/assets/viewer.js`, `style.css`: hover-to-preview, click-to-pin, zoom/pan, filter by transition type.
   A pinned card changes on clicks only (diagram, rows and level names in the card, Back, ×, Esc); hovering changes only the

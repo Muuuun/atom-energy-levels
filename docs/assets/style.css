@@ -77,6 +77,8 @@ svg [id^="hit-"] path { pointer-events: stroke; }
 #info table.lines tr.row { cursor: pointer; }
 #info table.lines tr.row:hover td { background: var(--stripe); }
 #info .note { margin-top: 8px; font-size: 12.5px; color: var(--muted); }
+/* the enlarged label of a pinned line must not shield the lines under it from the pointer */
+[id^="trl-"].grown { pointer-events: none; }
 /* decay channels of the pinned line's upper level: wavy arrows drawn by viewer.js */
 #decay { pointer-events: none; }
 #decay path { fill: none; stroke-width: calc(2.2px * var(--g, 1)); stroke-linejoin: round; stroke-linecap: round; }
