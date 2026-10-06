@@ -465,7 +465,7 @@ def build_nist(key, cfg):
     sym = cfg["symbol"]
     lit = Literature(sym, cfg["A"])
     hfs_iso = None
-    if cfg.get("auto") and lit.raw.get("isotopes"):
+    if cfg.get("auto") and not cfg["A"] and lit.raw.get("isotopes"):
         # element page with a literature file: frequencies of the most abundant isotope,
         # hyperfine constants of the most abundant isotope that has a nuclear spin
         iso = lit.raw["isotopes"]

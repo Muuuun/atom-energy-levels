@@ -32,7 +32,7 @@ def main():
         lines = [t for t in atom["transitions"] if t["kind"] != "rydberg"]
         levels = [l for l in atom["levels"] if l["tau_tier"] != "stable"]
         a, tau = count(lines, "A_tier"), count(levels, "tau_tier")
-        if cfg.get("auto"):  # NIST-only element pages: summarised in one line below
+        if cfg.get("auto") and not cfg["A"]:  # NIST-only element pages: summarised in one line below
             auto_n += 1
             for c in COLS:
                 auto_A[c] += a[c]

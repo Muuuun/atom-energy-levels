@@ -22,7 +22,8 @@ DOCS = os.path.join(al.HERE, "docs")
 SITE = "Atomic energy level diagrams"
 TIER = {"exp": "measured", "nist": "NIST", "theory": "theory", "model": "model calc."}
 ION_USE = {"Be", "Mg", "Ca", "Sr", "Ba", "Yb"}
-PRIMARY = {"Li": 7, "Be": 9, "Na": 23, "Mg": 24, "K": 39, "Ca": 40, "Rb": 87, "Sr": 88, "Cs": 133, "Ba": 138, "Yb": 174, "Dy": 164}
+PRIMARY = {"Li": 7, "Be": 9, "Na": 23, "Mg": 24, "K": 39, "Ca": 40, "Rb": 87, "Sr": 88, "Cs": 133, "Ba": 138, "Yb": 174, "Dy": 164,
+           "Cr": 52, "Cd": 114, "Er": 166, "Tm": 169, "Hg": 202}  # the isotope a periodic-table cell and /<element>/ lead to
 CATEGORY = {"alkali": "Alkali metal", "alkaline-earth": "Alkaline earth", "transition": "Transition metal",
             "post-transition": "Post-transition metal", "metalloid": "Metalloid", "nonmetal": "Nonmetal", "noble-gas": "Noble gas",
             "lanthanide": "Lanthanide", "actinide": "Actinide"}
@@ -90,7 +91,7 @@ def isotope_switch(pages, slug):
         f'<a href="../{p["slug"]}/"{" aria-current=" + chr(34) + "page" + chr(34) if p is here else ""}>'
         f'<b><sup>{p["A"]}</sup>{p["symbol"]}</b>'
         # a neutral atom has as many electrons as protons, so the neutron number decides its statistics
-        f'<small>{"boson" if (p["A"] - p["Z"]) % 2 == 0 else "fermion"} · <i>I</i> = {p["I"]}</small></a>' for p in sibs)
+        f'<small><span>{"boson" if (p["A"] - p["Z"]) % 2 == 0 else "fermion"}</span><span><i>I</i> = {p["I"]}</span></small></a>' for p in sibs)
     return f'<nav class="iso" aria-label="Isotopes of {here["element"].lower()}"><span>Isotope</span><div>{items}</div></nav>\n'
 
 
@@ -102,6 +103,7 @@ def atom_page(key, pages):
     meta, L, T = atom["meta"], atom["levels"], atom["transitions"]
     bound = [t for t in T if t["kind"] != "rydberg"]
     auto = not meta["A"]
+    listed = bool(meta.get("auto"))  # lines chosen by strength from NIST, not the full list below the energy cut
     name = f"{meta['element']}-{meta['A']}" if meta["A"] else meta["element"]
     iso = f"<sup>{meta['A']}</sup>{meta['symbol']}" if meta["A"] else meta["symbol"]
     n_d = sum(1 for t in bound if t.get("d") is not None)
@@ -136,6 +138,12 @@ def atom_page(key, pages):
                 + ("Measured lifetimes, transition rates, hyperfine constants and isotope shifts from the literature are included, "
                    "each with its citation." if meta.get("has_lit") else
                    "Lifetimes, hyperfine constants and isotope shifts from the literature have not been compiled for this element yet."))
+    elif listed:  # isotope page of an element drawn automatically
+        lead = (f"Energy levels and transitions of neutral {iso} ({meta['symbol']} I, nuclear spin <i>I</i> = {meta['I']}): the {len(bound)} "
+                f"strongest classified lines below 2 µm from the NIST Atomic Spectra Database and the {len(L)} levels they connect, each line "
+                f"with its vacuum wavelength, frequency and, for {n_d} of them, the reduced dipole matrix element. Level energies come from "
+                f"NIST and refer to the natural isotope mixture; transition rates are {prov}. Hyperfine constants and measured "
+                f"frequencies are those of this isotope.")
     else:
         lead = (f"Energy levels and transitions of neutral {iso} ({meta['symbol']} I, nuclear spin <i>I</i> = {meta['I']}): {len(L)} levels and "
                 f"{len(bound)} lines below 2 µm, each with its vacuum wavelength, frequency and, for {n_d} of them, the reduced dipole matrix "
@@ -222,7 +230,7 @@ def atom_page(key, pages):
             (fmt_d(t["d"]) + badge(t.get("d_tier"))) if t.get("d") is not None else "–",
             (f"{t['A']:.3e}" + badge(t.get("A_tier"))) if t.get("A") else "–",
             f"{t['br'] * 100:.3g}" if t.get("br") is not None else "–", cite(atom, t.get("d_src") or t.get("A_src"))]))
-    parts.append(f"<h2>{'Listed' if auto else 'All'} {iso} transitions below 2 µm</h2>")
+    parts.append(f"<h2>{'Listed' if listed else 'All'} {iso} transitions below 2 µm</h2>")
     parts.append(table(["Lower level", "Upper level", "λ vacuum (nm)", "λ air (nm)", "ν (THz)", "Type", "|⟨J‖er‖J′⟩| (ea₀)", "A (s⁻¹)", "Branching (%)",
                         "Source of matrix element / A"], rows, left=(0, 1, 5, 9), wrap=(9,)))
     parts.append('<p class="note">Reduced dipole matrix elements follow the convention A = ω³|d|²/(3πε₀ħc³(2J′+1)), with J′ the upper level.\n'
@@ -471,6 +479,15 @@ def main():
         atom_page(p["key"], pages)
     facts = fact_pages(pages)
     landing(pages, facts)
+    # /<element>/ of an element that only has isotope pages forwards to its main isotope
+    for sym in {p["symbol"] for p in pages if p["A"]}:
+        ps = [p for p in pages if p["symbol"] == sym]
+        main = next((p for p in ps if p["A"] == PRIMARY.get(sym)), ps[0])
+        os.makedirs(os.path.join(DOCS, main["element"].lower()), exist_ok=True)
+        with open(os.path.join(DOCS, main["element"].lower(), "index.html"), "w") as f:
+            f.write(f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><title>{main["element"]} energy level diagram</title><link rel="icon" href="data:,">\n'
+                    f'<link rel="canonical" href="{BASE}/{main["slug"]}/"><meta http-equiv="refresh" content="0; url=../{main["slug"]}/">\n'
+                    f'</head><body><p><a href="../{main["slug"]}/">{pname(main)} energy level diagram</a></p></body></html>\n')
     today = datetime.date.today().isoformat()
     urls = [BASE + "/"] + [f"{BASE}/{p['slug']}/" for p in pages] + [f"{BASE}/{x['slug']}/" for x in facts]
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:

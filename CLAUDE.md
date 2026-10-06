@@ -30,9 +30,13 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
     python3 stats.py                      # -> data/provenance.md
     ./publish.sh "commit message" key1 key2 ...    # compute + plot + build + stats + commit + push
 
-- `species.py`: 22 curated isotopes (`kind="alkali"` uses ARC so every E1-allowed pair gets a matrix element;
+- `species.py`: 39 isotope pages, 27 curated (`kind="alkali"` uses ARC so every E1-allowed pair gets a matrix element;
   `kind="nist"` is NIST + literature). Every other element gets an automatic entry (`auto=True`, key = lowercase symbol,
   slug = element name): strongest classified NIST lines 1 nm – 2 µm, plus annotated literature lines.
+- `_iso()` in `species.py` (added 2026-10-06: Er 166/167/168, Cr 52/53, Tm 169, Hg 199/201/202, Cd 111/113/114): isotope page
+  of an automatically drawn element, same lines as the element page it replaces, hyperfine constants and measured
+  frequencies of that isotope. `build_site.py` writes a forwarding page at `docs/<element>/` for every element that has
+  only isotope pages (target: `PRIMARY`). Hg-199 has no hyperfine table: no measured constant could be opened (`Hg.json`).
 - Isotope pages of one element are linked by the switch under the page title (`isotope_switch()` in `build_site.py`:
   mass number, boson / fermion from the neutron number, nuclear spin); the header no longer lists every isotope.
 - `elements.py`: periodic-table layout. `atomlib.py`: NIST download/parsing, conversions, naming.
@@ -83,7 +87,8 @@ None. (Boron 249.75 nm isotope-shift sign: resolved 2026-10-02, Tables I and II 
 and print it positive. Copper 4P3/2 lifetime: the direct 1968 measurement 318(16) ns is shown.)
 Owner's decision 2026-10-02 (night): the elements whose papers stay closed are left as they are; do not run further
 literature passes unless the owner supplies PDFs or asks. The sitemap still has to be submitted in Google Search Console by the
-owner (Bing / IndexNow was notified on 2026-10-02; the key file is in `docs/`).
+owner (Bing / IndexNow was notified on 2026-10-02; the key file is in `docs/`). Search Console ownership was verified on
+2026-10-06 (URL-prefix property) through `docs/google94bc483eee0b4f32.html`: never remove that file.
 
 ## Known limitations
 

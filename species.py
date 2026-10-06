@@ -2,6 +2,8 @@
 
 Curated species (an isotope, with measured data in data/literature) are listed by hand. Every other element of the
 periodic table gets an automatic NIST-only entry (auto=True): no isotope, lines chosen by strength.
+An element drawn automatically can still have isotope pages (_iso): same lines, but the hyperfine constants and
+measured frequencies of that isotope; they replace the element page.
 
 
 kind = "alkali": one valence electron. Levels and wavelengths from NIST, every E1-allowed pair is drawn,
@@ -49,14 +51,25 @@ def _alkali(symbol, element, Z, core, E_cut):
                 rydberg_source="arc", pi_species=None)
 
 
+def _iso(symbol, element, Z, A, I):
+    return dict(kind="nist", auto=True, symbol=symbol, element=element, Z=Z, A=A, I=I, slug=f"{element.lower()}-{A}",
+                core=[], E_cut=1e9, columns="auto", keep_unrated=False)
+
+
 SPECIES = {
     "rb87": dict(_RB, A=87, slug="rubidium-87", arc="Rubidium87"),
     "rb85": dict(_RB, A=85, slug="rubidium-85", arc="Rubidium85"),
     "cs133": dict(_CS, A=133, slug="caesium-133", arc="Caesium"),
     "yb171": dict(kind="nist", symbol="Yb", element="Ytterbium", Z=70, A=171, I="1/2", slug="ytterbium-171",
                   core=["4f14."], E_cut=45000.0, columns="LS", keep_unrated=True),
+    "yb173": dict(kind="nist", symbol="Yb", element="Ytterbium", Z=70, A=173, I="5/2", slug="ytterbium-173",
+                  core=["4f14."], E_cut=45000.0, columns="LS", keep_unrated=True),
     "yb174": dict(kind="nist", symbol="Yb", element="Ytterbium", Z=70, A=174, I="0", slug="ytterbium-174",
                   core=["4f14."], E_cut=45000.0, columns="LS", keep_unrated=True),
+    "sr84": dict(kind="nist", symbol="Sr", element="Strontium", Z=38, A=84, I="0", slug="strontium-84",
+                 core=["4p6."], E_cut=40500.0, columns="LS", keep_unrated=False),
+    "sr86": dict(kind="nist", symbol="Sr", element="Strontium", Z=38, A=86, I="0", slug="strontium-86",
+                 core=["4p6."], E_cut=40500.0, columns="LS", keep_unrated=False),
     "sr88": dict(kind="nist", symbol="Sr", element="Strontium", Z=38, A=88, I="0", slug="strontium-88",
                  core=["4p6."], E_cut=40500.0, columns="LS", keep_unrated=False),
     "sr87": dict(kind="nist", symbol="Sr", element="Strontium", Z=38, A=87, I="9/2", slug="strontium-87",
@@ -69,6 +82,15 @@ SPECIES = {
                   core=[], E_cut=27000.0, columns="J", keep_unrated=False),
     "dy163": dict(kind="nist", symbol="Dy", element="Dysprosium", Z=66, A=163, I="5/2", slug="dysprosium-163",
                   core=[], E_cut=27000.0, columns="J", keep_unrated=False),
+    "dy161": dict(kind="nist", symbol="Dy", element="Dysprosium", Z=66, A=161, I="5/2", slug="dysprosium-161",
+                  core=[], E_cut=27000.0, columns="J", keep_unrated=False),
+    "dy162": dict(kind="nist", symbol="Dy", element="Dysprosium", Z=66, A=162, I="0", slug="dysprosium-162",
+                  core=[], E_cut=27000.0, columns="J", keep_unrated=False),
+    "er166": _iso("Er", "Erbium", 68, 166, "0"), "er167": _iso("Er", "Erbium", 68, 167, "7/2"), "er168": _iso("Er", "Erbium", 68, 168, "0"),
+    "cr52": _iso("Cr", "Chromium", 24, 52, "0"), "cr53": _iso("Cr", "Chromium", 24, 53, "3/2"),
+    "tm169": _iso("Tm", "Thulium", 69, 169, "1/2"),
+    "hg199": _iso("Hg", "Mercury", 80, 199, "1/2"), "hg201": _iso("Hg", "Mercury", 80, 201, "3/2"), "hg202": _iso("Hg", "Mercury", 80, 202, "0"),
+    "cd111": _iso("Cd", "Cadmium", 48, 111, "1/2"), "cd113": _iso("Cd", "Cadmium", 48, 113, "1/2"), "cd114": _iso("Cd", "Cadmium", 48, 114, "0"),
     "li6": dict(_alkali("Li", "Lithium", 3, "1s2.", 41300.0), A=6, slug="lithium-6", arc="Lithium6"),
     "li7": dict(_alkali("Li", "Lithium", 3, "1s2.", 41300.0), A=7, slug="lithium-7", arc="Lithium7"),
     "na23": dict(_alkali("Na", "Sodium", 11, "2p6.", 39300.0), A=23, slug="sodium-23", arc="Sodium"),
