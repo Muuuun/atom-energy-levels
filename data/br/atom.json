@@ -18,7 +18,12 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Literature search was limited: the session's web-search quota was exhausted, so sources were located through Crossref, HAL, OSTI, arXiv and NASA ADS queries and only open copies could be read. Ground-term hyperfine constants are second-hand from Chichinin's JPCRD review (method 'compilation'); the King & Jaccarino 1954 numbers were read on the APS abstract page. B < 0 for both isotopes as printed. The M1 A value is the calculated one adopted by NIST. Two-photon entries: wavelength_vac_nm is the laser wavelength. Second pass (2026-10-01): the measured lifetime of the TALIF upper level was found in the abstract reproduced by OSTI/INIS (ETDEWEB record 22362940). Third pass (2026-10-02): added the five 4p5 2P - 5s vacuum-ultraviolet resonance lines with measured A values. NIST's transition-probability reference T3064 for these lines was checked to be Tellinghuisen & Clyne 1976, the hyperfine-corrected re-analysis of the Clyne & Townsend 1974 absorption measurements; the uncorrected 1974 oscillator strengths (read in the abstract on the archived RSC page) are kept as alternatives, converted to A (derived). Morton 2000 (saved as pdf/Br_Morton_2000.pdf) states that the 1976 paper corrected the 1974 one.",
-  "semi": null
+  "semi": null,
+  "hfr": {
+   "lines": 3901,
+   "matched": 1768,
+   "weak": 2133
+  }
  },
  "columns": [
   {
@@ -283,8 +288,15 @@
      {
       "lv": 2,
       "lam": 890.01,
-      "f": 1.0,
+      "f": 0.935,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 1024.1,
+      "f": 0.0653,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -309,8 +321,22 @@
      {
       "lv": 2,
       "lam": 864.1,
-      "f": 1.0,
+      "f": 0.754,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 989.91,
+      "f": 0.202,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 1230.7,
+      "f": 0.0444,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -361,8 +387,22 @@
      {
       "lv": 3,
       "lam": 926.8,
-      "f": 1.0,
+      "f": 0.842,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 815.62,
+      "f": 0.0805,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 1174.6,
+      "f": 0.0777,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -387,8 +427,15 @@
      {
       "lv": 3,
       "lam": 916.86,
-      "f": 1.0,
+      "f": 0.991,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1461.2,
+      "f": 0.00943,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -416,6 +463,20 @@
       "f": 1.0,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 7,
+      "lam": 8210.1,
+      "f": 3.93e-07,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 11348.0,
+      "f": 2.88e-07,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -449,6 +510,20 @@
       "f": 0.053,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 8,
+      "lam": 11119.0,
+      "f": 7.47e-07,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 8089.2,
+      "f": 2.04e-07,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -472,8 +547,43 @@
      {
       "lv": 3,
       "lam": 844.89,
-      "f": 1.0,
+      "f": 0.702,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 751.51,
+      "f": 0.138,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 1046.1,
+      "f": 0.126,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 1014.3,
+      "f": 0.0345,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 11983.0,
+      "f": 1.14e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 11727.0,
+      "f": 1.01e-05,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -498,15 +608,29 @@
      {
       "lv": 5,
       "lam": 918.07,
-      "f": 0.9,
+      "f": 0.861,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 4,
       "lam": 893.48,
-      "f": 0.0997,
+      "f": 0.0954,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1098.2,
+      "f": 0.043,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 4613.7,
+      "f": 0.000295,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -571,29 +695,43 @@
      {
       "lv": 5,
       "lam": 870.09,
-      "f": 0.497,
+      "f": 0.48,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 4,
       "lam": 847.98,
-      "f": 0.477,
+      "f": 0.46,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1030.2,
+      "f": 0.0346,
+      "tier": "hfr",
       "dark": false
      },
      {
       "lv": 2,
       "lam": 656.16,
-      "f": 0.0145,
+      "f": 0.014,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 3,
       "lam": 726.24,
-      "f": 0.0116,
+      "f": 0.0112,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 3589.0,
+      "f": 0.000273,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -618,8 +756,22 @@
      {
       "lv": 4,
       "lam": 834.6,
-      "f": 1.0,
+      "f": 0.835,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 856.01,
+      "f": 0.165,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 3381.6,
+      "f": 7.12e-05,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -700,15 +852,36 @@
      {
       "lv": 6,
       "lam": 932.34,
-      "f": 0.871,
+      "f": 0.498,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 780.52,
+      "f": 0.307,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 615.03,
+      "f": 0.121,
+      "tier": "hfr",
       "dark": false
      },
      {
       "lv": 5,
       "lam": 799.21,
-      "f": 0.129,
+      "f": 0.0736,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 2627.7,
+      "f": 0.000699,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -731,13 +904,63 @@
    "decay": {
     "ch": [
      {
+      "lv": 1,
+      "lam": 123.24,
+      "f": 0.996,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
       "lv": 0,
       "lam": 117.89,
-      "f": 1.0,
+      "f": 0.0036,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 8,
+      "lam": 1018.7,
+      "f": 2.14e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 1109.7,
+      "f": 2.1e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 1237.2,
+      "f": 1.43e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 15,
+      "lam": 1481.6,
+      "f": 1e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 17,
+      "lam": 1626.3,
+      "f": 5.06e-06,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 20,
+      "lam": 1949.4,
+      "f": 4.08e-06,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 2
    }
   },
   {
@@ -757,13 +980,63 @@
    "decay": {
     "ch": [
      {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 3038.9,
+      "f": 0.529,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 2,
       "lam": 452.69,
-      "f": 1.0,
+      "f": 0.225,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 1542.7,
+      "f": 0.118,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 1595.9,
+      "f": 0.0425,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 3490.1,
+      "f": 0.0335,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2594.3,
+      "f": 0.0257,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1696.0,
+      "f": 0.0121,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 8189.6,
+      "f": 0.00488,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 5
    }
   },
   {
@@ -783,13 +1056,63 @@
    "decay": {
     "ch": [
      {
+      "lv": 12,
+      "lam": 1031.4,
+      "f": 0.269,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 3419.1,
+      "f": 0.198,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 483.58,
+      "f": 0.149,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2670.7,
+      "f": 0.0835,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2985.0,
+      "f": 0.083,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 2,
       "lam": 451.47,
-      "f": 1.0,
+      "f": 0.0639,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2554.9,
+      "f": 0.0609,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 1580.9,
+      "f": 0.0233,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 11
    }
   },
   {
@@ -809,13 +1132,63 @@
    "decay": {
     "ch": [
      {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2835.4,
+      "f": 0.491,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 2,
       "lam": 447.9,
-      "f": 1.0,
+      "f": 0.249,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "2[4]<sub>9/2</sub>",
+      "lam": 1932.2,
+      "f": 0.151,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2444.6,
+      "f": 0.0589,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 1488.4,
+      "f": 0.0303,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 1538.0,
+      "f": 0.0135,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[4]<sub>7/2</sub>",
+      "lam": 2135.9,
+      "f": 0.00452,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 4159.5,
+      "f": 0.000912,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 2
    }
   },
   {
@@ -835,13 +1208,63 @@
    "decay": {
     "ch": [
      {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 3187.1,
+      "f": 0.45,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1011.1,
+      "f": 0.371,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2527.1,
+      "f": 0.0416,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1621.1,
+      "f": 0.0406,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 2288.7,
+      "f": 0.0365,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 1732.3,
+      "f": 0.0363,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 3706.3,
+      "f": 0.0163,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 5,
       "lam": 537.18,
-      "f": 1.0,
+      "f": 0.00699,
       "tier": "nist",
       "dark": false
      }
-    ]
+    ],
+    "more": 3
    }
   },
   {
@@ -861,13 +1284,63 @@
    "decay": {
     "ch": [
      {
-      "lv": 5,
-      "lam": 536.57,
-      "f": 1.0,
-      "tier": "nist",
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 3165.6,
+      "f": 0.474,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[4]<sub>7/2</sub>",
+      "lam": 2110.0,
+      "f": 0.194,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 478.16,
+      "f": 0.149,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2410.7,
+      "f": 0.0904,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 446.75,
+      "f": 0.0258,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2789.9,
+      "f": 0.0196,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1615.5,
+      "f": 0.0117,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2513.5,
+      "f": 0.0104,
+      "tier": "hfr",
       "dark": false
      }
-    ]
+    ],
+    "more": 7
    }
   },
   {
@@ -887,13 +1360,63 @@
    "decay": {
     "ch": [
      {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2697.1,
+      "f": 0.429,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 2,
       "lam": 444.3,
-      "f": 1.0,
+      "f": 0.199,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 994.68,
+      "f": 0.12,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2341.1,
+      "f": 0.119,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2437.9,
+      "f": 0.0389,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 2215.4,
+      "f": 0.0385,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1584.0,
+      "f": 0.037,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 1689.9,
+      "f": 0.0139,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 4
    }
   },
   {
@@ -915,8 +1438,57 @@
      {
       "lv": 12,
       "lam": 882.24,
-      "f": 1.0,
+      "f": 0.99,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1800.9,
+      "f": 0.0045,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 1222.4,
+      "f": 0.00443,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2004.4,
+      "f": 0.000737,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 2855.4,
+      "f": 0.00055,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 21888.0,
+      "f": 3.84e-06,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 34261.0,
+      "f": 2.17e-06,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[4]<sub>9/2</sub>",
+      "lam": 301300.0,
+      "f": 1.96e-10,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -939,17 +1511,59 @@
    "decay": {
     "ch": [
      {
+      "lv": 13,
+      "lam": 881.0,
+      "f": 0.85,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 3,
       "lam": 447.39,
-      "f": 0.806,
+      "f": 0.106,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 5,
       "lam": 498.11,
-      "f": 0.194,
+      "f": 0.0256,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1789.9,
+      "f": 0.0166,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 2827.9,
+      "f": 0.00128,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 30674.0,
+      "f": 2.96e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 21,
+      "lam": 4109.0,
+      "f": 2.21e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 78345.0,
+      "f": 6.98e-07,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -972,13 +1586,63 @@
    "decay": {
     "ch": [
      {
+      "lv": 13,
+      "lam": 862.78,
+      "f": 0.719,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 485.08,
+      "f": 0.0938,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 3,
       "lam": 442.64,
-      "f": 1.0,
+      "f": 0.0665,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2067.2,
+      "f": 0.0519,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 1647.7,
+      "f": 0.0401,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 5202.6,
+      "f": 0.0167,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 4333.8,
+      "f": 0.00487,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 4845.7,
+      "f": 0.00416,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 2
    }
   },
   {
@@ -998,13 +1662,63 @@
    "decay": {
     "ch": [
      {
+      "lv": 13,
+      "lam": 755.36,
+      "f": 0.302,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 2694.0,
+      "f": 0.133,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 2800.8,
+      "f": 0.103,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 4,
       "lam": 449.17,
-      "f": 1.0,
+      "f": 0.0947,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 455.3,
+      "f": 0.094,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 1653.9,
+      "f": 0.0893,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 1541.8,
+      "f": 0.0621,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1795.7,
+      "f": 0.0383,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 4
    }
   },
   {
@@ -1024,13 +1738,63 @@
    "decay": {
     "ch": [
      {
+      "lv": 12,
+      "lam": 719.64,
+      "f": 0.27,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 720.58,
+      "f": 0.24,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1324.5,
+      "f": 0.126,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 4,
       "lam": 436.64,
-      "f": 1.0,
+      "f": 0.106,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 3505.2,
+      "f": 0.07,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1824.7,
+      "f": 0.0375,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 2298.4,
+      "f": 0.0338,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 480.4,
+      "f": 0.0335,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 7
    }
   }
  ],
@@ -1055,28 +1819,90 @@
    "lam_obs": 117.8895,
    "cyc": {
     "lower": "ground",
-    "cls": "open",
-    "n_open": 10,
-    "open": [
+    "cls": "leak",
+    "leak": 0.996,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.0,
+    "ch": [
      {
       "lv": 1,
-      "lam": 123.24
+      "lam": 123.24,
+      "f": 0.996,
+      "tier": "hfr",
+      "dark": true
      },
      {
       "lv": 8,
-      "lam": 1018.7
+      "lam": 1018.7,
+      "f": 2.14e-05,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 11,
-      "lam": 1109.7
+      "lam": 1109.7,
+      "f": 2.1e-05,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 14,
-      "lam": 1237.2
+      "lam": 1237.2,
+      "f": 1.43e-05,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 15,
-      "lam": 1481.6
+      "lam": 1481.6,
+      "f": 1e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 17,
+      "lam": 1626.3,
+      "f": 5.06e-06,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 20,
+      "lam": 1949.4,
+      "f": 4.08e-06,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sup>°</sup><sub>1/2</sub>",
+      "lam": 2017.1,
+      "f": 2.62e-06,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 1,
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 19,
+      "lam": 1770.8
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.9963329313,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.00367,
+      "tier": "hfr",
+      "at": "ground"
      }
     ]
    }
@@ -1132,7 +1958,7 @@
     "leak": 0.947,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 1.06,
     "ch": [
      {
@@ -1141,18 +1967,24 @@
       "f": 0.947,
       "tier": "nist",
       "dark": true
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 7,
-      "lam": 8089.2
      },
      {
       "lv": 8,
-      "lam": 11119.0
+      "lam": 11119.0,
+      "f": 7.47e-07,
+      "tier": "hfr",
+      "dark": false
      },
+     {
+      "lv": 7,
+      "lam": 8089.2,
+      "f": 2.04e-07,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
      {
       "lv": 10,
       "lam": 47286.0
@@ -1166,13 +1998,13 @@
      {
       "lv": 1,
       "p": 0.947,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.053,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      }
     ]
@@ -1198,17 +2030,30 @@
    "lam_obs": 131.7695,
    "cyc": {
     "lower": "ground",
-    "cls": "open",
-    "n_open": 4,
-    "open": [
+    "cls": "leak",
+    "leak": 6.81e-07,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1470000.0,
+    "ch": [
      {
       "lv": 7,
-      "lam": 8210.1
+      "lam": 8210.1,
+      "f": 3.93e-07,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 8,
-      "lam": 11348.0
-     },
+      "lam": 11348.0,
+      "f": 2.88e-07,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
      {
       "lv": 9,
       "lam": 27113.0
@@ -1216,6 +2061,20 @@
      {
       "lv": 10,
       "lam": 51738.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.9999999793,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 2.07e-08,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -1244,7 +2103,7 @@
     "leak": 0.053,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 18.9,
     "ch": [
      {
@@ -1253,18 +2112,24 @@
       "f": 0.053,
       "tier": "nist",
       "dark": true
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 7,
-      "lam": 8089.2
      },
      {
       "lv": 8,
-      "lam": 11119.0
+      "lam": 11119.0,
+      "f": 7.47e-07,
+      "tier": "hfr",
+      "dark": false
      },
+     {
+      "lv": 7,
+      "lam": 8089.2,
+      "f": 2.04e-07,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
      {
       "lv": 10,
       "lam": 47286.0
@@ -1278,13 +2143,13 @@
      {
       "lv": 1,
       "p": 0.947,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.053,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      }
     ]
@@ -1682,8 +2547,72 @@
    "lam_obs": 436.6366,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 34,
+    "cls": "leak",
+    "leak": 0.894,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.12,
+    "ch": [
+     {
+      "lv": 12,
+      "lam": 719.64,
+      "f": 0.27,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 720.58,
+      "f": 0.24,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1324.5,
+      "f": 0.126,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 3505.2,
+      "f": 0.07,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1824.7,
+      "f": 0.0375,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 2298.4,
+      "f": 0.0338,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 480.4,
+      "f": 0.0335,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 2851.6,
+      "f": 0.0264,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 6,
+    "n_open": 20,
     "open": [
      {
       "lv": 2,
@@ -1698,12 +2627,26 @@
       "lam": 442.43
      },
      {
-      "lv": 6,
-      "lam": 480.4
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 950.09
      },
      {
-      "lv": 12,
-      "lam": 719.64
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 984.69
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.636,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.364,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -1728,13 +2671,73 @@
    "lam_obs": 442.6383,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 19,
-    "open": [
+    "cls": "leak",
+    "leak": 0.933,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.07,
+    "ch": [
+     {
+      "lv": 13,
+      "lam": 862.78,
+      "f": 0.719,
+      "tier": "hfr",
+      "dark": false
+     },
      {
       "lv": 4,
-      "lam": 485.08
+      "lam": 485.08,
+      "f": 0.0938,
+      "tier": "hfr",
+      "dark": false
      },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2067.2,
+      "f": 0.0519,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 1647.7,
+      "f": 0.0401,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 5202.6,
+      "f": 0.0167,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 4333.8,
+      "f": 0.00487,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 4845.7,
+      "f": 0.00416,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 8199.3,
+      "f": 0.00316,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 1,
+    "n_open": 10,
+    "open": [
      {
       "lv": 5,
       "lam": 492.24
@@ -1744,12 +2747,30 @@
       "lam": 539.7
      },
      {
-      "lv": 13,
-      "lam": 862.78
-     },
-     {
       "html": "2[1]<sub>3/2</sub>",
       "lam": 1270.9
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 1338.2
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 1767.7
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.795,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.205,
+      "tier": "hfr",
+      "at": "ground"
      }
     ]
    }
@@ -1774,8 +2795,72 @@
    "lam_obs": 444.2987,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 24,
+    "cls": "leak",
+    "leak": 0.801,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.25,
+    "ch": [
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2697.1,
+      "f": 0.429,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 994.68,
+      "f": 0.12,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2341.1,
+      "f": 0.119,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2437.9,
+      "f": 0.0389,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 2215.4,
+      "f": 0.0385,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1584.0,
+      "f": 0.037,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 1689.9,
+      "f": 0.0139,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 6104.6,
+      "f": 0.00252,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 3,
+    "n_open": 13,
     "open": [
      {
       "lv": 3,
@@ -1794,8 +2879,22 @@
       "lam": 589.15
      },
      {
-      "lv": 12,
-      "lam": 994.68
+      "lv": 13,
+      "lam": 996.48
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.952,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0481,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -1821,21 +2920,63 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.194,
+    "leak": 0.894,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 5.15,
+    "tier": "hfr",
+    "n": 1.12,
     "ch": [
+     {
+      "lv": 13,
+      "lam": 881.0,
+      "f": 0.85,
+      "tier": "hfr",
+      "dark": false
+     },
      {
       "lv": 5,
       "lam": 498.11,
-      "f": 0.194,
+      "f": 0.0256,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1789.9,
+      "f": 0.0166,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 2827.9,
+      "f": 0.00128,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 30674.0,
+      "f": 2.96e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 21,
+      "lam": 4109.0,
+      "f": 2.21e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 78345.0,
+      "f": 6.98e-07,
+      "tier": "hfr",
       "dark": false
      }
     ],
-    "n_open": 26,
+    "n_open": 20,
     "open": [
      {
       "lv": 2,
@@ -1854,22 +2995,22 @@
       "lam": 879.59
      },
      {
-      "lv": 13,
-      "lam": 881.0
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 1250.3
      }
     ],
     "end": [
      {
-      "lv": 0,
-      "p": 0.906,
-      "tier": "nist",
-      "at": "ground"
+      "lv": 1,
+      "p": 0.818,
+      "tier": "hfr",
+      "at": "dark"
      },
      {
-      "lv": 1,
-      "p": 0.0939,
-      "tier": "nist",
-      "at": "dark"
+      "lv": 0,
+      "p": 0.182,
+      "tier": "hfr",
+      "at": "ground"
      }
     ]
    }
@@ -1894,28 +3035,94 @@
    "lam_obs": 447.8976,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 11,
+    "cls": "leak",
+    "leak": 0.751,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.33,
+    "ch": [
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2835.4,
+      "f": 0.491,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[4]<sub>9/2</sub>",
+      "lam": 1932.2,
+      "f": 0.151,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2444.6,
+      "f": 0.0589,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 1488.4,
+      "f": 0.0303,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 1538.0,
+      "f": 0.0135,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[4]<sub>7/2</sub>",
+      "lam": 2135.9,
+      "f": 0.00452,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 4159.5,
+      "f": 0.000912,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 6862.4,
+      "f": 0.000676,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 1,
+    "n_open": 2,
     "open": [
      {
       "lv": 12,
       "lam": 1012.9
      },
      {
-      "html": "2[3]<sub>7/2</sub>",
-      "lam": 1488.4
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 12228.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.9972262709,
+      "tier": "hfr",
+      "at": "ground"
      },
      {
-      "html": "2[3]<sub>5/2</sub>",
-      "lam": 1538.0
-     },
-     {
-      "html": "2[4]<sub>9/2</sub>",
-      "lam": 1932.2
-     },
-     {
-      "html": "2[4]<sub>7/2</sub>",
-      "lam": 2135.9
+      "lv": 1,
+      "p": 0.00277,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -1940,28 +3147,106 @@
    "lam_obs": 449.1679,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 22,
+    "cls": "leak",
+    "leak": 0.905,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.1,
+    "ch": [
+     {
+      "lv": 13,
+      "lam": 755.36,
+      "f": 0.302,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 2694.0,
+      "f": 0.133,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 2800.8,
+      "f": 0.103,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 455.3,
+      "f": 0.094,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 1653.9,
+      "f": 0.0893,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 1541.8,
+      "f": 0.0621,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1795.7,
+      "f": 0.0383,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2528.0,
+      "f": 0.0361,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 3,
+    "n_open": 11,
     "open": [
      {
       "lv": 3,
       "lam": 412.54
      },
      {
-      "lv": 5,
-      "lam": 455.3
-     },
-     {
       "lv": 6,
       "lam": 495.61
      },
      {
-      "lv": 13,
-      "lam": 755.36
-     },
-     {
       "html": "2[1]<sub>3/2</sub>",
       "lam": 1050.8
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 1096.4
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 1295.8
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.571,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.429,
+      "tier": "hfr",
+      "at": "ground"
      }
     ]
    }
@@ -1986,13 +3271,73 @@
    "lam_obs": 451.4705,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 24,
-    "open": [
+    "cls": "leak",
+    "leak": 0.936,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.07,
+    "ch": [
+     {
+      "lv": 12,
+      "lam": 1031.4,
+      "f": 0.269,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 3419.1,
+      "f": 0.198,
+      "tier": "hfr",
+      "dark": false
+     },
      {
       "lv": 3,
-      "lam": 483.58
+      "lam": 483.58,
+      "f": 0.149,
+      "tier": "hfr",
+      "dark": false
      },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2670.7,
+      "f": 0.0835,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2985.0,
+      "f": 0.083,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2554.9,
+      "f": 0.0609,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 1580.9,
+      "f": 0.0233,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1033.3,
+      "f": 0.0232,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 10,
+    "n_open": 6,
+    "open": [
      {
       "lv": 4,
       "lam": 534.69
@@ -2006,8 +3351,26 @@
       "lam": 601.83
      },
      {
-      "lv": 12,
-      "lam": 1031.4
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 2406.0
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 7809.2
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.901,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0989,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -2032,8 +3395,72 @@
    "lam_obs": 452.6859,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 20,
+    "cls": "leak",
+    "leak": 0.775,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.29,
+    "ch": [
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 3038.9,
+      "f": 0.529,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 1542.7,
+      "f": 0.118,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 1595.9,
+      "f": 0.0425,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 3490.1,
+      "f": 0.0335,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2594.3,
+      "f": 0.0257,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1696.0,
+      "f": 0.0121,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 8189.6,
+      "f": 0.00488,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 5544.0,
+      "f": 0.00422,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 4,
+    "n_open": 8,
     "open": [
      {
       "lv": 3,
@@ -2052,8 +3479,22 @@
       "lam": 1039.7
      },
      {
-      "html": "2[3]<sub>7/2</sub>",
-      "lam": 1542.7
+      "html": "2[4]<sub>7/2</sub>",
+      "lam": 2249.4
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.984,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0158,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -2079,21 +3520,63 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.806,
+    "leak": 0.974,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 1.24,
+    "tier": "hfr",
+    "n": 1.03,
     "ch": [
+     {
+      "lv": 13,
+      "lam": 881.0,
+      "f": 0.85,
+      "tier": "hfr",
+      "dark": false
+     },
      {
       "lv": 3,
       "lam": 447.39,
-      "f": 0.806,
+      "f": 0.106,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1789.9,
+      "f": 0.0166,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 2827.9,
+      "f": 0.00128,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 30674.0,
+      "f": 2.96e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 21,
+      "lam": 4109.0,
+      "f": 2.21e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 78345.0,
+      "f": 6.98e-07,
+      "tier": "hfr",
       "dark": false
      }
     ],
-    "n_open": 26,
+    "n_open": 20,
     "open": [
      {
       "lv": 2,
@@ -2112,22 +3595,22 @@
       "lam": 879.59
      },
      {
-      "lv": 13,
-      "lam": 881.0
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 1250.3
      }
     ],
     "end": [
      {
-      "lv": 0,
-      "p": 0.906,
-      "tier": "nist",
-      "at": "ground"
+      "lv": 1,
+      "p": 0.818,
+      "tier": "hfr",
+      "at": "dark"
      },
      {
-      "lv": 1,
-      "p": 0.0939,
-      "tier": "nist",
-      "at": "dark"
+      "lv": 0,
+      "p": 0.182,
+      "tier": "hfr",
+      "at": "ground"
      }
     ]
    }
@@ -2152,28 +3635,106 @@
    "lam_obs": 536.5682,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 20,
-    "open": [
+    "cls": "leak",
+    "leak": 0.996,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.0,
+    "ch": [
      {
-      "lv": 2,
-      "lam": 446.75
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 3165.6,
+      "f": 0.474,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[4]<sub>7/2</sub>",
+      "lam": 2110.0,
+      "f": 0.194,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 3,
-      "lam": 478.16
+      "lam": 478.16,
+      "f": 0.149,
+      "tier": "hfr",
+      "dark": false
      },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2410.7,
+      "f": 0.0904,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 446.75,
+      "f": 0.0258,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2789.9,
+      "f": 0.0196,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1615.5,
+      "f": 0.0117,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2513.5,
+      "f": 0.0104,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 6,
+    "n_open": 6,
+    "open": [
      {
       "lv": 12,
       "lam": 1007.0
      },
      {
-      "lv": 13,
-      "lam": 1008.9
-     },
-     {
       "html": "2[3]<sub>7/2</sub>",
       "lam": 1475.8
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 4767.7
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 5737.2
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 15900.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.943,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0569,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -2198,8 +3759,72 @@
    "lam_obs": 537.1833,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 16,
+    "cls": "leak",
+    "leak": 0.993,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.01,
+    "ch": [
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 3187.1,
+      "f": 0.45,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1011.1,
+      "f": 0.371,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 2527.1,
+      "f": 0.0416,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 1621.1,
+      "f": 0.0406,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[0]<sub>1/2</sub>",
+      "lam": 2288.7,
+      "f": 0.0365,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 1732.3,
+      "f": 0.0363,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[1]<sub>1/2</sub>",
+      "lam": 3706.3,
+      "f": 0.0163,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 16458.0,
+      "f": 0.000151,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 2,
+    "n_open": 6,
     "open": [
      {
       "lv": 3,
@@ -2214,12 +3839,26 @@
       "lam": 594.21
      },
      {
-      "lv": 13,
-      "lam": 1011.1
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 4503.1
      },
      {
-      "html": "2[1]<sub>3/2</sub>",
-      "lam": 1621.1
+      "html": "2[2]<sub>3/2</sub>",
+      "lam": 5808.3
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.585,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.415,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -2332,44 +3971,50 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.985,
+    "leak": 0.986,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 1.02,
+    "tier": "hfr",
+    "n": 1.01,
     "ch": [
      {
       "lv": 5,
       "lam": 870.09,
-      "f": 0.497,
+      "f": 0.48,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 4,
       "lam": 847.98,
-      "f": 0.477,
+      "f": 0.46,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1030.2,
+      "f": 0.0346,
+      "tier": "hfr",
       "dark": false
      },
      {
       "lv": 3,
       "lam": 726.24,
-      "f": 0.0116,
+      "f": 0.0112,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 3,
-    "open": [
-     {
-      "lv": 6,
-      "lam": 1030.2
      },
      {
       "lv": 12,
-      "lam": 3589.0
-     },
+      "lam": 3589.0,
+      "f": 0.000273,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
      {
       "lv": 13,
       "lam": 3612.6
@@ -2378,14 +4023,14 @@
     "end": [
      {
       "lv": 1,
-      "p": 0.523,
-      "tier": "nist",
+      "p": 0.519,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.477,
-      "tier": "nist",
+      "p": 0.481,
+      "tier": "hfr",
       "at": "ground"
      }
     ]
@@ -2567,44 +4212,50 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.988,
+    "leak": 0.989,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 1.01,
     "ch": [
      {
       "lv": 5,
       "lam": 870.09,
-      "f": 0.497,
+      "f": 0.48,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 4,
       "lam": 847.98,
-      "f": 0.477,
+      "f": 0.46,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1030.2,
+      "f": 0.0346,
+      "tier": "hfr",
       "dark": false
      },
      {
       "lv": 2,
       "lam": 656.16,
-      "f": 0.0145,
+      "f": 0.014,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 3,
-    "open": [
-     {
-      "lv": 6,
-      "lam": 1030.2
      },
      {
       "lv": 12,
-      "lam": 3589.0
-     },
+      "lam": 3589.0,
+      "f": 0.000273,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
      {
       "lv": 13,
       "lam": 3612.6
@@ -2613,14 +4264,14 @@
     "end": [
      {
       "lv": 1,
-      "p": 0.523,
-      "tier": "nist",
+      "p": 0.519,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.477,
-      "tier": "nist",
+      "p": 0.481,
+      "tier": "hfr",
       "at": "ground"
      }
     ]
@@ -2716,55 +4367,72 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.871,
+    "leak": 0.926,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 1.15,
+    "tier": "hfr",
+    "n": 1.08,
     "ch": [
      {
       "lv": 6,
       "lam": 932.34,
-      "f": 0.871,
+      "f": 0.498,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 780.52,
+      "f": 0.307,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 615.03,
+      "f": 0.121,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 12,
+      "lam": 2627.7,
+      "f": 0.000699,
+      "tier": "hfr",
       "dark": false
      }
     ],
-    "n_open": 7,
+    "n_open": 4,
     "open": [
-     {
-      "lv": 2,
-      "lam": 615.03
-     },
      {
       "lv": 3,
       "lam": 676.19
      },
      {
-      "lv": 4,
-      "lam": 780.52
-     },
-     {
-      "lv": 12,
-      "lam": 2627.7
-     },
-     {
       "lv": 13,
       "lam": 2640.4
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 22990.0
+     },
+     {
+      "html": "2[1]<sub>3/2</sub>",
+      "lam": 153330.0
      }
     ],
     "end": [
      {
-      "lv": 0,
-      "p": 0.64,
-      "tier": "nist",
-      "at": "ground"
+      "lv": 1,
+      "p": 0.513,
+      "tier": "hfr",
+      "at": "dark"
      },
      {
-      "lv": 1,
-      "p": 0.36,
-      "tier": "nist",
-      "at": "dark"
+      "lv": 0,
+      "p": 0.487,
+      "tier": "hfr",
+      "at": "ground"
      }
     ]
    }
@@ -2992,24 +4660,51 @@
    "lam_obs": 834.5991,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 4,
+    "cls": "leak",
+    "leak": 0.165,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 6.06,
+    "ch": [
+     {
+      "lv": 5,
+      "lam": 856.01,
+      "f": 0.165,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 3381.6,
+      "f": 7.12e-05,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
     "open": [
      {
       "lv": 3,
       "lam": 716.41
      },
      {
-      "lv": 5,
-      "lam": 856.01
-     },
-     {
       "lv": 6,
       "lam": 1010.6
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.85,
+      "tier": "hfr",
+      "at": "dark"
      },
      {
-      "lv": 13,
-      "lam": 3381.6
+      "lv": 0,
+      "p": 0.15,
+      "tier": "hfr",
+      "at": "ground"
      }
     ]
    }
@@ -3034,28 +4729,68 @@
    "lam_obs": 844.8872,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 6,
-    "open": [
+    "cls": "leak",
+    "leak": 0.298,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 3.36,
+    "ch": [
      {
       "lv": 2,
-      "lam": 751.51
-     },
-     {
-      "lv": 4,
-      "lam": 1014.3
+      "lam": 751.51,
+      "f": 0.138,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 5,
-      "lam": 1046.1
+      "lam": 1046.1,
+      "f": 0.126,
+      "tier": "hfr",
+      "dark": false
      },
      {
-      "lv": 6,
-      "lam": 1286.5
+      "lv": 4,
+      "lam": 1014.3,
+      "f": 0.0345,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 11983.0,
+      "f": 1.14e-05,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 12,
-      "lam": 11727.0
+      "lam": 11727.0,
+      "f": 1.01e-05,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 6,
+      "lam": 1286.5
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.888,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.112,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -3081,44 +4816,50 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.523,
+    "leak": 0.54,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 1.91,
+    "tier": "hfr",
+    "n": 1.85,
     "ch": [
      {
       "lv": 5,
       "lam": 870.09,
-      "f": 0.497,
+      "f": 0.48,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1030.2,
+      "f": 0.0346,
+      "tier": "hfr",
       "dark": false
      },
      {
       "lv": 2,
       "lam": 656.16,
-      "f": 0.0145,
+      "f": 0.014,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 3,
       "lam": 726.24,
-      "f": 0.0116,
+      "f": 0.0112,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 3,
-    "open": [
-     {
-      "lv": 6,
-      "lam": 1030.2
      },
      {
       "lv": 12,
-      "lam": 3589.0
-     },
+      "lam": 3589.0,
+      "f": 0.000273,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
      {
       "lv": 13,
       "lam": 3612.6
@@ -3127,14 +4868,14 @@
     "end": [
      {
       "lv": 1,
-      "p": 0.523,
-      "tier": "nist",
+      "p": 0.519,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.477,
-      "tier": "nist",
+      "p": 0.481,
+      "tier": "hfr",
       "at": "ground"
      }
     ]
@@ -3160,17 +4901,30 @@
    "lam_obs": 864.1033,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 4,
-    "open": [
+    "cls": "leak",
+    "leak": 0.246,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 4.07,
+    "ch": [
      {
       "lv": 3,
-      "lam": 989.91
+      "lam": 989.91,
+      "f": 0.202,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 4,
-      "lam": 1230.7
-     },
+      "lam": 1230.7,
+      "f": 0.0444,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
+    "open": [
      {
       "lv": 5,
       "lam": 1277.9
@@ -3178,6 +4932,20 @@
      {
       "lv": 6,
       "lam": 1655.9
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.936,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0635,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -3203,44 +4971,50 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.503,
+    "leak": 0.52,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 1.99,
+    "tier": "hfr",
+    "n": 1.92,
     "ch": [
      {
       "lv": 4,
       "lam": 847.98,
-      "f": 0.477,
+      "f": 0.46,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1030.2,
+      "f": 0.0346,
+      "tier": "hfr",
       "dark": false
      },
      {
       "lv": 2,
       "lam": 656.16,
-      "f": 0.0145,
+      "f": 0.014,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 3,
       "lam": 726.24,
-      "f": 0.0116,
+      "f": 0.0112,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 3,
-    "open": [
-     {
-      "lv": 6,
-      "lam": 1030.2
      },
      {
       "lv": 12,
-      "lam": 3589.0
-     },
+      "lam": 3589.0,
+      "f": 0.000273,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
      {
       "lv": 13,
       "lam": 3612.6
@@ -3249,14 +5023,14 @@
     "end": [
      {
       "lv": 1,
-      "p": 0.523,
-      "tier": "nist",
+      "p": 0.519,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.477,
-      "tier": "nist",
+      "p": 0.481,
+      "tier": "hfr",
       "at": "ground"
      }
     ]
@@ -3282,16 +5056,68 @@
    "lam_obs": 882.238,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 14,
+    "cls": "leak",
+    "leak": 0.0102,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 98.0,
+    "ch": [
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 1800.9,
+      "f": 0.0045,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 1222.4,
+      "f": 0.00443,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[2]<sub>5/2</sub>",
+      "lam": 2004.4,
+      "f": 0.000737,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 2855.4,
+      "f": 0.00055,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 21888.0,
+      "f": 3.84e-06,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[3]<sub>5/2</sub>",
+      "lam": 34261.0,
+      "f": 2.17e-06,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "2[4]<sub>9/2</sub>",
+      "lam": 301300.0,
+      "f": 1.96e-10,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 7,
     "open": [
      {
       "lv": 2,
       "lam": 420.37
-     },
-     {
-      "html": "2[3]<sub>7/2</sub>",
-      "lam": 1222.4
      },
      {
       "html": "2[3]<sub>5/2</sub>",
@@ -3304,6 +5130,24 @@
      {
       "html": "2[4]<sub>7/2</sub>",
       "lam": 1627.6
+     },
+     {
+      "html": "2[3]<sub>7/2</sub>",
+      "lam": 2586.4
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.999962514,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 3.75e-05,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -3397,16 +5241,40 @@
    "lam_obs": 890.006,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 2,
-    "open": [
+    "cls": "leak",
+    "leak": 0.0653,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 15.3,
+    "ch": [
      {
       "lv": 3,
-      "lam": 1024.1
-     },
+      "lam": 1024.1,
+      "f": 0.0653,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
      {
       "lv": 5,
       "lam": 1335.3
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.9938161984,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.00618,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -3432,46 +5300,52 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.9,
+    "leak": 0.905,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 1.11,
+    "tier": "hfr",
+    "n": 1.1,
     "ch": [
      {
       "lv": 5,
       "lam": 918.07,
-      "f": 0.9,
+      "f": 0.861,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1098.2,
+      "f": 0.043,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 4613.7,
+      "f": 0.000295,
+      "tier": "hfr",
       "dark": false
      }
     ],
-    "n_open": 3,
+    "n_open": 1,
     "open": [
      {
       "lv": 3,
       "lam": 759.37
-     },
-     {
-      "lv": 6,
-      "lam": 1098.2
-     },
-     {
-      "lv": 13,
-      "lam": 4613.7
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.818,
-      "tier": "nist",
+      "p": 0.809,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.182,
-      "tier": "nist",
+      "p": 0.191,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -3497,8 +5371,22 @@
    "lam_obs": 916.8576,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 3,
+    "cls": "leak",
+    "leak": 0.00943,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 106.0,
+    "ch": [
+     {
+      "lv": 6,
+      "lam": 1461.2,
+      "f": 0.00943,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 2,
     "open": [
      {
       "lv": 4,
@@ -3507,10 +5395,20 @@
      {
       "lv": 5,
       "lam": 1158.7
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.902,
+      "tier": "hfr",
+      "at": "ground"
      },
      {
-      "lv": 6,
-      "lam": 1461.2
+      "lv": 1,
+      "p": 0.0975,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -3536,46 +5434,52 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.0997,
+    "leak": 0.139,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 10.0,
+    "tier": "hfr",
+    "n": 7.19,
     "ch": [
      {
       "lv": 4,
       "lam": 893.48,
-      "f": 0.0997,
+      "f": 0.0954,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1098.2,
+      "f": 0.043,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 4613.7,
+      "f": 0.000295,
+      "tier": "hfr",
       "dark": false
      }
     ],
-    "n_open": 3,
+    "n_open": 1,
     "open": [
      {
       "lv": 3,
       "lam": 759.37
-     },
-     {
-      "lv": 6,
-      "lam": 1098.2
-     },
-     {
-      "lv": 13,
-      "lam": 4613.7
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.818,
-      "tier": "nist",
+      "p": 0.809,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.182,
-      "tier": "nist",
+      "p": 0.191,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -3601,16 +5505,40 @@
    "lam_obs": 926.7961,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 2,
-    "open": [
+    "cls": "leak",
+    "leak": 0.158,
+    "bound": false,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 6.33,
+    "ch": [
      {
       "lv": 2,
-      "lam": 815.62
+      "lam": 815.62,
+      "f": 0.0805,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 5,
-      "lam": 1174.6
+      "lam": 1174.6,
+      "f": 0.0777,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.913,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0867,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -3753,7 +5681,8 @@
  "validation": [
   "levels: 33   lines < 2000 nm: 47   with matrix element: 45",
   "transition-rate provenance: exp: 5, nist: 40, wavelength only: 2",
-  "levels with a measured lifetime: 2"
+  "levels with a measured lifetime: 2",
+  "Cowan HFR fit (this site): 1768 of 3901 lines on NIST levels (2133 left out for cancellation); used for 0 drawn lines and 1726 further decay lines"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (Br); nuclear spin: NIST Handbook of Basic Atomic Spectroscopic Data, isotope table for bromine": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Br",
@@ -3766,6 +5695,7 @@
   "strongest hyperfine component (J=3/2,F=3)-(J=1/2,F=2): Campbell & Kasper, Chem. Phys. Lett. 10, 436 (1971); last column of Table 2 of A. I. Chichinin, J. Phys. Chem. Ref. Data 35, 869 (2006)": "https://srd.nist.gov/JPCRD/jpcrd710.pdf",
   "Sirse, Foucher, Chabert, Booth, Plasma Sources Sci. Technol. 23, 062003 (2014), abstract (HAL record hal-01549574)": "https://hal.science/hal-01549574v1",
   "NIST ASD level energy 76743.08 cm^-1; the 844.89 nm line 5s 2[2]3/2 - 5p 2[1]°3/2 is listed (from NIST) in Table I of Filin, Savukov, Colgan, J. Phys. B 53, 145003 (2020) (accepted manuscript on OSTI)": "https://www.osti.gov/servlets/purl/1688760",
-  "Tellinghuisen & Clyne, J. Chem. Soc. Faraday Trans. 2 72, 783 (1976) (line-absorption oscillator strengths of Clyne & Townsend 1974 reinterpreted with allowance for nuclear hyperfine structure); value as adopted in the NIST ASD lines table (accuracy D+, tp_ref T3064 = this paper, checked on the NIST bibliographic page)": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=Br+I&limits_type=0&low_w=1300&upp_w=20000&unit=1&format=3&allowed_out=1&forbid_out=1&show_av=3&A_out=0"
+  "Tellinghuisen & Clyne, J. Chem. Soc. Faraday Trans. 2 72, 783 (1976) (line-absorption oscillator strengths of Clyne & Townsend 1974 reinterpreted with allowance for nuclear hyperfine structure); value as adopted in the NIST ASD lines table (accuracy D+, tp_ref T3064 = this paper, checked on the NIST bibliographic page)": "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=Br+I&limits_type=0&low_w=1300&upp_w=20000&unit=1&format=3&allowed_out=1&forbid_out=1&show_av=3&A_out=0",
+  "This site: Cowan-code HFR calculation of Br I with the parameters fitted to the NIST energies (2026-10-07; lines with |cancellation factor| < 0.05 left out; inputs and fit report in cowan/Br)": "https://github.com/Muuuun/atom-energy-levels/tree/main/cowan/Br"
  }
 }

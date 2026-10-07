@@ -3,7 +3,9 @@
 Semi-empirical Hartree-Fock-relativistic (HFR) calculations with R. D. Cowan's programs RCN, RCN2, RCG, RCE (A. Kramida's 2021
 package), parameters fitted to the NIST energies, rates compared with the NIST values.  Owner's decision 2026-10-07: these rates go
 on the site as their own tier `hfr` ("HFR fit (this site)", ≈), used only where neither a measurement, NIST nor the Kurucz list
-gives a rate; lines with |cancellation factor| < 0.05 are left out (`semi.cowan_rates()` in the pipeline).  Done: Hg, Cd, In.
+gives a rate; lines with |cancellation factor| < 0.05 are left out (`semi.cowan_rates()` in the pipeline).  Done: 19 elements, see the table.
+The owner's instruction of 2026-10-07: leave the high Rydberg levels out (a reachable level outside the configuration list simply has no
+calculated line; the leak then stays a lower limit).
 
     COWAN_BIN=<build dir> python3 cowan/run_element.py Cd      # one command per element (configurations in run_element.py)
 
@@ -45,7 +47,7 @@ writes `cowan/<El>/` (IN36, IN2, decks before and after the fit, LEVELS1 = obser
 
 Configurations: even 5d10 6s2, 6s7s, 6s8s, 6s9s, 6s6d, 6s7d, 6s8d, 6p2; odd 6s6p, 6s7p, 6s8p, 6s9p, 6s5f, 6s6f, 5d9 6s2 6p, 5d9 6s2 7p.
 
-## Results (12 elements; `<El>/<El>_compare_fit.txt` has every line)
+## Results (19 elements; `<El>/<El>_compare_fit.txt` has every line)
 
 Fit: two stages (first only the configuration energies, started at the observed positions, then the Slater and spin-orbit parameters of
 every configuration with at least four observed levels; configuration-interaction integrals fixed at 0.85 x HFR; levels follow
@@ -65,11 +67,21 @@ their dominant component, CRIT = 0.85; at most 5 kK parameter change per cycle; 
 | Pb | 11 | 56 (0.54 / 3.2 / 4.4) | 25: 56 % / 72 % |
 | Xe | 12 | 85 (0.18 / 1.0 / 3.5) | 95: 65 % / 74 % (NIST A/B lines: 62, 63 % within x2) |
 | Kr | 12 | 86 (0.09 / 0.7 / 2.5) | 106: 69 % / 85 % (NIST A/B lines: 44, 91 % within x2) |
+| Ge | 12 | 88 (0.05 / 0.3 / 1.1) | 26: 65 % / 85 % |
+| Sb | 11 | 113 (0.23 / 0.9 / 3.8) | 10: 90 % / 90 % |
+| Bi | 10 | 47 (0.61 / 2.8 / 5.5) | 29: 62 % / 86 % (NIST A/B lines: 11, 73 % within x2) |
+| Te | 12 | 74 (0.30 / 1.0 / 1.8) | 5: 60 % / 100 % |
+| Se | 12 | 92 (0.35 / 2.5 / 7.8) | no NIST-rated line to compare with |
+| Br | 13 | 162 (0.14 / 0.5 / 1.4) | 42: 71 % / 95 % |
+| I | 12 | 122 (0.21 / 0.7 / 2.2) | 263: 70 % / 85 % (NIST A/B lines: 8, 100 % within x2) |
 
 Weak lines are the problem everywhere: lines with a cancellation factor below 0.05 are left out, but a line with 0.1 can still be
 off by a factor 3.  Strong lines are typically within 1.5.  The resonance lines come out 1.3-1.5 x too strong (no core
 polarisation).  In, Ga, Tl: the 5s 5p2-type perturbers are fitted 1-5 kK off.  Sn and Pb (p2 ground configuration) are the
-weakest set; Xe and Kr (p5 nl, jK coupling) fit well but have many weak lines.
+weakest set; Xe and Kr (p5 nl, jK coupling) fit well but have many weak lines.  Second batch (Ge, Sb, Bi, Te, Se, Br, I: p2 to p5
+ground configurations, three open-shell parents): Br and I fit well; Se has no NIST-rated line at all, so its rates are published
+on the strength of the neighbours only; Bi and Se have a few levels fitted 5-8 kK off (jK-labelled levels paired by energy order).
+A one-letter symbol (I) needs the element id padded to six characters in the RCN label, else RCG cuts the configuration name.
 
 ### Hg I in detail (51 lines with a NIST rate; `Hg/Hg_compare_hfr.txt`, `Hg/Hg_compare_fit.txt`)
 

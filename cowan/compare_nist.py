@@ -88,7 +88,10 @@ for acc in sorted(stat):
     v = sorted(stat[acc]); n = len(v)
     print(f'  NIST class {acc}: n={n:3d} median log10(calc/NIST)={v[n//2]:+.2f}  within x1.5: {sum(abs(x)<0.176 for x in v)/n:.0%}  within x2: {sum(abs(x)<0.301 for x in v)/n:.0%}  within x3: {sum(abs(x)<0.477 for x in v)/n:.0%}')
 v = sorted(allv); n = len(v)
-print(f'  ALL: n={n} median {v[n//2]:+.2f} within x2 {sum(abs(x)<0.301 for x in v)/n:.0%} within x3 {sum(abs(x)<0.477 for x in v)/n:.0%}')
+if n:
+    print(f'  ALL: n={n} median {v[n//2]:+.2f} within x2 {sum(abs(x)<0.301 for x in v)/n:.0%} within x3 {sum(abs(x)<0.477 for x in v)/n:.0%}')
+else:
+    print('  no NIST-rated line to compare with')
 w = sorted(math.log10(A / ref[0]) for lam, lo, u, A, ref, cf in rows if ref and abs(cf) >= 0.05); m = len(w)
 if m:
     print(f'  lines with |cancellation factor| >= 0.05 (what the site uses): n={m} median {w[m//2]:+.2f} within x1.5 {sum(abs(x)<0.176 for x in w)/m:.0%} within x2 {sum(abs(x)<0.301 for x in w)/m:.0%} within x3 {sum(abs(x)<0.477 for x in w)/m:.0%}')
