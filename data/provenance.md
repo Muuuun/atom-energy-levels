@@ -50,7 +50,7 @@ Totals over the 17 curated elements (one isotope each):
 - transition rates / matrix elements: nist 745 (65%), exp 223 (19%), theory 154 (13%), semi 8 (1%), hfr 1 (0%), model 0 (0%), none 23 (2%)
 - lifetimes of excited levels: exp 319 (53%), theory 92 (15%), semi 0 (0%), hfr 0 (0%), model 25 (4%), none 170 (28%)
 
-NIST-only element pages (84 elements, no literature compiled yet): 5142 lines drawn, 2208 with a NIST transition rate, 1799 from the literature, 152 semi-empirical (Kurucz), 0 from this site's HFR fit, 983 wavelength only; no lifetimes.
+NIST-only element pages (84 elements, no literature compiled yet): 5142 lines drawn, 2208 with a NIST transition rate, 1799 from the literature, 152 semi-empirical (Kurucz), 3 from this site's HFR fit, 980 wavelength only; no lifetimes.
 
 nist = NIST ASD compilation; exp = measurement from data/literature; theory = high-accuracy calculation quoted from the
 literature; semi-emp. = Kurucz semi-empirical line list (semi.py), used only where no measurement or NIST value exists;

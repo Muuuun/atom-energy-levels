@@ -138,5 +138,5 @@
 - NIST 2 µm 到 1 mm 的谱线已缓存并进入闭合跃迁分析（`fetch_all.py`、`atomlib.nist_lines_ir()`）；精选页面的衰变池也改为从 1 nm 起。
 - 用 NIST 发布的 Cowan 程序包（Kramida 2021 版，本机 gfortran 编译，见 `cowan/README.md`）对汞做了半经验计算并与 NIST 实测比较：
   拟合能级后 A/B 级谱线 90% 在 2 倍以内，C/D 级 38%；汞页 101 个无速率衰变通道可补 89 个。
-- 业主决定（同日）：上网站，新建一级 `hfr`（"HFR fit (this site)"，≈ 标记），并推广到镉、铟。已做：汞、镉、铟
-  （`cowan/run_element.py` 一条命令跑完整链；结果见 `cowan/README.md`）。抵消因子小于 0.05 的线不用。
+- 业主决定（同日）：上网站，新建一级 `hfr`（"HFR fit (this site)"，≈ 标记），并推广。已做 12 种：汞、镉、铟、镓、铊、铜、银、金、
+  锡、铅、氙、氪（`cowan/run_element.py` 一条命令跑完整链，两阶段拟合；结果表见 `cowan/README.md`）。抵消因子小于 0.05 的线不用。

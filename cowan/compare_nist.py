@@ -5,24 +5,8 @@ from parse_rcg import parse
 from cowan_util import parity_odd
 el, out = sys.argv[1], sys.argv[2]
 NIST = '/Users/muqiao/Documents/rb_energy_levels/data/nist'
-def jnum(s):
-    s = s.strip('"').strip()
-    return float(s.split('/')[0]) / float(s.split('/')[1]) if '/' in s else float(s)
-def conf_key(c):  # NIST "5d10.6s.6p" / "5d9.6s2.(2D<5/2>).6p" -> "5d106s6p" / "5d96s26p"
-    return re.sub(r'\([^)]*\)', '', c.strip('"')).replace('.', '')
-def term_key(t):
-    t = t.strip('"').replace('*', '').replace('?', '').strip()
-    m = re.search(r'(\d[A-Z])', t)
-    return m.group(1) if m else t
-nist = []
-for r in csv.DictReader(open(f'{NIST}/{el}_I_levels.tsv'), delimiter='\t'):
-    try:
-        E = float(re.sub(r'[^\d.]', '', r['Level (cm-1)'])); J = jnum(r['J'])
-    except ValueError:
-        continue
-    if r['Term'].strip('"') == 'Limit':
-        continue
-    nist.append(dict(E=E, J=J, conf=conf_key(r['Configuration']), term=term_key(r['Term']), odd='*' in r['Term']))
+from cowan_util import nist_levels
+nist = nist_levels(el)
 lines = parse(out)
 # configuration labels per parity from the spectrum header table "k  El I  conf1  ---  El I  conf2"
 L = open(out, encoding='latin-1').read().split('\n')

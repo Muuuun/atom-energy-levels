@@ -18,7 +18,12 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "197Au is the only stable isotope (I = 3/2). Hyperfine B constants of the 5d9 6s2 2D levels are large and negative; C is the magnetic-octupole constant from the same atomic-beam papers (extra key C_MHz). All A_s and rme_J_ea0 entries are CIPT theory from Dzuba et al. 2021 (method 'theory', accuracy poor for E1: compare the 6p lifetimes) and are given only for the E2/M1 lines NIST does not list (2S1/2-2D5/2 clock, 2S1/2-2D3/2, 2D5/2-2D3/2, 2P1/2-2P3/2). No E1 entries are given: the NIST A values already rest on the Hannaford lifetimes and branching ratios, and the CIPT E1 rates of Dzuba et al. (2.45e8, 3.02e8 s^-1 for the resonance lines) are about 50 % too large. rme convention: A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' upper level (the convention of Dzuba's Eq. 3). Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, E2_amplitude_au, C_MHz, lifetime_alternatives. Second pass: 7p 2P lifetimes and 6p alternatives come from the abstract of Gaarde et al., Phys. Rev. A 50, 209 (1994); the 6p 2P3/2 width of Goldmann et al. 1969 was read in a Wayback Machine copy of the Springer abstract page. Third pass (2026-10-02): ground-state A with full precision, 6p 2P1/2 A (second-hand, see conflicts) and the branching ratios of the two resonance lines (0.98(1) and 0.911(4), Hannaford's 1986 review) added; 'branching' on the 267.6 and 242.8 nm transitions is the fraction of the 6p decay that goes to the ground level.",
-  "semi": null
+  "semi": null,
+  "hfr": {
+   "lines": 174,
+   "matched": 144,
+   "weak": 30
+  }
  },
  "columns": [
   {
@@ -350,7 +355,7 @@
      {
       "lv": 4,
       "lam": 751.28,
-      "f": 0.59,
+      "f": 0.589,
       "tier": "nist",
       "dark": false
      },
@@ -359,6 +364,34 @@
       "lam": 583.9,
       "f": 0.41,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 3073.4,
+      "f": 0.00106,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1337.3,
+      "f": 0.000524,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>1/2</sub>",
+      "lam": 7758.5,
+      "f": 3.94e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 3333.1,
+      "f": 1.91e-05,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -382,6 +415,13 @@
    "col": 1,
    "decay": {
     "ch": [
+     {
+      "lv": 8,
+      "lam": 1802.6,
+      "f": 0.0246,
+      "tier": "hfr",
+      "dark": false
+     },
      {
       "lv": 0,
       "lam": 166.58,
@@ -411,11 +451,25 @@
    "decay": {
     "ch": [
      {
+      "lv": 1,
+      "lam": 193.92,
+      "f": 0.906,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
       "lv": 0,
       "lam": 164.67,
-      "f": 0.053,
+      "f": 0.048,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 8,
+      "lam": 1601.7,
+      "f": 0.0457,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -439,18 +493,61 @@
      {
       "lv": 3,
       "lam": 406.63,
-      "f": 0.844,
+      "f": 0.832,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 4,
       "lam": 481.3,
-      "f": 0.156,
+      "f": 0.154,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>1/2</sub>",
+      "lam": 1142.2,
+      "f": 0.0112,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 9,
+      "lam": 5211.7,
+      "f": 0.00235,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 669.16,
+      "f": 0.000391,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 8175.9,
+      "f": 0.000191,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 955.42,
+      "f": 6.66e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 633.85,
+      "f": 5.8e-05,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 10
    }
   },
   {
@@ -472,11 +569,61 @@
      {
       "lv": 4,
       "lam": 479.41,
-      "f": 1.0,
+      "f": 0.995,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 665.5,
+      "f": 0.00249,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 7661.6,
+      "f": 0.00159,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 947.98,
+      "f": 0.000481,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 1686.9,
+      "f": 0.00034,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 3136.5,
+      "f": 0.000123,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>7/2</sub>",
+      "lam": 908.69,
+      "f": 1.07e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 606.19,
+      "f": 4.87e-06,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 6
    }
   },
   {
@@ -498,11 +645,61 @@
      {
       "lv": 3,
       "lam": 332.11,
-      "f": 1.0,
+      "f": 0.628,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "lv": 9,
+      "lam": 1344.7,
+      "f": 0.211,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 380.3,
+      "f": 0.115,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 2240.0,
+      "f": 0.0197,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 1483.5,
+      "f": 0.0132,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 1289.3,
+      "f": 0.00714,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>10</sup>8p <sup>2</sup>P<sup>°</sup><sub>1/2</sub>",
+      "lam": 11573.0,
+      "f": 0.00365,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 632.29,
+      "f": 0.000708,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 8
    }
   },
   {
@@ -524,11 +721,61 @@
      {
       "lv": 4,
       "lam": 379.71,
-      "f": 1.0,
+      "f": 0.764,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 2219.5,
+      "f": 0.139,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 1474.4,
+      "f": 0.0918,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 1154.0,
+      "f": 0.00182,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>10</sup>8p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 16656.0,
+      "f": 0.0012,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 876.81,
+      "f": 0.000593,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 1282.5,
+      "f": 0.000417,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 679.87,
+      "f": 0.000215,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 9
    }
   }
  ],
@@ -556,20 +803,53 @@
    "lam_obs": 164.667,
    "cyc": {
     "lower": "ground",
-    "cls": "open",
-    "n_open": 3,
-    "open": [
+    "cls": "leak",
+    "leak": 0.952,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "hfr",
+    "n": 1.05,
+    "ch": [
      {
       "lv": 1,
-      "lam": 193.92
-     },
-     {
-      "lv": 2,
-      "lam": 254.5
+      "lam": 193.92,
+      "f": 1.0,
+      "tier": "hfr",
+      "dark": true
      },
      {
       "lv": 8,
-      "lam": 1601.7
+      "lam": 1601.7,
+      "f": 0.0504,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 2,
+      "lam": 254.5
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.909,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.0909,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 2,
+      "p": 0.00048,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -597,18 +877,49 @@
    "lam_obs": 166.576,
    "cyc": {
     "lower": "ground",
-    "cls": "open",
-    "n_open": 2,
+    "cls": "leak",
+    "leak": 0.0246,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "hfr",
+    "n": 40.7,
+    "ch": [
+     {
+      "lv": 8,
+      "lam": 1802.6,
+      "f": 0.0246,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
     "open": [
      {
       "lv": 2,
       "lam": 259.08
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.0246,
+      "tier": "hfr",
+      "at": "ground"
      },
      {
-      "lv": 8,
-      "lam": 1802.6
+      "lv": 1,
+      "p": 0.00128,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 2,
+      "p": 0.000259,
+      "tier": "hfr",
+      "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 0.974
    }
   },
   {
@@ -1100,30 +1411,115 @@
    "lam_obs": 332.108,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 21,
-    "open": [
+    "cls": "leak",
+    "leak": 0.372,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 2.69,
+    "ch": [
      {
-      "lv": 4,
-      "lam": 380.3
+      "lv": 9,
+      "lam": 1344.7,
+      "f": 0.211,
+      "tier": "hfr",
+      "dark": false
      },
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>5/2</sub>",
-      "lam": 395.17
+      "lv": 4,
+      "lam": 380.3,
+      "f": 0.115,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 2240.0,
+      "f": 0.0197,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 1483.5,
+      "f": 0.0132,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 1289.3,
+      "f": 0.00714,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>10</sup>8p <sup>2</sup>P<sup>°</sup><sub>1/2</sub>",
+      "lam": 11573.0,
+      "f": 0.00365,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 632.29,
+      "f": 0.000708,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 469.61
-     },
-     {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>5/2</sub>",
-      "lam": 474.15
-     },
+      "lam": 469.61,
+      "f": 0.000574,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 7,
+    "n_open": 6,
+    "open": [
      {
       "lv": 6,
       "lam": 488.71
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 615.84
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 625.61
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>1/2</sub>",
+      "lam": 700.62
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>1/2</sub>",
+      "lam": 852.01
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.736,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0346,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 2,
+      "p": 0.024,
+      "tier": "hfr",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.206
    }
   },
   {
@@ -1146,30 +1542,115 @@
    "lam_obs": 379.709,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 21,
+    "cls": "leak",
+    "leak": 0.236,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 4.24,
+    "ch": [
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 2219.5,
+      "f": 0.139,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 1474.4,
+      "f": 0.0918,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 1154.0,
+      "f": 0.00182,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>10</sup>8p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 16656.0,
+      "f": 0.0012,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 876.81,
+      "f": 0.000593,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 1282.5,
+      "f": 0.000417,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 679.87,
+      "f": 0.000215,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>7/2</sub>",
+      "lam": 606.73,
+      "f": 0.000129,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 8,
+    "n_open": 5,
     "open": [
      {
       "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>5/2</sub>",
       "lam": 394.52
      },
      {
-      "lv": 5,
-      "lam": 455.09
-     },
-     {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 468.7
-     },
-     {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>5/2</sub>",
-      "lam": 473.22
-     },
-     {
       "lv": 6,
       "lam": 487.73
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 614.28
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 624.0
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 1681.4
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.774,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.223,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 2,
+      "p": 0.00341,
+      "tier": "hfr",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 6.51e-08
    }
   },
   {
@@ -1257,38 +1738,72 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.156,
+    "leak": 0.168,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 6.41,
+    "tier": "hfr",
+    "n": 5.95,
     "ch": [
      {
       "lv": 4,
       "lam": 481.3,
-      "f": 0.156,
+      "f": 0.154,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 17,
-    "open": [
-     {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>5/2</sub>",
-      "lam": 505.35
      },
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 633.85
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>1/2</sub>",
+      "lam": 1142.2,
+      "f": 0.0112,
+      "tier": "hfr",
+      "dark": false
      },
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>5/2</sub>",
-      "lam": 642.15
+      "lv": 9,
+      "lam": 5211.7,
+      "f": 0.00235,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 6,
-      "lam": 669.16
+      "lam": 669.16,
+      "f": 0.000391,
+      "tier": "hfr",
+      "dark": false
      },
+     {
+      "lv": 10,
+      "lam": 8175.9,
+      "f": 0.000191,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 955.42,
+      "f": 6.66e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 633.85,
+      "f": 5.8e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 1710.6,
+      "f": 4.8e-05,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 9,
+    "n_open": 1,
+    "open": [
      {
       "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
       "lam": 932.83
@@ -1297,23 +1812,24 @@
     "end": [
      {
       "lv": 0,
-      "p": 0.969,
-      "tier": "theory",
+      "p": 0.966,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 2,
-      "p": 0.0176,
-      "tier": "theory",
+      "p": 0.0177,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 1,
-      "p": 0.0136,
-      "tier": "nist",
+      "p": 0.014,
+      "tier": "hfr",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 0.00229
    }
   },
   {
@@ -1354,28 +1870,108 @@
    "lam_obs": 479.392,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 17,
-    "open": [
+    "cls": "leak",
+    "leak": 0.00504,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 198.0,
+    "ch": [
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>5/2</sub>",
-      "lam": 503.27
+      "lv": 6,
+      "lam": 665.5,
+      "f": 0.00249,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 7661.6,
+      "f": 0.00159,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 947.98,
+      "f": 0.000481,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 1686.9,
+      "f": 0.00034,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>P<sup>°</sup><sub>3/2</sub>",
+      "lam": 3136.5,
+      "f": 0.000123,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>7/2</sub>",
+      "lam": 908.69,
+      "f": 1.07e-05,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 5,
-      "lam": 606.19
+      "lam": 606.19,
+      "f": 4.87e-06,
+      "tier": "hfr",
+      "dark": false
      },
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 630.57
-     },
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4309.4,
+      "f": 2e-06,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 5,
+    "n_open": 4,
+    "open": [
      {
       "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>5/2</sub>",
       "lam": 638.79
      },
      {
-      "lv": 6,
-      "lam": 665.5
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 925.74
+     },
+     {
+      "lv": 7,
+      "lam": 963.41
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>5/2</sub>",
+      "lam": 12844.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.908,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0901,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 2,
+      "p": 0.00242,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -1401,38 +1997,72 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.844,
+    "leak": 0.846,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 1.18,
     "ch": [
      {
       "lv": 3,
       "lam": 406.63,
-      "f": 0.844,
+      "f": 0.832,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 17,
-    "open": [
-     {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>5/2</sub>",
-      "lam": 505.35
      },
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 633.85
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>1/2</sub>",
+      "lam": 1142.2,
+      "f": 0.0112,
+      "tier": "hfr",
+      "dark": false
      },
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>5/2</sub>",
-      "lam": 642.15
+      "lv": 9,
+      "lam": 5211.7,
+      "f": 0.00235,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 6,
-      "lam": 669.16
+      "lam": 669.16,
+      "f": 0.000391,
+      "tier": "hfr",
+      "dark": false
      },
+     {
+      "lv": 10,
+      "lam": 8175.9,
+      "f": 0.000191,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 955.42,
+      "f": 6.66e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 633.85,
+      "f": 5.8e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>D<sup>°</sup><sub>3/2</sub>",
+      "lam": 1710.6,
+      "f": 4.8e-05,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "more": 9,
+    "n_open": 1,
+    "open": [
      {
       "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
       "lam": 932.83
@@ -1441,23 +2071,24 @@
     "end": [
      {
       "lv": 0,
-      "p": 0.969,
-      "tier": "theory",
+      "p": 0.966,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 2,
-      "p": 0.0176,
-      "tier": "theory",
+      "p": 0.0177,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 1,
-      "p": 0.0136,
-      "tier": "nist",
+      "p": 0.014,
+      "tier": "hfr",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 0.00229
    }
   },
   {
@@ -1556,55 +2187,64 @@
     "lower": "decays",
     "cls": "leak",
     "leak": 0.59,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 1.69,
     "ch": [
      {
       "lv": 4,
       "lam": 751.28,
-      "f": 0.59,
+      "f": 0.589,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 6,
-      "lam": 1337.3
      },
      {
       "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
-      "lam": 3073.4
+      "lam": 3073.4,
+      "f": 0.00106,
+      "tier": "hfr",
+      "dark": false
      },
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
-      "lam": 3333.1
+      "lv": 6,
+      "lam": 1337.3,
+      "f": 0.000524,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>1/2</sub>",
-      "lam": 7758.5
+      "lam": 7758.5,
+      "f": 3.94e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 3333.1,
+      "f": 1.91e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.939,
-      "tier": "theory",
+      "p": 0.938,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.0515,
-      "tier": "nist",
+      "p": 0.0518,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 2,
-      "p": 0.00978,
-      "tier": "theory",
+      "p": 0.0105,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -1685,11 +2325,11 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.41,
-    "bound": true,
+    "leak": 0.411,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 2.44,
+    "tier": "hfr",
+    "n": 2.43,
     "ch": [
      {
       "lv": 3,
@@ -1697,44 +2337,53 @@
       "f": 0.41,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 6,
-      "lam": 1337.3
      },
      {
       "html": "5d<sup>9</sup>6s6p <sup>2</sup>D<sup>°</sup><sub>3/2</sub>",
-      "lam": 3073.4
+      "lam": 3073.4,
+      "f": 0.00106,
+      "tier": "hfr",
+      "dark": false
      },
      {
-      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
-      "lam": 3333.1
+      "lv": 6,
+      "lam": 1337.3,
+      "f": 0.000524,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5d<sup>9</sup>6s6p <sup>4</sup>P<sup>°</sup><sub>1/2</sub>",
-      "lam": 7758.5
+      "lam": 7758.5,
+      "f": 3.94e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5d<sup>9</sup>6s6p <sup>4</sup>F<sup>°</sup><sub>3/2</sub>",
+      "lam": 3333.1,
+      "f": 1.91e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.939,
-      "tier": "theory",
+      "p": 0.938,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.0515,
-      "tier": "nist",
+      "p": 0.0518,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 2,
-      "p": 0.00978,
-      "tier": "theory",
+      "p": 0.0105,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -1868,7 +2517,8 @@
  "validation": [
   "levels: 15   lines < 2000 nm: 23   with matrix element: 20",
   "transition-rate provenance: nist: 20, theory: 3",
-  "levels with a measured lifetime: 6"
+  "levels with a measured lifetime: 6",
+  "Cowan HFR fit (this site): 144 of 174 lines on NIST levels (30 left out for cancellation); used for 0 drawn lines and 126 further decay lines"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (isotopic composition); nuclear spin from Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table III": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Au&ascii=ascii",
@@ -1898,6 +2548,7 @@
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1 only, amplitude 0.0008 mu_B)": "https://arxiv.org/pdf/2006.14735",
   "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1, amplitude 1.549 mu_B)": "https://arxiv.org/pdf/2006.14735",
   "Hannaford, Larkins, Lowe, J. Phys. B 14, 2321 (1981), as quoted in Table 3 (p. 840) of Hannaford & Lowe, 'Some recent developments in atomic lifetime determinations', Aust. J. Phys. 39, 829 (1986) (CSIRO open PDF, Wayback Machine copy); original not opened": "https://web.archive.org/web/20241114055218/https://www.publish.csiro.au/ph/pdf/PH860829",
-  "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1, amplitude 1.141 mu_B)": "https://arxiv.org/pdf/2006.14735"
+  "Dzuba, Allehabi, Flambaum, Li, Schiller, Phys. Rev. A 103, 022822 (2021), Table II (M1, amplitude 1.141 mu_B)": "https://arxiv.org/pdf/2006.14735",
+  "This site: Cowan-code HFR calculation of Au I with the parameters fitted to the NIST energies (2026-10-07; lines with |cancellation factor| < 0.05 left out; inputs and fit report in cowan/Au)": "https://github.com/Muuuun/atom-energy-levels/tree/main/cowan/Au"
  }
 }

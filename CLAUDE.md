@@ -140,10 +140,11 @@ owner (Bing / IndexNow was notified on 2026-10-02; the key file is in `docs/`). 
 - This site's own Cowan-code fits (owner's decision 2026-10-07): tier `hfr` ("HFR fit (this site)", ≈), ranked below `semi`
   (Kurucz) and above `model`; used only where nothing else gives a rate, lines with |cancellation factor| < 0.05 left out
   (`semi.cowan_rates()`, `data/cowan/<El>_lines.csv` + `index.json`, source string names the date and `cowan/<El>`). Done for
-  Hg, Cd, In (`cowan/README.md`: how the NIST Cowan package was built on this Mac, the pipeline `cowan/run_element.py`, accuracy
-  per element: Hg 56 % of the NIST-rated lines within x2 after the cut, Cd 94 %, In 71 %). Further elements of the same kind
-  (Cu, Ag, Au, Ga, Sn, Pb, Tl, Xe, Kr, ...) need a configuration list in `run_element.py` and a look at LEVELS1 before publishing.
-  The compiled programs live outside the repo (scratchpad of 2026-10-07); rebuilding takes 10 minutes with the README.
+  12 elements: Hg, Cd, In, Ga, Tl, Cu, Ag, Au, Sn, Pb, Xe, Kr (`cowan/README.md`: how the NIST Cowan package was built on this
+  Mac, the pipeline `cowan/run_element.py` with a two-stage fit, the accuracy table: 50-100 % of the NIST-rated lines within x2
+  after the cut, strong lines within 1.5). A further element needs a configuration list in `run_element.py` and a look at
+  `<El>/LEVELS1` and `fit_assignment.txt` before publishing. The compiled programs live outside the repo (scratchpad of
+  2026-10-07); rebuilding takes 10 minutes with the README.
 
 ## Known limitations
 

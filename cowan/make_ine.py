@@ -3,7 +3,22 @@ import os, sys, re, math, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from cowan_util import *
 el, outg11, src, dst = sys.argv[1:5]
+STAGE = int(sys.argv[5]) if len(sys.argv) > 5 else 2      # 1: only the EAV free (finds the level order), 2: the planned parameters
+PARVALS = sys.argv[6] if len(sys.argv) > 6 else None       # stage 2: start from the parameter values of the stage-1 fit
 MIN_FREE = 4   # a configuration frees its own Slater / spin-orbit parameters only with at least this many observed levels
+
+
+def parvals_last(path):
+    """Per parity, the parameter values of the last cycle written in PARVALS."""
+    out, cur = [], None
+    for l in open(path, encoding='latin-1'):
+        if 'PARAMETER VALUES,  CYCLE' in l:
+            cur = []
+        elif 'FOR RCG INPUT' in l:
+            out.append(cur); cur = None
+        elif cur is not None and re.match(r'^\s*-?\d', l):
+            cur += [float(x) for x in l.split()]
+    return out
 nist = nist_levels(el)
 blocks = eigen_blocks(outg11)
 secs = outgine_sections(src)
@@ -43,7 +58,7 @@ for p, sec in enumerate(secs[:2], start=1):
     obs_per_conf = collections.Counter()
     T_all, NF_all = [], []
     used = set()
-    offs = []
+    offs, conf_off = [], {}
     for b in jl:
         IM = len(b['ev']); T = [None] * IM; src_lab = [None] * IM
         cand = [n for n in nist if n['J'] == b['J'] and n['odd'] == is_odd]
@@ -53,7 +68,7 @@ for p, sec in enumerate(secs[:2], start=1):
             same = [n for n in cand if n['conf'] == conf and n['term'] == term and id(n) not in used]
             if same:
                 T[idx - 1] = same[0]['E'] / 1000; used.add(id(same[0])); src_lab[idx - 1] = same[0]['raw']
-                offs.append(same[0]['E'] / 1000 - b['ev'][c])
+                offs.append(same[0]['E'] / 1000 - b['ev'][c]); conf_off.setdefault(conf, []).append(offs[-1])
         for c in range(IM):  # second pass: levels NIST labels differently (jK coupling): energy order within the configuration
             idx, w = dominant(b, c)
             if T[idx - 1] is not None:
@@ -62,7 +77,7 @@ for p, sec in enumerate(secs[:2], start=1):
             rest_n = sorted([n for n in cand if n['conf'] == conf and id(n) not in used], key=lambda n: n['E'])
             if rest_n:
                 T[idx - 1] = rest_n[0]['E'] / 1000; used.add(id(rest_n[0])); src_lab[idx - 1] = rest_n[0]['raw']
-                offs.append(rest_n[0]['E'] / 1000 - b['ev'][c])
+                offs.append(rest_n[0]['E'] / 1000 - b['ev'][c]); conf_off.setdefault(conf, []).append(offs[-1])
         b['T'] = T; b['lab'] = src_lab
     off = sorted(offs)[len(offs) // 2] if offs else 0.0
     for b in jl:
@@ -89,7 +104,23 @@ for p, sec in enumerate(secs[:2], start=1):
             ci += 1; cur_conf = confs[ci - 1]  # EAV cards come in configuration order
             newLF.append(0 if obs_per_conf[cur_conf] >= 1 else lf); continue
         legal = re.match(r'ZETA|F[246]\(|G[0-9]\(', nm) and x != 0  # Slater and spin-orbit parameters with a non-zero value
-        newLF.append(0 if legal and cur_conf and obs_per_conf[cur_conf] >= MIN_FREE else lf)
+        newLF.append(0 if STAGE == 2 and legal and cur_conf and obs_per_conf[cur_conf] >= MIN_FREE else lf)
+    if STAGE == 1:
+        X = list(X); ci = 0
+        for ip, name in enumerate(pnames):
+            m = re.match(r'EAV (\S+)', name.strip())
+            if m:
+                ci += 1; c0 = confs[ci - 1]
+                if conf_off.get(c0):
+                    o = sorted(conf_off[c0])[len(conf_off[c0]) // 2]
+                    X[ip] = X[ip] + o - off  # relative to the parity's common offset, which the first EAV absorbs
+        report.append(f"parity {p}: EAV start shifts (kK): " + ', '.join(f"{c}{sorted(v)[len(v)//2] - off:+.1f}" for c, v in conf_off.items() if abs(sorted(v)[len(v)//2] - off) > 0.5))
+    if PARVALS:
+        x1 = parvals_last(PARVALS)[p - 1]
+        if len(x1) == len(X):
+            X = x1
+        else:
+            report.append(f"parity {p}: PARVALS has {len(x1)} values for {len(X)} parameters, stage-1 values not used")
     # the ground configuration EAV sets the energy zero: keep it free too (observed = 0)
     free = sum(1 for x in newLF if x == 0); nobs = sum(obs_per_conf.values())
     report.append(f"parity {p}: {nobs} observed levels, {free} free parameters of {LMAX}; offset {off:+.3f} kK")
@@ -102,7 +133,9 @@ for p, sec in enumerate(secs[:2], start=1):
     for b in jl:
         out += fmt7(b['T'], '%10.4f'); out += fmt7(b['NF'], '%10d')
     out += fmt7(newLF, '%10d'); out += XMAX; out += fmt7(X, '%10.4f')
-    cc = list(ctrl.ljust(80)); cc[70:75] = list(' 0.85'); out.append(''.join(cc).rstrip())  # CRIT = 0.85: levels follow their dominant component
+    # control card: F0 FM F1 DELF NOFMAX GCOE DXMAX CRIT1 CRIT CRIT2 in columns 1-10, 11-20, 21-30, 31-35, 36-40, 41-50, 51-60, 61-65, 66-70, 71-72
+    cc = list(ctrl.ljust(80)); cc[50:60] = list('    5.0000'); cc[65:70] = list(' 0.85'); cc[70:72] = list('-1')  # DXMAX 5 kK per cycle; CRIT 0.85: levels follow their dominant component
+    out.append(''.join(cc).rstrip())
     out.append('   -1')
 open(dst, 'w').write('\n'.join(out) + '\n')
 print('\n'.join(report))

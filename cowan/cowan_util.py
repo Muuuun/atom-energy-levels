@@ -7,7 +7,7 @@ def jnum(s):
     return float(s.split('/')[0]) / float(s.split('/')[1]) if '/' in s else float(s)
 
 def conf_key(c):  # NIST "5d10.6s.6p" / "5d9.6s2.(2D<5/2>).6p" -> "5d106s6p" / "5d96s26p"
-    return re.sub(r'\([^)]*\)', '', c.strip('"')).replace('.', '')
+    return re.sub(r'<[^>]*>', '', re.sub(r'\([^)]*\)', '', c.strip('"'))).replace('.', '')
 
 def term_key(t):
     t = t.strip('"').replace('*', '').replace('?', '').strip()

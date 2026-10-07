@@ -18,7 +18,12 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "I(203Tl) = I(205Tl) = 1/2, so there are no B constants; for J=1/2 levels the hyperfine splitting equals A, for J=3/2 it equals 2A. rme_J_ea0 is |<J||D||J'>| in e*a0 in the Safronova convention A = 2.02613e18 S /((2J'+1) lambda^3[A]) with S = rme^2 (J' = upper level), identical to the schema convention. Entries marked compilation with \"Table IV, column Z(expt)\" are experimental matrix elements as collected by Kozlov, Porsev, Johnson 2001 and quoted by Safronova et al. 2005. The 7s-7p matrix elements and 7p lifetimes labelled derived come from the measured 378 nm Stark shift combined with theory (Safronova & Majumder 2013). Isotope shifts follow the SCHEMA convention nu(first)-nu(second) where the sign could be verified (378 nm: 205Tl higher); for the IR/red second-step transitions only the magnitude is certain. Extra fields beyond SCHEMA.md: hyperfine_component_frequencies_MHz, hyperfine_component_frequency_MHz, E2_M1_amplitude_ratio, PNC_E1_over_M1, A_E2_s, stark_shift_kHz_per_kVcm2, ionization_energy, mu_N. The UDel portal has no neutral Tl entry (only Tl+); neutral-atom theory comes from the Safronova-group papers.",
-  "semi": null
+  "semi": null,
+  "hfr": {
+   "lines": 110,
+   "matched": 83,
+   "weak": 20
+  }
  },
  "columns": [
   {
@@ -386,8 +391,22 @@
      {
       "lv": 2,
       "lam": 671.56,
-      "f": 0.681,
+      "f": 0.572,
       "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 3813.6,
+      "f": 0.372,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 1904.7,
+      "f": 0.0565,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -422,8 +441,29 @@
      {
       "lv": 2,
       "lam": 655.17,
-      "f": 0.792,
+      "f": 0.607,
       "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 3339.0,
+      "f": 0.351,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 1804.8,
+      "f": 0.0374,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 1778.4,
+      "f": 0.0044,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -456,7 +496,7 @@
      {
       "lv": 0,
       "lam": 238.03,
-      "f": 0.723,
+      "f": 0.722,
       "tier": "exp",
       "dark": true
      },
@@ -477,8 +517,22 @@
      {
       "lv": 4,
       "lam": 1459.8,
-      "f": 0.0286,
+      "f": 0.0285,
       "tier": "exp",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 15545.0,
+      "f": 0.00101,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 9,
+      "lam": 36955.0,
+      "f": 1.5e-05,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -521,6 +575,13 @@
       "f": 0.159,
       "tier": "theory",
       "dark": false
+     },
+     {
+      "lv": 9,
+      "lam": 32446.0,
+      "f": 0.000163,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -549,11 +610,11 @@
    "cyc": {
     "lower": "ground",
     "cls": "leak",
-    "leak": 0.277,
-    "bound": true,
+    "leak": 0.278,
+    "bound": false,
     "basis": "rates",
-    "tier": "exp",
-    "n": 3.61,
+    "tier": "hfr",
+    "n": 3.6,
     "ch": [
      {
       "lv": 1,
@@ -572,36 +633,40 @@
      {
       "lv": 4,
       "lam": 1459.8,
-      "f": 0.0286,
+      "f": 0.0285,
       "tier": "exp",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
+     },
      {
       "lv": 8,
-      "lam": 15545.0
+      "lam": 15545.0,
+      "f": 0.00101,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 9,
-      "lam": 36955.0
+      "lam": 36955.0,
+      "f": 1.5e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.792,
-      "tier": "exp",
+      "p": 0.791,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.208,
-      "tier": "exp",
+      "p": 0.209,
+      "tier": "hfr",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 4.49e-06
    }
   },
   {
@@ -762,9 +827,9 @@
     "lower": "metastable",
     "cls": "leak",
     "leak": 0.159,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "theory",
+    "tier": "hfr",
     "n": 6.29,
     "ch": [
      {
@@ -773,29 +838,30 @@
       "f": 0.159,
       "tier": "theory",
       "dark": false
-     }
-    ],
-    "n_open": 1,
-    "open": [
+     },
      {
       "lv": 9,
-      "lam": 32446.0
+      "lam": 32446.0,
+      "f": 0.000163,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.927,
-      "tier": "theory",
+      "p": 0.926,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.0735,
-      "tier": "theory",
+      "p": 0.0736,
+      "tier": "hfr",
       "at": "ground"
      }
-    ]
+    ],
+    "end_lost": 5.63e-08
    }
   },
   {
@@ -820,15 +886,15 @@
     "lower": "metastable",
     "cls": "leak",
     "leak": 0.872,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "exp",
+    "tier": "hfr",
     "n": 1.15,
     "ch": [
      {
       "lv": 0,
       "lam": 238.03,
-      "f": 0.723,
+      "f": 0.722,
       "tier": "exp",
       "dark": true
      },
@@ -842,36 +908,40 @@
      {
       "lv": 4,
       "lam": 1459.8,
-      "f": 0.0286,
+      "f": 0.0285,
       "tier": "exp",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
+     },
      {
       "lv": 8,
-      "lam": 15545.0
+      "lam": 15545.0,
+      "f": 0.00101,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 9,
-      "lam": 36955.0
+      "lam": 36955.0,
+      "f": 1.5e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.792,
-      "tier": "exp",
+      "p": 0.791,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.208,
-      "tier": "exp",
+      "p": 0.209,
+      "tier": "hfr",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 4.49e-06
    }
   },
   {
@@ -1222,22 +1292,50 @@
    "br_tier": "exp",
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 3,
-    "open": [
+    "cls": "leak",
+    "leak": 0.393,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "hfr",
+    "n": 2.54,
+    "ch": [
      {
-      "lv": 5,
-      "lam": 1778.4
+      "lv": 7,
+      "lam": 3339.0,
+      "f": 0.458,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 6,
-      "lam": 1804.8
+      "lam": 1804.8,
+      "f": 0.0488,
+      "tier": "hfr",
+      "dark": false
      },
      {
-      "lv": 7,
-      "lam": 3339.0
+      "lv": 5,
+      "lam": 1778.4,
+      "f": 0.00573,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.539,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.46,
+      "tier": "hfr",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.000346
    }
   },
   {
@@ -1272,18 +1370,43 @@
    "br_tier": "exp",
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 2,
-    "open": [
-     {
-      "lv": 5,
-      "lam": 1904.7
-     },
+    "cls": "leak",
+    "leak": 0.428,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "hfr",
+    "n": 2.34,
+    "ch": [
      {
       "lv": 7,
-      "lam": 3813.6
+      "lam": 3813.6,
+      "f": 0.443,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 1904.7,
+      "f": 0.0673,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.5,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.495,
+      "tier": "hfr",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 0.00444
    }
   },
   {
@@ -1349,15 +1472,15 @@
     "lower": "decays",
     "cls": "leak",
     "leak": 0.879,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "exp",
+    "tier": "hfr",
     "n": 1.14,
     "ch": [
      {
       "lv": 0,
       "lam": 238.03,
-      "f": 0.723,
+      "f": 0.722,
       "tier": "exp",
       "dark": true
      },
@@ -1371,36 +1494,40 @@
      {
       "lv": 4,
       "lam": 1459.8,
-      "f": 0.0286,
+      "f": 0.0285,
       "tier": "exp",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
+     },
      {
       "lv": 8,
-      "lam": 15545.0
+      "lam": 15545.0,
+      "f": 0.00101,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 9,
-      "lam": 36955.0
+      "lam": 36955.0,
+      "f": 1.5e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.792,
-      "tier": "exp",
+      "p": 0.791,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.208,
-      "tier": "exp",
+      "p": 0.209,
+      "tier": "hfr",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 4.49e-06
    }
   },
   {
@@ -1493,9 +1620,9 @@
     "lower": "decays",
     "cls": "leak",
     "leak": 0.841,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "theory",
+    "tier": "hfr",
     "n": 1.19,
     "ch": [
      {
@@ -1504,29 +1631,30 @@
       "f": 0.841,
       "tier": "exp",
       "dark": true
-     }
-    ],
-    "n_open": 1,
-    "open": [
+     },
      {
       "lv": 9,
-      "lam": 32446.0
+      "lam": 32446.0,
+      "f": 0.000163,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.927,
-      "tier": "theory",
+      "p": 0.926,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.0735,
-      "tier": "theory",
+      "p": 0.0736,
+      "tier": "hfr",
       "at": "ground"
      }
-    ]
+    ],
+    "end_lost": 5.63e-08
    }
   },
   {
@@ -1551,15 +1679,15 @@
     "lower": "decays",
     "cls": "leak",
     "leak": 0.971,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "exp",
+    "tier": "hfr",
     "n": 1.03,
     "ch": [
      {
       "lv": 0,
       "lam": 238.03,
-      "f": 0.723,
+      "f": 0.722,
       "tier": "exp",
       "dark": true
      },
@@ -1576,33 +1704,37 @@
       "f": 0.121,
       "tier": "exp",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
+     },
      {
       "lv": 8,
-      "lam": 15545.0
+      "lam": 15545.0,
+      "f": 0.00101,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 9,
-      "lam": 36955.0
+      "lam": 36955.0,
+      "f": 1.5e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.792,
-      "tier": "exp",
+      "p": 0.791,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.208,
-      "tier": "exp",
+      "p": 0.209,
+      "tier": "hfr",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 4.49e-06
    }
   }
  ],
@@ -1829,7 +1961,8 @@
  "validation": [
   "levels: 12   lines < 2000 nm: 18   with matrix element: 17",
   "transition-rate provenance: exp: 15, nist: 1, theory: 2",
-  "levels with a measured lifetime: 7"
+  "levels with a measured lifetime: 7",
+  "Cowan HFR fit (this site): 83 of 110 lines on NIST levels (20 left out for cancellation); used for 0 drawn lines and 61 further decay lines"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (Tl); nuclear spin and magnetic moment: UDel Portal for High-Precision Atomic Data and Computation, nuclear-data table of the Tl+ entry, read 2026-10-01": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Tl",
@@ -1897,6 +2030,7 @@
   "Hunter, Commins, Roesch, Phys. Rev. A 25, 885 (1982) (abstract): A(6D3/2 - 7P1/2)": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.25.885",
   "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Alonso-Medina, J. Quant. Spectrosc. Radiat. Transfer 56, 557 (1996)": "https://arxiv.org/pdf/physics/0410079",
   "Safronova, Safronova, Johnson, Phys. Rev. A 71, 052506 (2005) (arXiv:physics/0410079), Table VII, column A(expt); original: Alonso-Medina, J. Phys. B 30, 1377 (1997)": "https://arxiv.org/pdf/physics/0410079",
-  "Rupasinghe, Vilas, Hoenig, Wang, Majumder, arXiv:1702.06565 (2017), Table I and Sec. V (transition isotope shift)": "https://arxiv.org/pdf/1702.06565"
+  "Rupasinghe, Vilas, Hoenig, Wang, Majumder, arXiv:1702.06565 (2017), Table I and Sec. V (transition isotope shift)": "https://arxiv.org/pdf/1702.06565",
+  "This site: Cowan-code HFR calculation of Tl I with the parameters fitted to the NIST energies (2026-10-07; lines with |cancellation factor| < 0.05 left out; inputs and fit report in cowan/Tl)": "https://github.com/Muuuun/atom-energy-levels/tree/main/cowan/Tl"
  }
 }

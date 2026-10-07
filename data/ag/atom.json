@@ -18,7 +18,12 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Hyperfine constants: I = 1/2 for both isotopes, so only A exists (B = 0); A is negative (negative nuclear moments). Isotope shifts are nu(first) - nu(second), centre of gravity unless stated. rme_J_ea0 is |<J||er||J'>| in e*a0 with A = 2.02613e18 |d|^2 / (lambda_vac[Angstrom]^3 (2J'+1)), J' = upper level; the FSMRCC / MCDHF matrix elements of Jönsson et al. 2026 and the amplitudes of Dzuba et al. 2021 use the same convention (checked: 3.275 e*a0 reproduces their A = 1.537e8 s^-1 for 328 nm). For the two resonance lines the primary A_s and rme are derived from the Carlsson et al. 1990 lifetimes (delayed-coincidence, 0.5 % accuracy), with theory under alternatives; all other A_s / rme are theory (method 'theory') and are meant only for lines where NIST has no value. The clock-transition frequency of Badr et al. 2006 is for the natural isotope mixture; per-isotope values are derived with NIST abundances (frequency_THz_107, frequency_THz_109). Extra keys beyond the schema: ionization_energy, g_J_ratio_to_Cs133, frequency_THz_natural, hyperfine_line_frequencies_MHz, E2_amplitude_au, lifetime_alternatives. Natural linewidths Gamma/2pi = 23.4 MHz (D2) and 21.5 MHz (D1) used by the MOT papers follow from the lifetimes above. The 5s-6s entry (type E2) exists only to carry the measured isotope shift.",
-  "semi": null
+  "semi": null,
+  "hfr": {
+   "lines": 156,
+   "matched": 74,
+   "weak": 27
+  }
  },
  "columns": [
   {
@@ -945,7 +950,60 @@
    "plain": "4d108p 2P°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 456.48,
+      "f": 0.365,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 0,
+      "lam": 176.61,
+      "f": 0.245,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
+      "lv": 17,
+      "lam": 9618.8,
+      "f": 0.155,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 711.0,
+      "f": 0.0845,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 2112.4,
+      "f": 0.0824,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 4136.1,
+      "f": 0.0399,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 1269.5,
+      "f": 0.0282,
+      "tier": "hfr",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 20,
@@ -1175,33 +1233,80 @@
    "lam": 176.6133,
    "air": null,
    "type": "E1",
+   "A": 871000.0,
+   "A_tier": "hfr",
+   "A_src": "This site: Cowan-code HFR calculation of Ag I with the parameters fitted to the NIST energies (2026-10-07; lines with |cancellation factor| < 0.05 left out; inputs and fit report in cowan/Ag)",
+   "d": 0.06882,
+   "d_tier": "hfr",
+   "d_src": "This site: Cowan-code HFR calculation of Ag I with the parameters fitted to the NIST energies (2026-10-07; lines with |cancellation factor| < 0.05 left out; inputs and fit report in cowan/Ag) (from A)",
    "lam_obs": 176.62,
    "cyc": {
     "lower": "ground",
-    "cls": "open",
-    "n_open": 6,
-    "open": [
+    "cls": "leak",
+    "leak": 0.755,
+    "bound": false,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.32,
+    "ch": [
      {
       "lv": 4,
-      "lam": 456.48
+      "lam": 456.48,
+      "f": 0.365,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 17,
+      "lam": 9618.8,
+      "f": 0.155,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 5,
-      "lam": 711.0
-     },
-     {
-      "lv": 8,
-      "lam": 1269.5
+      "lam": 711.0,
+      "f": 0.0845,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 10,
-      "lam": 2112.4
+      "lam": 2112.4,
+      "f": 0.0824,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 13,
-      "lam": 4136.1
+      "lam": 4136.1,
+      "f": 0.0399,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 1269.5,
+      "f": 0.0282,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.894,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 2,
+      "p": 0.00129,
+      "tier": "hfr",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.104
    }
   },
   {
@@ -5075,9 +5180,10 @@
   }
  ],
  "validation": [
-  "levels: 29   lines < 2000 nm: 62   with matrix element: 43",
-  "transition-rate provenance: exp: 2, nist: 5, theory: 38, wavelength only: 17",
+  "levels: 29   lines < 2000 nm: 62   with matrix element: 44",
+  "transition-rate provenance: exp: 2, hfr: 1, nist: 5, theory: 38, wavelength only: 16",
   "levels with a measured lifetime: 17",
+  "Cowan HFR fit (this site): 74 of 156 lines on NIST levels (27 left out for cancellation); used for 1 drawn lines and 25 further decay lines",
   "  observed vs Ritz wavelength differ on 4d106s 2S1/2 - 4d106p 2P°3/2: 1682.4 vs 1682.181",
   "  observed vs Ritz wavelength differ on 4d106s 2S1/2 - 4d106p 2P°1/2: 1742.1 vs 1741.7782",
   "  observed vs Ritz wavelength differ on 4d105d 2D3/2 - 4d104f 2F°5/2: 1831.3 vs 1831.2469",
@@ -5148,6 +5254,7 @@
   "Guérandel, Badr, Plimmer, Juncar, Himbert, Eur. Phys. J. D 10, 33 (2000), abstract (centroid; not verified which isotope mixture)": "https://www.osti.gov/etdeweb/biblio/20062007",
   "Badr, Guérandel, Plimmer, Juncar, Himbert, Eur. Phys. J. D 14, 39 (2001), abstract": "https://www.osti.gov/etdeweb/biblio/20155903",
   "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class A)": "https://arxiv.org/pdf/2602.20711",
-  "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class B)": "https://arxiv.org/pdf/2602.20711"
+  "Jönsson, Sahoo, Caliskan, Amarsi, arXiv:2602.20711 (2026, A&A in press), Table A.2 (MCDHF/RCI, accuracy class B)": "https://arxiv.org/pdf/2602.20711",
+  "This site: Cowan-code HFR calculation of Ag I with the parameters fitted to the NIST energies (2026-10-07; lines with |cancellation factor| < 0.05 left out; inputs and fit report in cowan/Ag)": "https://github.com/Muuuun/atom-energy-levels/tree/main/cowan/Ag"
  }
 }

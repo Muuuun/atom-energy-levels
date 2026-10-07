@@ -45,17 +45,31 @@ writes `cowan/<El>/` (IN36, IN2, decks before and after the fit, LEVELS1 = obser
 
 Configurations: even 5d10 6s2, 6s7s, 6s8s, 6s9s, 6s6d, 6s7d, 6s8d, 6p2; odd 6s6p, 6s7p, 6s8p, 6s9p, 6s5f, 6s6f, 5d9 6s2 6p, 5d9 6s2 7p.
 
-## Results
+## Results (12 elements; `<El>/<El>_compare_fit.txt` has every line)
 
-| element | NIST lines compared | fitted, within x2 / x3 | after the cancellation cut (what the site uses), within x2 / x3 | NIST classes |
-|---|---|---|---|---|
-| Hg (16 configurations, 56 observed levels) | 51 | 57 % / 75 % | 56 % / 75 % (48 lines) | A/B 90 % within x2, C/D 38 % |
-| Cd (16 configurations, 44 observed levels) | 18 | 83 % / 89 % | 94 % / 100 % (16 lines) | C/D only |
-| In (17 configurations, 30 observed levels) | 22 | 50 % / 55 % | 71 % / 79 % (14 lines) | B 67 % within x2, C 38 % |
+Fit: two stages (first only the configuration energies, started at the observed positions, then the Slater and spin-orbit parameters of
+every configuration with at least four observed levels; configuration-interaction integrals fixed at 0.85 x HFR; levels follow
+their dominant component, CRIT = 0.85; at most 5 kK parameter change per cycle; a fit that runs away falls back to the first stage).
 
-In: the 5p - nd lines suffer from cancellation in the dipole integral (factors 0.00 to 0.01, 10 x off) and are exactly the lines the
-cut removes; the 5s 5p2 4P1/2 perturber is fitted 1.5 kK too low.  Cd: the 5s 4f, 5s 5f and 4d9 5s2 np levels NIST lists are too few to
-fit, those configurations keep the scaled HFR parameters.
+| element | configurations | observed levels fitted (median / 90 % / worst deviation, kK) | NIST-rated lines after the cancellation cut: within x2 / x3 |
+|---|---|---|---|
+| Hg | 16 | 56 (0.03 / 0.3 / 0.5) | 47: 55 % / 70 % (NIST A/B lines: 20, 85 % within x2) |
+| Cd | 16 | 44 (0.05 / 0.4 / 2.8) | 16: 94 % / 100 % |
+| In | 17 | 30 (0.01 / 0.7 / 1.5) | 14: 71 % / 79 % (NIST A/B lines: 9, 67 % within x2) |
+| Ga | 16 | 31 (0.01 / 0.5 / 2.1) | 11: 100 % / 100 % (NIST A/B lines: 5, 100 % within x2) |
+| Tl | 16 | 25 (0.01 / 1.2 / 4.6) | 9: 100 % / 100 % |
+| Cu | 14 | 44 (0.10 / 0.5 / 1.5) | 24: 71 % / 75 % (NIST A/B lines: 6, 67 % within x2) |
+| Ag | 14 | 43 (0.55 / 1.4 / 4.5) | 7: 86 % / 100 % |
+| Au | 11 | 35 (0.61 / 3.1 / 3.6) | 18: 72 % / 72 % (NIST A/B lines: 9, 89 % within x2) |
+| Sn | 12 | 88 (0.24 / 1.3 / 2.9) | 38: 50 % / 58 % |
+| Pb | 11 | 56 (0.54 / 3.2 / 4.4) | 25: 56 % / 72 % |
+| Xe | 12 | 85 (0.18 / 1.0 / 3.5) | 95: 65 % / 74 % (NIST A/B lines: 62, 63 % within x2) |
+| Kr | 12 | 86 (0.09 / 0.7 / 2.5) | 106: 69 % / 85 % (NIST A/B lines: 44, 91 % within x2) |
+
+Weak lines are the problem everywhere: lines with a cancellation factor below 0.05 are left out, but a line with 0.1 can still be
+off by a factor 3.  Strong lines are typically within 1.5.  The resonance lines come out 1.3-1.5 x too strong (no core
+polarisation).  In, Ga, Tl: the 5s 5p2-type perturbers are fitted 1-5 kK off.  Sn and Pb (p2 ground configuration) are the
+weakest set; Xe and Kr (p5 nl, jK coupling) fit well but have many weak lines.
 
 ### Hg I in detail (51 lines with a NIST rate; `Hg/Hg_compare_hfr.txt`, `Hg/Hg_compare_fit.txt`)
 
