@@ -83,6 +83,11 @@ svg [id^="hit-"] path { pointer-events: stroke; }
 #info table.sortable th button:hover, #info table.sortable th[aria-sort] button { color: var(--ink); }
 #info table.sortable .swatch { width: 14px; margin-right: 6px; }
 #info .note { margin-top: 8px; font-size: 12.5px; color: var(--muted); }
+/* frame around the level the pointer would pick (.hov) and around the pinned level (.pin); the pointer only has to come near */
+#stage svg.pick { cursor: pointer; }
+.lvbox { pointer-events: none; vector-effect: non-scaling-stroke; stroke: var(--accent); }
+.lvbox.hov { fill: rgba(138, 28, 28, .07); stroke-width: 1.5px; }
+.lvbox.pin { fill: none; stroke-width: 2.5px; }
 /* the enlarged label of a pinned line must not shield the lines under it from the pointer */
 [id^="trl-"].grown { pointer-events: none; }
 /* decay channels of the pinned line's upper level: wavy arrows drawn by viewer.js */

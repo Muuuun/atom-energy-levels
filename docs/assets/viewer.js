@@ -374,16 +374,76 @@
       grownBoxes.push(box(c));
     }
   }
-  const render = () => { card(); paint(); decayArrows(); };
-  function target(e) {
-    for (let n = e.target; n && n !== svg; n = n.parentNode) {
-      const m = n.id && n.id.match(/^(hit|tr|trl|lv|lvn|lvd)-(\d+)$/);
-      if (m) return { type: m[1].startsWith('lv') ? 'lv' : 'tr', i: +m[2] };
-    }
-    return null;
+  // ---------- picking a level: its bar is about one pixel thick in the full view, so the pointer only has to come near the bar
+  // or the caption. The nearest level within reach wins, also over the lines that end on it. A frame shows which level it is.
+  const toSvg = (cx, cy) => new DOMPoint(cx, cy).matrixTransform(svg.getScreenCTM().inverse());
+  const REACH = { mouse: 8, touch: 16 };  // screen pixels
+  const zones = L.map((l, k) => {  // bar and caption boxes as drawn
+    const bar = ends('lv-' + k);
+    return bar && [[bar[0][0], bar[0][1], bar[1][0], bar[1][1]]].concat(['lvn-', 'lvd-'].map(p => svg.getElementById(p + k)).filter(Boolean)
+      .map(el => { const b = el.getBBox(); return [b.x, b.y, b.x + b.width, b.y + b.height]; }));
+  });
+  function levelNear(e) {  // nearest level within reach of the pointer, with its distance in screen pixels
+    const m = svg.getScreenCTM();
+    if (!m) return null;
+    const p = toSvg(e.clientX, e.clientY), u = 1 / m.a;
+    let k = null, best = (REACH[e.pointerType] || REACH.mouse) * u + 1.7;  // 1.7: half the thickness of a bar
+    zones.forEach((z, n) => {
+      for (const b of z || []) {
+        const d = Math.hypot(Math.max(b[0] - p.x, 0, p.x - b[2]), Math.max(b[1] - p.y, 0, p.y - b[3]));
+        if (d < best) { best = d; k = n; }
+      }
+    });
+    return k == null ? null : { k, px: best / u };
   }
+  function target(e) {
+    let hit = null, id;
+    for (let n = e.target; n && n !== svg && !hit; n = n.parentNode) {
+      const m = n.id && n.id.match(/^(hit|tr|trl|lv|lvn|lvd)-(\d+)$/);
+      if (m) { id = m[1]; hit = { type: id.startsWith('lv') ? 'lv' : 'tr', i: +m[2] }; }
+    }
+    if (hit && hit.type === 'lv') return hit;  // straight on a bar or a caption (also an enlarged one)
+    const near = svg.contains(e.target) && levelNear(e);
+    if (!near) return hit;
+    // the label of a line keeps its own ground unless the pointer is almost on the level, and a short line keeps its middle
+    const seg = hit && id !== 'trl' && ends('hit-' + hit.i), m = svg.getScreenCTM();
+    const own = !hit ? 0 : id === 'trl' ? 3 : seg ? 0.35 * Math.hypot(seg[1][0] - seg[0][0], seg[1][1] - seg[0][1]) * m.a : Infinity;
+    return hit && near.px > own ? hit : { type: 'lv', i: near.k };
+  }
+  const frame = ['pin', 'hov'].map(cls => {  // around the pinned level, and around the level the pointer would pick
+    const r = svg.appendChild(document.createElementNS('http://www.w3.org/2000/svg', 'rect'));
+    r.setAttribute('class', 'lvbox ' + cls);
+    return r;
+  });
+  function frames() {
+    const m = svg.getScreenCTM(), u = m ? 1 / m.a : 1;
+    const ks = [pinned && pinned.type === 'lv' ? pinned.i : null, hover && hover.type === 'lv' && !same(hover, pinned) ? hover.i : null];
+    frame.forEach((r, n) => {
+      const parts = ks[n] == null || !m ? [] : ['lv-', 'lvn-', 'lvd-'].map(p => svg.getElementById(p + ks[n])).filter(Boolean);
+      r.style.display = parts.length ? '' : 'none';
+      if (!parts.length) return;
+      let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+      for (const el of parts) {  // as shown now: an enlarged caption counts with its size on screen
+        const b = el.getBoundingClientRect(), a = toSvg(b.left, b.top), c = toSvg(b.right, b.bottom);
+        x0 = Math.min(x0, a.x); y0 = Math.min(y0, a.y); x1 = Math.max(x1, c.x); y1 = Math.max(y1, c.y);
+      }
+      const pad = 5 * u;
+      for (const [key, v] of Object.entries({ x: x0 - pad, y: y0 - pad, width: x1 - x0 + 2 * pad, height: y1 - y0 + 2 * pad, rx: 5 * u }))
+        r.setAttribute(key, v.toFixed(2));
+    });
+    svg.classList.toggle('pick', !!hover);
+  }
+  const render = () => { card(); paint(); decayArrows(); frames(); };
   let drag = null, moved = 0;
-  svg.addEventListener('pointerover', e => { if (e.pointerType !== 'touch' && !drag) { hover = target(e); render(); } });
+  const look = e => {  // what the pointer rests on; a move inside one element can change the nearest level
+    if (e.pointerType === 'touch' || drag) return;
+    const t = target(e);
+    if (same(t, hover)) return;
+    hover = t;
+    render();
+  };
+  svg.addEventListener('pointerover', look);
+  svg.addEventListener('pointermove', look);
   svg.addEventListener('pointerleave', e => {  // a preview survives a move straight from its line into the card
     if (pinned || !(e.relatedTarget && info.contains(e.relatedTarget))) hover = null;
     render();
@@ -444,8 +504,7 @@
   const full = svg.viewBox.baseVal;
   const home = { x: full.x, y: full.y, w: full.width, h: full.height };
   let vb = { ...home };
-  const setVB = () => { svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h); enlarge(); decayArrows(); };
-  const toSvg = (cx, cy) => new DOMPoint(cx, cy).matrixTransform(svg.getScreenCTM().inverse());
+  const setVB = () => { svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h); enlarge(); decayArrows(); frames(); };
   function zoomAt(cx, cy, f) {
     const w = Math.min(home.w * 1.2, Math.max(home.w / 60, vb.w * f));
     f = w / vb.w;

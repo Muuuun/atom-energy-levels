@@ -65,6 +65,10 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
   A pinned card changes on clicks only (diagram, rows and level names in the card, Back, ×, Esc); hovering changes only the
   emphasis in the diagram (`pinned` / `hover` / `rowHover`, classes `hl` strong and `sf` soft). Keep it that way.
   SVG ids: `tr-i` arrow, `trl-i` label, `hit-i` hover target, `lv-k` / `lvn-k` / `lvd-k` level.
+  Picking a level (2026-10-07, owner's request: the bars are about 1 px thick in the full view): `target()` takes the nearest
+  level within 8 screen px (16 for touch) of its bar or caption (`levelNear()`, `zones`), also over the lines that end there;
+  a line label keeps its ground beyond 3 px, a short line the middle 30 % of its length. `frames()` draws a frame (`rect.lvbox`)
+  around the level the pointer would pick (`.hov`) and around the pinned level (`.pin`). Hover follows `pointermove`.
   The list of lines in a level card is sorted by a click on a column head (`SORTS`, `lineTable()`: other level, wavelength,
   matrix element, Einstein A; second click reverses; lines without the value stay last); the order is kept from card to card.
 - Use system `/usr/bin/python3` (ARC 3.9.0, pairinteraction 2.3.1 — only Rb tables cached, cannot download others).
