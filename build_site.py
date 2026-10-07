@@ -20,7 +20,7 @@ BASE = "https://muuuun.github.io/atom-energy-levels"
 REPO = "https://github.com/Muuuun/atom-energy-levels"
 DOCS = os.path.join(al.HERE, "docs")
 SITE = "Atomic energy level diagrams"
-TIER = {"exp": "measured", "nist": "NIST", "theory": "theory", "model": "model calc."}
+TIER = {"exp": "measured", "nist": "NIST", "theory": "theory", "semi": "semi-empirical", "model": "model calc."}
 ION_USE = {"Be", "Mg", "Ca", "Sr", "Ba", "Yb"}
 PRIMARY = {"Li": 7, "Be": 9, "Na": 23, "Mg": 24, "K": 39, "Ca": 40, "Rb": 87, "Sr": 88, "Cs": 133, "Ba": 138, "Yb": 174, "Dy": 164,
            "Cr": 52, "Cd": 114, "Er": 166, "Tm": 169, "Hg": 202}  # the isotope a periodic-table cell and /<element>/ lead to
@@ -66,13 +66,13 @@ def fmt_count(n):
     return f"{n:.2g}" if n < 100 else f"{round(n):,}" if n < 1e6 else sci(n)
 
 
-FROM = {"exp": "from measured data", "nist": "from NIST data", "theory": "from theory", "model": "from model calc."}
+FROM = {"exp": "from measured data", "nist": "from NIST data", "theory": "from theory", "semi": "from semi-empirical calc.", "model": "from model calc."}
 
 
 def cycling_section(L, T, iso):
     """Closed and nearly closed lines (cycling.py): those that start on the ground or a metastable level and leak at most 10 %.
     A lower limit that leaves more than three possible decay paths without a rate says too little to be listed."""
-    mark = lambda s, tier: ("≈ " if tier == "model" else "") + s + ("*" if tier == "theory" else "")
+    mark = lambda s, tier: ("≈ " if tier in ("model", "semi") else "") + s + ("*" if tier == "theory" else "")
     name = lambda r: al.tex_to_html(L[r["lv"]]["name"]) if "lv" in r else r["html"]
     picked = [t for t in T if t.get("cyc") and t["cyc"]["lower"] != "decays"
               and (t["cyc"]["cls"] == "closed" or (t["cyc"]["cls"] == "leak" and t["cyc"]["leak"] <= 0.1
@@ -108,7 +108,7 @@ def cycling_section(L, T, iso):
               "decay lines of the upper level (or 1 − branching ratio where that of the line itself has been measured), and the number of "
               "photons is 1 / leak. “≥” and “≤”: at least one possible decay path has no listed rate, so the leak is a lower limit.\n"
               "These numbers are derived from the branching ratios, lifetimes and rates of this page, not measured as such; the tag names the "
-              "weakest of the inputs, * marks theory and ≈ a model calculation. Listed: lines that start on the ground level or on a metastable level "
+              "weakest of the inputs, * marks theory and ≈ a model or semi-empirical calculation. Listed: lines that start on the ground level or on a metastable level "
               "and leak at most 10 %, unless more than three possible decay paths have no listed rate. Fine-structure levels only: hyperfine and Zeeman dark states and forbidden decays without a listed rate "
               "are not considered. Select a line in the diagram for the full list of its leak channels.</p>")
 
@@ -295,8 +295,10 @@ def atom_page(key, pages):
     parts.append(f"<h2>{'Listed' if listed else 'All'} {iso} transitions below 2 µm</h2>")
     parts.append(table(["Lower level", "Upper level", "λ vacuum (nm)", "λ air (nm)", "ν (THz)", "Type", "|⟨J‖er‖J′⟩| (ea₀)", "A (s⁻¹)", "Branching (%)",
                         "Source of matrix element / A"], rows, left=(0, 1, 5, 9), wrap=(9,)))
+    semi_txt = (" a semi-empirical calculation (Kurucz line list, used only where no measurement or NIST value exists; typically within a factor 2),"
+                if atom["meta"].get("semi") else "")
     parts.append('<p class="note">Reduced dipole matrix elements follow the convention A = ω³|d|²/(3πε₀ħc³(2J′+1)), with J′ the upper level.\n'
-                 "Tags show where a number comes from: measured, NIST compilation, high-accuracy theory, or a model calculation.</p>")
+                 f"Tags show where a number comes from: measured, NIST compilation, high-accuracy theory,{semi_txt} or a model calculation.</p>")
 
     # ---- levels
     rows = []

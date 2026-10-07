@@ -2,7 +2,7 @@
 """Closed (cycling) transition analysis: does the upper level of a line decay back to the level it was excited from?
 
 For a drawn electric-dipole line lower -> upper, the decay lines of the upper level (drawn lines, further NIST and
-literature lines, for the alkalis the complete ARC set) are compared with the levels an electric-dipole decay can reach
+literature lines, Kurucz semi-empirical lines where nothing else gives a rate, for the alkalis the complete ARC set) are compared with the levels an electric-dipole decay can reach
 at all: lower energy, opposite parity, |dJ| <= 1, not J = 0 -> 0.
 
     closed   no other level can be reached: the line is closed for electric-dipole decay (needs no rate at all)
@@ -18,7 +18,7 @@ Every number here is derived, never measured as such: it carries the weakest tie
 limit ("bound") whenever a reachable level has no listed rate.  Fine-structure levels only: hyperfine and Zeeman dark
 states, and forbidden decays without a listed rate, are not looked at.
 """
-RANK = {"exp": 0, "nist": 1, "theory": 2, "model": 3}
+RANK = {"exp": 0, "nist": 1, "theory": 2, "semi": 3, "model": 4}
 MAX_CHANNELS, MAX_OPEN, MAX_END = 8, 5, 6
 
 

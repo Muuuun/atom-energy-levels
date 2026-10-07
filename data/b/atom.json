@@ -17,7 +17,11 @@
   "limit_text": "B$^+$ ionisation limit   66928.04 cm$^{-1}$  =  8.29802 eV  (149.414 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "frequency_THz refers to 11B and frequency_THz_10 to 10B, both hyperfine centres of gravity. Isotope shift is nu(10B) - nu(11B), positive (the lighter isotope lies higher); see conflicts for the sign printed in the source text. Lifetimes were measured for LS terms; the same value is entered for each fine-structure level of the term that the site draws. 'compilation' lifetimes are the O'Brian & Lawler 1992 laser-induced-fluorescence values as printed in NIST's Fuhr & Wiese 2010 compilation. Nuclear moments quoted by Puchalski et al. 2015: mu(11B) = 2.688 648 9(10) mu_N, mu(10B) = 1.800 644 78(6) mu_N. Non-schema fields: J, lower_J/upper_J, value_text, alternatives, linewidth_MHz, use_source/use_url, top-level ionization_energy and conflicts."
+  "notes": "frequency_THz refers to 11B and frequency_THz_10 to 10B, both hyperfine centres of gravity. Isotope shift is nu(10B) - nu(11B), positive (the lighter isotope lies higher); see conflicts for the sign printed in the source text. Lifetimes were measured for LS terms; the same value is entered for each fine-structure level of the term that the site draws. 'compilation' lifetimes are the O'Brian & Lawler 1992 laser-induced-fluorescence values as printed in NIST's Fuhr & Wiese 2010 compilation. Nuclear moments quoted by Puchalski et al. 2015: mu(11B) = 2.688 648 9(10) mu_N, mu(10B) = 1.800 644 78(6) mu_N. Non-schema fields: J, lower_J/upper_J, value_text, alternatives, linewidth_MHz, use_source/use_url, top-level ionization_energy and conflicts.",
+  "semi": {
+   "lines": 1370,
+   "matched": 237
+  }
  },
  "columns": [
   {
@@ -318,6 +322,27 @@
       "f": 1.0,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 13250.0,
+      "f": 0.000218,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 500.89,
+      "f": 1.39e-08,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 501.01,
+      "f": 1.18e-08,
+      "tier": "semi",
+      "dark": false
      }
     ]
    }
@@ -343,6 +368,41 @@
       "lam": 1166.3,
       "f": 1.0,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 13213.0,
+      "f": 0.000198,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 7,
+      "lam": 13218.0,
+      "f": 2.2e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 501.12,
+      "f": 6.2e-08,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 500.85,
+      "f": 1.35e-08,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 500.96,
+      "f": 9.97e-10,
+      "tier": "semi",
       "dark": false
      }
     ]
@@ -498,17 +558,38 @@
    "decay": {
     "ch": [
      {
+      "lv": 12,
+      "lam": 3602.0,
+      "f": 0.556,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 3312.6,
+      "f": 0.402,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 5,
       "lam": 563.48,
-      "f": 0.985,
+      "f": 0.0414,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 7,
       "lam": 1007.1,
-      "f": 0.0153,
+      "f": 0.000644,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 343.24,
+      "f": 5.18e-08,
+      "tier": "semi",
       "dark": false
      }
     ]
@@ -531,24 +612,52 @@
    "decay": {
     "ch": [
      {
+      "lv": 12,
+      "lam": 3601.2,
+      "f": 0.556,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 3312.1,
+      "f": 0.362,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 5,
       "lam": 563.46,
-      "f": 0.985,
+      "f": 0.0414,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 3311.9,
+      "f": 0.0402,
+      "tier": "semi",
       "dark": false
      },
      {
       "lv": 6,
       "lam": 1007.0,
-      "f": 0.0136,
+      "f": 0.00057,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 7,
       "lam": 1007.1,
-      "f": 0.00153,
+      "f": 6.44e-05,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 343.3,
+      "f": 2.51e-07,
+      "tier": "semi",
       "dark": false
      }
     ]
@@ -575,28 +684,42 @@
      {
       "lv": 0,
       "lam": 166.68,
-      "f": 0.833,
+      "f": 0.816,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 1,
       "lam": 166.73,
-      "f": 0.167,
+      "f": 0.163,
       "tier": "nist",
       "dark": true
      },
      {
+      "lv": 13,
+      "lam": 4531.0,
+      "f": 0.0178,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 4532.3,
+      "f": 0.00357,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 8,
       "lam": 878.61,
-      "f": 2.69e-06,
+      "f": 2.64e-06,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 9,
       "lam": 878.75,
-      "f": 5.49e-07,
+      "f": 5.37e-07,
       "tier": "nist",
       "dark": false
      }
@@ -622,14 +745,21 @@
      {
       "lv": 1,
       "lam": 166.73,
-      "f": 1.0,
+      "f": 0.979,
       "tier": "nist",
       "dark": true
      },
      {
+      "lv": 14,
+      "lam": 4532.3,
+      "f": 0.0214,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 9,
       "lam": 878.75,
-      "f": 3.27e-06,
+      "f": 3.2e-06,
       "tier": "nist",
       "dark": false
      }
@@ -664,6 +794,20 @@
       "lam": 821.4,
       "f": 0.211,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 16,
+      "lam": 265730.0,
+      "f": 7.12e-07,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 318.75,
+      "f": 1.95e-09,
+      "tier": "semi",
       "dark": false
      }
     ]
@@ -714,6 +858,20 @@
       "f": 0.0202,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 4238.5,
+      "f": 0.0201,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 4237.3,
+      "f": 0.0101,
+      "tier": "semi",
+      "dark": false
      }
     ]
    }
@@ -763,6 +921,20 @@
       "f": 0.00662,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 2129.9,
+      "f": 0.00619,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 2129.6,
+      "f": 0.0031,
+      "tier": "semi",
+      "dark": false
      }
     ]
    }
@@ -807,10 +979,31 @@
       "dark": false
      },
      {
+      "lv": 13,
+      "lam": 2128.1,
+      "f": 0.00275,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4074.3,
+      "f": 0.00107,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 9,
       "lam": 720.88,
       "f": 0.000577,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 2128.4,
+      "f": 0.00055,
+      "tier": "semi",
       "dark": false
      }
     ]
@@ -835,15 +1028,36 @@
      {
       "lv": 1,
       "lam": 160.08,
-      "f": 0.996,
+      "f": 0.992,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 9,
       "lam": 720.88,
-      "f": 0.00352,
+      "f": 0.00351,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 2128.4,
+      "f": 0.00334,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 17,
+      "lam": 4074.3,
+      "f": 0.00104,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4074.3,
+      "f": 5.18e-05,
+      "tier": "semi",
       "dark": false
      }
     ]
@@ -880,6 +1094,34 @@
       "f": 0.146,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 9,
+      "lam": 669.03,
+      "f": 0.00019,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 8,
+      "lam": 668.95,
+      "f": 9.57e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 1732.0,
+      "f": 2.73e-06,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1731.8,
+      "f": 1.38e-06,
+      "tier": "semi",
+      "dark": false
      }
     ]
    }
@@ -905,7 +1147,7 @@
      {
       "lv": 0,
       "lam": 156.63,
-      "f": 0.827,
+      "f": 0.825,
       "tier": "nist",
       "dark": true
      },
@@ -919,8 +1161,15 @@
      {
       "lv": 8,
       "lam": 656.45,
-      "f": 0.00596,
+      "f": 0.00594,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 7525.8,
+      "f": 0.00153,
+      "tier": "semi",
       "dark": false
      },
      {
@@ -931,9 +1180,16 @@
       "dark": false
      },
      {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2621.7,
+      "f": 0.000878,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 13,
       "lam": 1650.5,
-      "f": 6.25e-05,
+      "f": 6.24e-05,
       "tier": "nist",
       "dark": false
      },
@@ -966,22 +1222,50 @@
      {
       "lv": 1,
       "lam": 156.67,
-      "f": 0.993,
+      "f": 0.99,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 9,
       "lam": 656.53,
-      "f": 0.00714,
+      "f": 0.00712,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 7525.8,
+      "f": 0.00146,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 17,
+      "lam": 2621.8,
+      "f": 0.000837,
+      "tier": "semi",
       "dark": false
      },
      {
       "lv": 14,
       "lam": 1650.6,
-      "f": 7.5e-05,
+      "f": 7.48e-05,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 7525.8,
+      "f": 7.29e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2621.7,
+      "f": 4.17e-05,
+      "tier": "semi",
       "dark": false
      }
     ]
@@ -1069,22 +1353,29 @@
      {
       "lv": 0,
       "lam": 154.64,
-      "f": 0.825,
+      "f": 0.822,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 1,
       "lam": 154.68,
-      "f": 0.165,
+      "f": 0.164,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 8,
       "lam": 622.92,
-      "f": 0.00788,
+      "f": 0.00785,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 12515.0,
+      "f": 0.00162,
+      "tier": "semi",
       "dark": false
      },
      {
@@ -1093,8 +1384,30 @@
       "f": 0.0016,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4653.8,
+      "f": 0.00126,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2157.8,
+      "f": 0.000783,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1453.7,
+      "f": 4.53e-05,
+      "tier": "semi",
+      "dark": false
      }
-    ]
+    ],
+    "more": 1
    }
   },
   {
@@ -1116,18 +1429,61 @@
      {
       "lv": 1,
       "lam": 154.68,
-      "f": 0.99,
+      "f": 0.987,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 9,
       "lam": 622.99,
-      "f": 0.00963,
+      "f": 0.00959,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 12515.0,
+      "f": 0.00154,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 4653.8,
+      "f": 0.0012,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 17,
+      "lam": 2157.8,
+      "f": 0.000744,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 12515.0,
+      "f": 7.71e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4653.8,
+      "f": 6e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 1453.9,
+      "f": 5.42e-05,
+      "tier": "semi",
+      "dark": false
      }
-    ]
+    ],
+    "more": 1
    }
   },
   {
@@ -1210,21 +1566,21 @@
      {
       "lv": 0,
       "lam": 153.38,
-      "f": 0.823,
+      "f": 0.82,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 1,
       "lam": 153.42,
-      "f": 0.165,
+      "f": 0.164,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 8,
       "lam": 602.94,
-      "f": 0.0096,
+      "f": 0.00956,
       "tier": "nist",
       "dark": false
      },
@@ -1236,27 +1592,35 @@
       "dark": false
      },
      {
+      "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 19322.0,
+      "f": 0.00156,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 7513.4,
+      "f": 0.00135,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 3730.3,
+      "f": 0.00113,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
       "lam": 1935.7,
-      "f": 0.000561,
-      "tier": "nist",
-      "dark": false
-     },
-     {
-      "lv": 13,
-      "lam": 1349.4,
-      "f": 0.000198,
-      "tier": "nist",
-      "dark": false
-     },
-     {
-      "lv": 14,
-      "lam": 1349.5,
-      "f": 3.95e-05,
+      "f": 0.000559,
       "tier": "nist",
       "dark": false
      }
-    ]
+    ],
+    "more": 2
    }
   },
   {
@@ -1278,39 +1642,61 @@
      {
       "lv": 1,
       "lam": 153.42,
-      "f": 0.988,
+      "f": 0.984,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 9,
       "lam": 603.0,
-      "f": 0.0112,
+      "f": 0.0111,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 19322.0,
+      "f": 0.00149,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 7513.4,
+      "f": 0.00129,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 3730.3,
+      "f": 0.00107,
+      "tier": "semi",
       "dark": false
      },
      {
       "lv": 17,
       "lam": 1935.7,
-      "f": 0.000534,
+      "f": 0.000532,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 14,
       "lam": 1349.5,
-      "f": 0.000237,
+      "f": 0.000236,
       "tier": "nist",
       "dark": false
      },
      {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 1935.7,
-      "f": 2.68e-05,
-      "tier": "nist",
+      "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 19322.0,
+      "f": 7.44e-05,
+      "tier": "semi",
       "dark": false
      }
-    ]
+    ],
+    "more": 3
    }
   }
  ],
@@ -1336,23 +1722,23 @@
    "cyc": {
     "lower": "ground",
     "cls": "leak",
-    "leak": 0.177,
-    "bound": true,
+    "leak": 0.18,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 5.65,
+    "tier": "semi",
+    "n": 5.56,
     "ch": [
      {
       "lv": 1,
       "lam": 153.42,
-      "f": 0.165,
+      "f": 0.164,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 8,
       "lam": 602.94,
-      "f": 0.0096,
+      "f": 0.00956,
       "tier": "nist",
       "dark": false
      },
@@ -1364,57 +1750,57 @@
       "dark": false
      },
      {
+      "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 19322.0,
+      "f": 0.00156,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 7513.4,
+      "f": 0.00135,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 3730.3,
+      "f": 0.00113,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
       "lam": 1935.7,
-      "f": 0.000561,
+      "f": 0.000559,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 13,
       "lam": 1349.4,
-      "f": 0.000198,
-      "tier": "nist",
-      "dark": false
-     },
-     {
-      "lv": 14,
-      "lam": 1349.5,
-      "f": 3.95e-05,
+      "f": 0.000197,
       "tier": "nist",
       "dark": false
      }
     ],
-    "n_open": 3,
-    "open": [
-     {
-      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 3730.3
-     },
-     {
-      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 7513.4
-     },
-     {
-      "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 19322.0
-     }
-    ],
+    "more": 1,
     "end": [
      {
       "lv": 0,
       "p": 0.827,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
       "p": 0.173,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      }
     ],
-    "end_lost": 8.03e-08
+    "end_lost": 1.15e-05
    }
   },
   {
@@ -1438,79 +1824,85 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.012,
-    "bound": true,
+    "leak": 0.016,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 83.3,
+    "tier": "semi",
+    "n": 62.5,
     "ch": [
      {
       "lv": 9,
       "lam": 603.0,
-      "f": 0.0112,
+      "f": 0.0111,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 19322.0,
+      "f": 0.00149,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 7513.4,
+      "f": 0.00129,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 3730.3,
+      "f": 0.00107,
+      "tier": "semi",
       "dark": false
      },
      {
       "lv": 17,
       "lam": 1935.7,
-      "f": 0.000534,
+      "f": 0.000532,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 14,
       "lam": 1349.5,
-      "f": 0.000237,
+      "f": 0.000236,
       "tier": "nist",
       "dark": false
-     },
-     {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 1935.7,
-      "f": 2.68e-05,
-      "tier": "nist",
-      "dark": false
-     }
-    ],
-    "n_open": 6,
-    "open": [
-     {
-      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 3730.3
-     },
-     {
-      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
-      "lam": 3730.3
-     },
-     {
-      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 7513.4
-     },
-     {
-      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
-      "lam": 7513.4
      },
      {
       "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 19322.0
+      "lam": 19322.0,
+      "f": 7.44e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 7513.4,
+      "f": 6.43e-05,
+      "tier": "semi",
+      "dark": false
      }
     ],
+    "more": 2,
     "end": [
      {
       "lv": 1,
-      "p": 0.9961655444,
-      "tier": "nist",
+      "p": 0.9960197225,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.00383,
-      "tier": "nist",
+      "p": 0.00397,
+      "tier": "semi",
       "at": "ground"
      }
     ],
-    "end_lost": 3.98e-09
+    "end_lost": 6.43e-06
    }
   },
   {
@@ -1534,23 +1926,23 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.835,
-    "bound": true,
+    "leak": 0.836,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "semi",
     "n": 1.2,
     "ch": [
      {
       "lv": 0,
       "lam": 153.38,
-      "f": 0.823,
+      "f": 0.82,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 8,
       "lam": 602.94,
-      "f": 0.0096,
+      "f": 0.00956,
       "tier": "nist",
       "dark": false
      },
@@ -1562,57 +1954,57 @@
       "dark": false
      },
      {
+      "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 19322.0,
+      "f": 0.00156,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 7513.4,
+      "f": 0.00135,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 3730.3,
+      "f": 0.00113,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
       "lam": 1935.7,
-      "f": 0.000561,
+      "f": 0.000559,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 13,
       "lam": 1349.4,
-      "f": 0.000198,
-      "tier": "nist",
-      "dark": false
-     },
-     {
-      "lv": 14,
-      "lam": 1349.5,
-      "f": 3.95e-05,
+      "f": 0.000197,
       "tier": "nist",
       "dark": false
      }
     ],
-    "n_open": 3,
-    "open": [
-     {
-      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 3730.3
-     },
-     {
-      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 7513.4
-     },
-     {
-      "html": "2s<sup>2</sup>7f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 19322.0
-     }
-    ],
+    "more": 1,
     "end": [
      {
       "lv": 0,
       "p": 0.827,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
       "p": 0.173,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      }
     ],
-    "end_lost": 8.03e-08
+    "end_lost": 1.15e-05
    }
   },
   {
@@ -1682,17 +2074,17 @@
      {
       "lv": 1,
       "p": 0.667,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.333,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ],
-    "end_lost": 1.5e-08
+    "end_lost": 8.28e-05
    }
   },
   {
@@ -1762,17 +2154,17 @@
      {
       "lv": 1,
       "p": 0.667,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.333,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ],
-    "end_lost": 1.5e-08
+    "end_lost": 8.28e-05
    }
   },
   {
@@ -1796,24 +2188,31 @@
    "cyc": {
     "lower": "ground",
     "cls": "leak",
-    "leak": 0.175,
-    "bound": true,
+    "leak": 0.178,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 5.71,
+    "tier": "semi",
+    "n": 5.62,
     "ch": [
      {
       "lv": 1,
       "lam": 154.68,
-      "f": 0.165,
+      "f": 0.164,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 8,
       "lam": 622.92,
-      "f": 0.00788,
+      "f": 0.00785,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 12515.0,
+      "f": 0.00162,
+      "tier": "semi",
       "dark": false
      },
      {
@@ -1822,45 +2221,51 @@
       "f": 0.0016,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 5,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 1453.7
-     },
-     {
-      "lv": 14,
-      "lam": 1453.9
-     },
-     {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 2157.8
      },
      {
       "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 4653.8
+      "lam": 4653.8,
+      "f": 0.00126,
+      "tier": "semi",
+      "dark": false
      },
      {
-      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 12515.0
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2157.8,
+      "f": 0.000783,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1453.7,
+      "f": 4.53e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 1453.9,
+      "f": 9.05e-06,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.829,
-      "tier": "nist",
+      "p": 0.828,
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.171,
-      "tier": "nist",
+      "p": 0.172,
+      "tier": "semi",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 4.92e-06
    }
   },
   {
@@ -1884,57 +2289,84 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.00963,
-    "bound": true,
+    "leak": 0.0133,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 104.0,
+    "tier": "semi",
+    "n": 75.2,
     "ch": [
      {
       "lv": 9,
       "lam": 622.99,
-      "f": 0.00963,
+      "f": 0.00959,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 7,
-    "open": [
-     {
-      "lv": 14,
-      "lam": 1453.9
      },
      {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 2157.8
-     },
-     {
-      "lv": 17,
-      "lam": 2157.8
-     },
-     {
-      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 4653.8
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 12515.0,
+      "f": 0.00154,
+      "tier": "semi",
+      "dark": false
      },
      {
       "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
-      "lam": 4653.8
+      "lam": 4653.8,
+      "f": 0.0012,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 17,
+      "lam": 2157.8,
+      "f": 0.000744,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 12515.0,
+      "f": 7.71e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4653.8,
+      "f": 6e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 1453.9,
+      "f": 5.42e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2157.8,
+      "f": 3.72e-05,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.9967913119,
-      "tier": "nist",
+      "p": 0.9966207226,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.00321,
-      "tier": "nist",
+      "p": 0.00338,
+      "tier": "semi",
       "at": "ground"
      }
-    ]
+    ],
+    "end_lost": 1.87e-06
    }
   },
   {
@@ -1958,24 +2390,31 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.835,
-    "bound": true,
+    "leak": 0.836,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "semi",
     "n": 1.2,
     "ch": [
      {
       "lv": 0,
       "lam": 154.64,
-      "f": 0.825,
+      "f": 0.822,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 8,
       "lam": 622.92,
-      "f": 0.00788,
+      "f": 0.00785,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 12515.0,
+      "f": 0.00162,
+      "tier": "semi",
       "dark": false
      },
      {
@@ -1984,45 +2423,51 @@
       "f": 0.0016,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 5,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 1453.7
-     },
-     {
-      "lv": 14,
-      "lam": 1453.9
-     },
-     {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 2157.8
      },
      {
       "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 4653.8
+      "lam": 4653.8,
+      "f": 0.00126,
+      "tier": "semi",
+      "dark": false
      },
      {
-      "html": "2s<sup>2</sup>6f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 12515.0
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2157.8,
+      "f": 0.000783,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1453.7,
+      "f": 4.53e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 1453.9,
+      "f": 9.05e-06,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.829,
-      "tier": "nist",
+      "p": 0.828,
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.171,
-      "tier": "nist",
+      "p": 0.172,
+      "tier": "semi",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 4.92e-06
    }
   },
   {
@@ -2095,13 +2540,13 @@
      {
       "lv": 1,
       "p": 0.348,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.172,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ],
@@ -2178,13 +2623,13 @@
      {
       "lv": 1,
       "p": 0.348,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.172,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ],
@@ -2215,11 +2660,11 @@
    "cyc": {
     "lower": "ground",
     "cls": "leak",
-    "leak": 0.173,
-    "bound": true,
+    "leak": 0.175,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 5.78,
+    "tier": "semi",
+    "n": 5.71,
     "ch": [
      {
       "lv": 1,
@@ -2236,10 +2681,24 @@
       "dark": false
      },
      {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 7525.8,
+      "f": 0.00163,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 9,
       "lam": 656.53,
       "f": 0.00127,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2621.7,
+      "f": 0.000936,
+      "tier": "semi",
       "dark": false
      },
      {
@@ -2257,31 +2716,21 @@
       "dark": false
      }
     ],
-    "n_open": 2,
-    "open": [
-     {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 2621.7
-     },
-     {
-      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 7525.8
-     }
-    ],
     "end": [
      {
       "lv": 0,
       "p": 0.829,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
       "p": 0.171,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 2.39e-06
    }
   },
   {
@@ -2305,60 +2754,70 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.00722,
-    "bound": true,
+    "leak": 0.00961,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 139.0,
+    "tier": "semi",
+    "n": 104.0,
     "ch": [
      {
       "lv": 9,
       "lam": 656.53,
-      "f": 0.00714,
+      "f": 0.00712,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
+      "lam": 7525.8,
+      "f": 0.00146,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 17,
+      "lam": 2621.8,
+      "f": 0.000837,
+      "tier": "semi",
       "dark": false
      },
      {
       "lv": 14,
       "lam": 1650.6,
-      "f": 7.5e-05,
+      "f": 7.48e-05,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 2621.7
-     },
-     {
-      "lv": 17,
-      "lam": 2621.8
      },
      {
       "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 7525.8
+      "lam": 7525.8,
+      "f": 7.29e-05,
+      "tier": "semi",
+      "dark": false
      },
      {
-      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>7/2</sub>",
-      "lam": 7525.8
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2621.7,
+      "f": 4.17e-05,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.9975945858,
-      "tier": "nist",
+      "p": 0.9974913216,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.00241,
-      "tier": "nist",
+      "p": 0.00251,
+      "tier": "semi",
       "at": "ground"
      }
-    ]
+    ],
+    "end_lost": 2.04e-06
    }
   },
   {
@@ -2386,9 +2845,9 @@
     "lower": "metastable",
     "cls": "leak",
     "leak": 0.834,
-    "bound": true,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
+    "tier": "semi",
     "n": 1.2,
     "ch": [
      {
@@ -2406,10 +2865,24 @@
       "dark": false
      },
      {
+      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 7525.8,
+      "f": 0.00163,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 9,
       "lam": 656.53,
       "f": 0.00127,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 2621.7,
+      "f": 0.000936,
+      "tier": "semi",
       "dark": false
      },
      {
@@ -2427,31 +2900,21 @@
       "dark": false
      }
     ],
-    "n_open": 2,
-    "open": [
-     {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 2621.7
-     },
-     {
-      "html": "2s<sup>2</sup>5f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 7525.8
-     }
-    ],
     "end": [
      {
       "lv": 0,
       "p": 0.829,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
       "p": 0.171,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 2.39e-06
    }
   },
   {
@@ -2479,9 +2942,9 @@
     "lower": "ground",
     "cls": "leak",
     "leak": 0.292,
-    "bound": true,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
+    "tier": "semi",
     "n": 3.42,
     "ch": [
      {
@@ -2490,38 +2953,47 @@
       "f": 0.292,
       "tier": "nist",
       "dark": true
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 8,
-      "lam": 668.95
      },
      {
       "lv": 9,
-      "lam": 669.03
+      "lam": 669.03,
+      "f": 0.00019,
+      "tier": "semi",
+      "dark": false
      },
      {
-      "lv": 13,
-      "lam": 1731.8
+      "lv": 8,
+      "lam": 668.95,
+      "f": 9.57e-05,
+      "tier": "semi",
+      "dark": false
      },
      {
       "lv": 14,
-      "lam": 1732.0
+      "lam": 1732.0,
+      "f": 2.73e-06,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1731.8,
+      "f": 1.38e-06,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
       "p": 0.292,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.146,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ],
@@ -2553,9 +3025,9 @@
     "lower": "metastable",
     "cls": "leak",
     "leak": 0.146,
-    "bound": true,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
+    "tier": "semi",
     "n": 6.85,
     "ch": [
      {
@@ -2564,38 +3036,47 @@
       "f": 0.146,
       "tier": "nist",
       "dark": true
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 8,
-      "lam": 668.95
      },
      {
       "lv": 9,
-      "lam": 669.03
+      "lam": 669.03,
+      "f": 0.00019,
+      "tier": "semi",
+      "dark": false
      },
      {
-      "lv": 13,
-      "lam": 1731.8
+      "lv": 8,
+      "lam": 668.95,
+      "f": 9.57e-05,
+      "tier": "semi",
+      "dark": false
      },
      {
       "lv": 14,
-      "lam": 1732.0
+      "lam": 1732.0,
+      "f": 2.73e-06,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 1731.8,
+      "f": 1.38e-06,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
       "p": 0.292,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.146,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ],
@@ -2626,11 +3107,11 @@
    "cyc": {
     "lower": "ground",
     "cls": "leak",
-    "leak": 0.167,
-    "bound": true,
+    "leak": 0.171,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 5.99,
+    "tier": "semi",
+    "n": 5.85,
     "ch": [
      {
       "lv": 1,
@@ -2647,43 +3128,49 @@
       "dark": false
      },
      {
+      "lv": 13,
+      "lam": 2128.1,
+      "f": 0.00275,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4074.3,
+      "f": 0.00107,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 9,
       "lam": 720.88,
       "f": 0.000577,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 3,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 2128.1
      },
      {
       "lv": 14,
-      "lam": 2128.4
-     },
-     {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 4074.3
+      "lam": 2128.4,
+      "f": 0.00055,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.818,
-      "tier": "nist",
+      "p": 0.821,
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.165,
-      "tier": "nist",
+      "p": 0.167,
+      "tier": "semi",
       "at": "dark"
      }
     ],
-    "end_lost": 0.0161
+    "end_lost": 0.0118
    }
   },
   {
@@ -2710,11 +3197,11 @@
    "cyc": {
     "lower": "ground",
     "cls": "leak",
-    "leak": 0.459,
-    "bound": true,
+    "leak": 0.468,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 2.18,
+    "tier": "semi",
+    "n": 2.14,
     "ch": [
      {
       "lv": 1,
@@ -2736,34 +3223,37 @@
       "f": 0.00662,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 2129.6
      },
      {
       "lv": 14,
-      "lam": 2129.9
+      "lam": 2129.9,
+      "f": 0.00619,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 2129.6,
+      "f": 0.0031,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.452,
-      "tier": "nist",
+      "p": 0.458,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.215,
-      "tier": "nist",
+      "p": 0.218,
+      "tier": "semi",
       "at": "ground"
      }
     ],
-    "end_lost": 0.333
+    "end_lost": 0.324
    }
   },
   {
@@ -2787,49 +3277,56 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.00352,
-    "bound": true,
+    "leak": 0.00794,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 284.0,
+    "tier": "semi",
+    "n": 126.0,
     "ch": [
      {
       "lv": 9,
       "lam": 720.88,
-      "f": 0.00352,
+      "f": 0.00351,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 3,
-    "open": [
-     {
-      "lv": 14,
-      "lam": 2128.4
      },
      {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 4074.3
+      "lv": 14,
+      "lam": 2128.4,
+      "f": 0.00334,
+      "tier": "semi",
+      "dark": false
      },
      {
       "lv": 17,
-      "lam": 4074.3
+      "lam": 4074.3,
+      "f": 0.00104,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4074.3,
+      "f": 5.18e-05,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.998825581,
-      "tier": "nist",
+      "p": 0.9979239679,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.00117,
-      "tier": "nist",
+      "p": 0.002,
+      "tier": "semi",
       "at": "ground"
      }
-    ]
+    ],
+    "end_lost": 7.93e-05
    }
   },
   {
@@ -2856,11 +3353,11 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.821,
-    "bound": true,
+    "leak": 0.825,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 1.22,
+    "tier": "semi",
+    "n": 1.21,
     "ch": [
      {
       "lv": 0,
@@ -2877,43 +3374,49 @@
       "dark": false
      },
      {
+      "lv": 13,
+      "lam": 2128.1,
+      "f": 0.00275,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
+      "lam": 4074.3,
+      "f": 0.00107,
+      "tier": "semi",
+      "dark": false
+     },
+     {
       "lv": 9,
       "lam": 720.88,
       "f": 0.000577,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 3,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 2128.1
      },
      {
       "lv": 14,
-      "lam": 2128.4
-     },
-     {
-      "html": "2s<sup>2</sup>4f <sup>2</sup>F<sup>°</sup><sub>5/2</sub>",
-      "lam": 4074.3
+      "lam": 2128.4,
+      "f": 0.00055,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.818,
-      "tier": "nist",
+      "p": 0.821,
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.165,
-      "tier": "nist",
+      "p": 0.167,
+      "tier": "semi",
       "at": "dark"
      }
     ],
-    "end_lost": 0.0161
+    "end_lost": 0.0118
    }
   },
   {
@@ -2940,11 +3443,11 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.228,
-    "bound": true,
+    "leak": 0.237,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 4.39,
+    "tier": "semi",
+    "n": 4.22,
     "ch": [
      {
       "lv": 0,
@@ -2966,34 +3469,37 @@
       "f": 0.00662,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 2129.6
      },
      {
       "lv": 14,
-      "lam": 2129.9
+      "lam": 2129.9,
+      "f": 0.00619,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 2129.6,
+      "f": 0.0031,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.452,
-      "tier": "nist",
+      "p": 0.458,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.215,
-      "tier": "nist",
+      "p": 0.218,
+      "tier": "semi",
       "at": "ground"
      }
     ],
-    "end_lost": 0.333
+    "end_lost": 0.324
    }
   },
   {
@@ -3020,11 +3526,11 @@
    "cyc": {
     "lower": "ground",
     "cls": "leak",
-    "leak": 0.494,
-    "bound": true,
+    "leak": 0.524,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 2.02,
+    "tier": "semi",
+    "n": 1.91,
     "ch": [
      {
       "lv": 1,
@@ -3046,34 +3552,37 @@
       "f": 0.0202,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 4237.3
      },
      {
       "lv": 14,
-      "lam": 4238.5
+      "lam": 4238.5,
+      "f": 0.0201,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 4237.3,
+      "f": 0.0101,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.474,
-      "tier": "nist",
+      "p": 0.493,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.24,
-      "tier": "nist",
+      "p": 0.25,
+      "tier": "semi",
       "at": "ground"
      }
     ],
-    "end_lost": 0.286
+    "end_lost": 0.256
    }
   },
   {
@@ -3100,11 +3609,11 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.281,
-    "bound": true,
+    "leak": 0.311,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 3.56,
+    "tier": "semi",
+    "n": 3.22,
     "ch": [
      {
       "lv": 0,
@@ -3126,34 +3635,37 @@
       "f": 0.0202,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 4237.3
      },
      {
       "lv": 14,
-      "lam": 4238.5
+      "lam": 4238.5,
+      "f": 0.0201,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 13,
+      "lam": 4237.3,
+      "f": 0.0101,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.474,
-      "tier": "nist",
+      "p": 0.493,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.24,
-      "tier": "nist",
+      "p": 0.25,
+      "tier": "semi",
       "at": "ground"
      }
     ],
-    "end_lost": 0.286
+    "end_lost": 0.256
    }
   },
   {
@@ -3180,11 +3692,11 @@
    "cyc": {
     "lower": "ground",
     "cls": "leak",
-    "leak": 0.167,
-    "bound": true,
+    "leak": 0.184,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 5.99,
+    "tier": "semi",
+    "n": 5.43,
     "ch": [
      {
       "lv": 1,
@@ -3192,6 +3704,20 @@
       "f": 0.178,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 13,
+      "lam": 4531.0,
+      "f": 0.0195,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 4532.3,
+      "f": 0.0039,
+      "tier": "semi",
+      "dark": false
      },
      {
       "lv": 8,
@@ -3208,31 +3734,21 @@
       "dark": false
      }
     ],
-    "n_open": 2,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 4531.0
-     },
-     {
-      "lv": 14,
-      "lam": 4532.3
-     }
-    ],
     "end": [
      {
       "lv": 0,
-      "p": 0.833,
-      "tier": "nist",
+      "p": 0.826,
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.167,
-      "tier": "nist",
+      "p": 0.174,
+      "tier": "semi",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 0.000507
    }
   },
   {
@@ -3256,41 +3772,42 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 3.27e-06,
-    "bound": true,
+    "leak": 0.0214,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 306000.0,
+    "tier": "semi",
+    "n": 46.7,
     "ch": [
+     {
+      "lv": 14,
+      "lam": 4532.3,
+      "f": 0.0214,
+      "tier": "semi",
+      "dark": false
+     },
      {
       "lv": 9,
       "lam": 878.75,
-      "f": 3.27e-06,
+      "f": 3.2e-06,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 1,
-    "open": [
-     {
-      "lv": 14,
-      "lam": 4532.3
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.9999989103,
-      "tier": "nist",
+      "p": 0.9945540799,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 1.09e-06,
-      "tier": "nist",
+      "p": 0.00494,
+      "tier": "semi",
       "at": "ground"
      }
-    ]
+    ],
+    "end_lost": 0.000507
    }
   },
   {
@@ -3317,11 +3834,11 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.833,
-    "bound": true,
+    "leak": 0.837,
+    "bound": false,
     "basis": "lifetime",
-    "tier": "nist",
-    "n": 1.2,
+    "tier": "semi",
+    "n": 1.19,
     "ch": [
      {
       "lv": 0,
@@ -3329,6 +3846,20 @@
       "f": 0.892,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 13,
+      "lam": 4531.0,
+      "f": 0.0195,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 4532.3,
+      "f": 0.0039,
+      "tier": "semi",
+      "dark": false
      },
      {
       "lv": 8,
@@ -3345,31 +3876,21 @@
       "dark": false
      }
     ],
-    "n_open": 2,
-    "open": [
-     {
-      "lv": 13,
-      "lam": 4531.0
-     },
-     {
-      "lv": 14,
-      "lam": 4532.3
-     }
-    ],
     "end": [
      {
       "lv": 0,
-      "p": 0.833,
-      "tier": "nist",
+      "p": 0.826,
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
-      "p": 0.167,
-      "tier": "nist",
+      "p": 0.174,
+      "tier": "semi",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 0.000507
    }
   },
   {
@@ -3428,13 +3949,13 @@
      {
       "lv": 1,
       "p": 0.638,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.32,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ],
@@ -3497,13 +4018,13 @@
      {
       "lv": 1,
       "p": 0.638,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.32,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ],
@@ -3566,16 +4087,17 @@
      {
       "lv": 0,
       "p": 0.804,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
       "p": 0.196,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 7.63e-09
    }
   },
   {
@@ -3620,13 +4142,13 @@
      {
       "lv": 1,
       "p": 0.98,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.0195,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
     ]
@@ -3687,16 +4209,17 @@
      {
       "lv": 0,
       "p": 0.804,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 1,
       "p": 0.196,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      }
-    ]
+    ],
+    "end_lost": 7.63e-09
    }
   },
   {
@@ -4212,28 +4735,56 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.0151,
+    "leak": 0.959,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 66.2,
+    "tier": "semi",
+    "n": 1.04,
     "ch": [
+     {
+      "lv": 12,
+      "lam": 3601.2,
+      "f": 0.556,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 11,
+      "lam": 3312.1,
+      "f": 0.362,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 3311.9,
+      "f": 0.0402,
+      "tier": "semi",
+      "dark": false
+     },
      {
       "lv": 6,
       "lam": 1007.0,
-      "f": 0.0136,
+      "f": 0.00057,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 7,
       "lam": 1007.1,
-      "f": 0.00153,
+      "f": 6.44e-05,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 343.3,
+      "f": 2.51e-07,
+      "tier": "semi",
       "dark": false
      }
     ],
-    "n_open": 6,
+    "n_open": 2,
     "open": [
      {
       "lv": 2,
@@ -4242,35 +4793,23 @@
      {
       "lv": 3,
       "lam": 343.23
-     },
-     {
-      "lv": 4,
-      "lam": 343.3
-     },
-     {
-      "lv": 10,
-      "lam": 3311.9
-     },
-     {
-      "lv": 11,
-      "lam": 3312.1
      }
     ],
     "end": [
      {
       "lv": 1,
-      "p": 0.67,
-      "tier": "nist",
+      "p": 0.745,
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.33,
-      "tier": "nist",
+      "p": 0.231,
+      "tier": "semi",
       "at": "ground"
      }
     ],
-    "end_lost": 1.07e-06
+    "end_lost": 0.0237
    }
   },
   {
@@ -4293,54 +4832,63 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.0153,
+    "leak": 0.959,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 65.4,
+    "tier": "semi",
+    "n": 1.04,
     "ch": [
+     {
+      "lv": 12,
+      "lam": 3602.0,
+      "f": 0.556,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 10,
+      "lam": 3312.6,
+      "f": 0.402,
+      "tier": "semi",
+      "dark": false
+     },
      {
       "lv": 7,
       "lam": 1007.1,
-      "f": 0.0153,
+      "f": 0.000644,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 343.24,
+      "f": 5.18e-08,
+      "tier": "semi",
       "dark": false
      }
     ],
-    "n_open": 4,
+    "n_open": 1,
     "open": [
      {
       "lv": 2,
       "lam": 343.18
-     },
-     {
-      "lv": 3,
-      "lam": 343.24
-     },
-     {
-      "lv": 10,
-      "lam": 3312.6
-     },
-     {
-      "lv": 12,
-      "lam": 3602.0
      }
     ],
     "end": [
      {
-      "lv": 1,
-      "p": 0.659,
-      "tier": "nist",
-      "at": "dark"
+      "lv": 0,
+      "p": 0.516,
+      "tier": "semi",
+      "at": "ground"
      },
      {
-      "lv": 0,
-      "p": 0.341,
-      "tier": "nist",
-      "at": "ground"
+      "lv": 1,
+      "p": 0.461,
+      "tier": "semi",
+      "at": "dark"
      }
     ],
-    "end_lost": 1.07e-05
+    "end_lost": 0.0237
    }
   },
   {
@@ -4363,30 +4911,64 @@
    "lam_obs": 1166.3223,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 5,
-    "open": [
-     {
-      "lv": 2,
-      "lam": 500.85
-     },
-     {
-      "lv": 3,
-      "lam": 500.96
-     },
-     {
-      "lv": 4,
-      "lam": 501.12
-     },
+    "cls": "leak",
+    "leak": 0.00022,
+    "bound": false,
+    "basis": "rates",
+    "tier": "semi",
+    "n": 4550.0,
+    "ch": [
      {
       "lv": 6,
-      "lam": 13213.0
+      "lam": 13213.0,
+      "f": 0.000198,
+      "tier": "semi",
+      "dark": false
      },
      {
       "lv": 7,
-      "lam": 13218.0
+      "lam": 13218.0,
+      "f": 2.2e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 501.12,
+      "f": 6.2e-08,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 500.85,
+      "f": 1.35e-08,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 500.96,
+      "f": 9.97e-10,
+      "tier": "semi",
+      "dark": false
      }
-    ]
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.667,
+      "tier": "semi",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.333,
+      "tier": "semi",
+      "at": "ground"
+     }
+    ],
+    "end_lost": 1.54e-08
    }
   },
   {
@@ -4409,22 +4991,50 @@
    "lam_obs": 1166.5648,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 3,
-    "open": [
+    "cls": "leak",
+    "leak": 0.000218,
+    "bound": false,
+    "basis": "rates",
+    "tier": "semi",
+    "n": 4590.0,
+    "ch": [
+     {
+      "lv": 7,
+      "lam": 13250.0,
+      "f": 0.000218,
+      "tier": "semi",
+      "dark": false
+     },
      {
       "lv": 2,
-      "lam": 500.89
+      "lam": 500.89,
+      "f": 1.39e-08,
+      "tier": "semi",
+      "dark": false
      },
      {
       "lv": 3,
-      "lam": 501.01
+      "lam": 501.01,
+      "f": 1.18e-08,
+      "tier": "semi",
+      "dark": false
+     }
+    ],
+    "end": [
+     {
+      "lv": 1,
+      "p": 0.667,
+      "tier": "semi",
+      "at": "dark"
      },
      {
-      "lv": 7,
-      "lam": 13250.0
+      "lv": 0,
+      "p": 0.333,
+      "tier": "semi",
+      "at": "ground"
      }
-    ]
+    ],
+    "end_lost": 1.53e-07
    }
   },
   {
@@ -4449,9 +5059,9 @@
     "lower": "decays",
     "cls": "leak",
     "leak": 0.211,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "semi",
     "n": 4.74,
     "ch": [
      {
@@ -4460,33 +5070,37 @@
       "f": 0.211,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 2,
-    "open": [
-     {
-      "lv": 4,
-      "lam": 318.75
      },
      {
       "lv": 16,
-      "lam": 265730.0
+      "lam": 265730.0,
+      "f": 7.12e-07,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 318.75,
+      "f": 1.95e-09,
+      "tier": "semi",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
       "p": 0.985,
-      "tier": "nist",
+      "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.0154,
-      "tier": "nist",
+      "tier": "semi",
       "at": "ground"
      }
-    ]
+    ],
+    "end_lost": 1.07e-09
    }
   }
  ],
@@ -4586,7 +5200,8 @@
  "validation": [
   "levels: 31   lines < 2000 nm: 45   with matrix element: 45",
   "transition-rate provenance: nist: 45",
-  "levels with a measured lifetime: 13"
+  "levels with a measured lifetime: 13",
+  "semi-empirical rates (Kurucz): 237 of 1370 lines on NIST levels; used for 0 drawn lines and 116 further decay lines"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (B); nuclear spin: Table 2.1 of B. Maass, PhD thesis, TU Darmstadt (2020) (10B 3+, 11B 3/2-)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=B",
@@ -4603,6 +5218,7 @@
   "B. Maass, PhD thesis, TU Darmstadt (2020), Eq. (7.37) and Table 7.5": "https://inis.iaea.org/records/fpwbd-s1567/files/53024644.pdf",
   "B. Maass, PhD thesis, TU Darmstadt (2020), Eq. (7.36)": "https://inis.iaea.org/records/fpwbd-s1567/files/53024644.pdf",
   "Maass, Huether, Krause, Kraemer, Koenig, et al., Phys. Rev. Lett. 122, 182501 (2019), arXiv:1901.06323": "https://arxiv.org/pdf/1901.06323",
-  "Maass et al., Phys. Rev. Lett. 122, 182501 (2019), arXiv:1901.06323": "https://arxiv.org/pdf/1901.06323"
+  "Maass et al., Phys. Rev. Lett. 122, 182501 (2019), arXiv:1901.06323": "https://arxiv.org/pdf/1901.06323",
+  "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf050011.pos of 2015-05-15 (Cowan-code fit)": "http://kurucz.harvard.edu/atoms/0500/"
  }
 }

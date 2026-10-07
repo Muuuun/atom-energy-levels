@@ -72,7 +72,7 @@ def fmt_d(t):
     s = f"{d:.3f}" if 0.1 <= d < 10 else f"{d:.2f}" if d >= 10 else f"{d:.4f}"
     if t.get("uncertain"):
         return "~" + s
-    return {"model": "≈" + s, "theory": s + "*"}.get(t.get("d_tier"), s)
+    return {"model": "≈" + s, "semi": "≈" + s, "theory": s + "*"}.get(t.get("d_tier"), s)
 
 
 def text_len(s):
@@ -423,7 +423,7 @@ def draw(key):
     if not has_ryd:
         hax.text(0, 1.78, meta["limit_text"], fontsize=15, color=MUTED, va="top", ha="left")
     guide = ("Arrow label:  vacuum wavelength  |  reduced dipole matrix element  " r"$|\langle J\,\Vert\,e r\,\Vert\,J'\rangle|$  in $e a_0$" "\n"
-             "Matrix elements are measured or NIST values;   *  = high-accuracy theory,   ≈  = model calculation.\n"
+             "Matrix elements are measured or NIST values;   *  = high-accuracy theory,   ≈  = model or semi-empirical calculation.\n"
              r"Arrow width grows with the Einstein coefficient $A$.   Dotted: forbidden (clock, M1, E2).   Dashed: Rydberg excitation, $n$ = 70." "\n"
              + meta["guide_tau"])
     gx = max(strip_w * 0.36, 17.5 if lit_lv else 13.5)

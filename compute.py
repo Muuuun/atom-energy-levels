@@ -5,7 +5,8 @@
 
 Priority of sources for every number: measurement from data/literature/<El>.json > NIST ASD >
 high-accuracy theory quoted in the literature file > ARC (alkalis only; literature table, then model potential).
-Each value carries a tier: "exp", "nist", "theory", "model".
+Each value carries a tier: "exp", "nist", "theory", "semi" (Kurucz semi-empirical line list, semi.py; only where nothing
+else gives a rate), "model".
 """
 import csv
 import datetime
@@ -20,6 +21,7 @@ import numpy as np
 
 import atomlib as al
 import cycling
+import semi
 from species import SPECIES
 
 warnings.filterwarnings("ignore")
@@ -465,7 +467,7 @@ def fmt_d(t):
         return "–"
     d = t["d"]
     s = f"{d:.3f}" if d < 10 else f"{d:.2f}"
-    return {"model": "≈" + s, "theory": s + "*"}.get(t.get("d_tier"), s)
+    return {"model": "≈" + s, "semi": "≈" + s, "theory": s + "*"}.get(t.get("d_tier"), s)
 
 
 # ----------------------------------------------------------------------------- everything else
@@ -663,6 +665,9 @@ def build_nist(key, cfg):
     for L in levels:
         del L["_group"], L["_gtex"], L["_i"]
 
+    # ---- semi-empirical rates (Kurucz line list, where cached): the last resort for a drawn line and for the decay lines below
+    semi_A, semi_src, semi_url, semi_stat = semi.rates(sym, nist)
+
     # ---- transitions
     transitions = []
     for (elo, eup), ln in chosen.items():
@@ -688,6 +693,8 @@ def build_nist(key, cfg):
             cands.append((0.5 if v[2] == "exp" else 2.5, al.rate_from_rme(v[0], t["wn"], up["J"]), v[2], v[3], None))
         if not cands and t.get("br") and up.get("tau_ns") and t.get("br_tier") == "exp":
             cands.append((3, t["br"] / (up["tau_ns"] * 1e-9), up["tau_tier"], "branching ratio / lifetime", None))
+        if not cands and t["kind"] == "E1" and (elo, eup) in semi_A:
+            cands.append((6, semi_A[(elo, eup)], "semi", semi_src, None))
         if cands:
             cands.sort(key=lambda c: c[0])
             _, A, tier, src, unc = cands[0]
@@ -726,6 +733,11 @@ def build_nist(key, cfg):
             A = None  # NIST ranks above a calculated rate
         if br or A:
             extra[(lo["i"], up["i"])] = dict(A=A[0] if A else old and old["A"], br=br[0] if br else None, tier=(br or A)[2])
+    n_semi_extra = 0
+    for pair, A in semi_A.items():  # Kurucz lines fill in only where no NIST or literature rate exists
+        if pair not in chosen and pair not in extra:
+            extra[pair] = dict(A=A, tier="semi")
+            n_semi_extra += 1
     pool = [dict(E=l["E"], J=l["J"], parity=al.parity_of(l["conf"], l["term"])) for l in nist]
     cycling.annotate(levels, transitions, pool, {l["id"]: i for i, l in by_E.items()},
                      [dict(x, lower=lo, upper=up) for (lo, up), x in extra.items()],
@@ -778,6 +790,9 @@ def build_nist(key, cfg):
     validation = [f"levels: {len(levels)}   lines < {LAMBDA_MAX_NM:.0f} nm: {len(transitions)}   with matrix element: {n_d}",
                   "transition-rate provenance: " + ", ".join(f"{k}: {v}" for k, v in sorted(tiers.items())),
                   f"levels with a measured lifetime: {sum(1 for l in levels if l['tau_tier'] in ('exp', 'theory'))}"]
+    if semi_stat:
+        validation.append(f"semi-empirical rates (Kurucz): {semi_stat['matched']} of {semi_stat['lines']} lines on NIST levels; used for "
+                          f"{sum(1 for t in transitions if t.get('A_tier') == 'semi')} drawn lines and {n_semi_extra} further decay lines")
     for t in transitions:
         if t.get("lam_obs") and abs(t["lam_obs"] - t["lam"]) > 0.05:
             validation.append(f"  observed vs Ritz wavelength differ on {levels[t['lower']]['plain']} - {levels[t['upper']]['plain']}: "
@@ -790,9 +805,12 @@ def build_nist(key, cfg):
                 lit_levels=n_lit_lv,
                 guide_tau=("Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists)." if lit_levels else
                            "Level caption:  energy (NIST, or a measurement of the last %d years where one exists) and measured lifetime (where one exists)." % ENERGY_MAX_AGE_YR),
-                notes=lit.raw.get("notes", ""))
+                notes=lit.raw.get("notes", ""), semi=semi_stat)
+    sources = lit.source_urls()
+    if semi_src:
+        sources[semi_src] = semi_url
     return dict(meta=meta, columns=columns, levels=levels, transitions=transitions, rydberg_levels=[], tables=tables, validation=validation,
-                sources=lit.source_urls())
+                sources=sources)
 
 
 def merge_line(chosen, key, ln):

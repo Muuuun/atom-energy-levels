@@ -10,8 +10,17 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
 
 - Numbers must be experimental or NIST wherever possible. Priority for every value:
   measurement (`data/literature/<El>.json`) > NIST ASD > high-accuracy theory from the literature > ARC model potential.
-- Every literature value carries its citation and URL; every value carries a tier (`exp`, `nist`, `theory`, `model`).
-  On diagrams `*` marks theory and `≈` a model value. Never present a calculated or derived number as measured.
+- Every literature value carries its citation and URL; every value carries a tier (`exp`, `nist`, `theory`, `semi`, `model`).
+  On diagrams `*` marks theory and `≈` a model or semi-empirical value. Never present a calculated or derived number as measured.
+- Semi-empirical rates (owner's decision 2026-10-07): Kurucz's Cowan-code line lists (`semi.py`; `python3 semi.py fetch` caches
+  `gf<ZZ00>.pos` of 37 neutral atoms in `data/semi/`, git-ignored except `index.json` with URL and file date) fill a rate only where
+  neither a measurement nor NIST gives one: for a drawn line (label and card then show ≈, source cites Kurucz 2011 and the file)
+  and for the decay lines of the cycling analysis, so a leak becomes an estimate instead of a lower limit. Tier `semi`, ranked below
+  `theory` and above `model`; it never replaces a NIST or literature rate, and lifetimes are not taken from Kurucz (25 % too short on
+  average). Checked against NIST (14 elements): median offset < 0.1 dex, within a factor 2 for 80-100 % of NIST class A/B lines,
+  60-80 % of C/D, 40-60 % of E; a weak line with strong cancellation can be off by a factor 10. Matching: energy within 0.5 cm^-1,
+  same J, opposite parity; a level that fits two NIST levels is skipped. Not covered: Cu, Ag, Au, Cd, Hg, In, Cs, lanthanides, Hf-Pt,
+  actinides (DREAM at Mons has neutral tables only for La I and Lu I, with mixed measured / calculated values: not used).
 - Level energies (owner's decision, 2026-10-01): a direct measurement published within the last 20 years replaces the NIST
   energy (`Literature.energy` in `compute.py`, fields `measured_energy_cm` / `level_energy_measured`, `method: "experiment"`);
   older measurements leave NIST in place. A value from another isotope is used only where NIST is off by more than 2 cm^-1.
@@ -24,6 +33,7 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
 ## Pipeline
 
     python3 fetch_all.py                  # cache NIST ASD tables for every neutral atom (data/nist)
+    python3 semi.py fetch                 # cache Kurucz semi-empirical line lists (data/semi, 88 MB, git-ignored)
     python3 compute.py all|curated|auto|<key>...   # -> data/<key>/atom.json, levels.csv, transitions.csv, validation.txt
     python3 plot.py    all|curated|auto|<key>...   # -> docs/<slug>/diagram.svg|pdf, preview.png, data.json
     python3 build_site.py                 # -> docs/index.html (periodic table), docs/<slug>/index.html, sitemap.xml
@@ -43,7 +53,8 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
   `t["cyc"]` on every drawn E1 line. "closed" = no other level below the upper level with opposite parity and |ΔJ| ≤ 1 in the
   NIST level list (needs no rate); otherwise leak per scattered photon = 1 − branching ratio when the line's own ratio is in
   the literature file, else the sum over the other decay lines (drawn lines, undrawn NIST lines, literature lines beyond
-  2 µm, for alkalis the full ARC set), flagged as a lower limit while a reachable level has no rate. Shown in the transition
+  2 µm, Kurucz semi-empirical lines where nothing else gives a rate, for alkalis the full ARC set), flagged as a lower limit while a
+  reachable level has no rate. Shown in the transition
   card (`cycleCard` in `viewer.js`), in the "Closed and nearly closed transitions" table (`cycling_section` in
   `build_site.py`, page only, not in the figure) and in the last columns of `transitions.csv`. These numbers are derived:
   their tag reads "from measured data" etc., never "measured". Fine structure only (no hyperfine / Zeeman dark states).
@@ -116,6 +127,12 @@ Owner's decision 2026-10-02 (night): the elements whose papers stay closed are l
 literature passes unless the owner supplies PDFs or asks. The sitemap still has to be submitted in Google Search Console by the
 owner (Bing / IndexNow was notified on 2026-10-02; the key file is in `docs/`). Search Console ownership was verified on
 2026-10-06 (URL-prefix property) through `docs/google94bc483eee0b4f32.html`: never remove that file.
+
+## Status (2026-10-07)
+
+- Kurucz semi-empirical rates added (see the owner's rules). Of the 7407 drawn E1 lines the cycling analysis classed 1709 as
+  "open" and 3397 as a lower limit before; now 1348 and 1720. Pages of the 37 Kurucz elements: 2553 complete, 273 lower limits,
+  16 open (reachable levels Kurucz did not compute). 176 drawn lines without any rate got a ≈ matrix element (Tc 58, Zn 37).
 
 ## Known limitations
 

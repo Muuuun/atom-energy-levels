@@ -18,7 +18,7 @@
   T.forEach((t, i) => { linesOf[t.lower].push(i); if (t.upper != null) linesOf[t.upper].push(i); });
 
   // ---------- formatting
-  const TIER = { exp: 'measured', nist: 'NIST', theory: 'theory', model: 'model calc.' };
+  const TIER = { exp: 'measured', nist: 'NIST', theory: 'theory', semi: 'semi-empirical', model: 'model calc.' };
   const badge = t => t && TIER[t] ? '<span class="tier ' + t + '">' + TIER[t] + '</span>' : '';
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const upName = t => t.upper != null ? L[t.upper].html : t.upper_html;
@@ -44,9 +44,10 @@
   const fshare = x => x >= 1e-3 ? +(x * 100).toPrecision(3) + ' %' : sci(x);
   const fcount = n => n < 100 ? String(+n.toPrecision(2)) : n < 1e6 ? Math.round(n).toLocaleString('en-US') : sci(n);
   const flam = nm => nm < 1e4 ? +nm.toPrecision(4) + ' nm' : nm < 1e7 ? +(nm / 1e3).toPrecision(3) + ' µm' : +(nm / 1e6).toPrecision(3) + ' mm';
-  const mark = (s, tier) => (tier === 'model' ? '≈ ' : '') + s + (tier === 'theory' ? '*' : '');  // same marks as on the diagram
+  const mark = (s, tier) => (tier === 'model' || tier === 'semi' ? '≈ ' : '') + s + (tier === 'theory' ? '*' : '');  // same marks as on the diagram
   const lvRef = r => r.lv != null ? lvBtn(r.lv) : r.html;
-  const FROM = { exp: 'from measured data', nist: 'from NIST data', theory: 'from theory', model: 'from model calc.' };
+  const FROM = { exp: 'from measured data', nist: 'from NIST data', theory: 'from theory', semi: 'from semi-empirical calc.', model: 'from model calc.' };
+  const CALC = new Set(['theory', 'model', 'semi']), CALC_NOTE = '* theory, ≈ model or semi-empirical calculation.';
   const derived = t => FROM[t] ? '<span class="tier ' + t + '">' + FROM[t] + '</span>' : '';  // a derived number is never tagged "measured"
   function cycleCard(i) {
     const t = T[i], c = t.cyc;
@@ -72,7 +73,7 @@
       else notes.push(c.basis === 'lifetime' ? 'Leak = sum of the other decay lines of ' + up + ' (rate × lifetime).'
         : 'Leak = share of the other lines in the sum of the listed rates (no lifetime measured for ' + up + ').');
       if (c.bound) notes.push('Lower limit: ' + c.n_open + ' more possible decay path' + s(c.n_open) + ' without a listed rate (' + paths + ').');
-      if (c.ch.some(r => r.tier === 'theory' || r.tier === 'model') || c.ch_tier === 'theory' || c.ch_tier === 'model') notes.push('* theory, ≈ model calculation.');
+      if (c.ch.some(r => CALC.has(r.tier)) || CALC.has(c.ch_tier)) notes.push(CALC_NOTE);
     }
     if (c.lower === 'decays') notes.push('The lower level ' + lo + ' decays itself, so this line cannot cycle on its own.');
     if (c.end && (c.cls === 'leak' || c.lower === 'decays')) {  // the decays followed down through every short-lived level
@@ -85,7 +86,7 @@
         (c.end_more ? '<tr><td>other levels</td><td>' + fshare(c.end_more) + '</td></tr>' : '') +
         (c.end_lost ? '<tr><td>not covered by the listed rates</td><td>' + fshare(c.end_lost) + '</td></tr>' : '') + '</table>';
       notes.push('Where the atom ends up: every further decay is followed, through each short-lived level, down to the ground level or to a level that no electric-dipole decay can leave (long-lived).');
-      if (c.end.some(r => r.tier === 'theory' || r.tier === 'model') && !notes.includes('* theory, ≈ model calculation.')) notes.push('* theory, ≈ model calculation.');
+      if (c.end.some(r => CALC.has(r.tier)) && !notes.includes(CALC_NOTE)) notes.push(CALC_NOTE);
     }
     if (c.cls !== 'open') notes.push('While this line is pinned, wavy arrows in the diagram show the decay lines of ' + up + ' and of every short-lived level they lead to, each with its share of the decays of the level it starts from. Where the arrows are dense, zoom in to see every share.');
     return h + (notes.length ? '<div class="note">' + notes.join(' ') + '</div>' : '') +
