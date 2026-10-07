@@ -17,7 +17,8 @@
   "limit_text": "Bi$^+$ ionisation limit   58761.65 cm$^{-1}$  =  7.28552 eV  (170.179 nm)",
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
-  "notes": "NIST labels the even levels in J1K notation; the LS names used in the literature are given in brackets. The 1972 beam-foil lifetimes were read from the publisher's abstract page by an automated reader: verify before relying on them, and prefer Luo et al. 1995 once accessible. Hyperfine constants of the 6p3 2D and 2P levels are second-hand and printed without uncertainties. The 'use' strings of the two M1 lines carry the parity-violation results because the schema has no field for them."
+  "notes": "NIST labels the even levels in J1K notation; the LS names used in the literature are given in brackets. The 1972 beam-foil lifetimes were read from the publisher's abstract page by an automated reader: verify before relying on them, and prefer Luo et al. 1995 once accessible. Hyperfine constants of the 6p3 2D and 2P levels are second-hand and printed without uncertainties. The 'use' strings of the two M1 lines carry the parity-violation results because the schema has no field for them.",
+  "semi": null
  },
  "columns": [
   {
@@ -222,7 +223,18 @@
     "tier": "exp",
     "src": "values labelled 'Exp. 2021' with reference Wilman, Elantkowska, Ruczkowski, J. Quant. Spectrosc. Radiat. Transfer 275, 107892 (2021) (a semi-empirical analysis that collects measured constants; the original experiments are not named), as quoted in Tables XI and XII of Liu et al., arXiv:2306.15885 (2023)"
    },
-   "col": 1
+   "col": 1,
+   "decay": {
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 17344.0,
+      "f": 0.029,
+      "tier": "theory",
+      "dark": false
+     }
+    ]
+   }
   },
   {
    "id": 6,
@@ -963,7 +975,7 @@
      {
       "lv": 1,
       "p": 0.237,
-      "tier": "nist",
+      "tier": "theory",
       "at": "dark"
      },
      {
@@ -974,17 +986,12 @@
      },
      {
       "lv": 0,
-      "p": 0.0301,
-      "tier": "nist",
+      "p": 0.0303,
+      "tier": "theory",
       "at": "ground"
-     },
-     {
-      "lv": 5,
-      "p": 0.00904,
-      "tier": "nist",
-      "at": "open"
      }
-    ]
+    ],
+    "end_lost": 0.00882
    }
   },
   {
@@ -1796,7 +1803,7 @@
      {
       "lv": 1,
       "p": 0.237,
-      "tier": "nist",
+      "tier": "theory",
       "at": "dark"
      },
      {
@@ -1807,17 +1814,12 @@
      },
      {
       "lv": 0,
-      "p": 0.0301,
-      "tier": "nist",
+      "p": 0.0303,
+      "tier": "theory",
       "at": "ground"
-     },
-     {
-      "lv": 5,
-      "p": 0.00904,
-      "tier": "nist",
-      "at": "open"
      }
-    ]
+    ],
+    "end_lost": 0.00882
    }
   },
   {
@@ -2404,7 +2406,7 @@
      {
       "lv": 1,
       "p": 0.237,
-      "tier": "nist",
+      "tier": "theory",
       "at": "dark"
      },
      {
@@ -2415,17 +2417,12 @@
      },
      {
       "lv": 0,
-      "p": 0.0301,
-      "tier": "nist",
+      "p": 0.0303,
+      "tier": "theory",
       "at": "ground"
-     },
-     {
-      "lv": 5,
-      "p": 0.00904,
-      "tier": "nist",
-      "at": "open"
      }
-    ]
+    ],
+    "end_lost": 0.00882
    }
   },
   {
@@ -3288,7 +3285,7 @@
      {
       "lv": 1,
       "p": 0.237,
-      "tier": "nist",
+      "tier": "theory",
       "at": "dark"
      },
      {
@@ -3299,17 +3296,12 @@
      },
      {
       "lv": 0,
-      "p": 0.0301,
-      "tier": "nist",
+      "p": 0.0303,
+      "tier": "theory",
       "at": "ground"
-     },
-     {
-      "lv": 5,
-      "p": 0.00904,
-      "tier": "nist",
-      "at": "open"
      }
-    ]
+    ],
+    "end_lost": 0.00882
    }
   },
   {
@@ -3801,7 +3793,7 @@
      {
       "lv": 1,
       "p": 0.237,
-      "tier": "nist",
+      "tier": "theory",
       "at": "dark"
      },
      {
@@ -3812,17 +3804,12 @@
      },
      {
       "lv": 0,
-      "p": 0.0301,
-      "tier": "nist",
+      "p": 0.0303,
+      "tier": "theory",
       "at": "ground"
-     },
-     {
-      "lv": 5,
-      "p": 0.00904,
-      "tier": "nist",
-      "at": "open"
      }
-    ]
+    ],
+    "end_lost": 0.00882
    }
   },
   {

@@ -355,6 +355,13 @@
       "dark": false
      },
      {
+      "lv": 0,
+      "lam": 169.76,
+      "f": 3.76e-08,
+      "tier": "nist",
+      "dark": true
+     },
+     {
       "lv": 6,
       "lam": 2364.0,
       "f": 1.26e-08,
@@ -608,44 +615,44 @@
    "decay": {
     "ch": [
      {
+      "lv": 0,
+      "lam": 166.15,
+      "f": 0.487,
+      "tier": "theory",
+      "dark": true
+     },
+     {
       "lv": 6,
       "lam": 1814.9,
-      "f": 0.452,
+      "f": 0.435,
       "tier": "theory",
       "dark": false
      },
      {
       "html": "2p<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
       "lam": 3025.8,
-      "f": 0.0819,
+      "f": 0.0787,
       "tier": "semi",
       "dark": false
      },
      {
-      "lv": 0,
-      "lam": 166.15,
-      "f": 0.0561,
-      "tier": "semi",
-      "dark": true
-     },
-     {
       "lv": 5,
       "lam": 1233.6,
-      "f": 6.76e-08,
+      "f": 6.5e-08,
       "tier": "semi",
       "dark": false
      },
      {
       "lv": 12,
       "lam": 20389.0,
-      "f": 1.34e-10,
+      "f": 1.29e-10,
       "tier": "semi",
       "dark": false
      },
      {
       "lv": 10,
       "lam": 20249.0,
-      "f": 4.64e-12,
+      "f": 4.46e-12,
       "tier": "semi",
       "dark": false
      }
@@ -2429,12 +2436,19 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 1.36e-08,
-    "bound": true,
+    "leak": 5.12e-08,
+    "bound": false,
     "basis": "rates",
     "tier": "semi",
-    "n": 73500000.0,
+    "n": 19500000.0,
     "ch": [
+     {
+      "lv": 0,
+      "lam": 169.76,
+      "f": 3.76e-08,
+      "tier": "nist",
+      "dark": true
+     },
      {
       "lv": 6,
       "lam": 2364.0,
@@ -2448,13 +2462,6 @@
       "f": 9.85e-10,
       "tier": "semi",
       "dark": false
-     }
-    ],
-    "n_open": 1,
-    "open": [
-     {
-      "lv": 0,
-      "lam": 169.76
      }
     ],
     "end": [
@@ -2548,25 +2555,25 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.138,
+    "leak": 0.565,
     "bound": true,
     "basis": "lifetime",
     "tier": "semi",
-    "n": 7.25,
+    "n": 1.77,
     "ch": [
+     {
+      "lv": 0,
+      "lam": 166.15,
+      "f": 0.506,
+      "tier": "theory",
+      "dark": true
+     },
      {
       "html": "2p<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
       "lam": 3025.8,
       "f": 0.0819,
       "tier": "semi",
       "dark": false
-     },
-     {
-      "lv": 0,
-      "lam": 166.15,
-      "f": 0.0561,
-      "tier": "semi",
-      "dark": true
      },
      {
       "lv": 5,
@@ -2600,24 +2607,24 @@
     "end": [
      {
       "lv": 0,
-      "p": 0.578,
+      "p": 0.988,
       "tier": "semi",
       "at": "ground"
      },
      {
       "lv": 3,
-      "p": 0.00109,
+      "p": 0.00104,
       "tier": "semi",
       "at": "dark"
      },
      {
       "lv": 1,
-      "p": 7.35e-09,
+      "p": 7.07e-09,
       "tier": "semi",
       "at": "dark"
      }
     ],
-    "end_lost": 0.421
+    "end_lost": 0.0108
    }
   }
  ],
@@ -2759,7 +2766,7 @@
   "levels: 17   lines < 2000 nm: 26   with matrix element: 22",
   "transition-rate provenance: nist: 26",
   "levels with a measured lifetime: 12",
-  "semi-empirical rates (Kurucz): 1153 of 3822 lines on NIST levels; used for 0 drawn lines and 902 further decay lines"
+  "semi-empirical rates (Kurucz): 1153 of 3822 lines on NIST levels; used for 0 drawn lines and 812 further decay lines"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (Be): single isotope 9Be, isotopic composition 1, relative atomic mass 9.012 183 065(82); nuclear spin: Blachman & Lurio, Phys. Rev. 153, 164 (1967) abstract ('4Be9 (I = 3/2)'), also Cook et al. PRA 101, 042503 ('nuclear spin I = 3/2')": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Be",

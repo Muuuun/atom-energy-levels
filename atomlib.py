@@ -23,7 +23,7 @@ _LEVELS_URL = (
     "&lande_out=on&perc_out=on&biblio=on&temp=&submit=Retrieve+Data"
 )
 _LINES_URL = (
-    "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra={sp}+I&output_type=0&low_w={low}&upp_w=2000&unit=1"
+    "https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra={sp}+I&output_type=0&low_w={low}&upp_w={upp}&unit=1"
     "&de=0&plot_out=0&I_scale_type=1&format=3&line_out=0&remove_js=on&en_unit=0&output=0&bibrefs=1"
     "&page_size=15&show_obs_wl=1&show_calc_wl=1&unc_out=1&order_out=0&max_low_enrg=&show_av=3"
     "&max_upp_enrg=&tsb_value=0&min_str=&A_out=0&intens_out=on&max_str=&allowed_out=1&forbid_out=1"
@@ -78,11 +78,15 @@ def nist_levels(symbol):
     return levels, limit
 
 
-def nist_lines(symbol, low_nm=200):
-    """Classified lines from low_nm to 2000 nm: list of dicts (Ei, Ek, obs, A, acc, type).
-    low_nm=200 is the range used for the curated species; the automatic ones pass 1 to include the vacuum UV."""
-    name = f"{symbol}_I_lines.tsv" if low_nm == 200 else f"{symbol}_I_lines_from{low_nm}nm.tsv"
-    rows = _fetch(_LINES_URL.format(sp=symbol, low=low_nm), os.path.join(NIST_DIR, name))
+IR_MAX_NM = 1_000_000  # the infrared cache (decay lines beyond the drawn range) ends at 1 mm
+
+
+def nist_lines(symbol, low_nm=200, upp_nm=2000):
+    """Classified lines from low_nm to upp_nm: list of dicts (Ei, Ek, obs, A, acc, type).
+    low_nm=200 is the range used for the curated species; the automatic ones pass 1 to include the vacuum UV.
+    nist_lines_ir() gives the lines beyond 2000 nm (never drawn, but decay channels of the closed-transition analysis)."""
+    name = (f"{symbol}_I_lines.tsv" if low_nm == 200 else f"{symbol}_I_lines_from{low_nm}nm.tsv") if upp_nm == 2000 else f"{symbol}_I_lines_{low_nm}nm_to_{upp_nm}nm.tsv"
+    rows = _fetch(_LINES_URL.format(sp=symbol, low=low_nm, upp=upp_nm), os.path.join(NIST_DIR, name))
     out = []
     for r in rows:
         ei, ek = _num(r.get("Ei(cm-1)")), _num(r.get("Ek(cm-1)"))
@@ -92,6 +96,14 @@ def nist_lines(symbol, low_nm=200):
                         acc=r.get("Acc", ""), type=r.get("Type", ""), intens=_num(r.get("intens")),
                         Ji=_j(r.get("J_i") or ""), Jk=_j(r.get("J_k") or "")))
     return out
+
+
+def nist_lines_ir(symbol):
+    """NIST lines from 2000 nm to 1 mm (infrared decay channels; an element without any gives an empty list)."""
+    try:
+        return nist_lines(symbol, 2000, IR_MAX_NM)
+    except (IndexError, KeyError):  # NIST answers "No lines are available" without a table header
+        return []
 
 
 def air_wavelength_nm(lam_vac_nm):

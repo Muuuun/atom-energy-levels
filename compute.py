@@ -532,7 +532,8 @@ def build_nist(key, cfg):
 
     # ---- which lines are drawn
     chosen = {}
-    all_lines, line_tol = lines, 0.05 if cfg.get("auto") else 1.0
+    # decay channels of the closed-transition analysis: every NIST line from 1 nm to 1 mm, whatever range is drawn
+    all_lines, line_tol = (lines if cfg.get("auto") else al.nist_lines(sym, 1)) + al.nist_lines_ir(sym), 0.05 if cfg.get("auto") else 1.0
     if cfg.get("auto"):
         chosen = auto_select(nist, lines, lambda e, j: find(e, 0.05, j))
         lines = []
