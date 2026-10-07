@@ -1,7 +1,8 @@
 """Compare RCG (Cowan) E1 rates with NIST for one element: python3 compare_nist.py <El> <OUTG11>"""
-import csv, re, sys, math, collections
-sys.path.insert(0, '.')
+import os, csv, re, sys, math, collections
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from parse_rcg import parse
+from cowan_util import parity_odd
 el, out = sys.argv[1], sys.argv[2]
 NIST = '/Users/muqiao/Documents/rb_energy_levels/data/nist'
 def jnum(s):
@@ -28,16 +29,19 @@ L = open(out, encoding='latin-1').read().split('\n')
 i0 = next(i for i, l in enumerate(L) if 'ELEC DIP SPECTRUM' in l and 'ENERGIES IN UNITS' in l)
 cfg = {1: {}, 2: {}}
 for l in L[i0 + 1:i0 + 40]:
-    m = re.match(r'\s*(\d+)\s+\S+ I\s+(\S+)\s+---\s+\S+ I\s+(\S+)', l)
-    if m:
-        cfg[1][int(m.group(1))] = m.group(2); cfg[2][int(m.group(1))] = m.group(3)
+    m = re.match(r'\s*(\d+)\s+(?:\S+ I\s+(\S+))?\s*---\s*(?:\S+ I\s+(\S+))?', l)
+    if m and (m.group(2) or m.group(3)):
+        if m.group(2):
+            cfg[1][int(m.group(1))] = m.group(2)
+        if m.group(3):
+            cfg[2][int(m.group(1))] = m.group(3)
 # calculated levels: parity 2 = upper levels of the blocks, parity 1 = lower levels of the lines
 calc = {}
 for ln in lines:
     u, lo = ln['up'], ln['lo']
     calc.setdefault((2, u['E'], u['J']), dict(conf=cfg[2][u['cfg']], term=u['term'], E=u['E'], J=u['J'], par=2))
     calc.setdefault((1, lo['E'], lo['J']), dict(conf=cfg[1][lo['cfg']], term=lo['term'], E=lo['E'], J=lo['J'], par=1))
-odd_par = 2 if any('p' in cfg[2][k][-2:] or 'f' in cfg[2][k][-2:] for k in cfg[2]) else 1  # which parity group is odd (heuristic)
+odd_par = 2 if parity_odd(cfg[2][1], nist) else 1  # which parity group is odd
 # assign NIST levels: same parity, J, configuration; same term where NIST has that term; otherwise energy order within the group
 groups = collections.defaultdict(list)
 for k, c in calc.items():
@@ -101,6 +105,9 @@ for acc in sorted(stat):
     print(f'  NIST class {acc}: n={n:3d} median log10(calc/NIST)={v[n//2]:+.2f}  within x1.5: {sum(abs(x)<0.176 for x in v)/n:.0%}  within x2: {sum(abs(x)<0.301 for x in v)/n:.0%}  within x3: {sum(abs(x)<0.477 for x in v)/n:.0%}')
 v = sorted(allv); n = len(v)
 print(f'  ALL: n={n} median {v[n//2]:+.2f} within x2 {sum(abs(x)<0.301 for x in v)/n:.0%} within x3 {sum(abs(x)<0.477 for x in v)/n:.0%}')
+w = sorted(math.log10(A / ref[0]) for lam, lo, u, A, ref, cf in rows if ref and abs(cf) >= 0.05); m = len(w)
+if m:
+    print(f'  lines with |cancellation factor| >= 0.05 (what the site uses): n={m} median {w[m//2]:+.2f} within x1.5 {sum(abs(x)<0.176 for x in w)/m:.0%} within x2 {sum(abs(x)<0.301 for x in w)/m:.0%} within x3 {sum(abs(x)<0.477 for x in w)/m:.0%}')
 print('\n  lambda(nm)  lower                      upper                       A_calc     A_NIST  acc  ratio   CF')
 for lam, lo, u, A, ref, cf in sorted(rows, key=lambda r: r[0]):
     if ref:

@@ -1,6 +1,6 @@
 """Build the RCE input (file OUTGINE) with observed NIST energies: python3 make_ine.py <El> <OUTG11> <OUTGINE.orig> <OUTGINE>"""
-import sys, re, math, collections
-sys.path.insert(0, '.')
+import os, sys, re, math, collections
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from cowan_util import *
 el, outg11, src, dst = sys.argv[1:5]
 MIN_FREE = 4   # a configuration frees its own Slater / spin-orbit parameters only with at least this many observed levels
@@ -38,12 +38,7 @@ for p, sec in enumerate(secs[:2], start=1):
     X = [float(x) for l in rest[pos:pos + nl] for x in l.split()]; pos += nl
     ctrl = rest[pos]
     # parity of this section from its configurations: count of p and f electrons
-    def parity_odd(conf):
-        n = 0
-        for m in re.finditer(r'(\d+)([spdfg])(\d*)', conf):
-            n += (int(m.group(3) or 1)) * ('spdfg'.index(m.group(2)) % 2)
-        return n % 2 == 1
-    is_odd = parity_odd(confs[0])
+    is_odd = parity_odd(confs[0], nist)
     # assign observed levels: for every eigenvalue, its dominant basis state -> NIST level with same conf, term, J, parity
     obs_per_conf = collections.Counter()
     T_all, NF_all = [], []

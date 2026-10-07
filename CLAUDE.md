@@ -10,7 +10,7 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
 
 - Numbers must be experimental or NIST wherever possible. Priority for every value:
   measurement (`data/literature/<El>.json`) > NIST ASD > high-accuracy theory from the literature > ARC model potential.
-- Every literature value carries its citation and URL; every value carries a tier (`exp`, `nist`, `theory`, `semi`, `model`).
+- Every literature value carries its citation and URL; every value carries a tier (`exp`, `nist`, `theory`, `semi`, `hfr`, `model`).
   On diagrams `*` marks theory and `≈` a model or semi-empirical value. Never present a calculated or derived number as measured.
 - Semi-empirical rates (owner's decision 2026-10-07): Kurucz's Cowan-code line lists (`semi.py`; `python3 semi.py fetch` caches
   `gf<ZZ00>.pos` of 37 neutral atoms in `data/semi/`, git-ignored except `index.json` with URL and file date) fill a rate only where
@@ -137,11 +137,13 @@ owner (Bing / IndexNow was notified on 2026-10-02; the key file is in `docs/`). 
 - Infrared decay channels (2026-10-07): `atomlib.nist_lines_ir()` caches the NIST lines from 2 µm to 1 mm
   (`<El>_I_lines_2000nm_to_1000000nm.tsv`, fetched by `fetch_all.py`); `compute.py` feeds the cycling analysis every NIST line from
   1 nm to 1 mm whatever range a page draws (curated pages used to start at 200 nm). Hydrogen and helium gained most.
-- Cowan-code pilot (2026-10-07, owner's request): `cowan/README.md`. Semi-empirical HFR calculation of Hg I with the NIST
-  Cowan package compiled on this Mac (Homebrew gfortran; the NIST download server times out, the Wayback copy works), parameters
-  fitted to the NIST energies: NIST class A/B lines 90 % within x2, C/D 38 %, 89 of the 101 unrated Hg decay channels covered.
-  Nothing from it is on the site; the owner decides whether to extend it (candidates: Cd, In, Cu, Ag, Au, Ga, Sn, Pb, Tl, Xe, Kr).
-  If it is used, it needs its own tier / source label ("this site, Cowan HFR fit") and the input files published.
+- This site's own Cowan-code fits (owner's decision 2026-10-07): tier `hfr` ("HFR fit (this site)", ≈), ranked below `semi`
+  (Kurucz) and above `model`; used only where nothing else gives a rate, lines with |cancellation factor| < 0.05 left out
+  (`semi.cowan_rates()`, `data/cowan/<El>_lines.csv` + `index.json`, source string names the date and `cowan/<El>`). Done for
+  Hg, Cd, In (`cowan/README.md`: how the NIST Cowan package was built on this Mac, the pipeline `cowan/run_element.py`, accuracy
+  per element: Hg 56 % of the NIST-rated lines within x2 after the cut, Cd 94 %, In 71 %). Further elements of the same kind
+  (Cu, Ag, Au, Ga, Sn, Pb, Tl, Xe, Kr, ...) need a configuration list in `run_element.py` and a look at LEVELS1 before publishing.
+  The compiled programs live outside the repo (scratchpad of 2026-10-07); rebuilding takes 10 minutes with the README.
 
 ## Known limitations
 

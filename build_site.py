@@ -20,7 +20,7 @@ BASE = "https://muuuun.github.io/atom-energy-levels"
 REPO = "https://github.com/Muuuun/atom-energy-levels"
 DOCS = os.path.join(al.HERE, "docs")
 SITE = "Atomic energy level diagrams"
-TIER = {"exp": "measured", "nist": "NIST", "theory": "theory", "semi": "semi-empirical", "model": "model calc."}
+TIER = {"exp": "measured", "nist": "NIST", "theory": "theory", "semi": "semi-empirical", "hfr": "HFR fit (this site)", "model": "model calc."}
 ION_USE = {"Be", "Mg", "Ca", "Sr", "Ba", "Yb"}
 PRIMARY = {"Li": 7, "Be": 9, "Na": 23, "Mg": 24, "K": 39, "Ca": 40, "Rb": 87, "Sr": 88, "Cs": 133, "Ba": 138, "Yb": 174, "Dy": 164,
            "Cr": 52, "Cd": 114, "Er": 166, "Tm": 169, "Hg": 202}  # the isotope a periodic-table cell and /<element>/ lead to
@@ -66,13 +66,13 @@ def fmt_count(n):
     return f"{n:.2g}" if n < 100 else f"{round(n):,}" if n < 1e6 else sci(n)
 
 
-FROM = {"exp": "from measured data", "nist": "from NIST data", "theory": "from theory", "semi": "from semi-empirical calc.", "model": "from model calc."}
+FROM = {"exp": "from measured data", "nist": "from NIST data", "theory": "from theory", "semi": "from semi-empirical calc.", "hfr": "from this site's HFR fit", "model": "from model calc."}
 
 
 def cycling_section(L, T, iso):
     """Closed and nearly closed lines (cycling.py): those that start on the ground or a metastable level and leak at most 10 %.
     A lower limit that leaves more than three possible decay paths without a rate says too little to be listed."""
-    mark = lambda s, tier: ("≈ " if tier in ("model", "semi") else "") + s + ("*" if tier == "theory" else "")
+    mark = lambda s, tier: ("≈ " if tier in ("model", "semi", "hfr") else "") + s + ("*" if tier == "theory" else "")
     name = lambda r: al.tex_to_html(L[r["lv"]]["name"]) if "lv" in r else r["html"]
     picked = [t for t in T if t.get("cyc") and t["cyc"]["lower"] != "decays"
               and (t["cyc"]["cls"] == "closed" or (t["cyc"]["cls"] == "leak" and t["cyc"]["leak"] <= 0.1
@@ -297,6 +297,9 @@ def atom_page(key, pages):
                         "Source of matrix element / A"], rows, left=(0, 1, 5, 9), wrap=(9,)))
     semi_txt = (" a semi-empirical calculation (Kurucz line list, used only where no measurement or NIST value exists; typically within a factor 2),"
                 if atom["meta"].get("semi") else "")
+    semi_txt += (" this site's own Cowan-code calculation with the parameters fitted to the NIST energies (HFR fit; inputs and fit report in the "
+                 "repository folder cowan/; used only where nothing else gives a rate; strong lines typically within a factor 2, weak lines worse),"
+                 if atom["meta"].get("hfr") else "")
     parts.append('<p class="note">Reduced dipole matrix elements follow the convention A = ω³|d|²/(3πε₀ħc³(2J′+1)), with J′ the upper level.\n'
                  f"Tags show where a number comes from: measured, NIST compilation, high-accuracy theory,{semi_txt} or a model calculation.</p>")
 

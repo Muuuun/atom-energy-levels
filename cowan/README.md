@@ -1,8 +1,15 @@
-# Cowan-code pilot (2026-10-07): can we calculate the missing rates ourselves?
+# This site's own Cowan-code calculations (tier `hfr`, drawn with ≈)
 
-Pilot on Hg I (mercury): semi-empirical Hartree-Fock-relativistic (HFR) calculation with R. D. Cowan's programs RCN, RCN2, RCG, RCE
-(A. Kramida's 2021 package), parameters fitted to the NIST energies, rates compared with the NIST values.  Nothing of this is on the
-site; the owner decides after reading `Hg/Hg_compare_fit.txt`.
+Semi-empirical Hartree-Fock-relativistic (HFR) calculations with R. D. Cowan's programs RCN, RCN2, RCG, RCE (A. Kramida's 2021
+package), parameters fitted to the NIST energies, rates compared with the NIST values.  Owner's decision 2026-10-07: these rates go
+on the site as their own tier `hfr` ("HFR fit (this site)", ≈), used only where neither a measurement, NIST nor the Kurucz list
+gives a rate; lines with |cancellation factor| < 0.05 are left out (`semi.cowan_rates()` in the pipeline).  Done: Hg, Cd, In.
+
+    COWAN_BIN=<build dir> python3 cowan/run_element.py Cd      # one command per element (configurations in run_element.py)
+
+writes `cowan/<El>/` (IN36, IN2, decks before and after the fit, LEVELS1 = observed vs fitted levels, PARVALS, fit_assignment.txt,
+`<El>_compare_hfr.txt` / `<El>_compare_fit.txt` = rates against NIST before / after the fit) and `data/cowan/<El>_lines.csv` +
+`index.json` (every calculated line between NIST levels, A scaled to the NIST transition energy, cancellation factor).
 
 ## Getting and building the code (macOS, GNU Fortran from Homebrew `gcc`)
 
@@ -38,7 +45,19 @@ site; the owner decides after reading `Hg/Hg_compare_fit.txt`.
 
 Configurations: even 5d10 6s2, 6s7s, 6s8s, 6s9s, 6s6d, 6s7d, 6s8d, 6p2; odd 6s6p, 6s7p, 6s8p, 6s9p, 6s5f, 6s6f, 5d9 6s2 6p, 5d9 6s2 7p.
 
-## Result (Hg I, 51 lines with a NIST rate; `Hg/Hg_compare_hfr.txt`, `Hg/Hg_compare_fit.txt`)
+## Results
+
+| element | NIST lines compared | fitted, within x2 / x3 | after the cancellation cut (what the site uses), within x2 / x3 | NIST classes |
+|---|---|---|---|---|
+| Hg (16 configurations, 56 observed levels) | 51 | 57 % / 75 % | 56 % / 75 % (48 lines) | A/B 90 % within x2, C/D 38 % |
+| Cd (16 configurations, 44 observed levels) | 18 | 83 % / 89 % | 94 % / 100 % (16 lines) | C/D only |
+| In (17 configurations, 30 observed levels) | 22 | 50 % / 55 % | 71 % / 79 % (14 lines) | B 67 % within x2, C 38 % |
+
+In: the 5p - nd lines suffer from cancellation in the dipole integral (factors 0.00 to 0.01, 10 x off) and are exactly the lines the
+cut removes; the 5s 5p2 4P1/2 perturber is fitted 1.5 kK too low.  Cd: the 5s 4f, 5s 5f and 4d9 5s2 np levels NIST lists are too few to
+fit, those configurations keep the scaled HFR parameters.
+
+### Hg I in detail (51 lines with a NIST rate; `Hg/Hg_compare_hfr.txt`, `Hg/Hg_compare_fit.txt`)
 
 | | HFR, no fit | HFR, parameters fitted to the NIST energies |
 |---|---|---|

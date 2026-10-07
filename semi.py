@@ -19,6 +19,9 @@ import urllib.request
 
 import atomlib as al
 
+COWAN_DIR = os.path.join(al.DATA, "cowan")  # this site's own Cowan-code fits (cowan/run_element.py), tier "hfr"
+CF_MIN = 0.05  # lines with a smaller |cancellation factor| are left out (unreliable)
+
 SEMI_DIR = os.path.join(al.DATA, "semi")
 INDEX = os.path.join(SEMI_DIR, "index.json")
 # neutral atoms in Kurucz's "completed ions" list (kurucz.harvard.edu/atoms/completed.txt, read 2026-10-07); H and He have no gf file
@@ -132,6 +135,40 @@ def rates(symbol, nist):
         out[key] = max(out.get(key, 0.0), float(f"{a:.4g}"))
     src, url = citation(symbol)
     return out, src, url, dict(lines=len(raw), matched=n)
+
+
+def cowan_rates(symbol, nist):
+    """This site's Cowan-code HFR fit (data/cowan/<El>_lines.csv): {(lower i, upper i): A} for every line with |cancellation factor|
+    >= CF_MIN whose two levels are NIST levels (energy within 0.3 cm^-1, same J, opposite parity), with citation, URL and counts."""
+    path = os.path.join(COWAN_DIR, f"{symbol}_lines.csv")
+    if not os.path.exists(path):
+        return {}, None, None, None
+    with open(os.path.join(COWAN_DIR, "index.json")) as f:
+        info = json.load(f)[symbol]
+    by_e = {}
+    for l in nist:
+        if l["J"] is not None:
+            by_e.setdefault(round(l["E"]), []).append(l)
+    parity = {l["i"]: al.parity_of(l["conf"], l["term"]) for l in nist}
+
+    def find(e, j):
+        c = [l for k in (round(e) - 1, round(e), round(e) + 1) for l in by_e.get(k, []) if l["J"] == j and abs(l["E"] - e) <= 0.3]
+        return c[0] if len(c) == 1 else None
+
+    import csv
+    out, n, weak = {}, 0, 0
+    with open(path) as f:
+        for r in csv.DictReader(f):
+            n += 1
+            if abs(float(r["cancellation_factor"])) < CF_MIN:
+                weak += 1
+                continue
+            lo, up = find(float(r["lower_E_cm"]), float(r["lower_J"])), find(float(r["upper_E_cm"]), float(r["upper_J"]))
+            if lo and up and parity[lo["i"]] != parity[up["i"]] and up["E"] > lo["E"]:
+                out[(lo["i"], up["i"])] = max(out.get((lo["i"], up["i"]), 0.0), float(r["A_s"]))
+    src = (f"This site: Cowan-code HFR calculation of {symbol} I with the parameters fitted to the NIST energies ({info['date']}; "
+           f"lines with |cancellation factor| < {CF_MIN} left out; inputs and fit report in cowan/{symbol})")
+    return out, src, f"https://github.com/Muuuun/atom-energy-levels/tree/main/cowan/{symbol}", dict(lines=n, matched=len(out), weak=weak)
 
 
 if __name__ == "__main__":

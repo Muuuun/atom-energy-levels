@@ -18,7 +18,7 @@ Every number here is derived, never measured as such: it carries the weakest tie
 limit ("bound") whenever a reachable level has no listed rate.  Fine-structure levels only: hyperfine and Zeeman dark
 states, and forbidden decays without a listed rate, are not looked at.
 """
-RANK = {"exp": 0, "nist": 1, "theory": 2, "semi": 3, "model": 4}
+RANK = {"exp": 0, "nist": 1, "theory": 2, "semi": 3, "hfr": 4, "model": 5}
 MAX_CHANNELS, MAX_OPEN, MAX_END = 8, 5, 6
 
 

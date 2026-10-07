@@ -6,7 +6,7 @@
 Priority of sources for every number: measurement from data/literature/<El>.json > NIST ASD >
 high-accuracy theory quoted in the literature file > ARC (alkalis only; literature table, then model potential).
 Each value carries a tier: "exp", "nist", "theory", "semi" (Kurucz semi-empirical line list, semi.py; only where nothing
-else gives a rate), "model".
+else gives a rate), "hfr" (this site's own Cowan-code fit, data/cowan; after Kurucz), "model".
 """
 import csv
 import datetime
@@ -467,7 +467,7 @@ def fmt_d(t):
         return "–"
     d = t["d"]
     s = f"{d:.3f}" if d < 10 else f"{d:.2f}"
-    return {"model": "≈" + s, "semi": "≈" + s, "theory": s + "*"}.get(t.get("d_tier"), s)
+    return {"model": "≈" + s, "semi": "≈" + s, "hfr": "≈" + s, "theory": s + "*"}.get(t.get("d_tier"), s)
 
 
 # ----------------------------------------------------------------------------- everything else
@@ -668,6 +668,7 @@ def build_nist(key, cfg):
 
     # ---- semi-empirical rates (Kurucz line list, where cached): the last resort for a drawn line and for the decay lines below
     semi_A, semi_src, semi_url, semi_stat = semi.rates(sym, nist)
+    hfr_A, hfr_src, hfr_url, hfr_stat = semi.cowan_rates(sym, nist)
 
     # ---- transitions
     transitions = []
@@ -696,6 +697,8 @@ def build_nist(key, cfg):
             cands.append((3, t["br"] / (up["tau_ns"] * 1e-9), up["tau_tier"], "branching ratio / lifetime", None))
         if not cands and t["kind"] == "E1" and (elo, eup) in semi_A:
             cands.append((6, semi_A[(elo, eup)], "semi", semi_src, None))
+        if not cands and t["kind"] == "E1" and (elo, eup) in hfr_A:
+            cands.append((7, hfr_A[(elo, eup)], "hfr", hfr_src, None))
         if cands:
             cands.sort(key=lambda c: c[0])
             _, A, tier, src, unc = cands[0]
@@ -739,6 +742,11 @@ def build_nist(key, cfg):
         if pair not in chosen and pair not in extra:
             extra[pair] = dict(A=A, tier="semi")
             n_semi_extra += 1
+    n_hfr_extra = 0
+    for pair, A in hfr_A.items():  # this site's Cowan fit: after Kurucz, again only where no rate exists
+        if pair not in chosen and pair not in extra:
+            extra[pair] = dict(A=A, tier="hfr")
+            n_hfr_extra += 1
     pool = [dict(E=l["E"], J=l["J"], parity=al.parity_of(l["conf"], l["term"])) for l in nist]
     cycling.annotate(levels, transitions, pool, {l["id"]: i for i, l in by_E.items()},
                      [dict(x, lower=lo, upper=up) for (lo, up), x in extra.items()],
@@ -794,6 +802,9 @@ def build_nist(key, cfg):
     if semi_stat:
         validation.append(f"semi-empirical rates (Kurucz): {semi_stat['matched']} of {semi_stat['lines']} lines on NIST levels; used for "
                           f"{sum(1 for t in transitions if t.get('A_tier') == 'semi')} drawn lines and {n_semi_extra} further decay lines")
+    if hfr_stat:
+        validation.append(f"Cowan HFR fit (this site): {hfr_stat['matched']} of {hfr_stat['lines']} lines on NIST levels ({hfr_stat['weak']} left out for cancellation); used for "
+                          f"{sum(1 for t in transitions if t.get('A_tier') == 'hfr')} drawn lines and {n_hfr_extra} further decay lines")
     for t in transitions:
         if t.get("lam_obs") and abs(t["lam_obs"] - t["lam"]) > 0.05:
             validation.append(f"  observed vs Ritz wavelength differ on {levels[t['lower']]['plain']} - {levels[t['upper']]['plain']}: "
@@ -806,10 +817,12 @@ def build_nist(key, cfg):
                 lit_levels=n_lit_lv,
                 guide_tau=("Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists)." if lit_levels else
                            "Level caption:  energy (NIST, or a measurement of the last %d years where one exists) and measured lifetime (where one exists)." % ENERGY_MAX_AGE_YR),
-                notes=lit.raw.get("notes", ""), semi=semi_stat)
+                notes=lit.raw.get("notes", ""), semi=semi_stat, hfr=hfr_stat)
     sources = lit.source_urls()
     if semi_src:
         sources[semi_src] = semi_url
+    if hfr_src:
+        sources[hfr_src] = hfr_url
     return dict(meta=meta, columns=columns, levels=levels, transitions=transitions, rydberg_levels=[], tables=tables, validation=validation,
                 sources=sources)
 

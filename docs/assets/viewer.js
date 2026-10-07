@@ -18,7 +18,7 @@
   T.forEach((t, i) => { linesOf[t.lower].push(i); if (t.upper != null) linesOf[t.upper].push(i); });
 
   // ---------- formatting
-  const TIER = { exp: 'measured', nist: 'NIST', theory: 'theory', semi: 'semi-empirical', model: 'model calc.' };
+  const TIER = { exp: 'measured', nist: 'NIST', theory: 'theory', semi: 'semi-empirical', hfr: 'HFR fit (this site)', model: 'model calc.' };
   const badge = t => t && TIER[t] ? '<span class="tier ' + t + '">' + TIER[t] + '</span>' : '';
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const upName = t => t.upper != null ? L[t.upper].html : t.upper_html;
@@ -44,10 +44,10 @@
   const fshare = x => x >= 1e-3 ? +(x * 100).toPrecision(3) + ' %' : sci(x);
   const fcount = n => n < 100 ? String(+n.toPrecision(2)) : n < 1e6 ? Math.round(n).toLocaleString('en-US') : sci(n);
   const flam = nm => nm < 1e4 ? +nm.toPrecision(4) + ' nm' : nm < 1e7 ? +(nm / 1e3).toPrecision(3) + ' µm' : +(nm / 1e6).toPrecision(3) + ' mm';
-  const mark = (s, tier) => (tier === 'model' || tier === 'semi' ? '≈ ' : '') + s + (tier === 'theory' ? '*' : '');  // same marks as on the diagram
+  const mark = (s, tier) => (tier === 'model' || tier === 'semi' || tier === 'hfr' ? '≈ ' : '') + s + (tier === 'theory' ? '*' : '');  // same marks as on the diagram
   const lvRef = r => r.lv != null ? lvBtn(r.lv) : r.html;
-  const FROM = { exp: 'from measured data', nist: 'from NIST data', theory: 'from theory', semi: 'from semi-empirical calc.', model: 'from model calc.' };
-  const CALC = new Set(['theory', 'model', 'semi']), CALC_NOTE = '* theory, ≈ model or semi-empirical calculation.';
+  const FROM = { exp: 'from measured data', nist: 'from NIST data', theory: 'from theory', semi: 'from semi-empirical calc.', hfr: "from this site's HFR fit", model: 'from model calc.' };
+  const CALC = new Set(['theory', 'model', 'semi', 'hfr']), CALC_NOTE = '* theory, ≈ model or semi-empirical calculation.';
   const derived = t => FROM[t] ? '<span class="tier ' + t + '">' + FROM[t] + '</span>' : '';  // a derived number is never tagged "measured"
   function cycleCard(i) {
     const t = T[i], c = t.cyc;

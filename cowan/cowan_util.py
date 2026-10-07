@@ -26,6 +26,19 @@ def nist_levels(el):
         out.append(dict(E=E, J=J, conf=conf_key(r['Configuration']), term=term_key(r['Term']), odd='*' in r['Term'], raw=r['Configuration'].strip('"') + ' ' + r['Term'].strip('"')))
     return out
 
+def parity_odd(label, nist=None):
+    """Is the configuration with this label (NIST spelling without dots, e.g. 5s25p) odd?  Decided from the NIST levels that carry
+    the configuration; without any, from the p and f occupation numbers (the label is ambiguous: 5s25p = 5s2 5p)."""
+    if nist:
+        odd = [n['odd'] for n in nist if n['conf'] == label]
+        if odd:
+            return sum(odd) * 2 > len(odd)
+    n = 0
+    for m in re.finditer(r'(\d{1,2})([spdfg])(\d*?)(?=\d{1,2}[spdfg]|$)', label):
+        n += int(m.group(3) or 1) * ('spdfg'.index(m.group(2)) % 2)
+    return n % 2 == 1
+
+
 def eigen_blocks(outg11):
     """[(J, [eigenvalues], [config no.], basis=[(idx, conf, term)], vectors[col][row])] in file order (parity 1 blocks first)."""
     L = open(outg11, encoding='latin-1').read().split('\n')

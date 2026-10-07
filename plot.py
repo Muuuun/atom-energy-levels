@@ -72,7 +72,7 @@ def fmt_d(t):
     s = f"{d:.3f}" if 0.1 <= d < 10 else f"{d:.2f}" if d >= 10 else f"{d:.4f}"
     if t.get("uncertain"):
         return "~" + s
-    return {"model": "≈" + s, "semi": "≈" + s, "theory": s + "*"}.get(t.get("d_tier"), s)
+    return {"model": "≈" + s, "semi": "≈" + s, "hfr": "≈" + s, "theory": s + "*"}.get(t.get("d_tier"), s)
 
 
 def text_len(s):

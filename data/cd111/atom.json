@@ -18,7 +18,12 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Conventions. (1) Isotope-shift keys 'a-b' mean nu(a) - nu(b); all Cd shifts are relative to 114Cd as printed. Fermion shifts are hyperfine centres of gravity. (2) Hyperfine entries carry the measured interval (interval_MHz) and a derived A_MHz; I = 1/2 so B = 0. (3) Fields beyond SCHEMA.md: natural_linewidth_*, interval_MHz, photoionization, magic_wavelength_nm, bbr_shift_Hz, type 'M2', top-level 'rydberg' (ionization limit) and 'conflicts'. (4) rme_J_ea0 values are derived here from measured lifetimes with the schema convention (branching to the ground state taken as 1); they are not printed in the sources. (5) The clock (332 nm) and 314 nm isotope shifts are King-plot derived values of Ohayon et al., not direct measurements.",
-  "semi": null
+  "semi": null,
+  "hfr": {
+   "lines": 340,
+   "matched": 163,
+   "weak": 111
+  }
  },
  "columns": [
   {
@@ -230,6 +235,13 @@
       "f": 0.118,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 1283.4,
+      "f": 1.62e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -253,8 +265,29 @@
      {
       "lv": 4,
       "lam": 644.02,
-      "f": 1.0,
+      "f": 0.969,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 350.1,
+      "f": 0.0276,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 365.06,
+      "f": 0.00294,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 13190.0,
+      "f": 4.68e-06,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -293,9 +326,37 @@
      {
       "lv": 3,
       "lam": 361.55,
-      "f": 0.0304,
+      "f": 0.0303,
       "tier": "theory",
       "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 9133.5,
+      "f": 0.000362,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 9764.0,
+      "f": 0.000222,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 633.18,
+      "f": 8.89e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11764.0,
+      "f": 8.51e-06,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -319,16 +380,37 @@
      {
       "lv": 2,
       "lam": 346.72,
-      "f": 0.774,
+      "f": 0.773,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 3,
       "lam": 361.39,
-      "f": 0.226,
+      "f": 0.225,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "lv": 4,
+      "lam": 632.69,
+      "f": 0.00163,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 9650.0,
+      "f": 0.000392,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11599.0,
+      "f": 7.62e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -363,6 +445,13 @@
       "f": 1.0,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 11360.0,
+      "f": 0.000388,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -384,10 +473,38 @@
    "decay": {
     "ch": [
      {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1913.0,
+      "f": 0.697,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
       "lv": 4,
       "lam": 466.37,
-      "f": 1.0,
+      "f": 0.29,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1498.5,
+      "f": 0.00868,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 300.23,
+      "f": 0.0047,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1538.7,
+      "f": 8.46e-05,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -412,18 +529,61 @@
      {
       "lv": 1,
       "lam": 283.77,
-      "f": 0.538,
+      "f": 0.441,
       "tier": "nist",
       "dark": true
      },
      {
       "lv": 2,
       "lam": 288.21,
-      "f": 0.462,
+      "f": 0.378,
       "tier": "nist",
       "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 1436.3,
+      "f": 0.09,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1451.0,
+      "f": 0.0653,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 298.27,
+      "f": 0.0202,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1488.6,
+      "f": 0.00405,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 461.66,
+      "f": 0.000363,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 27974.0,
+      "f": 0.000129,
+      "tier": "hfr",
+      "dark": false
      }
-    ]
+    ],
+    "more": 3
    }
   },
   {
@@ -445,16 +605,51 @@
      {
       "lv": 2,
       "lam": 288.16,
-      "f": 0.737,
+      "f": 0.629,
       "tier": "nist",
       "dark": false
      },
      {
       "lv": 3,
       "lam": 298.22,
-      "f": 0.263,
+      "f": 0.225,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1449.8,
+      "f": 0.111,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1487.4,
+      "f": 0.0347,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1834.3,
+      "f": 0.000729,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 29996.0,
+      "f": 0.000133,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 37710.0,
+      "f": 2.25e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -478,9 +673,23 @@
      {
       "lv": 3,
       "lam": 298.15,
-      "f": 1.0,
+      "f": 0.864,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1485.5,
+      "f": 0.136,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 36560.0,
+      "f": 9.67e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ]
    }
@@ -504,8 +713,57 @@
      {
       "lv": 4,
       "lam": 414.15,
-      "f": 1.0,
+      "f": 0.411,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1260.9,
+      "f": 0.288,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 4279.0,
+      "f": 0.287,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 277.69,
+      "f": 0.00541,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 3555.0,
+      "f": 0.00416,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1066.5,
+      "f": 0.00352,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1086.6,
+      "f": 3.33e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 3643.4,
+      "f": 1.47e-05,
+      "tier": "hfr",
       "dark": false
      }
     ]
@@ -614,55 +872,88 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.462,
-    "bound": true,
+    "leak": 0.559,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 2.16,
+    "tier": "hfr",
+    "n": 1.79,
     "ch": [
      {
       "lv": 2,
       "lam": 288.21,
-      "f": 0.462,
+      "f": 0.378,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 9,
-    "open": [
-     {
-      "lv": 3,
-      "lam": 298.27
-     },
-     {
-      "lv": 4,
-      "lam": 461.66
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
-      "lam": 1436.3
+      "lam": 1436.3,
+      "f": 0.09,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1451.0
+      "lam": 1451.0,
+      "f": 0.0653,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 298.27,
+      "f": 0.0202,
+      "tier": "hfr",
+      "dark": true
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 1488.6
+      "lam": 1488.6,
+      "f": 0.00405,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 461.66,
+      "f": 0.000363,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 27974.0,
+      "f": 0.000129,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1836.2,
+      "f": 9.86e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
+    "more": 2,
     "end": [
      {
       "lv": 1,
-      "p": 0.538,
-      "tier": "nist",
+      "p": 0.46,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.462,
-      "tier": "nist",
+      "p": 0.44,
+      "tier": "hfr",
       "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.1,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -688,54 +979,79 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.263,
+    "leak": 0.371,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 3.8,
+    "tier": "hfr",
+    "n": 2.7,
     "ch": [
      {
       "lv": 3,
       "lam": 298.22,
-      "f": 0.263,
+      "f": 0.225,
       "tier": "nist",
       "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1449.8,
+      "f": 0.111,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1487.4,
+      "f": 0.0347,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1834.3,
+      "f": 0.000729,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 29996.0,
+      "f": 0.000133,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 37710.0,
+      "f": 2.25e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
-    "n_open": 6,
+    "n_open": 1,
     "open": [
      {
       "lv": 4,
       "lam": 461.54
-     },
-     {
-      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1449.8
-     },
-     {
-      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 1487.4
-     },
-     {
-      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1834.3
-     },
-     {
-      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 29996.0
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.737,
-      "tier": "nist",
+      "p": 0.687,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 3,
-      "p": 0.263,
-      "tier": "nist",
+      "p": 0.296,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 0.0167,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -762,55 +1078,88 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.538,
-    "bound": true,
+    "leak": 0.622,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 1.86,
+    "tier": "hfr",
+    "n": 1.61,
     "ch": [
      {
       "lv": 1,
       "lam": 283.77,
-      "f": 0.538,
+      "f": 0.441,
       "tier": "nist",
       "dark": true
-     }
-    ],
-    "n_open": 9,
-    "open": [
-     {
-      "lv": 3,
-      "lam": 298.27
-     },
-     {
-      "lv": 4,
-      "lam": 461.66
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
-      "lam": 1436.3
+      "lam": 1436.3,
+      "f": 0.09,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1451.0
+      "lam": 1451.0,
+      "f": 0.0653,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 298.27,
+      "f": 0.0202,
+      "tier": "hfr",
+      "dark": true
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 1488.6
+      "lam": 1488.6,
+      "f": 0.00405,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 461.66,
+      "f": 0.000363,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
+      "lam": 27974.0,
+      "f": 0.000129,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1836.2,
+      "f": 9.86e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
+    "more": 2,
     "end": [
      {
       "lv": 1,
-      "p": 0.538,
-      "tier": "nist",
+      "p": 0.46,
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
-      "p": 0.462,
-      "tier": "nist",
+      "p": 0.44,
+      "tier": "hfr",
       "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.1,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -835,16 +1184,46 @@
    "lam_obs": 298.14902,
    "cyc": {
     "lower": "metastable",
-    "cls": "open",
-    "n_open": 2,
-    "open": [
+    "cls": "leak",
+    "leak": 0.136,
+    "bound": false,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 7.35,
+    "ch": [
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 1485.5
+      "lam": 1485.5,
+      "f": 0.136,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 36560.0
+      "lam": 36560.0,
+      "f": 9.67e-05,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.933,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.0508,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 0.0161,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -870,54 +1249,79 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.737,
+    "leak": 0.775,
     "bound": true,
     "basis": "rates",
-    "tier": "nist",
-    "n": 1.36,
+    "tier": "hfr",
+    "n": 1.29,
     "ch": [
      {
       "lv": 2,
       "lam": 288.16,
-      "f": 0.737,
+      "f": 0.629,
       "tier": "nist",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1449.8,
+      "f": 0.111,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1487.4,
+      "f": 0.0347,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1834.3,
+      "f": 0.000729,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 29996.0,
+      "f": 0.000133,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 37710.0,
+      "f": 2.25e-05,
+      "tier": "hfr",
       "dark": false
      }
     ],
-    "n_open": 6,
+    "n_open": 1,
     "open": [
      {
       "lv": 4,
       "lam": 461.54
-     },
-     {
-      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1449.8
-     },
-     {
-      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 1487.4
-     },
-     {
-      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1834.3
-     },
-     {
-      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 29996.0
      }
     ],
     "end": [
      {
       "lv": 0,
-      "p": 0.737,
-      "tier": "nist",
+      "p": 0.687,
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 3,
-      "p": 0.263,
-      "tier": "nist",
+      "p": 0.296,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 0.0167,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -1116,9 +1520,9 @@
     "lower": "metastable",
     "cls": "leak",
     "leak": 0.482,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "theory",
+    "tier": "hfr",
     "n": 2.07,
     "ch": [
      {
@@ -1131,47 +1535,56 @@
      {
       "lv": 3,
       "lam": 361.55,
-      "f": 0.0304,
+      "f": 0.0303,
       "tier": "theory",
       "dark": true
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 4,
-      "lam": 633.18
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
-      "lam": 9133.5
+      "lam": 9133.5,
+      "f": 0.000362,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 9764.0
+      "lam": 9764.0,
+      "f": 0.000222,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 633.18,
+      "f": 8.89e-05,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 11764.0
+      "lam": 11764.0,
+      "f": 8.51e-06,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
       "p": 0.518,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.451,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 3,
-      "p": 0.0304,
-      "tier": "theory",
+      "p": 0.0306,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -1198,46 +1611,58 @@
    "cyc": {
     "lower": "decays",
     "cls": "leak",
-    "leak": 0.226,
-    "bound": true,
+    "leak": 0.227,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
-    "n": 4.42,
+    "tier": "hfr",
+    "n": 4.41,
     "ch": [
      {
       "lv": 3,
       "lam": 361.39,
-      "f": 0.226,
+      "f": 0.225,
       "tier": "nist",
       "dark": true
-     }
-    ],
-    "n_open": 3,
-    "open": [
+     },
      {
       "lv": 4,
-      "lam": 632.69
+      "lam": 632.69,
+      "f": 0.00163,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 9650.0
+      "lam": 9650.0,
+      "f": 0.000392,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 11599.0
+      "lam": 11599.0,
+      "f": 7.62e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
       "p": 0.774,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 3,
       "p": 0.226,
-      "tier": "nist",
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 5.34e-05,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -1265,9 +1690,9 @@
     "lower": "decays",
     "cls": "leak",
     "leak": 0.549,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "theory",
+    "tier": "hfr",
     "n": 1.82,
     "ch": [
      {
@@ -1280,47 +1705,56 @@
      {
       "lv": 3,
       "lam": 361.55,
-      "f": 0.0304,
+      "f": 0.0303,
       "tier": "theory",
       "dark": true
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 4,
-      "lam": 633.18
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
-      "lam": 9133.5
+      "lam": 9133.5,
+      "f": 0.000362,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 9764.0
+      "lam": 9764.0,
+      "f": 0.000222,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 633.18,
+      "f": 8.89e-05,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 11764.0
+      "lam": 11764.0,
+      "f": 8.51e-06,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
       "p": 0.518,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.451,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 3,
-      "p": 0.0304,
-      "tier": "theory",
+      "p": 0.0306,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -1391,12 +1825,39 @@
    "lam_obs": 361.15375,
    "cyc": {
     "lower": "metastable",
-    "cls": "open",
-    "n_open": 1,
-    "open": [
+    "cls": "leak",
+    "leak": 0.000388,
+    "bound": false,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 2580.0,
+    "ch": [
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 11360.0
+      "lam": 11360.0,
+      "f": 0.000388,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "end": [
+     {
+      "lv": 3,
+      "p": 0.9998095225,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 0,
+      "p": 0.000145,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 1,
+      "p": 4.59e-05,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -1422,46 +1883,58 @@
    "cyc": {
     "lower": "metastable",
     "cls": "leak",
-    "leak": 0.774,
-    "bound": true,
+    "leak": 0.775,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 1.29,
     "ch": [
      {
       "lv": 2,
       "lam": 346.72,
-      "f": 0.774,
+      "f": 0.773,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 3,
-    "open": [
+     },
      {
       "lv": 4,
-      "lam": 632.69
+      "lam": 632.69,
+      "f": 0.00163,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 9650.0
+      "lam": 9650.0,
+      "f": 0.000392,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 11599.0
+      "lam": 11599.0,
+      "f": 7.62e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 0,
       "p": 0.774,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 3,
       "p": 0.226,
-      "tier": "nist",
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 5.34e-05,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -1489,9 +1962,9 @@
     "lower": "metastable",
     "cls": "leak",
     "leak": 0.97,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "theory",
+    "tier": "hfr",
     "n": 1.03,
     "ch": [
      {
@@ -1507,44 +1980,53 @@
       "f": 0.451,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 4,
-    "open": [
-     {
-      "lv": 4,
-      "lam": 633.18
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>0</sub>",
-      "lam": 9133.5
+      "lam": 9133.5,
+      "f": 0.000362,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 9764.0
+      "lam": 9764.0,
+      "f": 0.000222,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 4,
+      "lam": 633.18,
+      "f": 8.89e-05,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 11764.0
+      "lam": 11764.0,
+      "f": 8.51e-06,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
      {
       "lv": 1,
       "p": 0.518,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "dark"
      },
      {
       "lv": 0,
       "p": 0.451,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      },
      {
       "lv": 3,
-      "p": 0.0304,
-      "tier": "theory",
+      "p": 0.0306,
+      "tier": "hfr",
       "at": "dark"
      }
     ]
@@ -1570,28 +2052,88 @@
    "lam_obs": 414.14665,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 8,
+    "cls": "leak",
+    "leak": 0.589,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.7,
+    "ch": [
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1260.9,
+      "f": 0.288,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 4279.0,
+      "f": 0.287,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 277.69,
+      "f": 0.00541,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 3555.0,
+      "f": 0.00416,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1066.5,
+      "f": 0.00352,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1086.6,
+      "f": 3.33e-05,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 3643.4,
+      "f": 1.47e-05,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
     "open": [
      {
       "lv": 2,
       "lam": 268.95
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.987,
+      "tier": "hfr",
+      "at": "ground"
      },
      {
       "lv": 3,
-      "lam": 277.69
+      "p": 0.0118,
+      "tier": "hfr",
+      "at": "dark"
      },
      {
-      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1066.5
-     },
-     {
-      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 1086.6
-     },
-     {
-      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1260.9
+      "lv": 1,
+      "p": 0.0015,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -1616,28 +2158,75 @@
    "lam_obs": 466.36572,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 7,
+    "cls": "leak",
+    "leak": 0.71,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 1.41,
+    "ch": [
+     {
+      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1913.0,
+      "f": 0.697,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 1498.5,
+      "f": 0.00868,
+      "tier": "hfr",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 300.23,
+      "f": 0.0047,
+      "tier": "hfr",
+      "dark": true
+     },
+     {
+      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 1538.7,
+      "f": 8.46e-05,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 3,
     "open": [
      {
       "lv": 2,
       "lam": 290.03
      },
      {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
+      "lam": 91506.0
+     },
+     {
+      "html": "5s7p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
+      "lam": 243420.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.989,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
       "lv": 3,
-      "lam": 300.23
+      "p": 0.00955,
+      "tier": "hfr",
+      "at": "dark"
      },
      {
-      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1498.5
-     },
-     {
-      "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
-      "lam": 1538.7
-     },
-     {
-      "html": "5s6p <sup>1</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 1913.0
+      "lv": 1,
+      "p": 0.00113,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -1664,9 +2253,9 @@
     "lower": "metastable",
     "cls": "leak",
     "leak": 0.882,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 1.13,
     "ch": [
      {
@@ -1682,13 +2271,13 @@
       "f": 0.373,
       "tier": "nist",
       "dark": false
-     }
-    ],
-    "n_open": 1,
-    "open": [
+     },
      {
       "lv": 4,
-      "lam": 1283.4
+      "lam": 1283.4,
+      "f": 1.62e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
@@ -1701,7 +2290,7 @@
      {
       "lv": 0,
       "p": 0.373,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      },
      {
@@ -1780,9 +2369,9 @@
     "lower": "decays",
     "cls": "leak",
     "leak": 0.627,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 1.59,
     "ch": [
      {
@@ -1798,13 +2387,13 @@
       "f": 0.118,
       "tier": "nist",
       "dark": true
-     }
-    ],
-    "n_open": 1,
-    "open": [
+     },
      {
       "lv": 4,
-      "lam": 1283.4
+      "lam": 1283.4,
+      "f": 1.62e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
@@ -1817,7 +2406,7 @@
      {
       "lv": 0,
       "p": 0.373,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      },
      {
@@ -1851,9 +2440,9 @@
     "lower": "metastable",
     "cls": "leak",
     "leak": 0.491,
-    "bound": true,
+    "bound": false,
     "basis": "rates",
-    "tier": "nist",
+    "tier": "hfr",
     "n": 2.04,
     "ch": [
      {
@@ -1869,13 +2458,13 @@
       "f": 0.118,
       "tier": "nist",
       "dark": true
-     }
-    ],
-    "n_open": 1,
-    "open": [
+     },
      {
       "lv": 4,
-      "lam": 1283.4
+      "lam": 1283.4,
+      "f": 1.62e-05,
+      "tier": "hfr",
+      "dark": false
      }
     ],
     "end": [
@@ -1888,7 +2477,7 @@
      {
       "lv": 0,
       "p": 0.373,
-      "tier": "nist",
+      "tier": "hfr",
       "at": "ground"
      },
      {
@@ -1920,24 +2509,60 @@
    "lam_obs": 644.0249,
    "cyc": {
     "lower": "decays",
-    "cls": "open",
-    "n_open": 4,
-    "open": [
+    "cls": "leak",
+    "leak": 0.0305,
+    "bound": true,
+    "basis": "rates",
+    "tier": "hfr",
+    "n": 32.8,
+    "ch": [
      {
       "lv": 2,
-      "lam": 350.1
+      "lam": 350.1,
+      "f": 0.0276,
+      "tier": "hfr",
+      "dark": false
      },
      {
       "lv": 3,
-      "lam": 365.06
+      "lam": 365.06,
+      "f": 0.00294,
+      "tier": "hfr",
+      "dark": true
      },
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>1</sub>",
-      "lam": 13190.0
-     },
+      "lam": 13190.0,
+      "f": 4.68e-06,
+      "tier": "hfr",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
      {
       "html": "5s6p <sup>3</sup>P<sup>°</sup><sub>2</sub>",
       "lam": 17122.0
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.9970574708,
+      "tier": "hfr",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.00294,
+      "tier": "hfr",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 5.3e-07,
+      "tier": "hfr",
+      "at": "dark"
      }
     ]
    }
@@ -2232,7 +2857,8 @@
  "validation": [
   "levels: 15   lines < 2000 nm: 21   with matrix element: 19",
   "transition-rate provenance: exp: 2, nist: 16, theory: 1, wavelength only: 2",
-  "levels with a measured lifetime: 3"
+  "levels with a measured lifetime: 3",
+  "Cowan HFR fit (this site): 163 of 340 lines on NIST levels (111 left out for cancellation); used for 0 drawn lines and 146 further decay lines"
  ],
  "sources": {
   "NIST Atomic Weights and Isotopic Compositions (Cd); nuclear spin from NIST Handbook of Basic Atomic Spectroscopic Data (https://physics.nist.gov/PhysRefData/Handbook/Tables/cadmiumtable1.htm)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Cd&ascii=ascii2&isotype=some",
@@ -2244,6 +2870,7 @@
   "Padilla-Castillo, Hofsaess, Palanki, Cai, Rich, Thomas, Kray, Meijer, Wright, Truppe, 'A large magneto-optical trap of cadmium atoms loaded from a cryogenic buffer gas beam', arXiv:2506.01180 (2025)": "https://arxiv.org/abs/2506.01180",
   "Ohayon, Hofsaess, Padilla-Castillo, Wright, Meijer, Truppe, Gibble, Sahoo, 'Isotope shifts in cadmium as a sensitive probe for physics beyond the standard model', New J. Phys. 24, 123040 (2022), arXiv:2208.13599, Table II": "https://arxiv.org/abs/2208.13599",
   "Schelfhout & McFerran, Phys. Rev. A 105, 022805 (2022), arXiv:2112.05987": "https://arxiv.org/abs/2112.05987",
-  "NIST ASD levels file (Cd II 5s 2S1/2 limit)": "/Users/muqiao/Documents/rb_energy_levels/data/nist/Cd_I_levels.tsv"
+  "NIST ASD levels file (Cd II 5s 2S1/2 limit)": "/Users/muqiao/Documents/rb_energy_levels/data/nist/Cd_I_levels.tsv",
+  "This site: Cowan-code HFR calculation of Cd I with the parameters fitted to the NIST energies (2026-10-07; lines with |cancellation factor| < 0.05 left out; inputs and fit report in cowan/Cd)": "https://github.com/Muuuun/atom-energy-levels/tree/main/cowan/Cd"
  }
 }
