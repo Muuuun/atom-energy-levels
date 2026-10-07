@@ -1,0 +1,33 @@
+--- /private/tmp/claude-501/-Users-muqiao-Documents-rb-energy-levels/80131489-838a-43a7-a8e1-0e2406674983/scratchpad/rcg_orig_lf.f	2026-10-07 12:45:32
++++ /private/tmp/claude-501/-Users-muqiao-Documents-rb-energy-levels/80131489-838a-43a7-a8e1-0e2406674983/scratchpad/cowan_build/rcg11k_mac.f	2026-10-07 12:28:28
+@@ -170,7 +170,7 @@
+       OPEN(11,FILE=FIL,STATUS='UNKNOWN')
+       GO TO 55
+ C
+-   50 MSDOS=1
++   50 MSDOS=0
+       OPEN(10,FILE='ING11',STATUS='OLD')
+       OPEN(9,FILE='OUTG11',STATUS='UNKNOWN')
+       OPEN(2,FILE='TAPE2E',STATUS='UNKNOWN',FORM='UNFORMATTED')
+@@ -202,7 +202,7 @@
+         enddo
+       ELSE
+ ********* Specify the COWAN directory here *************
+-        FIL='/u/kramida/cowan/'
++        FIL='./'
+ ********************************************************
+       ENDIF
+  5501 I=INDEX(FIL,' ')-1
+@@ -1523,9 +1523,9 @@
+ C         ASSOCIATED X. TEMPORARY TABLE T MUST BE 2N WORDS LONG.        MA130004
+ C
+       IMPLICIT REAL*8 (A-H,O-Z)
+-      DIMENSION X(90),T(KLAM),Y1(KLAM),Y2(KLAM),Y3(KLAM),Y4(KLAM),
+-     +  Y5(KLAM),Y6(KLAM),                                              MA130005
+-     1  Y7(KLAM),Y8(KLAM),Y9(KLAM),Y10(KLAM),Y11(KLAM),Y12(KLAM)        MA130006
++      DIMENSION X(90),T(*),Y1(*),Y2(*),Y3(*),Y4(*),
++     +  Y5(*),Y6(*),
++     1  Y7(*),Y8(*),Y9(*),Y10(*),Y11(*),Y12(*)
+       INTEGER T,Y1,Y3,Y4                                                MA130007
+ C
+       IF ( N.LE.1 ) RETURN                                              MA130008

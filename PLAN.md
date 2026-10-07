@@ -132,3 +132,9 @@
 实现：`semi.py`（`python3 semi.py fetch` 缓存 37 种中性原子的 `gf<ZZ00>.pos` 到 `data/semi/`，只提交 `index.json`）；
 `compute.py` 只在画出的线和闭合跃迁分析的衰变通道都没有别的速率时才用它，从不替代 NIST 或文献值；寿命不取 Kurucz。
 镧系、锕系、铜银金、镉汞、铪到铂没有这类数据库（蒙斯大学 DREAM 的中性原子表只有镧和镥，且实测与计算混排，未用）。
+
+## 2026-10-07：红外谱线与 Cowan 试算 —— [x] 完成
+
+- NIST 2 µm 到 1 mm 的谱线已缓存并进入闭合跃迁分析（`fetch_all.py`、`atomlib.nist_lines_ir()`）；精选页面的衰变池也改为从 1 nm 起。
+- 用 NIST 发布的 Cowan 程序包（Kramida 2021 版，本机 gfortran 编译，见 `cowan/README.md`）对汞做了半经验计算并与 NIST 实测比较：
+  拟合能级后 A/B 级谱线 90% 在 2 倍以内，C/D 级 38%；汞页 101 个无速率衰变通道可补 89 个。结果没有上网站，等业主决定是否推广。

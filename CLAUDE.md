@@ -134,6 +134,15 @@ owner (Bing / IndexNow was notified on 2026-10-02; the key file is in `docs/`). 
   "open" and 3397 as a lower limit before; now 1348 and 1720. Pages of the 37 Kurucz elements: 2553 complete, 273 lower limits,
   16 open (reachable levels Kurucz did not compute). 176 drawn lines without any rate got a ≈ matrix element (Tc 58, Zn 37).
 
+- Infrared decay channels (2026-10-07): `atomlib.nist_lines_ir()` caches the NIST lines from 2 µm to 1 mm
+  (`<El>_I_lines_2000nm_to_1000000nm.tsv`, fetched by `fetch_all.py`); `compute.py` feeds the cycling analysis every NIST line from
+  1 nm to 1 mm whatever range a page draws (curated pages used to start at 200 nm). Hydrogen and helium gained most.
+- Cowan-code pilot (2026-10-07, owner's request): `cowan/README.md`. Semi-empirical HFR calculation of Hg I with the NIST
+  Cowan package compiled on this Mac (Homebrew gfortran; the NIST download server times out, the Wayback copy works), parameters
+  fitted to the NIST energies: NIST class A/B lines 90 % within x2, C/D 38 %, 89 of the 101 unrated Hg decay channels covered.
+  Nothing from it is on the site; the owner decides whether to extend it (candidates: Cd, In, Cu, Ag, Au, Ga, Sn, Pb, Tl, Xe, Kr).
+  If it is used, it needs its own tier / source label ("this site, Cowan HFR fit") and the input files published.
+
 ## Known limitations
 
 - NIST lists some unresolved fine-structure doublets at one energy (B, O, Zn, Al, Be): levels are identified by their index in
