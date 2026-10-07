@@ -88,7 +88,7 @@
       notes.push('Where the atom ends up: every further decay is followed, through each short-lived level, down to the ground level or to a level that no electric-dipole decay can leave (long-lived).');
       if (c.end.some(r => CALC.has(r.tier)) && !notes.includes(CALC_NOTE)) notes.push(CALC_NOTE);
     }
-    if (c.cls !== 'open') notes.push('While this line is pinned, wavy arrows in the diagram show the decay lines of ' + up + ' and of every short-lived level they lead to, each with its share of the decays of the level it starts from. Where the arrows are dense, zoom in to see every share.');
+    if (c.cls !== 'open') notes.push('While this line is pinned, wavy arrows in the diagram show the decay lines of ' + up + ' and of every short-lived level they lead to, each with its share of the decays of the level it starts from. Arrows that carry less than 1 % of the atoms are drawn lighter, below 0.1 % without their share, below 0.01 % only once the view is zoomed in; the tables here list every channel.');
     return h + (notes.length ? '<div class="note">' + notes.join(' ') + '</div>' : '') +
       '<div class="note">Derived from the data of this page, not measured as such. Fine structure only: hyperfine and Zeeman dark states are not considered.</div></div>';
   }
@@ -272,7 +272,10 @@
     decay.style.setProperty('--g', g);
     let h = '', texts = '';
     const boxes = grownBoxes.slice(), fs = 12.5 * g, caps = new Set();
-    const lines = cascade(i).filter(e => e.to != null);
+    // emphasis by the share of the atoms an arrow carries (along the cascade, the product of the shares above it):
+    // at least 1 % full weight, 0.1-1 % lighter, 0.01-0.1 % faint and unlabelled in the full view, below that only once zoomed in
+    const zoomed = g <= 1, tier = w => w >= 0.01 ? 'w-major' : w >= 0.001 ? 'w-minor' : 'w-faint';
+    const lines = cascade(i).filter(e => e.to != null && (zoomed || e.w >= 1e-4));
     for (const ch of lines) for (const k of [ch.from, ch.to]) for (const p of ['lvn-', 'lvd-']) {
       const el = svg.getElementById(p + k);
       if (el) caps.add(el);
@@ -302,7 +305,9 @@
       }
       const arrow = wavy([S[0] + shift, S[1]], [E[0] + shift, E[1]], line ? colorOf(j) : '#666', g);
       if (!arrow) continue;
-      h += ch.next ? '<g class="next">' + arrow.svg + '</g>' : arrow.svg;
+      const cls = tier(ch.w) + (ch.next ? ' next' : '');
+      h += '<g class="' + cls + '">' + arrow.svg + '</g>';
+      if (cls.startsWith('w-faint') && !zoomed) continue;  // a faint arrow gets its share only when the view is zoomed in
       // label: on the far side of the straight arrow if it fits there, at the first place that is clear of the labels already set
       const text = sup(ch.label), far = shift && (S[1] - E[1]) * shift > 0 ? 1 : -1, w = fs * 0.31 * text.length + 2 * g, hh = fs * 0.65;
       let box = null, clear = false;
@@ -313,7 +318,7 @@
       }
       if (!clear && ch.next) continue;  // further down the cascade a share that has no room waits until the view is zoomed in
       boxes.push(box);
-      texts += '<text' + (ch.next ? ' class="next"' : '') + ' x="' + ((box[0] + box[2]) / 2).toFixed(1) + '" y="' + ((box[1] + box[3]) / 2).toFixed(1) + '">' + text + '</text>';
+      texts += '<text class="' + cls + '" x="' + ((box[0] + box[2]) / 2).toFixed(1) + '" y="' + ((box[1] + box[3]) / 2).toFixed(1) + '">' + text + '</text>';
     }
     h += texts;  // above every arrow
     decay.innerHTML = h;

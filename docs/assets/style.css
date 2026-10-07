@@ -99,6 +99,14 @@ svg [id^="hit-"] path { pointer-events: stroke; }
 /* the decay lines of the levels further down the cascade: a little lighter than those of the pinned line's upper level */
 #decay .next path:not(.halo) { stroke-width: calc(1.7px * var(--g, 1)); }
 #decay text.next { font-weight: 600; fill: #3d3d3d; }
+/* emphasis by the share of the atoms an arrow carries: 1 % and more full weight, 0.1-1 % lighter, below 0.1 % faint */
+#decay .w-minor path:not(.halo), #decay .w-minor polygon { opacity: .75; }
+#decay .w-minor path:not(.halo) { stroke-width: calc(1.5px * var(--g, 1)); }
+#decay .w-faint path:not(.halo), #decay .w-faint polygon { opacity: .4; }
+#decay .w-faint path:not(.halo) { stroke-width: calc(1px * var(--g, 1)); }
+#decay .w-faint path.halo { opacity: .6; stroke-width: calc(4px * var(--g, 1)); }
+#decay text.w-minor { font-weight: 600; font-size: calc(11px * var(--g, 1)); fill: #333; }
+#decay text.w-faint { font-weight: 500; font-size: calc(10.5px * var(--g, 1)); fill: #555; }
 #info .cyc { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
 #info .cyc h4 { margin: 0 0 4px; font-size: 13.5px; }
 #info .cyc p { margin: 0; font-size: 13.5px; }
