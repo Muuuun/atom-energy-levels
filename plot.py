@@ -3,7 +3,7 @@
 
     python3 plot.py rb87 cs133      # or: python3 plot.py all
 
-Writes docs/<slug>/diagram.svg (element ids for the interactive page), diagram.pdf, preview.png, data.json.
+Writes docs/<slug>/diagram.svg (element ids for the interactive page), diagram.pdf, <slug>-energy-level-diagram.png, data.json.
 """
 import json
 import os
@@ -450,7 +450,7 @@ def draw(key):
     os.makedirs(out, exist_ok=True)
     fig.savefig(os.path.join(out, "diagram.svg"))
     fig.savefig(os.path.join(out, "diagram.pdf"))
-    fig.savefig(os.path.join(out, "preview.png"), dpi=1800 / fig_w)
+    fig.savefig(os.path.join(out, f"{meta['slug']}-energy-level-diagram.png"), dpi=1800 / fig_w)  # the name build_site.image_name() expects
     plt.close(fig)
     keep_l = ("id", "E", "J", "name", "plain", "parity", "g", "g_tier", "tau_ns", "tau_bound", "tau_unc", "tau_tier", "tau_src", "hfs", "conf", "term", "E_nist", "E_tier", "E_src", "decay")
     with open(os.path.join(out, "data.json"), "w") as f:

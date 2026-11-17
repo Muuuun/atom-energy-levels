@@ -16,13 +16,13 @@ On all of them, a level that no electric-dipole decay can leave is joined to the
 J = 0 – 0) even where NIST lists none: drawn from the level energies, marked as such, with a rate only where NIST or the literature
 gives one.
 
-![Rubidium-87](docs/rubidium-87/preview.png)
+![Rubidium-87](docs/rubidium-87/rubidium-87-energy-level-diagram.png)
 
 ## Pipeline
 
     python3 fetch_all.py       # download / cache the NIST ASD tables of every neutral atom
     python3 compute.py all     # (or: curated | auto | <key> ...)  NIST ASD + data/literature/*.json (+ ARC, pairinteraction for alkalis) -> data/<key>/atom.json, *.csv
-    python3 plot.py all        # -> docs/<slug>/diagram.svg|pdf, preview.png, data.json
+    python3 plot.py all        # -> docs/<slug>/diagram.svg|pdf, <slug>-energy-level-diagram.png, data.json
     python3 build_site.py      # -> docs/**/index.html, sitemap.xml
     python3 stats.py           # -> data/provenance.md  (which source supplied how many numbers)
 

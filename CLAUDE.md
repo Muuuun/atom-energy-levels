@@ -35,7 +35,7 @@ The owner reads Chinese; reply in Chinese and spell out abbreviations.
     python3 fetch_all.py                  # cache NIST ASD tables for every neutral atom (data/nist)
     python3 semi.py fetch                 # cache Kurucz semi-empirical line lists (data/semi, 88 MB, git-ignored)
     python3 compute.py all|curated|auto|<key>...   # -> data/<key>/atom.json, levels.csv, transitions.csv, validation.txt
-    python3 plot.py    all|curated|auto|<key>...   # -> docs/<slug>/diagram.svg|pdf, preview.png, data.json
+    python3 plot.py    all|curated|auto|<key>...   # -> docs/<slug>/diagram.svg|pdf, <slug>-energy-level-diagram.png, data.json
     python3 build_site.py                 # -> docs/index.html (periodic table), docs/<slug>/index.html, sitemap.xml
     python3 stats.py                      # -> data/provenance.md
     ./publish.sh "commit message" key1 key2 ...    # compute + plot + build + stats + commit + push
@@ -178,6 +178,22 @@ lines plus the lines of the literature file. Two gaps were closed, a third is le
   `t["mu"]` in mu_B; NIST line-strength formulas), shown in the line card. Check: barium 1085.13 nm gives 3.125, the amplitude Dzuba
   & Ginges print. 100 lines on 27 pages.
 - `publish.sh` still writes an old model name in its commit trailer: commit by hand or correct it before use.
+
+## Status (2026-11-18): search-engine housekeeping
+
+- Dates: a page footer and the sitemap carry the day the page last changed (`changed_on()` in `build_site.py`: last commit of
+  the file, or today while it has uncommitted changes), no longer the build date, so a rebuild does not touch unchanged pages.
+- The preview image of a page is `docs/<slug>/<slug>-energy-level-diagram.png` (was `preview.png`; `image_name()`), listed in the
+  sitemap as an image entry; the page states its real width and height.
+- `transitions.csv`, `levels.csv` are copied into `docs/<slug>/` and linked there together with `data.json` (the links used to
+  lead to GitHub's file viewer).
+- "<atom> lines in brief" at the top of every page: up to 12 annotated lines (described ones and those from the ground level
+  first; without annotations the 5 strongest lines from the ground level) as full sentences with wavelength, frequency, rate and
+  lifetime and where each comes from. Generated from the same data as the tables: do not edit by hand.
+- After a push that changes pages, tell Bing through IndexNow (key file in `docs/`, POST to api.indexnow.org with `keyLocation`).
+- Seen 2026-11-18: DuckDuckGo (Bing's index) lists pages of the site; Google's state can only be read in the owner's Search
+  Console (sitemap submission is not recorded anywhere here). Not done, owner's call: licence, citation file, own domain,
+  visitor counter, an llms.txt (pointless below a sub-path).
 
 ## Known limitations
 

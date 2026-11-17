@@ -11,6 +11,9 @@ import html
 import json
 import os
 import re
+import shutil
+import struct
+import subprocess
 
 import atomlib as al
 from elements import ELEMENTS
@@ -27,6 +30,28 @@ PRIMARY = {"Li": 7, "Be": 9, "Na": 23, "Mg": 24, "K": 39, "Ca": 40, "Rb": 87, "S
 CATEGORY = {"alkali": "Alkali metal", "alkaline-earth": "Alkaline earth", "transition": "Transition metal",
             "post-transition": "Post-transition metal", "metalloid": "Metalloid", "nonmetal": "Nonmetal", "noble-gas": "Noble gas",
             "lanthanide": "Lanthanide", "actinide": "Actinide"}
+
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+_changed = {}
+
+
+def changed_on(path):
+    """Date of the last change of a repo file: today while it has uncommitted changes, otherwise the date of its last commit.
+    Pages and the sitemap carry this date instead of the build date, so a page that did not change keeps its date."""
+    if path not in _changed:
+        git = lambda *a: subprocess.run(["git", *a, "--", path], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+        _changed[path] = datetime.date.today().isoformat() if git("status", "--porcelain") else git("log", "-1", "--format=%cs") or datetime.date.today().isoformat()
+    return _changed[path]
+
+
+def png_size(path):
+    with open(path, "rb") as f:
+        return struct.unpack(">II", f.read(24)[16:24])
+
+
+def image_name(slug):
+    return f"{slug}-energy-level-diagram.png"
 
 
 def pname(p):
@@ -168,6 +193,30 @@ def atom_page(key, pages):
     iso = f"<sup>{meta['A']}</sup>{meta['symbol']}" if meta["A"] else meta["symbol"]
     n_d = sum(1 for t in bound if t.get("d") is not None)
     n_inf = sum(1 for t in bound if t.get("inferred"))  # ground level -> long-lived level, drawn from the level energies (not a NIST line)
+    for f in ("transitions.csv", "levels.csv"):  # served by the site itself (direct download, also for crawlers)
+        shutil.copy(os.path.join(al.DATA, key, f), os.path.join(DOCS, slug, f))
+    img_w, img_h = png_size(os.path.join(DOCS, slug, image_name(slug)))
+    # the best-known lines as plain sentences (number, unit, where the rate comes from): what a reader or a search engine quotes
+    label_only = lambda t: bool(re.fullmatch(r"[\d.]+ ?(nm|µm|um)( line)?", t["use"].strip()))  # a "use" that only repeats the wavelength
+    noted = [t for t in bound if t.get("use") and not re.match(r"decay branch|calculated|leak channel", t["use"])]
+    noted = sorted(noted, key=lambda t: (label_only(t), t["lower"] != 0, t["lam"]))[:12]  # described lines first, those from the ground level ahead
+    noted = noted or sorted([t for t in bound if t["lower"] == 0 and t.get("A")], key=lambda t: -t["A"])[:5]
+    facts = []
+    for t in sorted(noted, key=lambda t: t["lam"]):
+        up = L[t["upper"]]
+        x = (f'{iso if not auto else meta["symbol"]} {al.tex_to_html(L[t["lower"]]["name"])} → {al.tex_to_html(up["name"])}'
+             + (f' ({html.escape(t["use"], quote=False)})' if t.get("use") and not label_only(t) else "") + f': {t["lam"]:.4f} nm in vacuum'
+             + (f', {t["air"]:.4f} nm in air' if t.get("air") else "")
+             + (f', {t["freq"]} THz (measured frequency)' if t.get("freq_tier") == "exp" else f', {t["freq"]:.4f} THz')
+             + (f', {html.escape(t["type"])} line (not electric-dipole allowed)' if t["kind"] == "forbidden" else ""))
+        if t.get("A") and t.get("A_tier") in TIER:
+            x += f'; Einstein <i>A</i> = {sci(t["A"])} s⁻¹ ({TIER[t["A_tier"]]})'
+        if up.get("tau_ns") and up.get("tau_tier") in TIER and not up.get("tau_bound"):
+            x += f'; lifetime of the upper level {fmt_tau(up["tau_ns"])} ({TIER[up["tau_tier"]]})'
+        facts.append(f"<li>{x}.</li>")
+    brief = (f'<h2>{iso if not auto else meta["element"]} lines in brief</h2><ul class="brief">{"".join(facts)}</ul>'
+             f'<p class="note">Wavelengths and frequencies from {"the cited literature" if (meta.get("lit_levels") or 0) > (len(L) - 1) / 2 else "the NIST level energies"} unless a measured frequency is listed below; every number is repeated '
+             'with its source in the tables of this page.</p>') if facts else ""
     url = f"{BASE}/{slug}/"
 
     # strongest / best-known lines for the description and the lead paragraph
@@ -228,7 +277,7 @@ def atom_page(key, pages):
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{url}preview.png">
+<meta property="og:image" content="{url}{image_name(slug)}">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{json.dumps({
         "@context": "https://schema.org", "@type": "Dataset",
@@ -239,8 +288,9 @@ def atom_page(key, pages):
         "isAccessibleForFree": True,
         "creator": {"@type": "Person", "name": "Muuuun", "url": "https://github.com/Muuuun"},
         "distribution": [
-            {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": f"{REPO}/blob/main/data/{key}/transitions.csv"},
-            {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": f"{REPO}/blob/main/data/{key}/levels.csv"},
+            {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": f"{url}transitions.csv"},
+            {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": f"{url}levels.csv"},
+            {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{url}data.json"},
             {"@type": "DataDownload", "encodingFormat": "application/pdf", "contentUrl": f"{url}diagram.pdf"}],
         "variableMeasured": ["transition wavelength", "transition frequency", "reduced dipole matrix element", "Einstein A coefficient",
                              "radiative lifetime", "hyperfine constants"],
@@ -259,7 +309,7 @@ def atom_page(key, pages):
 <p class="hint">Hover a line or a level to isolate it, click to keep it selected. Scroll to zoom, drag to move.</p>
 </div>
 <div id="stage">
-  <div class="loading"><img src="preview.png" alt="{name} energy level diagram with transition wavelengths and dipole matrix elements" width="1800"></div>
+  <div class="loading"><img src="{image_name(slug)}" alt="{name} energy level diagram with transition wavelengths and dipole matrix elements" width="{img_w}" height="{img_h}"></div>
   <div id="zoom">
     <button id="zin" title="Zoom in" aria-label="Zoom in">+</button>
     <button id="zout" title="Zoom out" aria-label="Zoom out">−</button>
@@ -270,9 +320,9 @@ def atom_page(key, pages):
 </div>
 <div class="wrap">
 <p class="downloads">Download: <a href="diagram.pdf">diagram (PDF)</a> <a href="diagram.svg">diagram (SVG)</a>
-<a href="{REPO}/blob/main/data/{key}/transitions.csv">transitions (CSV)</a>
-<a href="{REPO}/blob/main/data/{key}/levels.csv">levels (CSV)</a> <a href="{REPO}">source code</a></p>
-"""]
+<a href="{image_name(slug)}">diagram (PNG)</a> <a href="transitions.csv">transitions (CSV)</a>
+<a href="levels.csv">levels (CSV)</a> <a href="data.json">all data of this page (JSON)</a> <a href="{REPO}">source code</a></p>
+{brief}"""]
 
     # ---- tables prepared by compute.py (key transitions, Rydberg, hyperfine, isotope shifts)
     for tb in atom["tables"]:
@@ -346,7 +396,7 @@ def atom_page(key, pages):
                      f'<span>{p["levels"]} levels, {p["lines"]} lines</span></div></a></li>' for p in pages if p["slug"] != slug and p["A"])
     parts.append(f'<h2>Atoms with measured data</h2><ul class="grid">{others}</ul>'
                  '<p><a href="../">All elements: periodic table</a></p>')
-    parts.append(f'<footer>Data: {"the cited literature" if lit_levels else "NIST Atomic Spectra Database and the cited measurements"}. Built {datetime.date.today().isoformat()}. '
+    parts.append(f'<footer>Data: {"the cited literature" if lit_levels else "NIST Atomic Spectra Database and the cited measurements"}. Data of this page last changed {changed_on(f"data/{key}/atom.json")}. '
                  f'<a href="{REPO}">Code and data on GitHub</a>.</footer></div></main>\n<script src="../assets/viewer.js"></script>\n</body></html>\n')
     with open(os.path.join(DOCS, slug, "index.html"), "w") as f:
         f.write("".join(parts))
@@ -425,7 +475,7 @@ no observed transition to show. This page lists what is known instead, and marks
         srcs = {x["source"]: x for x in e["what_has_been_measured"].get("sources", [])}
         parts.append('<h2>Sources</h2><ul class="sources">' + "".join(f"<li>{link(x)}</li>" for x in srcs.values()) + "</ul>")
         parts.append('<p><a href="../">All elements: periodic table</a></p>'
-                     f'<footer>Data: the cited literature. Built {datetime.date.today().isoformat()}. '
+                     f'<footer>Data: the cited literature. Last changed {changed_on("data/literature/heaviest_elements.json")}. '
                      f'<a href="{REPO}">Code and data on GitHub</a>.</footer></div></main>\n</body></html>\n')
         os.makedirs(os.path.join(DOCS, slug), exist_ok=True)
         with open(os.path.join(DOCS, slug, "index.html"), "w") as f:
@@ -467,7 +517,7 @@ def landing(pages, facts=()):
         cells.append(f'<div class="el gap" style="grid-row:{r};grid-column:3">{lab}</div>')
     legend = "".join(f'<li class="{k}"><span></span>{v}</li>' for k, v in CATEGORY.items())
     cards = "".join(
-        f'<li><a class="card" href="{p["slug"]}/"><img src="{p["slug"]}/preview.png" loading="lazy" width="1800" height="1350" '
+        f'<li><a class="card" href="{p["slug"]}/"><img src="{p["slug"]}/{image_name(p["slug"])}" loading="lazy" width="{png_size(os.path.join(DOCS, p["slug"], image_name(p["slug"])))[0]}" height="{png_size(os.path.join(DOCS, p["slug"], image_name(p["slug"])))[1]}" '
         f'alt="{pname(p)} energy level diagram"><div><strong>{pname(p)} (<sup>{p["A"]}</sup>{p["symbol"]})</strong>'
         f'<span>{p["levels"]} levels, {p["lines"]} transitions below 2 µm</span></div></a></li>' for p in pages if p["A"])
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": SITE, "url": BASE + "/", "description": desc,
@@ -487,7 +537,7 @@ def landing(pages, facts=()):
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{BASE}/">
-<meta property="og:image" content="{BASE}/rubidium-87/preview.png">
+<meta property="og:image" content="{BASE}/rubidium-87/{image_name("rubidium-87")}">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
@@ -526,7 +576,7 @@ strongest classified NIST lines. On all of them, a level that no electric-dipole
 its forbidden line (M1, E2, M2 or <i>J</i> = 0 – 0) even where NIST lists none: that line is drawn from the two level energies,
 is marked as such, and carries a rate only where NIST or the literature gives one. Lines that need a change of <i>J</i> by three or
 more are not drawn.</p>
-<footer>Data: NIST Atomic Spectra Database and the measurements cited on each page. Built {datetime.date.today().isoformat()}.</footer>
+<footer>Data: NIST Atomic Spectra Database and the measurements cited on each page. Data last changed {max(changed_on(f"data/{p['key']}/atom.json") for p in pages)}.</footer>
 </div>
 </main>
 <script>
@@ -569,11 +619,14 @@ def main():
             f.write(f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><title>{main["element"]} energy level diagram</title><link rel="icon" href="data:,">\n'
                     f'<link rel="canonical" href="{BASE}/{main["slug"]}/"><meta http-equiv="refresh" content="0; url=../{main["slug"]}/">\n'
                     f'</head><body><p><a href="../{main["slug"]}/">{pname(main)} energy level diagram</a></p></body></html>\n')
-    today = datetime.date.today().isoformat()
-    urls = [BASE + "/"] + [f"{BASE}/{p['slug']}/" for p in pages] + [f"{BASE}/{x['slug']}/" for x in facts]
+    # lastmod = the day the page itself last changed (its file in docs/), not the day of the build
+    entry = lambda path, img="": (f"  <url><loc>{BASE}/{path}</loc><lastmod>{changed_on('docs/' + path + 'index.html')}</lastmod>"
+                                  + (f"<image:image><image:loc>{BASE}/{path}{img}</image:loc></image:image>" if img else "") + "</url>\n")
     with open(os.path.join(DOCS, "sitemap.xml"), "w") as f:
-        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                + "".join(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls) + "</urlset>\n")
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+                'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+                + entry("") + "".join(entry(p["slug"] + "/", image_name(p["slug"])) for p in pages)
+                + "".join(entry(x["slug"] + "/") for x in facts) + "</urlset>\n")
     with open(os.path.join(DOCS, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
