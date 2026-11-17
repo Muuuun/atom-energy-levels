@@ -9,6 +9,13 @@ elements derived from NIST transition rates). Twelve elements used in cold-atom,
 hyperfine constants and isotope shifts with citations. On every page: hover a line or a level to isolate it, click to pin,
 filter by transition type (E1, intercombination, M1, E2, M2, Rydberg).
 
+Which lines a page draws: no page shows every transition of an atom. The alkali pages draw every electric-dipole-allowed pair of
+their levels; the isotope pages of Be, Mg, Ca, Sr, Ba, Yb and Dy draw every classified NIST line between 200 nm and 2 µm below the
+page's energy limit, plus the lines of the cited literature; every other page draws the 70 to 90 strongest classified NIST lines.
+On all of them, a level that no electric-dipole decay can leave is joined to the ground level by its forbidden line (M1, E2, M2 or
+J = 0 – 0) even where NIST lists none: drawn from the level energies, marked as such, with a rate only where NIST or the literature
+gives one.
+
 ![Rubidium-87](docs/rubidium-87/preview.png)
 
 ## Pipeline
