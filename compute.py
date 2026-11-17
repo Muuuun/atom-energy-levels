@@ -175,6 +175,18 @@ def fmt_unc(v, u, digits=None, max_digits=6):
     return f"{v:.{d}f}({round(u * 10 ** d):d})"
 
 
+def multipole_me(t, j_up):
+    """Reduced matrix element of a pure E2 or M1 line from its rate (the convention of the NIST line-strength formulas, lambda in
+    Angstrom): A = 1.11995e18 S / (g_k lambda^5) with S in e^2 a0^4, A = 2.69735e13 S / (g_k lambda^3) with S in mu_B^2."""
+    if not t.get("A") or t.get("type") not in ("E2", "M1"):
+        return
+    lam, g = t["lam"] * 10, 2 * j_up + 1
+    if t["type"] == "E2":
+        t["q"] = sig((t["A"] * g * lam ** 5 / 1.11995e18) ** 0.5, 4)
+    else:
+        t["mu"] = sig((t["A"] * g * lam ** 3 / 2.69735e13) ** 0.5, 4)
+
+
 def finish_transition(t, lo, up, lit, tau_ns):
     """Fill wavelength-derived fields and the literature overrides shared by both kinds of atom."""
     wn = up["E"] - lo["E"]
@@ -326,6 +338,7 @@ def build_alkali(key, cfg):
         finish_transition(t, lo, up, lit, up.get("tau_ns"))
         if ln["A"]:
             t.update(A=sig(ln["A"], 4), A_tier="nist", A_src=f"NIST ASD (accuracy {ln['acc'] or 'n/a'})")
+            multipole_me(t, up["J"])
         transitions.append(t)
     for t in transitions:
         t.setdefault("type", "E1")
@@ -555,6 +568,31 @@ def build_nist(key, cfg):
             if cfg.get("auto") and len(chosen) >= 90 and not lt.get("use") and (lo["i"], up["i"]) not in chosen:
                 continue  # a big literature table must not flood an automatic page: only its annotated lines are added
             chosen.setdefault((lo["i"], up["i"]), {})
+    # ---- lines from the ground level to the long-lived levels (owner's request 2026-11-16: barium 877.551 nm was missing).
+    # A level that no electric-dipole decay can leave (parity and J, NIST level list) is tied to the ground level by a forbidden
+    # line only, and NIST lists such a line for few elements. It is drawn from the two level energies, with the lowest multipole
+    # that J and parity allow (M1, E2, M2, or J = 0 - 0); |ΔJ| >= 3 is not drawn. No rate unless NIST or the literature has one.
+    scheme_of = sorted({i for pair in chosen for i in pair})  # the column scheme of an automatic page is decided without the levels added below
+    if chosen:
+        par = [al.parity_of(l["conf"], l["term"]) for l in nist]
+        top = min(cfg["E_cut"], max(nist[i]["E"] for pair in chosen for i in pair))
+        g = nist[0]
+        for n in nist[1:]:
+            if n["E"] > top:
+                break
+            lam = 1e7 / (n["E"] - g["E"]) if n["E"] > g["E"] else 0
+            if n["J"] is None or g["J"] is None or not (1 if cfg.get("auto") else 200) <= lam < LAMBDA_MAX_NM or (0, n["i"]) in chosen:
+                continue
+            if any(m["J"] is None or cycling.e1_allowed(dict(m, parity=par[m["i"]]), dict(n, parity=par[n["i"]])) for m in nist[:n["i"]]
+                   if par[m["i"]] != par[n["i"]] and m["E"] < n["E"]):
+                continue  # an electric-dipole decay exists (or cannot be excluded: a lower level without J)
+            dj, js = abs(n["J"] - g["J"]), n["J"] + g["J"]
+            if par[n["i"]] == par[0]:
+                kind = "+".join((["M1"] if dj <= 1 and js >= 1 else []) + (["E2"] if dj <= 2 and js >= 2 else []))
+            else:
+                kind = "clock" if js == 0 else "M2" if dj == 2 else ""
+            if kind:
+                chosen[(0, n["i"])] = dict(inferred=kind)
     used = sorted({i for pair in chosen for i in pair})  # indices into the energy-ordered NIST level list
     if not used and cfg.get("auto") and len(nist) >= 5:
         used = [l["i"] for l in nist[:40]]  # NIST has levels but no classified lines: draw the lowest levels only
@@ -564,9 +602,9 @@ def build_nist(key, cfg):
         used = sorted(set(used) | {0})  # the ground state is always drawn
     if cfg.get("auto"):
         # column scheme: LS terms when nearly every level has one and they fit, otherwise parity and J
-        terms = [nist[i]["term"] or "" for i in used]
+        terms = [nist[i]["term"] or "" for i in (scheme_of or used)]
         n_ls = sum(1 for t in terms if re.fullmatch(al.LS_TERM, t))
-        cfg = dict(cfg, columns="LS" if n_ls >= 0.8 * len(used) and len(set(terms)) <= 15 else "J")
+        cfg = dict(cfg, columns="LS" if n_ls >= 0.8 * len(terms) and len(set(terms)) <= 15 else "J")
         # closed-shell prefix shared by every drawn configuration
         confs = [nist[i]["conf"].split(".") for i in used]
         k = 0
@@ -678,6 +716,11 @@ def build_nist(key, cfg):
         lt = finish_transition(t, lo, up, lit, up.get("tau_ns"))
         if ln.get("type"):
             t.update(kind="forbidden", type=ln["type"])
+        elif ln.get("inferred"):  # drawn from the level energies: the literature file may still name its type and rate
+            if t["kind"] == "E1":
+                t.update(kind="forbidden", type=ln["inferred"])
+            if not (lt and (lt.get("A_s") or lt.get("frequency_THz") or lt.get("use"))):
+                t["inferred"] = True
         elif lo["parity"] == up["parity"] and t["kind"] == "E1":
             t.update(kind="forbidden", type=lt.get("type") if lt.get("type") not in (None, "E1", "intercombination") else "E2 / M1")
         if "type" not in t:
@@ -712,6 +755,8 @@ def build_nist(key, cfg):
                 t.update(d=sig(al.rme_from_rate(A, t["wn"], up["J"]), 4), d_tier=tier, d_src=src + " (from A)")
             if "br" not in t and up.get("tau_ns"):
                 t.update(br=sig(min(1.0, A * up["tau_ns"] * 1e-9), 4), br_tier=tier)
+            if t["kind"] == "forbidden":
+                multipole_me(t, up["J"])
         if ln.get("obs"):
             t["lam_obs"] = ln["obs"]
         transitions.append(t)

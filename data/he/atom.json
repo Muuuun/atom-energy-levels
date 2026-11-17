@@ -18,7 +18,8 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Frequencies are 4He unless a key ends in _3 or 'isotope' says 3. 4He has I = 0 (no hyperfine structure); 3He frequencies are single hyperfine components or centroids as stated in each note, never silently centre-of-gravity. Isotope-shift keys 'A-B' mean nu(A) - nu(B). The 2 3P fine-structure intervals are stored on the 2 3P1 and 2 3P0 levels (fine_structure_splitting_MHz; use value_Hz_str for full precision). NIST energies copied from data/he/levels.csv (NIST ASD); the 2 3P order is inverted (J=2 lowest). Entries marked '(abstract)' were read on the publisher's abstract page only. Ionization energies are given as E_I/h in MHz for the excited states and in cm^-1 for the ground-state limit.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -4690,7 +4691,8 @@
    "A_src": "Hodgman, Dall, Byron, Baldwin, Buckman, Truscott, Phys. Rev. Lett. 103, 053002 (2009)",
    "A_unc": 8.234e-06,
    "br": 1.0,
-   "br_tier": "exp"
+   "br_tier": "exp",
+   "mu": 5.883e-05
   },
   {
    "kind": "E1",
@@ -9529,7 +9531,8 @@
    "A_src": "Thomas, Ross, Henson, Shin, Baldwin, Hodgman, Truscott, Phys. Rev. Lett. 125, 013002 (2020) [arXiv:2002.04811]",
    "A_unc": 4e-09,
    "br": 3.5e-16,
-   "br_tier": "exp"
+   "br_tier": "exp",
+   "mu": 7.805e-06
   },
   {
    "kind": "E1",
@@ -11347,7 +11350,8 @@
    "A_tier": "theory",
    "A_src": "van Rooij et al., Science 333, 196 (2011) [arXiv:1105.4974]",
    "br": 1.793e-09,
-   "br_tier": "theory"
+   "br_tier": "theory",
+   "mu": 0.0001129
   }
  ],
  "rydberg_levels": [],

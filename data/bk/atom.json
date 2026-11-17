@@ -18,7 +18,8 @@
   "lit_levels": 79,
   "guide_tau": "Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists).",
   "notes": "All energies are for 249Bk (centre of gravity of the hyperfine pattern) from the archived Laboratoire Aime Cotton actinide database (compilation). No uncertainty is printed for Bk. Hyperfine constants of 249Bk are converted from 10^-3 cm^-1 to MHz (derived). relative_intensity is 10 000 for every line: the source table lists only the strongest lines, so the number carries no ranking. wavelength_air_nm is the printed air wavelength. Levels above ~30 000 cm^-1 are included only where a selected strong line needs them.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -5066,6 +5067,32 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 195.78606,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Bk I odd' (249Bk; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Conway & Blaise, J. Opt. Soc. Am. B 4, 1358 (1987); Conway, Worden, Blaise, Camus & Verges, Spectrochim. Acta B 32, 101 (1977); Worden & Conway, At. Data Nucl. Data Tables 22, 329 (1978) - originals not opened (measured level energy)",
+   "lower": 0,
+   "upper": 3,
+   "wn": 6530.72,
+   "lam": 1531.2247,
+   "air": 1530.8064,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 162.38828,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Bk I odd' (249Bk; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Conway & Blaise, J. Opt. Soc. Am. B 4, 1358 (1987); Conway, Worden, Blaise, Camus & Verges, Spectrochim. Acta B 32, 101 (1977); Worden & Conway, At. Data Nucl. Data Tables 22, 329 (1978) - originals not opened (measured level energy)",
+   "lower": 0,
+   "upper": 1,
+   "wn": 5416.69,
+   "lam": 1846.1459,
+   "air": 1845.6419,
+   "type": "E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 155.50097,
    "freq_tier": "exp",
@@ -5454,8 +5481,8 @@
   }
  ],
  "validation": [
-  "levels: 80   lines < 2000 nm: 86   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 86",
+  "levels: 80   lines < 2000 nm: 88   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 88",
   "levels with a measured lifetime: 0"
  ],
  "sources": {

@@ -18,9 +18,16 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Stable isotopes: 155Gd and 157Gd have I = 3/2 (both nuclear moments negative: mu = -0.2591 and -0.3398 nuclear magnetons in the IAEA table); the others have I = 0. Hyperfine convention: E = A K/2 + B [3K(K+1) - 4I(I+1)J(J+1)] / [8I(2I-1)J(2J-1)], K = F(F+1)-J(J+1)-I(I+1) (as printed by Adhikari et al.). Ground-term 9D°J (J = 2-6) hyperfine constants of 155Gd and 157Gd are from Unsworth 1969, Table 1 (scanned PDF pdf/Gd_Unsworth_1969.pdf, numbers checked against the page image, signs as printed); the unsigned LLNL modeling constants for 9D°2 are kept as alternatives and agree in magnitude. The LLNL constants for the 17380.827 level and the 575.19 nm line are modeling inputs printed without signs or uncertainties; treat them as indicative. Lifetimes: all 136 levels of Den Hartog, Bilty, Lawler 2011, Table 1 (pdf/Gd_DenHartog_2011.pdf; parsed from the PDF text, all matched to NIST energy and J within 0.002 cm-1); one common stated uncertainty of ±5 % (unc = 5 % of the value). Directly read values of Xu, Jiang, Svanberg 2003 (pdf/Gd_Xu_2003.pdf, 25 levels) and Wang et al. 2013 (pdf/Gd_Wang_2013.pdf, 27 levels; checked against the page image) are stored as \"alternatives\" where Den Hartog has the level, and as the entry for 13 levels that only they measured (30394.64, 35794.634, 36191.722, 36394.507 from Xu; 31327.52, 32226.746, 32272.125, 32549.565, 37090.08, 37284.744, 37425.155, 37809.508, 38434.97 from Wang). Values of Marek & Stahnke 1980, Miyabe 1997 and Gorshkov 1983 are second-hand (method \"compilation\") from the \"Other expt\" column of Den Hartog et al. Access note: the Journal of Physics B PDFs (Den Hartog 2011, Lawler 2011, Xu 2003, Wang 2013, which OpenAlex marks closed, and Unsworth 1969, bronze open) were served directly by iopscience.iop.org to the fetch tool without any login; the article HTML and supplement pages were blocked by a bot check and were not pursued. Sanity check: lifetime x (sum of NIST A values plus the A entered here) is at most 0.84 for the 18 levels that have both. Isotope-shift keys \"A-B\" mean nu(A) - nu(B). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source. Isotope shifts \"160-156\" of 43 lines between 364 and 494 nm are from Ankush and Deo, Journal of Spectroscopy 2013, 741020, Table 1 (open access; archived publisher PDF saved as pdf/Gd_Ankush_2013.pdf; parsed from the PDF text and each line matched to NIST levels by its printed truncated level energies, the air wavelength recomputed from the NIST energies agreeing within 0.01 nm, and the J selection rule). The paper prints Delta-sigma(156,160) in cm-1 (accuracy 0.003 cm-1 for shifts above 0.060 cm-1, 0.005 cm-1 below); the MHz values stored are that number times 29979.2458 and the sign is taken as nu(160) - nu(156), which the paper does not state explicitly. These are Doppler-limited Fourier-transform values on a 0.001 cm-1 grid (about 30 MHz); the value -0.111 cm-1 recurs in 16 lines. Literature values of Blaum et al. 2000 and Jin et al. 1990 quoted in that paper are stored as alternatives with method \"compilation\".",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
+  {
+   "key": "odd J=1",
+   "header": "J = 1",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
   {
    "key": "odd J=2",
    "header": "J = 2",
@@ -128,7 +135,7 @@
     "tier": "exp",
     "src": "Unsworth, J. Phys. B 2, 122 (1969), Table 1 (p. 124; atomic-beam magnetic resonance, weak-field measurements)"
    },
-   "col": 0
+   "col": 1
   },
   {
    "id": 1,
@@ -151,7 +158,7 @@
     "tier": "exp",
     "src": "Unsworth, J. Phys. B 2, 122 (1969), Table 1 (p. 124; atomic-beam magnetic resonance, weak-field measurements)"
    },
-   "col": 1
+   "col": 2
   },
   {
    "id": 2,
@@ -174,7 +181,7 @@
     "tier": "exp",
     "src": "Unsworth, J. Phys. B 2, 122 (1969), Table 1 (p. 124; atomic-beam magnetic resonance, weak-field measurements)"
    },
-   "col": 2
+   "col": 3
   },
   {
    "id": 3,
@@ -197,7 +204,7 @@
     "tier": "exp",
     "src": "Unsworth, J. Phys. B 2, 122 (1969), Table 1 (p. 124; atomic-beam magnetic resonance, weak-field measurements)"
    },
-   "col": 3
+   "col": 4
   },
   {
    "id": 4,
@@ -220,7 +227,7 @@
     "tier": "exp",
     "src": "Unsworth, J. Phys. B 2, 122 (1969), Table 1 (p. 124; atomic-beam magnetic resonance, weak-field measurements)"
    },
-   "col": 4
+   "col": 5
   },
   {
    "id": 5,
@@ -243,10 +250,48 @@
     "tier": "exp",
     "src": "Childs, Phys. Rev. A 39, 4956 (1989) (atomic-beam laser-rf double resonance; quoted in Persson, \"Hyperfine anomalies in Gd and Nd\", arXiv:0904.0516 (2015 version), Table 3; original not opened)"
    },
-   "col": 0
+   "col": 1
   },
   {
    "id": 6,
+   "E": 6550.395,
+   "unc": null,
+   "J": 3.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "11F*",
+   "parity": "odd",
+   "g": 2.237,
+   "name": "^{11}F^{o}_{3}",
+   "plain": "4f75d2 6s 11F°3",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": -161.933,
+    "A_unc": 0.002,
+    "B": null,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Childs, Phys. Rev. A 39, 4956 (1989) (atomic-beam laser-rf double resonance; quoted in Persson, \"Hyperfine anomalies in Gd and Nd\", arXiv:0904.0516 (2015 version), Table 3; original not opened)"
+   },
+   "col": 2
+  },
+  {
+   "id": 7,
+   "E": 6786.184,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "11F*",
+   "parity": "odd",
+   "g": 1.935,
+   "name": "^{11}F^{o}_{4}",
+   "plain": "4f75d2 6s 11F°4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 8,
    "E": 7234.91,
    "unc": null,
    "J": 4.0,
@@ -258,10 +303,10 @@
    "plain": "4f75d6s2 7D°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 3
   },
   {
-   "id": 7,
+   "id": 9,
    "E": 7426.71,
    "unc": null,
    "J": 3.0,
@@ -273,10 +318,40 @@
    "plain": "4f75d6s2 7D°3",
    "tau_ns": null,
    "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 10,
+   "E": 7562.457,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f7.(8S*).5d.6s2",
+   "term": "7D*",
+   "parity": "odd",
+   "g": 1.995,
+   "name": "^7D^{o}_{2}",
+   "plain": "4f75d6s2 7D°2",
+   "tau_ns": null,
+   "tau_tier": "none",
    "col": 1
   },
   {
-   "id": 8,
+   "id": 11,
+   "E": 7653.927,
+   "unc": null,
+   "J": 1.0,
+   "conf": "4f7.(8S*).5d.6s2",
+   "term": "7D*",
+   "parity": "odd",
+   "g": 2.979,
+   "name": "^7D^{o}_{1}",
+   "plain": "4f75d6s2 7D°1",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 0
+  },
+  {
+   "id": 12,
    "E": 8498.434,
    "unc": null,
    "J": 8.0,
@@ -296,10 +371,55 @@
     "tier": "exp",
     "src": "Childs, Phys. Rev. A 39, 4956 (1989) (atomic-beam laser-rf double resonance; quoted in Persson, \"Hyperfine anomalies in Gd and Nd\", arXiv:0904.0516 (2015 version), Table 3; original not opened)"
    },
-   "col": 6
+   "col": 7
   },
   {
-   "id": 9,
+   "id": 13,
+   "E": 10222.233,
+   "unc": null,
+   "J": 1.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "9F*",
+   "parity": "odd",
+   "g": 3.466,
+   "name": "^9F^{o}_{1}",
+   "plain": "4f75d2 6s 9F°1",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 0
+  },
+  {
+   "id": 14,
+   "E": 10359.905,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "9F*",
+   "parity": "odd",
+   "g": 2.144,
+   "name": "^9F^{o}_{2}",
+   "plain": "4f75d2 6s 9F°2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 15,
+   "E": 10576.41,
+   "unc": null,
+   "J": 3.0,
+   "conf": "4f7.(8S*).5d2.(3F) (10F*).6s",
+   "term": "9F*",
+   "parity": "odd",
+   "g": 1.814,
+   "name": "^9F^{o}_{3}",
+   "plain": "4f75d2 6s 9F°3",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 16,
    "E": 10883.505,
    "unc": null,
    "J": 4.0,
@@ -311,10 +431,25 @@
    "plain": "4f75d2 6s 9F°4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2
+   "col": 3
   },
   {
-   "id": 10,
+   "id": 17,
+   "E": 11685.594,
+   "unc": null,
+   "J": 4.0,
+   "conf": "4f7.(8S*).5d2.(3P) (10P*).6s",
+   "term": "11P*",
+   "parity": "odd",
+   "g": 2.19,
+   "name": "^{11}P^{o}_{4}",
+   "plain": "4f75d2 6s 11P°4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 18,
    "E": 12486.547,
    "unc": null,
    "J": 7.0,
@@ -326,10 +461,10 @@
    "plain": "4f75d2 6s 9F°7",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 11,
+   "id": 19,
    "E": 14298.311,
    "unc": null,
    "J": 3.0,
@@ -349,10 +484,10 @@
     "tier": "exp",
     "src": "Adhikari, Battles, Simien, OSA Continuum 2, 1548 (2019), Table 1"
    },
-   "col": 9
+   "col": 10
   },
   {
-   "id": 12,
+   "id": 20,
    "E": 15174.0,
    "unc": null,
    "J": 5.0,
@@ -372,10 +507,10 @@
     "tier": "exp",
     "src": "Adhikari, Battles, Simien, OSA Continuum 2, 1548 (2019), Table 1"
    },
-   "col": 11
+   "col": 12
   },
   {
-   "id": 13,
+   "id": 21,
    "E": 17380.827,
    "unc": null,
    "J": 2.0,
@@ -397,7 +532,7 @@
     "tier": "exp",
     "src": "Rotter, Carson, Robben, Haynam, Johnson, Isselhardt, Appl. Phys. B 132, 100 (2026), Table 1 (read in the open report LLNL-JRNL-2015430)"
    },
-   "col": 8,
+   "col": 9,
    "decay": {
     "ch": [
      {
@@ -411,7 +546,7 @@
    }
   },
   {
-   "id": 14,
+   "id": 22,
    "E": 22334.508,
    "unc": null,
    "J": 2.0,
@@ -425,7 +560,7 @@
    "tau_unc": 0.54,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 8,
+   "col": 9,
    "decay": {
     "ch": [
      {
@@ -439,7 +574,7 @@
    }
   },
   {
-   "id": 15,
+   "id": 23,
    "E": 22563.824,
    "unc": null,
    "J": 3.0,
@@ -453,7 +588,7 @@
    "tau_unc": 0.69,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 9,
+   "col": 10,
    "decay": {
     "ch": [
      {
@@ -467,7 +602,7 @@
    }
   },
   {
-   "id": 16,
+   "id": 24,
    "E": 22820.895,
    "unc": null,
    "J": 4.0,
@@ -481,7 +616,7 @@
    "tau_unc": 1.0,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10,
+   "col": 11,
    "decay": {
     "ch": [
      {
@@ -495,7 +630,7 @@
    }
   },
   {
-   "id": 17,
+   "id": 25,
    "E": 23103.66,
    "unc": null,
    "J": 1.0,
@@ -509,7 +644,7 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 7,
+   "col": 8,
    "decay": {
     "ch": [
      {
@@ -523,7 +658,7 @@
    }
   },
   {
-   "id": 18,
+   "id": 26,
    "E": 23215.028,
    "unc": null,
    "J": 2.0,
@@ -537,10 +672,10 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 19,
+   "id": 27,
    "E": 23389.782,
    "unc": null,
    "J": 3.0,
@@ -554,7 +689,7 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 9,
+   "col": 10,
    "decay": {
     "ch": [
      {
@@ -568,7 +703,7 @@
    }
   },
   {
-   "id": 20,
+   "id": 28,
    "E": 23644.156,
    "unc": null,
    "J": 4.0,
@@ -582,10 +717,10 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10
+   "col": 11
   },
   {
-   "id": 21,
+   "id": 29,
    "E": 23999.912,
    "unc": null,
    "J": 5.0,
@@ -599,10 +734,10 @@
    "tau_unc": 0.51,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 11
+   "col": 12
   },
   {
-   "id": 22,
+   "id": 30,
    "E": 24430.425,
    "unc": null,
    "J": 6.0,
@@ -616,7 +751,7 @@
    "tau_unc": 0.87,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 12,
+   "col": 13,
    "decay": {
     "ch": [
      {
@@ -630,7 +765,7 @@
    }
   },
   {
-   "id": 23,
+   "id": 31,
    "E": 24849.514,
    "unc": null,
    "J": 4.0,
@@ -644,7 +779,7 @@
    "tau_unc": 0.53,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10,
+   "col": 11,
    "decay": {
     "ch": [
      {
@@ -658,7 +793,7 @@
    }
   },
   {
-   "id": 24,
+   "id": 32,
    "E": 24854.297,
    "unc": null,
    "J": 6.0,
@@ -672,7 +807,7 @@
    "tau_unc": 0.96,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 12,
+   "col": 13,
    "decay": {
     "ch": [
      {
@@ -686,7 +821,7 @@
    }
   },
   {
-   "id": 25,
+   "id": 33,
    "E": 25043.649,
    "unc": null,
    "J": 5.0,
@@ -700,7 +835,7 @@
    "tau_unc": 0.5499999999999999,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 11,
+   "col": 12,
    "decay": {
     "ch": [
      {
@@ -714,7 +849,7 @@
    }
   },
   {
-   "id": 26,
+   "id": 34,
    "E": 25376.313,
    "unc": null,
    "J": 7.0,
@@ -728,7 +863,7 @@
    "tau_unc": 0.47000000000000003,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 13,
+   "col": 14,
    "decay": {
     "ch": [
      {
@@ -742,7 +877,7 @@
    }
   },
   {
-   "id": 27,
+   "id": 35,
    "E": 25380.885,
    "unc": null,
    "J": 5.0,
@@ -756,10 +891,10 @@
    "tau_unc": 1.0999999999999999,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 11
+   "col": 12
   },
   {
-   "id": 28,
+   "id": 36,
    "E": 25661.34,
    "unc": null,
    "J": 6.0,
@@ -773,7 +908,7 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 12,
+   "col": 13,
    "decay": {
     "ch": [
      {
@@ -794,7 +929,7 @@
    }
   },
   {
-   "id": 29,
+   "id": 37,
    "E": 26615.044,
    "unc": null,
    "J": 5.0,
@@ -808,10 +943,10 @@
    "tau_unc": 2.9,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 11
+   "col": 12
   },
   {
-   "id": 30,
+   "id": 38,
    "E": 26866.385,
    "unc": null,
    "J": 4.0,
@@ -825,10 +960,10 @@
    "tau_unc": 2.8,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10
+   "col": 11
   },
   {
-   "id": 31,
+   "id": 39,
    "E": 27040.865,
    "unc": null,
    "J": 4.0,
@@ -840,10 +975,10 @@
    "plain": "9F4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 10
+   "col": 11
   },
   {
-   "id": 32,
+   "id": 40,
    "E": 27041.751,
    "unc": null,
    "J": 3.0,
@@ -857,10 +992,10 @@
    "tau_unc": 2.7,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 9
+   "col": 10
   },
   {
-   "id": 33,
+   "id": 41,
    "E": 27129.239,
    "unc": null,
    "J": 1.0,
@@ -872,10 +1007,10 @@
    "plain": "9F1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7
+   "col": 8
   },
   {
-   "id": 34,
+   "id": 42,
    "E": 27135.695,
    "unc": null,
    "J": 3.0,
@@ -889,7 +1024,7 @@
    "tau_unc": 0.18,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 9,
+   "col": 10,
    "decay": {
     "ch": [
      {
@@ -910,7 +1045,7 @@
    }
   },
   {
-   "id": 35,
+   "id": 43,
    "E": 27425.245,
    "unc": null,
    "J": 4.0,
@@ -924,7 +1059,7 @@
    "tau_unc": 0.2,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10,
+   "col": 11,
    "decay": {
     "ch": [
      {
@@ -945,7 +1080,7 @@
    }
   },
   {
-   "id": 36,
+   "id": 44,
    "E": 28414.925,
    "unc": null,
    "J": 5.0,
@@ -959,10 +1094,10 @@
    "tau_unc": 1.6,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 11
+   "col": 12
   },
   {
-   "id": 37,
+   "id": 45,
    "E": 28504.435,
    "unc": null,
    "J": 7.0,
@@ -976,10 +1111,10 @@
    "tau_unc": 3.2,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 13
+   "col": 14
   },
   {
-   "id": 38,
+   "id": 46,
    "E": 28731.59,
    "unc": null,
    "J": 6.0,
@@ -991,10 +1126,10 @@
    "plain": "9F6",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 12
+   "col": 13
   },
   {
-   "id": 39,
+   "id": 47,
    "E": 29119.955,
    "unc": null,
    "J": 5.0,
@@ -1008,10 +1143,10 @@
    "tau_unc": 2.1999999999999997,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 11
+   "col": 12
   },
   {
-   "id": 40,
+   "id": 48,
    "E": 30505.374,
    "unc": null,
    "J": 7.0,
@@ -1025,10 +1160,10 @@
    "tau_unc": 0.75,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 13
+   "col": 14
   },
   {
-   "id": 41,
+   "id": 49,
    "E": 30694.874,
    "unc": null,
    "J": 2.0,
@@ -1042,10 +1177,10 @@
    "tau_unc": 0.36,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 42,
+   "id": 50,
    "E": 30809.375,
    "unc": null,
    "J": 3.0,
@@ -1059,10 +1194,10 @@
    "tau_unc": 0.9099999999999999,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 9
+   "col": 10
   },
   {
-   "id": 43,
+   "id": 51,
    "E": 31135.795,
    "unc": null,
    "J": 4.0,
@@ -1076,10 +1211,10 @@
    "tau_unc": 0.33,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10
+   "col": 11
   },
   {
-   "id": 44,
+   "id": 52,
    "E": 31327.52,
    "unc": null,
    "J": 3.0,
@@ -1093,10 +1228,10 @@
    "tau_unc": 1.0999999999999999,
    "tau_tier": "exp",
    "tau_src": "Wang, Jiang, Jiang, Shang, Tian, Dai, J. Phys. B 46, 045003 (2013), Table 1 (p. 3; time-resolved laser-induced fluorescence in a laser-produced plasma)",
-   "col": 9
+   "col": 10
   },
   {
-   "id": 45,
+   "id": 53,
    "E": 32448.112,
    "unc": null,
    "J": 3.0,
@@ -1110,7 +1245,7 @@
    "tau_unc": 0.58,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 9,
+   "col": 10,
    "decay": {
     "ch": [
      {
@@ -1124,7 +1259,7 @@
    }
   },
   {
-   "id": 46,
+   "id": 54,
    "E": 32886.276,
    "unc": null,
    "J": 4.0,
@@ -1138,7 +1273,7 @@
    "tau_unc": 0.47000000000000003,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 10,
+   "col": 11,
    "decay": {
     "ch": [
      {
@@ -1152,7 +1287,7 @@
    }
   },
   {
-   "id": 47,
+   "id": 55,
    "E": 33348.226,
    "unc": null,
    "J": 5.0,
@@ -1166,7 +1301,7 @@
    "tau_unc": 0.36,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 11,
+   "col": 12,
    "decay": {
     "ch": [
      {
@@ -1187,7 +1322,7 @@
    }
   },
   {
-   "id": 48,
+   "id": 56,
    "E": 33704.627,
    "unc": null,
    "J": 3.0,
@@ -1201,10 +1336,10 @@
    "tau_unc": 0.41,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 9
+   "col": 10
   },
   {
-   "id": 49,
+   "id": 57,
    "E": 33851.828,
    "unc": null,
    "J": 6.0,
@@ -1218,7 +1353,7 @@
    "tau_unc": 0.38,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 12,
+   "col": 13,
    "decay": {
     "ch": [
      {
@@ -1232,7 +1367,7 @@
    }
   },
   {
-   "id": 50,
+   "id": 58,
    "E": 34147.343,
    "unc": null,
    "J": 2.0,
@@ -1246,10 +1381,10 @@
    "tau_unc": 0.32,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Bilty, Lawler, J. Phys. B 44, 055001 (2011), Table 1 (pp. 3-5; time-resolved laser-induced fluorescence on a slow atomic beam)",
-   "col": 8
+   "col": 9
   },
   {
-   "id": 51,
+   "id": 59,
    "E": 34836.98,
    "unc": null,
    "J": 4.0,
@@ -1261,10 +1396,10 @@
    "plain": "4f75d2 6p 9G4",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 10
+   "col": 11
   },
   {
-   "id": 52,
+   "id": 60,
    "E": 36147.13,
    "unc": null,
    "J": 6.0,
@@ -1276,7 +1411,7 @@
    "plain": "6",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 12
+   "col": 13
   }
  ],
  "transitions": [
@@ -1286,7 +1421,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 47,
+   "upper": 55,
    "wn": 32815.249,
    "lam": 304.7364,
    "air": 304.6477,
@@ -1325,7 +1460,7 @@
       "lam": 316.16
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 376.48
      },
      {
@@ -1337,7 +1472,7 @@
       "lam": 381.03
      },
      {
-      "lv": 6,
+      "lv": 8,
       "lam": 382.95
      }
     ],
@@ -1364,7 +1499,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 46,
+   "upper": 54,
    "wn": 32671.152,
    "lam": 306.0804,
    "air": 305.9915,
@@ -1393,11 +1528,11 @@
       "lam": 313.61
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 379.71
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 383.14
      },
      {
@@ -1413,7 +1548,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 45,
+   "upper": 53,
    "wn": 32448.112,
    "lam": 308.1843,
    "air": 308.0949,
@@ -1446,11 +1581,11 @@
       "lam": 383.58
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 386.13
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 389.68
      }
     ]
@@ -1462,7 +1597,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 47,
+   "upper": 55,
    "wn": 32349.105,
    "lam": 309.1276,
    "air": 309.0378,
@@ -1501,7 +1636,7 @@
       "lam": 316.16
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 376.48
      },
      {
@@ -1513,7 +1648,7 @@
       "lam": 381.03
      },
      {
-      "lv": 6,
+      "lv": 8,
       "lam": 382.95
      }
     ],
@@ -1540,7 +1675,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 49,
+   "upper": 57,
    "wn": 32132.741,
    "lam": 311.2091,
    "air": 311.1188,
@@ -1589,7 +1724,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 36,
+   "upper": 44,
    "wn": 27415.804,
    "lam": 364.7531,
    "air": 364.6492,
@@ -1617,7 +1752,7 @@
       "lam": 374.59
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 462.35
      },
      {
@@ -1636,8 +1771,8 @@
    "freq": 821.73922,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 7,
-   "upper": 51,
+   "lower": 9,
+   "upper": 59,
    "wn": 27410.27,
    "lam": 364.8268,
    "air": 364.7228,
@@ -1668,11 +1803,11 @@
       "lam": 295.53
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 353.52
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 356.5
      }
     ]
@@ -1684,7 +1819,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 39,
+   "upper": 47,
    "wn": 27400.868,
    "lam": 364.9519,
    "air": 364.848,
@@ -1712,7 +1847,7 @@
       "lam": 355.61
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 447.75
      },
      {
@@ -1732,7 +1867,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 34,
+   "upper": 42,
    "wn": 27135.695,
    "lam": 368.5183,
    "air": 368.4134,
@@ -1776,15 +1911,15 @@
       "lam": 481.75
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 485.78
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 491.41
      },
      {
-      "lv": 6,
+      "lv": 8,
       "lam": 502.49
      }
     ],
@@ -1811,7 +1946,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 33,
+   "upper": 41,
    "wn": 27129.239,
    "lam": 368.606,
    "air": 368.5011,
@@ -1834,19 +1969,19 @@
       "lam": 481.9
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>2</sub>",
+      "lv": 10,
       "lam": 511.07
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>1</sub>",
+      "lv": 11,
       "lam": 513.47
      },
      {
-      "html": "<sup>9</sup>F<sup>°</sup><sub>1</sub>",
+      "lv": 13,
       "lam": 591.47
      },
      {
-      "html": "<sup>9</sup>F<sup>°</sup><sub>2</sub>",
+      "lv": 14,
       "lam": 596.33
      }
     ]
@@ -1858,7 +1993,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 32,
+   "upper": 40,
    "wn": 27041.751,
    "lam": 369.7985,
    "air": 369.6933,
@@ -1890,11 +2025,11 @@
       "lam": 483.94
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 488.01
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 493.69
      }
     ]
@@ -1906,7 +2041,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 38,
+   "upper": 46,
    "wn": 27012.503,
    "lam": 370.1989,
    "air": 370.0936,
@@ -1953,7 +2088,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 34,
+   "upper": 42,
    "wn": 26920.571,
    "lam": 371.4631,
    "air": 371.3575,
@@ -1997,15 +2132,15 @@
       "lam": 481.75
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 485.78
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 491.41
      },
      {
-      "lv": 6,
+      "lv": 8,
       "lam": 502.49
      }
     ],
@@ -2032,7 +2167,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 35,
+   "upper": 43,
    "wn": 26892.268,
    "lam": 371.8541,
    "air": 371.7483,
@@ -2071,11 +2206,11 @@
       "lam": 367.51
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 479.05
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 484.52
      },
      {
@@ -2110,7 +2245,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 31,
+   "upper": 39,
    "wn": 26825.741,
    "lam": 372.7763,
    "air": 372.6703,
@@ -2137,11 +2272,11 @@
       "lam": 384.0
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 488.03
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 493.71
      },
      {
@@ -2157,7 +2292,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 37,
+   "upper": 45,
    "wn": 26785.348,
    "lam": 373.3384,
    "air": 373.2323,
@@ -2185,7 +2320,7 @@
       "lam": 486.45
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 499.85
      },
      {
@@ -2204,8 +2339,8 @@
    "freq": 801.06442,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 7,
-   "upper": 50,
+   "lower": 9,
+   "upper": 58,
    "wn": 26720.633,
    "lam": 374.2426,
    "air": 374.1363,
@@ -2237,11 +2372,11 @@
       "lam": 360.11
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 362.36
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>2</sub>",
+      "lv": 10,
       "lam": 376.15
      }
     ]
@@ -2252,8 +2387,8 @@
    "freq": 793.54215,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 6,
-   "upper": 48,
+   "lower": 8,
+   "upper": 56,
    "wn": 26469.717,
    "lam": 377.7902,
    "air": 377.6829,
@@ -2289,7 +2424,7 @@
       "lam": 365.95
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 368.27
      }
     ]
@@ -2301,7 +2436,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 35,
+   "upper": 43,
    "wn": 26426.124,
    "lam": 378.4134,
    "air": 378.306,
@@ -2340,11 +2475,11 @@
       "lam": 367.51
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 479.05
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 484.52
      },
      {
@@ -2379,7 +2514,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 30,
+   "upper": 38,
    "wn": 26333.408,
    "lam": 379.7458,
    "air": 379.638,
@@ -2407,11 +2542,11 @@
       "lam": 386.59
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 492.22
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 498.0
      },
      {
@@ -2427,7 +2562,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 31,
+   "upper": 39,
    "wn": 26041.744,
    "lam": 383.9989,
    "air": 383.89,
@@ -2454,11 +2589,11 @@
       "lam": 377.25
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 488.03
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 493.71
      },
      {
@@ -2474,7 +2609,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 29,
+   "upper": 37,
    "wn": 25615.923,
    "lam": 390.3822,
    "air": 390.2716,
@@ -2502,7 +2637,7 @@
       "lam": 401.67
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 504.32
      },
      {
@@ -2522,7 +2657,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 28,
+   "upper": 36,
    "wn": 24662.219,
    "lam": 405.4785,
    "air": 405.364,
@@ -2600,7 +2735,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 23,
+   "upper": 31,
    "wn": 24634.39,
    "lam": 405.9366,
    "air": 405.822,
@@ -2637,11 +2772,11 @@
       "lam": 419.28
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 546.47
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 553.61
      },
      {
@@ -2657,7 +2792,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 25,
+   "upper": 33,
    "wn": 24510.672,
    "lam": 407.9856,
    "air": 407.8704,
@@ -2694,7 +2829,7 @@
       "lam": 428.73
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 547.72
      },
      {
@@ -2714,7 +2849,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 42,
+   "upper": 50,
    "wn": 24431.229,
    "lam": 409.3122,
    "air": 409.1967,
@@ -2746,11 +2881,11 @@
       "lam": 330.29
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 412.22
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 416.26
      }
     ]
@@ -2762,7 +2897,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 41,
+   "upper": 49,
    "wn": 24316.728,
    "lam": 411.2395,
    "air": 411.1235,
@@ -2790,15 +2925,15 @@
       "lam": 328.09
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 414.17
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 429.77
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>2</sub>",
+      "lv": 10,
       "lam": 432.29
      }
     ]
@@ -2810,7 +2945,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 23,
+   "upper": 31,
    "wn": 24316.537,
    "lam": 411.2428,
    "air": 411.1268,
@@ -2848,11 +2983,11 @@
       "lam": 419.28
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 546.47
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 553.61
      },
      {
@@ -2881,7 +3016,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 25,
+   "upper": 33,
    "wn": 24044.528,
    "lam": 415.895,
    "air": 415.7778,
@@ -2919,7 +3054,7 @@
       "lam": 428.73
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 547.72
      },
      {
@@ -2931,7 +3066,7 @@
       "lam": 557.41
      },
      {
-      "lv": 6,
+      "lv": 8,
       "lam": 561.52
      }
     ],
@@ -2952,7 +3087,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 28,
+   "upper": 36,
    "wn": 23942.253,
    "lam": 417.6716,
    "air": 417.5539,
@@ -3029,8 +3164,8 @@
    "freq": 716.52826,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 7,
-   "upper": 44,
+   "lower": 9,
+   "upper": 52,
    "wn": 23900.81,
    "lam": 418.3959,
    "air": 418.278,
@@ -3066,7 +3201,7 @@
       "lam": 400.81
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 403.6
      }
     ]
@@ -3078,7 +3213,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 24,
+   "upper": 32,
    "wn": 23855.176,
    "lam": 419.1962,
    "air": 419.0781,
@@ -3135,7 +3270,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 23,
+   "upper": 31,
    "wn": 23850.393,
    "lam": 419.2803,
    "air": 419.1622,
@@ -3173,11 +3308,11 @@
       "lam": 411.24
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 546.47
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 553.61
      },
      {
@@ -3206,7 +3341,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 27,
+   "upper": 35,
    "wn": 23661.798,
    "lam": 422.6222,
    "air": 422.5032,
@@ -3234,7 +3369,7 @@
       "lam": 410.14
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 537.79
      },
      {
@@ -3253,8 +3388,8 @@
    "freq": 709.32643,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 10,
-   "upper": 52,
+   "lower": 18,
+   "upper": 60,
    "wn": 23660.583,
    "lam": 422.6439,
    "air": 422.5249,
@@ -3301,7 +3436,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 26,
+   "upper": 34,
    "wn": 23657.226,
    "lam": 422.7038,
    "air": 422.5848,
@@ -3339,7 +3474,7 @@
       "lam": 573.76
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 592.49
      },
      {
@@ -3359,7 +3494,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 21,
+   "upper": 29,
    "wn": 23466.935,
    "lam": 426.1315,
    "air": 426.0116,
@@ -3387,7 +3522,7 @@
       "lam": 448.82
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 580.93
      },
      {
@@ -3407,7 +3542,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 22,
+   "upper": 30,
    "wn": 23431.304,
    "lam": 426.7795,
    "air": 426.6594,
@@ -3478,7 +3613,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 20,
+   "upper": 28,
    "wn": 23429.032,
    "lam": 426.8209,
    "air": 426.7008,
@@ -3506,11 +3641,11 @@
       "lam": 441.6
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 585.01
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 593.19
      },
      {
@@ -3526,7 +3661,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 19,
+   "upper": 27,
    "wn": 23389.782,
    "lam": 427.5371,
    "air": 427.4168,
@@ -3568,15 +3703,15 @@
       "lam": 587.83
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 593.85
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 602.28
      },
      {
-      "lv": 6,
+      "lv": 8,
       "lam": 619.01
      }
     ],
@@ -3597,7 +3732,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 25,
+   "upper": 33,
    "wn": 23324.562,
    "lam": 428.7326,
    "air": 428.612,
@@ -3635,7 +3770,7 @@
       "lam": 415.9
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 547.72
      },
      {
@@ -3647,7 +3782,7 @@
       "lam": 557.41
      },
      {
-      "lv": 6,
+      "lv": 8,
       "lam": 561.52
      }
     ],
@@ -3668,7 +3803,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 18,
+   "upper": 26,
    "wn": 23215.028,
    "lam": 430.7555,
    "air": 430.6343,
@@ -3696,15 +3831,15 @@
       "lam": 593.93
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 600.07
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 633.38
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>2</sub>",
+      "lv": 10,
       "lam": 638.87
      }
     ]
@@ -3716,7 +3851,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 19,
+   "upper": 27,
    "wn": 23174.658,
    "lam": 431.5058,
    "air": 431.3845,
@@ -3757,11 +3892,11 @@
       "lam": 587.83
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 593.85
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 602.28
      }
     ]
@@ -3773,7 +3908,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 24,
+   "upper": 32,
    "wn": 23135.21,
    "lam": 432.2416,
    "air": 432.1201,
@@ -3844,7 +3979,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 20,
+   "upper": 28,
    "wn": 23111.179,
    "lam": 432.691,
    "air": 432.5694,
@@ -3872,11 +4007,11 @@
       "lam": 441.6
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 585.01
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 593.19
      },
      {
@@ -3892,7 +4027,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 17,
+   "upper": 25,
    "wn": 23103.66,
    "lam": 432.8319,
    "air": 432.7102,
@@ -3925,19 +4060,19 @@
       "lam": 597.89
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>2</sub>",
+      "lv": 10,
       "lam": 643.45
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>1</sub>",
+      "lv": 11,
       "lam": 647.26
      },
      {
-      "html": "<sup>9</sup>F<sup>°</sup><sub>1</sub>",
+      "lv": 13,
       "lam": 776.31
      },
      {
-      "html": "<sup>9</sup>F<sup>°</sup><sub>2</sub>",
+      "lv": 14,
       "lam": 784.7
      }
     ]
@@ -3949,7 +4084,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 21,
+   "upper": 29,
    "wn": 23000.791,
    "lam": 434.7677,
    "air": 434.6455,
@@ -3977,7 +4112,7 @@
       "lam": 448.82
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 580.93
      },
      {
@@ -3997,7 +4132,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 18,
+   "upper": 26,
    "wn": 22999.904,
    "lam": 434.7844,
    "air": 434.6622,
@@ -4025,15 +4160,15 @@
       "lam": 593.93
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 600.07
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 633.38
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>2</sub>",
+      "lv": 10,
       "lam": 638.87
      }
     ]
@@ -4045,7 +4180,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 19,
+   "upper": 27,
    "wn": 22856.805,
    "lam": 437.5065,
    "air": 437.3836,
@@ -4087,15 +4222,15 @@
       "lam": 587.83
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 593.85
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 602.28
      },
      {
-      "lv": 6,
+      "lv": 8,
       "lam": 619.01
      }
     ],
@@ -4116,7 +4251,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 22,
+   "upper": 30,
    "wn": 22711.338,
    "lam": 440.3087,
    "air": 440.1851,
@@ -4173,7 +4308,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 20,
+   "upper": 28,
    "wn": 22645.035,
    "lam": 441.5979,
    "air": 441.4739,
@@ -4201,11 +4336,11 @@
       "lam": 432.69
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 585.01
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 593.19
      },
      {
@@ -4221,7 +4356,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 16,
+   "upper": 24,
    "wn": 22605.771,
    "lam": 442.3649,
    "air": 442.2407,
@@ -4250,11 +4385,11 @@
       "lam": 458.26
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 614.61
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 623.65
      },
      {
@@ -4270,7 +4405,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 15,
+   "upper": 23,
    "wn": 22563.824,
    "lam": 443.1873,
    "air": 443.0629,
@@ -4304,11 +4439,11 @@
       "lam": 617.83
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 624.48
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 633.81
      }
     ]
@@ -4320,7 +4455,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 21,
+   "upper": 29,
    "wn": 22280.825,
    "lam": 448.8164,
    "air": 448.6905,
@@ -4348,7 +4483,7 @@
       "lam": 434.77
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 580.93
      },
      {
@@ -4368,7 +4503,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 14,
+   "upper": 22,
    "wn": 22119.384,
    "lam": 452.0922,
    "air": 451.9654,
@@ -4398,15 +4533,15 @@
       "lam": 626.71
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 633.55
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 670.79
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>2</sub>",
+      "lv": 10,
       "lam": 676.95
      }
     ]
@@ -4417,8 +4552,8 @@
    "freq": 659.75146,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 8,
-   "upper": 40,
+   "lower": 12,
+   "upper": 48,
    "wn": 22006.94,
    "lam": 454.4021,
    "air": 454.2747,
@@ -4465,8 +4600,8 @@
    "freq": 607.14838,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 9,
-   "upper": 43,
+   "lower": 16,
+   "upper": 51,
    "wn": 20252.29,
    "lam": 493.7713,
    "air": 493.6335,
@@ -4498,11 +4633,11 @@
       "lam": 331.82
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 406.75
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 410.68
      }
     ]
@@ -4514,7 +4649,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 13,
+   "upper": 21,
    "wn": 17380.827,
    "lam": 575.3466,
    "air": 575.1871,
@@ -4581,15 +4716,15 @@
       "lam": 908.87
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 923.32
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 1004.6
      },
      {
-      "html": "<sup>7</sup>D<sup>°</sup><sub>2</sub>",
+      "lv": 10,
       "lam": 1018.5
      }
     ]
@@ -4601,7 +4736,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 11,
+   "upper": 19,
    "wn": 13765.334,
    "lam": 726.4626,
    "air": 726.2624,
@@ -4651,11 +4786,11 @@
       "lam": 1262.6
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>3</sub>",
+      "lv": 6,
       "lam": 1290.7
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 1331.2
      }
     ]
@@ -4667,7 +4802,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 12,
+   "upper": 20,
    "wn": 13454.913,
    "lam": 743.2229,
    "air": 743.0183,
@@ -4713,7 +4848,7 @@
       "lam": 705.47
      },
      {
-      "html": "<sup>11</sup>F<sup>°</sup><sub>4</sub>",
+      "lv": 7,
       "lam": 1192.2
      },
      {
@@ -4726,6 +4861,162 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 350.32529,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 17,
+   "wn": 11685.594,
+   "lam": 855.7545,
+   "air": 855.5195,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 326.27927,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 16,
+   "wn": 10883.505,
+   "lam": 918.8216,
+   "air": 918.5695,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 317.0728,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 15,
+   "wn": 10576.41,
+   "lam": 945.5004,
+   "air": 945.2411,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 310.58214,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 14,
+   "wn": 10359.905,
+   "lam": 965.2598,
+   "air": 964.9951,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 306.45484,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 13,
+   "wn": 10222.233,
+   "lam": 978.2598,
+   "air": 977.9916,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 229.45896,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 11,
+   "wn": 7653.927,
+   "lam": 1306.5189,
+   "air": 1306.1616,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 226.71676,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 10,
+   "wn": 7562.457,
+   "lam": 1322.3216,
+   "air": 1321.96,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 222.64716,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 9,
+   "wn": 7426.71,
+   "lam": 1346.4912,
+   "air": 1346.1231,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 216.89715,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 8,
+   "wn": 7234.91,
+   "lam": 1382.1872,
+   "air": 1381.8094,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 203.44468,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 7,
+   "wn": 6786.184,
+   "lam": 1473.5822,
+   "air": 1473.1795,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 196.3759,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 6,
+   "wn": 6550.395,
+   "lam": 1526.6255,
+   "air": 1526.2084,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 191.21201,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 5,
+   "wn": 6378.146,
+   "lam": 1567.8537,
+   "air": 1567.4254,
+   "type": "M1+E2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -4881,6 +5172,12 @@
      "-227.1080(20)",
      "–",
      "F=1/2: +1021.99   F=3/2: +681.32   F=5/2: +113.55   F=7/2: -681.32"
+    ],
+    [
+     "$^{11}F^{o}_{3}$",
+     "-161.9330(20)",
+     "–",
+     "F=3/2: +971.60   F=5/2: +566.76   F=7/2: -0.00   F=9/2: -728.70"
     ],
     [
      "$^{11}F^{o}_{8}$",
@@ -5056,8 +5353,8 @@
   }
  ],
  "validation": [
-  "levels: 53   lines < 2000 nm: 60   with matrix element: 22",
-  "transition-rate provenance: exp: 6, nist: 16, wavelength only: 38",
+  "levels: 61   lines < 2000 nm: 72   with matrix element: 22",
+  "transition-rate provenance: exp: 6, nist: 16, wavelength only: 50",
   "levels with a measured lifetime: 35"
  ],
  "sources": {

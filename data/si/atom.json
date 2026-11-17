@@ -21,7 +21,8 @@
   "semi": {
    "lines": 10598,
    "matched": 7078
-  }
+  },
+  "hfr": null
  },
  "columns": [
   {
@@ -49,14 +50,8 @@
    "width": 1.0
   },
   {
-   "key": "1P*",
-   "header": "^1P^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "1S",
-   "header": "^1S",
+   "key": "1F*",
+   "header": "^1F^{o}",
    "group": null,
    "width": 1.0
   },
@@ -67,8 +62,14 @@
    "width": 1.0
   },
   {
-   "key": "1F*",
-   "header": "^1F^{o}",
+   "key": "1P*",
+   "header": "^1P^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1S",
+   "header": "^1S",
    "group": null,
    "width": 1.0
   },
@@ -167,7 +168,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "NIST ASD Si I lines table, forbidden lines 1587.6, 1607.3, 1645.9 nm (tp_ref c22,T4209), local cache data/nist/Si_I_lines_from1nm.tsv. Note: derived: 1/sum of the five calculated M1 and E2 A-values (to 3P0,1,2) listed in NIST ASD (accuracy D, D+); no measurement of this lifetime was located",
-   "col": 6
+   "col": 5
   },
   {
    "id": 4,
@@ -184,7 +185,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "NIST ASD Si I lines table (tp_ref c22,T4209), local cache data/nist/Si_I_lines_from1nm.tsv. Note: derived: 1/sum of the calculated A-values of 1S0 -> 3P1 (M1, 652.9 nm), 3P2 (E2, 659.1 nm) and 1D2 (E2, 1099.4 nm) listed in NIST ASD (accuracy C, D); no measurement of this lifetime was located",
-   "col": 5
+   "col": 7
   },
   {
    "id": 5,
@@ -327,7 +328,7 @@
    "tau_unc": 0.2,
    "tau_tier": "exp",
    "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -820,7 +821,7 @@
    "tau_unc": 0.2,
    "tau_tier": "exp",
    "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
-   "col": 7,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -883,7 +884,7 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -1392,7 +1393,7 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -1548,7 +1549,7 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -1626,7 +1627,7 @@
    "tau_unc": 0.3,
    "tau_tier": "exp",
    "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
-   "col": 7,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -2328,7 +2329,7 @@
    "tau_unc": 0.5,
    "tau_tier": "exp",
    "tau_src": "O'Brian & Lawler, Phys. Rev. A 44, 7134 (1991), time-resolved laser-induced fluorescence on an atomic beam; value and error as tabulated (columns Lifetime3 / e_Lifetime3) in Table B.2 of Pehlivan Rhodin, Hartman, Nilsson, Joensson, Astron. Astrophys. 682, A184 (2024), CDS catalogue J/A+A/682/A184",
-   "col": 7,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -2714,7 +2715,7 @@
    "plain": "3s23p6d 1F°3",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 7,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -11726,6 +11727,20 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 188.83477,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 6298.85,
+   "lam": 1587.5914,
+   "air": 1587.1577,
+   "gamma_MHz": 4.341e-10,
+   "type": "E2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -11955,8 +11970,8 @@
   }
  ],
  "validation": [
-  "levels: 44   lines < 2000 nm: 79   with matrix element: 79",
-  "transition-rate provenance: exp: 20, nist: 59",
+  "levels: 44   lines < 2000 nm: 80   with matrix element: 79",
+  "transition-rate provenance: exp: 20, nist: 59, wavelength only: 1",
   "levels with a measured lifetime: 39",
   "semi-empirical rates (Kurucz): 7078 of 10598 lines on NIST levels; used for 0 drawn lines and 6486 further decay lines"
  ],

@@ -415,13 +415,16 @@ def draw(key):
     spin = f",  nuclear spin $I$ = {meta['I']}" if meta["A"] else ""
     hax.text(0, 0.05, f"{meta['element']}-{meta['A']}" if meta["A"] else meta["element"], fontsize=58, fontweight="bold", color=INK, va="top", ha="left")
     n_d = sum(1 for t in bound if t.get("d") is not None)
+    n_inf = sum(1 for t in bound if t.get("inferred"))  # not NIST lines: see build_nist in compute.py
     lit_lv = (meta.get("lit_levels") or 0) > (len(atom["levels"]) - 1) / 2  # most excited levels come from the literature file
     hax.text(0, 1.25, f"{iso}  ({meta['spectrum']}){spin}.   "
              + ("Classified transitions below 2 µm (levels and lines from the literature):  " if lit_lv
                 else "Strongest classified transitions below 2 µm (NIST):  " if meta.get("auto") else "Energy levels and transitions below 2 µm:  ")
              + f"{len(levels)} levels, {len(bound)} lines.", fontsize=21, color=INK, va="top", ha="left")
     if not has_ryd:
-        hax.text(0, 1.78, meta["limit_text"], fontsize=15, color=MUTED, va="top", ha="left")
+        hax.text(0, 1.78, meta["limit_text"] + (f"   ·   {n_inf} of the lines lead from the ground level to long-lived levels: "
+                                                "not NIST lines, drawn from the level energies" if n_inf else ""),
+                 fontsize=15, color=MUTED, va="top", ha="left")
     guide = ("Arrow label:  vacuum wavelength  |  reduced dipole matrix element  " r"$|\langle J\,\Vert\,e r\,\Vert\,J'\rangle|$  in $e a_0$" "\n"
              "Matrix elements are measured or NIST values;   *  = high-accuracy theory,   ≈  = model or semi-empirical calculation.\n"
              r"Arrow width grows with the Einstein coefficient $A$.   Dotted: forbidden (clock, M1, E2).   Dashed: Rydberg excitation, $n$ = 70." "\n"

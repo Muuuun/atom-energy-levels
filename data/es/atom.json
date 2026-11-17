@@ -15,12 +15,25 @@
   "has_lit": true,
   "freq_isotope": "253",
   "limit_text": "Es$^+$ ionisation limit   51364.58 cm$^{-1}$  =  6.36840 eV  (194.687 nm)",
-  "lit_levels": 12,
+  "lit_levels": 14,
   "guide_tau": "Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists).",
   "notes": "Two data sets are merged: (1) 253Es emission-spectrum levels and the strongest classified lines from the archived Laboratoire Aime Cotton database (compilation, no uncertainties printed); (2) 254Es laser resonance ionization (Mainz, 2022): ten first excited states with lifetimes, hyperfine constants and the ionization potential. Lifetimes printed as 30 ns are upper limits (bound). Hyperfine constants taken from the LAC table are converted from 10^-3 cm^-1 to MHz (derived). Isotope shifts are nu(first) - nu(second). relative_intensity is the emission intensity printed in the LAC wavelength table (100 ... 10 000); for the laser lines it was attached by wavelength coincidence (derived matching, see each note).",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
+  {
+   "key": "odd J=11/2",
+   "header": "J = 11/2",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=13/2",
+   "header": "J = 13/2",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
   {
    "key": "odd J=15/2",
    "header": "J = 15/2",
@@ -68,10 +81,60 @@
     "tier": "exp",
     "src": "Goodman, Diamond & Stanton, Phys. Rev. A 11, 499 (1975) (atomic-beam magnetic resonance), as quoted in Nothhelfer, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Nuclear structure investigations of 253-255Es by laser spectroscopy', Phys. Rev. C 105, L021302 (2022), Table II (original not opened)"
    },
-   "col": 0
+   "col": 2
   },
   {
    "id": 1,
+   "E": 8759.27,
+   "unc": null,
+   "J": 5.5,
+   "conf": "5f11.7s2",
+   "term": "2H*",
+   "parity": "odd",
+   "g": null,
+   "name": "^2H^{o}_{11/2}",
+   "plain": "5f117s2 2H°11/2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I odd' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 872.7,
+    "A_unc": null,
+    "B": 107.9,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I odd' (253Es); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened"
+   },
+   "col": 0
+  },
+  {
+   "id": 2,
+   "E": 10244.29,
+   "unc": null,
+   "J": 6.5,
+   "conf": "5f11.7s2",
+   "term": "*",
+   "parity": "odd",
+   "g": null,
+   "name": "(10244)^{o}_{13/2}",
+   "plain": "5f117s2 °13/2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I odd' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 933.3,
+    "A_unc": null,
+    "B": -5762.0,
+    "B_unc": null,
+    "tier": "exp",
+    "src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I odd' (253Es); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened"
+   },
+   "col": 1
+  },
+  {
+   "id": 3,
    "E": 17803.09,
    "unc": null,
    "J": 7.5,
@@ -93,10 +156,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened"
    },
-   "col": 2
+   "col": 4
   },
   {
-   "id": 2,
+   "id": 4,
    "E": 19209.15,
    "unc": null,
    "J": 8.5,
@@ -118,10 +181,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 3,
+   "id": 5,
    "E": 19367.85,
    "unc": null,
    "J": 8.5,
@@ -143,10 +206,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 4,
+   "id": 6,
    "E": 23934.2,
    "unc": 0.05,
    "J": 8.5,
@@ -170,10 +233,10 @@
     "tier": "exp",
     "src": "optical emission spectroscopy (ref. [11] of the paper), as quoted in Nothhelfer, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Nuclear structure investigations of 253-255Es by laser spectroscopy', Phys. Rev. C 105, L021302 (2022), Table II (original not opened)"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 5,
+   "id": 7,
    "E": 24338.23,
    "unc": 0.05,
    "J": 7.5,
@@ -197,10 +260,10 @@
     "tier": "exp",
     "src": "optical emission spectroscopy (ref. [11] of the paper), as quoted in Nothhelfer, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Nuclear structure investigations of 253-255Es by laser spectroscopy', Phys. Rev. C 105, L021302 (2022), Table II (original not opened)"
    },
-   "col": 2
+   "col": 4
   },
   {
-   "id": 6,
+   "id": 8,
    "E": 24489.12,
    "unc": 0.05,
    "J": 6.5,
@@ -224,10 +287,10 @@
     "tier": "exp",
     "src": "optical emission spectroscopy (ref. [11] of the paper), as quoted in Nothhelfer, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Nuclear structure investigations of 253-255Es by laser spectroscopy', Phys. Rev. C 105, L021302 (2022), Table II (original not opened)"
    },
-   "col": 1
+   "col": 3
   },
   {
-   "id": 7,
+   "id": 9,
    "E": 27440.06,
    "unc": 0.05,
    "J": 6.5,
@@ -243,10 +306,10 @@
    "tau_unc": 19.0,
    "tau_tier": "exp",
    "tau_src": "Weber, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Atomic-structure investigations of neutral einsteinium by laser resonance ionization', Phys. Rev. Research 4, 043053 (2022), Table I and Sec. III D (254Es)",
-   "col": 1
+   "col": 3
   },
   {
-   "id": 8,
+   "id": 10,
    "E": 28118.65,
    "unc": null,
    "J": 6.5,
@@ -271,10 +334,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened"
    },
-   "col": 1
+   "col": 3
   },
   {
-   "id": 9,
+   "id": 11,
    "E": 28447.02,
    "unc": null,
    "J": 6.5,
@@ -299,10 +362,10 @@
     "tier": "exp",
     "src": "Nothhelfer, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Nuclear structure investigations of 253-255Es by laser spectroscopy', Phys. Rev. C 105, L021302 (2022), Table II"
    },
-   "col": 1
+   "col": 3
   },
   {
-   "id": 10,
+   "id": 12,
    "E": 28578.6,
    "unc": null,
    "J": 8.5,
@@ -319,10 +382,10 @@
    "tau_tier": "exp",
    "tau_src": "Weber, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Atomic-structure investigations of neutral einsteinium by laser resonance ionization', Phys. Rev. Research 4, 043053 (2022), Table I and Sec. III D (254Es). Note: bound: upper limit; the table prints 30 ns, the lower limit of the method (the laser pulse length), and the paper says 'the lifetime or at least an upper limit for it was determined'",
    "tau_bound": "<",
-   "col": 3
+   "col": 5
   },
   {
-   "id": 11,
+   "id": 13,
    "E": 29204.89,
    "unc": null,
    "J": 6.5,
@@ -344,10 +407,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened"
    },
-   "col": 1
+   "col": 3
   },
   {
-   "id": 12,
+   "id": 14,
    "E": 31886.3,
    "unc": null,
    "J": 6.5,
@@ -361,7 +424,7 @@
    "E_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 1
+   "col": 3
   }
  ],
  "transitions": [
@@ -371,7 +434,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
    "lower": 0,
-   "upper": 12,
+   "upper": 14,
    "wn": 31886.3,
    "lam": 313.6143,
    "air": 313.5235,
@@ -382,11 +445,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "<sup>2</sup>H<sup>°</sup><sub>11/2</sub>",
+      "lv": 1,
       "lam": 432.39
      },
      {
-      "html": "(10244)<sup>°</sup><sub>13/2</sub>",
+      "lv": 2,
       "lam": 462.06
      }
     ]
@@ -398,7 +461,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
    "lower": 0,
-   "upper": 11,
+   "upper": 13,
    "wn": 29204.89,
    "lam": 342.4084,
    "air": 342.3102,
@@ -409,11 +472,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "<sup>2</sup>H<sup>°</sup><sub>11/2</sub>",
+      "lv": 1,
       "lam": 489.1
      },
      {
-      "html": "(10244)<sup>°</sup><sub>13/2</sub>",
+      "lv": 2,
       "lam": 527.41
      }
     ]
@@ -425,7 +488,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
    "lower": 0,
-   "upper": 10,
+   "upper": 12,
    "wn": 28578.6,
    "lam": 349.9122,
    "air": 349.8121,
@@ -451,7 +514,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
    "lower": 0,
-   "upper": 9,
+   "upper": 11,
    "wn": 28447.02,
    "lam": 351.5307,
    "air": 351.4302,
@@ -478,11 +541,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "<sup>2</sup>H<sup>°</sup><sub>11/2</sub>",
+      "lv": 1,
       "lam": 507.93
      },
      {
-      "html": "(10244)<sup>°</sup><sub>13/2</sub>",
+      "lv": 2,
       "lam": 549.37
      }
     ]
@@ -494,7 +557,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
    "lower": 0,
-   "upper": 8,
+   "upper": 10,
    "wn": 28118.65,
    "lam": 355.6359,
    "air": 355.5343,
@@ -507,11 +570,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "<sup>2</sup>H<sup>°</sup><sub>11/2</sub>",
+      "lv": 1,
       "lam": 516.55
      },
      {
-      "html": "(10244)<sup>°</sup><sub>13/2</sub>",
+      "lv": 2,
       "lam": 559.46
      }
     ]
@@ -523,7 +586,7 @@
    "freq_tier": "exp",
    "freq_src": "Weber, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Atomic-structure investigations of neutral einsteinium by laser resonance ionization', Phys. Rev. Research 4, 043053 (2022), Table I (2022); J and configuration from that table (after Wyart, Blaise & Worden 2005 and Nothhelfer et al. 2022) (measured level energy)",
    "lower": 0,
-   "upper": 7,
+   "upper": 9,
    "wn": 27440.06,
    "lam": 364.4307,
    "air": 364.3269,
@@ -536,11 +599,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "<sup>2</sup>H<sup>°</sup><sub>11/2</sub>",
+      "lv": 1,
       "lam": 535.31
      },
      {
-      "html": "(10244)<sup>°</sup><sub>13/2</sub>",
+      "lv": 2,
       "lam": 581.54
      }
     ]
@@ -552,7 +615,7 @@
    "freq_tier": "exp",
    "freq_src": "Weber, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Atomic-structure investigations of neutral einsteinium by laser resonance ionization', Phys. Rev. Research 4, 043053 (2022), Table I (2022); J and configuration from that table (after Wyart, Blaise & Worden 2005 and Nothhelfer et al. 2022) (measured level energy)",
    "lower": 0,
-   "upper": 6,
+   "upper": 8,
    "wn": 24489.12,
    "lam": 408.3446,
    "air": 408.2293,
@@ -565,11 +628,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "<sup>2</sup>H<sup>°</sup><sub>11/2</sub>",
+      "lv": 1,
       "lam": 635.73
      },
      {
-      "html": "(10244)<sup>°</sup><sub>13/2</sub>",
+      "lv": 2,
       "lam": 702.01
      }
     ]
@@ -581,7 +644,7 @@
    "freq_tier": "exp",
    "freq_src": "Weber, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Atomic-structure investigations of neutral einsteinium by laser resonance ionization', Phys. Rev. Research 4, 043053 (2022), Table I (2022); J and configuration from that table (after Wyart, Blaise & Worden 2005 and Nothhelfer et al. 2022) (measured level energy)",
    "lower": 0,
-   "upper": 5,
+   "upper": 7,
    "wn": 24338.23,
    "lam": 410.8762,
    "air": 410.7603,
@@ -594,7 +657,7 @@
     "n_open": 1,
     "open": [
      {
-      "html": "(10244)<sup>°</sup><sub>13/2</sub>",
+      "lv": 2,
       "lam": 709.52
      }
     ]
@@ -606,7 +669,7 @@
    "freq_tier": "exp",
    "freq_src": "Weber, Albrecht-Schoenzart, Block, Chhetri, Duellmann, et al., 'Atomic-structure investigations of neutral einsteinium by laser resonance ionization', Phys. Rev. Research 4, 043053 (2022), Table I (2022); J and configuration from that table (after Wyart, Blaise & Worden 2005 and Nothhelfer et al. 2022) (measured level energy)",
    "lower": 0,
-   "upper": 4,
+   "upper": 6,
    "wn": 23934.2,
    "lam": 417.8122,
    "air": 417.6944,
@@ -632,7 +695,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
    "lower": 0,
-   "upper": 3,
+   "upper": 5,
    "wn": 19367.85,
    "lam": 516.3196,
    "air": 516.1758,
@@ -656,7 +719,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
    "lower": 0,
-   "upper": 2,
+   "upper": 4,
    "wn": 19209.15,
    "lam": 520.5852,
    "air": 520.4403,
@@ -680,7 +743,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I even' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
    "lower": 0,
-   "upper": 1,
+   "upper": 3,
    "wn": 17803.09,
    "lam": 561.7002,
    "air": 561.5444,
@@ -691,11 +754,37 @@
     "n_open": 1,
     "open": [
      {
-      "html": "(10244)<sup>°</sup><sub>13/2</sub>",
+      "lv": 2,
       "lam": 1323.0
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 307.11609,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I odd' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
+   "lower": 0,
+   "upper": 2,
+   "wn": 10244.29,
+   "lam": 976.1535,
+   "air": 975.8859,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 262.59631,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy of 2002, table 'Es I odd' (253Es; emission spectra of electrodeless lamps, grating and Fourier-transform spectrometry); original analyses: Worden, Lougheed, Gutmacher & Conway, J. Opt. Soc. Am. 64, 77 (1974); Blaise & Wyart unpublished; Crosswhite & Crosswhite unpublished - originals not opened (measured level energy)",
+   "lower": 0,
+   "upper": 1,
+   "wn": 8759.27,
+   "lam": 1141.6476,
+   "air": 1141.3351,
+   "type": "E2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -812,6 +901,18 @@
      "F=4: -25882.65   F=5: -21004.10   F=6: -15343.64   F=7: -9006.96   F=8: -2117.39   F=9: +5184.13   F=10: +12739.06   F=11: +20371.20"
     ],
     [
+     "$^2H^{o}_{11/2}$",
+     "872.700",
+     "107.900",
+     "F=2: -19809.29   F=3: -17208.85   F=4: -13737.67   F=5: -9392.39   F=6: -4168.80   F=7: +1938.14   F=8: +8934.32   F=9: +16826.45"
+    ],
+    [
+     "$(10244)^{o}_{13/2}$",
+     "933.300",
+     "-5762.000",
+     "F=3: -26715.28   F=4: -21968.98   F=5: -16273.55   F=6: -9787.29   F=7: -2700.15   F=8: +4766.25   F=9: +12358.64   F=10: +19792.08"
+    ],
+    [
      "$^6I_{15/2}$",
      "2047.400",
      "-2377.400",
@@ -895,8 +996,8 @@
   }
  ],
  "validation": [
-  "levels: 13   lines < 2000 nm: 12   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 12",
+  "levels: 15   lines < 2000 nm: 14   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 14",
   "levels with a measured lifetime: 7"
  ],
  "sources": {

@@ -18,7 +18,8 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "NIST ASD has no classified Re I lines; all transitions here are attached to NIST level energies and J. Three tiers of A_s: (1) Li et al. 2020, semi-empirical (calculated branching fraction x lifetime measured in that paper), method 'theory', 40 lines from 18 levels, plus 7 lines with the older semi-empirical values of Palmeri et al. 2006 quoted in the same table; (2) Duquette, Salih & Lawler 1982 (measured lifetime x branching ratio) taken second-hand from the Kurucz line list gf7500.all (reference code DSL), method 'compilation', 46 lines including the strong 346.0 / 346.5 / 345.2 nm resonance lines and the 488.9 nm intercombination line to z 8P7/2; (3) Corliss & Bozman 1962 arc-intensity values from the same Kurucz list (code CB) for the remaining lines from the ground state and for lines to levels below 30000 cm-1, method 'compilation', low accuracy. Kurucz log gf were converted with A = 0.66702 sigma^2 gf / (2J'+1), sigma in cm-1 from the level energies (derived). The Kurucz list contains about 680 more Corliss-Bozman Re I lines between excited levels that were not entered. Wavelengths in labels are air wavelengths computed from level energies. Isotope abundances in percent; abundance_unc in percent.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -184,6 +185,21 @@
   },
   {
    "id": 7,
+   "E": 15165.89,
+   "unc": null,
+   "J": 0.5,
+   "conf": "5d5.6s2",
+   "term": "a 4P",
+   "parity": "even",
+   "g": 2.368,
+   "name": "\\mathrm{a}\\,^4P_{1/2}",
+   "plain": "5d56s2 a 4P1/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 0
+  },
+  {
+   "id": 8,
    "E": 15770.42,
    "unc": null,
    "J": 2.5,
@@ -198,7 +214,7 @@
    "col": 2
   },
   {
-   "id": 8,
+   "id": 9,
    "E": 16327.51,
    "unc": null,
    "J": 1.5,
@@ -213,7 +229,22 @@
    "col": 1
   },
   {
-   "id": 9,
+   "id": 10,
+   "E": 16619.28,
+   "unc": null,
+   "J": 4.5,
+   "conf": "5d5.6s2",
+   "term": "a 4G",
+   "parity": "even",
+   "g": 1.175,
+   "name": "\\mathrm{a}\\,^4G_{9/2}",
+   "plain": "5d56s2 a 4G9/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 4
+  },
+  {
+   "id": 11,
    "E": 17238.3,
    "unc": null,
    "J": 0.5,
@@ -228,7 +259,7 @@
    "col": 0
   },
   {
-   "id": 10,
+   "id": 12,
    "E": 17330.82,
    "unc": null,
    "J": 3.5,
@@ -243,7 +274,7 @@
    "col": 3
   },
   {
-   "id": 11,
+   "id": 13,
    "E": 19457.89,
    "unc": null,
    "J": 2.5,
@@ -258,7 +289,22 @@
    "col": 2
   },
   {
-   "id": 12,
+   "id": 14,
+   "E": 19757.91,
+   "unc": null,
+   "J": 0.5,
+   "conf": "5d5.6s2",
+   "term": "a 4D",
+   "parity": "even",
+   "g": 0.983,
+   "name": "\\mathrm{a}\\,^4D_{1/2}",
+   "plain": "5d56s2 a 4D1/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 0
+  },
+  {
+   "id": 15,
    "E": 20447.8,
    "unc": null,
    "J": 3.5,
@@ -284,7 +330,7 @@
    }
   },
   {
-   "id": 13,
+   "id": 16,
    "E": 21775.4,
    "unc": null,
    "J": 3.5,
@@ -299,7 +345,22 @@
    "col": 3
   },
   {
-   "id": 14,
+   "id": 17,
+   "E": 27384.8,
+   "unc": null,
+   "J": 0.5,
+   "conf": "5d5.6s2",
+   "term": "a 2S",
+   "parity": "even",
+   "g": null,
+   "name": "\\mathrm{a}\\,^2S_{1/2}",
+   "plain": "5d56s2 a 2S1/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 0
+  },
+  {
+   "id": 18,
    "E": 28854.18,
    "unc": null,
    "J": 2.5,
@@ -343,14 +404,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 764.31,
       "f": 0.00317,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 798.3,
       "f": 0.0022,
       "tier": "exp",
@@ -367,7 +428,7 @@
    }
   },
   {
-   "id": 15,
+   "id": 19,
    "E": 28889.72,
    "unc": null,
    "J": 3.5,
@@ -418,7 +479,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 762.24,
       "f": 0.000312,
       "tier": "exp",
@@ -428,7 +489,7 @@
    }
   },
   {
-   "id": 16,
+   "id": 20,
    "E": 28961.55,
    "unc": null,
    "J": 1.5,
@@ -465,7 +526,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 791.51,
       "f": 0.0109,
       "tier": "exp",
@@ -479,14 +540,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 758.09,
       "f": 0.00567,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 853.01,
       "f": 0.00501,
       "tier": "exp",
@@ -496,7 +557,7 @@
    }
   },
   {
-   "id": 17,
+   "id": 21,
    "E": 32591.63,
    "unc": null,
    "J": 1.5,
@@ -528,7 +589,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 594.49,
       "f": 0.0422,
       "tier": "theory",
@@ -538,7 +599,7 @@
    }
   },
   {
-   "id": 18,
+   "id": 22,
    "E": 33408.73,
    "unc": null,
    "J": 2.5,
@@ -564,7 +625,7 @@
    }
   },
   {
-   "id": 19,
+   "id": 23,
    "E": 33589.12,
    "unc": null,
    "J": 1.5,
@@ -590,7 +651,7 @@
    }
   },
   {
-   "id": 20,
+   "id": 24,
    "E": 34520.25,
    "unc": null,
    "J": 3.5,
@@ -616,7 +677,7 @@
    }
   },
   {
-   "id": 21,
+   "id": 25,
    "E": 35923.02,
    "unc": null,
    "J": 4.5,
@@ -653,7 +714,7 @@
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 537.86,
       "f": 0.0531,
       "tier": "exp",
@@ -667,7 +728,7 @@
       "dark": true
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 518.03,
       "f": 0.0208,
       "tier": "exp",
@@ -677,7 +738,7 @@
    }
   },
   {
-   "id": 22,
+   "id": 26,
    "E": 37063.65,
    "unc": null,
    "J": 1.5,
@@ -703,7 +764,7 @@
    }
   },
   {
-   "id": 23,
+   "id": 27,
    "E": 37381.41,
    "unc": null,
    "J": 2.5,
@@ -729,7 +790,7 @@
    }
   },
   {
-   "id": 24,
+   "id": 28,
    "E": 37697.66,
    "unc": null,
    "J": 2.5,
@@ -755,7 +816,7 @@
    }
   },
   {
-   "id": 25,
+   "id": 29,
    "E": 37765.65,
    "unc": null,
    "J": 3.5,
@@ -781,7 +842,7 @@
    }
   },
   {
-   "id": 26,
+   "id": 30,
    "E": 37915.87,
    "unc": null,
    "J": 1.5,
@@ -807,7 +868,7 @@
    }
   },
   {
-   "id": 27,
+   "id": 31,
    "E": 38520.74,
    "unc": null,
    "J": 3.5,
@@ -833,7 +894,7 @@
    }
   },
   {
-   "id": 28,
+   "id": 32,
    "E": 39064.92,
    "unc": null,
    "J": 2.5,
@@ -877,7 +938,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 439.8,
       "f": 0.05,
       "tier": "exp",
@@ -894,7 +955,7 @@
    }
   },
   {
-   "id": 29,
+   "id": 33,
    "E": 39670.52,
    "unc": null,
    "J": 2.5,
@@ -920,7 +981,7 @@
    }
   },
   {
-   "id": 30,
+   "id": 34,
    "E": 39844.75,
    "unc": null,
    "J": 3.5,
@@ -946,7 +1007,7 @@
    }
   },
   {
-   "id": 31,
+   "id": 35,
    "E": 40808.85,
    "unc": null,
    "J": 1.5,
@@ -972,7 +1033,7 @@
    }
   },
   {
-   "id": 32,
+   "id": 36,
    "E": 40821.83,
    "unc": null,
    "J": 2.5,
@@ -995,7 +1056,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 408.26,
       "f": 0.257,
       "tier": "exp",
@@ -1009,14 +1070,14 @@
       "dark": true
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 525.03,
       "f": 0.0693,
       "tier": "exp",
       "dark": false
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 425.69,
       "f": 0.045,
       "tier": "exp",
@@ -1026,7 +1087,7 @@
    }
   },
   {
-   "id": 33,
+   "id": 37,
    "E": 40946.53,
    "unc": null,
    "J": 3.5,
@@ -1052,7 +1113,7 @@
    }
   },
   {
-   "id": 34,
+   "id": 38,
    "E": 41163.91,
    "unc": null,
    "J": 3.5,
@@ -1078,7 +1139,7 @@
    }
   },
   {
-   "id": 35,
+   "id": 39,
    "E": 41313.02,
    "unc": null,
    "J": 2.5,
@@ -1104,7 +1165,7 @@
    }
   },
   {
-   "id": 36,
+   "id": 40,
    "E": 41453.18,
    "unc": null,
    "J": 4.5,
@@ -1120,7 +1181,7 @@
    "decay": {
     "ch": [
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 414.55,
       "f": 0.418,
       "tier": "exp",
@@ -1158,7 +1219,7 @@
    }
   },
   {
-   "id": 37,
+   "id": 41,
    "E": 41557.08,
    "unc": null,
    "J": 1.5,
@@ -1183,21 +1244,21 @@
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 411.2,
       "f": 0.15,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 396.36,
       "f": 0.0398,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 452.51,
       "f": 0.0316,
       "tier": "theory",
@@ -1228,7 +1289,7 @@
    }
   },
   {
-   "id": 38,
+   "id": 42,
    "E": 41843.85,
    "unc": null,
    "J": 3.5,
@@ -1260,7 +1321,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 383.53,
       "f": 0.144,
       "tier": "theory",
@@ -1270,7 +1331,7 @@
    }
   },
   {
-   "id": 39,
+   "id": 43,
    "E": 42254.19,
    "unc": null,
    "J": 1.5,
@@ -1312,7 +1373,7 @@
    }
   },
   {
-   "id": 40,
+   "id": 44,
    "E": 43044.02,
    "unc": null,
    "J": 2.5,
@@ -1347,7 +1408,7 @@
    }
   },
   {
-   "id": 41,
+   "id": 45,
    "E": 43341.85,
    "unc": null,
    "J": 1.5,
@@ -1379,7 +1440,7 @@
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 383.09,
       "f": 0.164,
       "tier": "theory",
@@ -1389,7 +1450,7 @@
    }
   },
   {
-   "id": 42,
+   "id": 46,
    "E": 43407.87,
    "unc": null,
    "J": 3.5,
@@ -1415,7 +1476,7 @@
    }
   },
   {
-   "id": 43,
+   "id": 47,
    "E": 43569.36,
    "unc": null,
    "J": 2.5,
@@ -1441,7 +1502,7 @@
    }
   },
   {
-   "id": 44,
+   "id": 48,
    "E": 43702.2,
    "unc": null,
    "J": 1.5,
@@ -1467,7 +1528,7 @@
    }
   },
   {
-   "id": 45,
+   "id": 49,
    "E": 43815.01,
    "unc": null,
    "J": 3.5,
@@ -1502,7 +1563,7 @@
    }
   },
   {
-   "id": 46,
+   "id": 50,
    "E": 43949.98,
    "unc": null,
    "J": 2.5,
@@ -1544,7 +1605,7 @@
    }
   },
   {
-   "id": 47,
+   "id": 51,
    "E": 44148.45,
    "unc": null,
    "J": 1.5,
@@ -1570,7 +1631,7 @@
    }
   },
   {
-   "id": 48,
+   "id": 52,
    "E": 44308.73,
    "unc": null,
    "J": 2.5,
@@ -1596,7 +1657,7 @@
    }
   },
   {
-   "id": 49,
+   "id": 53,
    "E": 44720.09,
    "unc": null,
    "J": 1.5,
@@ -1622,7 +1683,7 @@
    }
   },
   {
-   "id": 50,
+   "id": 54,
    "E": 44901.15,
    "unc": null,
    "J": 3.5,
@@ -1648,7 +1709,7 @@
    }
   },
   {
-   "id": 51,
+   "id": 55,
    "E": 45876.34,
    "unc": null,
    "J": 1.5,
@@ -1676,7 +1737,7 @@
    }
   },
   {
-   "id": 52,
+   "id": 56,
    "E": 45937.18,
    "unc": null,
    "J": 3.5,
@@ -1704,7 +1765,7 @@
    }
   },
   {
-   "id": 53,
+   "id": 57,
    "E": 46112.24,
    "unc": null,
    "J": 2.5,
@@ -1739,7 +1800,7 @@
    }
   },
   {
-   "id": 54,
+   "id": 58,
    "E": 46352.99,
    "unc": null,
    "J": 3.5,
@@ -1771,7 +1832,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 326.98,
       "f": 0.116,
       "tier": "theory",
@@ -1781,7 +1842,7 @@
    }
   },
   {
-   "id": 55,
+   "id": 59,
    "E": 46509.4,
    "unc": null,
    "J": 2.5,
@@ -1806,7 +1867,7 @@
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 342.72,
       "f": 0.205,
       "tier": "theory",
@@ -1823,7 +1884,7 @@
    }
   },
   {
-   "id": 56,
+   "id": 60,
    "E": 46649.42,
    "unc": null,
    "J": 2.5,
@@ -1858,7 +1919,7 @@
    }
   },
   {
-   "id": 57,
+   "id": 61,
    "E": 46733.38,
    "unc": null,
    "J": 1.5,
@@ -1883,7 +1944,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 328.88,
       "f": 0.165,
       "tier": "theory",
@@ -1893,7 +1954,7 @@
    }
   },
   {
-   "id": 58,
+   "id": 62,
    "E": 47101.61,
    "unc": null,
    "J": 2.5,
@@ -1925,21 +1986,21 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 319.17,
       "f": 0.128,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 335.9,
       "f": 0.122,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 324.95,
       "f": 0.115,
       "tier": "theory",
@@ -1949,7 +2010,7 @@
    }
   },
   {
-   "id": 59,
+   "id": 63,
    "E": 47358.36,
    "unc": null,
    "J": 3.5,
@@ -1984,7 +2045,7 @@
    }
   },
   {
-   "id": 60,
+   "id": 64,
    "E": 47669.01,
    "unc": null,
    "J": 3.5,
@@ -2010,7 +2071,7 @@
    }
   },
   {
-   "id": 61,
+   "id": 65,
    "E": 47932.55,
    "unc": null,
    "J": 3.5,
@@ -2036,7 +2097,7 @@
    }
   },
   {
-   "id": 62,
+   "id": 66,
    "E": 47970.82,
    "unc": null,
    "J": 2.5,
@@ -2068,14 +2129,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 310.56,
       "f": 0.164,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 316.02,
       "f": 0.156,
       "tier": "theory",
@@ -2085,7 +2146,7 @@
    }
   },
   {
-   "id": 63,
+   "id": 67,
    "E": 48184.2,
    "unc": null,
    "J": 3.5,
@@ -2111,7 +2172,7 @@
    }
   },
   {
-   "id": 64,
+   "id": 68,
    "E": 48786.35,
    "unc": null,
    "J": 3.5,
@@ -2137,7 +2198,7 @@
    }
   },
   {
-   "id": 65,
+   "id": 69,
    "E": 49540.96,
    "unc": null,
    "J": 2.5,
@@ -2163,7 +2224,7 @@
    }
   },
   {
-   "id": 66,
+   "id": 70,
    "E": 49895.57,
    "unc": null,
    "J": 1.5,
@@ -2196,7 +2257,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 66,
+   "upper": 70,
    "wn": 49895.57,
    "lam": 200.4186,
    "air": 200.3538,
@@ -2225,11 +2286,11 @@
       "lam": 283.49
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 287.94
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 293.04
      }
     ]
@@ -2241,7 +2302,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 65,
+   "upper": 69,
    "wn": 49540.96,
    "lam": 201.8532,
    "air": 201.7881,
@@ -2286,7 +2347,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 64,
+   "upper": 68,
    "wn": 48786.35,
    "lam": 204.9754,
    "air": 204.9097,
@@ -2331,7 +2392,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 63,
+   "upper": 67,
    "wn": 48184.2,
    "lam": 207.5369,
    "air": 207.4708,
@@ -2376,7 +2437,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 62,
+   "upper": 66,
    "wn": 47970.82,
    "lam": 208.4601,
    "air": 208.3937,
@@ -2407,14 +2468,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 310.56,
       "f": 0.171,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 316.02,
       "f": 0.163,
       "tier": "theory",
@@ -2440,7 +2501,7 @@
       "lam": 303.83
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 326.37
      }
     ],
@@ -2458,13 +2519,13 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.164,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.156,
       "tier": "theory",
       "at": "dark"
@@ -2478,7 +2539,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 61,
+   "upper": 65,
    "wn": 47932.55,
    "lam": 208.6265,
    "air": 208.5601,
@@ -2523,7 +2584,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 60,
+   "upper": 64,
    "wn": 47669.01,
    "lam": 209.7799,
    "air": 209.7133,
@@ -2568,7 +2629,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 59,
+   "upper": 63,
    "wn": 47358.36,
    "lam": 211.156,
    "air": 211.0891,
@@ -2621,7 +2682,7 @@
       "lam": 305.47
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 316.58
      }
     ],
@@ -2648,7 +2709,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 57,
+   "upper": 61,
    "wn": 46733.38,
    "lam": 213.9798,
    "air": 213.9124,
@@ -2675,7 +2736,7 @@
     "n": 2.57,
     "ch": [
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 328.88,
       "f": 0.165,
       "tier": "theory",
@@ -2697,11 +2758,11 @@
       "lam": 311.41
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 316.78
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 322.97
      }
     ],
@@ -2713,7 +2774,7 @@
       "at": "ground"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.165,
       "tier": "theory",
       "at": "dark"
@@ -2728,7 +2789,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 56,
+   "upper": 60,
    "wn": 46649.42,
    "lam": 214.3649,
    "air": 214.2974,
@@ -2781,7 +2842,7 @@
       "lam": 316.54
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 323.84
      }
     ],
@@ -2808,7 +2869,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 55,
+   "upper": 59,
    "wn": 46509.4,
    "lam": 215.0103,
    "air": 214.9427,
@@ -2835,7 +2896,7 @@
     "n": 1.83,
     "ch": [
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 342.72,
       "f": 0.205,
       "tier": "theory",
@@ -2868,7 +2929,7 @@
       "lam": 313.6
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 325.32
      }
     ],
@@ -2880,7 +2941,7 @@
       "at": "ground"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.205,
       "tier": "theory",
       "at": "dark"
@@ -2901,7 +2962,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 54,
+   "upper": 58,
    "wn": 46352.99,
    "lam": 215.7358,
    "air": 215.668,
@@ -2935,7 +2996,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 326.98,
       "f": 0.116,
       "tier": "theory",
@@ -2961,7 +3022,7 @@
       "lam": 319.54
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 336.32
      }
     ],
@@ -2979,7 +3040,7 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.116,
       "tier": "theory",
       "at": "dark"
@@ -2994,7 +3055,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 53,
+   "upper": 57,
    "wn": 46112.24,
    "lam": 216.8622,
    "air": 216.7941,
@@ -3047,7 +3108,7 @@
       "lam": 322.02
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 329.58
      }
     ],
@@ -3074,7 +3135,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 52,
+   "upper": 56,
    "wn": 45937.18,
    "lam": 217.6886,
    "air": 217.6204,
@@ -3138,7 +3199,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 51,
+   "upper": 55,
    "wn": 45876.34,
    "lam": 217.9773,
    "air": 217.909,
@@ -3177,11 +3238,11 @@
       "lam": 319.95
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 325.62
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 332.16
      }
     ],
@@ -3202,7 +3263,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 50,
+   "upper": 54,
    "wn": 44901.15,
    "lam": 222.7114,
    "air": 222.6422,
@@ -3247,7 +3308,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 49,
+   "upper": 53,
    "wn": 44720.09,
    "lam": 223.6131,
    "air": 223.5437,
@@ -3276,11 +3337,11 @@
       "lam": 332.24
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 338.36
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 345.43
      }
     ]
@@ -3292,7 +3353,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 48,
+   "upper": 52,
    "wn": 44308.73,
    "lam": 225.6892,
    "air": 225.6193,
@@ -3337,7 +3398,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 47,
+   "upper": 51,
    "wn": 44148.45,
    "lam": 226.5085,
    "air": 226.4385,
@@ -3366,11 +3427,11 @@
       "lam": 338.67
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 345.04
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 352.39
      }
     ]
@@ -3382,7 +3443,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 46,
+   "upper": 50,
    "wn": 43949.98,
    "lam": 227.5314,
    "air": 227.4611,
@@ -3438,11 +3499,11 @@
       "lam": 346.12
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 354.87
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 362.02
      }
     ],
@@ -3475,7 +3536,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 45,
+   "upper": 49,
    "wn": 43815.01,
    "lam": 228.2323,
    "air": 228.1619,
@@ -3528,7 +3589,7 @@
       "lam": 347.74
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 356.58
      }
     ],
@@ -3555,7 +3616,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 44,
+   "upper": 48,
    "wn": 43702.2,
    "lam": 228.8214,
    "air": 228.7509,
@@ -3584,11 +3645,11 @@
       "lam": 343.87
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 350.43
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 358.02
      }
     ]
@@ -3600,7 +3661,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 43,
+   "upper": 47,
    "wn": 43569.36,
    "lam": 229.5191,
    "air": 229.4484,
@@ -3645,7 +3706,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 42,
+   "upper": 46,
    "wn": 43407.87,
    "lam": 230.373,
    "air": 230.3021,
@@ -3690,7 +3751,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 41,
+   "upper": 45,
    "wn": 43341.85,
    "lam": 230.7239,
    "air": 230.6529,
@@ -3721,7 +3782,7 @@
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 383.09,
       "f": 0.21,
       "tier": "theory",
@@ -3739,15 +3800,15 @@
       "lam": 338.8
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 354.91
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 362.69
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 370.17
      }
     ],
@@ -3765,7 +3826,7 @@
       "at": "ground"
      },
      {
-      "lv": 9,
+      "lv": 11,
       "p": 0.164,
       "tier": "theory",
       "at": "dark"
@@ -3779,7 +3840,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 40,
+   "upper": 44,
    "wn": 43044.02,
    "lam": 232.3203,
    "air": 232.249,
@@ -3829,7 +3890,7 @@
       "lam": 357.32
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 366.65
      }
     ],
@@ -3856,7 +3917,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 39,
+   "upper": 43,
    "wn": 42254.19,
    "lam": 236.6629,
    "air": 236.5906,
@@ -3904,19 +3965,19 @@
       "lam": 361.89
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 369.16
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 377.59
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 385.7
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 399.75
      }
     ],
@@ -3949,7 +4010,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 38,
+   "upper": 42,
    "wn": 41843.85,
    "lam": 238.9837,
    "air": 238.9109,
@@ -3980,7 +4041,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 383.53,
       "f": 0.149,
       "tier": "theory",
@@ -4006,7 +4067,7 @@
       "lam": 373.33
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 396.44
      }
     ],
@@ -4024,7 +4085,7 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.144,
       "tier": "theory",
       "at": "dark"
@@ -4038,7 +4099,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 37,
+   "upper": 41,
    "wn": 41557.08,
    "lam": 240.6329,
    "air": 240.5597,
@@ -4065,21 +4126,21 @@
     "n": 3.02,
     "ch": [
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 411.2,
       "f": 0.15,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 396.36,
       "f": 0.0398,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 452.51,
       "f": 0.0316,
       "tier": "theory",
@@ -4110,15 +4171,15 @@
     "n_open": 19,
     "open": [
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 378.91
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 387.8
      },
      {
-      "html": "a <sup>4</sup>D<sub>1/2</sub>",
+      "lv": 14,
       "lam": 458.73
      },
      {
@@ -4138,19 +4199,19 @@
       "at": "ground"
      },
      {
-      "lv": 9,
+      "lv": 11,
       "p": 0.15,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.0398,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 11,
+      "lv": 13,
       "p": 0.0316,
       "tier": "theory",
       "at": "open"
@@ -4178,7 +4239,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 35,
+   "upper": 39,
    "wn": 41313.02,
    "lam": 242.0544,
    "air": 241.9809,
@@ -4223,7 +4284,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 34,
+   "upper": 38,
    "wn": 41163.91,
    "lam": 242.9312,
    "air": 242.8575,
@@ -4268,7 +4329,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 33,
+   "upper": 37,
    "wn": 40946.53,
    "lam": 244.2209,
    "air": 244.1469,
@@ -4313,7 +4374,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 31,
+   "upper": 35,
    "wn": 40808.85,
    "lam": 245.0449,
    "air": 244.9707,
@@ -4342,11 +4403,11 @@
       "lam": 381.86
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 389.97
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 399.39
      }
     ]
@@ -4358,7 +4419,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 30,
+   "upper": 34,
    "wn": 39844.75,
    "lam": 250.9741,
    "air": 250.8985,
@@ -4403,7 +4464,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 29,
+   "upper": 33,
    "wn": 39670.52,
    "lam": 252.0764,
    "air": 252.0005,
@@ -4448,7 +4509,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 28,
+   "upper": 32,
    "wn": 39064.92,
    "lam": 255.9841,
    "air": 255.9074,
@@ -4490,7 +4551,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 439.8,
       "f": 0.05,
       "tier": "exp",
@@ -4511,15 +4572,15 @@
       "lam": 416.55
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 429.29
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 460.11
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 510.02
      },
      {
@@ -4553,7 +4614,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.05,
       "tier": "exp",
       "at": "dark"
@@ -4573,7 +4634,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 27,
+   "upper": 31,
    "wn": 38520.74,
    "lam": 259.6004,
    "air": 259.5228,
@@ -4618,7 +4679,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 26,
+   "upper": 30,
    "wn": 37915.87,
    "lam": 263.7418,
    "air": 263.6632,
@@ -4647,11 +4708,11 @@
       "lam": 429.29
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 439.56
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 451.56
      }
     ]
@@ -4663,7 +4724,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 25,
+   "upper": 29,
    "wn": 37765.65,
    "lam": 264.7909,
    "air": 264.7121,
@@ -4708,7 +4769,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 24,
+   "upper": 28,
    "wn": 37697.66,
    "lam": 265.2685,
    "air": 265.1895,
@@ -4753,7 +4814,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 23,
+   "upper": 27,
    "wn": 37381.41,
    "lam": 267.5126,
    "air": 267.4332,
@@ -4798,7 +4859,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 22,
+   "upper": 26,
    "wn": 37063.65,
    "lam": 269.8061,
    "air": 269.7261,
@@ -4827,11 +4888,11 @@
       "lam": 445.59
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 456.67
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 469.63
      }
     ]
@@ -4843,7 +4904,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 58,
+   "upper": 62,
    "wn": 35517.65,
    "lam": 281.5502,
    "air": 281.4673,
@@ -4877,21 +4938,21 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 319.17,
       "f": 0.128,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 335.9,
       "f": 0.122,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 324.95,
       "f": 0.115,
       "tier": "theory",
@@ -4917,7 +4978,7 @@
       "lam": 312.08
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 361.75
      }
     ],
@@ -4935,19 +4996,19 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.128,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.122,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.115,
       "tier": "theory",
       "at": "dark"
@@ -4962,7 +5023,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 20,
+   "upper": 24,
    "wn": 34520.25,
    "lam": 289.685,
    "air": 289.6002,
@@ -5007,7 +5068,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 19,
+   "upper": 23,
    "wn": 33589.12,
    "lam": 297.7155,
    "air": 297.6286,
@@ -5036,11 +5097,11 @@
       "lam": 527.21
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 542.79
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 561.21
      }
     ]
@@ -5052,7 +5113,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 18,
+   "upper": 22,
    "wn": 33408.73,
    "lam": 299.323,
    "air": 299.2357,
@@ -5097,7 +5158,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 62,
+   "upper": 66,
    "wn": 33349.36,
    "lam": 299.8558,
    "air": 299.7684,
@@ -5131,14 +5192,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 310.56,
       "f": 0.171,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 316.02,
       "f": 0.163,
       "tier": "theory",
@@ -5164,7 +5225,7 @@
       "lam": 303.83
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 326.37
      }
     ],
@@ -5182,13 +5243,13 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.164,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.156,
       "tier": "theory",
       "at": "dark"
@@ -5202,7 +5263,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 58,
+   "upper": 62,
    "wn": 32884.75,
    "lam": 304.0923,
    "air": 304.0039,
@@ -5236,21 +5297,21 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 319.17,
       "f": 0.128,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 335.9,
       "f": 0.122,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 324.95,
       "f": 0.115,
       "tier": "theory",
@@ -5276,7 +5337,7 @@
       "lam": 312.08
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 361.75
      }
     ],
@@ -5294,19 +5355,19 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.128,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.122,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.115,
       "tier": "theory",
       "at": "dark"
@@ -5321,7 +5382,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 17,
+   "upper": 21,
    "wn": 32591.63,
    "lam": 306.8272,
    "air": 306.7381,
@@ -5355,7 +5416,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 594.49,
       "f": 0.0422,
       "tier": "theory",
@@ -5373,15 +5434,15 @@
       "lam": 556.48
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 573.86
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 614.85
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 651.32
      }
     ],
@@ -5399,7 +5460,7 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.0422,
       "tier": "theory",
       "at": "dark"
@@ -5414,7 +5475,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 56,
+   "upper": 60,
    "wn": 32432.56,
    "lam": 308.3321,
    "air": 308.2426,
@@ -5467,7 +5528,7 @@
       "lam": 316.54
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 323.84
      }
     ],
@@ -5494,7 +5555,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 6,
-   "upper": 59,
+   "upper": 63,
    "wn": 32300.17,
    "lam": 309.5959,
    "air": 309.506,
@@ -5547,7 +5608,7 @@
       "lam": 305.47
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 316.58
      }
     ],
@@ -5573,8 +5634,8 @@
    "freq": 965.34371,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 7,
-   "upper": 62,
+   "lower": 8,
+   "upper": 66,
    "wn": 32200.4,
    "lam": 310.5551,
    "air": 310.4651,
@@ -5615,7 +5676,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 316.02,
       "f": 0.163,
       "tier": "theory",
@@ -5641,7 +5702,7 @@
       "lam": 303.83
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 326.37
      }
     ],
@@ -5659,13 +5720,13 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.164,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.156,
       "tier": "theory",
       "at": "dark"
@@ -5679,7 +5740,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 54,
+   "upper": 58,
    "wn": 32136.13,
    "lam": 311.1762,
    "air": 311.086,
@@ -5713,7 +5774,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 326.98,
       "f": 0.116,
       "tier": "theory",
@@ -5739,7 +5800,7 @@
       "lam": 319.54
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 336.32
      }
     ],
@@ -5757,7 +5818,7 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.116,
       "tier": "theory",
       "at": "dark"
@@ -5772,7 +5833,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 45,
+   "upper": 49,
    "wn": 32060.49,
    "lam": 311.9104,
    "air": 311.82,
@@ -5825,7 +5886,7 @@
       "lam": 347.74
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 356.58
      }
     ],
@@ -5851,8 +5912,8 @@
    "freq": 948.64257,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 8,
-   "upper": 62,
+   "lower": 9,
+   "upper": 66,
    "wn": 31643.31,
    "lam": 316.0226,
    "air": 315.9311,
@@ -5893,7 +5954,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 310.56,
       "f": 0.171,
       "tier": "theory",
@@ -5919,7 +5980,7 @@
       "lam": 303.83
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 326.37
      }
     ],
@@ -5937,13 +5998,13 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.164,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.156,
       "tier": "theory",
       "at": "dark"
@@ -5957,7 +6018,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 53,
+   "upper": 57,
    "wn": 31490.78,
    "lam": 317.5533,
    "air": 317.4614,
@@ -6010,7 +6071,7 @@
       "lam": 322.02
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 329.58
      }
     ],
@@ -6037,7 +6098,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 6,
-   "upper": 55,
+   "upper": 59,
    "wn": 31451.21,
    "lam": 317.9528,
    "air": 317.8608,
@@ -6071,7 +6132,7 @@
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 342.72,
       "f": 0.205,
       "tier": "theory",
@@ -6097,7 +6158,7 @@
       "lam": 313.6
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 325.32
      }
     ],
@@ -6109,7 +6170,7 @@
       "at": "ground"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.205,
       "tier": "theory",
       "at": "dark"
@@ -6129,8 +6190,8 @@
    "freq": 939.28545,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 7,
-   "upper": 58,
+   "lower": 8,
+   "upper": 62,
    "wn": 31331.19,
    "lam": 319.1708,
    "air": 319.0785,
@@ -6171,14 +6232,14 @@
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 335.9,
       "f": 0.122,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 324.95,
       "f": 0.115,
       "tier": "theory",
@@ -6204,7 +6265,7 @@
       "lam": 312.08
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 361.75
      }
     ],
@@ -6222,19 +6283,19 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.128,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.122,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.115,
       "tier": "theory",
       "at": "dark"
@@ -6248,8 +6309,8 @@
    "freq": 922.58431,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 8,
-   "upper": 58,
+   "lower": 9,
+   "upper": 62,
    "wn": 30774.1,
    "lam": 324.9486,
    "air": 324.8549,
@@ -6290,14 +6351,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 319.17,
       "f": 0.128,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 335.9,
       "f": 0.122,
       "tier": "theory",
@@ -6323,7 +6384,7 @@
       "lam": 312.08
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 361.75
      }
     ],
@@ -6341,19 +6402,19 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.128,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.122,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.115,
       "tier": "theory",
       "at": "dark"
@@ -6368,7 +6429,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 39,
+   "upper": 43,
    "wn": 30670.23,
    "lam": 326.0491,
    "air": 325.9551,
@@ -6416,19 +6477,19 @@
       "lam": 361.89
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 369.16
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 377.59
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 385.7
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 399.75
      }
     ],
@@ -6460,8 +6521,8 @@
    "freq": 916.84238,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 7,
-   "upper": 54,
+   "lower": 8,
+   "upper": 58,
    "wn": 30582.57,
    "lam": 326.9836,
    "air": 326.8894,
@@ -6521,7 +6582,7 @@
       "lam": 319.54
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 336.32
      }
     ],
@@ -6539,7 +6600,7 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.116,
       "tier": "theory",
       "at": "dark"
@@ -6553,8 +6614,8 @@
    "freq": 911.54505,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 8,
-   "upper": 57,
+   "lower": 9,
+   "upper": 61,
    "wn": 30405.87,
    "lam": 328.8839,
    "air": 328.7891,
@@ -6603,11 +6664,11 @@
       "lam": 311.41
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 316.78
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 322.97
      }
     ],
@@ -6619,7 +6680,7 @@
       "at": "ground"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.165,
       "tier": "theory",
       "at": "dark"
@@ -6634,7 +6695,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 38,
+   "upper": 42,
    "wn": 30089.33,
    "lam": 332.3437,
    "air": 332.2481,
@@ -6668,7 +6729,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 383.53,
       "f": 0.149,
       "tier": "theory",
@@ -6694,7 +6755,7 @@
       "lam": 373.33
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 396.44
      }
     ],
@@ -6712,7 +6773,7 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.144,
       "tier": "theory",
       "at": "dark"
@@ -6725,8 +6786,8 @@
    "freq": 892.50583,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 10,
-   "upper": 58,
+   "lower": 12,
+   "upper": 62,
    "wn": 29770.79,
    "lam": 335.8997,
    "air": 335.8032,
@@ -6767,14 +6828,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 319.17,
       "f": 0.128,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 324.95,
       "f": 0.115,
       "tier": "theory",
@@ -6800,7 +6861,7 @@
       "lam": 312.08
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 361.75
      }
     ],
@@ -6818,19 +6879,19 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.128,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.122,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.115,
       "tier": "theory",
       "at": "dark"
@@ -6845,7 +6906,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 46,
+   "upper": 50,
    "wn": 29733.12,
    "lam": 336.3253,
    "air": 336.2287,
@@ -6901,11 +6962,11 @@
       "lam": 346.12
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 354.87
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 362.02
      }
     ],
@@ -6938,7 +6999,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 46,
+   "upper": 50,
    "wn": 29328.52,
    "lam": 340.965,
    "air": 340.8672,
@@ -6994,11 +7055,11 @@
       "lam": 346.12
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 354.87
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 362.02
      }
     ],
@@ -7030,8 +7091,8 @@
    "freq": 874.75182,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 10,
-   "upper": 55,
+   "lower": 12,
+   "upper": 59,
    "wn": 29178.58,
    "lam": 342.7172,
    "air": 342.6189,
@@ -7091,7 +7152,7 @@
       "lam": 313.6
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 325.32
      }
     ],
@@ -7103,7 +7164,7 @@
       "at": "ground"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.205,
       "tier": "theory",
       "at": "dark"
@@ -7124,7 +7185,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 16,
+   "upper": 20,
    "wn": 28961.55,
    "lam": 345.2854,
    "air": 345.1865,
@@ -7159,7 +7220,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 791.51,
       "f": 0.0109,
       "tier": "exp",
@@ -7173,14 +7234,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 758.09,
       "f": 0.00567,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 853.01,
       "f": 0.00501,
       "tier": "exp",
@@ -7190,15 +7251,15 @@
     "n_open": 12,
     "open": [
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 724.87
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 1052.2
      },
      {
-      "html": "a <sup>4</sup>D<sub>1/2</sub>",
+      "lv": 14,
       "lam": 1086.5
      },
      {
@@ -7230,7 +7291,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.0109,
       "tier": "exp",
       "at": "dark"
@@ -7242,7 +7303,7 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.00567,
       "tier": "exp",
       "at": "dark"
@@ -7257,7 +7318,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 15,
+   "upper": 19,
    "wn": 28889.72,
    "lam": 346.1439,
    "air": 346.0448,
@@ -7306,7 +7367,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 762.24,
       "f": 0.000312,
       "tier": "exp",
@@ -7320,19 +7381,19 @@
       "lam": 722.99
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 814.97
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 865.13
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 1060.2
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 1405.6
      }
     ],
@@ -7368,7 +7429,7 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.000312,
       "tier": "exp",
       "at": "dark"
@@ -7382,7 +7443,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 14,
+   "upper": 18,
    "wn": 28854.18,
    "lam": 346.5702,
    "air": 346.471,
@@ -7424,14 +7485,14 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 764.31,
       "f": 0.00317,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 798.3,
       "f": 0.0022,
       "tier": "exp",
@@ -7452,11 +7513,11 @@
       "lam": 579.03
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 867.8
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 1064.2
      },
      {
@@ -7464,7 +7525,7 @@
       "lam": 1194.4
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 1412.7
      }
     ],
@@ -7494,13 +7555,13 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.00317,
       "tier": "exp",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.0022,
       "tier": "exp",
       "at": "dark"
@@ -7515,7 +7576,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 40,
+   "upper": 44,
    "wn": 28827.16,
    "lam": 346.8951,
    "air": 346.7958,
@@ -7568,7 +7629,7 @@
       "lam": 357.32
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 366.65
      }
     ],
@@ -7595,7 +7656,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 41,
+   "upper": 45,
    "wn": 28720.39,
    "lam": 348.1847,
    "air": 348.085,
@@ -7629,7 +7690,7 @@
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 383.09,
       "f": 0.21,
       "tier": "theory",
@@ -7647,15 +7708,15 @@
       "lam": 338.8
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 354.91
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 362.69
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 370.17
      }
     ],
@@ -7673,7 +7734,7 @@
       "at": "ground"
      },
      {
-      "lv": 9,
+      "lv": 11,
       "p": 0.164,
       "tier": "theory",
       "at": "dark"
@@ -7687,7 +7748,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 39,
+   "upper": 43,
    "wn": 28428.07,
    "lam": 351.765,
    "air": 351.6644,
@@ -7735,19 +7796,19 @@
       "lam": 361.89
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 369.16
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 377.59
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 385.7
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 399.75
      }
     ],
@@ -7780,7 +7841,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 28,
+   "upper": 32,
    "wn": 27480.96,
    "lam": 363.8883,
    "air": 363.7846,
@@ -7822,7 +7883,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 439.8,
       "f": 0.05,
       "tier": "exp",
@@ -7843,15 +7904,15 @@
       "lam": 416.55
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 429.29
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 460.11
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 510.02
      },
      {
@@ -7885,7 +7946,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.05,
       "tier": "exp",
       "at": "dark"
@@ -7900,12 +7961,25 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 820.97565,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 17,
+   "wn": 27384.8,
+   "lam": 365.1661,
+   "air": 365.0621,
+   "type": "E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 816.52433,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 36,
+   "upper": 40,
    "wn": 27236.32,
    "lam": 367.1568,
    "air": 367.0523,
@@ -7926,7 +8000,7 @@
     "n": 1.2,
     "ch": [
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 414.55,
       "f": 0.418,
       "tier": "exp",
@@ -7961,11 +8035,11 @@
       "lam": 336.72
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 402.68
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 508.19
      },
      {
@@ -7979,7 +8053,7 @@
     ],
     "end": [
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.418,
       "tier": "exp",
       "at": "dark"
@@ -8017,7 +8091,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 32,
+   "upper": 36,
    "wn": 26995.71,
    "lam": 370.4292,
    "air": 370.3238,
@@ -8038,7 +8112,7 @@
     "n": 2.02,
     "ch": [
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 408.26,
       "f": 0.257,
       "tier": "exp",
@@ -8052,14 +8126,14 @@
       "dark": true
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 525.03,
       "f": 0.0693,
       "tier": "exp",
       "dark": false
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 425.69,
       "f": 0.045,
       "tier": "exp",
@@ -8085,7 +8159,7 @@
       "lam": 388.14
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 399.18
      }
     ],
@@ -8097,7 +8171,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.257,
       "tier": "exp",
       "at": "dark"
@@ -8109,13 +8183,13 @@
       "at": "dark"
      },
      {
-      "lv": 13,
+      "lv": 16,
       "p": 0.0693,
       "tier": "exp",
       "at": "open"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.045,
       "tier": "exp",
       "at": "dark"
@@ -8129,7 +8203,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 37,
+   "upper": 41,
    "wn": 26935.62,
    "lam": 371.2556,
    "air": 371.15,
@@ -8160,21 +8234,21 @@
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 411.2,
       "f": 0.15,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 396.36,
       "f": 0.0398,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 452.51,
       "f": 0.0316,
       "tier": "theory",
@@ -8198,15 +8272,15 @@
     "n_open": 19,
     "open": [
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 378.91
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 387.8
      },
      {
-      "html": "a <sup>4</sup>D<sub>1/2</sub>",
+      "lv": 14,
       "lam": 458.73
      },
      {
@@ -8226,19 +8300,19 @@
       "at": "ground"
      },
      {
-      "lv": 9,
+      "lv": 11,
       "p": 0.15,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.0398,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 11,
+      "lv": 13,
       "p": 0.0316,
       "tier": "theory",
       "at": "open"
@@ -8266,7 +8340,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 6,
-   "upper": 36,
+   "upper": 40,
    "wn": 26394.99,
    "lam": 378.8598,
    "air": 378.7522,
@@ -8287,7 +8361,7 @@
     "n": 1.61,
     "ch": [
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 414.55,
       "f": 0.418,
       "tier": "exp",
@@ -8322,11 +8396,11 @@
       "lam": 336.72
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 402.68
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 508.19
      },
      {
@@ -8340,7 +8414,7 @@
     ],
     "end": [
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.418,
       "tier": "exp",
       "at": "dark"
@@ -8378,7 +8452,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 32,
+   "upper": 36,
    "wn": 26200.37,
    "lam": 381.674,
    "air": 381.5657,
@@ -8406,21 +8480,21 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 408.26,
       "f": 0.257,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 525.03,
       "f": 0.0693,
       "tier": "exp",
       "dark": false
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 425.69,
       "f": 0.045,
       "tier": "exp",
@@ -8446,7 +8520,7 @@
       "lam": 388.14
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 399.18
      }
     ],
@@ -8458,7 +8532,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.257,
       "tier": "exp",
       "at": "dark"
@@ -8470,13 +8544,13 @@
       "at": "dark"
      },
      {
-      "lv": 13,
+      "lv": 16,
       "p": 0.0693,
       "tier": "exp",
       "at": "open"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.045,
       "tier": "exp",
       "at": "dark"
@@ -8489,8 +8563,8 @@
    "freq": 782.56474,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 9,
-   "upper": 41,
+   "lower": 11,
+   "upper": 45,
    "wn": 26103.55,
    "lam": 383.0897,
    "air": 382.981,
@@ -8542,15 +8616,15 @@
       "lam": 338.8
      },
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 354.91
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 362.69
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 370.17
      }
     ],
@@ -8568,7 +8642,7 @@
       "at": "ground"
      },
      {
-      "lv": 9,
+      "lv": 11,
       "p": 0.164,
       "tier": "theory",
       "at": "dark"
@@ -8581,8 +8655,8 @@
    "freq": 781.66177,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 7,
-   "upper": 38,
+   "lower": 8,
+   "upper": 42,
    "wn": 26073.43,
    "lam": 383.5322,
    "air": 383.4234,
@@ -8642,7 +8716,7 @@
       "lam": 373.33
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 396.44
      }
     ],
@@ -8660,7 +8734,7 @@
       "at": "ground"
      },
      {
-      "lv": 7,
+      "lv": 8,
       "p": 0.144,
       "tier": "theory",
       "at": "dark"
@@ -8674,7 +8748,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 28,
+   "upper": 32,
    "wn": 25238.8,
    "lam": 396.2154,
    "air": 396.1033,
@@ -8716,7 +8790,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 439.8,
       "f": 0.05,
       "tier": "exp",
@@ -8737,15 +8811,15 @@
       "lam": 416.55
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 429.29
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 460.11
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 510.02
      },
      {
@@ -8779,7 +8853,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.05,
       "tier": "exp",
       "at": "dark"
@@ -8798,8 +8872,8 @@
    "freq": 756.36348,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 8,
-   "upper": 37,
+   "lower": 9,
+   "upper": 41,
    "wn": 25229.57,
    "lam": 396.3603,
    "air": 396.2482,
@@ -8830,14 +8904,14 @@
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 411.2,
       "f": 0.15,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 452.51,
       "f": 0.0316,
       "tier": "theory",
@@ -8868,15 +8942,15 @@
     "n_open": 19,
     "open": [
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 378.91
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 387.8
      },
      {
-      "html": "a <sup>4</sup>D<sub>1/2</sub>",
+      "lv": 14,
       "lam": 458.73
      },
      {
@@ -8896,19 +8970,19 @@
       "at": "ground"
      },
      {
-      "lv": 9,
+      "lv": 11,
       "p": 0.15,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.0398,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 11,
+      "lv": 13,
       "p": 0.0316,
       "tier": "theory",
       "at": "open"
@@ -8935,8 +9009,8 @@
    "freq": 734.32124,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 8,
-   "upper": 32,
+   "lower": 9,
+   "upper": 36,
    "wn": 24494.32,
    "lam": 408.2579,
    "air": 408.1427,
@@ -8971,14 +9045,14 @@
       "dark": true
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 525.03,
       "f": 0.0693,
       "tier": "exp",
       "dark": false
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 425.69,
       "f": 0.045,
       "tier": "exp",
@@ -9004,7 +9078,7 @@
       "lam": 388.14
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 399.18
      }
     ],
@@ -9016,7 +9090,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.257,
       "tier": "exp",
       "at": "dark"
@@ -9028,13 +9102,13 @@
       "at": "dark"
      },
      {
-      "lv": 13,
+      "lv": 16,
       "p": 0.0693,
       "tier": "exp",
       "at": "open"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.045,
       "tier": "exp",
       "at": "dark"
@@ -9047,8 +9121,8 @@
    "freq": 729.05868,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 9,
-   "upper": 37,
+   "lower": 11,
+   "upper": 41,
    "wn": 24318.78,
    "lam": 411.2048,
    "air": 411.0888,
@@ -9082,14 +9156,14 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 396.36,
       "f": 0.0398,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 11,
+      "lv": 13,
       "lam": 452.51,
       "f": 0.0316,
       "tier": "theory",
@@ -9120,15 +9194,15 @@
     "n_open": 19,
     "open": [
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 378.91
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 387.8
      },
      {
-      "html": "a <sup>4</sup>D<sub>1/2</sub>",
+      "lv": 14,
       "lam": 458.73
      },
      {
@@ -9148,19 +9222,19 @@
       "at": "ground"
      },
      {
-      "lv": 9,
+      "lv": 11,
       "p": 0.15,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.0398,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 11,
+      "lv": 13,
       "p": 0.0316,
       "tier": "theory",
       "at": "open"
@@ -9188,7 +9262,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 21,
+   "upper": 25,
    "wn": 24168.5,
    "lam": 413.7617,
    "air": 413.645,
@@ -9223,7 +9297,7 @@
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 537.86,
       "f": 0.0531,
       "tier": "exp",
@@ -9237,7 +9311,7 @@
       "dark": true
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 518.03,
       "f": 0.0208,
       "tier": "exp",
@@ -9247,7 +9321,7 @@
     "n_open": 17,
     "open": [
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 706.83
      },
      {
@@ -9287,7 +9361,7 @@
       "at": "dark"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.0531,
       "tier": "exp",
       "at": "dark"
@@ -9299,7 +9373,7 @@
       "at": "dark"
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "p": 0.0208,
       "tier": "exp",
       "at": "dark"
@@ -9312,8 +9386,8 @@
    "freq": 723.17016,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 10,
-   "upper": 36,
+   "lower": 12,
+   "upper": 40,
    "wn": 24122.36,
    "lam": 414.5531,
    "air": 414.4363,
@@ -9369,11 +9443,11 @@
       "lam": 336.72
      },
      {
-      "html": "a <sup>4</sup>G<sub>9/2</sub>",
+      "lv": 10,
       "lam": 402.68
      },
      {
-      "lv": 13,
+      "lv": 16,
       "lam": 508.19
      },
      {
@@ -9387,7 +9461,7 @@
     ],
     "end": [
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.418,
       "tier": "exp",
       "at": "dark"
@@ -9424,8 +9498,8 @@
    "freq": 662.51705,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 11,
-   "upper": 37,
+   "lower": 13,
+   "upper": 41,
    "wn": 22099.19,
    "lam": 452.5053,
    "air": 452.3784,
@@ -9456,14 +9530,14 @@
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 11,
       "lam": 411.2,
       "f": 0.15,
       "tier": "theory",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 396.36,
       "f": 0.0398,
       "tier": "theory",
@@ -9494,15 +9568,15 @@
     "n_open": 19,
     "open": [
      {
-      "html": "a <sup>4</sup>P<sub>1/2</sub>",
+      "lv": 7,
       "lam": 378.91
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 387.8
      },
      {
-      "html": "a <sup>4</sup>D<sub>1/2</sub>",
+      "lv": 14,
       "lam": 458.73
      },
      {
@@ -9522,19 +9596,19 @@
       "at": "ground"
      },
      {
-      "lv": 9,
+      "lv": 11,
       "p": 0.15,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.0398,
       "tier": "theory",
       "at": "dark"
      },
      {
-      "lv": 11,
+      "lv": 13,
       "p": 0.0316,
       "tier": "theory",
       "at": "open"
@@ -9562,7 +9636,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 12,
+   "upper": 15,
    "wn": 20447.8,
    "lam": 489.0502,
    "air": 488.9136,
@@ -9602,12 +9676,25 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 592.32724,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 14,
+   "wn": 19757.91,
+   "lam": 506.1264,
+   "air": 505.9853,
+   "type": "E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 570.99761,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
-   "lower": 13,
-   "upper": 32,
+   "lower": 16,
+   "upper": 36,
    "wn": 19046.43,
    "lam": 525.0328,
    "air": 524.8867,
@@ -9635,7 +9722,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 9,
       "lam": 408.26,
       "f": 0.257,
       "tier": "exp",
@@ -9649,7 +9736,7 @@
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 12,
       "lam": 425.69,
       "f": 0.045,
       "tier": "exp",
@@ -9675,7 +9762,7 @@
       "lam": 388.14
      },
      {
-      "lv": 7,
+      "lv": 8,
       "lam": 399.18
      }
     ],
@@ -9687,7 +9774,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 9,
       "p": 0.257,
       "tier": "exp",
       "at": "dark"
@@ -9699,19 +9786,175 @@
       "at": "dark"
      },
      {
-      "lv": 13,
+      "lv": 16,
       "p": 0.0693,
       "tier": "exp",
       "at": "open"
      },
      {
-      "lv": 10,
+      "lv": 12,
       "p": 0.045,
       "tier": "exp",
       "at": "dark"
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 519.56491,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 12,
+   "wn": 17330.82,
+   "lam": 577.0067,
+   "air": 576.8468,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 516.79123,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 11,
+   "wn": 17238.3,
+   "lam": 580.1036,
+   "air": 579.9428,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 498.23348,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 10,
+   "wn": 16619.28,
+   "lam": 601.7108,
+   "air": 601.5442,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 489.48644,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 9,
+   "wn": 16327.51,
+   "lam": 612.4633,
+   "air": 612.2938,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 472.7853,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 8,
+   "wn": 15770.42,
+   "lam": 634.0985,
+   "air": 633.9232,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 454.66194,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 7,
+   "wn": 15165.89,
+   "lam": 659.3744,
+   "air": 659.1923,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 451.43318,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 6,
+   "wn": 15058.19,
+   "lam": 664.0904,
+   "air": 663.9071,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 438.34034,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 5,
+   "wn": 14621.46,
+   "lam": 683.9262,
+   "air": 683.7375,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 426.21074,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 4,
+   "wn": 14216.86,
+   "lam": 703.3902,
+   "air": 703.1963,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 414.49665,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 13826.12,
+   "lam": 723.2687,
+   "air": 723.0694,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 352.39164,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 2,
+   "wn": 11754.52,
+   "lam": 850.7366,
+   "air": 850.5029,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 347.27838,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 11583.96,
+   "lam": 863.2626,
+   "air": 863.0256,
+   "type": "M1+E2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -9912,8 +10155,8 @@
   }
  ],
  "validation": [
-  "levels: 67   lines < 2000 nm: 90   with matrix element: 90",
-  "transition-rate provenance: exp: 47, theory: 43",
+  "levels: 71   lines < 2000 nm: 104   with matrix element: 90",
+  "transition-rate provenance: exp: 47, theory: 43, wavelength only: 14",
   "levels with a measured lifetime: 18"
  ],
  "sources": {

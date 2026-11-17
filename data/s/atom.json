@@ -21,7 +21,8 @@
   "semi": {
    "lines": 24722,
    "matched": 3781
-  }
+  },
+  "hfr": null
  },
  "columns": [
   {
@@ -55,6 +56,18 @@
    "width": 1.0
   },
   {
+   "key": "1D",
+   "header": "^1D",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1D*",
+   "header": "^1D^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
    "key": "5S*",
    "header": "^5S^{o}",
    "group": null,
@@ -67,26 +80,14 @@
    "width": 1.0
   },
   {
-   "key": "1D*",
-   "header": "^1D^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "1D",
-   "header": "^1D",
+   "key": "1S",
+   "header": "^1S",
    "group": null,
    "width": 1.0
   },
   {
    "key": "1P*",
    "header": "^1P^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
-   "key": "1S",
-   "header": "^1S",
    "group": null,
    "width": 1.0
   }
@@ -168,7 +169,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "NIST ASD S I lines table (tp_ref T8595,T7942c84), local cache data/nist/S_I_lines_from1nm.tsv. Note: derived: 1/sum of the calculated A-values of 1D2 -> 3P2 (M1, 1082.4 nm), 3P1 (M1 + E2, 1130.9 nm), 3P0 (E2) listed in NIST ASD (accuracy C-D); no measurement of this lifetime was located",
-   "col": 8
+   "col": 5
   },
   {
    "id": 4,
@@ -185,7 +186,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "NIST ASD S I lines table (tp_ref T8595,T7942c84), local cache data/nist/S_I_lines_from1nm.tsv. Note: derived: 1/sum of the calculated A-values of 1S0 -> 3P2 (E2), 3P1 (M1, 459.05 nm), 1D2 (E2, 772.72 nm) listed in NIST ASD (accuracy B-D); no absolute measurement was opened",
-   "col": 10
+   "col": 9
   },
   {
    "id": 5,
@@ -202,7 +203,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
-   "col": 5,
+   "col": 7,
    "decay": {
     "ch": [
      {
@@ -300,7 +301,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
-   "col": 6,
+   "col": 8,
    "decay": {
     "ch": [
      {
@@ -335,7 +336,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
-   "col": 6,
+   "col": 8,
    "decay": {
     "ch": [
      {
@@ -370,7 +371,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
-   "col": 6,
+   "col": 8,
    "decay": {
     "ch": [
      {
@@ -918,7 +919,7 @@
    "tau_unc": 0.3,
    "tau_tier": "exp",
    "tau_src": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1 (3p4 1D - 4s' 1D°, 1667 A)",
-   "col": 7,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -1435,7 +1436,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
-   "col": 6,
+   "col": 8,
    "decay": {
     "ch": [
      {
@@ -1513,7 +1514,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
-   "col": 6,
+   "col": 8,
    "decay": {
     "ch": [
      {
@@ -1591,7 +1592,7 @@
    "tau_unc": 50.00000000000001,
    "tau_tier": "exp",
    "tau_src": "Delalic, Erman, Kallne, Phys. Scr. 42, 540 (1990), high-frequency deflection technique; value as listed in column 'tau_exp (others)' of Table 1 of Biemont, Garnir, Federman, Li, Svanberg, Astrophys. J. 502, 1010 (1998)",
-   "col": 6,
+   "col": 8,
    "decay": {
     "ch": [
      {
@@ -2199,7 +2200,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "Zatsarinny & Bartschat, J. Phys. B 39, 2861 (2006), B-spline R-matrix calculation; level-lifetime table of the MCHF/MCDHF collection hosted at NIST; no measured lifetime located for this level",
-   "col": 9,
+   "col": 10,
    "decay": {
     "ch": [
      {
@@ -2899,7 +2900,7 @@
    "tau_unc": 2.0,
    "tau_tier": "exp",
    "tau_src": "Savage & Lawrence, Astrophys. J. 146, 940 (1966), phase-shift method, Table 1: line 1687.51 A (3p4 1S0 - upper level at 81440.3 cm^-1, which the authors classify as 3s3p5 1P1 following Toresson), cascade free",
-   "col": 9,
+   "col": 10,
    "decay": {
     "ch": [
      {
@@ -11049,6 +11050,20 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 664.9383,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 4,
+   "wn": 22179.9542,
+   "lam": 450.8576,
+   "air": 450.7311,
+   "gamma_MHz": 2.678e-07,
+   "type": "E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 638.47819,
    "freq_tier": "nist",
@@ -11811,6 +11826,20 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 276.96653,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 9238.609,
+   "lam": 1082.414,
+   "air": 1082.1176,
+   "gamma_MHz": 4.364e-09,
+   "type": "M1+E2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -12022,8 +12051,8 @@
   }
  ],
  "validation": [
-  "levels: 47   lines < 2000 nm: 81   with matrix element: 74",
-  "transition-rate provenance: exp: 11, nist: 62, semi: 1, wavelength only: 7",
+  "levels: 47   lines < 2000 nm: 83   with matrix element: 74",
+  "transition-rate provenance: exp: 11, nist: 62, semi: 1, wavelength only: 9",
   "levels with a measured lifetime: 40",
   "semi-empirical rates (Kurucz): 3781 of 24722 lines on NIST levels; used for 1 drawn lines and 2837 further decay lines"
  ],

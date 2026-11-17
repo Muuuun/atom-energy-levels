@@ -3419,6 +3419,19 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 643.28861,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 21457.7982,
+   "lam": 466.031,
+   "air": 465.9006,
+   "type": "E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 598.76907,
    "freq_tier": "nist",
@@ -3791,7 +3804,8 @@
    "A_tier": "theory",
    "A_src": "Zheng, Wang, Verma, Wang, Langin, DeMille, \"Simulated Laser Cooling and Magneto-Optical Trapping of Group IV Atoms\", arXiv:2509.04635, Table VI",
    "br": 1.0,
-   "br_tier": "theory"
+   "br_tier": "theory",
+   "mu": 1.293
   }
  ],
  "rydberg_levels": [],
@@ -4010,8 +4024,8 @@
   }
  ],
  "validation": [
-  "levels: 15   lines < 2000 nm: 31   with matrix element: 29",
-  "transition-rate provenance: nist: 28, theory: 2, wavelength only: 1",
+  "levels: 15   lines < 2000 nm: 32   with matrix element: 29",
+  "transition-rate provenance: nist: 28, theory: 2, wavelength only: 2",
   "levels with a measured lifetime: 4",
   "Cowan HFR fit (this site): 240 of 512 lines on NIST levels (224 left out for cancellation); used for 0 drawn lines and 214 further decay lines"
  ],

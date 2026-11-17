@@ -991,6 +991,46 @@
     },
     {
       "lower_cm": 0.0,
+      "upper_cm": 11395.35,
+      "label": "6s2 1S0 - 6s5d 1D2",
+      "lower_J": "0",
+      "upper_J": "2",
+      "use": "877.55 nm E2 line to the metastable 1D2 level (its only sizeable decay); proposed qubit / optical-clock line",
+      "type": "E2",
+      "A_s": {
+        "value": 4.0,
+        "method": "theory",
+        "note": "derived: 1 / (calculated lifetime of about 1/4 s); the paper calculates this E2 decay as the decay of 1D2. arXiv:2607.11282 quotes 242-296 ms from the same paper, i.e. A = 3.4-4.1 s^-1. No measurement exists (searched 2026-11-17: the NIST compilation of Ba I transition probabilities, Klose, Fuhr, Wiese 2002, lists forbidden lines only for Ba II). Cross-check by this site's own Cowan-code calculation (cowan/Ba_forbidden): A = 3.2-5.1 s^-1 at the observed transition energy, lifetime 0.20-0.31 s.",
+        "alternatives": [
+          {
+            "value": 3.4,
+            "note": "1 / 296 ms, upper end of the lifetime range quoted from Migdalek & Baylis 1990 in arXiv:2607.11282 (second-hand)",
+            "method": "theory",
+            "url": "https://arxiv.org/pdf/2607.11282"
+          },
+          {
+            "value": 4.1,
+            "note": "1 / 242 ms, lower end of the same range (second-hand)",
+            "method": "theory",
+            "url": "https://arxiv.org/pdf/2607.11282"
+          },
+          {
+            "value": 3.8,
+            "note": "this site, Cowan code, ten even configurations, ab initio radial integrals, unfitted, rate scaled to the observed energy",
+            "method": "theory"
+          },
+          {
+            "value": 5.1,
+            "note": "this site, same calculation with the energy parameters fitted to the NIST levels",
+            "method": "theory"
+          }
+        ],
+        "source": "Migdalek & Baylis, Phys. Rev. A 42, 6897 (1990), abstract: multiconfiguration Dirac-Fock E2 transition probability, 1D2 lifetime about 1/4 s (rate = 1 / lifetime, computed here)",
+        "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.42.6897"
+      }
+    },
+    {
+      "lower_cm": 0.0,
       "upper_cm": 24192.033,
       "label": "6s2 1S0 - 5d6p 3D1",
       "use": "413.36 nm intercombination line: fluorescence detection of repumping, resonant two-photon photoionization",
@@ -1185,7 +1225,8 @@
     "6s6p 3P1 infrared branches: Dammalapati thesis Table 4.3 prints 3D2 at 2723.0 nm with 1.2e5 and 3D1 at 2923.3 nm with 3.2e5 (labels swapped / typo); the EPJD paper and De thesis give 3D2: 2923.0 nm, 3.18(32)e5 and 3D1: 2775.7 nm, 1.23(12)e5, which agrees with the NIST level energies and is used here.",
     "1107.8 nm (3D1-1P1) odd-isotope shifts of Dammalapati et al. (-114(4), -39(4) MHz) break King-plot linearity and disagree with theory (Naze et al.: 67.2, 132.1 MHz) and with the shifts implied by the direct 413 nm measurement (arXiv:2311.08954); treat the odd-isotope 1107.8 and 1130.6 nm values with caution.",
     "413 nm isotope shift of 134Ba: 124.3(1.3) in the abstract and Table II of arXiv:2311.08954, 125.3(1.3) in its Table I.",
-    "6s6p 3P0 lifetime (theory): 2.6 us (Dzuba & Flambaum 2007) vs 2.86 us (Dzuba & Ginges 2006); 6s6p 3P1 theory 1.2 us vs measured 1.345(14) us."
+    "6s6p 3P0 lifetime (theory): 2.6 us (Dzuba & Flambaum 2007) vs 2.86 us (Dzuba & Ginges 2006); 6s6p 3P1 theory 1.2 us vs measured 1.345(14) us.",
+    "6s5d 3D2 lifetime (E2 decay to the ground level, 1085.13 nm), all calculated, no measurement: 69 s (Dzuba & Ginges 2006, shown), 43.6-60.9 s (Migdalek & Baylis 1990, four variants) and 20.0 s (Trefftz 1974; coupled cluster, arXiv:2111.06802), the last three as tabulated in arXiv:2111.06802 Table 6; this site's Cowan-code calculation (cowan/Ba_forbidden) gives 31-56 s."
   ],
   "not_found": [
     "Absolute frequency of 553.7 nm 6s2 1S0 - 6s6p 1P1: no comb-referenced measurement located (searched arXiv / web); use the NIST level 18060.261 cm^-1.",
@@ -1196,7 +1237,8 @@
     "Hyperfine constants of 6s6p 3P2 (Keim et al., Z. Phys. D 18, 117 (1991), 137Ba, paywalled), of 5d6p levels other than 3D1 (Grundevik et al., Z. Phys. A 306, 195 (1982) and 312, 1 (1983), paywalled), and of 6s7s, 6s6d, 6s7p, 5d2 levels: not accessible.",
     "Isotope shifts of 1500.4 nm (1D2-1P1), 667.7 nm and the other 6s5d-5d6p lines near 700 nm (Grundevik 1982/1983, paywalled): not accessible; 135-138 shift of 1130.6 nm not measured.",
     "Measured Lande g_J beyond the NIST levels file: none entered (Brecht 1973 and Aydin et al., Z. Phys. A 273, 233 (1975) not accessible).",
-    "Experimentally demonstrated coherent Rydberg excitation route for neutral-atom arrays and Rydberg-series quantum defects: only a theory proposal (arXiv:2607.11282) and photoionization schemes were found."
+    "Experimentally demonstrated coherent Rydberg excitation route for neutral-atom arrays and Rydberg-series quantum defects: only a theory proposal (arXiv:2607.11282) and photoionization schemes were found.",
+    "Measured rate, lifetime or directly measured frequency of the 877.55 nm line (6s2 1S0 - 6s5d 1D2): none located (2026-11-17). Full tables of Migdalek & Baylis, Phys. Rev. A 42, 6897 (1990) are closed; only the abstract and second-hand quotations were read. The supplement of arXiv:2607.11282 with its quadrupole matrix element is not on arXiv."
   ],
   "notes": "Isotope shifts are nu(first) - nu(second); several sources print nu(138) - nu(A), signs were converted (138Ba lies lowest in frequency on 553.7, 791 and 413 nm). Level energies/wavelengths are NIST vacuum values; papers label the lines 553.7, 791.3 (vac) / 791.1 (air), 413.3, 659.7, 667.7, 1107.8, 1130.6, 1500.4 nm. method='compilation' means the number was read in a later paper/thesis table that names the original experiment (given in source); 'derived': true marks values computed here from printed numbers (3P1 A/B from F-level shifts; 791 nm frequency from an iodine offset). All lifetimes with method 'theory' are CI+MBPT calculations printed without uncertainty; lifetimes credited to Niggli & Huber 1987 are obtained from emission branching fractions combined with published lifetimes/absorption data (per their abstract), as tabulated in De's thesis. A_s values for lines NIST already lists (553.7, 1107.9, 1130.6, 791.4, 413.4, 659.7, 667.7 nm) are repeated only because the source gives an uncertainty or a newer measurement. Hyperfine sign convention: E_F = A*K/2 + B*[3K(K+1)/4 - I(I+1)J(J+1)]/[2I(2I-1)J(2J-1)], K = F(F+1)-I(I+1)-J(J+1). Extra keys beyond SCHEMA.md: 'ionization', 'conflicts', 'derived', 'note', 'F_shifts_from_centroid_MHz', 'hyperfine_component_shifts_MHz', 'photons_before_leak', 'abundance_unc', 'url_spin'."
 }

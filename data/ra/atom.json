@@ -18,7 +18,8 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Level energies are the NIST ASD values (226Ra; NIST adopts Santra et al. for 1P1 and Guest/Scielzo et al. for 3P1). rme_J_ea0 is |<J||D||J'>| in e a0 in the symmetric convention of the Safronova papers / UDel portal, A = 2.02613e18 |d|^2 / ((2J'+1) lambda^3[Angstrom]), J' = upper level; Dzuba & Flambaum (their Eq. 12) and Dzuba & Ginges use the same convention, so no conversion was needed. The UDel portal does carry neutral Ra (element key \"Ra1\": 48 matrix elements, 24 rates, lifetimes; data service https://atom.ece.udel.edu/graphql behind https://www1.udel.edu/atom/); all its Ra I numbers are theory except the 3P1 lifetime, which it attributes to Scielzo et al. It also carries Ra+ (key \"Ra2\"), not used here. Isotope shifts are nu(first) - nu(second); the ISOLDE tables are referenced to 214Ra, and for odd isotopes refer to hyperfine centres of gravity. Hyperfine A, B signs as printed in the compilation. frequency_THz entries are for 226Ra (I = 0, no hyperfine structure); frequency_THz_225 entries are centres of gravity derived here from the measured hyperfine component and A, and the measured components themselves are under hyperfine_component_frequency_THz. Extra fields beyond the schema: ionization_energy, linewidth_MHz and measured_energy_cm on levels, oscillator_strength, hyperfine_component_frequency_THz, wavenumber_cm inside frequency entries, half_life / mu / Q in isotopes (abundance_percent is null: no stable isotope). Radium has no stable isotope; 226Ra (1600 y) and 225Ra (14.9 d, I=1/2) are the laser-cooled ones, 223Ra (11.43 d, I=3/2) is the third of interest.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -28,14 +29,14 @@
    "width": 1.0
   },
   {
-   "key": "3S",
-   "header": "^3S",
+   "key": "3P*",
+   "header": "^3P^{o}",
    "group": null,
    "width": 1.0
   },
   {
-   "key": "3P*",
-   "header": "^3P^{o}",
+   "key": "3S",
+   "header": "^3S",
    "group": null,
    "width": 1.0
   },
@@ -107,7 +108,7 @@
    "tau_unc": 15000000000.0,
    "tau_tier": "theory",
    "tau_src": "Bieron, Indelicato, Jonsson, Eur. Phys. J. Special Topics 144, 75 (2007) [arXiv:physics/0701239] (multiconfiguration Dirac-Hartree-Fock), Table 2",
-   "col": 2
+   "col": 1
   },
   {
    "id": 2,
@@ -181,7 +182,7 @@
     "src": "Wendt, Ahmad, Klempt, Neugart, Otten, Stroke, Z. Phys. D 4, 227 (1987) (collinear laser spectroscopy at ISOLDE), as tabulated in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table VI"
    },
    "g_tier": "theory",
-   "col": 2,
+   "col": 1,
    "decay": {
     "ch": [
      {
@@ -250,7 +251,7 @@
     "src": "Wendt, Ahmad, Klempt, Neugart, Otten, Stroke, Z. Phys. D 4, 227 (1987) (collinear laser spectroscopy at ISOLDE), as tabulated in Dammalapati, Jungmann, Willmann, J. Phys. Chem. Ref. Data 45, 013101 (2016) [arXiv:1603.01087] Table VII"
    },
    "g_tier": "theory",
-   "col": 2,
+   "col": 1,
    "decay": {
     "ch": [
      {
@@ -387,7 +388,7 @@
    "tau_tier": "theory",
    "tau_src": "UDel Portal for High-Precision Atomic Data and Computation (Safronova group), Ra I tables, read 2026-10-01 via its data service; theory value, no reference attached by the portal",
    "g_tier": "theory",
-   "col": 1,
+   "col": 2,
    "decay": {
     "ch": [
      {
@@ -1763,6 +1764,20 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 419.52777,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 13993.94,
+   "lam": 714.595,
+   "air": 714.3981,
+   "gamma_MHz": 4.823e-08,
+   "type": "E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 414.81383,
    "freq_tier": "nist",
@@ -2021,6 +2036,20 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 392.08057,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 13078.4,
+   "lam": 764.6195,
+   "air": 764.4091,
+   "gamma_MHz": 4.681e-09,
+   "type": "clock",
+   "inferred": true
   },
   {
    "kind": "E1",
@@ -2946,8 +2975,8 @@
   }
  ],
  "validation": [
-  "levels: 18   lines < 2000 nm: 22   with matrix element: 22",
-  "transition-rate provenance: exp: 1, nist: 17, theory: 4",
+  "levels: 18   lines < 2000 nm: 24   with matrix element: 22",
+  "transition-rate provenance: exp: 1, nist: 17, theory: 4, wavelength only: 2",
   "levels with a measured lifetime: 17"
  ],
  "sources": {

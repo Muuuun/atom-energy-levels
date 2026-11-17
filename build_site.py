@@ -167,6 +167,7 @@ def atom_page(key, pages):
     name = f"{meta['element']}-{meta['A']}" if meta["A"] else meta["element"]
     iso = f"<sup>{meta['A']}</sup>{meta['symbol']}" if meta["A"] else meta["symbol"]
     n_d = sum(1 for t in bound if t.get("d") is not None)
+    n_inf = sum(1 for t in bound if t.get("inferred"))  # ground level -> long-lived level, drawn from the level energies (not a NIST line)
     url = f"{BASE}/{slug}/"
 
     # strongest / best-known lines for the description and the lead paragraph
@@ -186,20 +187,20 @@ def atom_page(key, pages):
     lit_levels = (meta.get("lit_levels") or 0) > (len(L) - 1) / 2  # levels from the literature file, NIST has none (actinides)
     if lit_levels:
         desc = desc.replace("Measured and NIST data, with sources.", "Levels and lines from the cited literature.")
-        lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): {len(L)} levels and {len(bound)} "
+        lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): {len(L)} levels and {len(bound) - n_inf} "
                 f"classified lines below 2 µm taken from the cited literature, each line with its vacuum wavelength and frequency"
                 + (f" and, for {n_d} of them, the reduced dipole matrix element" if n_d else "") + ". The NIST Atomic Spectra Database "
                 f"lists only the ground level and the ionisation limit of {meta['element'].lower()}, so the level energies on this page "
                 "are those of the literature sources named below.")
     elif auto:
-        lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): the {len(bound)} strongest classified "
+        lead = (f"Energy levels and transitions of neutral {meta['element'].lower()} ({meta['symbol']} I): the {len(bound) - n_inf} strongest classified "
                 f"lines below 2 µm from the NIST Atomic Spectra Database and the {len(L)} levels they connect, each line with its vacuum "
                 f"wavelength, frequency and, for {n_d} of them, the reduced dipole matrix element derived from the NIST transition rate. "
                 + ("Measured lifetimes, transition rates, hyperfine constants and isotope shifts from the literature are included, "
                    "each with its citation." if meta.get("has_lit") else
                    "Lifetimes, hyperfine constants and isotope shifts from the literature have not been compiled for this element yet."))
     elif listed:  # isotope page of an element drawn automatically
-        lead = (f"Energy levels and transitions of neutral {iso} ({meta['symbol']} I, nuclear spin <i>I</i> = {meta['I']}): the {len(bound)} "
+        lead = (f"Energy levels and transitions of neutral {iso} ({meta['symbol']} I, nuclear spin <i>I</i> = {meta['I']}): the {len(bound) - n_inf} "
                 f"strongest classified lines below 2 µm from the NIST Atomic Spectra Database and the {len(L)} levels they connect, each line "
                 f"with its vacuum wavelength, frequency and, for {n_d} of them, the reduced dipole matrix element. Level energies come from "
                 f"NIST and refer to the natural isotope mixture; transition rates are {prov}. Hyperfine constants and measured "
@@ -208,6 +209,11 @@ def atom_page(key, pages):
         lead = (f"Energy levels and transitions of neutral {iso} ({meta['symbol']} I, nuclear spin <i>I</i> = {meta['I']}): {len(L)} levels and "
                 f"{len(bound)} lines below 2 µm, each with its vacuum wavelength, frequency and, for {n_d} of them, the reduced dipole matrix "
                 f"element. Level energies come from the NIST Atomic Spectra Database; transition rates are {prov}.{ion}")
+    if n_inf:
+        lead += (f" {n_inf} further line{'s' if n_inf > 1 else ''} lead{'' if n_inf > 1 else 's'} from the ground level to a long-lived level "
+                 "(the NIST level list has no lower level that an electric-dipole decay could reach). The NIST line list does not carry "
+                 f"{'them' if n_inf > 1 else 'it'}: the wavelength follows from the two level energies, the type is the lowest multipole "
+                 "that <i>J</i> and parity allow (M1, E2, M2, or <i>J</i> = 0 – 0), and no rate is given.")
     parts = [f"""<!doctype html>
 <html lang="en">
 <head>

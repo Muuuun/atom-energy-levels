@@ -107,6 +107,8 @@
     if (t.limit_nm) h += row('Series limit (n → ∞)', t.limit_nm.toFixed(3) + ' nm');
     if (t.d != null) h += row('|⟨J‖er‖J′⟩|' + badge(t.d_tier), fd(t.d) + ' ea₀');
     if (t.kind === 'rydberg' && t.d_arc != null) h += row('|⟨J‖er‖J′⟩| (ARC)', fd(t.d_arc) + ' ea₀');
+    if (t.q != null) h += row('|⟨J‖Q‖J′⟩| (E2, from A)' + badge(t.A_tier), fd(t.q) + ' ea₀²');
+    if (t.mu != null) h += row('|⟨J‖μ‖J′⟩| (M1, from A)' + badge(t.A_tier), +t.mu.toPrecision(3) + ' μ_B');
     if (t.A != null) h += row('Einstein A' + badge(t.A_tier), fA(t.A) + ' s⁻¹');
     if (t.br != null) h += row('Branching from upper level', (t.br * 100).toPrecision(3) + ' %');
     if (t.gamma_MHz != null) h += row('Upper-level linewidth Γ/2π', +t.gamma_MHz.toPrecision(4) + ' MHz');
@@ -114,6 +116,8 @@
       h += row('Isotope shift ' + pair, s.value + (s.unc ? ' ± ' + s.unc : '') + ' MHz');
     h += '</table>';
     h += cycleCard(i);
+    if (t.inferred) h += '<div class="note">This line is not in the NIST line list. The upper level is long-lived (the NIST level list has no lower level that an electric-dipole decay could reach), so this is the line that ties it to the ground level: wavelength from the two level energies, type = the lowest multipole that J and parity allow, not an observation. No rate is listed.' +
+      (t.type === 'clock' ? ' A J = 0 – 0 line exists only through hyperfine mixing (isotopes with nuclear spin) or in an applied magnetic field.' : '') + '</div>';
     if (t.uncertain) h += '<div class="note">' + (t.kind === 'rydberg' ? 'Two calculations differ by about 2× on this line: order of magnitude only.' : 'This value is a bound or an estimate, not a direct measurement.') + '</div>';
     h += src(t.d != null ? 'Matrix element / A' : 'A', t.d_src || t.A_src);
     if (t.freq_tier === 'exp') h += src('Frequency', t.freq_src);

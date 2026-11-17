@@ -18,7 +18,8 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "All optical data are from in-source resonance ionization spectroscopy at ISOLDE (Doppler-limited, GHz linewidths). Isotope shifts are nu(A) - nu(210). Hyperfine keys: 'ls'/'hs' = low-spin (3/2-) and high-spin (13/2+) states of 193,195Po whose ordering is not known; a trailing 'm' = 13/2+ isomer. The hyperfine constants listed under the 39081.19 cm^-1 level were printed in GHz and are converted to MHz here. The site's default isotope may have I = 0 (208, 210Po) - then no hyperfine structure applies.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -36,6 +37,12 @@
   {
    "key": "5S*",
    "header": "^5S^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1D",
+   "header": "^1D",
    "group": null,
    "width": 1.0
   }
@@ -88,6 +95,21 @@
   },
   {
    "id": 3,
+   "E": 21679.11,
+   "unc": null,
+   "J": 2.0,
+   "conf": "6p4",
+   "term": "1D",
+   "parity": "even",
+   "g": null,
+   "name": "6p^{4}\\ ^1D_{2}",
+   "plain": "6p4 1D2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 3
+  },
+  {
+   "id": 4,
    "E": 39081.19,
    "unc": null,
    "J": 2.0,
@@ -110,7 +132,7 @@
    "col": 2
   },
   {
-   "id": 4,
+   "id": 5,
    "E": 40802.7,
    "unc": null,
    "J": 1.0,
@@ -132,7 +154,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 4,
+   "upper": 5,
    "wn": 40802.7,
    "lam": 245.0818,
    "air": 245.0076,
@@ -152,7 +174,7 @@
       "lam": 417.17
      },
      {
-      "html": "6p<sup>4</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 3,
       "lam": 522.91
      }
     ]
@@ -164,7 +186,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 3,
+   "upper": 4,
    "wn": 39081.19,
    "lam": 255.8776,
    "air": 255.8008,
@@ -181,7 +203,7 @@
       "lam": 449.45
      },
      {
-      "html": "6p<sup>4</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 3,
       "lam": 574.64
      }
     ]
@@ -193,7 +215,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 4,
+   "upper": 5,
    "wn": 33288.01,
    "lam": 300.4085,
    "air": 300.3209,
@@ -213,7 +235,7 @@
       "lam": 417.17
      },
      {
-      "html": "6p<sup>4</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 3,
       "lam": 522.91
      }
     ]
@@ -225,7 +247,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 4,
+   "upper": 5,
    "wn": 23971.09,
    "lam": 417.1692,
    "air": 417.0516,
@@ -245,11 +267,50 @@
       "lam": 300.41
      },
      {
-      "html": "6p<sup>4</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 3,
       "lam": 522.91
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 649.92337,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 21679.11,
+   "lam": 461.2735,
+   "air": 461.1444,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 504.59897,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 2,
+   "wn": 16831.61,
+   "lam": 594.1202,
+   "air": 593.9557,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 225.28474,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 7514.69,
+   "lam": 1330.7269,
+   "air": 1330.363,
+   "type": "E2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -304,8 +365,8 @@
   }
  ],
  "validation": [
-  "levels: 5   lines < 2000 nm: 4   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 4",
+  "levels: 6   lines < 2000 nm: 7   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 7",
   "levels with a measured lifetime: 0"
  ],
  "sources": {

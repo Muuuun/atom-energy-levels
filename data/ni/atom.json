@@ -21,7 +21,8 @@
   "semi": {
    "lines": 9663,
    "matched": 9157
-  }
+  },
+  "hfr": null
  },
  "columns": [
   {
@@ -73,8 +74,20 @@
    "width": 1.0
   },
   {
+   "key": "1D",
+   "header": "^1D",
+   "group": null,
+   "width": 1.0
+  },
+  {
    "key": "1G*",
    "header": "^1G^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "3P",
+   "header": "^3P",
    "group": null,
    "width": 1.0
   },
@@ -85,8 +98,20 @@
    "width": 1.0
   },
   {
+   "key": "1G",
+   "header": "^1G",
+   "group": null,
+   "width": 1.0
+  },
+  {
    "key": "5S*",
    "header": "^5S^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "5G*",
+   "header": "^5G^{o}",
    "group": null,
    "width": 1.0
   },
@@ -196,6 +221,66 @@
   },
   {
    "id": 6,
+   "E": 13521.347,
+   "unc": null,
+   "J": 2.0,
+   "conf": "3d8.(1D).4s2",
+   "term": "1D",
+   "parity": "even",
+   "g": 1.143,
+   "name": "3d^{8}4s^{2}\\ ^1D_{2}",
+   "plain": "3d84s2 1D2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 8
+  },
+  {
+   "id": 7,
+   "E": 15609.844,
+   "unc": null,
+   "J": 2.0,
+   "conf": "3d8.(3P).4s2",
+   "term": "3P",
+   "parity": "even",
+   "g": 1.356,
+   "name": "3d^{8}4s^{2}\\ ^3P_{2}",
+   "plain": "3d84s2 3P2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 10
+  },
+  {
+   "id": 8,
+   "E": 22102.325,
+   "unc": null,
+   "J": 4.0,
+   "conf": "3d8.(1G).4s2",
+   "term": "1G",
+   "parity": "even",
+   "g": 0.99,
+   "name": "3d^{8}4s^{2}\\ ^1G_{4}",
+   "plain": "3d84s2 1G4",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 12
+  },
+  {
+   "id": 9,
+   "E": 27260.894,
+   "unc": null,
+   "J": 6.0,
+   "conf": "3d8.(3F).4s.4p.(3P*)",
+   "term": "5G*",
+   "parity": "odd",
+   "g": 1.32,
+   "name": "3d^{8}4s4p\\ ^5G^{o}_{6}",
+   "plain": "3d84s4p 5G°6",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 14
+  },
+  {
+   "id": 10,
    "E": 28569.203,
    "unc": null,
    "J": 2.0,
@@ -255,14 +340,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 664.55,
       "f": 0.00125,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 771.64,
       "f": 0.00117,
       "tier": "nist",
@@ -273,7 +358,7 @@
    }
   },
   {
-   "id": 7,
+   "id": 11,
    "E": 29084.456,
    "unc": null,
    "J": 4.0,
@@ -312,7 +397,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1432.2,
       "f": 3.97e-07,
       "tier": "semi",
@@ -322,7 +407,7 @@
    }
   },
   {
-   "id": 8,
+   "id": 12,
    "E": 29320.762,
    "unc": null,
    "J": 3.0,
@@ -382,14 +467,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 729.35,
       "f": 0.000372,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1385.3,
       "f": 0.000248,
       "tier": "semi",
@@ -400,7 +485,7 @@
    }
   },
   {
-   "id": 9,
+   "id": 13,
    "E": 29480.989,
    "unc": null,
    "J": 4.0,
@@ -439,7 +524,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1355.3,
       "f": 3.74e-07,
       "tier": "semi",
@@ -449,7 +534,7 @@
    }
   },
   {
-   "id": 10,
+   "id": 14,
    "E": 29500.674,
    "unc": null,
    "J": 1.0,
@@ -502,7 +587,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 625.81,
       "f": 0.00155,
       "tier": "nist",
@@ -516,7 +601,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 719.9,
       "f": 0.000736,
       "tier": "nist",
@@ -527,7 +612,7 @@
    }
   },
   {
-   "id": 11,
+   "id": 15,
    "E": 29668.918,
    "unc": null,
    "J": 3.0,
@@ -580,7 +665,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 711.28,
       "f": 0.000331,
       "tier": "nist",
@@ -597,7 +682,7 @@
    }
   },
   {
-   "id": 12,
+   "id": 16,
    "E": 29832.779,
    "unc": null,
    "J": 3.0,
@@ -643,21 +728,21 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1293.6,
       "f": 0.00113,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 613.07,
       "f": 0.000796,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 703.09,
       "f": 0.000342,
       "tier": "semi",
@@ -675,7 +760,7 @@
    }
   },
   {
-   "id": 13,
+   "id": 17,
    "E": 29888.477,
    "unc": null,
    "J": 2.0,
@@ -735,7 +820,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 610.98,
       "f": 0.00204,
       "tier": "nist",
@@ -753,7 +838,7 @@
    }
   },
   {
-   "id": 14,
+   "id": 18,
    "E": 30192.251,
    "unc": null,
    "J": 0.0,
@@ -788,7 +873,7 @@
    }
   },
   {
-   "id": 15,
+   "id": 19,
    "E": 30619.414,
    "unc": null,
    "J": 2.0,
@@ -848,7 +933,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 584.86,
       "f": 0.000288,
       "tier": "nist",
@@ -866,7 +951,7 @@
    }
   },
   {
-   "id": 16,
+   "id": 20,
    "E": 30912.817,
    "unc": null,
    "J": 1.0,
@@ -912,14 +997,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 574.99,
       "f": 0.000714,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 653.47,
       "f": 0.000405,
       "tier": "nist",
@@ -944,7 +1029,7 @@
    }
   },
   {
-   "id": 17,
+   "id": 21,
    "E": 30922.734,
    "unc": null,
    "J": 5.0,
@@ -969,7 +1054,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1133.7,
       "f": 3.93e-06,
       "tier": "semi",
@@ -979,7 +1064,7 @@
    }
   },
   {
-   "id": 18,
+   "id": 22,
    "E": 32973.376,
    "unc": null,
    "J": 4.0,
@@ -1018,7 +1103,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 919.87,
       "f": 1.2e-05,
       "tier": "semi",
@@ -1028,7 +1113,7 @@
    }
   },
   {
-   "id": 19,
+   "id": 23,
    "E": 33112.334,
    "unc": null,
    "J": 3.0,
@@ -1081,14 +1166,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 571.35,
       "f": 0.00139,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 510.44,
       "f": 0.000762,
       "tier": "nist",
@@ -1106,7 +1191,7 @@
    }
   },
   {
-   "id": 20,
+   "id": 24,
    "E": 33500.822,
    "unc": null,
    "J": 3.0,
@@ -1159,7 +1244,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 558.94,
       "f": 0.00194,
       "tier": "nist",
@@ -1173,7 +1258,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 500.51,
       "f": 0.000528,
       "tier": "nist",
@@ -1184,7 +1269,7 @@
    }
   },
   {
-   "id": 21,
+   "id": 25,
    "E": 33590.13,
    "unc": null,
    "J": 4.0,
@@ -1198,7 +1283,7 @@
    "tau_unc": 5.0,
    "tau_tier": "exp",
    "tau_src": "Bergeson & Lawler, J. Opt. Soc. Am. B 10, 794 (1993), Table 1 (time-resolved laser-induced fluorescence). Note: read from the table on the publisher's article page through an automated page reader (full text not downloadable); cross-checked: 1/sum(A) over the branches of this level in Wood et al. 2014 (normalised to this lifetime) = 96.15 ns (derived)",
-   "col": 8,
+   "col": 9,
    "decay": {
     "ch": [
      {
@@ -1216,7 +1301,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 870.49,
       "f": 0.000292,
       "tier": "semi",
@@ -1233,7 +1318,7 @@
    }
   },
   {
-   "id": 22,
+   "id": 26,
    "E": 33610.89,
    "unc": null,
    "J": 2.0,
@@ -1300,7 +1385,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 497.77,
       "f": 0.000344,
       "tier": "nist",
@@ -1311,7 +1396,7 @@
    }
   },
   {
-   "id": 23,
+   "id": 27,
    "E": 34163.264,
    "unc": null,
    "J": 2.0,
@@ -1378,7 +1463,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 484.45,
       "f": 0.000301,
       "tier": "nist",
@@ -1389,7 +1474,7 @@
    }
   },
   {
-   "id": 24,
+   "id": 28,
    "E": 34408.555,
    "unc": null,
    "J": 1.0,
@@ -1456,7 +1541,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 478.76,
       "f": 0.000511,
       "tier": "nist",
@@ -1467,7 +1552,7 @@
    }
   },
   {
-   "id": 25,
+   "id": 29,
    "E": 42585.212,
    "unc": null,
    "J": 4.0,
@@ -1506,7 +1591,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 488.21,
       "f": 1.34e-06,
       "tier": "semi",
@@ -1516,7 +1601,7 @@
    }
   },
   {
-   "id": 26,
+   "id": 30,
    "E": 42620.994,
    "unc": null,
    "J": 3.0,
@@ -1562,14 +1647,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 370.22,
       "f": 0.00329,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 343.65,
       "f": 0.00198,
       "tier": "semi",
@@ -1594,7 +1679,7 @@
    }
   },
   {
-   "id": 27,
+   "id": 31,
    "E": 42653.661,
    "unc": null,
    "J": 2.0,
@@ -1654,7 +1739,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 369.77,
       "f": 0.00525,
       "tier": "semi",
@@ -1672,7 +1757,7 @@
    }
   },
   {
-   "id": 28,
+   "id": 32,
    "E": 42767.853,
    "unc": null,
    "J": 3.0,
@@ -1732,14 +1817,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 341.92,
       "f": 0.000248,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 368.22,
       "f": 9.95e-05,
       "tier": "semi",
@@ -1750,7 +1835,7 @@
    }
   },
   {
-   "id": 29,
+   "id": 33,
    "E": 43089.578,
    "unc": null,
    "J": 5.0,
@@ -1773,7 +1858,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 476.48,
       "f": 1.06e-07,
       "tier": "semi",
@@ -1783,7 +1868,7 @@
    }
   },
   {
-   "id": 30,
+   "id": 34,
    "E": 43654.974,
    "unc": null,
    "J": 3.0,
@@ -1818,7 +1903,7 @@
    }
   },
   {
-   "id": 31,
+   "id": 35,
    "E": 43933.408,
    "unc": null,
    "J": 2.0,
@@ -1878,14 +1963,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 353.06,
       "f": 0.00558,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 328.82,
       "f": 0.00278,
       "tier": "semi",
@@ -1896,7 +1981,7 @@
    }
   },
   {
-   "id": 32,
+   "id": 36,
    "E": 44206.099,
    "unc": null,
    "J": 3.0,
@@ -1910,7 +1995,7 @@
    "tau_unc": 2.1,
    "tau_tier": "exp",
    "tau_src": "Bergeson & Lawler, J. Opt. Soc. Am. B 10, 794 (1993), Table 1 (time-resolved laser-induced fluorescence)",
-   "col": 9,
+   "col": 11,
    "decay": {
     "ch": [
      {
@@ -1956,14 +2041,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 349.7,
       "f": 0.00229,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 325.89,
       "f": 0.000491,
       "tier": "semi",
@@ -1974,7 +2059,7 @@
    }
   },
   {
-   "id": 33,
+   "id": 37,
    "E": 44314.904,
    "unc": null,
    "J": 4.0,
@@ -2020,7 +2105,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 450.2,
       "f": 1.37e-08,
       "tier": "semi",
@@ -2030,7 +2115,7 @@
    }
   },
   {
-   "id": 34,
+   "id": 38,
    "E": 44336.1,
    "unc": null,
    "J": 4.0,
@@ -2065,7 +2150,7 @@
    }
   },
   {
-   "id": 35,
+   "id": 39,
    "E": 44475.099,
    "unc": null,
    "J": 2.0,
@@ -2132,7 +2217,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 346.44,
       "f": 0.000483,
       "tier": "semi",
@@ -2143,7 +2228,7 @@
    }
   },
   {
-   "id": 36,
+   "id": 40,
    "E": 44565.037,
    "unc": null,
    "J": 3.0,
@@ -2196,7 +2281,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 345.36,
       "f": 0.000115,
       "tier": "semi",
@@ -2210,7 +2295,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 322.13,
       "f": 1.12e-05,
       "tier": "semi",
@@ -2221,7 +2306,7 @@
    }
   },
   {
-   "id": 37,
+   "id": 41,
    "E": 45122.383,
    "unc": null,
    "J": 1.0,
@@ -2281,7 +2366,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 316.45,
       "f": 0.00026,
       "tier": "semi",
@@ -2299,7 +2384,7 @@
    }
   },
   {
-   "id": 38,
+   "id": 42,
    "E": 45281.089,
    "unc": null,
    "J": 3.0,
@@ -2359,14 +2444,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 337.03,
       "f": 0.000108,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 314.86,
       "f": 7.18e-05,
       "tier": "semi",
@@ -2377,7 +2462,7 @@
    }
   },
   {
-   "id": 39,
+   "id": 43,
    "E": 45418.804,
    "unc": null,
    "J": 2.0,
@@ -2444,7 +2529,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 313.5,
       "f": 6.04e-05,
       "tier": "semi",
@@ -2455,7 +2540,7 @@
    }
   },
   {
-   "id": 40,
+   "id": 44,
    "E": 46522.866,
    "unc": null,
    "J": 2.0,
@@ -2533,7 +2618,7 @@
    }
   },
   {
-   "id": 41,
+   "id": 45,
    "E": 47208.149,
    "unc": null,
    "J": 1.0,
@@ -2579,7 +2664,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 296.85,
       "f": 0.00399,
       "tier": "semi",
@@ -2611,7 +2696,7 @@
    }
   },
   {
-   "id": 42,
+   "id": 46,
    "E": 47328.784,
    "unc": null,
    "J": 2.0,
@@ -2625,7 +2710,7 @@
    "tau_unc": 1.7,
    "tau_tier": "exp",
    "tau_src": "Bergeson & Lawler, J. Opt. Soc. Am. B 10, 794 (1993), Table 1 (time-resolved laser-induced fluorescence). Note: read from the table on the publisher's article page through an automated page reader (full text not downloadable); cross-checked: 1/sum(A) over the branches of this level in Wood et al. 2014 (normalised to this lifetime) = 34.15 ns (derived)",
-   "col": 10,
+   "col": 13,
    "decay": {
     "ch": [
      {
@@ -2689,7 +2774,7 @@
    }
   },
   {
-   "id": 43,
+   "id": 47,
    "E": 47424.785,
    "unc": null,
    "J": 1.0,
@@ -2756,7 +2841,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 314.32,
       "f": 0.00245,
       "tier": "semi",
@@ -2767,7 +2852,7 @@
    }
   },
   {
-   "id": 44,
+   "id": 48,
    "E": 47686.587,
    "unc": null,
    "J": 0.0,
@@ -2809,7 +2894,7 @@
    }
   },
   {
-   "id": 45,
+   "id": 49,
    "E": 48715.586,
    "unc": null,
    "J": 4.0,
@@ -2853,7 +2938,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 375.75,
       "f": 2.96e-05,
       "tier": "semi",
@@ -2870,7 +2955,7 @@
    }
   },
   {
-   "id": 46,
+   "id": 50,
    "E": 48735.29,
    "unc": null,
    "J": 2.0,
@@ -2902,7 +2987,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 283.98,
       "f": 0.0951,
       "tier": "semi",
@@ -2916,7 +3001,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 301.88,
       "f": 0.0532,
       "tier": "semi",
@@ -2948,7 +3033,7 @@
    }
   },
   {
-   "id": 47,
+   "id": 51,
    "E": 49032.926,
    "unc": null,
    "J": 2.0,
@@ -2960,7 +3045,7 @@
    "plain": "3d95p 1D°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 11,
+   "col": 15,
    "decay": {
     "ch": [
      {
@@ -2999,7 +3084,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 299.19,
       "f": 0.0429,
       "tier": "semi",
@@ -3024,7 +3109,7 @@
    }
   },
   {
-   "id": 48,
+   "id": 52,
    "E": 49328.14,
    "unc": null,
    "J": 3.0,
@@ -3100,7 +3185,7 @@
    }
   },
   {
-   "id": 49,
+   "id": 53,
    "E": 49403.386,
    "unc": null,
    "J": 1.0,
@@ -3114,7 +3199,7 @@
    "tau_unc": 1.2,
    "tau_tier": "exp",
    "tau_src": "Bergeson & Lawler, J. Opt. Soc. Am. B 10, 794 (1993), Table 1 (time-resolved laser-induced fluorescence)",
-   "col": 12,
+   "col": 16,
    "decay": {
     "ch": [
      {
@@ -3139,7 +3224,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 295.91,
       "f": 0.0678,
       "tier": "semi",
@@ -3153,7 +3238,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 278.69,
       "f": 0.0184,
       "tier": "semi",
@@ -3178,7 +3263,7 @@
    }
   },
   {
-   "id": 50,
+   "id": 54,
    "E": 50689.489,
    "unc": null,
    "J": 2.0,
@@ -3243,7 +3328,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 285.07,
       "f": 0.0288,
       "tier": "semi",
@@ -3254,7 +3339,7 @@
    }
   },
   {
-   "id": 51,
+   "id": 55,
    "E": 50789.303,
    "unc": null,
    "J": 4.0,
@@ -3312,7 +3397,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 348.59,
       "f": 3.63e-05,
       "tier": "semi",
@@ -3330,7 +3415,7 @@
    }
   },
   {
-   "id": 52,
+   "id": 56,
    "E": 50851.199,
    "unc": null,
    "J": 1.0,
@@ -3381,7 +3466,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 267.88,
       "f": 0.0256,
       "tier": "semi",
@@ -3406,7 +3491,7 @@
    }
   },
   {
-   "id": 53,
+   "id": 57,
    "E": 51124.662,
    "unc": null,
    "J": 3.0,
@@ -3482,7 +3567,7 @@
    }
   },
   {
-   "id": 54,
+   "id": 58,
    "E": 51343.547,
    "unc": null,
    "J": 2.0,
@@ -3540,7 +3625,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 264.39,
       "f": 0.00109,
       "tier": "semi",
@@ -3565,7 +3650,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 53,
+   "upper": 57,
    "wn": 50919.875,
    "lam": 196.387,
    "air": null,
@@ -3635,7 +3720,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 344.56,
       "f": 0.00254,
       "tier": "semi",
@@ -3691,7 +3776,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 51,
+   "upper": 55,
    "wn": 50584.516,
    "lam": 197.689,
    "air": null,
@@ -3747,7 +3832,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 348.59,
       "f": 3.63e-05,
       "tier": "semi",
@@ -3817,7 +3902,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 54,
+   "upper": 58,
    "wn": 50463.731,
    "lam": 198.1621,
    "air": null,
@@ -3873,7 +3958,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 264.39,
       "f": 0.00109,
       "tier": "semi",
@@ -3927,7 +4012,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.0011,
       "tier": "semi",
       "at": "dark"
@@ -3943,7 +4028,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 53,
+   "upper": 57,
    "wn": 50244.846,
    "lam": 199.0254,
    "air": null,
@@ -4013,7 +4098,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 344.56,
       "f": 0.00254,
       "tier": "semi",
@@ -4069,7 +4154,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 50,
+   "upper": 54,
    "wn": 49809.673,
    "lam": 200.7642,
    "air": 200.6993,
@@ -4132,14 +4217,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 285.07,
       "f": 0.0288,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 269.05,
       "f": 0.0252,
       "tier": "semi",
@@ -4195,7 +4280,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 54,
+   "upper": 58,
    "wn": 49630.46,
    "lam": 201.4892,
    "air": 201.4242,
@@ -4251,7 +4336,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 264.39,
       "f": 0.00109,
       "tier": "semi",
@@ -4305,7 +4390,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.0011,
       "tier": "semi",
       "at": "dark"
@@ -4321,7 +4406,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 50,
+   "upper": 54,
    "wn": 49357.325,
    "lam": 202.6042,
    "air": 202.539,
@@ -4384,14 +4469,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 285.07,
       "f": 0.0288,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 269.05,
       "f": 0.0252,
       "tier": "semi",
@@ -4447,7 +4532,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 48,
+   "upper": 52,
    "wn": 49328.14,
    "lam": 202.724,
    "air": 202.6588,
@@ -4517,7 +4602,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 279.28,
       "f": 0.00238,
       "tier": "semi",
@@ -4573,7 +4658,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 47,
+   "upper": 51,
    "wn": 48828.139,
    "lam": 204.7999,
    "air": 204.7343,
@@ -4622,7 +4707,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 299.19,
       "f": 0.0429,
       "tier": "semi",
@@ -4683,7 +4768,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.043,
       "tier": "semi",
       "at": "dark"
@@ -4699,7 +4784,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 45,
+   "upper": 49,
    "wn": 48715.586,
    "lam": 205.2731,
    "air": 205.2074,
@@ -4741,7 +4826,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 375.75,
       "f": 2.96e-05,
       "tier": "semi",
@@ -4803,7 +4888,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 52,
+   "upper": 56,
    "wn": 48634.649,
    "lam": 205.6147,
    "air": 205.5489,
@@ -4852,7 +4937,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 267.88,
       "f": 0.0256,
       "tier": "semi",
@@ -4907,7 +4992,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.0257,
       "tier": "semi",
       "at": "dark"
@@ -4929,7 +5014,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 46,
+   "upper": 50,
    "wn": 48530.503,
    "lam": 206.056,
    "air": 205.9901,
@@ -4960,7 +5045,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 283.98,
       "f": 0.0951,
       "tier": "semi",
@@ -4974,7 +5059,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 301.88,
       "f": 0.0532,
       "tier": "semi",
@@ -5024,13 +5109,13 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.0952,
       "tier": "semi",
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.0533,
       "tier": "semi",
       "at": "dark"
@@ -5058,7 +5143,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 49,
+   "upper": 53,
    "wn": 48523.57,
    "lam": 206.0854,
    "air": 206.0195,
@@ -5096,7 +5181,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 295.91,
       "f": 0.0801,
       "tier": "semi",
@@ -5110,7 +5195,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 278.69,
       "f": 0.0218,
       "tier": "semi",
@@ -5159,7 +5244,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.0678,
       "tier": "semi",
       "at": "dark"
@@ -5171,7 +5256,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.0184,
       "tier": "semi",
       "at": "dark"
@@ -5187,7 +5272,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 42,
+   "upper": 46,
    "wn": 47123.997,
    "lam": 212.2061,
    "air": 212.139,
@@ -5269,7 +5354,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 315.27,
       "f": 0.000499,
       "tier": "semi",
@@ -5325,7 +5410,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 43,
+   "upper": 47,
    "wn": 46544.969,
    "lam": 214.846,
    "air": 214.7784,
@@ -5400,14 +5485,14 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 314.32,
       "f": 0.00264,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 294.96,
       "f": 0.00096,
       "tier": "semi",
@@ -5463,7 +5548,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 41,
+   "upper": 45,
    "wn": 46328.333,
    "lam": 215.8506,
    "air": 215.7828,
@@ -5517,7 +5602,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 296.85,
       "f": 0.00409,
       "tier": "semi",
@@ -5579,7 +5664,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.00399,
       "tier": "semi",
       "at": "dark"
@@ -5601,7 +5686,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 40,
+   "upper": 44,
    "wn": 46318.079,
    "lam": 215.8984,
    "air": 215.8306,
@@ -5739,7 +5824,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 44,
+   "upper": 48,
    "wn": 45973.5,
    "lam": 217.5166,
    "air": 217.4485,
@@ -5834,7 +5919,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 40,
+   "upper": 44,
    "wn": 45643.05,
    "lam": 219.0914,
    "air": 219.0229,
@@ -5972,7 +6057,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 41,
+   "upper": 45,
    "wn": 45495.062,
    "lam": 219.8041,
    "air": 219.7354,
@@ -6026,7 +6111,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 296.85,
       "f": 0.00409,
       "tier": "semi",
@@ -6088,7 +6173,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.00399,
       "tier": "semi",
       "at": "dark"
@@ -6110,7 +6195,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 41,
+   "upper": 45,
    "wn": 44991.599,
    "lam": 222.2637,
    "air": 222.1946,
@@ -6155,7 +6240,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 296.85,
       "f": 0.00409,
       "tier": "semi",
@@ -6217,7 +6302,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.00399,
       "tier": "semi",
       "at": "dark"
@@ -6239,7 +6324,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 39,
+   "upper": 43,
    "wn": 44538.988,
    "lam": 224.5224,
    "air": 224.4528,
@@ -6314,7 +6399,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 313.5,
       "f": 6.07e-05,
       "tier": "semi",
@@ -6377,7 +6462,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 36,
+   "upper": 40,
    "wn": 44360.25,
    "lam": 225.427,
    "air": 225.3572,
@@ -6438,7 +6523,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 345.36,
       "f": 0.000165,
       "tier": "semi",
@@ -6452,7 +6537,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 322.13,
       "f": 1.61e-05,
       "tier": "semi",
@@ -6499,7 +6584,7 @@
       "at": "ground"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.000115,
       "tier": "semi",
       "at": "dark"
@@ -6515,7 +6600,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 34,
+   "upper": 38,
    "wn": 44336.1,
    "lam": 225.5498,
    "air": 225.48,
@@ -6553,7 +6638,7 @@
       "lam": 226.6
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 449.77
      },
      {
@@ -6584,7 +6669,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 35,
+   "upper": 39,
    "wn": 44270.312,
    "lam": 225.885,
    "air": 225.8151,
@@ -6659,14 +6744,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 346.44,
       "f": 0.000498,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 323.06,
       "f": 0.000424,
       "tier": "semi",
@@ -6722,7 +6807,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 39,
+   "upper": 43,
    "wn": 43705.717,
    "lam": 228.803,
    "air": 228.7325,
@@ -6797,7 +6882,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 313.5,
       "f": 6.07e-05,
       "tier": "semi",
@@ -6860,7 +6945,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 30,
+   "upper": 34,
    "wn": 43654.974,
    "lam": 229.069,
    "air": 228.9984,
@@ -6920,7 +7005,7 @@
       "lam": 248.48
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 331.86
      }
     ],
@@ -6947,7 +7032,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 35,
+   "upper": 39,
    "wn": 43595.283,
    "lam": 229.3826,
    "air": 229.3119,
@@ -7022,14 +7107,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 346.44,
       "f": 0.000498,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 323.06,
       "f": 0.000424,
       "tier": "semi",
@@ -7085,7 +7170,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 30,
+   "upper": 34,
    "wn": 43450.187,
    "lam": 230.1486,
    "air": 230.0778,
@@ -7145,7 +7230,7 @@
       "lam": 248.48
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 331.86
      }
     ],
@@ -7172,7 +7257,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 37,
+   "upper": 41,
    "wn": 43409.296,
    "lam": 230.3654,
    "air": 230.2945,
@@ -7240,7 +7325,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 316.45,
       "f": 0.00026,
       "tier": "semi",
@@ -7254,7 +7339,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 338.84,
       "f": 3.4e-05,
       "tier": "semi",
@@ -7310,7 +7395,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 32,
+   "upper": 36,
    "wn": 43326.283,
    "lam": 230.8068,
    "air": 230.7358,
@@ -7369,14 +7454,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 349.7,
       "f": 0.00367,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 325.89,
       "f": 0.000789,
       "tier": "semi",
@@ -7439,7 +7524,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 36,
+   "upper": 40,
    "wn": 43232.873,
    "lam": 231.3055,
    "air": 231.2344,
@@ -7501,7 +7586,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 345.36,
       "f": 0.000165,
       "tier": "semi",
@@ -7515,7 +7600,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 322.13,
       "f": 1.61e-05,
       "tier": "semi",
@@ -7562,7 +7647,7 @@
       "at": "ground"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.000115,
       "tier": "semi",
       "at": "dark"
@@ -7578,7 +7663,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 39,
+   "upper": 43,
    "wn": 43202.254,
    "lam": 231.4694,
    "air": 231.3983,
@@ -7654,7 +7739,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 313.5,
       "f": 6.07e-05,
       "tier": "semi",
@@ -7717,7 +7802,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 35,
+   "upper": 39,
    "wn": 43142.935,
    "lam": 231.7877,
    "air": 231.7164,
@@ -7793,14 +7878,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 346.44,
       "f": 0.000498,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 323.06,
       "f": 0.000424,
       "tier": "semi",
@@ -7856,7 +7941,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 29,
+   "upper": 33,
    "wn": 43089.578,
    "lam": 232.0747,
    "air": 232.0034,
@@ -7878,7 +7963,7 @@
     "n": 9430000.0,
     "ch": [
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 476.48,
       "f": 1.06e-07,
       "tier": "semi",
@@ -7893,7 +7978,7 @@
       "at": "ground"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 1.06e-07,
       "tier": "semi",
       "at": "dark"
@@ -7907,7 +7992,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 38,
+   "upper": 42,
    "wn": 43064.539,
    "lam": 232.2096,
    "air": 232.1383,
@@ -7976,14 +8061,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 337.03,
       "f": 0.000111,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 314.86,
       "f": 7.36e-05,
       "tier": "semi",
@@ -8046,7 +8131,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 34,
+   "upper": 38,
    "wn": 43003.936,
    "lam": 232.5369,
    "air": 232.4655,
@@ -8084,7 +8169,7 @@
       "lam": 226.6
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 449.77
      },
      {
@@ -8115,7 +8200,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 33,
+   "upper": 37,
    "wn": 42982.74,
    "lam": 232.6515,
    "air": 232.5801,
@@ -8170,7 +8255,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 450.2,
       "f": 1.41e-08,
       "tier": "semi",
@@ -8209,7 +8294,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 1.38e-08,
       "tier": "semi",
       "at": "dark"
@@ -8224,7 +8309,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 37,
+   "upper": 41,
    "wn": 42905.833,
    "lam": 233.0685,
    "air": 232.997,
@@ -8293,7 +8378,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 316.45,
       "f": 0.00026,
       "tier": "semi",
@@ -8307,7 +8392,7 @@
       "dark": false
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 338.84,
       "f": 3.4e-05,
       "tier": "semi",
@@ -8363,7 +8448,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 26,
+   "upper": 30,
    "wn": 42620.994,
    "lam": 234.6262,
    "air": 234.5543,
@@ -8418,14 +8503,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 370.22,
       "f": 0.00357,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 343.65,
       "f": 0.00215,
       "tier": "semi",
@@ -8446,7 +8531,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 487.36,
       "f": 5.91e-06,
       "tier": "semi",
@@ -8480,13 +8565,13 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.00329,
       "tier": "semi",
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.00198,
       "tier": "semi",
       "at": "dark"
@@ -8501,7 +8586,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 31,
+   "upper": 35,
    "wn": 42601.244,
    "lam": 234.7349,
    "air": 234.6631,
@@ -8570,14 +8655,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 353.06,
       "f": 0.00645,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 328.82,
       "f": 0.00322,
       "tier": "semi",
@@ -8640,7 +8725,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 25,
+   "upper": 29,
    "wn": 42585.212,
    "lam": 234.8233,
    "air": 234.7514,
@@ -8688,7 +8773,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 488.21,
       "f": 1.6e-06,
       "tier": "semi",
@@ -8715,7 +8800,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 1.34e-06,
       "tier": "semi",
       "at": "dark"
@@ -8729,7 +8814,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 28,
+   "upper": 32,
    "wn": 42563.066,
    "lam": 234.9455,
    "air": 234.8736,
@@ -8797,21 +8882,21 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 341.92,
       "f": 0.000248,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 368.22,
       "f": 9.95e-05,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 483.9,
       "f": 1.51e-05,
       "tier": "semi",
@@ -8867,7 +8952,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 27,
+   "upper": 31,
    "wn": 41321.497,
    "lam": 242.0048,
    "air": 241.9313,
@@ -8936,7 +9021,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 369.77,
       "f": 0.00528,
       "tier": "semi",
@@ -8950,7 +9035,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 343.26,
       "f": 0.00156,
       "tier": "semi",
@@ -9005,7 +9090,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 24,
+   "upper": 28,
    "wn": 33528.739,
    "lam": 298.2516,
    "air": 298.1646,
@@ -9081,14 +9166,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 478.76,
       "f": 0.000511,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 531.95,
       "f": 2.17e-06,
       "tier": "semi",
@@ -9143,7 +9228,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 21,
+   "upper": 25,
    "wn": 33385.343,
    "lam": 299.5326,
    "air": 299.4453,
@@ -9184,7 +9269,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 870.49,
       "f": 0.000303,
       "tier": "semi",
@@ -9212,7 +9297,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 0.000292,
       "tier": "semi",
       "at": "dark"
@@ -9232,7 +9317,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 20,
+   "upper": 24,
    "wn": 33296.035,
    "lam": 300.3361,
    "air": 300.2485,
@@ -9294,7 +9379,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 558.94,
       "f": 0.00205,
       "tier": "nist",
@@ -9308,14 +9393,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 500.51,
       "f": 0.000558,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 877.31,
       "f": 0.000164,
       "tier": "semi",
@@ -9354,7 +9439,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.00194,
       "tier": "nist",
       "at": "dark"
@@ -9369,7 +9454,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 23,
+   "upper": 27,
    "wn": 33283.448,
    "lam": 300.4496,
    "air": 300.3621,
@@ -9445,14 +9530,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 484.45,
       "f": 0.000302,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 538.98,
       "f": 0.000135,
       "tier": "nist",
@@ -9506,7 +9591,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 19,
+   "upper": 23,
    "wn": 32907.547,
    "lam": 303.8817,
    "air": 303.7932,
@@ -9568,14 +9653,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 571.35,
       "f": 0.00142,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 510.44,
       "f": 0.000783,
       "tier": "nist",
@@ -9589,7 +9674,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 908.26,
       "f": 8.85e-06,
       "tier": "semi",
@@ -9628,7 +9713,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.00139,
       "tier": "nist",
       "at": "dark"
@@ -9643,7 +9728,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 18,
+   "upper": 22,
    "wn": 32768.589,
    "lam": 305.1703,
    "air": 305.0816,
@@ -9691,7 +9776,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 919.87,
       "f": 1.22e-05,
       "tier": "semi",
@@ -9718,7 +9803,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 1.2e-05,
       "tier": "semi",
       "at": "dark"
@@ -9732,7 +9817,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 22,
+   "upper": 26,
    "wn": 32731.074,
    "lam": 305.5201,
    "air": 305.4312,
@@ -9808,14 +9893,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 497.77,
       "f": 0.000344,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 555.52,
       "f": 0.0002,
       "tier": "nist",
@@ -9870,7 +9955,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 24,
+   "upper": 28,
    "wn": 32695.468,
    "lam": 305.8528,
    "air": 305.7639,
@@ -9946,14 +10031,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 478.76,
       "f": 0.000511,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 531.95,
       "f": 2.17e-06,
       "tier": "semi",
@@ -10008,7 +10093,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 20,
+   "upper": 24,
    "wn": 32621.006,
    "lam": 306.5509,
    "air": 306.4619,
@@ -10070,7 +10155,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 558.94,
       "f": 0.00205,
       "tier": "nist",
@@ -10084,14 +10169,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 500.51,
       "f": 0.000558,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 877.31,
       "f": 0.000164,
       "tier": "semi",
@@ -10130,7 +10215,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.00194,
       "tier": "nist",
       "at": "dark"
@@ -10145,7 +10230,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 19,
+   "upper": 23,
    "wn": 32232.518,
    "lam": 310.2457,
    "air": 310.1557,
@@ -10207,14 +10292,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 571.35,
       "f": 0.00142,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 510.44,
       "f": 0.000783,
       "tier": "nist",
@@ -10228,7 +10313,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 908.26,
       "f": 8.85e-06,
       "tier": "semi",
@@ -10267,7 +10352,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.00139,
       "tier": "nist",
       "at": "dark"
@@ -10282,7 +10367,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 22,
+   "upper": 26,
    "wn": 31897.803,
    "lam": 313.5012,
    "air": 313.4104,
@@ -10358,14 +10443,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 497.77,
       "f": 0.000344,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 555.52,
       "f": 0.0002,
       "tier": "nist",
@@ -10420,7 +10505,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 17,
+   "upper": 21,
    "wn": 30922.734,
    "lam": 323.3867,
    "air": 323.2933,
@@ -10455,7 +10540,7 @@
     "n": 254000.0,
     "ch": [
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1133.7,
       "f": 3.93e-06,
       "tier": "semi",
@@ -10470,7 +10555,7 @@
       "at": "ground"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 3.93e-06,
       "tier": "semi",
       "at": "dark"
@@ -10485,7 +10570,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 11,
+   "upper": 15,
    "wn": 29668.918,
    "lam": 337.0531,
    "air": 336.9563,
@@ -10547,7 +10632,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 711.28,
       "f": 0.000332,
       "tier": "nist",
@@ -10564,11 +10649,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 619.29
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1321.6
      }
     ],
@@ -10604,7 +10689,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.000331,
       "tier": "nist",
       "at": "dark"
@@ -10619,7 +10704,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 11,
+   "upper": 15,
    "wn": 29464.131,
    "lam": 339.3957,
    "air": 339.2983,
@@ -10681,7 +10766,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 711.28,
       "f": 0.000332,
       "tier": "nist",
@@ -10698,11 +10783,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 619.29
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1321.6
      }
     ],
@@ -10738,7 +10823,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.000331,
       "tier": "nist",
       "at": "dark"
@@ -10753,7 +10838,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 9,
+   "upper": 13,
    "wn": 29276.202,
    "lam": 341.5744,
    "air": 341.4764,
@@ -10801,7 +10886,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1355.3,
       "f": 3.79e-07,
       "tier": "semi",
@@ -10828,7 +10913,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 3.74e-07,
       "tier": "semi",
       "at": "dark"
@@ -10842,7 +10927,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 16,
+   "upper": 20,
    "wn": 29199.73,
    "lam": 342.4689,
    "air": 342.3707,
@@ -10897,14 +10982,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 574.99,
       "f": 0.000714,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 653.47,
       "f": 0.000405,
       "tier": "nist",
@@ -10958,13 +11043,13 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.000714,
       "tier": "nist",
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.000405,
       "tier": "nist",
       "at": "dark"
@@ -10980,7 +11065,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 8,
+   "upper": 12,
    "wn": 29115.975,
    "lam": 343.4541,
    "air": 343.3556,
@@ -11049,21 +11134,21 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 729.35,
       "f": 0.000372,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1385.3,
       "f": 0.000248,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 632.93,
       "f": 0.000211,
       "tier": "nist",
@@ -11117,7 +11202,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 13,
+   "upper": 17,
    "wn": 29008.661,
    "lam": 344.7246,
    "air": 344.6259,
@@ -11186,7 +11271,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 610.98,
       "f": 0.00204,
       "tier": "nist",
@@ -11200,7 +11285,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 700.35,
       "f": 9.42e-05,
       "tier": "nist",
@@ -11255,7 +11340,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 12,
+   "upper": 16,
    "wn": 28952.963,
    "lam": 345.3878,
    "air": 345.2889,
@@ -11310,21 +11395,21 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1293.6,
       "f": 0.00121,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 613.07,
       "f": 0.000852,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 703.09,
       "f": 0.000366,
       "tier": "semi",
@@ -11371,13 +11456,13 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 0.00113,
       "tier": "semi",
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.000796,
       "tier": "nist",
       "at": "dark"
@@ -11392,7 +11477,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 15,
+   "upper": 19,
    "wn": 28906.327,
    "lam": 345.945,
    "air": 345.846,
@@ -11461,7 +11546,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 584.86,
       "f": 0.00029,
       "tier": "nist",
@@ -11475,7 +11560,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 666.24,
       "f": 1.05e-06,
       "tier": "semi",
@@ -11529,7 +11614,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 7,
+   "upper": 11,
    "wn": 28879.669,
    "lam": 346.2644,
    "air": 346.1652,
@@ -11577,7 +11662,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1432.2,
       "f": 4.03e-07,
       "tier": "semi",
@@ -11604,7 +11689,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "p": 3.97e-07,
       "tier": "semi",
       "at": "dark"
@@ -11618,7 +11703,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 11,
+   "upper": 15,
    "wn": 28789.102,
    "lam": 347.3537,
    "air": 347.2542,
@@ -11680,7 +11765,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 711.28,
       "f": 0.000332,
       "tier": "nist",
@@ -11697,11 +11782,11 @@
     "n_open": 2,
     "open": [
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 619.29
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1321.6
      }
     ],
@@ -11737,7 +11822,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "p": 0.000331,
       "tier": "nist",
       "at": "dark"
@@ -11752,7 +11837,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 10,
+   "upper": 14,
    "wn": 28620.858,
    "lam": 349.3955,
    "air": 349.2956,
@@ -11814,7 +11899,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 625.81,
       "f": 0.00158,
       "tier": "nist",
@@ -11828,7 +11913,7 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 719.9,
       "f": 0.000747,
       "tier": "nist",
@@ -11874,7 +11959,7 @@
       "at": "dark"
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "p": 0.00155,
       "tier": "nist",
       "at": "dark"
@@ -11889,7 +11974,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 14,
+   "upper": 18,
    "wn": 28479.164,
    "lam": 351.1339,
    "air": 351.0335,
@@ -11952,7 +12037,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 8,
+   "upper": 12,
    "wn": 28440.946,
    "lam": 351.6057,
    "air": 351.5052,
@@ -12021,21 +12106,21 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 729.35,
       "f": 0.000372,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>G<sub>4</sub>",
+      "lv": 8,
       "lam": 1385.3,
       "f": 0.000248,
       "tier": "semi",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 632.93,
       "f": 0.000211,
       "tier": "nist",
@@ -12089,7 +12174,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 6,
+   "upper": 10,
    "wn": 28364.416,
    "lam": 352.5544,
    "air": 352.4536,
@@ -12158,14 +12243,14 @@
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>1</sup>D<sub>2</sub>",
+      "lv": 6,
       "lam": 664.55,
       "f": 0.00126,
       "tier": "nist",
       "dark": true
      },
      {
-      "html": "3d<sup>8</sup>4s<sup>2</sup> <sup>3</sup>P<sub>2</sub>",
+      "lv": 7,
       "lam": 771.64,
       "f": 0.00118,
       "tier": "nist",
@@ -12219,6 +12304,58 @@
     ],
     "end_more": 0.00313
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 817.26104,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 9,
+   "wn": 27260.894,
+   "lam": 366.8258,
+   "air": 366.7214,
+   "type": "M2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 662.61103,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 8,
+   "wn": 22102.325,
+   "lam": 452.4411,
+   "air": 452.3142,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 467.97135,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 7,
+   "wn": 15609.844,
+   "lam": 640.6214,
+   "air": 640.4444,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 405.35979,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 6,
+   "wn": 13521.347,
+   "lam": 739.5713,
+   "air": 739.3676,
+   "type": "E2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -12399,8 +12536,8 @@
   }
  ],
  "validation": [
-  "levels: 55   lines < 2000 nm: 70   with matrix element: 70",
-  "transition-rate provenance: exp: 52, nist: 18",
+  "levels: 59   lines < 2000 nm: 74   with matrix element: 70",
+  "transition-rate provenance: exp: 52, nist: 18, wavelength only: 4",
   "levels with a measured lifetime: 40",
   "semi-empirical rates (Kurucz): 9157 of 9663 lines on NIST levels; used for 0 drawn lines and 8717 further decay lines"
  ],

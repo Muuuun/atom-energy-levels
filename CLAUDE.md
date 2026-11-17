@@ -150,6 +150,35 @@ owner (Bing / IndexNow was notified on 2026-10-02; the key file is in `docs/`). 
   `<El>/LEVELS1` and `fit_assignment.txt` before publishing. The compiled programs live outside the repo (scratchpad of
   2026-10-07); rebuilding takes 10 minutes with the README.
 
+## Status (2026-11-16): lines that were missing
+
+The owner found barium 877.551 nm (6s2 1S0 - 6s5d 1D2, E2) missing and asked for one uniform pass over every page.
+What a page draws is NOT "every transition": an alkali page has every E1-allowed pair (ARC); every other page has NIST's classified
+lines plus the lines of the literature file. Two gaps were closed, a third is left as designed:
+
+- Ground level -> long-lived level (`build_nist` in `compute.py`, block before `used`): a level that no electric-dipole decay can
+  leave (parity and J against every lower level of the NIST list; a lower level without J counts as a possible decay) gets its line
+  from the ground level when that line is M1, E2, M2 or J = 0 - 0 (type `clock`) by J and parity and lies in the drawn range, the
+  level being added to the page if it was not drawn. Wavelength from the level energies, no rate; the line carries
+  `inferred: true` (card note in `viewer.js`, sentence in the page lead, `n_inf` in `build_site.py`) unless the literature file
+  gives it a rate, a frequency or a `use`. |ΔJ| >= 3 (E3, M3: barium 1042.04 nm to 3D3) is not drawn. The column scheme of an
+  automatic page is still decided from the levels of its NIST lines (`scheme_of`). 437 such lines on 66 elements (238 M1+E2, 154 E2, 25 M2, 11 M1, 9 J = 0 - 0), 258 levels added.
+- Hand-set pages (Sr, Ba, Dy, Be, Mg, Ca; Yb already): `keep_unrated=True`, because their table is headed "All transitions below
+  2 µm": NIST lines without a rate are drawn (Ba 81, Sr 37, Mg 3, Be 1, Ca 1), with a Kurucz semi-empirical rate (≈) where one exists.
+- Left as designed: an automatic page draws the 70-90 strongest NIST lines only (its table is headed "Listed"); 3876 further NIST
+  lines run between levels that are already drawn. Lifting the cap is the owner's call.
+- Barium 877.55 nm: A = 4.0 s^-1 is 1 / (calculated lifetime of about 1/4 s, Migdalek & Baylis 1990, abstract), marked theory and
+  derived in `Ba.json`; no measurement exists.
+- Data search for that line (2026-11-17): no measurement of its rate, lifetime or frequency exists; the NIST compilation of Ba I
+  transition probabilities (Klose, Fuhr, Wiese 2002) has forbidden lines only for Ba II; the 1990 tables and the supplement of
+  arXiv:2607.11282 are closed. Independent check with this site's Cowan chain, E2 and M1 switched on (`cowan/Ba_forbidden/`, README
+  there): A = 3.2-5.1 s^-1 (0.20-0.31 s) against the published 0.24-0.30 s; 3D2 31-56 s against 20-69 s in the literature; the M1
+  line to 3D1 (1106.93 nm) comes out as zero. Barium is deliberately not in `data/cowan/`: nothing on the page is taken from this run.
+- `multipole_me()` in `compute.py`: a pure E2 or M1 line with a rate gets its reduced matrix element from A (`t["q"]` in e a0^2,
+  `t["mu"]` in mu_B; NIST line-strength formulas), shown in the line card. Check: barium 1085.13 nm gives 3.125, the amplitude Dzuba
+  & Ginges print. 100 lines on 27 pages.
+- `publish.sh` still writes an old model name in its commit trailer: commit by hand or correct it before use.
+
 ## Known limitations
 
 - NIST lists some unresolved fine-structure doublets at one energy (B, O, Zn, Al, Be): levels are identified by their index in

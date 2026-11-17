@@ -18,7 +18,8 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "159Tb is the only stable isotope (I = 3/2), so there are no isotope shifts between stable isotopes. Hyperfine constants: 94 levels now carry A (and mostly B). Sources actually opened: (1) Elantkowska et al., Eur. Phys. J. Plus 132, 455 (2017) (open access; PDF from the Wayback copy of the Springer file, saved as pdf/Tb_Elantkowska_2017.pdf) - its Table 3 compiles all measured A, B of even-parity levels with the original reference per row (Childs 1970; Childs & Goodman 1979; Childs 1992; Furmann et al. 2015, 2016; Stefanska et al. 2017; private communication); these are stored with method 'compilation'. (2) Childs & Goodman, J. Opt. Soc. Am. 69, 815 (1979) and Childs, J. Opt. Soc. Am. B 9, 191 (1992): the tables embedded in the publisher abstract pages, read from Wayback Machine copies (saved as pdf/Tb_Childs_1979.html, pdf/Tb_Childs_1992.html); values measured in those papers are 'experiment'. (3) Arnoult & Gerstenkorn 1966 and Childs et al. 1984, read on the publisher abstract pages in the first pass. Eight levels with hyperfine data from Childs & Goodman 1979 are odd-parity upper levels (17118.72, 17341.92, 17409.62, 18461.87, 19450.45, 19658.41, 21837.92, 22223.87). Sign convention: A, B in MHz as printed. Still no lifetime for Tb I (see not_found). Transition rates: 7 lines from Irvine et al. 2023 (laser-induced-breakdown Saha-Boltzmann estimates, low accuracy, see the note on each entry; 5 of them are lines the site draws); the lifetime x sum(A) check could not be run because no lifetime is available. Sum of the stored A out of 26087.13 is 4.10e7, 23147.92: 4.03e7, 23107.25: 7.75e7, 25717.68: 6.80e7, 23043.43: 6.55e6, 25076.26: 9.47e6, 19131.45: 3.47e6 s^-1 (one line each, so these sums are derived lower bounds on the total decay rate only if the estimates are right). Extra fields beyond SCHEMA.md: top-level ionization_limit; transition field use_source; hyperfine field C_MHz (magnetic-octupole fit constant, 5425.06 only).",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -66,6 +67,12 @@
   {
    "key": "even J=17/2",
    "header": "J = 17/2",
+   "group": "\\mathrm{even}",
+   "width": 1.0
+  },
+  {
+   "key": "even J=19/2",
+   "header": "J = 19/2",
    "group": "\\mathrm{even}",
    "width": 1.0
   }
@@ -203,6 +210,52 @@
   },
   {
    "id": 6,
+   "E": 11331.14,
+   "unc": null,
+   "J": 9.5,
+   "conf": "4f8.(7F).5d2.(3F) (9H).6s?",
+   "term": "10H?",
+   "parity": "even",
+   "g": 1.46,
+   "name": "^{10}H_{19/2}",
+   "plain": "4f85d2 6s 10H19/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 876.3,
+    "A_unc": 3.8,
+    "B": 1460.0,
+    "B_unc": 20.0,
+    "tier": "exp",
+    "src": "Stefanska, Elantkowska, Ruczkowski, Furmann, J. Quant. Spectrosc. Radiat. Transfer 189, 441 (2017), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp"
+   },
+   "col": 8
+  },
+  {
+   "id": 7,
+   "E": 13398.4,
+   "unc": null,
+   "J": 9.5,
+   "conf": "4f8.(7F).5d2.(3F) (9I).6s?",
+   "term": "10I?",
+   "parity": "even",
+   "g": null,
+   "name": "^{10}I_{19/2}",
+   "plain": "4f85d2 6s 10I19/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 690.6,
+    "A_unc": 0.6,
+    "B": 1023.0,
+    "B_unc": 16.0,
+    "tier": "exp",
+    "src": "Stefanska, Elantkowska, Ruczkowski, Furmann, J. Quant. Spectrosc. Radiat. Transfer 189, 441 (2017), as tabulated in Elantkowska, Ruczkowski, Sikorski, Dembczynski, Eur. Phys. J. Plus 132, 455 (2017), Table 3 (pp. 6-9), column A_exp/B_exp"
+   },
+   "col": 8
+  },
+  {
+   "id": 8,
    "E": 17249.59,
    "unc": null,
    "J": 8.5,
@@ -225,7 +278,7 @@
    "col": 7
   },
   {
-   "id": 7,
+   "id": 9,
    "E": 19131.45,
    "unc": null,
    "J": 8.5,
@@ -240,7 +293,7 @@
    "col": 3
   },
   {
-   "id": 8,
+   "id": 10,
    "E": 23043.43,
    "unc": null,
    "J": 6.5,
@@ -263,7 +316,7 @@
    "col": 5
   },
   {
-   "id": 9,
+   "id": 11,
    "E": 23107.25,
    "unc": null,
    "J": 8.5,
@@ -278,7 +331,7 @@
    "col": 7
   },
   {
-   "id": 10,
+   "id": 12,
    "E": 23147.92,
    "unc": null,
    "J": 7.5,
@@ -293,7 +346,7 @@
    "col": 6
   },
   {
-   "id": 11,
+   "id": 13,
    "E": 25076.26,
    "unc": null,
    "J": 7.5,
@@ -308,7 +361,7 @@
    "col": 2
   },
   {
-   "id": 12,
+   "id": 14,
    "E": 25717.68,
    "unc": null,
    "J": 6.5,
@@ -323,7 +376,7 @@
    "col": 5
   },
   {
-   "id": 13,
+   "id": 15,
    "E": 25825.53,
    "unc": null,
    "J": 7.5,
@@ -338,7 +391,7 @@
    "col": 6
   },
   {
-   "id": 14,
+   "id": 16,
    "E": 26087.13,
    "unc": null,
    "J": 8.5,
@@ -353,7 +406,7 @@
    "col": 3
   },
   {
-   "id": 15,
+   "id": 17,
    "E": 26385.99,
    "unc": null,
    "J": 6.5,
@@ -368,7 +421,7 @@
    "col": 1
   },
   {
-   "id": 16,
+   "id": 18,
    "E": 27102.94,
    "unc": null,
    "J": 4.5,
@@ -390,7 +443,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 15,
+   "upper": 17,
    "wn": 26100.49,
    "lam": 383.1346,
    "air": 383.0259,
@@ -430,7 +483,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 14,
+   "upper": 16,
    "wn": 25625.05,
    "lam": 390.2431,
    "air": 390.1326,
@@ -470,7 +523,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 3,
-   "upper": 16,
+   "upper": 18,
    "wn": 24792.85,
    "lam": 403.3421,
    "air": 403.2281,
@@ -510,7 +563,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 11,
+   "upper": 13,
    "wn": 24614.18,
    "lam": 406.2699,
    "air": 406.1552,
@@ -550,7 +603,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 10,
+   "upper": 12,
    "wn": 23147.92,
    "lam": 432.0043,
    "air": 431.8828,
@@ -590,7 +643,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 9,
+   "upper": 11,
    "wn": 23107.25,
    "lam": 432.7646,
    "air": 432.6429,
@@ -630,7 +683,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 13,
+   "upper": 15,
    "wn": 23053.855,
    "lam": 433.7669,
    "air": 433.645,
@@ -670,7 +723,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 8,
+   "upper": 10,
    "wn": 23043.43,
    "lam": 433.9632,
    "air": 433.8412,
@@ -710,7 +763,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 12,
+   "upper": 14,
    "wn": 22946.005,
    "lam": 435.8057,
    "air": 435.6832,
@@ -750,7 +803,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 4,
-   "upper": 8,
+   "upper": 10,
    "wn": 20271.755,
    "lam": 493.2972,
    "air": 493.1595,
@@ -789,7 +842,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 5,
-   "upper": 11,
+   "upper": 13,
    "wn": 18724.51,
    "lam": 534.0594,
    "air": 533.9109,
@@ -828,7 +881,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 2,
-   "upper": 7,
+   "upper": 9,
    "wn": 18669.37,
    "lam": 535.6367,
    "air": 535.4878,
@@ -868,7 +921,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 6,
+   "upper": 8,
    "wn": 17249.59,
    "lam": 579.7239,
    "air": 579.5632,
@@ -901,6 +954,32 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 401.67393,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 7,
+   "wn": 13398.4,
+   "lam": 746.3578,
+   "air": 746.1523,
+   "type": "M2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 339.69903,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 6,
+   "wn": 11331.14,
+   "lam": 882.5237,
+   "air": 882.2815,
+   "type": "M2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -975,6 +1054,18 @@
      "F=5: -4501.59   F=6: -2561.05   F=7: +357.41   F=8: +4555.88"
     ],
     [
+     "$^{10}H_{19/2}$",
+     "876(4)",
+     "1460(20)",
+     "F=8: -13308.66   F=9: -6267.22   F=10: +2367.71   F=11: +12852.27"
+    ],
+    [
+     "$^{10}I_{19/2}$",
+     "690.6(6)",
+     "1023(16)",
+     "F=8: -10531.46   F=9: -4908.33   F=10: +1907.94   F=11: +10096.80"
+    ],
+    [
      "$(15/2,2)_{17/2}$",
      "857.1(4)",
      "1758(5)",
@@ -991,8 +1082,8 @@
   }
  ],
  "validation": [
-  "levels: 17   lines < 2000 nm: 13   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 13",
+  "levels: 19   lines < 2000 nm: 15   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 15",
   "levels with a measured lifetime: 0"
  ],
  "sources": {

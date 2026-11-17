@@ -15,10 +15,11 @@
   "has_lit": true,
   "freq_isotope": "241",
   "limit_text": "Am$^+$ ionisation limit   48182.00 cm$^{-1}$  =  5.97381 eV  (207.546 nm)",
-  "lit_levels": 20,
+  "lit_levels": 24,
   "guide_tau": "Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists).",
   "notes": "Americium has no stable isotope; level energies are those of 241Am (I = 5/2) from the Blaise-Wyart compilation (archived web tables; analysis by Pulliam, unpublished, and Fred & Tomkins 1957). levels_not_in_nist holds every tabulated Am I level below 30000 cm-1 plus the upper levels of the entered lines. No Lande g values are tabulated except for 16511.82 cm-1. Hyperfine constants A and B of 241Am are tabulated for most levels in units of 10^-3 cm^-1 and are converted here to MHz (x 29.9792458); the unit is inferred from the introduction of the table (see the note on each entry) and checked on the 16511.82 cm-1 level: A = 57.2 gives a total hyperfine width 25 A = 1430, against the printed width W = 1456 x 10^-3 cm^-1. Following the introduction literally, values printed without a decimal point get an uncertainty of 0.01 cm^-1 (300 MHz), which is probably too pessimistic for B. isotope_shift_MHz with key 243-241 is derived from the level-shift column Delta-T(243-241) (ground level = 0) and means nu(243Am) - nu(241Am); the introduction of the table calls these shifts tentative for many upper levels. relative_intensity is the table intensity of the selected-wavelength list (not calibrated).",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -31,6 +32,18 @@
    "key": "odd J=9/2",
    "header": "J = 9/2",
    "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "odd J=11/2",
+   "header": "J = 11/2",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
+  {
+   "key": "even J=3/2",
+   "header": "J = 3/2",
+   "group": "\\mathrm{even}",
    "width": 1.0
   },
   {
@@ -78,6 +91,81 @@
   },
   {
    "id": 1,
+   "E": 10683.57,
+   "unc": null,
+   "J": 1.5,
+   "conf": "5f6(7F).6d.7s2",
+   "term": "8H",
+   "parity": "even",
+   "g": null,
+   "name": "^8H_{3/2}",
+   "plain": "5f66d7s2 8H3/2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 353.8,
+    "A_unc": 15.0,
+    "B": 1558.9,
+    "B_unc": 300.0,
+    "tier": "exp",
+    "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
+   },
+   "col": 3
+  },
+  {
+   "id": 2,
+   "E": 13292.51,
+   "unc": null,
+   "J": 1.5,
+   "conf": "5f6(7F).6d.7s2",
+   "term": "8D",
+   "parity": "even",
+   "g": null,
+   "name": "^8D_{3/2}",
+   "plain": "5f66d7s2 8D3/2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": -149.9,
+    "A_unc": 300.0,
+    "B": -479.7,
+    "B_unc": 300.0,
+    "tier": "exp",
+    "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
+   },
+   "col": 3
+  },
+  {
+   "id": 3,
+   "E": 15136.02,
+   "unc": null,
+   "J": 4.5,
+   "conf": "5f7(8S).6d.7s",
+   "term": "10D*",
+   "parity": "odd",
+   "g": null,
+   "name": "^{10}D^{o}_{9/2}",
+   "plain": "5f76d7s 10D°9/2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I odd (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 1217.2,
+    "A_unc": 15.0,
+    "B": -1528.9,
+    "B_unc": 300.0,
+    "tier": "exp",
+    "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
+   },
+   "col": 1
+  },
+  {
+   "id": 4,
    "E": 15608.26,
    "unc": null,
    "J": 3.5,
@@ -99,10 +187,35 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 2,
+   "id": 5,
+   "E": 15764.81,
+   "unc": null,
+   "J": 5.5,
+   "conf": "5f7(8S).6d.7s",
+   "term": "10D*",
+   "parity": "odd",
+   "g": null,
+   "name": "^{10}D^{o}_{11/2}",
+   "plain": "5f76d7s 10D°11/2",
+   "E_tier": "exp",
+   "E_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I odd (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "hfs": {
+    "A": 1097.2,
+    "A_unc": 15.0,
+    "B": 359.8,
+    "B_unc": 300.0,
+    "tier": "exp",
+    "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
+   },
+   "col": 2
+  },
+  {
+   "id": 6,
    "E": 16511.82,
    "unc": null,
    "J": 4.5,
@@ -124,10 +237,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 4
+   "col": 6
   },
   {
-   "id": 3,
+   "id": 7,
    "E": 17858.16,
    "unc": null,
    "J": 2.5,
@@ -149,10 +262,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 2
+   "col": 4
   },
   {
-   "id": 4,
+   "id": 8,
    "E": 18429.1,
    "unc": null,
    "J": 2.5,
@@ -174,10 +287,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 2
+   "col": 4
   },
   {
-   "id": 5,
+   "id": 9,
    "E": 18504.35,
    "unc": null,
    "J": 3.5,
@@ -199,10 +312,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 6,
+   "id": 10,
    "E": 19993.6,
    "unc": null,
    "J": 3.5,
@@ -224,10 +337,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 7,
+   "id": 11,
    "E": 20031.37,
    "unc": null,
    "J": 2.5,
@@ -249,10 +362,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 2
+   "col": 4
   },
   {
-   "id": 8,
+   "id": 12,
    "E": 21239.87,
    "unc": null,
    "J": 4.5,
@@ -274,10 +387,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 4
+   "col": 6
   },
   {
-   "id": 9,
+   "id": 13,
    "E": 21353.93,
    "unc": null,
    "J": 4.5,
@@ -299,10 +412,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 4
+   "col": 6
   },
   {
-   "id": 10,
+   "id": 14,
    "E": 21440.37,
    "unc": null,
    "J": 3.5,
@@ -324,10 +437,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 11,
+   "id": 15,
    "E": 23307.41,
    "unc": null,
    "J": 4.5,
@@ -349,10 +462,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 4
+   "col": 6
   },
   {
-   "id": 12,
+   "id": 16,
    "E": 23436.98,
    "unc": null,
    "J": 4.5,
@@ -374,10 +487,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 4
+   "col": 6
   },
   {
-   "id": 13,
+   "id": 17,
    "E": 27217.24,
    "unc": null,
    "J": 2.5,
@@ -399,10 +512,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 2
+   "col": 4
   },
   {
-   "id": 14,
+   "id": 18,
    "E": 27743.56,
    "unc": null,
    "J": 2.5,
@@ -424,10 +537,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 2
+   "col": 4
   },
   {
-   "id": 15,
+   "id": 19,
    "E": 28009.81,
    "unc": null,
    "J": 3.5,
@@ -449,10 +562,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 16,
+   "id": 20,
    "E": 28480.87,
    "unc": null,
    "J": 4.5,
@@ -474,10 +587,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 4
+   "col": 6
   },
   {
-   "id": 17,
+   "id": 21,
    "E": 29009.32,
    "unc": null,
    "J": 4.5,
@@ -499,10 +612,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 4
+   "col": 6
   },
   {
-   "id": 18,
+   "id": 22,
    "E": 29446.51,
    "unc": null,
    "J": 3.5,
@@ -524,10 +637,10 @@
     "tier": "exp",
     "src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table (columns A, B of 241Am) (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened)"
    },
-   "col": 3
+   "col": 5
   },
   {
-   "id": 19,
+   "id": 23,
    "E": 30884.9,
    "unc": null,
    "J": 4.5,
@@ -552,7 +665,7 @@
    "col": 1
   },
   {
-   "id": 20,
+   "id": 24,
    "E": 37111.63,
    "unc": null,
    "J": 3.5,
@@ -584,7 +697,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 18,
+   "upper": 22,
    "wn": 29446.51,
    "lam": 339.5988,
    "air": 339.5014,
@@ -615,7 +728,7 @@
       "lam": 693.06
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 698.79
      },
      {
@@ -631,7 +744,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 17,
+   "upper": 21,
    "wn": 29009.32,
    "lam": 344.7168,
    "air": 344.618,
@@ -658,11 +771,11 @@
       "lam": 714.71
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 720.81
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>11/2</sub>",
+      "lv": 5,
       "lam": 755.03
      },
      {
@@ -678,7 +791,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 16,
+   "upper": 20,
    "wn": 28480.87,
    "lam": 351.1129,
    "air": 351.0125,
@@ -705,11 +818,11 @@
       "lam": 742.77
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 749.35
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>11/2</sub>",
+      "lv": 5,
       "lam": 786.41
      },
      {
@@ -725,7 +838,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 15,
+   "upper": 19,
    "wn": 28009.81,
    "lam": 357.0178,
    "air": 356.9159,
@@ -756,7 +869,7 @@
       "lam": 769.7
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 776.77
      },
      {
@@ -772,7 +885,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 14,
+   "upper": 18,
    "wn": 27743.56,
    "lam": 360.444,
    "air": 360.3412,
@@ -811,7 +924,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 13,
+   "upper": 17,
    "wn": 27217.24,
    "lam": 367.4142,
    "air": 367.3096,
@@ -858,7 +971,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 12,
+   "upper": 16,
    "wn": 23436.98,
    "lam": 426.6761,
    "air": 426.5561,
@@ -886,11 +999,11 @@
       "lam": 1187.7
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 1204.7
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>11/2</sub>",
+      "lv": 5,
       "lam": 1303.4
      },
      {
@@ -906,7 +1019,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 11,
+   "upper": 15,
    "wn": 23307.41,
    "lam": 429.0481,
    "air": 428.9274,
@@ -933,11 +1046,11 @@
       "lam": 1206.3
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 1223.8
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>11/2</sub>",
+      "lv": 5,
       "lam": 1325.8
      },
      {
@@ -952,8 +1065,8 @@
    "freq": 644.65481,
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I odd (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
-   "lower": 1,
-   "upper": 20,
+   "lower": 4,
+   "upper": 24,
    "wn": 21503.37,
    "lam": 465.0434,
    "air": 464.9132,
@@ -984,7 +1097,7 @@
       "lam": 470.54
      },
      {
-      "lv": 2,
+      "lv": 6,
       "lam": 485.44
      },
      {
@@ -1000,7 +1113,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 10,
+   "upper": 14,
    "wn": 21440.37,
    "lam": 466.4099,
    "air": 466.2793,
@@ -1031,7 +1144,7 @@
       "lam": 1557.0
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 1586.2
      },
      {
@@ -1047,7 +1160,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 9,
+   "upper": 13,
    "wn": 21353.93,
    "lam": 468.2979,
    "air": 468.1668,
@@ -1074,11 +1187,11 @@
       "lam": 1578.2
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 1608.3
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>11/2</sub>",
+      "lv": 5,
       "lam": 1789.2
      },
      {
@@ -1094,7 +1207,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 8,
+   "upper": 12,
    "wn": 21239.87,
    "lam": 470.8127,
    "air": 470.681,
@@ -1121,11 +1234,11 @@
       "lam": 1607.2
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 1638.3
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>11/2</sub>",
+      "lv": 5,
       "lam": 1826.5
      },
      {
@@ -1141,7 +1254,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 7,
+   "upper": 11,
    "wn": 20031.37,
    "lam": 499.217,
    "air": 499.0777,
@@ -1184,7 +1297,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 6,
+   "upper": 10,
    "wn": 19993.6,
    "lam": 500.1601,
    "air": 500.0206,
@@ -1215,7 +1328,7 @@
       "lam": 2009.7
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 2058.6
      },
      {
@@ -1231,7 +1344,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 5,
+   "upper": 9,
    "wn": 18504.35,
    "lam": 540.4135,
    "air": 540.2633,
@@ -1262,7 +1375,7 @@
       "lam": 2868.1
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 2968.8
      },
      {
@@ -1278,7 +1391,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 4,
+   "upper": 8,
    "wn": 18429.1,
    "lam": 542.6201,
    "air": 542.4693,
@@ -1321,7 +1434,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 3,
+   "upper": 7,
    "wn": 17858.16,
    "lam": 559.9681,
    "air": 559.8127,
@@ -1360,7 +1473,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 2,
+   "upper": 6,
    "wn": 16511.82,
    "lam": 605.6268,
    "air": 605.4591,
@@ -1388,15 +1501,28 @@
       "lam": 6692.9
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 7268.5
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>11/2</sub>",
+      "lv": 5,
       "lam": 13387.0
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 472.61711,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I odd (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 5,
+   "wn": 15764.81,
+   "lam": 634.3242,
+   "air": 634.1488,
+   "type": "E2",
+   "inferred": true
   },
   {
    "kind": "E1",
@@ -1404,7 +1530,7 @@
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
    "lower": 0,
-   "upper": 1,
+   "upper": 4,
    "wn": 15608.26,
    "lam": 640.6864,
    "air": 640.5093,
@@ -1435,7 +1561,7 @@
       "lam": 16933.0
      },
      {
-      "html": "<sup>10</sup>D<sup>°</sup><sub>9/2</sub>",
+      "lv": 3,
       "lam": 21176.0
      }
     ]
@@ -1446,8 +1572,8 @@
    "freq": 457.98215,
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I odd (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
-   "lower": 1,
-   "upper": 19,
+   "lower": 4,
+   "upper": 23,
    "wn": 15276.64,
    "lam": 654.5942,
    "air": 654.4134,
@@ -1470,7 +1596,7 @@
       "lam": 640.54
      },
      {
-      "lv": 2,
+      "lv": 6,
       "lam": 695.75
      },
      {
@@ -1478,7 +1604,7 @@
       "lam": 741.02
      },
      {
-      "lv": 5,
+      "lv": 9,
       "lam": 807.72
      },
      {
@@ -1489,12 +1615,25 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 453.76646,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I odd (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 3,
+   "wn": 15136.02,
+   "lam": 660.6757,
+   "air": 660.4932,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 430.8941,
    "freq_tier": "exp",
    "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened); Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I odd (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
-   "lower": 2,
-   "upper": 19,
+   "lower": 6,
+   "upper": 23,
    "wn": 14373.08,
    "lam": 695.7451,
    "air": 695.5532,
@@ -1517,7 +1656,7 @@
       "lam": 640.54
      },
      {
-      "lv": 1,
+      "lv": 4,
       "lam": 654.59
      },
      {
@@ -1525,7 +1664,7 @@
       "lam": 741.02
      },
      {
-      "lv": 5,
+      "lv": 9,
       "lam": 807.72
      },
      {
@@ -1534,6 +1673,32 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 398.49942,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 2,
+   "wn": 13292.51,
+   "lam": 752.3034,
+   "air": 752.0963,
+   "type": "M2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 320.28537,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, Selected Constants: Energy Levels and Atomic Spectra of Actinides (Tables Internationales de Constantes, Paris 1992), online database of Laboratoire Aime Cotton, level table Am I even (archived copy in the Internet Archive); the table follows unpublished Fourier-transform analysis of B.V. Pulliam (and Fred & Tomkins, J. Opt. Soc. Am. 47, 1076 (1957)) (originals not opened) (measured level energy)",
+   "lower": 0,
+   "upper": 1,
+   "wn": 10683.57,
+   "lam": 936.0167,
+   "air": 935.7599,
+   "type": "M2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -1595,10 +1760,34 @@
      "F=1: +259.20   F=2: +189.54   F=3: +98.31   F=4: +1.43   F=5: -79.87   F=6: -119.06"
     ],
     [
+     "$^8H_{3/2}$",
+     "354(15)",
+     "1559(300)",
+     "F=1: -766.22   F=2: -1305.74   F=3: -945.85   F=4: +1716.47"
+    ],
+    [
+     "$^8D_{3/2}$",
+     "-150(300)",
+     "-480(300)",
+     "F=1: +451.19   F=2: +535.14   F=3: +301.31   F=4: -682.05"
+    ],
+    [
+     "$^{10}D^{o}_{9/2}$",
+     "1217(15)",
+     "-1529(300)",
+     "F=2: -17437.25   F=3: -13326.98   F=4: -8024.99   F=5: -1684.17   F=6: +5504.36   F=7: +13311.27"
+    ],
+    [
      "$(7/2,0)_{7/2}$",
      "1415(15)",
      "1139(300)",
      "F=1: -15308.46   F=2: -12803.95   F=3: -8925.12   F=4: -3525.51   F=5: +3590.18   F=6: +12666.05"
+    ],
+    [
+     "$^{10}D^{o}_{11/2}$",
+     "1097(15)",
+     "360(300)",
+     "F=3: -17680.67   F=4: -13401.78   F=5: -8009.00   F=6: -1472.90   F=7: +6241.85   F=8: +15176.45"
     ],
     [
      "$(7/2,1)_{9/2}$",
@@ -1852,8 +2041,8 @@
   }
  ],
  "validation": [
-  "levels: 21   lines < 2000 nm: 21   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 21",
+  "levels: 25   lines < 2000 nm: 25   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 25",
   "levels with a measured lifetime: 0"
  ],
  "sources": {

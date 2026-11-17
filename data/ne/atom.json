@@ -21,7 +21,8 @@
   "semi": {
    "lines": 15361,
    "matched": 12022
-  }
+  },
+  "hfr": null
  },
  "columns": [
   {
@@ -4825,6 +4826,20 @@
     ],
     "end_lost": 0.0369
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 4041.76116,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 134818.6405,
+   "lam": 74.1737,
+   "air": null,
+   "gamma_MHz": 3.753e-10,
+   "type": "clock",
+   "inferred": true
   },
   {
    "kind": "E1",
@@ -10177,8 +10192,8 @@
   }
  ],
  "validation": [
-  "levels: 49   lines < 2000 nm: 74   with matrix element: 73",
-  "transition-rate provenance: exp: 1, nist: 70, semi: 3",
+  "levels: 49   lines < 2000 nm: 75   with matrix element: 73",
+  "transition-rate provenance: exp: 1, nist: 70, semi: 3, wavelength only: 1",
   "levels with a measured lifetime: 14",
   "semi-empirical rates (Kurucz): 12022 of 15361 lines on NIST levels; used for 3 drawn lines and 11508 further decay lines"
  ],

@@ -18,7 +18,8 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Lifetimes: Den Hartog & Lawler 2013 Table 1, read from the IOP Figshare deposit of the table (the article itself was not opened); the 'This work' column carries no per-level uncertainty. Transition probabilities and improved level energies: Lawler, Fittante, Den Hartog 2013 (PDF opened; 299 lines printed, all 299 entered; values were extracted from the PDF text by script and matched to NIST levels by energy (within 0.35 cm^-1) and J). Level energies and A-values refer to the natural isotope mixture. Hyperfine constants are second-hand (from the comparison tables of a theory paper). The level 4f6 6s2 5D0 at 14564.90(2) cm^-1 (2026) is not in NIST and is therefore listed under 'levels_not_in_nist' rather than 'levels'. Added 2026-10-02: Zhang, Feng, Dai, J. Opt. Soc. Am. B 27, 2255 (2010), Table 1 (79 lifetimes of odd levels with J=0-3, 18985-34190 cm^-1), read from the publisher's abstract page (text copy in pdf/Sm_Zhang_2010.txt). 61 levels have no other measurement and take this value as their lifetime; for the 18 levels also measured by Den Hartog & Lawler 2013 the 2013 value stays the entry (the 2013 transition rates are normalised to it) and the 2010 value is an alternative, now with method 'experiment'. None of the 61 new levels has a transition rate in NIST or in Lawler et al. 2013, so the lifetime x sum(A) check cannot be applied to them.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -264,6 +265,42 @@
   },
   {
    "id": 7,
+   "E": 10801.01,
+   "unc": null,
+   "J": 1.0,
+   "conf": "4f6.(7F).5d (8H).6s",
+   "term": "9H",
+   "parity": "even",
+   "g": 0.98,
+   "name": "^9H_{1}",
+   "plain": "4f65d 6s 9H1",
+   "E_nist": 10801.1,
+   "E_tier": "exp",
+   "E_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 8,
+   "E": 11044.84,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f6.(7F).5d (8H).6s",
+   "term": "9H",
+   "parity": "even",
+   "g": 0.67,
+   "name": "^9H_{2}",
+   "plain": "4f65d 6s 9H2",
+   "E_nist": 11044.9,
+   "E_tier": "exp",
+   "E_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 9,
    "E": 11877.36,
    "unc": null,
    "J": 4.0,
@@ -281,7 +318,37 @@
    "col": 4
   },
   {
-   "id": 8,
+   "id": 10,
+   "E": 12313.11,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f6.(7F).5d (8D).6s",
+   "term": "9D",
+   "parity": "even",
+   "g": 2.56,
+   "name": "^9D_{2}",
+   "plain": "4f65d 6s 9D2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 11,
+   "E": 13050.05,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f6.(7F).5d (8H).6s",
+   "term": "7H",
+   "parity": "even",
+   "g": 0.02,
+   "name": "^7H_{2}",
+   "plain": "4f65d 6s 7H2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 12,
    "E": 13095.67,
    "unc": null,
    "J": 6.0,
@@ -299,7 +366,52 @@
    "col": 6
   },
   {
-   "id": 9,
+   "id": 13,
+   "E": 13369.35,
+   "unc": null,
+   "J": 1.0,
+   "conf": "4f6.(7F).5d (8F).6s",
+   "term": "",
+   "parity": "even",
+   "g": 2.65,
+   "name": "(13369)_{1}",
+   "plain": "4f65d 6s 1",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 14,
+   "E": 13687.75,
+   "unc": null,
+   "J": 2.0,
+   "conf": "4f6.(7F).5d (8G).6s",
+   "term": "9G",
+   "parity": "even",
+   "g": 1.78,
+   "name": "^9G_{2}",
+   "plain": "4f65d 6s 9G2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 2
+  },
+  {
+   "id": 15,
+   "E": 13732.53,
+   "unc": null,
+   "J": 1.0,
+   "conf": "4f6.(7F).5d (8G).6s",
+   "term": "9G",
+   "parity": "even",
+   "g": 2.01,
+   "name": "^9G_{1}",
+   "plain": "4f65d 6s 9G1",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 16,
    "E": 13814.82,
    "unc": null,
    "J": 7.0,
@@ -317,7 +429,7 @@
    "col": 7
   },
   {
-   "id": 10,
+   "id": 17,
    "E": 14591.64,
    "unc": null,
    "J": 8.0,
@@ -335,7 +447,7 @@
    "col": 8
   },
   {
-   "id": 11,
+   "id": 18,
    "E": 19776.894,
    "unc": null,
    "J": 3.0,
@@ -380,7 +492,7 @@
    }
   },
   {
-   "id": 12,
+   "id": 19,
    "E": 20090.935,
    "unc": null,
    "J": 1.0,
@@ -425,7 +537,7 @@
    }
   },
   {
-   "id": 13,
+   "id": 20,
    "E": 20712.769,
    "unc": null,
    "J": 4.0,
@@ -463,7 +575,7 @@
    }
   },
   {
-   "id": 14,
+   "id": 21,
    "E": 20762.804,
    "unc": null,
    "J": 2.0,
@@ -508,7 +620,7 @@
    }
   },
   {
-   "id": 15,
+   "id": 22,
    "E": 21193.64,
    "unc": null,
    "J": 1.0,
@@ -553,7 +665,7 @@
    }
   },
   {
-   "id": 16,
+   "id": 23,
    "E": 21700.876,
    "unc": null,
    "J": 3.0,
@@ -598,7 +710,7 @@
    }
   },
   {
-   "id": 17,
+   "id": 24,
    "E": 21809.669,
    "unc": null,
    "J": 5.0,
@@ -636,7 +748,7 @@
    }
   },
   {
-   "id": 18,
+   "id": 25,
    "E": 21813.211,
    "unc": null,
    "J": 2.0,
@@ -681,7 +793,7 @@
    }
   },
   {
-   "id": 19,
+   "id": 26,
    "E": 22041.017,
    "unc": null,
    "J": 0.0,
@@ -712,7 +824,7 @@
    }
   },
   {
-   "id": 20,
+   "id": 27,
    "E": 22313.629,
    "unc": null,
    "J": 1.0,
@@ -757,7 +869,7 @@
    }
   },
   {
-   "id": 21,
+   "id": 28,
    "E": 22491.899,
    "unc": null,
    "J": 2.0,
@@ -802,7 +914,7 @@
    }
   },
   {
-   "id": 22,
+   "id": 29,
    "E": 22632.269,
    "unc": null,
    "J": 3.0,
@@ -847,7 +959,7 @@
    }
   },
   {
-   "id": 23,
+   "id": 30,
    "E": 22643.1,
    "unc": null,
    "J": 6.0,
@@ -885,7 +997,7 @@
    }
   },
   {
-   "id": 24,
+   "id": 31,
    "E": 22843.943,
    "unc": null,
    "J": 2.0,
@@ -927,14 +1039,14 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 830.36,
       "f": 0.0333,
       "tier": "exp",
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 847.52,
       "f": 0.0154,
       "tier": "exp",
@@ -944,7 +1056,7 @@
    }
   },
   {
-   "id": 25,
+   "id": 32,
    "E": 22892.94,
    "unc": null,
    "J": 4.0,
@@ -989,7 +1101,7 @@
    }
   },
   {
-   "id": 26,
+   "id": 33,
    "E": 22893.345,
    "unc": null,
    "J": 2.0,
@@ -1031,14 +1143,14 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 826.97,
       "f": 0.0274,
       "tier": "exp",
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 843.99,
       "f": 0.0172,
       "tier": "exp",
@@ -1048,7 +1160,7 @@
    }
   },
   {
-   "id": 27,
+   "id": 34,
    "E": 22914.043,
    "unc": null,
    "J": 1.0,
@@ -1101,7 +1213,7 @@
    }
   },
   {
-   "id": 28,
+   "id": 35,
    "E": 22944.337,
    "unc": null,
    "J": 6.0,
@@ -1139,7 +1251,7 @@
    }
   },
   {
-   "id": 29,
+   "id": 36,
    "E": 23230.674,
    "unc": null,
    "J": 3.0,
@@ -1181,7 +1293,7 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 820.62,
       "f": 0.0478,
       "tier": "exp",
@@ -1198,7 +1310,7 @@
    }
   },
   {
-   "id": 30,
+   "id": 37,
    "E": 23316.546,
    "unc": null,
    "J": 3.0,
@@ -1240,7 +1352,7 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 814.88,
       "f": 0.0149,
       "tier": "exp",
@@ -1250,7 +1362,7 @@
    }
   },
   {
-   "id": 31,
+   "id": 38,
    "E": 23337.354,
    "unc": null,
    "J": 7.0,
@@ -1281,7 +1393,7 @@
    }
   },
   {
-   "id": 32,
+   "id": 39,
    "E": 23380.669,
    "unc": null,
    "J": 2.0,
@@ -1326,7 +1438,7 @@
    }
   },
   {
-   "id": 33,
+   "id": 40,
    "E": 23546.469,
    "unc": null,
    "J": 2.0,
@@ -1371,7 +1483,7 @@
    }
   },
   {
-   "id": 34,
+   "id": 41,
    "E": 23594.803,
    "unc": null,
    "J": 4.0,
@@ -1416,7 +1528,7 @@
    }
   },
   {
-   "id": 35,
+   "id": 42,
    "E": 23709.922,
    "unc": null,
    "J": 3.0,
@@ -1461,7 +1573,7 @@
    }
   },
   {
-   "id": 36,
+   "id": 43,
    "E": 23734.345,
    "unc": null,
    "J": 7.0,
@@ -1492,7 +1604,7 @@
    }
   },
   {
-   "id": 37,
+   "id": 44,
    "E": 23996.56,
    "unc": null,
    "J": 4.0,
@@ -1537,7 +1649,7 @@
    }
   },
   {
-   "id": 38,
+   "id": 45,
    "E": 24150.732,
    "unc": null,
    "J": 3.0,
@@ -1582,7 +1694,7 @@
    }
   },
   {
-   "id": 39,
+   "id": 46,
    "E": 24244.738,
    "unc": null,
    "J": 3.0,
@@ -1627,7 +1739,7 @@
    }
   },
   {
-   "id": 40,
+   "id": 47,
    "E": 24311.948,
    "unc": null,
    "J": 4.0,
@@ -1672,7 +1784,7 @@
    }
   },
   {
-   "id": 41,
+   "id": 48,
    "E": 24323.421,
    "unc": null,
    "J": 5.0,
@@ -1717,7 +1829,7 @@
    }
   },
   {
-   "id": 42,
+   "id": 49,
    "E": 24467.267,
    "unc": null,
    "J": 3.0,
@@ -1755,7 +1867,7 @@
    }
   },
   {
-   "id": 43,
+   "id": 50,
    "E": 24633.707,
    "unc": null,
    "J": 4.0,
@@ -1800,7 +1912,7 @@
    }
   },
   {
-   "id": 44,
+   "id": 51,
    "E": 24668.734,
    "unc": null,
    "J": 5.0,
@@ -1845,7 +1957,7 @@
    }
   },
   {
-   "id": 45,
+   "id": 52,
    "E": 25387.153,
    "unc": null,
    "J": 4.0,
@@ -1890,7 +2002,7 @@
    }
   },
   {
-   "id": 46,
+   "id": 53,
    "E": 25390.821,
    "unc": null,
    "J": 5.0,
@@ -1935,7 +2047,7 @@
    }
   },
   {
-   "id": 47,
+   "id": 54,
    "E": 25615.537,
    "unc": null,
    "J": 5.0,
@@ -1980,7 +2092,7 @@
    }
   },
   {
-   "id": 48,
+   "id": 55,
    "E": 25840.296,
    "unc": null,
    "J": 6.0,
@@ -2018,7 +2130,7 @@
    }
   },
   {
-   "id": 49,
+   "id": 56,
    "E": 26180.964,
    "unc": null,
    "J": 6.0,
@@ -2056,7 +2168,7 @@
    }
   },
   {
-   "id": 50,
+   "id": 57,
    "E": 26281.063,
    "unc": null,
    "J": 1.0,
@@ -2101,7 +2213,7 @@
    }
   },
   {
-   "id": 51,
+   "id": 58,
    "E": 26471.335,
    "unc": null,
    "J": 6.0,
@@ -2139,7 +2251,7 @@
    }
   },
   {
-   "id": 52,
+   "id": 59,
    "E": 26786.751,
    "unc": null,
    "J": 2.0,
@@ -2184,7 +2296,7 @@
    }
   },
   {
-   "id": 53,
+   "id": 60,
    "E": 26803.634,
    "unc": null,
    "J": 1.0,
@@ -2222,7 +2334,7 @@
    }
   },
   {
-   "id": 54,
+   "id": 61,
    "E": 26962.184,
    "unc": null,
    "J": 1.0,
@@ -2267,7 +2379,7 @@
    }
   },
   {
-   "id": 55,
+   "id": 62,
    "E": 27287.496,
    "unc": null,
    "J": 7.0,
@@ -2298,7 +2410,7 @@
    }
   },
   {
-   "id": 56,
+   "id": 63,
    "E": 27425.328,
    "unc": null,
    "J": 3.0,
@@ -2343,7 +2455,7 @@
    }
   },
   {
-   "id": 57,
+   "id": 64,
    "E": 28180.913,
    "unc": null,
    "J": 4.0,
@@ -2388,7 +2500,7 @@
    }
   },
   {
-   "id": 58,
+   "id": 65,
    "E": 28356.189,
    "unc": null,
    "J": 3.0,
@@ -2433,7 +2545,7 @@
    }
   },
   {
-   "id": 59,
+   "id": 66,
    "E": 29069.865,
    "unc": null,
    "J": 5.0,
@@ -2461,7 +2573,7 @@
       "dark": true
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 581.65,
       "f": 0.29,
       "tier": "exp",
@@ -2492,7 +2604,7 @@
    }
   },
   {
-   "id": 60,
+   "id": 67,
    "E": 29364.983,
    "unc": null,
    "J": 4.0,
@@ -2537,7 +2649,7 @@
    }
   },
   {
-   "id": 61,
+   "id": 68,
    "E": 29803.346,
    "unc": null,
    "J": 6.0,
@@ -2575,7 +2687,7 @@
    }
   },
   {
-   "id": 62,
+   "id": 69,
    "E": 30092.414,
    "unc": null,
    "J": 6.0,
@@ -2610,7 +2722,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 588.35,
       "f": 0.0119,
       "tier": "exp",
@@ -2620,7 +2732,7 @@
    }
   },
   {
-   "id": 63,
+   "id": 70,
    "E": 30233.58,
    "unc": null,
    "J": 5.0,
@@ -2665,7 +2777,7 @@
    }
   },
   {
-   "id": 64,
+   "id": 71,
    "E": 30330.79,
    "unc": null,
    "J": 7.0,
@@ -2686,14 +2798,14 @@
    "decay": {
     "ch": [
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 580.21,
       "f": 0.895,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 605.48,
       "f": 0.0797,
       "tier": "exp",
@@ -2710,7 +2822,7 @@
    }
   },
   {
-   "id": 65,
+   "id": 72,
    "E": 31129.74,
    "unc": null,
    "J": 8.0,
@@ -2731,7 +2843,7 @@
    "decay": {
     "ch": [
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 577.54,
       "f": 0.876,
       "tier": "exp",
@@ -2755,7 +2867,7 @@
    }
   },
   {
-   "id": 66,
+   "id": 73,
    "E": 33507.23,
    "unc": null,
    "J": 7.0,
@@ -2776,21 +2888,21 @@
    "decay": {
     "ch": [
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 507.81,
       "f": 0.576,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 10,
+      "lv": 17,
       "lam": 528.66,
       "f": 0.277,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 489.92,
       "f": 0.129,
       "tier": "exp",
@@ -2807,7 +2919,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 60,
+   "upper": 67,
    "wn": 27091.945,
    "lam": 369.1134,
    "air": 369.0084,
@@ -2853,7 +2965,7 @@
       "lam": 556.84
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 571.84
      },
      {
@@ -2897,7 +3009,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 58,
+   "upper": 65,
    "wn": 26866.681,
    "lam": 372.2082,
    "air": 372.1024,
@@ -2939,7 +3051,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 577.66
      },
      {
@@ -2947,11 +3059,11 @@
       "lam": 589.98
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 606.84
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 623.32
      },
      {
@@ -2988,7 +3100,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 57,
+   "upper": 64,
    "wn": 26691.405,
    "lam": 374.6524,
    "air": 374.546,
@@ -3035,7 +3147,7 @@
       "lam": 596.14
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 613.37
      },
      {
@@ -3080,7 +3192,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 54,
+   "upper": 61,
    "wn": 26669.63,
    "lam": 374.9583,
    "air": 374.8518,
@@ -3122,23 +3234,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 618.77
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 628.25
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 682.64
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 718.8
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 735.69
      }
     ],
@@ -3171,7 +3283,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 56,
+   "upper": 63,
    "wn": 26613.456,
    "lam": 375.7498,
    "air": 375.643,
@@ -3213,7 +3325,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 610.48
      },
      {
@@ -3221,11 +3333,11 @@
       "lam": 624.26
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 643.17
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 661.71
      },
      {
@@ -3262,7 +3374,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 52,
+   "upper": 59,
    "wn": 26494.197,
    "lam": 377.4411,
    "air": 377.3339,
@@ -3304,11 +3416,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 625.56
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 635.25
      },
      {
@@ -3316,7 +3428,7 @@
       "lam": 650.18
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 690.91
      },
      {
@@ -3353,7 +3465,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 0,
-   "upper": 50,
+   "upper": 57,
    "wn": 26281.063,
    "lam": 380.5021,
    "air": 380.3941,
@@ -3395,23 +3507,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 646.0
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 656.33
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 715.92
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 755.8
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 774.49
      }
     ],
@@ -3443,7 +3555,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 60,
+   "upper": 67,
    "wn": 26239.567,
    "lam": 381.1038,
    "air": 380.9957,
@@ -3489,7 +3601,7 @@
       "lam": 556.84
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 571.84
      },
      {
@@ -3533,7 +3645,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 63,
+   "upper": 70,
    "wn": 26212.959,
    "lam": 381.4907,
    "air": 381.3824,
@@ -3575,7 +3687,7 @@
     "n_open": 12,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 544.78
      },
      {
@@ -3583,7 +3695,7 @@
       "lam": 562.17
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 583.5
      },
      {
@@ -3624,7 +3736,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 58,
+   "upper": 65,
    "wn": 26083.151,
    "lam": 383.3893,
    "air": 383.2805,
@@ -3666,7 +3778,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 577.66
      },
      {
@@ -3674,11 +3786,11 @@
       "lam": 589.98
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 606.84
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 623.32
      },
      {
@@ -3715,7 +3827,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 62,
+   "upper": 69,
    "wn": 26071.793,
    "lam": 383.5563,
    "air": 383.4475,
@@ -3747,7 +3859,7 @@
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 588.35,
       "f": 0.0119,
       "tier": "exp",
@@ -3761,7 +3873,7 @@
       "lam": 566.66
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 614.34
      },
      {
@@ -3791,7 +3903,7 @@
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 12,
       "p": 0.0119,
       "tier": "exp",
       "at": "dark"
@@ -3806,7 +3918,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 53,
+   "upper": 60,
    "wn": 25991.762,
    "lam": 384.7373,
    "air": 384.6282,
@@ -3845,19 +3957,19 @@
       "lam": 373.08
      },
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 624.9
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 634.57
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 690.1
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 727.08
      }
     ],
@@ -3884,7 +3996,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 59,
+   "upper": 66,
    "wn": 25944.449,
    "lam": 385.4389,
    "air": 385.3296,
@@ -3909,7 +4021,7 @@
     "n": 1.54,
     "ch": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 581.65,
       "f": 0.29,
       "tier": "exp",
@@ -3944,7 +4056,7 @@
       "lam": 601.52
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 626.01
      },
      {
@@ -3968,7 +4080,7 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 9,
       "p": 0.29,
       "tier": "exp",
       "at": "dark"
@@ -4000,7 +4112,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 56,
+   "upper": 63,
    "wn": 25935.82,
    "lam": 385.5671,
    "air": 385.4578,
@@ -4042,7 +4154,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 610.48
      },
      {
@@ -4050,11 +4162,11 @@
       "lam": 624.26
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 643.17
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 661.71
      },
      {
@@ -4091,7 +4203,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 57,
+   "upper": 64,
    "wn": 25907.875,
    "lam": 385.983,
    "air": 385.8736,
@@ -4137,7 +4249,7 @@
       "lam": 596.14
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 613.37
      },
      {
@@ -4182,7 +4294,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 61,
+   "upper": 68,
    "wn": 25782.725,
    "lam": 387.8566,
    "air": 387.7467,
@@ -4221,11 +4333,11 @@
       "lam": 576.1
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 598.53
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 625.45
      },
      {
@@ -4260,7 +4372,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 50,
+   "upper": 57,
    "wn": 25469.191,
    "lam": 392.6312,
    "air": 392.5201,
@@ -4302,23 +4414,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 646.0
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 656.33
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 715.92
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 755.8
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 774.49
      }
     ],
@@ -4350,7 +4462,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 52,
+   "upper": 59,
    "wn": 25297.243,
    "lam": 395.3,
    "air": 395.1881,
@@ -4392,11 +4504,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 625.56
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 635.25
      },
      {
@@ -4404,7 +4516,7 @@
       "lam": 650.18
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 690.91
      },
      {
@@ -4441,7 +4553,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 56,
+   "upper": 63,
    "wn": 25152.29,
    "lam": 397.5781,
    "air": 397.4657,
@@ -4483,7 +4595,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 610.48
      },
      {
@@ -4491,11 +4603,11 @@
       "lam": 624.26
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 643.17
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 661.71
      },
      {
@@ -4532,7 +4644,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 57,
+   "upper": 64,
    "wn": 25055.497,
    "lam": 399.114,
    "air": 399.0012,
@@ -4579,7 +4691,7 @@
       "lam": 596.14
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 613.37
      },
      {
@@ -4624,7 +4736,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 45,
+   "upper": 52,
    "wn": 23897.645,
    "lam": 418.4513,
    "air": 418.3334,
@@ -4670,7 +4782,7 @@
       "lam": 715.27
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 740.21
      },
      {
@@ -4715,7 +4827,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 42,
+   "upper": 49,
    "wn": 23655.395,
    "lam": 422.7365,
    "air": 422.6175,
@@ -4754,7 +4866,7 @@
       "lam": 450.57
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 745.02
      },
      {
@@ -4762,11 +4874,11 @@
       "lam": 765.65
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 794.3
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 822.76
      }
     ],
@@ -4792,7 +4904,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 51,
+   "upper": 58,
    "wn": 23345.919,
    "lam": 428.3404,
    "air": 428.2199,
@@ -4831,11 +4943,11 @@
       "lam": 712.96
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 747.63
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 790.11
      },
      {
@@ -4870,7 +4982,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 47,
+   "upper": 54,
    "wn": 23342.499,
    "lam": 428.4031,
    "air": 428.2826,
@@ -4912,7 +5024,7 @@
     "n_open": 11,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 727.91
      },
      {
@@ -4920,7 +5032,7 @@
       "lam": 759.29
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 798.73
      },
      {
@@ -4960,7 +5072,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 38,
+   "upper": 45,
    "wn": 23338.86,
    "lam": 428.4699,
    "air": 428.3494,
@@ -5002,7 +5114,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 763.02
      },
      {
@@ -5010,11 +5122,11 @@
       "lam": 784.66
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 814.78
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 844.76
      },
      {
@@ -5051,7 +5163,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 55,
+   "upper": 62,
    "wn": 23266.875,
    "lam": 429.7956,
    "air": 429.6747,
@@ -5073,15 +5185,15 @@
     "n_open": 7,
     "open": [
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 704.63
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 742.24
      },
      {
-      "lv": 10,
+      "lv": 17,
       "lam": 787.66
      },
      {
@@ -5101,7 +5213,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 43,
+   "upper": 50,
    "wn": 23144.199,
    "lam": 432.0737,
    "air": 431.9522,
@@ -5147,7 +5259,7 @@
       "lam": 756.02
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 783.93
      },
      {
@@ -5192,7 +5304,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 46,
+   "upper": 53,
    "wn": 23117.783,
    "lam": 432.5674,
    "air": 432.4458,
@@ -5234,7 +5346,7 @@
     "n_open": 11,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 740.01
      },
      {
@@ -5242,7 +5354,7 @@
       "lam": 772.47
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 813.33
      },
      {
@@ -5282,7 +5394,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 32,
+   "upper": 39,
    "wn": 23088.115,
    "lam": 433.1233,
    "air": 433.0015,
@@ -5324,11 +5436,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 794.93
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 810.65
      },
      {
@@ -5336,7 +5448,7 @@
       "lam": 835.13
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 903.53
      },
      {
@@ -5373,7 +5485,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 49,
+   "upper": 56,
    "wn": 23055.548,
    "lam": 433.7351,
    "air": 433.6132,
@@ -5413,11 +5525,11 @@
       "lam": 728.04
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 764.22
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 808.67
      },
      {
@@ -5452,7 +5564,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 0,
-   "upper": 27,
+   "upper": 34,
    "wn": 22914.043,
    "lam": 436.4136,
    "air": 436.291,
@@ -5495,23 +5607,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 825.56
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 842.52
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 943.31
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1013.8
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1047.7
      }
     ],
@@ -5544,7 +5656,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 40,
+   "upper": 47,
    "wn": 22822.44,
    "lam": 438.1652,
    "air": 438.0422,
@@ -5590,7 +5702,7 @@
       "lam": 774.86
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 804.21
      },
      {
@@ -5634,7 +5746,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 39,
+   "upper": 46,
    "wn": 22755.23,
    "lam": 439.4594,
    "air": 439.336,
@@ -5676,7 +5788,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 757.58
      },
      {
@@ -5684,11 +5796,11 @@
       "lam": 778.92
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 808.58
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 838.1
      },
      {
@@ -5725,7 +5837,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 33,
+   "upper": 40,
    "wn": 22734.597,
    "lam": 439.8582,
    "air": 439.7347,
@@ -5767,11 +5879,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 784.59
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 799.9
      },
      {
@@ -5779,7 +5891,7 @@
       "lam": 823.72
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 890.2
      },
      {
@@ -5816,7 +5928,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 48,
+   "upper": 55,
    "wn": 22714.88,
    "lam": 440.2401,
    "air": 440.1164,
@@ -5855,11 +5967,11 @@
       "lam": 746.55
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 784.65
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 831.57
      },
      {
@@ -5893,7 +6005,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 38,
+   "upper": 45,
    "wn": 22661.224,
    "lam": 441.2824,
    "air": 441.1585,
@@ -5935,7 +6047,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 763.02
      },
      {
@@ -5943,11 +6055,11 @@
       "lam": 784.66
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 814.78
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 844.76
      },
      {
@@ -5984,7 +6096,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 27,
+   "upper": 34,
    "wn": 22621.489,
    "lam": 442.0575,
    "air": 441.9334,
@@ -6026,23 +6138,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 825.56
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 842.52
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 943.31
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1013.8
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1047.7
      }
     ],
@@ -6075,7 +6187,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 32,
+   "upper": 39,
    "wn": 22568.797,
    "lam": 443.0896,
    "air": 442.9653,
@@ -6117,11 +6229,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 794.93
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 810.65
      },
      {
@@ -6129,7 +6241,7 @@
       "lam": 835.13
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 903.53
      },
      {
@@ -6166,7 +6278,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 37,
+   "upper": 44,
    "wn": 22507.052,
    "lam": 444.3052,
    "air": 444.1805,
@@ -6212,7 +6324,7 @@
       "lam": 794.28
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 825.15
      },
      {
@@ -6257,7 +6369,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 30,
+   "upper": 37,
    "wn": 22504.674,
    "lam": 444.3521,
    "air": 444.2274,
@@ -6296,7 +6408,7 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 814.88,
       "f": 0.0149,
       "tier": "exp",
@@ -6310,11 +6422,11 @@
       "lam": 839.62
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 874.19
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 908.8
      },
      {
@@ -6322,7 +6434,7 @@
       "lam": 955.11
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 974.03
      }
     ],
@@ -6346,7 +6458,7 @@
       "at": "dark"
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "p": 0.0149,
       "tier": "exp",
       "at": "dark"
@@ -6361,7 +6473,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 47,
+   "upper": 54,
    "wn": 22490.121,
    "lam": 444.6397,
    "air": 444.5149,
@@ -6403,7 +6515,7 @@
     "n_open": 11,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 727.91
      },
      {
@@ -6411,7 +6523,7 @@
       "lam": 759.29
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 798.73
      },
      {
@@ -6451,7 +6563,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 51,
+   "upper": 58,
    "wn": 22450.714,
    "lam": 445.4201,
    "air": 445.2951,
@@ -6490,11 +6602,11 @@
       "lam": 712.96
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 747.63
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 790.11
      },
      {
@@ -6529,7 +6641,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 29,
+   "upper": 36,
    "wn": 22418.802,
    "lam": 446.0542,
    "air": 445.929,
@@ -6568,7 +6680,7 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 820.62,
       "f": 0.0478,
       "tier": "exp",
@@ -6585,11 +6697,11 @@
     "n_open": 22,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 880.81
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 915.95
      },
      {
@@ -6597,7 +6709,7 @@
       "lam": 963.01
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 982.25
      },
      {
@@ -6625,7 +6737,7 @@
       "at": "dark"
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "p": 0.0478,
       "tier": "exp",
       "at": "dark"
@@ -6646,7 +6758,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 43,
+   "upper": 50,
    "wn": 22360.669,
    "lam": 447.2138,
    "air": 447.0883,
@@ -6693,7 +6805,7 @@
       "lam": 756.02
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 783.93
      },
      {
@@ -6738,7 +6850,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 0,
-   "upper": 20,
+   "upper": 27,
    "wn": 22313.629,
    "lam": 448.1566,
    "air": 448.0309,
@@ -6780,23 +6892,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 868.62
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 887.41
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 999.95
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1079.5
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1118.0
      }
     ],
@@ -6829,7 +6941,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 35,
+   "upper": 42,
    "wn": 22220.414,
    "lam": 450.0366,
    "air": 449.9104,
@@ -6871,7 +6983,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 789.57
      },
      {
@@ -6879,11 +6991,11 @@
       "lam": 812.78
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 845.13
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 877.43
      },
      {
@@ -6919,7 +7031,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 21,
+   "upper": 28,
    "wn": 22199.345,
    "lam": 450.4637,
    "air": 450.3374,
@@ -6961,11 +7073,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 855.37
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 873.59
      },
      {
@@ -6973,7 +7085,7 @@
       "lam": 902.08
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 982.43
      },
      {
@@ -7010,7 +7122,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 49,
+   "upper": 56,
    "wn": 22160.343,
    "lam": 451.2566,
    "air": 451.13,
@@ -7049,11 +7161,11 @@
       "lam": 728.04
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 764.22
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 808.67
      },
      {
@@ -7088,7 +7200,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 27,
+   "upper": 34,
    "wn": 22102.171,
    "lam": 452.4442,
    "air": 452.3174,
@@ -7130,23 +7242,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 825.56
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 842.52
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 943.31
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1013.8
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1047.7
      }
     ],
@@ -7179,7 +7291,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 41,
+   "upper": 48,
    "wn": 22050.383,
    "lam": 453.5069,
    "air": 453.3797,
@@ -7221,7 +7333,7 @@
     "n_open": 11,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 803.47
      },
      {
@@ -7229,7 +7341,7 @@
       "lam": 841.88
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 890.65
      },
      {
@@ -7269,7 +7381,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 22,
+   "upper": 29,
    "wn": 21820.397,
    "lam": 458.2868,
    "air": 458.1584,
@@ -7311,7 +7423,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 863.01
      },
      {
@@ -7319,11 +7431,11 @@
       "lam": 890.81
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 929.82
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 969.07
      },
      {
@@ -7360,7 +7472,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 48,
+   "upper": 55,
    "wn": 21819.675,
    "lam": 458.302,
    "air": 458.1736,
@@ -7399,11 +7511,11 @@
       "lam": 746.55
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 784.65
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 831.57
      },
      {
@@ -7437,7 +7549,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 19,
+   "upper": 26,
    "wn": 21748.463,
    "lam": 459.8026,
    "air": 459.6738,
@@ -7458,15 +7570,15 @@
     "n_open": 6,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 889.69
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1153.2
      },
      {
-      "html": "<sup>9</sup>G<sub>1</sub>",
+      "lv": 15,
       "lam": 1203.6
      },
      {
@@ -7486,7 +7598,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 18,
+   "upper": 25,
    "wn": 21520.657,
    "lam": 464.6698,
    "air": 464.5397,
@@ -7528,11 +7640,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 908.09
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 928.65
      },
      {
@@ -7540,7 +7652,7 @@
       "lam": 960.92
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1052.6
      },
      {
@@ -7577,7 +7689,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 43,
+   "upper": 50,
    "wn": 21508.291,
    "lam": 464.937,
    "air": 464.8068,
@@ -7623,7 +7735,7 @@
       "lam": 756.02
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 783.93
      },
      {
@@ -7668,7 +7780,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 20,
+   "upper": 27,
    "wn": 21501.757,
    "lam": 465.0783,
    "air": 464.9481,
@@ -7710,23 +7822,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 868.62
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 887.41
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 999.95
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1079.5
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1118.0
      }
     ],
@@ -7759,7 +7871,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 35,
+   "upper": 42,
    "wn": 21436.884,
    "lam": 466.4857,
    "air": 466.3551,
@@ -7801,7 +7913,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 789.57
      },
      {
@@ -7809,11 +7921,11 @@
       "lam": 812.78
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 845.13
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 877.43
      },
      {
@@ -7849,7 +7961,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 26,
+   "upper": 33,
    "wn": 21403.837,
    "lam": 467.206,
    "air": 467.0752,
@@ -7888,14 +8000,14 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 826.97,
       "f": 0.0274,
       "tier": "exp",
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 843.99,
       "f": 0.0172,
       "tier": "exp",
@@ -7909,7 +8021,7 @@
       "lam": 870.56
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 945.16
      },
      {
@@ -7917,11 +8029,11 @@
       "lam": 995.35
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1015.9
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1050.0
      }
     ],
@@ -7945,13 +8057,13 @@
       "at": "dark"
      },
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "p": 0.0274,
       "tier": "exp",
       "at": "dark"
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "p": 0.0172,
       "tier": "exp",
       "at": "dark"
@@ -7965,7 +8077,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 25,
+   "upper": 32,
    "wn": 21403.432,
    "lam": 467.2148,
    "air": 467.084,
@@ -8011,7 +8123,7 @@
       "lam": 870.58
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 907.81
      },
      {
@@ -8056,7 +8168,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 24,
+   "upper": 31,
    "wn": 21354.435,
    "lam": 468.2868,
    "air": 468.1558,
@@ -8095,14 +8207,14 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 830.36,
       "f": 0.0333,
       "tier": "exp",
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 847.52,
       "f": 0.0154,
       "tier": "exp",
@@ -8116,7 +8228,7 @@
       "lam": 874.32
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 949.59
      },
      {
@@ -8124,11 +8236,11 @@
       "lam": 1000.3
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1021.0
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1055.4
      }
     ],
@@ -8152,13 +8264,13 @@
       "at": "dark"
      },
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "p": 0.0333,
       "tier": "exp",
       "at": "dark"
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "p": 0.0154,
       "tier": "exp",
       "at": "dark"
@@ -8173,7 +8285,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 34,
+   "upper": 41,
    "wn": 21321.765,
    "lam": 469.0043,
    "air": 468.8731,
@@ -8219,7 +8331,7 @@
       "lam": 820.46
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 853.44
      },
      {
@@ -8264,7 +8376,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 41,
+   "upper": 48,
    "wn": 21198.005,
    "lam": 471.7425,
    "air": 471.6106,
@@ -8307,7 +8419,7 @@
     "n_open": 11,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 803.47
      },
      {
@@ -8315,7 +8427,7 @@
       "lam": 841.88
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 890.65
      },
      {
@@ -8355,7 +8467,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 0,
-   "upper": 15,
+   "upper": 22,
    "wn": 21193.64,
    "lam": 471.8397,
    "air": 471.7077,
@@ -8397,23 +8509,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 962.22
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 985.34
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1126.1
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1228.0
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1278.1
      }
     ],
@@ -8445,7 +8557,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 22,
+   "upper": 29,
    "wn": 21142.761,
    "lam": 472.9751,
    "air": 472.8428,
@@ -8488,7 +8600,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 863.01
      },
      {
@@ -8496,11 +8608,11 @@
       "lam": 890.81
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 929.82
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 969.07
      },
      {
@@ -8537,7 +8649,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 30,
+   "upper": 37,
    "wn": 21043.508,
    "lam": 475.2059,
    "air": 475.0731,
@@ -8576,7 +8688,7 @@
       "dark": true
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 814.88,
       "f": 0.0149,
       "tier": "exp",
@@ -8590,11 +8702,11 @@
       "lam": 839.62
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 874.19
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 908.8
      },
      {
@@ -8602,7 +8714,7 @@
       "lam": 955.11
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 974.03
      }
     ],
@@ -8626,7 +8738,7 @@
       "at": "dark"
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "p": 0.0149,
       "tier": "exp",
       "at": "dark"
@@ -8641,7 +8753,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 18,
+   "upper": 25,
    "wn": 21001.339,
    "lam": 476.1601,
    "air": 476.027,
@@ -8684,11 +8796,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 908.09
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 928.65
      },
      {
@@ -8696,7 +8808,7 @@
       "lam": 960.92
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1052.6
      },
      {
@@ -8733,7 +8845,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 15,
+   "upper": 22,
    "wn": 20901.086,
    "lam": 478.444,
    "air": 478.3103,
@@ -8775,23 +8887,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 962.22
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 985.34
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1126.1
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1228.0
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1278.1
      }
     ],
@@ -8823,7 +8935,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 16,
+   "upper": 23,
    "wn": 20889.004,
    "lam": 478.7208,
    "air": 478.587,
@@ -8865,7 +8977,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 938.44
      },
      {
@@ -8873,11 +8985,11 @@
       "lam": 971.4
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 1018.0
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1065.2
      },
      {
@@ -8914,7 +9026,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 44,
+   "upper": 51,
    "wn": 20648.113,
    "lam": 484.3058,
    "air": 484.1705,
@@ -8957,7 +9069,7 @@
     "n_open": 11,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 781.78
      },
      {
@@ -8965,7 +9077,7 @@
       "lam": 818.1
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 864.08
      },
      {
@@ -9006,7 +9118,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 25,
+   "upper": 32,
    "wn": 20619.902,
    "lam": 484.9684,
    "air": 484.8329,
@@ -9052,7 +9164,7 @@
       "lam": 870.58
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 907.81
      },
      {
@@ -9097,7 +9209,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 1,
-   "upper": 14,
+   "upper": 21,
    "wn": 20470.25,
    "lam": 488.5138,
    "air": 488.3774,
@@ -9139,11 +9251,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 1003.8
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 1029.0
      },
      {
@@ -9151,7 +9263,7 @@
       "lam": 1068.8
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1183.5
      },
      {
@@ -9187,7 +9299,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 34,
+   "upper": 41,
    "wn": 20469.387,
    "lam": 488.5344,
    "air": 488.398,
@@ -9234,7 +9346,7 @@
       "lam": 820.46
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 853.44
      },
      {
@@ -9279,7 +9391,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 15,
+   "upper": 22,
    "wn": 20381.768,
    "lam": 490.6346,
    "air": 490.4976,
@@ -9321,23 +9433,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 962.22
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 985.34
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1126.1
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1228.0
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1278.1
      }
     ],
@@ -9369,7 +9481,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 22,
+   "upper": 29,
    "wn": 20359.231,
    "lam": 491.1777,
    "air": 491.0406,
@@ -9411,7 +9523,7 @@
     "n_open": 24,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 863.01
      },
      {
@@ -9419,11 +9531,11 @@
       "lam": 890.81
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 929.82
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 969.07
      },
      {
@@ -9460,7 +9572,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 18,
+   "upper": 25,
    "wn": 20323.703,
    "lam": 492.0363,
    "air": 491.899,
@@ -9502,11 +9614,11 @@
     "n_open": 25,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 908.09
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 928.65
      },
      {
@@ -9514,7 +9626,7 @@
       "lam": 960.92
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1052.6
      },
      {
@@ -9551,7 +9663,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 41,
+   "upper": 48,
    "wn": 20302.8,
    "lam": 492.5429,
    "air": 492.4054,
@@ -9593,7 +9705,7 @@
     "n_open": 11,
     "open": [
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 803.47
      },
      {
@@ -9601,7 +9713,7 @@
       "lam": 841.88
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 890.65
      },
      {
@@ -9641,7 +9753,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 0,
-   "upper": 12,
+   "upper": 19,
    "wn": 20090.935,
    "lam": 497.7369,
    "air": 497.5981,
@@ -9683,23 +9795,23 @@
     "n_open": 18,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>1</sub>",
+      "lv": 7,
       "lam": 1076.4
      },
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 1105.4
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1285.7
      },
      {
-      "html": "<sup>7</sup>H<sub>2</sub>",
+      "lv": 11,
       "lam": 1420.3
      },
      {
-      "html": "(13369)<sub>1</sub>",
+      "lv": 13,
       "lam": 1487.7
      }
     ],
@@ -9731,7 +9843,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 28,
+   "upper": 35,
    "wn": 19818.921,
    "lam": 504.5683,
    "air": 504.4277,
@@ -9770,11 +9882,11 @@
       "lam": 952.47
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 1015.4
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 1095.4
      },
      {
@@ -9808,7 +9920,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 36,
+   "upper": 43,
    "wn": 19713.724,
    "lam": 507.2608,
    "air": 507.1195,
@@ -9829,15 +9941,15 @@
     "n_open": 7,
     "open": [
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 939.97
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 1008.1
      },
      {
-      "lv": 10,
+      "lv": 17,
       "lam": 1093.8
      },
      {
@@ -9856,8 +9968,8 @@
    "freq": 590.3636,
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
-   "lower": 9,
-   "upper": 66,
+   "lower": 16,
+   "upper": 73,
    "wn": 19692.41,
    "lam": 507.8099,
    "air": 507.6683,
@@ -9882,14 +9994,14 @@
     "n": 2.46,
     "ch": [
      {
-      "lv": 10,
+      "lv": 17,
       "lam": 528.66,
       "f": 0.277,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 489.92,
       "f": 0.129,
       "tier": "exp",
@@ -9921,19 +10033,19 @@
     ],
     "end": [
      {
-      "lv": 9,
+      "lv": 16,
       "p": 0.576,
       "tier": "exp",
       "at": "dark"
      },
      {
-      "lv": 10,
+      "lv": 17,
       "p": 0.277,
       "tier": "exp",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 12,
       "p": 0.129,
       "tier": "exp",
       "at": "dark"
@@ -9948,7 +10060,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 4,
-   "upper": 17,
+   "upper": 24,
    "wn": 19536.631,
    "lam": 511.859,
    "air": 511.7164,
@@ -9987,7 +10099,7 @@
       "lam": 562.14
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 1006.8
      },
      {
@@ -9995,7 +10107,7 @@
       "lam": 1067.9
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 1147.6
      },
      {
@@ -10026,7 +10138,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 5,
-   "upper": 23,
+   "upper": 30,
    "wn": 19517.684,
    "lam": 512.3559,
    "air": 512.2131,
@@ -10065,11 +10177,11 @@
       "lam": 980.61
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 1047.4
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 1132.7
      },
      {
@@ -10104,7 +10216,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 31,
+   "upper": 38,
    "wn": 19316.733,
    "lam": 517.6859,
    "air": 517.5417,
@@ -10125,15 +10237,15 @@
     "n_open": 7,
     "open": [
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 976.41
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 1050.1
      },
      {
-      "lv": 10,
+      "lv": 17,
       "lam": 1143.4
      },
      {
@@ -10153,7 +10265,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 3,
-   "upper": 13,
+   "upper": 20,
    "wn": 19223.261,
    "lam": 520.2031,
    "air": 520.0583,
@@ -10196,7 +10308,7 @@
       "lam": 1074.5
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 1131.8
      },
      {
@@ -10230,7 +10342,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 2,
-   "upper": 11,
+   "upper": 18,
    "wn": 18965.022,
    "lam": 527.2865,
    "air": 527.1398,
@@ -10272,7 +10384,7 @@
     "n_open": 23,
     "open": [
      {
-      "html": "<sup>9</sup>H<sub>2</sub>",
+      "lv": 8,
       "lam": 1145.2
      },
      {
@@ -10280,11 +10392,11 @@
       "lam": 1194.7
      },
      {
-      "lv": 7,
+      "lv": 9,
       "lam": 1265.9
      },
      {
-      "html": "<sup>9</sup>D<sub>2</sub>",
+      "lv": 10,
       "lam": 1339.8
      },
      {
@@ -10320,7 +10432,7 @@
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
    "lower": 6,
-   "upper": 28,
+   "upper": 35,
    "wn": 18923.716,
    "lam": 528.4374,
    "air": 528.2904,
@@ -10359,11 +10471,11 @@
       "lam": 952.47
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 1015.4
      },
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 1095.4
      },
      {
@@ -10396,8 +10508,8 @@
    "freq": 567.07512,
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
-   "lower": 10,
-   "upper": 66,
+   "lower": 17,
+   "upper": 73,
    "wn": 18915.59,
    "lam": 528.6645,
    "air": 528.5174,
@@ -10422,14 +10534,14 @@
     "n": 1.42,
     "ch": [
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 507.81,
       "f": 0.576,
       "tier": "exp",
       "dark": true
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 489.92,
       "f": 0.129,
       "tier": "exp",
@@ -10461,19 +10573,19 @@
     ],
     "end": [
      {
-      "lv": 9,
+      "lv": 16,
       "p": 0.576,
       "tier": "exp",
       "at": "dark"
      },
      {
-      "lv": 10,
+      "lv": 17,
       "p": 0.277,
       "tier": "exp",
       "at": "dark"
      },
      {
-      "lv": 8,
+      "lv": 12,
       "p": 0.129,
       "tier": "exp",
       "at": "dark"
@@ -10487,8 +10599,8 @@
    "freq": 519.08824,
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
-   "lower": 9,
-   "upper": 65,
+   "lower": 16,
+   "upper": 72,
    "wn": 17314.92,
    "lam": 577.5366,
    "air": 577.3765,
@@ -10530,7 +10642,7 @@
     "n_open": 2,
     "open": [
      {
-      "lv": 10,
+      "lv": 17,
       "lam": 604.66
      },
      {
@@ -10540,7 +10652,7 @@
     ],
     "end": [
      {
-      "lv": 9,
+      "lv": 16,
       "p": 0.876,
       "tier": "exp",
       "at": "dark"
@@ -10565,8 +10677,8 @@
    "freq": 516.6959,
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
-   "lower": 8,
-   "upper": 64,
+   "lower": 12,
+   "upper": 71,
    "wn": 17235.12,
    "lam": 580.2106,
    "air": 580.0498,
@@ -10591,7 +10703,7 @@
     "n": 9.52,
     "ch": [
      {
-      "lv": 9,
+      "lv": 16,
       "lam": 605.48,
       "f": 0.0798,
       "tier": "exp",
@@ -10608,7 +10720,7 @@
     "n_open": 5,
     "open": [
      {
-      "lv": 10,
+      "lv": 17,
       "lam": 635.36
      },
      {
@@ -10630,13 +10742,13 @@
     ],
     "end": [
      {
-      "lv": 8,
+      "lv": 12,
       "p": 0.895,
       "tier": "exp",
       "at": "dark"
      },
      {
-      "lv": 9,
+      "lv": 16,
       "p": 0.0797,
       "tier": "exp",
       "at": "dark"
@@ -10655,8 +10767,8 @@
    "freq": 515.41833,
    "freq_tier": "exp",
    "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013); Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
-   "lower": 7,
-   "upper": 59,
+   "lower": 9,
+   "upper": 66,
    "wn": 17192.505,
    "lam": 581.6488,
    "air": 581.4876,
@@ -10716,7 +10828,7 @@
       "lam": 601.52
      },
      {
-      "lv": 8,
+      "lv": 12,
       "lam": 626.01
      },
      {
@@ -10740,7 +10852,7 @@
       "at": "dark"
      },
      {
-      "lv": 7,
+      "lv": 9,
       "p": 0.29,
       "tier": "exp",
       "at": "dark"
@@ -10765,6 +10877,97 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 411.69089,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 15,
+   "wn": 13732.53,
+   "lam": 728.1979,
+   "air": 727.9973,
+   "type": "M1",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 410.34842,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 14,
+   "wn": 13687.75,
+   "lam": 730.5803,
+   "air": 730.379,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 400.80303,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 13,
+   "wn": 13369.35,
+   "lam": 747.9795,
+   "air": 747.7736,
+   "type": "M1",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 391.23066,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 11,
+   "wn": 13050.05,
+   "lam": 766.2806,
+   "air": 766.0697,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 369.13775,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 10,
+   "wn": 12313.11,
+   "lam": 812.1425,
+   "air": 811.9192,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 331.11597,
+   "freq_tier": "exp",
+   "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
+   "lower": 0,
+   "upper": 8,
+   "wn": 11044.84,
+   "lam": 905.4002,
+   "air": 905.1517,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 323.80613,
+   "freq_tier": "exp",
+   "freq_src": "Lawler, Fittante, Den Hartog, J. Phys. B 46, 215004 (2013), Table 2 (2013) (measured level energy)",
+   "lower": 0,
+   "upper": 7,
+   "wn": 10801.01,
+   "lam": 925.8393,
+   "air": 925.5853,
+   "type": "M1",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -10990,8 +11193,8 @@
   }
  ],
  "validation": [
-  "levels: 67   lines < 2000 nm: 90   with matrix element: 90",
-  "transition-rate provenance: exp: 90",
+  "levels: 74   lines < 2000 nm: 97   with matrix element: 90",
+  "transition-rate provenance: exp: 90, wavelength only: 7",
   "levels with a measured lifetime: 56"
  ],
  "sources": {

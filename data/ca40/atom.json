@@ -21,7 +21,8 @@
   "semi": {
    "lines": 25251,
    "matched": 4254
-  }
+  },
+  "hfr": null
  },
  "columns": [
   {
@@ -81,6 +82,12 @@
   {
    "key": "1D*",
    "header": "^1D^{o}",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "1F*",
+   "header": "^1F^{o}",
    "group": null,
    "width": 1.0
   }
@@ -1784,6 +1791,76 @@
   },
   {
    "id": 32,
+   "E": 40537.893,
+   "unc": null,
+   "J": 3.0,
+   "conf": "3p6.3d.4p",
+   "term": "1F*",
+   "parity": "odd",
+   "g": null,
+   "name": "3d4p\\ ^1F^{o}_{3}",
+   "plain": "3d4p 1F°3",
+   "tau_ns": 58.3,
+   "tau_unc": 2.0,
+   "tau_tier": "exp",
+   "tau_src": "Hunter & Peck, Phys. Rev. A 33, 4452 (1986) (Hanle effect); as tabulated in Den Hartog, Lawler, Sneden, Cowan, Roederer, Sobeck, Astrophys. J. Suppl. 255, 27 (2021), arXiv:2105.10534, Table 1",
+   "col": 10,
+   "decay": {
+    "ch": [
+     {
+      "lv": 7,
+      "lam": 535.1,
+      "f": 0.724,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 18,
+      "lam": 3086.8,
+      "f": 0.0984,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 495.86,
+      "f": 0.000845,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 495.33,
+      "f": 0.000106,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 20,
+      "lam": 3589.3,
+      "f": 1.33e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 27,
+      "lam": 5034.4,
+      "f": 2.05e-06,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 21,
+      "lam": 3596.5,
+      "f": 3.46e-07,
+      "tier": "semi",
+      "dark": false
+     }
+    ]
+   }
+  },
+  {
+   "id": 33,
    "E": 40719.847,
    "unc": null,
    "J": 2.0,
@@ -1861,7 +1938,7 @@
    }
   },
   {
-   "id": 33,
+   "id": 34,
    "E": 41679.008,
    "unc": null,
    "J": 1.0,
@@ -1914,7 +1991,7 @@
       "dark": false
      },
      {
-      "lv": 32,
+      "lv": 33,
       "lam": 10426.0,
       "f": 0.000773,
       "tier": "semi",
@@ -1939,7 +2016,7 @@
    }
   },
   {
-   "id": 34,
+   "id": 35,
    "E": 41786.276,
    "unc": null,
    "J": 0.0,
@@ -1999,7 +2076,7 @@
       "dark": false
      },
      {
-      "lv": 33,
+      "lv": 34,
       "lam": 93224.0,
       "f": 2.06e-06,
       "tier": "semi",
@@ -2016,7 +2093,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 33,
+   "upper": 34,
    "wn": 41679.008,
    "lam": 239.9289,
    "air": 239.8559,
@@ -2069,7 +2146,7 @@
       "dark": false
      },
      {
-      "lv": 32,
+      "lv": 33,
       "lam": 10426.0,
       "f": 0.000878,
       "tier": "semi",
@@ -4348,7 +4425,8 @@
    "A_tier": "exp",
    "A_src": "compiled in Table I of Bucay, Helal, Raizen, 'Surface ionization of metastable calcium atoms', AIP Advances 11, 015020 (2021)",
    "br": 0.06,
-   "br_tier": "exp"
+   "br_tier": "exp",
+   "q": 18.94
   },
   {
    "kind": "E1",
@@ -4356,7 +4434,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 7,
-   "upper": 33,
+   "upper": 34,
    "wn": 19829.374,
    "lam": 504.3024,
    "air": 504.1618,
@@ -4409,7 +4487,7 @@
       "dark": false
      },
      {
-      "lv": 32,
+      "lv": 33,
       "lam": 10426.0,
       "f": 0.000878,
       "tier": "semi",
@@ -5074,11 +5152,107 @@
   },
   {
    "kind": "E1",
+   "freq": 560.25991,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 7,
+   "upper": 32,
+   "wn": 18688.259,
+   "lam": 535.0953,
+   "air": 534.9465,
+   "gamma_MHz": 2.73,
+   "type": "E1",
+   "A": 12420000.0,
+   "A_tier": "semi",
+   "A_src": "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf2000.pos of 2013-06-02 (Cowan-code fit)",
+   "d": 2.564,
+   "d_tier": "semi",
+   "d_src": "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf2000.pos of 2013-06-02 (Cowan-code fit) (from A)",
+   "br": 0.7241,
+   "br_tier": "semi",
+   "lam_obs": 535.096,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 0.0993,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "semi",
+    "n": 10.1,
+    "ch": [
+     {
+      "lv": 18,
+      "lam": 3086.8,
+      "f": 0.0984,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 6,
+      "lam": 495.86,
+      "f": 0.000845,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 5,
+      "lam": 495.33,
+      "f": 0.000106,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 20,
+      "lam": 3589.3,
+      "f": 1.33e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 27,
+      "lam": 5034.4,
+      "f": 2.05e-06,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 21,
+      "lam": 3596.5,
+      "f": 3.46e-07,
+      "tier": "semi",
+      "dark": false
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.693,
+      "tier": "semi",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 0.117,
+      "tier": "semi",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 4.79e-06,
+      "tier": "semi",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.189
+   }
+  },
+  {
+   "kind": "E1",
    "freq": 543.6428,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 8,
-   "upper": 34,
+   "upper": 35,
    "wn": 18133.972,
    "lam": 551.4512,
    "air": 551.298,
@@ -5138,7 +5312,7 @@
       "dark": false
      },
      {
-      "lv": 33,
+      "lv": 34,
       "lam": 93224.0,
       "f": 2.11e-06,
       "tier": "semi",
@@ -5881,7 +6055,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 8,
-   "upper": 32,
+   "upper": 33,
    "wn": 17067.543,
    "lam": 585.9074,
    "air": 585.745,
@@ -7236,6 +7410,20 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 459.16042,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 15315.943,
+   "lam": 652.9144,
+   "air": 652.7341,
+   "gamma_MHz": 2.248e-11,
+   "type": "M2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 455.986240494144,
    "freq_unc": 5.3e-12,
@@ -7303,6 +7491,19 @@
     ],
     "end_lost": 0.0225
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 454.42244,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 15157.901,
+   "lam": 659.7219,
+   "air": 659.5398,
+   "type": "clock",
+   "inferred": true
   },
   {
    "kind": "E1",
@@ -7884,10 +8085,10 @@
   }
  ],
  "validation": [
-  "levels: 35   lines < 2000 nm: 61   with matrix element: 59",
-  "transition-rate provenance: exp: 5, nist: 53, semi: 2, wavelength only: 1",
-  "levels with a measured lifetime: 16",
-  "semi-empirical rates (Kurucz): 4254 of 25251 lines on NIST levels; used for 2 drawn lines and 4113 further decay lines"
+  "levels: 36   lines < 2000 nm: 64   with matrix element: 60",
+  "transition-rate provenance: exp: 5, nist: 53, semi: 3, wavelength only: 3",
+  "levels with a measured lifetime: 17",
+  "semi-empirical rates (Kurucz): 4254 of 25251 lines on NIST levels; used for 3 drawn lines and 4112 further decay lines"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (Ca); nuclear spin: table of Ca isotopes in A. Kramida, At. Data Nucl. Data Tables 133-134, 101322 (2020)": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Ca",

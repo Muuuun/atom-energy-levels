@@ -18,7 +18,8 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Actinium has no stable isotope; the site isotope is presumably 227Ac (I = 3/2, 21.77 y). Hyperfine constants from Sonnenschein's thesis carry statistical errors only. In Ferrer/Granados the first bracket is a 2-sigma statistical error and the second a systematic one; where one 'unc' is given here the two were combined in quadrature. Isotope shifts are stored as nu(first) - nu(second) following Verstraelen et al.; see the conflict about the sign in Ferrer et al. Second-step lines of the resonance ionization scheme (434.51 nm, 424.69 nm from the 22801 cm^-1 level) end on autoionizing states that are not in the NIST level list and are not entered. Transition probabilities shown on the site come from NIST ASD, whose Ac I data appear to follow Kramida 2022 (mostly scaled Cowan-code calculations, normalised to the three measured lifetimes).",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -46,12 +47,6 @@
    "width": 1.0
   },
   {
-   "key": "4D*",
-   "header": "^4D^{o}",
-   "group": null,
-   "width": 1.0
-  },
-  {
    "key": "4F*",
    "header": "^4F^{o}",
    "group": null,
@@ -60,6 +55,12 @@
   {
    "key": "4F",
    "header": "^4F",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "4D*",
+   "header": "^4D^{o}",
    "group": null,
    "width": 1.0
   },
@@ -180,7 +181,7 @@
    "tau_unc": 5000000.0,
    "tau_tier": "theory",
    "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (50 %) converted - derived",
-   "col": 6
+   "col": 5
   },
   {
    "id": 4,
@@ -197,7 +198,7 @@
    "tau_unc": 3686000000.0,
    "tau_tier": "theory",
    "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (38 %) converted - derived",
-   "col": 6
+   "col": 5
   },
   {
    "id": 5,
@@ -214,7 +215,7 @@
    "tau_unc": 1397000000.0,
    "tau_tier": "theory",
    "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (11 %) converted - derived",
-   "col": 6
+   "col": 5
   },
   {
    "id": 6,
@@ -267,7 +268,7 @@
    "tau_unc": 11.0,
    "tau_tier": "exp",
    "tau_src": "Zhang, Studer, Weber, Gadelshin, Kneip, Raeder, Budker, Wendt, Kieck, Porsev, Cheung, Safronova, Kozlov, Phys. Rev. Lett. 125, 073001 (2020) [arXiv:2005.03713]",
-   "col": 5,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -300,7 +301,7 @@
    "plain": "6d7s7p 4F°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -333,7 +334,7 @@
    "plain": "6d7s7p 4D°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -359,7 +360,7 @@
    "plain": "6d7s7p 4F°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -385,7 +386,7 @@
    "plain": "6d7s7p 4D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -477,7 +478,7 @@
    "plain": "6d7s7p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -540,7 +541,7 @@
    "tau_unc": 16.0,
    "tau_tier": "theory",
    "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (10 %) converted - derived",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -980,7 +981,7 @@
    "plain": "6d27p 4F°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -1079,7 +1080,7 @@
    "plain": "6d27p 4F°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -1159,7 +1160,7 @@
    "plain": "6d27p 4F°7/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -1286,7 +1287,7 @@
    "plain": "6d27p 4D°1/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -1345,7 +1346,7 @@
    "plain": "6d27p 4D°3/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -1465,7 +1466,7 @@
    "plain": "6d27p 4D°5/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -1505,7 +1506,7 @@
    "plain": "6d27p 4F°9/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -1540,7 +1541,7 @@
    "tau_unc": 0.8099999999999999,
    "tau_tier": "theory",
    "tau_src": "Kramida, Atoms 10, 42 (2022), Table 2 (column 'TW'), read in the Europe PMC full text. Note: calculated radiative lifetime (Cowan-code parametric fit with scaled matrix elements); uncertainty is the author's percentage estimate (10 %) converted - derived",
-   "col": 4,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -6572,6 +6573,20 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 326.95446,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 5,
+   "wn": 10906.027,
+   "lam": 916.9242,
+   "air": 916.6726,
+   "gamma_MHz": 1.253e-08,
+   "type": "E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 301.14629,
    "freq_tier": "nist",
@@ -6611,6 +6626,20 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 295.70296,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 4,
+   "wn": 9863.589,
+   "lam": 1013.8298,
+   "air": 1013.5519,
+   "gamma_MHz": 1.641e-08,
+   "type": "M1+E2",
+   "inferred": true
   },
   {
    "kind": "E1",
@@ -6875,8 +6904,8 @@
   }
  ],
  "validation": [
-  "levels: 45   lines < 2000 nm: 72   with matrix element: 71",
-  "transition-rate provenance: exp: 1, nist: 70, wavelength only: 1",
+  "levels: 45   lines < 2000 nm: 74   with matrix element: 71",
+  "transition-rate provenance: exp: 1, nist: 70, wavelength only: 3",
   "levels with a measured lifetime: 10"
  ],
  "sources": {

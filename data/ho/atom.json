@@ -18,9 +18,16 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "165Ho has I=7/2; hyperfine convention E = A K/2 + B [3K(K+1)/4 - I(I+1)J(J+1)] / [2I(2I-1)J(2J-1)], K = F(F+1)-I(I+1)-J(J+1) (ground state F=4..11, cooling on F=11 -> F'=12). The Den Hartog et al. 1999 lifetime table and the Nave 2003 transition-rate table were read from the publisher abstract pages, whose HTML embeds the tables, through an automated page reader (direct download is captcha-blocked), not from the PDFs; the even-parity lifetime table was read twice with identical results, every row was matched to a NIST level by energy and J, and the Nave A values reproduce 1/tau for the single-branch levels (e.g. 204e6 s^-1 <-> 4.9 ns, 0.92e6 <-> 1090 ns). Lifetime uncertainties are the blanket +-5% (+-10%/+-15% where footnoted). Nave wavelengths quoted in notes are air wavelengths. Extra fields beyond SCHEMA.md: top-level ionization_limit; level fields lifetime_other, level_energy_measured, C_kHz/D_kHz inside the ground-state hyperfine entry; transition fields linewidth_MHz / linewidth_kHz, wavenumber_cm, leak_to_metastable, alternatives. rme_J_ea0 values are derived from the Nave A coefficient of the same entry (schema convention, J' = upper level). g_J without a literature source is copied from the NIST levels file (few exist for Ho I).",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
+  {
+   "key": "odd J=11/2",
+   "header": "J = 11/2",
+   "group": "\\mathrm{odd}",
+   "width": 1.0
+  },
   {
    "key": "odd J=13/2",
    "header": "J = 13/2",
@@ -56,6 +63,12 @@
    "header": "J = 17/2",
    "group": "\\mathrm{even}",
    "width": 1.0
+  },
+  {
+   "key": "even J=19/2",
+   "header": "J = 19/2",
+   "group": "\\mathrm{even}",
+   "width": 1.0
   }
  ],
  "levels": [
@@ -80,7 +93,7 @@
     "tier": "exp",
     "src": "Dankwort, Ferch, Gebauer, Z. Phys. 267, 229 (1974) (abstract)"
    },
-   "col": 1
+   "col": 2
   },
   {
    "id": 1,
@@ -95,10 +108,55 @@
    "plain": "4f116s2 4I°13/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 0
+   "col": 1
   },
   {
    "id": 2,
+   "E": 8605.16,
+   "unc": null,
+   "J": 5.5,
+   "conf": "4f11.6s2",
+   "term": "4I*",
+   "parity": "odd",
+   "g": 1.012,
+   "name": "^4I^{o}_{11/2}",
+   "plain": "4f116s2 4I°11/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 0
+  },
+  {
+   "id": 3,
+   "E": 9741.5,
+   "unc": null,
+   "J": 9.5,
+   "conf": "4f10.(5I<8>).5d<3/2>.6s2",
+   "term": "(8,3/2)",
+   "parity": "even",
+   "g": null,
+   "name": "(8,3/2)_{19/2}",
+   "plain": "4f105d6s2 (8,3/2)19/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 4,
+   "E": 11689.77,
+   "unc": null,
+   "J": 9.5,
+   "conf": "4f10.(5I<8>).5d<5/2>.6s2",
+   "term": "(8,5/2)",
+   "parity": "even",
+   "g": null,
+   "name": "(8,5/2)_{19/2}",
+   "plain": "4f105d6s2 (8,5/2)19/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 5,
    "E": 15136.06,
    "unc": null,
    "J": 7.5,
@@ -110,10 +168,10 @@
    "plain": "4f105d6s2 (7,3/2)15/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 4
+   "col": 5
   },
   {
-   "id": 3,
+   "id": 6,
    "E": 16438.01,
    "unc": null,
    "J": 8.5,
@@ -125,10 +183,25 @@
    "plain": "4f105d6s2 (7,5/2)17/2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 5
+   "col": 6
   },
   {
-   "id": 4,
+   "id": 7,
+   "E": 16683.52,
+   "unc": null,
+   "J": 9.5,
+   "conf": "4f10.(5I<7>).5d<5/2>.6s2",
+   "term": "(7,5/2)",
+   "parity": "even",
+   "g": null,
+   "name": "(7,5/2)_{19/2}",
+   "plain": "4f105d6s2 (7,5/2)19/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 8,
    "E": 16709.82,
    "unc": null,
    "J": 8.5,
@@ -142,7 +215,7 @@
    "tau_unc": 54.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 5,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -156,7 +229,7 @@
    }
   },
   {
-   "id": 5,
+   "id": 9,
    "E": 16882.28,
    "unc": null,
    "J": 7.5,
@@ -170,7 +243,7 @@
    "tau_unc": 272.0,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -191,7 +264,7 @@
    }
   },
   {
-   "id": 6,
+   "id": 10,
    "E": 17059.35,
    "unc": null,
    "J": 6.5,
@@ -205,7 +278,7 @@
    "tau_unc": 76.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -219,7 +292,22 @@
    }
   },
   {
-   "id": 7,
+   "id": 11,
+   "E": 17883.57,
+   "unc": null,
+   "J": 9.5,
+   "conf": "4f11.(4I*<15/2>).6s.6p.(3P*<2>)",
+   "term": "(15/2,2)",
+   "parity": "even",
+   "g": null,
+   "name": "(15/2,2)_{19/2}",
+   "plain": "4f116s6p (15/2,2)19/2",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 7
+  },
+  {
+   "id": 12,
    "E": 18651.53,
    "unc": null,
    "J": 7.5,
@@ -233,7 +321,7 @@
    "tau_unc": 334.0,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -247,7 +335,7 @@
    }
   },
   {
-   "id": 8,
+   "id": 13,
    "E": 18756.22,
    "unc": null,
    "J": 7.5,
@@ -261,7 +349,7 @@
    "tau_unc": 630.0,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -282,7 +370,7 @@
    }
   },
   {
-   "id": 9,
+   "id": 14,
    "E": 18858.19,
    "unc": null,
    "J": 6.5,
@@ -296,7 +384,7 @@
    "tau_unc": 537.0,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -317,7 +405,7 @@
    }
   },
   {
-   "id": 10,
+   "id": 15,
    "E": 20074.89,
    "unc": null,
    "J": 7.5,
@@ -331,7 +419,7 @@
    "tau_unc": 43.1,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -352,7 +440,7 @@
    }
   },
   {
-   "id": 11,
+   "id": 16,
    "E": 20241.31,
    "unc": null,
    "J": 6.5,
@@ -366,7 +454,7 @@
    "tau_unc": 20.7,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -387,7 +475,7 @@
    }
   },
   {
-   "id": 12,
+   "id": 17,
    "E": 20258.27,
    "unc": null,
    "J": 6.5,
@@ -401,7 +489,7 @@
    "tau_unc": 262.0,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -422,7 +510,7 @@
    }
   },
   {
-   "id": 13,
+   "id": 18,
    "E": 22413.14,
    "unc": null,
    "J": 5.5,
@@ -436,7 +524,7 @@
    "tau_unc": 57.5,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 2,
+   "col": 3,
    "decay": {
     "ch": [
      {
@@ -450,7 +538,7 @@
    }
   },
   {
-   "id": 14,
+   "id": 19,
    "E": 22978.19,
    "unc": null,
    "J": 6.5,
@@ -464,7 +552,7 @@
    "tau_unc": 5.2,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -485,7 +573,7 @@
    }
   },
   {
-   "id": 15,
+   "id": 20,
    "E": 23445.28,
    "unc": null,
    "J": 7.5,
@@ -499,7 +587,7 @@
    "tau_unc": 13.399999999999999,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -513,7 +601,7 @@
    }
   },
   {
-   "id": 16,
+   "id": 21,
    "E": 23498.57,
    "unc": null,
    "J": 8.5,
@@ -527,7 +615,7 @@
    "tau_unc": 5.0,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 5,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -541,7 +629,7 @@
    }
   },
   {
-   "id": 17,
+   "id": 22,
    "E": 23834.94,
    "unc": null,
    "J": 7.5,
@@ -555,7 +643,7 @@
    "tau_unc": 12.9,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -569,7 +657,7 @@
    }
   },
   {
-   "id": 18,
+   "id": 23,
    "E": 23955.69,
    "unc": null,
    "J": 6.5,
@@ -583,7 +671,7 @@
    "tau_unc": 1.6,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -597,7 +685,7 @@
    }
   },
   {
-   "id": 19,
+   "id": 24,
    "E": 24014.22,
    "unc": null,
    "J": 6.5,
@@ -611,7 +699,7 @@
    "tau_unc": 0.47000000000000003,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -625,7 +713,7 @@
    }
   },
   {
-   "id": 20,
+   "id": 25,
    "E": 24263.96,
    "unc": null,
    "J": 8.5,
@@ -639,7 +727,7 @@
    "tau_unc": 3.5100000000000002,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 5,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -653,7 +741,7 @@
    }
   },
   {
-   "id": 21,
+   "id": 26,
    "E": 24360.79,
    "unc": 0.001,
    "J": 8.5,
@@ -678,7 +766,7 @@
     "tier": "exp",
     "src": "Miao, Hostetter, Stratis, Saffman, Phys. Rev. A 89, 041401(R) (2014)"
    },
-   "col": 5,
+   "col": 6,
    "decay": {
     "ch": [
      {
@@ -692,7 +780,7 @@
    }
   },
   {
-   "id": 22,
+   "id": 27,
    "E": 24376.91,
    "unc": null,
    "J": 7.5,
@@ -706,7 +794,7 @@
    "tau_unc": 8.65,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -720,7 +808,7 @@
    }
   },
   {
-   "id": 23,
+   "id": 28,
    "E": 24660.8,
    "unc": null,
    "J": 7.5,
@@ -734,7 +822,7 @@
    "tau_unc": 0.25,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -748,7 +836,7 @@
    }
   },
   {
-   "id": 24,
+   "id": 29,
    "E": 24740.52,
    "unc": null,
    "J": 6.5,
@@ -762,7 +850,7 @@
    "tau_unc": 1.105,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -783,7 +871,7 @@
    }
   },
   {
-   "id": 25,
+   "id": 30,
    "E": 24760.13,
    "unc": null,
    "J": 6.5,
@@ -797,7 +885,7 @@
    "tau_unc": 41.35,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -818,7 +906,7 @@
    }
   },
   {
-   "id": 26,
+   "id": 31,
    "E": 25272.63,
    "unc": null,
    "J": 7.5,
@@ -832,7 +920,7 @@
    "tau_unc": 7.8999999999999995,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -853,7 +941,7 @@
    }
   },
   {
-   "id": 27,
+   "id": 32,
    "E": 29069.78,
    "unc": null,
    "J": 5.5,
@@ -867,7 +955,7 @@
    "tau_unc": 0.47000000000000003,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 2,
+   "col": 3,
    "decay": {
     "ch": [
      {
@@ -881,7 +969,7 @@
    }
   },
   {
-   "id": 28,
+   "id": 33,
    "E": 29642.6,
    "unc": null,
    "J": 7.5,
@@ -895,7 +983,7 @@
    "tau_unc": 0.23500000000000001,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 4,
+   "col": 5,
    "decay": {
     "ch": [
      {
@@ -909,7 +997,7 @@
    }
   },
   {
-   "id": 29,
+   "id": 34,
    "E": 29751.91,
    "unc": null,
    "J": 6.5,
@@ -923,7 +1011,7 @@
    "tau_unc": 0.25,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 3,
+   "col": 4,
    "decay": {
     "ch": [
      {
@@ -937,7 +1025,7 @@
    }
   },
   {
-   "id": 30,
+   "id": 35,
    "E": 34366.07,
    "unc": null,
    "J": 5.5,
@@ -951,7 +1039,7 @@
    "tau_unc": 1.15,
    "tau_tier": "exp",
    "tau_src": "Den Hartog, Wiese, Lawler, J. Opt. Soc. Am. B 16, 2278 (1999), Table 2",
-   "col": 2,
+   "col": 3,
    "decay": {
     "ch": [
      {
@@ -972,7 +1060,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 30,
+   "upper": 35,
    "wn": 28946.37,
    "lam": 345.4665,
    "air": 345.3675,
@@ -994,7 +1082,7 @@
     "n_open": 36,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 388.19
      },
      {
@@ -1022,7 +1110,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 26,
+   "upper": 31,
    "wn": 25272.63,
    "lam": 395.685,
    "air": 395.573,
@@ -1100,7 +1188,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 25,
+   "upper": 30,
    "wn": 24760.13,
    "lam": 403.8751,
    "air": 403.761,
@@ -1136,7 +1224,7 @@
     "n_open": 19,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 619.0
      },
      {
@@ -1179,7 +1267,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 24,
+   "upper": 29,
    "wn": 24740.52,
    "lam": 404.1952,
    "air": 404.0811,
@@ -1215,7 +1303,7 @@
     "n_open": 19,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 619.76
      },
      {
@@ -1258,7 +1346,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 23,
+   "upper": 28,
    "wn": 24660.8,
    "lam": 405.5018,
    "air": 405.3873,
@@ -1308,7 +1396,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 22,
+   "upper": 27,
    "wn": 24376.91,
    "lam": 410.2243,
    "air": 410.1085,
@@ -1359,7 +1447,7 @@
    "freq_src": "Hostetter, Pritchard, Lawler, Saffman, Phys. Rev. A 91, 012507 (2015)",
    "freq_tier": "exp",
    "lower": 0,
-   "upper": 21,
+   "upper": 26,
    "wn": 24360.79,
    "lam": 410.49572,
    "air": 410.3799,
@@ -1409,7 +1497,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 29,
+   "upper": 34,
    "wn": 24332.21,
    "lam": 410.9779,
    "air": 410.8619,
@@ -1436,7 +1524,7 @@
       "lam": 336.11
      },
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 472.89
      },
      {
@@ -1460,7 +1548,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 20,
+   "upper": 25,
    "wn": 24263.96,
    "lam": 412.1339,
    "air": 412.0176,
@@ -1510,7 +1598,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 28,
+   "upper": 33,
    "wn": 24222.9,
    "lam": 412.8325,
    "air": 412.7161,
@@ -1561,7 +1649,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 19,
+   "upper": 24,
    "wn": 24014.22,
    "lam": 416.4199,
    "air": 416.3026,
@@ -1587,7 +1675,7 @@
       "lam": 537.79
      },
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 648.97
      },
      {
@@ -1611,7 +1699,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 18,
+   "upper": 23,
    "wn": 23955.69,
    "lam": 417.4374,
    "air": 417.3197,
@@ -1637,7 +1725,7 @@
       "lam": 539.49
      },
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 651.44
      },
      {
@@ -1661,7 +1749,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 17,
+   "upper": 22,
    "wn": 23834.94,
    "lam": 419.5521,
    "air": 419.4339,
@@ -1711,7 +1799,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 27,
+   "upper": 32,
    "wn": 23650.08,
    "lam": 422.8316,
    "air": 422.7125,
@@ -1733,7 +1821,7 @@
     "n_open": 29,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 488.65
      },
      {
@@ -1761,7 +1849,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 16,
+   "upper": 21,
    "wn": 23498.57,
    "lam": 425.5578,
    "air": 425.438,
@@ -1811,7 +1899,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 15,
+   "upper": 20,
    "wn": 23445.28,
    "lam": 426.5251,
    "air": 426.4051,
@@ -1861,7 +1949,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 14,
+   "upper": 19,
    "wn": 22978.19,
    "lam": 435.1953,
    "air": 435.073,
@@ -1897,7 +1985,7 @@
     "n_open": 13,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 695.75
      },
      {
@@ -1940,7 +2028,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 12,
+   "upper": 17,
    "wn": 20258.27,
    "lam": 493.6256,
    "air": 493.4878,
@@ -1976,7 +2064,7 @@
     "n_open": 5,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 858.14
      },
      {
@@ -2018,7 +2106,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 11,
+   "upper": 16,
    "wn": 20241.31,
    "lam": 494.0392,
    "air": 493.9013,
@@ -2054,7 +2142,7 @@
     "n_open": 5,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 859.39
      },
      {
@@ -2096,7 +2184,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 10,
+   "upper": 15,
    "wn": 20074.89,
    "lam": 498.1347,
    "air": 497.9958,
@@ -2170,7 +2258,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 26,
+   "upper": 31,
    "wn": 19852.93,
    "lam": 503.704,
    "air": 503.5636,
@@ -2248,7 +2336,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 25,
+   "upper": 30,
    "wn": 19340.43,
    "lam": 517.0516,
    "air": 516.9076,
@@ -2284,7 +2372,7 @@
     "n_open": 19,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 619.0
      },
      {
@@ -2327,7 +2415,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 24,
+   "upper": 29,
    "wn": 19320.82,
    "lam": 517.5764,
    "air": 517.4323,
@@ -2363,7 +2451,7 @@
     "n_open": 19,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 619.76
      },
      {
@@ -2406,7 +2494,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 9,
+   "upper": 14,
    "wn": 18858.19,
    "lam": 530.2736,
    "air": 530.1261,
@@ -2442,7 +2530,7 @@
     "n_open": 2,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 975.32
      },
      {
@@ -2473,7 +2561,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 8,
+   "upper": 13,
    "wn": 18756.22,
    "lam": 533.1565,
    "air": 533.0082,
@@ -2539,7 +2627,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 7,
+   "upper": 12,
    "wn": 18651.53,
    "lam": 536.149,
    "air": 536.0,
@@ -2572,12 +2660,25 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 536.13594,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 11,
+   "wn": 17883.57,
+   "lam": 559.1725,
+   "air": 559.0173,
+   "type": "M2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 526.39029,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 14,
+   "upper": 19,
    "wn": 17558.49,
    "lam": 569.5251,
    "air": 569.3671,
@@ -2613,7 +2714,7 @@
     "n_open": 13,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 695.75
      },
      {
@@ -2656,7 +2757,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 6,
+   "upper": 10,
    "wn": 17059.35,
    "lam": 586.1888,
    "air": 586.0264,
@@ -2682,7 +2783,7 @@
       "lam": 859.13
      },
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 1182.8
      }
     ]
@@ -2694,7 +2795,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 13,
+   "upper": 18,
    "wn": 16993.44,
    "lam": 588.4624,
    "air": 588.2993,
@@ -2716,7 +2817,7 @@
     "n_open": 9,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 724.22
      },
      {
@@ -2744,7 +2845,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 5,
+   "upper": 9,
    "wn": 16882.28,
    "lam": 592.3371,
    "air": 592.173,
@@ -2800,7 +2901,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 4,
+   "upper": 8,
    "wn": 16709.82,
    "lam": 598.4505,
    "air": 598.2848,
@@ -2831,12 +2932,25 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 500.15935,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 7,
+   "wn": 16683.52,
+   "lam": 599.3939,
+   "air": 599.2279,
+   "type": "M2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 492.79914,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 3,
+   "upper": 6,
    "wn": 16438.01,
    "lam": 608.3461,
    "air": 608.1778,
@@ -2861,7 +2975,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 0,
-   "upper": 2,
+   "upper": 5,
    "wn": 15136.06,
    "lam": 660.6739,
    "air": 660.4915,
@@ -2885,7 +2999,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 12,
+   "upper": 17,
    "wn": 14838.57,
    "lam": 673.9194,
    "air": 673.7334,
@@ -2921,7 +3035,7 @@
     "n_open": 5,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 858.14
      },
      {
@@ -2963,7 +3077,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 11,
+   "upper": 16,
    "wn": 14821.61,
    "lam": 674.6905,
    "air": 674.5043,
@@ -2999,7 +3113,7 @@
     "n_open": 5,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 859.39
      },
      {
@@ -3041,7 +3155,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 10,
+   "upper": 15,
    "wn": 14655.19,
    "lam": 682.3521,
    "air": 682.1639,
@@ -3115,7 +3229,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 9,
+   "upper": 14,
    "wn": 13438.49,
    "lam": 744.1312,
    "air": 743.9263,
@@ -3151,7 +3265,7 @@
     "n_open": 2,
     "open": [
      {
-      "html": "<sup>4</sup>I<sup>°</sup><sub>11/2</sub>",
+      "lv": 2,
       "lam": 975.32
      },
      {
@@ -3182,7 +3296,7 @@
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 8,
+   "upper": 13,
    "wn": 13336.52,
    "lam": 749.8208,
    "air": 749.6144,
@@ -3243,12 +3357,25 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 350.45049,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 4,
+   "wn": 11689.77,
+   "lam": 855.4488,
+   "air": 855.2139,
+   "type": "M2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 343.6395,
    "freq_tier": "nist",
    "freq_src": "NIST ASD level energies",
    "lower": 1,
-   "upper": 5,
+   "upper": 9,
    "wn": 11462.58,
    "lam": 872.4039,
    "air": 872.1644,
@@ -3297,6 +3424,45 @@
     ],
     "end_lost": 0.00448
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 292.04282,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 3,
+   "wn": 9741.5,
+   "lam": 1026.536,
+   "air": 1026.2547,
+   "type": "M2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 257.97621,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 2,
+   "wn": 8605.16,
+   "lam": 1162.0934,
+   "air": 1161.7754,
+   "type": "E2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 162.47852,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 5419.7,
+   "lam": 1845.1206,
+   "air": 1844.6169,
+   "type": "M1+E2",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -3610,8 +3776,8 @@
   }
  ],
  "validation": [
-  "levels: 31   lines < 2000 nm: 39   with matrix element: 37",
-  "transition-rate provenance: exp: 28, nist: 9, wavelength only: 2",
+  "levels: 36   lines < 2000 nm: 45   with matrix element: 37",
+  "transition-rate provenance: exp: 28, nist: 9, wavelength only: 8",
   "levels with a measured lifetime: 27"
  ],
  "sources": {

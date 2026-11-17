@@ -18,7 +18,8 @@
   "lit_levels": 63,
   "guide_tau": "Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists).",
   "notes": "All Pa I levels and line classifications come from the archived online version (2002/2003 captures) of the Blaise & Wyart actinide tables (Laboratoire Aime Cotton); energies refer to 231Pa (hyperfine centre of gravity). NIST ASD lists only the ground level 5f2.6d.7s2 4K11/2 and an estimated limit. Configurations are stored without the parent terms (the full printed string is in each level note). The classification in the wavelength table uses truncated level energies; each line was matched to the level tables with J and with the observed wavenumber (air wavelength converted with the Edlen formula; the residual is in each line note). 'relative_intensity' is the coarse photographic/emission intensity printed there (3000 or 10000) and only ranks lines. Lines with upper levels slightly above 30000 cm^-1 (30658.23 and 32234.42 cm^-1) are kept because they belong to the selected strong lines.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -3440,6 +3441,19 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 255.01711,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy in the Internet Archive, table 'Pa I even' (231Pa); original analyses named there: Giacchetti, J. Opt. Soc. Am. 56, 653 (1966); Blaise, Ginibre, Wyart, Z. Phys. A 321, 61 (1985); Blaise, Verges, Wyart unpublished - originals not opened (measured level energy)",
+   "lower": 0,
+   "upper": 17,
+   "wn": 8506.455,
+   "lam": 1175.5778,
+   "air": 1175.2561,
+   "type": "M1+E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 254.16929,
    "freq_tier": "exp",
@@ -3557,6 +3571,19 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 225.22493,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy in the Internet Archive, table 'Pa I even' (231Pa); original analyses named there: Giacchetti, J. Opt. Soc. Am. 56, 653 (1966); Blaise, Ginibre, Wyart, Z. Phys. A 321, 61 (1985); Blaise, Verges, Wyart unpublished - originals not opened (measured level energy)",
+   "lower": 0,
+   "upper": 14,
+   "wn": 7512.695,
+   "lam": 1331.0803,
+   "air": 1330.7163,
+   "type": "E2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 221.64016,
    "freq_tier": "exp",
@@ -3594,6 +3621,19 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 221.34562,
+   "freq_tier": "exp",
+   "freq_src": "Blaise & Wyart, 'Selected Constants: Energy Levels and Atomic Spectra of Actinides' (Tables Internationales de Constantes, Paris, 1992), online database of Laboratoire Aime Cotton (Orsay), archived copy in the Internet Archive, table 'Pa I even' (231Pa); original analyses named there: Giacchetti, J. Opt. Soc. Am. 56, 653 (1966); Blaise, Ginibre, Wyart, Z. Phys. A 321, 61 (1985); Blaise, Verges, Wyart unpublished - originals not opened (measured level energy)",
+   "lower": 0,
+   "upper": 13,
+   "wn": 7383.295,
+   "lam": 1354.4088,
+   "air": 1354.0386,
+   "type": "M1+E2",
+   "inferred": true
   },
   {
    "kind": "E1",
@@ -3695,8 +3735,8 @@
   }
  ],
  "validation": [
-  "levels: 64   lines < 2000 nm: 64   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 64",
+  "levels: 64   lines < 2000 nm: 67   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 67",
   "levels with a measured lifetime: 0"
  ],
  "sources": {

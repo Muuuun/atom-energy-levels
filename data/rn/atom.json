@@ -18,7 +18,8 @@
   "lit_levels": 0,
   "guide_tau": "Level caption:  energy (NIST, or a measurement of the last 20 years where one exists) and measured lifetime (where one exists).",
   "notes": "Radon is the least-studied of these atoms: apart from the classical emission spectra there is a single collinear-laser-spectroscopy study (ISOLDE, published 1987) on the 745 nm line, whose hyperfine constants were read in the third pass (2026-10-02) from the CERN preprint scan of the conference paper (data/literature/pdf/Rn_Borchers_1987.pdf); its isotope shifts exist only as a graph. Nuclear spins, half-lives and moments are taken from the IAEA table; moments printed there for even-even isotopes belong to isomers and were left out. The site's default isotope (222Rn) has I = 0, so no hyperfine structure applies to it.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
@@ -304,6 +305,19 @@
    }
   },
   {
+   "kind": "forbidden",
+   "freq": 1637.4769,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 54620.35,
+   "lam": 183.0819,
+   "air": null,
+   "type": "M2",
+   "inferred": true
+  },
+  {
    "kind": "E1",
    "freq": 689.04838,
    "freq_tier": "nist",
@@ -568,8 +582,8 @@
   }
  ],
  "validation": [
-  "levels: 11   lines < 2000 nm: 10   with matrix element: 0",
-  "transition-rate provenance: wavelength only: 10",
+  "levels: 11   lines < 2000 nm: 11   with matrix element: 0",
+  "transition-rate provenance: wavelength only: 11",
   "levels with a measured lifetime: 0"
  ],
  "sources": {

@@ -15,15 +15,22 @@
   "has_lit": true,
   "freq_isotope": "254",
   "limit_text": "No$^+$ ionisation limit   53444.00 cm$^{-1}$  =  6.62621 eV  (187.112 nm)",
-  "lit_levels": 1,
+  "lit_levels": 3,
   "guide_tau": "Level caption:  energy (from the cited literature; NIST lists no excited levels) and measured lifetime (where one exists).",
   "notes": "Nobelium exists only as single atoms from heavy-ion fusion (a few 254No ions per second at GSI Darmstadt); everything measured comes from two-step resonance ionization with detection by alpha decay. MEASURED: (1) the line 5f14 7s2 1S0 - 5f14 7s7p 1P1 at 29 961.457 cm^-1 in 254No with its Einstein coefficient (deduced from the saturation curve by a rate-equation fit, not from a decay curve), (2) its isotope shifts for 252, 253, 255No relative to 254No and the hyperfine constants of 253No, (3) the ionization potential 53 444.0(4) cm^-1 from a Rydberg series, (4) one further level at 29 652 (+8/-1) cm^-1, reached only by buffer-gas collisions from 1P1 and located through the convergence limit of two Rydberg series; its label 3D3 is an assignment. All wavenumbers were measured in 65-95 mbar argon and are not corrected for the pressure shift except the ionization potential. CALCULATED (method 'theory', energies only, accuracy a few hundred cm^-1): the eight other low levels in levels_not_in_nist from Dzuba, Safronova & Safronova 2014; their calculated g-factors are under 'g_J_theory' so that they cannot be mistaken for measurements. Isotope shifts are nu(first) - nu(second) in MHz: lighter isotopes lie at higher frequency (field shift dominates). frequency_THz values are derived from printed wavenumbers. Asymmetric uncertainties are stored as unc_plus / unc_minus with 'unc' = the larger side. Nuclear moments of 253No are not purely experimental: they combine the measured A and B with calculated atomic factors (B_e/J = -6.3(0.9) GHz I/mu_N, electric field gradient 0.476(70) GHz/eb, field-shift constant -95.8(7.0) GHz/fm^2). Non-schema keys used: unc_plus, unc_minus, wavenumber_cm, half_life, mu_*, Q_*, g_J_theory, collisional_decay_time, lifetime_not_direct, buffer_gas_quenching, rydberg_series, value_range_cm, saturation_photon_flux_note, alternatives, isotope.",
-  "semi": null
+  "semi": null,
+  "hfr": null
  },
  "columns": [
   {
    "key": "1S",
    "header": "^1S",
+   "group": null,
+   "width": 1.0
+  },
+  {
+   "key": "3P*",
+   "header": "^3P^{o}",
    "group": null,
    "width": 1.0
   },
@@ -52,6 +59,40 @@
   },
   {
    "id": 1,
+   "E": 19567,
+   "unc": null,
+   "J": 0.0,
+   "conf": "5f14.7s.7p",
+   "term": "3P*",
+   "parity": "odd",
+   "g": null,
+   "name": "5f^{14}7s7p\\ ^3P^{o}_{0}",
+   "plain": "5f147s7p 3P°0",
+   "E_tier": "theory",
+   "E_src": "Dzuba, Safronova & Safronova, 'Atomic properties of superheavy elements No, Lr, and Rf', Phys. Rev. A 90, 012504 (2014), arXiv:1406.0262v1, Table IV, column 'Present +Lamb' (configuration interaction + all-order calculation with quantum-electrodynamic correction)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 2,
+   "E": 26113,
+   "unc": null,
+   "J": 2.0,
+   "conf": "5f14.7s.7p",
+   "term": "3P*",
+   "parity": "odd",
+   "g": null,
+   "name": "5f^{14}7s7p\\ ^3P^{o}_{2}",
+   "plain": "5f147s7p 3P°2",
+   "E_tier": "theory",
+   "E_src": "Dzuba, Safronova & Safronova, 'Atomic properties of superheavy elements No, Lr, and Rf', Phys. Rev. A 90, 012504 (2014), arXiv:1406.0262v1, Table IV, column 'Present +Lamb' (configuration interaction + all-order calculation with quantum-electrodynamic correction)",
+   "tau_ns": null,
+   "tau_tier": "none",
+   "col": 1
+  },
+  {
+   "id": 3,
    "E": 29961.457,
    "unc": 0.041,
    "J": 1.0,
@@ -73,7 +114,7 @@
     "tier": "exp",
     "src": "Raeder, Ackermann, Backe, Beerwerth, Berengut, Block, et al., 'Probing sizes and shapes of nobelium isotopes by laser spectroscopy', Phys. Rev. Lett. 120, 232503 (2018), Table I, Fig. 1 and p. 232503-3"
    },
-   "col": 1,
+   "col": 2,
    "decay": {
     "ch": [
      {
@@ -95,7 +136,7 @@
    "freq_src": "Laatiaoui, Lauth, Backe, Block, Ackermann, Cheal, Chhetri, Duellmann, et al., 'Atom-at-a-time laser resonance ionization spectroscopy of nobelium', Nature 538, 495 (2016), p. 496 and Table 1",
    "freq_tier": "exp",
    "lower": 0,
-   "upper": 1,
+   "upper": 3,
    "wn": 29961.4575,
    "lam": 333.76213,
    "air": 333.6662,
@@ -143,6 +184,32 @@
      }
     ]
    }
+  },
+  {
+   "kind": "forbidden",
+   "freq": 782.84805,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 2,
+   "wn": 26113.0,
+   "lam": 382.951,
+   "air": 382.8424,
+   "type": "M2",
+   "inferred": true
+  },
+  {
+   "kind": "forbidden",
+   "freq": 586.6039,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 0,
+   "upper": 1,
+   "wn": 19567.0,
+   "lam": 511.0645,
+   "air": 510.9222,
+   "type": "clock",
+   "inferred": true
   }
  ],
  "rydberg_levels": [],
@@ -228,8 +295,8 @@
   }
  ],
  "validation": [
-  "levels: 2   lines < 2000 nm: 1   with matrix element: 1",
-  "transition-rate provenance: exp: 1",
+  "levels: 4   lines < 2000 nm: 3   with matrix element: 1",
+  "transition-rate provenance: exp: 1, wavelength only: 2",
   "levels with a measured lifetime: 0"
  ],
  "sources": {

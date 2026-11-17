@@ -21,7 +21,8 @@
   "semi": {
    "lines": 11127,
    "matched": 2426
-  }
+  },
+  "hfr": null
  },
  "columns": [
   {
@@ -37,14 +38,14 @@
    "width": 1.0
   },
   {
-   "key": "3P*",
-   "header": "^3P^{o}",
+   "key": "3D",
+   "header": "^3D",
    "group": null,
    "width": 1.0
   },
   {
-   "key": "3D",
-   "header": "^3D",
+   "key": "3P*",
+   "header": "^3P^{o}",
    "group": null,
    "width": 1.0
   },
@@ -92,7 +93,7 @@
    "tau_unc": null,
    "tau_tier": "theory",
    "tau_src": "Porsev & Derevianko, Phys. Rev. A 69, 042506 (2004) [arXiv:physics/0312006], Table IV: hyperfine-quenching E1 rate A(3P0->1S0, F=5/2) = 4.44e-4 s^-1 for 25Mg (lifetime here = 1/rate)",
-   "col": 2
+   "col": 3
   },
   {
    "id": 2,
@@ -109,7 +110,7 @@
    "tau_unc": 200000.0,
    "tau_tier": "exp",
    "tau_src": "Hansen, Therkildsen, Malossi, Jensen, van Ooijen, Brusch, Muller, Hald, Thomsen, Phys. Rev. A 77, 062502 (2008), MOT recapture of 24Mg; read in Therkildsen PhD thesis (Univ. Copenhagen 2009) Sec. 5.2 and reprint appended there",
-   "col": 2,
+   "col": 3,
    "decay": {
     "ch": [
      {
@@ -144,7 +145,7 @@
    "tau_unc": 140000000000.0,
    "tau_tier": "exp",
    "tau_src": "Jensen, He, Westergaard, Gunnarsson, Madsen, Brusch, Hald, Thomsen, Phys. Rev. Lett. 107, 113001 (2011) (abstract): M2 rate (4.87 +- 0.3)e-4 s^-1, lifetime 2050 +140/-110 s, 24Mg in a magnetic trap",
-   "col": 2
+   "col": 3
   },
   {
    "id": 4,
@@ -369,7 +370,7 @@
    "plain": "3s4p 3P°0",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2,
+   "col": 3,
    "decay": {
     "ch": [
      {
@@ -423,7 +424,7 @@
    "plain": "3s4p 3P°1",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2,
+   "col": 3,
    "decay": {
     "ch": [
      {
@@ -498,7 +499,7 @@
    "plain": "3s4p 3P°2",
    "tau_ns": null,
    "tau_tier": "none",
-   "col": 2,
+   "col": 3,
    "decay": {
     "ch": [
      {
@@ -575,7 +576,7 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "Aldenius, Tanner, Johansson, Lundberg, Ryan, Astron. Astrophys. 461, 767 (2007) [arXiv:astro-ph/0610033] Table 1, laser-induced fluorescence",
-   "col": 3,
+   "col": 2,
    "decay": {
     "ch": [
      {
@@ -653,7 +654,7 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "Aldenius, Tanner, Johansson, Lundberg, Ryan, Astron. Astrophys. 461, 767 (2007) [arXiv:astro-ph/0610033] Table 1, laser-induced fluorescence",
-   "col": 3,
+   "col": 2,
    "decay": {
     "ch": [
      {
@@ -723,7 +724,7 @@
    "tau_unc": 0.4,
    "tau_tier": "exp",
    "tau_src": "Aldenius, Tanner, Johansson, Lundberg, Ryan, Astron. Astrophys. 461, 767 (2007) [arXiv:astro-ph/0610033] Table 1, laser-induced fluorescence",
-   "col": 3,
+   "col": 2,
    "decay": {
     "ch": [
      {
@@ -1190,7 +1191,8 @@
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy E)",
    "br": 4.272e-20,
-   "br_tier": "nist"
+   "br_tier": "nist",
+   "mu": 8.544e-08
   },
   {
    "kind": "forbidden",
@@ -1208,7 +1210,8 @@
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy C)",
    "br": 6.254e-12,
-   "br_tier": "nist"
+   "br_tier": "nist",
+   "q": 0.01366
   },
   {
    "kind": "forbidden",
@@ -1241,7 +1244,8 @@
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy A)",
    "br": 0.0001328,
-   "br_tier": "nist"
+   "br_tier": "nist",
+   "q": 18.45
   },
   {
    "kind": "E1",
@@ -1332,6 +1336,184 @@
      }
     ],
     "end_lost": 0.0229
+   }
+  },
+  {
+   "kind": "E1",
+   "freq": 937.27648,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 17,
+   "wn": 31264.178,
+   "lam": 319.8549,
+   "air": 319.7625,
+   "gamma_MHz": 2.792,
+   "type": "E1 (intercombination)",
+   "A": 811.5,
+   "A_tier": "semi",
+   "A_src": "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf1200.pos of 2013-03-07 (Cowan-code fit)",
+   "d": 0.008095,
+   "d_tier": "semi",
+   "d_src": "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf1200.pos of 2013-03-07 (Cowan-code fit) (from A)",
+   "br": 4.626e-05,
+   "br_tier": "semi",
+   "lam_obs": 319.8549,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 1.0,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "semi",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 552.99,
+      "f": 0.792,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 2640.0,
+      "f": 0.306,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 320.27,
+      "f": 5.32e-05,
+      "tier": "semi",
+      "dark": true
+     },
+     {
+      "lv": 9,
+      "lam": 1890.3,
+      "f": 7.05e-06,
+      "tier": "semi",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 10,
+      "lam": 1892.7
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.971,
+      "tier": "semi",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 5.2e-05,
+      "tier": "semi",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 7.19e-07,
+      "tier": "semi",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0293
+   }
+  },
+  {
+   "kind": "E1",
+   "freq": 936.0559,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 3,
+   "upper": 17,
+   "wn": 31223.464,
+   "lam": 320.272,
+   "air": 320.1794,
+   "gamma_MHz": 2.792,
+   "type": "E1 (intercombination)",
+   "A": 933.5,
+   "A_tier": "semi",
+   "A_src": "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf1200.pos of 2013-03-07 (Cowan-code fit)",
+   "d": 0.008699,
+   "d_tier": "semi",
+   "d_src": "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf1200.pos of 2013-03-07 (Cowan-code fit) (from A)",
+   "br": 5.321e-05,
+   "br_tier": "semi",
+   "lam_obs": 320.2721,
+   "cyc": {
+    "lower": "metastable",
+    "cls": "leak",
+    "leak": 1.0,
+    "bound": true,
+    "basis": "lifetime",
+    "tier": "semi",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 552.99,
+      "f": 0.792,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 14,
+      "lam": 2640.0,
+      "f": 0.306,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 2,
+      "lam": 319.85,
+      "f": 4.63e-05,
+      "tier": "semi",
+      "dark": false
+     },
+     {
+      "lv": 9,
+      "lam": 1890.3,
+      "f": 7.05e-06,
+      "tier": "semi",
+      "dark": false
+     }
+    ],
+    "n_open": 1,
+    "open": [
+     {
+      "lv": 10,
+      "lam": 1892.7
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.971,
+      "tier": "semi",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 5.2e-05,
+      "tier": "semi",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 7.19e-07,
+      "tier": "semi",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0293
    }
   },
   {
@@ -1659,7 +1841,8 @@
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy D)",
    "br": 1.325e-12,
-   "br_tier": "nist"
+   "br_tier": "nist",
+   "mu": 0.0007274
   },
   {
    "kind": "forbidden",
@@ -2468,7 +2651,8 @@
    "type": "E2",
    "A": 14.6,
    "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)"
+   "A_src": "NIST ASD (accuracy B+)",
+   "q": 7.406
   },
   {
    "kind": "forbidden",
@@ -2483,7 +2667,8 @@
    "type": "M1",
    "A": 3.05e-05,
    "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy D)"
+   "A_src": "NIST ASD (accuracy D)",
+   "mu": 0.0004395
   },
   {
    "kind": "forbidden",
@@ -2528,7 +2713,8 @@
    "type": "M1",
    "A": 9.2e-05,
    "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy D)"
+   "A_src": "NIST ASD (accuracy D)",
+   "mu": 0.0004413
   },
   {
    "kind": "forbidden",
@@ -2575,7 +2761,8 @@
    "type": "E2",
    "A": 73.2,
    "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy B+)"
+   "A_src": "NIST ASD (accuracy B+)",
+   "q": 7.467
   },
   {
    "kind": "forbidden",
@@ -2752,6 +2939,74 @@
    "A_src": "NIST ASD (accuracy D)",
    "br": 1.0,
    "br_tier": "nist"
+  },
+  {
+   "kind": "E1",
+   "freq": 648.5371,
+   "freq_tier": "nist",
+   "freq_src": "NIST ASD level energies",
+   "lower": 2,
+   "upper": 6,
+   "wn": 21632.869,
+   "lam": 462.2595,
+   "air": 462.1301,
+   "gamma_MHz": 3.386,
+   "type": "E1 (intercombination)",
+   "A": 1388.0,
+   "A_tier": "semi",
+   "A_src": "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf1200.pos of 2013-03-07 (Cowan-code fit)",
+   "d": 0.008226,
+   "d_tier": "semi",
+   "d_src": "Kurucz, R. L., Can. J. Phys. 89, 417 (2011); semi-empirical line list gf1200.pos of 2013-03-07 (Cowan-code fit) (from A)",
+   "br": 6.524e-05,
+   "br_tier": "semi",
+   "lam_obs": 462.2593,
+   "cyc": {
+    "lower": "decays",
+    "cls": "leak",
+    "leak": 1.0,
+    "bound": false,
+    "basis": "lifetime",
+    "tier": "nist",
+    "n": 1.0,
+    "ch": [
+     {
+      "lv": 4,
+      "lam": 1183.1,
+      "f": 1.0,
+      "tier": "nist",
+      "dark": false
+     },
+     {
+      "lv": 3,
+      "lam": 463.13,
+      "f": 9.59e-11,
+      "tier": "nist",
+      "dark": true
+     }
+    ],
+    "end": [
+     {
+      "lv": 0,
+      "p": 0.977,
+      "tier": "semi",
+      "at": "ground"
+     },
+     {
+      "lv": 3,
+      "p": 9.62e-11,
+      "tier": "nist",
+      "at": "dark"
+     },
+     {
+      "lv": 1,
+      "p": 2.34e-13,
+      "tier": "semi",
+      "at": "dark"
+     }
+    ],
+    "end_lost": 0.0229
+   }
   },
   {
    "kind": "forbidden",
@@ -3235,7 +3490,8 @@
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy D+)",
    "br": 1.924e-13,
-   "br_tier": "nist"
+   "br_tier": "nist",
+   "mu": 0.002162
   },
   {
    "kind": "forbidden",
@@ -3370,7 +3626,8 @@
    "type": "M1",
    "A": 4.11e-05,
    "A_tier": "nist",
-   "A_src": "NIST ASD (accuracy D)"
+   "A_src": "NIST ASD (accuracy D)",
+   "mu": 0.0008534
   },
   {
    "kind": "E1",
@@ -3588,7 +3845,8 @@
    "A_tier": "nist",
    "A_src": "NIST ASD (accuracy A)",
    "br": 1.375e-08,
-   "br_tier": "nist"
+   "br_tier": "nist",
+   "q": 101.6
   },
   {
    "kind": "forbidden",
@@ -4354,10 +4612,10 @@
   }
  ],
  "validation": [
-  "levels: 18   lines < 2000 nm: 61   with matrix element: 23",
-  "transition-rate provenance: nist: 61",
+  "levels: 18   lines < 2000 nm: 64   with matrix element: 26",
+  "transition-rate provenance: nist: 61, semi: 3",
   "levels with a measured lifetime: 14",
-  "semi-empirical rates (Kurucz): 2426 of 11127 lines on NIST levels; used for 0 drawn lines and 1670 further decay lines"
+  "semi-empirical rates (Kurucz): 2426 of 11127 lines on NIST levels; used for 3 drawn lines and 1667 further decay lines"
  ],
  "sources": {
   "abundance: NIST Atomic Weights and Isotopic Compositions (Mg); nuclear spin: stated in He, Therkildsen, Jensen, Brusch, Thomsen, Porsev, Phys. Rev. A 80, 024501 (2009) [arXiv:0904.4323] ('24Mg (I=0), 25Mg (I=5/2) and 26Mg (I=0)')": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=Mg",
